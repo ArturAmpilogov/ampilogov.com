@@ -24,17 +24,21 @@ export default function Home() {
       <section className="cover" aria-labelledby="cover-title">
         <SiteHeader tone="ink" />
         <div className="cover-scan" aria-hidden="true">
-          <img src="/archive/evidence/rgada/f181-op2-d120/0060.jpg" alt="" />
+          <img
+            className="cover-document"
+            src="/archive/evidence/rgada/f181-op2-d120/0060.jpg"
+            alt=""
+          />
+          <div className="cover-highlight">
+            <img src="/artwork/0060-anfilogov-highlight.png" alt="" />
+          </div>
         </div>
         <div className="cover-shade" />
         <div className="cover-content">
-          <p className="cover-kicker">Документальная генеалогическая книга · XI–XX века</p>
-          <h1 id="cover-title">
-            История имени
-            <span>и разных родов</span>
-          </h1>
+          <h1 id="cover-title">Ампилоговы</h1>
+          <p className="cover-thesis">История фамилии и родов</p>
           <p className="cover-deck">
-            Ампилоговы · Анпилоговы · Анпиловы
+            Ампилоговы · Анпилоговы · Ампиловы · Анпиловы · Анфилоговы
           </p>
           <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/00-method"}`}>
             Начать чтение <span aria-hidden="true">↗</span>
@@ -129,7 +133,7 @@ export default function Home() {
 
       <footer className="site-footer section-shell">
         <Link className="wordmark" href="/">АМПИЛОГОВЫ</Link>
-        <p>Документальная история имени и разных родов.</p>
+        <p>Документальная история фамилии и разных родов.</p>
         <Link className="text-link" href="/read/research/open-questions">Продолжить исследование ↗</Link>
       </footer>
     </main>
