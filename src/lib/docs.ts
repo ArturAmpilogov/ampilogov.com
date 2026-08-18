@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
+import { getChapterMeta } from "@/lib/chapter-meta";
 
 export const DOCS_ROOT = path.join(process.cwd(), "docs");
 
@@ -127,6 +128,14 @@ export function getAllDocuments() {
       const sectionDifference =
         sectionOrder.indexOf(left.section) - sectionOrder.indexOf(right.section);
       if (sectionDifference !== 0) return sectionDifference;
+
+      if (left.section === "book" && right.section === "book") {
+        const orderDifference =
+          (getChapterMeta(left.slug)?.order ?? 50) -
+          (getChapterMeta(right.slug)?.order ?? 50);
+        if (orderDifference !== 0) return orderDifference;
+      }
+
       return left.slug.localeCompare(right.slug, "ru", { numeric: true });
     });
 }
@@ -151,7 +160,7 @@ export function getAdjacentDocuments(document: BookDocument) {
 }
 
 export function resolveDocumentUrl(sourcePath: string, url?: string) {
-  if (!url || /^(https?:|mailto:|#)/.test(url)) return url;
+  if (!url || /^(https?:|mailto:|#|\/)/.test(url)) return url;
 
   const [pathname, hash] = url.split("#");
   const decodedPath = decodeURIComponent(pathname);

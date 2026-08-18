@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
+import { ChapterPeriod } from "@/components/chapter-period";
 import { MarkdownArticle } from "@/components/markdown-article";
-import { ArticleToc, ReadingProgress } from "@/components/reading-tools";
+import { KeepCurrentChapterVisible, ReadingProgress } from "@/components/reading-tools";
 import { SiteHeader } from "@/components/site-header";
+import { getChapterMeta } from "@/lib/chapter-meta";
 import {
   getAdjacentDocuments,
   getAllDocuments,
@@ -32,6 +35,14 @@ export default async function ReadingPage({ params }: PageProps) {
 
   const sectionDocuments = getDocumentsBySection(document.section);
   const { previous, next } = getAdjacentDocuments(document);
+  const chapterMeta = getChapterMeta(document.slug);
+  const periodDocuments = chapterMeta
+    ? sectionDocuments.filter((entry) => {
+        const meta = getChapterMeta(entry.slug);
+        return meta?.group === chapterMeta.group && meta.period;
+      })
+    : [];
+  const periodPosition = periodDocuments.findIndex((entry) => entry.slug === document.slug) + 1;
 
   return (
     <main className="reading-page">
@@ -40,25 +51,38 @@ export default async function ReadingPage({ params }: PageProps) {
 
       <div className="reading-shell">
         <aside className="book-rail">
+          <KeepCurrentChapterVisible />
           <Link className="back-link" href="/">← На обложку</Link>
           <span className="eyebrow">{document.sectionLabel}</span>
           <ol>
-            {sectionDocuments.map((entry, index) => (
-              <li key={entry.slug}>
-                <Link className={entry.slug === document.slug ? "is-current" : undefined} href={`/read/${entry.slug}`}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  {entry.title}
-                </Link>
-              </li>
-            ))}
+            {sectionDocuments.map((entry, index) => {
+              const meta = getChapterMeta(entry.slug);
+              const previousMeta = index > 0 ? getChapterMeta(sectionDocuments[index - 1].slug) : undefined;
+              const showGroup = document.section === "book" && meta && meta.group !== previousMeta?.group;
+
+              return (
+                <Fragment key={entry.slug}>
+                  {showGroup ? <li className="book-rail-group">{meta.groupLabel}</li> : null}
+                  <li>
+                    <Link
+                      aria-current={entry.slug === document.slug ? "page" : undefined}
+                      className={entry.slug === document.slug ? "is-current" : undefined}
+                      href={`/read/${entry.slug}`}
+                    >
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      {entry.title}
+                    </Link>
+                  </li>
+                </Fragment>
+              );
+            })}
           </ol>
         </aside>
 
         <article className="article-column">
-          <div className="article-meta">
-            <span>{document.sectionLabel}</span>
-            <span>{document.sourcePath}</span>
-          </div>
+          {chapterMeta?.period && periodPosition > 0 ? (
+            <ChapterPeriod meta={chapterMeta} position={periodPosition} total={periodDocuments.length} />
+          ) : null}
           <MarkdownArticle content={document.content} sourcePath={document.sourcePath} />
 
           <nav className="page-turn" aria-label="Соседние материалы">
@@ -76,10 +100,6 @@ export default async function ReadingPage({ params }: PageProps) {
             ) : <span />}
           </nav>
         </article>
-
-        <aside className="toc-rail">
-          <ArticleToc headings={document.headings} />
-        </aside>
       </div>
     </main>
   );
