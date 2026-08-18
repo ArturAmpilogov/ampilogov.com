@@ -1,21 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { Fragment } from "react";
 import { SiteHeader } from "@/components/site-header";
+import { getChapterMeta } from "@/lib/chapter-meta";
 import { getAllDocuments, getDocumentsBySection } from "@/lib/docs";
-
-const routeLabels: Record<string, string> = {
-  "migration/routes/orel-livny-shchigry": "Орёл → Ливенские Щигры",
-  "migration/routes/kursk-oboyan": "Курск → Обоянь",
-  "migration/routes/chernozem-to-taurida": "Курско-Орловский край → Таврия",
-  "migration/routes/taurida-to-crimea": "Материковая Таврия → Крым",
-};
 
 export default function Home() {
   const allDocuments = getAllDocuments();
   const chapters = getDocumentsBySection("book");
-  const migrations = getDocumentsBySection("migration").filter((document) =>
-    document.slug.includes("/routes/"),
-  );
   const people = getDocumentsBySection("people").length;
   const records = getDocumentsBySection("records").length;
 
@@ -24,19 +16,23 @@ export default function Home() {
       <section className="cover" aria-labelledby="cover-title">
         <SiteHeader tone="ink" />
         <div className="cover-scan" aria-hidden="true">
-          <img src="/archive/evidence/rgada/f181-op2-d120/0060.jpg" alt="" />
+          <img
+            className="cover-document"
+            src="/archive/evidence/rgada/f181-op2-d120/0060.jpg"
+            alt=""
+          />
+          <div className="cover-highlight">
+            <img src="/artwork/0060-anfilogov-highlight.png" alt="" />
+          </div>
         </div>
         <div className="cover-shade" />
         <div className="cover-content">
-          <p className="cover-kicker">Документальная генеалогическая книга · XI–XX века</p>
-          <h1 id="cover-title">
-            История имени
-            <span>и разных родов</span>
-          </h1>
+          <h1 id="cover-title">Ампилоговы</h1>
+          <p className="cover-thesis">История фамилии и родов</p>
           <p className="cover-deck">
-            Ампилоговы · Анпилоговы · Анпиловы
+            Ампилоговы · Анпилоговы · Ампиловы · Анпиловы · Анфилоговы
           </p>
-          <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/00-method"}`}>
+          <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/00-overview"}`}>
             Начать чтение <span aria-hidden="true">↗</span>
           </Link>
         </div>
@@ -68,46 +64,38 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <span className="eyebrow">Книга</span>
-            <h2 id="chapters-title">Главы</h2>
+            <h2 id="chapters-title">История</h2>
           </div>
           <p>{chapters.length} цельных исторических разделов</p>
         </div>
 
         <ol className="chapter-list">
-          {chapters.map((chapter, index) => (
-            <li key={chapter.slug}>
-              <Link href={`/read/${chapter.slug}`}>
-                <span className="chapter-number">{String(index + 1).padStart(2, "0")}</span>
-                <span className="chapter-copy">
-                  <strong>{chapter.title}</strong>
-                  <small>{chapter.excerpt}</small>
-                </span>
-                <span className="chapter-arrow" aria-hidden="true">↗</span>
-              </Link>
-            </li>
-          ))}
+          {chapters.map((chapter, index) => {
+            const meta = getChapterMeta(chapter.slug);
+            const previousMeta = index > 0 ? getChapterMeta(chapters[index - 1].slug) : undefined;
+            const showGroup = meta && meta.group !== previousMeta?.group;
+
+            return (
+              <Fragment key={chapter.slug}>
+                {showGroup ? (
+                  <li className="chapter-group-label">
+                    <span>{meta.groupLabel}</span>
+                  </li>
+                ) : null}
+                <li>
+                  <Link href={`/read/${chapter.slug}`}>
+                    <span className="chapter-number">{String(index + 1).padStart(2, "0")}</span>
+                    <span className="chapter-copy">
+                      <strong>{chapter.title}</strong>
+                      <small>{chapter.excerpt}</small>
+                    </span>
+                    <span className="chapter-arrow" aria-hidden="true">↗</span>
+                  </Link>
+                </li>
+              </Fragment>
+            );
+          })}
         </ol>
-      </section>
-
-      <section className="migration-section" id="migration" aria-labelledby="migration-title">
-        <div className="section-shell migration-inner">
-          <div className="section-heading section-heading--dark">
-            <div>
-              <span className="eyebrow">География поиска</span>
-              <h2 id="migration-title">Переселения</h2>
-            </div>
-            <p>Маршрут становится фактом только после документа о конкретном человеке.</p>
-          </div>
-
-          <div className="route-line" aria-label="Исследуемые направления переселений">
-            {migrations.map((route, index) => (
-              <Link href={`/read/${route.slug}`} key={route.slug}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{routeLabels[route.slug] ?? route.title}</strong>
-              </Link>
-            ))}
-          </div>
-        </div>
       </section>
 
       <section className="archive-section section-shell" aria-labelledby="archive-title">
@@ -129,7 +117,7 @@ export default function Home() {
 
       <footer className="site-footer section-shell">
         <Link className="wordmark" href="/">АМПИЛОГОВЫ</Link>
-        <p>Документальная история имени и разных родов.</p>
+        <p>Документальная история фамилии и разных родов.</p>
         <Link className="text-link" href="/read/research/open-questions">Продолжить исследование ↗</Link>
       </footer>
     </main>

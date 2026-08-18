@@ -7,8 +7,7 @@ export function SiteHeader({ tone = "paper" }: { tone?: "paper" | "ink" }) {
         АМПИЛОГОВЫ
       </Link>
       <nav className="site-nav" aria-label="Основная навигация">
-        <Link href="/#chapters">Главы</Link>
-        <Link href="/#migration">Переселения</Link>
+        <Link href="/#chapters">История</Link>
         <Link href="/read/research/sources">Источники</Link>
       </nav>
     </header>

@@ -1,14 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Ампилоговы — документальная история имени и рода",
+    default: "Ампилоговы — документальная история фамилии",
     template: "%s — Ампилоговы",
   },
   description:
-    "Генеалогическая книга об истории имени и разных родов Ампилоговых, Анпилоговых и Анпиловых.",
+    "История фамилий Ампилоговых, Анпилоговых, Анпиловых, Ампиловых и Анфилоговых: от древнегреческого имени до документальных судеб разных родов.",
 };
 
 export const viewport: Viewport = {
