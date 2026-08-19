@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-const chapterHref = "/read/book/01-greek-amphilochus#герой-врач-и-знак-города";
+const chapterHref = "/read/book/01-greek-amphilochus#amphilochos-cult";
 const christianChapterHref = "/read/book/02-christian-amphilochius";
 const catalogueHref = "https://rpc.ashmus.ox.ac.uk/coins/4/6897";
 const licenseHref = "https://creativecommons.org/licenses/by-sa/4.0/";
@@ -49,12 +49,10 @@ export function AmphilochosCoinTeaser() {
         </figure>
         <p>
           Христианский <a href={christianChapterHref}>Амфилохий Иконийский</a>{" "}
-          запомнился как <strong>образованный</strong>, <strong>стойкий</strong> и{" "}
-          <strong>мужественный</strong> человек: он учил, помогал своей пастве и
-          твёрдо защищал свои убеждения. С этими двумя именами современные
-          Ампилоговы могут связывать <strong>проницательность</strong>,{" "}
-          <strong>знание</strong>, <strong>помощь людям</strong> и{" "}
-          <strong>внутреннюю силу</strong>.
+          запомнился как образованный, стойкий и мужественный человек: он учил,
+          помогал своей пастве и твёрдо защищал свои убеждения. Так в истории имени
+          соединились <strong>проницательность и знание</strong>,{" "}
+          <strong>помощь людям и внутренняя сила</strong>.
         </p>
       </div>
     </div>

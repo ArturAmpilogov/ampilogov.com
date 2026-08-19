@@ -250,7 +250,7 @@ export function PeopleDirectory({ people, initialPersonId = "" }: { people: Dire
                       <div className="source-actions">
                         <a href={`/records/${encodeURIComponent(source.sourceId)}`}>Открыть запись →</a>
                         {source.evidenceUrl ? <a href={source.evidenceUrl} target="_blank" rel="noreferrer">Снимок ↗</a> : null}
-                        {source.familySearchUrl ? <a href={source.familySearchUrl} target="_blank" rel="noreferrer">FamilySearch ↗</a> : null}
+                        {source.externalUrl ? <a href={source.externalUrl} target="_blank" rel="noreferrer">{source.externalLabel} ↗</a> : null}
                       </div>
                     </div>
                   </details>

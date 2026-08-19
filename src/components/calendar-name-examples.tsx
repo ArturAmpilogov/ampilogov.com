@@ -25,8 +25,8 @@ export function CalendarNameExamples() {
           />
         </a>
         <p>
-          Здесь названы родители, поэтому семейный выбор имени возможен, но документ не сообщает о
-          нём прямо. <a href={romanenkoSourceHref} target="_blank" rel="noreferrer">FamilySearch ↗</a>
+          В записи названы родители Анфилохия Романенко. Он родился в день памяти святителя —
+          23 ноября 1803 года. <a href={romanenkoSourceHref} target="_blank" rel="noreferrer">FamilySearch ↗</a>
         </p>
       </div>
 
@@ -50,14 +50,14 @@ export function CalendarNameExamples() {
           />
         </a>
         <p>
-          В Самаре, Самарской губернии Российской империи, ребёнок записан без названного отца.
-          Совпадение рождения с днём памяти святителя позволяет предполагать выбор имени по календарю,
-          но не доказывает, кто именно его предложил. <a href={november23SourceHref} target="_blank" rel="noreferrer">FamilySearch ↗</a>
+          Ребёнок родился в Самаре 23 ноября 1846 года и был крещён на следующий день. В метрической
+          записи отец не назван. <a href={november23SourceHref} target="_blank" rel="noreferrer">FamilySearch ↗</a>
         </p>
       </div>
 
       <figcaption>
-        Обе записи приходятся на день церковной памяти Амфилохия Иконийского.
+        Два рождения разделяют 43 года и сотни километров; в обоих случаях имя следует дню церковной
+        памяти Амфилохия Иконийского.
       </figcaption>
     </figure>
   );
