@@ -33,11 +33,11 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
     period: {
       from: "VIII век",
       fromEra: "до нашей эры",
-      to: "II век",
+      to: "IV век",
       toEra: "нашей эры",
       label: "Античная традиция",
       note: "Даты относятся к сохранившимся текстам и надписям, а не к мифической биографии героя.",
-      axis: { start: 0, end: 23 },
+      axis: { start: 0, end: 28 },
     },
   },
   "book/02-christian-amphilochius": {
