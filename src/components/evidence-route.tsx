@@ -2,9 +2,24 @@ type RouteStop = {
   title: string;
   detail: string;
   state?: "known" | "gap" | "open";
+  connection?: "known" | "gap" | "open";
 };
 
 const routes: Record<string, { eyebrow: string; title: string; stops: RouteStop[]; note: string }> = {
+  overview: {
+    eyebrow: "VIII век до н. э. — начало XX века",
+    title: "От древнего имени к распространению фамилии",
+    stops: [
+      { title: "Малл · Аргос", detail: "герой, оракул и названия земель" },
+      { title: "Икония", detail: "епископ Амфилохий · IV век" },
+      { title: "Русь", detail: "имя в календаре и крещении" },
+      { title: "Прилуки", detail: "Онфилогов · 1536/37" },
+      { title: "Орёл · Курск", detail: "семьи XVI–XVII веков" },
+      { title: "Анпилогово · Анпиловка", detail: "фамилия остаётся на карте", connection: "open" },
+      { title: "Мир", detail: "дальнейшее распространение", state: "open" },
+    ],
+    note: "Сплошная линия показывает документированные вехи. Пунктир продолжает историю за пределами первоначального ядра фамилии.",
+  },
   bazdyrevo: {
     eyebrow: "Маршрут в документе 1697 года",
     title: "Баздырево → ливенские Щигры",
@@ -49,7 +64,11 @@ export function EvidenceRoute({ id }: { id: string }) {
       </figcaption>
       <ol>
         {route.stops.map((stop) => (
-          <li className={`is-${stop.state ?? "known"}`} key={`${stop.title}-${stop.detail}`} tabIndex={0}>
+          <li
+            className={`is-${stop.state ?? "known"} connection-${stop.connection ?? stop.state ?? "known"}`}
+            key={`${stop.title}-${stop.detail}`}
+            tabIndex={0}
+          >
             <i aria-hidden="true" />
             <strong>{stop.title}</strong>
             <small>{stop.detail}</small>

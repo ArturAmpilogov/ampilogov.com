@@ -5,6 +5,7 @@ import type { Components } from "react-markdown";
 import ReactMarkdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
+import { AmphilochosCoinTeaser } from "@/components/amphilochos-coin-teaser";
 import { AmphilochosCultEvidence } from "@/components/amphilochos-cult-evidence";
 import { AnpilogovoMap } from "@/components/anpilogovo-map";
 import { AnpilovkaMap } from "@/components/anpilovka-map";
@@ -31,7 +32,8 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
     a: ({ href, children, ...props }) => {
       const resolvedHref = resolveDocumentUrl(sourcePath, href);
       const external = resolvedHref?.startsWith("http");
-      const sourceReference = resolvedHref?.startsWith("/read/research/sources#s-");
+      const sourceReference = resolvedHref?.startsWith("/read/research/sources#s-")
+        && /^S-[A-Z0-9-]+$/i.test(headingText(children).trim());
       return (
         <a
           {...props}
@@ -85,7 +87,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
     (_, sourceId: string) => `[${sourceId}](/read/research/sources#${sourceId.toLowerCase()})`,
   );
   const sections = linkedContent.split(
-    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_LINES_MAP\}\}|\{\{PRILUKI_MAP\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
+    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_LINES_MAP\}\}|\{\{PRILUKI_MAP\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
   );
 
   return (
@@ -109,6 +111,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
             {section === "{{PRILUKI_MAP}}" ? <PrilukiMap /> : null}
             {section === "{{CALENDAR_NAME_EXAMPLES}}" ? <CalendarNameExamples /> : null}
             {section === "{{AMPHILOCHOS_CULT_EVIDENCE}}" ? <AmphilochosCultEvidence /> : null}
+            {section === "{{AMPHILOCHOS_COIN_TEASER}}" ? <AmphilochosCoinTeaser /> : null}
             {kinshipId ? <KinshipDiagram id={kinshipId} /> : null}
             {evidenceRouteId ? <EvidenceRoute id={evidenceRouteId} /> : null}
             {sourceExcerptId ? <SourceExcerpt id={sourceExcerptId} /> : null}

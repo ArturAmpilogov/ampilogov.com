@@ -936,6 +936,14 @@ a {
   margin-block: 1.2em;
 }
 
+/*
+ * Крупные редакционные иллюстрации держатся общей левой оси статьи.
+ * Дополнительная ширина раскрывается вправо, не создавая скачка после текста.
+ */
+.markdown-body > figure {
+  margin-inline: 0;
+}
+
 .markdown-body p,
 .markdown-body li {
   max-width: 780px;
@@ -1151,7 +1159,9 @@ a {
 }
 
 .evidence-route li.is-gap,
-.evidence-route li.is-open {
+.evidence-route li.is-open,
+.evidence-route li.connection-gap,
+.evidence-route li.connection-open {
   border-top-style: dashed;
   border-top-color: var(--muted);
 }
@@ -1241,7 +1251,9 @@ a {
   }
 
   .evidence-route li.is-gap,
-  .evidence-route li.is-open {
+  .evidence-route li.is-open,
+  .evidence-route li.connection-gap,
+  .evidence-route li.connection-open {
     border-left-style: dashed;
     border-left-color: var(--muted);
   }
@@ -1305,7 +1317,7 @@ a {
 
 .article-figure {
   width: min(100%, 940px);
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 .article-figure img {
@@ -1455,10 +1467,138 @@ a {
   color: inherit;
 }
 
+.amphilochos-legacy {
+  --legacy-visual: clamp(164px, 17vw, 190px);
+  --legacy-gap: clamp(22px, 2.8vw, 30px);
+  display: grid;
+  gap: clamp(28px, 3vw, 38px);
+  width: min(100%, 780px);
+  margin: 0.55em 0 2.65em;
+}
+
+.amphilochos-legacy-row {
+  display: grid;
+  gap: var(--legacy-gap);
+  align-items: start;
+}
+
+.amphilochos-legacy-row--antique {
+  grid-template-columns: var(--legacy-visual) minmax(0, 1fr);
+}
+
+.amphilochos-legacy-row--antique > figure {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.amphilochos-legacy-row--antique > p {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.amphilochos-legacy-row--christian {
+  grid-template-columns: minmax(0, 1fr) var(--legacy-visual);
+}
+
+.amphilochos-legacy-row--christian > p {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.amphilochos-legacy-row--christian > figure {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.amphilochos-legacy-row > p {
+  margin: 0;
+}
+
+.amphilochos-legacy-row > p a {
+  color: inherit;
+}
+
+.amphilochos-legacy figure {
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.amphilochos-legacy-image {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.amphilochos-legacy img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.84) contrast(1.04);
+  transition: filter 240ms ease, transform 320ms ease;
+}
+
+.amphilochos-legacy figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.amphilochos-legacy-image:hover img {
+  filter: saturate(0.95) contrast(1.08);
+  transform: scale(1.015);
+}
+
+.amphilochos-legacy figcaption a {
+  color: inherit;
+}
+
+@media (max-width: 680px) {
+  .amphilochos-legacy {
+    gap: 20px;
+    margin-block: 0.4em 2.5em;
+  }
+
+  .amphilochos-legacy-row--antique,
+  .amphilochos-legacy-row--christian {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .amphilochos-legacy-row--antique > figure {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .amphilochos-legacy-row--antique > p {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .amphilochos-legacy-row--christian > p {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .amphilochos-legacy-row--christian > figure {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .amphilochos-legacy figure {
+    width: min(58vw, 220px);
+  }
+}
+
 .source-excerpt {
   width: min(100%, 940px);
   margin-block: 3.4em 4.2em;
-  margin-inline: auto;
+  margin-inline: 0;
   padding-block: 18px 20px;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
@@ -1467,9 +1607,8 @@ a {
 
 .source-excerpt-heading {
   display: grid;
-  grid-template-columns: minmax(150px, 0.45fr) minmax(0, 1fr);
-  gap: 28px;
-  align-items: baseline;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
   margin-bottom: 18px;
 }
 
@@ -1586,7 +1725,7 @@ a {
 .calendar-name-examples {
   width: min(100%, 940px);
   margin-block: 3.4em 4.2em;
-  margin-inline: auto;
+  margin-inline: 0;
   padding-block: 18px 20px;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
@@ -1761,7 +1900,7 @@ a {
 
 .calendar-name-pair {
   width: min(100%, 760px);
-  margin: 2.4em auto 3.2em;
+  margin: 2.4em 0 3.2em;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
 }
@@ -1849,7 +1988,7 @@ a {
 
 .surname-variants-evidence {
   width: min(100%, 940px);
-  margin: 3.2em auto 4.2em;
+  margin: 3.2em 0 4.2em;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
 }
@@ -2647,7 +2786,7 @@ a {
   background: transparent;
   cursor: pointer;
   text-align: left;
-  transition: color 180ms ease, background 180ms ease, padding 220ms ease;
+  transition: color 180ms ease, background 180ms ease;
 }
 
 .people-list > button::before {
@@ -2659,7 +2798,6 @@ a {
 }
 
 .people-list > button:hover {
-  padding-left: 9px;
   color: var(--accent);
 }
 
