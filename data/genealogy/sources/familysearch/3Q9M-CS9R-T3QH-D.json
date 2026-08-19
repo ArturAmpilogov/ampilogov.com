@@ -4,15 +4,15 @@
   "provider": "FamilySearch",
   "collection": {
     "title": "Tymoshivka. Birth Records 1922-1924, Marriage Records 1922-1924, Death Records 1922-1924",
-    "imageGroupNumber": "007810528",
-    "itemNumber": 2,
-    "imageNumber": 34
+    "filmNumber": "007810528",
+    "imageNumber": 204,
+    "imageCount": 1445
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CS9R-T3QH-D"
   },
   "event": {
-    "type": "birth",
+    "type": "civil-birth",
     "date": {
       "display": "7 апреля 1922",
       "iso": "1922-04-07",
@@ -28,38 +28,92 @@
       "mentionId": "FS-3Q9M-CS9R-T3QH-D-M1",
       "role": "child",
       "personId": "P0025",
-      "nameAsWritten": "Ампилогова [возможно Мария] Арсеньевна",
-      "displayName": "[Возможно Мария] Арсеньевна Ампилогова",
+      "sex": "female",
+      "nameAsTranscribed": "Ампилогова [имя неразборчиво] Арсеньевна",
+      "modernName": "[имя неразборчиво] Арсеньевна Ампилогова",
+      "displayName": "[Имя неразборчиво] Арсеньевна Ампилогова",
       "alternateNames": [
-        "Ампилогова [возможно Мария] Арсеньевна"
+        "Ампилогова [имя неразборчиво] Арсеньевна"
       ]
     },
     {
       "mentionId": "FS-3Q9M-CS9R-T3QH-D-M2",
       "role": "father",
       "personId": "P0018",
-      "nameAsWritten": "Ампилогов Арсений Андреев",
+      "sex": "male",
+      "nameAsTranscribed": "Ампилоговъ Арсеній Андреевъ",
+      "modernName": "Арсений Андреевич Ампилогов",
       "displayName": "Арсений Андреевич Ампилогов",
       "alternateNames": [
-        "Ампилогов Арсений Андреев"
+        "Ампилоговъ Арсеній Андреевъ"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CS9R-T3QH-D-M3",
+      "role": "mother",
+      "personId": null,
+      "sex": "female",
+      "nameAsTranscribed": "Марія [отчество и фамилія неразборчивы]",
+      "modernName": "Мария [отчество и фамилия неразборчивы]",
+      "displayName": "Мария [отчество и фамилия неразборчивы]",
+      "alternateNames": [
+        "Марія [отчество и фамилія неразборчивы]"
       ]
     }
   ],
+  "transcription": {
+    "status": "complete-with-uncertainties",
+    "literal": "Запись о рождении девочки Ампилоговой [имя неразборчиво] Арсеньевны, родившейся 7 апреля 1922 года. Отец: Ампилоговъ Арсеній Андреевъ. Мать: Марія [отчество и фамилія неразборчивы]. Указан четвёртый ребёнок.",
+    "layoutNote": "Лист представляет таблицу из четырёх актов; нужная строка сильно выцветшая и частично повреждена.",
+    "modernInterpretation": "7 апреля 1922 года родилась дочь Арсения Андреевича Ампилогова; имя ребёнка и полное имя матери пока не читаются надёжно.",
+    "fields": {
+      "birthDate": "7 апреля 1922",
+      "child": "[имя неразборчиво] Арсеньевна Ампилогова",
+      "birthOrder": "четвёртый ребёнок",
+      "parents": "Арсений Андреевич Ампилогов и Мария [неразборчиво]"
+    }
+  },
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CS9R-T3QH-D.jpg",
+    "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CS9R-T3QH-D-02-child-parents-fullscreen.jpg",
     "capturedAt": "2026-08-19",
-    "sha256": "673fccb023dddcdaed988ddb06ade24816071260a176b9cee32fbff022672227"
+    "sha256": "6e9f8a2dc449e02332f6390ff2f9f5b65c1caf979b011ebaa76519dc328a51a9",
+    "quality": {
+      "status": "approved",
+      "viewerFullscreen": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "sharpTilesConfirmed": true,
+      "viewport": "1920x1200"
+    },
+    "fragments": [
+      {
+        "part": "overview",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CS9R-T3QH-D-01-fullscreen-overview.jpg",
+        "sha256": "18216d4d635c012e70fad40a93ee9651e0b0be77a00eae2a3bf578a56c57b3be"
+      },
+      {
+        "part": "child-parents",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CS9R-T3QH-D-02-child-parents-fullscreen.jpg",
+        "sha256": "6e9f8a2dc449e02332f6390ff2f9f5b65c1caf979b011ebaa76519dc328a51a9"
+      },
+      {
+        "part": "declarants",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CS9R-T3QH-D-03-declarants-signatures-fullscreen.jpg",
+        "sha256": "c2c2cf11344db3f7e22b69479e446a5c3c6eba0f9cd0a6844a8459e0798795aa"
+      }
+    ]
   },
   "review": {
-    "status": "working",
+    "status": "complete",
+    "identityResolution": "linked-to-P0025",
+    "transcriptionConfidence": "low",
     "unresolved": [
-      "Имя ребёнка",
-      "имя матери"
+      "Имя ребёнка и полное имя матери."
     ]
   },
   "summary": {
-    "status": "working-summary",
-    "text": "Ампилогова (возможно Мария Арсеньевна), четвёртый ребёнок. Отец: Ампилогов Арсений Андреев."
+    "status": "verified-summary",
+    "text": "7 апреля 1922 года родилась дочь Арсения Андреевича Ампилогова; имя ребёнка неразборчиво."
   }
 }

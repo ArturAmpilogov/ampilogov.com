@@ -4,21 +4,29 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4135959",
-    "digitalFolderNumber": "007817721_003_M9M2-ZQB",
-    "imageNumber": 307
+    "title": "Украина, Запорожье Метрические Книги, 1774-1935",
+    "filmNumber": "007817721",
+    "itemNumber": 3,
+    "imageNumber": 891,
+    "imageCount": 1005,
+    "catalogTitle": "Метрические книги",
+    "archiveReference": "Ф. 5593, оп. 2, д. 799",
+    "contents": "Рождения, бракосочетания, смерти, 1893-1894"
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSW-896N-R",
-    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6XC6-Q1D8"
+    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6XC6-Q1D8",
+    "catalogRecord": "https://www.familysearch.org/en/search/catalog/1019390"
   },
   "event": {
-    "type": "birth",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "10 октября 1894",
+      "display": "10 / 15 октября 1894",
       "iso": "1894-10-10",
       "calendar": "source-calendar-unverified"
     },
     "place": {
+      "asWritten": "Тимошевский",
       "normalized": "Тимошевка",
       "placeId": "tymoshivka"
     }
@@ -26,15 +34,27 @@
   "indexData": {
     "recordId": "6XC6-Q1D8",
     "subject": "Евфимий Анпилов",
+    "sex": "male",
     "father": "Григорий Андреев Анпилов",
-    "mother": "Евдокия Исидорова"
+    "mother": "Евдокия Исидорова",
+    "birthDate": "10 октября 1894",
+    "placeAsIndexed": "запорижжя, Украина, Советский Союз"
   },
   "mentions": [
     {
       "mentionId": "FS-3Q9M-CSSW-896N-R-M1",
       "role": "child",
       "personId": "P0005",
+      "sex": "male",
+      "nameAsTranscribed": "Евфимій",
       "nameAsIndexed": "Евфимий Анпилов",
+      "modernName": "Евфимий Григорьевич Ампилогов",
+      "patronymic": "Григорьевич",
+      "patronymicEvidence": {
+        "basis": "derived-from-father-given-name",
+        "sourceMentionId": "FS-3Q9M-CSSW-896N-R-M2",
+        "confidence": "high"
+      },
       "displayName": "Евфимий Григорьевич Ампилогов",
       "alternateNames": [
         "Евфимий Анпилов"
@@ -44,9 +64,26 @@
       "mentionId": "FS-3Q9M-CSSW-896N-R-M2",
       "role": "father",
       "personId": "P0002",
+      "sex": "male",
+      "nameAsTranscribed": "Григорій Андреевъ Анпиловъ",
       "nameAsIndexed": "Григорий Андреев Анпилов",
+      "modernName": "Григорий Андреевич Ампилогов",
+      "socialStatus": {
+        "asWritten": "Тимошевскій крестьянинъ",
+        "normalized": "тимошевский крестьянин"
+      },
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскій крестьянинъ",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
       "displayName": "Григорий Андреевич Ампилогов",
       "alternateNames": [
+        "Григорій Андреевъ Анпиловъ",
         "Григорий Андреев Анпилов"
       ]
     },
@@ -54,21 +91,159 @@
       "mentionId": "FS-3Q9M-CSSW-896N-R-M3",
       "role": "mother",
       "personId": "P0003",
+      "sex": "female",
+      "nameAsTranscribed": "Евдокія Исидорова",
       "nameAsIndexed": "Евдокия Исидорова",
+      "modernName": "Евдокия Исидоровна Рыкова",
+      "relationshipNote": "законная жена Григория Андреева Анпилова",
       "displayName": "Евдокия Исидоровна Рыкова",
       "alternateNames": [
+        "Евдокія Исидорова",
         "Евдокия Исидорова"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSW-896N-R-M4",
+      "role": "godfather",
+      "sex": "male",
+      "nameAsTranscribed": "Михаилъ Павловъ Тетеревъ",
+      "modernName": "Михаил Павлович Тетерев",
+      "socialStatus": {
+        "asWritten": "Тимошевскій крестьянинъ",
+        "normalized": "тимошевский крестьянин"
+      },
+      "eventAssociation": "child",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскіе крестьяне",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
+      "displayName": "Михаил Павлович Тетерев",
+      "alternateNames": [
+        "Михаилъ Павловъ Тетеревъ"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSW-896N-R-M5",
+      "role": "godmother",
+      "sex": "female",
+      "nameAsTranscribed": "дѣвица Евдокія Максимова Гостищева",
+      "modernName": "Евдокия Максимовна Гостищева",
+      "socialStatus": {
+        "asWritten": "Тимошевская крестьянка; дѣвица",
+        "normalized": "тимошевская крестьянка; девица"
+      },
+      "eventAssociation": "child",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскіе крестьяне",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
+      "displayName": "Евдокия Максимовна Гостищева",
+      "alternateNames": [
+        "дѣвица Евдокія Максимова Гостищева"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSW-896N-R-M6",
+      "role": "clergy",
+      "sex": "male",
+      "nameAsTranscribed": "Священникъ Арсеній [Нечип…]",
+      "modernName": "священник Арсений [Нечип…]",
+      "uncertainties": [
+        "окончание фамилии неразборчиво"
+      ],
+      "displayName": "священник Арсений [Нечип…]",
+      "alternateNames": [
+        "Священникъ Арсеній [Нечип…]"
       ]
     }
   ],
+  "transcription": {
+    "status": "complete",
+    "literal": "[№ родившихся мужского пола: 211] | [№ родившихся женского пола: ″ — номер не изменился] | 10 октября [родился] | 15 октября [крещён] | Евфимій | Тимошевскій крестьянинъ Григорій Андреевъ Анпиловъ и законная жена его Евдокія Исидорова; оба православные. | Восприемники: Тимошевскіе крестьяне Михаилъ Павловъ Тетеревъ и дѣвица Евдокія Максимова Гостищева. | Священникъ Арсеній [Нечип… — окончание фамилии неразборчиво].",
+    "layoutNote": "Запись занимает вторую строку разворота. Счёт родившихся ведётся отдельно по полу: 211 стоит в мужской графе, повторительный знак ″ — в женской. Даты 10 и 15 относятся соответственно к рождению и крещению; месяц «Октябрь» указан над календарными графами. Позднейшая приписка пересекает нижнюю часть строки Евфимия, но прямо отсылает к младенцу под № 212 и поэтому к этой записи не отнесена.",
+    "modernInterpretation": "Евфимий Григорьевич Ампилогов, 211-й зарегистрированный мальчик, родился 10 октября и был крещён 15 октября 1894 года. Родители — тимошевский крестьянин Григорий Андреевич Анпилов (вариант фамилии Ампилогов) и его законная жена Евдокия Исидоровна; оба православные. Восприемники — тимошевский крестьянин Михаил Павлович Тетерев и девица Евдокия Максимовна Гостищева. Таинство совершил священник Арсений; окончание его фамилии читается неуверенно.",
+    "fields": {
+      "maleSequenceNumber": "211",
+      "femaleSequenceNumber": "повторительный знак ″ — счётчик девочек не изменился",
+      "birthDate": "10 октября 1894",
+      "baptismDate": "15 октября 1894",
+      "child": "Евфимий Григорьевич Ампилогов",
+      "parents": "тимошевский крестьянин Григорий Андреевич Анпилов и законная жена его Евдокия Исидоровна; оба православные",
+      "godparents": [
+        "тимошевский крестьянин Михаил Павлович Тетерев",
+        "девица Евдокия Максимовна Гостищева"
+      ],
+      "clergy": "священник Арсений [Нечип… — окончание фамилии неразборчиво]"
+    }
+  },
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "docs/evidence/familysearch/timoshovka/evfimii-anpilov-birth-1894.jpg",
+    "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-02-record-211-fullscreen.jpg",
     "capturedAt": "2026-08-19",
-    "sha256": "e9da065a7d0870192201bf6c5976fa4d4f88fab5a14054dc93ce965f125c5ab7"
+    "sha256": "d25452cbdba54f69722c3cc9b5a9658d4a150a97527baca497b9c6dfd7a6c02a",
+    "publicDisplay": false,
+    "rightsNote": "FamilySearch показывает договорное ограничение на скачивание; публичный показ локальных контрольных снимков отдельно не подтверждён.",
+    "quality": {
+      "status": "approved",
+      "viewerFullscreen": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "sharpTilesConfirmed": true,
+      "viewport": "1728x1080",
+      "strategy": "overview-plus-multiple-zoomed-fragments"
+    },
+    "fragments": [
+      {
+        "part": "fullscreen-overview-with-film-and-image-number",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-01-fullscreen-overview.jpg",
+        "sha256": "964d656b66d9eb8e224b85c2c24534aa573d51b53ef6f4a7f356b73579137b08"
+      },
+      {
+        "part": "complete-record-row",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-02-record-211-fullscreen.jpg",
+        "sha256": "d25452cbdba54f69722c3cc9b5a9658d4a150a97527baca497b9c6dfd7a6c02a"
+      },
+      {
+        "part": "parents-godparents-and-clergy",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-03-parents-godparents-fullscreen.jpg",
+        "sha256": "36a11140a6e9f4ad77c79a70a98d2d66c0a4e18c1015ec0f14904a6654dc62e2"
+      },
+      {
+        "part": "dates-child-and-crossing-marginal-note",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-04-dates-name-marginal-note-fullscreen.jpg",
+        "sha256": "a48a93248fc2f5ed5f4b1b5d88c301c14f165a8bd5c52dbf2f8542b8dfedc670"
+      },
+      {
+        "part": "clergy-and-godparents-maximum-detail",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-896N-R-05-clergy-godparents-detail-fullscreen.jpg",
+        "sha256": "ec6970a21dc9b4d163ce8de74af757adfea00517bf7630f5bb8e06c7693ca19b"
+      }
+    ],
+    "deprecatedEvidence": {
+      "path": "docs/evidence/familysearch/timoshovka/evfimii-anpilov-birth-1894.jpg",
+      "reason": "Старый кадр не соответствовал полноэкранному стандарту и не содержал всех полей записи; заменён комплектом 1728x1080."
+    }
   },
   "review": {
-    "status": "working",
-    "identityResolution": "linked-to-P0005"
+    "status": "complete",
+    "identityResolution": "linked-to-P0005",
+    "transcriptionConfidence": "medium",
+    "unresolved": [
+      "Уточнить окончание фамилии священника Арсения [Нечип…]."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Евфимий Григорьевич Ампилогов родился 10 октября и был крещён 15 октября 1894 года. Родители — Григорий Андреевич Анпилов и Евдокия Исидоровна; восприемники — Михаил Павлович Тетерев и Евдокия Максимовна Гостищева."
   }
 }
