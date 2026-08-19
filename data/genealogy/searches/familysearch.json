@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "provider": "FamilySearch",
+  "rules": {
+    "indexDataIsHintOnly": true,
+    "requireVisibleImage": true,
+    "waitForSharpImageBeforeCapture": true,
+    "requiredTranscriptionScope": [
+      "all_named_people",
+      "parents",
+      "godparents_or_recipients",
+      "witnesses_or_sureties",
+      "occupations_and_estates",
+      "places",
+      "dates",
+      "marginalia_and_signatures"
+    ],
+    "keepLiteralAndModernReadingsSeparate": true
+  },
+  "surnameQueries": [
+    "Ампилогов",
+    "Анпилогов",
+    "Ампилов",
+    "Анпилов",
+    "Амилогов",
+    "Емпилогов",
+    "Емпалогов",
+    "Еппалогов",
+    "Ampilogov",
+    "Anpilogov",
+    "Ampilov",
+    "Anpilov",
+    "Amilogov"
+  ],
+  "searchRuns": [
+    {
+      "searchRunId": "FS-SEARCH-0001",
+      "query": {"surname":"Ампилогов","matchMode":"FamilySearch-default-fuzzy"},
+      "searchUrl": "https://www.familysearch.org/en/search/record/results?q.surname=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2",
+      "startedAt": "2026-08-19",
+      "reportedResultCount": 15744,
+      "resultsPerPage": 20,
+      "pages": [
+        {
+          "page": 1,
+          "status": "in-progress",
+          "reviewedRecordArks": ["https://www.familysearch.org/ark:/61903/1:1:6V7V-D6XB"],
+          "newSourceIds": ["FS-3QSQ-G994-V94B-X"],
+          "note": "Первый результат обработан; остальные 19 результатов страницы ещё не пройдены."
+        }
+      ]
+    },
+    {
+      "searchRunId": "FS-SEARCH-0002",
+      "query": {
+        "birthLikePlace": "Tymoshivka, Melitopol, Taurida, Russian Empire",
+        "surnames": ["Ампилогов", "Анпилогов", "Ампилов", "Анпилов"],
+        "matchMode": "FamilySearch-default-fuzzy"
+      },
+      "searchUrl": "https://www.familysearch.org/en/search/record/results?count=100&q.birthLikePlace=Tymoshivka%2C%20Melitopol%2C%20Taurida%2C%20Russian%20Empire&q.surname=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&q.surname.1=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&q.surname.2=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2&q.surname.3=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2",
+      "startedAt": "2026-08-19",
+      "reportedResultCount": 179493,
+      "resultsPerPage": 100,
+      "warning": "FamilySearch применил место нечётко: в выдачу входят Крым, Киев, Тобольск и другие регионы. Каждое фактическое место проверяется по заголовку архивной единицы и скану; параметру поисковой выдачи доверять нельзя.",
+      "pages": [
+        {
+          "page": 1,
+          "status": "in-progress",
+          "discoveredRecordArks": 100,
+          "uniqueImageArks": 52,
+          "reviewedRecordArks": ["https://www.familysearch.org/ark:/61903/1:1:6J48-5YPZ"],
+          "newSourceIds": ["FS-3Q9M-CS9F-G4DS-F"],
+          "note": "Первая уникальная запись страницы обработана: Пелагия Анпилогов, Симферополь, 1872. Родительские строки в выдаче считаются дублями того же изображения, а не отдельными Records."
+        }
+      ]
+    }
+  ]
+}

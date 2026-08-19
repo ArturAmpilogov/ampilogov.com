@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "genealogy:index": "node scripts/genealogy/build-familysearch-index.mjs",
+    "genealogy:names": "node scripts/genealogy/normalize-mention-names.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
