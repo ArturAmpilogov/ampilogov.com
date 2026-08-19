@@ -4,21 +4,24 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4135959",
-    "digitalFolderNumber": "007824165_003_M9ML-MJH",
-    "imageNumber": 84
+    "title": "Украина, Запорожье Метрические Книги, 1774-1935",
+    "filmNumber": "007824165",
+    "imageNumber": 726,
+    "imageCount": 1042
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSK-2SSC-Z",
     "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6XC6-71WZ"
   },
   "event": {
-    "type": "birth",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "13 сентября 1900",
+      "display": "13 / 14 сентября 1900",
       "iso": "1900-09-13",
       "calendar": "source-calendar-unverified"
     },
     "place": {
+      "asWritten": "Тимошевский",
       "normalized": "Тимошевка",
       "placeId": "tymoshivka"
     }
@@ -26,27 +29,57 @@
   "indexData": {
     "recordId": "6XC6-71WZ",
     "subject": "Феодор Ампилогов",
+    "sex": "male",
     "father": "Григорий Андреев Ампилогов",
-    "mother": "Евдокия Исидорова"
+    "mother": "Евдокия Исидорова",
+    "birthDate": "13 сентября 1900",
+    "placeAsIndexed": "запорижжя, Украина, Советский Союз"
   },
   "mentions": [
     {
       "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M1",
       "role": "child",
       "personId": "P0008",
+      "sex": "male",
+      "nameAsTranscribed": "Феодоръ",
       "nameAsIndexed": "Феодор Ампилогов",
+      "modernName": "Феодор Григорьевич Ампилогов",
+      "patronymic": "Григорьевич",
+      "patronymicEvidence": {
+        "basis": "derived-from-father-given-name",
+        "sourceMentionId": "FS-3Q9M-CSSK-2SSC-Z-M2",
+        "confidence": "high"
+      },
       "displayName": "Феодор Григорьевич Ампилогов",
       "alternateNames": [
-        "Феодор Ампилогов"
+        "Феодор Ампилогов",
+        "Фёдор Ампилогов"
       ]
     },
     {
       "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M2",
       "role": "father",
       "personId": "P0002",
+      "sex": "male",
+      "nameAsTranscribed": "Григорій Андреевъ Ампилоговъ",
       "nameAsIndexed": "Григорий Андреев Ампилогов",
+      "modernName": "Григорий Андреевич Ампилогов",
+      "socialStatus": {
+        "asWritten": "Тимошевскій крестьянинъ",
+        "normalized": "тимошевский крестьянин"
+      },
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскій крестьянинъ",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
       "displayName": "Григорий Андреевич Ампилогов",
       "alternateNames": [
+        "Григорій Андреевъ Ампилоговъ",
         "Григорий Андреев Ампилогов"
       ]
     },
@@ -54,21 +87,162 @@
       "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M3",
       "role": "mother",
       "personId": "P0003",
+      "sex": "female",
+      "nameAsTranscribed": "Евдокія Исидорова",
       "nameAsIndexed": "Евдокия Исидорова",
+      "modernName": "Евдокия Исидоровна Рыкова",
+      "relationshipNote": "законная жена Григория Андреева Ампилогова",
       "displayName": "Евдокия Исидоровна Рыкова",
       "alternateNames": [
+        "Евдокія Исидорова",
         "Евдокия Исидорова"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M4",
+      "role": "godfather",
+      "sex": "male",
+      "nameAsTranscribed": "Михаилъ Павловъ Тетеревъ",
+      "modernName": "Михаил Павлович Тетерев",
+      "socialStatus": {
+        "asWritten": "Тимошевскій крестьянинъ",
+        "normalized": "тимошевский крестьянин"
+      },
+      "eventAssociation": "child",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскіе крестьяне",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
+      "displayName": "Михаил Павлович Тетерев",
+      "alternateNames": [
+        "Михаилъ Павловъ Тетеревъ"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M5",
+      "role": "godmother",
+      "sex": "female",
+      "nameAsTranscribed": "дѣвица Варвара Феодорова Ампилогова",
+      "modernName": "Варвара Фёдоровна Ампилогова",
+      "eventAssociation": "child",
+      "socialStatus": {
+        "asWritten": "Тимошевская крестьянка; дѣвица",
+        "normalized": "тимошевская крестьянка; девица"
+      },
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "Тимошевскіе крестьяне",
+          "normalized": "Тимошевка",
+          "placeId": "tymoshivka",
+          "confidence": "high"
+        }
+      ],
+      "displayName": "Варвара Фёдоровна Ампилогова",
+      "alternateNames": [
+        "дѣвица Варвара Феодорова Ампилогова"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M6",
+      "role": "clergy",
+      "nameAsTranscribed": "Священникъ Арсеній [фамилия неразборчива]",
+      "displayName": "священник Арсений [фамилия неразборчива]",
+      "alternateNames": [
+        "Священникъ Арсеній [фамилия неразборчива]"
+      ],
+      "uncertainties": [
+        "фамилия священника"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSK-2SSC-Z-M7",
+      "role": "clergy",
+      "nameAsTranscribed": "Діаконъ Василій [фамилия неразборчива]",
+      "displayName": "диакон Василий [фамилия неразборчива]",
+      "alternateNames": [
+        "Діаконъ Василій [фамилия неразборчива]"
+      ],
+      "uncertainties": [
+        "фамилия диакона"
       ]
     }
   ],
+  "transcription": {
+    "status": "complete",
+    "literal": "[№ родившихся мужского пола: 201] | [№ родившихся женского пола: —] | 13 сентября [родился] | 14 сентября [крещён] | Феодоръ | Тимошевскій крестьянинъ Григорій Андреевъ Ампилоговъ и законная его жена Евдокія Исидорова; оба православные. | Восприемники: Тимошевскіе крестьяне Михаилъ Павловъ Тетеревъ и дѣвица Варвара Феодорова Ампилогова. | Священникъ Арсеній [фамилия неразборчива]; діаконъ Василій [фамилия неразборчива].",
+    "layoutNote": "Запись занимает третью строку разворота. В мужской счётной графе стоит 201; женская графа оставлена без нового номера. Числа 13 и 14 относятся соответственно к рождению и крещению, месяц «Сентябрь» указан над календарными графами. Имена духовенства читаются, но фамилии на повреждённом и бледном листе уверенно не восстанавливаются.",
+    "modernInterpretation": "Феодор Григорьевич Ампилогов, 201-й зарегистрированный мальчик, родился 13 сентября и был крещён 14 сентября 1900 года. Родители — тимошевский крестьянин Григорий Андреевич Ампилогов и его законная жена Евдокия Исидоровна; оба православные. Восприемники — Михаил Павлович Тетерев и девица Варвара Фёдоровна Ампилогова. В записи названы священник Арсений и диакон Василий; их фамилии требуют дополнительной проверки.",
+    "fields": {
+      "maleSequenceNumber": "201",
+      "femaleSequenceNumber": "номер не проставлен",
+      "birthDate": "13 сентября 1900",
+      "baptismDate": "14 сентября 1900",
+      "child": "Феодор Григорьевич Ампилогов",
+      "parents": "тимошевский крестьянин Григорий Андреевич Ампилогов и законная жена его Евдокия Исидоровна; оба православные",
+      "godparents": [
+        "Михаил Павлович Тетерев",
+        "девица Варвара Фёдоровна Ампилогова"
+      ],
+      "clergy": [
+        "священник Арсений [фамилия неразборчива]",
+        "диакон Василий [фамилия неразборчива]"
+      ]
+    }
+  },
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "docs/evidence/familysearch/timoshovka/feodor-ampilogov-birth-1900.jpg",
+    "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSK-2SSC-Z-02-dates-child-parents-fullscreen.jpg",
     "capturedAt": "2026-08-19",
-    "sha256": "e5f7b807095bd375f638cd9c620ee6e9c7a19a4784840a2c83e9f779abe2ea6d"
+    "sha256": "b64a38bfce79c91efc6c4edc9923a6218bb01fcbe5cad8fbbab473d11fbfc33a",
+    "publicDisplay": false,
+    "rightsNote": "FamilySearch показывает договорное ограничение на скачивание; публичный показ локальных контрольных снимков отдельно не подтверждён.",
+    "quality": {
+      "status": "approved",
+      "viewerFullscreen": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "sharpTilesConfirmed": true,
+      "viewport": "1776x1110",
+      "strategy": "overview-plus-multiple-zoomed-fragments"
+    },
+    "fragments": [
+      {
+        "part": "fullscreen-overview-with-film-and-image-number",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSK-2SSC-Z-01-fullscreen-overview.jpg",
+        "sha256": "878fdacc790be4f73fbc75dd4255a5ba313e78ef0f523a0dc340caee6bd6cc46"
+      },
+      {
+        "part": "sequence-dates-child-and-parents",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSK-2SSC-Z-02-dates-child-parents-fullscreen.jpg",
+        "sha256": "b64a38bfce79c91efc6c4edc9923a6218bb01fcbe5cad8fbbab473d11fbfc33a"
+      },
+      {
+        "part": "parents-godparents-and-clergy",
+        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSK-2SSC-Z-03-parents-godparents-clergy-fullscreen.jpg",
+        "sha256": "c57e9fd3a5f92ded337d7bae67e791dc9d2d066f5b44371abbfd540788af6ea4"
+      }
+    ],
+    "deprecatedEvidence": {
+      "path": "docs/evidence/familysearch/timoshovka/feodor-ampilogov-birth-1900.jpg",
+      "reason": "Старый кадр не соответствовал полноэкранному стандарту; заменён комплектом 1728x1080."
+    }
   },
   "review": {
-    "status": "working",
-    "identityResolution": "linked-to-P0008"
+    "status": "complete",
+    "identityResolution": "linked-to-P0008",
+    "transcriptionConfidence": "medium",
+    "unresolved": [
+      "Уточнить фамилии священника Арсения и диакона Василия."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Феодор Григорьевич Ампилогов родился 13 сентября и был крещён 14 сентября 1900 года. Восприемники — Михаил Павлович Тетерев и Варвара Фёдоровна Ампилогова."
   }
 }
