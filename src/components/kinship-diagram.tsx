@@ -29,35 +29,6 @@ const diagrams: Record<string, { eyebrow: string; title: string; paths: KinshipP
       },
     ],
   },
-  "orel-1594": {
-    eyebrow: "Писцовая книга 1594/95 года",
-    title: "Две группы родства в Баздыреве",
-    paths: [
-      {
-        label: "Прямо названы детьми Микулы",
-        generations: [
-          [{ name: "Микула", note: "отец назван в отчестве" }],
-          [
-            { name: "Василий", note: "свой помещичий двор" },
-            { name: "Тимофей", note: "свой помещичий двор" },
-            { name: "Карп", note: "свой помещичий двор" },
-          ],
-        ],
-      },
-      {
-        label: "Вероятное родство по отчеству и месту",
-        certainty: "probable",
-        generations: [
-          [{ name: "Василий", note: "предполагаемый общий отец" }],
-          [
-            { name: "Беляй Васильевич", note: "Онфилогов" },
-            { name: "Осип Васильевич", note: "Анфилогов" },
-          ],
-        ],
-      },
-    ],
-    note: "Сплошная связь передаёт формулу источника; пунктир — осторожное сопоставление двух Васильевичей.",
-  },
   "orel-1625": {
     eyebrow: "Выписи 1625 года",
     title: "Три прямо названные ветви",
@@ -84,6 +55,7 @@ const diagrams: Record<string, { eyebrow: string; title: string; paths: KinshipP
         ],
       },
     ],
+    note: "Все три связи отец — дети прямо названы в выписи 1625 года; схема не добавляет предполагаемых поколений.",
   },
   sergey: {
     eyebrow: "Три поколения в одной записи",
@@ -149,7 +121,166 @@ const diagrams: Record<string, { eyebrow: string; title: string; paths: KinshipP
   },
 };
 
+function AmphilochosFamilyTree() {
+  return (
+    <figure className="kinship-diagram kinship-diagram--family-tree">
+      <figcaption>
+        <span>Фиванский цикл</span>
+        <strong>Семья прорицателя</strong>
+      </figcaption>
+
+      <div
+        className="kinship-family-tree"
+        aria-label="Амфиарай и Эрифила — родители Алкмеона и Амфилохоса"
+        role="group"
+      >
+        <svg aria-hidden="true" className="kinship-family-tree-lines" preserveAspectRatio="none" viewBox="0 0 100 100">
+          <path className="kinship-family-tree-line" d="M24 19 H76" />
+          <path className="kinship-family-tree-line" d="M50 19 V57 H24 V82" />
+          <path className="kinship-family-tree-line" d="M50 57 H76 V82" />
+          <circle className="kinship-family-tree-joint" cx="50" cy="19" r="1.35" />
+          <circle className="kinship-family-tree-end" cx="24" cy="82" r="1.1" />
+          <circle className="kinship-family-tree-end" cx="76" cy="82" r="1.1" />
+        </svg>
+
+        <section aria-label="Родители" className="kinship-family-tier kinship-family-tier--parents">
+          <small>Родители</small>
+          <div>
+            <span className="kinship-family-person" tabIndex={0}>
+              <strong>Амфиарай</strong>
+              <em>прорицатель</em>
+            </span>
+            <span className="kinship-family-person" tabIndex={0}>
+              <strong>Эрифила</strong>
+              <em>мать героев</em>
+            </span>
+          </div>
+        </section>
+
+        <section aria-label="Дети" className="kinship-family-tier kinship-family-tier--children">
+          <small>Сыновья</small>
+          <div>
+            <span className="kinship-family-person" tabIndex={0}>
+              <strong>Алкмеон</strong>
+              <em>предводитель эпигонов</em>
+            </span>
+            <span className="kinship-family-person" tabIndex={0}>
+              <strong>Амфилохос</strong>
+              <em>прорицатель и герой-врач</em>
+            </span>
+          </div>
+        </section>
+      </div>
+    </figure>
+  );
+}
+
+type OrelBranch = {
+  certainty: "documented" | "probable";
+  label: string;
+  explanation: string;
+  parent: Person;
+  children: Person[];
+};
+
+const orelBranches: OrelBranch[] = [
+  {
+    certainty: "documented",
+    label: "Родство названо прямо",
+    explanation: "Василий, Тимофей и Карп записаны Микулиными детьми.",
+    parent: { name: "Микула", note: "отец назван в отчествах сыновей" },
+    children: [
+      { name: "Василий", note: "Микулин сын Анфилогов" },
+      { name: "Тимофей", note: "Микулин сын Анфилогов" },
+      { name: "Карп", note: "Микулин сын Анфилогов" },
+    ],
+  },
+  {
+    certainty: "probable",
+    label: "Вероятное родство",
+    explanation: "Одинаковое отчество и одна деревня позволяют предполагать общего отца.",
+    parent: { name: "Василий", note: "предполагаемый общий отец" },
+    children: [
+      { name: "Беляй", note: "Васильев сын Онфилогов" },
+      { name: "Осип", note: "Васильев сын Анфилогов" },
+    ],
+  },
+];
+
+function Orel1594FamilyTree() {
+  return (
+    <figure className="kinship-diagram kinship-diagram--orel-tree">
+      <figcaption>
+        <span>Писцовая книга 1594/95 года</span>
+        <strong>Родство в Баздыреве</strong>
+      </figcaption>
+
+      <div
+        className="orel-kinship-trees"
+        aria-label="Документированная семья Микулы и предполагаемая семья Василия"
+        role="group"
+      >
+        {orelBranches.map((branch) => {
+          const childCount = branch.children.length;
+          const childPositions = childCount === 3 ? [16.67, 50, 83.33] : [25, 75];
+          const left = childPositions[0];
+          const right = childPositions[childPositions.length - 1];
+
+          return (
+            <section
+              className={`orel-kinship-branch is-${branch.certainty}`}
+              key={branch.label}
+            >
+              <header>
+                <strong>{branch.label}</strong>
+                <p>{branch.explanation}</p>
+              </header>
+
+              <div className="orel-family-tree">
+                <span className="orel-family-person is-parent">
+                  <strong>{branch.parent.name}</strong>
+                  <em>{branch.parent.note}</em>
+                </span>
+
+                <svg
+                  aria-hidden="true"
+                  className="orel-family-connectors"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 100 60"
+                >
+                  <path d={`M50 0 V28 M${left} 28 H${right}`} />
+                  {childPositions.map((position) => (
+                    <path d={`M${position} 28 V60`} key={position} />
+                  ))}
+                  <circle cx="50" cy="28" r="1.35" />
+                </svg>
+
+                <div className={`orel-family-children has-${childCount}-children`}>
+                  {branch.children.map((child) => (
+                    <span className="orel-family-person is-child" key={child.name}>
+                      <strong>{child.name}</strong>
+                      <em>{child.note}</em>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </section>
+          );
+        })}
+      </div>
+
+      <p>
+        Сплошная линия повторяет прямую формулу писцовой книги; пунктир показывает вероятную связь,
+        которую документ не называет родством.
+      </p>
+    </figure>
+  );
+}
+
 export function KinshipDiagram({ id }: { id: string }) {
+  if (id === "amphilochos") return <AmphilochosFamilyTree />;
+  if (id === "orel-1594") return <Orel1594FamilyTree />;
+
   const diagram = diagrams[id];
   if (!diagram) return null;
 

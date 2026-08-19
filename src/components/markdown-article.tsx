@@ -18,8 +18,13 @@ import { KonyaMap } from "@/components/konya-map";
 import { KurskOboyanMap } from "@/components/kursk-oboyan-map";
 import { MallosMap } from "@/components/mallos-map";
 import { OrelEstatesMap } from "@/components/orel-estates-map";
+import { OrelEstateTable } from "@/components/orel-estate-table";
 import { OrelLinesMap } from "@/components/orel-lines-map";
+import { OrelOathPrelude } from "@/components/orel-oath-prelude";
+import { OrelServicePrelude } from "@/components/orel-service-prelude";
 import { PrilukiMap } from "@/components/priluki-map";
+import { PrilukiRecordAnatomy } from "@/components/priluki-record-anatomy";
+import { PrilukiScribePrelude } from "@/components/priluki-scribe-prelude";
 import { SourceExcerpt } from "@/components/source-excerpt";
 import { SurnameVariantsEvidence } from "@/components/surname-variants-evidence";
 import { resolveDocumentUrl } from "@/lib/docs";
@@ -56,13 +61,14 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
       if (imageNode) {
         const src = typeof imageNode.properties.src === "string" ? imageNode.properties.src : undefined;
         const alt = typeof imageNode.properties.alt === "string" ? imageNode.properties.alt : undefined;
+        const caption = typeof imageNode.properties.title === "string" ? imageNode.properties.title : alt;
         return (
           <figure className="article-figure">
             <img
               src={src ? resolveDocumentUrl(sourcePath, src) : undefined}
               alt={alt ?? "Фотокопия документа"}
             />
-            {alt ? <figcaption>{alt}</figcaption> : null}
+            {caption ? <figcaption>{caption}</figcaption> : null}
           </figure>
         );
       }
@@ -76,6 +82,15 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
         alt={alt ?? "Фотокопия документа"}
       />
     ),
+    h2: ({ children, ...props }) => {
+      const text = headingText(children);
+      const marker = text.match(/\s*\{#([a-z][a-z0-9-]*)\}\s*$/i);
+      return (
+        <h2 {...props} id={marker?.[1] ?? props.id}>
+          {marker ? text.slice(0, marker.index).trimEnd() : children}
+        </h2>
+      );
+    },
     h3: ({ children, ...props }) => {
       const sourceId = headingText(children).match(/^(S-[A-Z0-9-]+)/)?.[1]?.toLowerCase();
       return <h3 {...props} id={sourceId ?? props.id}>{children}</h3>;
@@ -87,7 +102,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
     (_, sourceId: string) => `[${sourceId}](/read/research/sources#${sourceId.toLowerCase()})`,
   );
   const sections = linkedContent.split(
-    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_LINES_MAP\}\}|\{\{PRILUKI_MAP\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
+    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_ESTATE_TABLE\}\}|\{\{OREL_LINES_MAP\}\}|\{\{OREL_OATH_PRELUDE\}\}|\{\{OREL_SERVICE_PRELUDE\}\}|\{\{PRILUKI_MAP\}\}|\{\{PRILUKI_RECORD_ANATOMY\}\}|\{\{PRILUKI_SCRIBE_PRELUDE\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
   );
 
   return (
@@ -107,8 +122,13 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
             {section === "{{KURSK_OBOYAN_MAP}}" ? <KurskOboyanMap /> : null}
             {section === "{{MALLOS_MAP}}" ? <MallosMap /> : null}
             {section === "{{OREL_ESTATES_MAP}}" ? <OrelEstatesMap /> : null}
+            {section === "{{OREL_ESTATE_TABLE}}" ? <OrelEstateTable /> : null}
             {section === "{{OREL_LINES_MAP}}" ? <OrelLinesMap /> : null}
+            {section === "{{OREL_OATH_PRELUDE}}" ? <OrelOathPrelude /> : null}
+            {section === "{{OREL_SERVICE_PRELUDE}}" ? <OrelServicePrelude /> : null}
             {section === "{{PRILUKI_MAP}}" ? <PrilukiMap /> : null}
+            {section === "{{PRILUKI_RECORD_ANATOMY}}" ? <PrilukiRecordAnatomy /> : null}
+            {section === "{{PRILUKI_SCRIBE_PRELUDE}}" ? <PrilukiScribePrelude /> : null}
             {section === "{{CALENDAR_NAME_EXAMPLES}}" ? <CalendarNameExamples /> : null}
             {section === "{{AMPHILOCHOS_CULT_EVIDENCE}}" ? <AmphilochosCultEvidence /> : null}
             {section === "{{AMPHILOCHOS_COIN_TEASER}}" ? <AmphilochosCoinTeaser /> : null}

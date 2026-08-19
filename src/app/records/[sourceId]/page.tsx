@@ -45,7 +45,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
             </span>
             {record.originalUrl ? (
               <a className="record-open-scan" href={record.originalUrl} target="_blank" rel="noreferrer">
-                Открыть скан <span aria-hidden="true">↗</span>
+                {record.originalLabel} <span aria-hidden="true">↗</span>
               </a>
             ) : null}
           </div>
@@ -104,8 +104,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
               <div><dt>Место события</dt><dd>{record.place}</dd></div>
             </dl>
             <div className="record-source-links">
-              {record.originalUrl ? <a href={record.originalUrl} target="_blank" rel="noreferrer">Открыть скан в FamilySearch ↗</a> : null}
-              {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">Индекс FamilySearch ↗</a> : null}
+              {record.originalUrl ? <a href={record.originalUrl} target="_blank" rel="noreferrer">{record.originalLabel} ↗</a> : null}
+              {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">{record.indexedLabel} ↗</a> : null}
               {record.repositoryUrl ? <a href={record.repositoryUrl} target="_blank" rel="noreferrer">Архив-хранитель ↗</a> : null}
             </div>
             {!record.mayDisplayEvidence ? (

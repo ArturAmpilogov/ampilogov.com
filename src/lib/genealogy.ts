@@ -39,6 +39,7 @@ type SourceRecord = {
   provider?: string;
   collection?: {
     title?: string;
+    archiveCitation?: string;
     imageGroupNumber?: string;
     itemNumber?: number;
     imageNumber?: number;
@@ -144,7 +145,9 @@ export type ArchiveRecord = {
   repositoryUrl: string | null;
   imageReference: string;
   originalUrl: string | null;
+  originalLabel: string;
   indexedUrl: string | null;
+  indexedLabel: string;
   evidenceUrl: string | null;
   mayDisplayEvidence: boolean;
   rightsNote: string;
@@ -174,7 +177,8 @@ export type DirectorySource = {
   modernInterpretation: string;
   status: string;
   unresolved: string[];
-  familySearchUrl: string | null;
+  externalUrl: string | null;
+  externalLabel: string;
   evidenceUrl: string | null;
   imageReference: string;
 };
@@ -217,6 +221,7 @@ const eventLabels: Record<string, string> = {
   baptism: "Крещение",
   marriage: "Брак",
   death: "Смерть",
+  "service-review": "Смотр служилых людей",
 };
 
 const roleLabels: Record<string, string> = {
@@ -234,6 +239,7 @@ const roleLabels: Record<string, string> = {
   surety: "поручитель",
   declarant: "заявитель",
   clergy: "священнослужитель",
+  serviceman: "служилый человек",
   uncertain: "роль уточняется",
 };
 
@@ -246,6 +252,7 @@ const placeRelationLabels: Record<string, string> = {
 
 function sourcePosition(source: SourceRecord) {
   return [
+    source.collection?.archiveCitation,
     source.collection?.imageGroupNumber,
     source.collection?.itemNumber ? `Item ${source.collection.itemNumber}` : null,
     source.collection?.imageNumber ? `кадр ${source.collection.imageNumber}` : null,
@@ -303,6 +310,7 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     basis: observation.basis ?? "Происхождение человека отличается от места события",
     confidence: observation.confidence ?? "medium",
   }));
+  const isFamilySearch = (source.provider ?? "FamilySearch") === "FamilySearch";
 
   return {
     sourceId: source.sourceId,
@@ -318,7 +326,9 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     repositoryUrl: source.repository?.url ?? null,
     imageReference: sourcePosition(source),
     originalUrl: source.links?.imageArk ?? null,
+    originalLabel: isFamilySearch ? "Открыть скан в FamilySearch" : "Открыть цифровую копию",
     indexedUrl: source.links?.indexedRecordArk ?? source.links?.recordArk ?? null,
+    indexedLabel: isFamilySearch ? "Индекс FamilySearch" : "Опубликованный текст",
     evidenceUrl: evidenceUrl(source),
     mayDisplayEvidence: source.evidence?.publicDisplay === true,
     rightsNote: source.evidence?.rightsNote ?? "Права на изображение не проверены; публичная копия не показывается.",
@@ -352,8 +362,8 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
 }
 
 export function getRecordsDirectory() {
-  const records = readJsonDirectory<SourceRecord>(
-    path.join(GENEALOGY_ROOT, "sources", "familysearch"),
+  const records = readJsonTree<SourceRecord>(
+    path.join(GENEALOGY_ROOT, "sources"),
   ).map(toArchiveRecord).sort((left, right) =>
     (left.year || "9999").localeCompare(right.year || "9999") || left.date.localeCompare(right.date, "ru")
   );
@@ -379,6 +389,17 @@ function readJsonDirectory<T>(directory: string): T[] {
     .map((file) => JSON.parse(readFileSync(path.join(directory, file), "utf8")) as T);
 }
 
+function readJsonTree<T>(directory: string): T[] {
+  return readdirSync(directory, { withFileTypes: true })
+    .sort((left, right) => left.name.localeCompare(right.name))
+    .flatMap((entry) => {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) return readJsonTree<T>(entryPath);
+      if (!entry.name.endsWith(".json")) return [];
+      return [JSON.parse(readFileSync(entryPath, "utf8")) as T];
+    });
+}
+
 function evidenceUrl(source?: SourceRecord) {
   const evidencePath = source?.evidence?.path;
   if (!evidencePath?.startsWith("docs/")) return null;
@@ -400,9 +421,7 @@ function formatDate(value?: string) {
 export function getPeopleDirectory() {
   const people = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
   const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
-  const sources = readJsonDirectory<SourceRecord>(
-    path.join(GENEALOGY_ROOT, "sources", "familysearch"),
-  );
+  const sources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"));
   const peopleById = new Map(people.map((person) => [person.personId, person]));
   const sourcesById = new Map(sources.map((source) => [source.sourceId, source]));
 
@@ -436,7 +455,8 @@ export function getPeopleDirectory() {
           modernInterpretation: source.transcription?.modernInterpretation ?? "",
           status: source.transcription?.status ?? source.review?.status ?? "working",
           unresolved: source.review?.unresolved ?? [],
-          familySearchUrl: source.links?.imageArk ?? source.links?.indexedRecordArk ?? source.links?.recordArk ?? null,
+          externalUrl: source.links?.imageArk ?? source.links?.indexedRecordArk ?? source.links?.recordArk ?? null,
+          externalLabel: (source.provider ?? "FamilySearch") === "FamilySearch" ? "FamilySearch" : "Опубликованный текст",
           evidenceUrl: evidenceUrl(source),
           imageReference: position,
         };

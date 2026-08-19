@@ -53,7 +53,7 @@ const excerpts: Record<string, SourceExcerptDefinition> = {
     registryHref: "/read/research/sources#s-name-nikonov",
   },
   "tonkoy-onfilogov": {
-    eyebrow: "Публикация списка XVI века",
+    eyebrow: "Научная публикация рукописной копии",
     title: "Тонкой Онфилогов среди непашенных дворов",
     transcription: "«…а непашенных дворов: в. Некраско Данилов, в. Тонкой Онфилогов…»",
     citation: "С. М. Каштанов. «По следам троицких копийных книг XVI в.» // Записки отдела рукописей. Вып. 40. М.: Книга, 1979. С. 43, док. № 3 (в PDF — с. 44).",
