@@ -36,6 +36,7 @@
 ## Люди, документы и фотокопии
 
 - [Как устроены данные](people/README.md)
+- [Машиночитаемый JSON-архив](../data/genealogy/README.md)
 - [Общий реестр, 1800–1999](people/index-1800-1999.md)
 - [Карточки документов](records/README.md)
 - [Правила хранения фотокопий](evidence/README.md)
@@ -49,6 +50,7 @@
 - [Открытые вопросы](research/open-questions.md)
 - [Баздырево](places/bazdyrevo.md)
 - [Тимошевка](places/tymoshivka.md)
+- [Самара](places/samara.md)
 
 ## Редакционное правило
 
