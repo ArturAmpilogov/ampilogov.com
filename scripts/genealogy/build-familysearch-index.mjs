@@ -83,6 +83,7 @@ for (const { file, data } of sources) {
   for (const mention of data.mentions ?? []) {
     const observedNames = [
       mention.displayName,
+      mention.patronymic,
       ...(mention.alternateNames ?? []),
       mention.nameAsTranscribed,
       mention.nameAsWritten,

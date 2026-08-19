@@ -39,9 +39,16 @@ export default async function RecordPage({ params }: RecordPageProps) {
             <h1>{record.eventLabel}</h1>
             <p>{record.date} · {record.place}</p>
           </div>
-          <span className={`record-state ${record.isComplete ? "is-complete" : "is-reading"}`}>
-            {record.isComplete ? "Полная расшифровка" : "Требует полного чтения"}
-          </span>
+          <div className="record-heading-actions">
+            <span className={`record-state ${record.isComplete ? "is-complete" : "is-reading"}`}>
+              {record.isComplete ? "Полная расшифровка" : "Требует полного чтения"}
+            </span>
+            {record.originalUrl ? (
+              <a className="record-open-scan" href={record.originalUrl} target="_blank" rel="noreferrer">
+                Открыть скан <span aria-hidden="true">↗</span>
+              </a>
+            ) : null}
+          </div>
         </header>
 
         <section className="record-texts" aria-label="Тексты записи">
@@ -51,11 +58,6 @@ export default async function RecordPage({ params }: RecordPageProps) {
                 <span className="section-label">Как в документе</span>
                 <h2>Буквальная расшифровка</h2>
               </div>
-              {record.originalUrl ? (
-                <a className="record-open-scan" href={record.originalUrl} target="_blank" rel="noreferrer">
-                  Открыть скан <span aria-hidden="true">↗</span>
-                </a>
-              ) : null}
             </div>
             {record.literal ? (
               <blockquote>{record.literal}</blockquote>

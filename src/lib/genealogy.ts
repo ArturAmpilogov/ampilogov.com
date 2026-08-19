@@ -6,6 +6,7 @@ const GENEALOGY_ROOT = path.join(process.cwd(), "data/genealogy");
 type PersonRecord = {
   personId: string;
   displayName: string;
+  patronymic?: string;
   sex?: "male" | "female";
   nameVariants?: string[];
   birth?: { date?: string; placeId?: string };
@@ -65,6 +66,12 @@ type SourceRecord = {
     personId?: string;
     role?: string;
     displayName?: string;
+    patronymic?: string;
+    patronymicEvidence?: {
+      basis?: string;
+      sourceMentionId?: string;
+      confidence?: "high" | "medium" | "low";
+    };
     alternateNames?: string[];
     nameAsWritten?: string;
     nameAsIndexed?: string;
@@ -109,6 +116,7 @@ export type ArchiveRecordPerson = {
   personId: string | null;
   role: string;
   name: string;
+  patronymic: string | null;
   alternateNames: string[];
   places: Array<{ relation: string; label: string; confidence: string }>;
   details: string[];
@@ -260,6 +268,7 @@ function sourcePeople(source: SourceRecord): ArchiveRecordPerson[] {
     personId: mention.personId ?? null,
     role: roleLabels[mention.role ?? ""] ?? mention.role ?? "упоминание",
     name: mention.displayName ?? mention.modernName ?? mention.nameAsIndexed ?? mention.nameAsTranscribed ?? mention.nameAsWritten ?? "Имя уточняется",
+    patronymic: mention.patronymic ?? null,
     alternateNames: mention.alternateNames ?? [],
     places: (mention.places ?? []).map((place) => ({
       relation: placeRelationLabels[place.relation ?? ""] ?? place.relation ?? "происхождение",
@@ -330,7 +339,7 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
       source.repository?.name,
       source.repository?.location,
       sourcePosition(source),
-      ...people.flatMap((person) => [person.name, person.role]),
+      ...people.flatMap((person) => [person.name, person.patronymic, person.role]),
       ...people.flatMap((person) => person.alternateNames),
       ...people.flatMap((person) => person.details),
       ...people.flatMap((person) => person.places.map((entry) => entry.label)),
