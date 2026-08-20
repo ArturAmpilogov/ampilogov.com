@@ -1,13 +1,133 @@
 {
-  "schemaVersion":1,"sourceId":"FS-3QS7-L99H-MNSF","provider":"FamilySearch",
-  "collection":{"id":"1807365","title":"Россия, Самарские метрические книги, 1748-1934","digitalFolderNumber":"005476335","itemNumber":2,"imageNumber":306,"imageCount":384,"pageNumber":"303–304","locality":"Чувичи"},
-  "links":{"imageArk":"https://www.familysearch.org/ark:/61903/3:1:3QS7-L99H-MNSF","indexedRecordArk":"https://www.familysearch.org/ark:/61903/1:1:QG2C-TXBV"},
-  "event":{"type":"death-and-burial","date":{"display":"1 / 2 марта 1915","iso":"1915-03-01","calendar":"source-calendar-unverified"},"place":{"asTranscribed":"село Чувичи","normalized":"Чувичи, Самарская губерния"}},
-  "indexData":{"recordId":"QG2C-TXBV","subject":"Любовь Тимофеевна Анпилогов","sex":"female","age":"1 год","indexDateWarning":"Индекс даёт диапазон 1911–1916; заголовок оригинала устанавливает 1915 год."},
-  "mentions":[{"mentionId":"FS-3QS7-L99H-MNSF-M1","role":"deceased-child","nameAsTranscribed":"Любовь","displayName":"Любовь Тимофеевна Анпилогова","sex":"female","personId":null,"alternateNames":[]},{"mentionId":"FS-3QS7-L99H-MNSF-M2","role":"father","nameAsTranscribed":"Тимофей Дмитриевич Анпилогов","displayName":"Тимофей Дмитриевич Анпилогов","sex":"male","personId":null,"alternateNames":[]}],
-  "transcription":{"status":"complete-with-uncertainties","literal":"Март | № умерших женского пола 15 | 1 [умерла] | 2 [погребена] | крестьянская дочь села Чувичи Тимофея Дмитриевича Анпилогова Любовь | возраст 1 год | корь | погребение совершил священник Илия [фамилия неуверенно] с псаломщиком Феофаном [фамилия неуверенно].","modernInterpretation":"Любовь, дочь крестьянина Тимофея Дмитриевича Анпилогова из села Чувичи, умерла от кори 1 марта и была погребена 2 марта 1915 года в возрасте одного года. Возраст и семья согласуются с рождением 7 декабря 1913 года.","fields":{"femaleSequenceNumber":"15","deathDate":"1 марта 1915","burialDate":"2 марта 1915","deceased":"Любовь Тимофеевна Анпилогова","age":"1 год","father":"Тимофей Дмитриевич Анпилогов","causeOfDeath":"корь","clergy":"священник Илия и псаломщик Феофан [фамилии неуверенно]"}},
-  "sourceRelations":[{"type":"same-person-earlier-event","sourceId":"FS-3QS7-L99H-49ZC-7","note":"Рождение 7 декабря и крещение 8 декабря 1913 года; основная архивная копия."},{"type":"same-person-earlier-event","sourceId":"FS-3QS7-899H-MXG1","note":"Вторая архивная копия рождения и крещения 1913 года."}],
-  "evidence":{"captureType":"viewer-screenshot","path":"docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-02-record-fullscreen.jpg","capturedAt":"2026-08-19","sha256":"3ee79913191419f9ad636b2078389a2bdf2167894135ef481feedfc2346b7039","publicDisplay":false,"rightsNote":"Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.","quality":{"status":"approved","viewerFullscreen":true,"panelsClosed":true,"filmstripHidden":true,"sharpTilesConfirmed":true,"viewport":"1920x1200","strategy":"overview-plus-multiple-zoomed-fragments"},"fragments":[{"part":"fullscreen-overview","path":"docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-01-fullscreen-overview.jpg","sha256":"4bd7676abb136c9a885ba0ffce1b0b9b0afc90732f915ab6dcce1d61440ef067"},{"part":"record","path":"docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-02-record-fullscreen.jpg","sha256":"3ee79913191419f9ad636b2078389a2bdf2167894135ef481feedfc2346b7039"},{"part":"details","path":"docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-03-details-fullscreen.jpg","sha256":"7dbb694844ee1712485293ee1f8f82850169355e4573021238cd87447e78ca23"}]},
-  "review":{"status":"complete","identityResolution":"linked-to-birth-event-1913","transcriptionConfidence":"medium-high","unresolved":["Уточнить фамилии причта."]},
-  "summary":{"status":"verified-summary","text":"Любовь Тимофеевна Анпилогова умерла от кори 1 марта и была погребена 2 марта 1915 года в возрасте одного года; это ребёнок из записи о рождении 7/8 декабря 1913 года."}
+  "schemaVersion": 1,
+  "sourceId": "FS-3QS7-L99H-MNSF",
+  "provider": "FamilySearch",
+  "collection": {
+    "id": "1807365",
+    "title": "Россия, Самарские метрические книги, 1748-1934",
+    "digitalFolderNumber": "005476335",
+    "itemNumber": 2,
+    "imageNumber": 306,
+    "imageCount": 384,
+    "pageNumber": "303–304",
+    "locality": "Чувичи"
+  },
+  "links": {
+    "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3QS7-L99H-MNSF",
+    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:QG2C-TXBV"
+  },
+  "event": {
+    "type": "death-and-burial",
+    "date": {
+      "display": "1 / 2 марта 1915",
+      "iso": "1915-03-01",
+      "calendar": "source-calendar-unverified"
+    },
+    "place": {
+      "asTranscribed": "село Чувичи",
+      "normalized": "Чувичи, Самарская губерния"
+    }
+  },
+  "indexData": {
+    "recordId": "QG2C-TXBV",
+    "subject": "Любовь Тимофеевна Анпилогов",
+    "sex": "female",
+    "age": "1 год",
+    "indexDateWarning": "Индекс даёт диапазон 1911–1916; заголовок оригинала устанавливает 1915 год."
+  },
+  "mentions": [
+    {
+      "mentionId": "FS-3QS7-L99H-MNSF-M1",
+      "role": "deceased-child",
+      "nameAsTranscribed": "Любовь",
+      "displayName": "Любовь Тимофеевна Анпилогова",
+      "sex": "female",
+      "personId": null,
+      "alternateNames": [],
+      "modernName": "Любовь Тимофеевна Анпилогова"
+    },
+    {
+      "mentionId": "FS-3QS7-L99H-MNSF-M2",
+      "role": "father",
+      "nameAsTranscribed": "Тимофей Дмитриевич Анпилогов",
+      "displayName": "Тимофей Дмитриевич Анпилогов",
+      "sex": "male",
+      "personId": null,
+      "alternateNames": [],
+      "modernName": "Тимофей Дмитриевич Анпилогов"
+    }
+  ],
+  "transcription": {
+    "status": "complete-with-uncertainties",
+    "literal": "Март | № умерших женского пола 15 | 1 [умерла] | 2 [погребена] | крестьянская дочь села Чувичи Тимофея Дмитриевича Анпилогова Любовь | возраст 1 год | корь | погребение совершил священник Илия [фамилия неуверенно] с псаломщиком Феофаном [фамилия неуверенно].",
+    "modernInterpretation": "Любовь, дочь крестьянина Тимофея Дмитриевича Анпилогова из села Чувичи, умерла от кори 1 марта и была погребена 2 марта 1915 года в возрасте одного года. Возраст и семья согласуются с рождением 7 декабря 1913 года.",
+    "fields": {
+      "femaleSequenceNumber": "15",
+      "deathDate": "1 марта 1915",
+      "burialDate": "2 марта 1915",
+      "deceased": "Любовь Тимофеевна Анпилогова",
+      "age": "1 год",
+      "father": "Тимофей Дмитриевич Анпилогов",
+      "causeOfDeath": "корь",
+      "clergy": "священник Илия и псаломщик Феофан [фамилии неуверенно]"
+    }
+  },
+  "sourceRelations": [
+    {
+      "type": "same-person-earlier-event",
+      "sourceId": "FS-3QS7-L99H-49ZC-7",
+      "note": "Рождение 7 декабря и крещение 8 декабря 1913 года; основная архивная копия."
+    },
+    {
+      "type": "same-person-earlier-event",
+      "sourceId": "FS-3QS7-899H-MXG1",
+      "note": "Вторая архивная копия рождения и крещения 1913 года."
+    }
+  ],
+  "evidence": {
+    "captureType": "viewer-screenshot",
+    "path": "docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-02-record-fullscreen.jpg",
+    "capturedAt": "2026-08-19",
+    "sha256": "3ee79913191419f9ad636b2078389a2bdf2167894135ef481feedfc2346b7039",
+    "publicDisplay": false,
+    "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
+    "quality": {
+      "status": "approved",
+      "viewerFullscreen": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "sharpTilesConfirmed": true,
+      "viewport": "1920x1200",
+      "strategy": "overview-plus-multiple-zoomed-fragments"
+    },
+    "fragments": [
+      {
+        "part": "fullscreen-overview",
+        "path": "docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-01-fullscreen-overview.jpg",
+        "sha256": "4bd7676abb136c9a885ba0ffce1b0b9b0afc90732f915ab6dcce1d61440ef067"
+      },
+      {
+        "part": "record",
+        "path": "docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-02-record-fullscreen.jpg",
+        "sha256": "3ee79913191419f9ad636b2078389a2bdf2167894135ef481feedfc2346b7039"
+      },
+      {
+        "part": "details",
+        "path": "docs/evidence/familysearch/samara/FS-3QS7-L99H-MNSF-03-details-fullscreen.jpg",
+        "sha256": "7dbb694844ee1712485293ee1f8f82850169355e4573021238cd87447e78ca23"
+      }
+    ]
+  },
+  "review": {
+    "status": "complete",
+    "identityResolution": "linked-to-birth-event-1913",
+    "transcriptionConfidence": "medium-high",
+    "unresolved": [
+      "Уточнить фамилии причта."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Любовь Тимофеевна Анпилогова умерла от кори 1 марта и была погребена 2 марта 1915 года в возрасте одного года; это ребёнок из записи о рождении 7/8 декабря 1913 года."
+  }
 }
