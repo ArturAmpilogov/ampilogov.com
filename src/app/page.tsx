@@ -32,7 +32,7 @@ export default function Home() {
           <p className="cover-deck">
             Ампилоговы · Анпилоговы · Ампиловы · Анпиловы · Анфилоговы
           </p>
-          <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/00-overview"}`}>
+          <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/01-overview"}`}>
             Начать чтение <span aria-hidden="true">↗</span>
           </Link>
         </div>

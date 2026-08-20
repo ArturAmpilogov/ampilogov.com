@@ -5239,18 +5239,46 @@ a {
 }
 
 .record-scan {
-  min-height: 520px;
+  margin: 0;
   overflow: hidden;
-  border-right: 1px solid var(--ink);
   background: #ded7c9;
 }
 
-.record-scan > img {
+.record-evidence-stack {
+  display: grid;
+  align-content: start;
+  gap: 1px;
+  border-right: 1px solid var(--ink);
+  background: var(--ink);
+}
+
+.record-scan > a {
+  display: grid;
+  min-height: 0;
+  background: #ded7c9;
+}
+
+.record-scan img {
   width: 100%;
-  height: 100%;
   display: block;
   object-fit: contain;
   filter: sepia(0.12) contrast(1.06);
+}
+
+.record-scan-fragment img {
+  max-height: 470px;
+  object-position: center;
+}
+
+.record-scan-page img { max-height: 920px; }
+
+.record-scan figcaption {
+  padding: 12px 18px 14px;
+  color: var(--muted);
+  background: var(--paper);
+  font: 650 0.62rem/1.35 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .record-scan-restricted {
@@ -5537,7 +5565,7 @@ a {
 
   .record-source.is-restricted .record-source-meta dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-  .record-scan,
+  .record-evidence-stack,
   .record-literal { border-right: 0; border-bottom: 1px solid var(--ink); }
 }
 
@@ -5602,7 +5630,7 @@ a {
 
   .record-heading h1 { font-size: clamp(2.6rem, 13vw, 3.8rem); }
   .record-state { width: fit-content; }
-  .record-scan,
+  .record-evidence-stack,
   .record-scan-restricted { min-height: 390px; }
   .record-source-meta { min-height: 420px; }
   .record-source.is-restricted .record-source-meta { min-height: 0; }

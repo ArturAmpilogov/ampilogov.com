@@ -8,7 +8,12 @@ export const metadata: Metadata = {
   description: "Документы FamilySearch: ссылки на оригиналы, буквальные расшифровки и современное чтение.",
 };
 
-export default function RecordsPage() {
+type RecordsPageProps = {
+  searchParams: Promise<{ search?: string }>;
+};
+
+export default async function RecordsPage({ searchParams }: RecordsPageProps) {
+  const { search = "" } = await searchParams;
   const directory = getRecordsDirectory();
 
   return (
@@ -29,7 +34,7 @@ export default function RecordsPage() {
           <div><dt>Копии сохранены</dt><dd>{directory.stats.withImages}</dd></div>
         </dl>
       </header>
-      <RecordsDirectory records={directory.records} />
+      <RecordsDirectory records={directory.records} initialQuery={search} />
     </main>
   );
 }

@@ -149,6 +149,7 @@ export type ArchiveRecord = {
   indexedUrl: string | null;
   indexedLabel: string;
   evidenceUrl: string | null;
+  evidenceFragments: Array<{ label: string; url: string }>;
   mayDisplayEvidence: boolean;
   rightsNote: string;
   people: ArchiveRecordPerson[];
@@ -222,6 +223,14 @@ const eventLabels: Record<string, string> = {
   marriage: "Брак",
   death: "Смерть",
   "service-review": "Смотр служилых людей",
+  "land-survey": "Писцовая запись",
+  "service-enrollment": "Запись на службу",
+  "service-oath": "Крестоприводная запись",
+  "military-roster": "Полковой список",
+  "witness-testimony": "Показание",
+  interrogation: "Допрос",
+  confrontation: "Очная ставка",
+  "court-sentence": "Приговор",
 };
 
 const roleLabels: Record<string, string> = {
@@ -240,6 +249,15 @@ const roleLabels: Record<string, string> = {
   declarant: "заявитель",
   clergy: "священнослужитель",
   serviceman: "служилый человек",
+  "listed-service-person": "служилый человек в списке",
+  "oath-taker": "принёсший присягу",
+  "new-serviceman": "новик, принятый на службу",
+  landholder: "владелец поместья",
+  son: "сын",
+  deponent: "дающий показание",
+  accused: "обвиняемый",
+  "co-accused": "соучастник по делу",
+  sentenced: "осуждённый",
   uncertain: "роль уточняется",
 };
 
@@ -330,6 +348,15 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     indexedUrl: source.links?.indexedRecordArk ?? source.links?.recordArk ?? null,
     indexedLabel: isFamilySearch ? "Индекс FamilySearch" : "Опубликованный текст",
     evidenceUrl: evidenceUrl(source),
+    evidenceFragments: (source.evidence?.fragments ?? [])
+      .filter((fragment): fragment is { part?: string; path: string } => Boolean(fragment.path))
+      .flatMap((fragment) => {
+        const url = evidencePathUrl(fragment.path);
+        return url ? [{
+          label: fragment.part ?? "Точный фрагмент записи",
+          url,
+        }] : [];
+      }),
     mayDisplayEvidence: source.evidence?.publicDisplay === true,
     rightsNote: source.evidence?.rightsNote ?? "Права на изображение не проверены; публичная копия не показывается.",
     people,
@@ -373,7 +400,7 @@ export function getRecordsDirectory() {
     stats: {
       records: records.length,
       complete: records.filter((record) => record.isComplete).length,
-      withImages: records.filter((record) => Boolean(record.evidenceUrl)).length,
+      withImages: records.filter((record) => Boolean(record.evidenceUrl || record.evidenceFragments.length)).length,
     },
   };
 }
@@ -400,8 +427,11 @@ function readJsonTree<T>(directory: string): T[] {
     });
 }
 
-function evidenceUrl(source?: SourceRecord) {
-  const evidencePath = source?.evidence?.path;
+function evidenceUrl(source?: SourceRecord): string | null {
+  return evidencePathUrl(source?.evidence?.path);
+}
+
+function evidencePathUrl(evidencePath?: string): string | null {
   if (!evidencePath?.startsWith("docs/")) return null;
   return `/archive/${evidencePath.slice("docs/".length)}`;
 }
