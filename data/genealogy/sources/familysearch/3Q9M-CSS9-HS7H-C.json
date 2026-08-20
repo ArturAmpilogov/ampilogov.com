@@ -24,7 +24,7 @@
     "type": "death-and-burial",
     "date": {"display": "30 августа 1869", "iso": "1869-08-30", "calendar": "source-calendar-unverified"},
     "burialDate": {"display": "1 сентября 1869", "iso": "1869-09-01"},
-    "place": {"asTranscribed": "Киев [по заголовку книги]", "normalized": "Киев, Киевская губерния, Российская империя", "modernName": "Киев, Украина", "modernCountry": "Украина"}
+    "place": { "placeId": "kyiv","asTranscribed": "Киев [по заголовку книги]", "normalized": "Киев, Киевская губерния, Российская империя", "modernName": "Киев, Украина", "modernCountry": "Украина"}
   },
   "indexData": {
     "recordId": "6X7S-VXDL",
@@ -46,7 +46,14 @@
     "personId": null,
     "alternateNames": ["Афанасий Яковлев Ампилогов", "Афанасий Яколев Ампилогов"],
     "socialStatus": {"asWritten": "государственный крестьянин", "normalized": "государственный крестьянин"},
-    "places": [{"type": "origin", "asWritten": "Орловской губернии и уезда, Городищенской волости, дер. Долгомилевки [название деревни читается неуверенно]", "normalized": "Орловская губерния, Российская империя", "modernCountry": "Россия"}]
+    "places": [{"type": "origin", "placeId": "dolgomilevka-orel", "asWritten": "Орловской губернии и уезда, Городищенской волости, дер. Долгомилевки [название деревни читается неуверенно]", "normalized": "Орловская губерния, Российская империя", "modernCountry": "Россия", "confidence": "medium"}]
+  }],
+  "migrationObservations": [{
+    "personName": "Афанасий Яковлевич Ампилогов",
+    "from": {"placeId": "dolgomilevka-orel", "asWritten": "Орловской губернии и уезда, Городищенской волости, дер. Долгомилевки", "normalized": "деревня Долгомилевка, Орловский уезд"},
+    "to": {"placeId": "kyiv", "asWritten": "Киев", "normalized": "Киев, Киевская губерния"},
+    "basis": "В записи прямо сказано, что Афанасий Яковлевич происходил из Орловской губернии и умер в Киеве; точная дата переезда неизвестна.",
+    "confidence": "high"
   }],
   "transcription": {
     "status": "complete-with-uncertainties",

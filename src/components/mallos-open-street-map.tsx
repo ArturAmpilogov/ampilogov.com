@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const mallos = {
   name: "Малл",
@@ -33,11 +34,11 @@ export function MallosOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [36.78, 35.4],
         zoom: 9,
         minZoom: 6,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 

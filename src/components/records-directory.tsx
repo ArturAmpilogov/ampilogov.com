@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { ArchiveRecord } from "@/lib/genealogy";
+import { RecordTypeIcon } from "@/components/record-type-icon";
 
-type Filter = "all" | "complete" | "reading";
+type Filter = "all" | "complete" | "incomplete" | "human";
 
 function normalize(value: string) {
   return value
@@ -30,7 +31,9 @@ export function RecordsDirectory({
     return records.filter((record) => {
       const matchesQuery = !needle || normalize(record.searchText).includes(needle);
       const matchesFilter = filter === "all" ||
-        (filter === "complete" ? record.isComplete : !record.isComplete);
+        (filter === "complete" && record.reviewState === "complete") ||
+        (filter === "incomplete" && record.reviewState !== "complete") ||
+        (filter === "human" && record.reviewState === "human-review");
       return matchesQuery && matchesFilter;
     });
   }, [filter, query, records]);
@@ -56,7 +59,8 @@ export function RecordsDirectory({
           {([
             ["all", "Все"],
             ["complete", "Расшифрованы"],
-            ["reading", "В работе"],
+            ["incomplete", "Незавершённые"],
+            ["human", "Нужна помощь"],
           ] as const).map(([value, label]) => (
             <button
               type="button"
@@ -80,11 +84,24 @@ export function RecordsDirectory({
           <Link href={`/records/${encodeURIComponent(record.sourceId)}`} key={record.sourceId} className="record-row">
             <span className="record-row-number">{String(index + 1).padStart(2, "0")}</span>
             <span className="record-row-event">
-              <small>{record.eventLabel}</small>
-              <strong>{record.people[0]?.name ?? "Имя уточняется"}</strong>
-              {record.people[0]?.alternateNames.length ? (
+              <small className="record-row-type">
+                <RecordTypeIcon eventType={record.eventType} />
+                <span>{record.eventLabel}</span>
+              </small>
+              <strong>{record.primaryPerson?.name}</strong>
+              {record.primaryPerson?.alternateNames.length ? (
                 <span className="record-row-alternates">
-                  {record.people[0].alternateNames.join(" · ")}
+                  {record.primaryPerson.alternateNames.join(" · ")}
+                </span>
+              ) : null}
+              {record.directoryFacts.length ? (
+                <span className="record-row-facts" aria-label="Дополнительные сведения">
+                  {record.directoryFacts.map((fact) => (
+                    <span className="record-row-fact" key={`${fact.label}:${fact.value}`}>
+                      <b>{fact.label}</b>
+                      <span>{fact.value}</span>
+                    </span>
+                  ))}
                 </span>
               ) : null}
             </span>
@@ -92,8 +109,11 @@ export function RecordsDirectory({
               <strong>{record.date}</strong>
               <small>{record.place}</small>
             </span>
-            <span className={`record-row-status ${record.isComplete ? "is-complete" : "is-reading"}`}>
-              {record.isComplete ? "расшифровано" : "требует чтения"}
+            <span
+              className={`record-row-status is-${record.reviewState}`}
+              title={record.reviewDescription}
+            >
+              {record.reviewLabel}
             </span>
             <span className="record-row-open" aria-hidden="true">↗</span>
           </Link>

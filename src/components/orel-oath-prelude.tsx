@@ -2,13 +2,13 @@
 
 const oathRecords = [
   {
-    name: "Григорий Васильевич",
+    name: "Григорий Дмитриевич",
     leaf: "л. 1160",
     src: "/evidence/rgada/f210-op6d-d54/crops/grigory-1160.jpg",
     full: "/archive/evidence/rgada/f210-op6d-d54/P1290047.JPG",
   },
   {
-    name: "Фёдор Васильевич",
+    name: "Фёдор Дмитриевич",
     leaf: "л. 1161",
     src: "/evidence/rgada/f210-op6d-d54/crops/fedor-1161.jpg",
     full: "/archive/evidence/rgada/f210-op6d-d54/P1290048.JPG",

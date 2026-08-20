@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const places = [
   {
@@ -32,11 +33,11 @@ export function AnpilogovoOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [51.785, 36.008],
         zoom: 12,
         minZoom: 8,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 

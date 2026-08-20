@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { RecordTypeIcon } from "@/components/record-type-icon";
 import { SiteHeader } from "@/components/site-header";
 import { getArchiveRecord, getRecordsDirectory } from "@/lib/genealogy";
 
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: RecordPageProps): Promise<Met
   const record = getArchiveRecord(decodedSourceId);
   if (!record) return { title: "Запись не найдена" };
   return {
-    title: `${record.eventLabel}: ${record.people[0]?.name ?? record.date}`,
+    title: `${record.eventLabel}: ${record.primaryPerson?.name ?? record.date}`,
     description: `${record.date}, ${record.place}. Архивная запись, расшифровка и связанные профили.`,
   };
 }
@@ -52,12 +53,24 @@ export default async function RecordPage({ params }: RecordPageProps) {
         <header className="record-heading">
           <div>
             <span className="eyebrow">{record.provider} · {record.sourceId}</span>
-            <h1>{record.eventLabel}</h1>
-            <p>{record.date} · {record.place}</p>
+            <h1>{record.primaryPerson?.name ?? record.eventLabel}</h1>
+            <p className="record-heading-meta">
+              <span className="record-heading-type">
+                <RecordTypeIcon eventType={record.eventType} />
+                <span>{record.eventLabel}</span>
+              </span>
+              <span aria-hidden="true">·</span>
+              <span>{record.date}</span>
+              <span aria-hidden="true">·</span>
+              <span>{record.place}</span>
+            </p>
           </div>
           <div className="record-heading-actions">
-            <span className={`record-state ${record.isComplete ? "is-complete" : "is-reading"}`}>
-              {record.isComplete ? "Полная расшифровка" : "Требует полного чтения"}
+            <span
+              className={`record-state is-${record.reviewState}`}
+              title={record.reviewDescription}
+            >
+              {record.reviewLabel}
             </span>
             {record.originalUrl ? (
               <a className="record-open-scan" href={record.originalUrl} target="_blank" rel="noreferrer">
@@ -159,7 +172,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
           <div className="record-people-list">
             {record.people.map((person, index) => person.personId ? (
-              <Link href={`/people?person=${encodeURIComponent(person.personId)}`} key={`${person.personId}:${index}`}>
+              <Link href={`/people/${encodeURIComponent(person.personId)}`} key={`${person.personId}:${index}`}>
                 <small>{person.role}</small>
                 <strong>{person.name}</strong>
                 {person.alternateNames.length ? <i>{person.alternateNames.join(" · ")}</i> : null}

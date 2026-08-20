@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const kursk = {
   name: "Курск",
@@ -27,11 +28,11 @@ export function KurskOboyanOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [51.47, 36.235],
         zoom: 9,
         minZoom: 7,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 

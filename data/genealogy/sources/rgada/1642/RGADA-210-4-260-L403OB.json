@@ -1,17 +1,20 @@
 {
   "schemaVersion": 1,
   "sourceId": "RGADA-210-4-260-L403OB",
-  "provider": "РГАДА — опубликованный именной указатель",
+  "provider": "РГАДА — фотокопия дела и опубликованный именной указатель",
   "collection": {
     "title": "Список служилых людей Орла 1642 года",
     "archiveCitation": "РГАДА, ф. 210, оп. 4, д. 260, л. 403 об."
   },
   "repository": { "name": "Российский государственный архив древних актов", "location": "Москва" },
-  "links": { "recordArk": "https://forum.vgd.ru/post/5703/135781/p5389207.htm" },
+  "links": {
+    "recordArk": "https://forum.vgd.ru/post/5703/135781/p5389207.htm",
+    "imageArk": "https://disk.yandex.ru/d/beTOHQ7SI7x1RQ"
+  },
   "event": {
     "type": "service-list",
     "date": { "display": "1642 год" },
-    "place": { "normalized": "Орёл, Орловский уезд" }
+    "place": { "placeId": "orel", "normalized": "Орёл, Орловский уезд" }
   },
   "mentions": [
     {
@@ -23,13 +26,25 @@
     }
   ],
   "transcription": {
-    "status": "name-index",
+    "status": "complete-as-published",
     "literal": "Анфилогов Федор Васильев",
     "modernInterpretation": "Опубликованный именной указатель помещает Фёдора Васильевича Анфилогова на листе 403 оборотном."
   },
-  "summary": { "status": "index-only", "text": "Точный адрес одной строки в орловском списке 1642 года; фотокопия листа пока не получена." },
+  "summary": {
+    "status": "source-image-and-index-verified",
+    "text": "Опубликованный полный именной указатель и сохранённая фотокопия разворота подтверждают Фёдора Васильевича Анфилогова на листе 403 об."
+  },
   "review": {
-    "status": "partial",
-    "unresolved": ["Нужно получить полный скан листа 403 об. и сверить написание фамилии, чин, оклад и контекст строки."]
+    "status": "complete",
+    "unresolved": ["Служебная характеристика и оклад не включены в опубликованный указатель и в этой карточке не утверждаются."],
+    "evidenceStatus": "image-and-index-verified"
+  },
+  "evidence": {
+    "captureType": "archive-original-digital-copy",
+    "path": "docs/evidence/rgada/f210-op4-d260/pages/0403.jpg",
+    "capturedAt": "2026-08-20",
+    "sha256": "13fb2deaaf00e0e49c87d5ad827a6f9c7e20edc3c55b43fdbf357b5f868e1a54",
+    "publicDisplay": true,
+    "rightsNote": "Фотокопия дела опубликована в открытой исследовательской подборке на Яндекс Диске."
   }
 }

@@ -12,25 +12,40 @@
     "location": "Москва",
     "url": "http://rgada.info/poisk/index2.php?str=210-opis_6д"
   },
-  "links": { "recordArk": "http://rgada.info/opisi/210-opis_6д/0003.zif" },
+  "links": {
+    "recordArk": "http://rgada.info/opisi/210-opis_6д/0003.zif"
+  },
   "describes": {
     "archiveCitation": "РГАДА, ф. 210, оп. 6д, д. 18",
     "documentType": "строельная книга",
-    "date": { "display": "7155—56 / 1646—1648 годы" },
+    "date": {
+      "display": "7155—56 / 1646—1648 годы"
+    },
     "extent": "129 листов",
-    "place": { "normalized": "новый Царёв-Алексеев город, с 1655 года Новый Оскол" }
+    "place": {
+      "normalized": "новый Царёв-Алексеев город, с 1655 года Новый Оскол"
+    }
   },
   "event": {
     "type": "town-foundation",
-    "date": { "display": "1646—1648 годы", "calendar": "source-calendar-unverified" },
-    "place": { "normalized": "Царёв-Алексеев город на Белгородской черте" }
+    "date": {
+      "display": "1646—1648 годы",
+      "calendar": "source-calendar-unverified"
+    },
+    "place": {
+      "placeId": "novy-oskol",
+      "normalized": "Царёв-Алексеев город на Белгородской черте"
+    }
   },
   "mentions": [
     {
       "role": "official",
       "displayName": "князь Иван Волконский",
       "nameAsTranscribed": "князя Ивана Волконскаго",
-      "socialStatus": { "asWritten": "князь", "normalized": "воевода-строитель" },
+      "socialStatus": {
+        "asWritten": "князь",
+        "normalized": "воевода-строитель"
+      },
       "relationshipNote": "Скрепа на листах 88—90."
     },
     {
@@ -74,7 +89,10 @@
     "captureType": "archive-master-zif",
     "originalFile": "docs/evidence/rgada/f210-op6d-opis/zif/0003.zif",
     "fragments": [
-      { "part": "Статья 18 описи целиком", "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0003-delo-18.jpg" }
+      {
+        "part": "Статья 18 описи целиком",
+        "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0003-delo-18.jpg"
+      }
     ]
   },
   "researchNotes": [
@@ -89,5 +107,20 @@
       "Текст прочитан по скану печатной описи, а не по самому делу.",
       "Тождество человека на л. 34 с Данилой Левонтьевым по алфавиту не доказывается — алфавит даёт только фамилию."
     ]
+  },
+  "isRecord": false,
+  "cardKind": "finding-aid-lead",
+  "cardKindNote": "Это не Record, а адрес. Record в проекте — одна запись на одного человека и одно событие. Указатель и алфавит дают только фамилию и номер листа; имя, отчество и обстоятельства появятся только с изображения листа. Ниже перечислено, сколько Records отсюда должно выйти и под какими идентификаторами.",
+  "pendingRecords": {
+    "delo": "РГАДА, ф. 210, оп. 6д, д. 18",
+    "expected": [
+      {
+        "folio": 34,
+        "recordIdWhenMade": "RGADA-210-6D-18-L34",
+        "context": "строельная книга нового Царева Алексеева города 155—156 годов",
+        "likelyPerson": "Данило Левонтьев сын Анпилов — по росписи Е. Черновой из этой же книги"
+      }
+    ],
+    "expectHere": "Строельная книга нового города называет, откуда человек переведён, какой ему отведён двор и земля, в каком чине он поверстан."
   }
 }

@@ -12,25 +12,40 @@
     "location": "Москва",
     "url": "http://rgada.info/poisk/index2.php?str=210-opis_6д"
   },
-  "links": { "recordArk": "http://rgada.info/opisi/210-opis_6д/0002.zif" },
+  "links": {
+    "recordArk": "http://rgada.info/opisi/210-opis_6д/0002.zif"
+  },
   "describes": {
     "archiveCitation": "РГАДА, ф. 210, оп. 6д, д. 9",
     "documentType": "раздаточная книга денежного жалованья",
-    "date": { "display": "7150 / 1641—1642 год" },
+    "date": {
+      "display": "7150 / 1641—1642 год"
+    },
     "extent": "236 листов",
-    "place": { "normalized": "город Хотмыжск" }
+    "place": {
+      "normalized": "город Хотмыжск"
+    }
   },
   "event": {
     "type": "salary-distribution",
-    "date": { "display": "7150 / 1641—1642 год", "calendar": "source-calendar-unverified" },
-    "place": { "normalized": "город Хотмыжск" }
+    "date": {
+      "display": "7150 / 1641—1642 год",
+      "calendar": "source-calendar-unverified"
+    },
+    "place": {
+      "placeId": "khotmyzhsk",
+      "normalized": "город Хотмыжск"
+    }
   },
   "mentions": [
     {
       "role": "commander",
       "displayName": "Фёдор Тимофеевич Пушкин",
       "nameAsTranscribed": "воеводы Ѳ. Т. Пушкина",
-      "socialStatus": { "asWritten": "воевода", "normalized": "воевода города Хотмыжска" },
+      "socialStatus": {
+        "asWritten": "воевода",
+        "normalized": "воевода города Хотмыжска"
+      },
       "relationshipNote": "Единственная скрепа на всей книге. Тот же воевода скрепил и раздаточную книгу 150 года в деле 210-6д-4."
     }
   ],
@@ -50,7 +65,10 @@
     "captureType": "archive-master-zif",
     "originalFile": "docs/evidence/rgada/f210-op6d-opis/zif/0002.zif",
     "fragments": [
-      { "part": "Статья 9 описи целиком", "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0002-delo-9.jpg" }
+      {
+        "part": "Статья 9 описи целиком",
+        "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0002-delo-9.jpg"
+      }
     ]
   },
   "researchNotes": [
@@ -63,5 +81,24 @@
       "Текст прочитан по скану печатной описи, а не по самому делу.",
       "Написание фамилии в самом деле не проверено."
     ]
+  },
+  "isRecord": false,
+  "cardKind": "finding-aid-lead",
+  "cardKindNote": "Это не Record, а адрес. Record в проекте — одна запись на одного человека и одно событие. Указатель и алфавит дают только фамилию и номер листа; имя, отчество и обстоятельства появятся только с изображения листа. Ниже перечислено, сколько Records отсюда должно выйти и под какими идентификаторами.",
+  "pendingRecords": {
+    "delo": "РГАДА, ф. 210, оп. 6д, д. 9",
+    "expected": [
+      {
+        "folio": 24,
+        "recordIdWhenMade": "RGADA-210-6D-9-L24",
+        "context": "раздаточная книга денежного жалованья служилым людям разных чинов г. Хотмыжска 150 года"
+      },
+      {
+        "folio": 131,
+        "recordIdWhenMade": "RGADA-210-6D-9-L131",
+        "context": "там же"
+      }
+    ],
+    "expectHere": "Чин, денежный оклад, сумма выдачи, иногда расписка или поручитель."
   }
 }

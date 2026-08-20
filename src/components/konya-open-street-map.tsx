@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const konya = {
   name: "Икония / Кония",
@@ -20,11 +21,11 @@ export function KonyaOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [38.25, 32.5],
         zoom: 6,
         minZoom: 5,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 
