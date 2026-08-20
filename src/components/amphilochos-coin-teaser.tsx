@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
-const chapterHref = "/read/book/01-greek-amphilochus#amphilochos-cult";
-const christianChapterHref = "/read/book/02-christian-amphilochius";
+const chapterHref = "/read/book/02-greek-amphilochus#amphilochos-cult";
+const christianChapterHref = "/read/book/03-christian-amphilochius";
 const catalogueHref = "https://rpc.ashmus.ox.ac.uk/coins/4/6897";
 const licenseHref = "https://creativecommons.org/licenses/by-sa/4.0/";
 const menologionHref = "https://digi.vatlib.it/view/MSS_Vat.gr.1613/0145";

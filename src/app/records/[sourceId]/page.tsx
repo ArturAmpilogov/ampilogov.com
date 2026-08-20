@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { getArchiveRecord, getRecordsDirectory } from "@/lib/genealogy";
 
 type RecordPageProps = {
   params: Promise<{ sourceId: string }>;
+};
+
+const legacyRecordDestinations: Record<string, string> = {
+  "RGADA-210-12-13": "/records?search=RGADA-210-12-13",
 };
 
 export function generateStaticParams() {
@@ -14,7 +18,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: RecordPageProps): Promise<Metadata> {
   const { sourceId } = await params;
-  const record = getArchiveRecord(decodeURIComponent(sourceId));
+  const decodedSourceId = decodeURIComponent(sourceId);
+  if (legacyRecordDestinations[decodedSourceId]) {
+    return {
+      title: "Смотренный список 1626 года",
+      description: "Шесть самостоятельных записей РГАДА, ф. 210, оп. 12, д. 13.",
+    };
+  }
+  const record = getArchiveRecord(decodedSourceId);
   if (!record) return { title: "Запись не найдена" };
   return {
     title: `${record.eventLabel}: ${record.people[0]?.name ?? record.date}`,
@@ -24,8 +35,13 @@ export async function generateMetadata({ params }: RecordPageProps): Promise<Met
 
 export default async function RecordPage({ params }: RecordPageProps) {
   const { sourceId } = await params;
-  const record = getArchiveRecord(decodeURIComponent(sourceId));
+  const decodedSourceId = decodeURIComponent(sourceId);
+  const legacyDestination = legacyRecordDestinations[decodedSourceId];
+  if (legacyDestination) redirect(legacyDestination);
+  const record = getArchiveRecord(decodedSourceId);
   if (!record) notFound();
+  const hasEvidenceAsset = Boolean(record.evidenceFragments.length || record.evidenceUrl);
+  const hasEvidence = record.mayDisplayEvidence && hasEvidenceAsset;
 
   return (
     <main className="record-page">
@@ -85,12 +101,27 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
         </section>
 
-        <section className={`record-source ${record.mayDisplayEvidence && record.evidenceUrl ? "has-image" : "is-restricted"}`} aria-labelledby="source-title">
-          {record.mayDisplayEvidence && record.evidenceUrl ? (
-            <div className="record-scan">
-              {/* The archive explicitly marks this copy as suitable for public display. */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={record.evidenceUrl} alt={`Скан: ${record.eventLabel}, ${record.date}`} />
+        <section className={`record-source ${hasEvidence ? "has-image" : "is-restricted"}`} aria-labelledby="source-title">
+          {hasEvidence ? (
+            <div className="record-evidence-stack">
+              {record.evidenceFragments.map((fragment, index) => (
+                <figure className="record-scan record-scan-fragment" key={`${fragment.url}:${index}`}>
+                  <a href={fragment.url} target="_blank" rel="noreferrer" aria-label={`${fragment.label}: открыть изображение в полном размере`}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={fragment.url} alt={`${fragment.label}: ${record.eventLabel}, ${record.date}`} />
+                  </a>
+                  <figcaption>{fragment.label} · открыть в полном размере ↗</figcaption>
+                </figure>
+              ))}
+              {record.evidenceUrl ? (
+                <figure className="record-scan record-scan-page">
+                  <a href={record.evidenceUrl} target="_blank" rel="noreferrer" aria-label="Открыть полный лист в исходном размере">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={record.evidenceUrl} alt={`Полный лист: ${record.eventLabel}, ${record.date}`} />
+                  </a>
+                  <figcaption>Полный лист · открыть в полном размере ↗</figcaption>
+                </figure>
+              ) : null}
             </div>
           ) : null}
           <div className="record-source-meta">
@@ -108,7 +139,11 @@ export default async function RecordPage({ params }: RecordPageProps) {
               {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">{record.indexedLabel} ↗</a> : null}
               {record.repositoryUrl ? <a href={record.repositoryUrl} target="_blank" rel="noreferrer">Архив-хранитель ↗</a> : null}
             </div>
-            {!record.mayDisplayEvidence ? (
+            {!hasEvidenceAsset ? (
+              <p className="record-rights-note">
+                Скан исходной строки пока не сохранён. {record.unresolved[0]}
+              </p>
+            ) : !record.mayDisplayEvidence ? (
               <p className="record-rights-note">Локальная копия не публикуется до проверки прав. {record.rightsNote}</p>
             ) : null}
           </div>

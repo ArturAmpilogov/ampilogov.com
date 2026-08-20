@@ -26,9 +26,9 @@ const groupLabels: Record<ChapterGroup, string> = {
 };
 
 const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
-  "book/00-overview": { order: 0, group: "opening" },
-  "book/01-greek-amphilochus": {
-    order: 1,
+  "book/01-overview": { order: 1, group: "opening" },
+  "book/02-greek-amphilochus": {
+    order: 2,
     group: "chronology",
     period: {
       from: "VIII век",
@@ -40,8 +40,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 0, end: 28 },
     },
   },
-  "book/02-christian-amphilochius": {
-    order: 2,
+  "book/03-christian-amphilochius": {
+    order: 3,
     group: "chronology",
     period: {
       from: "IV век",
@@ -51,8 +51,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 28, end: 91 },
     },
   },
-  "book/03-onfilogov-priluki-1536-1537": {
-    order: 3,
+  "book/04-onfilogov-priluki-1536-1537": {
+    order: 4,
     group: "chronology",
     period: {
       from: "1536",
@@ -62,8 +62,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 59, end: 60 },
     },
   },
-  "book/04-orel-1594-1596": {
-    order: 4,
+  "book/05-orel-1594-1596": {
+    order: 5,
     group: "chronology",
     period: {
       from: "1594",
@@ -73,8 +73,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 63, end: 64 },
     },
   },
-  "book/05-orel-1625-1645": {
-    order: 5,
+  "book/06-orel-1625-1645": {
+    order: 6,
     group: "chronology",
     period: {
       from: "1625",
@@ -84,8 +84,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 67, end: 72 },
     },
   },
-  "book/06-sergey-kursk-oboyan-1636-1651": {
-    order: 6,
+  "book/07-sergey-kursk-oboyan-1636-1651": {
+    order: 7,
     group: "chronology",
     period: {
       from: "1636",
@@ -95,8 +95,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 69, end: 74 },
     },
   },
-  "book/07-bazdyrevo-shchigry-1697": {
-    order: 9,
+  "book/10-bazdyrevo-shchigry-1697": {
+    order: 10,
     group: "chronology",
     period: {
       from: "1697",
@@ -105,8 +105,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 80, end: 80 },
     },
   },
-  "book/07-anpilogovo-anpilovka": {
-    order: 7,
+  "book/08-anpilogovo-anpilovka": {
+    order: 8,
     group: "chronology",
     period: {
       from: "1642",
@@ -116,8 +116,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 71, end: 100 },
     },
   },
-  "book/07-anpilovka-stary-oskol": {
-    order: 8,
+  "book/09-anpilovka-stary-oskol": {
+    order: 9,
     group: "chronology",
     period: {
       from: "1668",
@@ -127,8 +127,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 75, end: 100 },
     },
   },
-  "book/08-nobility-1788-1887": {
-    order: 10,
+  "book/11-nobility-1788-1887": {
+    order: 11,
     group: "chronology",
     period: {
       from: "1788",
@@ -138,8 +138,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 86, end: 96 },
     },
   },
-  "book/09-chernozem-taurida": {
-    order: 11,
+  "book/12-chernozem-taurida": {
+    order: 12,
     group: "migration",
     period: {
       from: "XIX век",
@@ -149,8 +149,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 90, end: 100 },
     },
   },
-  "book/10-taurida-crimea": {
-    order: 12,
+  "book/13-taurida-crimea": {
+    order: 13,
     group: "migration",
     period: {
       from: "XIX век",
@@ -160,7 +160,7 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 90, end: 100 },
     },
   },
-  "book/90-method": { order: 90, group: "appendix" },
+  "book/14-method": { order: 14, group: "appendix" },
 };
 
 export function getChapterMeta(slug: string): ChapterMeta | undefined {

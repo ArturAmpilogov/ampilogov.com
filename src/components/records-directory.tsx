@@ -15,8 +15,14 @@ function normalize(value: string) {
     .trim();
 }
 
-export function RecordsDirectory({ records }: { records: ArchiveRecord[] }) {
-  const [query, setQuery] = useState("");
+export function RecordsDirectory({
+  records,
+  initialQuery = "",
+}: {
+  records: ArchiveRecord[];
+  initialQuery?: string;
+}) {
+  const [query, setQuery] = useState(initialQuery);
   const [filter, setFilter] = useState<Filter>("all");
 
   const filtered = useMemo(() => {
