@@ -148,6 +148,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
 
   useEffect(() => {
     let active = true;
+    const markersByPlace = markersByPlaceRef.current;
 
     void (async () => {
       const leafletModule = await import("leaflet");
@@ -220,7 +221,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       leafletRef.current = null;
       clusterRef.current = null;
       expandedClusterRef.current = null;
-      markersByPlaceRef.current.clear();
+      markersByPlace.clear();
       routeLayerRef.current = null;
     };
   }, [places]);
@@ -326,13 +327,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     }
   }, [migrations, ready, selectedPlaceId, summaries, summariesById, year]);
 
-  function showAllPlaces() {
-    mapRef.current?.closePopup();
-    expandedClusterRef.current?.unspiderfy();
-    setSelectedPlaceId(null);
-  }
-
-  function collapseExpandedCluster() {
+  function resetMapFocus() {
     mapRef.current?.closePopup();
     expandedClusterRef.current?.unspiderfy();
     setSelectedPlaceId(null);
@@ -352,7 +347,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           {selected ? <div><dt>Период</dt><dd>{selected.firstYear}—{selected.lastYear}</dd></div> : null}
         </dl>
         {selected ? (
-          <button type="button" onClick={showAllPlaces}>← Все места</button>
+          <button type="button" onClick={resetMapFocus}>← Все места</button>
         ) : null}
       </div>
 
@@ -367,7 +362,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           <button
             className="settlement-map-collapse"
             type="button"
-            onClick={collapseExpandedCluster}
+            onClick={resetMapFocus}
           >
             <span aria-hidden="true">↙</span>
             Свернуть группу
