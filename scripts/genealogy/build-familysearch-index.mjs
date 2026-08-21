@@ -44,16 +44,19 @@ const observedSurnameForms = new Set();
 const evidenceIsApproved = (status) => status?.startsWith("approved");
 
 for (const { file, data } of sources) {
+  const copies = data.sourceCopies?.length ? data.sourceCopies : [data];
   const imageArk = canonicalArk(data.links?.imageArk);
   const recordArk = canonicalArk(data.links?.indexedRecordArk ?? data.links?.recordArk);
-  const position = [
-    data.collection?.imageGroupNumber,
-    data.collection?.itemNumber ?? "-",
-    data.collection?.imageNumber ?? "-",
-  ].join(":");
+  const eventDate = data.event?.date?.iso ??
+    data.event?.date?.birthIso ??
+    data.event?.date?.baptismIso ??
+    data.event?.date?.deathIso ??
+    data.event?.date?.burialIso ??
+    data.event?.date?.marriageIso ??
+    null;
   const fingerprint = [
     data.event?.type ?? "unknown",
-    data.event?.date?.iso ?? "unknown",
+    eventDate ?? "unknown",
     data.event?.place?.placeId ?? "unknown",
     ...(data.mentions ?? []).map((mention) => normalize(
       mention.displayName ?? mention.modernName ?? mention.nameAsIndexed ?? mention.nameAsTranscribed ?? mention.nameAsWritten ?? "",
@@ -68,17 +71,28 @@ for (const { file, data } of sources) {
     itemNumber: data.collection?.itemNumber ?? null,
     imageNumber: data.collection?.imageNumber ?? null,
     eventType: data.event?.type ?? null,
-    eventDate: data.event?.date?.iso ?? null,
+    eventDate,
     placeId: data.event?.place?.placeId ?? null,
     transcriptionStatus: data.transcription?.status ?? "missing",
     reviewStatus: data.review?.status ?? "missing",
     evidencePath: data.evidence?.path ?? null,
     evidenceQualityStatus: evidenceQuality.records?.[data.sourceId]?.status ?? "recapture-required",
+    mergedSourceIds: data.mergedSourceIds ?? [data.sourceId],
+    sourceCopies: copies.map((copy) => copy.sourceId),
   };
 
-  if (imageArk) arkToSourceId[imageArk] = data.sourceId;
-  if (recordArk) arkToSourceId[recordArk] = data.sourceId;
-  if (data.collection?.imageGroupNumber) imagePositionToSourceId[position] = data.sourceId;
+  for (const copy of copies) {
+    const copyImageArk = canonicalArk(copy.links?.imageArk);
+    const copyRecordArk = canonicalArk(copy.links?.indexedRecordArk ?? copy.links?.recordArk);
+    const copyPosition = [
+      copy.collection?.imageGroupNumber,
+      copy.collection?.itemNumber ?? "-",
+      copy.collection?.imageNumber ?? "-",
+    ].join(":");
+    if (copyImageArk) arkToSourceId[copyImageArk] = data.sourceId;
+    if (copyRecordArk) arkToSourceId[copyRecordArk] = data.sourceId;
+    if (copy.collection?.imageGroupNumber) imagePositionToSourceId[copyPosition] = data.sourceId;
+  }
   (eventFingerprints[fingerprint] ??= []).push(data.sourceId);
 
   for (const mention of data.mentions ?? []) {
@@ -107,6 +121,7 @@ const payload = {
   purpose: "Не открывать и не расшифровывать повторно уже обработанные ARK и позиции изображений.",
   stats: {
     reviewedSources: sources.length,
+    preservedSourceCopies: sources.reduce((total, source) => total + (source.data.sourceCopies?.length ?? 1), 0),
     uniqueArks: Object.keys(arkToSourceId).length,
     uniqueImagePositions: Object.keys(imagePositionToSourceId).length,
     approvedEvidence: Object.values(reviewedSources)

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { ArchiveRecord } from "@/lib/genealogy";
 import { RecordTypeIcon } from "@/components/record-type-icon";
+import { YearRangeFilter } from "@/components/year-range-filter";
 
 type Filter = "all" | "complete" | "incomplete" | "human";
 
@@ -16,6 +17,11 @@ function normalize(value: string) {
     .trim();
 }
 
+function recordYear(record: ArchiveRecord) {
+  const years = `${record.year} ${record.date}`.match(/\b[0-9]{4}\b/g) ?? [];
+  return years.map(Number).find((year) => year >= 1000 && year <= 2099) ?? null;
+}
+
 export function RecordsDirectory({
   records,
   initialQuery = "",
@@ -25,6 +31,19 @@ export function RecordsDirectory({
 }) {
   const [query, setQuery] = useState(initialQuery);
   const [filter, setFilter] = useState<Filter>("all");
+  const yearBounds = useMemo(() => {
+    const years = records
+      .map(recordYear)
+      .filter((year): year is number => year !== null);
+    return {
+      minYear: Math.min(...years),
+      maxYear: Math.max(...years),
+    };
+  }, [records]);
+  const [yearRange, setYearRange] = useState(() => ({
+    startYear: yearBounds.minYear,
+    endYear: yearBounds.maxYear,
+  }));
 
   const filtered = useMemo(() => {
     const needle = normalize(query);
@@ -34,9 +53,15 @@ export function RecordsDirectory({
         (filter === "complete" && record.reviewState === "complete") ||
         (filter === "incomplete" && record.reviewState !== "complete") ||
         (filter === "human" && record.reviewState === "human-review");
-      return matchesQuery && matchesFilter;
+      const year = recordYear(record);
+      const fullRange = yearRange.startYear === yearBounds.minYear &&
+        yearRange.endYear === yearBounds.maxYear;
+      const matchesYear = year === null
+        ? fullRange
+        : year >= yearRange.startYear && year <= yearRange.endYear;
+      return matchesQuery && matchesFilter && matchesYear;
     });
-  }, [filter, query, records]);
+  }, [filter, query, records, yearBounds, yearRange]);
 
   return (
     <section className="records-workspace section-shell" aria-label="Каталог архивных записей">
@@ -73,6 +98,14 @@ export function RecordsDirectory({
           ))}
         </div>
       </div>
+
+      <YearRangeFilter
+        minYear={yearBounds.minYear}
+        maxYear={yearBounds.maxYear}
+        startYear={yearRange.startYear}
+        endYear={yearRange.endYear}
+        onChange={setYearRange}
+      />
 
       <div className="records-result-line" aria-live="polite">
         <strong>{filtered.length}</strong>
@@ -122,7 +155,11 @@ export function RecordsDirectory({
           <div className="records-empty">
             <strong>Записей не найдено</strong>
             <p>Попробуйте часть фамилии, имя или год.</p>
-            <button type="button" onClick={() => { setQuery(""); setFilter("all"); }}>Сбросить фильтры</button>
+            <button type="button" onClick={() => {
+              setQuery("");
+              setFilter("all");
+              setYearRange({ startYear: yearBounds.minYear, endYear: yearBounds.maxYear });
+            }}>Сбросить фильтры</button>
           </div>
         ) : null}
       </div>

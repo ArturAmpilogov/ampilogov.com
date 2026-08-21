@@ -11,22 +11,26 @@ let updated = 0;
 
 for (const file of (await readdir(sourcesDir)).filter((name) => name.endsWith(".json")).sort()) {
   const source = JSON.parse(await readFile(path.join(sourcesDir, file), "utf8"));
-  const embeddedStatus = source.evidence?.quality?.status;
-  if (!embeddedStatus?.startsWith("approved")) continue;
+  const copies = source.sourceCopies?.length ? source.sourceCopies : [source];
+  for (const copy of copies) {
+    const embeddedStatus = copy.evidence?.quality?.status;
+    if (!embeddedStatus?.startsWith("approved")) continue;
 
-  const current = quality.records[source.sourceId];
-  const next = {
-    ...current,
-    status: embeddedStatus,
-    approvedAt: current?.approvedAt ?? source.evidence?.capturedAt ?? quality.updatedAt,
-    fragments: source.evidence?.fragments?.length ?? current?.fragments ?? 0,
-    transcriptionStatus: source.transcription?.status ?? current?.transcriptionStatus ?? "missing",
-    approvalBasis: current?.approvalBasis ?? "source-card-evidence-quality",
-  };
+    const current = quality.records[copy.sourceId];
+    const next = {
+      ...current,
+      status: embeddedStatus,
+      approvedAt: current?.approvedAt ?? copy.evidence?.capturedAt ?? quality.updatedAt,
+      fragments: copy.evidence?.fragments?.length ?? current?.fragments ?? 0,
+      transcriptionStatus: copy.transcription?.status ?? current?.transcriptionStatus ?? "missing",
+      approvalBasis: current?.approvalBasis ?? "source-card-evidence-quality",
+      ...(source.sourceCopies?.length ? { canonicalSourceId: source.sourceId } : {}),
+    };
 
-  if (!current) added += 1;
-  else if (JSON.stringify(current) !== JSON.stringify(next)) updated += 1;
-  quality.records[source.sourceId] = next;
+    if (!current) added += 1;
+    else if (JSON.stringify(current) !== JSON.stringify(next)) updated += 1;
+    quality.records[copy.sourceId] = next;
+  }
 }
 
 quality.records = Object.fromEntries(Object.entries(quality.records)

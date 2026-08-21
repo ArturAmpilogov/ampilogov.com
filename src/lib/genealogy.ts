@@ -10,7 +10,7 @@ type PersonRecord = {
   sex?: "male" | "female";
   nameVariants?: string[];
   birth?: { date?: string; placeId?: string };
-  birthEstimate?: { year?: number; basis?: string };
+  birthEstimate?: { year?: number; from?: string; to?: string; basis?: string };
   dates?: {
     birth?: { display?: string; iso?: string; basis?: string };
   };
@@ -72,6 +72,7 @@ type SourceMention = {
     normalized?: string;
   };
   eventAssociation?: "child" | "groom" | "bride" | "couple" | "unknown";
+  age?: unknown;
   relationshipNote?: string;
   uncertainties?: string[];
   places?: Array<{
@@ -95,6 +96,7 @@ type SourceRecord = {
     imageGroupNumber?: string;
     itemNumber?: number;
     imageNumber?: number;
+    custodian?: string;
   };
   repository?: {
     name?: string;
@@ -106,7 +108,15 @@ type SourceRecord = {
   event?: {
     type?: string;
     typeAsRussian?: string;
-    date?: { display?: string; iso?: string; birthIso?: string; baptismIso?: string };
+    date?: {
+      display?: string;
+      iso?: string;
+      birthIso?: string;
+      baptismIso?: string;
+      deathIso?: string;
+      burialIso?: string;
+      marriageIso?: string;
+    };
     place?: { normalized?: string; asIndexed?: string; placeId?: string };
   };
   transcription?: {
@@ -116,7 +126,13 @@ type SourceRecord = {
     suppliedText?: string;
     fields?: Record<string, unknown>;
   };
-  indexData?: { age?: string };
+  indexData?: {
+    age?: unknown;
+    indexedAge?: unknown;
+    groomAge?: unknown;
+    brideAge?: unknown;
+    [key: string]: unknown;
+  };
   summary?: { status?: string; text?: string };
   mentions?: SourceMention[];
   migrationObservations?: Array<{
@@ -134,6 +150,20 @@ type SourceRecord = {
     fragments?: Array<{ part?: string; path?: string }>;
   };
   review?: { status?: string; unresolved?: string[] };
+  mergedSourceIds?: string[];
+  sourceCopies?: SourceRecord[];
+};
+
+export type ArchiveSourceCopy = {
+  sourceId: string;
+  provider: string;
+  collection: string;
+  repository: string;
+  repositoryLocation: string;
+  imageReference: string;
+  originalUrl: string | null;
+  indexedUrl: string | null;
+  place: string;
 };
 
 export type ArchiveRecordPerson = {
@@ -173,6 +203,7 @@ export type ArchiveRecord = {
   indexedLabel: string;
   evidenceUrl: string | null;
   evidenceFragments: Array<{ label: string; url: string }>;
+  sourceCopies: ArchiveSourceCopy[];
   mayDisplayEvidence: boolean;
   rightsNote: string;
   primaryPerson: ArchiveRecordPerson | null;
@@ -287,6 +318,11 @@ export type DirectoryPerson = {
   normalizedSurname: string;
   birthDate: string;
   birthYear: string;
+  life: {
+    birth: string;
+    death: string;
+    age: string;
+  };
   places: string[];
   occupations: string[];
   status: string;
@@ -433,6 +469,10 @@ const roleLabels: Record<string, string> = {
   "oath-taker": "принёсший присягу",
   "new-serviceman": "новик, принятый на службу",
   landholder: "владелец поместья",
+  "previous-holder": "прежний владелец поместья",
+  eponym: "человек, давший название",
+  grandson: "внук",
+  grandfather: "дед",
   son: "сын",
   "foster-son": "приёмыш",
   "scribe-proxy": "рукоприкладчик",
@@ -676,7 +716,7 @@ function sourceDirectoryFacts(source: SourceRecord) {
 
   if (deathEventTypes.has(eventType)) {
     const fieldAge = source.transcription?.fields?.age;
-    const age = typeof fieldAge === "string" ? fieldAge : source.indexData?.age ?? "";
+    const age = ageValueText(fieldAge) || ageValueText(source.indexData?.age);
     const approximateBirth = age ? approximateBirthFromAge(source, age) : "";
 
     return [
@@ -724,6 +764,17 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     confidence: observation.confidence ?? "medium",
   }));
   const isFamilySearch = (source.provider ?? "FamilySearch") === "FamilySearch";
+  const sourceCopies = (source.sourceCopies?.length ? source.sourceCopies : [source]).map((copy) => ({
+    sourceId: copy.sourceId,
+    provider: copy.provider ?? "FamilySearch",
+    collection: copy.collection?.title ?? "Коллекция FamilySearch",
+    repository: copy.repository?.name ?? copy.collection?.custodian ?? "Архив-хранитель уточняется",
+    repositoryLocation: copy.repository?.location ?? "Место хранения уточняется",
+    imageReference: sourcePosition(copy),
+    originalUrl: copy.links?.imageArk ?? null,
+    indexedUrl: copy.links?.indexedRecordArk ?? copy.links?.recordArk ?? null,
+    place: sourcePlace(copy),
+  }));
 
   return {
     sourceId: source.sourceId,
@@ -752,6 +803,7 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
           url,
         }] : [];
       }),
+    sourceCopies,
     mayDisplayEvidence: source.evidence?.publicDisplay === true,
     rightsNote: source.evidence?.rightsNote ?? "Права на изображение не проверены; публичная копия не показывается.",
     primaryPerson: sourcePrimaryPerson(source, people),
@@ -767,6 +819,7 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     unresolved: source.review?.unresolved ?? [],
     searchText: [
       source.sourceId,
+      ...(source.mergedSourceIds ?? []),
       eventLabel,
       date,
       place,
@@ -782,6 +835,14 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
       literal,
       modernInterpretation,
       summary,
+      ...sourceCopies.flatMap((copy) => [
+        copy.sourceId,
+        copy.collection,
+        copy.repository,
+        copy.repositoryLocation,
+        copy.imageReference,
+        copy.place,
+      ]),
     ].filter(Boolean).join(" ").toLocaleLowerCase("ru"),
   };
 }
@@ -804,7 +865,9 @@ export function getRecordsDirectory() {
 }
 
 export function getArchiveRecord(sourceId: string) {
-  return getRecordsDirectory().records.find((record) => record.sourceId === sourceId) ?? null;
+  return getRecordsDirectory().records.find((record) =>
+    record.sourceId === sourceId || record.sourceCopies.some((copy) => copy.sourceId === sourceId)
+  ) ?? null;
 }
 
 function readJsonDirectory<T>(directory: string): T[] {
@@ -846,12 +909,481 @@ function formatDate(value?: string) {
   }).format(new Date(`${value}T00:00:00Z`));
 }
 
-function personBirthDate(person: PersonRecord) {
-  if (person.birth?.date) return formatDate(person.birth.date);
-  if (person.dates?.birth?.iso) return formatDate(person.dates.birth.iso);
-  if (person.dates?.birth?.display) return person.dates.birth.display;
-  if (person.birthEstimate?.year) return `около ${person.birthEstimate.year} года`;
+type LifeDateCandidate = {
+  display: string;
+  from: Date;
+  to: Date;
+  exactDay: boolean;
+  estimated: boolean;
+};
+
+type LifeEventKind = "birth" | "death" | "marriage";
+
+const russianMonths = [
+  "января",
+  "февраля",
+  "марта",
+  "апреля",
+  "мая",
+  "июня",
+  "июля",
+  "августа",
+  "сентября",
+  "октября",
+  "ноября",
+  "декабря",
+];
+
+const russianMonthsNominative = [
+  "январь", "февраль", "март", "апрель", "май", "июнь",
+  "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь",
+];
+
+const russianMonthNumbers = new Map([
+  ["январь", 0], ["января", 0], ["февраль", 1], ["февраля", 1],
+  ["март", 2], ["марта", 2], ["апрель", 3], ["апреля", 3],
+  ["май", 4], ["мая", 4], ["июнь", 5], ["июня", 5],
+  ["июль", 6], ["июля", 6], ["август", 7], ["августа", 7],
+  ["сентябрь", 8], ["сентября", 8], ["октябрь", 9], ["октября", 9],
+  ["ноябрь", 10], ["ноября", 10], ["декабрь", 11], ["декабря", 11],
+]);
+
+function validUtcDate(year: number, month: number, day: number) {
+  const value = new Date(Date.UTC(year, month, day));
+  return value.getUTCFullYear() === year && value.getUTCMonth() === month && value.getUTCDate() === day
+    ? value
+    : null;
+}
+
+function lifeDateFromIso(value?: string): LifeDateCandidate | null {
+  if (!value) return null;
+  const dayMatch = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (dayMatch) {
+    const date = validUtcDate(Number(dayMatch[1]), Number(dayMatch[2]) - 1, Number(dayMatch[3]));
+    if (!date) return null;
+    return {
+      display: new Intl.DateTimeFormat("ru-RU", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        timeZone: "UTC",
+      }).format(date).replace(/\s*г\.$/, ""),
+      from: date,
+      to: date,
+      exactDay: true,
+      estimated: false,
+    };
+  }
+
+  const monthMatch = value.match(/^(\d{4})-(\d{2})$/);
+  if (monthMatch) {
+    const year = Number(monthMatch[1]);
+    const month = Number(monthMatch[2]) - 1;
+    const from = validUtcDate(year, month, 1);
+    const to = new Date(Date.UTC(year, month + 1, 0));
+    if (!from || !to) return null;
+    return {
+      display: `${russianMonthsNominative[month]} ${year}`,
+      from,
+      to,
+      exactDay: false,
+      estimated: false,
+    };
+  }
+
+  const yearMatch = value.match(/^(\d{4})$/);
+  if (!yearMatch) return null;
+  const year = Number(yearMatch[1]);
+  return {
+    display: String(year),
+    from: new Date(Date.UTC(year, 0, 1)),
+    to: new Date(Date.UTC(year, 11, 31)),
+    exactDay: false,
+    estimated: false,
+  };
+}
+
+function normalizedLifeDisplay(value: string) {
+  return value
+    .trim()
+    .split(";")[0]
+    .trim()
+    .replace(/^около\s+/i, "ок. ")
+    .replace(/\s+(?:года|год|г\.)$/i, "")
+    .replace(/\s+/g, " ");
+}
+
+function lifeDateFromDisplay(value?: string): LifeDateCandidate | null {
+  if (!value) return null;
+  const display = normalizedLifeDisplay(value);
+  const years = [...display.matchAll(/\b(\d{4})\b/g)].map((match) => Number(match[1]));
+  if (!years.length) return null;
+  const estimated = /(?:ок\.|пример|≈|ориентир)/i.test(display);
+
+  const dayMatch = display.match(/\b(\d{1,2})\s+([а-яё]+)\s+(\d{4})\b/i);
+  if (dayMatch && !estimated) {
+    const month = russianMonthNumbers.get(dayMatch[2].toLocaleLowerCase("ru"));
+    const date = month === undefined ? null : validUtcDate(Number(dayMatch[3]), month, Number(dayMatch[1]));
+    if (date) return { display, from: date, to: date, exactDay: true, estimated: false };
+  }
+
+  const monthMatch = display.match(/\b([а-яё]+)\s+(\d{4})\b/i);
+  if (monthMatch && !estimated) {
+    const month = russianMonthNumbers.get(monthMatch[1].toLocaleLowerCase("ru"));
+    const year = Number(monthMatch[2]);
+    if (month !== undefined) {
+      return {
+        display,
+        from: new Date(Date.UTC(year, month, 1)),
+        to: new Date(Date.UTC(year, month + 1, 0)),
+        exactDay: false,
+        estimated: false,
+      };
+    }
+  }
+
+  const firstYear = Math.min(...years);
+  const lastYear = Math.max(...years);
+  return {
+    display,
+    from: new Date(Date.UTC(firstYear, 0, 1)),
+    to: new Date(Date.UTC(lastYear, 11, 31)),
+    exactDay: false,
+    estimated,
+  };
+}
+
+function lifeDateFromRange(fromValue?: string, toValue?: string): LifeDateCandidate | null {
+  const from = lifeDateFromIso(fromValue);
+  const to = lifeDateFromIso(toValue);
+  if (!from && !to) return null;
+  const lower = from?.from ?? to!.from;
+  const upper = to?.to ?? from!.to;
+  const firstYear = lower.getUTCFullYear();
+  const lastYear = upper.getUTCFullYear();
+  return {
+    display: firstYear === lastYear ? `[${firstYear}]` : `[${firstYear}–${lastYear}]`,
+    from: lower,
+    to: upper,
+    exactDay: false,
+    estimated: true,
+  };
+}
+
+function estimatedYearLifeDate(year?: number): LifeDateCandidate | null {
+  if (!year) return null;
+  return {
+    display: `ок. ${year}`,
+    from: new Date(Date.UTC(year, 0, 1)),
+    to: new Date(Date.UTC(year, 11, 31)),
+    exactDay: false,
+    estimated: true,
+  };
+}
+
+function mostCommonLifeDate(candidates: LifeDateCandidate[]) {
+  const grouped = new Map<string, { candidate: LifeDateCandidate; count: number }>();
+  for (const candidate of candidates) {
+    const key = `${candidate.from.toISOString()}|${candidate.to.toISOString()}`;
+    const current = grouped.get(key);
+    grouped.set(key, { candidate, count: (current?.count ?? 0) + 1 });
+  }
+  return [...grouped.values()]
+    .sort((left, right) => right.count - left.count || left.candidate.from.getTime() - right.candidate.from.getTime())[0]
+    ?.candidate ?? null;
+}
+
+function eventLifeDate(source: SourceRecord, kind: LifeEventKind) {
+  const date = source.event?.date;
+  const iso = kind === "birth"
+    ? date?.birthIso ?? date?.iso
+    : kind === "death"
+      ? date?.deathIso ?? date?.iso
+      : date?.marriageIso ?? date?.iso;
+  return lifeDateFromIso(iso) ?? lifeDateFromDisplay(date?.display);
+}
+
+const lifeEventRoles: Record<LifeEventKind, (role: string) => boolean> = {
+  birth: (role) => ["child", "baptized-child", "newborn", "subject"].includes(role),
+  death: (role) => role.startsWith("deceased"),
+  marriage: (role) => ["groom", "bride", "spouse", "couple"].includes(role),
+};
+
+function normalizedNameKey(value?: string) {
+  return (value ?? "")
+    .normalize("NFKC")
+    .toLocaleLowerCase("ru")
+    .replace(/ё/g, "е")
+    .replace(/ъ\b/g, "")
+    .replace(/[^а-яa-z0-9]+/g, " ")
+    .trim();
+}
+
+function lifeEventMention(person: PersonRecord, source: SourceRecord, kind: LifeEventKind) {
+  const relevant = (source.mentions ?? []).filter((mention) => lifeEventRoles[kind](mention.role ?? ""));
+  const linked = relevant.find((mention) => mention.personId === person.personId);
+  if (linked) return { matches: true, mention: linked };
+  if (source.primaryPersonId === person.personId) {
+    return {
+      matches: true,
+      mention: (source.mentions ?? []).find((mention) => mention.personId === person.personId) ?? null,
+    };
+  }
+
+  const names = new Set([person.displayName, ...(person.nameVariants ?? [])].map(normalizedNameKey).filter(Boolean));
+  const named = relevant.find((mention) =>
+    !mention.personId && names.has(normalizedNameKey(sourceMentionName(mention)))
+  );
+  return { matches: Boolean(named), mention: named ?? null };
+}
+
+function yearCount(value: number) {
+  const mod100 = value % 100;
+  const mod10 = value % 10;
+  if (mod100 >= 11 && mod100 <= 14) return `${value} лет`;
+  if (mod10 === 1) return `${value} год`;
+  if (mod10 >= 2 && mod10 <= 4) return `${value} года`;
+  return `${value} лет`;
+}
+
+function ageValueText(value: unknown): string {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value === 0 ? "младше года" : yearCount(value);
+  }
+  if (typeof value === "string") {
+    const clean = value
+      .replace(/\s*\[[^\]]+\]/g, "")
+      .split(";")[0]
+      .trim();
+    if (!clean) return "";
+    if (/^\d+$/.test(clean)) {
+      const amount = Number(clean);
+      return amount === 0 ? "младше года" : yearCount(amount);
+    }
+    const englishYears = clean.match(/^(\d+)\s*years?$/i);
+    if (englishYears) return yearCount(Number(englishYears[1]));
+    const englishDays = clean.match(/^(\d+)\s*days?$/i);
+    if (englishDays) {
+      const amount = Number(englishDays[1]);
+      if (!amount) return "";
+      return `${amount} ${amount === 1 ? "день" : amount < 5 ? "дня" : "дней"}`;
+    }
+    if (/^(?:1\s*\/\s*2|½)\s*года?$/i.test(clean)) return "6 месяцев";
+    return /\d/.test(clean) || /^младше года$/i.test(clean) ? clean : "";
+  }
+  if (value && typeof value === "object") {
+    const record = value as Record<string, unknown>;
+    for (const key of ["display", "asWritten", "value", "text"]) {
+      const result = ageValueText(record[key]);
+      if (result) return result;
+    }
+  }
   return "";
+}
+
+function ageFromNarrative(value: unknown) {
+  if (typeof value !== "string") return "";
+  return value.match(/(?:около\s+)?(?:\d+\s+)?(?:\d+\s*\/\s*\d+|½|\d+)\s*(?:лет|год(?:а)?|месяц(?:а|ев)?|недел(?:я|и|ь)|д(?:ень|ня|ней))(?:\s+\d+\s*(?:месяц(?:а|ев)?|недел(?:я|и|ь)|д(?:ень|ня|ней)))?/i)?.[0] ?? "";
+}
+
+function sourceAgeForPerson(source: SourceRecord, kind: "death" | "marriage", mention: SourceMention | null) {
+  const fields = source.transcription?.fields ?? {};
+  if (kind === "death") {
+    return ageValueText(fields.age) || ageValueText(mention?.age) ||
+      ageValueText(source.indexData?.age) || ageValueText(source.indexData?.indexedAge);
+  }
+
+  const role = mention?.role === "bride" ? "bride" : mention?.role === "groom" ? "groom" : "";
+  if (!role) return ageValueText(mention?.age);
+  return ageValueText(mention?.age) || ageValueText(source.indexData?.[`${role}Age`]) ||
+    ageValueText(fields[`${role}Age`]) || ageValueText(ageFromNarrative(fields[role]));
+}
+
+function parsedAgeInMonths(age: string) {
+  const normalized = age
+    .replace(/(\d)½/g, "$1 1/2")
+    .replace(/½/g, "1/2")
+    .toLocaleLowerCase("ru");
+  let totalMonths = 0;
+  const mixedYear = normalized.match(/(\d+)\s+(\d+)\s*\/\s*(\d+)\s*(?:лет|год)/);
+  const halfYear = !mixedYear && normalized.match(/(?:^|\s)(\d+)\s*\/\s*(\d+)\s*(?:лет|год)/);
+  const wholeYear = !mixedYear && !halfYear ? normalized.match(/(\d+)\s*(?:лет|год)/) : null;
+  if (mixedYear) totalMonths += Number(mixedYear[1]) * 12 + Math.round((Number(mixedYear[2]) / Number(mixedYear[3])) * 12);
+  else if (wholeYear) totalMonths += Number(wholeYear[1]) * 12;
+  else if (halfYear) totalMonths += Math.round((Number(halfYear[1]) / Number(halfYear[2])) * 12);
+  const month = normalized.match(/(\d+)\s*месяц/);
+  if (month) totalMonths += Number(month[1]);
+  if (totalMonths) return { months: totalMonths, days: 0 };
+  const week = normalized.match(/(\d+)\s*недел/);
+  if (week) return { months: 0, days: Number(week[1]) * 7 };
+  const day = normalized.match(/(\d+)\s*д(?:ень|ня|ней)/);
+  if (day) return { months: 0, days: Number(day[1]) };
+  return null;
+}
+
+function addUtcDays(date: Date, amount: number) {
+  const value = new Date(date);
+  value.setUTCDate(value.getUTCDate() + amount);
+  return value;
+}
+
+function addUtcMonths(date: Date, amount: number) {
+  const value = new Date(date);
+  value.setUTCMonth(value.getUTCMonth() + amount);
+  return value;
+}
+
+function addUtcYears(date: Date, amount: number) {
+  const value = new Date(date);
+  value.setUTCFullYear(value.getUTCFullYear() + amount);
+  return value;
+}
+
+function birthFromDatedAge(eventDate: LifeDateCandidate, age: string): LifeDateCandidate | null {
+  const parsed = parsedAgeInMonths(age);
+  if (!parsed) return null;
+  if (parsed.months >= 12) {
+    const completedYears = Math.floor(parsed.months / 12);
+    const lower = addUtcDays(addUtcYears(eventDate.from, -(completedYears + 1)), 1);
+    const upper = addUtcYears(eventDate.to, -completedYears);
+    const firstYear = lower.getUTCFullYear();
+    const lastYear = upper.getUTCFullYear();
+    return {
+      display: firstYear === lastYear ? `[${firstYear}]` : `[${firstYear}–${lastYear}]`,
+      from: lower,
+      to: upper,
+      exactDay: false,
+      estimated: true,
+    };
+  }
+
+  const approximate = parsed.months
+    ? addUtcMonths(eventDate.from, -parsed.months)
+    : addUtcDays(eventDate.from, -parsed.days);
+  const display = parsed.months
+    ? `ок. ${russianMonths[approximate.getUTCMonth()]} ${approximate.getUTCFullYear()}`
+    : `ок. ${approximate.getUTCDate()} ${russianMonths[approximate.getUTCMonth()]} ${approximate.getUTCFullYear()}`;
+  return {
+    display,
+    from: parsed.months ? addUtcMonths(approximate, -1) : addUtcDays(approximate, -1),
+    to: parsed.months ? addUtcMonths(approximate, 1) : addUtcDays(approximate, 1),
+    exactDay: false,
+    estimated: true,
+  };
+}
+
+function completedYearsBetween(birth: Date, death: Date) {
+  let years = death.getUTCFullYear() - birth.getUTCFullYear();
+  if (death.getUTCMonth() < birth.getUTCMonth() ||
+    (death.getUTCMonth() === birth.getUTCMonth() && death.getUTCDate() < birth.getUTCDate())) years -= 1;
+  return years;
+}
+
+function calculatedAge(birth: LifeDateCandidate, death: LifeDateCandidate) {
+  if (birth.exactDay && death.exactDay) {
+    const years = completedYearsBetween(birth.from, death.from);
+    if (years > 0) return yearCount(years);
+    let months = (death.from.getUTCFullYear() - birth.from.getUTCFullYear()) * 12 +
+      death.from.getUTCMonth() - birth.from.getUTCMonth();
+    if (death.from.getUTCDate() < birth.from.getUTCDate()) months -= 1;
+    if (months > 0) return `${months} ${months === 1 ? "месяц" : months < 5 ? "месяца" : "месяцев"}`;
+    const days = Math.max(0, Math.floor((death.from.getTime() - birth.from.getTime()) / 86_400_000));
+    return `${days} ${days % 10 === 1 && days % 100 !== 11 ? "день" : days % 10 >= 2 && days % 10 <= 4 && !(days % 100 >= 12 && days % 100 <= 14) ? "дня" : "дней"}`;
+  }
+
+  const youngest = completedYearsBetween(birth.to, death.from);
+  const oldest = completedYearsBetween(birth.from, death.to);
+  if (oldest < 0) return "";
+  const safeYoungest = Math.max(0, youngest);
+  return safeYoungest === oldest
+    ? `примерно ${yearCount(oldest)}`
+    : safeYoungest === 0 && oldest === 1
+      ? "около 1 года"
+    : `примерно ${safeYoungest}–${oldest} лет`;
+}
+
+function closestLifeDate(candidates: LifeDateCandidate[], reference: LifeDateCandidate | null) {
+  if (!candidates.length) return null;
+  if (!reference) return mostCommonLifeDate(candidates);
+  const referenceTime = (reference.from.getTime() + reference.to.getTime()) / 2;
+  return [...candidates].sort((left, right) => {
+    const leftDistance = referenceTime < left.from.getTime()
+      ? left.from.getTime() - referenceTime
+      : referenceTime > left.to.getTime() ? referenceTime - left.to.getTime() : 0;
+    const rightDistance = referenceTime < right.from.getTime()
+      ? right.from.getTime() - referenceTime
+      : referenceTime > right.to.getTime() ? referenceTime - right.to.getTime() : 0;
+    return leftDistance - rightDistance;
+  })[0];
+}
+
+function statedAgeDisplay(age: string, birth: LifeDateCandidate | null, death: LifeDateCandidate | null) {
+  if (!birth || !death) return age;
+  const parsed = parsedAgeInMonths(age);
+  if (!parsed || parsed.months < 12) return age;
+  const statedYears = Math.floor(parsed.months / 12);
+  const youngest = Math.max(0, completedYearsBetween(birth.to, death.from));
+  const oldest = completedYearsBetween(birth.from, death.to);
+  return statedYears < youngest - 1 || statedYears > oldest + 1 ? `${age} (по записи)` : age;
+}
+
+function personLife(person: PersonRecord, sources: SourceRecord[]) {
+  const birthEvents = sources.flatMap((source) => {
+    if (!birthEventTypes.has(source.event?.type ?? "")) return [];
+    const association = lifeEventMention(person, source, "birth");
+    if (!association.matches) return [];
+    const date = eventLifeDate(source, "birth");
+    return date ? [date] : [];
+  });
+
+  const deathEvents = sources.flatMap((source) => {
+    if (!deathEventTypes.has(source.event?.type ?? "")) return [];
+    const association = lifeEventMention(person, source, "death");
+    if (!association.matches) return [];
+    const date = eventLifeDate(source, "death");
+    const age = sourceAgeForPerson(source, "death", association.mention);
+    return [{ date, age }];
+  });
+
+  const marriageBirthEstimates = sources.flatMap((source) => {
+    if (!marriageEventTypes.has(source.event?.type ?? "")) return [];
+    const association = lifeEventMention(person, source, "marriage");
+    if (!association.matches) return [];
+    const date = eventLifeDate(source, "marriage");
+    const age = sourceAgeForPerson(source, "marriage", association.mention);
+    const estimate = date && age ? birthFromDatedAge(date, age) : null;
+    return estimate ? [estimate] : [];
+  });
+
+  const deathDates = deathEvents.flatMap((event) => event.date ? [event.date] : []);
+  const inferredFromDeath = deathEvents.flatMap((event) => {
+    const estimate = event.date && event.age ? birthFromDatedAge(event.date, event.age) : null;
+    return estimate ? [estimate] : [];
+  });
+  const profileBirth = lifeDateFromIso(person.birth?.date) ?? lifeDateFromIso(person.dates?.birth?.iso);
+  const inferredBirth = closestLifeDate(
+    [...inferredFromDeath, ...marriageBirthEstimates],
+    profileBirth && !profileBirth.exactDay ? profileBirth : null,
+  );
+  const birth = (profileBirth?.exactDay ? profileBirth : null) ??
+    mostCommonLifeDate(birthEvents) ??
+    lifeDateFromRange(person.birthEstimate?.from, person.birthEstimate?.to) ??
+    lifeDateFromDisplay(person.dates?.birth?.display) ??
+    estimatedYearLifeDate(person.birthEstimate?.year) ??
+    inferredBirth ??
+    profileBirth;
+  const death = mostCommonLifeDate(deathDates);
+  const statedDeathAges = deathEvents.map((event) => event.age).filter(Boolean);
+  const calculated = birth && death ? calculatedAge(birth, death) : "";
+  const statedAge = statedDeathAges[0] ? statedAgeDisplay(statedDeathAges[0], birth, death) : "";
+  const age = birth?.exactDay && death?.exactDay ? calculated : statedAge || calculated;
+
+  return {
+    birth: birth?.display ?? "?",
+    death: death?.display ?? "?",
+    age,
+    birthYear: birth ? String(birth.from.getUTCFullYear()) : "",
+  };
 }
 
 function personPlaceLabel(place: NonNullable<PersonRecord["places"]>[number]) {
@@ -882,9 +1414,10 @@ export function getPeopleDirectory() {
   const sourcesById = new Map(sources.map((source) => [source.sourceId, source]));
 
   const directory: DirectoryPerson[] = people.map((person) => {
-    const personSources = (person.sourceIds ?? [])
+    const linkedSources = (person.sourceIds ?? [])
       .map((sourceId) => sourcesById.get(sourceId))
-      .filter((source): source is SourceRecord => Boolean(source))
+      .filter((source): source is SourceRecord => Boolean(source));
+    const personSources = linkedSources
       .map((source): DirectorySource => {
         const mention = source.mentions?.find((entry) => entry.personId === person.personId);
         const type = source.event?.type ?? "unknown";
@@ -961,17 +1494,17 @@ export function getPeopleDirectory() {
     const variants = [...new Set([...(person.nameVariants ?? []), ...(person.surname?.formsAsWritten ?? [])])];
     const needsReview = /review|unverified|working|partial/i.test(person.status ?? "") ||
       personSources.some((source) => !["verified", "complete"].includes(source.status));
-    const birthDate = personBirthDate(person);
-    const birthYear = person.birth?.date?.match(/^\d{4}/)?.[0] ??
-      person.dates?.birth?.iso?.match(/^\d{4}/)?.[0] ??
-      person.dates?.birth?.display?.match(/\b\d{4}\b/)?.[0] ??
-      String(person.birthEstimate?.year ?? "");
+    const life = personLife(person, linkedSources);
+    const birthDate = life.birth === "?" ? "" : life.birth;
+    const birthYear = life.birthYear;
     const searchText = [
       person.personId,
       person.displayName,
       person.surname?.normalized,
       ...variants,
       ...places,
+      life.birth,
+      life.death,
       ...personSources.flatMap((source) => [source.nameAsWritten, source.transcription]),
     ].filter(Boolean).join(" ").toLocaleLowerCase("ru");
 
@@ -983,6 +1516,11 @@ export function getPeopleDirectory() {
       normalizedSurname: person.surname?.normalized ?? "",
       birthDate,
       birthYear,
+      life: {
+        birth: life.birth,
+        death: life.death,
+        age: life.age,
+      },
       places,
       occupations: person.occupation ?? [],
       status: person.status ?? "working",

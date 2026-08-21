@@ -152,6 +152,25 @@ export default async function RecordPage({ params }: RecordPageProps) {
               {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">{record.indexedLabel} ↗</a> : null}
               {record.repositoryUrl ? <a href={record.repositoryUrl} target="_blank" rel="noreferrer">Архив-хранитель ↗</a> : null}
             </div>
+            {record.sourceCopies.length > 1 ? (
+              <div className="record-source-copies">
+                <h3>Экземпляры этой записи</h3>
+                <p>Это одно событие, подтверждённое несколькими архивными копиями или индексами.</p>
+                <ol>
+                  {record.sourceCopies.map((copy) => (
+                    <li key={copy.sourceId}>
+                      <small>{copy.sourceId}</small>
+                      <strong>{copy.collection}</strong>
+                      <span>{[copy.repository, copy.imageReference, copy.place].filter(Boolean).join(" · ")}</span>
+                      <div>
+                        {copy.originalUrl ? <a href={copy.originalUrl} target="_blank" rel="noreferrer">Оригинал ↗</a> : null}
+                        {copy.indexedUrl ? <a href={copy.indexedUrl} target="_blank" rel="noreferrer">Индекс ↗</a> : null}
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ) : null}
             {!hasEvidenceAsset ? (
               <p className="record-rights-note">
                 Скан исходной строки пока не сохранён. {record.unresolved[0]}

@@ -169,6 +169,10 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       });
       mapRef.current = map;
 
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        map.dragging.disable();
+      }
+
       map.attributionControl.setPrefix(
         '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer">Leaflet</a>',
       );
@@ -351,7 +355,24 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         ) : null}
       </div>
 
-      <div className="settlement-map-stage">
+      <div className="settlement-map-timeline section-shell">
+        <label htmlFor="settlement-map-year">
+          <span>Исторический срез</span>
+          <strong>{year}</strong>
+        </label>
+        <input
+          id="settlement-map-year"
+          type="range"
+          min={range.minYear}
+          max={range.maxYear}
+          value={year}
+          onInput={(event) => setYear(Number(event.currentTarget.value))}
+          onChange={(event) => setYear(Number(event.target.value))}
+        />
+        <div aria-hidden="true"><span>{range.minYear}</span><span>{range.maxYear}</span></div>
+      </div>
+
+      <div className="settlement-map-stage section-shell">
         <div
           className="settlement-map-canvas"
           ref={containerRef}
@@ -368,23 +389,6 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
             Свернуть группу
           </button>
         ) : null}
-      </div>
-
-      <div className="settlement-map-timeline section-shell">
-        <label htmlFor="settlement-map-year">
-          <span>Исторический срез</span>
-          <strong>{year}</strong>
-        </label>
-        <input
-          id="settlement-map-year"
-          type="range"
-          min={range.minYear}
-          max={range.maxYear}
-          value={year}
-          onInput={(event) => setYear(Number(event.currentTarget.value))}
-          onChange={(event) => setYear(Number(event.target.value))}
-        />
-        <div aria-hidden="true"><span>{range.minYear}</span><span>{range.maxYear}</span></div>
       </div>
 
       <footer className="settlement-map-legend section-shell">

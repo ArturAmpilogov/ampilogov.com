@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "FS-3Q9M-CSSM-TSD5-R",
   "provider": "FamilySearch",
+  "primaryPersonId": "P0177",
   "collection": {
     "id": "4135959",
     "title": "Мелитополь. Метрические записи, 1825–1827",
@@ -49,7 +50,7 @@
     {
       "mentionId": "FS-3Q9M-CSSM-TSD5-R-M1",
       "role": "child",
-      "personId": null,
+      "personId": "P0177",
       "sex": "male",
       "nameAsTranscribed": "Ѳеодоръ",
       "nameAsIndexed": "Феодор Анпилогов",
@@ -67,7 +68,7 @@
     {
       "mentionId": "FS-3Q9M-CSSM-TSD5-R-M2",
       "role": "father",
-      "personId": null,
+      "personId": "P0175",
       "sex": "male",
       "nameAsTranscribed": "Павелъ Анпилоговъ",
       "nameAsIndexed": "Павел Анпилогов",
@@ -80,7 +81,7 @@
     {
       "mentionId": "FS-3Q9M-CSSM-TSD5-R-M3",
       "role": "mother",
-      "personId": null,
+      "personId": "P0176",
       "sex": "female",
       "nameAsTranscribed": "Агафія",
       "nameAsIndexed": "Агафия",
@@ -159,12 +160,17 @@
       }
     ]
   },
+  "sourceRelations": [
+    {"type": "probable-same-person", "targetSourceId": "FS-3Q9M-CS9M-79X2-W", "confidence": "medium", "basis": "Отец Павел совместим с Павлом Ильичом из записи смерти 1860 года по имени, фамильной группе, Мелитопольскому уезду и хронологии."},
+    {"type": "probable-same-person", "targetSourceId": "FS-3Q9M-CS9M-79XK-7", "confidence": "medium-high", "basis": "Феодор Павлович 1825 года и отец Анисии в 1861 году совпадают по полному имени, фамильной группе, уезду и совместимой хронологии."}
+  ],
   "review": {
     "status": "complete-with-uncertainties",
-    "identityResolution": "Дата, имя и родители подтверждены.",
+    "identityResolution": "Дата, имя и родители подтверждены; Феодор вероятно отождествлён с отцом Анисии в FS-3Q9M-CS9M-79XK-7.",
     "transcriptionConfidence": "high-for-child-date-and-parents; low-for-baptism-godparents-and-clergy",
     "unresolved": [
-      "Повторно прочитать дату крещения, восприемников и причт."
+      "Повторно прочитать дату крещения, восприемников и причт.",
+      "Найти прямую перекрёстную запись для окончательного объединения Феодора 1825 и 1861 годов."
     ]
   },
   "summary": {
