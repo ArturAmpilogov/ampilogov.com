@@ -8,11 +8,13 @@
     "start": "next start",
     "lint": "eslint",
     "genealogy:index": "node scripts/genealogy/build-familysearch-index.mjs",
-    "genealogy:names": "node scripts/genealogy/normalize-mention-names.mjs"
+    "genealogy:names": "node scripts/genealogy/normalize-mention-names.mjs",
+    "genealogy:places": "node scripts/genealogy/link-place-index.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
     "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
     "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
@@ -24,6 +26,7 @@
     "@types/d3-geo": "^3.1.1",
     "@types/geojson": "^7946.0.16",
     "@types/leaflet": "^1.9.22",
+    "@types/leaflet.markercluster": "^1.5.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

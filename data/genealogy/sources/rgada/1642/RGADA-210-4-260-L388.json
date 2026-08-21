@@ -1,17 +1,20 @@
 {
   "schemaVersion": 1,
   "sourceId": "RGADA-210-4-260-L388",
-  "provider": "РГАДА — опубликованный именной указатель",
+  "provider": "РГАДА — фотокопия дела и опубликованный именной указатель",
   "collection": {
     "title": "Список служилых людей Орла 1642 года",
     "archiveCitation": "РГАДА, ф. 210, оп. 4, д. 260, л. 388"
   },
   "repository": { "name": "Российский государственный архив древних актов", "location": "Москва" },
-  "links": { "recordArk": "https://forum.vgd.ru/post/5703/135781/p5389207.htm" },
+  "links": {
+    "recordArk": "https://forum.vgd.ru/post/5703/135781/p5389207.htm",
+    "imageArk": "https://disk.yandex.ru/d/beTOHQ7SI7x1RQ"
+  },
   "event": {
     "type": "service-list",
     "date": { "display": "1642 год" },
-    "place": { "normalized": "Орёл, Орловский уезд" }
+    "place": { "placeId": "orel", "normalized": "Орёл, Орловский уезд" }
   },
   "mentions": [
     {
@@ -23,13 +26,25 @@
     }
   ],
   "transcription": {
-    "status": "name-index",
+    "status": "complete-as-published",
     "literal": "Анфилогов Иван Васильев",
     "modernInterpretation": "Опубликованный именной указатель помещает Ивана Васильевича Анфилогова на листе 388."
   },
-  "summary": { "status": "index-only", "text": "Точный адрес одной строки в орловском списке 1642 года; фотокопия листа пока не получена." },
+  "summary": {
+    "status": "source-image-and-index-verified",
+    "text": "Опубликованный полный именной указатель и сохранённая фотокопия разворота подтверждают Ивана Васильевича Анфилогова на листе 388."
+  },
   "review": {
-    "status": "partial",
-    "unresolved": ["Нужно получить полный скан листа 388 и сверить написание фамилии, чин, оклад и контекст строки."]
+    "status": "complete",
+    "unresolved": ["Служебная характеристика и оклад не включены в опубликованный указатель и в этой карточке не утверждаются."],
+    "evidenceStatus": "image-and-index-verified"
+  },
+  "evidence": {
+    "captureType": "archive-original-digital-copy",
+    "path": "docs/evidence/rgada/f210-op4-d260/pages/0387.jpg",
+    "capturedAt": "2026-08-20",
+    "sha256": "d6ec46b33e091a70f35b251113ffadbb38597f7bfad275ffa28daba4722f0024",
+    "publicDisplay": true,
+    "rightsNote": "Фотокопия дела опубликована в открытой исследовательской подборке на Яндекс Диске."
   }
 }

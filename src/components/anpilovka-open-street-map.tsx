@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const anpilovka = {
   name: "Анпиловка",
@@ -20,11 +21,11 @@ export function AnpilovkaOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [anpilovka.latitude, anpilovka.longitude],
         zoom: 12,
         minZoom: 8,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 

@@ -20,9 +20,21 @@
   },
   "event": {
     "type": "death-and-burial",
-    "date": {"display": "27 мая 1874", "iso": "1874-05-27", "calendar": "source-calendar-unverified"},
-    "burialDate": {"display": "29 мая 1874", "iso": "1874-05-29"},
-    "place": {"asTranscribed": "[приход на бледном листе не установлен]", "normalized": "Херсонская губерния, Российская империя", "modernCountry": "Украина"}
+    "date": {
+      "display": "27 мая 1874",
+      "iso": "1874-05-27",
+      "calendar": "source-calendar-unverified"
+    },
+    "burialDate": {
+      "display": "29 мая 1874",
+      "iso": "1874-05-29"
+    },
+    "place": {
+      "placeId": "kherson-governorate",
+      "asTranscribed": "[приход на бледном листе не установлен]",
+      "normalized": "Херсонская губерния, Российская империя",
+      "modernCountry": "Украина"
+    }
   },
   "indexData": {
     "recordId": "6X45-NRP1",
@@ -33,17 +45,22 @@
     "estimatedBirthYear": "1827",
     "indexedPlace": "Одесская губерния, Украина, Советский Союз"
   },
-  "mentions": [{
-    "mentionId": "FS-3QS7-L93Q-J4Y-M1",
-    "role": "deceased",
-    "nameAsTranscribed": "Тимофей Захаров Ампилогов",
-    "nameAsIndexed": "Тимофей Захариев Ампилогов",
-    "displayName": "Тимофей Захарович Ампилогов",
-    "modernName": "Тимофей Захарович Ампилогов",
-    "sex": "male",
-    "personId": null,
-    "alternateNames": ["Тимофей Захаров Ампилогов", "Тимофей Захариев Ампилогов"]
-  }],
+  "mentions": [
+    {
+      "mentionId": "FS-3QS7-L93Q-J4Y-M1",
+      "role": "deceased",
+      "nameAsTranscribed": "Тимофей Захаров Ампилогов",
+      "nameAsIndexed": "Тимофей Захариев Ампилогов",
+      "displayName": "Тимофей Захарович Ампилогов",
+      "modernName": "Тимофей Захарович Ампилогов",
+      "sex": "male",
+      "personId": "P0118",
+      "alternateNames": [
+        "Тимофей Захаров Ампилогов",
+        "Тимофей Захариев Ампилогов"
+      ]
+    }
+  ],
   "transcription": {
     "status": "complete-with-uncertainties",
     "literal": "№ 24 | Май: 27 [умер], 29 [погребён] | [социальное состояние и часть строки неразборчивы из-за крайне бледной записи] Тимофей Захаров Ампилогов | 47 лет | [причина смерти неразборчива] | сведения об исповеди, причащении и погребении [большей частью неразборчивы].",
@@ -61,13 +78,15 @@
       "burialDetails": "[большей частью неразборчивы из-за выцветания оригинала]"
     }
   },
-  "sourceRelations": [{
-    "type": "probable-same-person",
-    "sourceId": "FS-3QHK-3Q97-RSSL-8",
-    "targetMentionId": "FS-3QHK-3Q97-RSSL-8-M2",
-    "confidence": "medium-high",
-    "note": "Имя и отчество совпадают с Тимофеем Захаровичем Ампилоговым, отцом Стефаниды в записи Привольного 1859 года; возраст 47 лет в 1874 году совместим, но прямого указания родства в этой записи нет."
-  }],
+  "sourceRelations": [
+    {
+      "type": "probable-same-person",
+      "sourceId": "FS-3QHK-3Q97-RSSL-8",
+      "targetMentionId": "FS-3QHK-3Q97-RSSL-8-M2",
+      "confidence": "medium-high",
+      "note": "Имя и отчество совпадают с Тимофеем Захаровичем Ампилоговым, отцом Стефаниды в записи Привольного 1859 года; возраст 47 лет в 1874 году совместим, но прямого указания родства в этой записи нет."
+    }
+  ],
   "evidence": {
     "captureType": "viewer-screenshot",
     "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-02-record-fullscreen.jpg",
@@ -75,20 +94,54 @@
     "sha256": "5e4ad138cf559fbcd592983c13165c2728d7b525bebcf272282d9c641f29bc40",
     "publicDisplay": false,
     "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
-    "quality": {"status": "approved-source-limited", "viewerFullscreen": true, "panelsClosed": true, "filmstripHidden": true, "sharpTilesConfirmed": true, "viewport": "1680x1050", "strategy": "overview-plus-maximum-zoom-record-plus-burial-plus-index-details", "limitation": "Скан резкий, но чернила исходной записи сильно выцвели."},
+    "quality": {
+      "status": "approved-source-limited",
+      "viewerFullscreen": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "sharpTilesConfirmed": true,
+      "viewport": "1680x1050",
+      "strategy": "overview-plus-maximum-zoom-record-plus-burial-plus-index-details",
+      "limitation": "Скан резкий, но чернила исходной записи сильно выцвели."
+    },
     "fragments": [
-      {"part": "fullscreen-overview", "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-01-fullscreen-overview.jpg", "sha256": "2392a638cbe6361516df20f1d65e498031892f6a6b4f15ad6d667b83dac20470"},
-      {"part": "record", "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-02-record-fullscreen.jpg", "sha256": "5e4ad138cf559fbcd592983c13165c2728d7b525bebcf272282d9c641f29bc40"},
-      {"part": "burial-details", "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-03-burial-fullscreen.jpg", "sha256": "e2a68faf0fc4f77e34714aa523000530b8d037cc3865732923566fb65678e564"},
-      {"part": "index-details", "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-04-index-details-fullscreen.jpg", "sha256": "17cec858c0f8950a88ad6fa410ae7cc80b8b1bd9dc4229d78f39163602fd0d1b"}
+      {
+        "part": "fullscreen-overview",
+        "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-01-fullscreen-overview.jpg",
+        "sha256": "2392a638cbe6361516df20f1d65e498031892f6a6b4f15ad6d667b83dac20470"
+      },
+      {
+        "part": "record",
+        "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-02-record-fullscreen.jpg",
+        "sha256": "5e4ad138cf559fbcd592983c13165c2728d7b525bebcf272282d9c641f29bc40"
+      },
+      {
+        "part": "burial-details",
+        "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-03-burial-fullscreen.jpg",
+        "sha256": "e2a68faf0fc4f77e34714aa523000530b8d037cc3865732923566fb65678e564"
+      },
+      {
+        "part": "index-details",
+        "path": "docs/evidence/familysearch/mykolaiv/FS-3QS7-L93Q-J4Y-04-index-details-fullscreen.jpg",
+        "sha256": "17cec858c0f8950a88ad6fa410ae7cc80b8b1bd9dc4229d78f39163602fd0d1b"
+      }
     ]
   },
   "review": {
-    "status": "complete-with-source-limitations",
+    "status": "complete",
     "identityResolution": "probable-match-to-known-father",
     "transcriptionConfidence": "medium",
-    "unresolved": ["Уточнить приход и социальное состояние.", "Уточнить причину смерти.", "Расшифровать сведения об исповеди, причащении и погребении по более контрастной копии."],
-    "indexCorrections": ["Историческая форма Захаров нормализована как Захарович; индексный вариант Захариев сохранён как альтернативный."]
+    "unresolved": [
+      "Уточнить приход и социальное состояние.",
+      "Уточнить причину смерти.",
+      "Расшифровать сведения об исповеди, причащении и погребении по более контрастной копии."
+    ],
+    "indexCorrections": [
+      "Историческая форма Захаров нормализована как Захарович; индексный вариант Захариев сохранён как альтернативный."
+    ]
   },
-  "summary": {"status": "verified-summary", "text": "Тимофей Захарович Ампилогов умер 27 мая 1874 года в возрасте 47 лет и был погребён 29 мая; бледность оригинала не позволяет уверенно прочитать причину смерти и приход."}
+  "summary": {
+    "status": "verified-summary",
+    "text": "Тимофей Захарович Ампилогов умер 27 мая 1874 года в возрасте 47 лет и был погребён 29 мая; бледность оригинала не позволяет уверенно прочитать причину смерти и приход."
+  }
 }

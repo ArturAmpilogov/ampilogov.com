@@ -12,11 +12,15 @@
     "location": "Москва",
     "url": "http://rgada.info/poisk/index2.php?str=210-opis_6д"
   },
-  "links": { "recordArk": "http://rgada.info/opisi/210-opis_6д/0002.zif" },
+  "links": {
+    "recordArk": "http://rgada.info/opisi/210-opis_6д/0002.zif"
+  },
   "describes": {
     "archiveCitation": "РГАДА, ф. 210, оп. 6д, д. 4",
     "documentType": "конволют: строельная книга, приходо-расходные книги, раздаточная книга денежного жалованья, росписной список",
-    "date": { "display": "7148—50 / 1639—1642 годы" },
+    "date": {
+      "display": "7148—50 / 1639—1642 годы"
+    },
     "extent": "328 листов",
     "folioRangesByCity": {
       "Хотмыжск — строельная книга 148 года": "лл. 1—66",
@@ -27,22 +31,34 @@
   },
   "event": {
     "type": "town-foundation-and-service-payment",
-    "date": { "display": "1639—1642 годы", "calendar": "source-calendar-unverified" },
-    "place": { "normalized": "город Хотмыжск на Белгородской черте" }
+    "date": {
+      "display": "1639—1642 годы",
+      "calendar": "source-calendar-unverified"
+    },
+    "place": {
+      "placeId": "khotmyzhsk",
+      "normalized": "город Хотмыжск на Белгородской черте"
+    }
   },
   "mentions": [
     {
       "role": "commander",
       "displayName": "Фёдор Тимофеевич Пушкин",
       "nameAsTranscribed": "воеводы Ѳ. Т. Пушкина",
-      "socialStatus": { "asWritten": "воевода", "normalized": "воевода города Хотмыжска" },
+      "socialStatus": {
+        "asWritten": "воевода",
+        "normalized": "воевода города Хотмыжска"
+      },
       "relationshipNote": "Скрепил своей подписью листы 195—318 — то есть росписной список и раздаточную книгу денежного жалованья, в которой по алфавиту стоит наш Анпилогов (л. 264)."
     },
     {
       "role": "official",
       "displayName": "Андрей Толстой",
       "nameAsTranscribed": "А. Толстого",
-      "socialStatus": { "asWritten": "строитель города", "normalized": "воевода-строитель" },
+      "socialStatus": {
+        "asWritten": "строитель города",
+        "normalized": "воевода-строитель"
+      },
       "relationshipNote": "Скрепа на листах 1—66 и 68—151 — на строельной книге, где по алфавиту стоят листы 23, 42 и 65."
     },
     {
@@ -55,7 +71,10 @@
       "role": "clerk",
       "displayName": "Григорий Ларионов",
       "nameAsTranscribed": "дьяка Гр. Ларіонова",
-      "socialStatus": { "asWritten": "дьяк", "normalized": "дьяк" },
+      "socialStatus": {
+        "asWritten": "дьяк",
+        "normalized": "дьяк"
+      },
       "relationshipNote": "Скрепа на листах 166—193."
     }
   ],
@@ -75,7 +94,10 @@
     "captureType": "archive-master-zif",
     "originalFile": "docs/evidence/rgada/f210-op6d-opis/zif/0002.zif",
     "fragments": [
-      { "part": "Статья 4 описи целиком", "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0002-delo-4.jpg" }
+      {
+        "part": "Статья 4 описи целиком",
+        "path": "docs/evidence/rgada/f210-op6d-opis/fragments/0002-delo-4.jpg"
+      }
     ]
   },
   "researchNotes": [
@@ -89,5 +111,34 @@
       "Текст прочитан по скану печатной описи, а не по самому делу.",
       "Номера листов взяты из рукописного алфавита XIX века; написание фамилии в самом деле не проверено."
     ]
+  },
+  "isRecord": false,
+  "cardKind": "finding-aid-lead",
+  "cardKindNote": "Это не Record, а адрес. Record в проекте — одна запись на одного человека и одно событие. Указатель и алфавит дают только фамилию и номер листа; имя, отчество и обстоятельства появятся только с изображения листа. Ниже перечислено, сколько Records отсюда должно выйти и под какими идентификаторами.",
+  "pendingRecords": {
+    "delo": "РГАДА, ф. 210, оп. 6д, д. 4",
+    "expected": [
+      {
+        "folio": 23,
+        "recordIdWhenMade": "RGADA-210-6D-4-L23",
+        "context": "строельная книга г. Хотмыжска 148 года (лл. 1—66)"
+      },
+      {
+        "folio": 42,
+        "recordIdWhenMade": "RGADA-210-6D-4-L42",
+        "context": "строельная книга г. Хотмыжска 148 года (лл. 1—66)"
+      },
+      {
+        "folio": 65,
+        "recordIdWhenMade": "RGADA-210-6D-4-L65",
+        "context": "строельная книга г. Хотмыжска 148 года (лл. 1—66)"
+      },
+      {
+        "folio": 264,
+        "recordIdWhenMade": "RGADA-210-6D-4-L264",
+        "context": "раздаточная книга денежного жалованья 150 года (лл. 218—328), скрепа воеводы Ф. Т. Пушкина"
+      }
+    ],
+    "expectHere": "Раздаточная книга обычно называет чин, денежный оклад и сколько выдано на руки; строельная книга — откуда человек переведён и что ему отведено. То есть здесь как раз могут быть те подробности, которых нет в крестоприводной книге."
   }
 }

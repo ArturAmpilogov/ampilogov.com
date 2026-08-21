@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const places = [
   {
@@ -67,11 +68,11 @@ export function OrelEstatesOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [52.96, 35.73],
         zoom: 10,
         minZoom: 7,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { PeopleDirectory } from "@/components/people-directory";
 import { SiteHeader } from "@/components/site-header";
 import { getPeopleDirectory } from "@/lib/genealogy";
@@ -11,10 +12,13 @@ export const metadata: Metadata = {
 export default async function PeoplePage({
   searchParams,
 }: {
-  searchParams: Promise<{ person?: string }>;
+  searchParams: Promise<{ person?: string; search?: string }>;
 }) {
   const directory = getPeopleDirectory();
-  const { person } = await searchParams;
+  const { person, search = "" } = await searchParams;
+  if (person && directory.people.some((entry) => entry.personId === person)) {
+    redirect(`/people/${encodeURIComponent(person)}`);
+  }
 
   return (
     <main className="people-page">
@@ -25,8 +29,8 @@ export default async function PeoplePage({
           <h1>Профили</h1>
         </div>
         <p>
-          Имена, варианты фамилии и документированные события. Родственные цепочки
-          появятся позже — здесь пока только люди и источники.
+          Люди, связанные с архивными записями: варианты имени, места,
+          родственные связи и документальная хронология каждого человека.
         </p>
         <dl aria-label="Состав архива">
           <div><dt>Людей</dt><dd>{directory.stats.people}</dd></div>
@@ -34,7 +38,7 @@ export default async function PeoplePage({
           <div><dt>Расшифровано</dt><dd>{directory.stats.transcribedSources}/{directory.stats.sources}</dd></div>
         </dl>
       </header>
-      <PeopleDirectory people={directory.people} initialPersonId={person} />
+      <PeopleDirectory people={directory.people} initialQuery={search} />
     </main>
   );
 }

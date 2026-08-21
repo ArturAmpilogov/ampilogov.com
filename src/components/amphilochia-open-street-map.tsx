@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const points = [
   {
@@ -30,11 +31,11 @@ export function AmphilochiaOpenStreetMap() {
       if (!active || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
+        ...leafletInteractionOptions,
         center: [38.97, 21.06],
         zoom: 10,
         minZoom: 7,
         maxZoom: 17,
-        scrollWheelZoom: false,
         zoomControl: false,
       });
 
