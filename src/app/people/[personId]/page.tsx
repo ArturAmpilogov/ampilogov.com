@@ -13,6 +13,9 @@ const relationLabels = {
   parent: "Родитель",
   spouse: "Супруг(а)",
   child: "Ребёнок",
+  sibling: "Брат / сестра",
+  "foster-parent": "Приёмный родитель",
+  "foster-child": "Приёмыш",
 };
 
 export function generateStaticParams() {

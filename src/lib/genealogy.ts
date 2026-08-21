@@ -10,6 +10,10 @@ type PersonRecord = {
   sex?: "male" | "female";
   nameVariants?: string[];
   birth?: { date?: string; placeId?: string };
+  birthEstimate?: { year?: number; basis?: string };
+  dates?: {
+    birth?: { display?: string; iso?: string; basis?: string };
+  };
   occupation?: string[];
   parents?: string[];
   familyIds?: string[];
@@ -17,6 +21,16 @@ type PersonRecord = {
   status?: string;
   notes?: string[];
   surname?: { normalized?: string; formsAsWritten?: string[] };
+  places?: Array<string | {
+    relation?: string;
+    placeId?: string;
+    normalized?: string;
+    asWritten?: string;
+  }>;
+  relations?: Array<{
+    type?: string;
+    personId?: string;
+  }>;
 };
 
 type FamilyRecord = {
@@ -262,7 +276,7 @@ export type DirectorySource = {
 export type DirectoryRelation = {
   personId: string;
   name: string;
-  relation: "parent" | "spouse" | "child";
+  relation: "parent" | "spouse" | "child" | "sibling" | "foster-parent" | "foster-child";
 };
 
 export type DirectoryPerson = {
@@ -341,9 +355,11 @@ const placesIndex = JSON.parse(
   readFileSync(path.join(GENEALOGY_ROOT, "places/index.json"), "utf8"),
 ) as PlacesIndex;
 
-const placesById = new Map(placesIndex.places.map((place) => [place.placeId, place]));
+const placesById = new Map<string, GenealogyPlace>(placesIndex.places.flatMap((place) => (
+  [place.placeId, ...(place.legacyIds ?? [])].map((placeId) => [placeId, place] as const)
+)));
 const placeLabels: Record<string, string> = Object.fromEntries(
-  placesIndex.places.map((place) => [place.placeId, place.label]),
+  [...placesById].map(([placeId, place]) => [placeId, place.label]),
 );
 
 const familyMapPrecisionLabels: Record<PlacePrecision, string> = {
@@ -403,13 +419,19 @@ const roleLabels: Record<string, string> = {
   witness: "свидетель",
   surety: "поручитель",
   declarant: "заявитель",
+  official: "должностное лицо",
+  clerk: "писец",
+  commander: "командир",
   clergy: "священнослужитель",
+  psalmist: "псаломщик",
   serviceman: "служилый человек",
   "listed-service-person": "служилый человек в списке",
   "oath-taker": "принёсший присягу",
   "new-serviceman": "новик, принятый на службу",
   landholder: "владелец поместья",
   son: "сын",
+  "foster-son": "приёмыш",
+  "scribe-proxy": "рукоприкладчик",
   deponent: "дающий показание",
   accused: "обвиняемый",
   "co-accused": "соучастник по делу",
@@ -483,6 +505,38 @@ function sourceMentionName(mention: SourceMention) {
     mention.nameAsTranscribed ??
     mention.nameAsWritten ??
     "Имя уточняется";
+}
+
+function documentedFamilyMemberKey(mention?: SourceMention) {
+  if (!mention) return "";
+  return sourceMentionName(mention)
+    .normalize("NFKC")
+    .toLocaleLowerCase("ru")
+    .replaceAll("ё", "е")
+    .replace(/\[(?:имя|фамилия|отчество)?\s*(?:неразборчиво|неизвестно|не установлено)\]/g, " ")
+    .replace(/[^a-zа-я0-9]+/gi, " ")
+    .trim();
+}
+
+/**
+ * Groups otherwise unlinked records only when the document itself names a
+ * parent unit or a married couple. This is a map-only key: it does not create a
+ * personId and therefore cannot turn a name similarity into a claimed identity.
+ */
+function documentedSourceFamilyId(mentions: SourceMention[], placeId: string) {
+  const father = mentions.find((mention) => ["father", "father-index-only"].includes(mention.role ?? ""));
+  const mother = mentions.find((mention) => ["mother", "mother-index-only"].includes(mention.role ?? ""));
+  const fatherKey = documentedFamilyMemberKey(father);
+  const motherKey = documentedFamilyMemberKey(mother);
+
+  if (fatherKey && motherKey) return `documented-parents:${fatherKey}:${motherKey}`;
+  if (fatherKey) return `documented-father:${placeId}:${fatherKey}`;
+
+  const groomKey = documentedFamilyMemberKey(mentions.find((mention) => mention.role === "groom"));
+  const brideKey = documentedFamilyMemberKey(mentions.find((mention) => mention.role === "bride"));
+  if (groomKey && brideKey) return `documented-couple:${groomKey}:${brideKey}`;
+
+  return null;
 }
 
 function sourcePeople(source: SourceRecord): ArchiveRecordPerson[] {
@@ -784,6 +838,34 @@ function formatDate(value?: string) {
   }).format(new Date(`${value}T00:00:00Z`));
 }
 
+function personBirthDate(person: PersonRecord) {
+  if (person.birth?.date) return formatDate(person.birth.date);
+  if (person.dates?.birth?.iso) return formatDate(person.dates.birth.iso);
+  if (person.dates?.birth?.display) return person.dates.birth.display;
+  if (person.birthEstimate?.year) return `около ${person.birthEstimate.year} года`;
+  return "";
+}
+
+function personPlaceLabel(place: NonNullable<PersonRecord["places"]>[number]) {
+  if (typeof place === "string") return placeLabels[place] ?? place;
+  return place.placeId ? placeLabels[place.placeId] ?? place.normalized ?? place.asWritten ?? place.placeId :
+    place.normalized ?? place.asWritten ?? "";
+}
+
+const explicitPersonRelationTypes: Record<string, DirectoryRelation["relation"]> = {
+  "father-of": "child",
+  "mother-of": "child",
+  "son-of": "parent",
+  "daughter-of": "parent",
+  "brother-of": "sibling",
+  "sister-of": "sibling",
+  "spouse-of": "spouse",
+  "foster-father-of": "foster-child",
+  "foster-mother-of": "foster-child",
+  "foster-son-of": "foster-parent",
+  "foster-daughter-of": "foster-parent",
+};
+
 export function getPeopleDirectory() {
   const people = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
   const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
@@ -851,15 +933,31 @@ export function getPeopleDirectory() {
       }
     }
 
+    for (const relation of person.relations ?? []) {
+      const relationType = explicitPersonRelationTypes[relation.type ?? ""];
+      const relatedPerson = relation.personId ? peopleById.get(relation.personId) : undefined;
+      if (!relationType || !relatedPerson) continue;
+      relationMap.set(`${relationType}:${relatedPerson.personId}`, {
+        personId: relatedPerson.personId,
+        name: relatedPerson.displayName,
+        relation: relationType,
+      });
+    }
+
     const sourcePlaces = personSources.map((source) => source.place);
     const places = [...new Set([
       person.birth?.placeId ? placeLabels[person.birth.placeId] ?? person.birth.placeId : "",
+      ...(person.places ?? []).map(personPlaceLabel),
       ...sourcePlaces,
     ].filter(Boolean))];
     const variants = [...new Set([...(person.nameVariants ?? []), ...(person.surname?.formsAsWritten ?? [])])];
     const needsReview = /review|unverified|working|partial/i.test(person.status ?? "") ||
       personSources.some((source) => !["verified", "complete"].includes(source.status));
-    const birthYear = person.birth?.date?.match(/^\d{4}/)?.[0] ?? "";
+    const birthDate = personBirthDate(person);
+    const birthYear = person.birth?.date?.match(/^\d{4}/)?.[0] ??
+      person.dates?.birth?.iso?.match(/^\d{4}/)?.[0] ??
+      person.dates?.birth?.display?.match(/\b\d{4}\b/)?.[0] ??
+      String(person.birthEstimate?.year ?? "");
     const searchText = [
       person.personId,
       person.displayName,
@@ -875,7 +973,7 @@ export function getPeopleDirectory() {
       sex: person.sex ?? "unknown",
       variants,
       normalizedSurname: person.surname?.normalized ?? "",
-      birthDate: person.birth?.date ? formatDate(person.birth.date) : "",
+      birthDate,
       birthYear,
       places,
       occupations: person.occupation ?? [],
@@ -915,6 +1013,7 @@ export function getFamilyMapDirectory() {
     .filter(isGenealogyRecordSource);
   const peopleById = new Map(people.map((person) => [person.personId, person]));
   const familyIdsByPerson = new Map<string, Set<string>>();
+  const parentIdsByPerson = new Map<string, Set<string>>();
 
   const addPersonFamily = (personId: string, familyId: string) => {
     const ids = familyIdsByPerson.get(personId) ?? new Set<string>();
@@ -924,10 +1023,16 @@ export function getFamilyMapDirectory() {
 
   for (const person of people) {
     for (const familyId of person.familyIds ?? []) addPersonFamily(person.personId, familyId);
+    if (person.parents?.length) parentIdsByPerson.set(person.personId, new Set(person.parents));
   }
   for (const family of families) {
     for (const personId of [...(family.spouses ?? []), ...(family.children ?? [])]) {
       addPersonFamily(personId, family.familyId);
+    }
+    for (const childId of family.children ?? []) {
+      const parentIds = parentIdsByPerson.get(childId) ?? new Set<string>();
+      for (const parentId of family.spouses ?? []) parentIds.add(parentId);
+      parentIdsByPerson.set(childId, parentIds);
     }
   }
 
@@ -937,9 +1042,10 @@ export function getFamilyMapDirectory() {
     if (cached) return cached;
     if (visiting.has(personId)) return 1;
     const person = peopleById.get(personId);
-    if (!person?.parents?.length) return 1;
+    const parentIds = [...(parentIdsByPerson.get(personId) ?? [])];
+    if (!person || !parentIds.length) return 1;
     const nextVisiting = new Set(visiting).add(personId);
-    const generation = 1 + Math.max(...person.parents.map((parentId) => generationOf(parentId, nextVisiting)));
+    const generation = 1 + Math.max(...parentIds.map((parentId) => generationOf(parentId, nextVisiting)));
     generationCache.set(personId, generation);
     return generation;
   };
@@ -950,26 +1056,33 @@ export function getFamilyMapDirectory() {
   const years: number[] = [];
 
   for (const source of sources) {
-    const placeId = source.event?.place?.placeId;
+    const referencedPlaceId = source.event?.place?.placeId;
     const year = sourceYear(source);
-    if (!placeId || !year) continue;
-    if (!placesById.has(placeId)) {
-      throw new Error(`Источник ${source.sourceId} ссылается на неизвестное место ${placeId}`);
+    if (!referencedPlaceId || !year) continue;
+    const indexedPlace = placesById.get(referencedPlaceId);
+    if (!indexedPlace) {
+      throw new Error(`Источник ${source.sourceId} ссылается на неизвестное место ${referencedPlaceId}`);
     }
+    const placeId = indexedPlace.placeId;
 
     const sourceMentions = source.mentions ?? [];
     const primaryMention = (
       source.primaryPersonId
         ? sourceMentions.find((mention) => mention.personId === source.primaryPersonId)
         : undefined
-    ) ?? sourceMentions.find((mention) => mention.personId) ?? sourceMentions[0];
+    ) ?? sourceMentions[0];
     const personIds = primaryMention?.personId ? [primaryMention.personId] : [];
+    const generationPersonIds = [...new Set(sourceMentions.flatMap((mention) => (
+      mention.personId ? [mention.personId] : []
+    )))];
     const personNames = primaryMention ? [sourceMentionName(primaryMention)] : [];
     const familyIds = [...new Set(personIds.flatMap((personId) => {
       const ids = [...(familyIdsByPerson.get(personId) ?? [])];
       return ids.length ? ids : [`person:${personId}`];
     }))];
-    if (!familyIds.length) familyIds.push(`source:${source.sourceId}`);
+    if (!familyIds.length) {
+      familyIds.push(documentedSourceFamilyId(sourceMentions, placeId) ?? `source:${source.sourceId}`);
+    }
 
     const event: FamilyMapEvent = {
       sourceId: source.sourceId,
@@ -979,7 +1092,7 @@ export function getFamilyMapDirectory() {
       personIds,
       personNames,
       familyIds,
-      generation: Math.max(1, ...personIds.map((personId) => generationOf(personId))),
+      generation: Math.max(1, ...generationPersonIds.map((personId) => generationOf(personId))),
     };
 
     const placeEvents = eventsByPlace.get(placeId) ?? [];
@@ -1018,12 +1131,15 @@ export function getFamilyMapDirectory() {
         }));
 
     for (const route of documentedRoutes) {
-      const fromPlaceId = route.from.placeId;
-      const toPlaceId = route.to.placeId ?? placeId;
-      if (!fromPlaceId || !toPlaceId || fromPlaceId === toPlaceId) continue;
-      if (!placesById.has(fromPlaceId) || !placesById.has(toPlaceId)) {
+      const referencedFromPlaceId = route.from.placeId;
+      const referencedToPlaceId = route.to.placeId ?? placeId;
+      if (!referencedFromPlaceId || !referencedToPlaceId) continue;
+      const fromPlaceId = placesById.get(referencedFromPlaceId)?.placeId;
+      const toPlaceId = placesById.get(referencedToPlaceId)?.placeId;
+      if (!fromPlaceId || !toPlaceId) {
         throw new Error(`Источник ${source.sourceId} задаёт перемещение через неизвестное место`);
       }
+      if (fromPlaceId === toPlaceId) continue;
 
       const routePersonIds = route.personId ? [route.personId] : personIds;
       const routePersonNames = [

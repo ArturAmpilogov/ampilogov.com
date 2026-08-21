@@ -91,6 +91,22 @@ function markerHtml(summary: PlaceSummary, selected: boolean) {
   `;
 }
 
+function migrationArrowHtml(bearing: number, documented: boolean) {
+  return `
+    <span
+      class="settlement-migration-direction__arrow ${documented ? "is-documented" : "is-derived"}"
+      style="--migration-bearing:${bearing}deg"
+      aria-hidden="true"
+    >
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path class="settlement-migration-direction__halo" d="M2.5 12h16M13 6.5l5.5 5.5-5.5 5.5" />
+        <path class="settlement-migration-direction__shaft" d="M2.5 12h16" />
+        <path class="settlement-migration-direction__head" d="M13 6.5l5.5 5.5-5.5 5.5" />
+      </svg>
+    </span>
+  `;
+}
+
 function plural(value: number, one: string, few: string, many: string) {
   const mod100 = value % 100;
   const mod10 = value % 10;
@@ -105,10 +121,13 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
   const mapRef = useRef<import("leaflet").Map | null>(null);
   const leafletRef = useRef<typeof import("leaflet") | null>(null);
   const clusterRef = useRef<import("leaflet").MarkerClusterGroup | null>(null);
+  const expandedClusterRef = useRef<import("leaflet").MarkerCluster | null>(null);
+  const markersByPlaceRef = useRef(new Map<string, CountedMarker>());
   const routeLayerRef = useRef<import("leaflet").LayerGroup | null>(null);
   const [ready, setReady] = useState(false);
   const [year, setYear] = useState(range.maxYear);
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
+  const [expandedCluster, setExpandedCluster] = useState(false);
 
   const summaries = useMemo(() => places
     .map((place) => summarizePlace(place, year))
@@ -176,6 +195,14 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           });
         },
       });
+      clusterRef.current.on("spiderfied", (event) => {
+        expandedClusterRef.current = event.cluster;
+        setExpandedCluster(true);
+      });
+      clusterRef.current.on("unspiderfied", () => {
+        expandedClusterRef.current = null;
+        setExpandedCluster(false);
+      });
       routeLayerRef.current = L.layerGroup().addTo(map);
       clusterRef.current.addTo(map);
 
@@ -192,6 +219,8 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       mapRef.current = null;
       leafletRef.current = null;
       clusterRef.current = null;
+      expandedClusterRef.current = null;
+      markersByPlaceRef.current.clear();
       routeLayerRef.current = null;
     };
   }, [places]);
@@ -199,19 +228,17 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
   useEffect(() => {
     const L = leafletRef.current;
     const clusters = clusterRef.current;
-    const routeLayer = routeLayerRef.current;
-    if (!ready || !L || !clusters || !routeLayer) return;
+    if (!ready || !L || !clusters) return;
 
     clusters.clearLayers();
-    routeLayer.clearLayers();
+    markersByPlaceRef.current.clear();
 
     for (const summary of summaries) {
-      const selectedMarker = summary.place.placeId === selectedPlaceId;
       const size = Math.min(68, 22 + Math.sqrt(summary.familyCount) * 8);
       const marker = L.marker([summary.place.geo.latitude, summary.place.geo.longitude], {
         icon: L.divIcon({
           className: "settlement-map-marker-wrap",
-          html: markerHtml(summary, selectedMarker),
+          html: markerHtml(summary, false),
           iconSize: [size, size],
           iconAnchor: [size / 2, size / 2],
           popupAnchor: [0, -(size / 2 + 8)],
@@ -230,9 +257,28 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       marker.on("click", () => {
         setSelectedPlaceId(summary.place.placeId);
       });
+      markersByPlaceRef.current.set(summary.place.placeId, marker);
       clusters.addLayer(marker);
-      if (selectedMarker) window.requestAnimationFrame(() => marker.openPopup());
     }
+  }, [ready, summaries]);
+
+  useEffect(() => {
+    if (!ready) return;
+
+    for (const [placeId, marker] of markersByPlaceRef.current) {
+      marker.getElement()
+        ?.querySelector<HTMLElement>(".settlement-map-marker")
+        ?.classList.toggle("is-selected", placeId === selectedPlaceId);
+    }
+  }, [ready, selectedPlaceId, summaries]);
+
+  useEffect(() => {
+    const L = leafletRef.current;
+    const map = mapRef.current;
+    const routeLayer = routeLayerRef.current;
+    if (!ready || !L || !map || !routeLayer) return;
+
+    routeLayer.clearLayers();
 
     const activeMigrations = migrations.filter((migration) =>
       migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
@@ -242,10 +288,9 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       const to = summariesById.get(migration.toPlaceId)!;
       const related = !selectedPlaceId || migration.fromPlaceId === selectedPlaceId || migration.toPlaceId === selectedPlaceId;
       const documented = migration.migrationId.startsWith("documented:");
-      const route = L.polyline([
-        [from.place.geo.latitude, from.place.geo.longitude],
-        [to.place.geo.latitude, to.place.geo.longitude],
-      ], {
+      const fromLatLng = L.latLng(from.place.geo.latitude, from.place.geo.longitude);
+      const toLatLng = L.latLng(to.place.geo.latitude, to.place.geo.longitude);
+      const route = L.polyline([fromLatLng, toLatLng], {
         className: `settlement-migration-route${documented ? " is-documented" : " is-derived"}${related ? " is-related" : " is-muted"}`,
         color: "#a6412f",
         weight: (documented ? 2.5 : 1.5) + Math.min(4, migration.personIds.length),
@@ -257,8 +302,41 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         `${from.place.name} → ${to.place.name} · ${migration.personNames.join(", ")} · ${migration.basis}`,
         { sticky: true, className: "settlement-map-tooltip" },
       );
+
+      const fromPoint = map.latLngToLayerPoint(fromLatLng);
+      const toPoint = map.latLngToLayerPoint(toLatLng);
+      const routeVector = toPoint.subtract(fromPoint);
+      const bearing = Math.atan2(routeVector.y, routeVector.x) * 180 / Math.PI;
+      const arrowPositions = fromPoint.distanceTo(toPoint) > 460 ? [0.38, 0.7] : [0.62];
+      for (const progress of arrowPositions) {
+        const arrowPoint = fromPoint.add(routeVector.multiplyBy(progress));
+        L.marker(map.layerPointToLatLng(arrowPoint), {
+          icon: L.divIcon({
+            className: "settlement-migration-direction",
+            html: migrationArrowHtml(bearing, documented),
+            iconSize: [26, 26],
+            iconAnchor: [13, 13],
+          }),
+          interactive: false,
+          keyboard: false,
+          opacity: related ? 0.94 : 0.08,
+          zIndexOffset: 240,
+        }).addTo(routeLayer);
+      }
     }
   }, [migrations, ready, selectedPlaceId, summaries, summariesById, year]);
+
+  function showAllPlaces() {
+    mapRef.current?.closePopup();
+    expandedClusterRef.current?.unspiderfy();
+    setSelectedPlaceId(null);
+  }
+
+  function collapseExpandedCluster() {
+    mapRef.current?.closePopup();
+    expandedClusterRef.current?.unspiderfy();
+    setSelectedPlaceId(null);
+  }
 
   return (
     <section className="settlement-map-workspace" aria-label="Карта расселения рода">
@@ -274,16 +352,28 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           {selected ? <div><dt>Период</dt><dd>{selected.firstYear}—{selected.lastYear}</dd></div> : null}
         </dl>
         {selected ? (
-          <button type="button" onClick={() => setSelectedPlaceId(null)}>Вся карта</button>
+          <button type="button" onClick={showAllPlaces}>← Все места</button>
         ) : null}
       </div>
 
-      <div
-        className="settlement-map-canvas"
-        ref={containerRef}
-        role="region"
-        aria-label="Интерактивная карта OpenStreetMap с семейными центрами и переселениями"
-      />
+      <div className="settlement-map-stage">
+        <div
+          className="settlement-map-canvas"
+          ref={containerRef}
+          role="region"
+          aria-label="Интерактивная карта OpenStreetMap с семейными центрами и переселениями"
+        />
+        {expandedCluster ? (
+          <button
+            className="settlement-map-collapse"
+            type="button"
+            onClick={collapseExpandedCluster}
+          >
+            <span aria-hidden="true">↙</span>
+            Свернуть группу
+          </button>
+        ) : null}
+      </div>
 
       <div className="settlement-map-timeline section-shell">
         <label htmlFor="settlement-map-year">
