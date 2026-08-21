@@ -41,6 +41,7 @@ const arkToSourceId = {};
 const imagePositionToSourceId = {};
 const eventFingerprints = {};
 const observedSurnameForms = new Set();
+const evidenceIsApproved = (status) => status?.startsWith("approved");
 
 for (const { file, data } of sources) {
   const imageArk = canonicalArk(data.links?.imageArk);
@@ -109,9 +110,9 @@ const payload = {
     uniqueArks: Object.keys(arkToSourceId).length,
     uniqueImagePositions: Object.keys(imagePositionToSourceId).length,
     approvedEvidence: Object.values(reviewedSources)
-      .filter((source) => source.evidenceQualityStatus === "approved").length,
+      .filter((source) => evidenceIsApproved(source.evidenceQualityStatus)).length,
     evidenceRecaptureRequired: Object.values(reviewedSources)
-      .filter((source) => source.evidenceQualityStatus !== "approved").length,
+      .filter((source) => !evidenceIsApproved(source.evidenceQualityStatus)).length,
   },
   reviewedSources,
   arkToSourceId,
@@ -126,7 +127,7 @@ const payload = {
       .filter(([, source]) => !source.evidencePath)
       .map(([sourceId]) => sourceId),
     needsEvidenceRecapture: Object.entries(reviewedSources)
-      .filter(([, source]) => source.evidenceQualityStatus !== "approved")
+      .filter(([, source]) => !evidenceIsApproved(source.evidenceQualityStatus))
       .map(([sourceId]) => sourceId),
   },
 };

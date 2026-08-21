@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "genealogy:index": "node scripts/genealogy/build-familysearch-index.mjs",
+    "genealogy:evidence": "node scripts/genealogy/sync-evidence-hashes.mjs",
+    "genealogy:evidence-quality": "node scripts/genealogy/sync-evidence-quality.mjs",
+    "genealogy:mentions": "node scripts/genealogy/normalize-mention-ids.mjs",
     "genealogy:names": "node scripts/genealogy/normalize-mention-names.mjs",
     "genealogy:places": "node scripts/genealogy/link-place-index.mjs"
   },

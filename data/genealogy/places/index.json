@@ -14,6 +14,22 @@
   },
   "places": [
     {
+      "placeId": "ostashkov-tver",
+      "name": "Осташков",
+      "label": "Осташков, Осташковский уезд",
+      "kind": "town",
+      "aliases": ["Осташков", "Осташков, Осташковский уезд", "Осташков, Осташковский уезд, Тверская губерния", "Осташков, Осташковский уезд, Тверская губерния, Российская империя"],
+      "geo": {"latitude": 57.1557583, "longitude": 33.1013213, "precision": "settlement", "confidence": "high", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/3573108"}
+    },
+    {
+      "placeId": "kashin-tver",
+      "name": "Кашин",
+      "label": "Кашин, Кашинский уезд",
+      "kind": "town",
+      "aliases": ["Кашин", "Кашин, Кашинский уезд", "Кашин, Кашинский уезд, Тверская губерния", "Кашин, Кашинский уезд, Тверская губерния, Российская империя"],
+      "geo": {"latitude": 57.361755, "longitude": 37.611454, "precision": "settlement", "confidence": "high", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/2595961"}
+    },
+    {
       "placeId": "tymoshivka",
       "name": "Тимошевка",
       "label": "Тимошевка, Мелитопольский уезд",
@@ -52,7 +68,7 @@
       "label": "Привольное, Херсонская губерния",
       "kind": "village",
       "aliases": ["Привольное, Херсонская губерния", "Привольное, Херсонская губерния, Российская империя"],
-      "legacyIds": ["pryvilne-mykolaiv", "pryvilne-bashtanka-mykolaiv"],
+      "legacyIds": ["pryvilne-mykolaiv", "pryvilne-bashtanka-mykolaiv", "privolnoe-mykolaiv"],
       "geo": {"latitude": 47.4937814, "longitude": 32.2971718, "precision": "settlement", "confidence": "medium", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/way/631384552", "note": "Современное Привольное в Николаевской области выбрано по губернскому контексту; одноимённые места требуют проверки."}
     },
     {
@@ -119,6 +135,14 @@
       "kind": "region",
       "aliases": ["Самарская губерния", "Самарская губерния, Российская империя"],
       "geo": {"latitude": 53.1956255, "longitude": 50.1014927, "precision": "region", "confidence": "low", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/3368701", "note": "В качестве рабочей точки используется Самара; конкретное место записи не установлено."}
+    },
+    {
+      "placeId": "kutuluk-samara",
+      "name": "Кутулук",
+      "label": "Кутулук, Самарская губерния",
+      "kind": "historical-locality",
+      "aliases": ["Кутулук, Самарская губерния", "Кутулук, Самарская губерния, Российская империя", "kutuluk, Samara, Russia"],
+      "geo": {"latitude": 53.188212, "longitude": 51.198599, "precision": "approximate", "confidence": "low", "source": "OpenStreetMap / FamilySearch", "sourceUrl": "https://www.openstreetmap.org/#map=12/53.188212/51.198599", "note": "Рабочая точка поставлена в районе современного Кутулука; тождество историческому приходу из цифровой книги 1872 года требует отдельной проверки."}
     },
     {
       "placeId": "simferopol",
@@ -305,6 +329,7 @@
       "label": "Мелитопольский уезд, Таврическая губерния",
       "kind": "district",
       "aliases": ["Мелитопольский уезд, Таврическая губерния, Российская империя"],
+      "legacyIds": ["melitopol-uyezd"],
       "geo": {"latitude": 46.8467267, "longitude": 35.3827281, "precision": "district", "confidence": "low", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/2318317", "note": "Показан административный центр исторического уезда."}
     },
     {
@@ -313,7 +338,7 @@
       "label": "Михайловка, Мелитопольский уезд",
       "kind": "town",
       "aliases": ["Михайловка, Мелитопольский уезд, Таврическая губерния", "Михайловка, Мелитопольский уезд, Таврическая губерния, Российская империя"],
-      "legacyIds": ["mykhailivka-zaporizhzhia"],
+      "legacyIds": ["mykhailivka-zaporizhzhia", "mykhailivka-near-orlianske", "mykhailivka"],
       "geo": {"latitude": 47.2657187, "longitude": 35.2217134, "precision": "settlement", "confidence": "medium", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/way/177320383"}
     },
     {
@@ -444,6 +469,7 @@
       "label": "Бузулукский уезд, Самарская губерния",
       "kind": "district",
       "aliases": ["Бузулукский уезд, Самарская губерния"],
+      "legacyIds": ["buzuluk-uyezd-samara"],
       "geo": {"latitude": 52.7586837, "longitude": 52.2883167, "precision": "district", "confidence": "low", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/3470717", "note": "Показан административный центр исторического уезда."}
     },
     {
@@ -724,6 +750,63 @@
       "kind": "district",
       "aliases": ["Бугульминский уезд, Самарская губерния", "Самарская губерния, Бугульминский уезд"],
       "geo": {"latitude": 54.5384152, "longitude": 52.7955953, "precision": "district", "confidence": "low", "source": "Бугульма / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/9684457", "note": "Поселение жениха в записи не прочитано; уезд показан через Бугульму."}
+    },
+    {
+      "placeId": "berdiansk-district",
+      "name": "Бердянский уезд",
+      "label": "Бердянский уезд, Таврическая губерния",
+      "kind": "district",
+      "aliases": ["Бердянский уезд", "Бердянский уезд, Таврическая губерния", "Бердянский уезд, Таврическая губерния, Российская империя"],
+      "geo": {"latitude": 46.755678, "longitude": 36.7887623, "precision": "district", "confidence": "low", "source": "Бердянск / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/1280581", "note": "Конкретное селение в записи не установлено; исторический уезд показан через Бердянск."}
+    },
+    {
+      "placeId": "volkoneshty",
+      "name": "Волконешты",
+      "label": "Волконешты, Бердянский уезд",
+      "kind": "historical-village",
+      "aliases": ["Волконешты", "Волконешты, Бердянский уезд, Таврическая губерния"],
+      "geo": {"latitude": 46.755678, "longitude": 36.7887623, "precision": "approximate", "confidence": "low", "source": "Бердянский уезд / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/1280581", "note": "Историческое селение пока не локализовано; временно показан центр Бердянска. Название и координаты требуют проверки по спискам населённых мест."}
+    },
+    {
+      "placeId": "novotroitskaya-buzuluk",
+      "name": "Новотроицкая",
+      "label": "деревня Новотроицкая, Бузулукский уезд",
+      "kind": "historical-village",
+      "aliases": ["Новотроицкая", "деревня Новотроицкая, Бузулукский уезд, Самарская губерния"],
+      "legacyIds": ["novotroitskaya-samara"],
+      "geo": {"latitude": 52.7586837, "longitude": 52.2883167, "precision": "approximate", "confidence": "low", "source": "Бузулукский уезд / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/3470717", "note": "Однозначная современная локализация не найдена; временно показан Бузулук."}
+    },
+    {
+      "placeId": "novoutyuzhnaya-buzuluk",
+      "name": "Новоутюжная",
+      "label": "деревня Новоутюжная, Бузулукский уезд",
+      "kind": "historical-village",
+      "aliases": ["Новоутюжная", "деревня Новоутюжная, Бузулукский уезд, Самарская губерния"],
+      "geo": {"latitude": 52.7586837, "longitude": 52.2883167, "precision": "approximate", "confidence": "low", "source": "Бузулукский уезд / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/3470717", "note": "Название прочитано неуверенно, а селение пока не локализовано; временно показан Бузулук."}
+    },
+    {
+      "placeId": "troitskaya-samara",
+      "name": "Троицкая",
+      "label": "деревня Троицкая, Самарская губерния",
+      "kind": "village",
+      "aliases": ["Троицкая", "деревня Троицкая, Самарская губерния"],
+      "geo": {"latitude": 54.0128125, "longitude": 50.5135167, "precision": "settlement", "confidence": "medium", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/way/452928799", "note": "Современная Троицкая выбрана по губернскому контексту; соответствие историческому приходу следует подтвердить."}
+    },
+    {
+      "placeId": "horlivka",
+      "name": "Горловка",
+      "label": "Горловка, Бахмутский уезд",
+      "kind": "town",
+      "aliases": ["Горловка", "Горловка, Бахмутский уезд, Екатеринославская губерния"],
+      "geo": {"latitude": 48.3058686, "longitude": 38.0027664, "precision": "settlement", "confidence": "high", "source": "OpenStreetMap / Nominatim", "sourceUrl": "https://www.openstreetmap.org/relation/3862199"}
+    },
+    {
+      "placeId": "nikolaevsk-samara",
+      "name": "Николаевск",
+      "label": "Николаевский уезд, Самарская губерния",
+      "kind": "district",
+      "aliases": ["Николаевск, Самарская губерния", "Николаевский уезд, Самарская губерния"],
+      "geo": {"latitude": 52.0121253, "longitude": 48.8109795, "precision": "district", "confidence": "low", "source": "Пугачёв (исторический Николаевск) / OpenStreetMap", "sourceUrl": "https://www.openstreetmap.org/relation/9079161", "note": "В записи указан только Николаевский уезд; показан его исторический административный центр, современный Пугачёв."}
     },
     {
       "placeId": "kherson",

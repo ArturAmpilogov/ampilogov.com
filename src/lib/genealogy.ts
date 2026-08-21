@@ -373,6 +373,7 @@ const familyMapPrecisionLabels: Record<PlacePrecision, string> = {
 const eventLabels: Record<string, string> = {
   birth: "Рождение",
   "birth-and-baptism": "Рождение и крещение",
+  "birth-baptism": "Рождение и крещение",
   "birth-index-image-mismatch": "Индекс записи о рождении",
   "birth-index-duplicate": "Дубликат индекса рождения",
   baptism: "Крещение",
@@ -395,6 +396,7 @@ const eventLabels: Record<string, string> = {
   "military-roster": "Полковой список",
   "horse-sale-registration": "Регистрация продажи лошади",
   "census-household": "Переписная запись",
+  "confession-list": "Исповедная ведомость",
   "yard-and-garden-allocation": "Отвод двора и огорода",
   "resettlement-and-land-allocation": "Переселение и земельный отвод",
   "permanent-settlement-list": "Список переселенцев",
@@ -407,11 +409,13 @@ const eventLabels: Record<string, string> = {
 
 const roleLabels: Record<string, string> = {
   child: "ребёнок",
+  "baptized-child": "крещёный ребёнок",
   father: "отец",
   mother: "мать",
   parent: "родитель",
   groom: "жених",
   bride: "невеста",
+  "bride-father": "отец невесты",
   spouse: "супруг(а)",
   godparent: "восприемник",
   godfather: "восприемник",
@@ -462,6 +466,9 @@ const roleLabels: Record<string, string> = {
   "master-of-seller": "владелец продавца",
   "minor-landholder": "недоросль с поместьем",
   householder: "хозяин двора",
+  "household-head": "глава семьи",
+  "household-member": "член семьи",
+  "daughter-in-law": "невестка",
   "son-in-household": "сын в составе двора",
   "participant-in-land-record": "участник отказной записи",
   "named-person": "названное лицо",
@@ -586,6 +593,7 @@ function sourcePrimaryPerson(source: SourceRecord, people: ArchiveRecordPerson[]
 const birthEventTypes = new Set([
   "birth",
   "birth-and-baptism",
+  "birth-baptism",
   "birth-index-image-mismatch",
   "birth-index-duplicate",
   "baptism",
