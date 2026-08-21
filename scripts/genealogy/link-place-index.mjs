@@ -64,7 +64,7 @@ function objectForKey(text, key, start = 0, end = text.length) {
 
 function setPlaceId(text, range, placeId) {
   const objectText = text.slice(range.open, range.close + 1);
-  const property = /"placeId"\s*:\s*"[^"]*"/;
+  const property = /"placeId"\s*:\s*(?:"[^"]*"|null)/;
   if (property.test(objectText)) {
     const updated = objectText.replace(property, `"placeId": "${placeId}"`);
     return text.slice(0, range.open) + updated + text.slice(range.close + 1);
