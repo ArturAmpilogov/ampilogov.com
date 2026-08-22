@@ -4,7 +4,7 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4135959",
-    "title": "Тимошовка. Метрические записи о рождении, смерти и браке, 1901–1902",
+    "title": "Тимошевка. Метрическая книга; лист 27, 1901",
     "filmNumber": "007817720",
     "imageGroupNumber": "007817720",
     "itemNumber": 4,
@@ -13,33 +13,37 @@
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSW-Q3MG-7",
-    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6VTX-J2W9"
+    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6VTX-J2W9",
+    "indexedFatherMentionArk": "https://www.familysearch.org/ark:/61903/1:1:6VTX-J2WS",
+    "indexedMotherMentionArk": "https://www.familysearch.org/ark:/61903/1:1:6VTX-J2W3"
   },
   "event": {
     "type": "birth-and-baptism",
     "date": {
       "display": "23 мая 1901",
       "birthIso": "1901-05-23",
-      "baptismIso": "1901-05-23",
+      "baptismIso": null,
       "calendar": "source-calendar-unverified"
     },
     "place": {
-      "asWritten": "Тимошевскій",
-      "normalized": "Тимошевка, Мелитопольский уезд, Таврическая губерния, Российская империя",
-      "modernName": "Тимошовка, Запорожская область, Украина",
+      "asWritten": "Тимошевка",
+      "normalized": "Тимошевка, Мелитопольский уезд, Таврическая губерния",
+      "modernName": "Тимошівка, Запорожская область, Украина",
       "modernCountry": "Украина",
       "placeId": "tymoshivka"
     }
   },
   "indexData": {
     "recordId": "6VTX-J2W9",
+    "relatedFatherMentionRecordId": "6VTX-J2WS",
+    "relatedMotherMentionRecordId": "6VTX-J2W3",
     "subject": "Константин Ампилогов",
     "sex": "male",
-    "father": "Владимир Ампилогов",
-    "mother": "Параскева",
+    "father": "Владимир Андреев Ампилогов",
+    "mother": "Параскева Саввина",
     "birthDate": "23 мая 1901",
-    "placeAsIndexed": "Запорожье, Украина, Советский Союз",
-    "indexWarning": "На листе находятся несколько детей по имени Константин; целевая строка установлена по совпадению родителей с индексом. Отчества родителей и дата крещения прочитаны в оригинале."
+    "placeAsIndexed": "запорижжя, Украина, Советский Союз",
+    "indexWarning": "Существуют параллельные индексные варианты «Ампилов» и «Антилогов»; на оригинале фамилия бледная. Дата крещения не подтверждена уверенно."
   },
   "mentions": [
     {
@@ -49,30 +53,34 @@
       "sex": "male",
       "nameAsTranscribed": "Константинъ",
       "nameAsIndexed": "Константин Ампилогов",
-      "modernName": "Ампилогов Константин Владимирович",
-      "displayName": "Ампилогов Константин Владимирович",
+      "modernName": "Константин Владимирович Анпилогов",
+      "displayName": "Константин Владимирович Анпилогов",
       "alternateNames": [
-        "Ампилогов Константин"
-      ]
+        "Константин Ампилогов",
+        "Константин Ампилов",
+        "Константин Антилогов"
+      ],
+      "patronymicEvidence": {
+        "basis": "derived-from-father-given-name",
+        "sourceMentionId": "FS-3Q9M-CSSW-Q3MG-7-M2",
+        "confidence": "high"
+      }
     },
     {
       "mentionId": "FS-3Q9M-CSSW-Q3MG-7-M2",
       "role": "father",
       "personId": null,
       "sex": "male",
-      "nameAsTranscribed": "Владиміръ Андреевъ Ампилоговъ",
-      "nameAsIndexed": "Владимир Ампилогов",
-      "modernName": "Ампилогов Владимир Андреевич",
-      "displayName": "Ампилогов Владимир Андреевич",
+      "nameAsTranscribed": "Владиміръ Андреевъ [Ампилоговъ?]",
+      "nameAsIndexed": "Владимир Андреев Ампилогов",
+      "modernName": "Владимир Андреевич Анпилогов",
+      "displayName": "Владимир Андреевич Анпилогов",
+      "socialStatusAsWritten": "тимошевский крестьянин",
+      "nameNote": "Фамилия на бледном оригинале читается не полностью уверенно; индекс даёт «Ампилогов».",
       "alternateNames": [
-        "Владиміръ Андреевъ Ампилоговъ",
-        "Ампилогов Владимир"
-      ],
-      "socialStatus": {
-        "asWritten": "Тимошевскій крестьянинъ",
-        "normalized": "тимошевский крестьянин"
-      },
-      "uncertainty": "Отчество читается с умеренной уверенностью."
+        "Владиміръ Андреевъ [Ампилоговъ?]",
+        "Владимир Андреев Ампилогов"
+      ]
     },
     {
       "mentionId": "FS-3Q9M-CSSW-Q3MG-7-M3",
@@ -80,109 +88,101 @@
       "personId": null,
       "sex": "female",
       "nameAsTranscribed": "Параскева Саввина",
-      "nameAsIndexed": "Параскева",
-      "modernName": "Прасковья Саввична",
-      "displayName": "Прасковья Саввична",
+      "nameAsIndexed": "Параскева Саввина",
+      "modernName": "Параскева Саввична Анпилогова",
+      "displayName": "Параскева Саввична Анпилогова",
+      "nameNote": "Фамилия по мужу добавлена только в современной форме.",
       "alternateNames": [
         "Параскева Саввина"
       ]
     },
     {
       "mentionId": "FS-3Q9M-CSSW-Q3MG-7-M4",
-      "role": "godfather",
+      "role": "godparents",
       "personId": null,
-      "sex": "male",
-      "nameAsTranscribed": "Петръ Іоанновъ [Зубковъ]",
+      "sex": null,
+      "nameAsTranscribed": "[имена неразборчивы]",
       "nameAsIndexed": null,
-      "modernName": "Пётр Иванович [Зубков]",
-      "displayName": "Пётр Иванович [Зубков]",
+      "modernName": "восприемники [имена неуверенно]",
+      "displayName": "восприемники [имена неуверенно]",
       "alternateNames": [
-        "Петръ Іоанновъ [Зубковъ]"
-      ],
-      "socialStatus": {
-        "asWritten": "Тимошевскій крестьянинъ",
-        "normalized": "тимошевский крестьянин"
-      },
-      "uncertainty": "Фамилия читается неуверенно."
-    },
-    {
-      "mentionId": "FS-3Q9M-CSSW-Q3MG-7-M5",
-      "role": "godmother",
-      "personId": null,
-      "sex": "female",
-      "nameAsTranscribed": "Елена [отчество и фамилія неуверенно]",
-      "nameAsIndexed": null,
-      "modernName": "Елена [отчество и фамилия неуверенно]",
-      "displayName": "Елена [отчество и фамилия неуверенно]",
-      "alternateNames": [
-        "Елена [отчество и фамилія неуверенно]"
+        "[имена неразборчивы]"
       ]
     }
   ],
   "transcription": {
     "status": "complete-with-uncertainties",
-    "literal": "[№ мужской] | 23 мая [родился] | 23 мая [крещён] | Константинъ | Тимошевскій крестьянинъ Владиміръ Андреевъ Ампилоговъ и законная жена его Параскева Саввина, оба православные. | Воспріемники: Тимошевскій крестьянинъ Петръ Іоанновъ [Зубковъ] и жена Елена [отчество и фамилія неуверенно]. | Священнослужитель [подпись неуверенно]; подписи причта.",
-    "layoutNote": "Лист разорван в центральном сгибе и содержит несколько строк с детьми по имени Константин. Целевая нижняя строка определена по родителям Владимиру Ампилогову и Параскеве, совпадающим с индексом. Соседняя строка другого Константина к этой семье не относится.",
-    "modernInterpretation": "Константин Владимирович Ампилогов родился и был крещён 23 мая 1901 года в Тимошовке. Родители — тимошевский крестьянин Владимир Андреевич Ампилогов и его законная жена Прасковья Саввична; оба православные. Полные имена восприемников читаются не полностью уверенно.",
+    "literal": "мая 23, [дата крещения неуверенно] | Константинъ | Тимошевскій крестьянинъ Владиміръ Андреевъ [Ампилоговъ?] и законная жена его Параскева Саввина, оба православные [остальные графы бледны].",
+    "layoutNote": "Нижняя запись на повреждённом и бледном листе; первая часть метрической книги о родившихся.",
+    "modernInterpretation": "Константин Владимирович Анпилогов родился 23 мая 1901 года в Тимошевке; родители — Владимир Андреевич Анпилогов и Параскева Саввична.",
     "fields": {
+      "sequenceNumber": "не установлено уверенно",
       "birthDate": "23 мая 1901",
-      "baptismDate": "23 мая 1901",
-      "child": "Константин Владимирович Ампилогов",
-      "parents": "Владимир Андреевич Ампилогов и Прасковья Саввична",
-      "godparents": "Пётр Иванович [Зубков] и Елена [отчество и фамилия неуверенно]",
-      "clergy": "подписи присутствуют; полные имена требуют повторной сверки"
+      "baptismDate": "не установлена уверенно",
+      "child": "Константин Владимирович Анпилогов",
+      "parents": "Владимир Андреевич Анпилогов и Параскева Саввична",
+      "parentsStatus": "тимошевские крестьяне; православные",
+      "godparents": [
+        "[имена не читаются уверенно]"
+      ]
     }
   },
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-Q3MG-7-02-dates-child-parents-fullscreen.jpg",
-    "capturedAt": "2026-08-20",
-    "sha256": "0d9537714a944c84b91af472e1b0ef16bd221038bc265ea2bfd2c917bb300a2c",
+    "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-02-target-row.jpg",
+    "capturedAt": "2026-08-21",
+    "sha256": "2c794e59c883f3a8337890d0808de2c9adee25b7f56b8669a8f4eb02bbedfadc",
     "publicDisplay": false,
-    "rightsNote": "FamilySearch показывает договорное ограничение на скачивание; публичный показ локальных контрольных снимков отдельно не подтверждён.",
+    "rightsNote": "FamilySearch показывает договорное ограничение на скачивание.",
     "quality": {
       "status": "approved-source-limited",
-      "viewerFullscreen": true,
+      "viewerFullscreen": false,
       "panelsClosed": true,
       "filmstripHidden": true,
-      "sharpTilesConfirmed": true,
-      "viewport": "1680x1050",
-      "strategy": "overview-plus-dates-child-parents-plus-godparents-clergy-plus-index-details",
-      "limitation": "Лист разорван в сгибе; отчество отца, фамилия крестного, полное имя крестной и подписи духовенства читаются не полностью уверенно."
+      "sharpTilesConfirmed": false,
+      "viewport": "1280x720",
+      "strategy": "overview-plus-full-target-row-plus-enlarged-row-plus-high-zoom-plus-index-details",
+      "limitation": "Лист повреждён и бледен; фамилия, дата крещения, восприемники и причт читаются не полностью уверенно."
     },
     "fragments": [
       {
-        "part": "fullscreen-overview",
-        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-Q3MG-7-01-fullscreen-overview.jpg",
-        "sha256": "3f946f65f6eb82dec89d5166a59c5cb7c68c1e7342aff9c9f478f8a74c71377f"
+        "part": "overview",
+        "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-01-overview.jpg",
+        "sha256": "bee440a440b023207c0c67244d5e33a647d8b81f3b6057d04a922964291f5615"
       },
       {
-        "part": "dates-child-parents",
-        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-Q3MG-7-02-dates-child-parents-fullscreen.jpg",
-        "sha256": "0d9537714a944c84b91af472e1b0ef16bd221038bc265ea2bfd2c917bb300a2c"
+        "part": "target-row",
+        "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-02-target-row.jpg",
+        "sha256": "2c794e59c883f3a8337890d0808de2c9adee25b7f56b8669a8f4eb02bbedfadc"
       },
       {
-        "part": "godparents-clergy",
-        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-Q3MG-7-03-godparents-clergy-fullscreen.jpg",
-        "sha256": "3dc857553517c00ed114a9f075caadde9b617d061cc8b834f731d8832ff3a671"
+        "part": "target-row-enlarged",
+        "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-02a-target-row-crop.jpg",
+        "sha256": "6bc3e0ab5e9b1fd65db1cb0f080b2ac1f45d7e1536bd0ab266b77cf1938ae084"
+      },
+      {
+        "part": "high-zoom",
+        "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-02b-high-zoom.jpg",
+        "sha256": "cb4cc2f25f80e95081e914aa59243c120a3367289b929166aa2d638888cc5c23"
       },
       {
         "part": "index-details",
-        "path": "docs/evidence/familysearch/timoshovka/FS-3Q9M-CSSW-Q3MG-7-04-index-details-fullscreen.jpg",
-        "sha256": "9bae1dbafc0df81f02b69152d6e8fd4e4b9b60a284ea6c38b68a58a1a2aaf254"
+        "path": "docs/evidence/familysearch/ukraine/tymoshivka/FS-3Q9M-CSSW-Q3MG-7-03-index-details.jpg",
+        "sha256": "1be7dcacdd9ed15b7b49b29f36215287300c6a7b7872f4f64c95e808025d5170"
       }
     ]
   },
   "review": {
     "status": "complete-with-uncertainties",
-    "identityResolution": "target-row-disambiguated-by-indexed-parents",
-    "transcriptionConfidence": "high-for-child-date-and-parent-identification",
+    "identityResolution": "Имя, дата рождения, родители и тимошевская группа подтверждены оригиналом и связанными индексными вариантами.",
+    "transcriptionConfidence": "high-for-child-birth-date-and-parents; medium-for-surname-normalization; low-for-baptism-godparents-and-clergy",
     "unresolved": [
-      "Перепроверить отчество отца, фамилию крестного, полное имя крестной и духовенство."
+      "Подтвердить исходное написание фамилии и дату крещения.",
+      "Повторно прочитать восприемников и причт на более контрастной копии."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Константин Владимирович Ампилогов родился и был крещён 23 мая 1901 года в Тимошовке; родители — Владимир Андреевич Ампилогов и Прасковья Саввична."
+    "text": "Константин Владимирович Анпилогов родился 23 мая 1901 года в Тимошевке; родители — Владимир Андреевич Анпилогов и Параскева Саввична."
   }
 }

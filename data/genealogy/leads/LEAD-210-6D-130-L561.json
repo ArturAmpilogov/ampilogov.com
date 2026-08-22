@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "leadId": "LEAD-210-6D-130-L561",
+  "isRecord": false,
+  "cardKind": "folio-lead",
+  "cardKindNote": "Один лист — один лид — один будущий Record. Алфавит Разрядного архива даёт только фамилию и номер листа; имя, отчество, чин и обстоятельства появятся с изображения листа. Тогда этот лид превращается в Record с идентификатором из поля willBecome.",
+  "status": "awaiting-image",
+  "willBecome": "RGADA-210-6D-130-L561",
+  "target": {
+    "archiveCitation": "РГАДА, ф. 210, оп. 6д, д. 130, л. 561",
+    "fond": 210,
+    "opis": "6д",
+    "delo": 130,
+    "folio": 561,
+    "delaTitle": "Годовая сметная книга городов, ведавшихся Белгородским столом",
+    "delaDate": "7193/1684—85",
+    "delaExtent": "1802 листа",
+    "documentTypeAtThisFolio": "годовой сметный отчёт по городам разряда; лл. 561, 567, 635 — под скрепой дьяка П. Истомина (лл. 143—1082); лист 1210 — за пределами расписанных в описи скреп",
+    "place": {
+      "placeId": "belgorod-razryad",
+      "asWritten": "городовъ, вѣдавшихся Бѣлгородскимъ столомъ",
+      "normalized": "города Белгородского разряда",
+      "precision": "region",
+      "confidence": "low",
+      "note": "Конкретный город не назван в описи. Тег региональный, точка условная."
+    },
+    "clerkOrSignatory": "дьяк П. Истомин (лл. 143—1082)",
+    "opisCard": "RGADA-210-OP6D-OPIS-D130"
+  },
+  "person": {
+    "count": 1,
+    "nameAsWrittenInAlphabet": "Анпиловъ",
+    "givenName": null,
+    "patronymic": null,
+    "note": "Алфавит не называет имени. Один лист — один человек: это рабочее допущение, оно проверяется изображением."
+  },
+  "expectedContent": "Раздел сметной книги называет город, чин и поимённо людей чина, часто с окладом.",
+  "foundIn": {
+    "sourceCard": "RGADA-210-UKAZ-127",
+    "archiveCitation": "РГАДА, ф. 210, указатель № 127, скан 0026",
+    "url": "http://rgada.info/opisi/210-ukaz_127/0026.jpg",
+    "evidencePage": "docs/evidence/rgada/f210-ukaz127/pages/0026.jpg",
+    "evidenceFragment": "docs/evidence/rgada/f210-ukaz127/fragments/0026-kniga-130-anpilov.jpg",
+    "publicDisplay": false,
+    "rightsNote": "Скан алфавита получен с сайта РГАДА 21 августа 2026 года; хранится как рабочая копия, публикация не разрешена.",
+    "evidence": {
+      "path": "docs/evidence/rgada/f210-ukaz127/pages/0026.jpg",
+      "sha256": "c3b3bd803066aac88505782a1c61a565ec791f32fcff7509d6a3bb2a24487033",
+      "fragments": [
+        {
+          "path": "docs/evidence/rgada/f210-ukaz127/fragments/0026-kniga-130-anpilov.jpg",
+          "sha256": "97df11d10a097ef81280a4eeca16f3eb3b452a6950abe5b1cdf47b2af5e79b3b",
+          "what": "строка алфавита с фамилией и номерами листов"
+        }
+      ],
+      "captureType": "archive-master-jpeg",
+      "publicDisplay": false,
+      "rightsNote": "Скан алфавита получен с сайта РГАДА 21 августа 2026 года; хранится как рабочая копия, публикация не разрешена."
+    }
+  },
+  "siblingLeads": [
+    "LEAD-210-6D-130-L567",
+    "LEAD-210-6D-130-L635",
+    "LEAD-210-6D-130-L1210"
+  ],
+  "review": {
+    "status": "lead-only",
+    "unresolved": [
+      "Изображение листа не получено.",
+      "Имя и отчество неизвестны.",
+      "Чтение фамилии — рукой писца XIX века, а не самого документа.",
+      "Город не установлен."
+    ]
+  },
+  "researchNotes": [
+    "В этой же книге алфавит отдельной строкой даёт форму «Анпилоговъ» (лл. 34, 167).",
+    "Листы 561 и 567 рядом — вероятно один город; 635 и 1210 далеко, скорее другие города.",
+    "По правилу 2 (docs/research/genealogy-data-entry-rules) форма фамилии из документа остаётся основной: «Анпилогов»/«Анпилов» не приводятся к «Ампилогов» без доказанной идентификации человека. Здесь и форма-то не документальная, а рукой писца XIX века — она фиксируется как nameAsWrittenInAlphabet и проверяется по самому листу."
+  ]
+}

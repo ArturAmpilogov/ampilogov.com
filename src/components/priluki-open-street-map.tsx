@@ -6,8 +6,15 @@ import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 const priluki = {
   name: "Прилуки",
   detail: "Монастырское село, где в 1536/37 году записан Тонкой Онфилогов",
-  latitude: 57.3675,
-  longitude: 38.0464,
+  latitude: 57.365108,
+  longitude: 38.037449,
+};
+
+const onfilogovo = {
+  name: "Онфилогово",
+  detail: "Деревня из четырёх дворов, записанная в 1539/40 году; точное место не установлено",
+  latitude: 57.82,
+  longitude: 37.761667,
 };
 
 const uglich = {
@@ -28,8 +35,8 @@ export function PrilukiOpenStreetMap() {
 
       map = L.map(containerRef.current, {
         ...leafletInteractionOptions,
-        center: [57.445, 38.18],
-        zoom: 10,
+        center: [57.59, 37.95],
+        zoom: 9,
         minZoom: 7,
         maxZoom: 17,
         zoomControl: false,
@@ -78,6 +85,50 @@ export function PrilukiOpenStreetMap() {
         })
         .bindPopup(`<strong>${priluki.name}</strong><span>${priluki.detail}</span>`);
 
+      const onfilogovoIcon = L.divIcon({
+        className: "amphilochia-leaflet-marker priluki-leaflet-marker",
+        html: '<span class="amphilochia-leaflet-marker__dot priluki-leaflet-marker__dot is-approximate"></span>',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15],
+      });
+
+      L.circle([onfilogovo.latitude, onfilogovo.longitude], {
+        radius: 7000,
+        color: "#a6412f",
+        weight: 1.5,
+        dashArray: "5 7",
+        fillColor: "#a6412f",
+        fillOpacity: 0.035,
+      }).addTo(map);
+
+      L.marker([onfilogovo.latitude, onfilogovo.longitude], {
+        icon: onfilogovoIcon,
+        keyboard: true,
+        title: `${onfilogovo.name}, приблизительное положение`,
+      })
+        .addTo(map)
+        .bindTooltip("Онфилогово · 1539/40", {
+          direction: "left",
+          offset: [-12, 0],
+          permanent: true,
+          className: "amphilochia-leaflet-label priluki-leaflet-label is-approximate",
+        })
+        .bindPopup(`<strong>${onfilogovo.name}</strong><span>${onfilogovo.detail}</span>`);
+
+      L.polyline(
+        [
+          [priluki.latitude, priluki.longitude],
+          [onfilogovo.latitude, onfilogovo.longitude],
+        ],
+        {
+          color: "#a6412f",
+          weight: 1.5,
+          opacity: 0.45,
+          dashArray: "3 8",
+          interactive: false,
+        },
+      ).addTo(map);
+
       const uglichIcon = L.divIcon({
         className: "amphilochia-leaflet-marker priluki-leaflet-marker",
         html: '<span class="amphilochia-leaflet-marker__dot priluki-leaflet-marker__dot is-context"></span>',
@@ -103,8 +154,8 @@ export function PrilukiOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context priluki-map-context");
         const region = document.createElement("strong");
         const place = document.createElement("span");
-        region.textContent = "Прилуки на Волге";
-        place.textContent = "Угличский уезд · 1536/37";
+        region.textContent = "Верхняя Волга";
+        place.textContent = "две записи за три года";
         element.append(region, place);
         return element;
       };
@@ -113,9 +164,10 @@ export function PrilukiOpenStreetMap() {
       map.fitBounds(
         L.latLngBounds([
           [priluki.latitude, priluki.longitude],
+          [onfilogovo.latitude, onfilogovo.longitude],
           [uglich.latitude, uglich.longitude],
         ]),
-        { padding: [58, 58], maxZoom: 11 },
+        { padding: [62, 62], maxZoom: 10 },
       );
       window.requestAnimationFrame(() => map?.invalidateSize());
     });
@@ -131,7 +183,7 @@ export function PrilukiOpenStreetMap() {
       className="amphilochia-map-canvas priluki-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта села Прилуки на Волге и Углича"
+      aria-label="Интерактивная карта Прилук, приблизительного положения деревни Онфилогово и Углича"
     />
   );
 }

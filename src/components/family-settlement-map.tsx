@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { FamilyMapMigration, FamilyMapPlace } from "@/lib/genealogy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
@@ -24,6 +25,13 @@ type PlaceSummary = {
 type CountedMarker = import("leaflet").Marker & {
   familyCount?: number;
   generationCount?: number;
+};
+
+type MigrationRecordLink = {
+  sourceId: string;
+  eventLabel: string;
+  date: string;
+  placeName: string;
 };
 
 function escapeHtml(value: string) {
@@ -127,6 +135,8 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
   const [ready, setReady] = useState(false);
   const [year, setYear] = useState(range.maxYear);
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
+  const [hoveredMigrationId, setHoveredMigrationId] = useState<string | null>(null);
+  const [selectedMigrationId, setSelectedMigrationId] = useState<string | null>(null);
   const [expandedCluster, setExpandedCluster] = useState(false);
 
   const summaries = useMemo(() => places
@@ -136,6 +146,41 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.map((summary) => [summary.place.placeId, summary]),
   ), [summaries]);
   const selected = selectedPlaceId ? summariesById.get(selectedPlaceId) ?? null : null;
+  const activeMigrations = useMemo(() => migrations.filter((migration) =>
+    migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
+  ), [migrations, summariesById, year]);
+  const displayedMigration = useMemo(() => {
+    const migrationId = selectedMigrationId ?? hoveredMigrationId;
+    if (!migrationId) return null;
+    const migration = activeMigrations.find((candidate) => candidate.migrationId === migrationId);
+    if (!migration) return null;
+
+    const eventsBySource = new Map<string, { event: FamilyMapPlace["events"][number]; placeName: string }>();
+    for (const summary of summaries) {
+      for (const event of summary.activeEvents) {
+        const existing = eventsBySource.get(event.sourceId);
+        if (!existing || existing.event.eventLabel === "Происхождение, указанное в документе") {
+          eventsBySource.set(event.sourceId, { event, placeName: summary.place.name });
+        }
+      }
+    }
+    const records: MigrationRecordLink[] = migration.sourceIds.map((sourceId) => {
+      const match = eventsBySource.get(sourceId);
+      return {
+        sourceId,
+        eventLabel: match?.event.eventLabel ?? "Архивная запись",
+        date: match?.event.date ?? String(migration.year),
+        placeName: match?.placeName ?? summariesById.get(migration.toPlaceId)?.place.name ?? "",
+      };
+    });
+
+    return {
+      migration,
+      from: summariesById.get(migration.fromPlaceId)!,
+      to: summariesById.get(migration.toPlaceId)!,
+      records,
+    };
+  }, [activeMigrations, hoveredMigrationId, selectedMigrationId, summaries, summariesById]);
   const totalFamilies = useMemo(() => new Set(
     summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.familyIds)),
   ).size, [summaries]);
@@ -168,6 +213,10 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         zoomControl: false,
       });
       mapRef.current = map;
+
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        map.dragging.disable();
+      }
 
       map.attributionControl.setPrefix(
         '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer">Leaflet</a>',
@@ -207,7 +256,10 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       routeLayerRef.current = L.layerGroup().addTo(map);
       clusterRef.current.addTo(map);
 
-      map.on("click", () => setSelectedPlaceId(null));
+      map.on("click", () => {
+        setSelectedPlaceId(null);
+        setSelectedMigrationId(null);
+      });
       const bounds = L.latLngBounds(places.map((place) => [place.geo.latitude, place.geo.longitude]));
       map.fitBounds(bounds, { padding: [52, 52], maxZoom: 5 });
       window.requestAnimationFrame(() => map.invalidateSize());
@@ -281,28 +333,54 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
 
     routeLayer.clearLayers();
 
-    const activeMigrations = migrations.filter((migration) =>
-      migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
-    );
     for (const migration of activeMigrations) {
       const from = summariesById.get(migration.fromPlaceId)!;
       const to = summariesById.get(migration.toPlaceId)!;
       const related = !selectedPlaceId || migration.fromPlaceId === selectedPlaceId || migration.toPlaceId === selectedPlaceId;
       const documented = migration.migrationId.startsWith("documented:");
+      const routeSelected = migration.migrationId === selectedMigrationId;
       const fromLatLng = L.latLng(from.place.geo.latitude, from.place.geo.longitude);
       const toLatLng = L.latLng(to.place.geo.latitude, to.place.geo.longitude);
+      const baseWeight = (documented ? 2.5 : 1.5) + Math.min(4, migration.personIds.length);
+      const baseOpacity = related ? .68 : .08;
       const route = L.polyline([fromLatLng, toLatLng], {
-        className: `settlement-migration-route${documented ? " is-documented" : " is-derived"}${related ? " is-related" : " is-muted"}`,
+        className: `settlement-migration-route${documented ? " is-documented" : " is-derived"}${related ? " is-related" : " is-muted"}${routeSelected ? " is-selected" : ""}`,
         color: "#a6412f",
-        weight: (documented ? 2.5 : 1.5) + Math.min(4, migration.personIds.length),
-        opacity: related ? .68 : .08,
+        weight: baseWeight + (routeSelected ? 2 : 0),
+        opacity: routeSelected ? .96 : baseOpacity,
         dashArray: documented ? undefined : "5 8",
-        interactive: related,
+        interactive: false,
       }).addTo(routeLayer);
-      route.bindTooltip(
-        `${from.place.name} → ${to.place.name} · ${migration.personNames.join(", ")} · ${migration.basis}`,
-        { sticky: true, className: "settlement-map-tooltip" },
+      const routeHit = L.polyline([fromLatLng, toLatLng], {
+        className: "settlement-migration-hit",
+        color: "#a6412f",
+        weight: 20,
+        opacity: 0,
+        interactive: related,
+        bubblingMouseEvents: false,
+      }).addTo(routeLayer);
+      routeHit.bindTooltip(
+        `${from.place.name} → ${to.place.name} · ${migration.sourceIds.length} ${plural(migration.sourceIds.length, "запись", "записи", "записей")}`,
+        { sticky: true, className: "settlement-map-tooltip settlement-migration-tooltip" },
       );
+      routeHit.on("mouseover", () => {
+        setHoveredMigrationId(migration.migrationId);
+        route.setStyle({ weight: baseWeight + 2, opacity: .96 });
+        route.bringToFront();
+      });
+      routeHit.on("mouseout", () => {
+        setHoveredMigrationId((current) => current === migration.migrationId ? null : current);
+        route.setStyle({
+          weight: baseWeight + (routeSelected ? 2 : 0),
+          opacity: routeSelected ? .96 : baseOpacity,
+        });
+      });
+      routeHit.on("click", (event) => {
+        L.DomEvent.stopPropagation(event.originalEvent);
+        map.closePopup();
+        setSelectedPlaceId(null);
+        setSelectedMigrationId(migration.migrationId);
+      });
 
       const fromPoint = map.latLngToLayerPoint(fromLatLng);
       const toPoint = map.latLngToLayerPoint(toLatLng);
@@ -325,12 +403,14 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         }).addTo(routeLayer);
       }
     }
-  }, [migrations, ready, selectedPlaceId, summaries, summariesById, year]);
+  }, [activeMigrations, ready, selectedMigrationId, selectedPlaceId, summariesById]);
 
   function resetMapFocus() {
     mapRef.current?.closePopup();
     expandedClusterRef.current?.unspiderfy();
     setSelectedPlaceId(null);
+    setSelectedMigrationId(null);
+    setHoveredMigrationId(null);
   }
 
   return (
@@ -351,25 +431,6 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         ) : null}
       </div>
 
-      <div className="settlement-map-stage">
-        <div
-          className="settlement-map-canvas"
-          ref={containerRef}
-          role="region"
-          aria-label="Интерактивная карта OpenStreetMap с семейными центрами и переселениями"
-        />
-        {expandedCluster ? (
-          <button
-            className="settlement-map-collapse"
-            type="button"
-            onClick={resetMapFocus}
-          >
-            <span aria-hidden="true">↙</span>
-            Свернуть группу
-          </button>
-        ) : null}
-      </div>
-
       <div className="settlement-map-timeline section-shell">
         <label htmlFor="settlement-map-year">
           <span>Исторический срез</span>
@@ -385,6 +446,63 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           onChange={(event) => setYear(Number(event.target.value))}
         />
         <div aria-hidden="true"><span>{range.minYear}</span><span>{range.maxYear}</span></div>
+      </div>
+
+      <div className="settlement-map-stage section-shell">
+        <div
+          className="settlement-map-canvas"
+          ref={containerRef}
+          role="region"
+          aria-label="Интерактивная карта OpenStreetMap с семейными центрами и переселениями"
+        />
+        {displayedMigration ? (
+          <aside
+            className={`settlement-migration-panel${selectedMigrationId ? " is-pinned" : ""}`}
+            aria-live="polite"
+            aria-label="Записи направления переезда"
+          >
+            <div className="settlement-migration-panel__heading">
+              <div>
+                <span>{selectedMigrationId ? "Выбранное направление" : "Направление переезда"}</span>
+                <strong>{displayedMigration.from.place.name} <i aria-hidden="true">→</i> {displayedMigration.to.place.name}</strong>
+              </div>
+              {selectedMigrationId ? (
+                <button type="button" onClick={() => setSelectedMigrationId(null)} aria-label="Закрыть направление">×</button>
+              ) : null}
+            </div>
+            {displayedMigration.migration.personNames.length ? (
+              <p>{displayedMigration.migration.personNames.join(", ")}</p>
+            ) : null}
+            <small>{displayedMigration.migration.basis}</small>
+            <nav aria-label="Записи, связанные с направлением">
+              {displayedMigration.records.map((record) => (
+                <Link
+                  key={record.sourceId}
+                  href={`/records/${encodeURIComponent(record.sourceId)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>
+                    <strong>{record.eventLabel}</strong>
+                    <small>{record.placeName}</small>
+                  </span>
+                  <span>{record.date}<i aria-hidden="true">↗</i></span>
+                </Link>
+              ))}
+            </nav>
+            {!selectedMigrationId ? <em>Нажмите на линию, чтобы закрепить список</em> : null}
+          </aside>
+        ) : null}
+        {expandedCluster ? (
+          <button
+            className="settlement-map-collapse"
+            type="button"
+            onClick={resetMapFocus}
+          >
+            <span aria-hidden="true">↙</span>
+            Свернуть группу
+          </button>
+        ) : null}
       </div>
 
       <footer className="settlement-map-legend section-shell">

@@ -41,42 +41,44 @@
       "mentionId": "FS-3Q9M-CS9T-TS88-Q-M1",
       "role": "child",
       "nameAsTranscribed": "Борис",
-      "displayName": "Анпилогов Борис Егорович",
+      "displayName": "Борис Егорович Анпилогов",
       "sex": "male",
-      "personId": null,
+      "personId": "P0249",
       "alternateNames": [],
-      "modernName": "Анпилогов Борис Егорович"
+      "modernName": "Борис Егорович Анпилогов"
     },
     {
       "mentionId": "FS-3Q9M-CS9T-TS88-Q-M2",
       "role": "father",
       "nameAsTranscribed": "Егор Космин Анпилогов",
-      "displayName": "Анпилогов Егор Космич",
+      "displayName": "Егор Космич Анпилогов",
       "sex": "male",
-      "personId": null,
+      "personId": "P0247",
       "alternateNames": [
-        "Анпилогов Егор Космин"
+        "Егор Космин Анпилогов"
       ],
-      "modernName": "Анпилогов Егор Космич",
-      "places": [{
-        "type": "origin",
-        "placeId": "kromy-uezd",
-        "asWritten": "Орловской губернии, Кромского уезда, [волость неуверенно]",
-        "normalized": "Кромской уезд, Орловская губерния",
-        "confidence": "high"
-      }]
+      "modernName": "Егор Космич Анпилогов",
+      "places": [
+        {
+          "type": "origin",
+          "placeId": "kromy-uezd",
+          "asWritten": "Орловской губернии, Кромского уезда, [волость неуверенно]",
+          "normalized": "Кромской уезд, Орловская губерния",
+          "confidence": "high"
+        }
+      ]
     },
     {
       "mentionId": "FS-3Q9M-CS9T-TS88-Q-M3",
       "role": "mother",
       "nameAsTranscribed": "Христина Константинова",
-      "displayName": "Анпилогова Христина Константиновна",
+      "displayName": "Христина Константиновна Анпилогова",
       "sex": "female",
-      "personId": null,
+      "personId": "P0248",
       "alternateNames": [
         "Христина Константинова"
       ],
-      "modernName": "Анпилогова Христина Константиновна"
+      "modernName": "Христина Константиновна Анпилогова"
     },
     {
       "mentionId": "FS-3Q9M-CS9T-TS88-Q-M4",
@@ -90,13 +92,24 @@
       ]
     }
   ],
-  "migrationObservations": [{
-    "personName": "Егор Космич Анпилогов",
-    "from": {"placeId": "kromy-uezd", "asWritten": "Орловской губернии, Кромского уезда", "normalized": "Кромской уезд, Орловская губерния"},
-    "to": {"placeId": "kyiv", "asWritten": "город Киев", "normalized": "Киев, Киевская губерния"},
-    "basis": "Запись о рождении Бориса называет его отца Егора Космича крестьянином Кромского уезда Орловской губернии, а семью фиксирует в Киеве; дата переезда неизвестна.",
-    "confidence": "high"
-  }],
+  "migrationObservations": [
+    {
+      "personName": "Егор Космич Анпилогов",
+      "from": {
+        "placeId": "kromy-uezd",
+        "asWritten": "Орловской губернии, Кромского уезда",
+        "normalized": "Кромской уезд, Орловская губерния"
+      },
+      "to": {
+        "placeId": "kyiv",
+        "asWritten": "город Киев",
+        "normalized": "Киев, Киевская губерния"
+      },
+      "basis": "Запись о рождении Бориса называет его отца Егора Космича крестьянином Кромского уезда Орловской губернии, а семью фиксирует в Киеве; дата переезда неизвестна.",
+      "confidence": "high",
+      "personId": "P0247"
+    }
+  ],
   "transcription": {
     "status": "complete-with-uncertainties",
     "literal": "Июль | № 258 мужского пола | 25 [родился], 28 [крещён] | Борис | Орловской губернии, Кромского уезда, [волость неуверенно] крестьянин Егор Космин Анпилогов и его жена Христина Константинова, оба православные | восприемники и причт перечислены, часть имён неуверенно.",
@@ -160,5 +173,6 @@
   "summary": {
     "status": "verified-summary",
     "text": "Борис Егорович Анпилогов родился 25 июля и был крещён 28 июля 1916 года в Киеве."
-  }
+  },
+  "primaryPersonId": "P0249"
 }

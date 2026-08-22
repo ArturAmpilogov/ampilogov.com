@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "leadId": "LEAD-210-6D-172-L919",
+  "isRecord": false,
+  "cardKind": "folio-lead",
+  "cardKindNote": "Один лист — один лид — один будущий Record. Алфавит Разрядного архива даёт только фамилию и номер листа; имя, отчество, чин и обстоятельства появятся с изображения листа. Тогда этот лид превращается в Record с идентификатором из поля willBecome.",
+  "status": "awaiting-image",
+  "willBecome": "RGADA-210-6D-172-L919",
+  "target": {
+    "archiveCitation": "РГАДА, ф. 210, оп. 6д, д. 172, л. 919",
+    "fond": 210,
+    "opis": "6д",
+    "delo": 172,
+    "folio": 919,
+    "delaTitle": "Годовая сметная книга городов, ведавшихся Белгородским столом",
+    "delaDate": "7205/1696—97",
+    "delaExtent": "1255 листов",
+    "documentTypeAtThisFolio": "годовой сметный отчёт по городам разряда, за скрепой дьяка Т. Шульгина",
+    "place": {
+      "placeId": "belgorod-razryad",
+      "asWritten": "городовъ, вѣдавшихся Бѣлгородскимъ столомъ",
+      "normalized": "города Белгородского разряда",
+      "precision": "region",
+      "confidence": "low",
+      "note": "Конкретный город не назван в описи. Тег региональный, точка условная."
+    },
+    "clerkOrSignatory": "дьяк Т. Шульгин",
+    "opisCard": "RGADA-210-OP6D-OPIS-D172"
+  },
+  "person": {
+    "count": 1,
+    "nameAsWrittenInAlphabet": "Анпиловъ",
+    "givenName": null,
+    "patronymic": null,
+    "note": "Алфавит не называет имени. Один лист — один человек: это рабочее допущение, оно проверяется изображением."
+  },
+  "expectedContent": "Раздел сметной книги называет город, чин и поимённо людей чина, часто с окладом.",
+  "foundIn": {
+    "sourceCard": "RGADA-210-UKAZ-132",
+    "archiveCitation": "РГАДА, ф. 210, указатель № 132, скан 0228",
+    "url": "http://rgada.info/opisi/210-ukaz_132/0228.jpg",
+    "evidencePage": "docs/evidence/rgada/f210-ukaz132/pages/0228.jpg",
+    "evidenceFragment": "docs/evidence/rgada/f210-ukaz132/fragments/0228-kniga-172-anpilov.jpg",
+    "publicDisplay": false,
+    "rightsNote": "Скан алфавита получен с сайта РГАДА 21 августа 2026 года; хранится как рабочая копия, публикация не разрешена.",
+    "evidence": {
+      "path": "docs/evidence/rgada/f210-ukaz132/pages/0228.jpg",
+      "sha256": "932c8f6ff9679b54dfabb2277f2cebe9f1772037b66b626dc3723449eacd1a7e",
+      "fragments": [
+        {
+          "path": "docs/evidence/rgada/f210-ukaz132/fragments/0228-kniga-172-anpilov.jpg",
+          "sha256": "ac8a512fcee4a1434eb0d216fc693a1497c734c849e390c9fc2e5c9beff1155a",
+          "what": "строка алфавита с фамилией и номерами листов"
+        }
+      ],
+      "captureType": "archive-master-jpeg",
+      "publicDisplay": false,
+      "rightsNote": "Скан алфавита получен с сайта РГАДА 21 августа 2026 года; хранится как рабочая копия, публикация не разрешена."
+    }
+  },
+  "siblingLeads": [
+    "LEAD-210-6D-172-L918",
+    "LEAD-210-6D-172-L922"
+  ],
+  "review": {
+    "status": "lead-only",
+    "unresolved": [
+      "Изображение листа не получено.",
+      "Имя и отчество неизвестны.",
+      "Чтение фамилии — рукой писца XIX века, а не самого документа.",
+      "Город не установлен."
+    ]
+  },
+  "researchNotes": [
+    "Три листа подряд — 918, 919 и 922 — почти наверняка один городовой раздел и одна семья.",
+    "По правилу 2 (docs/research/genealogy-data-entry-rules) форма фамилии из документа остаётся основной: «Анпилогов»/«Анпилов» не приводятся к «Ампилогов» без доказанной идентификации человека. Здесь и форма-то не документальная, а рукой писца XIX века — она фиксируется как nameAsWrittenInAlphabet и проверяется по самому листу."
+  ]
+}

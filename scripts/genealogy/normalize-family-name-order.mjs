@@ -7,7 +7,7 @@ const apply = process.argv.includes("--apply");
 
 const directories = [
   path.join(root, "data/genealogy/people"),
-  path.join(root, "data/genealogy/sources/familysearch"),
+  path.join(root, "data/genealogy/sources"),
 ];
 
 const surnameForms = [
@@ -24,10 +24,8 @@ const escapedForms = surnameForms
   .sort((a, b) => b.length - a.length)
   .map((value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
 
-const surnamePattern = new RegExp(`(^|\\s)(${escapedForms.join("|")})(ъ?)(?=\\s|$|[),.;:?])`, "u");
+const surnamePattern = new RegExp(`^(${escapedForms.join("|")})(ъ?)(?=\\s|$|[),.;:?])`, "u");
 const scalarNameFieldPattern = /("(?:modernName|displayName|canonicalName)"\s*:\s*)"((?:\\.|[^"\\])*)"/gu;
-const variantArrayPattern = /("(?:alternateNames|nameVariants)"\s*:\s*\[)((?:(?:"(?:\\.|[^"\\])*")|[^\]])*)(\])/gu;
-const jsonStringPattern = /"((?:\\.|[^"\\])*)"/gu;
 
 function decodeJsonString(value) {
   return JSON.parse(`"${value}"`);
@@ -37,20 +35,15 @@ function encodeJsonString(value) {
   return JSON.stringify(value).slice(1, -1);
 }
 
-function normalizeOrder(value, { preserveHistorical = false } = {}) {
-  if (preserveHistorical && /[ѣіѳъ]/iu.test(value)) return value;
-
+function normalizeOrder(value) {
   const match = surnamePattern.exec(value);
   surnamePattern.lastIndex = 0;
   if (!match) return value;
 
-  const surnameStart = match.index + match[1].length;
-  if (surnameStart === 0) return value;
-
-  const surname = `${match[2]}${match[3]}`;
-  const before = value.slice(0, surnameStart).trim();
-  const after = value.slice(surnameStart + surname.length).trim();
-  return [surname, before, after].filter(Boolean).join(" ").replace(/\s+/gu, " ");
+  const surname = `${match[1]}${match[2]}`.replace(/ъ$/iu, "");
+  const remainder = value.slice(match[0].length).trim();
+  if (!remainder) return value;
+  return `${remainder} ${surname}`.replace(/\s+/gu, " ");
 }
 
 function transformText(text) {
@@ -64,26 +57,22 @@ function transformText(text) {
     return `${prefix}"${encodeJsonString(normalized)}"`;
   });
 
-  output = output.replace(variantArrayPattern, (whole, prefix, body, suffix) => {
-    const normalizedBody = body.replace(jsonStringPattern, (stringWhole, encodedValue) => {
-      const value = decodeJsonString(encodedValue);
-      const normalized = normalizeOrder(value, { preserveHistorical: true });
-      if (normalized === value) return stringWhole;
-      changedValues += 1;
-      return `"${encodeJsonString(normalized)}"`;
-    });
-    return `${prefix}${normalizedBody}${suffix}`;
-  });
-
   return { output, changedValues };
 }
 
 const changedFiles = [];
 let changedValues = 0;
 
+function jsonFiles(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) return jsonFiles(entryPath);
+    return entry.name.endsWith(".json") ? [entryPath] : [];
+  });
+}
+
 for (const directory of directories) {
-  for (const filename of fs.readdirSync(directory).filter((value) => value.endsWith(".json"))) {
-    const filenameAbsolute = path.join(directory, filename);
+  for (const filenameAbsolute of jsonFiles(directory)) {
     const original = fs.readFileSync(filenameAbsolute, "utf8");
     const transformed = transformText(original);
     if (transformed.output === original) continue;
