@@ -1,6 +1,8 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
+import placesIndexData from "../../data/genealogy/places/index.json";
+
 const GENEALOGY_ROOT = path.join(process.cwd(), "data/genealogy");
 
 type PersonRecord = {
@@ -387,9 +389,10 @@ export type FamilyMapMigration = {
 };
 
 // The place index is the canonical coordinate source for records, origins, and map routes.
-const placesIndex = JSON.parse(
-  readFileSync(path.join(GENEALOGY_ROOT, "places/index.json"), "utf8"),
-) as PlacesIndex;
+// Keep the place index in Turbopack's dependency graph. Reading it only through
+// `readFileSync` left the dev server with a stale in-memory copy after a place
+// was added, while source records were hot-reloaded immediately.
+const placesIndex = placesIndexData as PlacesIndex;
 
 const placesById = new Map<string, GenealogyPlace>(placesIndex.places.flatMap((place) => (
   [place.placeId, ...(place.legacyIds ?? [])].map((placeId) => [placeId, place] as const)
