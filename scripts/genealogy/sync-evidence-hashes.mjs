@@ -40,7 +40,7 @@ async function sync(value) {
   }
   if (!value || typeof value !== "object") return;
 
-  if (typeof value.path === "string" && value.path.startsWith("docs/evidence/")) {
+  if (typeof value.path === "string" && value.path.startsWith("public/archive/evidence/")) {
     references += 1;
     const actual = await sha256(value.path);
     if (!value.sha256) {

@@ -896,8 +896,8 @@ function evidenceUrl(source?: SourceRecord): string | null {
 }
 
 function evidencePathUrl(evidencePath?: string): string | null {
-  if (!evidencePath?.startsWith("docs/")) return null;
-  return `/archive/${evidencePath.slice("docs/".length)}`;
+  if (!evidencePath?.startsWith("public/")) return null;
+  return `/${evidencePath.slice("public/".length)}`;
 }
 
 function formatDate(value?: string) {
