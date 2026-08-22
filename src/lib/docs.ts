@@ -175,9 +175,3 @@ export function resolveDocumentUrl(sourcePath: string, url?: string) {
 
   return `/archive/${resolved}${hash ? `#${hash}` : ""}`;
 }
-
-export function getArchiveFiles() {
-  return walk(DOCS_ROOT)
-    .filter((file) => !file.endsWith(".md"))
-    .map((file) => path.relative(DOCS_ROOT, file).split(path.sep).join("/"));
-}

@@ -96,7 +96,7 @@
 находки в том, что имя было живым и обиходным по всей центральной России до
 того, как от него образовалась наша фамилия.
 
-Запись: `PUB-PKMG-1540-TVER-P111-ONFILOGOVO`, скан `docs/evidence/publications/piscovye-knigi-1539-1540-tver/pages/0111.png`.
+Запись: `PUB-PKMG-1540-TVER-P111-ONFILOGOVO`, скан `public/archive/evidence/publications/piscovye-knigi-1539-1540-tver/pages/0111.png`.
 
 ## Что с этим делать
 
