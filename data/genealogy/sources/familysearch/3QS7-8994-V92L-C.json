@@ -43,7 +43,7 @@
     {
       "mentionId": "FS-3QS7-8994-V92L-C-M1",
       "role": "deceased-child",
-      "personId": null,
+      "personId": "P0344",
       "sex": "female",
       "nameAsTranscribed": "Ольга, дочь [отец по индексу: Никита Афанасиев Ампилогов; полная строка требует повторного чтения]",
       "nameAsIndexed": "Ольга Ампилогов",
@@ -57,7 +57,7 @@
     {
       "mentionId": "FS-3QS7-8994-V92L-C-M2",
       "role": "father",
-      "personId": null,
+      "personId": "P0308",
       "sex": "male",
       "nameAsTranscribed": "Никита Афанасиев Ампилогов [по индексу]",
       "nameAsIndexed": "Никита Афанасиев Ампилогов",
@@ -83,7 +83,14 @@
       "clergyAndBurialPlace": "[неуверенно]"
     }
   },
-  "sourceRelations": [],
+  "sourceRelations": [
+    {
+      "type": "same-family",
+      "sourceId": "FS-3QS7-8994-V9JJ-G",
+      "confidence": "medium",
+      "note": "Вероятная семейная связь по полному имени отца, месту и совместимой хронологии; мать названа не во всех записях."
+    }
+  ],
   "evidence": {
     "captureType": "viewer-screenshot",
     "path": "public/archive/evidence/familysearch/russia/samara/3QS7-8994-V92L-C/03-target-fullscreen.png",
@@ -134,5 +141,6 @@
   "summary": {
     "status": "verified-summary",
     "text": "Ольга Никитична Ампилогова, дочь Никита Афанасьевич Ампилогов, умерла 14 июля 1897."
-  }
+  },
+  "primaryPersonId": "P0344"
 }
