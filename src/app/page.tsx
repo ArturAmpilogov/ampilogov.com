@@ -30,7 +30,7 @@ export default function Home() {
           <h1 id="cover-title">Ампилоговы</h1>
           <p className="cover-thesis">История фамилии и родов</p>
           <p className="cover-deck">
-            Ампилоговы · Анпилоговы · Ампиловы · Анпиловы · Анфилоговы
+            Ампилоговы · Анпилоговы · Ампиловы · Анпиловы · Анфилоговы · Онфилоговы
           </p>
           <Link className="text-link text-link--light" href={`/read/${chapters[0]?.slug ?? "book/01-overview"}`}>
             Начать чтение <span aria-hidden="true">↗</span>

@@ -22,6 +22,7 @@ import { OrelEstateTable } from "@/components/orel-estate-table";
 import { OrelLinesMap } from "@/components/orel-lines-map";
 import { OrelOathPrelude } from "@/components/orel-oath-prelude";
 import { OrelServicePrelude } from "@/components/orel-service-prelude";
+import { OrelSurnameShiftEvidence } from "@/components/orel-surname-shift-evidence";
 import { PrilukiMap } from "@/components/priluki-map";
 import { PrilukiRecordAnatomy } from "@/components/priluki-record-anatomy";
 import { PrilukiScribePrelude } from "@/components/priluki-scribe-prelude";
@@ -102,7 +103,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
     (_, sourceId: string) => `[${sourceId}](/read/research/sources#${sourceId.toLowerCase()})`,
   );
   const sections = linkedContent.split(
-    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_ESTATE_TABLE\}\}|\{\{OREL_LINES_MAP\}\}|\{\{OREL_OATH_PRELUDE\}\}|\{\{OREL_SERVICE_PRELUDE\}\}|\{\{PRILUKI_MAP\}\}|\{\{PRILUKI_RECORD_ANATOMY\}\}|\{\{PRILUKI_SCRIBE_PRELUDE\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
+    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_ESTATE_TABLE\}\}|\{\{OREL_LINES_MAP\}\}|\{\{OREL_OATH_PRELUDE\}\}|\{\{OREL_SERVICE_PRELUDE\}\}|\{\{OREL_SURNAME_SHIFT_EVIDENCE\}\}|\{\{PRILUKI_MAP\}\}|\{\{PRILUKI_RECORD_ANATOMY\}\}|\{\{PRILUKI_SCRIBE_PRELUDE\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
   );
 
   return (
@@ -126,6 +127,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
             {section === "{{OREL_LINES_MAP}}" ? <OrelLinesMap /> : null}
             {section === "{{OREL_OATH_PRELUDE}}" ? <OrelOathPrelude /> : null}
             {section === "{{OREL_SERVICE_PRELUDE}}" ? <OrelServicePrelude /> : null}
+            {section === "{{OREL_SURNAME_SHIFT_EVIDENCE}}" ? <OrelSurnameShiftEvidence /> : null}
             {section === "{{PRILUKI_MAP}}" ? <PrilukiMap /> : null}
             {section === "{{PRILUKI_RECORD_ANATOMY}}" ? <PrilukiRecordAnatomy /> : null}
             {section === "{{PRILUKI_SCRIBE_PRELUDE}}" ? <PrilukiScribePrelude /> : null}

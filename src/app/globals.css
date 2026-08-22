@@ -3158,6 +3158,197 @@ a {
   transform: translate(1px, -1px);
 }
 
+.orel-surname-shift {
+  margin: 2.5rem 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.orel-surname-shift > figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 18px 0 20px;
+}
+
+.orel-surname-shift > figcaption span,
+.orel-surname-shift-head,
+.orel-surname-shift-person span,
+.orel-surname-shift a small,
+.orel-surname-shift-mobile-date,
+.orel-surname-shift-source {
+  font-family: var(--sans);
+}
+
+.orel-surname-shift > figcaption span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.orel-surname-shift > figcaption strong {
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+  font-weight: 450;
+  line-height: 1.15;
+}
+
+.orel-surname-shift-head,
+.orel-surname-shift li {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.72fr) repeat(2, minmax(190px, 1fr));
+}
+
+.orel-surname-shift-head {
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.orel-surname-shift-head span,
+.orel-surname-shift-person,
+.orel-surname-shift li > a {
+  padding: 13px 14px;
+}
+
+.orel-surname-shift-head span:not(:first-child),
+.orel-surname-shift li > a {
+  border-left: 1px solid var(--line);
+}
+
+.orel-surname-shift ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orel-surname-shift li {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.orel-surname-shift-person {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.orel-surname-shift-person strong {
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.orel-surname-shift-person span {
+  color: var(--muted);
+  font-size: 0.64rem;
+}
+
+.orel-surname-shift li.is-changed .orel-surname-shift-person span {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.orel-surname-shift li > a {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+  color: var(--ink);
+  background: transparent;
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.orel-surname-shift li > a:hover,
+.orel-surname-shift li > a:focus-visible {
+  color: var(--accent);
+  background: rgba(166, 65, 47, 0.045);
+  outline: none;
+}
+
+.orel-surname-shift li > a > strong {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+.orel-surname-shift li > a q {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.orel-surname-shift li > a small {
+  color: var(--accent);
+  font-size: 0.62rem;
+  font-weight: 750;
+}
+
+.orel-surname-shift-mobile-date {
+  display: none;
+}
+
+.orel-surname-shift footer {
+  display: grid;
+  gap: 8px;
+  padding: 18px 0 20px;
+}
+
+.orel-surname-shift footer p {
+  max-width: 78ch;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.orel-surname-shift footer .orel-surname-shift-caveat {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.orel-surname-shift-source {
+  width: fit-content;
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .orel-surname-shift-head {
+    display: none;
+  }
+
+  .orel-surname-shift li {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .orel-surname-shift-person {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .orel-surname-shift li > a:first-of-type {
+    border-left: 0;
+  }
+
+  .orel-surname-shift-mobile-date {
+    display: block;
+    color: var(--muted);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+}
+
 .amphilochia-map-note {
   max-width: none !important;
   margin: 14px 0 0 !important;
