@@ -1422,6 +1422,57 @@
           "note": "Первые четыре результата точной российской выдачи Ампилов проверены. Виктор и смерть Игнатия уже имели карточки; рождения Агапии и Веры оформлены. По связанным записям семейное написание Анпилов выбрано основным, а индексное Ампилов сохранено альтернативой."
         }
       ]
+    },
+    {
+      "searchRunId": "FS-SEARCH-0010",
+      "query": {
+        "recordCountry": "Ukraine",
+        "surname": "А*гов",
+        "matchMode": "FamilySearch-wildcard"
+      },
+      "searchUrl": "https://www.familysearch.org/en/search/record/results?count=100&q.recordCountry=Ukraine&q.surname=%D0%90%2A%D0%B3%D0%BE%D0%B2",
+      "startedAt": "2026-08-23",
+      "reportedResultCount": 2444,
+      "reportedResultCountObservedRange": {
+        "minimum": 2444,
+        "maximum": 3387,
+        "note": "Счётчик FamilySearch изменился с 3387 до 2444 во время последовательного перелистывания одной и той же выдачи; порядок строк также менялся."
+      },
+      "resultsPerPage": 100,
+      "inventory": {
+        "historicalSampledUniqueRecordArks": 2292,
+        "currentTodoUniqueRecordArks": 2226,
+        "rawRowsCapturedAcrossPasses": 3544,
+        "alreadyProcessedAndRemovedFromTodo": 650,
+        "highPriorityWithVisibleOriginal": 177,
+        "mediumPriorityNeedsRecordOpen": 1226,
+        "borderlineNeedsManualReview": 77,
+        "screenedOutAsUnrelated": 96,
+        "remainingTodo": 1480,
+        "todoPath": "data/genealogy/todos/familysearch-ukraine-a-star.json"
+      },
+      "warning": "Выдача нестабильна и содержит посторонние фамилии. Остаток считается по уникальным ARK, а не по счётчику FamilySearch. Каждая строка проходит повторную дедупликацию по событию и изображению; новая карточка создаётся только после проверки оригинала.",
+      "processingPlan": [
+        "Основной проход: 1403 точных и сильных ещё не обработанных ARK внешними блоками по 100 кандидатов; внутри блока контрольное сохранение каждые 20 строк.",
+        "Для каждого кандидата: проверка глобального реестра, просмотр оригинала, сохранение полного кадра и целевого фрагмента, полная расшифровка с явными неуверенными чтениями.",
+        "Отдельный проход по 77 пограничным вариантам фамилии.",
+        "Контрольный повтор выдачи после завершения, чтобы поймать строки, пропущенные из-за перетасовки FamilySearch."
+      ],
+      "pages": [
+        {
+          "page": 1,
+          "status": "in-progress",
+          "screenedRows": 1,
+          "promisingMissingSources": 1,
+          "reviewedRecordArks": [
+            "https://www.familysearch.org/ark:/61903/1:1:6XC4-98F3"
+          ],
+          "newSourceIds": [
+            "FS-3Q9M-CSSW-4VD5"
+          ],
+          "note": "Новый цикл начат браком Владимира Андреевича Ампилогова и Параскевы Саввичны 23 октября 1887 года. Сохранены реконструированный разворот и увеличенная строка оригинала. Индексное советское место признано анахронизмом; фамилия невесты «Казнлова» отмечена как искажённая и не выдана за достоверное чтение."
+        }
+      ]
     }
   ]
 }

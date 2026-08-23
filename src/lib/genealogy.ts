@@ -335,7 +335,19 @@ export type DirectoryPerson = {
   searchText: string;
 };
 
-export type PlacePrecision = "settlement" | "historical-site" | "district" | "region" | "approximate";
+export type PlacePrecision =
+  | "settlement"
+  | "city"
+  | "historical-site"
+  | "historical-settlement"
+  | "historical-settlement-match"
+  | "historical-map"
+  | "historical-area"
+  | "volost"
+  | "volost-center"
+  | "district"
+  | "region"
+  | "approximate";
 
 export type GenealogyPlace = {
   placeId: string;
@@ -373,6 +385,7 @@ export type FamilyMapEvent = {
 
 export type FamilyMapPlace = GenealogyPlace & {
   precisionLabel: string;
+  approximate: boolean;
   events: FamilyMapEvent[];
 };
 
@@ -403,11 +416,33 @@ const placeLabels: Record<string, string> = Object.fromEntries(
 
 const familyMapPrecisionLabels: Record<PlacePrecision, string> = {
   settlement: "точное поселение",
+  city: "точный город",
   "historical-site": "историческое место",
+  "historical-settlement": "историческое поселение",
+  "historical-settlement-match": "вероятное историческое поселение",
+  "historical-map": "по исторической карте",
+  "historical-area": "историческая местность",
+  volost: "примерно по волости",
+  "volost-center": "через волостной центр",
   district: "примерно по уезду",
   region: "примерно по региону",
   approximate: "приблизительно",
 };
+
+const exactPlacePrecisions = new Set<string>([
+  "settlement",
+  "city",
+  "historical-site",
+  "historical-settlement",
+]);
+
+function familyMapPrecisionLabel(precision: string) {
+  return familyMapPrecisionLabels[precision as PlacePrecision] ?? "точность требует уточнения";
+}
+
+function isApproximatePlacePrecision(precision: string) {
+  return !exactPlacePrecisions.has(precision);
+}
 
 const eventLabels: Record<string, string> = {
   birth: "Рождение",
@@ -628,6 +663,12 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|амфилог|амфилов|анпилог|анпилов|анфилог|онфилог|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+
+function isAmpilogovVariantName(value?: string | null) {
+  return Boolean(value && ampilogovSurnameVariantPattern.test(value));
+}
+
 function sourcePrimaryPerson(source: SourceRecord, people: ArchiveRecordPerson[]) {
   if (!source.primaryPersonId) return people[0] ?? null;
   return people.find((person) => person.personId === source.primaryPersonId) ?? people[0] ?? null;
@@ -731,20 +772,36 @@ function sourceDirectoryFacts(source: SourceRecord) {
   return [];
 }
 
-function isGenealogyRecordSource(source: SourceRecord) {
-  const hasNamedPerson = (source.mentions ?? []).some((mention) =>
-    Boolean(
-      mention.displayName ??
-      mention.modernName ??
-      mention.nameAsIndexed ??
-      mention.nameAsTranscribed ??
+function sourceHasAmpilogovVariant(
+  source: SourceRecord,
+  peopleById?: Map<string, PersonRecord>,
+) {
+  const hasFamilySurnameMention = (source.mentions ?? []).some((mention) =>
+    [
+      mention.displayName,
+      mention.modernName,
+      mention.nameAsIndexed,
+      mention.nameAsTranscribed,
       mention.nameAsWritten,
-    )
+      ...(mention.alternateNames ?? []),
+      mention.personId ? peopleById?.get(mention.personId)?.displayName : undefined,
+      mention.personId ? peopleById?.get(mention.personId)?.surname?.normalized : undefined,
+      ...(mention.personId ? peopleById?.get(mention.personId)?.nameVariants ?? [] : []),
+      ...(mention.personId ? peopleById?.get(mention.personId)?.surname?.formsAsWritten ?? [] : []),
+    ].some(isAmpilogovVariantName)
   );
+
+  return hasFamilySurnameMention;
+}
+
+function isGenealogyRecordSource(
+  source: SourceRecord,
+  peopleById?: Map<string, PersonRecord>,
+) {
 
   return !source.recordType?.startsWith("finding-aid") &&
     source.event?.type !== "negative-finding" &&
-    hasNamedPerson;
+    sourceHasAmpilogovVariant(source, peopleById);
 }
 
 function toArchiveRecord(source: SourceRecord): ArchiveRecord {
@@ -754,8 +811,11 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
   const place = sourcePlace(source);
   const people = sourcePeople(source);
   const literal = source.transcription?.literal ?? "";
-  const modernInterpretation = source.transcription?.modernInterpretation ?? "";
   const summary = source.summary?.text ?? source.transcription?.suppliedText ?? "";
+  const primaryPerson = sourcePrimaryPerson(source, people);
+  const modernInterpretation = source.transcription?.modernInterpretation?.trim() ||
+    summary.trim() ||
+    `Запись «${eventLabel.toLocaleLowerCase("ru")}» относится к ${primaryPerson?.name ?? "представителю семьи"}: ${date}, ${place}.`;
   const status = source.transcription?.status ?? source.review?.status ?? "working";
   const review = sourceReviewState(source);
   const isComplete = review.reviewState === "complete";
@@ -809,7 +869,7 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
     sourceCopies,
     mayDisplayEvidence: source.evidence?.publicDisplay === true,
     rightsNote: source.evidence?.rightsNote ?? "Права на изображение не проверены; публичная копия не показывается.",
-    primaryPerson: sourcePrimaryPerson(source, people),
+    primaryPerson,
     people,
     directoryFacts: sourceDirectoryFacts(source),
     migrations,
@@ -851,9 +911,13 @@ function toArchiveRecord(source: SourceRecord): ArchiveRecord {
 }
 
 export function getRecordsDirectory() {
+  const peopleById = new Map(
+    readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"))
+      .map((person) => [person.personId, person]),
+  );
   const records = readJsonTree<SourceRecord>(
     path.join(GENEALOGY_ROOT, "sources"),
-  ).filter(isGenealogyRecordSource).map(toArchiveRecord).sort((left, right) =>
+  ).filter((source) => isGenealogyRecordSource(source, peopleById)).map(toArchiveRecord).sort((left, right) =>
     (left.year || "9999").localeCompare(right.year || "9999") || left.date.localeCompare(right.date, "ru")
   );
 
@@ -1558,9 +1622,9 @@ function sourceYear(source: SourceRecord) {
 export function getFamilyMapDirectory() {
   const people = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
   const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
-  const sources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"))
-    .filter(isGenealogyRecordSource);
   const peopleById = new Map(people.map((person) => [person.personId, person]));
+  const sources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"))
+    .filter((source) => isGenealogyRecordSource(source, peopleById));
   const familyIdsByPerson = new Map<string, Set<string>>();
   const parentIdsByPerson = new Map<string, Set<string>>();
 
@@ -1614,7 +1678,22 @@ export function getFamilyMapDirectory() {
     }
     const placeId = indexedPlace.placeId;
 
-    const sourceMentions = source.mentions ?? [];
+    const sourceMentions = (source.mentions ?? []).filter((mention) => {
+      const linkedPerson = mention.personId ? peopleById.get(mention.personId) : undefined;
+      return [
+        mention.displayName,
+        mention.modernName,
+        mention.nameAsIndexed,
+        mention.nameAsTranscribed,
+        mention.nameAsWritten,
+        ...(mention.alternateNames ?? []),
+        linkedPerson?.displayName,
+        linkedPerson?.surname?.normalized,
+        ...(linkedPerson?.nameVariants ?? []),
+        ...(linkedPerson?.surname?.formsAsWritten ?? []),
+      ].some(isAmpilogovVariantName);
+    });
+    if (!sourceMentions.length) continue;
     const primaryMention = (
       source.primaryPersonId
         ? sourceMentions.find((mention) => mention.personId === source.primaryPersonId)
@@ -1680,6 +1759,16 @@ export function getFamilyMapDirectory() {
         }));
 
     for (const route of documentedRoutes) {
+      const routePerson = route.personId ? peopleById.get(route.personId) : undefined;
+      const routeNames = [
+        route.personName,
+        routePerson?.displayName,
+        routePerson?.surname?.normalized,
+        ...(routePerson?.nameVariants ?? []),
+        ...(routePerson?.surname?.formsAsWritten ?? []),
+      ];
+      if ((route.personId || route.personName) && !routeNames.some(isAmpilogovVariantName)) continue;
+
       const referencedFromPlaceId = route.from.placeId;
       const referencedToPlaceId = route.to.placeId ?? placeId;
       if (!referencedFromPlaceId || !referencedToPlaceId) continue;
@@ -1767,7 +1856,8 @@ export function getFamilyMapDirectory() {
     if (!events?.length) return [];
     return [{
       ...place,
-      precisionLabel: familyMapPrecisionLabels[place.geo.precision],
+      precisionLabel: familyMapPrecisionLabel(place.geo.precision),
+      approximate: isApproximatePlacePrecision(place.geo.precision),
       events: events.sort((left, right) => left.year - right.year || left.sourceId.localeCompare(right.sourceId)),
     }];
   });
@@ -1782,7 +1872,7 @@ export function getFamilyMapDirectory() {
     stats: {
       indexedPlaces: placesIndex.places.length,
       mappedPlaces: mapPlaces.length,
-      approximatePlaces: mapPlaces.filter((place) => ["district", "region", "approximate"].includes(place.geo.precision)).length,
+      approximatePlaces: mapPlaces.filter((place) => place.approximate).length,
       records: new Set(mapPlaces.flatMap((place) => place.events.map((event) => event.sourceId))).size,
       migrations: migrationMap.size,
     },

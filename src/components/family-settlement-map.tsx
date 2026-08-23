@@ -34,8 +34,8 @@ type MigrationRecordLink = {
   placeName: string;
 };
 
-function escapeHtml(value: string) {
-  return value
+function escapeHtml(value: string | null | undefined) {
+  return (value ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
@@ -62,9 +62,9 @@ function summarizePlace(place: FamilyMapPlace, year: number): PlaceSummary | nul
 
 function placePopup(summary: PlaceSummary) {
   const records = [...summary.activeEvents].reverse().slice(0, 5);
-  const precision = summary.place.geo.precision === "settlement" || summary.place.geo.precision === "historical-site"
-    ? ""
-    : `<small class="settlement-popup-precision">${escapeHtml(summary.place.precisionLabel)}</small>`;
+  const precision = summary.place.approximate
+    ? `<small class="settlement-popup-precision">${escapeHtml(summary.place.precisionLabel)}</small>`
+    : "";
   const recordLinks = records.map((event) => (
     `<a href="/records/${encodeURIComponent(event.sourceId)}">` +
     `<span>${escapeHtml(event.eventLabel)}</span>` +
@@ -89,7 +89,7 @@ function markerHtml(summary: PlaceSummary, selected: boolean) {
   const ringMarkup = Array.from({ length: rings }, (_, index) => (
     `<i style="--ring:${index + 1}" aria-hidden="true"></i>`
   )).join("");
-  const approximate = ["district", "region", "approximate"].includes(summary.place.geo.precision);
+  const approximate = summary.place.approximate;
 
   return `
     <span class="settlement-map-marker${selected ? " is-selected" : ""}${approximate ? " is-approximate" : ""}" style="--marker-size:${size}px">

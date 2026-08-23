@@ -100,12 +100,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
           <div className="record-modern">
             <span className="section-label">Современное чтение</span>
             <h2>Имена и смысл</h2>
-            {record.modernInterpretation ? (
-              <p>{record.modernInterpretation}</p>
-            ) : (
-              <p className="record-muted">Будет добавлено после буквальной расшифровки.</p>
-            )}
-            {record.summary ? (
+            <p>{record.modernInterpretation}</p>
+            {record.summary && record.summary !== record.modernInterpretation ? (
               <details>
                 <summary>Рабочее описание — не расшифровка</summary>
                 <p>{record.summary}</p>
