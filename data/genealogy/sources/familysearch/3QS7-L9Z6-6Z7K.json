@@ -21,26 +21,66 @@
       "display": "14 / 16 января 1907",
       "deathIso": "1907-01-14",
       "burialIso": "1907-01-16",
-      "calendar": "julian-source-calendar"
+      "calendar": "julian-source-calendar",
+      "iso": "1907-01-14"
     },
     "place": {
       "placeId": "kozhli-osinovka-tomsk",
       "asTranscribed": "деревни Кожли",
       "normalized": "деревня Кожли, Турунтаевская волость, Томский уезд, Томская губерния",
-      "confidence": "high"
+      "confidence": "high",
+      "modernCountry": "Россия"
     }
   },
   "mentions": [
-    { "mentionId": "FS-3QS7-L9Z6-6Z7K-M1", "role": "deceased-child", "personId": "P3104", "sex": "female", "nameAsTranscribed": "дочь Наталия", "nameAsIndexed": "Наталия Павлова Анпилогова", "modernName": "Наталия Павловна Анпилогова", "displayName": "Наталия Павловна Анпилогова", "ageAsWritten": "4 месяца", "ageMonths": 4 },
-    { "mentionId": "FS-3QS7-L9Z6-6Z7K-M2", "role": "father", "personId": "P3100", "sex": "male", "nameAsTranscribed": "Павла Трифонова Анпилогова", "nameAsIndexed": "Павел Трифонов Анпилогов", "modernName": "Павел Трифонович Анпилогов", "displayName": "Павел Трифонович Анпилогов", "socialStatus": { "asWritten": "деревни Кожли солдата", "normalized": "солдат; житель деревни Кожли" } }
+    {
+      "mentionId": "FS-3QS7-L9Z6-6Z7K-M1",
+      "role": "deceased-child",
+      "personId": "P0674",
+      "sex": "female",
+      "nameAsTranscribed": "дочь Наталия",
+      "nameAsIndexed": "Наталия Павлова Анпилогова",
+      "modernName": "Наталия Павловна Анпилогова",
+      "displayName": "Наталия Павловна Анпилогова",
+      "ageAsWritten": "4 месяца",
+      "ageMonths": 4
+    },
+    {
+      "mentionId": "FS-3QS7-L9Z6-6Z7K-M2",
+      "role": "father",
+      "personId": "P0568",
+      "sex": "male",
+      "nameAsTranscribed": "Павла Трифонова Анпилогова",
+      "nameAsIndexed": "Павел Трифонов Анпилогов",
+      "modernName": "Павел Трифонович Анпилогов",
+      "displayName": "Павел Трифонович Анпилогов",
+      "socialStatus": {
+        "asWritten": "деревни Кожли солдата",
+        "normalized": "солдат; житель деревни Кожли"
+      }
+    }
   ],
   "transcription": {
     "status": "complete-for-principals",
     "literal": "14 [умерла] | 16 [погребена] | Деревни Кожли солдата Павла Трифонова Анпилогова дочь Наталия | 4 месяца | от кори.",
-    "modernInterpretation": "14 января 1907 года умерла четырёхмесячная Наталия, дочь солдата Павла Трифоновича Анпилогова из деревни Кожли; причина смерти — корь, погребена 16 января."
+    "modernInterpretation": "14 января 1907 года умерла четырёхмесячная Наталия, дочь солдата Павла Трифоновича Анпилогова из деревни Кожли; причина смерти — корь, погребена 16 января.",
+    "fields": {
+      "eventDate": "умерла 14 января 1907 года",
+      "subject": "Наталья Павловна Ампилогова",
+      "father": "Павел Трофимович Ампилогов"
+    }
   },
   "sourceRelations": [
-    { "type": "same-person-as-birth-record", "sourceId": "FS-3QS7-89Z6-681R", "basis": "Совпадают имя ребёнка, полное имя отца, деревня и возраст: рождение 31 августа 1906 и смерть в возрасте четырёх месяцев 14 января 1907." }
+    {
+      "type": "same-person-as-birth-record",
+      "sourceId": "FS-3QS7-89Z6-681R",
+      "basis": "Совпадают имя ребёнка, полное имя отца, деревня и возраст: рождение 31 августа 1906 и смерть в возрасте четырёх месяцев 14 января 1907."
+    },
+    {
+      "type": "person-in-family",
+      "targetFamilyId": "F0123",
+      "confidence": "high"
+    }
   ],
   "evidence": {
     "captureType": "viewer-screenshot",
@@ -49,20 +89,63 @@
     "sha256": "d8bdd4335af6b815b44e42193bd8d4f58b229991b238e754f4205239136ffd14",
     "publicDisplay": false,
     "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
-    "quality": { "status": "approved", "viewerFullscreen": true, "sharpTilesConfirmed": true },
+    "quality": {
+      "status": "approved",
+      "viewerFullscreen": true,
+      "sharpTilesConfirmed": true,
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "viewport": "1680x1050",
+      "limitation": "Неясные вторичные графы не восстановлены догадкой."
+    },
     "fragments": [
-      { "part": "viewer-with-metadata", "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-L9Z6-6Z7K-information.png", "sha256": "29c6b9eb92b0a3406900187214c5592be6d0a069d6841a57f446bef617337ac5" },
-      { "part": "zoomed-target-row", "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-L9Z6-6Z7K-entry.png", "sha256": "d8bdd4335af6b815b44e42193bd8d4f58b229991b238e754f4205239136ffd14" }
+      {
+        "part": "viewer-with-metadata",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-L9Z6-6Z7K-information.png",
+        "sha256": "29c6b9eb92b0a3406900187214c5592be6d0a069d6841a57f446bef617337ac5"
+      },
+      {
+        "part": "zoomed-target-row",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-L9Z6-6Z7K-entry.png",
+        "sha256": "d8bdd4335af6b815b44e42193bd8d4f58b229991b238e754f4205239136ffd14"
+      },
+      {
+        "part": "familysearch-index",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-L9Z6-6Z7K/01-index-fullscreen.png",
+        "sha256": "47e6151e73980cc6181843387670186bcf3272355c78b40293b0c7f3d71b72bf"
+      },
+      {
+        "part": "fullscreen-overview",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-L9Z6-6Z7K/02-scan-fullscreen.png",
+        "sha256": "8d2333d536bcc6ec853c5895df99ff4eb44c8d5e99367838649d8a9e975d8903"
+      },
+      {
+        "part": "zoomed-target",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-L9Z6-6Z7K/03-target-fullscreen.png",
+        "sha256": "29e81cd520777601ba3e9b818c80e992694eddc02b02e99233afe48f16d81706"
+      }
     ]
   },
   "isRecord": true,
   "cardKind": "primary-church-record",
-  "primaryPersonId": "P3104",
+  "primaryPersonId": "P0674",
   "review": {
     "status": "verified-from-primary-scan",
     "identityResolution": "Связь с записью рождения 1906 года высокая: имя, отец, деревня и возраст согласуются.",
     "transcriptionConfidence": "high-for-person-father-place-age-and-cause; medium-for-burial-day",
-    "unresolved": ["Повторно сверить день погребения по левой части разворота."]
+    "unresolved": [
+      "Повторно сверить день погребения по левой части разворота.",
+      "Повторно проверить бледные вторичные графы."
+    ]
   },
-  "summary": { "status": "verified-summary", "text": "Наталия Павловна Анпилогова из Кожлей умерла от кори 14 января 1907 года в возрасте четырёх месяцев." }
+  "summary": {
+    "status": "verified-summary",
+    "text": "Наталия Павловна Анпилогова из Кожлей умерла от кори 14 января 1907 года в возрасте четырёх месяцев."
+  },
+  "indexData": {
+    "recordId": "6R8C-QKX5",
+    "subject": "Наталия",
+    "eventDate": "1907-01-14",
+    "indexWarning": "Основное имя дано в современном русском виде; индексные формы сохранены."
+  }
 }

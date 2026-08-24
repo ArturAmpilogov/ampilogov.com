@@ -36,6 +36,24 @@ const warnings = [];
 const candidates = [];
 
 const add = (target, code, file, message) => target.push({ code, file, message });
+const reportDuplicateEntityIds = (entries, idKey, code) => {
+  const owners = new Map();
+  for (const { record, file } of entries) {
+    const id = record[idKey];
+    if (!id) continue;
+    const files = owners.get(id) ?? [];
+    files.push(file);
+    owners.set(id, files);
+  }
+  for (const [id, files] of owners) {
+    if (files.length > 1) add(errors, code, files[0], `${id}: ${files.join(", ")}`);
+  }
+};
+
+reportDuplicateEntityIds(peopleEntries, "personId", "duplicate-person-id");
+reportDuplicateEntityIds(familyEntries, "familyId", "duplicate-family-id");
+reportDuplicateEntityIds(sourceEntries, "sourceId", "duplicate-source-id");
+
 const places = new Set();
 const canonicalPlaceIds = new Set();
 const placeFile = "data/genealogy/places/index.json";

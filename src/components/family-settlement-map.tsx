@@ -151,6 +151,13 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.map((summary) => [summary.place.placeId, summary]),
   ), [summaries]);
   const selected = selectedPlaceId ? summariesById.get(selectedPlaceId) ?? null : null;
+  const selectedPeopleCount = selected ? new Set(
+    selected.activeEvents.flatMap((event) => event.people.map((person) => person.name)),
+  ).size : 0;
+  const selectedExplanationCount = selected ? selected.activeEvents.reduce((total, event) => {
+    const peopleExplanations = event.people.reduce((sum, person) => sum + person.nameInsights.length, 0);
+    return total + (peopleExplanations || event.nameInsights.length);
+  }, 0) : 0;
   const activeMigrations = useMemo(() => migrations.filter((migration) =>
     migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
   ), [migrations, summariesById, year]);
@@ -511,6 +518,12 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
                 <span>Имена и смысл</span>
                 <strong>{selected.place.name}</strong>
                 <small>{selected.firstYear}—{selected.lastYear} · {selected.recordCount} {plural(selected.recordCount, "запись", "записи", "записей")}</small>
+                <small className="settlement-place-panel__scope">
+                  {selectedPeopleCount} {plural(selectedPeopleCount, "имя", "имени", "имён")} · {selectedExplanationCount} подробных {plural(selectedExplanationCount, "пояснение", "пояснения", "пояснений")}
+                </small>
+                <small className="settlement-place-panel__promise">
+                  Показан полный текст: биографии, варианты имён, доказательства, гипотезы и границы уверенности
+                </small>
               </div>
               <button type="button" onClick={resetMapFocus} aria-label="Закрыть сведения о месте">×</button>
             </header>
@@ -521,30 +534,56 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
                     <span>{event.date}</span>
                     <h3>{event.eventLabel}</h3>
                   </header>
+                  {event.nameInsights[0] ? (
+                    <div className="settlement-place-panel__verdict">
+                      <span>{event.nameInsights[0].label}</span>
+                      <p>{event.nameInsights[0].text}</p>
+                    </div>
+                  ) : null}
                   {event.people.length ? (
                     <section>
-                      <h4>Все названные и восстановленные люди · {event.people.length}</h4>
+                      <h4>Имена подробно · все {event.people.length} человек</h4>
                       <ul className="settlement-place-panel__people">
                         {event.people.map((person, index) => (
                           <li key={`${person.name}:${index}`}>
-                            <strong>{person.name}</strong>
+                            <div className="settlement-place-panel__person-heading">
+                              <b>{String(index + 1).padStart(2, "0")}</b>
+                              <strong>{person.name}</strong>
+                            </div>
                             <span>{person.role}</span>
                             {person.variants.length ? <small>В источниках: {person.variants.join(" · ")}</small> : null}
                             {person.details.map((detail, detailIndex) => <p key={`${detail}:${detailIndex}`}>{detail}</p>)}
+                            {person.nameInsights.length ? (
+                              <details open>
+                                <summary>Биография, имя, связь с местом и доказательства · {person.nameInsights.length} пунктов</summary>
+                                <dl>
+                                  {person.nameInsights.map((insight, insightIndex) => (
+                                    <div key={`${insight.label}:${insightIndex}`}>
+                                      <dt>{insight.label}</dt>
+                                      <dd>{insight.text}</dd>
+                                    </div>
+                                  ))}
+                                </dl>
+                              </details>
+                            ) : null}
                           </li>
                         ))}
                       </ul>
                     </section>
                   ) : null}
                   {event.meaning ? (
-                    <section>
-                      <h4>Что это значит</h4>
-                      <p className="settlement-place-panel__meaning">{event.meaning}</p>
+                    <section className="settlement-place-panel__meaning-section">
+                      <h4>Смысл подробно · что документ меняет в истории места</h4>
+                      <div className="settlement-place-panel__meaning">
+                        {event.meaning.split(/\n{2,}/).map((paragraph, paragraphIndex) => (
+                          <p key={`${paragraph.slice(0, 40)}:${paragraphIndex}`}>{paragraph}</p>
+                        ))}
+                      </div>
                     </section>
                   ) : null}
                   {event.nameInsights.length ? (
-                    <details open={event.nameInsights.length <= 8}>
-                      <summary>Полный разбор имени и доказательств · {event.nameInsights.length} пунктов</summary>
+                    <details open>
+                      <summary>Онфилог и Онфилогово без сокращений: происхождение, варианты, кандидаты и предел доказательства · {event.nameInsights.length} пунктов</summary>
                       <dl>
                         {event.nameInsights.map((insight, index) => (
                           <div key={`${insight.label}:${index}`}>

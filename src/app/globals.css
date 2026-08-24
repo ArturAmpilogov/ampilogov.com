@@ -7533,7 +7533,7 @@ a {
   z-index: 1002;
   top: 18px;
   right: 18px;
-  width: min(560px, calc(100% - 36px));
+  width: min(720px, calc(100% - 36px));
   max-height: calc(100% - 36px);
   overflow: hidden;
   color: var(--ink);
@@ -7577,6 +7577,19 @@ a {
   font-size: 0.58rem;
 }
 
+.settlement-place-panel__heading .settlement-place-panel__scope {
+  margin-top: 4px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.settlement-place-panel__heading .settlement-place-panel__promise {
+  max-width: 54ch;
+  margin-top: 8px;
+  color: #4f4b44;
+  font: 400 0.72rem/1.45 var(--serif);
+}
+
 .settlement-place-panel__heading button {
   flex: 0 0 34px;
   width: 34px;
@@ -7599,7 +7612,7 @@ a {
 }
 
 .settlement-place-panel__events {
-  max-height: calc(68vh - 92px);
+  max-height: calc(90vh - 116px);
   overflow: auto;
   overscroll-behavior: contain;
 }
@@ -7621,6 +7634,28 @@ a {
 .settlement-place-panel__events article > header h3 {
   margin-top: 6px;
   font: 400 1.3rem/1.18 var(--serif);
+}
+
+.settlement-place-panel__verdict {
+  margin-top: 16px;
+  padding: 15px 17px 16px;
+  border-left: 4px solid var(--accent);
+  background: color-mix(in srgb, var(--paper-light) 84%, var(--accent) 16%);
+}
+
+.settlement-place-panel__verdict span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.settlement-place-panel__verdict p {
+  margin: 7px 0 0;
+  color: var(--ink);
+  font: 400 0.76rem/1.62 var(--sans);
 }
 
 .settlement-place-panel__events article > section,
@@ -7648,7 +7683,7 @@ a {
 }
 
 .settlement-place-panel__people li {
-  padding: 12px 0;
+  padding: 18px 0;
   border-top: 1px solid color-mix(in srgb, var(--line) 65%, transparent);
 }
 
@@ -7656,26 +7691,78 @@ a {
 .settlement-place-panel__people strong,
 .settlement-place-panel__people span,
 .settlement-place-panel__people small { display: block; }
-.settlement-place-panel__people strong { font: 400 1.03rem/1.3 var(--serif); }
+.settlement-place-panel__person-heading {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+
+.settlement-place-panel__person-heading b {
+  color: var(--accent);
+  font: 700 0.58rem/1 var(--sans);
+  letter-spacing: 0.08em;
+}
+
+.settlement-place-panel__people strong { font: 400 1.18rem/1.3 var(--serif); }
 .settlement-place-panel__people span {
-  margin-top: 3px;
+  margin: 5px 0 0 40px;
   color: var(--accent);
   font-size: 0.59rem;
   font-weight: 700;
 }
 .settlement-place-panel__people small,
 .settlement-place-panel__people p {
-  margin-top: 6px;
+  margin: 7px 0 0 40px;
   color: var(--muted);
-  font-size: 0.6rem;
-  line-height: 1.5;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.settlement-place-panel__people details {
+  margin: 14px 0 0 40px;
+  padding: 14px 16px;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 55%, var(--line));
+  background: color-mix(in srgb, var(--paper-light) 86%, transparent);
+}
+
+.settlement-place-panel__people details summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.settlement-place-panel__people details dl { margin: 8px 0 0; }
+.settlement-place-panel__people details dl > div { padding: 9px 0; }
+.settlement-place-panel__people details dl > div + div {
+  border-top: 1px solid color-mix(in srgb, var(--line) 65%, transparent);
+}
+.settlement-place-panel__people details dt {
+  font-size: 0.68rem;
+  font-weight: 750;
+}
+.settlement-place-panel__people details dd {
+  margin: 4px 0 0;
+  color: #4f4b44;
+  font: 400 0.94rem/1.65 var(--serif);
+}
+
+.settlement-place-panel__meaning-section {
+  padding: 19px 18px 20px;
+  border-left: 4px solid var(--accent);
+  background: color-mix(in srgb, var(--paper-light) 84%, var(--accent) 16%);
 }
 
 .settlement-place-panel__meaning {
   margin-top: 10px;
   color: #4f4b44;
-  font: 400 0.94rem/1.65 var(--serif);
+  font: 400 1rem/1.7 var(--serif);
 }
+
+.settlement-place-panel__meaning p + p { margin-top: 13px; }
 
 .settlement-place-panel__events details summary { cursor: pointer; }
 .settlement-place-panel__events details dl { margin: 12px 0 0; }
@@ -7690,7 +7777,7 @@ a {
 .settlement-place-panel__events details dd {
   margin: 6px 0 0;
   color: #4f4b44;
-  font: 400 0.88rem/1.6 var(--serif);
+  font: 400 0.96rem/1.68 var(--serif);
 }
 
 .settlement-place-panel__events article > a {

@@ -27,7 +27,8 @@
       "display": "29 сентября / 4 октября 1909",
       "birthIso": "1909-09-29",
       "baptismIso": "1909-10-04",
-      "calendar": "julian-source-calendar"
+      "calendar": "julian-source-calendar",
+      "iso": "1909-09-29"
     },
     "place": {
       "placeId": "kozhli-osinovka-tomsk",
@@ -43,13 +44,14 @@
     "father": "Павел Трифонов Анпилогов",
     "mother": "Акилина Иванова",
     "birthDate": "29 Sep 1909",
-    "indexWarning": "Индекс полезен для локализации строки, но место Кожли и социальный статус отца установлены по оригинальному скану."
+    "indexWarning": "Индекс полезен для локализации строки, но место Кожли и социальный статус отца установлены по оригинальному скану.",
+    "eventDate": "1909-09-29"
   },
   "mentions": [
     {
       "mentionId": "FS-3QS7-89Z6-XQ8C-M1",
       "role": "child",
-      "personId": "P3102",
+      "personId": "P0673",
       "sex": "female",
       "nameAsTranscribed": "Пелагія",
       "nameAsIndexed": "Пелагия Павлова Анпилогова",
@@ -59,7 +61,7 @@
     {
       "mentionId": "FS-3QS7-89Z6-XQ8C-M2",
       "role": "father",
-      "personId": "P3100",
+      "personId": "P0568",
       "sex": "male",
       "nameAsTranscribed": "Павла Трифонова Анпилогова",
       "nameAsIndexed": "Павел Трифонов Анпилогов",
@@ -73,7 +75,7 @@
     {
       "mentionId": "FS-3QS7-89Z6-XQ8C-M3",
       "role": "mother",
-      "personId": "P3101",
+      "personId": "P0569",
       "sex": "female",
       "nameAsTranscribed": "Акилины Ивановой",
       "nameAsIndexed": "Акилина Иванова",
@@ -91,7 +93,10 @@
       "child": "Пелагия Павловна Анпилогова",
       "father": "Павел Трифонович Анпилогов",
       "fatherStatus": "запасной солдат; деревня Кожли",
-      "mother": "Акилина Ивановна Анпилогова"
+      "mother": "Акилина Ивановна Анпилогова",
+      "eventDate": "родилась 29 сентября 1909 года",
+      "subject": "Пелагея Павловна Ампилогова",
+      "relatedPerson": "Акилина Ивановна Корсунова"
     }
   },
   "evidence": {
@@ -106,7 +111,10 @@
       "viewerFullscreen": true,
       "sharpTilesConfirmed": true,
       "strategy": "overview-plus-zoomed-target-plus-metadata",
-      "limitation": "Восприемники и подпись причта в эту карточку пока не переписаны."
+      "limitation": "Восприемники и подпись причта в эту карточку пока не переписаны.",
+      "panelsClosed": true,
+      "filmstripHidden": true,
+      "viewport": "1680x1050"
     },
     "fragments": [
       {
@@ -123,23 +131,46 @@
         "part": "metadata",
         "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-89Z6-XQ8C-information.png",
         "sha256": "90abdd43ecafd31f6cf4c0c4cf2acb03f784883c747cc92ff46d253b933b8784"
+      },
+      {
+        "part": "familysearch-index",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-XQ8C/01-index-fullscreen.png",
+        "sha256": "51a3a338fd475f5279096423074a2d73f5ae1be7f4d941cb77f908ff5c6ee223"
+      },
+      {
+        "part": "fullscreen-overview",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-XQ8C/02-scan-fullscreen.png",
+        "sha256": "86d3d3e566cfdef3da4baba3e6fbb0d891f0e3ded0bc86af20faab72ff2e55b2"
+      },
+      {
+        "part": "zoomed-target",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-XQ8C/03-target-fullscreen.png",
+        "sha256": "2e670f4ac8c9ee0bad9aefcf9a8eb0506299f892398bcc9e609514825b92bcf9"
       }
     ]
   },
   "isRecord": true,
   "cardKind": "primary-church-record",
-  "primaryPersonId": "P3102",
+  "primaryPersonId": "P0673",
   "review": {
     "status": "verified-from-primary-scan",
     "identityResolution": "Павел и Акилина объединены как супруги только потому, что оригинал прямо называет их родителями одного ребёнка.",
     "transcriptionConfidence": "high-for-place-dates-child-parents-surname-and-father-status",
     "unresolved": [
       "Переписать восприемников и служивший причт.",
-      "Найти запись о водворении семьи в Кожлях и исходное место переселения."
+      "Найти запись о водворении семьи в Кожлях и исходное место переселения.",
+      "Повторно проверить бледные вторичные графы."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "Метрическая запись 1909 года прямо называет жившего в деревне Кожли запасного солдата Павла Трифоновича Анпилогова, его жену Акилину Ивановну и их дочь Пелагию."
-  }
+  },
+  "sourceRelations": [
+    {
+      "type": "person-in-family",
+      "targetFamilyId": "F0123",
+      "confidence": "high"
+    }
+  ]
 }

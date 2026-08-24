@@ -16,8 +16,16 @@ type PersonRecord = {
   dates?: {
     birth?: { display?: string; iso?: string; basis?: string };
   };
-  occupation?: string[];
-  parents?: string[];
+  occupation?: string[] | string | {
+    asWritten?: string;
+    normalized?: string;
+    placeId?: string;
+  };
+  parents?: string[] | {
+    fatherId?: string | null;
+    motherId?: string | null;
+    familyId?: string | null;
+  };
   familyIds?: string[];
   sourceIds?: string[];
   status?: string;
@@ -395,6 +403,10 @@ export type FamilyMapEvent = {
     role: string;
     variants: string[];
     details: string[];
+    nameInsights: Array<{
+      label: string;
+      text: string;
+    }>;
   }>;
   meaning: string;
   nameInsights: Array<{
@@ -753,7 +765,7 @@ function sourcePeople(
           ...(person.surname?.formsAsWritten ?? []),
         ])].filter((name) => name !== person.displayName),
         places,
-        details: [person.status, ...(person.occupation ?? [])]
+        details: [person.status, ...personOccupations(person.occupation)]
           .filter((value): value is string => Boolean(value)),
         nameAnalysis: [
           {
@@ -818,7 +830,7 @@ function sourcePeople(
     const normalizedName = mention.modernName ?? profile?.displayName ?? name;
     const eventRole = mention.eventRole?.trim() || role;
     const profileContext = profile?.notes?.find((note) => note.trim()) ??
-      profile?.occupation?.find((occupation) => occupation.trim());
+      personOccupations(profile?.occupation).find((occupation) => occupation.trim());
 
     return {
       personId: mention.personId ?? null,
@@ -1245,8 +1257,8 @@ function validUtcDate(year: number, month: number, day: number) {
     : null;
 }
 
-function lifeDateFromIso(value?: string): LifeDateCandidate | null {
-  if (!value) return null;
+function lifeDateFromIso(value?: unknown): LifeDateCandidate | null {
+  if (typeof value !== "string" || !value) return null;
   const dayMatch = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (dayMatch) {
     const date = validUtcDate(Number(dayMatch[1]), Number(dayMatch[2]) - 1, Number(dayMatch[3]));
@@ -1291,6 +1303,20 @@ function lifeDateFromIso(value?: string): LifeDateCandidate | null {
     exactDay: false,
     estimated: false,
   };
+}
+
+function personParentIds(value: PersonRecord["parents"]): string[] {
+  if (Array.isArray(value)) return value.filter((id): id is string => typeof id === "string" && Boolean(id));
+  if (!value || typeof value !== "object") return [];
+  return [value.fatherId, value.motherId].filter((id): id is string => typeof id === "string" && Boolean(id));
+}
+
+function personOccupations(value: PersonRecord["occupation"]): string[] {
+  if (Array.isArray(value)) return value.filter((item): item is string => typeof item === "string" && Boolean(item));
+  if (typeof value === "string") return value ? [value] : [];
+  if (!value || typeof value !== "object") return [];
+  const label = value.normalized ?? value.asWritten;
+  return label ? [label] : [];
 }
 
 function normalizedLifeDisplay(value: string) {
@@ -1743,7 +1769,7 @@ export function getPeopleDirectory() {
       .sort((left, right) => left.date.localeCompare(right.date, "ru"));
 
     const relationMap = new Map<string, DirectoryRelation>();
-    for (const parentId of person.parents ?? []) {
+    for (const parentId of personParentIds(person.parents)) {
       const parent = peopleById.get(parentId);
       if (parent) relationMap.set(`parent:${parentId}`, { personId: parentId, name: parent.displayName, relation: "parent" });
     }
@@ -1812,7 +1838,7 @@ export function getPeopleDirectory() {
         age: life.age,
       },
       places,
-      occupations: person.occupation ?? [],
+      occupations: personOccupations(person.occupation),
       status: person.status ?? "working",
       needsReview,
       notes: person.notes ?? [],
@@ -1860,7 +1886,8 @@ export function getFamilyMapDirectory() {
 
   for (const person of people) {
     for (const familyId of person.familyIds ?? []) addPersonFamily(person.personId, familyId);
-    if (person.parents?.length) parentIdsByPerson.set(person.personId, new Set(person.parents));
+    const parentIds = personParentIds(person.parents);
+    if (parentIds.length) parentIdsByPerson.set(person.personId, new Set(parentIds));
   }
   for (const family of families) {
     for (const personId of [...(family.spouses ?? []), ...(family.children ?? [])]) {
@@ -1949,7 +1976,7 @@ export function getFamilyMapDirectory() {
       eventLabel: sourceEventLabel(source),
       personIds,
       personNames,
-      people: (source.mentions ?? []).flatMap((mention) => {
+      people: (source.mentions ?? []).flatMap((mention, mentionIndex) => {
         const name = sourceMentionName(mention);
         if (!name) return [];
         const linkedPerson = mention.personId ? peopleById.get(mention.personId) : undefined;
@@ -1969,10 +1996,13 @@ export function getFamilyMapDirectory() {
             mention.nameAsIndexed,
           ].filter((variant): variant is string => Boolean(variant) && variant !== name))],
           details,
+          nameInsights: mention.nameAnalysis?.length
+            ? mention.nameAnalysis
+            : archivePeople[mentionIndex]?.nameAnalysis ?? [],
         }];
       }),
-      meaning: source.summary?.text?.trim() ||
-        source.transcription?.modernInterpretation?.trim() ||
+      meaning: source.transcription?.modernInterpretation?.trim() ||
+        source.summary?.text?.trim() ||
         `Запись «${sourceEventLabel(source).toLocaleLowerCase("ru")}» связывает ${primaryArchivePerson?.name ?? "представителя семьи Ампилоговых"} с местом «${placeLabels[placeId] ?? placeId}» (${sourceDate(source)}).`,
       nameInsights: primaryMention?.nameAnalysis?.length
         ? primaryMention.nameAnalysis

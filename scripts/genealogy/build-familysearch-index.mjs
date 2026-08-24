@@ -27,6 +27,12 @@ const canonicalArk = (value) => {
   return match?.[0] ?? value.split("?")[0];
 };
 
+const recordArksFor = (source) => [...new Set([
+  source.links?.indexedRecordArk,
+  source.links?.recordArk,
+  ...(source.links?.indexedRecordArks ?? []),
+].map(canonicalArk).filter(Boolean))];
+
 const normalize = (value) =>
   value
     .normalize("NFKC")
@@ -46,7 +52,8 @@ const evidenceIsApproved = (status) => status?.startsWith("approved");
 for (const { file, data } of sources) {
   const copies = data.sourceCopies?.length ? data.sourceCopies : [data];
   const imageArk = canonicalArk(data.links?.imageArk);
-  const recordArk = canonicalArk(data.links?.indexedRecordArk ?? data.links?.recordArk);
+  const recordArks = recordArksFor(data);
+  const recordArk = recordArks[0] ?? null;
   const eventDate = data.event?.date?.iso ??
     data.event?.date?.birthIso ??
     data.event?.date?.baptismIso ??
@@ -67,6 +74,7 @@ for (const { file, data } of sources) {
     file: `data/genealogy/sources/familysearch/${file}`,
     imageArk,
     recordArk,
+    recordArks,
     imageGroupNumber: data.collection?.imageGroupNumber ?? null,
     itemNumber: data.collection?.itemNumber ?? null,
     imageNumber: data.collection?.imageNumber ?? null,
@@ -83,14 +91,16 @@ for (const { file, data } of sources) {
 
   for (const copy of copies) {
     const copyImageArk = canonicalArk(copy.links?.imageArk);
-    const copyRecordArk = canonicalArk(copy.links?.indexedRecordArk ?? copy.links?.recordArk);
+    const copyRecordArks = recordArksFor(copy);
     const copyPosition = [
       copy.collection?.imageGroupNumber,
       copy.collection?.itemNumber ?? "-",
       copy.collection?.imageNumber ?? "-",
     ].join(":");
     if (copyImageArk) arkToSourceId[copyImageArk] = data.sourceId;
-    if (copyRecordArk) arkToSourceId[copyRecordArk] = data.sourceId;
+    for (const copyRecordArk of copyRecordArks) {
+      arkToSourceId[copyRecordArk] = data.sourceId;
+    }
     if (copy.collection?.imageGroupNumber) imagePositionToSourceId[copyPosition] = data.sourceId;
   }
   (eventFingerprints[fingerprint] ??= []).push(data.sourceId);
