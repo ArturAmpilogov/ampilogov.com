@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { FamilySettlementMap } from "@/components/family-settlement-map";
 import { SiteHeader } from "@/components/site-header";
 import { getFamilyMapDirectory } from "@/lib/genealogy";
@@ -29,11 +30,13 @@ export default function MapPage() {
           <div><dt>Приблизительно</dt><dd>{directory.stats.approximatePlaces}</dd></div>
         </dl>
       </header>
-      <FamilySettlementMap
-        places={directory.places}
-        migrations={directory.migrations}
-        range={directory.range}
-      />
+      <Suspense fallback={<div className="section-shell directory-loading">Загрузка карты…</div>}>
+        <FamilySettlementMap
+          places={directory.places}
+          migrations={directory.migrations}
+          range={directory.range}
+        />
+      </Suspense>
     </main>
   );
 }

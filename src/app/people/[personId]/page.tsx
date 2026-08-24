@@ -68,6 +68,30 @@ export default async function PersonPage({ params }: PersonPageProps) {
           <div><dt>Занятие</dt><dd>{person.occupations.join(", ") || "Не указано"}</dd></div>
         </dl>
 
+        {person.nameAnalysis.length ? (
+          <section className="person-name-analysis" aria-labelledby="person-name-analysis-title">
+            <div className="person-section-heading">
+              <div>
+                <span className="section-label">Не только написание</span>
+                <h2 id="person-name-analysis-title">Имя и смысл</h2>
+              </div>
+              <strong>{person.nameAnalysis.length}</strong>
+            </div>
+            <p className="person-name-analysis-lede">
+              Разбираем буквальную форму, патроним, роль человека, время и географию,
+              а также отдельно отмечаем, что документ доказывает и чего из него выводить нельзя.
+            </p>
+            <dl>
+              {person.nameAnalysis.map((item, index) => (
+                <div key={`${item.label}:${index}`}>
+                  <dt>{item.label}</dt>
+                  <dd>{item.text}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
+
         {person.relations.length || person.notes.length ? (
           <div className="person-context-grid">
             <section className="person-relations" aria-labelledby="relations-title">

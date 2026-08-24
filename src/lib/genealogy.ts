@@ -28,6 +28,7 @@ type PersonRecord = {
   };
   familyIds?: string[];
   sourceIds?: string[];
+  researchSubject?: boolean;
   status?: string;
   notes?: string[];
   surname?: { normalized?: string; formsAsWritten?: string[] };
@@ -488,6 +489,7 @@ export type DirectoryPerson = {
   status: string;
   needsReview: boolean;
   notes: string[];
+  nameAnalysis: Array<{ label: string; text: string }>;
   relations: DirectoryRelation[];
   sources: DirectorySource[];
   searchText: string;
@@ -540,6 +542,7 @@ export type FamilyMapEvent = {
   people: Array<{
     personId: string | null;
     name: string;
+    lifeSpan: string;
     role: string;
     variants: string[];
     details: string[];
@@ -708,6 +711,12 @@ const roleLabels: Record<string, string> = {
   priest: "священник",
   "groom-surety": "поручитель жениха",
   "bride-surety": "поручитель невесты",
+  "marriage-surety": "поручитель при браке",
+  "serviceman-and-land-officer": "сын боярский, отказчик и мерщик земель",
+  "nephew-and-former-resident": "племянник владельца; прежде жил в его поместье",
+  "uncle-and-estate-holder": "дядя и владелец поместья",
+  "land-refusal-witness": "ребёнок боярский при отводе земли",
+  "scribe-of-land-record": "писец отказной книги",
   "father-of-bride": "отец невесты",
   twin: "близнец",
   seller: "продавец",
@@ -868,6 +877,15 @@ const recordDataLabels: Record<string, string> = {
   cause: "Причина смерти",
   burialPlace: "Место погребения",
   recordNumber: "Номер записи",
+  originResearchUpdate: "Откуда складывалось орловское служилое ядро",
+  livnyResult: "Проверка ливенского следа",
+  karachev1584Lead: "Карачевский коридор и книга 1584/85 года",
+  multiCity1629Check: "Сравнительный служебный список 1629 года",
+  recruitmentSources: "Какие списки набора и службы сохранились",
+  eletsRecruitmentAnalog: "Как заселяли соседний Елец и при чём здесь Орёл",
+  orelNoviki1628Check: "Две книги 1628 года: отдельное верстание и новый Афонька",
+  mapDecision: "Что показываем на карте",
+  researchSources: "Источники исследования происхождения",
   sequenceNumber: "Порядковый номер",
   child: "Ребёнок",
   deceased: "Умерший",
@@ -914,9 +932,21 @@ const recordDataLabels: Record<string, string> = {
   serviceCategory: "Категория службы",
   documentFunction: "Зачем составлялся документ",
   whatThisDocumentIs: "Что это за документ",
+  whatThisSourceIs: "Что это за источник и где оригинал",
   whoWroteIt: "Кто составил документ",
+  whoWasEnrolled: "Кого записывали в новики",
   whyItWasWritten: "Зачем он был составлен",
+  whatItProves: "Что документ доказывает",
   whatItDoesNotSay: "Чего документ не доказывает",
+  familyInference: "Что можно заключить о семье",
+  familyRelevance: "Значение для истории семьи",
+  cohort: "Место среди других новиков",
+  namedIndicators: "Какие направления названы",
+  sourceCriticism: "Надёжность реконструкции",
+  migrationWarning: "Важная оговорка о переселении",
+  earlierCandidate: "Вероятная более ранняя запись",
+  laterCandidate: "Вероятная более поздняя запись",
+  nextSource: "Следующий источник для поиска",
   surnameSpelling: "Как записана фамилия",
   status: "Статус вывода",
   notes: "Примечания",
@@ -1386,7 +1416,7 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
-const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
 const PUBLIC_RESEARCH_END_YEAR = 1950;
 
 function isAmpilogovVariantName(value?: string | null) {
@@ -1397,16 +1427,21 @@ function finalNameToken(value?: string | null) {
   return value?.normalize("NFKC").trim().split(/\s+/).at(-1)?.replace(/[^a-zа-яё-]/gi, "") ?? "";
 }
 
-function personHasAmpilogovSurname(person?: PersonRecord) {
+function personBelongsToResearchScope(person?: PersonRecord) {
   if (!person) return false;
+  if (person.researchSubject) return true;
   if (person.surname?.normalized?.trim()) {
     return isAmpilogovVariantName(person.surname.normalized);
   }
   return isAmpilogovVariantName(finalNameToken(person.displayName));
 }
 
+// Kept as the source/mention gate name because these call sites historically
+// exposed only surname variants; explicit rare-name research subjects now pass too.
+const personHasAmpilogovSurname = personBelongsToResearchScope;
+
 function mentionHasAmpilogovSurname(mention: SourceMention, peopleById?: Map<string, PersonRecord>) {
-  if (mention.personId && personHasAmpilogovSurname(peopleById?.get(mention.personId))) return true;
+  if (mention.personId && personBelongsToResearchScope(peopleById?.get(mention.personId))) return true;
   return [
     mention.displayName,
     mention.modernName,
@@ -1982,9 +2017,10 @@ function lifeEventMention(person: PersonRecord, source: SourceRecord, kind: Life
   const linked = relevant.find((mention) => mention.personId === person.personId);
   if (linked) return { matches: true, mention: linked };
   if (source.primaryPersonId === person.personId) {
+    const primaryMention = (source.mentions ?? []).find((mention) => mention.personId === person.personId) ?? null;
     return {
-      matches: true,
-      mention: (source.mentions ?? []).find((mention) => mention.personId === person.personId) ?? null,
+      matches: !primaryMention || lifeEventRoles[kind](primaryMention.role ?? ""),
+      mention: primaryMention,
     };
   }
 
@@ -2310,7 +2346,7 @@ export function getPeopleDirectory() {
     const linkedSources = (person.sourceIds ?? [])
       .map((sourceId) => allSourcesById.get(sourceId))
       .filter((source): source is SourceRecord => Boolean(source));
-    return personHasAmpilogovSurname(person) && personIsWithinPublicResearchPeriod(person, linkedSources);
+    return personBelongsToResearchScope(person) && personIsWithinPublicResearchPeriod(person, linkedSources);
   });
   const publicPersonIds = new Set(publicPeople.map((person) => person.personId));
   const sources = allSources.filter((source) =>
@@ -2356,6 +2392,12 @@ export function getPeopleDirectory() {
         };
       })
       .sort((left, right) => left.date.localeCompare(right.date, "ru"));
+
+    const nameAnalysis = linkedSources
+      .flatMap((source) => source.mentions ?? [])
+      .filter((mention) => mention.personId === person.personId && mention.nameAnalysis?.length)
+      .map((mention) => mention.nameAnalysis ?? [])
+      .sort((left, right) => right.length - left.length)[0] ?? [];
 
     const relationMap = new Map<string, DirectoryRelation>();
     for (const parentId of personParentIds(person.parents)) {
@@ -2431,6 +2473,7 @@ export function getPeopleDirectory() {
       status: person.status ?? "working",
       needsReview,
       notes: person.notes ?? [],
+      nameAnalysis,
       relations: [...relationMap.values()],
       sources: personSources,
       searchText,
@@ -2470,12 +2513,40 @@ export function getFamilyMapDirectory() {
     const linkedSources = (person.sourceIds ?? [])
       .map((sourceId) => allSourcesById.get(sourceId))
       .filter((source): source is SourceRecord => Boolean(source));
-    return personHasAmpilogovSurname(person) && personIsWithinPublicResearchPeriod(person, linkedSources);
+    return personBelongsToResearchScope(person) && personIsWithinPublicResearchPeriod(person, linkedSources);
   });
   const peopleById = new Map(people.map((person) => [person.personId, person]));
   const sources = allSources.filter((source) =>
     sourceIsWithinPublicResearchPeriod(source) && isGenealogyRecordSource(source, allPeopleById)
   );
+  const sourcesByPersonId = new Map<string, SourceRecord[]>();
+  for (const source of sources) {
+    const linkedPersonIds = new Set([
+      source.primaryPersonId,
+      ...(source.mentions ?? []).map((mention) => mention.personId),
+    ].filter((personId): personId is string => Boolean(personId)));
+    for (const personId of linkedPersonIds) {
+      const linkedSources = sourcesByPersonId.get(personId) ?? [];
+      linkedSources.push(source);
+      sourcesByPersonId.set(personId, linkedSources);
+    }
+  }
+  const lifeSpanByPerson = new Map<string, string>();
+  const lifeYearPart = (value: string) => {
+    const years = [...value.matchAll(/(?:14|15|16|17|18|19|20)\d{2}/g)].map((match) => match[0]);
+    return [...new Set(years)].join("–");
+  };
+  const personLifeSpan = (person: PersonRecord | undefined) => {
+    if (!person) return "годы жизни не установлены";
+    const cached = lifeSpanByPerson.get(person.personId);
+    if (cached) return cached;
+    const life = personLife(person, sourcesByPersonId.get(person.personId) ?? []);
+    const birth = lifeYearPart(life.birth);
+    const death = lifeYearPart(life.death);
+    const label = birth && death ? `${birth}—${death}` : birth ? `род. ${birth}` : death ? `ум. ${death}` : "годы жизни не установлены";
+    lifeSpanByPerson.set(person.personId, label);
+    return label;
+  };
   const familyIdsByPerson = new Map<string, Set<string>>();
   const parentIdsByPerson = new Map<string, Set<string>>();
 
@@ -2534,11 +2605,9 @@ export function getFamilyMapDirectory() {
       return mentionHasAmpilogovSurname(mention, allPeopleById);
     });
     if (!sourceMentions.length) continue;
-    // The family-name subset decides whether a record belongs on the map and
-    // which people create generations or routes. Once a point is open, show
-    // every named participant, official, candidate, and reconstructed person
-    // from that record so the “Имена и смысл” panel does not discard context.
-    const displayMentions = source.mentions?.length ? source.mentions : sourceMentions;
+    // The map is a surname research surface: other participants stay in the
+    // record transcription and context, but do not become map people.
+    const displayMentions = sourceMentions;
     const primaryMention = (
       source.primaryPersonId
         ? sourceMentions.find((mention) => mention.personId === source.primaryPersonId)
@@ -2562,9 +2631,19 @@ export function getFamilyMapDirectory() {
     if (!familyIds.length) {
       familyIds.push(documentedSourceFamilyId(sourceMentions, placeId) ?? `source:${source.sourceId}`);
     }
-    const primaryNameInsights = primaryMention?.nameAnalysis?.length
-      ? primaryMention.nameAnalysis
-      : primaryArchivePerson?.nameAnalysis ?? [];
+    const displayedMentionInsights = displayMentions.flatMap((mention) => {
+      const mentionName = sourceMentionName(mention);
+      const archivePerson = mention.personId
+        ? archivePeople.find((person) => person.personId === mention.personId)
+        : archivePeople.find((person) => person.name === mentionName);
+      const insights = mention.nameAnalysis?.length
+        ? mention.nameAnalysis
+        : archivePerson?.nameAnalysis ?? [];
+      return insights.map((insight) => ({
+        label: displayMentions.length > 1 ? `${mentionName} · ${insight.label}` : insight.label,
+        text: insight.text,
+      }));
+    });
     const sourceContextInsights = sourceContextSections(source).flatMap((section) => (
       section.items.map((item) => ({
         label: `${section.heading} · ${item.label}`,
@@ -2572,7 +2651,7 @@ export function getFamilyMapDirectory() {
       }))
     ));
     const seenInsights = new Set<string>();
-    const mapInsights = [...primaryNameInsights, ...sourceContextInsights].filter((insight) => {
+    const mapInsights = [...displayedMentionInsights, ...sourceContextInsights].filter((insight) => {
       const key = `${insight.label}\n${insight.text}`;
       if (seenInsights.has(key)) return false;
       seenInsights.add(key);
@@ -2601,7 +2680,8 @@ export function getFamilyMapDirectory() {
         return [{
           personId: mention.personId ?? null,
           name,
-          role: mention.eventRole ?? sourceRoleLabel(mention.role),
+          lifeSpan: personLifeSpan(linkedPerson),
+          role: sourceRoleLabel(mention.eventRole ?? mention.role),
           variants: [...new Set([
             ...(mention.alternateNames ?? []),
             mention.nameAsTranscribed,
