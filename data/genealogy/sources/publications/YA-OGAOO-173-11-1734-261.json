@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "YA-OGAOO-173-11-1734-261",
+  "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
+  "recordType": "primary-scan-transcription",
+  "collection": {
+    "title": "Метрическая книга Оренбургской епархии",
+    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1734, скан 261"
+  },
+  "repository": {
+    "name": "Объединённый государственный архив Оренбургской области",
+    "location": "Оренбург",
+    "url": "https://yandex.ru/archive/catalog/60745ac7-4693-48f7-83c3-5b76a9196448/261"
+  },
+  "links": {
+    "scan": "https://yandex.ru/archive/catalog/60745ac7-4693-48f7-83c3-5b76a9196448/261"
+  },
+  "primaryPersonId": "P90001",
+  "event": {
+    "type": "marriage",
+    "date": {
+      "display": "8 октября 1848 года",
+      "iso": "1848-10-08",
+      "calendar": "julian"
+    },
+    "place": {
+      "asWritten": "Михайло-Архангельская церковь села Михайловки; жених — деревни Кармалки",
+      "normalized": "приход села Михайловки, Оренбургский уезд",
+      "placeId": "karmalka-sarmanayeva"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-OGAOO-173-11-1734-261-M1",
+      "role": "groom",
+      "personId": "P90001",
+      "displayName": "Гавриил Иванович Анпилогов",
+      "modernName": "Гавриил Иванович Анпилогов"
+    },
+    {
+      "mentionId": "YA-OGAOO-173-11-1734-261-M2",
+      "role": "bride",
+      "personId": "P90002",
+      "nameAsTranscribed": "Изъ Переселенцевъ Орловской Губерніи вдова Ирина Иванова",
+      "displayName": "Ирина Ивановна",
+      "modernName": "Ирина Ивановна",
+      "age": 35,
+      "places": [
+        {
+          "relation": "origin",
+          "asWritten": "из переселенцев Орловской губернии",
+          "normalized": "Орловская губерния",
+          "placeId": "orel-governorate",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "mentionId": "YA-OGAOO-173-11-1734-261-M3",
+      "role": "surety",
+      "personId": "P90008",
+      "nameAsTranscribed": "Григорій Петровъ Антилоговъ",
+      "displayName": "Григорий Петрович Анпилогов",
+      "modernName": "Григорий Петрович Анпилогов"
+    }
+  ],
+  "migrationObservations": [
+    {
+      "personId": "P90002",
+      "personName": "Ирина Ивановна, жена Гавриила Анпилогова",
+      "from": {
+        "placeId": "orel-governorate",
+        "normalized": "Орловская губерния"
+      },
+      "to": {
+        "placeId": "karmalka-sarmanayeva",
+        "normalized": "деревня Кармалка, Оренбургский уезд"
+      },
+      "basis": "В брачном акте Ирина прямо названа вдовой «из переселенцев Орловской губернии» и вступает в брак с государственным крестьянином деревни Кармалки Гавриилом Анпилоговым.",
+      "confidence": "high-for-orenburg-uezd-medium-for-karmalka-residence"
+    }
+  ],
+  "transcription": {
+    "status": "checked-against-visible-primary-scan",
+    "literal": "Октября 8. Деревни Кармалки Государств. Крестьянинъ Гавріилъ Ивановъ Анпилоговъ, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 32. Изъ Переселенцевъ Орловской Губерніи вдова Ирина Иванова, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 35.",
+    "modernInterpretation": "8 октября 1848 года 32-летний государственный крестьянин деревни Кармалки Гавриил Иванович Анпилогов венчался вторым браком с 35-летней вдовой Ириной Ивановной, прямо названной переселенкой из Орловской губернии."
+  },
+  "evidence": {
+    "captureType": "viewer-screenshot",
+    "path": "public/archive/evidence/yandex/ogaoo/OGAOO-173-11-1734-scan-261-gavriil-irina-row.png",
+    "capturedAt": "2026-08-23",
+    "sha256": "20873095ca4e4ffcee68107ea86228e980edef09a3824914ece3439d2108ebad",
+    "fragments": [
+      {
+        "path": "public/archive/evidence/yandex/ogaoo/OGAOO-173-11-1734-scan-261-gavriil-irina-full.png",
+        "sha256": "2f6b44e8c5c6210e5aa9850b77ebea9b166ca49b1661bfc9c1d97aa7a79106cd",
+        "note": "Полный разворот с браком № 58."
+      }
+    ],
+    "publicDisplay": false,
+    "rightsNote": "Локальные контрольные снимки сохранены для проверки чтения; публичная карточка ведёт на открытый просмотрщик Яндекс Архива."
+  },
+  "review": {
+    "status": "complete",
+    "unresolved": []
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Первичный скан брака 1848 года прямо называет Ирину Ивановну, вторую жену Гавриила Ивановича Анпилогова, переселенкой из Орловской губернии."
+  },
+  "isRecord": true
+}

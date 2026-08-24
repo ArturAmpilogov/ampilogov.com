@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { PeopleDirectory } from "@/components/people-directory";
 import { SiteHeader } from "@/components/site-header";
@@ -6,7 +7,7 @@ import { getPeopleDirectory } from "@/lib/genealogy";
 
 export const metadata: Metadata = {
   title: "Профили людей",
-  description: "Поиск и просмотр людей, упомянутых в документах об Ампилоговых и вариантах фамилии.",
+  description: "Профили носителей фамильного ряда Ампилоговых и его документированных вариантов по 1950 год.",
 };
 
 export default async function PeoplePage({
@@ -15,7 +16,7 @@ export default async function PeoplePage({
   searchParams: Promise<{ person?: string; search?: string }>;
 }) {
   const directory = getPeopleDirectory();
-  const { person, search = "" } = await searchParams;
+  const { person } = await searchParams;
   if (person && directory.people.some((entry) => entry.personId === person)) {
     redirect(`/people/${encodeURIComponent(person)}`);
   }
@@ -29,8 +30,8 @@ export default async function PeoplePage({
           <h1>Профили</h1>
         </div>
         <p>
-          Люди, связанные с архивными записями: варианты имени, места,
-          родственные связи и документальная хронология каждого человека.
+          Только носители фамильного ряда Ампилоговых, Онфилоговых и его документированных
+          вариантов, известные по источникам до 1950 года. Другие участники сохранены внутри самих Records.
         </p>
         <dl aria-label="Состав архива">
           <div><dt>Людей</dt><dd>{directory.stats.people}</dd></div>
@@ -38,7 +39,9 @@ export default async function PeoplePage({
           <div><dt>Расшифровано</dt><dd>{directory.stats.transcribedSources}/{directory.stats.sources}</dd></div>
         </dl>
       </header>
-      <PeopleDirectory people={directory.people} initialQuery={search} />
+      <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
+        <PeopleDirectory people={directory.people} />
+      </Suspense>
     </main>
   );
 }

@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import type { DirectoryPerson } from "@/lib/genealogy";
 import { YearRangeFilter } from "@/components/year-range-filter";
+import { useDirectoryUrlFilters } from "@/components/use-directory-url-filters";
 
 type Filter = "all" | "documented" | "review";
+const FILTERS = ["all", "documented", "review"] as const satisfies readonly Filter[];
 
 function normalize(value: string) {
   return value
@@ -90,13 +92,9 @@ function personYearSpan(person: DirectoryPerson) {
 
 export function PeopleDirectory({
   people,
-  initialQuery = "",
 }: {
   people: DirectoryPerson[];
-  initialQuery?: string;
 }) {
-  const [query, setQuery] = useState(initialQuery);
-  const [filter, setFilter] = useState<Filter>("all");
   const peopleById = useMemo(() => new Map(
     people.map((person) => [person.personId, person]),
   ), [people]);
@@ -110,10 +108,21 @@ export function PeopleDirectory({
       maxYear: Math.max(...spans.map((span) => span.maxYear)),
     };
   }, [spansByPerson]);
-  const [yearRange, setYearRange] = useState(() => ({
-    startYear: yearBounds.minYear,
-    endYear: yearBounds.maxYear,
-  }));
+  const {
+    query,
+    setQuery,
+    status: filter,
+    setStatus: setFilter,
+    yearRange,
+    setYearRange,
+    reset,
+    isFiltered,
+  } = useDirectoryUrlFilters({
+    statuses: FILTERS,
+    defaultStatus: "all",
+    minYear: yearBounds.minYear,
+    maxYear: yearBounds.maxYear,
+  });
 
   const filtered = useMemo(() => {
     const needle = normalize(query);
@@ -122,9 +131,11 @@ export function PeopleDirectory({
       const matchesFilter = filter === "all" ||
         (filter === "review" ? person.needsReview : !person.needsReview);
       const span = spansByPerson.get(person.personId);
+      const fullRange = yearRange.startYear === yearBounds.minYear &&
+        yearRange.endYear === yearBounds.maxYear;
       const matchesYear = span
         ? span.minYear <= yearRange.endYear && span.maxYear >= yearRange.startYear
-        : false;
+        : fullRange;
       return matchesQuery && matchesFilter && matchesYear;
     });
   }, [filter, people, query, spansByPerson, yearRange]);
@@ -147,31 +158,40 @@ export function PeopleDirectory({
           </div>
         </label>
 
-        <div className="people-filters" aria-label="Статус профиля">
-          {([
-            ["all", "Все"],
-            ["documented", "Документированы"],
-            ["review", "Требуют проверки"],
-          ] as const).map(([value, label]) => (
-            <button
-              type="button"
-              key={value}
-              className={filter === value ? "is-active" : undefined}
-              onClick={() => setFilter(value)}
-            >
-              {label}
-            </button>
-          ))}
+        <div className="directory-filter-panel">
+          <div className="directory-filter-panel__heading">
+            <span>Фильтры</span>
+            {isFiltered ? <button type="button" onClick={reset}>Сбросить</button> : null}
+          </div>
+          <div className="directory-filter-panel__status">
+            <span>Статус</span>
+            <div className="people-filters" aria-label="Статус профиля">
+              {([
+                ["all", "Все"],
+                ["documented", "Документированы"],
+                ["review", "Требуют проверки"],
+              ] as const).map(([value, label]) => (
+                <button
+                  type="button"
+                  key={value}
+                  className={filter === value ? "is-active" : undefined}
+                  aria-pressed={filter === value}
+                  onClick={() => setFilter(value)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <YearRangeFilter
+            minYear={yearBounds.minYear}
+            maxYear={yearBounds.maxYear}
+            startYear={yearRange.startYear}
+            endYear={yearRange.endYear}
+            onChange={setYearRange}
+          />
         </div>
       </div>
-
-      <YearRangeFilter
-        minYear={yearBounds.minYear}
-        maxYear={yearBounds.maxYear}
-        startYear={yearRange.startYear}
-        endYear={yearRange.endYear}
-        onChange={setYearRange}
-      />
 
       <div className="people-result-line" aria-live="polite">
         <strong>{filtered.length}</strong>
@@ -238,9 +258,7 @@ export function PeopleDirectory({
             <strong>Профили не найдены</strong>
             <p>Попробуйте часть фамилии, имя или название места.</p>
             <button type="button" onClick={() => {
-              setQuery("");
-              setFilter("all");
-              setYearRange({ startYear: yearBounds.minYear, endYear: yearBounds.maxYear });
+              reset();
             }}>Сбросить фильтры</button>
           </div>
         ) : null}

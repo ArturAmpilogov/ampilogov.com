@@ -34,8 +34,8 @@ type MigrationRecordLink = {
   placeName: string;
 };
 
-function escapeHtml(value: string) {
-  return value
+function escapeHtml(value: string | null | undefined) {
+  return (value ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
@@ -47,12 +47,15 @@ function summarizePlace(place: FamilyMapPlace, year: number): PlaceSummary | nul
   const activeEvents = place.events.filter((event) => event.year <= year);
   if (!activeEvents.length) return null;
   const years = activeEvents.map((event) => event.year);
+  const peopleKeys = activeEvents.flatMap((event) => event.people.map((person) => (
+    person.personId ? `id:${person.personId}` : `name:${person.name}`
+  )));
 
   return {
     place,
     activeEvents,
     familyCount: new Set(activeEvents.flatMap((event) => event.familyIds)).size,
-    peopleCount: new Set(activeEvents.flatMap((event) => event.personIds)).size,
+    peopleCount: new Set(peopleKeys).size,
     generationCount: Math.max(...activeEvents.map((event) => event.generation)),
     recordCount: new Set(activeEvents.map((event) => event.sourceId)).size,
     firstYear: Math.min(...years),
@@ -62,9 +65,10 @@ function summarizePlace(place: FamilyMapPlace, year: number): PlaceSummary | nul
 
 function placePopup(summary: PlaceSummary) {
   const records = [...summary.activeEvents].reverse().slice(0, 5);
-  const precision = summary.place.geo.precision === "settlement" || summary.place.geo.precision === "historical-site"
-    ? ""
-    : `<small class="settlement-popup-precision">${escapeHtml(summary.place.precisionLabel)}</small>`;
+  const latest = records[0];
+  const precision = summary.place.approximate
+    ? `<small class="settlement-popup-precision">${escapeHtml(summary.place.precisionLabel)}</small>`
+    : "";
   const recordLinks = records.map((event) => (
     `<a href="/records/${encodeURIComponent(event.sourceId)}">` +
     `<span>${escapeHtml(event.eventLabel)}</span>` +
@@ -78,6 +82,7 @@ function placePopup(summary: PlaceSummary) {
       <span>${summary.familyCount} семейных групп · ${summary.generationCount} поколений</span>
       <small>${summary.firstYear}—${summary.lastYear} · ${summary.recordCount} записей</small>
       ${precision}
+      ${latest ? `<p class="settlement-popup-context"><b>Имена и смысл:</b> ${latest.people.length} ${escapeHtml(plural(latest.people.length, "человек", "человека", "человек"))} · полный разбор открыт в панели точки</p>` : ""}
       <nav aria-label="Последние записи места">${recordLinks}</nav>
     </div>
   `;
@@ -89,7 +94,7 @@ function markerHtml(summary: PlaceSummary, selected: boolean) {
   const ringMarkup = Array.from({ length: rings }, (_, index) => (
     `<i style="--ring:${index + 1}" aria-hidden="true"></i>`
   )).join("");
-  const approximate = ["district", "region", "approximate"].includes(summary.place.geo.precision);
+  const approximate = summary.place.approximate;
 
   return `
     <span class="settlement-map-marker${selected ? " is-selected" : ""}${approximate ? " is-approximate" : ""}" style="--marker-size:${size}px">
@@ -146,6 +151,16 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.map((summary) => [summary.place.placeId, summary]),
   ), [summaries]);
   const selected = selectedPlaceId ? summariesById.get(selectedPlaceId) ?? null : null;
+  const selectedPeopleCount = selected ? new Set(
+    selected.activeEvents.flatMap((event) => event.people.map((person) => person.name)),
+  ).size : 0;
+  const selectedExplanationCount = selected ? selected.activeEvents.reduce((total, event) => {
+    const explanations = new Set([
+      ...event.nameInsights,
+      ...event.people.flatMap((person) => person.nameInsights),
+    ].map((insight) => `${insight.label}\n${insight.text}`));
+    return total + explanations.size;
+  }, 0) : 0;
   const activeMigrations = useMemo(() => migrations.filter((migration) =>
     migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
   ), [migrations, summariesById, year]);
@@ -185,7 +200,9 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.familyIds)),
   ).size, [summaries]);
   const totalPeople = useMemo(() => new Set(
-    summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.personIds)),
+    summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.people.map((person) => (
+      person.personId ? `id:${person.personId}` : `name:${person.name}`
+    )))),
   ).size, [summaries]);
   const totalRecords = useMemo(() => new Set(
     summaries.flatMap((summary) => summary.activeEvents.map((event) => event.sourceId)),
@@ -491,6 +508,101 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
               ))}
             </nav>
             {!selectedMigrationId ? <em>Нажмите на линию, чтобы закрепить список</em> : null}
+          </aside>
+        ) : null}
+        {selected ? (
+          <aside
+            className="settlement-place-panel"
+            aria-live="polite"
+            aria-label={`Имена и смысл: ${selected.place.name}`}
+          >
+            <header className="settlement-place-panel__heading">
+              <div>
+                <span>Имена и смысл</span>
+                <strong>{selected.place.name}</strong>
+                <small>{selected.firstYear}—{selected.lastYear} · {selected.recordCount} {plural(selected.recordCount, "запись", "записи", "записей")}</small>
+                <small className="settlement-place-panel__scope">
+                  {selectedPeopleCount} {plural(selectedPeopleCount, "имя", "имени", "имён")} · {selectedExplanationCount} подробных {plural(selectedExplanationCount, "пояснение", "пояснения", "пояснений")}
+                </small>
+                <small className="settlement-place-panel__promise">
+                  Показан полный текст: биографии, варианты имён, доказательства, гипотезы и границы уверенности
+                </small>
+              </div>
+              <button type="button" onClick={resetMapFocus} aria-label="Закрыть сведения о месте">×</button>
+            </header>
+            <div className="settlement-place-panel__events">
+              {[...selected.activeEvents].reverse().map((event) => (
+                <article key={event.sourceId}>
+                  <header>
+                    <span>{event.date}</span>
+                    <h3>{event.eventLabel}</h3>
+                  </header>
+                  {event.nameInsights[0] ? (
+                    <div className="settlement-place-panel__verdict">
+                      <span>{event.nameInsights[0].label}</span>
+                      <p>{event.nameInsights[0].text}</p>
+                    </div>
+                  ) : null}
+                  {event.people.length ? (
+                    <section>
+                      <h4>Имена подробно · все {event.people.length} человек</h4>
+                      <ul className="settlement-place-panel__people">
+                        {event.people.map((person, index) => (
+                          <li key={`${person.name}:${index}`}>
+                            <div className="settlement-place-panel__person-heading">
+                              <b>{String(index + 1).padStart(2, "0")}</b>
+                              <strong>{person.name}</strong>
+                            </div>
+                            <span>{person.role}</span>
+                            {person.variants.length ? <small>В источниках: {person.variants.join(" · ")}</small> : null}
+                            {person.details.map((detail, detailIndex) => <p key={`${detail}:${detailIndex}`}>{detail}</p>)}
+                            {person.nameInsights.length ? (
+                              <details open>
+                                <summary>Биография, имя, связь с местом и доказательства · {person.nameInsights.length} пунктов</summary>
+                                <dl>
+                                  {person.nameInsights.map((insight, insightIndex) => (
+                                    <div key={`${insight.label}:${insightIndex}`}>
+                                      <dt>{insight.label}</dt>
+                                      <dd>{insight.text}</dd>
+                                    </div>
+                                  ))}
+                                </dl>
+                              </details>
+                            ) : null}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  ) : null}
+                  {event.meaning ? (
+                    <section className="settlement-place-panel__meaning-section">
+                      <h4>Смысл подробно · что документ меняет в истории места</h4>
+                      <div className="settlement-place-panel__meaning">
+                        {event.meaning.split(/\n{2,}/).map((paragraph, paragraphIndex) => (
+                          <p key={`${paragraph.slice(0, 40)}:${paragraphIndex}`}>{paragraph}</p>
+                        ))}
+                      </div>
+                    </section>
+                  ) : null}
+                  {event.nameInsights.length ? (
+                    <details open>
+                      <summary>Онфилог и Онфилогово без сокращений: происхождение, варианты, кандидаты и предел доказательства · {event.nameInsights.length} пунктов</summary>
+                      <dl>
+                        {event.nameInsights.map((insight, index) => (
+                          <div key={`${insight.label}:${index}`}>
+                            <dt>{insight.label}</dt>
+                            <dd>{insight.text}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </details>
+                  ) : null}
+                  <Link href={`/records/${encodeURIComponent(event.sourceId)}`} target="_blank" rel="noopener noreferrer">
+                    Открыть запись целиком <span aria-hidden="true">↗</span>
+                  </Link>
+                </article>
+              ))}
+            </div>
           </aside>
         ) : null}
         {expandedCluster ? (

@@ -5,20 +5,26 @@ import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
 const priluki = {
   name: "Прилуки",
-  detail: "Монастырское село, где в 1536/37 году записан Тонкой Онфилогов",
+  detail: "Давняя вотчина Троице-Сергиева монастыря; в 1536/37 году здесь записан Тонкой Онфилогов, хозяин непашенного двора",
   latitude: 57.365108,
   longitude: 38.037449,
 };
 
 const onfilogovo = {
   name: "Онфилогово",
-  detail: "Деревня из четырёх дворов, записанная в 1539/40 году; точное место не установлено",
-  latitude: 57.82,
-  longitude: 37.761667,
+  detail: [
+    "Исчезнувшая деревня из четырёх дворов, записанная в 1539/1540 году.",
+    "Маркер показывает не дворы, а реконструированный научной ГИС центр владения — Никольское (Свечино).",
+    "На плане Генерального межевания отдельная «д. Онфилогова» стоит рядом с Ворониной в даче № 516.",
+    "Название означает «селение Онфилога»; конкретный эпоним жил раньше записи, вероятно в XV — начале XVI века.",
+  ].join(" "),
+  latitude: 56.3225861843296,
+  longitude: 35.2047323324939,
 };
 
 const uglich = {
   name: "Углич",
+  detail: "Центр общего уезда: до 1521 года Иван Юрлов Меньшой продал село Инково, а в 1536/37 году в монастырских Прилуках записан Тонкой Онфилогов. Это региональная зацепка, не общая владельческая цепочка. Инково отсутствует в полном межевом указателе 1908 года, поэтому отдельный маркер не поставлен.",
   latitude: 57.5266,
   longitude: 38.3195,
 };
@@ -35,9 +41,9 @@ export function PrilukiOpenStreetMap() {
 
       map = L.map(containerRef.current, {
         ...leafletInteractionOptions,
-        center: [57.59, 37.95],
-        zoom: 9,
-        minZoom: 7,
+        center: [56.85, 36.8],
+        zoom: 7,
+        minZoom: 6,
         maxZoom: 17,
         zoomControl: false,
       });
@@ -93,7 +99,7 @@ export function PrilukiOpenStreetMap() {
       });
 
       L.circle([onfilogovo.latitude, onfilogovo.longitude], {
-        radius: 7000,
+        radius: 2200,
         color: "#a6412f",
         weight: 1.5,
         dashArray: "5 7",
@@ -104,16 +110,18 @@ export function PrilukiOpenStreetMap() {
       L.marker([onfilogovo.latitude, onfilogovo.longitude], {
         icon: onfilogovoIcon,
         keyboard: true,
-        title: `${onfilogovo.name}, приблизительное положение`,
+        title: `${onfilogovo.name}: реконструированный центр владения, не точка деревни`,
       })
         .addTo(map)
-        .bindTooltip("Онфилогово · 1539/40", {
+        .bindTooltip("Онфилогово · центр владения", {
           direction: "left",
           offset: [-12, 0],
           permanent: true,
           className: "amphilochia-leaflet-label priluki-leaflet-label is-approximate",
         })
-        .bindPopup(`<strong>${onfilogovo.name}</strong><span>${onfilogovo.detail}</span>`);
+        .bindPopup(
+          `<strong>${onfilogovo.name}</strong><span>${onfilogovo.detail}</span><small>56.322586, 35.204732 · научная реконструкция Никольского (Свечина)</small>`,
+        );
 
       L.polyline(
         [
@@ -147,7 +155,8 @@ export function PrilukiOpenStreetMap() {
           offset: [10, 0],
           permanent: true,
           className: "amphilochia-leaflet-label priluki-leaflet-label is-context",
-        });
+        })
+        .bindPopup(`<strong>${uglich.name} · уездный контекст</strong><span>${uglich.detail}</span>`);
 
       const contextControl = new L.Control({ position: "topleft" });
       contextControl.onAdd = () => {
@@ -155,7 +164,7 @@ export function PrilukiOpenStreetMap() {
         const region = document.createElement("strong");
         const place = document.createElement("span");
         region.textContent = "Верхняя Волга";
-        place.textContent = "две записи за три года";
+        place.textContent = "две записи 1536–1540 годов; родство не установлено";
         element.append(region, place);
         return element;
       };
@@ -167,7 +176,7 @@ export function PrilukiOpenStreetMap() {
           [onfilogovo.latitude, onfilogovo.longitude],
           [uglich.latitude, uglich.longitude],
         ]),
-        { padding: [62, 62], maxZoom: 10 },
+        { padding: [62, 62], maxZoom: 8 },
       );
       window.requestAnimationFrame(() => map?.invalidateSize());
     });
@@ -183,7 +192,7 @@ export function PrilukiOpenStreetMap() {
       className="amphilochia-map-canvas priluki-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта Прилук, приблизительного положения деревни Онфилогово и Углича"
+      aria-label="Интерактивная карта Прилук, научно реконструированного центра владения Онфилогова и Углича"
     />
   );
 }

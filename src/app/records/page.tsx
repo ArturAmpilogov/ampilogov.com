@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { RecordsDirectory } from "@/components/records-directory";
 import { SiteHeader } from "@/components/site-header";
 import { getRecordsDirectory } from "@/lib/genealogy";
 
 export const metadata: Metadata = {
   title: "Архивные записи",
-  description: "Документы FamilySearch: ссылки на оригиналы, буквальные расшифровки и современное чтение.",
+  description: "Документы о фамильном ряде Ампилоговых по 1950 год: оригиналы, расшифровки и контекст.",
 };
 
-type RecordsPageProps = {
-  searchParams: Promise<{ search?: string }>;
-};
-
-export default async function RecordsPage({ searchParams }: RecordsPageProps) {
-  const { search = "" } = await searchParams;
+export default function RecordsPage() {
   const directory = getRecordsDirectory();
 
   return (
@@ -25,8 +21,9 @@ export default async function RecordsPage({ searchParams }: RecordsPageProps) {
           <h1>Записи</h1>
         </div>
         <p>
-          Каждый скан существует отдельно от профилей: оригинальная ссылка,
-          буквальная расшифровка, современное чтение и упомянутые люди.
+          Документы по 1950 год включительно: оригинальная ссылка, буквальная
+          расшифровка, современное чтение и все участники записи. Отдельные профили создаются
+          только для носителей исследуемого фамильного ряда.
         </p>
         <dl aria-label="Состав каталога">
           <div><dt>Записей</dt><dd>{directory.stats.records}</dd></div>
@@ -34,7 +31,9 @@ export default async function RecordsPage({ searchParams }: RecordsPageProps) {
           <div><dt>Копии сохранены</dt><dd>{directory.stats.withImages}</dd></div>
         </dl>
       </header>
-      <RecordsDirectory records={directory.records} initialQuery={search} />
+      <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
+        <RecordsDirectory records={directory.records} />
+      </Suspense>
     </main>
   );
 }

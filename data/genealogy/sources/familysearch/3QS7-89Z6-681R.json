@@ -4,7 +4,17 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4450389",
-    "title": "Россия, Томская губерния, церковные книги, 1752–1918"
+    "title": "Россия, Томская губерния, церковные книги, 1752–1918",
+    "imageGroupNumber": "007470316",
+    "item": "4 of 5",
+    "imageNumber": 192,
+    "imageCount": 348,
+    "locality": "Князе-Михайловка / Мазалово / Подломское / Семилужное, Томский уезд; рождения 1906"
+  },
+  "repository": {
+    "name": "Православные приходы Томской губернии",
+    "location": "Томская губерния, Российская империя",
+    "attributionAsShown": "Tomsk. Religious Birth Records 1904–1907, Religious Death Records 1904–1907, Religious Marriage Records 1904–1907; DGS 007470316, item 4, image 192"
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3QS7-89Z6-681R",
@@ -13,52 +23,60 @@
   "event": {
     "type": "birth-and-baptism",
     "date": {
-      "display": "родилась 31 августа 1906 года",
-      "iso": "1906-08-31",
-      "calendar": "source-calendar-unverified"
+      "display": "31 августа / 1 сентября 1906",
+      "birthIso": "1906-08-31",
+      "baptismIso": "1906-09-01",
+      "calendar": "julian-source-calendar",
+      "iso": "1906-08-31"
     },
     "place": {
-      "placeId": "tomsk-governorate",
-      "asTranscribed": "Томская губерния",
+      "placeId": "kozhli-osinovka-tomsk",
+      "asTranscribed": "деревни Кожлей",
+      "normalized": "деревня Кожли, Турунтаевская волость, Томский уезд, Томская губерния",
+      "confidence": "high",
       "modernCountry": "Россия"
     }
-  },
-  "indexData": {
-    "recordId": "6R8C-QV3X",
-    "subject": "Наталия",
-    "eventDate": "1906-08-31",
-    "indexWarning": "Основное имя дано в современном русском виде; индексные формы сохранены."
   },
   "mentions": [
     {
       "mentionId": "FS-3QS7-89Z6-681R-M1",
       "role": "child",
       "personId": "P0674",
+      "sex": "female",
       "nameAsTranscribed": "Наталия",
-      "modernName": "Наталья Павловна Ампилогова",
-      "displayName": "Наталья Павловна Ампилогова"
+      "nameAsIndexed": "Наталия Павлова Анпилогова",
+      "modernName": "Наталия Павловна Анпилогова",
+      "displayName": "Наталия Павловна Анпилогова"
     },
     {
       "mentionId": "FS-3QS7-89Z6-681R-M2",
       "role": "father",
       "personId": "P0568",
-      "nameAsTranscribed": "Павел Трофимович Ампилогов",
-      "modernName": "Павел Трофимович Ампилогов",
-      "displayName": "Павел Трофимович Ампилогов"
+      "sex": "male",
+      "nameAsTranscribed": "Павел Трифонов Анпилогов",
+      "nameAsIndexed": "Павел Трифонов Анпилогов",
+      "modernName": "Павел Трифонович Анпилогов",
+      "displayName": "Павел Трифонович Анпилогов",
+      "socialStatus": {
+        "asWritten": "деревни Кожлей запасный рядовой",
+        "normalized": "запасной рядовой; житель деревни Кожли"
+      }
     },
     {
       "mentionId": "FS-3QS7-89Z6-681R-M3",
       "role": "mother",
       "personId": "P0569",
-      "nameAsTranscribed": "Акилина Ивановна Корсунова",
-      "modernName": "Акилина Ивановна Корсунова",
-      "displayName": "Акилина Ивановна Корсунова"
+      "sex": "female",
+      "nameAsTranscribed": "Акилина Иванова",
+      "nameAsIndexed": "Акилина Иванова",
+      "modernName": "Акилина Ивановна Анпилогова",
+      "displayName": "Акилина Ивановна Анпилогова"
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "родилась 31 августа 1906 года. Наталия; отец Павел Трофимович Ампилогов; мать Акилина Ивановна Корсунова. Вторичные графы: [частично неразборчивы].",
-    "modernInterpretation": "Наталья Павловна Ампилогова: родилась 31 августа 1906 года; отец Павел Трофимович Ампилогов; мать Акилина Ивановна Корсунова.",
+    "status": "complete-for-principals",
+    "literal": "31 [августа родилась] | 1 [сентября крещена] | Наталия | Деревни Кожлей запасный рядовой Павел Трифонов Анпилогов и законная жена его Акилина Иванова, оба православные.",
+    "modernInterpretation": "31 августа 1906 года в семье запасного рядового Павла Трифоновича Анпилогова и Акилины Ивановны из деревни Кожли родилась дочь Наталия; крещена 1 сентября.",
     "fields": {
       "eventDate": "родилась 31 августа 1906 года",
       "subject": "Наталья Павловна Ампилогова",
@@ -66,28 +84,38 @@
       "relatedPerson": "Акилина Ивановна Корсунова"
     }
   },
-  "sourceRelations": [
-    {
-      "type": "person-in-family",
-      "targetFamilyId": "F0123",
-      "confidence": "high"
-    }
-  ],
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-681R/03-target-fullscreen.png",
+    "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-89Z6-681R-entry.png",
     "capturedAt": "2026-08-23",
-    "sha256": "a806d1c62bf83a82cb1a9c287f0178ca9b58c10d8d721e979523227b9f53b4c5",
+    "sha256": "a0bb9cc95b31315c2173a43cd77802a50190eebfd1f8882f14215f3defa7ef36",
     "publicDisplay": false,
+    "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
     "quality": {
-      "status": "approved-with-secondary-fields-uncertain",
+      "status": "approved",
       "viewerFullscreen": true,
+      "sharpTilesConfirmed": true,
+      "limitation": "Восприемники и причт пока не внесены.",
       "panelsClosed": true,
       "filmstripHidden": true,
-      "viewport": "1680x1050",
-      "limitation": "Неясные вторичные графы не восстановлены догадкой."
+      "viewport": "1680x1050"
     },
     "fragments": [
+      {
+        "part": "fullscreen-overview",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-89Z6-681R-overview.png",
+        "sha256": "87cf65f4ba0cad194489332e9f290bfc9cd9e51370c9978c12c9d0f1b964cc4e"
+      },
+      {
+        "part": "zoomed-target-row",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-89Z6-681R-entry.png",
+        "sha256": "a0bb9cc95b31315c2173a43cd77802a50190eebfd1f8882f14215f3defa7ef36"
+      },
+      {
+        "part": "metadata",
+        "path": "public/archive/evidence/familysearch/russia/tomsk/pavel-trifonovich-kozhli/3QS7-89Z6-681R-information.png",
+        "sha256": "f980580d7d330b2699ae3cec5c059d2f71fe614f23a6705591da3a34d3470646"
+      },
       {
         "part": "familysearch-index",
         "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-681R/01-index-fullscreen.png",
@@ -105,16 +133,33 @@
       }
     ]
   },
+  "isRecord": true,
+  "cardKind": "primary-church-record",
+  "primaryPersonId": "P0674",
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "record-6R8C-QV3X-linked-to-P0674",
+    "status": "verified-from-primary-scan",
+    "identityResolution": "Та же супружеская пара, что в записи 1909 года: совпадают полные имена родителей и деревня Кожли.",
+    "transcriptionConfidence": "high-for-place-dates-child-parents-surname-and-father-status",
     "unresolved": [
+      "Переписать восприемников и причт.",
       "Повторно проверить бледные вторичные графы."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Наталья Павловна Ампилогова: родилась 31 августа 1906 года."
+    "text": "31 августа 1906 года в деревне Кожли родилась Наталия, дочь запасного рядового Павла Трифоновича Анпилогова и Акилины Ивановны."
   },
-  "primaryPersonId": "P0674"
+  "indexData": {
+    "recordId": "6R8C-QV3X",
+    "subject": "Наталия",
+    "eventDate": "1906-08-31",
+    "indexWarning": "Основное имя дано в современном русском виде; индексные формы сохранены."
+  },
+  "sourceRelations": [
+    {
+      "type": "person-in-family",
+      "targetFamilyId": "F0123",
+      "confidence": "high"
+    }
+  ]
 }
