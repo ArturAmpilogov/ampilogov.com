@@ -2,42 +2,23 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
-import type { ArchiveRecord } from "@/lib/genealogy";
+import type { RecordDirectoryResult } from "@/lib/directory-index-types";
+import { DirectoryAutoLoader } from "@/components/directory-auto-loader";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { YearRangeFilter } from "@/components/year-range-filter";
 import { useDirectoryUrlFilters } from "@/components/use-directory-url-filters";
+import { usePagedDirectory } from "@/components/use-paged-directory";
 
 type Filter = "all" | "complete" | "incomplete" | "human";
 const FILTERS = ["all", "complete", "incomplete", "human"] as const satisfies readonly Filter[];
 
-function normalize(value: string) {
-  return value
-    .normalize("NFKC")
-    .toLocaleLowerCase("ru")
-    .replace(/ё/g, "е")
-    .replace(/[^а-яa-z0-9]+/g, " ")
-    .trim();
-}
-
-function recordYear(record: ArchiveRecord) {
-  const years = `${record.year} ${record.date}`.match(/\b[0-9]{4}\b/g) ?? [];
-  return years.map(Number).find((year) => year >= 1000 && year <= 2099) ?? null;
-}
-
 export function RecordsDirectory({
-  records,
+  minYear,
+  maxYear,
 }: {
-  records: ArchiveRecord[];
+  minYear: number;
+  maxYear: number;
 }) {
-  const yearBounds = useMemo(() => {
-    const years = records
-      .map(recordYear)
-      .filter((year): year is number => year !== null);
-    return {
-      minYear: Math.min(...years),
-      maxYear: Math.max(...years),
-    };
-  }, [records]);
   const {
     query,
     setQuery,
@@ -50,50 +31,45 @@ export function RecordsDirectory({
   } = useDirectoryUrlFilters({
     statuses: FILTERS,
     defaultStatus: "all",
-    minYear: yearBounds.minYear,
-    maxYear: yearBounds.maxYear,
+    minYear,
+    maxYear,
   });
-
-  const filtered = useMemo(() => {
-    const needle = normalize(query);
-    return records.filter((record) => {
-      const matchesQuery = !needle || normalize(record.searchText).includes(needle);
-      const matchesFilter = filter === "all" ||
-        (filter === "complete" && record.reviewState === "complete") ||
-        (filter === "incomplete" && record.reviewState !== "complete") ||
-        (filter === "human" && record.reviewState === "human-review");
-      const year = recordYear(record);
-      const fullRange = yearRange.startYear === yearBounds.minYear &&
-        yearRange.endYear === yearBounds.maxYear;
-      const matchesYear = year === null
-        ? fullRange
-        : year >= yearRange.startYear && year <= yearRange.endYear;
-      return matchesQuery && matchesFilter && matchesYear;
-    });
-  }, [filter, query, records, yearBounds, yearRange]);
+  const requestParams = useMemo(() => {
+    const params = new URLSearchParams({ limit: "50" });
+    if (query.trim()) params.set("search", query.trim());
+    if (filter !== "all") params.set("status", filter);
+    if (yearRange.startYear !== minYear) params.set("from", String(yearRange.startYear));
+    if (yearRange.endYear !== maxYear) params.set("to", String(yearRange.endYear));
+    return params;
+  }, [filter, maxYear, minYear, query, yearRange]);
+  const {
+    items: records,
+    total,
+    nextCursor,
+    isLoading,
+    isLoadingMore,
+    error,
+    loadMore,
+  } = usePagedDirectory<RecordDirectoryResult>({ endpoint: "/api/records", params: requestParams });
 
   return (
     <section className="records-workspace section-shell" aria-label="Каталог архивных записей">
       <div className="records-toolbar">
         <label className="records-search">
-          <span>Поиск по записям</span>
+          <span>Поиск по ФИО</span>
           <div>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Имя, вариант фамилии, место, год, текст…"
+              placeholder="Имя, отчество, фамилия…"
               autoComplete="off"
             />
             {query ? <button type="button" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : null}
           </div>
         </label>
         <div className="directory-filter-panel">
-          <div className="directory-filter-panel__heading">
-            <span>Фильтры</span>
-            {isFiltered ? <button type="button" onClick={reset}>Сбросить</button> : null}
-          </div>
           <div className="directory-filter-panel__status">
             <span>Статус</span>
             <div className="records-filters" aria-label="Статус расшифровки">
@@ -114,10 +90,12 @@ export function RecordsDirectory({
                 </button>
               ))}
             </div>
+            {isFiltered ? <button className="directory-filter-reset" type="button" onClick={reset}>Сбросить</button> : null}
           </div>
           <YearRangeFilter
-            minYear={yearBounds.minYear}
-            maxYear={yearBounds.maxYear}
+            showBounds={false}
+            minYear={minYear}
+            maxYear={maxYear}
             startYear={yearRange.startYear}
             endYear={yearRange.endYear}
             onChange={setYearRange}
@@ -126,12 +104,13 @@ export function RecordsDirectory({
       </div>
 
       <div className="records-result-line" aria-live="polite">
-        <strong>{filtered.length}</strong>
+        <strong>{isLoading ? "…" : total}</strong>
         <span>{query ? "совпадений" : "записей в выборке"}</span>
       </div>
+      {error ? <p className="directory-error" role="alert">{error}</p> : null}
 
-      <div className="records-list" role="list">
-        {filtered.map((record, index) => (
+      <div className={`records-list${isLoading ? " is-loading" : ""}`} role="list" aria-busy={isLoading}>
+        {records.map((record, index) => (
           <Link href={`/records/${encodeURIComponent(record.sourceId)}`} key={record.sourceId} className="record-row">
             <span className="record-row-number">{String(index + 1).padStart(2, "0")}</span>
             <span className="record-row-event">
@@ -169,7 +148,7 @@ export function RecordsDirectory({
             <span className="record-row-open" aria-hidden="true">↗</span>
           </Link>
         ))}
-        {filtered.length === 0 ? (
+        {!isLoading && records.length === 0 ? (
           <div className="records-empty">
             <strong>Записей не найдено</strong>
             <p>Попробуйте часть фамилии, имя или год.</p>
@@ -179,6 +158,13 @@ export function RecordsDirectory({
           </div>
         ) : null}
       </div>
+      <DirectoryAutoLoader
+        hasMore={Boolean(nextCursor)}
+        isLoading={isLoading || isLoadingMore}
+        loaded={records.length}
+        total={total}
+        onLoadMore={loadMore}
+      />
     </section>
   );
 }

@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 
 type YearRangeFilterProps = {
   label?: string;
+  showBounds?: boolean;
   minYear: number;
   maxYear: number;
   startYear: number;
@@ -13,6 +14,7 @@ type YearRangeFilterProps = {
 
 export function YearRangeFilter({
   label = "Период",
+  showBounds = true,
   minYear,
   maxYear,
   startYear,
@@ -57,10 +59,12 @@ export function YearRangeFilter({
           })}
         />
       </div>
-      <div className="directory-year-range__bounds" aria-hidden="true">
-        <span>{minYear}</span>
-        <span>{maxYear}</span>
-      </div>
+      {showBounds ? (
+        <div className="directory-year-range__bounds" aria-hidden="true">
+          <span>{minYear}</span>
+          <span>{maxYear}</span>
+        </div>
+      ) : null}
     </div>
   );
 }

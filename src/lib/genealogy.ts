@@ -5,6 +5,16 @@ import placesIndexData from "../../data/genealogy/places/index.json";
 
 const GENEALOGY_ROOT = path.join(process.cwd(), "data/genealogy");
 
+let peopleByIdCache: Map<string, PersonRecord> | null = null;
+
+function genealogyPeopleById() {
+  peopleByIdCache ??= new Map(
+    readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"))
+      .map((person) => [person.personId, person]),
+  );
+  return peopleByIdCache;
+}
+
 type PersonRecord = {
   personId: string;
   displayName: string;
@@ -1720,11 +1730,14 @@ function toArchiveRecord(
   };
 }
 
+let recordsDirectoryCache: {
+  records: ArchiveRecord[];
+  stats: { records: number; complete: number; withImages: number };
+} | null = null;
+
 export function getRecordsDirectory() {
-  const peopleById = new Map(
-    readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"))
-      .map((person) => [person.personId, person]),
-  );
+  if (recordsDirectoryCache) return recordsDirectoryCache;
+  const peopleById = genealogyPeopleById();
   const records = readJsonTree<SourceRecord>(
     path.join(GENEALOGY_ROOT, "sources"),
   ).filter((source) =>
@@ -1733,7 +1746,7 @@ export function getRecordsDirectory() {
     (left.year || "9999").localeCompare(right.year || "9999") || left.date.localeCompare(right.date, "ru")
   );
 
-  return {
+  recordsDirectoryCache = {
     records,
     stats: {
       records: records.length,
@@ -1741,12 +1754,56 @@ export function getRecordsDirectory() {
       withImages: records.filter((record) => Boolean(record.evidenceUrl || record.evidenceFragments.length)).length,
     },
   };
+  return recordsDirectoryCache;
+}
+
+let recordPathIndex: { paths: Record<string, string>; personPaths?: Record<string, string> } | null = null;
+const archiveRecordCache = new Map<string, ArchiveRecord>();
+
+function getRecordPathIndex() {
+  if (recordPathIndex) return recordPathIndex;
+  const index = JSON.parse(readFileSync(
+    path.join(GENEALOGY_ROOT, "indexes/record-source-paths.json"),
+    "utf8",
+  )) as { paths: Record<string, string>; personPaths?: Record<string, string> };
+  recordPathIndex = index;
+  return recordPathIndex;
+}
+
+function sourcePeopleById(source: SourceRecord) {
+  const peopleById = new Map<string, PersonRecord>();
+  const personIds = new Set([
+    source.primaryPersonId,
+    ...(source.mentions ?? []).map((mention) => mention.personId),
+  ].filter((personId): personId is string => Boolean(personId)));
+  const { personPaths } = getRecordPathIndex();
+  if (!personPaths) return genealogyPeopleById();
+  for (const personId of personIds) {
+    const relativePath = personPaths[personId];
+    if (!relativePath) continue;
+    peopleById.set(personId, JSON.parse(readFileSync(path.join(process.cwd(), relativePath), "utf8")) as PersonRecord);
+  }
+  return peopleById;
 }
 
 export function getArchiveRecord(sourceId: string) {
-  return getRecordsDirectory().records.find((record) =>
-    record.sourceId === sourceId || record.sourceCopies.some((copy) => copy.sourceId === sourceId)
-  ) ?? null;
+  const cached = archiveRecordCache.get(sourceId);
+  if (cached) return cached;
+  const relativePath = getRecordPathIndex().paths[sourceId];
+  if (!relativePath) {
+    return getRecordsDirectory().records.find((record) =>
+      record.sourceId === sourceId || record.sourceCopies.some((copy) => copy.sourceId === sourceId)
+    ) ?? null;
+  }
+  const source = JSON.parse(readFileSync(path.join(process.cwd(), relativePath), "utf8")) as SourceRecord;
+  const peopleById = sourcePeopleById(source);
+  if (!sourceIsWithinPublicResearchPeriod(source) || !isGenealogyRecordSource(source, peopleById)) {
+    return null;
+  }
+  const record = toArchiveRecord(source, peopleById);
+  archiveRecordCache.set(record.sourceId, record);
+  for (const copy of record.sourceCopies) archiveRecordCache.set(copy.sourceId, record);
+  return record;
 }
 
 function readJsonDirectory<T>(directory: string): T[] {
@@ -2336,7 +2393,13 @@ const explicitPersonRelationTypes: Record<string, DirectoryRelation["relation"]>
   "foster-daughter-of": "foster-parent",
 };
 
+let peopleDirectoryCache: {
+  people: DirectoryPerson[];
+  stats: { people: number; families: number; sources: number; transcribedSources: number; places: number };
+} | null = null;
+
 export function getPeopleDirectory() {
+  if (peopleDirectoryCache) return peopleDirectoryCache;
   const people = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
   const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
   const allSources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"));
@@ -2480,7 +2543,7 @@ export function getPeopleDirectory() {
     };
   });
 
-  return {
+  peopleDirectoryCache = {
     people: directory.sort((left, right) => left.displayName.localeCompare(right.displayName, "ru")),
     stats: {
       people: directory.length,
@@ -2494,6 +2557,11 @@ export function getPeopleDirectory() {
       places: new Set(directory.flatMap((person) => person.places)).size,
     },
   };
+  return peopleDirectoryCache;
+}
+
+export function getDirectoryPerson(personId: string) {
+  return getPeopleDirectory().people.find((person) => person.personId === personId) ?? null;
 }
 
 function sourceYear(source: SourceRecord) {

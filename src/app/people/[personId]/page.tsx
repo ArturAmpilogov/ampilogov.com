@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { SiteHeader } from "@/components/site-header";
-import { getPeopleDirectory } from "@/lib/genealogy";
+import { getPeopleDirectoryIndex } from "@/lib/directory-index";
+import { getDirectoryPerson } from "@/lib/genealogy";
 
 type PersonPageProps = {
   params: Promise<{ personId: string }>;
@@ -19,13 +20,13 @@ const relationLabels = {
 };
 
 export function generateStaticParams() {
-  return getPeopleDirectory().people.map((person) => ({ personId: person.personId }));
+  return getPeopleDirectoryIndex().people.map((person) => ({ personId: person.personId }));
 }
 
 export async function generateMetadata({ params }: PersonPageProps): Promise<Metadata> {
   const { personId } = await params;
   const decodedPersonId = decodeURIComponent(personId);
-  const person = getPeopleDirectory().people.find((entry) => entry.personId === decodedPersonId);
+  const person = getDirectoryPerson(decodedPersonId);
   if (!person) return { title: "Профиль не найден" };
   return {
     title: person.displayName,
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: PersonPageProps): Promise<Met
 export default async function PersonPage({ params }: PersonPageProps) {
   const { personId } = await params;
   const decodedPersonId = decodeURIComponent(personId);
-  const person = getPeopleDirectory().people.find((entry) => entry.personId === decodedPersonId);
+  const person = getDirectoryPerson(decodedPersonId);
   if (!person) notFound();
 
   return (

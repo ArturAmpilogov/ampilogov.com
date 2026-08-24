@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { RecordsDirectory } from "@/components/records-directory";
 import { SiteHeader } from "@/components/site-header";
-import { getRecordsDirectory } from "@/lib/genealogy";
+import { getRecordsDirectoryIndex } from "@/lib/directory-index";
 
 export const metadata: Metadata = {
   title: "Архивные записи",
@@ -10,21 +10,17 @@ export const metadata: Metadata = {
 };
 
 export default function RecordsPage() {
-  const directory = getRecordsDirectory();
+  const directory = getRecordsDirectoryIndex();
 
   return (
     <main className="records-page">
       <SiteHeader />
-      <header className="records-masthead section-shell">
+      <header className="records-masthead directory-masthead section-shell">
         <div>
           <span className="eyebrow">Первичные документы</span>
           <h1>Записи</h1>
         </div>
-        <p>
-          Документы по 1950 год включительно: оригинальная ссылка, буквальная
-          расшифровка, современное чтение и все участники записи. Отдельные профили создаются
-          только для носителей исследуемого фамильного ряда.
-        </p>
+        <p>Документы до 1950 года: сканы, расшифровки, современное чтение и контекст.</p>
         <dl aria-label="Состав каталога">
           <div><dt>Записей</dt><dd>{directory.stats.records}</dd></div>
           <div><dt>Расшифровано</dt><dd>{directory.stats.complete}</dd></div>
@@ -32,7 +28,7 @@ export default function RecordsPage() {
         </dl>
       </header>
       <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
-        <RecordsDirectory records={directory.records} />
+        <RecordsDirectory minYear={directory.stats.minYear} maxYear={directory.stats.maxYear} />
       </Suspense>
     </main>
   );

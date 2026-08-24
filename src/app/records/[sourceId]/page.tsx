@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { SiteHeader } from "@/components/site-header";
-import { getArchiveRecord, getRecordsDirectory } from "@/lib/genealogy";
+import { getRecordsDirectoryIndex } from "@/lib/directory-index";
+import { getArchiveRecord } from "@/lib/genealogy";
 
 type RecordPageProps = {
   params: Promise<{ sourceId: string }>;
@@ -33,7 +34,7 @@ const personRoleOrder: Record<string, number> = {
 };
 
 export function generateStaticParams() {
-  return getRecordsDirectory().records.map((record) => ({ sourceId: record.sourceId }));
+  return getRecordsDirectoryIndex().records.map((record) => ({ sourceId: record.sourceId }));
 }
 
 export async function generateMetadata({ params }: RecordPageProps): Promise<Metadata> {

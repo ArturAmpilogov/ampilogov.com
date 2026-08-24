@@ -4410,12 +4410,12 @@ a {
 
   .people-masthead {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 42px 0 34px;
+    gap: 16px;
+    padding: 28px 0 24px;
   }
 
   .people-masthead h1 {
-    font-size: clamp(4rem, 19vw, 6rem);
+    font-size: clamp(3.25rem, 17vw, 5rem);
   }
 
   .people-masthead dl {
@@ -6153,6 +6153,88 @@ a {
   text-transform: uppercase;
 }
 
+.records-list,
+.people-list {
+  transition: opacity 160ms ease;
+}
+
+.records-list.is-loading,
+.people-list.is-loading {
+  min-height: 180px;
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.directory-stream-status {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  min-height: 92px;
+  padding: 27px 0 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.directory-stream-status strong {
+  font: 700 0.78rem var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.directory-stream-status small {
+  font: 500 0.68rem var(--sans);
+  letter-spacing: 0.04em;
+}
+
+.directory-stream-status__indicator {
+  width: 44px;
+  height: 2px;
+  overflow: hidden;
+  background: var(--line);
+}
+
+.directory-stream-status__indicator::after {
+  display: block;
+  width: 45%;
+  height: 100%;
+  background: var(--accent);
+  content: "";
+  transform: translateX(-130%);
+}
+
+.directory-stream-status.is-loading {
+  color: var(--accent);
+}
+
+.directory-stream-status.is-loading .directory-stream-status__indicator::after {
+  animation: directory-stream-loading 900ms ease-in-out infinite;
+}
+
+.directory-stream-status.is-complete .directory-stream-status__indicator::after {
+  width: 100%;
+  transform: none;
+}
+
+@keyframes directory-stream-loading {
+  50% { transform: translateX(125%); }
+  100% { transform: translateX(260%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .directory-stream-status.is-loading .directory-stream-status__indicator::after {
+    animation: none;
+    transform: translateX(60%);
+  }
+}
+
+.directory-error {
+  padding: 18px 0;
+  color: var(--accent);
+  border-top: 1px solid var(--accent);
+  font-size: 0.84rem;
+}
+
 @media (max-width: 980px) {
   .records-toolbar,
   .people-toolbar {
@@ -6176,6 +6258,302 @@ a {
   .directory-filter-panel .people-filters {
     justify-content: flex-start;
     overflow-x: auto;
+  }
+}
+
+/* Records and People are working directories, not landing pages. */
+.directory-masthead {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.58fr) minmax(300px, 1fr) auto;
+  gap: clamp(28px, 5vw, 88px);
+  align-items: center;
+  min-height: 0;
+  padding: 30px 0 25px;
+  animation: directory-enter 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.directory-masthead h1 {
+  margin-top: 8px;
+  font-size: clamp(2.65rem, 4.2vw, 4.2rem);
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.directory-masthead > p {
+  max-width: 560px;
+  font-size: clamp(0.98rem, 1.25vw, 1.12rem);
+  line-height: 1.45;
+}
+
+.directory-masthead dl {
+  grid-column: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: clamp(24px, 3.2vw, 52px);
+  padding-top: 0;
+}
+
+.directory-masthead dl div {
+  display: grid;
+  gap: 3px;
+}
+
+.directory-masthead dt {
+  order: 2;
+  white-space: nowrap;
+  font-size: 0.58rem;
+}
+
+.directory-masthead dd {
+  order: 1;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1;
+}
+
+.records-workspace,
+.people-workspace {
+  padding-top: 18px;
+}
+
+.records-toolbar,
+.people-toolbar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(36px, 4vw, 64px);
+  row-gap: 12px;
+  align-items: stretch;
+  padding-bottom: 10px;
+}
+
+.records-search,
+.people-search {
+  display: grid;
+  grid-template-rows: minmax(28px, 1fr) 48px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: stretch;
+  row-gap: 7px;
+  padding-top: 0;
+}
+
+.records-search > span,
+.people-search > span {
+  align-self: end;
+  margin-bottom: 0;
+  color: var(--ink);
+  font-size: 0.72rem;
+}
+
+.records-search > div,
+.people-search > div {
+  min-height: 44px;
+}
+
+.records-search input,
+.people-search input {
+  height: 48px;
+  font-size: 1.28rem;
+}
+
+.directory-filter-panel {
+  display: contents;
+}
+
+.directory-filter-panel__status > span {
+  font-size: 0.64rem;
+}
+
+.directory-filter-panel__status {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-content: start;
+  gap: clamp(16px, 2vw, 32px);
+  min-height: 36px;
+  border-bottom: 0;
+}
+
+.directory-filter-panel .records-filters,
+.directory-filter-panel .people-filters {
+  width: max-content;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.directory-filter-reset {
+  align-self: center;
+  padding: 8px 0;
+  color: var(--muted);
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font: 700 0.66rem var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.directory-filter-reset:hover,
+.directory-filter-reset:focus-visible {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}
+
+.directory-filter-panel .records-filters button,
+.directory-filter-panel .people-filters button {
+  padding: 7px 4px;
+  white-space: nowrap;
+  font-size: 0.66rem;
+}
+
+.directory-filter-panel .directory-year-range {
+  display: grid;
+  grid-template-rows: minmax(28px, 1fr) 48px;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: stretch;
+  row-gap: 7px;
+  padding: 0;
+}
+
+.directory-filter-panel .directory-year-range__heading {
+  align-self: end;
+}
+
+.directory-filter-panel .directory-year-range__heading > span {
+  color: var(--ink);
+  font-size: 0.72rem;
+}
+
+.directory-filter-panel .directory-year-range__heading > strong {
+  font-size: 1.42rem;
+}
+
+.directory-filter-panel .directory-year-range__control {
+  height: 48px;
+  margin-top: 0;
+}
+
+.directory-filter-panel .directory-year-range__track,
+.directory-filter-panel .directory-year-range__selection {
+  top: auto;
+  bottom: 0;
+}
+
+.directory-filter-panel .directory-year-range__control input {
+  inset: auto 0 0;
+  height: 2px;
+}
+
+.records-result-line,
+.people-result-line {
+  min-height: 36px;
+  border-top: 0;
+}
+
+@keyframes directory-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1180px) {
+  .directory-masthead {
+    grid-template-columns: minmax(180px, 0.6fr) 1fr;
+    gap: 22px 48px;
+  }
+
+  .directory-masthead dl {
+    grid-column: 1 / -1;
+    justify-content: start;
+  }
+
+  .records-toolbar,
+  .people-toolbar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .records-search,
+  .people-search {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .directory-filter-panel .directory-year-range {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 8px;
+  }
+
+  .directory-filter-panel__status {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .directory-masthead {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0 24px;
+  }
+
+  .directory-masthead h1 {
+    font-size: clamp(3.25rem, 17vw, 5rem);
+  }
+
+  .directory-masthead > p {
+    font-size: 0.98rem;
+  }
+
+  .directory-masthead dl {
+    grid-column: auto;
+    width: 100%;
+    gap: 18px;
+    justify-content: space-between;
+  }
+
+  .records-search,
+  .people-search {
+    display: block;
+  }
+
+  .records-search > span,
+  .people-search > span {
+    margin-bottom: 4px;
+  }
+
+  .directory-filter-panel__status {
+    grid-column: auto;
+  }
+
+  .directory-filter-panel__status {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 0 4px;
+  }
+
+  .directory-filter-panel__status > span {
+    grid-column: 1;
+  }
+
+  .directory-filter-panel .records-filters,
+  .directory-filter-panel .people-filters {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .directory-filter-reset {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .directory-filter-panel .directory-year-range {
+    padding-top: 12px;
   }
 }
 
@@ -7528,11 +7906,11 @@ a {
 
   .records-masthead {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 42px 0 34px;
+    gap: 16px;
+    padding: 28px 0 24px;
   }
 
-  .records-masthead h1 { font-size: clamp(4rem, 19vw, 6rem); }
+  .records-masthead h1 { font-size: clamp(3.25rem, 17vw, 5rem); }
   .records-masthead dl { gap: 22px; justify-content: space-between; }
   .records-masthead dl div { display: grid; gap: 3px; }
   .records-masthead dt { order: 2; }

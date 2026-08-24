@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 type YearRange = { startYear: number; endYear: number };
@@ -23,7 +23,6 @@ export function useDirectoryUrlFilters<Status extends string>({
   maxYear: number;
 }) {
   const pathname = usePathname();
-  const router = useRouter();
   const searchParams = useSearchParams();
   const urlState = searchParams.toString();
 
@@ -48,16 +47,6 @@ export function useDirectoryUrlFilters<Status extends string>({
   const [yearRange, setYearRange] = useState<YearRange>(readUrl.yearRange);
 
   useEffect(() => {
-    setQuery((current) => current === readUrl.query ? current : readUrl.query);
-    setStatus((current) => current === readUrl.status ? current : readUrl.status);
-    setYearRange((current) =>
-      current.startYear === readUrl.yearRange.startYear && current.endYear === readUrl.yearRange.endYear
-        ? current
-        : readUrl.yearRange
-    );
-  }, [readUrl]);
-
-  useEffect(() => {
     const timeout = window.setTimeout(() => {
       const params = new URLSearchParams(urlState);
       const trimmedQuery = query.trim();
@@ -76,12 +65,12 @@ export function useDirectoryUrlFilters<Status extends string>({
 
       const nextState = params.toString();
       if (nextState !== urlState) {
-        router.replace(nextState ? `${pathname}?${nextState}` : pathname, { scroll: false });
+        window.history.replaceState(null, "", nextState ? `${pathname}?${nextState}` : pathname);
       }
     }, 180);
 
     return () => window.clearTimeout(timeout);
-  }, [defaultStatus, maxYear, minYear, pathname, query, router, status, urlState, yearRange]);
+  }, [defaultStatus, maxYear, minYear, pathname, query, status, urlState, yearRange]);
 
   const reset = () => {
     setQuery("");

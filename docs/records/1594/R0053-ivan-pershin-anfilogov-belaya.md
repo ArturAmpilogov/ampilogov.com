@@ -8,7 +8,7 @@ record_type: писцовое описание поместного жеребь
 people:
   - P0044
 source_id: PUB-PKOU-1594-P979-IVAN-PERSHIN
-archive_reference: "РГАДА, ф. 1209, оп. 1, кн. 399; публикация 1877 года, с. 979"
+archive_reference: "РГАДА, ф. 1209, оп. 1, д. 329 (список XVII века; старый шифр МАМЮ — № 399); публикация 1877 года, с. 979"
 evidence:
   - ../../../public/archive/evidence/publications/piscovye-knigi-1594-1595/pages/0979.png
   - ../../../public/archive/evidence/publications/piscovye-knigi-1594-1595/fragments/0979-ivan-pershin.png
