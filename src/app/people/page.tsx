@@ -29,7 +29,7 @@ export default async function PeoplePage({
           <span className="eyebrow">Документальный архив</span>
           <h1>Профили</h1>
         </div>
-        <p>Носители фамильного ряда и его документированных вариантов по источникам до 1950 года.</p>
+        <p>Носители фамильного ряда и документированные варианты фамилии.</p>
         <dl aria-label="Состав архива">
           <div><dt>Людей</dt><dd>{directory.stats.people}</dd></div>
           <div><dt>Источников</dt><dd>{directory.stats.sources}</dd></div>

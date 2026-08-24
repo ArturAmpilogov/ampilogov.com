@@ -70,28 +70,6 @@ export function RecordsDirectory({
           </div>
         </label>
         <div className="directory-filter-panel">
-          <div className="directory-filter-panel__status">
-            <span>Статус</span>
-            <div className="records-filters" aria-label="Статус расшифровки">
-              {([
-                ["all", "Все"],
-                ["complete", "Расшифрованы"],
-                ["incomplete", "Незавершённые"],
-                ["human", "Нужна помощь"],
-              ] as const).map(([value, label]) => (
-                <button
-                  type="button"
-                  key={value}
-                  className={filter === value ? "is-active" : undefined}
-                  aria-pressed={filter === value}
-                  onClick={() => setFilter(value)}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
-            {isFiltered ? <button className="directory-filter-reset" type="button" onClick={reset}>Сбросить</button> : null}
-          </div>
           <YearRangeFilter
             showBounds={false}
             minYear={minYear}
@@ -103,9 +81,37 @@ export function RecordsDirectory({
         </div>
       </div>
 
-      <div className="records-result-line" aria-live="polite">
-        <strong>{isLoading ? "…" : total}</strong>
-        <span>{query ? "совпадений" : "записей в выборке"}</span>
+      <div className="records-result-line">
+        <span className="directory-result-count" aria-live="polite">
+          <strong>{isLoading ? "…" : total}</strong>
+          <span>{query ? "совпадений" : "записей в выборке"}</span>
+        </span>
+        <span className="directory-result-controls">
+          <label className="directory-status-select">
+            <span>Статус</span>
+            <span className="directory-status-select__field">
+              <select value={filter} onChange={(event) => setFilter(event.target.value as Filter)}>
+                <option value="all">Все</option>
+                <option value="complete">Расшифрованы</option>
+                <option value="incomplete">Незавершённые</option>
+                <option value="human">Нужна помощь</option>
+              </select>
+            </span>
+          </label>
+          <button
+            className="directory-filter-reset"
+            type="button"
+            onClick={reset}
+            disabled={!isFiltered}
+            aria-label="Сбросить фильтры"
+            title="Сбросить фильтры"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5.5 8.5A7.5 7.5 0 1 1 4.8 14" />
+              <path d="M5.5 3.8v4.7H1" />
+            </svg>
+          </button>
+        </span>
       </div>
       {error ? <p className="directory-error" role="alert">{error}</p> : null}
 

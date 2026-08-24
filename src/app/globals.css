@@ -6315,20 +6315,27 @@ a {
   padding-top: 18px;
 }
 
-.records-toolbar,
 .people-toolbar {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: clamp(36px, 4vw, 64px);
+  grid-template-columns: 52px minmax(260px, 1.12fr) minmax(280px, 0.95fr) 74px 110px 20px;
+  column-gap: 22px;
   row-gap: 12px;
   align-items: stretch;
-  padding-bottom: 10px;
+  padding-bottom: 26px;
+}
+
+.records-toolbar {
+  grid-template-columns: 52px minmax(230px, 1.2fr) minmax(190px, 0.9fr) 180px 20px;
+  column-gap: 22px;
+  row-gap: 12px;
+  align-items: stretch;
+  padding-bottom: 26px;
 }
 
 .records-search,
 .people-search {
   display: grid;
   grid-template-rows: minmax(28px, 1fr) 48px;
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
   align-self: stretch;
   row-gap: 7px;
@@ -6358,59 +6365,55 @@ a {
   display: contents;
 }
 
-.directory-filter-panel__status > span {
-  font-size: 0.64rem;
-}
-
-.directory-filter-panel__status {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column: 1 / -1;
-  grid-row: 2;
-  justify-content: start;
-  gap: clamp(16px, 2vw, 32px);
-  min-height: 36px;
-  border-bottom: 0;
-}
-
-.directory-filter-panel .records-filters,
-.directory-filter-panel .people-filters {
-  width: max-content;
-  justify-content: flex-start;
-  gap: 12px;
-}
-
 .directory-filter-reset {
-  align-self: center;
-  padding: 8px 0;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  place-items: center;
   color: var(--muted);
-  border: 0;
-  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
   background: transparent;
   cursor: pointer;
-  font: 700 0.66rem var(--sans);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 160ms ease, border-color 160ms ease;
+  transition: color 160ms ease, border-color 160ms ease, opacity 160ms ease;
+}
+
+.directory-filter-reset svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.directory-filter-reset:disabled {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .directory-filter-reset:hover,
 .directory-filter-reset:focus-visible {
   color: var(--accent);
-  border-bottom-color: currentColor;
+  border-color: currentColor;
 }
 
-.directory-filter-panel .records-filters button,
-.directory-filter-panel .people-filters button {
-  padding: 7px 4px;
-  white-space: nowrap;
-  font-size: 0.66rem;
-}
-
-.directory-filter-panel .directory-year-range {
+.people-toolbar .directory-filter-panel .directory-year-range {
   display: grid;
   grid-template-rows: minmax(28px, 1fr) 48px;
-  grid-column: 2;
+  grid-column: 3 / 6;
+  grid-row: 1;
+  align-self: stretch;
+  row-gap: 7px;
+  padding: 0;
+}
+
+.records-toolbar .directory-filter-panel .directory-year-range {
+  display: grid;
+  grid-template-rows: minmax(28px, 1fr) 48px;
+  grid-column: 3 / 5;
   grid-row: 1;
   align-self: stretch;
   row-gap: 7px;
@@ -6448,8 +6451,103 @@ a {
 
 .records-result-line,
 .people-result-line {
+  display: grid;
   min-height: 36px;
+  align-items: center;
+  column-gap: 22px;
   border-top: 0;
+}
+
+.people-result-line {
+  grid-template-columns: 52px minmax(260px, 1.12fr) minmax(280px, 0.95fr) 74px 110px 20px;
+}
+
+.records-result-line {
+  grid-template-columns: 52px minmax(230px, 1.2fr) minmax(190px, 0.9fr) 180px 20px;
+}
+
+.directory-result-count,
+.directory-result-controls,
+.directory-status-select {
+  display: flex;
+  align-items: center;
+}
+
+.directory-result-count {
+  grid-column: 2;
+  gap: 9px;
+}
+
+.directory-result-controls {
+  display: grid;
+  grid-template-columns: 238px 30px;
+  gap: 10px;
+  width: 278px;
+  justify-content: end;
+  justify-self: end;
+  margin-left: 0;
+}
+
+.people-result-line .directory-result-controls {
+  grid-column: 3 / 6;
+}
+
+.records-result-line .directory-result-controls {
+  grid-column: 3 / 5;
+}
+
+.directory-status-select {
+  display: grid;
+  grid-template-columns: 52px 176px;
+  gap: 10px;
+  width: 238px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.directory-status-select > span:first-child {
+  color: var(--ink);
+  font: 700 0.72rem var(--sans);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.directory-status-select__field {
+  position: relative;
+  width: 176px;
+}
+
+.directory-status-select__field::after {
+  position: absolute;
+  right: 1px;
+  bottom: 9px;
+  color: var(--accent);
+  content: "⌄";
+  font: 700 0.8rem var(--sans);
+  pointer-events: none;
+}
+
+.directory-status-select select {
+  width: 176px;
+  padding: 8px 24px 7px 0;
+  color: var(--ink);
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+  font: 500 0.72rem var(--sans);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.directory-status-select select:hover,
+.directory-status-select select:focus-visible {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 @keyframes directory-enter {
@@ -6472,6 +6570,7 @@ a {
   .people-toolbar {
     grid-template-columns: 1fr;
     gap: 12px;
+    padding-bottom: 20px;
   }
 
   .records-search,
@@ -6486,9 +6585,9 @@ a {
     margin-top: 8px;
   }
 
-  .directory-filter-panel__status {
-    grid-column: 1;
-    grid-row: 3;
+  .records-result-line,
+  .people-result-line {
+    display: flex;
   }
 
 }
@@ -6525,35 +6624,29 @@ a {
     margin-bottom: 4px;
   }
 
-  .directory-filter-panel__status {
-    grid-column: auto;
-  }
-
-  .directory-filter-panel__status {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    padding: 10px 0 4px;
-  }
-
-  .directory-filter-panel__status > span {
-    grid-column: 1;
-  }
-
-  .directory-filter-panel .records-filters,
-  .directory-filter-panel .people-filters {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-content: flex-start;
-    overflow-x: auto;
-  }
-
-  .directory-filter-reset {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
   .directory-filter-panel .directory-year-range {
     padding-top: 12px;
+  }
+
+  .records-result-line,
+  .people-result-line {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 8px 0;
+  }
+
+  .directory-result-controls {
+    grid-template-columns: 176px 30px;
+    width: 216px;
+  }
+
+  .directory-status-select > span:first-child {
+    display: none;
+  }
+
+  .directory-status-select {
+    grid-template-columns: 176px;
+    width: 176px;
   }
 }
 
