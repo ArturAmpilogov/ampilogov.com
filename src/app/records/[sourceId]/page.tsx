@@ -13,6 +13,10 @@ const legacyRecordDestinations: Record<string, string> = {
   "RGADA-210-12-13": "/records?search=RGADA-210-12-13",
 };
 
+function confidenceLabel(confidence: string) {
+  return ({ high: "высокая", medium: "средняя", low: "низкая" } as Record<string, string>)[confidence] ?? confidence;
+}
+
 function interpretationSection(paragraph: string) {
   const match = paragraph.match(/^([А-ЯЁ0-9][А-ЯЁ0-9 ,:;«»()—–-]+)\.\s+([\s\S]+)$/);
   return match ? { heading: match[1], text: match[2] } : { heading: null, text: paragraph };
@@ -128,6 +132,17 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
         </header>
 
+        {record.directoryFacts.length ? (
+          <dl className="record-derived-facts" aria-label="Ключевые факты и расчёты">
+            {record.directoryFacts.map((fact) => (
+              <div key={`${fact.label}:${fact.value}`}>
+                <dt>{fact.label}</dt>
+                <dd>{fact.value}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
+
         <section className={`record-texts${people.length >= 6 ? " is-deep-reading" : ""}`} aria-label="Тексты записи">
           <div className="record-literal">
             <div className="record-literal-heading">
@@ -140,8 +155,10 @@ export default async function RecordPage({ params }: RecordPageProps) {
               <blockquote>{record.literal}</blockquote>
             ) : (
               <div className="record-text-missing">
-                <strong>Полного текста пока нет</strong>
-                <p>Запись остаётся в очереди. Краткое описание не считается расшифровкой.</p>
+                <strong>{record.status.includes("index-only") ? "Это сводная карточка именного индекса" : "Полного текста пока нет"}</strong>
+                <p>{record.status.includes("index-only")
+                  ? "Индексные события, имена, даты и ссылки уже собраны ниже. Буквальные тексты оригинальных актов хранятся в отдельных карточках по мере проверки сканов."
+                  : "Запись остаётся в очереди. Краткое описание не считается расшифровкой."}</p>
               </div>
             )}
           </div>
@@ -306,6 +323,71 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
         </section>
 
+        {record.fieldFacts.length ? (
+          <section className="record-extracted" aria-labelledby="record-extracted-title">
+            <div className="record-section-heading">
+              <div>
+                <span className="section-label">Все данные строки</span>
+                <h2 id="record-extracted-title">Что извлечено из документа</h2>
+              </div>
+              <span>{record.fieldFacts.length}</span>
+            </div>
+            <dl>
+              {record.fieldFacts.map((fact, index) => (
+                <div key={`${fact.label}:${index}`}>
+                  <dt>{fact.label}</dt>
+                  <dd>{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
+
+        {record.contextSections.length ? (
+          <section className="record-context" aria-labelledby="record-context-title">
+            <div className="record-section-heading">
+              <div>
+                <span className="section-label">За пределами одной строки</span>
+                <h2 id="record-context-title">Исторический и исследовательский контекст</h2>
+              </div>
+              <span>{record.contextSections.reduce((total, section) => total + section.items.length, 0)}</span>
+            </div>
+            <div className="record-context-sections">
+              {record.contextSections.map((section) => (
+                <section key={section.heading}>
+                  <h3>{section.heading}</h3>
+                  <dl>
+                    {section.items.map((item, index) => (
+                      <div key={`${item.label}:${index}`}>
+                        <dt>{item.label}</dt>
+                        <dd>{item.value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {record.placeTags.length ? (
+          <section className="record-geography" aria-labelledby="record-geography-title">
+            <div>
+              <span className="section-label">Географические теги</span>
+              <h2 id="record-geography-title">Все места, связанные с записью</h2>
+            </div>
+            <div className="record-geography-tags">
+              {record.placeTags.map((tag, index) => (
+                <Link href="/map" key={`${tag.relation}:${tag.label}:${index}`}>
+                  <small>{tag.relation}</small>
+                  <strong>{tag.label}</strong>
+                  {tag.confidence ? <span>уверенность: {confidenceLabel(tag.confidence)}</span> : null}
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <section className={`record-source ${hasEvidence ? "has-image" : "is-restricted"}`} aria-labelledby="source-title">
           {hasEvidence ? (
             <div className="record-evidence-stack">
@@ -343,6 +425,9 @@ export default async function RecordPage({ params }: RecordPageProps) {
               {record.originalUrl ? <a href={record.originalUrl} target="_blank" rel="noreferrer">{record.originalLabel} ↗</a> : null}
               {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">{record.indexedLabel} ↗</a> : null}
               {record.repositoryUrl ? <a href={record.repositoryUrl} target="_blank" rel="noreferrer">Архив-хранитель ↗</a> : null}
+              {record.additionalLinks.map((link) => (
+                <a href={link.url} key={`${link.label}:${link.url}`} target="_blank" rel="noreferrer">{link.label} ↗</a>
+              ))}
             </div>
             {record.sourceCopies.length > 1 ? (
               <div className="record-source-copies">
@@ -419,7 +504,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
                 <article key={`${migration.personId ?? "unknown"}:${index}`}>
                   <strong>{migration.from} <span>→</span> {migration.to}</strong>
                   <p>{migration.basis}</p>
-                  <small>Уверенность: {migration.confidence}</small>
+                  <small>Уверенность: {confidenceLabel(migration.confidence)}</small>
                 </article>
               ))}
             </div>

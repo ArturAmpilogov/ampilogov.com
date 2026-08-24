@@ -121,7 +121,7 @@ export function RecordsDirectory({
                 <RecordTypeIcon eventType={record.eventType} />
                 <span>{record.eventLabel}</span>
               </small>
-              <strong>{record.primaryPerson?.name}</strong>
+              <strong>{record.primaryPerson?.name ?? record.eventLabel}</strong>
               {record.primaryPerson?.alternateNames.length ? (
                 <span className="record-row-alternates">
                   {record.primaryPerson.alternateNames.join(" · ")}

@@ -6311,6 +6311,111 @@ a {
 .record-state.is-human-review { color: #8a682d; }
 .record-state.is-source-needed { color: var(--accent); }
 
+.record-derived-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1px;
+  margin: 0;
+  border-bottom: 1px solid var(--ink);
+  background: var(--line);
+}
+
+.record-derived-facts > div {
+  min-width: 0;
+  padding: 18px 20px;
+  background: color-mix(in srgb, var(--paper) 94%, var(--accent) 6%);
+}
+
+.record-derived-facts dt,
+.record-extracted dt,
+.record-context dt {
+  color: var(--accent);
+  font: 700 0.61rem/1.35 var(--sans);
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.record-derived-facts dd {
+  margin: 7px 0 0;
+  font: 400 1.12rem/1.35 var(--serif);
+}
+
+.record-extracted,
+.record-context,
+.record-geography {
+  padding: clamp(34px, 4vw, 58px) 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.record-extracted > dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.record-extracted > dl > div,
+.record-context dl > div {
+  padding: 14px 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.record-extracted dd,
+.record-context dd {
+  margin: 7px 0 0;
+  color: #4f4b44;
+  font: 400 0.98rem/1.58 var(--serif);
+  white-space: pre-wrap;
+}
+
+.record-context-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px 48px;
+  margin-top: 30px;
+}
+
+.record-context-sections > section { min-width: 0; }
+.record-context-sections h3 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ink);
+  font: 400 1.42rem/1.2 var(--serif);
+}
+
+.record-geography > div:first-child h2 {
+  margin-top: 10px;
+  font: 400 clamp(1.7rem, 2.6vw, 2.65rem)/1.02 var(--serif);
+  letter-spacing: -0.032em;
+}
+
+.record-geography-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.record-geography-tags a {
+  display: grid;
+  gap: 4px;
+  min-width: min(260px, 100%);
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  background: color-mix(in srgb, var(--paper) 96%, var(--accent) 4%);
+}
+
+.record-geography-tags small,
+.record-geography-tags span {
+  color: var(--muted);
+  font: 700 0.57rem/1.3 var(--sans);
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.record-geography-tags strong { font: 400 1rem/1.35 var(--serif); }
+.record-geography-tags a:hover { border-color: var(--accent); }
+
 .record-source {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
@@ -7128,6 +7233,9 @@ a {
   .record-source.is-restricted .record-source-meta { min-height: 0; }
   .record-source.is-restricted .record-source-meta dl { grid-template-columns: 1fr; }
   .record-source-copies ol { grid-template-columns: 1fr; }
+  .record-extracted > dl,
+  .record-context-sections { grid-template-columns: 1fr; }
+  .record-derived-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .record-people-list > a,
   .record-people-list > div {

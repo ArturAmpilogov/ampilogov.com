@@ -122,9 +122,11 @@ export function PeopleDirectory({
       const matchesFilter = filter === "all" ||
         (filter === "review" ? person.needsReview : !person.needsReview);
       const span = spansByPerson.get(person.personId);
+      const fullRange = yearRange.startYear === yearBounds.minYear &&
+        yearRange.endYear === yearBounds.maxYear;
       const matchesYear = span
         ? span.minYear <= yearRange.endYear && span.maxYear >= yearRange.startYear
-        : false;
+        : fullRange;
       return matchesQuery && matchesFilter && matchesYear;
     });
   }, [filter, people, query, spansByPerson, yearRange]);
