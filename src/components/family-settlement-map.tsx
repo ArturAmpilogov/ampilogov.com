@@ -155,8 +155,11 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     selected.activeEvents.flatMap((event) => event.people.map((person) => person.name)),
   ).size : 0;
   const selectedExplanationCount = selected ? selected.activeEvents.reduce((total, event) => {
-    const peopleExplanations = event.people.reduce((sum, person) => sum + person.nameInsights.length, 0);
-    return total + (peopleExplanations || event.nameInsights.length);
+    const explanations = new Set([
+      ...event.nameInsights,
+      ...event.people.flatMap((person) => person.nameInsights),
+    ].map((insight) => `${insight.label}\n${insight.text}`));
+    return total + explanations.size;
   }, 0) : 0;
   const activeMigrations = useMemo(() => migrations.filter((migration) =>
     migration.year <= year && summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)

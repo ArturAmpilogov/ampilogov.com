@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import type { ArchiveRecord } from "@/lib/genealogy";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { YearRangeFilter } from "@/components/year-range-filter";
+import { useDirectoryUrlFilters } from "@/components/use-directory-url-filters";
 
 type Filter = "all" | "complete" | "incomplete" | "human";
+const FILTERS = ["all", "complete", "incomplete", "human"] as const satisfies readonly Filter[];
 
 function normalize(value: string) {
   return value
@@ -24,13 +26,9 @@ function recordYear(record: ArchiveRecord) {
 
 export function RecordsDirectory({
   records,
-  initialQuery = "",
 }: {
   records: ArchiveRecord[];
-  initialQuery?: string;
 }) {
-  const [query, setQuery] = useState(initialQuery);
-  const [filter, setFilter] = useState<Filter>("all");
   const yearBounds = useMemo(() => {
     const years = records
       .map(recordYear)
@@ -40,10 +38,21 @@ export function RecordsDirectory({
       maxYear: Math.max(...years),
     };
   }, [records]);
-  const [yearRange, setYearRange] = useState(() => ({
-    startYear: yearBounds.minYear,
-    endYear: yearBounds.maxYear,
-  }));
+  const {
+    query,
+    setQuery,
+    status: filter,
+    setStatus: setFilter,
+    yearRange,
+    setYearRange,
+    reset,
+    isFiltered,
+  } = useDirectoryUrlFilters({
+    statuses: FILTERS,
+    defaultStatus: "all",
+    minYear: yearBounds.minYear,
+    maxYear: yearBounds.maxYear,
+  });
 
   const filtered = useMemo(() => {
     const needle = normalize(query);
@@ -80,32 +89,41 @@ export function RecordsDirectory({
             {query ? <button type="button" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : null}
           </div>
         </label>
-        <div className="records-filters" aria-label="Статус расшифровки">
-          {([
-            ["all", "Все"],
-            ["complete", "Расшифрованы"],
-            ["incomplete", "Незавершённые"],
-            ["human", "Нужна помощь"],
-          ] as const).map(([value, label]) => (
-            <button
-              type="button"
-              key={value}
-              className={filter === value ? "is-active" : undefined}
-              onClick={() => setFilter(value)}
-            >
-              {label}
-            </button>
-          ))}
+        <div className="directory-filter-panel">
+          <div className="directory-filter-panel__heading">
+            <span>Фильтры</span>
+            {isFiltered ? <button type="button" onClick={reset}>Сбросить</button> : null}
+          </div>
+          <div className="directory-filter-panel__status">
+            <span>Статус</span>
+            <div className="records-filters" aria-label="Статус расшифровки">
+              {([
+                ["all", "Все"],
+                ["complete", "Расшифрованы"],
+                ["incomplete", "Незавершённые"],
+                ["human", "Нужна помощь"],
+              ] as const).map(([value, label]) => (
+                <button
+                  type="button"
+                  key={value}
+                  className={filter === value ? "is-active" : undefined}
+                  aria-pressed={filter === value}
+                  onClick={() => setFilter(value)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <YearRangeFilter
+            minYear={yearBounds.minYear}
+            maxYear={yearBounds.maxYear}
+            startYear={yearRange.startYear}
+            endYear={yearRange.endYear}
+            onChange={setYearRange}
+          />
         </div>
       </div>
-
-      <YearRangeFilter
-        minYear={yearBounds.minYear}
-        maxYear={yearBounds.maxYear}
-        startYear={yearRange.startYear}
-        endYear={yearRange.endYear}
-        onChange={setYearRange}
-      />
 
       <div className="records-result-line" aria-live="polite">
         <strong>{filtered.length}</strong>
@@ -156,9 +174,7 @@ export function RecordsDirectory({
             <strong>Записей не найдено</strong>
             <p>Попробуйте часть фамилии, имя или год.</p>
             <button type="button" onClick={() => {
-              setQuery("");
-              setFilter("all");
-              setYearRange({ startYear: yearBounds.minYear, endYear: yearBounds.maxYear });
+              reset();
             }}>Сбросить фильтры</button>
           </div>
         ) : null}

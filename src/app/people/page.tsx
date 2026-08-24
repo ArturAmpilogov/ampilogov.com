@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { PeopleDirectory } from "@/components/people-directory";
 import { SiteHeader } from "@/components/site-header";
@@ -15,7 +16,7 @@ export default async function PeoplePage({
   searchParams: Promise<{ person?: string; search?: string }>;
 }) {
   const directory = getPeopleDirectory();
-  const { person, search = "" } = await searchParams;
+  const { person } = await searchParams;
   if (person && directory.people.some((entry) => entry.personId === person)) {
     redirect(`/people/${encodeURIComponent(person)}`);
   }
@@ -38,7 +39,9 @@ export default async function PeoplePage({
           <div><dt>Расшифровано</dt><dd>{directory.stats.transcribedSources}/{directory.stats.sources}</dd></div>
         </dl>
       </header>
-      <PeopleDirectory people={directory.people} initialQuery={search} />
+      <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
+        <PeopleDirectory people={directory.people} />
+      </Suspense>
     </main>
   );
 }

@@ -2534,6 +2534,11 @@ export function getFamilyMapDirectory() {
       return mentionHasAmpilogovSurname(mention, allPeopleById);
     });
     if (!sourceMentions.length) continue;
+    // The family-name subset decides whether a record belongs on the map and
+    // which people create generations or routes. Once a point is open, show
+    // every named participant, official, candidate, and reconstructed person
+    // from that record so the “Имена и смысл” panel does not discard context.
+    const displayMentions = source.mentions?.length ? source.mentions : sourceMentions;
     const primaryMention = (
       source.primaryPersonId
         ? sourceMentions.find((mention) => mention.personId === source.primaryPersonId)
@@ -2557,6 +2562,22 @@ export function getFamilyMapDirectory() {
     if (!familyIds.length) {
       familyIds.push(documentedSourceFamilyId(sourceMentions, placeId) ?? `source:${source.sourceId}`);
     }
+    const primaryNameInsights = primaryMention?.nameAnalysis?.length
+      ? primaryMention.nameAnalysis
+      : primaryArchivePerson?.nameAnalysis ?? [];
+    const sourceContextInsights = sourceContextSections(source).flatMap((section) => (
+      section.items.map((item) => ({
+        label: `${section.heading} · ${item.label}`,
+        text: item.value,
+      }))
+    ));
+    const seenInsights = new Set<string>();
+    const mapInsights = [...primaryNameInsights, ...sourceContextInsights].filter((insight) => {
+      const key = `${insight.label}\n${insight.text}`;
+      if (seenInsights.has(key)) return false;
+      seenInsights.add(key);
+      return true;
+    });
 
     const event: FamilyMapEvent = {
       sourceId: source.sourceId,
@@ -2565,7 +2586,7 @@ export function getFamilyMapDirectory() {
       eventLabel: sourceEventLabel(source),
       personIds,
       personNames,
-      people: sourceMentions.flatMap((mention) => {
+      people: displayMentions.flatMap((mention) => {
         const name = sourceMentionName(mention);
         if (!name) return [];
         const linkedPerson = mention.personId ? allPeopleById.get(mention.personId) : undefined;
@@ -2596,9 +2617,7 @@ export function getFamilyMapDirectory() {
       meaning: source.transcription?.modernInterpretation?.trim() ||
         source.summary?.text?.trim() ||
         `Запись «${sourceEventLabel(source).toLocaleLowerCase("ru")}» связывает ${primaryArchivePerson?.name ?? "представителя семьи Ампилоговых"} с местом «${placeLabels[placeId] ?? placeId}» (${sourceDate(source)}).`,
-      nameInsights: primaryMention?.nameAnalysis?.length
-        ? primaryMention.nameAnalysis
-        : primaryArchivePerson?.nameAnalysis ?? [],
+      nameInsights: mapInsights,
       familyIds,
       generation: Math.max(1, ...generationPersonIds.map((personId) => generationOf(personId))),
     };
