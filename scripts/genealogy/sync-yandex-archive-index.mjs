@@ -118,19 +118,21 @@ for (const result of index.results) {
     : [];
   if (!linked.length && !copiedEvidence.length) continue;
 
-  result.sourceIds = [...new Set([
-    ...(result.sourceIds ?? []),
-    ...linked.map((source) => source.sourceId),
-  ])].sort();
-  result.sourceFiles = [...new Set([
-    ...(result.sourceFiles ?? []),
-    ...linked.map((source) => source.file),
-  ])].sort();
-  result.evidencePaths = [...new Set([
-    ...(result.evidencePaths ?? []),
-    ...copiedEvidence,
-    ...linked.flatMap((source) => source.evidencePaths),
-  ])].sort();
+  // Rebuild generated links from the current tree instead of accumulating
+  // paths from earlier runs. This matters when a source is merged or renamed
+  // while another research task is updating the shared index.
+  result.sourceIds = [
+    ...new Set(linked.map((source) => source.sourceId)),
+  ].sort();
+  result.sourceFiles = [
+    ...new Set(linked.map((source) => source.file)),
+  ].sort();
+  result.evidencePaths = [
+    ...new Set([
+      ...copiedEvidence,
+      ...linked.flatMap((source) => source.evidencePaths),
+    ]),
+  ].sort();
 
   if (
     !linked.length &&
@@ -190,7 +192,13 @@ index.stats = {
     (result) => result.reviewStatus === "already-present-evidence-missing",
   ).length,
 };
-index.lastSyncedAt = "2026-08-23";
+index.status =
+  index.stats.completePositions === index.reportedResultCount &&
+  index.stats.pendingPositions === 0 &&
+  index.stats.evidenceMissingPositions === 0
+    ? "review-complete"
+    : "inventory-complete-review-in-progress";
+index.lastSyncedAt = new Date().toISOString().slice(0, 10);
 
 const temporaryPath = `${searchPath}.tmp-${process.pid}`;
 await writeFile(temporaryPath, `${JSON.stringify(index, null, 2)}\n`, "utf8");

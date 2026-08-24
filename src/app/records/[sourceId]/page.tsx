@@ -13,6 +13,21 @@ const legacyRecordDestinations: Record<string, string> = {
   "RGADA-210-12-13": "/records?search=RGADA-210-12-13",
 };
 
+function interpretationSection(paragraph: string) {
+  const match = paragraph.match(/^([А-ЯЁ0-9][А-ЯЁ0-9 ,:;«»()—–-]+)\.\s+([\s\S]+)$/);
+  return match ? { heading: match[1], text: match[2] } : { heading: null, text: paragraph };
+}
+
+const personRoleOrder: Record<string, number> = {
+  "человек, давший название": 0,
+  "владелец поместья": 1,
+  муж: 2,
+  "ведущий кандидат на мужа": 3,
+  "исследовательский кандидат": 4,
+  писец: 5,
+  "должностное лицо": 6,
+};
+
 export function generateStaticParams() {
   return getRecordsDirectory().records.map((record) => ({ sourceId: record.sourceId }));
 }
@@ -43,6 +58,39 @@ export default async function RecordPage({ params }: RecordPageProps) {
   if (!record) notFound();
   const hasEvidenceAsset = Boolean(record.evidenceFragments.length || record.evidenceUrl);
   const hasEvidence = record.mayDisplayEvidence && hasEvidenceAsset;
+  const people = [...record.people].sort(
+    (left, right) => (personRoleOrder[left.role] ?? 10) - (personRoleOrder[right.role] ?? 10),
+  );
+  const nameExplanationCount = people.reduce(
+    (total, person) => total + person.nameAnalysis.length,
+    0,
+  );
+  const eponym = people.find((person) => person.role === "человек, давший название");
+  const laterEstateHolders = ["Микита Старков", "Верига Булбин", "Семён Юрлов"]
+    .map((name) => people.find((person) => person.name === name))
+    .filter((person): person is NonNullable<typeof person> => Boolean(person));
+  const researchCandidate = people.find((person) => person.role === "ведущий кандидат на мужа") ??
+    people.find((person) => person.role === "исследовательский кандидат");
+  const proofThreshold = eponym?.nameAnalysis.find((item) => item.label === "Что должно доказать тождество кандидата");
+  const eponymStoryLabels = [
+    "Главный вывод на сегодня",
+    "Что известно о самом человеке",
+    "Как найдено имя",
+    "Смысл названия",
+    "Разбор по частям",
+    "Форма имени",
+    "Крестильное и повседневное имя",
+    "Самый ранний прямой носитель имени: Анфилоф Селиванов",
+    "Ближайшая патронимическая параллель: Тонкой Онфилогов",
+    "Может ли отец Тонкого быть нашим Онфилогом",
+    "Документированный путь из Прилука через Тверь",
+    "Новый тверской след: «Анфилов починок»",
+    "Почему Анфилов починок ещё не наше Онфилогово",
+    "Что должно доказать тождество кандидата",
+  ];
+  const eponymStory = eponymStoryLabels
+    .map((label) => eponym?.nameAnalysis.find((item) => item.label === label))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   return (
     <main className="record-page">
@@ -80,7 +128,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
         </header>
 
-        <section className="record-texts" aria-label="Тексты записи">
+        <section className={`record-texts${people.length >= 6 ? " is-deep-reading" : ""}`} aria-label="Тексты записи">
           <div className="record-literal">
             <div className="record-literal-heading">
               <div>
@@ -99,8 +147,156 @@ export default async function RecordPage({ params }: RecordPageProps) {
           </div>
           <div className="record-modern">
             <span className="section-label">Современное чтение</span>
-            <h2>Имена и смысл</h2>
-            <p>{record.modernInterpretation}</p>
+            <h2>{record.people.length ? "Имена, биографии и смысл" : "Смысл документа"}</h2>
+            <div className="record-modern-sections">
+              <section>
+                <h3>{record.people.length ? `Имена: ${people.length} · пояснений: ${nameExplanationCount}` : "Что именно установлено"}</h3>
+                {record.people.length ? (
+                  <p className="record-modern-section-lede">
+                    Здесь разобрано не только чтение имён. Для каждого человека показаны его роль,
+                    варианты написания, родственные и владельческие связи, хронология, география,
+                    сила доказательства и точная граница между фактом и гипотезой.
+                  </p>
+                ) : (
+                  <p className="record-modern-section-lede">
+                    Это общий документ или архивная зацепка без доступного поимённого списка. Ниже показан установленный исторический контекст; персональные карточки появятся только после обнаружения фамилии в оригинале или надёжной расшифровке.
+                  </p>
+                )}
+                {record.people.length ? (
+                  <nav className="record-name-index" aria-label="Указатель имён в разборе">
+                    <span>Перейти к человеку</span>
+                    <div>
+                      {people.map((person, index) => (
+                        <a href={`#record-person-${index}`} key={`${person.personId ?? person.name}:index`}>
+                          {person.name}
+                        </a>
+                      ))}
+                    </div>
+                  </nav>
+                ) : null}
+                {eponym ? (
+                  <div className="record-name-dossier" aria-label="Подробный вывод об имени Онфилог и названии Онфилогово">
+                    <header>
+                      <span>Имя, топоним и найденный человек</span>
+                      <h4>Что уже можно рассказать об Онфилоге</h4>
+                      <p>
+                        Ниже не словарная справка, а цепочка доказательства: что сообщает само название,
+                        каким могло быть крестильное имя, кто найден в документах нужного поколения и
+                        где заканчивается установленный факт.
+                      </p>
+                    </header>
+                    <dl>
+                      {eponymStory.map((item, index) => (
+                        <div className={index === 0 ? "is-verdict" : undefined} key={item.label}>
+                          <dt>{item.label}</dt>
+                          <dd>{item.text}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                    {researchCandidate ? (
+                      <aside>
+                        <span>Параллельная владельческая гипотеза</span>
+                        <strong>{researchCandidate.name}</strong>
+                        <p>
+                          {researchCandidate.nameAnalysis[0]?.text ?? researchCandidate.details[0]}
+                          {proofThreshold ? ` ${proofThreshold.text}` : ""}
+                        </p>
+                      </aside>
+                    ) : null}
+                  </div>
+                ) : null}
+                {laterEstateHolders.length === 3 ? (
+                  <div className="record-name-overview" aria-label="Что произошло с владением после 1634/1635 года">
+                    {laterEstateHolders.map((person, index) => (
+                      <section key={person.name}>
+                        <span>{index + 1} · новый документ XVII века</span>
+                        <h4>{person.name}</h4>
+                        <p>{person.nameAnalysis[0]?.text ?? person.details[0]}</p>
+                      </section>
+                    ))}
+                    <section>
+                      <span>Вывод из трёх статей</span>
+                      <h4>Бывшее владение Стефаниды распалось</h4>
+                      <p>
+                        Анфилогово оказалось у Старкова; Никольское Свечино, Садыково и Ишково —
+                        у Булбина; Воронино и Попово — у Юрлова. Все они уже названы пустошами.
+                        Это подтверждает продолжение истории именно нашего селения, но ни одного
+                        из трёх позднейших держателей нельзя называть основателем.
+                      </p>
+                    </section>
+                  </div>
+                ) : null}
+                {record.people.length ? (
+                  <ul className="record-modern-names">
+                    {people.map((person, index) => (
+                    <li
+                      className={person.role === "человек, давший название" ? "is-eponym" : undefined}
+                      id={`record-person-${index}`}
+                      key={`${person.personId ?? person.name}:${index}`}
+                    >
+                      {person.role === "человек, давший название" ? (
+                        <span className="record-modern-name-kicker">Главный человек этой находки</span>
+                      ) : null}
+                      <div className="record-modern-name-heading">
+                        <strong>{person.name}</strong>
+                        <span>{person.eventRole ?? person.role}</span>
+                      </div>
+                      {person.alternateNames.length ? (
+                        <p className="record-modern-name-variants">
+                          <b>Формы имени:</b> {person.alternateNames.join(" · ")}
+                        </p>
+                      ) : null}
+                      {person.details.map((detail, detailIndex) => (
+                        <p className="record-modern-name-detail" key={`${detail}:${detailIndex}`}>{detail}</p>
+                      ))}
+                      {person.nameAnalysis.length ? (
+                        <dl className="record-modern-name-analysis">
+                          {person.nameAnalysis.map((item, itemIndex) => (
+                            <div
+                              className={item.label === "Главный вывод на сегодня" ? "is-verdict" : undefined}
+                              key={`${item.label}:${itemIndex}`}
+                            >
+                              <dt>{item.label}</dt>
+                              <dd>{item.text}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                      ) : null}
+                      {person.places.map((place, placeIndex) => (
+                        <p className="record-modern-name-place" key={`${place.relation}:${place.label}:${placeIndex}`}>
+                          <b>{place.relation}:</b> {place.label}
+                        </p>
+                      ))}
+                    </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="record-text-missing">
+                    <strong>Поимённого списка в доступной части источника нет</strong>
+                    <p>Здесь собраны содержание приказа или ведомости, обстоятельства переселения, маршрут, даты, архивные шифры и направление дальнейшего поиска фамилии.</p>
+                  </div>
+                )}
+              </section>
+              <section>
+                <h3>Смысл: что эта запись добавляет к истории семьи</h3>
+                <p className="record-modern-section-lede">
+                  Ниже — связное объяснение самого источника: какое событие он фиксирует,
+                  кого называет, с какими местами и родственниками связывает и что именно
+                  добавляет к истории семьи или её переселения.
+                </p>
+                <div className="record-interpretation-sections">
+                  {record.modernInterpretation.split(/\n{2,}/).map((paragraph, index) => {
+                    const section = interpretationSection(paragraph);
+                    return (
+                      <section key={index}>
+                        {section.heading ? <h4>{section.heading}</h4> : null}
+                        <p>{section.text}</p>
+                      </section>
+                    );
+                  })}
+                </div>
+              </section>
+            </div>
             {record.summary && record.summary !== record.modernInterpretation ? (
               <details>
                 <summary>Рабочее описание — не расшифровка</summary>
@@ -188,7 +384,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
           <div className="record-people-list">
             {record.people.map((person, index) => person.personId ? (
               <Link href={`/people/${encodeURIComponent(person.personId)}`} key={`${person.personId}:${index}`}>
-                <small>{person.role}</small>
+                <small>{person.eventRole ?? person.role}</small>
                 <strong>{person.name}</strong>
                 {person.alternateNames.length ? <i>{person.alternateNames.join(" · ")}</i> : null}
                 {person.places.length || person.details.length ? <em>{[
@@ -199,7 +395,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
               </Link>
             ) : (
               <div key={`${person.name}:${index}`}>
-                <small>{person.role}</small>
+                <small>{person.eventRole ?? person.role}</small>
                 <strong>{person.name}</strong>
                 {person.alternateNames.length ? <i>{person.alternateNames.join(" · ")}</i> : null}
                 {person.places.length || person.details.length ? <em>{[

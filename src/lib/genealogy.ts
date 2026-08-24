@@ -53,6 +53,7 @@ type FamilyRecord = {
 type SourceMention = {
   personId?: string;
   role?: string;
+  eventRole?: string;
   displayName?: string;
   patronymic?: string;
   patronymicEvidence?: {
@@ -65,6 +66,7 @@ type SourceMention = {
   nameAsIndexed?: string;
   nameAsTranscribed?: string;
   modernName?: string;
+  status?: string;
   socialStatus?: {
     asWritten?: string;
     normalized?: string;
@@ -76,6 +78,10 @@ type SourceMention = {
   eventAssociation?: "child" | "groom" | "bride" | "couple" | "unknown";
   age?: unknown;
   relationshipNote?: string;
+  nameAnalysis?: Array<{
+    label: string;
+    text: string;
+  }>;
   uncertainties?: string[];
   places?: Array<{
     type?: "origin" | "residence" | "registration" | "estate-affiliation";
@@ -118,6 +124,8 @@ type SourceRecord = {
       deathIso?: string;
       burialIso?: string;
       marriageIso?: string;
+      yearFrom?: number;
+      yearTo?: number;
     };
     place?: { normalized?: string; asIndexed?: string; placeId?: string };
   };
@@ -171,11 +179,13 @@ export type ArchiveSourceCopy = {
 export type ArchiveRecordPerson = {
   personId: string | null;
   role: string;
+  eventRole: string | null;
   name: string;
   patronymic: string | null;
   alternateNames: string[];
   places: Array<{ relation: string; label: string; confidence: string }>;
   details: string[];
+  nameAnalysis: Array<{ label: string; text: string }>;
 };
 
 export type MigrationObservation = {
@@ -379,6 +389,18 @@ export type FamilyMapEvent = {
   eventLabel: string;
   personIds: string[];
   personNames: string[];
+  people: Array<{
+    personId: string | null;
+    name: string;
+    role: string;
+    variants: string[];
+    details: string[];
+  }>;
+  meaning: string;
+  nameInsights: Array<{
+    label: string;
+    text: string;
+  }>;
   familyIds: string[];
   generation: number;
 };
@@ -474,6 +496,8 @@ const eventLabels: Record<string, string> = {
   "yard-and-garden-allocation": "Отвод двора и огорода",
   "resettlement-and-land-allocation": "Переселение и земельный отвод",
   "permanent-settlement-list": "Список переселенцев",
+  "resettlement-request": "Заявление о переселении",
+  "resettlement-aid": "Помощь переселенцу",
   "negative-finding": "Опровергнутая привязка",
   "witness-testimony": "Показание",
   interrogation: "Допрос",
@@ -491,6 +515,7 @@ const roleLabels: Record<string, string> = {
   bride: "невеста",
   "bride-father": "отец невесты",
   spouse: "супруг(а)",
+  husband: "муж",
   godparent: "восприемник",
   godfather: "восприемник",
   godmother: "восприемница",
@@ -508,7 +533,9 @@ const roleLabels: Record<string, string> = {
   "new-serviceman": "новик, принятый на службу",
   landholder: "владелец поместья",
   "previous-holder": "прежний владелец поместья",
+  "leading-husband-candidate": "ведущий кандидат на мужа",
   eponym: "человек, давший название",
+  candidate: "исследовательский кандидат",
   grandson: "внук",
   grandfather: "дед",
   son: "сын",
@@ -551,6 +578,29 @@ const roleLabels: Record<string, string> = {
   "participant-in-land-record": "участник отказной записи",
   "named-person": "названное лицо",
   settler: "поселенец",
+  resettler: "переселенец",
+  "named-resettler": "переселенец, названный в списке",
+  migrant: "переселенец",
+  "departed-resettler": "переселенец, отмеченный как выбывший",
+  "recorded-as-departed-resettler": "переселенец, отмеченный как выбывший",
+  "reported-resettler": "переселенец, названный в сообщении",
+  "indexed-resettler": "переселенец из именного указателя",
+  "indexed-resettler-in-case": "переселенец, связанный указателем с архивным делом",
+  "indexed-resettler-from-anpilogova-village": "переселенец из деревни Анпилоговой",
+  "prospective-resettler": "проситель о переселении",
+  "prospective-resettler-family-member": "член семьи просителя о переселении",
+  "migrant-household-head": "глава переселившегося двора",
+  "migrated-one-dweller-household-head": "глава переселившегося однодворческого двора",
+  "migrant-requiring-relief": "нуждающийся переселенец",
+  "resettler-family-head": "глава семьи переселенцев",
+  "resettler-household-head": "глава двора переселенцев",
+  "resettler-son": "сын переселенца",
+  "resettler-grandson": "внук переселенца",
+  "revision-household-head-and-resettler": "глава ревизской семьи и переселенец",
+  "resettler-and-authorized-representative": "переселенец и доверенный представитель",
+  "resettler-and-group-representative": "переселенец и представитель группы",
+  "resettled-householder-surname": "фамилия переселившегося хозяина двора",
+  "unresolved-resettler-households": "семьи переселенцев, имена которых уточняются",
   "regimental-cossack": "полковой казак",
   "head-of-household": "глава семьи",
   uncertain: "роль уточняется",
@@ -558,8 +608,58 @@ const roleLabels: Record<string, string> = {
 
 const placeRelationLabels: Record<string, string> = {
   origin: "происхождение",
+  "administrative-origin": "место происхождения по административной записи",
+  "listed-origin": "происхождение по списку",
+  "reported-origin": "указанное происхождение",
+  "origin-as-written": "происхождение как записано",
+  "origin-before-migration": "место до переселения",
+  "migration-origin-region": "регион исхода",
+  "origin-region": "регион происхождения",
+  "migration-origin": "откуда переселился",
+  "migration-destination": "куда переселился",
+  "documented-destination": "подтверждённое место прибытия",
+  "documented-resettlement-destination": "подтверждённое место переселения",
+  "prospective-migration-destination": "предполагаемое место переселения",
+  "prospective-migration-region": "предполагаемый регион переселения",
+  resettlement: "переселение",
+  "resettlement-registration": "приписка после переселения",
+  "resettlement-enrollment-destination": "место причисления после переселения",
   residence: "местожительство",
+  resident: "житель",
+  "documented-residence": "подтверждённое местожительство",
+  "reported-residence": "указанное местожительство",
+  "temporary-residence": "временное местожительство",
+  "family-residence": "местожительство семьи",
+  "household-head-residence": "местожительство главы двора",
+  "residence-before-marriage": "местожительство до брака",
+  "resident-and-marriage": "жительство и место брака",
+  "residence-and-marriage": "жительство и место брака",
+  "marriage-and-settlement": "брак и поселение",
+  "marriage-and-family-settlement": "брак и место семейного поселения",
+  "later-documented-residence": "позднее подтверждённое местожительство",
+  "documented-presence": "подтверждённое присутствие",
+  "documented-presence-after-migration": "подтверждённое место после переселения",
+  "documented-presence-after-resettlement": "подтверждённое место после переселения",
+  birth: "место рождения",
+  "birth-and-baptism": "место рождения и крещения",
+  "birth-or-baptism": "место рождения или крещения",
+  marriage: "место брака",
+  "marriage-event": "место брака",
+  death: "место смерти",
+  "death-and-burial": "место смерти и погребения",
+  "death-and-burial-event": "место смерти и погребения",
+  "death-or-burial": "место смерти или погребения",
+  "probable-death-match": "вероятное место смерти",
+  household: "место двора",
+  "household-registration": "место регистрации двора",
+  "family-affiliation": "место семьи",
+  "documented-association": "документально подтверждённая связь",
+  "documented-at": "место документальной записи",
+  "documented-event": "место события",
+  documented: "документально подтверждённое место",
   registration: "приписка",
+  "administrative-enrollment": "административная приписка",
+  "social-registration": "сословная приписка",
   "estate-affiliation": "сословная принадлежность",
 };
 
@@ -624,22 +724,118 @@ function documentedSourceFamilyId(mentions: SourceMention[], placeId: string) {
   return null;
 }
 
-function sourcePeople(source: SourceRecord): ArchiveRecordPerson[] {
-  return (source.mentions ?? []).map((mention) => {
+function sourcePeople(
+  source: SourceRecord,
+  peopleById?: Map<string, PersonRecord>,
+): ArchiveRecordPerson[] {
+  const mentions = source.mentions ?? [];
+
+  if (!mentions.length && source.primaryPersonId) {
+    const person = peopleById?.get(source.primaryPersonId);
+    if (person) {
+      const places = (person.places ?? []).map((place) => {
+        const entry = typeof place === "string" ? { placeId: place } : place;
+        return {
+          relation: placeRelationLabels[entry.relation ?? ""] ?? entry.relation ?? "связь с местом",
+          label: entry.normalized ?? entry.asWritten ?? placeLabels[entry.placeId ?? ""] ?? "Место уточняется",
+          confidence: "medium",
+        };
+      });
+
+      return [{
+        personId: person.personId,
+        role: "основной человек источника",
+        eventRole: null,
+        name: person.displayName,
+        patronymic: person.patronymic ?? null,
+        alternateNames: [...new Set([
+          ...(person.nameVariants ?? []),
+          ...(person.surname?.formsAsWritten ?? []),
+        ])].filter((name) => name !== person.displayName),
+        places,
+        details: [person.status, ...(person.occupation ?? [])]
+          .filter((value): value is string => Boolean(value)),
+        nameAnalysis: [
+          {
+            label: "Почему это имя показано",
+            text: `Источник связан с профилем «${person.displayName}», но отдельная поимённая строка в его структурированной расшифровке пока не заведена. Имя взято из связанного профиля, а не выдумано из общего текста.`,
+          },
+          {
+            label: "Что означает связь",
+            text: "Карточка относится к поиску или контексту этого человека. Сама техническая связь с профилем не заменяет буквальное упоминание в первичном документе.",
+          },
+        ],
+      }];
+    }
+  }
+
+  return mentions.map((mention) => {
+    const profile = mention.personId ? peopleById?.get(mention.personId) : undefined;
     const name = sourceMentionName(mention);
+    const role = sourceRoleLabel(mention.role);
+    const migration = source.migrationObservations?.find((observation) =>
+      Boolean(mention.personId) && observation.personId === mention.personId
+    ) ?? (
+      mentions.length === 1 && source.migrationObservations?.length === 1
+        ? source.migrationObservations[0]
+        : undefined
+    );
+    const migrationFrom = migration?.from?.normalized ?? migration?.from?.asWritten ??
+      placeLabels[migration?.from?.placeId ?? ""];
+    const migrationTo = migration?.to?.normalized ?? migration?.to?.asWritten ??
+      placeLabels[migration?.to?.placeId ?? ""];
+    const migrationPlaces: ArchiveRecordPerson["places"] = migration
+      ? [
+          ...(migrationFrom ? [{ relation: "откуда переселился", label: migrationFrom, confidence: migration.confidence ?? "medium" }] : []),
+          ...(migrationTo ? [{ relation: "куда переселился", label: migrationTo, confidence: migration.confidence ?? "medium" }] : []),
+        ]
+      : [];
+    const mentionPlaces = (mention.places ?? []).map((place) => ({
+      relation: placeRelationLabels[place.relation ?? place.type ?? ""] ?? place.relation ?? place.type ?? "происхождение",
+      label: place.normalized ?? place.asWritten ?? placeLabels[place.placeId ?? ""] ?? "Место уточняется",
+      confidence: place.confidence ?? "medium",
+    }));
+    const profilePlaces: ArchiveRecordPerson["places"] = (profile?.places ?? []).map((place) => {
+      const entry = typeof place === "string" ? { placeId: place } : place;
+      return {
+        relation: placeRelationLabels[entry.relation ?? ""] ?? entry.relation ?? "связь с местом",
+        label: entry.normalized ?? entry.asWritten ?? placeLabels[entry.placeId ?? ""] ?? "Место уточняется",
+        confidence: "medium",
+      };
+    });
+    const alternateNames = [
+      ...(mention.alternateNames ?? []),
+      mention.nameAsTranscribed,
+      mention.nameAsWritten,
+      mention.nameAsIndexed,
+      mention.modernName,
+      mention.displayName,
+      profile?.displayName,
+      ...(profile?.nameVariants ?? []),
+      ...(profile?.surname?.formsAsWritten ?? []),
+    ];
+    const literalName = mention.nameAsTranscribed ?? mention.nameAsWritten ?? mention.nameAsIndexed;
+    const normalizedName = mention.modernName ?? profile?.displayName ?? name;
+    const eventRole = mention.eventRole?.trim() || role;
+    const profileContext = profile?.notes?.find((note) => note.trim()) ??
+      profile?.occupation?.find((occupation) => occupation.trim());
 
     return {
       personId: mention.personId ?? null,
       role: sourceRoleLabel(mention.role),
+      eventRole: mention.eventRole?.trim() || null,
       name,
       patronymic: mention.patronymic ?? null,
-      alternateNames: [...new Set(mention.alternateNames ?? [])].filter((alternateName) => alternateName !== name),
-      places: (mention.places ?? []).map((place) => ({
-        relation: placeRelationLabels[place.relation ?? place.type ?? ""] ?? place.relation ?? place.type ?? "происхождение",
-        label: place.normalized ?? place.asWritten ?? placeLabels[place.placeId ?? ""] ?? "Место уточняется",
-        confidence: place.confidence ?? "medium",
-      })),
+      alternateNames: [...new Set(alternateNames)]
+        .filter((alternateName): alternateName is string => Boolean(alternateName?.trim()))
+        .filter((alternateName) => alternateName !== name),
+      places: mentionPlaces.length
+        ? mentionPlaces
+        : migrationPlaces.length
+          ? migrationPlaces
+          : profilePlaces,
       details: [
+        mention.status,
         mention.socialStatus?.normalized ?? mention.socialStatus?.asWritten,
         mention.occupation?.normalized ?? mention.occupation?.asWritten,
         mention.eventAssociation === "groom" ? "со стороны жениха" : null,
@@ -647,6 +843,30 @@ function sourcePeople(source: SourceRecord): ArchiveRecordPerson[] {
         mention.relationshipNote,
         ...(mention.uncertainties ?? []).map((uncertainty) => `уточнить: ${uncertainty}`),
       ].filter((value): value is string => Boolean(value)),
+      nameAnalysis: mention.nameAnalysis?.length
+        ? mention.nameAnalysis
+        : [
+            {
+              label: literalName && literalName !== normalizedName ? "Имя в документе" : "Как назван человек",
+              text: literalName && literalName !== normalizedName
+                ? `В источнике читается «${literalName}». Для поиска и связи с другими документами используется форма «${normalizedName}».`
+                : `Источник называет человека «${name}». В этой карточке имя не дополнено неподтверждёнными частями.`,
+            },
+            {
+              label: "Роль в записи",
+              text: `${name} — ${eventRole}.${mention.relationshipNote ? ` ${mention.relationshipNote}` : ""}`,
+            },
+            {
+              label: migration ? "Смысл для истории переселения" : "Что устанавливает документ",
+              text: migration
+                ? `Запись связывает ${name} с маршрутом ${migrationFrom ?? "из места, названного в источнике"} → ${migrationTo ?? sourcePlace(source)}.${migration.basis ? ` ${migration.basis}` : ""}`
+                : `Документ фиксирует событие «${sourceEventLabel(source)}»: ${sourceDate(source)}, ${sourcePlace(source)}. Имя показано здесь потому, что человек непосредственно участвует в этой записи как ${eventRole}.`,
+            },
+            ...(profileContext ? [{
+              label: "Связь с профилем",
+              text: profileContext,
+            }] : []),
+          ],
     };
   });
 }
@@ -663,7 +883,7 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
-const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|амфилог|амфилов|анпилог|анпилов|анфилог|онфилог|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
 
 function isAmpilogovVariantName(value?: string | null) {
   return Boolean(value && ampilogovSurnameVariantPattern.test(value));
@@ -804,12 +1024,15 @@ function isGenealogyRecordSource(
     sourceHasAmpilogovVariant(source, peopleById);
 }
 
-function toArchiveRecord(source: SourceRecord): ArchiveRecord {
+function toArchiveRecord(
+  source: SourceRecord,
+  peopleById?: Map<string, PersonRecord>,
+): ArchiveRecord {
   const eventType = source.event?.type ?? "unknown";
   const eventLabel = sourceEventLabel(source);
   const date = sourceDate(source);
   const place = sourcePlace(source);
-  const people = sourcePeople(source);
+  const people = sourcePeople(source, peopleById);
   const literal = source.transcription?.literal ?? "";
   const summary = source.summary?.text ?? source.transcription?.suppliedText ?? "";
   const primaryPerson = sourcePrimaryPerson(source, people);
@@ -917,7 +1140,7 @@ export function getRecordsDirectory() {
   );
   const records = readJsonTree<SourceRecord>(
     path.join(GENEALOGY_ROOT, "sources"),
-  ).filter((source) => isGenealogyRecordSource(source, peopleById)).map(toArchiveRecord).sort((left, right) =>
+  ).filter((source) => isGenealogyRecordSource(source, peopleById)).map((source) => toArchiveRecord(source, peopleById)).sort((left, right) =>
     (left.year || "9999").localeCompare(right.year || "9999") || left.date.localeCompare(right.date, "ru")
   );
 
@@ -1615,8 +1838,9 @@ export function getPeopleDirectory() {
 
 function sourceYear(source: SourceRecord) {
   const date = source.event?.date;
+  if (Number.isFinite(date?.yearFrom)) return date!.yearFrom!;
   const value = date?.iso ?? date?.birthIso ?? date?.baptismIso ?? date?.display ?? "";
-  return Number(value.match(/\b(?:15|16|17|18|19|20)\d{2}\b/)?.[0] ?? 0);
+  return Number(value.match(/\b(?:14|15|16|17|18|19|20)\d{2}\b/)?.[0] ?? 0);
 }
 
 export function getFamilyMapDirectory() {
@@ -1704,6 +1928,12 @@ export function getFamilyMapDirectory() {
       mention.personId ? [mention.personId] : []
     )))];
     const personNames = primaryMention ? [sourceMentionName(primaryMention)] : [];
+    const archivePeople = sourcePeople(source, peopleById);
+    const primaryArchivePerson = (
+      primaryMention?.personId
+        ? archivePeople.find((person) => person.personId === primaryMention.personId)
+        : undefined
+    ) ?? archivePeople[0];
     const familyIds = [...new Set(personIds.flatMap((personId) => {
       const ids = [...(familyIdsByPerson.get(personId) ?? [])];
       return ids.length ? ids : [`person:${personId}`];
@@ -1719,6 +1949,34 @@ export function getFamilyMapDirectory() {
       eventLabel: sourceEventLabel(source),
       personIds,
       personNames,
+      people: (source.mentions ?? []).flatMap((mention) => {
+        const name = sourceMentionName(mention);
+        if (!name) return [];
+        const linkedPerson = mention.personId ? peopleById.get(mention.personId) : undefined;
+        const details = [
+          mention.relationshipNote,
+          mention.socialStatus?.normalized,
+          linkedPerson?.notes,
+        ].filter((detail): detail is string => Boolean(detail));
+        return [{
+          personId: mention.personId ?? null,
+          name,
+          role: mention.eventRole ?? sourceRoleLabel(mention.role),
+          variants: [...new Set([
+            ...(mention.alternateNames ?? []),
+            mention.nameAsTranscribed,
+            mention.nameAsWritten,
+            mention.nameAsIndexed,
+          ].filter((variant): variant is string => Boolean(variant) && variant !== name))],
+          details,
+        }];
+      }),
+      meaning: source.summary?.text?.trim() ||
+        source.transcription?.modernInterpretation?.trim() ||
+        `Запись «${sourceEventLabel(source).toLocaleLowerCase("ru")}» связывает ${primaryArchivePerson?.name ?? "представителя семьи Ампилоговых"} с местом «${placeLabels[placeId] ?? placeId}» (${sourceDate(source)}).`,
+      nameInsights: primaryMention?.nameAnalysis?.length
+        ? primaryMention.nameAnalysis
+        : primaryArchivePerson?.nameAnalysis ?? [],
       familyIds,
       generation: Math.max(1, ...generationPersonIds.map((personId) => generationOf(personId))),
     };
