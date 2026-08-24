@@ -8,7 +8,7 @@ record_type: писцовое описание поместного жеребь
 people:
   - P0047
 source_id: PUB-PKOU-1594-P1016-ERMAK
-archive_reference: "РГАДА, ф. 1209, оп. 1, кн. 399; публикация 1877 года, с. 1016"
+archive_reference: "РГАДА, ф. 1209, оп. 1, д. 329 (список XVII века; старый шифр МАМЮ — № 399); публикация 1877 года, с. 1016"
 evidence:
   - ../../../public/archive/evidence/publications/piscovye-knigi-1594-1595/pages/1016.png
   - ../../../public/archive/evidence/publications/piscovye-knigi-1594-1595/fragments/1016-ermak.png

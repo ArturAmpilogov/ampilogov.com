@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { PeopleDirectory } from "@/components/people-directory";
 import { SiteHeader } from "@/components/site-header";
-import { getPeopleDirectory } from "@/lib/genealogy";
+import { getPeopleDirectoryIndex } from "@/lib/directory-index";
 
 export const metadata: Metadata = {
   title: "Профили людей",
@@ -15,7 +15,7 @@ export default async function PeoplePage({
 }: {
   searchParams: Promise<{ person?: string; search?: string }>;
 }) {
-  const directory = getPeopleDirectory();
+  const directory = getPeopleDirectoryIndex();
   const { person } = await searchParams;
   if (person && directory.people.some((entry) => entry.personId === person)) {
     redirect(`/people/${encodeURIComponent(person)}`);
@@ -24,15 +24,12 @@ export default async function PeoplePage({
   return (
     <main className="people-page">
       <SiteHeader />
-      <header className="people-masthead section-shell">
+      <header className="people-masthead directory-masthead section-shell">
         <div>
           <span className="eyebrow">Документальный архив</span>
           <h1>Профили</h1>
         </div>
-        <p>
-          Только носители фамильного ряда Ампилоговых, Онфилоговых и его документированных
-          вариантов, известные по источникам до 1950 года. Другие участники сохранены внутри самих Records.
-        </p>
+        <p>Носители фамильного ряда и документированные варианты фамилии.</p>
         <dl aria-label="Состав архива">
           <div><dt>Людей</dt><dd>{directory.stats.people}</dd></div>
           <div><dt>Источников</dt><dd>{directory.stats.sources}</dd></div>
@@ -40,7 +37,7 @@ export default async function PeoplePage({
         </dl>
       </header>
       <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
-        <PeopleDirectory people={directory.people} />
+        <PeopleDirectory minYear={directory.stats.minYear} maxYear={directory.stats.maxYear} />
       </Suspense>
     </main>
   );

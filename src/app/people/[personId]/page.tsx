@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { SiteHeader } from "@/components/site-header";
-import { getPeopleDirectory } from "@/lib/genealogy";
+import { getPeopleDirectoryIndex } from "@/lib/directory-index";
+import { getDirectoryPerson } from "@/lib/genealogy";
 
 type PersonPageProps = {
   params: Promise<{ personId: string }>;
@@ -19,13 +20,13 @@ const relationLabels = {
 };
 
 export function generateStaticParams() {
-  return getPeopleDirectory().people.map((person) => ({ personId: person.personId }));
+  return getPeopleDirectoryIndex().people.map((person) => ({ personId: person.personId }));
 }
 
 export async function generateMetadata({ params }: PersonPageProps): Promise<Metadata> {
   const { personId } = await params;
   const decodedPersonId = decodeURIComponent(personId);
-  const person = getPeopleDirectory().people.find((entry) => entry.personId === decodedPersonId);
+  const person = getDirectoryPerson(decodedPersonId);
   if (!person) return { title: "Профиль не найден" };
   return {
     title: person.displayName,
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: PersonPageProps): Promise<Met
 export default async function PersonPage({ params }: PersonPageProps) {
   const { personId } = await params;
   const decodedPersonId = decodeURIComponent(personId);
-  const person = getPeopleDirectory().people.find((entry) => entry.personId === decodedPersonId);
+  const person = getDirectoryPerson(decodedPersonId);
   if (!person) notFound();
 
   return (
@@ -67,6 +68,30 @@ export default async function PersonPage({ params }: PersonPageProps) {
           <div><dt>Источники</dt><dd>{person.sources.length}</dd></div>
           <div><dt>Занятие</dt><dd>{person.occupations.join(", ") || "Не указано"}</dd></div>
         </dl>
+
+        {person.nameAnalysis.length ? (
+          <section className="person-name-analysis" aria-labelledby="person-name-analysis-title">
+            <div className="person-section-heading">
+              <div>
+                <span className="section-label">Не только написание</span>
+                <h2 id="person-name-analysis-title">Имя и смысл</h2>
+              </div>
+              <strong>{person.nameAnalysis.length}</strong>
+            </div>
+            <p className="person-name-analysis-lede">
+              Разбираем буквальную форму, патроним, роль человека, время и географию,
+              а также отдельно отмечаем, что документ доказывает и чего из него выводить нельзя.
+            </p>
+            <dl>
+              {person.nameAnalysis.map((item, index) => (
+                <div key={`${item.label}:${index}`}>
+                  <dt>{item.label}</dt>
+                  <dd>{item.text}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
 
         {person.relations.length || person.notes.length ? (
           <div className="person-context-grid">

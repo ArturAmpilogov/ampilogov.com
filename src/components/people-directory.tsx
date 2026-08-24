@@ -2,21 +2,14 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
-import type { DirectoryPerson } from "@/lib/genealogy";
+import type { PeopleDirectoryResult } from "@/lib/directory-index-types";
+import { DirectoryAutoLoader } from "@/components/directory-auto-loader";
 import { YearRangeFilter } from "@/components/year-range-filter";
 import { useDirectoryUrlFilters } from "@/components/use-directory-url-filters";
+import { usePagedDirectory } from "@/components/use-paged-directory";
 
 type Filter = "all" | "documented" | "review";
 const FILTERS = ["all", "documented", "review"] as const satisfies readonly Filter[];
-
-function normalize(value: string) {
-  return value
-    .normalize("NFKC")
-    .toLocaleLowerCase("ru")
-    .replace(/ё/g, "е")
-    .replace(/[^а-яa-z0-9]+/g, " ")
-    .trim();
-}
 
 function sourceWord(count: number) {
   const mod100 = count % 100;
@@ -33,19 +26,7 @@ function EmphasizedYears({ value }: { value: string }) {
   );
 }
 
-function historicalYears(values: string[]) {
-  return [...new Set(values.flatMap((value) =>
-    (value.match(/\b[0-9]{4}\b/g) ?? [])
-      .map(Number)
-      .filter((year) => year >= 1000 && year <= 2099)
-  ))].sort((left, right) => left - right);
-}
-
-function sourceYears(person: DirectoryPerson) {
-  return historicalYears(person.sources.map((source) => source.date));
-}
-
-function relationFacts(person: DirectoryPerson, peopleById: Map<string, DirectoryPerson>) {
+function relationFacts(person: PeopleDirectoryResult) {
   const facts = new Map<string, Set<string>>();
   const add = (label: string, name: string) => {
     const names = facts.get(label) ?? new Set<string>();
@@ -54,16 +35,15 @@ function relationFacts(person: DirectoryPerson, peopleById: Map<string, Director
   };
 
   for (const relation of person.relations) {
-    const related = peopleById.get(relation.personId);
     if (relation.relation === "spouse") {
-      const label = related?.sex === "female" || (related?.sex !== "male" && person.sex === "male")
+      const label = relation.sex === "female" || (relation.sex !== "male" && person.sex === "male")
         ? "Супруга"
-        : related?.sex === "male" || person.sex === "female"
+        : relation.sex === "male" || person.sex === "female"
           ? "Супруг"
           : "Супруг(а)";
       add(label, relation.name);
     } else if (relation.relation === "parent") {
-      add(related?.sex === "female" ? "Мать" : related?.sex === "male" ? "Отец" : "Родитель", relation.name);
+      add(relation.sex === "female" ? "Мать" : relation.sex === "male" ? "Отец" : "Родитель", relation.name);
     } else if (relation.relation === "child") {
       add("Дети", relation.name);
     }
@@ -76,38 +56,13 @@ function relationFacts(person: DirectoryPerson, peopleById: Map<string, Director
   });
 }
 
-function personYearSpan(person: DirectoryPerson) {
-  const values = [
-    person.birthDate,
-    person.birthYear,
-    person.life.birth,
-    person.life.death,
-    ...person.sources.map((source) => source.date),
-  ];
-  const years = values.flatMap((value) =>
-    [...value.matchAll(/\b(1[0-9]{3}|20[0-9]{2})\b/g)].map((match) => Number(match[1]))
-  );
-  return years.length ? { minYear: Math.min(...years), maxYear: Math.max(...years) } : null;
-}
-
 export function PeopleDirectory({
-  people,
+  minYear,
+  maxYear,
 }: {
-  people: DirectoryPerson[];
+  minYear: number;
+  maxYear: number;
 }) {
-  const peopleById = useMemo(() => new Map(
-    people.map((person) => [person.personId, person]),
-  ), [people]);
-  const spansByPerson = useMemo(() => new Map(
-    people.map((person) => [person.personId, personYearSpan(person)]),
-  ), [people]);
-  const yearBounds = useMemo(() => {
-    const spans = [...spansByPerson.values()].filter((span) => span !== null);
-    return {
-      minYear: Math.min(...spans.map((span) => span.minYear)),
-      maxYear: Math.max(...spans.map((span) => span.maxYear)),
-    };
-  }, [spansByPerson]);
   const {
     query,
     setQuery,
@@ -120,37 +75,38 @@ export function PeopleDirectory({
   } = useDirectoryUrlFilters({
     statuses: FILTERS,
     defaultStatus: "all",
-    minYear: yearBounds.minYear,
-    maxYear: yearBounds.maxYear,
+    minYear,
+    maxYear,
   });
-
-  const filtered = useMemo(() => {
-    const needle = normalize(query);
-    return people.filter((person) => {
-      const matchesQuery = !needle || normalize(person.searchText).includes(needle);
-      const matchesFilter = filter === "all" ||
-        (filter === "review" ? person.needsReview : !person.needsReview);
-      const span = spansByPerson.get(person.personId);
-      const fullRange = yearRange.startYear === yearBounds.minYear &&
-        yearRange.endYear === yearBounds.maxYear;
-      const matchesYear = span
-        ? span.minYear <= yearRange.endYear && span.maxYear >= yearRange.startYear
-        : fullRange;
-      return matchesQuery && matchesFilter && matchesYear;
-    });
-  }, [filter, people, query, spansByPerson, yearRange]);
+  const requestParams = useMemo(() => {
+    const params = new URLSearchParams({ limit: "50" });
+    if (query.trim()) params.set("search", query.trim());
+    if (filter !== "all") params.set("status", filter);
+    if (yearRange.startYear !== minYear) params.set("from", String(yearRange.startYear));
+    if (yearRange.endYear !== maxYear) params.set("to", String(yearRange.endYear));
+    return params;
+  }, [filter, maxYear, minYear, query, yearRange]);
+  const {
+    items: people,
+    total,
+    nextCursor,
+    isLoading,
+    isLoadingMore,
+    error,
+    loadMore,
+  } = usePagedDirectory<PeopleDirectoryResult>({ endpoint: "/api/people", params: requestParams });
 
   return (
     <section className="people-workspace section-shell" aria-label="Каталог профилей людей">
       <div className="people-toolbar">
         <label className="people-search">
-          <span>Поиск по профилям</span>
+          <span>Поиск по ФИО</span>
           <div>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Имя, вариант фамилии, место, текст записи…"
+              placeholder="Имя, отчество, фамилия…"
               type="search"
               autoComplete="off"
             />
@@ -159,33 +115,10 @@ export function PeopleDirectory({
         </label>
 
         <div className="directory-filter-panel">
-          <div className="directory-filter-panel__heading">
-            <span>Фильтры</span>
-            {isFiltered ? <button type="button" onClick={reset}>Сбросить</button> : null}
-          </div>
-          <div className="directory-filter-panel__status">
-            <span>Статус</span>
-            <div className="people-filters" aria-label="Статус профиля">
-              {([
-                ["all", "Все"],
-                ["documented", "Документированы"],
-                ["review", "Требуют проверки"],
-              ] as const).map(([value, label]) => (
-                <button
-                  type="button"
-                  key={value}
-                  className={filter === value ? "is-active" : undefined}
-                  aria-pressed={filter === value}
-                  onClick={() => setFilter(value)}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
           <YearRangeFilter
-            minYear={yearBounds.minYear}
-            maxYear={yearBounds.maxYear}
+            showBounds={false}
+            minYear={minYear}
+            maxYear={maxYear}
             startYear={yearRange.startYear}
             endYear={yearRange.endYear}
             onChange={setYearRange}
@@ -193,16 +126,43 @@ export function PeopleDirectory({
         </div>
       </div>
 
-      <div className="people-result-line" aria-live="polite">
-        <strong>{filtered.length}</strong>
-        <span>{query ? "совпадений" : "профилей в выборке"}</span>
-        <small><b>[год–год]</b> — расчётный интервал</small>
+      <div className="people-result-line">
+        <span className="directory-result-count" aria-live="polite">
+          <strong>{isLoading ? "…" : total}</strong>
+          <span>{query ? "совпадений" : "профилей в выборке"}</span>
+        </span>
+        <span className="directory-result-controls">
+          <label className="directory-status-select">
+            <span>Статус</span>
+            <span className="directory-status-select__field">
+              <select value={filter} onChange={(event) => setFilter(event.target.value as Filter)}>
+                <option value="all">Все</option>
+                <option value="documented">Документированы</option>
+                <option value="review">Требуют проверки</option>
+              </select>
+            </span>
+          </label>
+          <button
+            className="directory-filter-reset"
+            type="button"
+            onClick={reset}
+            disabled={!isFiltered}
+            aria-label="Сбросить фильтры"
+            title="Сбросить фильтры"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5.5 8.5A7.5 7.5 0 1 1 4.8 14" />
+              <path d="M5.5 3.8v4.7H1" />
+            </svg>
+          </button>
+        </span>
       </div>
+      {error ? <p className="directory-error" role="alert">{error}</p> : null}
 
-      <div className="people-list" role="list">
-        {filtered.map((person, index) => {
-          const relations = relationFacts(person, peopleById);
-          const documentedYears = sourceYears(person);
+      <div className={`people-list${isLoading ? " is-loading" : ""}`} role="list" aria-busy={isLoading}>
+        {people.map((person, index) => {
+          const relations = relationFacts(person);
+          const documentedYears = person.sourceYears;
           const hasUncertainLifeDate = person.life.birth.includes("?") || person.life.death.includes("?");
 
           return (
@@ -242,8 +202,8 @@ export function PeopleDirectory({
                 </small>
               </span>
               <span className="person-row-sources">
-                <strong>{person.sources.length}</strong>
-                <small>{sourceWord(person.sources.length)}</small>
+                <strong>{person.sourceCount}</strong>
+                <small>{sourceWord(person.sourceCount)}</small>
               </span>
               <span className={`person-row-status ${person.needsReview ? "is-review" : "is-documented"}`}>
                 {person.needsReview ? "Проверить" : "Готово"}
@@ -253,7 +213,7 @@ export function PeopleDirectory({
           );
         })}
 
-        {filtered.length === 0 ? (
+        {!isLoading && people.length === 0 ? (
           <div className="people-empty">
             <strong>Профили не найдены</strong>
             <p>Попробуйте часть фамилии, имя или название места.</p>
@@ -263,6 +223,13 @@ export function PeopleDirectory({
           </div>
         ) : null}
       </div>
+      <DirectoryAutoLoader
+        hasMore={Boolean(nextCursor)}
+        isLoading={isLoading || isLoadingMore}
+        loaded={people.length}
+        total={total}
+        onLoadMore={loadMore}
+      />
     </section>
   );
 }

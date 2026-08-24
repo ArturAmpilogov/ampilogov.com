@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run genealogy:directory-index",
     "dev": "next dev",
+    "prebuild": "npm run genealogy:directory-index",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -17,7 +19,8 @@
     "genealogy:reconcile-russia": "node scripts/genealogy/reconcile-russia-records.mjs",
     "genealogy:audit": "node scripts/genealogy/audit-data-links.mjs",
     "genealogy:places": "node scripts/genealogy/link-place-index.mjs",
-    "genealogy:yandex-index": "node scripts/genealogy/sync-yandex-archive-index.mjs"
+    "genealogy:yandex-index": "node scripts/genealogy/sync-yandex-archive-index.mjs",
+    "genealogy:directory-index": "node scripts/genealogy/build-directory-indexes.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

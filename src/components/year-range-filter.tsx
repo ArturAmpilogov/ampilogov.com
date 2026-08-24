@@ -3,6 +3,8 @@
 import type { CSSProperties } from "react";
 
 type YearRangeFilterProps = {
+  label?: string;
+  showBounds?: boolean;
   minYear: number;
   maxYear: number;
   startYear: number;
@@ -11,6 +13,8 @@ type YearRangeFilterProps = {
 };
 
 export function YearRangeFilter({
+  label = "Период",
+  showBounds = true,
   minYear,
   maxYear,
   startYear,
@@ -26,7 +30,7 @@ export function YearRangeFilter({
   return (
     <div className="directory-year-range" style={style}>
       <div className="directory-year-range__heading">
-        <span>Период</span>
+        <span>{label}</span>
         <strong>{startYear}—{endYear}</strong>
       </div>
       <div className="directory-year-range__control">
@@ -55,10 +59,12 @@ export function YearRangeFilter({
           })}
         />
       </div>
-      <div className="directory-year-range__bounds" aria-hidden="true">
-        <span>{minYear}</span>
-        <span>{maxYear}</span>
-      </div>
+      {showBounds ? (
+        <div className="directory-year-range__bounds" aria-hidden="true">
+          <span>{minYear}</span>
+          <span>{maxYear}</span>
+        </div>
+      ) : null}
     </div>
   );
 }
