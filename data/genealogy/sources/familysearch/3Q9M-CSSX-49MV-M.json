@@ -4,38 +4,54 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4135959",
-    "title": "Покровка. Метрическая книга православной церкви о родившихся, 1902–1903",
-    "filmNumber": "007822129",
-    "imageGroupNumber": "007822129",
-    "itemNumber": 2,
+    "title": "Покровка. Церковные записи о рождении, смерти и браке, 1902–1903",
+    "filmNumber": "007822189",
+    "imageGroupNumber": "007822189",
+    "subgroup": "2 из 3",
     "imageNumber": 255,
-    "imageCount": 514
+    "imageCount": 514,
+    "volume": null,
+    "archivalReferenceNumber": null,
+    "creators": [
+      "Православная церковь. Покровка (Бердянск)"
+    ],
+    "custodianAsMetadata": null
   },
   "links": {
-    "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSX-49MV-M"
+    "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSX-49MV-M",
+    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:6XC8-93V3",
+    "indexedFatherMentionArk": "https://www.familysearch.org/ark:/61903/1:1:6XC8-93V4",
+    "indexedMotherMentionArk": "https://www.familysearch.org/ark:/61903/1:1:6XC8-93VC"
   },
   "primaryPersonId": "P50058",
   "event": {
     "type": "birth-and-baptism",
+    "recordNumber": 42,
     "date": {
-      "display": "15–16 марта 1903",
-      "birthIso": "1903-03-15",
-      "baptismIso": "1903-03-16",
-      "calendar": "as-written"
+      "display": "15 и 16 марта 1902",
+      "birthIso": "1902-03-15",
+      "baptismIso": "1902-03-16",
+      "calendar": "source-calendar-unverified"
     },
     "place": {
-      "asWritten": "из Покровки",
+      "asWritten": "изъ Покровки",
       "normalized": "Покровка, Бердянский уезд, Таврическая губерния, Российская империя",
-      "placeId": "berdiansk-district"
+      "modernCountry": "Украина",
+      "placeId": "berdiansk-district",
+      "certainty": "high-for-historical-parish; exact-modern-identification-unverified"
     }
   },
   "indexData": {
+    "recordId": "6XC8-93V3",
+    "relatedFatherMentionRecordId": "6XC8-93V4",
+    "relatedMotherMentionRecordId": "6XC8-93VC",
     "subject": "Алексий Анфилов",
-    "sex": "male",
+    "sexAsIndexed": "male",
     "father": "Георгий Алексиев Анфилов",
+    "mother": "Параскева Алексиева",
     "birthDate": "15 марта 1903",
-    "placeAsIndexed": "Запорожье, Украина, Советский Союз",
-    "indexWarning": "Индекс не передаёт дату крещения, номер записи, военную службу отца, имя матери, восприемников и причт."
+    "placeAsIndexed": "запорижжя, Украина, Советский Союз",
+    "indexWarning": "Индекс ошибочно даёт 1903 год. Заголовок оригинального разворота и независимая индексная карточка второй цифровой копии 6XCZ-1KG6 дают 1902 год. Индекс также не сообщает крещение 16 марта, номер записи, точный приход, статус отца, восприемников и причт."
   },
   "mentions": [
     {
@@ -46,7 +62,15 @@
       "nameAsTranscribed": "Алексій",
       "nameAsIndexed": "Алексий Анфилов",
       "modernName": "Алексий Георгиевич Анфилов",
-      "displayName": "Алексий Георгиевич Анфилов"
+      "displayName": "Алексий Георгиевич Анфилов",
+      "patronymicEvidence": {
+        "basis": "derived-from-father-given-name",
+        "sourceMentionId": "FS-3Q9M-CSSX-49MV-M-M2",
+        "confidence": "high"
+      },
+      "alternateNames": [
+        "Алексий Анфилов"
+      ]
     },
     {
       "mentionId": "FS-3Q9M-CSSX-49MV-M-M2",
@@ -57,59 +81,129 @@
       "nameAsIndexed": "Георгий Алексиев Анфилов",
       "modernName": "Георгий Алексеевич Анфилов",
       "displayName": "Георгий Алексеевич Анфилов",
+      "socialStatusAsWritten": "Запасной рядовой Лейбъ-Гвардіи Волынскаго полка, изъ Покровки крестьянинъ",
+      "alternateNames": [
+        "Георгій Алексіевъ Анфиловъ",
+        "Георгий Алексиев Анфилов"
+      ],
       "socialStatus": {
-        "asWritten": "запасный рядовой Лейб-Гвардіи Волынскаго полка, из Покровки крестьянинъ",
+        "asWritten": "Запасной рядовой Лейбъ-Гвардіи Волынскаго полка, изъ Покровки крестьянинъ",
         "normalized": "запасной рядовой лейб-гвардии Волынского полка; крестьянин из Покровки"
       }
     },
     {
       "mentionId": "FS-3Q9M-CSSX-49MV-M-M3",
       "role": "mother",
-      "personId": "P50060",
+      "personId": null,
       "sex": "female",
-      "nameAsTranscribed": "Параскева Алексіева",
+      "nameAsTranscribed": "Параскева Алексѣева",
+      "nameAsIndexed": "Параскева Алексиева",
       "modernName": "Параскева Алексеевна",
       "displayName": "Параскева Алексеевна",
-      "nameNote": "Собственная фамилия в акте не названа; фамилия мужа не присвоена автоматически."
+      "relationshipAsWritten": "законная жена его",
+      "nameNote": "Собственная фамилия не названа; фамилия мужа не присвоена автоматически.",
+      "alternateNames": [
+        "Параскева Алексѣева",
+        "Параскева Алексиева"
+      ]
     },
     {
       "mentionId": "FS-3Q9M-CSSX-49MV-M-M4",
-      "role": "godparents",
+      "role": "godfather",
       "personId": null,
-      "displayName": "покровские крестьяне [имена читаются не полностью уверенно]",
-      "nameAsTranscribed": "Покровскіе крестьяне: [имена неуверенно]"
+      "sex": "male",
+      "nameAsTranscribed": "Покровскій крестьянинъ Герасимъ Феодоровъ [Мафрешковъ?]",
+      "nameAsIndexed": null,
+      "modernName": "Герасим Фёдорович [Мафрешков?]",
+      "displayName": "Герасим Фёдорович [восприемник]",
+      "nameNote": "Имя, отчество и покровское крестьянство читаются; фамилия предварительно читается как Мафрешков и требует повторной проверки.",
+      "alternateNames": [
+        "Покровскій крестьянинъ Герасимъ Феодоровъ [Мафрешковъ?]"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSX-49MV-M-M5",
+      "role": "godmother",
+      "personId": null,
+      "sex": "female",
+      "nameAsTranscribed": "Матвея Андреева дочь, девица Дарья",
+      "nameAsIndexed": null,
+      "modernName": "Дарья Матвеевна",
+      "displayName": "Дарья Матвеевна [восприемница]",
+      "nameNote": "Собственная фамилия не названа; женская формула прочитана как дочь Матвея Андреева.",
+      "alternateNames": [
+        "Матвея Андреева дочь, девица Дарья"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSX-49MV-M-M6",
+      "role": "officiant",
+      "personId": null,
+      "sex": "male",
+      "nameAsTranscribed": "Священникъ Петръ Малаковъ",
+      "nameAsIndexed": null,
+      "modernName": "священник Пётр Малаков",
+      "displayName": "священник Пётр Малаков",
+      "alternateNames": [
+        "Священникъ Петръ Малаковъ"
+      ]
+    },
+    {
+      "mentionId": "FS-3Q9M-CSSX-49MV-M-M7",
+      "role": "clergy-assistant",
+      "personId": null,
+      "sex": "male",
+      "nameAsTranscribed": "Псаломщикъ Михаилъ Бойковъ",
+      "nameAsIndexed": null,
+      "modernName": "псаломщик Михаил Бойков",
+      "displayName": "псаломщик Михаил Бойков",
+      "alternateNames": [
+        "Псаломщикъ Михаилъ Бойковъ"
+      ]
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "№ 42 | 15 [родился] | 16 [крещён] | Алексій | Запасный рядовой Лейб-Гвардіи Волынскаго полка, из Покровки крестьянинъ Георгій Алексіевъ Анфиловъ и законная жена его Параскева Алексіева; оба православнаго вѣроисповѣданія. | Воспріемники: покровскіе крестьяне [имена неуверенно].",
-    "layoutNote": "Целевая строка № 42 находится между двумя записями о детях с именем Дария; принадлежность строки подтверждается номером, датами и именами родителей.",
-    "modernInterpretation": "Алексий Георгиевич Анфилов родился 15 и был крещён 16 марта 1903 года. Его отец, Георгий Алексеевич Анфилов, был крестьянином из Покровки и запасным рядовым лейб-гвардии Волынского полка; мать — законная жена Параскева Алексеевна. Оба родителя были православными.",
+    "status": "complete-with-explicit-uncertainties",
+    "literal": "Мартъ | № 42 мужского пола | 15 [родился], 16 [крещён] | Алексій | Запасной рядовой Лейбъ-Гвардіи Волынскаго полка, изъ Покровки крестьянинъ Георгій Алексіевъ Анфиловъ и законная жена его Параскева Алексѣева; оба православнаго вѣроисповѣданія | Покровскіе крестьяне: Герасимъ Феодоровъ [Мафрешковъ?] и Матвея Андреева дочь, девица Дарья | Таинство совершил и запись подписал священникъ Петръ Малаковъ при псаломщикѣ Михаилѣ Бойковѣ.",
+    "layoutNote": "Целевая строка — мужская № 42, вторая полная мартовская запись на развороте. Номер, даты и имя сверены отдельно с родительской и правой графами.",
+    "modernInterpretation": "Алексий Георгиевич Анфилов родился 15 и был крещён 16 марта 1902 года в Покровке. Его родители — запасной рядовой лейб-гвардии Волынского полка, покровский крестьянин Георгий Алексеевич Анфилов и законная жена Параскева Алексеевна, оба православные. Восприемниками были покровский крестьянин Герасим Фёдорович с неуверенно прочитанной фамилией и девица Дарья Матвеевна. Запись подписали священник Пётр Малаков и псаломщик Михаил Бойков.",
     "fields": {
-      "sequenceNumber": "42",
-      "birthDate": "15 марта 1903",
-      "baptismDate": "16 марта 1903",
-      "child": "Алексий Георгиевич Анфилов",
-      "parents": "Георгий Алексеевич Анфилов и Параскева Алексеевна",
-      "fatherStatus": "запасной рядовой лейб-гвардии Волынского полка; крестьянин из Покровки",
-      "parentsReligion": "православные"
+      "recordNumber": "42 мужского пола",
+      "birthDate": "15 марта 1902",
+      "baptismDate": "16 марта 1902",
+      "childAsWritten": "Алексій",
+      "fatherAsWritten": "Георгій Алексіевъ Анфиловъ",
+      "fatherStatus": "запасной рядовой Лейб-гвардии Волынского полка; из Покровки крестьянин",
+      "motherAsWritten": "законная жена его Параскева Алексѣева",
+      "parentsReligion": "оба православного вероисповедания",
+      "godfatherAsWritten": "Герасимъ Феодоровъ [Мафрешковъ?]",
+      "godmotherAsWritten": "Матвея Андреева дочь, девица Дарья",
+      "clergy": "Священникъ Петръ Малаковъ; Псаломщикъ Михаилъ Бойковъ"
     }
   },
+  "sourceRelations": [
+    {
+      "type": "duplicate-digital-copy-of-same-register-entry",
+      "sourceId": "FS-3Q9M-CSSX-4YNG",
+      "note": "Снимок 21 повторяет запись № 42 и все соседние строки; его заголовок и индекс подтверждают 1902 год вместо ошибочного индексного 1903 года этой карточки."
+    }
+  ],
   "evidence": {
     "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/04-target-row-zoom.jpg",
+    "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/06-number-dates-name.jpg",
     "capturedAt": "2026-08-24",
-    "sha256": "2ab980e1c6ebcc1a41792db06130706766d1f5da0e1244286232ca3ebe399389",
+    "sha256": "b577f84c9d09223d55f8bb57ceeac21b6b9c1c0db52d78fd4ac2b86b7c63af58",
     "publicDisplay": false,
-    "rightsNote": "Локальные снимки сохранены для проверки чтения; условия публичного показа FamilySearch отдельно не подтверждены.",
+    "rightsNote": "FamilySearch показывает договорное ограничение на загрузку; сохранены снимки авторизованного просмотрщика.",
     "quality": {
-      "status": "approved-source-limited",
+      "status": "approved-with-godfather-surname-uncertainty",
       "viewerFullscreen": true,
       "panelsClosed": true,
       "filmstripHidden": true,
       "sharpTilesConfirmed": true,
-      "strategy": "index-plus-full-spread-plus-target-row-plus-detail-crops",
-      "limitation": "Полные имена восприемников и причта требуют повторного чтения."
+      "viewport": "1680x1050",
+      "strategy": "index-card-plus-viewer-linkage-plus-fullscreen-overview-plus-overlapping-target-row-parent-godparent-and-number-date-name-zooms-plus-group-metadata",
+      "limitation": "Номер, даты, пол, ребёнок, родители, фамилия Анфилов, военная служба отца, православие, формула восприемницы и причт читаются уверенно. Фамилия Герасима Фёдоровича предварительна."
     },
     "fragments": [
       {
@@ -118,7 +212,12 @@
         "sha256": "e16babc145939148c63374ff6eb8b0d44ddf3a3eaccc478d564315c88cc7e41f"
       },
       {
-        "part": "overview",
+        "part": "viewer-index-linkage",
+        "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/02-viewer-index-linkage.jpg",
+        "sha256": "143b759cc415f6b983b337a32acfaeb1d10a90cd9ff3a039f5f6d9a5738a79dc"
+      },
+      {
+        "part": "fullscreen-overview",
         "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/03-fullscreen-overview.jpg",
         "sha256": "3e2ef8400f4ed54e205b1efd189b85c8cb33f468d0314bfc04e84c1463c8f879"
       },
@@ -128,22 +227,33 @@
         "sha256": "2ab980e1c6ebcc1a41792db06130706766d1f5da0e1244286232ca3ebe399389"
       },
       {
-        "part": "parents-and-godparents",
+        "part": "parents-and-godparents-high-zoom",
         "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/05-parents-and-godparents-high-zoom.jpg",
         "sha256": "a316e939de8c069edb317d3580f7fddc466b631f31156464f273938e41195af8"
+      },
+      {
+        "part": "record-number-dates-and-name",
+        "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/06-number-dates-name.jpg",
+        "sha256": "b577f84c9d09223d55f8bb57ceeac21b6b9c1c0db52d78fd4ac2b86b7c63af58"
+      },
+      {
+        "part": "group-metadata",
+        "path": "public/archive/evidence/familysearch/ukraine/zaporizhzhia/3Q9M-CSSX-49MV-M/07-information-panel.jpg",
+        "sha256": "09e645058956b36ba2ed41454f5ec2726e5371651be3397e7fc0ab1c3916b224"
       }
     ]
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "Номер записи, даты, имя ребёнка и оба родителя читаются уверенно и совпадают с индексом.",
-    "transcriptionConfidence": "high-for-sequence-dates-child-parents-status-and-religion; low-for-godparents-and-clergy",
+    "status": "complete-with-explicit-uncertainties",
+    "identityResolution": "Совпадающих проектных людей по полному имени, отцу, месту и дате не найдено. Созданы ребёнок и отец; Параскева Алексеевна сохранена как упоминание матери без отдельного профиля, поскольку собственная фамилия не названа. Форма Анфилов сохранена самостоятельно.",
+    "transcriptionConfidence": "high-for-record-number-dates-sex-child-parents-surname-status-religion-godmother-and-clergy; medium-for-godfather-surname",
     "unresolved": [
-      "Повторно прочитать полные имена восприемников и причта."
+      "Повторно проверить фамилию восприемника Герасима Фёдоровича.",
+      "Установить точное современное соответствие Покровки Бердянского уезда."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Алексий Георгиевич Анфилов родился 15 и был крещён 16 марта 1903 года; его отец Георгий Алексеевич был крестьянином из Покровки и запасным рядовым лейб-гвардии Волынского полка, мать — Параскева Алексеевна."
+    "text": "Алексий Георгиевич Анфилов родился 15 и был крещён 16 марта 1902 года в Покровке; родители — Георгий Алексеевич Анфилов и Параскева Алексеевна."
   }
 }
