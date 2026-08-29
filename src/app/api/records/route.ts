@@ -1,4 +1,4 @@
-import { getRecordsDirectoryIndex } from "@/lib/directory-index";
+import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
 import type { DirectoryPage, RecordDirectoryResult } from "@/lib/directory-index-types";
 import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, normalizeDirectorySearch } from "@/lib/directory-search";
 
@@ -18,8 +18,8 @@ export function GET(request: Request) {
   const matches = index.records.filter((record) => {
     const matchesQuery = !query || record.searchText.includes(query);
     const matchesStatus = status === "all" ||
-      (status === "complete" && record.reviewState === "complete") ||
-      (status === "incomplete" && record.reviewState !== "complete") ||
+      (status === "complete" && record.isComplete) ||
+      (status === "incomplete" && !record.isComplete) ||
       (status === "human" && record.reviewState === "human-review");
     const matchesYear = record.year === null ? fullRange : record.year >= from && record.year <= to;
     return matchesQuery && matchesStatus && matchesYear;

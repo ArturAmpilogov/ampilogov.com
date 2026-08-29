@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { FamilySettlementMap } from "@/components/family-settlement-map";
 import { SiteHeader } from "@/components/site-header";
-import { getFamilyMapDirectory } from "@/lib/genealogy";
+import { getMapDirectoryManifest } from "@/lib/map-directory-index";
 
 export const metadata: Metadata = {
   title: "Карта расселения",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function MapPage() {
-  const directory = getFamilyMapDirectory();
+  const directory = getMapDirectoryManifest();
 
   return (
     <main className="settlement-map-page">
@@ -18,23 +18,14 @@ export default function MapPage() {
       <header className="settlement-map-masthead section-shell">
         <div>
           <span className="eyebrow">География документов</span>
-          <h1>Карта</h1>
+          <h1>Карта расселения</h1>
         </div>
-        <p>
-          Только места, события и переселения носителей исследуемого фамильного ряда по 1950 год.
-          Другие участники документов не создают точки или маршруты. Приблизительные точки обозначены пунктиром.
-        </p>
-        <dl aria-label="Состав карты">
-          <div><dt>Мест в индексе</dt><dd>{directory.stats.indexedPlaces}</dd></div>
-          <div><dt>На карте</dt><dd>{directory.stats.mappedPlaces}</dd></div>
-          <div><dt>Приблизительно</dt><dd>{directory.stats.approximatePlaces}</dd></div>
-        </dl>
       </header>
       <Suspense fallback={<div className="section-shell directory-loading">Загрузка карты…</div>}>
         <FamilySettlementMap
-          places={directory.places}
-          migrations={directory.migrations}
           range={directory.range}
+          dataVersion={directory.version}
+          directoryPath={directory.directoryPath}
         />
       </Suspense>
     </main>

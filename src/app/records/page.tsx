@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { RecordsDirectory } from "@/components/records-directory";
 import { SiteHeader } from "@/components/site-header";
-import { getRecordsDirectoryIndex } from "@/lib/directory-index";
+import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
 
 export const metadata: Metadata = {
   title: "Архивные записи",

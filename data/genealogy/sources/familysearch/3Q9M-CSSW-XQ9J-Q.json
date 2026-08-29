@@ -200,7 +200,9 @@
       "clergy": "Священник Николай [Курбатский?]; диакон Парфирий Попов",
       "groomSureties": "Суджанский мещанин Матвей Стефанович Хонин; крестьянин Иван Матвеевич Скоробогатый",
       "brideSureties": "Путивльский купец Иван Дмитриевич Зайцев; крестьянин Стефан Иванович Лебедев",
-      "marginaliaAndSignatures": "Относящихся к строке отдельных подписей или полевых помет не обнаружено"
+      "marginaliaAndSignatures": "Относящихся к строке отдельных подписей или полевых помет не обнаружено",
+      "groomBirthYearEstimated": "1870–1871",
+      "brideBirthYearEstimated": "1874–1875"
     }
   },
   "sourceRelations": [
@@ -234,17 +236,61 @@
       "limitation": "Фамилия священника Николая читается предположительно как Курбатский; один вспомогательный полный тайловый монтаж имел пропуски и не включён в постоянные доказательства."
     },
     "fragments": [
-      {"part":"index-groom","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/01-index-groom.jpg","sha256":"af705688088055c3c89b5853afa9b5c963f9379c8fb088f734ff65ab8f7abed0"},
-      {"part":"index-bride","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/02-index-bride.jpg","sha256":"55202a7aaabcb92dc25d57fe073e2c37173a194d2e52a5a2fe0cbd455969c9f5"},
-      {"part":"viewer-information","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/03-viewer-information.jpg","sha256":"fe4dc58fa09cd6e51dd7633b85e0ec3bf2ea1a0e13a0199515b950e69d3930a0"},
-      {"part":"archive-attribution","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/04-image-attribution.jpg","sha256":"25351b221260d1dcc5c384e511ab0d271ddf27114d3596b516605eaf392171b8"},
-      {"part":"fullscreen-overview","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/05-fullscreen-overview.jpg","sha256":"342f0980b24e5f0ff669fffe1de82e62e61407ed0c0e46d3f8cafad3aadec479"},
-      {"part":"target-left","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/06-target-left.jpg","sha256":"5aa16a7c66a8d28a9d188424cb03d05d62192d160d2a6997197b1d87e84181b6"},
-      {"part":"target-right","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/07-target-right.jpg","sha256":"381fd320664d058f08c950bdadd75c2dd7a0529570b9f2415d14f35a4f409203"},
-      {"part":"target-right-sharp-tiles","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/08-target-right-sharp.png","sha256":"04b6ff08f9752ce41b758f34e2b1f9528b02685ff5de2343f7a1dc4232f839df"},
-      {"part":"record-number-date-and-groom","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/09-number-date-groom.jpg","sha256":"d0f09b06061d8e896a56883f60d70286de45f2343b047e2b5a5a7370db3c0afb"},
-      {"part":"groom-bride-and-clergy-close","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/10-groom-bride-clergy-close.jpg","sha256":"b27e40dd755b4907019a2c8bc5b1ab39b1db55defe3d623a8c1e760ca0cea65e"},
-      {"part":"sureties-sharp-crop","path":"public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/11-witnesses-sharp-crop.png","sha256":"a971d8de203d0f0136e3f312db115d9ee07fc61112fc5ebea5f11bc1cde3679e"}
+      {
+        "part": "index-groom",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/01-index-groom.jpg",
+        "sha256": "af705688088055c3c89b5853afa9b5c963f9379c8fb088f734ff65ab8f7abed0"
+      },
+      {
+        "part": "index-bride",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/02-index-bride.jpg",
+        "sha256": "55202a7aaabcb92dc25d57fe073e2c37173a194d2e52a5a2fe0cbd455969c9f5"
+      },
+      {
+        "part": "viewer-information",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/03-viewer-information.jpg",
+        "sha256": "fe4dc58fa09cd6e51dd7633b85e0ec3bf2ea1a0e13a0199515b950e69d3930a0"
+      },
+      {
+        "part": "archive-attribution",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/04-image-attribution.jpg",
+        "sha256": "25351b221260d1dcc5c384e511ab0d271ddf27114d3596b516605eaf392171b8"
+      },
+      {
+        "part": "fullscreen-overview",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/05-fullscreen-overview.jpg",
+        "sha256": "342f0980b24e5f0ff669fffe1de82e62e61407ed0c0e46d3f8cafad3aadec479"
+      },
+      {
+        "part": "target-left",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/06-target-left.jpg",
+        "sha256": "5aa16a7c66a8d28a9d188424cb03d05d62192d160d2a6997197b1d87e84181b6"
+      },
+      {
+        "part": "target-right",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/07-target-right.jpg",
+        "sha256": "381fd320664d058f08c950bdadd75c2dd7a0529570b9f2415d14f35a4f409203"
+      },
+      {
+        "part": "target-right-sharp-tiles",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/08-target-right-sharp.png",
+        "sha256": "04b6ff08f9752ce41b758f34e2b1f9528b02685ff5de2343f7a1dc4232f839df"
+      },
+      {
+        "part": "record-number-date-and-groom",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/09-number-date-groom.jpg",
+        "sha256": "d0f09b06061d8e896a56883f60d70286de45f2343b047e2b5a5a7370db3c0afb"
+      },
+      {
+        "part": "groom-bride-and-clergy-close",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/10-groom-bride-clergy-close.jpg",
+        "sha256": "b27e40dd755b4907019a2c8bc5b1ab39b1db55defe3d623a8c1e760ca0cea65e"
+      },
+      {
+        "part": "sureties-sharp-crop",
+        "path": "public/archive/evidence/familysearch/ukraine/kharkiv/3Q9M-CSSW-XQ9J-Q/11-witnesses-sharp-crop.png",
+        "sha256": "a971d8de203d0f0136e3f312db115d9ee07fc61112fc5ebea5f11bc1cde3679e"
+      }
     ]
   },
   "review": {

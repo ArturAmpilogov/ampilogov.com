@@ -2,8 +2,14 @@
   "schemaVersion": 1,
   "sourceId": "FS-3Q9M-CSSK-2SMB-R",
   "provider": "FamilySearch",
+  "primaryPersonId": "P99434",
   "collection": {
-    "title": "Мелитополь. Метрические записи о родившихся, умерших и браке, 1900–1915"
+    "id": "4135959",
+    "title": "Тимошевка. Метрическая книга о родившихся, 1915",
+    "filmNumber": "007824165",
+    "imageGroupNumber": "007824165",
+    "imageNumberGlobal": 993,
+    "imageCount": 1042
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSK-2SMB-R",
@@ -12,13 +18,17 @@
   "event": {
     "type": "birth-and-baptism",
     "date": {
-      "display": "24 сентября 1905; крещение того же дня",
-      "calendar": "julian-assumed-from-orthodox-register"
+      "display": "24 мая 1915; крещение того же дня",
+      "birthIso": "1915-05-24",
+      "baptismIso": "1915-05-24",
+      "calendar": "source-calendar-unverified"
     },
     "place": {
-      "asWritten": "Мелитопольский уезд",
-      "modernName": "Запорожская область, Украина",
-      "modernCountry": "Украина"
+      "asWritten": "Тимошевскаго крестьянина",
+      "normalized": "Тимошевка, Мелитопольский уезд, Таврическая губерния, Российская империя",
+      "modernName": "Тимошовка, Запорожская область, Украина",
+      "modernCountry": "Украина",
+      "placeId": "tymoshivka"
     }
   },
   "indexData": {
@@ -26,13 +36,14 @@
     "subject": "Роман Григорьев Ампилогов",
     "spouse": "Елена Михайлова",
     "child": "Роман Ампилогов",
-    "indexWarning": "Дата и формуляр перепроверены по оригинальному листу."
+    "birthDateAsIndexed": "24 мая 1914",
+    "indexWarning": "Индекс FamilySearch ошибочно относит запись к 1914 году, а прежняя локальная карточка — к 24 сентября 1905 года. Заголовок оригинального разворота прямо даёт 1915 год; смерть ребёнка 26 июля 1915 года в возрасте двух месяцев независимо подтверждает рождение 24 мая 1915 года."
   },
   "mentions": [
     {
       "mentionId": "FS-3Q9M-CSSK-2SMB-R-M1",
       "role": "child",
-      "personId": null,
+      "personId": "P99434",
       "sex": "male",
       "nameAsTranscribed": "Романъ",
       "nameAsIndexed": "Роман Ампилогов",
@@ -45,13 +56,14 @@
     {
       "mentionId": "FS-3Q9M-CSSK-2SMB-R-M2",
       "role": "father",
-      "personId": null,
+      "personId": "P99432",
       "sex": "male",
-      "nameAsTranscribed": "Романъ Григорьевъ Ампилоговъ",
+      "nameAsTranscribed": "Романъ Григорьевъ Анпилоговъ",
       "nameAsIndexed": "Роман Григорьев Ампилогов",
       "modernName": "Роман Григорьевич Ампилогов",
       "displayName": "Роман Григорьевич Ампилогов",
       "alternateNames": [
+        "Романъ Григорьевъ Анпилоговъ",
         "Романъ Григорьевъ Ампилоговъ",
         "Роман Григорьев Ампилогов"
       ]
@@ -71,14 +83,14 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "№ 93 | 24 / 24 сентября | Романъ | Мелитопольскіе мѣщане Романъ Григорьевъ Ампилоговъ и законная жена его Елена Михайлова, оба православные | восприемники требуют дополнительной сверки.",
-    "layoutNote": "Строка №93 в части первой метрической книги за 1905 год.",
-    "modernInterpretation": "24 сентября 1905 года у Романа Григорьевича Ампилогова и Елены Михайловны родился и был крещён сын Роман.",
+    "status": "complete-core-fields",
+    "literal": "№ 93 | 24 / 24 мая | Романъ | Тимошевскаго крестьянина Романа Григорьева Анпилогова и законная жена его Елена Михайлова, оба православные | восприемники требуют дополнительной сверки.",
+    "layoutNote": "Строка № 93 в части первой метрической книги; над разворотом от руки указан 1915 год. Дата, ребёнок, родители и тимошевский статус отца проверены по оригиналу.",
+    "modernInterpretation": "24 мая 1915 года у тимошевского крестьянина Романа Григорьевича Анпилогова и Елены Михайловны родился и был крещён сын Роман.",
     "fields": {
       "recordNumber": 93,
-      "birthDate": "24 сентября 1905",
-      "baptismDate": "24 сентября 1905",
+      "birthDate": "24 мая 1915",
+      "baptismDate": "24 мая 1915",
       "child": "Роман Романович Ампилогов",
       "parents": "Роман Григорьевич Ампилогов и Елена Михайловна"
     }
@@ -90,22 +102,26 @@
     "sha256": "1438b60f452434d5f2516c82b5caa89297ae0934f66385c87afa51ccbb20004b",
     "publicDisplay": false,
     "rightsNote": "Локальный контрольный снимок собран из загруженных плиток FamilySearch; публичный показ не подтверждён.",
+    "privateWorkingCopies": [
+      "/private/tmp/P0002-roman-son-birth-1914-corrected.png"
+    ],
     "quality": {
-      "status": "approved-source-limited",
+      "status": "approved-core-fields",
       "sharpTilesConfirmed": true,
       "limitation": "Имена восприемников требуют дополнительного чтения."
     }
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "Ребёнок, родители, номер и даты подтверждены листом.",
-    "transcriptionConfidence": "high-for-core-entry; low-for-witnesses",
+    "status": "complete-core-fields",
+    "identityResolution": "Ребёнок связан с P99434, отец — с P99432. Смерть того же ребёнка через два месяца подтверждается совпадением имён, возраста и полного имени отца.",
+    "transcriptionConfidence": "high-for-year-record-number-date-child-parents-and-father-status; low-for-witnesses",
     "unresolved": [
       "Уточнить полный текст о восприемниках и совершителе таинства."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "24 сентября 1905 года у Романа Григорьевича Ампилогова и Елены Михайловны родился и был крещён сын Роман."
-  }
+    "text": "24 мая 1915 года у тимошевского крестьянина Романа Григорьевича Анпилогова и Елены Михайловны родился и был крещён сын Роман."
+  },
+  "isRecord": true
 }

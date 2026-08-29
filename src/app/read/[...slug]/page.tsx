@@ -6,6 +6,7 @@ import { ChapterPeriod } from "@/components/chapter-period";
 import { MarkdownArticle } from "@/components/markdown-article";
 import { KeepCurrentChapterVisible, ReadingProgress } from "@/components/reading-tools";
 import { SiteHeader } from "@/components/site-header";
+import { SourceRegistry } from "@/components/source-registry";
 import { getChapterMeta } from "@/lib/chapter-meta";
 import {
   getAdjacentDocuments,
@@ -13,6 +14,7 @@ import {
   getDocument,
   getDocumentsBySection,
 } from "@/lib/docs";
+import { getSourceRegistryIndex } from "@/lib/source-registry-index";
 
 type PageProps = { params: Promise<{ slug: string[] }> };
 
@@ -43,6 +45,7 @@ export default async function ReadingPage({ params }: PageProps) {
       })
     : [];
   const periodPosition = periodDocuments.findIndex((entry) => entry.slug === document.slug) + 1;
+  const sourceRegistry = document.slug === "research/sources" ? getSourceRegistryIndex() : null;
 
   return (
     <main className="reading-page">
@@ -83,7 +86,11 @@ export default async function ReadingPage({ params }: PageProps) {
           {chapterMeta?.period && periodPosition > 0 ? (
             <ChapterPeriod meta={chapterMeta} position={periodPosition} total={periodDocuments.length} />
           ) : null}
-          <MarkdownArticle content={document.content} sourcePath={document.sourcePath} />
+          {sourceRegistry ? (
+            <SourceRegistry registry={sourceRegistry} title={document.title} />
+          ) : (
+            <MarkdownArticle content={document.content} sourcePath={document.sourcePath} />
+          )}
 
           <nav className="page-turn" aria-label="Соседние материалы">
             {previous ? (
