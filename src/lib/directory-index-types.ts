@@ -18,6 +18,7 @@ export type RecordDirectoryItem = {
   reviewState: "complete" | "human-review" | "source-needed";
   reviewLabel: string;
   reviewDescription: string;
+  isComplete: boolean;
   searchText: string;
 };
 
@@ -32,6 +33,11 @@ export type RecordsDirectoryIndex = {
     withImages: number;
   };
   records: RecordDirectoryItem[];
+  appendices?: Record<string, {
+    path: string;
+    count: number;
+    version: string;
+  }>;
 };
 
 export type PeopleDirectoryRelation = {

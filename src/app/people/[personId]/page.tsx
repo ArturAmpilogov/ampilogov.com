@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { SiteHeader } from "@/components/site-header";
-import { getPeopleDirectoryIndex } from "@/lib/directory-index";
+import { getPeopleDirectoryIndex } from "@/lib/people-directory-index";
 import { getDirectoryPerson } from "@/lib/genealogy";
 
 type PersonPageProps = {
@@ -19,15 +19,35 @@ const relationLabels = {
   "foster-child": "Приёмыш",
 };
 
+function compactPlaceLabels(places: string[]) {
+  const unique = [...new Map(
+    places
+      .map((place) => place.trim())
+      .filter(Boolean)
+      .map((place) => [place.toLocaleLowerCase("ru-RU"), place]),
+  ).values()];
+
+  return unique.filter((place, index) => {
+    const normalized = place.toLocaleLowerCase("ru-RU");
+    return !unique.some((other, otherIndex) => (
+      otherIndex !== index
+      && other.length > place.length
+      && other.toLocaleLowerCase("ru-RU").startsWith(`${normalized},`)
+    ));
+  });
+}
+
 export function generateStaticParams() {
   return getPeopleDirectoryIndex().people.map((person) => ({ personId: person.personId }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PersonPageProps): Promise<Metadata> {
   const { personId } = await params;
   const decodedPersonId = decodeURIComponent(personId);
   const person = getDirectoryPerson(decodedPersonId);
-  if (!person) return { title: "Профиль не найден" };
+  if (!person) return { title: "Человек не найден" };
   return {
     title: person.displayName,
     description: `${person.displayName}: документированные события, варианты имени и связанные люди.`,
@@ -39,16 +59,18 @@ export default async function PersonPage({ params }: PersonPageProps) {
   const decodedPersonId = decodeURIComponent(personId);
   const person = getDirectoryPerson(decodedPersonId);
   if (!person) notFound();
+  const places = compactPlaceLabels(person.places);
+  const contextSectionCount = Number(person.relations.length > 0) + Number(person.notes.length > 0);
 
   return (
     <main className="person-page">
       <SiteHeader />
       <article className="person-document section-shell">
-        <Link className="person-back" href="/people">← Все профили</Link>
+        <Link className="person-back" href="/people">← Все люди</Link>
 
         <header className="person-heading">
           <div>
-            <span className="eyebrow">Профиль · {person.personId}</span>
+            <span className="eyebrow">Человек · {person.personId}</span>
             <h1>{person.displayName}</h1>
             {person.variants.length ? (
               <p className="person-heading-variants">
@@ -64,7 +86,7 @@ export default async function PersonPage({ params }: PersonPageProps) {
 
         <dl className="person-facts">
           <div><dt>Рождение</dt><dd>{person.birthDate || "Не установлено"}</dd></div>
-          <div><dt>Места</dt><dd>{person.places.join(", ") || "Проверяются"}</dd></div>
+          <div><dt>Места</dt><dd>{places.join(" · ") || "Проверяются"}</dd></div>
           <div><dt>Источники</dt><dd>{person.sources.length}</dd></div>
           <div><dt>Занятие</dt><dd>{person.occupations.join(", ") || "Не указано"}</dd></div>
         </dl>
@@ -94,34 +116,34 @@ export default async function PersonPage({ params }: PersonPageProps) {
         ) : null}
 
         {person.relations.length || person.notes.length ? (
-          <div className="person-context-grid">
-            <section className="person-relations" aria-labelledby="relations-title">
-              <div className="person-section-heading">
-                <div>
-                  <span className="section-label">Семейные связи</span>
-                  <h2 id="relations-title">Связанные люди</h2>
+          <div className={`person-context-grid${contextSectionCount === 1 ? " is-single" : ""}`}>
+            {person.relations.length ? (
+              <section className="person-relations" aria-labelledby="relations-title">
+                <div className="person-section-heading">
+                  <div>
+                    <span className="section-label">Родство</span>
+                    <h2 id="relations-title">Семейные связи</h2>
+                  </div>
+                  <strong>{person.relations.length}</strong>
                 </div>
-                <strong>{person.relations.length}</strong>
-              </div>
-              {person.relations.length ? (
                 <div className="person-relations-list">
                   {person.relations.map((relation) => (
                     <Link href={`/people/${encodeURIComponent(relation.personId)}`} key={`${relation.relation}:${relation.personId}`}>
                       <small>{relationLabels[relation.relation]}</small>
                       <strong>{relation.name}</strong>
-                      <span>Профиль →</span>
+                      <span>Открыть →</span>
                     </Link>
                   ))}
                 </div>
-              ) : <p className="person-context-empty">Подтверждённые связи пока не добавлены.</p>}
-            </section>
+              </section>
+            ) : null}
 
             {person.notes.length ? (
               <section className="person-notes">
                 <div className="person-section-heading">
                   <div>
                     <span className="section-label">Контекст</span>
-                    <h2>Исследовательские заметки</h2>
+                    <h2>Заметки</h2>
                   </div>
                 </div>
                 {person.notes.map((note) => <p key={note}>{note}</p>)}
@@ -133,69 +155,32 @@ export default async function PersonPage({ params }: PersonPageProps) {
         <section className="person-documents" aria-labelledby="documents-title">
           <div className="person-section-heading">
             <div>
-              <span className="section-label">Документальная хронология</span>
-              <h2 id="documents-title">Источники</h2>
+              <span className="section-label">Документы</span>
+              <h2 id="documents-title">Хронология</h2>
             </div>
             <strong>{person.sources.length}</strong>
           </div>
 
-          {person.sources.length ? person.sources.map((source, index) => (
-            <details key={source.sourceId} open={index === 0}>
-              <summary>
-                <span className="source-sequence">{String(index + 1).padStart(2, "0")}</span>
-                <span className="person-source-icon"><RecordTypeIcon eventType={source.eventType} /></span>
-                <span className="person-source-main">
-                  <small>{source.role}</small>
-                  <strong>{source.eventLabel}</strong>
-                  <em>{source.place}</em>
-                </span>
-                <time>{source.date}</time>
-                <i aria-hidden="true">+</i>
-              </summary>
-              <div className="source-detail">
-                <dl>
-                  <div><dt>Как написано</dt><dd>{source.nameAsWritten}</dd></div>
-                  <div><dt>Роль</dt><dd>{source.role}</dd></div>
-                  {source.imageReference ? <div><dt>Ссылка в плёнке</dt><dd>{source.imageReference}</dd></div> : null}
-                </dl>
-                {!source.hasCompleteTranscription ? (
-                  <div className="source-transcription-missing">
-                    <strong>Полной расшифровки скана ещё нет</strong>
-                    <p>Источник находится в обязательной очереди повторного чтения.</p>
+          {person.sources.length ? (
+            <div className="person-source-timeline">
+              {person.sources.map((source, index) => (
+                <article key={source.sourceId}>
+                  <span className="source-sequence">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="person-source-icon"><RecordTypeIcon eventType={source.eventType} /></span>
+                  <div className="person-source-main">
+                    <small>{source.role}</small>
+                    <strong>{source.eventLabel}</strong>
+                    <em>{source.place}</em>
+                    {source.nameAsWritten ? <span>В документе: {source.nameAsWritten}</span> : null}
                   </div>
-                ) : null}
-                {source.hasLiteralTranscription ? (
-                  <div className="source-transcription">
-                    <span>{source.hasCompleteTranscription ? "Буквальная расшифровка" : "Черновое чтение — неполная расшифровка"}</span>
-                    <p>{source.transcription}</p>
-                  </div>
-                ) : null}
-                {source.summary ? (
-                  <div className="source-summary">
-                    <span>Краткое описание — не расшифровка</span>
-                    <p>{source.summary}</p>
-                  </div>
-                ) : null}
-                {source.modernInterpretation ? (
-                  <div className="source-modern">
-                    <span>Современная запись</span>
-                    <p>{source.modernInterpretation}</p>
-                  </div>
-                ) : null}
-                {source.unresolved.length ? (
-                  <div className="source-unresolved">
-                    <span>Нужно уточнить</span>
-                    <p>{source.unresolved.join(" · ")}</p>
-                  </div>
-                ) : null}
-                <div className="source-actions">
-                  <Link href={`/records/${encodeURIComponent(source.sourceId)}`}>Открыть запись →</Link>
-                  {source.evidenceUrl ? <a href={source.evidenceUrl} target="_blank" rel="noreferrer">Снимок ↗</a> : null}
-                  {source.externalUrl ? <a href={source.externalUrl} target="_blank" rel="noreferrer">{source.externalLabel} ↗</a> : null}
-                </div>
-              </div>
-            </details>
-          )) : <p className="person-no-sources">Источники ещё не привязаны к профилю.</p>}
+                  <time>{source.date}</time>
+                  <Link href={`/records/${encodeURIComponent(source.sourceId)}`}>
+                    Открыть запись <span aria-hidden="true">↗</span>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          ) : <p className="person-no-sources">Источники ещё не привязаны к этому человеку.</p>}
         </section>
       </article>
     </main>

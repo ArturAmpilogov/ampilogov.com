@@ -83,6 +83,19 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
         alt={alt ?? "Фотокопия документа"}
       />
     ),
+    table: ({ children, ...props }) => (
+      <div
+        className="markdown-table-scroll"
+        role="region"
+        aria-label="Таблица с горизонтальной прокруткой"
+        tabIndex={0}
+      >
+        <span className="markdown-table-scroll__hint" aria-hidden="true">
+          Таблица · проведите в сторону →
+        </span>
+        <table {...props}>{children}</table>
+      </div>
+    ),
     h2: ({ children, ...props }) => {
       const text = headingText(children);
       const marker = text.match(/\s*\{#([a-z][a-z0-9-]*)\}\s*$/i);

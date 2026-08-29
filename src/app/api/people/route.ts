@@ -1,4 +1,4 @@
-import { getPeopleDirectoryIndex } from "@/lib/directory-index";
+import { getPeopleDirectoryIndex } from "@/lib/people-directory-index";
 import type { DirectoryPage, PeopleDirectoryResult } from "@/lib/directory-index-types";
 import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, normalizeDirectorySearch } from "@/lib/directory-search";
 

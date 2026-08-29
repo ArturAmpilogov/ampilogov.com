@@ -52,17 +52,43 @@
     "warning": "OCR заголовка месяца читает «Июль», но итоговая строка листа прямо подводит итог июня; принят июнь."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-47-202-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "1091cf937f8145e636261a4b55314a3e233fe8e2cff29862e49be38b76fc18ec",
+    "captureType": "remote-viewer-document-only-capture-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0202-full-view.png",
+    "capturedAt": "2026-08-27",
+    "sha256": "4c56ff06d47dff50cae45859ba71adea47dda93490256637956b1bd9e3bd0359",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0202-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0202-header.png",
+        "sha256": "581a431eb0e72c2d662401595c4028a84aec35ec734cb75c74d3e8a5ee6c4a2c",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0202-target-entry.png",
+        "sha256": "d0f5fdebc7d3baa61c66a304872e4815d32e946e2d832ddf40ace20ad98af50e",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-08-27",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
     "unresolved": [
       "Мать Константина запись смерти не называет."
+    ],
+    "correctionHistory": [
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-08-27: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

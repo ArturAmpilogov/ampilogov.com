@@ -3,25 +3,34 @@
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { FamilyMapMigration, FamilyMapPlace } from "@/lib/genealogy";
+import type {
+  FamilyMapClientDirectory,
+  FamilyMapIndexPlace,
+  FamilyMapMigration,
+  FamilyMapPlaceDetails,
+} from "@/lib/genealogy";
+import { readVersionedMapJson } from "@/lib/browser-json-cache";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 import { YearRangeFilter } from "@/components/year-range-filter";
 
 type FamilySettlementMapProps = {
-  places: FamilyMapPlace[];
-  migrations: FamilyMapMigration[];
   range: { minYear: number; maxYear: number };
+  dataVersion: string;
+  directoryPath: string;
 };
 
+const EMPTY_PLACES: FamilyMapIndexPlace[] = [];
+const EMPTY_MIGRATIONS: FamilyMapMigration[] = [];
+
 type PlaceSummary = {
-  place: FamilyMapPlace;
+  place: FamilyMapIndexPlace;
   familyCount: number;
   peopleCount: number;
   generationCount: number;
   recordCount: number;
   firstYear: number;
   lastYear: number;
-  activeEvents: FamilyMapPlace["events"];
+  activeEvents: FamilyMapIndexPlace["events"];
 };
 
 type CountedMarker = import("leaflet").Marker & {
@@ -36,13 +45,11 @@ type MigrationRecordLink = {
   placeName: string;
 };
 
-function summarizePlace(place: FamilyMapPlace, startYear: number, endYear: number): PlaceSummary | null {
+function summarizePlace(place: FamilyMapIndexPlace, startYear: number, endYear: number): PlaceSummary | null {
   const activeEvents = place.events.filter((event) => event.year >= startYear && event.year <= endYear);
   if (!activeEvents.length) return null;
   const years = activeEvents.map((event) => event.year);
-  const peopleKeys = activeEvents.flatMap((event) => event.people.map((person) => (
-    person.personId ? `id:${person.personId}` : `name:${person.name}`
-  )));
+  const peopleKeys = activeEvents.flatMap((event) => event.personKeys);
 
   return {
     place,
@@ -103,10 +110,35 @@ function plural(value: number, one: string, few: string, many: string) {
   return many;
 }
 
-export function FamilySettlementMap({ places, migrations, range }: FamilySettlementMapProps) {
+function conciseMapText(value: unknown, maxLength = 210) {
+  if (typeof value !== "string") return "";
+  const normalized = value.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLength) return normalized;
+
+  const sentences = normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/g) ?? [normalized];
+  let summary = sentences[0]?.trim() ?? normalized;
+  if (summary.length < 90 && sentences[1]) summary = `${summary} ${sentences[1].trim()}`;
+  if (summary.length <= maxLength) return summary;
+
+  const clipped = summary.slice(0, maxLength + 1);
+  const lastSpace = clipped.lastIndexOf(" ");
+  return `${clipped.slice(0, lastSpace > maxLength * 0.72 ? lastSpace : maxLength).trim()}…`;
+}
+
+export function FamilySettlementMap({ range, dataVersion, directoryPath }: FamilySettlementMapProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlState = searchParams.toString();
+  const [directorySnapshot, setDirectorySnapshot] = useState<{
+    version: string;
+    directory: FamilyMapClientDirectory;
+  } | null>(null);
+  const [directoryErrorVersion, setDirectoryErrorVersion] = useState<string | null>(null);
+  const [directoryRetry, setDirectoryRetry] = useState(0);
+  const directory = directorySnapshot?.version === dataVersion ? directorySnapshot.directory : null;
+  const places = directory?.places ?? EMPTY_PLACES;
+  const migrations = directory?.migrations ?? EMPTY_MIGRATIONS;
+  const directoryState = directory ? "ready" : directoryErrorVersion === dataVersion ? "error" : "loading";
   const placeIds = useMemo(() => new Set(places.map((place) => place.placeId)), [places]);
   const migrationIds = useMemo(() => new Set(migrations.map((migration) => migration.migrationId)), [migrations]);
   const stateFromUrl = useMemo(() => {
@@ -132,16 +164,43 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
   const expandedClusterRef = useRef<import("leaflet").MarkerCluster | null>(null);
   const markersByPlaceRef = useRef(new Map<string, CountedMarker>());
   const routeLayerRef = useRef<import("leaflet").LayerGroup | null>(null);
+  const routeRendererRef = useRef<import("leaflet").SVG | null>(null);
+  const hasFittedInitialBoundsRef = useRef(false);
   const [ready, setReady] = useState(false);
   const [yearRange, setYearRange] = useState(stateFromUrl.yearRange);
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(stateFromUrl.placeId);
   const [hoveredMigrationId, setHoveredMigrationId] = useState<string | null>(null);
   const [selectedMigrationId, setSelectedMigrationId] = useState<string | null>(stateFromUrl.migrationId);
   const [expandedCluster, setExpandedCluster] = useState(false);
+  const [placeDetailsById, setPlaceDetailsById] = useState(() => new Map<string, FamilyMapPlaceDetails>());
+  const [placeDetailsErrorKey, setPlaceDetailsErrorKey] = useState<string | null>(null);
   const locallyWrittenUrlRef = useRef<string | null>(null);
   const shouldFocusSelectionRef = useRef(Boolean(stateFromUrl.placeId || stateFromUrl.migrationId));
   const currentSelectionRef = useRef({ placeId: selectedPlaceId, migrationId: selectedMigrationId });
-  currentSelectionRef.current = { placeId: selectedPlaceId, migrationId: selectedMigrationId };
+
+  useEffect(() => {
+    if (directory) return;
+    const controller = new AbortController();
+
+    void readVersionedMapJson<FamilyMapClientDirectory>(
+      directoryPath,
+      dataVersion,
+      controller.signal,
+    ).then((nextDirectory) => {
+      setDirectorySnapshot({ version: dataVersion, directory: nextDirectory });
+      setDirectoryErrorVersion((current) => current === dataVersion ? null : current);
+    }).catch((error: unknown) => {
+      if (controller.signal.aborted) return;
+      console.error(error);
+      setDirectoryErrorVersion(dataVersion);
+    });
+
+    return () => controller.abort();
+  }, [dataVersion, directory, directoryPath, directoryRetry]);
+
+  useEffect(() => {
+    currentSelectionRef.current = { placeId: selectedPlaceId, migrationId: selectedMigrationId };
+  }, [selectedMigrationId, selectedPlaceId]);
 
   const summaries = useMemo(() => places
     .map((place) => summarizePlace(place, yearRange.startYear, yearRange.endYear))
@@ -150,9 +209,19 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.map((summary) => [summary.place.placeId, summary]),
   ), [summaries]);
   const selected = selectedPlaceId ? summariesById.get(selectedPlaceId) ?? null : null;
-  const selectedPeopleCount = selected ? new Set(
-    selected.activeEvents.flatMap((event) => event.people.map((person) => person.personId ?? person.name)),
-  ).size : 0;
+  const selectedPeopleCount = selected?.peopleCount ?? 0;
+  const selectedPlaceDetailsKey = selectedPlaceId ? `${dataVersion}:${selectedPlaceId}` : null;
+  const selectedPlaceDetails = selectedPlaceDetailsKey ? placeDetailsById.get(selectedPlaceDetailsKey) ?? null : null;
+  const placeDetailsState = !selectedPlaceId || selectedPlaceDetails
+    ? "idle"
+    : placeDetailsErrorKey === selectedPlaceDetailsKey ? "error" : "loading";
+  const selectedDetailEvents = useMemo(() => (
+    selectedPlaceDetails?.placeId === selectedPlaceId
+      ? selectedPlaceDetails.events.filter((event) => (
+        event.year >= yearRange.startYear && event.year <= yearRange.endYear
+      ))
+      : []
+  ), [selectedPlaceDetails, selectedPlaceId, yearRange.endYear, yearRange.startYear]);
   const activeMigrations = useMemo(() => migrations.filter((migration) =>
     migration.year >= yearRange.startYear && migration.year <= yearRange.endYear &&
     summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
@@ -164,7 +233,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     const migration = activeMigrations.find((candidate) => candidate.migrationId === migrationId);
     if (!migration) return null;
 
-    const eventsBySource = new Map<string, { event: FamilyMapPlace["events"][number]; placeName: string }>();
+    const eventsBySource = new Map<string, { event: FamilyMapIndexPlace["events"][number]; placeName: string }>();
     for (const summary of summaries) {
       for (const event of summary.activeEvents) {
         const existing = eventsBySource.get(event.sourceId);
@@ -194,13 +263,37 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.familyIds)),
   ).size, [summaries]);
   const totalPeople = useMemo(() => new Set(
-    summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.people.map((person) => (
-      person.personId ? `id:${person.personId}` : `name:${person.name}`
-    )))),
+    summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.personKeys)),
   ).size, [summaries]);
   const totalRecords = useMemo(() => new Set(
     summaries.flatMap((summary) => summary.activeEvents.map((event) => event.sourceId)),
   ).size, [summaries]);
+
+  useEffect(() => {
+    if (!selectedPlaceId || !selectedPlaceDetailsKey || selectedPlaceDetails) return;
+
+    const controller = new AbortController();
+    void readVersionedMapJson<FamilyMapPlaceDetails>(
+      `/generated/map/places/${encodeURIComponent(selectedPlaceId)}.${dataVersion}.json`,
+      dataVersion,
+      controller.signal,
+    )
+      .then((details) => {
+        setPlaceDetailsById((current) => {
+          const next = new Map(current);
+          next.set(selectedPlaceDetailsKey, details);
+          return next;
+        });
+        setPlaceDetailsErrorKey((current) => current === selectedPlaceDetailsKey ? null : current);
+      })
+      .catch((error: unknown) => {
+        if (controller.signal.aborted) return;
+        console.error(error);
+        setPlaceDetailsErrorKey(selectedPlaceDetailsKey);
+      });
+
+    return () => controller.abort();
+  }, [dataVersion, selectedPlaceDetails, selectedPlaceDetailsKey, selectedPlaceId]);
 
   useEffect(() => {
     if (locallyWrittenUrlRef.current === urlState) {
@@ -227,7 +320,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     }, 0);
 
     return () => window.clearTimeout(timeout);
-  }, [stateFromUrl]);
+  }, [stateFromUrl, urlState]);
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
@@ -315,6 +408,9 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         showCoverageOnHover: false,
         maxClusterRadius: 54,
         spiderfyOnMaxZoom: true,
+        removeOutsideVisibleBounds: false,
+        animate: false,
+        animateAddingMarkers: false,
         iconCreateFunction(cluster) {
           const markers = cluster.getAllChildMarkers() as CountedMarker[];
           const familyCount = markers.reduce((sum, marker) => sum + (marker.familyCount ?? 0), 0);
@@ -336,6 +432,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         expandedClusterRef.current = null;
         setExpandedCluster(false);
       });
+      routeRendererRef.current = L.svg({ padding: 1 });
       routeLayerRef.current = L.layerGroup().addTo(map);
       clusterRef.current.addTo(map);
 
@@ -344,8 +441,6 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         setSelectedPlaceId(null);
         setSelectedMigrationId(null);
       });
-      const bounds = L.latLngBounds(places.map((place) => [place.geo.latitude, place.geo.longitude]));
-      map.fitBounds(bounds, { padding: [52, 52], maxZoom: 5 });
       window.requestAnimationFrame(() => map.invalidateSize());
       setReady(true);
     })();
@@ -359,8 +454,22 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
       expandedClusterRef.current = null;
       markersByPlace.clear();
       routeLayerRef.current = null;
+      routeRendererRef.current = null;
+      hasFittedInitialBoundsRef.current = false;
     };
-  }, [places]);
+  }, []);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    const L = leafletRef.current;
+    if (!ready || !map || !L || !places.length || hasFittedInitialBoundsRef.current) return;
+
+    hasFittedInitialBoundsRef.current = true;
+    map.fitBounds(
+      L.latLngBounds(places.map((place) => [place.geo.latitude, place.geo.longitude])),
+      { padding: [52, 52], maxZoom: 5 },
+    );
+  }, [places, ready]);
 
   useEffect(() => {
     const L = leafletRef.current;
@@ -443,7 +552,8 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
     const L = leafletRef.current;
     const map = mapRef.current;
     const routeLayer = routeLayerRef.current;
-    if (!ready || !L || !map || !routeLayer) return;
+    const routeRenderer = routeRendererRef.current;
+    if (!ready || !L || !map || !routeLayer || !routeRenderer) return;
 
     routeLayer.clearLayers();
 
@@ -464,6 +574,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         opacity: routeSelected ? .96 : baseOpacity,
         dashArray: documented ? undefined : "5 8",
         interactive: false,
+        renderer: routeRenderer,
       }).addTo(routeLayer);
       const routeHit = L.polyline([fromLatLng, toLatLng], {
         className: "settlement-migration-hit",
@@ -472,6 +583,7 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
         opacity: 0,
         interactive: related,
         bubblingMouseEvents: false,
+        renderer: routeRenderer,
       }).addTo(routeLayer);
       routeHit.bindTooltip(
         `${from.place.name} → ${to.place.name} · ${migration.sourceIds.length} ${plural(migration.sourceIds.length, "запись", "записи", "записей")}`,
@@ -531,31 +643,46 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
 
   return (
     <section className="settlement-map-workspace" aria-label="Карта расселения рода">
-      <div className="settlement-map-summary section-shell" aria-live="polite">
-        <div>
-          <span>{selected ? "Выбранное место" : "Данные за период"}</span>
-          <strong>{selected?.place.name ?? `${summaries.length} мест`}</strong>
+      <div className="settlement-map-controls section-shell">
+        <div className="settlement-map-summary" aria-live="polite">
+          <div>
+            <span>{selected ? "Выбранное место" : "На карте"}</span>
+            <strong>{selected?.place.name ?? (
+              directoryState === "loading" ? "Загрузка…" : directoryState === "error" ? "Данные недоступны" : `${summaries.length} мест`
+            )}</strong>
+            {directoryState === "ready" ? (
+              <small>
+                {selected?.familyCount ?? totalFamilies} {plural(selected?.familyCount ?? totalFamilies, "семья", "семьи", "семей")}
+                <i aria-hidden="true"> · </i>
+                {selected?.peopleCount ?? totalPeople} {plural(selected?.peopleCount ?? totalPeople, "человек", "человека", "человек")}
+                <i aria-hidden="true"> · </i>
+                {selected?.recordCount ?? totalRecords} {plural(selected?.recordCount ?? totalRecords, "запись", "записи", "записей")}
+              </small>
+            ) : null}
+          </div>
+          {selected ? (
+            <button type="button" onClick={resetMapFocus}>← Все места</button>
+          ) : directoryState === "error" ? (
+            <button
+              type="button"
+              onClick={() => {
+                setDirectoryErrorVersion(null);
+                setDirectoryRetry((current) => current + 1);
+              }}
+            >Повторить</button>
+          ) : null}
         </div>
-        <dl>
-          <div><dt>Семейные группы</dt><dd>{selected?.familyCount ?? totalFamilies}</dd></div>
-          <div><dt>Люди</dt><dd>{selected?.peopleCount ?? totalPeople}</dd></div>
-          <div><dt>{selected ? "Поколения" : "Записи"}</dt><dd>{selected?.generationCount ?? totalRecords}</dd></div>
-          {selected ? <div><dt>Период</dt><dd>{selected.firstYear}—{selected.lastYear}</dd></div> : null}
-        </dl>
-        {selected ? (
-          <button type="button" onClick={resetMapFocus}>← Все места</button>
-        ) : null}
-      </div>
 
-      <div className="settlement-map-timeline section-shell">
-        <YearRangeFilter
-          label="Исторический период"
-          minYear={range.minYear}
-          maxYear={range.maxYear}
-          startYear={yearRange.startYear}
-          endYear={yearRange.endYear}
-          onChange={setYearRange}
-        />
+        <div className="settlement-map-timeline">
+          <YearRangeFilter
+            label="Период"
+            minYear={range.minYear}
+            maxYear={range.maxYear}
+            startYear={yearRange.startYear}
+            endYear={yearRange.endYear}
+            onChange={setYearRange}
+          />
+        </div>
       </div>
 
       <div className="settlement-map-stage section-shell">
@@ -588,13 +715,21 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
                 const personId = displayedMigration.migration.personIds[index];
                 return (
                   <li key={`${personId ?? name}:${index}`}>
-                    {personId ? <Link href={`/people/${encodeURIComponent(personId)}`}>{name}</Link> : <strong>{name}</strong>}
+                    {personId ? (
+                      <Link
+                        href={`/people/${encodeURIComponent(personId)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {name}
+                      </Link>
+                    ) : <strong>{name}</strong>}
                     <span>{displayedMigration.migration.year} · {displayedMigration.from.place.name} → {displayedMigration.to.place.name}</span>
                   </li>
                 );
               })}
             </ul>
-            <p className="settlement-migration-panel__basis">{displayedMigration.migration.basis}</p>
+            <p className="settlement-migration-panel__basis">{conciseMapText(displayedMigration.migration.basis, 180)}</p>
             <nav aria-label="Записи, связанные с направлением">
               {displayedMigration.records.map((record) => (
                 <Link
@@ -622,12 +757,14 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
           >
             <header className="settlement-place-panel__heading">
               <div>
-                <span>Люди и события</span>
+                <span>Место на карте</span>
                 <strong>{selected.place.name}</strong>
-                <small>{selected.firstYear}—{selected.lastYear} · {selected.recordCount} {plural(selected.recordCount, "запись", "записи", "записей")}</small>
-                <small className="settlement-place-panel__scope">
-                  {selectedPeopleCount} {plural(selectedPeopleCount, "человек", "человека", "человек")}
-                </small>
+                <div className="settlement-place-panel__meta">
+                  <small>{selected.firstYear}—{selected.lastYear}</small>
+                  <small>{selected.recordCount} {plural(selected.recordCount, "событие", "события", "событий")}</small>
+                  <small>{selectedPeopleCount} {plural(selectedPeopleCount, "человек", "человека", "человек")}</small>
+                  {selected.place.approximate ? <small>{selected.place.precisionLabel}</small> : null}
+                </div>
               </div>
               <button type="button" onClick={resetMapFocus} aria-label="Закрыть сведения о месте">×</button>
             </header>
@@ -654,61 +791,29 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
                 event.currentTarget.scrollBy({ top, behavior: "smooth" });
               }}
             >
-              {selected.place.geo.note ? (
-                <article className="settlement-place-panel__place-context">
-                  <header>
-                    <h3>Почему точка стоит здесь</h3>
-                    <span>{selected.place.precisionLabel}</span>
-                  </header>
-                  <p>{selected.place.geo.note}</p>
-                  <dl>
-                    <div>
-                      <dt>Исторические названия</dt>
-                      <dd>{selected.place.aliases.join(" · ")}</dd>
-                    </div>
-                    <div>
-                      <dt>Основание привязки</dt>
-                      <dd>{selected.place.geo.source}</dd>
-                    </div>
-                  </dl>
-                  <a href={selected.place.geo.sourceUrl} target="_blank" rel="noopener noreferrer">
-                    Открыть источник привязки <i aria-hidden="true">↗</i>
-                  </a>
-                </article>
+              {placeDetailsState === "loading" ? (
+                <p className="settlement-place-panel__loading" role="status">Загрузка карточек…</p>
               ) : null}
-              {[...selected.activeEvents].reverse().map((event) => (
-                <article key={event.sourceId}>
-                  <header>
-                    <span>{event.date}</span>
-                    <h3>{event.eventLabel}</h3>
+              {placeDetailsState === "error" ? (
+                <p className="settlement-place-panel__loading is-error" role="alert">Не удалось загрузить карточки места.</p>
+              ) : null}
+              {[...selectedDetailEvents].reverse().map((event) => (
+                <article className="settlement-place-panel__event" key={event.sourceId}>
+                  <header className="settlement-place-panel__event-heading">
+                    <time>{event.date}</time>
+                    <Link
+                      href={`/records/${encodeURIComponent(event.sourceId)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${event.eventLabel}, ${event.date} — открыть запись в новой вкладке`}
+                    >
+                      Открыть запись <i aria-hidden="true">↗</i>
+                    </Link>
                   </header>
-                  <section className="settlement-place-panel__meaning" aria-label="Имена и смысл записи">
-                    <div className="settlement-place-panel__meaning-heading">
-                      <span>Имена и смысл</span>
-                      <small>
-                        {event.people.length} {plural(event.people.length, "человек", "человека", "человек")}
-                        {event.nameInsights.length
-                          ? ` · ${event.nameInsights.length} ${plural(event.nameInsights.length, "пояснение", "пояснения", "пояснений")}`
-                          : ""}
-                      </small>
-                    </div>
-                    <p>{event.meaning}</p>
-                    {event.nameInsights.length ? (
-                      <dl>
-                        {event.nameInsights.map((insight, index) => (
-                          <div key={`${insight.label}:${index}`}>
-                            <dt>{insight.label}</dt>
-                            <dd>{insight.text}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    ) : null}
-                  </section>
                   {event.people.length ? (
                     <ul className="settlement-place-panel__people">
                       {event.people.map((person, index) => (
                         <li key={`${person.personId ?? person.name}:${index}`}>
-                          <b>{String(index + 1).padStart(2, "0")}</b>
                           <div className="settlement-place-panel__person-body">
                             {person.personId ? (
                               <Link
@@ -716,52 +821,33 @@ export function FamilySettlementMap({ places, migrations, range }: FamilySettlem
                                 href={`/people/${encodeURIComponent(person.personId)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label={`${person.name} — открыть профиль в новой вкладке`}
+                                aria-label={`${person.name} — открыть карточку человека в новой вкладке`}
                               >
                                 <span>{person.name}</span><i aria-hidden="true">↗</i>
                               </Link>
                             ) : <strong>{person.name}</strong>}
-                            <span>{person.lifeSpan} · {person.role}</span>
-                            {person.variants.length ? (
-                              <p className="settlement-place-panel__person-variants">
-                                <b>Варианты в источниках:</b> {person.variants.join(" · ")}
-                              </p>
-                            ) : null}
-                            {person.details.map((detail, detailIndex) => (
-                              <p key={`${detail}:${detailIndex}`}>{detail}</p>
-                            ))}
-                            {person.nameInsights.length ? (
-                              <details open={index === 0 || /[ОА]нфилог|Анфилоф/i.test(person.name)}>
-                                <summary>
-                                  Разбор имени и доказательств
-                                  <small>{person.nameInsights.length}</small>
-                                </summary>
-                                <dl>
-                                  {person.nameInsights.map((insight, insightIndex) => (
-                                    <div key={`${insight.label}:${insightIndex}`}>
-                                      <dt>{insight.label}</dt>
-                                      <dd>{insight.text}</dd>
-                                    </div>
-                                  ))}
-                                </dl>
-                              </details>
-                            ) : null}
+                            <span>{person.role}{person.lifeSpan ? ` · ${person.lifeSpan}` : ""}</span>
+                            {typeof person.details[0] === "string" && person.details[0].trim()
+                              ? <p>{conciseMapText(person.details[0], 125)}</p>
+                              : null}
                           </div>
-                          <Link
-                            className="settlement-place-panel__record-link"
-                            href={`/records/${encodeURIComponent(event.sourceId)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`${event.eventLabel}, ${event.date} — открыть в новой вкладке`}
-                          >
-                            <span>{event.date}</span><i aria-hidden="true">↗</i>
-                          </Link>
                         </li>
                       ))}
                     </ul>
                   ) : null}
                 </article>
               ))}
+              {selected.place.geo.note ? (
+                <footer className="settlement-place-panel__geo-note">
+                  <div>
+                    <span>Положение точки</span>
+                    <p>{conciseMapText(selected.place.geo.note, 150)}</p>
+                  </div>
+                  <a href={selected.place.geo.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    Источник <i aria-hidden="true">↗</i>
+                  </a>
+                </footer>
+              ) : null}
             </div>
           </aside>
         ) : null}

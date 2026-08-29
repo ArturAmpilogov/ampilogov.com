@@ -18,8 +18,13 @@
   "primaryPersonId": "P5450",
   "event": {
     "type": "death-and-burial",
-    "date": {"display": "умер 4 августа 1870 года; погребён 6 августа"},
-    "place": {"normalized": "деревня Кармалка, Оренбургский уезд", "placeId": "karmalka-sarmanayeva"}
+    "date": {
+      "display": "умер 4 августа 1870 года; погребён 6 августа"
+    },
+    "place": {
+      "normalized": "деревня Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-sarmanayeva"
+    }
   },
   "mentions": [
     {
@@ -40,17 +45,43 @@
     "warning": "Поисковый сниппет пропускает отчество Азарович и присоединяет следующую запись о Екатерине Шеховцевой. Машинная форма причины смерти «отъ дряхловъ» грамматически ошибочна; нормализация как «от дряхлости» отмечена неуверенной."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-47-203-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "bb5e785b4766fc6c58d37855225b61d6de9e06173ad71dc802df06c945605fca",
+    "captureType": "remote-viewer-document-only-capture-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0203-full-view.png",
+    "capturedAt": "2026-08-27",
+    "sha256": "e99c681f1469112ad418215c4c25fad603e0d2763c1851fd7e36c9673dec2e79",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0203-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0203-header.png",
+        "sha256": "0aa84d292caf27c4f3a6e46587bdc63d77763ccfbadaee627a0c6309d5d6e986",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/06f85fc8-3c4e-4722-918d-43c7f23e388f/0203-target-entry.png",
+        "sha256": "d0e39dd87db800a566b6f353f707aa64f87d6f12b378a80b3da91ecba0922054",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-08-27",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
     "unresolved": [
       "Буквальное чтение причины смерти требует более чёткого изображения листа."
+    ],
+    "correctionHistory": [
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-08-27: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

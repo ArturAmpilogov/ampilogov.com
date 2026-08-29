@@ -3,11 +3,11 @@ import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { PeopleDirectory } from "@/components/people-directory";
 import { SiteHeader } from "@/components/site-header";
-import { getPeopleDirectoryIndex } from "@/lib/directory-index";
+import { getPeopleDirectoryIndex } from "@/lib/people-directory-index";
 
 export const metadata: Metadata = {
-  title: "Профили людей",
-  description: "Профили носителей фамильного ряда Ампилоговых и его документированных вариантов по 1950 год.",
+  title: "Люди",
+  description: "Люди фамильного ряда Ампилоговых и его документированных вариантов по 1950 год.",
 };
 
 export default async function PeoplePage({
@@ -27,7 +27,7 @@ export default async function PeoplePage({
       <header className="people-masthead directory-masthead section-shell">
         <div>
           <span className="eyebrow">Документальный архив</span>
-          <h1>Профили</h1>
+          <h1>Люди</h1>
         </div>
         <p>Носители фамильного ряда и документированные варианты фамилии.</p>
         <dl aria-label="Состав архива">

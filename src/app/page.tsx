@@ -109,7 +109,7 @@ export default function Home() {
           <div><strong>{records}</strong><span>карточки документов</span></div>
         </div>
         <div className="archive-links">
-          <Link href="/people">Люди и профили <span>↗</span></Link>
+          <Link href="/people">Люди <span>↗</span></Link>
           <Link href="/read/records/README">Документы и фотокопии <span>↗</span></Link>
           <Link href="/read/research/sources">Реестр источников <span>↗</span></Link>
         </div>

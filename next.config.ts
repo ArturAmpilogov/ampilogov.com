@@ -2,8 +2,33 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   agentRules: false,
+  outputFileTracingExcludes: {
+    "/records/*": [
+      "./data/**/*",
+      "./docs/**/*",
+      "./outputs/**/*",
+      "./public/**/*",
+      "./tmp/**/*",
+    ],
+    "/people/*": [
+      "./data/**/*",
+      "./docs/**/*",
+      "./outputs/**/*",
+      "./public/**/*",
+      "./tmp/**/*",
+    ],
+  },
   async headers() {
     return [
+      {
+        source: "/generated/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
       {
         source: "/archive/:path*",
         headers: [

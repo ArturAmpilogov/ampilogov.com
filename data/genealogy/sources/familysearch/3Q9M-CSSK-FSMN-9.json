@@ -2,8 +2,16 @@
   "schemaVersion": 1,
   "sourceId": "FS-3Q9M-CSSK-FSMN-9",
   "provider": "FamilySearch",
+  "primaryPersonId": "P99433",
   "collection": {
-    "title": "Михайловка / Мелитополь / Таврическая губерния. Метрические записи, 1897–1916"
+    "id": "4135959",
+    "title": "Михайловка. Метрическая книга о родившихся, 1912",
+    "filmNumber": "007824273",
+    "imageGroupNumber": "007824273",
+    "itemNumber": 1,
+    "imageNumber": 205,
+    "imageNumberGlobal": 205,
+    "imageCount": 305
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSSK-FSMN-9",
@@ -12,11 +20,15 @@
   "event": {
     "type": "birth-and-baptism",
     "date": {
-      "display": "1902; точные даты требуют сверки",
+      "display": "7 ноября 1912; крещение того же дня",
+      "birthIso": "1912-11-07",
+      "baptismIso": "1912-11-07",
       "calendar": "source-calendar-unverified"
     },
     "place": {
-      "asWritten": "Мелитопольский уезд",
+      "asWritten": "Тимошевскій крестьянинъ; книга Покровской церкви села Михайловки",
+      "normalized": "Михайловка близ Орлянска, Мелитопольский уезд, Таврическая губерния, Российская империя",
+      "placeId": "mykhailivka-melitopol",
       "modernName": "Запорожская область, Украина",
       "modernCountry": "Украина"
     }
@@ -26,13 +38,14 @@
     "subject": "Роман Григорьев Ампилогов",
     "spouse": "Елена Михайлова",
     "child": "Михаил Ампилогов",
-    "indexWarning": "Год прочитан по заголовку листа; индексная карточка не заменяет полную запись."
+    "birthDate": "7 ноября 1912",
+    "indexWarning": "Прежняя локальная карточка ошибочно указывала 1902 год. Заголовок оригинального разворота и индексная карточка независимо подтверждают 1912 год; имена и сословная формула прочитаны по оригиналу."
   },
   "mentions": [
     {
       "mentionId": "FS-3Q9M-CSSK-FSMN-9-M1",
       "role": "child",
-      "personId": null,
+      "personId": "P99433",
       "sex": "male",
       "nameAsTranscribed": "Михаилъ",
       "nameAsIndexed": "Михаил Ампилогов",
@@ -45,7 +58,7 @@
     {
       "mentionId": "FS-3Q9M-CSSK-FSMN-9-M2",
       "role": "father",
-      "personId": null,
+      "personId": "P99432",
       "sex": "male",
       "nameAsTranscribed": "Романъ Григорьевъ Ампилоговъ",
       "nameAsIndexed": "Роман Григорьев Ампилогов",
@@ -71,13 +84,13 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "1902 | Михаилъ | родители Романъ Григорьевъ Ампилоговъ и законная жена его Елена Михайлова, оба православные | точные даты и восприемники требуют повторного чтения.",
-    "layoutNote": "Строка в части первой метрической книги о родившихся.",
-    "modernInterpretation": "В 1902 году у Романа Григорьевича Ампилогова и Елены Михайловны родился сын Михаил.",
+    "status": "complete-core-fields",
+    "literal": "Ноября 7 / 7 | Михаилъ | Тимошевскій крестьянинъ Романъ Григорьевъ Анпилоговъ и законная его жена Елена Михайлова, оба православные | восприемники и причт требуют дополнительного чтения.",
+    "layoutNote": "Целевая верхняя строка изображения 205 в части первой метрической книги за 1912 год. Дата, ребёнок, родители и тимошевский статус отца проверены по оригиналу.",
+    "modernInterpretation": "7 ноября 1912 года у тимошевского крестьянина Романа Григорьевича Анпилогова и Елены Михайловны родился и был крещён сын Михаил.",
     "fields": {
-      "year": 1902,
-      "exactDates": "требуют сверки",
+      "birthDate": "7 ноября 1912",
+      "baptismDate": "7 ноября 1912",
       "child": "Михаил Романович Ампилогов",
       "parents": "Роман Григорьевич Ампилогов и Елена Михайловна"
     }
@@ -89,22 +102,27 @@
     "sha256": "a857e3643b67856c1e2c291f64d234b4b6a178ab8a7b0c5f9146c1a6300bf9dc",
     "publicDisplay": false,
     "rightsNote": "Локальный контрольный снимок собран из загруженных плиток FamilySearch; публичный показ не подтверждён.",
+    "privateWorkingCopies": [
+      "/private/tmp/P0002-roman-son-mikhail-birth-1912-corrected.png",
+      "/private/tmp/P0002-roman-son-mikhail-birth-1912-detail.png"
+    ],
     "quality": {
-      "status": "approved-source-limited",
+      "status": "approved-core-fields",
       "sharpTilesConfirmed": true,
-      "limitation": "Точные даты и восприемники требуют увеличения."
+      "limitation": "Восприемники и причт требуют отдельного увеличения."
     }
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "Ребёнок и родители подтверждены листом.",
-    "transcriptionConfidence": "high-for-year-names-and-relationships; low-for-dates-and-witnesses",
+    "status": "complete-core-fields",
+    "identityResolution": "Ребёнок связан с P99433, отец — с P99432. Брак той же пары за девять с половиной месяцев до рождения подтверждает непрерывность семейного дома.",
+    "transcriptionConfidence": "high-for-date-child-parents-relationship-and-father-status; low-for-witnesses",
     "unresolved": [
-      "Уточнить точные даты и восприемников."
+      "Уточнить восприемников и причт."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "В 1902 году у Романа Григорьевича Ампилогова и Елены Михайловны родился сын Михаил."
-  }
+    "text": "7 ноября 1912 года у тимошевского крестьянина Романа Григорьевича Ампилогова и Елены Михайловны родился и был крещён сын Михаил."
+  },
+  "isRecord": true
 }

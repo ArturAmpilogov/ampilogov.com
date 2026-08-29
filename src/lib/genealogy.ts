@@ -1,4 +1,5 @@
 import { readFileSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 
 import placesIndexData from "../../data/genealogy/places/index.json";
@@ -51,6 +52,9 @@ type PersonRecord = {
   relations?: Array<{
     type?: string;
     personId?: string;
+    sourceIds?: string[];
+    basis?: string;
+    confidence?: "high" | "medium" | "low";
   }>;
 };
 
@@ -95,7 +99,22 @@ type SourceMention = {
     normalized?: string;
   };
   eventAssociation?: "child" | "groom" | "bride" | "couple" | "unknown";
+  event?: {
+    type?: string;
+    recordNumber?: number | string;
+    date?: {
+      display?: string;
+      iso?: string;
+      birthIso?: string;
+      baptismIso?: string;
+      deathIso?: string;
+      burialIso?: string;
+      marriageIso?: string;
+      calendar?: string;
+    };
+  };
   age?: unknown;
+  birthEstimate?: { year?: number; from?: string; to?: string; basis?: string };
   relationshipNote?: string;
   nameAnalysis?: Array<{
     label: string;
@@ -137,6 +156,10 @@ type SourceRecord = {
     inventory?: number | string;
     file?: number | string;
     custodian?: string;
+    sourceUrl?: string;
+    sourceUrls?: string[];
+    digitalProjectUrl?: string;
+    digitalCopyUrl?: string;
   };
   repository?: {
     name?: string;
@@ -233,8 +256,12 @@ type SourceRecord = {
   notes?: string[];
   evidence?: {
     path?: string;
+    localBackup?: string;
+    sourceUrl?: string;
     publicDisplay?: boolean;
     rightsNote?: string;
+    licenseStatus?: "public-domain" | "open-license" | "permission" | "restricted" | "unknown";
+    licenseUrl?: string;
     fragments?: Array<{ part?: string; path?: string }>;
   };
   review?: {
@@ -246,6 +273,14 @@ type SourceRecord = {
     findings?: unknown;
     corrections?: unknown;
     verification?: unknown;
+    possibleRelations?: Array<{
+      mentionId?: string | null;
+      personId?: string;
+      displayName?: string;
+      confidence?: "high" | "medium" | "low";
+      basis?: string;
+      caution?: string;
+    }>;
   };
   mergedSourceIds?: string[];
   sourceCopies?: SourceRecord[];
@@ -325,8 +360,11 @@ export type ArchiveRecord = {
   additionalLinks: ArchiveRecordLink[];
   evidenceUrl: string | null;
   evidenceFragments: Array<{ label: string; url: string }>;
+  backupUrl: string | null;
+  hasLocalBackup: boolean;
   sourceCopies: ArchiveSourceCopy[];
   mayDisplayEvidence: boolean;
+  evidenceRightsStatus: "display-cleared" | "review-needed" | "restricted";
   rightsNote: string;
   primaryPerson: ArchiveRecordPerson | null;
   people: ArchiveRecordPerson[];
@@ -357,11 +395,60 @@ function statusDescribesUncertainty(status?: string) {
     .test(status ?? "");
 }
 
+function sourceHasCompletedTranscription(source: SourceRecord) {
+  const hasLiteral = Boolean(source.transcription?.literal?.trim());
+  if (!hasLiteral) return false;
+  const statuses = `${source.transcription?.status ?? ""} ${source.review?.status ?? ""}`;
+  if (/(?:partial-source-(?:severely-faded|damaged)|partial-from-original|rejected-mislinked-original|not-yet-read)/i.test(statuses)) {
+    return false;
+  }
+  return true;
+}
+
+function personStatusNeedsReview(status?: string) {
+  return /(?:review|unverified|uncertain|unresolved|probable|hypothesized|\blead\b|inferred|surname-only|original-needed|source-needed|incomplete|conflict|discrepancy|unknown)/i
+    .test(status ?? "");
+}
+
 function sourceReviewState(source: SourceRecord): Pick<ArchiveRecord, "reviewState" | "reviewLabel" | "reviewDescription"> {
   const transcriptionStatus = source.transcription?.status ?? "working";
   const reviewStatus = source.review?.status ?? "working";
   const hasLocalEvidence = Boolean(source.evidence?.path || source.evidence?.fragments?.length);
   const hasLiteral = Boolean(source.transcription?.literal?.trim());
+
+  if (transcriptionStatus === "partial-from-original") {
+    return {
+      reviewState: "human-review",
+      reviewLabel: "частично расшифровано · нужен остаток листа",
+      reviewDescription: "Сохранившийся фрагмент прочитан буквально, но продолжение записи пока не расшифровано.",
+    };
+  }
+
+  if (/partial-source-(?:damaged|severely-faded)/.test(transcriptionStatus)) {
+    return {
+      reviewState: "human-review",
+      reviewLabel: transcriptionStatus.endsWith("severely-faded")
+        ? "частично расшифровано · строка выцвела"
+        : "частично расшифровано · лист повреждён",
+      reviewDescription: "Всё уверенно читаемое сохранено; повреждённый или выцветший фрагмент требует другого снимка либо повторного ручного чтения.",
+    };
+  }
+
+  if (/not-yet-read/.test(transcriptionStatus)) {
+    return {
+      reviewState: "source-needed",
+      reviewLabel: "скан найден · нужен доступ",
+      reviewDescription: "Местонахождение оригинала установлено, но сервер пока не отдал изображение для буквальной расшифровки.",
+    };
+  }
+
+  if (transcriptionStatus === "rejected-mislinked-original") {
+    return {
+      reviewState: "source-needed",
+      reviewLabel: "индекс не подтверждён · нужен правильный кадр",
+      reviewDescription: "Показанный оригинал относится к другой записи; индекс сохранён как подсказка, но не принят за чтение первоисточника.",
+    };
+  }
 
   if (reviewStatus === "needs-correct-image" || transcriptionStatus === "complete-index-image-mismatch") {
     return {
@@ -588,6 +675,50 @@ export type FamilyMapMigration = {
   sourceIds: string[];
 };
 
+export type FamilyMapClientEvent = Pick<
+  FamilyMapEvent,
+  "sourceId" | "year" | "date" | "eventLabel" | "familyIds" | "generation"
+> & {
+  people: Array<Pick<FamilyMapEvent["people"][number], "personId" | "name" | "lifeSpan" | "role" | "details">>;
+};
+
+export type FamilyMapIndexEvent = Pick<
+  FamilyMapEvent,
+  "sourceId" | "year" | "date" | "eventLabel" | "familyIds" | "generation"
+> & {
+  personKeys: string[];
+};
+
+export type FamilyMapIndexPlace = Omit<FamilyMapPlace, "events"> & {
+  events: FamilyMapIndexEvent[];
+};
+
+export type FamilyMapPlaceDetails = {
+  placeId: string;
+  events: FamilyMapClientEvent[];
+};
+
+export type FamilyMapDirectory = {
+  places: FamilyMapPlace[];
+  migrations: FamilyMapMigration[];
+  range: { minYear: number; maxYear: number };
+  stats: {
+    indexedPlaces: number;
+    mappedPlaces: number;
+    approximatePlaces: number;
+    records: number;
+    migrations: number;
+  };
+};
+
+export type FamilyMapClientDirectory = Omit<FamilyMapDirectory, "places"> & {
+  places: FamilyMapIndexPlace[];
+};
+
+let familyMapDirectoryCache: FamilyMapDirectory | null = null;
+let familyMapClientDirectoryCache: FamilyMapClientDirectory | null = null;
+let familyMapDataVersionCache: string | null = null;
+
 // The place index is the canonical coordinate source for records, origins, and map routes.
 // Keep the place index in Turbopack's dependency graph. Reading it only through
 // `readFileSync` left the dev server with a stale in-memory copy after a place
@@ -696,11 +827,24 @@ const roleLabels: Record<string, string> = {
   "listed-service-person": "служилый человек в списке",
   "oath-taker": "принёсший присягу",
   "new-serviceman": "новик, принятый на службу",
+  "father-inferred-from-explicit-patronymic": "отец, названный в отчестве сына",
+  "former-manuscript-owner": "прежний владелец рукописи",
+  "manuscript-transferor-to-archive": "передавший рукопись в архив",
+  "enrollment-commissioner": "проводивший верстанье",
+  "clerk-and-original-certifier": "дьяк комиссии и удостоверивший подлинник",
+  "enrollment-clerk": "дьяк комиссии верстанья",
   landholder: "владелец поместья",
+  "joint-landholder": "совладелец поместья",
+  "former-landholder-and-grandfather": "прежний владелец и дед наследников",
+  "implied-son-and-father": "сын прежнего владельца и отец наследников",
+  "land-exchanger-and-grandson": "внук владельца и участник мены",
+  "exchange-recipient": "получатель земли по мене",
   "previous-holder": "прежний владелец поместья",
   "leading-husband-candidate": "ведущий кандидат на мужа",
   eponym: "человек, давший название",
   candidate: "исследовательский кандидат",
+  "research-subject": "предмет исследования",
+  "target-family-comparison": "носитель фамилии для сопоставления",
   grandson: "внук",
   grandfather: "дед",
   son: "сын",
@@ -863,6 +1007,12 @@ function sourceDate(source: SourceRecord) {
   return source.event?.date?.display ?? formatDate(source.event?.date?.iso);
 }
 
+function sourceDateForMention(source: SourceRecord, mention?: SourceMention | null) {
+  const date = mention?.event?.date;
+  const mentionDateValue = date?.iso ?? date?.birthIso ?? date?.deathIso ?? date?.marriageIso;
+  return date?.display || (mentionDateValue ? formatDate(mentionDateValue) : "") || sourceDate(source);
+}
+
 function sourcePlace(source: SourceRecord) {
   return source.event?.place?.normalized ??
     placeLabels[source.event?.place?.placeId ?? ""] ??
@@ -895,6 +1045,7 @@ const recordDataLabels: Record<string, string> = {
   eletsRecruitmentAnalog: "Как заселяли соседний Елец и при чём здесь Орёл",
   orelNoviki1628Check: "Две книги 1628 года: отдельное верстание и новый Афонька",
   mapDecision: "Что показываем на карте",
+  profileDecision: "Почему личный профиль пока не создаётся",
   researchSources: "Источники исследования происхождения",
   sequenceNumber: "Порядковый номер",
   child: "Ребёнок",
@@ -942,12 +1093,48 @@ const recordDataLabels: Record<string, string> = {
   serviceCategory: "Категория службы",
   documentFunction: "Зачем составлялся документ",
   whatThisDocumentIs: "Что это за документ",
+  whyThisIsASeparateRecord: "Почему прежнее владение вынесено отдельно",
   whatThisSourceIs: "Что это за источник и где оригинал",
   whoWroteIt: "Кто составил документ",
+  stanPreamble: "Кто владел поместьями в Корчаковском стане",
+  settingOfThisVillage: "Соседи и устройство поместного гнезда",
+  onTheNameAnpilog: "Имя Анпилог и смысл фамилии",
+  surnameFormationParallel: "Как имя предка превращалось в фамилию",
+  howToReadSimilarNames: "Как отличить фамилию от отчества",
+  editorialSicMark: "Почему важно редакторское sic",
   whoWasEnrolled: "Кого записывали в новики",
   whyItWasWritten: "Зачем он был составлен",
+  recruitmentMechanism: "Как проходило комплектование",
+  implementationConsequence: "Какие документы должны были возникнуть после приговора",
+  archivalFateAssessment: "Что известно о судьбе именных списков",
+  laterCohortControl: "Контроль по поколению 1594–1596 годов",
   whatItProves: "Что документ доказывает",
   whatItDoesNotSay: "Чего документ не доказывает",
+  whatItDoesNotProve: "Чего документ не доказывает",
+  searchConsequence: "Куда искать дальше",
+  directTransfer: "Прямой переход Рязань — Ряжск",
+  whyThisMatters: "Почему это важно для происхождения Орла",
+  whyItMatters: "Почему это важно",
+  originConsequence: "Что это меняет в поиске происхождения",
+  serviceCorporation: "Пехлецко-ряжская служилая корпорация",
+  survivalBoundary: "Что сохранилось от ранних книг",
+  pekhletskyLandholders: "Имена и земли Пехлецкого стана",
+  orelFamilyParallels: "Одноотчественные параллели в Орле",
+  bazdyrevoConnection: "Почему важна деревня Баздырево",
+  coverage: "Охват проверки",
+  scanVerification: "Сверка с изображениями страниц",
+  officialCatalogueReconciliation: "Как согласуются опись РГАДА и публикация",
+  copyProvenance: "Как рукопись дошла до архива",
+  originalClerkCertification: "Что было подписано на утраченном подлиннике",
+  cadastralCrossCheck1594: "Сопоставление с писцовой книгой 1594/95 года",
+  fullMultiCityCheck: "Проверка всех городских разделов",
+  publishedTensFatherPairControl20260826: "Контроль старшего поколения по десятням XVI века",
+  lostGenealogicalLayer: "Утраченный слой семейных расспросов",
+  targetVariants: "Какие варианты имени и фамилии искались",
+  confidenceBoundary: "Граница уверенности",
+  mainMeaning: "Главный смысл",
+  petrBazdyrev: "Что стало с Петром Баздыревым",
+  targetFamily: "Результат по Анфилоговым",
   familyInference: "Что можно заключить о семье",
   familyRelevance: "Значение для истории семьи",
   cohort: "Место среди других новиков",
@@ -962,6 +1149,7 @@ const recordDataLabels: Record<string, string> = {
   notes: "Примечания",
   transcriptionConfidence: "Уверенность в чтении",
   identityResolution: "Отождествление человека",
+  possibleRelations: "Возможные связи",
   indexCorrections: "Исправления индекса",
   findings: "Результаты проверки",
   corrections: "Исправления",
@@ -975,6 +1163,26 @@ const recordDataLabels: Record<string, string> = {
   basis: "Основание",
   caution: "Оговорка",
   contextSources: "Источники контекста",
+  nextSearch: "Следующий поиск",
+  scholarlyIntroduction: "Научное предисловие",
+  publishedReconstruction: "Реконструированный текст",
+  orel1594Book: "Орловская книга 1594/95 года",
+  publishedMescheraLists: "Мещерские десятни 1590 и 1615 годов",
+  orelPage947: "Орловская книга, страница 947",
+  publishedRoster1584: "Роспись Мещовска, Опакова и Брянска 1584 года",
+  orelPage1027: "Орловская книга, страница 1027",
+  orelPage1059: "Орловская книга, страница 1059",
+  orelPage1068: "Орловская книга, страница 1068",
+  publishedRewardBook1605: "Раздаточная книга защитников Новгорода-Северского",
+  publishedKromyWatchList1595: "Роспись кромским сторожам, 1595",
+  rgadaKromyBookRegister: "Официальный реестр кромских писцовых книг РГАДА",
+  orelAnpilogPage948: "Орловская книга, страница 948",
+  vgdTranscriptionPost: "Архивная расшифровка и описание дела",
+  archivalScanLeaf35: "Оригинальный лист 35: Максим Анпилогов",
+  kromyMuster1670Index: "Кромской смотренный список 1670 года",
+  kromyReview1687Index: "Разборная книга кромчан 1686/87 года",
+  kromyMuster1689Index: "Кромской смотренный список 1689 года",
+  orelMuster1697Index: "Орловский служилый список 1697 года",
 };
 
 function humanDataLabel(key: string) {
@@ -1066,6 +1274,7 @@ function sourceContextSections(source: SourceRecord): ArchiveRecordContext[] {
     ["Проверка и уверенность", {
       transcriptionConfidence: source.review?.transcriptionConfidence,
       identityResolution: source.review?.identityResolution,
+      possibleRelations: source.review?.possibleRelations,
       indexCorrections: source.review?.indexCorrections,
       findings: source.review?.findings,
       corrections: source.review?.corrections,
@@ -1194,9 +1403,52 @@ function sourceMigrations(source: SourceRecord): MigrationObservation[] {
   });
 }
 
-function sourceAdditionalLinks(source: SourceRecord): ArchiveRecordLink[] {
+function sourceOriginalUrl(source: SourceRecord): string | null {
+  const links = source.links ?? {};
+  const preferredKeys = [
+    "imageArk",
+    "documentUrl",
+    "originalScan",
+    "archiveImageViewer",
+    "officialCard",
+    "officialNameIndexScan",
+    "officialCatalog",
+    "recordArk",
+    "publishedDocument",
+    "publicationPdf",
+    "publishedScan",
+    "fullScan",
+    "scan",
+  ];
+  for (const key of preferredKeys) {
+    const value = links[key];
+    if (typeof value === "string" && /^https?:\/\//.test(value)) return value;
+  }
+  if (source.evidence?.sourceUrl && /^https?:\/\//.test(source.evidence.sourceUrl)) {
+    return source.evidence.sourceUrl;
+  }
+  const collectionUrl = source.collection?.sourceUrl ??
+    source.collection?.sourceUrls?.find((value) => /^https?:\/\//.test(value)) ??
+    source.collection?.digitalProjectUrl ??
+    source.collection?.digitalCopyUrl;
+  if (collectionUrl && /^https?:\/\//.test(collectionUrl)) return collectionUrl;
+  const firstLink = Object.values(links).find(
+    (value): value is string => typeof value === "string" && /^https?:\/\//.test(value),
+  );
+  return firstLink ?? source.repository?.url ?? null;
+}
+
+function sourceOriginalLabel(source: SourceRecord) {
+  const provider = source.provider ?? source.repository?.name ?? "архив";
+  if (/familysearch/i.test(provider)) return "Открыть источник в FamilySearch";
+  if (/яндекс|yandex/i.test(provider)) return "Открыть источник в Яндекс Архиве";
+  if (/ргада|древних актов|rgada/i.test(provider)) return "Открыть источник в РГАДА";
+  return `Открыть источник · ${provider}`;
+}
+
+function sourceAdditionalLinks(source: SourceRecord, excludedUrls: string[] = []): ArchiveRecordLink[] {
   const primaryKeys = new Set(["imageArk", "recordArk", "indexedRecordArk"]);
-  const seen = new Set<string>();
+  const seen = new Set(excludedUrls);
   const personNames: Record<string, string> = {
     filipp: "Филипп",
     leonty: "Леонтий",
@@ -1217,6 +1469,26 @@ function sourceAdditionalLinks(source: SourceRecord): ArchiveRecordLink[] {
       seen.add(link.url);
       return true;
     });
+}
+
+function sourceHasLocalBackup(source: SourceRecord) {
+  return Boolean(
+    source.evidence?.path ||
+    source.evidence?.localBackup ||
+    source.evidence?.fragments?.some((fragment) => fragment.path),
+  );
+}
+
+function sourceEvidenceRightsStatus(source: SourceRecord): ArchiveRecord["evidenceRightsStatus"] {
+  const evidence = source.evidence;
+  if (!evidence || evidence.publicDisplay !== true) return "restricted";
+  if (["public-domain", "open-license", "permission"].includes(evidence.licenseStatus ?? "")) {
+    return "display-cleared";
+  }
+  if (evidence.licenseStatus === "restricted") return "restricted";
+  const rightsNote = evidence.rightsNote?.trim() ?? "";
+  const explicitBasis = /(?:общественн(?:ое|ом)\s+достоян|public\s+domain|creative\s+commons|\bCC\s*BY(?:-SA)?\b|письменн\w*\s+разрешени)/iu;
+  return explicitBasis.test(rightsNote) ? "display-cleared" : "review-needed";
 }
 
 function sourceMentionName(mention: SourceMention) {
@@ -1294,11 +1566,11 @@ function sourcePeople(
         nameAnalysis: [
           {
             label: "Почему это имя показано",
-            text: `Источник связан с профилем «${person.displayName}», но отдельная поимённая строка в его структурированной расшифровке пока не заведена. Имя взято из связанного профиля, а не выдумано из общего текста.`,
+            text: `Источник связан с человеком «${person.displayName}», но отдельная поимённая строка в его структурированной расшифровке пока не заведена. Имя взято из карточки этого человека, а не выдумано из общего текста.`,
           },
           {
             label: "Что означает связь",
-            text: "Карточка относится к поиску или контексту этого человека. Сама техническая связь с профилем не заменяет буквальное упоминание в первичном документе.",
+            text: "Карточка относится к поиску или контексту этого человека. Сама техническая связь с человеком не заменяет буквальное упоминание в первичном документе.",
           },
         ],
       }];
@@ -1402,10 +1674,10 @@ function sourcePeople(
               label: migration ? "Смысл для истории переселения" : "Что устанавливает документ",
               text: migration
                 ? `Запись связывает ${name} с маршрутом ${migrationFrom ?? "из места, названного в источнике"} → ${migrationTo ?? sourcePlace(source)}.${migration.basis ? ` ${migration.basis}` : ""}`
-                : `Документ фиксирует событие «${sourceEventLabel(source)}»: ${sourceDate(source)}, ${sourcePlace(source)}. Имя показано здесь потому, что человек непосредственно участвует в этой записи как ${eventRole}.`,
+                : `Документ фиксирует событие «${sourceEventLabel(source)}»: ${sourceDateForMention(source, mention)}, ${sourcePlace(source)}. Имя показано здесь потому, что человек непосредственно участвует в этой записи как ${eventRole}.`,
             },
             ...profileContext.map((text, index) => ({
-              label: "Связь с профилем",
+              label: "Связь с человеком",
               text,
               index,
             })).map(({ label, text }) => ({ label, text })),
@@ -1460,6 +1732,12 @@ function mentionHasAmpilogovSurname(mention: SourceMention, peopleById?: Map<str
     mention.nameAsWritten,
     ...(mention.alternateNames ?? []),
   ].map(finalNameToken).some(isAmpilogovVariantName);
+}
+
+const nonEventMapRolePattern = /(?:^|[-_])(?:comparative|comparison|candidate|parallel|contextual|hypothesis|memorial|later)(?:$|[-_])/i;
+
+function mentionIsDirectMapObservation(mention: SourceMention) {
+  return !nonEventMapRolePattern.test(mention.role ?? "");
 }
 
 function sourceIsWithinPublicResearchPeriod(source: SourceRecord) {
@@ -1568,7 +1846,7 @@ function sourceDirectoryFacts(source: SourceRecord, peopleById?: Map<string, Per
 
     return [
       age ? { label: "Возраст", value: age } : null,
-      profileBirth ? { label: "Рождение по связанному профилю", value: profileBirth } : null,
+      profileBirth ? { label: "Рождение по карточке человека", value: profileBirth } : null,
       statedBirth ? { label: "Рождение по данным записи", value: statedBirth } : null,
       !profileBirth && !statedBirth && birth ? { label: "Рождение (расчёт)", value: birth.display } : null,
       cause ? { label: "Причина смерти", value: cause } : null,
@@ -1605,8 +1883,12 @@ function isGenealogyRecordSource(
   source: SourceRecord,
   peopleById?: Map<string, PersonRecord>,
 ) {
+  const rejectedAsEvidence = source.review?.status === "rejected-as-genealogical-evidence" ||
+    source.transcription?.status === "rejected-mislinked-original" ||
+    source.event?.type === "mislinked-index-record";
 
-  return !source.recordType?.startsWith("finding-aid") &&
+  return !rejectedAsEvidence &&
+    !source.recordType?.startsWith("finding-aid") &&
     source.event?.type !== "negative-finding" &&
     sourceHasAmpilogovVariant(source, peopleById);
 }
@@ -1628,17 +1910,29 @@ function toArchiveRecord(
     `Запись «${eventLabel.toLocaleLowerCase("ru")}» относится к ${primaryPerson?.name ?? "представителю семьи"}: ${date}, ${place}.`;
   const status = source.transcription?.status ?? source.review?.status ?? "working";
   const review = sourceReviewState(source);
-  const isComplete = Boolean(literal.trim()) && (
-    review.reviewState === "complete" ||
-    statusDescribesCompletedReading(source.transcription?.status) ||
-    statusDescribesCompletedReading(source.review?.status)
-  );
+  const isComplete = sourceHasCompletedTranscription(source);
   const migrations = sourceMigrations(source);
   const fieldFacts = sourceFieldFacts(source);
   const contextSections = sourceContextSections(source);
   const placeTags = sourcePlaceTags(source, people);
-  const additionalLinks = sourceAdditionalLinks(source);
+  const originalUrl = sourceOriginalUrl(source);
+  const indexedUrlCandidate = source.links?.indexedRecordArk ?? source.links?.recordArk ?? null;
+  const indexedUrl = typeof indexedUrlCandidate === "string" && indexedUrlCandidate !== originalUrl
+    ? indexedUrlCandidate
+    : null;
+  const additionalLinks = sourceAdditionalLinks(source, [originalUrl, indexedUrl].filter(Boolean) as string[]);
   const isFamilySearch = (source.provider ?? "FamilySearch") === "FamilySearch";
+  const resolvedEvidenceUrl = evidenceUrl(source);
+  const evidenceFragments = (source.evidence?.fragments ?? [])
+    .filter((fragment): fragment is { part?: string; path: string } => Boolean(fragment.path))
+    .flatMap((fragment) => {
+      const url = evidencePathUrl(fragment.path);
+      return url ? [{
+        label: fragment.part ?? "Точный фрагмент записи",
+        url,
+      }] : [];
+    });
+  const evidenceRightsStatus = sourceEvidenceRightsStatus(source);
   const sourceCopies = (source.sourceCopies?.length ? source.sourceCopies : [source]).map((copy) => ({
     sourceId: copy.sourceId,
     provider: copy.provider ?? "FamilySearch",
@@ -1646,8 +1940,10 @@ function toArchiveRecord(
     repository: copy.repository?.name ?? copy.collection?.custodian ?? "Архив-хранитель уточняется",
     repositoryLocation: copy.repository?.location ?? "Место хранения уточняется",
     imageReference: sourcePosition(copy),
-    originalUrl: copy.links?.imageArk ?? null,
-    indexedUrl: copy.links?.indexedRecordArk ?? copy.links?.recordArk ?? null,
+    originalUrl: sourceOriginalUrl(copy),
+    indexedUrl: copy.links?.indexedRecordArk ?? (
+      copy.links?.recordArk !== sourceOriginalUrl(copy) ? copy.links?.recordArk ?? null : null
+    ),
     place: sourcePlace(copy),
   }));
 
@@ -1664,23 +1960,18 @@ function toArchiveRecord(
     repositoryLocation: source.repository?.location ?? "Место хранения уточняется",
     repositoryUrl: source.repository?.url ?? null,
     imageReference: sourcePosition(source),
-    originalUrl: source.links?.imageArk ?? null,
-    originalLabel: isFamilySearch ? "Открыть скан в FamilySearch" : "Открыть цифровую копию",
-    indexedUrl: source.links?.indexedRecordArk ?? source.links?.recordArk ?? null,
+    originalUrl,
+    originalLabel: sourceOriginalLabel(source),
+    indexedUrl,
     indexedLabel: isFamilySearch ? "Индекс FamilySearch" : "Опубликованный текст",
     additionalLinks,
-    evidenceUrl: evidenceUrl(source),
-    evidenceFragments: (source.evidence?.fragments ?? [])
-      .filter((fragment): fragment is { part?: string; path: string } => Boolean(fragment.path))
-      .flatMap((fragment) => {
-        const url = evidencePathUrl(fragment.path);
-        return url ? [{
-          label: fragment.part ?? "Точный фрагмент записи",
-          url,
-        }] : [];
-      }),
+    evidenceUrl: resolvedEvidenceUrl,
+    evidenceFragments,
+    backupUrl: resolvedEvidenceUrl ?? evidenceFragments[0]?.url ?? null,
+    hasLocalBackup: sourceHasLocalBackup(source),
     sourceCopies,
-    mayDisplayEvidence: source.evidence?.publicDisplay === true,
+    mayDisplayEvidence: evidenceRightsStatus === "display-cleared",
+    evidenceRightsStatus,
     rightsNote: source.evidence?.rightsNote ?? "Права на изображение не проверены; публичная копия не показывается.",
     primaryPerson,
     people,
@@ -1770,6 +2061,60 @@ function getRecordPathIndex() {
   return recordPathIndex;
 }
 
+function genealogyIndexedPath(relativePath: string) {
+  const normalized = relativePath.replaceAll("\\", "/").replace(/^data\/genealogy\//, "");
+  if (!normalized || normalized.startsWith("/") || normalized.split("/").includes("..")) {
+    throw new Error(`Недопустимый путь генеалогического индекса: ${relativePath}`);
+  }
+
+  // Keep every dynamic filesystem pattern narrow enough for Turbopack to trace
+  // the real shard instead of treating the whole genealogy tree as a candidate.
+  if (normalized.startsWith("sources/familysearch/")) {
+    return path.join(GENEALOGY_ROOT, "sources/familysearch", normalized.slice("sources/familysearch/".length));
+  }
+  if (normalized.startsWith("sources/publications/")) {
+    return path.join(GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
+  }
+  if (normalized.startsWith("sources/rgada/")) {
+    return path.join(GENEALOGY_ROOT, "sources/rgada", normalized.slice("sources/rgada/".length));
+  }
+  if (normalized.startsWith("sources/yandex/")) {
+    return path.join(GENEALOGY_ROOT, "sources/yandex", normalized.slice("sources/yandex/".length));
+  }
+
+  if (normalized.startsWith("people/P0")) {
+    return path.join(GENEALOGY_ROOT, "people", `P0${normalized.slice("people/P0".length)}`);
+  }
+  if (normalized.startsWith("people/P1")) {
+    return path.join(GENEALOGY_ROOT, "people", `P1${normalized.slice("people/P1".length)}`);
+  }
+  if (normalized.startsWith("people/P2")) {
+    return path.join(GENEALOGY_ROOT, "people", `P2${normalized.slice("people/P2".length)}`);
+  }
+  if (normalized.startsWith("people/P3")) {
+    return path.join(GENEALOGY_ROOT, "people", `P3${normalized.slice("people/P3".length)}`);
+  }
+  if (normalized.startsWith("people/P4")) {
+    return path.join(GENEALOGY_ROOT, "people", `P4${normalized.slice("people/P4".length)}`);
+  }
+  if (normalized.startsWith("people/P5")) {
+    return path.join(GENEALOGY_ROOT, "people", `P5${normalized.slice("people/P5".length)}`);
+  }
+  if (normalized.startsWith("people/P6")) {
+    return path.join(GENEALOGY_ROOT, "people", `P6${normalized.slice("people/P6".length)}`);
+  }
+  if (normalized.startsWith("people/P7")) {
+    return path.join(GENEALOGY_ROOT, "people", `P7${normalized.slice("people/P7".length)}`);
+  }
+  if (normalized.startsWith("people/P8")) {
+    return path.join(GENEALOGY_ROOT, "people", `P8${normalized.slice("people/P8".length)}`);
+  }
+  if (normalized.startsWith("people/P9")) {
+    return path.join(GENEALOGY_ROOT, "people", `P9${normalized.slice("people/P9".length)}`);
+  }
+  throw new Error(`Путь вне разрешённых каталогов генеалогии: ${relativePath}`);
+}
+
 function sourcePeopleById(source: SourceRecord) {
   const peopleById = new Map<string, PersonRecord>();
   const personIds = new Set([
@@ -1781,7 +2126,7 @@ function sourcePeopleById(source: SourceRecord) {
   for (const personId of personIds) {
     const relativePath = personPaths[personId];
     if (!relativePath) continue;
-    peopleById.set(personId, JSON.parse(readFileSync(path.join(process.cwd(), relativePath), "utf8")) as PersonRecord);
+    peopleById.set(personId, JSON.parse(readFileSync(genealogyIndexedPath(relativePath), "utf8")) as PersonRecord);
   }
   return peopleById;
 }
@@ -1795,7 +2140,7 @@ export function getArchiveRecord(sourceId: string) {
       record.sourceId === sourceId || record.sourceCopies.some((copy) => copy.sourceId === sourceId)
     ) ?? null;
   }
-  const source = JSON.parse(readFileSync(path.join(process.cwd(), relativePath), "utf8")) as SourceRecord;
+  const source = JSON.parse(readFileSync(genealogyIndexedPath(relativePath), "utf8")) as SourceRecord;
   const peopleById = sourcePeopleById(source);
   if (!sourceIsWithinPublicResearchPeriod(source) || !isGenealogyRecordSource(source, peopleById)) {
     return null;
@@ -2043,8 +2388,8 @@ function mostCommonLifeDate(candidates: LifeDateCandidate[]) {
     ?.candidate ?? null;
 }
 
-function eventLifeDate(source: SourceRecord, kind: LifeEventKind) {
-  const date = source.event?.date;
+function eventLifeDate(source: SourceRecord, kind: LifeEventKind, mention?: SourceMention | null) {
+  const date = mention?.event?.date ?? source.event?.date;
   const iso = kind === "birth"
     ? date?.birthIso ?? date?.iso
     : kind === "death"
@@ -2319,7 +2664,7 @@ function personLife(person: PersonRecord, sources: SourceRecord[]) {
     if (!birthEventTypes.has(source.event?.type ?? "")) return [];
     const association = lifeEventMention(person, source, "birth");
     if (!association.matches) return [];
-    const date = eventLifeDate(source, "birth");
+    const date = eventLifeDate(source, "birth", association.mention);
     return date ? [date] : [];
   });
 
@@ -2327,7 +2672,7 @@ function personLife(person: PersonRecord, sources: SourceRecord[]) {
     if (!deathEventTypes.has(source.event?.type ?? "")) return [];
     const association = lifeEventMention(person, source, "death");
     if (!association.matches) return [];
-    const date = eventLifeDate(source, "death");
+    const date = eventLifeDate(source, "death", association.mention);
     const age = sourceAgeForPerson(source, "death", association.mention);
     return [{ date, age }];
   });
@@ -2336,7 +2681,7 @@ function personLife(person: PersonRecord, sources: SourceRecord[]) {
     if (!marriageEventTypes.has(source.event?.type ?? "")) return [];
     const association = lifeEventMention(person, source, "marriage");
     if (!association.matches) return [];
-    const date = eventLifeDate(source, "marriage");
+    const date = eventLifeDate(source, "marriage", association.mention);
     const age = sourceAgeForPerson(source, "marriage", association.mention);
     const estimate = date && age ? birthFromDatedAge(date, age) : null;
     return estimate ? [estimate] : [];
@@ -2384,6 +2729,8 @@ const explicitPersonRelationTypes: Record<string, DirectoryRelation["relation"]>
   "mother-of": "child",
   "son-of": "parent",
   "daughter-of": "parent",
+  "child-of": "parent",
+  "parent-of": "child",
   "brother-of": "sibling",
   "sister-of": "sibling",
   "spouse-of": "spouse",
@@ -2417,10 +2764,30 @@ export function getPeopleDirectory() {
   );
   const sourcesById = new Map(sources.map((source) => [source.sourceId, source]));
 
+  const childrenByParentId = new Map<string, Set<string>>();
+  for (const child of publicPeople) {
+    const parentIds = new Set([
+      ...personParentIds(child.parents),
+      ...(child.relations ?? [])
+        .filter((relation) => ["son-of", "daughter-of", "child-of"].includes(relation.type ?? ""))
+        .map((relation) => relation.personId)
+        .filter((personId): personId is string => Boolean(personId)),
+    ]);
+    for (const parentId of parentIds) {
+      const children = childrenByParentId.get(parentId) ?? new Set<string>();
+      children.add(child.personId);
+      childrenByParentId.set(parentId, children);
+    }
+  }
+
   const directory: DirectoryPerson[] = publicPeople.map((person) => {
     const linkedSources = (person.sourceIds ?? [])
       .map((sourceId) => sourcesById.get(sourceId))
-      .filter((source): source is SourceRecord => Boolean(source));
+      .filter((source): source is SourceRecord => Boolean(source))
+      .filter((source) => {
+        const mention = source.mentions?.find((entry) => entry.personId === person.personId);
+        return !mention || mentionIsDirectMapObservation(mention);
+      });
     const personSources = linkedSources
       .map((source): DirectorySource => {
         const mention = source.mentions?.find((entry) => entry.personId === person.personId);
@@ -2429,15 +2796,13 @@ export function getPeopleDirectory() {
 
         const literalTranscription = source.transcription?.literal ?? "";
         const summary = source.summary?.text ?? source.transcription?.suppliedText ?? "";
-        const hasCompleteTranscription = ["complete", "verified"].includes(
-          source.transcription?.status ?? "",
-        );
+        const hasCompleteTranscription = sourceHasCompletedTranscription(source);
 
         return {
           sourceId: source.sourceId,
           eventType: type,
           eventLabel: sourceEventLabel(source),
-          date: sourceDate(source),
+          date: sourceDateForMention(source, mention),
           place: sourcePlace(source),
           role: sourceRoleLabel(mention?.role),
           nameAsWritten: mention?.nameAsTranscribed ?? mention?.nameAsWritten ?? mention?.nameAsIndexed ?? person.displayName,
@@ -2481,6 +2846,16 @@ export function getPeopleDirectory() {
           const child = peopleById.get(childId);
           if (child && publicPersonIds.has(childId)) relationMap.set(`child:${childId}`, { personId: childId, name: child.displayName, relation: "child" });
         }
+      } else if ((family.children ?? []).includes(person.personId)) {
+        for (const siblingId of family.children ?? []) {
+          if (siblingId === person.personId) continue;
+          const sibling = peopleById.get(siblingId);
+          if (sibling && publicPersonIds.has(siblingId)) relationMap.set(`sibling:${siblingId}`, {
+            personId: siblingId,
+            name: sibling.displayName,
+            relation: "sibling",
+          });
+        }
       }
     }
 
@@ -2495,6 +2870,25 @@ export function getPeopleDirectory() {
       });
     }
 
+    const explicitParentIds = new Set([
+      ...personParentIds(person.parents),
+      ...(person.relations ?? [])
+        .filter((relation) => ["son-of", "daughter-of", "child-of"].includes(relation.type ?? ""))
+        .map((relation) => relation.personId)
+        .filter((personId): personId is string => Boolean(personId)),
+    ]);
+    for (const parentId of explicitParentIds) {
+      for (const siblingId of childrenByParentId.get(parentId) ?? []) {
+        if (siblingId === person.personId) continue;
+        const sibling = peopleById.get(siblingId);
+        if (sibling && publicPersonIds.has(siblingId)) relationMap.set(`sibling:${siblingId}`, {
+          personId: siblingId,
+          name: sibling.displayName,
+          relation: "sibling",
+        });
+      }
+    }
+
     const sourcePlaces = personSources.map((source) => source.place);
     const places = [...new Set([
       person.birth?.placeId ? placeLabels[person.birth.placeId] ?? person.birth.placeId : "",
@@ -2502,8 +2896,8 @@ export function getPeopleDirectory() {
       ...sourcePlaces,
     ].filter(Boolean))];
     const variants = [...new Set([...(person.nameVariants ?? []), ...(person.surname?.formsAsWritten ?? [])])];
-    const needsReview = /review|unverified|working|partial/i.test(person.status ?? "") ||
-      personSources.some((source) => !["verified", "complete"].includes(source.status));
+    const needsReview = personStatusNeedsReview(person.status) ||
+      !linkedSources.some(sourceHasCompletedTranscription);
     const life = personLife(person, linkedSources);
     const birthDate = life.birth === "?" ? "" : life.birth;
     const birthYear = life.birthYear;
@@ -2551,9 +2945,7 @@ export function getPeopleDirectory() {
         [...(family.spouses ?? []), ...(family.children ?? [])].some((personId) => publicPersonIds.has(personId))
       ).length,
       sources: sources.length,
-      transcribedSources: sources.filter((source) =>
-        ["complete", "verified"].includes(source.transcription?.status ?? ""),
-      ).length,
+      transcribedSources: sources.filter(sourceHasCompletedTranscription).length,
       places: new Set(directory.flatMap((person) => person.places)).size,
     },
   };
@@ -2571,7 +2963,9 @@ function sourceYear(source: SourceRecord) {
   return Number(value.match(/\b(?:14|15|16|17|18|19|20)\d{2}\b/)?.[0] ?? 0);
 }
 
-export function getFamilyMapDirectory() {
+export function getFamilyMapDirectory(): FamilyMapDirectory {
+  if (familyMapDirectoryCache) return familyMapDirectoryCache;
+
   const allPeople = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
   const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
   const allSources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"));
@@ -2670,7 +3064,7 @@ export function getFamilyMapDirectory() {
     const placeId = indexedPlace.placeId;
 
     const sourceMentions = (source.mentions ?? []).filter((mention) => {
-      return mentionHasAmpilogovSurname(mention, allPeopleById);
+      return mentionHasAmpilogovSurname(mention, allPeopleById) && mentionIsDirectMapObservation(mention);
     });
     if (!sourceMentions.length) continue;
     // The map is a surname research surface: other participants stay in the
@@ -2909,7 +3303,7 @@ export function getFamilyMapDirectory() {
     }];
   });
 
-  return {
+  familyMapDirectoryCache = {
     places: mapPlaces,
     migrations: [...migrationMap.values()].sort((left, right) => left.year - right.year),
     range: {
@@ -2923,5 +3317,62 @@ export function getFamilyMapDirectory() {
       records: new Set(mapPlaces.flatMap((place) => place.events.map((event) => event.sourceId))).size,
       migrations: migrationMap.size,
     },
+  };
+
+  return familyMapDirectoryCache;
+}
+
+export function getFamilyMapClientDirectory(): FamilyMapClientDirectory {
+  if (familyMapClientDirectoryCache) return familyMapClientDirectoryCache;
+
+  const directory = getFamilyMapDirectory();
+  familyMapClientDirectoryCache = {
+    ...directory,
+    places: directory.places.map((place) => ({
+      ...place,
+      events: place.events.map((event) => ({
+        sourceId: event.sourceId,
+        year: event.year,
+        date: event.date,
+        eventLabel: event.eventLabel,
+        familyIds: event.familyIds,
+        generation: event.generation,
+        personKeys: event.people.map((person) => person.personId ? `id:${person.personId}` : `name:${person.name}`),
+      })),
+    })),
+  };
+
+  return familyMapClientDirectoryCache;
+}
+
+export function getFamilyMapDataVersion() {
+  familyMapDataVersionCache ??= createHash("sha256")
+    .update(JSON.stringify(getFamilyMapClientDirectory()))
+    .digest("hex")
+    .slice(0, 16);
+  return familyMapDataVersionCache;
+}
+
+export function getFamilyMapPlaceDetails(placeId: string): FamilyMapPlaceDetails | null {
+  const place = getFamilyMapDirectory().places.find((candidate) => candidate.placeId === placeId);
+  if (!place) return null;
+
+  return {
+    placeId,
+    events: place.events.map((event) => ({
+      sourceId: event.sourceId,
+      year: event.year,
+      date: event.date,
+      eventLabel: event.eventLabel,
+      familyIds: event.familyIds,
+      generation: event.generation,
+      people: event.people.map((person) => ({
+        personId: person.personId,
+        name: person.name,
+        lifeSpan: person.lifeSpan,
+        role: person.role,
+        details: person.details.slice(0, 1),
+      })),
+    })),
   };
 }

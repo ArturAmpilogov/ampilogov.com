@@ -97,7 +97,7 @@ export function PeopleDirectory({
   } = usePagedDirectory<PeopleDirectoryResult>({ endpoint: "/api/people", params: requestParams });
 
   return (
-    <section className="people-workspace section-shell" aria-label="Каталог профилей людей">
+    <section className="people-workspace section-shell" aria-label="Каталог людей">
       <div className="people-toolbar">
         <label className="people-search">
           <span>Поиск по ФИО</span>
@@ -129,7 +129,7 @@ export function PeopleDirectory({
       <div className="people-result-line">
         <span className="directory-result-count" aria-live="polite">
           <strong>{isLoading ? "…" : total}</strong>
-          <span>{query ? "совпадений" : "профилей в выборке"}</span>
+          <span>{query ? "совпадений" : "человек в выборке"}</span>
         </span>
         <span className="directory-result-controls">
           <label className="directory-status-select">
@@ -215,7 +215,7 @@ export function PeopleDirectory({
 
         {!isLoading && people.length === 0 ? (
           <div className="people-empty">
-            <strong>Профили не найдены</strong>
+            <strong>Люди не найдены</strong>
             <p>Попробуйте часть фамилии, имя или название места.</p>
             <button type="button" onClick={() => {
               reset();

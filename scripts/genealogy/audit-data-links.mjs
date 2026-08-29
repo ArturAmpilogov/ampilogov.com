@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const genealogyRoot = path.join(root, "data/genealogy");
+const summaryOnly = process.argv.includes("--summary");
 
 const jsonFiles = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -126,6 +127,16 @@ for (const { record: person, file } of peopleEntries) {
       add(errors, "family-backlink", file, `${person.personId} отсутствует в ${familyId}`);
     }
   }
+  for (const relation of person.relations ?? []) {
+    if (!relation.personId || !people.has(relation.personId)) {
+      add(errors, "unknown-related-person", file, `${person.personId} -> ${String(relation.personId)}`);
+    } else if (relation.personId === person.personId) {
+      add(errors, "self-relation", file, `${person.personId}: ${relation.type ?? "relation"}`);
+    }
+    for (const sourceId of relation.sourceIds ?? []) {
+      if (!sources.has(sourceId)) add(errors, "unknown-relation-source", file, `${person.personId} -> ${sourceId}`);
+    }
+  }
   for (const placeId of referencedPlaceIds(person)) {
     if (!places.has(placeId)) add(errors, "unknown-place", file, `${person.personId} -> ${placeId}`);
   }
@@ -192,11 +203,11 @@ const printGroup = (title, values) => {
   for (const value of values) console.log(`- [${value.code}] ${value.file}: ${value.message}`);
 };
 
-console.log(`Проверено: ${people.size} профилей, ${families.size} семей, ${sources.size} источников, ${places.size} мест.`);
+console.log(`Проверено: ${people.size} людей, ${families.size} семей, ${sources.size} источников, ${places.size} мест.`);
 printGroup("Ошибки", errors);
 printGroup("Предупреждения", warnings);
-console.log(`\nКандидаты на очевидную связь по уникальному полному имени: ${candidates.length}`);
-for (const candidate of candidates) {
+console.log(`\nСовпадения по уникальному полному имени, требующие доказательств: ${candidates.length}`);
+for (const candidate of summaryOnly ? [] : candidates) {
   const profile = people.get(candidate.personId)?.record;
   const profileDates = profile?.birth?.date ?? profile?.dates?.birth?.display ?? profile?.birthEstimate?.year ?? "?";
   console.log(`- ${candidate.sourceId}/${candidate.mentionId ?? "без mentionId"}: ${candidate.displayName} -> ${candidate.personId}; событие ${candidate.eventDate}, ${candidate.eventPlace}; профиль ${profileDates}`);

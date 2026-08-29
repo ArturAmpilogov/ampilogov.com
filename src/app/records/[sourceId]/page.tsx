@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
+import { RecordAnalysisAppendix } from "@/components/record-analysis-appendix";
+import { ArchiveBackupLink } from "@/components/archive-backup-link";
 import { SiteHeader } from "@/components/site-header";
-import { getRecordsDirectoryIndex } from "@/lib/directory-index";
+import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
 import { getArchiveRecord } from "@/lib/genealogy";
 
 type RecordPageProps = {
@@ -37,6 +39,8 @@ export function generateStaticParams() {
   return getRecordsDirectoryIndex().records.map((record) => ({ sourceId: record.sourceId }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: RecordPageProps): Promise<Metadata> {
   const { sourceId } = await params;
   const decodedSourceId = decodeURIComponent(sourceId);
@@ -50,7 +54,7 @@ export async function generateMetadata({ params }: RecordPageProps): Promise<Met
   if (!record) return { title: "Запись не найдена" };
   return {
     title: `${record.eventLabel}: ${record.primaryPerson?.name ?? record.date}`,
-    description: `${record.date}, ${record.place}. Архивная запись, расшифровка и связанные профили.`,
+    description: `${record.date}, ${record.place}. Архивная запись, расшифровка и связанные люди.`,
   };
 }
 
@@ -61,6 +65,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
   if (legacyDestination) redirect(legacyDestination);
   const record = getArchiveRecord(decodedSourceId);
   if (!record) notFound();
+  const analysisAppendix = getRecordsDirectoryIndex().appendices?.[decodedSourceId] ?? null;
   const hasEvidenceAsset = Boolean(record.evidenceFragments.length || record.evidenceUrl);
   const hasEvidence = record.mayDisplayEvidence && hasEvidenceAsset;
   const people = [...record.people].sort(
@@ -130,7 +135,15 @@ export default async function RecordPage({ params }: RecordPageProps) {
       text: "Для окончательного ответа нужна не ещё одна однофамильная строка, а связующий документ: Онфилог при Никольском Свечине, передача его двора или земли Юрловым, соседство с Ворониным и Садыковым либо формула «жил здесь Онфилог». Пока доказаны имя, примерное поколение и механизм названия; кандидаты ранжированы, но ни одному не приписана чужая биография.",
     },
   ] : [];
-  const onfilogovoNameGuide = isOnfilogovoRecord ? [
+  const onfilogovoNameGuide: Array<{
+    name: string;
+    status: string;
+    kind: string;
+    text: string;
+    facts: string[][];
+    personId?: string;
+    sourceId?: string;
+  }> = isOnfilogovoRecord ? [
     {
       name: "Онфилог",
       status: "восстановлен с высокой уверенностью",
@@ -195,6 +208,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
       name: "Анфилоф Селиванов",
       status: "реальный человек нужного поколения",
       kind: "Параллель",
+      personId: "P0062",
+      sourceId: "PUB-ASEI3-1495-YAROSLAVL-N208-ANFILOF",
       text: "Около 1495–1497 годов он лично назван среди присутствовавших на земельном суде ярославского тиуна. Это самый ранний найденный прямой носитель близкой формы имени. Но Ярославский уезд и отсутствие связи с Тверью не позволяют назвать его нашим Онфилогом.",
       facts: [
         ["Форма", "Анфилоф — документальная разговорная форма того же широкого именного гнезда, но не автоматический орфографический дубль Онфилога."],
@@ -207,6 +222,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
       name: "Анфилоф — отец Пешка Лодыгина",
       status: "новый региональный кандидат, тождество не доказано",
       kind: "Кашинский след",
+      personId: "P9666",
+      sourceId: "PUB-ASEI3-1499-KASHIN-PESHOK-ANFILOFOV",
       text: "Около 1499–1505 годов кашинская купчая называет «Пешка Анфилофова сына Лодыгина» — послуха, собственноручно приложившего руку. Позднее Пешок сам писал земельную купчую и снова выступал послухом в 1515/1516 году. Его патроним удостоверяет реального Анфилофа предыдущего поколения внутри тверского историко-географического мира. Но Кашинский уезд не является Тверским, а акта о переходе этого человека к Никольскому Свечину пока нет.",
       facts: [
         ["Полная формула", "Пешок — личное имя или прозвище; Анфилофов сын — прямое указание на отца Анфилофа; Лодыгин — родовое именование."],
@@ -219,6 +236,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
       name: "Анфилог — отец Антипы Феодотьевского",
       status: "ранняя служилая параллель, не тверской кандидат",
       kind: "Рязанский след",
+      personId: "P9681",
+      sourceId: "PUB-ASEI3-1483-RYAZAN-ANTIPA-ANFILOGOV",
       text: "Разъезжая грамота 1483–1503 годов называет Антипу Анфилогова сына Феодотьевского — человека рязанского князя, участвовавшего в установлении земельной границы. Формула прямо доказывает ещё одного Анфилога старшего поколения: Антипа был уже взрослым, следовательно, отец жил в XV веке. По времени он подходит идеально, но Рязанская земля и отсутствие Юрловых или тверских соседей оставляют его сравнительной параллелью.",
       facts: [
         ["Разбор имени", "Антипа — личное имя; Анфилогов сын — прямой патроним от отца Анфилога; Феодотьевской — дополнительное родовое или владельческое именование."],
@@ -228,9 +247,53 @@ export default async function RecordPage({ params }: RecordPageProps) {
       ],
     },
     {
+      name: "Антипа Анфилогов сын Феодотьевской",
+      status: "прямо названный сын Анфилога XV века",
+      kind: "Рязанский служилый след",
+      personId: "P9665",
+      sourceId: "PUB-ASEI3-1483-RYAZAN-ANTIPA-ANFILOGOV",
+      text: "Антипа — не вариант имени Анфилог, а самостоятельный человек: взрослый участник межевого разъезда и человек рязанского князя. Его формула особенно ценна потому, что сохраняет сразу два поколения: самого Антипу и его отца Анфилога. Так документ показывает, как редкое личное имя превращалось в живой патроним «Анфилогов сын» ещё до первой записи Онфилогова.",
+      facts: [
+        ["Кто назван", "Антипа — личное имя участника; Анфилогов сын — отчество от отца Анфилога; Феодотьевской — дополнительное родовое или владельческое именование."],
+        ["Роль", "Между 1483 и 1503 годами участвовал как человек князя Фёдора Васильевича Рязанского в официальном установлении земельной границы."],
+        ["Генеалогический смысл", "Патроним надёжно доказывает отдельного отца по имени Анфилог, принадлежавшего более раннему поколению XV века; для отца также создан самостоятельный профиль."],
+        ["Граница", "Документ относится к Рязанской земле и не связывает семью с Никольским Свечином, Юрловыми или Тверским уездом."],
+      ],
+    },
+    {
+      name: "Анфилофий Иванов сын",
+      status: "земельный держатель, прямо названный в купчей",
+      kind: "Северный владельческий след",
+      personId: "P9662",
+      sourceId: "PUB-SPBII-1516-TITOVSKAYA-ANFILOFY",
+      text: "В купчей августа 1516 года Максим Нестеров объясняет, что четверть деревни Титовской прежде купил у Анфилофия Иванова сына. Это не случайный свидетель, а человек, который до составления сохранившегося акта распоряжался долей поселения и мог её отчуждать. Полная форма Анфилофий особенно важна для истории имени, но северный акт не даёт перехода к тверскому Онфилогову.",
+      facts: [
+        ["Разбор имени", "Анфилофий — личное имя; Иванов сын — прямое отчество, то есть сын Ивана. Форма «у Анфилофья» является падежной формой того же имени."],
+        ["Что сделал", "Был прежним держателем четверти деревни Титовской и продал её Максиму Нестерову раньше августа 1516 года."],
+        ["Почему важен", "Доказывает владельческую среду редкого имени: его носитель мог не только жить при селении, но и участвовать в передаче земельного права."],
+        ["Граница", "Титовская относится к севернорусскому комплексу Антониево-Сийского монастыря; связи с Тверским уездом, Юрловыми или Свечином нет."],
+      ],
+    },
+    {
+      name: "Анфилоф Моисеев сын",
+      status: "прямо названный послух; отдельный от Анфилофия человек",
+      kind: "Северный актовый след",
+      personId: "P9663",
+      sourceId: "PUB-SPBII-1516-TITOVSKAYA-ANFILOFY",
+      text: "В той же купчей 1516 года назван ещё один носитель близкой формы имени — Анфилоф Моисеев сын. Он выступил послухом, то есть удостоверял сделку, тогда как Анфилофий Иванов сын был прежним владельцем земли. Разные отчества, разные места в формуляре и разные юридические роли исключают слияние этих двух людей.",
+      facts: [
+        ["Разбор имени", "Анфилоф — личное имя; Моисеев (в старой записи также Мосеев) сын — отчество от Моисея."],
+        ["Роль", "Послух земельной купчей августа 1516 года; его присутствие придавало сделке свидетельскую силу."],
+        ["Почему два профиля", "Анфилоф Моисеев и Анфилофий Иванов названы в одном акте, но имеют разных отцов и разные роли. Это два исторических лица, а не варианты одной строки."],
+        ["Смысл для имени", "Одновременное упоминание двух тёзок показывает, что имя было редким, но не уникальным; одного созвучия недостаточно для отождествления с эпонимом Онфилогова."],
+      ],
+    },
+    {
       name: "Анфилог Иванов сын Констянтинова",
       status: "крестьянский сценарий подтверждён",
       kind: "Социальная параллель",
+      personId: "P9664",
+      sourceId: "PUB-PRK-1530-RUPOSOVO-ANFILOG",
       text: "Рязанская грамота 1530-х годов прямо называет его великокняжеским крестьянином. Он доказывает, что Анфилог было живым мужским именем крестьянина той эпохи, а значит деревню действительно мог назвать по себе первопоселенец. С Тверью этот человек не связан.",
       facts: [
         ["Полная формула", "Анфилог — личное имя; Иванов сын — отчество; Констянтинов — родовое или вторичное патронимическое именование."],
@@ -424,6 +487,12 @@ export default async function RecordPage({ params }: RecordPageProps) {
                             <span>{item.kind}</span>
                             <strong>{item.name}</strong>
                             <em>{item.status}</em>
+                            {item.personId || item.sourceId ? (
+                              <div className="record-name-guide-links">
+                                {item.personId ? <Link href={`/people/${item.personId}`}>Профиль человека →</Link> : null}
+                                {item.sourceId ? <Link href={`/records/${item.sourceId}`}>Отдельный Record →</Link> : null}
+                              </div>
+                            ) : null}
                           </div>
                           <div className="record-name-guide-body">
                             <p>{item.text}</p>
@@ -516,7 +585,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
                       {person.details.map((detail, detailIndex) => (
                         <p className="record-modern-name-detail" key={`${detail}:${detailIndex}`}>{detail}</p>
                       ))}
-                      {person.nameAnalysis.length ? (
+                      {person.nameAnalysis.length && !analysisAppendix ? (
                         <dl className="record-modern-name-analysis">
                           {person.nameAnalysis.map((item, itemIndex) => (
                             <div
@@ -543,6 +612,12 @@ export default async function RecordPage({ params }: RecordPageProps) {
                     <p>Здесь собраны содержание приказа или ведомости, обстоятельства переселения, маршрут, даты, архивные шифры и направление дальнейшего поиска фамилии.</p>
                   </div>
                 )}
+                {analysisAppendix ? (
+                  <RecordAnalysisAppendix
+                    path={analysisAppendix.path}
+                    count={analysisAppendix.count}
+                  />
+                ) : null}
               </section>
               <section>
                 <h3>Смысл: что эта запись добавляет к истории семьи</h3>
@@ -643,26 +718,42 @@ export default async function RecordPage({ params }: RecordPageProps) {
             <div className="record-evidence-stack">
               {record.evidenceFragments.map((fragment, index) => (
                 <figure className="record-scan record-scan-fragment" key={`${fragment.url}:${index}`}>
-                  <a href={fragment.url} target="_blank" rel="noreferrer" aria-label={`${fragment.label}: открыть изображение в полном размере`}>
+                  <ArchiveBackupLink
+                    href={fragment.url}
+                    className="record-backup-image"
+                    ariaLabel={`${fragment.label}: открыть предупреждение об архивной копии`}
+                    rightsNote={record.rightsNote}
+                  >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={fragment.url} alt={`${fragment.label}: ${record.eventLabel}, ${record.date}`} />
-                  </a>
-                  <figcaption>{fragment.label} · открыть в полном размере ↗</figcaption>
+                  </ArchiveBackupLink>
+                  <figcaption>{fragment.label} · архивная копия</figcaption>
                 </figure>
               ))}
               {record.evidenceUrl ? (
                 <figure className="record-scan record-scan-page">
-                  <a href={record.evidenceUrl} target="_blank" rel="noreferrer" aria-label="Открыть полный лист в исходном размере">
+                  <ArchiveBackupLink
+                    href={record.evidenceUrl}
+                    className="record-backup-image"
+                    ariaLabel="Открыть предупреждение об архивной копии полного листа"
+                    rightsNote={record.rightsNote}
+                  >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={record.evidenceUrl} alt={`Полный лист: ${record.eventLabel}, ${record.date}`} />
-                  </a>
-                  <figcaption>Полный лист · открыть в полном размере ↗</figcaption>
+                  </ArchiveBackupLink>
+                  <figcaption>Полный лист · архивная копия</figcaption>
                 </figure>
               ) : null}
             </div>
           ) : null}
           <div className="record-source-meta">
             <span className="section-label" id="source-title">Источник и оригинал</span>
+            {record.originalUrl ? (
+              <a className="record-source-primary" href={record.originalUrl} target="_blank" rel="noreferrer">
+                <span>{record.originalLabel}</span>
+                <b aria-hidden="true">↗</b>
+              </a>
+            ) : null}
             <dl>
               <div><dt>Коллекция</dt><dd>{record.collection}</dd></div>
               <div><dt>Хранится</dt><dd>{record.repository}</dd></div>
@@ -672,12 +763,14 @@ export default async function RecordPage({ params }: RecordPageProps) {
               <div><dt>Место события</dt><dd>{record.place}</dd></div>
             </dl>
             <div className="record-source-links">
-              {record.originalUrl ? <a href={record.originalUrl} target="_blank" rel="noreferrer">{record.originalLabel} ↗</a> : null}
               {record.indexedUrl ? <a href={record.indexedUrl} target="_blank" rel="noreferrer">{record.indexedLabel} ↗</a> : null}
               {record.repositoryUrl ? <a href={record.repositoryUrl} target="_blank" rel="noreferrer">Архив-хранитель ↗</a> : null}
               {record.additionalLinks.map((link) => (
                 <a href={link.url} key={`${link.label}:${link.url}`} target="_blank" rel="noreferrer">{link.label} ↗</a>
               ))}
+              {hasEvidence && record.backupUrl ? (
+                <ArchiveBackupLink href={record.backupUrl} rightsNote={record.rightsNote} />
+              ) : null}
             </div>
             {record.sourceCopies.length > 1 ? (
               <div className="record-source-copies">
@@ -698,12 +791,16 @@ export default async function RecordPage({ params }: RecordPageProps) {
                 </ol>
               </div>
             ) : null}
-            {!hasEvidenceAsset ? (
+            {!hasEvidenceAsset && !record.hasLocalBackup ? (
               <p className="record-rights-note">
                 Скан исходной строки пока не сохранён. {record.unresolved[0]}
               </p>
-            ) : !record.mayDisplayEvidence ? (
-              <p className="record-rights-note">Локальная копия не публикуется до проверки прав. {record.rightsNote}</p>
+            ) : !record.mayDisplayEvidence && record.hasLocalBackup ? (
+              <p className="record-rights-note">
+                Архивная копия сохранена для внутренней проверки, но не публикуется без явно
+                подтверждённого права на повторный показ. Пожалуйста, используйте оригинальный
+                источник. {record.rightsNote}
+              </p>
             ) : null}
           </div>
         </section>
@@ -726,7 +823,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
                   ...person.details,
                   ...person.places.map((place) => `${place.relation}: ${place.label}`),
                 ].join(" · ")}</em> : null}
-                <span>Профиль →</span>
+                <span>Открыть человека →</span>
               </Link>
             ) : (
               <div key={`${person.name}:${index}`}>
@@ -737,7 +834,7 @@ export default async function RecordPage({ params }: RecordPageProps) {
                   ...person.details,
                   ...person.places.map((place) => `${place.relation}: ${place.label}`),
                 ].join(" · ")}</em> : null}
-                <span>Профиль ещё не создан</span>
+                <span>Карточка человека ещё не создана</span>
               </div>
             ))}
           </div>
