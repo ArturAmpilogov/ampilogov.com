@@ -85,7 +85,14 @@ export default async function PersonPage({ params }: PersonPageProps) {
         </header>
 
         <dl className="person-facts">
-          <div><dt>Рождение</dt><dd>{person.birthDate || "Не установлено"}</dd></div>
+          <div>
+            <dt>Жизнь</dt>
+            <dd>
+              {person.birthDate || "Рождение не установлено"}
+              {" — "}
+              {person.life.death === "?" ? "смерть не установлена" : person.life.death}
+            </dd>
+          </div>
           <div><dt>Места</dt><dd>{places.join(" · ") || "Проверяются"}</dd></div>
           <div><dt>Источники</dt><dd>{person.sources.length}</dd></div>
           <div><dt>Занятие</dt><dd>{person.occupations.join(", ") || "Не указано"}</dd></div>
@@ -131,7 +138,12 @@ export default async function PersonPage({ params }: PersonPageProps) {
                     <Link href={`/people/${encodeURIComponent(relation.personId)}`} key={`${relation.relation}:${relation.personId}`}>
                       <small>{relationLabels[relation.relation]}</small>
                       <strong>{relation.name}</strong>
-                      <span>Открыть →</span>
+                      <span>
+                        {relation.life.birth === "?" ? "?" : relation.life.birth}
+                        {" — "}
+                        {relation.life.death === "?" ? "?" : relation.life.death}
+                        {" · открыть →"}
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -150,6 +162,43 @@ export default async function PersonPage({ params }: PersonPageProps) {
               </section>
             ) : null}
           </div>
+        ) : null}
+
+        {person.researchLeads.length ? (
+          <section className="person-research-leads" aria-labelledby="research-leads-title">
+            <div className="person-section-heading">
+              <div>
+                <span className="section-label">Не доказанное родство</span>
+                <h2 id="research-leads-title">Исследовательские зацепки</h2>
+              </div>
+              <strong>{person.researchLeads.length}</strong>
+            </div>
+            <p className="person-research-leads-intro">
+              Эти совпадения достаточно существенны для проверки, но пока не показаны как установленное родство.
+            </p>
+            <div className="person-research-leads-list">
+              {person.researchLeads.map((lead, index) => (
+                <article key={`${lead.label}:${index}`}>
+                  <small>{lead.label}</small>
+                  <p>{lead.summary}</p>
+                  {lead.people.length || lead.sourceIds.length ? (
+                    <div>
+                      {lead.people.map((related) => (
+                        <Link href={`/people/${encodeURIComponent(related.personId)}`} key={related.personId}>
+                          {related.name} →
+                        </Link>
+                      ))}
+                      {lead.sourceIds.map((sourceId) => (
+                        <Link href={`/records/${encodeURIComponent(sourceId)}`} key={sourceId}>
+                          Record {sourceId} ↗
+                        </Link>
+                      ))}
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </section>
         ) : null}
 
         <section className="person-documents" aria-labelledby="documents-title">

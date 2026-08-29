@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { RecordTypeIcon } from "@/components/record-type-icon";
 import { RecordAnalysisAppendix } from "@/components/record-analysis-appendix";
-import { ArchiveBackupLink } from "@/components/archive-backup-link";
 import { SiteHeader } from "@/components/site-header";
 import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
 import { getArchiveRecord } from "@/lib/genealogy";
@@ -238,10 +237,11 @@ export default async function RecordPage({ params }: RecordPageProps) {
       kind: "Рязанский след",
       personId: "P9681",
       sourceId: "PUB-ASEI3-1483-RYAZAN-ANTIPA-ANFILOGOV",
-      text: "Разъезжая грамота 1483–1503 годов называет Антипу Анфилогова сына Феодотьевского — человека рязанского князя, участвовавшего в установлении земельной границы. Формула прямо доказывает ещё одного Анфилога старшего поколения: Антипа был уже взрослым, следовательно, отец жил в XV веке. По времени он подходит идеально, но Рязанская земля и отсутствие Юрловых или тверских соседей оставляют его сравнительной параллелью.",
+      text: "Разъезжая грамота 1483–1503 годов называет Антипу Анфилогова сына Феодотьевского первым среди четырёх мужей рязанского князя Фёдора Васильевича при установлении границы бортных земель Петровичей и Ярустова. Эти селения сохранились, а соседнее Федотьево лежит примерно в девяти километрах от обоих. Поэтому «Феодотьевской» с высокой вероятностью означает человека из Феодотьева и впервые локализует семью Анфилога в конкретном среднеокском узле. Связь с Тверью или позднейшим Орлом пока не доказана.",
       facts: [
-        ["Разбор имени", "Антипа — личное имя; Анфилогов сын — прямой патроним от отца Анфилога; Феодотьевской — дополнительное родовое или владельческое именование."],
-        ["Дата и роль", "1483–1503 годы; человек князя Фёдора Васильевича Рязанского при официальном межевом разъезде."],
+        ["Разбор имени", "Антипа — личное имя; Анфилогов сын — прямой патроним от отца Анфилога; Феодотьевской, вероятнее всего, территориальное именование от соседнего с межой Федотьева."],
+        ["Точная география", "Между современными центрами Петровичей и Ярустова около 5 км; Федотьево находится в 9,29 км от Петровичей и 8,80 км от Ярустова. Точная линия межи XV века не восстановлена."],
+        ["Дата и роль", "1483–1503 годы; первый среди четырёх княжеских мужей при разъезде земель княжеских бортников Петровичей и монастырских бортников Ярустова."],
         ["Что доказывает", "Имя Анфилог бытовало уже в XV веке и встречалось в семье человека княжеской служилой среды, а не только среди крестьян."],
         ["Почему не основатель", "Нет Тверского уезда, Никольского Свечина, Юрловых или цепочки передачи земли; совпали лишь имя и поколение."],
       ],
@@ -254,9 +254,10 @@ export default async function RecordPage({ params }: RecordPageProps) {
       sourceId: "PUB-ASEI3-1483-RYAZAN-ANTIPA-ANFILOGOV",
       text: "Антипа — не вариант имени Анфилог, а самостоятельный человек: взрослый участник межевого разъезда и человек рязанского князя. Его формула особенно ценна потому, что сохраняет сразу два поколения: самого Антипу и его отца Анфилога. Так документ показывает, как редкое личное имя превращалось в живой патроним «Анфилогов сын» ещё до первой записи Онфилогова.",
       facts: [
-        ["Кто назван", "Антипа — личное имя участника; Анфилогов сын — отчество от отца Анфилога; Феодотьевской — дополнительное родовое или владельческое именование."],
-        ["Роль", "Между 1483 и 1503 годами участвовал как человек князя Фёдора Васильевича Рязанского в официальном установлении земельной границы."],
+        ["Кто назван", "Антипа — личное имя участника; Анфилогов сын — отчество от отца Анфилога; Феодотьевской с высокой вероятностью указывает на соседнее с межой село Федотьево."],
+        ["Роль", "Между 1483 и 1503 годами поставлен первым среди четырёх мужей князя Фёдора Васильевича Рязанского при официальном разъезде бортных земель."],
         ["Генеалогический смысл", "Патроним надёжно доказывает отдельного отца по имени Анфилог, принадлежавшего более раннему поколению XV века; для отца также создан самостоятельный профиль."],
+        ["Микрорегион", "Петровичи, Ярустово и Федотьево образуют компактный среднеокский узел. Это адрес для проверки писцовых книг Старорязанского стана и потомков Антипы, но ещё не маршрут к Орлу."],
         ["Граница", "Документ относится к Рязанской земле и не связывает семью с Никольским Свечином, Юрловыми или Тверским уездом."],
       ],
     },
@@ -718,29 +719,15 @@ export default async function RecordPage({ params }: RecordPageProps) {
             <div className="record-evidence-stack">
               {record.evidenceFragments.map((fragment, index) => (
                 <figure className="record-scan record-scan-fragment" key={`${fragment.url}:${index}`}>
-                  <ArchiveBackupLink
-                    href={fragment.url}
-                    className="record-backup-image"
-                    ariaLabel={`${fragment.label}: открыть предупреждение об архивной копии`}
-                    rightsNote={record.rightsNote}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={fragment.url} alt={`${fragment.label}: ${record.eventLabel}, ${record.date}`} />
-                  </ArchiveBackupLink>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={fragment.url} alt={`${fragment.label}: ${record.eventLabel}, ${record.date}`} />
                   <figcaption>{fragment.label} · архивная копия</figcaption>
                 </figure>
               ))}
               {record.evidenceUrl ? (
                 <figure className="record-scan record-scan-page">
-                  <ArchiveBackupLink
-                    href={record.evidenceUrl}
-                    className="record-backup-image"
-                    ariaLabel="Открыть предупреждение об архивной копии полного листа"
-                    rightsNote={record.rightsNote}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={record.evidenceUrl} alt={`Полный лист: ${record.eventLabel}, ${record.date}`} />
-                  </ArchiveBackupLink>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={record.evidenceUrl} alt={`Полный лист: ${record.eventLabel}, ${record.date}`} />
                   <figcaption>Полный лист · архивная копия</figcaption>
                 </figure>
               ) : null}
@@ -768,9 +755,6 @@ export default async function RecordPage({ params }: RecordPageProps) {
               {record.additionalLinks.map((link) => (
                 <a href={link.url} key={`${link.label}:${link.url}`} target="_blank" rel="noreferrer">{link.label} ↗</a>
               ))}
-              {hasEvidence && record.backupUrl ? (
-                <ArchiveBackupLink href={record.backupUrl} rightsNote={record.rightsNote} />
-              ) : null}
             </div>
             {record.sourceCopies.length > 1 ? (
               <div className="record-source-copies">
@@ -834,7 +818,16 @@ export default async function RecordPage({ params }: RecordPageProps) {
                   ...person.details,
                   ...person.places.map((place) => `${place.relation}: ${place.label}`),
                 ].join(" · ")}</em> : null}
-                <span>Карточка человека ещё не создана</span>
+                {person.possiblePersonId ? (
+                  <span>
+                    Отдельный профиль не создан до проверки оригинала. {" "}
+                    <Link className="record-possible-person" href={`/people/${encodeURIComponent(person.possiblePersonId)}`}>
+                      Возможное совпадение: {person.possiblePersonName ?? person.possiblePersonId} →
+                    </Link>
+                  </span>
+                ) : (
+                  <span>Карточка человека ещё не создана</span>
+                )}
               </div>
             ))}
           </div>

@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   agentRules: false,
+  outputFileTracingIncludes: {
+    "/records/*/backup": ["./data/genealogy/**/*"],
+    "/records/*/backup/assets/*": ["./data/genealogy/**/*"],
+    "/people/*/backup": ["./data/genealogy/**/*"],
+  },
   outputFileTracingExcludes: {
     "/records/*": [
       "./data/**/*",
@@ -21,6 +26,40 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/records/:sourceId/backup/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "private, no-store, max-age=0",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "no-referrer",
+          },
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive",
+          },
+        ],
+      },
+      {
+        source: "/people/:personId/backup/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "private, no-store, max-age=0",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "no-referrer",
+          },
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive",
+          },
+        ],
+      },
+      {
         source: "/generated/:path*",
         headers: [
           {
@@ -34,7 +73,11 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "private, no-store, max-age=0",
+          },
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive",
           },
         ],
       },
