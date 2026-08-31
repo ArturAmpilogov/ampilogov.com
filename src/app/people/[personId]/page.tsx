@@ -168,13 +168,15 @@ export default async function PersonPage({ params }: PersonPageProps) {
           <section className="person-research-leads" aria-labelledby="research-leads-title">
             <div className="person-section-heading">
               <div>
-                <span className="section-label">Не доказанное родство</span>
-                <h2 id="research-leads-title">Исследовательские зацепки</h2>
+                <span className="section-label">Отдельные Records, спорные чтения и проверяемые связи</span>
+                <h2 id="research-leads-title">Интересные находки</h2>
               </div>
               <strong>{person.researchLeads.length}</strong>
             </div>
             <p className="person-research-leads-intro">
-              Эти совпадения достаточно существенны для проверки, но пока не показаны как установленное родство.
+              Здесь собраны спорные чтения, возможные повторные упоминания, архивные маршруты
+              и боковые линии, которые нельзя без проверки превращать в подтверждённые события
+              биографии или родство. Ссылка на Record показана там, где уже есть отдельный документ.
             </p>
             <div className="person-research-leads-list">
               {person.researchLeads.map((lead, index) => (

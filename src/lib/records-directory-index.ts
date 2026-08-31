@@ -8,9 +8,11 @@ import type { RecordsDirectoryIndex } from "@/lib/directory-index-types";
 let recordsIndex: RecordsDirectoryIndex | null = null;
 
 export function getRecordsDirectoryIndex() {
-  recordsIndex ??= JSON.parse(readFileSync(
+  const currentIndex = JSON.parse(readFileSync(
     path.join(process.cwd(), "data/genealogy/indexes/records-directory.json"),
     "utf8",
   )) as RecordsDirectoryIndex;
+  if (process.env.NODE_ENV !== "production") return currentIndex;
+  recordsIndex ??= currentIndex;
   return recordsIndex;
 }

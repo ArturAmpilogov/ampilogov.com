@@ -825,6 +825,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
                       Возможное совпадение: {person.possiblePersonName ?? person.possiblePersonId} →
                     </Link>
                   </span>
+                ) : person.isResearchObject ? (
+                  <span>Исследовательский объект, а не отдельный человек: персональный профиль не требуется</span>
                 ) : (
                   <span>Карточка человека ещё не создана</span>
                 )}
