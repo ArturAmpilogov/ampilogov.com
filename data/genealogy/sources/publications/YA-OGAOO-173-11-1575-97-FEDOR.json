@@ -69,10 +69,10 @@
     "warning": "Строка проверена по полному тексту и изображению."
   },
   "evidence": {
-    "captureType": "remote-viewer-windowed-screenshot-with-enlarged-fragments",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "870c22d9e19e18c44ef005e8d44a1b42b620b9c3b6de44f347bce073fac13323",
+    "capturedAt": "2026-08-31",
+    "sha256": "1a0c2fac501d483040633014a6c1358be4ad36509a2f03416acaf5cfe55f13d0",
     "publicDisplay": false,
     "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     "localBackup": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-full-view.png",
@@ -80,28 +80,23 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-header.png",
-        "sha256": "e3bfb5c26a9bcb24e2698d4f61ad4025f0ba4775a20f809d58549481a1c88096",
+        "sha256": "94f93205213c97c88fd8c1161da794cd4316e9fed169d2c2532f6bb2efe74c28",
         "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-target-entry-close.png",
-        "sha256": "2eb51a5e8abd3d6d46453d25270612dc2df20850bdec8ff817a095c78416360f",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-target-entry-context.png",
-        "sha256": "2eb51a5e8abd3d6d46453d25270612dc2df20850bdec8ff817a095c78416360f",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-3",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-target-entry-detail.png",
-        "sha256": "44b83568c021831b55bd555542c3b8225b095b5a522c38a8dd11092c5c0a26e5",
-        "description": "Увеличенная целевая строка 3 с именами, датами, родством, статусом и соседним контекстом."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0097-target-entry-document-upper.png",
+        "sha256": "dd1531db91d13d197ea98f5efee3e51999dc369e91df998410704a57ca2b750d",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-08-31",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
@@ -109,7 +104,9 @@
       "Точный день рождения и крещения Филиппа."
     ],
     "correctionHistory": [
-      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены."
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-08-31: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

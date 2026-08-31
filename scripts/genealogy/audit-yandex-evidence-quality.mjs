@@ -6,7 +6,10 @@ const root = process.cwd();
 const sourceRoot = path.join(root, "data/genealogy/sources");
 const outputPath = path.join(root, "data/genealogy/indexes/yandex-evidence-quality.json");
 const writeReport = process.argv.includes("--write");
-const requiredCaptureType = "remote-viewer-document-only-capture-with-enlarged-fragments";
+// A viewer screenshot is not evidence: it can include controls, a transcript panel,
+// or a mostly empty canvas.  A confirmed bundle must instead be cropped to the
+// document bounds of the viewer's rendered scan, with separate readable fragments.
+const requiredCaptureType = "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments";
 
 const jsonFiles = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });

@@ -12,6 +12,7 @@ for (let index = 0; index < cli.length; index += 2) {
 const catalogId = args.get("--catalog");
 const scans = new Set((args.get("--scans") ?? "").split(",").filter(Boolean).map(Number));
 const capturedAt = args.get("--captured-at") ?? new Date().toISOString().slice(0, 10);
+const captureType = "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments";
 
 if (!catalogId || !scans.size || [...scans].some((scan) => !Number.isInteger(scan))) {
   console.error("Использование: node scripts/genealogy/attach-local-evidence.mjs --catalog ID --scans 12,34 --captured-at YYYY-MM-DD");
@@ -166,7 +167,7 @@ for (const scan of scans) {
         .filter((copy) => copy.catalogId !== catalogId || Number(copy.scanNumber) !== scan);
       parallelCopies.push({
         ...parallelBundle,
-        captureType: "remote-viewer-document-only-capture-with-enlarged-fragments",
+        captureType,
         quality: {
           documentOnlyVisuallyConfirmed: false,
           headerVisuallyConfirmed: false,
@@ -198,7 +199,7 @@ for (const scan of scans) {
 
     value.evidence = {
       ...value.evidence,
-      captureType: "remote-viewer-document-only-capture-with-enlarged-fragments",
+      captureType,
       localBackup: primaryBundle.localBackup,
       path: primaryBundle.path,
       capturedAt: primaryBundle.capturedAt,
@@ -215,7 +216,7 @@ for (const scan of scans) {
     };
     value.review ??= {};
     value.review.correctionHistory ??= [];
-    const note = `${capturedAt}: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
+      const note = `${capturedAt}: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
     if (!value.review.correctionHistory.includes(note)) value.review.correctionHistory.push(note);
     await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
     const imageCount = primaryBundle.fragments.length + 1

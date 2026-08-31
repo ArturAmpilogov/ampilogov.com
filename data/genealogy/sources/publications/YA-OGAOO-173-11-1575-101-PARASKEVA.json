@@ -70,10 +70,10 @@
     "warning": "Чтение проверено по полной строке и изображению."
   },
   "evidence": {
-    "captureType": "remote-viewer-windowed-screenshot-with-enlarged-fragments",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "d9edb9474efd9e23b6d09d95bf923aa30c15a18be532e2771fa83faddf52fd4e",
+    "capturedAt": "2026-08-31",
+    "sha256": "edd016afa92468dd99d269146f50405626b67537f794ce3918a48c852a218ed1",
     "publicDisplay": false,
     "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     "localBackup": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-full-view.png",
@@ -81,34 +81,31 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-header.png",
-        "sha256": "c90026af4f32e57c0cefbf61282db81dd4a824913f0061723345bc7c6971e660",
+        "sha256": "3fa75c621bf2db88cf0aa3bd0be6cc7d20b01789a902f3b0c32846ae7dbc9c24",
         "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-target-entry-close.png",
-        "sha256": "2294e28dd50a804f534827fc5f70d8b577233d9f87605d8e1b267c7ec5d15ba5",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-target-entry-context.png",
-        "sha256": "60f7b643c51ae57ded8fa3acb9ccdb93d26f9b188bc3f7040a84685eac082404",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-3",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-target-entry-detail.png",
-        "sha256": "c362d9f01296f5c28dc7c3af115a85a6dbcccddb434969ac1f9878491f4fbe13",
-        "description": "Увеличенная целевая строка 3 с именами, датами, родством, статусом и соседним контекстом."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0101-target-entry-document-lower.png",
+        "sha256": "2686b78459c5f807b9fe2b4b189e527e1ce60e0ad299363040bd5e5126ca047f",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-08-31",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "unresolved": [],
     "correctionHistory": [
-      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены."
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-08-31: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
