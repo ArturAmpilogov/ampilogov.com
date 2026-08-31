@@ -10,6 +10,11 @@ const writeReport = process.argv.includes("--write");
 // or a mostly empty canvas.  A confirmed bundle must instead be cropped to the
 // document bounds of the viewer's rendered scan, with separate readable fragments.
 const requiredCaptureType = "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments";
+// Earlier work used this name for the same essential result: a document-only
+// crop plus a header and readable target row.  Those files must be reviewed
+// where their confirmation is missing, but they are not automatically bad and
+// must not be queued for a needless new capture.
+const legacyDocumentOnlyCaptureType = "remote-viewer-document-only-capture-with-enlarged-fragments";
 
 const jsonFiles = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -97,13 +102,21 @@ const files = await jsonFiles(sourceRoot);
 const groups = new Map();
 for (const file of files) {
   const source = JSON.parse(await readFile(file, "utf8"));
-  const serialized = JSON.stringify(source);
   const pairs = new Map();
-  for (const match of serialized.matchAll(/https?:\/\/(?:www\.)?yandex\.ru\/archive\/catalog\/([0-9a-f-]{36})\/(\d+)/ig)) {
-    pairs.set(`${match[1]}/${match[2]}`, { catalogId: match[1], scanNumber: Number(match[2]) });
-  }
   const primary = sourcePair(source);
   if (primary) pairs.set(`${primary.catalogId}/${primary.scanNumber}`, primary);
+  for (const citation of source.collection?.citations ?? []) {
+    const scanNumber = Number(citation.scanNumber);
+    if (citation.catalogId && Number.isInteger(scanNumber)) {
+      pairs.set(`${citation.catalogId}/${scanNumber}`, { catalogId: citation.catalogId, scanNumber });
+    }
+  }
+  for (const copy of source.evidence?.parallelCopies ?? []) {
+    const scanNumber = Number(copy.scanNumber);
+    if (copy.catalogId && Number.isInteger(scanNumber)) {
+      pairs.set(`${copy.catalogId}/${scanNumber}`, { catalogId: copy.catalogId, scanNumber });
+    }
+  }
   for (const { catalogId, scanNumber } of pairs.values()) {
     const key = `${catalogId}/${scanNumber}`;
     const group = groups.get(key) ?? { catalogId, scanNumber, sources: [] };
@@ -123,7 +136,9 @@ for (const group of [...groups.values()].sort((left, right) =>
   const sourceIds = group.sources.map(({ source }) => source.sourceId).filter(Boolean).sort();
   const evidence = group.sources.find((entry) => entry.evidence)?.evidence;
   if (!evidence) issues.add("evidence-missing");
-  if (evidence?.captureType !== requiredCaptureType) issues.add("document-only-capture-not-confirmed");
+  if (![requiredCaptureType, legacyDocumentOnlyCaptureType].includes(evidence?.captureType)) {
+    issues.add("document-only-capture-not-confirmed");
+  }
   if (evidence?.quality?.documentOnlyVisuallyConfirmed !== true) {
     issues.add("document-only-visually-unconfirmed");
   }
@@ -157,12 +172,22 @@ for (const group of [...groups.values()].sort((left, right) =>
   });
   if (!canonicalTarget) issues.add("canonical-target-fragment-missing");
 
+  const visualReviewIssues = new Set([
+    "document-only-visually-unconfirmed",
+    "header-visually-unconfirmed",
+    "target-rows-visually-unconfirmed",
+  ]);
+  const reshootIssues = [...issues].filter((issue) => !visualReviewIssues.has(issue));
   pages.push({
     catalogId: group.catalogId,
     scanNumber: group.scanNumber,
     url: `https://yandex.ru/archive/catalog/${group.catalogId}/${group.scanNumber}`,
     sourceIds,
-    status: issues.size ? "needs-reshoot" : "verified-document-only",
+    status: reshootIssues.length
+      ? "needs-reshoot"
+      : issues.size
+        ? "needs-visual-review"
+        : "verified-document-only",
     issues: [...issues].sort(),
     assets: { full: fullAsset, header: headerAsset, targets: targetAssets },
   });
@@ -175,6 +200,7 @@ const report = {
     pages: pages.length,
     verifiedDocumentOnly: pages.filter((page) => page.status === "verified-document-only").length,
     needsReshoot: pages.filter((page) => page.status === "needs-reshoot").length,
+    needsVisualReview: pages.filter((page) => page.status === "needs-visual-review").length,
   },
   pages,
 };
