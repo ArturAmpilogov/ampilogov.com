@@ -2209,6 +2209,9 @@ function genealogyIndexedPath(relativePath: string) {
 
   // Keep every dynamic filesystem pattern narrow enough for Turbopack to trace
   // the real shard instead of treating the whole genealogy tree as a candidate.
+  if (normalized.startsWith("sources/arolsen/")) {
+    return path.join(GENEALOGY_ROOT, "sources/arolsen", normalized.slice("sources/arolsen/".length));
+  }
   if (normalized.startsWith("sources/familysearch/")) {
     return path.join(GENEALOGY_ROOT, "sources/familysearch", normalized.slice("sources/familysearch/".length));
   }
@@ -2300,9 +2303,11 @@ export function getArchiveRecord(sourceId: string) {
   return record;
 }
 
+// Kept as project-relative prefixes: joining them onto `process.cwd()` at module
+// scope made the bundler trace every file under `evidence-private` (10k+ assets).
 const ARCHIVE_BACKUP_ROOTS = [
-  path.join(process.cwd(), "public/archive/evidence"),
-  path.join(GENEALOGY_ROOT, "evidence-private"),
+  "public/archive/evidence",
+  "data/genealogy/evidence-private",
 ];
 
 function sourceRecordById(sourceId: string) {
@@ -2328,12 +2333,13 @@ function archiveBackupContentType(filePath: string) {
 
 function resolveArchiveBackupPath(relativePath?: string) {
   if (!relativePath || path.isAbsolute(relativePath)) return null;
-  const absolutePath = path.resolve(process.cwd(), relativePath);
-  const isAllowed = ARCHIVE_BACKUP_ROOTS.some((root) => {
-    const relation = path.relative(root, absolutePath);
-    return relation !== "" && !relation.startsWith("..") && !path.isAbsolute(relation);
-  });
-  return isAllowed ? absolutePath : null;
+  // `path.normalize` collapses interior ".." segments and leaves any escaping
+  // ones at the front, so a prefix check is enough to keep reads inside a root.
+  const normalized = path.normalize(relativePath).split(path.sep).join("/");
+  const isAllowed = ARCHIVE_BACKUP_ROOTS.some((root) => normalized.length > root.length + 1 && normalized.startsWith(`${root}/`));
+  // `turbopackIgnore` keeps the tracer from following this dynamic path: the two
+  // roots hold ~4.6 GB of scans that must stay out of the deployed bundle.
+  return isAllowed ? path.resolve(/*turbopackIgnore: true*/ process.cwd(), normalized) : null;
 }
 
 function resolvedArchiveBackupAssets(sourceId: string): ResolvedArchiveBackupAsset[] {
