@@ -194,7 +194,15 @@ for (const scan of scans) {
         citationScan,
         "Параллельный архивный экземпляр. ",
       );
-      if (bundle) parallelCopies.push(bundle);
+      if (bundle) parallelCopies.push({
+        ...bundle,
+        captureType,
+        quality: {
+          documentOnlyVisuallyConfirmed: false,
+          headerVisuallyConfirmed: false,
+          targetRowsVisuallyConfirmed: false,
+        },
+      });
     }
 
     value.evidence = {
