@@ -4,14 +4,14 @@ import path from "node:path";
 
 import placesIndexData from "../../data/genealogy/places/index.json";
 
-// Turbopack turns `path.join(process.cwd(), <literal>)` into a build-time file
-// pattern and then reports every path derived from this constant as the whole
-// data/genealogy tree (~19k files), which it warns about as an overly broad
-// pattern. The routes that read those files at request time are declared
-// explicitly in next.config.ts (outputFileTracingIncludes for /backup); every
-// other page reads them while prerendering, when tracing does not apply. Joining
-// the segments at runtime keeps the tracer from inventing that pattern.
-const GENEALOGY_ROOT = path.join(process.cwd(), ["data", "genealogy"].join("/"));
+// `turbopackIgnore` keeps the tracer from deriving a file pattern from this
+// constant: without it every path built on it traces the whole data/genealogy
+// tree (~19k files), and building the segments at runtime instead is worse still
+// — the tracer then falls back to including the entire project. The routes that
+// read these files at request time are declared explicitly in next.config.ts
+// (outputFileTracingIncludes for /backup); every other page reads them while
+// prerendering, when tracing does not apply.
+const GENEALOGY_ROOT = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", "genealogy");
 
 let peopleByIdCache: Map<string, PersonRecord> | null = null;
 
