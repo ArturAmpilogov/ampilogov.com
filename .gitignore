@@ -47,3 +47,8 @@ next-env.d.ts
 
 
 .playwright-cli
+
+# archive scans: stored in the private Vercel Blob store, kept on disk locally only
+# (upload with `pnpm genealogy:evidence:upload`; see src/lib/evidence-store.ts)
+/public/archive/evidence
+/data/genealogy/evidence-private

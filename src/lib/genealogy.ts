@@ -1,6 +1,8 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
+// Explicit extension: scripts/genealogy/build-directory-indexes.mjs loads this file in plain Node.
+import { readEvidenceAsset, resolveEvidencePathname } from "./evidence-store.ts";
 
 import placesIndexData from "../../data/genealogy/places/index.json";
 
@@ -413,8 +415,7 @@ export type ArchiveBackupAsset = {
 };
 
 type ResolvedArchiveBackupAsset = ArchiveBackupAsset & {
-  absolutePath: string;
-  contentType: string;
+  pathname: string;
 };
 
 function statusDescribesCompletedReading(status?: string) {
@@ -2310,43 +2311,10 @@ export function getArchiveRecord(sourceId: string) {
   return record;
 }
 
-// Kept as project-relative prefixes: joining them onto `process.cwd()` at module
-// scope made the bundler trace every file under `evidence-private` (10k+ assets).
-const ARCHIVE_BACKUP_ROOTS = [
-  "public/archive/evidence",
-  "data/genealogy/evidence-private",
-];
-
 function sourceRecordById(sourceId: string) {
   const relativePath = getRecordPathIndex().paths[sourceId];
   if (!relativePath) return null;
   return JSON.parse(readFileSync(genealogyIndexedPath(relativePath), "utf8")) as SourceRecord;
-}
-
-function archiveBackupContentType(filePath: string) {
-  const extension = path.extname(filePath).toLocaleLowerCase("en-US");
-  return ({
-    ".avif": "image/avif",
-    ".gif": "image/gif",
-    ".jpeg": "image/jpeg",
-    ".jpg": "image/jpeg",
-    ".pdf": "application/pdf",
-    ".png": "image/png",
-    ".tif": "image/tiff",
-    ".tiff": "image/tiff",
-    ".webp": "image/webp",
-  } as Record<string, string>)[extension] ?? "application/octet-stream";
-}
-
-function resolveArchiveBackupPath(relativePath?: string) {
-  if (!relativePath || path.isAbsolute(relativePath)) return null;
-  // `path.normalize` collapses interior ".." segments and leaves any escaping
-  // ones at the front, so a prefix check is enough to keep reads inside a root.
-  const normalized = path.normalize(relativePath).split(path.sep).join("/");
-  const isAllowed = ARCHIVE_BACKUP_ROOTS.some((root) => normalized.length > root.length + 1 && normalized.startsWith(`${root}/`));
-  // `turbopackIgnore` keeps the tracer from following this dynamic path: the two
-  // roots hold ~4.6 GB of scans that must stay out of the deployed bundle.
-  return isAllowed ? path.resolve(/*turbopackIgnore: true*/ process.cwd(), normalized) : null;
 }
 
 function resolvedArchiveBackupAssets(sourceId: string): ResolvedArchiveBackupAsset[] {
@@ -2365,15 +2333,14 @@ function resolvedArchiveBackupAssets(sourceId: string): ResolvedArchiveBackupAss
   const seen = new Set<string>();
 
   return candidates.flatMap((candidate) => {
-    const absolutePath = resolveArchiveBackupPath(candidate.path);
-    if (!absolutePath || seen.has(absolutePath)) return [];
-    seen.add(absolutePath);
+    const pathname = resolveEvidencePathname(candidate.path);
+    if (!pathname || seen.has(pathname)) return [];
+    seen.add(pathname);
     return [{
       index: seen.size - 1,
       label: candidate.label,
-      fileName: path.basename(absolutePath),
-      absolutePath,
-      contentType: archiveBackupContentType(absolutePath),
+      fileName: path.posix.basename(pathname),
+      pathname,
     }];
   });
 }
@@ -2386,18 +2353,10 @@ export function getArchiveBackupAssets(sourceId: string): ArchiveBackupAsset[] {
   }));
 }
 
-export function readArchiveBackupAsset(sourceId: string, assetIndex: number) {
+/** Streams one backup scan from local disk or the private Blob store; `null` when missing. */
+export async function readArchiveBackupAsset(sourceId: string, assetIndex: number) {
   const asset = resolvedArchiveBackupAssets(sourceId).find((candidate) => candidate.index === assetIndex);
-  if (!asset) return null;
-  try {
-    return {
-      bytes: readFileSync(asset.absolutePath),
-      contentType: asset.contentType,
-      fileName: asset.fileName,
-    };
-  } catch {
-    return null;
-  }
+  return asset ? readEvidenceAsset(asset.pathname) : null;
 }
 
 function readJsonDirectory<T>(directory: string): T[] {

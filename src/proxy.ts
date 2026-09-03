@@ -1,7 +1,5 @@
-import { createHash, timingSafeEqual } from "node:crypto";
 import { type NextRequest, NextResponse } from "next/server";
-
-const BACKUP_COOKIE = "ampilogov_backup_access_v1";
+import { BACKUP_COOKIE, backupAccessCookieValue, backupAccessSecret, secretsMatch } from "@/lib/backup-access";
 
 function privateHeaders(response: NextResponse) {
   response.headers.set("Cache-Control", "private, no-store, max-age=0");
@@ -16,21 +14,10 @@ function hiddenResponse() {
   return privateHeaders(new NextResponse(null, { status: 404 }));
 }
 
-function accessCookieValue(secret: string) {
-  return createHash("sha256").update(`ampilogov-backup:${secret}`).digest("hex");
-}
-
-function secretsMatch(left: string | null | undefined, right: string) {
-  if (!left) return false;
-  const leftBuffer = Buffer.from(left);
-  const rightBuffer = Buffer.from(right);
-  return leftBuffer.length === rightBuffer.length && timingSafeEqual(leftBuffer, rightBuffer);
-}
-
 export function proxy(request: NextRequest) {
-  const secret = process.env.BACKUP_ACCESS_TOKEN?.trim();
+  const secret = backupAccessSecret();
   if (!secret) return hiddenResponse();
-  const cookieValue = accessCookieValue(secret);
+  const cookieValue = backupAccessCookieValue(secret);
 
   const suppliedKey = request.nextUrl.searchParams.get("key");
   if (secretsMatch(suppliedKey, secret)) {
