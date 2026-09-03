@@ -73,16 +73,41 @@
     "warning": "Чтение проверено по полной строке и изображению."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/gaao/YA-GAAO-454-1-339-242-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "818350c416fabbd858e3df7df744469356d1b4ffd558ca54b6124d19e116cea3",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/3f9ab459-7e88-4d9e-814e-9f3ef7c7ba8e/0242-full-view.png",
+    "capturedAt": "2026-09-03",
+    "sha256": "40bc6e51f7d642a5197e86e28794a266bf751c4113c24ecf1e7425ef42aa6e3c",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/3f9ab459-7e88-4d9e-814e-9f3ef7c7ba8e/0242-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/3f9ab459-7e88-4d9e-814e-9f3ef7c7ba8e/0242-header.png",
+        "sha256": "c5d93fa59d978143087b4162a0d3eb18901279f1419060ade816ed1aa3183793",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/3f9ab459-7e88-4d9e-814e-9f3ef7c7ba8e/0242-target-entry-document-family-group.png",
+        "sha256": "acf56de77d03e881a064f345de07b20960748757c3c54ba76f9933a5c4f49f9b",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-03",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

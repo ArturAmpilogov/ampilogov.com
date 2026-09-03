@@ -82,17 +82,44 @@
     "warning": "Поиск по форме «Анфилогов» ложно принял личное имя «Анфилогий» за фамилию. В Record сохранено чтение оригинальной строки как дом носителя личного имени."
   },
   "evidence": {
-    "captureType": "remote-viewer-visual-reading",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/336ad61f-9b66-40fa-893a-b134ad548d5c/521",
     "publicDisplay": false,
-    "rightsNote": "Оригинал просмотрен в публичном просмотрщике Яндекс Архива; публичная карточка ссылается на сервис, а не публикует копию скана.",
-    "capturedAt": "2026-08-29"
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "capturedAt": "2026-09-03",
+    "localBackup": "data/genealogy/evidence-private/yandex/336ad61f-9b66-40fa-893a-b134ad548d5c/0521-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/336ad61f-9b66-40fa-893a-b134ad548d5c/0521-full-view.png",
+    "sha256": "cc67f17dd41825d24ae852bd2ffdd163e10c42e7dac6e4cc497a846993834614",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/336ad61f-9b66-40fa-893a-b134ad548d5c/0521-header.png",
+        "sha256": "0a3a91eca94a49bf5e1b132ba584a84b3de2d696f078c8ac5165d3447e943247",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/336ad61f-9b66-40fa-893a-b134ad548d5c/0521-target-entry-document-main.png",
+        "sha256": "551759f85b40186ce28a62cb2fd4d1e133e8a1fdeb82af66bbd87fb4c0559457",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-03",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-location-context-caution",
     "transcriptionConfidence": "high-for-household-names-and-ages; medium-high-for-village-section",
     "unresolved": [
       "При следующем просмотре соседних листов уточнить приход и владельца деревни Миткина."
+    ],
+    "correctionHistory": [
+      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

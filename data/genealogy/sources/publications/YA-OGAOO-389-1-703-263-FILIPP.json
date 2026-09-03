@@ -63,18 +63,49 @@
     "warning": "Основной OCR полного листа ошибочно читает имя отца как «Николай». Увеличенный рукописный оригинал и поисковый сниппет ясно дают «Анисим». Соседние числа 94 и 28 относятся к следующей строке, а возраст Филиппа в его графе — один месяц."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-389-1-703-263-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "d9ba6bd36e3087c037493dd886ca102e7512d906203d862517bf1fad747f50a5",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/34bd4fe3-644b-4275-b2dc-ef03dd6d07be/0263-full-view.png",
+    "capturedAt": "2026-09-03",
+    "sha256": "ac843850160fdbab6d9235c315bdf56ea3041ceda4a922ba5e804334e21da536",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/34bd4fe3-644b-4275-b2dc-ef03dd6d07be/0263-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/34bd4fe3-644b-4275-b2dc-ef03dd6d07be/0263-header.png",
+        "sha256": "90ec0417d2a989a623c7e40449bff2a24a05ced405cfdea0450885f9657df648",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry-1",
+        "path": "data/genealogy/evidence-private/yandex/34bd4fe3-644b-4275-b2dc-ef03dd6d07be/0263-target-entry-document-lower.png",
+        "sha256": "571a42a385182c52686e1186621bc555fb0f6f1c5840552aba70d268ff4a2988",
+        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-2",
+        "path": "data/genealogy/evidence-private/yandex/34bd4fe3-644b-4275-b2dc-ef03dd6d07be/0263-target-entry-document-upper.png",
+        "sha256": "46357a0b52597743a3f5d297319ada3dd35fff3eda904226b00a71bed6bd2798",
+        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-03",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-resolved-ocr-error",
     "identityResolution": "Для Анисима и его сына созданы новые профили по прямой смертной записи. Анисим назван без отчества и супруги и не объединён ни с одним существующим одноимённым профилем; нечёткое сопоставление не применялось.",
     "unresolved": [
       "Мать и точная дата рождения Филиппа в записи не названы."
+    ],
+    "correctionHistory": [
+      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
