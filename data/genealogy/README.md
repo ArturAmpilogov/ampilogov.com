@@ -113,6 +113,14 @@
 карточек ссылок на эти маршруты нет. Секрет нельзя записывать в JSON, Markdown
 или коммитить в репозиторий — он задаётся только в переменных окружения хостинга.
 
+### Генерируемые индексы
+
+Файлы `records-directory.json`, `people-directory.json`, `record-source-paths.json`,
+`map-directory.json` и `source-registry.json` в `data/genealogy/indexes/`
+собираются командой `pnpm genealogy:directory-index` и не хранятся в git: они
+пересобираются в `prebuild` и `predev`. Остальные файлы каталога `indexes/`
+ведутся вручную и коммитятся как обычно.
+
 ### Где хранятся сканы
 
 Файлы сканов не хранятся в git: `public/archive/evidence/` и
