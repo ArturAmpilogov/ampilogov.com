@@ -1,11 +1,23 @@
+import { readdirSync } from "node:fs";
 import type { NextConfig } from "next";
+
+// The backup routes read source JSON at request time, so trace the genealogy
+// data into their bundles. `evidence-private` is excluded: the scans live in
+// the private Blob store (see src/lib/evidence-store.ts) and the folder is only
+// present on developer machines.
+const genealogyDataGlobs = [
+  "./data/genealogy/*.json",
+  ...readdirSync("./data/genealogy", { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name !== "evidence-private")
+    .map((entry) => `./data/genealogy/${entry.name}/**/*`),
+];
 
 const nextConfig: NextConfig = {
   agentRules: false,
   outputFileTracingIncludes: {
-    "/records/*/backup": ["./data/genealogy/**/*"],
-    "/records/*/backup/assets/*": ["./data/genealogy/**/*"],
-    "/people/*/backup": ["./data/genealogy/**/*"],
+    "/records/*/backup": genealogyDataGlobs,
+    "/records/*/backup/assets/*": genealogyDataGlobs,
+    "/people/*/backup": genealogyDataGlobs,
   },
   outputFileTracingExcludes: {
     "/records/*": [

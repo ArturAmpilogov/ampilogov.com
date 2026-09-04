@@ -1,10 +1,19 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
+// Explicit extension: scripts/genealogy/build-directory-indexes.mjs loads this file in plain Node.
+import { readEvidenceAsset, resolveEvidencePathname } from "./evidence-store.ts";
 
 import placesIndexData from "../../data/genealogy/places/index.json";
 
-const GENEALOGY_ROOT = path.join(process.cwd(), "data/genealogy");
+// `turbopackIgnore` keeps the tracer from deriving a file pattern from this
+// constant: without it every path built on it traces the whole data/genealogy
+// tree (~19k files), and building the segments at runtime instead is worse still
+// — the tracer then falls back to including the entire project. The routes that
+// read these files at request time are declared explicitly in next.config.ts
+// (outputFileTracingIncludes for /backup); every other page reads them while
+// prerendering, when tracing does not apply.
+const GENEALOGY_ROOT = path.join(/*turbopackIgnore: true*/ process.cwd(), "data", "genealogy");
 
 let peopleByIdCache: Map<string, PersonRecord> | null = null;
 
@@ -263,6 +272,7 @@ type SourceRecord = {
   methodology?: Record<string, unknown>;
   chronology?: unknown;
   events?: unknown;
+  comparativeAudit?: Record<string, unknown>;
   researchNotes?: string[] | Record<string, unknown>;
   notes?: string[];
   evidence?: {
@@ -318,6 +328,7 @@ export type ArchiveRecordPerson = {
   personId: string | null;
   possiblePersonId: string | null;
   possiblePersonName: string | null;
+  isResearchObject: boolean;
   role: string;
   eventRole: string | null;
   name: string;
@@ -404,8 +415,7 @@ export type ArchiveBackupAsset = {
 };
 
 type ResolvedArchiveBackupAsset = ArchiveBackupAsset & {
-  absolutePath: string;
-  contentType: string;
+  pathname: string;
 };
 
 function statusDescribesCompletedReading(status?: string) {
@@ -1077,8 +1087,28 @@ const recordDataLabels: Record<string, string> = {
   burialPlace: "Место погребения",
   recordNumber: "Номер записи",
   originResearchUpdate: "Откуда складывалось орловское служилое ядро",
+  purpose: "Зачем проведена проверка",
+  modernClaim: "Современное утверждение о 1566 годе",
+  verified1580: "Что подтверждено за 1580 год",
+  verified1594_95: "Что подтверждает орловская книга 1594/95 года",
+  pre1566RegisterAudit: "Проверка служилых реестров до основания Орла",
+  identityCautions: "Что нельзя объединять без доказательств",
+  researchConsequence: "Как находка меняет дальнейший поиск",
+  source: "Источник",
+  manuscript: "Архивная рукопись",
+  literal: "Буквальная запись",
+  dateControl: "Как проверена дата",
+  meaning: "Исторический смысл",
+  assessment: "Оценка достоверности",
+  peopleAndHoldings: "Названные люди и их владения",
+  method: "Как проверено",
+  result: "Результат",
+  limit: "Граница вывода",
+  url: "Открытая публикация",
   livnyResult: "Проверка ливенского следа",
   karachev1584Lead: "Карачевский коридор и книга 1584/85 года",
+  officialInventoryVerification20260830: "Проверка по официальной поактной описи РГАДА",
+  inventoryMethodConsequence: "Что опись находит — и что неизбежно пропускает",
   multiCity1629Check: "Сравнительный служебный список 1629 года",
   recruitmentSources: "Какие списки набора и службы сохранились",
   eletsRecruitmentAnalog: "Как заселяли соседний Елец и при чём здесь Орёл",
@@ -1162,6 +1192,19 @@ const recordDataLabels: Record<string, string> = {
   bazdyrevoConnection: "Почему важна деревня Баздырево",
   coverage: "Охват проверки",
   scanVerification: "Сверка с изображениями страниц",
+  ryazhskCandidate: "Ряжский Павел Иевлев: кандидат на раннюю биографию",
+  exactNameMatch: "Совпадение имени и патронима",
+  roleIn1591: "Роль Павла в 1591 году",
+  chronology: "Хронологическая последовательность",
+  novikReassessment: "Почему прежняя служба совместима со словом «новик»",
+  variableThirdNaming: "Подвижность третьего именования",
+  networkResult: "Что показал круг поручителей",
+  tulaNegativeControl: "Тульский одноотчественник: исключённая ветвь",
+  orelNegativeControl: "Орловские одноотчественники: другая ветвь",
+  negativeControls: "Проверенные ложные пути",
+  proofBoundary: "Какого доказательства ещё не хватает",
+  serviceMeaning: "Служебный смысл записи",
+  sequenceBoundary: "Последовательность и её граница",
   officialCatalogueReconciliation: "Как согласуются опись РГАДА и публикация",
   copyProvenance: "Как рукопись дошла до архива",
   originalClerkCertification: "Что было подписано на утраченном подлиннике",
@@ -1213,10 +1256,17 @@ const recordDataLabels: Record<string, string> = {
   contextSources: "Источники контекста",
   nextSearch: "Следующий поиск",
   namesAndMeaning: "Имена и смысл",
+  documentedEletsRecruitmentMechanism1592: "Как государство разделяло семьи при наборе в Елец",
+  serviceArticles: "Земельные и денежные статьи",
   alphabeticalIndexCorrection20260827: "Опечатка в алфавитном указателе 1895 года",
   openDatabaseFalseSoligalichLead20260827: "Почему Соль Галицкая — ложный след",
   originResearchResult20260827: "Результат проверки происхождения",
   openServitorDatabaseSweep20260827: "Проверка открытых баз служилых людей",
+  falseLeadCorrection: "Почему прежний след оказался ложным",
+  officialManuscriptBoundary: "Где физически заканчивается акт",
+  officialScanStart: "Официальный скан РГАДА: начало акта",
+  officialScanEnd: "Официальный скан РГАДА: конец акта",
+  officialNextDocument: "Официальный скан РГАДА: следующий документ",
   falseSoligalichLead20260827: "Почему исключена Соль Галицкая",
   fedorKurskSmutaLead20260827: "Фёдор Анпилогов в Курске: новый след Смуты",
   databaseCoverageMeaning20260827: "Что база меняет в тактике поиска",
@@ -1336,6 +1386,7 @@ function sourceContextSections(source: SourceRecord): ArchiveRecordContext[] {
     ["Методика проверки", source.methodology],
     ["Хронология", source.chronology],
     ["События сводной карточки", source.events],
+    ["Сравнительная проверка", source.comparativeAudit],
     ["Перемещение и география", source.mobility],
     ["Исследовательские примечания", source.researchNotes],
     ["Примечания к чтению", source.notes],
@@ -1553,7 +1604,7 @@ function sourceEvidenceRightsStatus(source: SourceRecord): ArchiveRecord["eviden
   const evidence = source.evidence;
   if (!evidence || evidence.publicDisplay !== true) return "restricted";
   const hasDocumentedGrant =
-    ["open-license", "permission"].includes(evidence.licenseStatus ?? "") &&
+    ["public-domain", "open-license", "permission"].includes(evidence.licenseStatus ?? "") &&
     /^https?:\/\//i.test(evidence.licenseUrl?.trim() ?? "");
   if (hasDocumentedGrant) {
     return "display-cleared";
@@ -1625,6 +1676,7 @@ function sourcePeople(
         personId: personHasAmpilogovSurname(person) ? person.personId : null,
         possiblePersonId: null,
         possiblePersonName: null,
+        isResearchObject: false,
         role: "основной человек источника",
         eventRole: null,
         name: person.displayName,
@@ -1720,6 +1772,7 @@ function sourcePeople(
         ? mention.possiblePersonId ?? null
         : null,
       possiblePersonName: possibleProfile?.displayName ?? null,
+      isResearchObject: /(?:research-subject|method-example|comparison)/.test(mention.role ?? ""),
       role: sourceRoleLabel(mention.role),
       eventRole: mention.eventRole?.trim() || null,
       name,
@@ -1803,7 +1856,17 @@ function personBelongsToResearchScope(person?: PersonRecord) {
 const personHasAmpilogovSurname = personBelongsToResearchScope;
 
 function mentionHasAmpilogovSurname(mention: SourceMention, peopleById?: Map<string, PersonRecord>) {
-  if (mention.personId && personBelongsToResearchScope(peopleById?.get(mention.personId))) return true;
+  if (mention.personId) {
+    const linkedPerson = peopleById?.get(mention.personId);
+    if (linkedPerson) {
+      const normalizedSurname = linkedPerson.surname?.normalized?.trim();
+      if (normalizedSurname) return isAmpilogovVariantName(normalizedSurname);
+      // Rare personal-name subjects belong in profiles and Records, but the
+      // family map is restricted to documented surname-line observations.
+      if (linkedPerson.researchSubject) return false;
+      return isAmpilogovVariantName(finalNameToken(linkedPerson.displayName));
+    }
+  }
   return [
     mention.displayName,
     mention.modernName,
@@ -2154,6 +2217,9 @@ function genealogyIndexedPath(relativePath: string) {
 
   // Keep every dynamic filesystem pattern narrow enough for Turbopack to trace
   // the real shard instead of treating the whole genealogy tree as a candidate.
+  if (normalized.startsWith("sources/arolsen/")) {
+    return path.join(GENEALOGY_ROOT, "sources/arolsen", normalized.slice("sources/arolsen/".length));
+  }
   if (normalized.startsWith("sources/familysearch/")) {
     return path.join(GENEALOGY_ROOT, "sources/familysearch", normalized.slice("sources/familysearch/".length));
   }
@@ -2218,8 +2284,14 @@ function sourcePeopleById(source: SourceRecord) {
 }
 
 export function getArchiveRecord(sourceId: string) {
-  const cached = archiveRecordCache.get(sourceId);
-  if (cached) return cached;
+  // Researchers edit source JSON while the dev server stays open for days.
+  // Reusing the first parsed record there hid new transcriptions until restart.
+  // Production data is immutable for the lifetime of the process, so keep the
+  // cache in that environment only.
+  if (process.env.NODE_ENV === "production") {
+    const cached = archiveRecordCache.get(sourceId);
+    if (cached) return cached;
+  }
   const relativePath = getRecordPathIndex().paths[sourceId];
   if (!relativePath) {
     return getRecordsDirectory().records.find((record) =>
@@ -2232,45 +2304,17 @@ export function getArchiveRecord(sourceId: string) {
     return null;
   }
   const record = toArchiveRecord(source, peopleById);
-  archiveRecordCache.set(record.sourceId, record);
-  for (const copy of record.sourceCopies) archiveRecordCache.set(copy.sourceId, record);
+  if (process.env.NODE_ENV === "production") {
+    archiveRecordCache.set(record.sourceId, record);
+    for (const copy of record.sourceCopies) archiveRecordCache.set(copy.sourceId, record);
+  }
   return record;
 }
-
-const ARCHIVE_BACKUP_ROOTS = [
-  path.join(process.cwd(), "public/archive/evidence"),
-  path.join(GENEALOGY_ROOT, "evidence-private"),
-];
 
 function sourceRecordById(sourceId: string) {
   const relativePath = getRecordPathIndex().paths[sourceId];
   if (!relativePath) return null;
   return JSON.parse(readFileSync(genealogyIndexedPath(relativePath), "utf8")) as SourceRecord;
-}
-
-function archiveBackupContentType(filePath: string) {
-  const extension = path.extname(filePath).toLocaleLowerCase("en-US");
-  return ({
-    ".avif": "image/avif",
-    ".gif": "image/gif",
-    ".jpeg": "image/jpeg",
-    ".jpg": "image/jpeg",
-    ".pdf": "application/pdf",
-    ".png": "image/png",
-    ".tif": "image/tiff",
-    ".tiff": "image/tiff",
-    ".webp": "image/webp",
-  } as Record<string, string>)[extension] ?? "application/octet-stream";
-}
-
-function resolveArchiveBackupPath(relativePath?: string) {
-  if (!relativePath || path.isAbsolute(relativePath)) return null;
-  const absolutePath = path.resolve(process.cwd(), relativePath);
-  const isAllowed = ARCHIVE_BACKUP_ROOTS.some((root) => {
-    const relation = path.relative(root, absolutePath);
-    return relation !== "" && !relation.startsWith("..") && !path.isAbsolute(relation);
-  });
-  return isAllowed ? absolutePath : null;
 }
 
 function resolvedArchiveBackupAssets(sourceId: string): ResolvedArchiveBackupAsset[] {
@@ -2289,15 +2333,14 @@ function resolvedArchiveBackupAssets(sourceId: string): ResolvedArchiveBackupAss
   const seen = new Set<string>();
 
   return candidates.flatMap((candidate) => {
-    const absolutePath = resolveArchiveBackupPath(candidate.path);
-    if (!absolutePath || seen.has(absolutePath)) return [];
-    seen.add(absolutePath);
+    const pathname = resolveEvidencePathname(candidate.path);
+    if (!pathname || seen.has(pathname)) return [];
+    seen.add(pathname);
     return [{
       index: seen.size - 1,
       label: candidate.label,
-      fileName: path.basename(absolutePath),
-      absolutePath,
-      contentType: archiveBackupContentType(absolutePath),
+      fileName: path.posix.basename(pathname),
+      pathname,
     }];
   });
 }
@@ -2310,18 +2353,10 @@ export function getArchiveBackupAssets(sourceId: string): ArchiveBackupAsset[] {
   }));
 }
 
-export function readArchiveBackupAsset(sourceId: string, assetIndex: number) {
+/** Streams one backup scan from local disk or the private Blob store; `null` when missing. */
+export async function readArchiveBackupAsset(sourceId: string, assetIndex: number) {
   const asset = resolvedArchiveBackupAssets(sourceId).find((candidate) => candidate.index === assetIndex);
-  if (!asset) return null;
-  try {
-    return {
-      bytes: readFileSync(asset.absolutePath),
-      contentType: asset.contentType,
-      fileName: asset.fileName,
-    };
-  } catch {
-    return null;
-  }
+  return asset ? readEvidenceAsset(asset.pathname) : null;
 }
 
 function readJsonDirectory<T>(directory: string): T[] {

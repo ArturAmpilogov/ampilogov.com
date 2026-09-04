@@ -76,17 +76,48 @@
     "warning": "OCR читает печатный годовой заголовок как 1889, но рукописное заполнение заголовка листа прямо указывает 1888 год и совпадает с карточкой дела. Числа 30 мая и 1 июня OCR смешивает с текстом отметки о свидетельстве."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-654-85-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "061ed860d28517c251bda3a98de1ebce70b0b6d37493e089e7d53ce7f85a3455",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/3501982d-c53c-48ff-998a-a409219f088c/0085-full-view.png",
+    "capturedAt": "2026-09-03",
+    "sha256": "f718f2894f91f045f2c4c60d0c5d69323ab684859bd17525c9474bffb488e8fa",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/3501982d-c53c-48ff-998a-a409219f088c/0085-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/3501982d-c53c-48ff-998a-a409219f088c/0085-header.png",
+        "sha256": "301357e01a2078b93037572def1481b6a8feb8eaa96159708fb9ae39cefc0b29",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry-1",
+        "path": "data/genealogy/evidence-private/yandex/3501982d-c53c-48ff-998a-a409219f088c/0085-target-entry-document-lower.png",
+        "sha256": "d404edfb932c0a63c895d844f394b904c41e43f0bf63880f6f0489a3bf3216d2",
+        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-2",
+        "path": "data/genealogy/evidence-private/yandex/3501982d-c53c-48ff-998a-a409219f088c/0085-target-entry-document-upper.png",
+        "sha256": "81b8e3c0246cb705623250c1963f948d393a0723d9a86b21800508c521b4dc9a",
+        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-03",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-resolved-ocr-errors",
     "identityResolution": "Родители связаны с P5302/P5303 по точным полным именам, супружеской паре, селу Зобову и непрерывной серии первичных записей 1866–1888 годов. Нечёткое сопоставление не применялось.",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

@@ -74,16 +74,41 @@
     "warning": "OCR ошибочно распознаёт годовой заголовок как 1888 вместо 1882. Тождество с P5859 подтверждается точным полным именем и неизменным статусом оренбургского мещанина."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-425-123-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "4ea932a9cda549eb7c6f462b2fd53197cecbf1e5ca98799a9fec1d67f4696f9a",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/2a90f487-88f4-472f-9e42-ffd63a7a2532/0123-full-view.png",
+    "capturedAt": "2026-09-02",
+    "sha256": "1f5c4f8cab29ef3b7e415d3fb106810bf8de994730ffda84c8d2095eaee06ee6",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/2a90f487-88f4-472f-9e42-ffd63a7a2532/0123-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/2a90f487-88f4-472f-9e42-ffd63a7a2532/0123-header.png",
+        "sha256": "186d528a1ba65fc8c3445e8366b68c46083a0d6184b37e996b9e6c9bd2b588d8",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/2a90f487-88f4-472f-9e42-ffd63a7a2532/0123-target-entry-document-right.png",
+        "sha256": "50070d1ad690c9b1017c0db0c8970290f1319b29a55757b3adb13777640245d8",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-02",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-resolved-ocr-errors",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-02: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

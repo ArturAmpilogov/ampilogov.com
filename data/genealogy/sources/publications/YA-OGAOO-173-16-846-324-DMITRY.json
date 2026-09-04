@@ -57,18 +57,43 @@
     "warning": "Сниппет смешивает три соседние строки и не показывает даты смерти и погребения Дмитрия; полный скан позволяет разделить записи."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-846-324-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "98d44963f645ff7c37689843d5167be450e6bc581ef8eb18945de78cb54da1b6",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0324-full-view.png",
+    "capturedAt": "2026-09-04",
+    "sha256": "9e6d3c9fe6951713d927eef3ce7eaafbc6b9c56fab7fef388f26ccb9ddf42845",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0324-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0324-header.png",
+        "sha256": "aab1b8596133b433b75ddd8dda5d8bdc8a509600d3f1674815e49c5c58618f3e",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0324-target-entry-document-lower.png",
+        "sha256": "968778768b5290d3c01548524d62e4851bc75174f18d35c4d3d8c597711caa90",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-04",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "identityResolution": "Для названных в записи отца и умершего ребёнка созданы отдельные P8141 и P8142. Совпадающих доказанных профилей Никиты Ивановича или Дмитрия Никитича из Зобова не найдено; нечёткое сопоставление не применялось.",
     "unresolved": [
       "Имя матери Дмитрия в записи не названо."
+    ],
+    "correctionHistory": [
+      "2026-09-04: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

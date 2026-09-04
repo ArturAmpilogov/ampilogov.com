@@ -64,18 +64,43 @@
     "warning": "Сниппет показывает только родителей и священника. OCR ошибочно читает рукописный год в заголовке как 1883; первичный лист показывает 1893. Правая нижняя часть разворота физически закрыта вложенным листом, поэтому восприемники целевой строки не читаются и не реконструировались по соседним записям."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-859-21-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "3858926dd24fc7cde94b27440a254c0a2a44fcbe2d847e0671660f53dcb5732a",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0021-full-view.png",
+    "capturedAt": "2026-09-04",
+    "sha256": "d369e69d3d5b391e0b7e2fb7b443ca943d3daa680d34022dbb189735a083e061",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0021-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0021-header.png",
+        "sha256": "b1885956db0ca83f1b6b24b06b3d197f57af6b6bb45aeede343092938294c21a",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0021-target-entry-document-lower.png",
+        "sha256": "8c09dbb1adcf0a336f7953c9bd439d8580d8ef2d3cc5aea1dccf3dd18629bc2f",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-04",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-physical-obstruction",
     "identityResolution": "Родители связаны с P4101 и P5769 по точным полным именам обоих супругов, деревне Кармалке и документированному браку 1872 года. Для ребёнка создан P8160 и обновлена семья F4604. Нечёткое сопоставление не применялось.",
     "unresolved": [
       "Имена восприемников закрыты вложенным листом на скане."
+    ],
+    "correctionHistory": [
+      "2026-09-04: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

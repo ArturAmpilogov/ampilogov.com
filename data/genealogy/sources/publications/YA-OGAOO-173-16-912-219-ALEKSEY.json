@@ -70,19 +70,34 @@
     "warning": "Поисковый сниппет показывает только отца умершего и соседнюю строку. Имя, возраст и даты находятся на скане 219, а причина смерти и формула погребения продолжаются на оборотной части таблицы на скане 220."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-912-219-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "28b3f907a384c2c852c135af75f640bb34ccd68b3cdd4f72733ccbf015096173",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0219-full-view.png",
+    "capturedAt": "2026-09-01",
+    "sha256": "63f2a4d8d2a61b8e54543d687c0d1f33fac9c0e56dd9aa2596f013fc50676db0",
     "publicDisplay": false,
-    "rightsNote": "Локальные фотокопии сохранены только для исследования; на сайте не публикуются.",
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     "fragments": [
       {
-        "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-912-220-continuation.png",
-        "sha256": "f2e7db03ad72da735967b95f84a7de99175922b4bac9f7b8cabe42e2f5712e2c",
-        "description": "Продолжение граф записи на скане 220: причина смерти и формула погребения."
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0219-header.png",
+        "sha256": "77f6222fdfac035771f6f4734fb4fee816b96527056bda53ba25e23366f8fa89",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0219-target-entry-document-upper-left.png",
+        "sha256": "c889f2ae7661b2e88337d0b9dcf7ceb88d05f54ba0a21da5911b38ddc6336926",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
       }
-    ]
+    ],
+    "localBackup": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0219-full-view.png",
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-01",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved-identity",
@@ -90,6 +105,9 @@
     "unresolved": [
       "Тождество P8195 с P5704, P2250 или другим одноимённым Алексеем Яковлевичем не доказано.",
       "Мать Никиты в записи не названа."
+    ],
+    "correctionHistory": [
+      "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

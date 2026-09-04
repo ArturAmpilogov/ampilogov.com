@@ -69,10 +69,10 @@
     "warning": "Параллельные OCR-копии дают фамилию восприемницы как «Шипаева» и «Макаева»; фамилия оставлена неустановленной."
   },
   "evidence": {
-    "captureType": "remote-viewer-windowed-screenshot-with-enlarged-fragments",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "4047721ec46a587cd75429c92e36e273d1bd998ea3253460ddab58bdbed0c6d8",
+    "capturedAt": "2026-08-31",
+    "sha256": "e5411b16b777c5bd1e4a797ad70f9346a9c9a8bc48cbc3bb35cc249a61184c48",
     "publicDisplay": false,
     "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     "localBackup": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-full-view.png",
@@ -80,28 +80,23 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-header.png",
-        "sha256": "f01274f5219a3022071d1444b43ce264047cb2603d4be80a86586967c9380ace",
+        "sha256": "1ce72f50d6d071796d89092033748073bc7e35ef3e9e090b2cdd8e990c0f32c9",
         "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-target-entry-close.png",
-        "sha256": "0a1451135a3f24dea02a2870b6dd2e0ca7e91b96e001fa6a3f067142d78404dc",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-target-entry-context.png",
-        "sha256": "0a1451135a3f24dea02a2870b6dd2e0ca7e91b96e001fa6a3f067142d78404dc",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-3",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-target-entry-detail.png",
-        "sha256": "efdb500f6d60b2206d0366c1e72d52965a77f14125fdb7dd05a5451343226d6f",
-        "description": "Увеличенная целевая строка 3 с именами, датами, родством, статусом и соседним контекстом."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0117-target-entry-document-lower.png",
+        "sha256": "5397385c6521c9873e21611888d9dda957fe02b39604a065f088694ee8cf41a0",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-08-31",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
@@ -109,7 +104,9 @@
       "Фамилия Евдокии Константиновны: в двух OCR-копиях прочитана по-разному."
     ],
     "correctionHistory": [
-      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены."
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-08-31: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

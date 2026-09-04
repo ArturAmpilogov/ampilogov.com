@@ -2,7 +2,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
 const root = path.join(process.cwd(), "data/genealogy/sources");
-const clearStatuses = new Set(["open-license", "permission"]);
+const clearStatuses = new Set(["public-domain", "open-license", "permission"]);
 
 function jsonFiles(directory) {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {

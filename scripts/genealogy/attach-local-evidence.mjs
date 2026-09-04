@@ -12,6 +12,7 @@ for (let index = 0; index < cli.length; index += 2) {
 const catalogId = args.get("--catalog");
 const scans = new Set((args.get("--scans") ?? "").split(",").filter(Boolean).map(Number));
 const capturedAt = args.get("--captured-at") ?? new Date().toISOString().slice(0, 10);
+const captureType = "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments";
 
 if (!catalogId || !scans.size || [...scans].some((scan) => !Number.isInteger(scan))) {
   console.error("Использование: node scripts/genealogy/attach-local-evidence.mjs --catalog ID --scans 12,34 --captured-at YYYY-MM-DD");
@@ -31,6 +32,16 @@ const jsonFiles = async (directory) => {
 
 const digest = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 const relative = (file) => path.relative(root, file).split(path.sep).join("/");
+
+const appendCorrectionHistory = (review, note) => {
+  if (Array.isArray(review.correctionHistory)) {
+    if (!review.correctionHistory.includes(note)) review.correctionHistory.push(note);
+  } else if (typeof review.correctionHistory === "string") {
+    if (!review.correctionHistory.includes(note)) review.correctionHistory += `\n\n${note}`;
+  } else {
+    review.correctionHistory = [note];
+  }
+};
 
 const sourcePairs = (source) => {
   const pairs = [];
@@ -166,7 +177,7 @@ for (const scan of scans) {
         .filter((copy) => copy.catalogId !== catalogId || Number(copy.scanNumber) !== scan);
       parallelCopies.push({
         ...parallelBundle,
-        captureType: "remote-viewer-document-only-capture-with-enlarged-fragments",
+        captureType,
         quality: {
           documentOnlyVisuallyConfirmed: false,
           headerVisuallyConfirmed: false,
@@ -175,9 +186,8 @@ for (const scan of scans) {
       });
       value.evidence.parallelCopies = parallelCopies;
       value.review ??= {};
-      value.review.correctionHistory ??= [];
       const note = `${capturedAt}: для параллельного экземпляра ${catalogId}/${scan} сохранены чистый полный лист, заголовок и целевые строки; SHA-256 проверены.`;
-      if (!value.review.correctionHistory.includes(note)) value.review.correctionHistory.push(note);
+      appendCorrectionHistory(value.review, note);
       await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
       console.log(`${value.sourceId}: прикреплён параллельный комплект из ${parallelBundle.fragments.length + 1} изображений`);
       continue;
@@ -193,12 +203,20 @@ for (const scan of scans) {
         citationScan,
         "Параллельный архивный экземпляр. ",
       );
-      if (bundle) parallelCopies.push(bundle);
+      if (bundle) parallelCopies.push({
+        ...bundle,
+        captureType,
+        quality: {
+          documentOnlyVisuallyConfirmed: false,
+          headerVisuallyConfirmed: false,
+          targetRowsVisuallyConfirmed: false,
+        },
+      });
     }
 
     value.evidence = {
       ...value.evidence,
-      captureType: "remote-viewer-document-only-capture-with-enlarged-fragments",
+      captureType,
       localBackup: primaryBundle.localBackup,
       path: primaryBundle.path,
       capturedAt: primaryBundle.capturedAt,
@@ -214,9 +232,8 @@ for (const scan of scans) {
       rightsNote: "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     };
     value.review ??= {};
-    value.review.correctionHistory ??= [];
-    const note = `${capturedAt}: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
-    if (!value.review.correctionHistory.includes(note)) value.review.correctionHistory.push(note);
+    const note = `${capturedAt}: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
+    appendCorrectionHistory(value.review, note);
     await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
     const imageCount = primaryBundle.fragments.length + 1
       + parallelCopies.reduce((sum, copy) => sum + copy.fragments.length + 1, 0);

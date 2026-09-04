@@ -1,10 +1,19 @@
 {
   "schemaVersion": 1, "personId": "P99028", "displayName": "Михаил Иоакимович Ампилогов", "sex": "male",
   "birth": {"date": "1881-09-05", "placeId": "troitskoe-zaporizhzhia"},
-  "parents": ["P99026"], "familyIds": ["F99023"],
-  "sourceIds": ["FS-3Q9M-CSSD-MRXB", "FS-3Q9M-CSSD-MTTF"],
-  "status": "documented-from-primary-scan",
-  "notes": ["Родился 5 сентября 1881 года в Троицком; две карточки одного акта расходятся только в чтении дня крещения — 7 или 8 сентября."],
-  "surname": {"normalized": "Ампилогов", "formsAsWritten": ["Ампелогов"]},
-  "places": [{"relation": "birth", "placeId": "troitskoe-zaporizhzhia"}]
+  "parents": ["P99026"], "children": ["P99705", "P99706"], "familyIds": ["F99023", "F99703"],
+  "sourceIds": ["FS-3Q9M-CSSD-MRXB", "FS-3Q9M-CSSD-MTTF", "FS-3Q9M-CSSV-D36T-9", "FS-3Q9M-CSSV-K97Z-2", "FS-3Q9M-CSSV-K9WQ-K"],
+  "status": "documented-multi-record-household",
+  "notes": [
+    "Родился 5 сентября 1881 года в Троицком; две карточки одного акта расходятся только в чтении дня крещения — 7 или 8 сентября.",
+    "11 февраля 1911 года был поручителем жениха на свадьбе младшего брата Игнатия Иоакимовича P99726 в Спасском; в акте записан троицким крестьянином Михаилом Акимовым Анпилоговым.",
+    "С женой Матроной Александровной документирован как отец Екатерины в Тимошевке в 1915 году и Михаила в Мелитополе в 1917 году. Совпадение редкого полного имени отца и имени матери связывает обе записи с рождением Михаила 1881 года и доказывает маршрут Троицкое → Тимошевка → Мелитополь.",
+    "Форма Антилогов в мелитопольском акте 1917 года сохранена как документальный вариант фамилии."
+  ],
+  "surname": {"normalized": "Ампилогов", "formsAsWritten": ["Ампелогов", "Ампилогов", "Антилогов"]},
+  "places": [
+    {"relation": "birth", "placeId": "troitskoe-zaporizhzhia", "date": "1881-09-05"},
+    {"relation": "resident-and-parenthood", "placeId": "tymoshivka", "date": "1915-07-18"},
+    {"relation": "parenthood", "placeId": "melitopol", "date": "1917-07-22"}
+  ]
 }

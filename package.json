@@ -13,6 +13,7 @@
     "genealogy:evidence": "node scripts/genealogy/sync-evidence-hashes.mjs",
     "genealogy:evidence-quality": "node scripts/genealogy/sync-evidence-quality.mjs",
     "genealogy:evidence:attach": "node scripts/genealogy/attach-local-evidence.mjs",
+    "genealogy:evidence:upload": "node --env-file-if-exists=.env.local scripts/genealogy/upload-evidence-files.mjs",
     "genealogy:evidence:confirm-yandex": "node scripts/genealogy/confirm-yandex-evidence.mjs",
     "genealogy:audit:yandex-evidence": "node scripts/genealogy/audit-yandex-evidence-quality.mjs",
     "genealogy:mentions": "node scripts/genealogy/normalize-mention-ids.mjs",
@@ -32,6 +33,7 @@
     "genealogy:directory-index": "node scripts/genealogy/build-directory-indexes.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "2.8.0",
     "d3-geo": "^3.1.1",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",

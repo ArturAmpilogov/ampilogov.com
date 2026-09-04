@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "FS-3Q9M-CSSH-VZ6N",
   "provider": "FamilySearch",
+  "primaryPersonId": "P99566",
   "collection": {
     "id": "4135959",
     "title": "Богдановка. Метрические записи о рождении и смерти, 1915–1917",
@@ -44,7 +45,7 @@
     {
       "mentionId": "FS-3Q9M-CSSH-VZ6N-M1",
       "role": "deceased",
-      "personId": null,
+      "personId": "P99566",
       "sex": "female",
       "nameAsTranscribed": "Параскева",
       "nameAsIndexed": "Параскева Ампилогов",
@@ -162,11 +163,29 @@
   },
   "review": {
     "status": "complete-with-uncertainties",
-    "identityResolution": "new-family-unit-no-cross-source-link-yet",
+    "identityResolution": "Ребёнок опубликован как P99566; отец не объединён ни с P1710, ни с P99074 из-за двух полных тёзок и отсутствия имени матери.",
     "transcriptionConfidence": "high-for-dates-person-age-father-and-cause",
     "unresolved": [
       "Перепроверить фамилию священника.",
       "Найти запись о рождении Параскевы для установления матери."
+    ],
+    "possibleRelations": [
+      {
+        "mentionId": "FS-3Q9M-CSSH-VZ6N-M2",
+        "personId": "P1710",
+        "displayName": "Николай Владимирович Анпилогов",
+        "confidence": "low",
+        "basis": "Совпадают полное имя, поколение и тимошевско-мелитопольская география.",
+        "caution": "Мать Параскевы не названа; существует второй полный тёзка P99074."
+      },
+      {
+        "mentionId": "FS-3Q9M-CSSH-VZ6N-M2",
+        "personId": "P99074",
+        "displayName": "Николай Владимирович Анпилогов",
+        "confidence": "low",
+        "basis": "Совпадают полное имя, поколение и михайловско-тимошевская география.",
+        "caution": "Мать Параскевы не названа; существует второй полный тёзка P1710."
+      }
     ]
   },
   "summary": {

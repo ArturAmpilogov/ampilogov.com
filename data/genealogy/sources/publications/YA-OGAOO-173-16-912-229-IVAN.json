@@ -56,18 +56,43 @@
     "warning": "Поисковый сниппет объединяет Ивана Анпилогова с двумя соседними умершими. Даты, причина смерти, причт и место погребения прочитаны только из его строки."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-912-229-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "778c575a40c551604725c108d9989568e885427818ff3b6446deae18ea12f225",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0229-full-view.png",
+    "capturedAt": "2026-09-01",
+    "sha256": "fd29a14add9f6e9dbd5b27ed12d20031700be03543d461b3aa4c1a29d98faec1",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0229-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0229-header.png",
+        "sha256": "6e1258f42a1407e67b5bc0fcdf807261163b6a87d43b153f79fa074629396984",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/0fd43d2b-ed05-4958-bc89-089149368b28/0229-target-entry-document-upper-left.png",
+        "sha256": "068de327f67d5e3a4210a7aa5059d4b32d951ad86a835a9850f2cea6e3d56750",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-01",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved-identity",
     "identityResolution": "Для умершего создан отдельный P8190. В базе уже есть P4272, P5401 и P5768 с тем же полным именем и Зобовом, но новая запись не называет супругу, ребёнка или другую прямую связь, позволяющую выбрать один профиль. Возраст 55 лет даёт рождение около 1839 года и не совпадает точно с возрастом P4272 при браке 1860 года. Нечёткое сопоставление не применялось.",
     "unresolved": [
       "Тождество P8190 с P4272, P5401 или P5768 не доказано."
+    ],
+    "correctionHistory": [
+      "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

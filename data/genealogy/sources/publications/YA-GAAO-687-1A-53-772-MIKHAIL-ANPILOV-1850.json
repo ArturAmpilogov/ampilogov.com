@@ -174,14 +174,54 @@
     "warning": "Имена и родство сверены по видимой расшифровке листа; возрастные графы не перенесены, если их привязка к строкам не была однозначной."
   },
   "evidence": {
-    "captureType": "remote-archive-viewer",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "publicDisplay": false,
-    "rightsNote": "Карточка ведёт прямо на цифровой скан Яндекс Архива; локальная публикация изображения не разрешена."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-full-view.png",
+    "capturedAt": "2026-09-02",
+    "sha256": "fd9c4d86986445b876fd60fe5412b2b81cbd746d17cfbacf5ac67ef3f423eab3",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-header.png",
+        "sha256": "b041c9a0c54c55e3831a00510e616cd35920364f8d63359f8aa526646b59dc4d",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry-1",
+        "path": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-target-entry-document-main.png",
+        "sha256": "652345e6e0ae146e5b1097087e3d45cf00e61b8331e1d9f944feb26490f78dc4",
+        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-2",
+        "path": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-target-entry-female-household.png",
+        "sha256": "4eb33cbf88de6685aef4aeaaccba135c991b1e5972a9684691f24850cb05fec7",
+        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-3",
+        "path": "data/genealogy/evidence-private/yandex/2ea49ef8-c07d-406c-97c0-99c4686cc0e5/0772-target-entry-male-household.png",
+        "sha256": "652345e6e0ae146e5b1097087e3d45cf00e61b8331e1d9f944feb26490f78dc4",
+        "description": "Увеличенная целевая строка 3 с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-02",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainty",
     "unresolved": [
       "Сын Егор из ревизии 1850 года оставлен отдельным от Егора P2053, о смерти которого в 1835 году сообщает список 1843 года; возрастные графы нужны для окончательного решения."
+    ],
+    "correctionHistory": [
+      "2026-09-02: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
