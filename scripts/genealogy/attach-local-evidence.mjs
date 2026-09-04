@@ -33,6 +33,16 @@ const jsonFiles = async (directory) => {
 const digest = async (file) => createHash("sha256").update(await readFile(file)).digest("hex");
 const relative = (file) => path.relative(root, file).split(path.sep).join("/");
 
+const appendCorrectionHistory = (review, note) => {
+  if (Array.isArray(review.correctionHistory)) {
+    if (!review.correctionHistory.includes(note)) review.correctionHistory.push(note);
+  } else if (typeof review.correctionHistory === "string") {
+    if (!review.correctionHistory.includes(note)) review.correctionHistory += `\n\n${note}`;
+  } else {
+    review.correctionHistory = [note];
+  }
+};
+
 const sourcePairs = (source) => {
   const pairs = [];
   const add = (catalogIdValue, scanNumberValue) => {
@@ -176,9 +186,8 @@ for (const scan of scans) {
       });
       value.evidence.parallelCopies = parallelCopies;
       value.review ??= {};
-      value.review.correctionHistory ??= [];
       const note = `${capturedAt}: для параллельного экземпляра ${catalogId}/${scan} сохранены чистый полный лист, заголовок и целевые строки; SHA-256 проверены.`;
-      if (!value.review.correctionHistory.includes(note)) value.review.correctionHistory.push(note);
+      appendCorrectionHistory(value.review, note);
       await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
       console.log(`${value.sourceId}: прикреплён параллельный комплект из ${parallelBundle.fragments.length + 1} изображений`);
       continue;
@@ -223,9 +232,8 @@ for (const scan of scans) {
       rightsNote: "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     };
     value.review ??= {};
-    value.review.correctionHistory ??= [];
-      const note = `${capturedAt}: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
-    if (!value.review.correctionHistory.includes(note)) value.review.correctionHistory.push(note);
+    const note = `${capturedAt}: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.`;
+    appendCorrectionHistory(value.review, note);
     await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
     const imageCount = primaryBundle.fragments.length + 1
       + parallelCopies.reduce((sum, copy) => sum + copy.fragments.length + 1, 0);
