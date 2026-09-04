@@ -76,18 +76,43 @@
     "warning": "Сниппет показывает только родителей. OCR перемешивает строки левой и правой половин разворота; имя ребёнка, даты и восприемники восстановлены по соответствующим колонкам строки № 35."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-846-250-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "049a1eca9ddaf75908c1e33c63c3e3dd43876606111f93901ec7d21a49213f1d",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0250-full-view.png",
+    "capturedAt": "2026-09-04",
+    "sha256": "eb03a3a9a2b5e50f82f40b9240b5c2aeb4854ea15dfef9db6e35ed96de06c346",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0250-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0250-header.png",
+        "sha256": "2d78f6a3e70bceb2f31ad776a4bb4f08a84ec1d1340e0a9d635d006a3ea3e2b7",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0250-target-entry-document-upper.png",
+        "sha256": "935289970b35eb647c70af19f2f864b52344c606a6ce75fcc105c471e42f46f7",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-04",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "identityResolution": "Родители связаны с P5418 и P7979 по точным полным именам обоих супругов, селу Зобову и крестьянскому статусу, повторяющимся в браке 1889 года. Для ребёнка создан P8151. P1010 с отцом не объединён без отдельного мостика; нечёткое сопоставление не применялось.",
     "unresolved": [
       "Тождество P5418 и P1010 остаётся недоказанным."
+    ],
+    "correctionHistory": [
+      "2026-09-04: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
