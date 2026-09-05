@@ -76,17 +76,48 @@
     "warning": "OCR внутреннего заголовка ошибочно читает год как 1886; увеличенный оригинал показывает написанный от руки 1885 год, совпадающий с каталогом. Сниппет смешивает строку Ильи с соседними записями Марии Ягодниковой и Дарьи Цыцылиной; они не относятся к семье Анпилоговых."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-389-1-497-430-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "fe6b2ae531a6d76d97279a15a97937d8ea1f13ba2a9638819e15df84055ac261",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/66bf0c8c-c04a-4f2a-949a-3922e266bad7/0430-full-view.png",
+    "capturedAt": "2026-09-05",
+    "sha256": "efe281b50ff46ba9a0efdac1bc16b1b5d5a60c63c649780b77b7f93db97e5246",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/66bf0c8c-c04a-4f2a-949a-3922e266bad7/0430-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/66bf0c8c-c04a-4f2a-949a-3922e266bad7/0430-header.png",
+        "sha256": "69ae575ac591d1abe1bbf7c10f9cc5decc5cf51fdc07c520bcf56908bc62e6ed",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry-1",
+        "path": "data/genealogy/evidence-private/yandex/66bf0c8c-c04a-4f2a-949a-3922e266bad7/0430-target-entry-document-parents.png",
+        "sha256": "b766d5b70deddaadfc50d63624e13974a683a47b396f9153a2d97acc5040a815",
+        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-2",
+        "path": "data/genealogy/evidence-private/yandex/66bf0c8c-c04a-4f2a-949a-3922e266bad7/0430-target-entry-document-row24.png",
+        "sha256": "9e7a9f275c6c78734408648e4138976eb5615471c59c5a6f26837dedf30c982f",
+        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-05",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "identityResolution": "Все три профиля созданы по точной строке родителей, деревне Новой Слободке и конкретному событию. Одноимённые профили из других мест не объединялись; нечёткое сопоставление не применялось.",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-05: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

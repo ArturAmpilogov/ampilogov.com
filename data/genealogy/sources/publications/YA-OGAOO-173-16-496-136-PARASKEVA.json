@@ -76,16 +76,41 @@
     "warning": "Поисковый сниппет выделяет только позднейшую исправительную помету. OCR верно фиксирует исправление фамилии на «Анпилогов», но разрывает его с основной строкой, где отец распознан как Антипов. Точная пара родителей и официальная коррекция подтверждают семью F4427."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-496-136-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "e3beaa6d18d529cb0cacb872294b5367420a90554b5a68307852a236793c5b0d",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/5c723fad-5f3b-441e-980b-7980dced7a3b/0136-full-view.png",
+    "capturedAt": "2026-09-05",
+    "sha256": "9d7eb4b1f5deb8bcdd95279064b8e7831768bd1865401210d7addc34abc7bad7",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/5c723fad-5f3b-441e-980b-7980dced7a3b/0136-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/5c723fad-5f3b-441e-980b-7980dced7a3b/0136-header.png",
+        "sha256": "5498e242502bf3542b2fd67e47d448f2791375668f38a27e98b8290dc85ea9e0",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/5c723fad-5f3b-441e-980b-7980dced7a3b/0136-target-entry-document-upper.png",
+        "sha256": "dbde83fae06f9237b9493884799bdf1828e1150e1de4faf6ef0eb049cfae6d58",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-05",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-official-correction",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-05: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

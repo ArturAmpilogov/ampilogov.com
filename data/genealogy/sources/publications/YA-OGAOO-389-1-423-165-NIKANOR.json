@@ -74,16 +74,47 @@
     "warning": "OCR ошибочно распознаёт годовой заголовок как 1872 вместо 1882 и передаёт имя восприемника как Никонор. Год установлен по каталогу и всему делу; современная форма имени — Никанор, исходное написание сохранено."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-389-1-423-165-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "228dc127a47d0e1625ebd6071e80ad76b06279e8413a72b2dbe13e7e264cbb81",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/63f35da8-5d23-4fe5-ac3f-4dffb27174f4/0165-full-view.png",
+    "capturedAt": "2026-09-05",
+    "sha256": "02fa0f4d83ce6de6cded7106e296cfab356896ef190c2b04623d07e15b6aecb2",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/63f35da8-5d23-4fe5-ac3f-4dffb27174f4/0165-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/63f35da8-5d23-4fe5-ac3f-4dffb27174f4/0165-header.png",
+        "sha256": "611625d863f0494fb1f6ccd57c5cd55237532c83f9b02c6b799d181e9b980a10",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry-1",
+        "path": "data/genealogy/evidence-private/yandex/63f35da8-5d23-4fe5-ac3f-4dffb27174f4/0165-target-entry-document-nikanor.png",
+        "sha256": "0d7ca06864bcb82bd65ed592204f571fe19e744586b0803bed03812584abd64d",
+        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+      },
+      {
+        "kind": "target-entry-2",
+        "path": "data/genealogy/evidence-private/yandex/63f35da8-5d23-4fe5-ac3f-4dffb27174f4/0165-target-entry-document-pavel-52.png",
+        "sha256": "a62bc757f886fc1377e0e342fc747914a3e254e7a6a2b4b78341b60884cbede0",
+        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-05",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-resolved-ocr-errors",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-05: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",
