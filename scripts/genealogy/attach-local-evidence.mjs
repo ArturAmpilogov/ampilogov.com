@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { preserveUnchangedBundle } from "./evidence-bundle.mjs";
 
 const root = process.cwd();
 const args = new Map();
@@ -193,7 +194,7 @@ for (const scan of scans) {
       continue;
     }
 
-    const parallelCopies = [];
+    const parallelCopies = [...(value.evidence?.parallelCopies ?? [])];
     for (const citation of value.collection?.citations ?? []) {
       const citationScan = Number(citation.scanNumber);
       if (!citation.catalogId || !Number.isInteger(citationScan)) continue;
@@ -203,7 +204,10 @@ for (const scan of scans) {
         citationScan,
         "Параллельный архивный экземпляр. ",
       );
-      if (bundle) parallelCopies.push({
+      if (bundle) {
+        const existingIndex = parallelCopies.findIndex((copy) =>
+          copy.catalogId === citation.catalogId && Number(copy.scanNumber) === citationScan);
+        const replacement = preserveUnchangedBundle(parallelCopies[existingIndex], {
         ...bundle,
         captureType,
         quality: {
@@ -211,7 +215,10 @@ for (const scan of scans) {
           headerVisuallyConfirmed: false,
           targetRowsVisuallyConfirmed: false,
         },
-      });
+        });
+        if (existingIndex === -1) parallelCopies.push(replacement);
+        else parallelCopies[existingIndex] = replacement;
+      }
     }
 
     value.evidence = {
@@ -236,7 +243,8 @@ for (const scan of scans) {
     appendCorrectionHistory(value.review, note);
     await writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
     const imageCount = primaryBundle.fragments.length + 1
-      + parallelCopies.reduce((sum, copy) => sum + copy.fragments.length + 1, 0);
+      + parallelCopies.reduce((sum, copy) => sum + (copy.fragments?.length ?? 0)
+        + (copy.path || copy.localBackup ? 1 : 0), 0);
     console.log(`${value.sourceId}: прикреплено ${imageCount} изображений`);
   }
 }
