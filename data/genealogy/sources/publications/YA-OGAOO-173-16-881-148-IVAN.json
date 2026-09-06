@@ -72,12 +72,34 @@
     "warning": "Поисковый сниппет показывает только отца умершего. Имя ребёнка, даты, причина смерти и причт прочитаны по полной строке; OCR теряет число в графе возраста из-за сгиба."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-881-148-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "23ed2811cb1ec99ef661792d0aa9b51ae41919aabf83e70f2807188164499748",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/7847056e-7adf-4763-a1bc-e37b33ed8925/0148-full-view.png",
+    "capturedAt": "2026-09-06",
+    "sha256": "947c72ebcf1b740e3560ffc9a7eadaad43a0406765cafbd3b3ae293279af0eee",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/7847056e-7adf-4763-a1bc-e37b33ed8925/0148-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/7847056e-7adf-4763-a1bc-e37b33ed8925/0148-header.png",
+        "sha256": "6f904c348f1717632fc5df1848fa07d6a5a1900695376e1d48e11839dd1eb98e",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/7847056e-7adf-4763-a1bc-e37b33ed8925/0148-target-entry.png",
+        "sha256": "fc991d02273925b152c7e894e9f77033d23a0c2f293fb1e2024986c797476537",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainty",
@@ -85,6 +107,9 @@
     "unresolved": [
       "Мать Павла в записи не названа.",
       "Первая цифра возраста повреждена сгибом и читается как 7 с небольшой неопределённостью."
+    ],
+    "correctionHistory": [
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
