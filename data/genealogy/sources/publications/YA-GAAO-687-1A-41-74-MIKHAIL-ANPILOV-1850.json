@@ -57,13 +57,41 @@
     "warning": "Имена и родство сверены по видимой расшифровке листа; возрастные графы не перенесены, если их привязка к строкам не была однозначной."
   },
   "evidence": {
-    "captureType": "remote-archive-viewer",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "publicDisplay": false,
-    "rightsNote": "Карточка ведёт прямо на цифровой скан Яндекс Архива; локальная публикация изображения не разрешена."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/8d9c5385-3348-4f98-bb82-f9e3b4c5afcf/0074-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/8d9c5385-3348-4f98-bb82-f9e3b4c5afcf/0074-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "faea777ec3c700f54cebba0f8b320d72c73179b7875a58a814160eaf6e28d615",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8d9c5385-3348-4f98-bb82-f9e3b4c5afcf/0074-header.png",
+        "sha256": "d4529d0752f033b2a29ae5cb6ef690b912caaa4e0f648af39526d0569e82d4c4",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/8d9c5385-3348-4f98-bb82-f9e3b4c5afcf/0074-target-entry.png",
+        "sha256": "e755433366d4ab57693e415fa7d7013b742686b51a3873671b7c06c34c0f885c",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

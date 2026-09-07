@@ -74,16 +74,41 @@
     "warning": "OCR ошибочно распознаёт годовой заголовок как 1887 вместо 1882 и объединяет в поисковом сниппете поручителей разных последовательных браков. Целевая запись — брак № 48."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-1217-324-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "392682232271c48e391d4bd22d567e5401be553247c5763bf32e713b5feebd40",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0324-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "c470d670f9b6f9bb731d07bc9e0f04ea2b7b8e17f5e58acb8ec9f4c6c49b5d09",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0324-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0324-header.png",
+        "sha256": "7da1c8bdf080d00d25d98f455ca074ab3d116f2f14db34132ed749f8dd2e63f4",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0324-target-entry.png",
+        "sha256": "49076ad2081f2c4be2544333ef4ca1a09e78f0512a871783aeef890b981639c2",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-resolved-ocr-errors",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

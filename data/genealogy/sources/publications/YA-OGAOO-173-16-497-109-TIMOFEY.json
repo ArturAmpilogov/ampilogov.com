@@ -82,12 +82,34 @@
     "warning": "OCR искажает отчество отца как «Стнов», разрывает сведения о родителях и восприемниках и выводит числа 11 и 22 вне календарных граф. Даты установлены по увеличенному изображению оригинала. Имя восприемницы и точная формула исправления 1886 года повреждены и не восстанавливались предположительно."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-497-109-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "02577582b866b97504c7d7c145ed17eb4bc4864c73e5807e85f070ff4237b61a",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/a482434c-ccde-4db4-9d81-eb7fe8556b6e/0109-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "a5cf1bafba45b1c127fe66f6a365f3c693e49b503cec9bcbd47bba701adbd295",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/a482434c-ccde-4db4-9d81-eb7fe8556b6e/0109-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/a482434c-ccde-4db4-9d81-eb7fe8556b6e/0109-header.png",
+        "sha256": "068fe66de1d729efaacbca2a69163db82f6464ad67cdf28ee61cfc18e3c08ee5",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/a482434c-ccde-4db4-9d81-eb7fe8556b6e/0109-target-entry.png",
+        "sha256": "2cda2e4dfa789c899aa2c7c2f70ab09e35230520fcb900e5dc427b22731e1be1",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
@@ -95,6 +117,9 @@
     "unresolved": [
       "Имя восприемницы перед фамильно-отчественной формой «Савельева Нестерова» повреждено.",
       "Точная формула исправления восприемника по указу 1886 года на обзорной копии читается неполно."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

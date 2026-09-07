@@ -83,18 +83,35 @@
     "modernInterpretation": "13 января 1885 года Семён Александрович и Анисья Давыдовна Ампилоговы были восприемниками Татьяны Касьяновны Саратовской в Кармалке."
   },
   "evidence": {
-    "captureType": "remote-viewer-with-ocr-layer-and-source-row-review",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/6",
     "path": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "5e05287ec1c522abb8d946270c084d471947af4b77ac16b4d0313b7aa1b23121",
+    "capturedAt": "2026-09-06",
+    "sha256": "dd8baa5c5e668c2a9ed02a89a628c21ffa53c6ecddffd165cf736880bb3c2361",
     "fragments": [
-      {"kind": "header", "path": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-header.png", "sha256": "214614cb5b9ed23f3594c36deb1ff7ad224d250ff28c40629aa566e454f802f0", "description": "Увеличенный заголовок книги за 1885 год и названия колонок."},
-      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-target-entry.png", "sha256": "03ca403f55ba5e90d35c3055c557bf1dc1c9d1cfda15cdfc25fc3290f576e6cd", "description": "Увеличенная запись № 14 о Татьяне и восприемниках Семёне и Анисье Ампилоговых."}
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-header.png",
+        "sha256": "2373f6f01e55a3f2a5c5e009ecf3f3707d8ad26954ac836892e18d89a6175a88",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-target-entry.png",
+        "sha256": "86eb413920c1d17f07e336dce874033cd129f025d196d74f7c864597e43de169",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
     ],
     "publicDisplay": false,
     "localBackup": "data/genealogy/evidence-private/yandex/8952bffe-f01f-4c6d-b5c8-91824a9e8ae9/0006-full-view.png",
-    "rightsNote": "Локальная исследовательская копия сохранена вне публичных материалов; прямая ссылка на Яндекс Архив остаётся обязательной."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved-surname-line-identities",
@@ -112,6 +129,9 @@
         "basis": "Совпадают полное имя и документированное место; хронология не противоречит связи.",
         "caution": "Связь не установлена автоматически: требуется независимое совпадение родственников, возраста или другого первичного акта."
       }
+    ],
+    "correctionHistory": [
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
