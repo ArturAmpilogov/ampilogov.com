@@ -70,17 +70,42 @@
     "warning": "Каталог и дело датированы 1868 годом, но OCR заголовка страницы ошибочно читает 1858."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-12-711-105-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "0a5d6ba1e3d6b09c3355811e5de428c0ab170fa94ee12655b858a2daed007653",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/aedecb91-0c48-400c-b1c7-a41980900b0f/0105-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "d19c6f72a3de72e34e577fdee8c07ecc0b50a8a7f0ed1c819d680e1d267c27ed",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/aedecb91-0c48-400c-b1c7-a41980900b0f/0105-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/aedecb91-0c48-400c-b1c7-a41980900b0f/0105-header.png",
+        "sha256": "7f0781067803e75395782ae14f1286de0fcf47c409e6af816f667a8c8205d063",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/aedecb91-0c48-400c-b1c7-a41980900b0f/0105-target-entry.png",
+        "sha256": "c0ba945290f5fafc9765cbff0a9cfa3c983152977d731d5c5313441c748eb941",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
     "unresolved": [
       "Машинный заголовок страницы ошибочно указывает 1858 год; принят год каталога 1868."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

@@ -75,17 +75,42 @@
     "warning": "OCR Яндекса разрывает родительскую и восприемническую колонки и вставляет должность псаломщика внутрь строк; порядок восстановлен по оригинальному табличному листу."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-173-141-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "22f7e062a99bbe50d9dce924fa6d852cd0f66f93106a2e7b388653c2d3874ee1",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/c72970cd-4892-46e7-9fc7-d07087f19863/0141-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "3d1d5bff1e00be93bb425ae0adc23edb3ddd6ca9a749fba68227bb4c8e5ade6b",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/c72970cd-4892-46e7-9fc7-d07087f19863/0141-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c72970cd-4892-46e7-9fc7-d07087f19863/0141-header.png",
+        "sha256": "bc7ab7118b798b0b044cd071408e1897b307ad052b7d3dc280566892446299d4",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c72970cd-4892-46e7-9fc7-d07087f19863/0141-target-entry.png",
+        "sha256": "774864026b17a43d76cb5c9e48ed78742ae9016290f31644554d81b635e78b65",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "identityResolution": "Андрей сопоставлен с P1007 по точному полному имени, селу Зобову и непрерывному документальному контексту 1864–1872 годов.",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

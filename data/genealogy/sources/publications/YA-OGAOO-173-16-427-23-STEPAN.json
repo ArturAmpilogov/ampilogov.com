@@ -74,16 +74,41 @@
     "warning": "OCR поискового сниппета ошибочно называет обоих восприемников «крёстными отцами» и передаёт имя как Стефан; в источнике это церковная форма имени Степан."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-427-23-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "a830eec969e5254ca758e7904804b373b8e26d0e34c233cf64d2c435e55b7202",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/b84920fd-d048-4a35-a110-88bd6cabbeec/0023-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "80b14e3b757d31c001970aee4ad94975ddcbc6bc854586dabb535bb2b3078993",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/b84920fd-d048-4a35-a110-88bd6cabbeec/0023-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/b84920fd-d048-4a35-a110-88bd6cabbeec/0023-header.png",
+        "sha256": "f969f9f6dd227680a4d19ee46c5c5461dba1c3ea5ef50473874c6fb2d67f8807",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/b84920fd-d048-4a35-a110-88bd6cabbeec/0023-target-entry.png",
+        "sha256": "97007307b95a53a33d53cd6469a4693e4f388aee946927fa4508a1ec5cadb0f3",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

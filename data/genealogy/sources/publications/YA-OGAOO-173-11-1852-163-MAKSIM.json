@@ -69,17 +69,42 @@
     "provider": "Яндекс Архив"
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-11-1852-163-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "36fb8531444bdb237d96d4a9115a8d567092b86e9f863c13c3583ec091b9b9c5",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/af95790b-65b9-4513-b93f-af1ac96433c9/0163-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "de17345e9c2a291c49f3e5a9dd6add3a8433e72393b17dcc162879da1d3a7852",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/af95790b-65b9-4513-b93f-af1ac96433c9/0163-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/af95790b-65b9-4513-b93f-af1ac96433c9/0163-header.png",
+        "sha256": "82315d199f3876205f187a31b9887e03485b430d0689e67149ede96a034f39ec",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/af95790b-65b9-4513-b93f-af1ac96433c9/0163-target-entry.png",
+        "sha256": "5adf2a40494e3bb38f882d7a5b3538f4e78e911e8ed161438aa1d6b792401879",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "unresolved": [
       "Фамилия Елены Тимофеевны в OCR неполна; в параллельной копии записана как Носова."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

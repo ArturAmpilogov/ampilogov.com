@@ -86,8 +86,14 @@
     {
       "personId": "P90302",
       "personName": "Евграф Амфилохиевич Стрункин",
-      "from": {"placeId": "kostiurino-yukhotskaya", "normalized": "деревня Костюрина"},
-      "to": {"placeId": "moscow", "normalized": "Москва"},
+      "from": {
+        "placeId": "kostiurino-yukhotskaya",
+        "normalized": "деревня Костюрина"
+      },
+      "to": {
+        "placeId": "moscow",
+        "normalized": "Москва"
+      },
       "basis": "Московская метрическая запись прямо называет восприемника временнообязанным крестьянином деревни Костюрина.",
       "confidence": "high"
     }
@@ -99,11 +105,46 @@
   },
   "review": {
     "status": "complete-with-stated-uncertainties",
-    "unresolved": ["Прямое обозначение родства Диомида и Евграфа в строке отсутствует."]
+    "unresolved": [
+      "Прямое обозначение родства Диомида и Евграфа в строке отсутствует."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "Метрическая запись 1858 года впервые раскрывает Евграфа Анфилогова как Евграфа Амфилохиевича Стрункина и подтверждает отца по имени Амфилохий."
   },
-  "isRecord": true
+  "isRecord": true,
+  "evidence": {
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c236ed4e-4d82-42b4-9d1a-338949440456/0204-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c236ed4e-4d82-42b4-9d1a-338949440456/0204-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "9413e2bab65a4206ba4dfb00e1f8570f29bb9c424e02a888a0b5a99d778ca25e",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c236ed4e-4d82-42b4-9d1a-338949440456/0204-header.png",
+        "sha256": "912157c39ad6409e379f1191c0b7d50751a81a1f8c064e081a50e3f58079628e",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c236ed4e-4d82-42b4-9d1a-338949440456/0204-target-entry.png",
+        "sha256": "95d16c161d14d33bd44150f25f5c668999179e41412e6fb8c2f22c7d5165836b",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис."
+  }
 }
