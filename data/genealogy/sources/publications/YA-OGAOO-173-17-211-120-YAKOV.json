@@ -62,18 +62,43 @@
     "warning": "Краткий поисковый сниппет показывает только дату погребения, имя, сословие и возраст. Дата смерти, причина, духовное лицо и кладбище прочитаны непосредственно по полному скану."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-17-211-120-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "7a54d81670c557041f7e4a4b8fb67fefec940e3ceb0e2286d5718a3448f5aa00",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/eab77e10-8af4-40c6-9612-402785a1fdab/0120-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "8b43cec2affd19f4974c6c136b111b35e4da658c2bfedaf2ef1cf10307c95c16",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/eab77e10-8af4-40c6-9612-402785a1fdab/0120-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/eab77e10-8af4-40c6-9612-402785a1fdab/0120-header.png",
+        "sha256": "06ac32e02a545f0b5b65d1882cdcf63ed61cfc89199f86ee768f9c91c744698a",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/eab77e10-8af4-40c6-9612-402785a1fdab/0120-target-entry.png",
+        "sha256": "39d5ea630cd0e7c2b7a95f9091921fb8d7e2d89c6ce68ebbb0fbef733df39c1a",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "identityResolution": "Запись отнесена к P5306 по точному полному имени и прямому совпадению сословия и города: в документах 1867 и 1891 годов Яков Егорович назван оренбургским мещанином. С P2026 из Кармалки профиль не объединён без прямой родственной или иной документальной связи. Нечёткое сопоставление не применялось.",
     "unresolved": [
       "Супруга, родители и прежнее место жительства умершего в записи не названы."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

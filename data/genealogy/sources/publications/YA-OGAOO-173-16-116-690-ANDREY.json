@@ -75,17 +75,42 @@
     "warning": "OCR смешивает начало строки восприемников с фамилиями причта; связь Андрея установлена по полной строке записи № 15. Село ошибочно распознано как «Бобова». Чтение фамилии Гликерии как «Белормытцева» неуверенно."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-116-690-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "63667a7a871be809c4f015fb8cb306ac83cadf3da64b8e47108106d5b53c67d7",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/da6c683b-ceae-4a38-bd63-256577f58300/0690-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "2fb9b9d6cef8c1f5ab3cb6d23bc377d5f2b8cc11dd80f04c741529880dc69ea6",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/da6c683b-ceae-4a38-bd63-256577f58300/0690-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/da6c683b-ceae-4a38-bd63-256577f58300/0690-header.png",
+        "sha256": "2179ffd842c8e9537b093008cab6b55bdf488ef40a84a35885621c06d037746b",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/da6c683b-ceae-4a38-bd63-256577f58300/0690-target-entry.png",
+        "sha256": "c58020d29482494d806d98c9a794a238b7ce0536ea5c4a0acbe061ec37f0256d",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "unresolved": [
       "Точное чтение фамилии восприемницы Гликерии Никитичны требует более чёткого скана."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

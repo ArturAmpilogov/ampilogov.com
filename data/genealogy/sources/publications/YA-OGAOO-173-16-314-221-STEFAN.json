@@ -74,12 +74,34 @@
     "warning": "OCR разрывает формулу о священнослужителях и переносит слово «диакон» к строке родителей. Поисковый сниппет показывает только восприемников и обрывок фамилии священника, не называя ребёнка и родителей."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-314-221-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "b0f1ab7c28ff229095b52d873cb584f3c87ef09b283a03e018573227e47a40f8",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0221-full-view.png",
+    "capturedAt": "2026-09-08",
+    "sha256": "6bb4ce6d2961dbdcdddc5fc1c72ae12d7d4a069671a4bea151e02240dbbc7cfd",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0221-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0221-header.png",
+        "sha256": "dbbda711de767b440982b40c225439cb36c6f8e114a12f69bc5134446264aab2",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0221-target-entry.png",
+        "sha256": "ad8add2a1c1435bd70a493c1b650bce8d404c43ca069be8ba53e673e75c006f6",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-08",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
@@ -87,6 +109,9 @@
     "unresolved": [
       "Не установлено, является ли отставной солдат P6021 тем же человеком, что крестьянин Кармалки P0495.",
       "Инициалы диакона переданы по OCR и обзорной копии; полное имя не читается."
+    ],
+    "correctionHistory": [
+      "2026-09-08: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

@@ -57,12 +57,34 @@
     "warning": "OCR ошибочно читает печатный заголовок как «на 1889 год»; каталог дела, февральская последовательность и датированное упоминание полицейского отношения на том же листе подтверждают 1879 год. Поисковый сниппет удваивает фамилию отца и не объясняет воинское звание «фейерверкер»."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-314-307-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "62ffc6ee6b3d26609c9d34b5d1d37a6e8a8e39c0832f3efc132443f7f6e03c99",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0307-full-view.png",
+    "capturedAt": "2026-09-08",
+    "sha256": "9f12ef53512f4e8234bf489a6ff377c326405282d5c508638d71b635c3bc3afe",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0307-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0307-header.png",
+        "sha256": "0abebc80b45f0c8d3d3e07abdc64a9a0779432eae7f0bd90e87baad9cdab9b67",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/ff6eee97-049f-4d30-82ca-fe1154a2d383/0307-target-entry.png",
+        "sha256": "941c718f7b9c2df089365f35676c3b2c8e9bb30a9a3a9aa7600aa95e563409ee",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-08",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
@@ -70,6 +92,9 @@
     "unresolved": [
       "Отчество Семёна и имя матери Дмитрия не указаны.",
       "Полное чтение фамилии диакона требует более резкой копии; передана наиболее согласованная форма OCR."
+    ],
+    "correctionHistory": [
+      "2026-09-08: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

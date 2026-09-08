@@ -57,18 +57,43 @@
     "warning": "Поисковый сниппет показывает только отца умершей. Полный лист устанавливает имя ребёнка, возраст, причину смерти и даты. OCR один раз читает фамилию священника как «Динайский»; повторные строки листа дают «Синайский»."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-1270-332-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "0bfb66b7a3ec4d3ed6342912866b5527da89ab5d31f0c604f918137e0cad75b1",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/de5264c7-b5de-4059-aed4-ae89b48cfed3/0332-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "f7044e97f05b0a54b58c8b790553bee97f86862d71c8aa4a6fa4ed2ce72d703a",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/de5264c7-b5de-4059-aed4-ae89b48cfed3/0332-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/de5264c7-b5de-4059-aed4-ae89b48cfed3/0332-header.png",
+        "sha256": "293c58c995c20e23f41830f123b8d43f03f93b01e2e67f95abd44be912adf674",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/de5264c7-b5de-4059-aed4-ae89b48cfed3/0332-target-entry.png",
+        "sha256": "774f510acb581df7c9c95bd7644edcb1de0937a7e6b95de0e0d4a14a67040c1f",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "unresolved": [
       "Имя матери Екатерины не названо.",
       "Инициалы священника Н. Синайского не раскрыты."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

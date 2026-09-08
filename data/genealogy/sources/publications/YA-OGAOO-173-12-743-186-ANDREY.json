@@ -71,18 +71,43 @@
     "warning": "Сниппет смешивает отца соседней строки. OCR не сохранил дни целевой записи и перепутал конец слова «православные» с отчеством восприемницы."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-12-743-186-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "5fe3edeae40e8df5a4ab68942264b448574fa6b29be1876d48403321997a5cc3",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/d550c6be-b55e-43e1-af85-1514ce636705/0186-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "fbe739cc4e2112a0bd060855961e8b6fafeb1dde48a8473474530f5bf79e8b3e",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/d550c6be-b55e-43e1-af85-1514ce636705/0186-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/d550c6be-b55e-43e1-af85-1514ce636705/0186-header.png",
+        "sha256": "a54eb2cefc96cacda4aa8389890c299c181439c2bc4604f50f1ad212d63c0576",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/d550c6be-b55e-43e1-af85-1514ce636705/0186-target-entry.png",
+        "sha256": "1e85f4fa1333492eb65d64b417527768ad220faf7906ddc8682e6e7da761ba7c",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
     "unresolved": [
       "Точные дни рождения и крещения Василия не распознаны.",
       "Отчество восприемницы восстановлено по параллельной записи и остаётся неуверенным в этой копии."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
