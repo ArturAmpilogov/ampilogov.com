@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-96C2A3FE-254",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
-    "scanNumber": "254"
+    "scanNumber": 254,
+    "title": "Метрическая книга сёл Ново-Никитино, Преображенка, Путятино, Старая Богдановка и Романовка за 1911 год",
+    "asRead": "Метрической книги на 1911 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/254"
@@ -13,32 +15,51 @@
   "mentions": [
     {
       "mentionId": "YA-96C2A3FE-254-M1",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
+      "role": "church-clergy",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов, священник",
+      "surnameSeries": true
     }
   ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "rightsNote": "Локальные копии полного разворота и увеличенного фрагмента сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "yandex-archive-original-image-browser-capture-mosaic-with-enlarged-fragment",
     "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0254-full-view.jpg",
-    "sha256": "9e5b12e78043f0ae95b807175b2aa0efb4e01282fc76b9978fc1a22e1e96d638",
+    "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0254-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "f75a7d27b6488ef23604d285dbcee1d5178a575b8d3c54ac7cefb8d6211458ce",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0254-target-entry.jpg",
-        "sha256": "bd753b35d527d4050a67a1ee94ecf85c362e17437285e0ea0524e2e2c9b2f070"
+        "sha256": "d1f844ccf30128dbf14f17f7f417452cd46974007c47352c01f4b497f0bb41c5",
+        "description": "Крупный фрагмент майских крещальных записей и подписей причта."
       }
-    ]
-  },
-  "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy"
+    }
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "primary-scan-transcription",
+    "literal": "Май. Священникъ Михаилъ Ампилоговъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ. Подпись повторяется при соседних крещальных записях.",
+    "modernInterpretation": "В мае 1911 года священник Михаил Афиногенович Ампилогов совершал крещения в Старобогдановском приходе вместе с псаломщиком Тимофеем Горяйновым.",
+    "indexNote": "Прежняя помета о нечитаемом попадании снята: имя, фамилия и сан уверенно прочитаны по оригиналу. Индекс использован только для поиска."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: слабый локальный скриншот заменён оригиналом; фамильное упоминание подтверждено и связано с P1653."
+    ]
   }
 }

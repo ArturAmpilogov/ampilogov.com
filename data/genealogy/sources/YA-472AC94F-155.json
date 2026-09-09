@@ -2,11 +2,12 @@
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-155",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 155,
-    "asRead": "Метрическая книга на 1911 год, часть первая, о родившихся; проверены видимые строки разворота"
+    "title": "Метрическая книга сёл Казанка, Романовка, Слоновка, Нижний Гумбет, Ильинка, Успенка и Покровка за 1911 год",
+    "asRead": "Метрической книги на 1911 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/155"
@@ -14,32 +15,51 @@
   "mentions": [
     {
       "mentionId": "YA-472AC94F-155-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
+      "role": "church-clergy",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов, диакон",
+      "surnameSeries": true
     }
   ],
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
-  },
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "rightsNote": "Локальные копии полного разворота и увеличенного фрагмента сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "yandex-archive-original-image-browser-capture-mosaic-with-enlarged-fragment",
     "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0155-full-view.jpg",
-    "sha256": "59a2d3942a71f0b945f4844032b732b323cf352df062e98552ed0450848f4a19",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0155-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "37d6eafcc7f7bd606319d7853dcc0977278a3612e0c3c3ab2e1402c1dec14102",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0155-target-entry.jpg",
-        "sha256": "105f67cad44fb9e5f693b335a0050405669c8d2a397ff7ab8c097b465062fb7d"
+        "sha256": "ecfa9386d0a1bd1c9dd538c434e74e27d38fe2eeb2084a094f66a59bdd5afd68",
+        "description": "Крупный фрагмент строк о родившихся и повторяющихся подписей причта."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy"
+    }
   },
+  "transcription": {
+    "status": "primary-scan-transcription",
+    "literal": "Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Подпись повторяется при записях о родившихся в селе Слоновке, деревнях Михайловке и Андреевке.",
+    "modernInterpretation": "В 1911 году Афиноген Егорович Ампилогов продолжал служить диаконом Слоновского прихода и участвовал в нескольких крещениях.",
+    "indexNote": "Индекс использован только для поиска. На оригинале полная подпись читается «Афиноген Ампилогов»; OCR-вариант «Ампилонов» не принят."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: исправлено ложное исключение; сохранены оригинальный разворот и крупный фрагмент."
+    ]
   }
 }

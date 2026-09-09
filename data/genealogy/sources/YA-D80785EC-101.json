@@ -1,44 +1,32 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-D80785EC-101",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
-  "collection": {
-    "catalogId": "d80785ec-5ad4-49c6-8de9-6ff073942fdc",
-    "scanNumber": "101"
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/d80785ec-5ad4-49c6-8de9-6ff073942fdc/101"
-  },
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "marriage-witness",
+  "collection": {"catalogId": "d80785ec-5ad4-49c6-8de9-6ff073942fdc", "scanNumber": "101", "title": "Метрические книги сёл Георгиевка, Михайловка, Николаевка и Юртаево за 1913 год", "section": "Часть вторая, о бракосочетавшихся"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/d80785ec-5ad4-49c6-8de9-6ff073942fdc/101"},
+  "event": {"type": "marriage", "date": {"display": "25 января 1913 года", "iso": "1913-01-25", "confidence": "high"}, "place": {"normalized": "село Михайловское, Оренбургский уезд"}},
   "mentions": [
-    {
-      "mentionId": "YA-D80785EC-101",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
+    {"mentionId": "YA-D80785EC-101-M1", "role": "groom-witness", "personId": "P91136", "nameAsTranscribed": "деревни Кармалки крестьянинъ Тимоѳей Филипповъ Ампилоговъ", "displayName": "Тимофей Филиппович Ампилогов", "surnameSeries": true},
+    {"mentionId": "YA-D80785EC-101-M2", "role": "groom", "personId": null, "nameAsTranscribed": "Села Михайловскаго крестьянинъ Іоаннъ Михаиловъ Бѣльковъ", "displayName": "Иоанн Михайлович Бельков", "surnameSeries": false},
+    {"mentionId": "YA-D80785EC-101-M3", "role": "bride", "personId": null, "nameAsTranscribed": "того же села крестьянская дѣвица Анастасія Дмитріева Калужина", "displayName": "Анастасия Дмитриевна Калужина", "surnameSeries": false}
   ],
+  "transcription": {
+    "status": "primary-scan-transcription",
+    "literal": "Январь. № 11. 25. Села Михайловскаго крестьянинъ Іоаннъ Михаиловъ Бѣльковъ, православный, первымъ бракомъ, 19 лѣтъ; того же села крестьянская дѣвица Анастасія Дмитріева Калужина, православная, 20 лѣтъ. По женихѣ: села Михайловскаго крестьянинъ Петръ Васильевъ Бученковъ и деревни Кармалки крестьянинъ Тимоѳей Филипповъ Ампилоговъ.",
+    "modernInterpretation": "25 января 1913 года крестьянин деревни Кармалки Тимофей Филиппович Ампилогов был поручителем жениха при венчании Иоанна Михайловича Белькова и Анастасии Дмитриевны Калужиной.",
+    "indexNote": "Дата, супруги и поручитель прочитаны по полному локальному развороту и крупному crop; индекс Яндекса использован только как поисковая подсказка."
+  },
   "evidence": {
     "publicDisplay": false,
+    "captureType": "local-original-and-derived-crop",
+    "quality": "full-spread-original-with-large-target-crop",
     "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/101-full-view.jpg",
     "sha256": "555cf824ad434ddfd949b90d1cfdf18592a1c75d91ec9ad04c7cd0d2af074bca",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/101-target-entry.jpg",
-        "sha256": "f35f100ca3cdaeffc3b5049325c91d1e5e35b568de3cc50896849c98bc295e7c"
-      }
-    ]
+    "fragments": [{"path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/101-target-entry.jpg", "sha256": "7968c78d6155584d62f4fa547a784eea2c4e722739a722972da3b29f90979277", "kind": "target-entry", "description": "Крупный локальный crop брачной записи № 11 и поручителей без интерфейса Яндекса."}],
+    "rightsNote": "Локальные копии сохранены только для исследовательской проверки; публичная ссылка ведёт на Яндекс Архив."
   },
-  "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
-  },
-  "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
-  }
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "review": {"status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": []}
 }
