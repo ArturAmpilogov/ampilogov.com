@@ -35,7 +35,13 @@ async function jsonFiles(dir) {
 }
 
 async function filesRecursive(dir) {
-  const entries = await readdir(dir, { withFileTypes: true });
+  let entries;
+  try {
+    entries = await readdir(dir, { withFileTypes: true });
+  } catch (error) {
+    if (error?.code === "ENOENT") return [];
+    throw error;
+  }
   const nested = await Promise.all(
     entries.map(async (entry) => {
       const entryPath = path.join(dir, entry.name);

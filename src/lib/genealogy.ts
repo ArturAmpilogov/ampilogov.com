@@ -2232,6 +2232,54 @@ function genealogyIndexedPath(relativePath: string) {
   if (normalized.startsWith("sources/yandex/")) {
     return path.join(GENEALOGY_ROOT, "sources/yandex", normalized.slice("sources/yandex/".length));
   }
+  if (normalized.startsWith("sources/YA-0")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-0${normalized.slice("sources/YA-0".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-1")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-1${normalized.slice("sources/YA-1".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-2")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-2${normalized.slice("sources/YA-2".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-3")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-3${normalized.slice("sources/YA-3".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-4")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-4${normalized.slice("sources/YA-4".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-5")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-5${normalized.slice("sources/YA-5".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-6")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-6${normalized.slice("sources/YA-6".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-7")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-7${normalized.slice("sources/YA-7".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-8")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-8${normalized.slice("sources/YA-8".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-9")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-9${normalized.slice("sources/YA-9".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-A")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-A${normalized.slice("sources/YA-A".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-B")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-B${normalized.slice("sources/YA-B".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-C")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-C${normalized.slice("sources/YA-C".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-D")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-D${normalized.slice("sources/YA-D".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-E")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-E${normalized.slice("sources/YA-E".length)}`);
+  }
+  if (normalized.startsWith("sources/YA-F")) {
+    return path.join(GENEALOGY_ROOT, "sources", `YA-F${normalized.slice("sources/YA-F".length)}`);
+  }
 
   if (normalized.startsWith("people/P0")) {
     return path.join(GENEALOGY_ROOT, "people", `P0${normalized.slice("people/P0".length)}`);
