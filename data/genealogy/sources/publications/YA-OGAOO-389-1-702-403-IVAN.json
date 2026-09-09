@@ -56,18 +56,46 @@
     "warning": "Сниппет ошибочно называет Ивана Ивановича «отцом умершего» и соединяет его с отцом ребёнка Василием Насакиным из соседней строки. Полный лист показывает, что сам 45-летний запасный бомбардир Иван Анпилогов является умершим. OCR возраста передаёт только последнюю цифру «5»; увеличенная рукопись показывает 45 лет."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-389-1-702-403-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "9012d21f07dc35aa999bc626bf3c5c52e12e445f4a5247360fcbeb99ae6e4039",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "capturedAt": "2026-09-08",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "reviewMaterialPath": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/_mismatch/2026-09-07/0403/",
+    "localBackup": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0403-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0403-full-view.png",
+    "sha256": "ec1e426ec84e3bdaf3419d4d36efcf4aa5f323abfd364e869b355d869c1fbbea",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0403-header.png",
+        "sha256": "3fc969eb1cee9244210dc232132ad68e738e5332c2a6415c25f8732f02f0cfc3",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0403-target-entry.png",
+        "sha256": "ec1e426ec84e3bdaf3419d4d36efcf4aa5f323abfd364e869b355d869c1fbbea",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-08",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
-    "status": "complete-with-resolved-ocr-errors",
+    "status": "source-scan-mismatch-under-recheck",
+    "transcriptionConfidence": "not-confirmed-against-current-original",
     "identityResolution": "Смертная запись связана с восприемником из YA-OGAOO-389-1-682-21-MIKHAIL по точному полному имени, той же деревне Ново-Никольской и совпадающему военному статусу солдата/запасного бомбардира. P8104 умер в Татищевской в феврале 1891 года в возрасте 30 лет, а P5405 погиб в Оренбурге в 1880 году, поэтому они исключены. Нечёткое сопоставление не применялось.",
     "unresolved": [
+      "7 сентября 2026 года чистый оригинал листа 403 начинается с записи № 25, а не с заявленной записи № 20. До нахождения верного листа карточка не считается визуально подтверждённой.",
       "Исполнитель погребения и кладбище не отделяются в OCR этой строки надёжно."
+    ],
+    "correctionHistory": [
+      "2026-09-08: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

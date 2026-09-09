@@ -56,12 +56,34 @@
     "warning": "OCR смешивает несколько соседних строк и не показывает физическое перекрытие левой части листа. Сниппет верно извлекает пару восприемников, но выражение «той же деревни» не имеет читаемого на снимке антецедента."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-820-56-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "86c09b729ffe4fd25132db62ee172025092adbad2a900e5dc70513ad2da6e1fe",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0056-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "0c91c8a28880bacd56e0eb951b6fc03c59fd158df6d03f38e8da14709c87f664",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0056-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0056-header.png",
+        "sha256": "83a4630711ae13aca1b3c9e2e7f1295bf609a767b2c8dfe5e9b76ab927c569aa",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0056-target-entry.png",
+        "sha256": "2dc9b60355f715e2fcb48ad7a4d7381de504074fe4e1518016b9e1383389e77a",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved-physical-loss",
@@ -69,6 +91,9 @@
     "unresolved": [
       "Имя и пол ребёнка, родители, номер записи, точные даты рождения и крещения закрыты загнутой частью листа.",
       "Не установлена деревня, к которой относится выражение «той же деревни»."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

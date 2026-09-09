@@ -78,10 +78,10 @@
     "warning": "OCR исказил имя Матрёны как «Сокурена»; оригинал и параллельная копия скана 338 позволяют читать «Матрена»."
   },
   "evidence": {
-    "captureType": "remote-viewer-windowed-screenshot-with-enlarged-fragments",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "034a880e02050a752ea0a16bdd37c5f4b171543059a25c1440e4d0d3e55bb9b4",
+    "capturedAt": "2026-09-06",
+    "sha256": "2a3e77ff8e869c894b43b19a2e8cf251702bfee33712ae107108638808faadf8",
     "publicDisplay": false,
     "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
     "localBackup": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-full-view.png",
@@ -89,40 +89,23 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-header.png",
-        "sha256": "7e38a476b884ee9eb6bab12f6393eb6531ddbea581b896e0b13901a6fe08340a",
+        "sha256": "ff5e9b83b2afd2f645172adb1f23f1f7a28ae7246517cc988f94014f23f11f02",
         "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry-close.png",
-        "sha256": "9a4e3efc1c8d868cc440d9a7d16413806d1d1f01f3297441e1aab5ccae27cd08",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry-context.png",
-        "sha256": "64883af28363349e21ca7234fb90f9c9f2db71f0af6cf531ab06ad21bccb4f18",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-3",
-        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry-detail.png",
-        "sha256": "6d34f8b2f8273c6fb545cca24d1221fcf313b5630ccbee3ccb2b9773496fd71a",
-        "description": "Увеличенная целевая строка 3 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-4",
-        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry-godmother-close.png",
-        "sha256": "1bc7aed849a1534de1f0d4d4f789a26f763a7186b331da5d50bccf8d57d1fa5d",
-        "description": "Увеличенная целевая строка 4 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-5",
-        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry-godmother-context.png",
-        "sha256": "1bc7aed849a1534de1f0d4d4f789a26f763a7186b331da5d50bccf8d57d1fa5d",
-        "description": "Увеличенная целевая строка 5 с именами, датами, родством, статусом и соседним контекстом."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/7f1b2b39-7bb2-4ea5-b744-35dc050db15b/0405-target-entry.png",
+        "sha256": "32791bcc0ee4d2368ad137f0ff39b3e7c9bc16ed7079261b52eeaa570701a315",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-stated-uncertainties",
@@ -130,7 +113,8 @@
       "Отчество и отряд Никифора не названы."
     ],
     "correctionHistory": [
-      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены."
+      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

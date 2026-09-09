@@ -85,17 +85,42 @@
     "provider": "Яндекс Архив"
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-98-2-74-305-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "32d880714f6323c21f4607556857eabcf0b9cafd6df98603ef0851e857265def",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/b2cad2e8-4ab3-4f4b-8e5b-21b0aeb537bf/0305-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "62439f38b816bedf05f8cd531cf134803707629b1f07708f52e06dda3cf41e6d",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/b2cad2e8-4ab3-4f4b-8e5b-21b0aeb537bf/0305-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/b2cad2e8-4ab3-4f4b-8e5b-21b0aeb537bf/0305-header.png",
+        "sha256": "187b86a13ce5f1e03f13763ed4a2964f7a2f181d68346b5d92de0508959d8b58",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/b2cad2e8-4ab3-4f4b-8e5b-21b0aeb537bf/0305-target-entry.png",
+        "sha256": "a54d012c7aa9ff26fda7d408bb406c669c195464cdf01ef2cf35152b9c094863",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "unresolved": [
       "OCR возрастных колонок частично смешан с соседней семьёй; возраста не распределялись автоматически, кроме очевидной пары 56 1/2 и 72 для Сидора."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

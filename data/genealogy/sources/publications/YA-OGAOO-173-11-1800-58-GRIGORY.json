@@ -73,17 +73,42 @@
     "provider": "Яндекс Архив"
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-11-1800-58-overview.jpg",
-    "capturedAt": "2026-08-23",
-    "sha256": "185e627f4f7cb7cd08e8658c3b98e01836810aac83ba504df1b47882f84226f5",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/ba8b3b99-7e7d-4742-9283-08168eb3fefa/0058-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "2cfd784c2bf0791a4f46b1254b86b52335b0fc6643509a61e2bb06dd0d53fe45",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/ba8b3b99-7e7d-4742-9283-08168eb3fefa/0058-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ba8b3b99-7e7d-4742-9283-08168eb3fefa/0058-header.png",
+        "sha256": "e74f93afefe0fd416797b640c2638e8cf2f86f3ccb06325092ac6012242897a0",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/ba8b3b99-7e7d-4742-9283-08168eb3fefa/0058-target-entry.png",
+        "sha256": "48ab4965c5f8ee591130a37b30477af1453b1b28c24f28bc3488c60441e315c6",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "unresolved": [
       "OCR показывает возраст жениха как 12 лет; значение сохранено буквально и не нормализовано."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

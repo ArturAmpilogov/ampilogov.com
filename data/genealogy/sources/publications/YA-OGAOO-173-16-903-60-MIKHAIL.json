@@ -82,18 +82,43 @@
     "warning": "Сниппет показывает ребёнка и отца, но не содержит мать, точные даты, восприемников и причт. OCR смешивает тексты соседних строк; сведения разнесены по границам целевой строки оригинала."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-903-60-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "dd5cdca174ceeef6886fa023ce336a7e73db9f56afa2ac6cac797cdbd354c8fe",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0060-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "ea4a21eadd144e8382f5942c3f8c8feea55f377f53c167b46da739d53bca159a",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0060-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0060-header.png",
+        "sha256": "d646f8c9e684f3eb4ebf8ffd52238647eddb9662232664994ae597b0c8310736",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0060-target-entry.png",
+        "sha256": "4e892d061220e31736d2880d44a9705b8ef2d0c8228e62543a1c299e499e5b70",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-counter-uncertainty",
     "identityResolution": "Отец связан с P5622 по точному полному имени, деревне Кармалке, крестьянскому статусу и согласующейся хронологии: P5622 родился там в 1870 году. Для жены, сына и семейной группы созданы P8193, P8194 и F8122. Одноимённый P6047 относится к Бахтемиру, а P7995 — к другой семье и поколению в Ново-Никольской; они исключены по прямому контексту. Нечёткое сопоставление не применялось.",
     "unresolved": [
       "Порядковый номер в счётной колонке целевой строки не читается на сохранённом кадре."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

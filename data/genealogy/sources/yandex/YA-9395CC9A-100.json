@@ -85,19 +85,35 @@
     "modernInterpretation": "9 октября 1883 года Прасковья Петровна Ампилогова вышла замуж за Агафона Ивановича Осипилогова; в двух строках указаны четыре Ампилогова-поручителя."
   },
   "evidence": {
-    "captureType": "remote-viewer-with-ocr-layer",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/9395cc9a-20d2-4fda-abc0-c432d835fdf8/100",
     "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "90d7aaa2e78b1a8860ca6ac4c9a2ee259b54b8a51fae37c30386b7cf0a3b9c67",
+    "capturedAt": "2026-09-06",
+    "sha256": "5509642acf6b661dec223ea8aba4cb258a9665e90f51a51a539302283b4bacb0",
     "fragments": [
-      {"kind": "header", "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-header.png", "sha256": "8f7fa31c6a667df3e1966f5efbdb5cf22989bdae5b83ee3c61dfd7b04d305e68", "description": "Увеличенный заголовок второй части метрической книги с рукописным годом 1883."},
-      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-target-entry.png", "sha256": "47a6216f17cb5c7a0adffe984d29f9dc8bced92ddd45edb5ab6e28b9b8eadb76", "description": "Увеличенная брачная запись № 42 с именами супругов, возрастом и поручителями."},
-      {"kind": "neighbor-context", "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-neighbor-context.png", "sha256": "bc8fb050a4970e26a70cf50f6ed311f7a91265f5e543f14f34635c071b6deb56", "description": "Увеличенная соседняя запись № 43 для проверки колонок и упоминания Петра Михайлова Ампилогова."}
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-header.png",
+        "sha256": "dd033ddcaad5bf38df08d0c93dc256df49320c2f3eba9adb647691b1d7c9c886",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-target-entry.png",
+        "sha256": "3ef048fad32530d53a873148f63f5fbd492a5869ef4144532cac2e487bd90136",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
     ],
     "publicDisplay": false,
     "localBackup": "data/genealogy/evidence-private/yandex/9395cc9a-20d2-4fda-abc0-c432d835fdf8/0100-full-view.png",
-    "rightsNote": "Локальная исследовательская копия сохранена вне публичных материалов; прямая ссылка на Яндекс Архив остаётся обязательной."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-uncertainties",
@@ -116,6 +132,9 @@
         "basis": "Совпадают полное имя и документированное место; хронология не противоречит связи.",
         "caution": "Связь не установлена автоматически: требуется независимое совпадение родственников, возраста или другого первичного акта."
       }
+    ],
+    "correctionHistory": [
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

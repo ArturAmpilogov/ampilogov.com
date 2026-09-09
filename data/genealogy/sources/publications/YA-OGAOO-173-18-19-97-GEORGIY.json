@@ -74,17 +74,42 @@
     "warning": "OCR заголовка ошибочно читает 1887 год; карточка дела датирована 1884 годом, разрешение епископа выдано 28 декабря 1883 года, а запись полностью совпадает с параллельной копией дела 173-16-1229, скан 97. OCR также искажает отдельные фамилии и имена духовенства."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-18-19-97-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "4e4d82cfc220c8c8898e6d0d9bff19a9c4bc6eba3a16ef8bbfd40d3f0ff95a61",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/f590fae6-265b-4002-b4ee-bd2ca427274e/0097-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "939e5ed0479f426e97d1327eea6d59b762e4dc0b24e9a77db842c265daca692d",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/f590fae6-265b-4002-b4ee-bd2ca427274e/0097-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/f590fae6-265b-4002-b4ee-bd2ca427274e/0097-header.png",
+        "sha256": "88561775b698c16b8420cf372c16982ea1285d11583a99d5eb9454f7c177cd8a",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/f590fae6-265b-4002-b4ee-bd2ca427274e/0097-target-entry.png",
+        "sha256": "3092df3acfe843944c04d401516d038b6ede90e3c562fdc806fbb61681b9d3d0",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
     "identityResolution": "P5701 установлен по документированной форме имени Георгий, точному отчеству, Орску и статусу рядового запаса; полностью совпадающая параллельная запись исключает приблизительное сопоставление.",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ]
   },
   "summary": {
     "status": "verified-summary",

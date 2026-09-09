@@ -101,6 +101,10 @@ const canonicalNameToken = (value) => {
   const token = (value ?? "")
     .toLocaleLowerCase("ru-RU")
     .replaceAll("ё", "е")
+    // Дореформенный конечный твёрдый знак не является частью фамилии.
+    // Без этой нормализации «Ампилоговъ, Борис Иудин» ошибочно
+    // разбирается как имя «Ампилоговъ», а не как фамилия с инверсией.
+    .replace(/ъ(?=$|[^а-яё])/gu, "")
     .replace(/[^а-я]/gu, "");
   const equivalents = new Map([
     ["иоанн", "иван"], ["иаков", "яков"], ["симеон", "семен"],
@@ -201,7 +205,16 @@ for (const { record: source, file } of sourceEntries) {
     }
     if (item.sha256) {
       const actual = await sha256File(absolutePath);
-      if (actual !== item.sha256) add("error", "evidence-hash-mismatch", file, `${source.sourceId}: ${item.path}`, { expected: item.sha256, actual });
+      if (actual !== item.sha256) {
+        const awaitingOriginal = source.evidence?.quality?.status === "awaiting-original-recapture";
+        add(
+          awaitingOriginal ? "warning" : "error",
+          awaitingOriginal ? "evidence-awaiting-recapture" : "evidence-hash-mismatch",
+          file,
+          `${source.sourceId}: ${item.path}`,
+          { expected: item.sha256, actual },
+        );
+      }
       else verifiedHashCount += 1;
     }
   }

@@ -69,18 +69,43 @@
     "warning": "Сниппет показывает только жениха. OCR полной строки превращает возраст «21» в бессмысленный фрагмент «вабца одного 218» и смешивает подписи причта с соседней записью; возраст подтверждён отдельной возрастной графой."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-389-1-716-189-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "2218a04240af07ee4f6ee24bd3787167a9b6bd9f2c382867de89e54265342475",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/cb07903f-0b6d-4787-b0e4-06e189fa2211/0189-full-view.png",
+    "capturedAt": "2026-09-07",
+    "sha256": "b8f61566dddbaaa261d9ff76a51fde044fce0516d5d8e65017dc2a0de012908a",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/cb07903f-0b6d-4787-b0e4-06e189fa2211/0189-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/cb07903f-0b6d-4787-b0e4-06e189fa2211/0189-header.png",
+        "sha256": "c974fd9bfed2443fded8f0dfcbfd5a64a3b934a610fde589e5f3aec91a22f15a",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/cb07903f-0b6d-4787-b0e4-06e189fa2211/0189-target-entry.png",
+        "sha256": "3e12800e8a002956b0ab1d8b4d2a9b7787009afec16e80699c4a6a0c4a8794b8",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved-clergy-surname",
     "identityResolution": "Для жениха и невесты созданы новые P8134 и P8135 по прямой брачной записи; совпадающих доказанных профилей в проекте нет. Нечёткое сопоставление не применялось.",
     "unresolved": [
       "Фамилия исполняющего должность псаломщика Иоанна в OCR строки неустойчива."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

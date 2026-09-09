@@ -83,10 +83,35 @@
     "warning": "Поисковый индекс уверенно выделяет супругов и поручителей. Дата, возраста, исходная фамилия невесты и распределение поручителей дополнительно сверены с колонками оригинального разворота."
   },
   "evidence": {
-    "captureType": "remote-viewer-nonfullscreen-screenshot",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/131",
     "publicDisplay": false,
-    "rightsNote": "Контрольные снимки сохранены только во временном исследовательском каталоге; публично используется прямая ссылка на Яндекс Архив."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.png",
+    "capturedAt": "2026-09-06",
+    "sha256": "d2edcd725640cee41de63b8f059fd1aa3e00bb5f2a245cacc4786e8bc7fc3660",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-header.png",
+        "sha256": "843673fd2c3a6f27e2a9fe76023c6df9a06376503f8de6df564d57c5dfea2dd8",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-target-entry.png",
+        "sha256": "d1ee4ef5f1f50cd615a455d4681cc61eea78303d4c6ccf3fa25aee1e9f95fb4b",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete",
@@ -94,6 +119,9 @@
     "unresolved": [
       "Прямой акт о рождении Сергея Петровича и имя его отца пока не найдены.",
       "Родство Павла Дмитриевича с Дмитрием Лаврентьевичем P8116 пока не доказано."
+    ],
+    "correctionHistory": [
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

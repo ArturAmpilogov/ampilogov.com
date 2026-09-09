@@ -64,19 +64,35 @@
     "warning": "Машинная расшифровка январской подписи даёт «Афанасий Ампилогов», но увеличенный оригинал уверенно читается «Афиноген Ампилогов», как и апрельская подпись. Поисковый сниппет «Ампилогов Тимошевка» склеивает независимые графы: Тимошевка относится к невесте Елене Мачаловой."
   },
   "evidence": {
-    "captureType": "remote-viewer-with-ocr-layer-and-page-review",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/c31f8e91-64b4-4928-809d-8457fa2ab002/138",
     "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-full-view.png",
-    "capturedAt": "2026-08-25",
-    "sha256": "22224d743ad174bbe499a60dfc76baccc1ccb7c4aa90d5db9fc476f736eab182",
+    "capturedAt": "2026-09-07",
+    "sha256": "74e3ad1f7da7c0953316b88149cad2085c09d11e2601f9724c7eddfcc3eddbe5",
     "fragments": [
-      {"kind": "header", "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-header.png", "sha256": "e7946cef9af071345993385d5e238c1d751229c458a193b40e76131290fc5d47", "description": "Увеличенный заголовок второй части метрической книги за 1912 год."},
-      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-target-entry.png", "sha256": "0386fcb67764359105f944dc0b5488e9138977fb380738db380aa1d05b177987", "description": "Увеличенный фрагмент записи № 13 с Тимошевкой и подписью диакона Афиногена Ампилогова."},
-      {"kind": "neighbor-context", "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-neighbor-context.png", "sha256": "a2321c3ed5452fe5cd77981425983d8b74170637ce52d40d6a6f6881fb7c2d74", "description": "Увеличенные соседние брачные записи № 11–12 для проверки повторяющейся подписи причта и колонок."}
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-header.png",
+        "sha256": "aab7ca5430198ece1acd1ff19eafa4c949a91eb2c8711bbabfe4c1a621de8694",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-target-entry.png",
+        "sha256": "29123f42473bcd378f5c3eeff05fc62b68a3b2d5dfd137e298ff9174de696272",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
     ],
     "publicDisplay": false,
     "localBackup": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0138-full-view.png",
-    "rightsNote": "Локальная исследовательская копия сохранена вне публичных материалов; прямая ссылка на Яндекс Архив остаётся обязательной."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-07",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-page-level-clerical-service",
@@ -85,6 +101,9 @@
     "unresolved": [
       "Отчество на листе 1912 года не указано; тождество с P1543 основано на совокупности служебной и географической преемственности.",
       "Участникам браков других фамилий отдельные профили и картографические события не создавались."
+    ],
+    "correctionHistory": [
+      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {

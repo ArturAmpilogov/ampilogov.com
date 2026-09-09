@@ -74,18 +74,43 @@
     "warning": "OCR ошибочно читает печатный заголовок как «на 1872 год»; каталог дела и датировка всей книги подтверждают 1879 год. Поисковый сниппет показывает только восприемников и священника, не называя ребёнка и родителей."
   },
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/yandex/ogaoo/YA-OGAOO-173-16-333-24-overview.jpg",
-    "capturedAt": "2026-08-24",
-    "sha256": "b9eaa9c96af86f837dcd9470d74ccf57f45a76b15cdabcfc714d156466a5142a",
+    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0024-full-view.png",
+    "capturedAt": "2026-09-06",
+    "sha256": "77d5565692ba7fe04d3957a2b3afa6e16ed551519959c9df1afbe2092e5850bf",
     "publicDisplay": false,
-    "rightsNote": "Локальная фотокопия сохранена только для исследования; на сайте не публикуется."
+    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "localBackup": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0024-full-view.png",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0024-header.png",
+        "sha256": "0c3066e3194bdde08ecb8aad36bd2c0cffdde10e5856276cabbf3408c259961a",
+        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0024-target-entry.png",
+        "sha256": "ff735bcceaa1b4f8bd10d37adca3707a81d6b681f50139f412369bca4c332129",
+        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-06",
+      "method": "manual-comparison-with-source-transcription-and-document-context"
+    }
   },
   "review": {
     "status": "complete-with-unresolved",
     "identityResolution": "Создан отдельный P6018 по точной документальной форме полного имени. С P4300 не объединён: в том профиле отчество записано как «Денисов», а совпадение имени, Георгиевки и крестьянского сословия недостаточно для доказательства тождества; нечёткое сопоставление не применялось.",
     "unresolved": [
       "Не установлено, является ли Борис Дионисиевич P6018 тем же человеком, что Борис Денисович P4300."
+    ],
+    "correctionHistory": [
+      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
     ]
   },
   "summary": {
