@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-555B18B5-372",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "555b18b5-0fe8-4819-b2b6-427537fbf34d",
-    "scanNumber": 372
+    "scanNumber": 372,
+    "asRead": "Метрическая книга; проверены видимые строки разворота"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/555b18b5-0fe8-4819-b2b6-427537fbf34d/372"
@@ -13,26 +14,32 @@
   "mentions": [
     {
       "mentionId": "YA-555B18B5-372-M1",
-      "role": "other",
+      "role": "false-index-hit",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках разворота не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
+    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+  },
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0372-full-view.jpg",
+    "path": "data/genealogy/evidence-private/yandex-archive/YA-555B18B5-372/372-full-view.jpg",
     "sha256": "9f6ab315119cdb4b03b4ef4dd9fab7ad91fbfc14dc84203ae3edc70a6e2dfeb6",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0372-target-entry.jpg",
+        "path": "data/genealogy/evidence-private/yandex-archive/YA-555B18B5-372/372-target.jpg",
         "sha256": "9e656297fee3e178d379134841ddf9e016b096b01406702c557cbf6166244df6"
       }
     ]
   },
   "review": {
-    "status": "needs-review",
-    "transcriptionConfidence": "low"
+    "status": "primary-scan-reviewed-no-match",
+    "transcriptionConfidence": "high"
   }
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-005F2091-160",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "005f2091-4126-428b-a191-eeb271488f89",
     "scanNumber": 160
@@ -15,9 +15,9 @@
       "mentionId": "YA-005F2091-160-M1",
       "role": "other",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
+      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -31,8 +31,17 @@
       }
     ]
   },
+  "transcription": {
+    "status": "primary-scan-review",
+    "literal": "На сохранённом фрагменте видны записи о крещениях детей семей Горюковых и Павловых; фамилия «Ампилогов» или документированный близкий вариант не читается.",
+    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Родители, восприемники и церковнослужители сохранены только как контекст первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
+    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+  },
+  "isRecord": false,
+  "cardKind": "index-hit-review",
   "review": {
-    "status": "needs-review",
-    "transcriptionConfidence": "low"
+    "status": "primary-scan-reviewed-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
   }
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-0822F5A2-027",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "0822f5a2-cac0-40d2-a2f7-8d00e8c02f34",
     "scanNumber": 27
@@ -15,9 +15,9 @@
       "mentionId": "YA-0822F5A2-027-M1",
       "role": "other",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
+      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -31,8 +31,17 @@
       }
     ]
   },
+  "transcription": {
+    "status": "primary-scan-review",
+    "literal": "На сохранённом развороте метрической книги за 1905 год, в разделе о родившихся, видны записи детей иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
+    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все названные родители, восприемники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
+    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+  },
+  "isRecord": false,
+  "cardKind": "index-hit-review",
   "review": {
-    "status": "needs-review",
-    "transcriptionConfidence": "low"
+    "status": "primary-scan-reviewed-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
   }
 }

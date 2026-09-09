@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-01C1BD11-43",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "01c1bd11-1b0d-4084-85b3-6816f7db0cec",
-    "scanNumber": 43
+    "scanNumber": 43,
+    "asRead": "Метрическая книга за 1907 год, часть первая о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/01c1bd11-1b0d-4084-85b3-6816f7db0cec/43"
@@ -13,13 +14,19 @@
   "mentions": [
     {
       "mentionId": "YA-01C1BD11-43-M1",
-      "role": "other",
+      "role": "false-index-hit",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Фамильный ряд Ампилоговых не обнаружен",
+      "displayName": "Нет носителя фамильного ряда",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Метрическая книга за 1907 год, часть первая о родившихся; на листе видны записи № 69–70 за октябрь.",
+    "modernInterpretation": "Проверены строки родителей и восприемников всех видимых записей. Носителей фамильного ряда Ампилогов / Анпилогов и документированных вариантов нет; карточка не образует Record, профиль, карту или маршрут переселения.",
+    "indexNote": "Поисковый результат Яндекс Архива оказался ложным. Чтение выполнено по локальному первичному скану, без использования OCR как доказательства."
+  },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0043-full-view.jpg",
@@ -32,7 +39,7 @@
     ]
   },
   "review": {
-    "status": "needs-review",
-    "transcriptionConfidence": "low"
+    "status": "primary-scan-reviewed-no-match",
+    "transcriptionConfidence": "high"
   }
 }
