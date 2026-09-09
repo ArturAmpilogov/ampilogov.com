@@ -15,6 +15,25 @@ const requiredCaptureType = "remote-viewer-canvas-document-bounds-crop-with-enla
 // where their confirmation is missing, but they are not automatically bad and
 // must not be queued for a needless new capture.
 const legacyDocumentOnlyCaptureType = "remote-viewer-document-only-capture-with-enlarged-fragments";
+// Periodicals can expose the same clean, document-only page through an original
+// image or an official-library PDF/JPEG instead of a canvas viewer. These are
+// equivalent evidence paths when the visual confirmation flags and asset checks
+// below also pass.
+const acceptedDocumentOnlyCaptureTypes = new Set([
+  requiredCaptureType,
+  legacyDocumentOnlyCaptureType,
+  "yandex-archive-original-image-download-with-enlarged-fragments",
+  "official-source-pdf-page-with-enlarged-fragments",
+  "official-source-pdf-page-document-bounds-crop-with-enlarged-fragments",
+  "official-source-jpeg-page-with-enlarged-fragments",
+  "official-neb-page-image-with-enlarged-fragments",
+  "official-source-pdf-page-with-neighboring-page-context-and-enlarged-fragments",
+  "official-source-neb-page-with-enlarged-fragments",
+  "official-rnb-pdf-page-with-enlarged-fragments",
+  "official-source-pdf-page-with-cross-page-enlarged-fragments",
+  "official-source-pdf-embedded-page-with-enlarged-fragments",
+  "official-neb-page-jpeg-with-enlarged-fragments",
+]);
 
 const jsonFiles = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -136,7 +155,7 @@ for (const group of [...groups.values()].sort((left, right) =>
   const sourceIds = group.sources.map(({ source }) => source.sourceId).filter(Boolean).sort();
   const evidence = group.sources.find((entry) => entry.evidence)?.evidence;
   if (!evidence) issues.add("evidence-missing");
-  if (![requiredCaptureType, legacyDocumentOnlyCaptureType].includes(evidence?.captureType)) {
+  if (!acceptedDocumentOnlyCaptureTypes.has(evidence?.captureType)) {
     issues.add("document-only-capture-not-confirmed");
   }
   if (evidence?.quality?.documentOnlyVisuallyConfirmed !== true) {
