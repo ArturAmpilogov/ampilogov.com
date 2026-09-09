@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-165",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 165,
@@ -14,32 +14,52 @@
   "mentions": [
     {
       "mentionId": "YA-472AC94F-165-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
+      "role": "church-clergy",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов, диакон",
+      "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "primary-scan-transcription",
+    "literal": "[В записях разворота:] Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ.",
+    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи диакона Афиногена Егоровича Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
   },
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0165-full-view.jpg",
-    "sha256": "d080bbf9e73729a211df3c76fd337510402d4b4ca5cfa5fb0c001c299c91244c",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0165-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "89b3dd528954e04d0b171ef707ff1fa39150bdd3f006d526686c3d85815b134f",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0165-target-entry.jpg",
-        "sha256": "0f50b1dd631cbbecdcfee97c4a46535cfad5f10689f1d265203398168191641c"
+        "sha256": "ecada132cb0182c599621bf28ffb684790d61f7cf2b0aa82a1ac176992aa7ce3",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5183x4187",
+      "targetDimensions": "4823x3357"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  }
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

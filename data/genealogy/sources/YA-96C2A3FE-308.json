@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-96C2A3FE-308",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
     "scanNumber": "308"
@@ -10,26 +10,55 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/308"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-96C2A3FE-308-M1",
+      "role": "officiating-priest",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов, священник",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0308-full-view.jpg",
-    "sha256": "0c27052a6274b9ec1bdd22a5d90d6bc7690392578e0c3b996f1fe0182f44ebad",
+    "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0308-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "e0f840086d9a8a81a5fc82c6e682ca3cf8608eacee500b61f680583a260e0a36",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0308-target-entry.jpg",
-        "sha256": "9e70570d9522b1489531c0abeaf26f9b55a3276e57d7e60a35c1ae44be7a1c38"
+        "sha256": "aa4763ea5dd6f9a4ceea5440a0c2f031631b5bb81707603978519117901ac60c",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5257x4213",
+      "targetDimensions": "4897x3383"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "[В записях разворота:] Священникъ Михаилъ Ампилоговъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ.",
+    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи священника Михаила Афиногеновича Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

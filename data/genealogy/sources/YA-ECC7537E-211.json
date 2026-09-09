@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-211",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
     "scanNumber": "211"
@@ -10,26 +10,63 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/211"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-ECC7537E-211-M1",
+      "role": "godparent",
+      "personId": null,
+      "nameAsTranscribed": "Алексѣй Тимоѳеевъ Ампилоговъ",
+      "displayName": "Алексей Тимофеевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-211-M2",
+      "role": "godparent",
+      "personId": "P1379",
+      "nameAsTranscribed": "Агриппина Тимоѳеева Ампилогова",
+      "displayName": "Агриппина Тимофеевна Ампилогова",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0211-full-view.jpg",
-    "sha256": "133ef8911c986bc8176160ce16fd645347e522b6ad51fc643e7ad3534db93e3b",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0211-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "8523ba7cd18d9cdbfec1fdd4c635a1eea1776199c1cb18ed200a837d32f475ae",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0211-target-entry.jpg",
-        "sha256": "53c0f94d211f0e9770fb979d56ba83f8e9119f70726b0026180871789ae04b2a"
+        "sha256": "f504f2a973f107fc35ac6d9185f73de1dc02267d43dd306529d9526b2f276a13",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5652x4566",
+      "targetDimensions": "5292x3736"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "Восприемники: села Кармалки крестьянинъ Алексѣй Тимоѳеевъ Ампилоговъ и крестьянская дѣвица Агриппина Тимоѳеева Ампилогова.",
+    "modernInterpretation": "Алексей Тимофеевич и Агриппина Тимофеевна Ампилоговы названы восприемниками в метрической записи 1911 года.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

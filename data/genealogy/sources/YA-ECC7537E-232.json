@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-232",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
     "scanNumber": "232"
@@ -12,33 +12,77 @@
   },
   "mentions": [
     {
-      "mentionId": "YA-ECC7537E-232",
-      "role": "false-index-hit",
+      "mentionId": "YA-ECC7537E-232-M1",
+      "role": "father-of-deceased-child",
+      "personId": "P8102",
+      "nameAsTranscribed": "Ефремъ Петровъ Ампилоговъ",
+      "displayName": "Ефрем Петрович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-232-M2",
+      "role": "deceased-child",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "nameAsTranscribed": "сынъ Василій",
+      "displayName": "Василий Ефремович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-232-M3",
+      "role": "father-of-deceased-child",
+      "personId": "P5436",
+      "nameAsTranscribed": "Филиппъ Григорьевъ Ампилоговъ",
+      "displayName": "Филипп Григорьевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-232-M4",
+      "role": "deceased-child",
+      "personId": null,
+      "nameAsTranscribed": "дочь Татьяна",
+      "displayName": "Татьяна Филипповна Ампилогова",
+      "surnameSeries": true
     }
   ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-full-view.jpg",
-    "sha256": "ab07c4f5c8e6b402f791e473ed782a20582c87d80652d06d850779427c081a0b",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "c9b5359f21fd1389549d04466db19ff7645732e671806d3e45351b59c6d7a986",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-target-entry.jpg",
-        "sha256": "b9ed042e268648cd14e27b23e736bc365b19e72483c4555208c6d066456d4444"
+        "sha256": "0b03754433c1599ad88f8ce71e6d0a304832a65cbc0ed0b86491b4acc82c04e1",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5652x4566",
+      "targetDimensions": "5292x3736"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "Села Кармалки крестьянина Ефрема Петрова Ампилогова сынъ Василій. Села Кармалки запаснаго рядового Филиппа Григорьева Ампилогова дочь Татьяна.",
+    "modernInterpretation": "Разворот содержит две записи 1911 года о смерти детей из семей Ефрема Петровича и Филиппа Григорьевича Ампилоговых в селе Кармалка.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

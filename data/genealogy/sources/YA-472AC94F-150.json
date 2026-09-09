@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-150",
-  "provider": "Яндекс Архив — локально сохранённый первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": "150"
@@ -13,32 +13,52 @@
   "mentions": [
     {
       "mentionId": "YA-472AC94F-150-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда на проверенном листе не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
+      "role": "church-clergy",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов, диакон",
+      "surnameSeries": true
     }
   ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-full-view.jpg",
-    "sha256": "b9e6688e512f7159f18ea6ebd2b415fbbc97ae48516ca5a99e4a3ec0890cb80c",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "542f5586cd27cdded50cb0370c041d6fa1d3f92fd35d19112160d35f310d5c7d",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-target-entry.jpg",
-        "sha256": "29a187d5cf16edce43c44476183cdaf9a460bf6a364f5532971bd984063a42d0"
+        "sha256": "97888c4125fe0bde7a1cd9c400c7cea608eb00a824eb16bfaa54641cb1dfe8c8",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5291x4211",
+      "targetDimensions": "4931x3381"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "На проверенном сохранённом локальном развороте формы Ампилогов / Анпилогов / Анфилогов не обнаружены; видимые записи относятся к другим переселенческим семьям.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Иные семьи остаются только в расшифровке и не получают профили, карту, маршруты или миграционные записи.",
-    "indexNote": "Яндекс-индекс был только поисковой подсказкой; вывод основан на ручном чтении локального скана."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "[В записях разворота:] Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ.",
+    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи диакона Афиногена Егоровича Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

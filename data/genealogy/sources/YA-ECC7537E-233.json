@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-233",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
     "scanNumber": "233"
@@ -12,33 +12,61 @@
   },
   "mentions": [
     {
-      "mentionId": "YA-ECC7537E-233",
-      "role": "false-index-hit",
+      "mentionId": "YA-ECC7537E-233-M1",
+      "role": "father-of-deceased-child",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "nameAsTranscribed": "Михаилъ Спиридоновъ Ампилоговъ",
+      "displayName": "Михаил Спиридонович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-233-M2",
+      "role": "deceased-child",
+      "personId": null,
+      "nameAsTranscribed": "дочь Марія",
+      "displayName": "Мария Михайловна Ампилогова",
+      "surnameSeries": true
     }
   ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-full-view.jpg",
-    "sha256": "32e7be91a1c05d23c2070344acb62f59594d0bc14a5bf4ac93ab3b2a7803b5f7",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "66b6559ad408898913f06edd2b4bbed96f99da5f2fed152eba14f38edb916e9f",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-target-entry.jpg",
-        "sha256": "6327527d7826e05bb460a8645b436a0e1d7ee567181bad3e36345cf2c4dc957c"
+        "sha256": "18f654f73c6155c9ac9ee2d1cc46fb4a8af40729aa567cf7567024ec841eac29",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5652x4566",
+      "targetDimensions": "5292x3736"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "9. 10. Села Кармалки крестьянина Михаила Спиридонова Ампилогова дочь Марія, 2 мѣс.",
+    "modernInterpretation": "9/10 числа 1911 года зарегистрирована смерть двухмесячной Марии, дочери крестьянина села Кармалки Михаила Спиридоновича Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }

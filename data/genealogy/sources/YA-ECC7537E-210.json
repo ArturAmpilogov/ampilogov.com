@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-210",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
     "scanNumber": "210"
@@ -10,26 +10,63 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/210"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-ECC7537E-210-M1",
+      "role": "godparent",
+      "personId": null,
+      "nameAsTranscribed": "Стефанъ Филипповъ Ампилоговъ",
+      "displayName": "Степан Филиппович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-210-M2",
+      "role": "godparent",
+      "personId": null,
+      "nameAsTranscribed": "Гликерія Тимоѳеева Ампилогова",
+      "displayName": "Гликерия Тимофеевна Ампилогова",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
     "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-full-view.jpg",
-    "sha256": "e8818b31c74e3a7c7a948dc08704aaf319ebee917ee5482c85fbdc7599149199",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-full-view.jpg",
+    "capturedAt": "2026-09-09",
+    "sha256": "cf91fa5890cbcfa857928fa69516b92b6f4e3cabc874ee7a1d8f90453b07908e",
     "fragments": [
       {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-target-entry.jpg",
-        "sha256": "369fd48cd9cd6e1ea1335794d6439945d3303332e20abbfdb6743fba9a83b34c"
+        "sha256": "840238e1f3d9c5ec22d8287e31164874c42a71ba4af9dcaca8c2e13c9753bb54",
+        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "fullDimensions": "5652x4566",
+      "targetDimensions": "5292x3736"
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
-  }
+    "status": "primary-scan-transcription",
+    "literal": "В одной записи восприемникъ — села Кармалки крестьянинъ Стефанъ Филипповъ Ампилоговъ. В другой: Стефанъ Филипповъ Ампилоговъ и солдатская жена Гликерія Тимоѳеева Ампилогова.",
+    "modernInterpretation": "Степан Филиппович Ампилогов дважды назван восприемником в майских записях 1911 года; во второй записи вместе с ним указана Гликерия Тимофеевна Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }
