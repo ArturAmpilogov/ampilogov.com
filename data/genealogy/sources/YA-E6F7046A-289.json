@@ -1,44 +1,89 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E6F7046A-289",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth-godparents-and-clergy",
   "collection": {
     "catalogId": "e6f7046a-7427-436d-b859-2439261a3434",
-    "scanNumber": 289
+    "scanNumber": 289,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Ново-Михайловка (на Току), Александровка, Гавриловка, Слоновка, Судьбодаровка, Ново-Богдановка за 1905 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e6f7046a-7427-436d-b859-2439261a3434/289"
   },
+  "event": {
+    "type": "birth-godparents-and-clergy",
+    "date": {
+      "display": "1905",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Слоновка"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-E6F7046A-289",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-E6F7046A-289-M1",
+      "role": "godmother",
+      "personId": "P101542",
+      "displayName": "діаконица Евдокія Михеева Ампилогова",
+      "nameAsTranscribed": "діаконица Евдокія Михеева Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-E6F7046A-289-M2",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-full-view.jpg",
-    "sha256": "fbb986846e0061950fc97a6ee8c619bce6a0fbb9acccad765bab8e1b5a6246b8",
+    "catalogId": "e6f7046a-7427-436d-b859-2439261a3434",
+    "scanNumber": 289,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "97a67565c1263c1ae24efdd96b062c1840782a0192538b359bf14bd9bdf30f9d",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-target-entry.jpg",
-        "sha256": "22fa8a3d42628e64a73a906e565632f39c04505d5687d7d20ec8c5a2f67ef18c"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-header.png",
+        "sha256": "4e856b4ab115c8bf2bd5da255bbcfbce60b833b8dca053d0943232e42901c2c4",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/e6f7046a-7427-436d-b859-2439261a3434/0289-target-entry.png",
+        "sha256": "f8bf589098ee17ff8e0d67e9150d544c5828338eac46d79eceb92343a61d566f",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "2420x1926"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Села Слоновки діаконица Евдокія Михеева Ампилогова. Діаконъ Аѳиногенъ Ампилоговъ.",
+    "modernInterpretation": "Евдокия Михеевна Ампилогова названа восприемницей; диакон Афиноген Ампилогов служит и подписывает записи. Первичная запись исправляет прежнюю ошибочную квалификацию листа как ложного совпадения.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

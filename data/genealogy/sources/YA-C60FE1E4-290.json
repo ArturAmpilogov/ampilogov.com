@@ -1,44 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C60FE1E4-290",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "burial-clergy-multiple-entries",
   "collection": {
     "catalogId": "c60fe1e4-04c3-45ac-ad06-62da21d4d2a3",
-    "scanNumber": "290"
+    "scanNumber": 290,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Покровка (Мокринка), Казанка, Романовка, Покровка (Куюргаза), Слоновка, Нижний Гумбет, Дмитриевка за 1909 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/290"
   },
+  "event": {
+    "type": "burial-clergy-multiple-entries",
+    "date": {
+      "display": "1909",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "Слоновский приход"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-C60FE1E4-290",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-C60FE1E4-290-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-full-view.jpg",
-    "sha256": "1ea9e1ee1e3305e0421c38c56df8fe07246beca502371933cd969c98caf732da",
+    "catalogId": "c60fe1e4-04c3-45ac-ad06-62da21d4d2a3",
+    "scanNumber": 290,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "b242c6b94cf93fae6cbf8d7cd17d63f9784ba368f747b854d123d36e45772ef9",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-target-entry.jpg",
-        "sha256": "12ccaf342b137fc83c383edfafb5722967ca76fbdfaef5de6b21d74bf21723f0"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-header.png",
+        "sha256": "1f8e9201f2ca513536f48b1c7513279922bd34ddfa92590c3af3471d4e89af0b",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0290-target-entry.png",
+        "sha256": "bd4e199ff2f006ad6b5fa2341de4ceca7ce7d67782a5d5c68f5190455a88823a",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "2319x1920"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священник Иоанн Поляков с диаконом Афиногеном Ампилоговым. Формула повторяется при погребениях на развороте.",
+    "modernInterpretation": "Индекс ошибочно назвал диакона Иоанном; по повторным подписям оригинала это Афиноген Ампилогов.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

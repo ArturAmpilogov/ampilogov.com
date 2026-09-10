@@ -1,35 +1,89 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C711DEDF-206",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
-    "scanNumber": "206"
+    "scanNumber": 206,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Рождественское, Бараково, Титовка, Кармалка за 1909 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c711dedf-0d13-49a7-8d93-e809898b76f3/206"
   },
-  "mentions": [],
+  "event": {
+    "type": "birth-godparents",
+    "date": {
+      "display": "1909",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Кармалка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-C711DEDF-206-M1",
+      "role": "godfather",
+      "personId": "P8183",
+      "displayName": "крестьянин Егор Алексѣев Ампилов",
+      "nameAsTranscribed": "крестьянинъ Егоръ Алексѣевъ Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C711DEDF-206-M2",
+      "role": "godmother",
+      "personId": "P101743",
+      "displayName": "Анна Филипповна Ампилогова",
+      "nameAsTranscribed": "крестьянская дѣвица Анна Филиппова Ампилогова",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-full-view.jpg",
-    "sha256": "bd7e87b477046da172351e60bab5a4dcea2694682a3fbb3e262fc5c80d1baf06",
+    "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
+    "scanNumber": 206,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "bf63dbf61922a08f80728c091582be42c8442602cda2a512e15c35bc06d38417",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-target-entry.jpg",
-        "sha256": "df3a3823b3457ae4dba0a10b7053354e10f1ef635a14c1d83472753471a192b9"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-header.png",
+        "sha256": "a2b732a38baa00e39449c00441a37e06f5a944ac0bf01b7e1541a4d6bb239f21",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0206-target-entry.png",
+        "sha256": "1da226731207e48af5675d223a9fec91139d7a7db72d3f9f961c5ad7065d390e",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5127x4132"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Того же села крестьянин Егор Алексеев Ампилов и крестьянская девица Анна Филиппова Ампилогова [в строке восприемников].",
+    "modernInterpretation": "Оригинал подтверждает двух восприемников фамильного ряда; прежнее заключение о ложном совпадении исправлено. Егор сопоставлен с ранее документированным Егором Алексеевичем Анпилоговым из Кармалки.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

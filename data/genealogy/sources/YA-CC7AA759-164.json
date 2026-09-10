@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-CC7AA759-164",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "cc7aa759-2830-4410-af37-632f220b628a",
-    "scanNumber": 164
+    "scanNumber": 164,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Ратчино, Ново-Никольское, Илькульган, Колычево за 1905 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/cc7aa759-2830-4410-af37-632f220b628a/164"
   },
-  "mentions": [],
+  "event": {
+    "type": "baptism-clergy-multiple-entries",
+    "date": {
+      "display": "1905",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Колычево"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-CC7AA759-164-M1",
+      "role": "priest",
+      "personId": "P1653",
+      "displayName": "Священник Михаил Ампилогов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-full-view.jpg",
-    "sha256": "18983dc54d7bda75227e7dfbeb34b266c587d48f90abf6cb501bd26c0724fd57",
+    "catalogId": "cc7aa759-2830-4410-af37-632f220b628a",
+    "scanNumber": 164,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "5e1faf798c3569c51806aef2f1e387a55fa224b14e4cee3ba8e3064d486b72a5",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-target-entry.jpg",
-        "sha256": "a13114ac2e9c89940d2f74f516c71270c385e6404befa97d082d901f161ea2c4"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-header.png",
+        "sha256": "20a4c0e6600e54e5bd8f96f0252d97320cb1231faf9311f5c7bb866cd58298a9",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0164-target-entry.png",
+        "sha256": "5bb41255264a5302029d643094ad2a0977072a93b7a634fa1f5d7f5ae788c0d6",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5827x4734"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Михаилъ Ампилоговъ. [Подпись повторяется при нескольких записях о крещении на развороте.]",
+    "modernInterpretation": "Священник Михаил Ампилогов совершал крещения и подписывал записи; оригинал исправляет прежнюю ошибочную отметку о ложном совпадении.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

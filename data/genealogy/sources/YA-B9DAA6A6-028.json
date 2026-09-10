@@ -1,44 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DAA6A6-028",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "b9daa6a6-0612-417d-9123-553f1cc97f34",
-    "scanNumber": "28"
+    "scanNumber": 28,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка (Параскевинская церковь - рожд., брак), Колычево (Покровско-Богородицкая церковь), Константиновка (Покровско-Богородицкая церковь) за 1906 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/b9daa6a6-0612-417d-9123-553f1cc97f34/28"
   },
+  "event": {
+    "type": "baptism-clergy-multiple-entries",
+    "date": {
+      "display": "1906",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Колычево"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-B9DAA6A6-028",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-B9DAA6A6-028-M1",
+      "role": "priest",
+      "personId": "P1653",
+      "displayName": "Священник Михаил Ампилогов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-full-view.jpg",
-    "sha256": "9854e1d73ed0db83237bbc36ed0a723c317005285a6285a09482f7fc23a735d4",
+    "catalogId": "b9daa6a6-0612-417d-9123-553f1cc97f34",
+    "scanNumber": 28,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "1267f9a5814c000d2973c5cd132c6dc757a69f6e98d587b03a3679b7aee9ecd8",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-target-entry.jpg",
-        "sha256": "d1817c707c82d8dc2d97e157322a6648102319c3b1a8f83425886178531e6ca5"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-header.png",
+        "sha256": "282fa9bc38fbb931e23d7f0cdf8ca15a0ec3eac342da407d0aec530aed9df1b4",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/b9daa6a6-0612-417d-9123-553f1cc97f34/0028-target-entry.png",
+        "sha256": "c4cadf487f6617cbb87c1a935f084bd0748556d8a9ee032590f253a77cb13e48",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "4759x3989"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Михаилъ Ампилоговъ. Псаломщикъ Іоаннъ Смирновъ. [Подписи повторяются при нескольких крещениях на развороте.]",
+    "modernInterpretation": "Священник Михаил Ампилогов совершал крещения и подписывал записи; первичный лист исправляет прежнюю ошибочную отметку о ложном совпадении.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

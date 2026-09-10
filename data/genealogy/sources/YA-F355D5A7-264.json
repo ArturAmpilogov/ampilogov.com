@@ -1,44 +1,97 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F355D5A7-264",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth",
   "collection": {
     "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
-    "scanNumber": "264"
+    "scanNumber": 264,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Бараково, Илькульган, Кармалка, Рождественское, Титовка за 1913 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/264"
   },
+  "event": {
+    "type": "birth",
+    "date": {
+      "display": "1913",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Кармалка, Оренбургская губерния"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-F355D5A7-264",
-      "role": "false-index-hit",
+      "mentionId": "YA-F355D5A7-264-M1",
+      "role": "father",
+      "personId": "P101559",
+      "displayName": "крестьянин Іаков Ефремов Ампилонов",
+      "nameAsTranscribed": "крестьянинъ Іаковъ Ефремовъ Ампилоновъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-F355D5A7-264-M2",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "displayName": "законная жена его Анна Кузьмина",
+      "nameAsTranscribed": "законная жена его Анна Кузьмина",
       "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-F355D5A7-264-M3",
+      "role": "godfather",
+      "personId": "P91148",
+      "displayName": "крестьянин Наум Ильин Ампилогов",
+      "nameAsTranscribed": "крестьянинъ Наумъ Ильинъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/264-full-view.jpg",
-    "sha256": "9b33c87a0e4dc9546aa4475655eff1c3c204978c6c01ac6092949bcc8d7f95e7",
+    "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
+    "scanNumber": 264,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0264-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0264-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "bd6d18af0e8f5a62adff4ffb185490c8b053b72dc217cc9243897fba0fdf90da",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/264-target-entry.jpg",
-        "sha256": "61f9a917c6eab281151ea7c3a2b70aacc8a91f2ebad8d3f61e5fd97ae45b7502"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0264-header.png",
+        "sha256": "c359db4b326d57a0a2a9dd8ba1eaf5632bdb8275b687be791de4cf8d65cf2fa4",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0264-target-entry.png",
+        "sha256": "17c626b0b4b6f11d1db7c5839c41f6d76b3942bf4d1598773340fb09875aa1e6",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5803x4634"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Села Кармалки крестьянин Иаков Ефремов Ампилонов и законная жена его Анна Кузьмина; оба православные. Восприемники: того же села крестьянин Наум Ильин Ампилогов и крестьянская жена Агриппина Петрова Пашкова.",
+    "modernInterpretation": "Яков Ефремович Ампилогов/Ампилонов и Анна Кузьминична названы родителями; Наум Ильич Ампилогов — восприемником.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

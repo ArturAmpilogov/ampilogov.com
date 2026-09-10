@@ -1,44 +1,97 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8AC212DA-049",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth",
   "collection": {
     "catalogId": "8ac212da-ea93-43f1-82be-ea4b5f29b950",
-    "scanNumber": 49
+    "scanNumber": 49,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей села Михайловское (Михаило-Архангельская церковь) за 1906 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8ac212da-ea93-43f1-82be-ea4b5f29b950/49"
   },
+  "event": {
+    "type": "birth",
+    "date": {
+      "display": "5 июля 1906",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Кармалка"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-8AC212DA-049-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "role": "child",
+      "personId": "P101685",
+      "displayName": "Прокопий Тимофеевич Ампилон",
+      "nameAsTranscribed": "Прокопій",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-8AC212DA-049-M2",
+      "role": "father",
+      "personId": "P1746",
+      "displayName": "крестьянин Тимофей Иванов Ампилон",
+      "nameAsTranscribed": "крестьянинъ Тимофей Ивановъ Ампилонъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-8AC212DA-049-M3",
+      "role": "godfather",
+      "personId": "P91076",
+      "displayName": "крестьянин Димитрій Георгіев Ампилогов",
+      "nameAsTranscribed": "крестьянинъ Димитрій Георгіевъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-full-view.jpg",
-    "sha256": "863f676765cd76ffc2c91bc416c2700cbb0accd2c3f64843c2c4f4b254cdb936",
+    "catalogId": "8ac212da-ea93-43f1-82be-ea4b5f29b950",
+    "scanNumber": 49,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "1bc4a4ddd5e2f5ab772915d506bcebabfce4b6732f840d2cb18690bcfd4db8a1",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-target-entry.jpg",
-        "sha256": "3d35a82bc73a6c58b54c30abedc3e26765726d000bfe6f9bdae6e2c01a46af45"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-header.png",
+        "sha256": "449256beff60f2139154fa9ca9777576baa2ca21fe6270ab9546fce264bc7357",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0049-target-entry.png",
+        "sha256": "a65545da554cb43899de6da6a72fd5458b99862c5428b8bc3d838399cb5b9146",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "4881x4000"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Прокопій. Крестьянинъ села Кармалки Тимофей Ивановъ Ампилонъ, жена его Дарія Епифанова; православные. Крестьяне того же села Димитрій Георгіевъ Ампилоговъ и Елена Ѳеодорова Пашкова.",
+    "modernInterpretation": "5 июля 1906 года у Тимофея Ивановича Ампилона и Дарьи Епифановны родился Прокопий; Дмитрий Георгиевич Ампилогов был восприемником. Оригинал исправляет прежнюю ошибочную отметку о ложном совпадении.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

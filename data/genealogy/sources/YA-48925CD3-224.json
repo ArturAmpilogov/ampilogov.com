@@ -2,13 +2,80 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-224",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": { "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3", "scanNumber": "224" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/224" },
-  "mentions": [{ "mentionId": "YA-48925CD3-224-M1", "role": "church-clergy", "personId": "P1543", "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Ампилогов, диакон", "surnameSeries": true }],
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/224-full-view.jpg", "sha256": "df31514efcb2b4c95c141290b8d7f4b381f0f4e0697683418a679538304e1e9a", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/224-target-entry.jpg", "sha256": "237f3f7bacc34bc491c2b3f3816c231140957a5474dfb65f9bfc41129e870b23" }] },
-  "transcription": { "status": "primary-scan-transcription", "literal": "Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Подпись повторяется при записях о родившихся в селе Слоновке.", "modernInterpretation": "В 1916 году диакон Афиноген Ампилогов неоднократно участвовал в совершении крещений Николаевской церкви села Слоновки.", "indexNote": "Индекс использован только для поиска; имя и роль проверены по нескольким подписям оригинала." },
+  "recordType": "clergy-signatures-multiple-entries",
+  "collection": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 224,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Парадеево, Покровка (Каюргаз) (Покровская церковь), Разномойка (Казанско-Богородицкая церковь), Романовка (Михаило-Архангельская церковь), Слоновка (Николаевская церковь) за 1916 г."
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/224"
+  },
+  "event": {
+    "type": "clergy-signatures-multiple-entries",
+    "date": {
+      "display": "1916",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Слоновка, Оренбургская губерния"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-48925CD3-224-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
+  "evidence": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 224,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "d9162b4cf585e6f70da43d055c458e5b27c0b749c4853ca52a7793fbf9e74a29",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-header.png",
+        "sha256": "f16c33efc1b112072700a3a0bd572a411d52a4033a79a2a5285a723bd8482736",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-target-entry.png",
+        "sha256": "551418dabe11903de6c41e0ae3b5ba629b115d82f22f378c485d1986694eeba0",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "4455x3640"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "transcription": {
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "В нескольких записях о родившихся служебная подпись: диакон Афиноген Ампилогов; на листе также встречается форма подписи «Ампилов».",
+    "modernInterpretation": "Лист многократно подтверждает служение диакона Афиногена Ампилогова и документальный вариант фамилии «Ампилов».",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": { "status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": [] }
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
+  }
 }

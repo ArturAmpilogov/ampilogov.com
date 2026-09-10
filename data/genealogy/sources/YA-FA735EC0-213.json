@@ -2,21 +2,104 @@
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-213",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": { "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591", "scanNumber": "213" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/213" },
+  "recordType": "marriage-sureties-and-clergy",
+  "collection": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 213,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка, Михайловка (Михайловская церковь); Ново-Архангельское (Михаило-Архангельская церковь) за 1915 г."
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/213"
+  },
+  "event": {
+    "type": "marriage-sureties-and-clergy",
+    "date": {
+      "display": "1915",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "Кармалкинский приход, Оренбургская губерния"
+    }
+  },
   "mentions": [
-    { "mentionId": "YA-FA735EC0-213-M1", "role": "marriage-witness-for-groom", "personId": null, "nameAsTranscribed": "Михаилъ Ампилоговъ", "displayName": "Михаил Ампилогов", "surnameSeries": true },
-    { "mentionId": "YA-FA735EC0-213-M2", "role": "marriage-witness-for-groom", "personId": null, "nameAsTranscribed": "Афанасій Ампилоговъ", "displayName": "Афанасий Ампилогов", "surnameSeries": true }
+    {
+      "mentionId": "YA-FA735EC0-213-M1",
+      "role": "surety",
+      "personId": null,
+      "displayName": "Михаил Ампилогов",
+      "nameAsTranscribed": "Михаилъ Ампилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FA735EC0-213-M2",
+      "role": "surety",
+      "personId": null,
+      "displayName": "Афанасій Ампилогов",
+      "nameAsTranscribed": "Афанасій Ампилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FA735EC0-213-M3",
+      "role": "surety",
+      "personId": null,
+      "displayName": "Иван Ампиллов",
+      "nameAsTranscribed": "Иванъ Ампилловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FA735EC0-213-M4",
+      "role": "deacon",
+      "personId": "P101797",
+      "displayName": "Дмитрий Ампилогов (служитель Кармалкинского прихода)",
+      "nameAsTranscribed": "псаломщикъ-діаконъ Димитрій Ампилоговъ",
+      "surnameSeries": true
+    }
   ],
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/213-full-view.jpg", "sha256": "2b623ec768da03200bddd4f8f454fd6429b62411199b223b94f77e7157e8a00f", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/213-target-entry.jpg", "sha256": "e807ec886826303c0256a54e3ce660177ab0b46196bcd0b9585b779d752fc918" }] },
+  "evidence": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 213,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0213-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0213-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "5fa053e87802464cd3d547567103707ad58faab69efd2c871176ceb6630aa444",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0213-header.png",
+        "sha256": "1f74bc93e8eb4f15ac98eeac1867334471a6cb8cbc755895695ecea71ed9b6ed",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0213-target-entry.png",
+        "sha256": "7dca8873a0b169e27dd2d6fe6fb596627de176948d2c0fb37271a612cb313901",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5111x4037"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "По женихе: крестьяне села Кармалки, Михайловской волости, Оренбургской губернии и уезда, Михаил Ампилогов, Афанасий Ампилогов и Семен Дьяховских.",
-    "modernInterpretation": "Михаил и Афанасий Ампилоговы указаны поручителями со стороны жениха вместе с Семёном Дьяховских; их статус — крестьяне села Кармалки. В видимой части листа читается апрельская брачная запись. Связь с Кармалкой не равна доказанному переселению.",
-    "indexNote": "Роли и имена поручителей сопоставлены с листом; их отчества, а также идентичность брачующихся не устанавливаются без дополнительного чтения разворота."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "В поручителях нескольких брачных строк названы Михаил Ампилогов, Афанасий Ампилогов и Иван Ампиллов; отчества на листе не указаны. Записи подписаны Димитрием Ампилоговым.",
+    "modernInterpretation": "Три поручителя сохранены как раздельные неидентифицированные упоминания; без отчеств их нельзя надёжно связать с существующими профилями.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": { "status": "primary-scan-partially-verified", "transcriptionConfidence": "medium", "unresolved": ["Нужно дочитать строку поручителей на полном развороте и связать её с конкретной парой брачующихся."] }
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
+  }
 }

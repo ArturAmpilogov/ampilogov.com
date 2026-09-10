@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C31F8E91-114",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "clerical-signature",
   "collection": {
     "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
     "scanNumber": "114"
@@ -12,33 +12,71 @@
   },
   "mentions": [
     {
-      "mentionId": "YA-C31F8E91-114",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-C31F8E91-114-M1",
+      "role": "deacon",
+      "personId": "P101381",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампелоговъ",
+      "displayName": "Афиноген Ампелогов",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/114-full-view.jpg",
-    "sha256": "e3c16adac02062d5cd61c05fe00c8c67421a58e0a0c23fd22f57097f7553502f",
+    "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
+    "scanNumber": 114,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0114-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0114-full-view.png",
+    "capturedAt": "2026-09-09",
+    "sha256": "9c342d1bc460f5c0074e50e76b12f44dc8c4b34de2c1857bcd8cc38741bf8cbe",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/114-target-entry.jpg",
-        "sha256": "d6df63cc3b797564e77f52fda17e306a4ddc36e7bf9b74659d135f249a7c8739"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0114-header.png",
+        "sha256": "e4e17af4090f9c2de1ff9a0093a682317edf8c694cf527e6defadd3c68316165",
+        "description": "Область заголовка, структуры или верхней части исходного листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0114-target-entry.png",
+        "sha256": "17d7a00de1c65268718527a50fb95dc09118346838b3806a6de9223ef2994673",
+        "description": "Крупный фрагмент целевой строки с соседним первичным контекстом."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-09",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5790x4628"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия оригинального листа и фрагменты сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-09: прежнее ошибочное чтение «ложное индексное совпадение» заменено по ясно читаемой подписи диакона Афиногена Ампелогова."
+    ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
-  }
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампелоговъ.",
+    "modernInterpretation": "Метрическую запись подписали священник Иоанн Поляков и диакон Афиноген Ампелогов.",
+    "indexNote": "Предыдущее заключение о ложном совпадении исправлено после повторного чтения крупного фрагмента оригинала."
+  },
+  "event": {
+    "type": "clerical-signature",
+    "date": {
+      "display": "1912",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Оренбургская губерния"
+    }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record"
 }
