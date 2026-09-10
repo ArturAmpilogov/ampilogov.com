@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Асипиооговя пр авас\nллавный пувнив\nФрактії.\n1р. в\nСвавщенники Мимавéй\nTtanenki ell\n24.\nДеріани Карманки\nприствлнсти силв\nМихошик Фистин-\nпавю Катприй понов\nвославний первнии\n2б\nбракнип.",
+    "localOcrWithSurnameLexicon": "славный пувнив\nФрактії.\n1р. в\nСвавценники Ми масей\n24.\nДеріани Карманки\nприствлисти силь\nМирошик Фистин -\nвославний первнии\n2б\nбракник.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "2370e520b0a31dea5dfcac04083b4a0d2deccd80b867c826a51c0fb8fceeab3b",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 116,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0116-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0116-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f7eab825969407fe190f7f9185837a1c2782d4e08d975df28d551774b6892fe1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0116-header.png",
+            "sha256": "df796c69a3cc8d70a5a2832c60ca495acdb2520b3241202f2e95eb9c2b2b984d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0116-target-entry.png",
+            "sha256": "4961dc4719eac21d518a2506befd214834985a7256f7ad5d3b24c97940f488b2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5464x4320",
+          "targetDimensions": "1200x1137",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Тимофей Григорьев Ампилогов, крестьянский сын, деревня Кармалки, 17. ... Поручитель: Егор Григорьев Ампилогов, крестьянин, та же деревня.",
+    "fuzzyQuery": true
   }
 }

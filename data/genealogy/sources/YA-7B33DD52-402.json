@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-target-entry.jpg",
         "sha256": "926161ecd599e3a970f3fb659ad89a852ce0f21819e823d8d0b90ddfaaabada7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7b33dd52-46e1-48b1-8697-efa85c9bc1f9",
+        "scanNumber": 402,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e75ca9bc4c1acf7d78896a9640edcee2504cb65280bd43c2846b3eb7215a9895",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-header.png",
+            "sha256": "6c0b4c01d094e9da816777e8aa2e53d96adbc521a76f6a8a7f4bb11e1703683d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-target-entry.png",
+            "sha256": "ba5e0680bb6db17f7cf8c99cecdfc4b4241706875ad88d709e12acc470d709a4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5263x4195",
+          "targetDimensions": "1349x1166",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Кто Былн порбчнтели.\nПолининь оренбургкіо Міжане;\nнижь\nМвань стефанове Антиногось и\nпригорій Селиовь Скуростова\nПолевльсти: Орекберіски мльнесне.\nНавень Тетровь Абзчиськ кже\nфрань 1з сестнві Емигіаковь,\nеr\nОренбурськів Мащане: Слишань Єріло\nласва Хохлові г Егорь Вастгієві",
+    "localOcrWithSurnameLexicon": "Кто Были порбчнтели.\nПолатинь оренбурго Міщанс;\nнить\nМань стефанове Антиногось и\nпригорій Селеновь Скуростова\nПолевльсти: Оренберіки льнесне.\nНавесь Метровь Абзчисьм кже.\nфрань 13 ситив Емегіаковь,\ner\nОренбурсків Мащине: Слимань вріло\nласв Хохлові г Егорь Вастав",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Иван Стефанов Ампилогов, оренбургский мещанин. Поручитель: Стефан Симеонов Ампилогов, отставной унтер-офицер.",
+    "fuzzyQuery": true
   }
 }

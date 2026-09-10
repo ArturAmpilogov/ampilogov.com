@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "-ни ммии\nематишеняго мешер\nпробвлянских дічь 8ву\nКросінянить Ивать Оео-\nкіn Амрофслова Н\nдоров'ь Липові право-\nПова привославнаго\nси ивмаговыролепавеннния\nвоорошиовивання пур\nпервысиь браком'ь--\nвынйв броапосн\nКаниникев.\nвящення.\nDin Xunr Асаxcанорr теn\nАмпилоговіч.\nДісузонч Аоможив\nСи Кишиняго Гумбера.\nСела Новатринцкиг\nкробнянти Николий\nкорернялских дркви",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0027-target-entry.jpg",
         "sha256": "c40b96ae1894bca73d0fe34b3949786a1b7d357e1f7f0ed2a196cc20d11dc02c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 27,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0027-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0027-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "1d42228b4adfd94038e58bb2e20e964d7f55a115386023cf9d6f9aa55130be1f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0027-header.png",
+            "sha256": "7f5444f2fa296610c877b12fac03997008ed5bc282ad3e1e93522ecd1dfa700a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0027-target-entry.png",
+            "sha256": "38950cd8fe4f3de2a5f125df38c82eb8c078ecb5af14b555b607299d06894831",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5393x4245",
+          "targetDimensions": "1649x903",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священни Клавдий Калининский Диакон Александр Теплов Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true
   }
 }

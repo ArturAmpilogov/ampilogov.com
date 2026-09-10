@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/88ba184e-2924-4b55-8468-9798bc77bce6/0048-target-entry.jpg",
         "sha256": "999330c87b85ec1e79ebfa11ea8f437d3a5f24ee4c2708461d9cbe2bc6ed9240"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "88ba184e-2924-4b55-8468-9798bc77bce6",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/88ba184e-2924-4b55-8468-9798bc77bce6/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/88ba184e-2924-4b55-8468-9798bc77bce6/0048-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "345507dc67dca8961ccdf112fc189338e6790808538003f39707fa69073c21f6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/88ba184e-2924-4b55-8468-9798bc77bce6/0048-header.png",
+            "sha256": "f0faa59f0b0e04b9c0b811d7b935eded89a7cf1ddf6b9e94308f63c2a46fc442",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/88ba184e-2924-4b55-8468-9798bc77bce6/0048-target-entry.png",
+            "sha256": "94d99b6dffebf67b07b903ded30383d741905738b6da947214bf2f8e68c6deba",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5357x4177",
+          "targetDimensions": "1200x1110",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "фвикипиненсч\nпоселни матака\nГрагория Провормая\nпріяннтй ебт\nЛеонтій Флегон\nпоат Молесни-\nковт, провоялав\nнаго можовні) снів\nперабин брекась\nащенкииг А2мпарг\nПравомщчнь сдлень\nМогоде посеина\n30.\nКаванть 1иемін",
+    "localOcrWithSurnameLexicon": "поселки казака\nГригория Проворная\nпріяннт\" евт\nЛеонтій Флегон\nпост Колесни -\nковт, провоялав\nнаго моновні) снів\nперебин бракась\nПравомщинь сулень\nМолоде посена\n30.\nКаранть 1 лемін",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Федор Филиппов Ампилогов, казак, Иванковский поселок, 17 лет 8 месяцев. Жених: Николай Иванов Иванов, казак, поселок Никитинский, 21.",
+    "fuzzyQuery": true
   }
 }

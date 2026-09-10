@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "1ОСКОВСКОЙ\n\"ИПОГ\nСУРОДАЛЬНО\nчєской книги на/8/3и\nЗьАніе, ймА, сбтчЕство й фамнАА роднтелей, й какóги\nшиХсА.\nвЕронспов Кдантл.\nОреибургекой губезнім и упвуа села\nутива",
+    "localOcrWithSurnameLexicon": "ТОСКОВСКОЙ\n\"ИПОГ\nСУРОДАЛЬНО\nчЕской книги на 18/3и\nЗвАніе, ймА, сотнЕство й фамнА родителей, й какги\nшиХсА.\nвЕроиспов *данта.\nОренбургекой губернім и уквуа села",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "8867ae1451f123f7fc0be65b8a19b4a4610391569fc7d8d123c579243864babb",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 51,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0051-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0051-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8b7d4780feddb1a07e17e796bb7c0d8e32b2333465493d72d21eb20a2345b615",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0051-header.png",
+            "sha256": "0602dfcbfd9327d37c6511a8a24dcfb81e59155b1ed8a6cfad074cf599f46aac",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0051-target-entry.png",
+            "sha256": "2326381c2eb2478eea4bdb470380ad6c07bd0c7dbd34389a71ca53c8dd4d9013",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5105x4070",
+          "targetDimensions": "1611x1155",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Мария Иванова Ампилогова. ... Отец: Иван Иванов Ампилогов, крестьянин, деревня Кармалки. Мать: Ксения Павлова Лапшина.",
+    "fuzzyQuery": true
   }
 }

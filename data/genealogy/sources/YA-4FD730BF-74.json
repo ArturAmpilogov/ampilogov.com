@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Званіє, йма, сотчество й фамнліл родителей, й какогш\nИБШиусА.\nккронспов'вданіА.\nСал\nчей\nСели Михайловки крестьянинй\nкаг\nВасилій Пидовч Тушева и Зака\nванк\nянок\nнай мина его Евданій Ковами\nрова\nна, оба православные\nвеященникв Асекаиор) Попровенби!\nОеаностунив Акласанири Мнкрав",
+    "localOcrWithSurnameLexicon": "Званіє, йма, сотчество й фамнлі родителей, й какоги\nИБШиКсА.\nк кронсповвдантА.\nСала\nней\nСели Михайловки крестьянинй\nкап\nВасилій Пудов Тушева и Запа\nванк\nянов\nнай мина его Евданій Ковами\nрова\nна, оба православные\nвещенникв Асексир ) Попровенти!",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "cccaa8b1660c0be6c39afba98fdc3679a510cdc43cf144dedfcbae65f8435a5f",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 74,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0074-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0074-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "1df4aeffe58cf0cd7b8d58c78865b4f9f8a01efe11db9728244ef7d125ef5794",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0074-header.png",
+            "sha256": "b0f136c5f76495bc4abe916e7d702c7cacb2c68813ade92ff8152aaebac6427f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0074-target-entry.png",
+            "sha256": "19600a44e916a5395f883ea1b03e652685f9b5388a03a31ef934b416d45d6d5b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5011x3949",
+          "targetDimensions": "1564x1015",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Андрей Егоров Ампилогов. ... Отец: Егор Григорьев Ампилогов, крестьянин, деревня Кармалки.",
+    "fuzzyQuery": true
   }
 }

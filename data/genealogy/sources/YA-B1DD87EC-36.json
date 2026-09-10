@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-target-entry.jpg",
         "sha256": "787718967e2c9ac6e82db22d60f2630a281df85b94cdfae239f6d0b8dfa6601b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b1dd87ec-6af1-42cb-b730-dd28b6b02821",
+        "scanNumber": 36,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cd041e227341a6975bd1be10bcf0f724e26342b0000a2ab379ba7ce2bb2bbd97",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-header.png",
+            "sha256": "c502b8e13cfa81f54a99a643d5cb1488867fdfb3d08f49fa1e2d9a1175fcce08",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-target-entry.png",
+            "sha256": "ae1b8348d984ff671b3a125a72bd204e4a12f0205aaa5f1b93a62604102a798b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "9896x7976",
+          "targetDimensions": "2627x1295",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "По меешхп - севи Пригокими совняр\nСщі Зіпоод Мос(овай и Крів\nТеті вицгнз Сементвеб. По невтари -\nдеревии березьки Віле: СесисніСщи\nDoloh a Uant Homanus Daukas.\nо ясетира - сень Принтрит-Крік Савігль\nИтпна Чемеез и д. Мино- винкиной соваать\nКоаннсій ИлаионняОсноя зрвво",
+    "localOcrWithSurnameLexicon": "По мешен - севи Прогокими совнар\nОщі Зіграв Мос овай и Крів\nТеті виз Сементве. По невтори -\nдеревии березьки Віле: СесисаСщи\nDoloh a Uant Homans Daukas.\nо менира - сель Принтрит- Крік Савіль\nИтана Чемее и д. Мино- викиной сова ать",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Гавриил Гавриилов Ампилогов, крестьянин, деревня Дракино. Поручитель: Поликарп Михайлов Злобьев, солдат, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

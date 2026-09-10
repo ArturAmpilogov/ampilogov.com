@@ -20,8 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0103-target-entry.jpg",
         "sha256": "9fbb4fda952a429b1f2be86fd2ed4d2c12f50c08d1302f7cb5c4a11df23ce0b8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 103,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0103-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0103-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0e24fc96a445a6a520315a983fdc928e9dae6ee12fa38c9e761353572c46e064",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0103-header.png",
+            "sha256": "fe4778cb0122870719a5547341c419160df42c3da6327efa3698a413b13b2c50",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0103-target-entry.png",
+            "sha256": "59f720f72352486e48fe130f2e155488994b115ec617d2d2b37ea7bb622f464c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4755x3700",
+          "targetDimensions": "1265x1170",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
-  "transcription":{"status":"needs-recapture-before-family-record","literal":"Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.","modernInterpretation":"Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.","indexNote":"Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."},
-  "review":{"status":"needs-recapture-before-family-record","transcriptionConfidence":"low"}
+  "transcription": {
+    "status": "needs-recapture-before-family-record",
+    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ВсКоЙ\nТИПОГРАФІ\n(ПОАУЛЬТОЙ\nACTEBTOРAД ФEРAROGOTEА\nÍлz\nПóдп\nКто были порбчитьлн.\nЗánн:\nти-похненикт престтяни сел\nтовеснихаловни Никалом Никиоорові\nоль\nМерорикинг дву",
+    "localOcrWithSurnameLexicon": "ТИПОГРАФІ\n(ПОАИЛЬТОЙ\nПодп\nКто были порочитьян.\nти- поненикт престяни сел\nтове скановни Никалом Никиоорові\nоль",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "review": {
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Иван Иванов Ампилогов, крестьянин, деревня Кармалки, 18. Поручитель: Матвей Иванов Иванов, крестьянин, село Михайловка.",
+    "fuzzyQuery": true
+  }
 }

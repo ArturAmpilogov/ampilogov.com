@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0030-target-entry.jpg",
         "sha256": "ccba587f2fd691fc8c89a2031ab6114187d5dd0105ad729bb30b7110a8c8fda7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44",
+        "scanNumber": 30,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0030-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0030-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3051a357c1a83574423f60e545b35a8d985c598bc36d6e732ef469227161cbca",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0030-header.png",
+            "sha256": "7c7dedffc2b9b467759f4f0b3b0fecb91f7df3aa75133d596ef2450c2e806eb5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0030-target-entry.png",
+            "sha256": "ee6bc9ab0f28f50128bbba783a853bb4676db243c88a0a7d5957e0e6ad38556b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5784x4666",
+          "targetDimensions": "1610x1170",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "УПСГРАФІИ\nСИРОААЛЬНО\nÁСТЬ КТОРЛА, Ш БРАКОСОЧЕТАВ\nПóдпис\nКтò быии порбчйтьли.\nЗÁпИCH",
+    "localOcrWithSurnameLexicon": "РУПОГРАФИ\nАСТЬ КТОРЛА, О БРАКОСОЧЕТАВ\nКто были порбчители.\nÁNHCH",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Феодор Ампилогов, крестьянин, село Гавриловка. Невеста: Мелания Васильева Мелешкина, крестьянская дочь, 18.",
+    "fuzzyQuery": true
   }
 }

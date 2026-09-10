@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a9c0f649-d52a-45b3-9cbf-b8c9abc1c235/0094-target-entry.jpg",
         "sha256": "a16718882ee2d9066d06aeff457dd691dd9c5f8eb01169edf736f3e0c0a96bf8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a9c0f649-d52a-45b3-9cbf-b8c9abc1c235",
+        "scanNumber": 94,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a9c0f649-d52a-45b3-9cbf-b8c9abc1c235/0094-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a9c0f649-d52a-45b3-9cbf-b8c9abc1c235/0094-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8eedf406cf62d76d5f3d637e9401c274e3f474ebd60685be80b3d4d46d4de046",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a9c0f649-d52a-45b3-9cbf-b8c9abc1c235/0094-header.png",
+            "sha256": "af40c1d34558527b70e3c8fe21e06588b750457f89b58656d58572b79c24dd7a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a9c0f649-d52a-45b3-9cbf-b8c9abc1c235/0094-target-entry.png",
+            "sha256": "1be9ebbfe8563508a4973f413c8064c7e8448088e38f127f8c3037f00c3ad903",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5363x4289",
+          "targetDimensions": "1537x1144",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГОДА, ЧАСТЬ ПЕРЕЛА, 0\nЗбАніє, ПлА, сотчество й фалнліл\nКто COBE\nБОсПріЕмНИКШЕ%.\nТигря села опивсті? вемеїв Яавневг\nПторінч и предвянская оенаТ лувана\nВасивьмо в арбавови",
+    "localOcrWithSurnameLexicon": "ГОДА, ЧАСТЬ ПЕРЕЛА, 0\nЗвАніє, ПлА, стчество й фалінліл\nКто COBE\nБОсПрЕНИКШЕ%.\nТигря села опивсті? весів ЯКовлевч\nПорінг и предвянкая оренаТ лув ана\nВаживамо в арбавови",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "1-го Того же села унтер офицер Иван Егоров Харичков и крестьянская жена Марья Алексеева Горбунова 2-й Того же села крестьянин Василий Федотов Ампилогов и крестьянка...",
+    "fuzzyQuery": true
   }
 }

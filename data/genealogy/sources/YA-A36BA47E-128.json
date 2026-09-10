@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a36ba47e-3a22-4b30-aa2c-0a475b613337/0128-target-entry.jpg",
         "sha256": "b3990efd79de1f1f982868952925c141e1f5693d996580066a16ce4101aaee63"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a36ba47e-3a22-4b30-aa2c-0a475b613337",
+        "scanNumber": 128,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a36ba47e-3a22-4b30-aa2c-0a475b613337/0128-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a36ba47e-3a22-4b30-aa2c-0a475b613337/0128-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "149f1fcf85a85105958e10ee3bc1268c4d326e675bc40e416ca48e2ccb801358",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a36ba47e-3a22-4b30-aa2c-0a475b613337/0128-header.png",
+            "sha256": "df407953ffc7b9e5b31486bbd847f4569dd666bd3667cf2b53d6d9ddac20195d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a36ba47e-3a22-4b30-aa2c-0a475b613337/0128-target-entry.png",
+            "sha256": "6fd9cdaf80180eed7d3722e7409e87bbdb74e26c2f93a809db52f094c6522976",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x976",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ай Навловь чдновьияв)- сви\nсанскоигубуні, Алексан\n1рискаг Утіда Посадо\nНовой Праги пяствянка\nорьвица ісенія Кирилитва йі\nСидкова.\nОдесски мінцантив Свя\nАанаст Пантшленика с)\nМиралчинои вдоками яв\nщаника Области выйска 2",
+    "localOcrWithSurnameLexicon": "ай павловь чоноваив)- сво\nсанскоигубоні, Алексан\n/рискай Утіда Посадо\nНовой Праги пяствлика\nольвица ксенія Кирилитва сі\nСидкова.\nОдесски мінцантив Свя\nАданаст Пантеленика с)\nМиранчино и вдовами яв\nШаника Области войска 2.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Симферопольский мещанин Феодосий Сергиев Ампилогов и Одесская мещанка Мария Кириллова Крилсановская.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0147-target-entry.jpg",
         "sha256": "e810b3612b882f4efe6fc977f558a39481fd2f67efd1d1a6e1deba70dbd59725"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "737be40d-5a8f-4c2f-a518-20b75446e12d",
+        "scanNumber": 147,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0147-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0147-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3f39bd02ca8de178cfbf48956fa75ab3b8f812ef4031436d6e5d9bcda625bd96",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0147-header.png",
+            "sha256": "be0e479ce99565148886c55bff97664a79466317e040490b6caa54af1ff6233c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0147-target-entry.png",
+            "sha256": "839958c9e088d199f91c18e36497185ed0cb9dbad689bb67e01574c8667db01a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4960x3933",
+          "targetDimensions": "1200x1027",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ncecee\nКрстьоня Ста\n2х.\nпорлевки Павень\nрооворовьАми\nтиноговь- ...\n18.\nПравосавный\nОба первьни\nІлюти\nСьящанника\nранонц. Пиовск",
+    "localOcrWithSurnameLexicon": "Кратьоня Ста\n2х.\nпорпевки Павель\nтиноговь- ...\n18.\nПравотавный\nОба первьни\nблати\nСвященника",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крестьянин Села Георгиевки Павел Феодоров Ампилогов. ... Жених: Павел Феодоров Ампилогов, крестьянин, село Георгиевка, 18.",
+    "fuzzyQuery": true
   }
 }

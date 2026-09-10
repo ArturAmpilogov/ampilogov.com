@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0110-target-entry.jpg",
         "sha256": "d4fa360f7862f98d153ade4084bcb48d3dc3a8c8935d0b98dafcff048babe802"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "737be40d-5a8f-4c2f-a518-20b75446e12d",
+        "scanNumber": 110,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0110-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0110-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fa0523748db22d4773a59f2e23b9a004d9d93f4da7708158c10140ffd3fae8b5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0110-header.png",
+            "sha256": "be9c2e3c27896fe7468cd215fb88c0d4dd85f7cb947874db26a75d11657e33a7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0110-target-entry.png",
+            "sha256": "3907875e3f13fd0bc7bc73280100ffdb72b04b9beccda218cf913a790f5848df",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4881x3779",
+          "targetDimensions": "1418x933",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГИПОN\nСТІОАДЛЬНОЙ\nГОДД, ЧАСТЬ ПЬРБАЛ, й\nЗвáніє, ймА, сотчестко й фамиліл\nKтo co\nвоспріємникшБz.",
+    "localOcrWithSurnameLexicon": "ГИПОМ\nСПІОДАЛЬНОЙ\nГОДД, ЧАСТЬ ПоРЕАЛ, й\nЗваніє, ймА, сотчестко й фаміліл\nKto co\nвоспріємникшЕ.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того - же Села крестьянин Фоломей Феодоров Ампилогов и крестьянская девица Екатерина Михаилова Кретова.",
+    "fuzzyQuery": true
   }
 }

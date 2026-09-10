@@ -25,21 +25,58 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сиа. Респррлам Преоновноь в\nГоболонй ориоверавоо с\n• safiiame ine\nнак и. Ферии\nстивикаe Onbess 5n-\nCMAAI\nатнна фвегвори\ntnй Duurquik\nCt\nовние вуо крестыв\nфenлиnets\nболотова п кретьвни\nдавнух веловерильки За-\nрь Хoрiтaiв Хатes\nгина",
+    "localOcrWithSurnameLexicon": "• safiiame ine\nстивика e Intes 52n-\nCMAAI\ntnt Duurquik\nCt\ndenrunets\nболотова и критовни\nдавнух вельверильки За-\nnafa:",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0113-full-view.png",
-    "sha256": "8c5ac9704bc857c1365d2845f7064231041de7658885b791666b4c6d0a65b2d3",
+    "sha256": "ea074c3c8cd6aef1e481ed1337a038cbf2f58b1fa4701c5e38163cc3310009dc",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0113-header.png",
+        "sha256": "a15dd54da5af9e6a6551d6fc9509da374421c72ee6caabd835fcd29d2751a320",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0113-target-entry.png",
-        "sha256": "94d39f6114727582d5db1cd8a869137cbc4e3faf458c04583ca70690692b78aa"
+        "sha256": "fa1b6c1fae85d82289d94799c946c76e54d8e0a051a82adf4898a611a7ff2014",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "4df930de-a499-495f-820d-2eb4d8bb8d77",
+    "scanNumber": 113,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0113-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x952",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Тогож села крестьянин Феодор Матвеев Ампилогов и крестьянка села Калычева Ольга Миронова Долженкова Дмитриев.",
+    "fuzzyQuery": true
   }
 }

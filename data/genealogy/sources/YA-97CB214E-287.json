@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/97cb214e-e143-43a0-b3d5-6cab56b89608/0287-target-entry.jpg",
         "sha256": "1c5d03fc70778618575c6493f74ae5a5420ec106424ba3f52797f506a8c75c03"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "97cb214e-e143-43a0-b3d5-6cab56b89608",
+        "scanNumber": 287,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/97cb214e-e143-43a0-b3d5-6cab56b89608/0287-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/97cb214e-e143-43a0-b3d5-6cab56b89608/0287-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3f8473c70a081a9b4322cb39eb78ea436d8b09f9dd017a2511c6c23861b260bb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/97cb214e-e143-43a0-b3d5-6cab56b89608/0287-header.png",
+            "sha256": "c30fc2ba88642111a3942a07a22c0516b8ae340fd6b73b74039bd122c169ef7b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/97cb214e-e143-43a0-b3d5-6cab56b89608/0287-target-entry.png",
+            "sha256": "c6442187abb9a143317414c3cb243abb22f9b409146bd900f5ec27a71147f23e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5368x4187",
+          "targetDimensions": "1390x988",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "стилшилостом лупьри критол-\nнинг Михаиль Симеоновь Поки-\n1B\nла весриых Моунеу\nй области\nСаратовской губернім Лнгкарского\nуюгда деревни Шумаковкм крестья-\nнинк вмегань 6го/ов'о Клн-\nмникове и престьянекая жена\nоваска втячанова Цеолеыы",
+    "localOcrWithSurnameLexicon": "нинг Михаиль Симеоновь Поки-\n1В\nна верных Модне\nй области\nСаратовской губернім Люкарского\nуогда деревни Шумаковым крестья-\nнинь вмегань (го/ов'о Клн-\nмникове и престоянская жена",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Орский мещанин Иван Ульянов Ампилогов и крестьянская жена Домна Андреева Быковская. Священник Иоанн Успенский Диакон Гавриил Аскольдов.",
+    "fuzzyQuery": true
   }
 }

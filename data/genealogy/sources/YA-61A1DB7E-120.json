@@ -15,7 +15,15 @@
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются."
+    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
+    "localOcr": "мовь ввосочжснинь и крестімнения\nопвиної(ворими Ліччинока Свво\nооласти\nМой оне берени престіянин вучгнй\nМонельй с новчов и крествяненая\nрвица Нелогія Ванилььа,",
+    "localOcrWithSurnameLexicon": "совь ввосічининь и престімнений\nопвиної (ворими Ліччинька Свво\nобласти\nМой оне дерени пристіянин сучий\nКонаный словчов и крествяненая\nровица Нелогія Василька,",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "publicDisplay": false,
@@ -27,10 +35,53 @@
         "sha256": "6fa3e4a3e1ac4436ff1890f966b0b5d2d697846cb657d42001cee209cc6fb16d",
         "description": "Локальный фрагмент, требующий качественного повторного захвата."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "61a1db7e-6631-4e49-918a-680c554f541c",
+        "scanNumber": 120,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "48834f5efb129074143aed8a9f8977de07078037fc05ead1ce93f5fa656ee58a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-header.png",
+            "sha256": "e8f8bd3d6978a420a12fa0c3e9525fa6c775fd73c1555199025b2a17fe399839",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-target-entry.png",
+            "sha256": "f185b0c9d40c31ee1ff2e52fc069731fddd098abba31654f877a8e0e0677ff03",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5915x4691",
+          "targetDimensions": "1550x844",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Гавриил Гавриилов Ампилогов, крестьянин, та же деревня. Крёстный отец: Петр Дометиев Вашуркин, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

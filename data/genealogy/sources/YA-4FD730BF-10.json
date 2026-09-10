@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ксттолнии? виауара: Сроражоелтя ел-\nСефплоникива и приствлика\nЕвдрасиній Аанколева Дал Пож\nгошоваBаМ\nогожне села /Крестачнин)\nдia\nвсьмній Канерилові Двітро- Кан\nсовь и крествянка (вори",
+    "localOcrWithSurnameLexicon": "Сефалоникива и приствлика\nЕвдрасній Ааколева Дал Пож\nголова ВаМ\nогоне села (Крестачнии)\ngia\nвсьмній Канерилові Двітро- ван\nсовь и крествянка (вори",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0010-target-entry.jpg",
         "sha256": "8b56632111e0a6f9ad237fb589c8bc2286ce4107f752f4bc260d8a3b96e4ddd5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 10,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0010-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0010-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "473427cd4b8f41b9e0558974583492c79739fb112eaf16ecae78a98eef08fe42",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0010-header.png",
+            "sha256": "e209a8c371d7e8593260b9bd0bae689a803f0fbc791ca4b341d2d9cf52b6287f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0010-target-entry.png",
+            "sha256": "80625505224a3d700abf893d4b913ce91345e97c2a0e2b29f2198b50d2c39401",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4999x4132",
+          "targetDimensions": "1385x952",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни Крестьянин Иван Тимофеев Ампилогов и крестьянская девица Анна Тимофеева Ампилогова. Псаломщик Алексей Стефанов.",
+    "fuzzyQuery": true
   }
 }

@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Мбжеска.\nMATAYN\nPELÉHiA.\nСіла Микайловки крествяниа\nСеадара Иаиька СНсувікдека\n2оней\nСсми Киссайинати крествянила\nОмитрія Маріанова Вшиняко\nва реил. 1.",
+    "localOcrWithSurnameLexicon": "бжеска.\nPERÉHiA.\nСіла Микайловки крествяниа\nвладара Манька Неувікдека\n2 оней\nСли сКисалинати крестьянина\nОмитрія Маріанова В шиняко",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "444130f0fa17874bbedcd584bd31f95aad10cb187c561ffed6638c28c83e2cba",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 147,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0147-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0147-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0d4b4fb31cddece18a24e0942685420f90da1b32d89bbf30cb92015b8b389d28",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0147-header.png",
+            "sha256": "4f66e9be76e2ecba048c471d228327262c0d97715dcc810924b6e4d7c3a310a3",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0147-target-entry.png",
+            "sha256": "cb4d7461ad44910da36d927c1484f30c3d7012e87e0364aac1cf483fee195215",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5407x4371",
+          "targetDimensions": "1653x913",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Емельян Феодоров Пашков, крестьянин, деревня Кармалка. Муж умершего: Максим Егоров Ампилогов, крестьянин, деревня Кармалки.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИНОААЛЬНО»\nTÁGTЬ RTOPÁN, БРАКОСОЧЕТÁВШ\nMÁnX\nПó\nКто вили порвчйтели.\n10.\nСела Ноно-Георгісаки кріне:\nВлись Бородинь, сврисфру\nрен-\nвородиньисвотифий\nневнетль.\nПияенич Ювисовк, Влет-\nдимісь Конылось м Сергпи\n1В-Коныноско.\nо —",
+    "localOcrWithSurnameLexicon": "АНО АЛЬНО»\nÁGT RTOPÁN, БРАКОСОЧЕТАВШ\nMÁnX\nКто вили порочители.\n10.\nСела Ново-Георгісаки прине:\nКлись Бородинь, скристру\nрен-\nвородинь и сватифий\nневлеть.\nПиления Юрисовк, Влет-\nдимісь Конылось м Сергпи\n1В Кониноско.\n0 —",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4fc46c18-58aa-4bfe-9b9f-3d262efb697d/0033-target-entry.jpg",
         "sha256": "4755fa163d2aec4fad68128c1f6519c1d41eadeb94a27175cb25c9f4a3400894"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fc46c18-58aa-4bfe-9b9f-3d262efb697d",
+        "scanNumber": 33,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fc46c18-58aa-4bfe-9b9f-3d262efb697d/0033-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fc46c18-58aa-4bfe-9b9f-3d262efb697d/0033-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "083eb89e41d65ab0f796e3a25893eadb028c49cc7f948fcaca473714865cda70",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fc46c18-58aa-4bfe-9b9f-3d262efb697d/0033-header.png",
+            "sha256": "da5adaa3335ae60cb76e7d5c5ac837fa6004176267e4647d0265225e9eae9503",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fc46c18-58aa-4bfe-9b9f-3d262efb697d/0033-target-entry.png",
+            "sha256": "13884d5a348240a8dce69bef15dcc558daf8333e582cd30fb3c54fc3a781ff1f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5402x4142",
+          "targetDimensions": "1444x1189",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Никита Ампилогов, село Преображенское. Поручитель: Михаил Филимошин, крестьянин, село Ново-Георгиевка.",
+    "fuzzyQuery": true
   }
 }

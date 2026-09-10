@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/7a3e1de0-2ab6-4922-87af-b3f824feb7ad/0176-target-entry.jpg",
         "sha256": "375ca231ecbd8bec457bd213087ef041d85743d4feccf7026c26c1a2c4d9bbef"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7a3e1de0-2ab6-4922-87af-b3f824feb7ad",
+        "scanNumber": 176,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7a3e1de0-2ab6-4922-87af-b3f824feb7ad/0176-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7a3e1de0-2ab6-4922-87af-b3f824feb7ad/0176-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9977e68ebd41d658d51e5fe8920917c424f0a0a3220b899dee47fe31fc52f821",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7a3e1de0-2ab6-4922-87af-b3f824feb7ad/0176-header.png",
+            "sha256": "5eec87e6afb619876f9bbdfa91a45aebe8320a0f679984d30136b1ad881deff6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7a3e1de0-2ab6-4922-87af-b3f824feb7ad/0176-target-entry.png",
+            "sha256": "0c64c9ef4c1a78c710cdf96fcbe47b5413857f3848fa702c2cf30ad29e15664a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6067x4722",
+          "targetDimensions": "1626x1452",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "КОЙ\nVNO\nТАЛЬНОЙ\nÍЄTЬ RTOPÁA, Ủ\nБРАКОСОЧЕТАВШІ\nПóл\nRто Били порбийтєли.\n3án\nПо жетивь - села 16), мпиловкки-\nКрествяне Діодорь\nМоскотоветь\nпрвяко.і",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Алексей Иванов Ампилогов, крестьянин, деревня Ново-Никольская. Невеста: Агафия Симеонова Бахметьева (Кирьякова), 18.",
+    "fuzzyQuery": true
   }
 }

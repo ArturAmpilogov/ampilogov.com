@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0093-target-entry.jpg",
         "sha256": "f658616bb106d0a5fc61e1da5249a639c7e4a702b03db6f4ef72bcaf62bdb84d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 93,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0093-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0093-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2a6427c2a585e408ded52ecfe43fcd92688aa7455908ea7487edc477acd6f468",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0093-header.png",
+            "sha256": "83340b1f102def61685e91f2e075c23ac6ff35695ef4bf85bfa87aa9528e23c7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0093-target-entry.png",
+            "sha256": "a84ae0c95140418f6d806a3ab3e7b49b3915a05c03a355a492106c5c74493059",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4796x3690",
+          "targetDimensions": "1206x1008",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ршаля\nКто килн порбинтЕлн.\nкO.\n1 Ми По-оненияВь: евла Мичайловки\nтові очкрествяне; Оеторь ммектвевь Кос-\nшоячтинь, Савети лістипавьмицтим,\nчояввеия. Наказій Никифоровь Півинк и\nпоновльсті: того же селакофряяне:\n3аN\nАипитькй расліюв\". Костину\nИвань Ненифоровх Пувин'.",
+    "localOcrWithSurnameLexicon": "Кто кили порвинтЕлн.\nко.\n1 Ми По-онениять: евла Михайловки\nтові оч крествяне; Осторь мменвев Кос-\nшотинь, Савти лістипавьмутим,\nчовни. Наказій Никифоровь Півинк и\nпоновльсті того же села кооряяно:\n3 aN\nДипитькй растіюв\". Костину\nИвань Ненифоров» Пурин'.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "...Швецов, Павел Павлов Мухортов, Василий Зиновиев Стрельников по невесте : деревни Кармалки крестьяне : Феодор Григориев Миляев, Арсентей Тимофеев Ампилогов.",
+    "fuzzyQuery": true
   }
 }

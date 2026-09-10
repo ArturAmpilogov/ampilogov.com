@@ -7,7 +7,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const capturedAt = "2026-09-10";
-const runName = "yandex-archive-ampilogov-global-fuzzy-2026-09-10";
+const runName = process.argv[2] || "yandex-archive-ampilogov-global-fuzzy-2026-09-10";
 const manifestPath = path.join(root, `data/genealogy/searches/${runName}.json`);
 const baseOcrPath = path.join(root, `data/genealogy/searches/${runName}-local-ocr.json`);
 const assistedOcrPath = path.join(root, `data/genealogy/searches/${runName}-local-ocr-assisted.json`);
@@ -190,13 +190,13 @@ for (const group of grouped.values()) {
     continue;
   }
 
-  const literal = archiveBlocks[0]?.text || base?.text || row.indexSnippet;
+  const literal = base?.text || assisted?.text || archiveBlocks[0]?.text || row.indexSnippet;
   const tokens = [...new Set([...familyTokens(literal), ...familyTokens(row.indexSnippet)])];
   const year = Number(row.date.match(/\d{4}/)?.[0]);
   const afterCutoff = year > 1950;
   const placeOnly = isPlaceOnly(literal, tokens);
   const falsePositive = tokens.length === 0 || placeOnly;
-  const publicCore = !afterCutoff && !falsePositive;
+  const publicCore = !afterCutoff && !falsePositive && confirmed;
   if (!confirmed) uncertain++;
   if (afterCutoff) privateAfterCutoff += group.length;
   if (falsePositive) rejected += group.length;
@@ -223,7 +223,7 @@ for (const group of grouped.values()) {
     },
     indexData: { querySnippet: row.indexSnippet, fuzzyQuery: true },
     isRecord: publicCore,
-    cardKind: falsePositive ? "research-material-rejected-fuzzy-hit" : afterCutoff ? "private-research-material-after-1950-cutoff" : "named-primary-record",
+    cardKind: falsePositive ? "research-material-rejected-fuzzy-hit" : afterCutoff ? "private-research-material-after-1950-cutoff" : confirmed ? "named-primary-record" : "research-material-unconfirmed-fuzzy-hit",
     publicCore,
     review: {
       status: confirmed ? "complete-primary-scan-collation-with-local-evidence" : "complete-but-reading-uncertain",

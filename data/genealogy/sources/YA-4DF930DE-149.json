@@ -25,21 +25,58 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "-\nТАОTЬ БТOРЛА, Ü БРАЕ\nW БРАКОСОЧВТА\nПéд\nKrò saio rayiéma",
+    "localOcrWithSurnameLexicon": "-\nПед",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0149-full-view.png",
-    "sha256": "c77f248ea98ea3e498037c56a92db1d716fd4cb535b3be55f7b58d639d4d5202",
+    "sha256": "3a2b5508723f7e9a9e55247763c3e904d8b45b760a6ccf616d165eba86fbfe06",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0149-header.png",
+        "sha256": "dbc73ebe973b1d73d6c4b7192bb781b8a924ef2be06639bcf0d2b518f14bc114",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0149-target-entry.png",
-        "sha256": "b964d6681fbd200279f77ed468af23347b037a7fb577392d7c00bce3f2fb9ff4"
+        "sha256": "8645999b8d08224c5557c6ecdefa0b39bc79a80deac761e4c4460e5cb1726a12",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "4df930de-a499-495f-820d-2eb4d8bb8d77",
+    "scanNumber": 149,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0149-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x836",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Феодор Петров Ампилогов, крестьянин, деревня Козгайка. Поручитель: Василий Михайлов Богатырев, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

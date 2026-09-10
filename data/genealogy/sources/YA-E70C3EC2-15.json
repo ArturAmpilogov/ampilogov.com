@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-target-entry.jpg",
         "sha256": "1258dc05626b1796b30a6fbb62719c161fd4de22b364a604f7b68479531daffc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
+        "scanNumber": 15,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "000188741b9f322298880e7090239705b20f2f7236761ae5249e46e71b29d3f1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-header.png",
+            "sha256": "08143a96b89282608b43da554dbc48d2ce77e94da97c2f0ac1c2c4eaf33857f5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-target-entry.png",
+            "sha256": "6ce8b7dc02db9c45a69ba1cb8c40dca6f9e8b6cd1e20d5a4a32b4178b91419b8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6022x4798",
+          "targetDimensions": "1799x1158",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "вославнтя.\nСвященнико вашв Динтрті\nДиапона Леея ЛаниФовитоС\nСела Гаргіовки Кристьянив\nв.\nУаенній Вaсиmівь Дтадуни\nивинанная зеска его Дарвя\nРипатова; оба правояла\nвноче.\nCfaegenxues Cnzd Pu compiele\nDía nonz Pals NonnS Sieeen",
+    "localOcrWithSurnameLexicon": "вославная.\nСвященнико ваша Динарті\nСела Гаргівки Кристьянив\nв.\nанній Васиів Драдуни\nивинанная заска его Дарви\nРинатова; оба правосла\nв ноче.\n@la genes Cand Bu compete\nDía nonz Pala NonuS Sieeen",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Пераскева Филиппова Ампилогова. ... Отец: Филипп Феодоров Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

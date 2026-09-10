@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0099-target-entry.jpg",
         "sha256": "6e195a8eba1df212fc83dd80770d372f6714a2c3566149d3e0cb49899e5a7812"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 99,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0099-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0099-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "864a2081d1243a7b0f8e08f6f0b82f5f7ab4b175a0319de4cf087609574e1a4b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0099-header.png",
+            "sha256": "4e6bdc2f3ce9f69559471424330d14623439e03364720dd808eeefd4082a68ad",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0099-target-entry.png",
+            "sha256": "e36584c4d609c632eefc3ab5b052c4d4f53d846140305a42baa060c0171fe664",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4755x3690",
+          "targetDimensions": "1312x1035",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ROTD\nТИПОГРА-\nHОA\n«ЛЬНОЙ\nІЛЄTЬ ВТОРÁД, ỦБРАВОСОЧСТЛЕ\nuánx\nПóдпи\nКто кили порбчиткли.\nо.\nЗánи:н",
+    "localOcrWithSurnameLexicon": "ROND\nТИПОГРА-\nHOA\n«ЛЬНОЙ\nІДЕТЬ ВТОРД, БРАВОСОЧЕТЛЕ\nuánx\nПодпи\nКто кили поручители.\nо.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Алексей Агафонов Ампилогов, крестьянин, деревня Кармалки. Поручитель: Павел Филиппов Есаенко, крестьянин, село Михайловское.",
+    "fuzzyQuery": true
   }
 }

@@ -51,7 +51,14 @@
     "status": "partial-primary-scan-transcription",
     "literal": "Февраль 1895 года. «Села Абрамовки крестьянинъ Ѳеодоръ Тимоѳеевъ Ампилоговъ», 70 лет; причина смерти читается как «отъ боли въ спинѣ». Указаны священник Константин Татищев, диакон Корнилий Модестов и псаломщик Алексей Стефанов Татищев. Числа смерти и погребения в текущем локальном фрагменте не различаются надёжно.",
     "modernInterpretation": "В феврале 1895 года умер 70-летний Фёдор Тимофеевич Ампилогов, крестьянин села Абрамовки. Совпадение полного имени, возраста и биографической последовательности подтверждает его тождество с P0793, родившимся в 1841 году. Акт не содержит формулы о переселении; самостоятельный маршрут и новая точка карты не создаются.",
-    "indexNote": "Поисковый текст Яндекс Архива использован для навигации по листу. Имя, возраст, место и причина перепроверены визуально на открытом скане; точные числа не нормализованы без чистой увеличенной локальной копии."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ракиви вочв Аsена\nСиеннин Канараnyuns M ктзаще\nДіаконь Корнилій Модссуєв'ь,\nИттого вг фревраяв мвающь умерно муррясниь\nОвмщанника Кинеанутн Тауицед\nДгалнті\nбоаминлныИ ГО\n2\nСла Атрашовки кретряини Стриіта ТКурова\n1нодт\nОвнинникова свинг Ксобара\nСекацаньнко Колсуанулич Татицев)",
+    "localOcrWithSurnameLexicon": "ракови вочь Алена\nДіаконь Корнилій Модосувь,\nИтого в феврая? мвающь умерно мурасниь\nСвищанника Кинанулн Тарицед\nгалоні\n2\nСела Абрамовки протрятни Стриво ТКурова\nОвнинникова свинг Особора",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -63,16 +70,57 @@
         "sha256": "08a167ecf7e0c0efbb9d336660e3863db91a0fea5c416de10f3c52b38206922d",
         "description": "Локальный фрагмент строки: достаточен для контекста листа, но недостаточен для чтения чисел даты."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "85746cac-ae9b-43d8-870f-c07d136eefbb",
+        "scanNumber": 35,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0035-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0035-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9bfbbdb018cc2bf7058a5b5d437ecdddd4f1917f723e046f037cf811662629e2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0035-header.png",
+            "sha256": "34ef5abb85a25e688c5e3875b4b120ac227a70d450f33879647899489649d811",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0035-target-entry.png",
+            "sha256": "978cebd98dc6e6e5408650bf6e01678ba3d73baaa545012e0b5bdb44f30e3345",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5382x4157",
+          "targetDimensions": "1547x838",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-partially-verified",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high-for-name-age-place-and-cause-medium-for-record-layout",
     "unresolved": [
       "Повторно сохранить чистый увеличенный фрагмент целой строки, без интерфейса Яндекса, чтобы различить точные числа смерти и погребения.",
-      "До географической проверки Абрамовки не создавать по этому акту отдельную точку карты."
+      "До географической проверки Абрамовки не создавать по этому акту отдельную точку карты.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ]
   },
   "isRecord": true,
-  "cardKind": "primary-record"
+  "cardKind": "primary-record",
+  "indexData": {
+    "querySnippet": "Отец умершего: Тимофей Ампилогов, крестьянин, село Абрамовка. ... Умерший: Феодор Тимофеев Ампилогов, 70.",
+    "fuzzyQuery": true
+  }
 }

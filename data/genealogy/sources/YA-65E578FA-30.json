@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "muhin Aerescemupose\nГоновы эоковк- правосила\nПорявцева пгравосию.\nвниго виролстовійвмня\nВисего віьройсповиви\n2л.\nПервьяй брикомь.\nны первымй бросикось.,\nСвяжен Кіакун\nзаликит\nРіаконь Алексинирч Вепловь\nімкань Ааможичь]\n4\nАмпимо ковль!\nо вчл\nртыщвильеяць было-повеничамо браровь: 2\nСвятснт, Кикdур:",
+    "localOcrWithSurnameLexicon": "Гоновы Поковк правосила\nПорявцева правосла.\nвниго виростовій мня\nВисего вібройсновиви\n2л.\nПервьяй брикомь.\nна первыми броскость.\nСвяжена Кіку\nзаликит\nДіаконь Алексани рі Теплові\nінкань Ааможич 1\n4\nАмпимо ковле!\nо вчл\nртутьеяць было-повенчало браковь: 2",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0030-target-entry.jpg",
         "sha256": "ff13e7b5fecfc2e4ef5299ad5697afad83570adc47787ed46696f7f6b26fa65e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 30,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0030-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0030-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8333345bafcb63a955bf48f398667493a691993d5d5622472a0e7c0163878488",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0030-header.png",
+            "sha256": "eeef8c45bd17b7e790e960ab63e72f9c6ae217ccbca39943c78da5e4a6686a82",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0030-target-entry.png",
+            "sha256": "c098428c10c417aa9f8d9c54ff81a5d53987a2544fe51588c6e45d0bfb25c0c1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5393x4229",
+          "targetDimensions": "1779x804",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "По невесте того же села крестьяне: Евдоким Гребеньков и Вавил Шеин. Священни Клавдий Кашкин Диакон Александр Теплов Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true
   }
 }

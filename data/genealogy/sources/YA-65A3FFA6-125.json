@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Оренбургскаго гразда, Михиловский\nволостии доревми Карталича-\nна Деодорова Ампилогово\nCecrapemenes ether, Прomermen\nДіакона Михакл. Тихомирова\nПолгрт, сыия. Френвурчского ложжцах\nmreucя Aроситiя Сплбдоно2а\n-.\n/2.\nГригорнява -\nChaujemnra Oaxaa Arizng",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/65a3ffa6-72fb-41dd-bea6-5b938a8df968/0125-target-entry.jpg",
         "sha256": "6dfde0bb45f2a3911387bfd3d4a28595a6541afd6a915c1268999836ad66c394"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65a3ffa6-72fb-41dd-bea6-5b938a8df968",
+        "scanNumber": 125,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65a3ffa6-72fb-41dd-bea6-5b938a8df968/0125-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65a3ffa6-72fb-41dd-bea6-5b938a8df968/0125-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b132ba7a3221b6ac88b4e95754a4af00dc9eabbc22196c84695f10b00ca11bcf",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65a3ffa6-72fb-41dd-bea6-5b938a8df968/0125-header.png",
+            "sha256": "865eb76d62bc2bdd2d87f5dc6a415df8ca34d3478936bb53efee4b2f45004a57",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65a3ffa6-72fb-41dd-bea6-5b938a8df968/0125-target-entry.png",
+            "sha256": "f003b0ab66ceb95da7c0a7f9d9f82e2d6dd9b71be603353104dfff046b6af3c4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4993x3949",
+          "targetDimensions": "1522x865",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Федоров Ампилогов, крестьянин, Оренбургский уезд, Михайловская волость, деревня Кармалы.",
+    "fuzzyQuery": true
   }
 }

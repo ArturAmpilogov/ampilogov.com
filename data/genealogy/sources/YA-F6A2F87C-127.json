@@ -20,8 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0127-target-entry.jpg",
         "sha256": "c9590d0181b1a97f35f0e10557ef13c65c7af07c66b4d546c9737ac55d6ea347"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 127,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0127-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0127-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "79546616bc45d8dcc6e56afe128395b7fce8fe196fccdd63f0220290f8111545",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0127-header.png",
+            "sha256": "bf2c6e555773489c0a9ba0aa952c5d533b2f8bcfa80bed71cf4b437b0c97cc45",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0127-target-entry.png",
+            "sha256": "4d2b5ad8ab497e5ccacc3dc8c45333ecc21aab926d7f5987fad3d580c5cf8cb1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2355x3703",
+          "targetDimensions": "1200x704",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
-  "transcription":{"status":"needs-recapture-before-family-record","literal":"Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.","modernInterpretation":"Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.","indexNote":"Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."},
-  "review":{"status":"needs-recapture-before-family-record","transcriptionConfidence":"low"}
+  "transcription": {
+    "status": "needs-recapture-before-family-record",
+    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ола лиманновии преильянини, Ниволкя\nселирилнс а рноо, аввири\nмв.\nУсалолицин Николай /счаевь.\nСеа минтинойьі пресиьячии, МиВаки\nнесь бошикави.\nй dвираж\nРвивиземкемер /\nMumoo ln\nсаломщик! Николой Нечась\nэременного Оривпрачекию Верща кми",
+    "localOcrWithSurnameLexicon": "Ола лиманновии пресльянини, Николки\nмв.\nУсалолицин Николай / счаевь.\n2 Ска ментинойні пресльяний, Микон\n1.\nнесь бошикави.\nMu moo lu\nсаломщик! Николой Нечась\nвременного Орид прачекию перца кми",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "review": {
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "фей Назаров Ампилогов. ... Отец умершего: Тимофей Назаров Ампилогов, отставной солдат, деревня Кармалки.",
+    "fuzzyQuery": true
+  }
 }

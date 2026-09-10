@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села Гамалнивка Дижсиннй сонзар-\nГрчигьгнй Михайілнея Ивaновs\nи его мини Стифинийа Нанфиина,\nправослатнни\nСяцанs chiamaut teucdacteants\nПсаломжикь ИвалгР, салов\nяла Самамтивки КлистьМит Нета\nДедовов Мамонтов и ето мелав\"\nсвкилина Алеманблова почаво →",
+    "localOcrWithSurnameLexicon": "Села Гамалнивка Дипиный солда)-\nГригоні Михайло Ивaновs\nи его мени Стифинита Панфилна,\nправославни\ngas chiamant tucatents\nПсаломщика ИвангР, салов\nяла Самамтивки КлистьМит Нета\nДедовой Мамонтов и ето мелов\"\nАкилин. Алеманблова полаво →",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0257-target-entry.jpg",
         "sha256": "bf773a50ffadf83fafffe53411e238026c9074355932e283dd2d539ad2515417"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5a9f0e21-dfa3-408c-add7-ef0803d433d5",
+        "scanNumber": 257,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0257-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0257-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7f46e50b0b66fffa662768face60fe48227c4c27a2da3aa4f7ffe3959e2179bc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0257-header.png",
+            "sha256": "4ca42ae94e82d9ab4bd79040eef9807b795927bc7e2a3e322fb9db9056964aa4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0257-target-entry.png",
+            "sha256": "f099752630a541992a109e6c9eb55beb75986feb56d5ce1ee739c00dacf13933",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5853x4659",
+          "targetDimensions": "1703x1056",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец: Гавриил Трифонов Ампилогов, запасный солдат, село Гамалеевка. Отец: Феодор Павлов Михайлов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

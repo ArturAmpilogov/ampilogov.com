@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0162-target-entry.jpg",
         "sha256": "310f1e8052804815c558300cb9d76dc1a4a5a3a7321a8bdd8aaea48e08c19d6c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "95266788-5b94-4341-bc88-6f61e1bf4ef3",
+        "scanNumber": 162,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0162-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0162-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "237a6b4dc74f34eff722807e4e71aa1a760d5dd230b5a74e64c766fa808aad36",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0162-header.png",
+            "sha256": "ae22d6c4cf21162049270cb7c9f1efc15221900f81151a665e5d3b82b33cf5a0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0162-target-entry.png",
+            "sha256": "167b8c7c673d1f22535e3a29c2c0a8f3ee15b5c2128cc7a8e090edee696682f8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x1585",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "птданія, первым вра\n28\nтотерей\nлакани\n12.\nСевасто польски ку\nпеуч Оейорь Димитрі\nевь Сабсай; первымь\nбраколи, православного\nгоповлданія\n30:\nПратогерій Вhюдaмі\nлакаци\nСер\n12\nчудской губернін, Рвіль\nскаго грьзба, петровской\nволости вер. (чефрронової\nкрестьянинь. Михаиль\nАлексантров. Некрасовь;",
+    "localOcrWithSurnameLexicon": "поданія, первым вра\n28\nтатерей\nлакани\n12.\nСевасто польски ку\nпеуч Осмоть Димитрі\nевь Савсай; первымь\nбраколи, православного\nгоповиданія\n30:\nПротогерій Влюджмі\nлаками\nСер\n12\nчудской губерній, Ріль\nскаго грьзба, петровской\nволости вер. (афронової\nкрестьянинь. Михаиль\nАлексантров. Некрасовь;",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Карп Владимиров Ампилогов, уволенный в запас рядовой из крестьян, Орловская губерния, Городищенская волость, село Людское, 28.",
+    "fuzzyQuery": true
   }
 }

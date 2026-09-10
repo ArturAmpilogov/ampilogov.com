@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0015-target-entry.jpg",
         "sha256": "f4e754b2eae0035fee595c4b8eeb32902680e4a1b96531bbac848ddc5950a26b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "95266788-5b94-4341-bc88-6f61e1bf4ef3",
+        "scanNumber": 15,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0015-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0015-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "38d1db0e61dfded5772115fd8849a828881d36285ad31dc079b1bcd0b6db4893",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0015-header.png",
+            "sha256": "33772fd9e572f4fac2878bd88e26ee4d1febbdb40e1828e188e8e167ece71427",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/95266788-5b94-4341-bc88-6f61e1bf4ef3/0015-target-entry.png",
+            "sha256": "90a758135eb691879214ff0599e7e67a59f62dd6e0522e496a8088ec24de29d1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x944",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Отстаьной писарь Рапове Їзси-\nФовь Рочсанскі иісела Укоми-\nнаго во залась рядоваю Смли\nДі\nПарамісьа вабичека.\nмастовіииа.\nли\nФа\nсвасттнескио лиВщаним\nВас\n3 Гавриинь Пийзові Се-\nменюшкинь И счемо Ревасті-\nпольскаг сильщанима лінна\nКі\nНикифорово бездупавага\nenin",
+    "localOcrWithSurnameLexicon": "Отстаьний писарь Ракове Іси-\nни,\nФов Роксански піста Укоми-\nнаго во залась рядоваю Сили\nДі\nПараміста в абичека.\nмастовина.\nли\nФа\nсвасттнеских лиВщаним\nВас\n3 Гавринь Пейзові Се-\nменюшкинь И чемо Севасті-\nпольскай сильщанима ління\nКі\nНикифорово бездупавага\nemin",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Петр Владимиров Ампилогов, уволенный в запас фейерверкер. Крёстный отец: Гавриил Петров Семенюшкин, Севастопольский мещанин.",
+    "fuzzyQuery": true
   }
 }

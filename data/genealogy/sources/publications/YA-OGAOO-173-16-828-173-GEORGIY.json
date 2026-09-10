@@ -69,49 +69,66 @@
   "transcription": {
     "status": "complete",
     "literal": "Апрѣль. Мужской счёт № 31. 17 родился, 19 крещён. Георгій. Села Зобова крестьянинъ Степанъ Андреевъ Анпилоговъ и законная его жена Евгенія Леонтьева; оба православные. Деревни Кутыевки крестьянинъ Павелъ Леонтьевъ Капишевъ и крестьянская жена Наталья Андреева Исаева. Священникъ Іоаннъ Поповъ, Діаконъ Іоаннъ Гуменскій.",
-    "modernInterpretation": "17 апреля 1892 года у крестьян села Зобова Степана Андреевича Анпилогова и Евгении Леонтьевны родился сын Георгий; крещён 19 апреля."
+    "modernInterpretation": "17 апреля 1892 года у крестьян села Зобова Степана Андреевича Анпилогова и Евгении Леонтьевны родился сын Георгий; крещён 19 апреля.",
+    "localOcr": "Села Зтбова крест атм Стеталь\nАпарет китытси Захонная ел жетав\nЕвчетя Лекнтква, нба правславная -\nСвяшенник Збаннг Ноповго\ntanare Jenrrs Aumenenne\n41\nСела Знкка крествянни 3 риптрій\nSаlтud те 3олазнай е\nотен Eвconenия @eторiва, на траво",
+    "localOcrWithSurnameLexicon": "Села Зова крест ати Статаль\nЕветя Ленитва, нба правелавная -\nСвашенник Званна Наповго\nHanar Jeannes Annerenne\n41\nСела Знака крествани 3 ригорий",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Поисковый сниппет показывает только родителей и духовенство. Полная строка устанавливает имя ребёнка, даты, номер записи и обоих восприемников."
+    "warning": "Поисковый сниппет показывает только родителей и духовенство. Полная строка устанавливает имя ребёнка, даты, номер записи и обоих восприемников.",
+    "querySnippet": "Села Зобова крестьянин Степан Андреев Анпилогов и законная его жена Евгения Леонтьева; оба православные. ... Родившийся: Георгий Степанов Анпилогов.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/126f234c-927d-4619-94a3-da47c5f6fde0/0173-full-view.png",
-    "capturedAt": "2026-09-01",
+    "capturedAt": "2026-09-10",
     "sha256": "62a28aa9a5f775fab7165bfa2ab767fd9802c75ed3e714bfd69fa3c4e9cabbfd",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/126f234c-927d-4619-94a3-da47c5f6fde0/0173-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/126f234c-927d-4619-94a3-da47c5f6fde0/0173-header.png",
         "sha256": "9b565be9900fb904f2b6beb4de091c72ee8da696227ad88a40e0ab7becb2485b",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/126f234c-927d-4619-94a3-da47c5f6fde0/0173-target-entry-document-center.png",
-        "sha256": "d560b0f4211291315cdf303a1af900317a9a8dac9889b9b3707577c1388f16e0",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/126f234c-927d-4619-94a3-da47c5f6fde0/0173-target-entry.png",
+        "sha256": "1f50b59c62db43d6226817d8a1965ef3e2d1eb23968355b8f746e7991a5180b3",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-01",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1288x1016",
+      "targetDimensions": "1200x606",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "126f234c-927d-4619-94a3-da47c5f6fde0",
+    "scanNumber": 173,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete",
     "identityResolution": "Родители сопоставлены с P1008 и P6970 по точным полным именам, селу Зобову и документированному браку 1882 года. Для сына создан новый профиль P8127. Нечёткое сопоставление не применялось.",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

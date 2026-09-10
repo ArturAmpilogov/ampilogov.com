@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0009-target-entry.jpg",
         "sha256": "a072f409063aab8fb7c513384ca22827f7933733409e8195dc5bca98affa5dc4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "85746cac-ae9b-43d8-870f-c07d136eefbb",
+        "scanNumber": 9,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0009-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0009-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9a223c319f81c09cce1e6ca35d71907c3e42acc03ad4a0fb1b9fd441c8f274ac",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0009-header.png",
+            "sha256": "bdc183444b41f28d2eef170675cb5862f173dfc503ae275d1dab21f8597c82ba",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/85746cac-ae9b-43d8-870f-c07d136eefbb/0009-target-entry.png",
+            "sha256": "da07b5ad59666a84e32d2a0ce2bb5eafc3e4fed73cf5e5fd92a8c57627e53b56",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5448x4182",
+          "targetDimensions": "1598x1016",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "сгакранника Мануан\nкупків пірицем\nK\nДrakenь Rasmaiik cogeofais\nСеми Абрашивки Кренуваним Фвактфер Анех\nсантрив Шимпера изаканныя sso oano ell a\nКина бвлековава обатривоснавнне\nОсщаннинг вКикоранрень Тауицеф\nДіаконй фарниліи Мобесчові\nСии Абрашовки kраіlnннs Васніт\nQ Дnов Peumunоaв aezaхaннoя onо olнa\nАгафрва Мванова аба тривосиване\nсвякренника Кимеранунн Тауницв\nДіаконь Коо .о",
+    "localOcrWithSurnameLexicon": "сакранника Мануан\nкупів прищем\nK\nDrakens Rasmaiik cogeofais\nСеми Абрашивки Кренуваним Фактфер Анех\nсантрив Шимпера «законния sso dano ill a\nрина блековава обатривоснаване\nОбщеннинг Киноранрень Талицеф\nДіакона форнили Мобичові\nр В\nСии Абрашовки ранння Васніт\nQ Дов Peumundas aezasano on olna\nАгафрва Иванова аба тривосивани\nДіаконь Ко .о",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Васильев Ампилогов. ... Отец: Василий Федотов Ампилогов, крестьянин, село Абрамовка.",
+    "fuzzyQuery": true
   }
 }

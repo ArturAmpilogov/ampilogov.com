@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ба преаославные.\nСвященники Н. СптайсКий.\nРімконь В. Муратов\nчисій. Сола Ново- Георгіевоги клінк\nбфремь Деоктистовіо\nПолланост и Залонная\nМенеего Анна Иитина\nоба прасославнне\nсвященники\n71. Стмайсkій\nDiakart 13. Mраnово\n/іъ.\nСели Ново-Геаргіськи крена\nвергій Могаеесь офимоев-\nи Запонная мснаего\nронясменіатова - обо\nприсославные.\nсвященники\nН Симайский?",
+    "localOcrWithSurnameLexicon": "ба просославные.\nСвященники Н. СплайсКий.\nРімконь В. Муратов\nлисій. Села Ново - Георгієвоги клінк\nЕфремь Деоктистовіо\nПоллиност и Залонная\nМеннего Анна Литина\nоба православнне\nсвященники\n71. Силайскій\nDinkart 13. Man\n/ів.\nСели Ново-Геаргіськи крена\nсергій Можаеесь офиноев-\nи Запонная мена его\nроня сменіанова - обо\nприсославные.\nсвященники",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0081-target-entry.jpg",
         "sha256": "ee10aa141ea6aa72cc51f0e3db19c71d92b9c8ebf8224ed9c6108f38d2bad7a5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5357b4d8-10f9-47d5-be8d-46afb8441d70",
+        "scanNumber": 81,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0081-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0081-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c3c94e0412bd19a0331307c2011602778f75509db0c654d5e30acae480be6be4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0081-header.png",
+            "sha256": "9f97ce99bac44a2e87d1c34c37466bce43b8586c6933d49830b4e19ec526c6a2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0081-target-entry.png",
+            "sha256": "33e9d9f0a0b39af4ce22ea96e99dd2959eaea9909c758649565ccfe4e75673a5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4991x3964",
+          "targetDimensions": "1525x1164",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Никитин Ампилогов. ... Отец: Никита Петров Ампилогов, крестьянин, село Ново-Георгиевка.",
+    "fuzzyQuery": true
   }
 }

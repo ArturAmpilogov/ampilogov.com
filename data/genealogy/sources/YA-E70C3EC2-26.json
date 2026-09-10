@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0026-target-entry.jpg",
         "sha256": "657df07a1ec3be2a730c5efbbe885f6ea462d7dd6ea95ac1e1fbae3b06af2461"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
+        "scanNumber": 26,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0026-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0026-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a8aec7f38d00986c4759aadb6f81ba66d856fe373c1b5733579667a9e9b37642",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0026-header.png",
+            "sha256": "e4cfe916a0308f55c46a0a51fb28d14440ebbabb8434d6103ac311d53512da4f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0026-target-entry.png",
+            "sha256": "bf74535dd6d3df03887d3b0440f9e6ed93f73f3ca634d8074b000253bca1550d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6079x4798",
+          "targetDimensions": "1807x1016",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "гаконная оена пго рарвя\nСмельянова; егда правомаф\n1бче.\nС/ященника Рваша Роинтрі\nФraкоu2 ЛЛr Ла.9. вжич\nои.\nСела Георгіївки Кристьяттив\nХожниь Михайловь Спркова\nгважинная мищца его садора\nАлекопса; Оба правосвав-\n1мня\nОлани Днин\nДжщенника",
+    "localOcrWithSurnameLexicon": "законная жена его рарья\nСмельянова; егда правомат\n1вче.\nСвященника Рвана Риттірі\nхи.\nСела Георгіївки Кристьятни\nХотиь Михайловь Спркова\nгватенная мища его садора\nАлекота; Оба правосвав -\nОнани Знан\nВ женика\nприс",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Николай Феодоров Ампилогов. Родившийся: Иоанн Михайлов Тимохин. ... Отец: Феодор Матфиев Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

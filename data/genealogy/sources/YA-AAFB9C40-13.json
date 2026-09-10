@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0013-target-entry.jpg",
         "sha256": "b20b6dcdb96a39f73fba7d1b222497098b3ad99e2382c4f33f0328aeb24ee9b3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44",
+        "scanNumber": 13,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0013-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0013-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "edc163ba46f05cf9ef57c5e89ee884c57aea87aa98a9118e5e94dd4cde8f89a9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0013-header.png",
+            "sha256": "72fa9d24d40665ecf51cf87b14b881dadf934cb752a8bcc65445a848342fffb7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/aafb9c40-cb1f-4ebe-9126-67d3c5f0fe44/0013-target-entry.png",
+            "sha256": "ec6c810cb37cf9b564e2d8d3e2a8bf5ab55604156a9eae4189f02d25099208a4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5745x4609",
+          "targetDimensions": "1628x1053",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ВСКОЙ\nАТНПОГРАФ\nTOAA MÁCTH NẢPHAA U\nЗвáніє, ймА, сбтчество й фамнлтА\nКто соБ\nБоспріємникШкz.",
+    "localOcrWithSurnameLexicon": "ВСКОЙ\nТИПОГРАФ\nTOA MÁCTH NẢP HAA U\nЗваніє, ймА, сотчество й фамнА\nКто соБ\nБоспріємникШк.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "того же села кр. Феодор Михайлов Ампилогов и женка Анастасия Иванова Конина. ... Крёстный отец: Феодор Михайлов Ампилогов, крестьянин, та же деревня.",
+    "fuzzyQuery": true
   }
 }

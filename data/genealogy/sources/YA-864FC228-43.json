@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0043-target-entry.jpg",
         "sha256": "a5555f01c61bbcbc4fcce3a731d2bb775e19e8656e80f47dfb0eb51c9297d848"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "864fc228-fc2b-4406-a99e-21d5103bf0c7",
+        "scanNumber": 43,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0043-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0043-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "501c6358dbdc9164126fbaa7eea69991f419a2ecb46220bc62ad45ab32631158",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0043-header.png",
+            "sha256": "d1bfc91ebe52775c87d6f7062ac47d23b9014eb4669e50217b62b6b78197a2ef",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0043-target-entry.png",
+            "sha256": "3b47fde500a117fb65998e26dd40714141689b0338bb4cef9e013ce6ddb8b12d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x1814",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СИПОГРАФІН\nСУЛО ДЛИНОЕ\nМЕТРИЧЕСКОЇ\n36\nЗбаніє, йма, сотчство, фалиліл\nЛБтà\nМ-Есацх\nй квронспов'єданіє жениуа,\nжЕнихА.\nй день.\nй котóрылих кракомх.\nlnbops\nСотомизей вода\n30\nпась оагата на\nчегорь 2 ст. Миронь\nАновловь Лебсцв\nправославного мепо\nвжерану перваиь\n28\nвракомь\n1",
+    "localOcrWithSurnameLexicon": "СИПОГРАФІН\nМЕТРИЧЕСКОЇ\n36\nЗбаніє, йма, сотество, фалиліл\nЛЕта\nМ-Ксацх\nй коронсповʼєданіє жениха,\nй день.\nй которымих бракомх.\nСтолицей вода\n30\nпась салата на\nчегорь 2 ст. Миронь\nАковловь Лейсов\nправославного мено\nварану первашь\n28\nвракомь\n1",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Григорий Иоаковлев Ампилогов, запасный бомбардир, Курская губерния, Фатежский уезд, Поныровская волость, деревня Прилеп, 31.",
+    "fuzzyQuery": true
   }
 }

@@ -43,51 +43,67 @@
   "transcription": {
     "status": "complete-with-place-uncertainty",
     "literal": "МЕТРИЧЕСКОЙ КНИГИ НА 1893 ГОДЪ, ЧАСТЬ ТРЕТЬЯ, О УМЕРШИХЪ. Іюль. Мужской счёт № 42. 22 умеръ, 24 погребёнъ. Оренбургской губерніи и уѣзда Димитріевской волости [того же села] крестьянинъ Иванъ Анпилоговъ, 58 лѣтъ, отъ чахотки. Священникъ Гавріилъ Петропавловъ съ Діакономъ Михаиломъ Маляровскимъ и Псаломщикомъ Василіемъ Михайловымъ; на мѣстномъ кладбищѣ.",
-    "modernInterpretation": "22 июля 1893 года умер от чахотки 58-летний крестьянин Дмитриевской волости Иван Анпилогов; погребён 24 июля на местном кладбище станицы Татищевской."
+    "modernInterpretation": "22 июля 1893 года умер от чахотки 58-летний крестьянин Дмитриевской волости Иван Анпилогов; погребён 24 июля на местном кладбище станицы Татищевской.",
+    "localOcr": "иги на 1893\nМОТРЙЧООКОЙ КИ\nЛіта\nЗüнь, Eaa druтк в фasia Naи\nН нунии\nwcw.mar-tnie\nPaaawi\nGЕNEM\nSДAE.\nieatei art\ngлicke t",
+    "localOcrWithSurnameLexicon": "иги на 1893\nМОТРЙЧООКОЙ КИ\nЛіта\nЗінь, Eaa dru в фна Naa\nwcw.mar-tinie\nPaaawi\nGENEM\nSAAE.\nieatei art\ntadi\ngnic ke t",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Сниппет передаёт место как «то же село», не называя его. На строке уверенно читаются Дмитриевская волость и Оренбургский уезд, но название исходного села не восстанавливалось по предположению."
+    "warning": "Сниппет передаёт место как «то же село», не называя его. На строке уверенно читаются Дмитриевская волость и Оренбургский уезд, но название исходного села не восстанавливалось по предположению.",
+    "querySnippet": "Умерший: Иван Анпилогов, крестьянин, Оренбургская губерния, Димитровский уезд, Димитриевская волость, то же село, 58.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/39b32e0a-f830-43ef-b036-1228468f95b6/0278-full-view.png",
-    "capturedAt": "2026-09-03",
+    "capturedAt": "2026-09-10",
     "sha256": "5fc17aac366cfbd725f657798e7eaa6742d2a135b15533345f8c0b7212895204",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/39b32e0a-f830-43ef-b036-1228468f95b6/0278-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/39b32e0a-f830-43ef-b036-1228468f95b6/0278-header.png",
         "sha256": "81f54087fdb1fdf8911d578242708a5b9a3ea14121f9eb3349891e98eb636f23",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/39b32e0a-f830-43ef-b036-1228468f95b6/0278-target-entry-document-ivan.png",
-        "sha256": "2379629562eede125014d92d5bbbc8b6c982d7918ff19b03ec9bacdd932c865e",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/39b32e0a-f830-43ef-b036-1228468f95b6/0278-target-entry.png",
+        "sha256": "13bb13c19ad6194d352a3f6389896184be676e009527a4c62a4d3d491595d4d6",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "829x656",
+      "targetDimensions": "1200x736",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "39b32e0a-f830-43ef-b036-1228468f95b6",
+    "scanNumber": 278,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-with-unresolved-identity",
     "identityResolution": "Для умершего создан отдельный P8162. Документ не называет отчество, супругу или точное исходное село; поэтому он не объединён с P2248, P7910, отцом P8161 или иным Иваном Анпилоговым. Нечёткое сопоставление не применялось.",
     "unresolved": [
-      "Точная личность умершего и название его исходного села остаются неустановленными."
+      "Точная личность умершего и название его исходного села остаются неустановленными.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

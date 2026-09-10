@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/732012d9-d6f2-45df-9c5c-4f212f277647/0277-target-entry.jpg",
         "sha256": "66282578d91dc5221823a011d8fbc7cef0de151cef1fecf71ba364e41101e51a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "732012d9-d6f2-45df-9c5c-4f212f277647",
+        "scanNumber": 277,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/732012d9-d6f2-45df-9c5c-4f212f277647/0277-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/732012d9-d6f2-45df-9c5c-4f212f277647/0277-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fe6f3e9cd02b3d890db54a27433a8ea10c0d0787ea4b87c4abaa7651f603708f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/732012d9-d6f2-45df-9c5c-4f212f277647/0277-header.png",
+            "sha256": "7d28bab5e23e47ca58bf7bdfe6fcbad2b2052f680c3acc3099cb7b868c59f289",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/732012d9-d6f2-45df-9c5c-4f212f277647/0277-target-entry.png",
+            "sha256": "5ac2f94fcbbddfad08e113845f32e3e1b35a1812ea1a950cd8dd2f79f65c082d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5671x4503",
+          "targetDimensions": "1697x1311",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОВСК\nСІОАДЛЦНОР\n1895₴\nЧЕСКОЙКНИГИНА\nЗваніє, ймА, сбтчЕство й фамнАА родитЕлей, й какóги\nIXCA.\nБ'кронспов*даніА.",
+    "localOcrWithSurnameLexicon": "МОСКОВСК\nСИНОДАЛЬНОР\n1895₴\nЧЕСКОЙ КНИГИ НА\nЗваніє, ймА, сотчЕство й фамнА родитЕлей, й какги\nІХСА.\n6 кронспов даніА.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Анисия Максимова Ампилогова. ... Отец: Максим Антонов Ампилогов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

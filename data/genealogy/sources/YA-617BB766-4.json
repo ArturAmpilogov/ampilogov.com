@@ -15,7 +15,15 @@
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются."
+    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
+    "localOcr": "Моожетосолначована \"\nДненгій Петроволями\nДискаач и поличьл жена\nМерда 2роерткова\nАнтенкливи.\nцогани посенамоеня,\nПавлич Данстаг свлти-и\nлогавч и мпщинекия\nдань дплвици іНарія ди\nсгитови вограскнсм.",
+    "localOcrWithSurnameLexicon": "Дненій Петроволями\nДискавч и поличья жена\nМерда 24 роерикова\nАнтенкливи.\nлоговч и мпщинения\nдинь довици і Нарія ди\nситови вограскисм.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "publicDisplay": false,
@@ -27,10 +35,53 @@
         "sha256": "4708b61b4bcb2f0c8468ea35c94524c26a63a82e70fce630938bf1e7321ef8fe",
         "description": "Локальный фрагмент, требующий качественного повторного захвата."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
+        "scanNumber": 4,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d242ae47a00aceb23e3f215787b4010610880996b2cc115ee8d6b23ef4b41254",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-header.png",
+            "sha256": "125a44043abffef31269bccca524e0109e026abc573d2128476b83e6e2f5a731",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-target-entry.png",
+            "sha256": "bdd605745f8954cfe9ad92c74bdf1686a8084681b4008f30c686cab8c6e1345f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5275x4220",
+          "targetDimensions": "1463x1011",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же поселка казак Павел Данилов Ампилогов и мещанская дочь девица Мария Филиппова Богрякова.",
+    "fuzzyQuery": true
   }
 }

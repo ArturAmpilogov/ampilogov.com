@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОКСКОЙ\nСИПОГРАФІЙ\nААЛЬОР\n1894\nМЄТРАЧЕСКОЙ КНИГН НА\nЛkT\nÉHh\nЗвáнте, йма, сотчестко й фамилтя оймéршаги.\nоýмЕри\nМбжеска.\nрЕБéніA.",
+    "localOcrWithSurnameLexicon": "ОСКОКСКОЙ\nСИПОГРАФІЙ\n1894\nМЕТРАЧЕСКОЙ КНИГИ НА\nÉHh\nЗванте, йма, сотчестко й фамилта оймершаги.\nМожеска.\nрЕБініА.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0046-target-entry.jpg",
         "sha256": "cc861100fa33db1025792effb14b7904eeb23012e8fd3a4ff4f71dd1fdbae452"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 46,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0046-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0046-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f80e281daf0176ccbf5a860baf185ffeaf41a8f8bfc437dd36b054574f10d5ba",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0046-header.png",
+            "sha256": "59cf589b118ca084b8a25903f6c6859a90ba294eecce646861bd06dcd2b7f9f2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0046-target-entry.png",
+            "sha256": "85214d33bee69a7533339c0db1528d8ebb9e8eacafcf7d86d78b3e8b99e666d4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5444x4254",
+          "targetDimensions": "1540x766",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов. Села Нижняго Гумбета крестьянина Осипа Григорьева Юмашева с. Васил Священник Клавдий Калинин.",
+    "fuzzyQuery": true
   }
 }

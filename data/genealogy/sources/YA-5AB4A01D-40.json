@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "писполажишемер рика зграйосныа\nСвяждент Алокців\nin Koxs ira xer repr Meo holo\nКиавезрийв Помножив Альпинаговч\nийт\nиеняго уміятя пребльений\nЄвсжилий Алексчева Мамлоковки миени\nегоМаріста /Іасилвева-оба 1 гравосилалвня\nвяжени АЛакдії\nСалиенкий\niо конч Аленсaм\no pr mrenkads\nДіапай Доклочей Амепилогова\nяг.\nела Пимнняго вумвела перобрьяний\"\nТеменв Оверимова Яніривчи лисаяти\nАнна вьиготвева бви Пракощааньно-\nдопленн",
+    "localOcrWithSurnameLexicon": "Свяждент Алокців\nin Roxs ira xer repr Meo holo\nменяго уміяти пребльений\nЄвсвиний Алексева Мамоковки лиса\nегоМаріста / Засилвева- оба 1 граносилалвня\nвяжени АЛандії\nСаленкий\nS pr menhads\nДіаний Домогт Ампилогова\nяг.\nела Пилиняго вулвена перобрьяний\"\nРеменв Оверимова Яніривчи лисаят\nАнна виготвева ови Пракощаанно-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0040-target-entry.jpg",
         "sha256": "ce107dfae2ee2d915eeba5aa4da04f871eb1c5c4e7ec35bed5553cba7c96fe56"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 40,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0040-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0040-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7ba03edbc4a46c7de6732260014f49e9b661096b24b75c89b55e0ed787a3b489",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0040-header.png",
+            "sha256": "56d0edb8ed1f0c4dcd46cd5263c6f2fd39fdd458d642d5da90800712321eeeb5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0040-target-entry.png",
+            "sha256": "b9a05d56bd1df64024bf1eab1a0e97d43460586b748070eecab7e4d746794255",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5028x3964",
+          "targetDimensions": "1526x1151",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Семен Евфимов Андреев и жена его Анна Григорьева оба православные.",
+    "fuzzyQuery": true
   }
 }

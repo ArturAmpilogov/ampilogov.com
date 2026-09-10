@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-entry.jpg",
         "sha256": "5155a6cab018e9891a007d0d3bef25d8c79e436177281eff25a725de9d849f26"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
+        "scanNumber": 8,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "074a98452bb6597e6818c5688722c8f56678ed84534eb639bcde450979da68a0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-header.png",
+            "sha256": "90428a24209594674ef9878d0dccaad878510980c322cbc4e616afee3a324060",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-entry.png",
+            "sha256": "9b536ea241c64bca4401f1f3631a03cb1580594bc5dd641f7e11118acb08a54f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4184x3156",
+          "targetDimensions": "1200x1171",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Статьи абракосочставинеся,\n-Вакичій\nкоn\nJю.л6.\nб.\nЖенияь Нимегоровекоигут.\nАрвамиського уечадя, 2е ваги-\nКинской волостасемя (3.а36\nяно кресплянькю ивинь\nВискллєвк Камашниковче,\n24л. 5 wi\nпрсавослывняго втаронетовне-\nЦенія, первьиь віракомч.",
+    "localOcrWithSurnameLexicon": "Статьи обракосочставинеся,\n- Вакичій\nкон\nб.\nЖения Нимегоровекогут.\nКарской волост семя 13..36\nяна крепляник. ивинь\nВискллєв Камашниковче,\n24л. 5 mi\nправославняго оторопетовые-\nЦенія, первних віракомч.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Стрелок 3 Финляндского стрелкового полка Михаил Алексеев Ампилогов православного вероисповедания, первым браком.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0022-target-entry.jpg",
         "sha256": "725924a363f2fc1cba3417e99af0e67df3d8b6fe241d7f8e162bd24b969b1401"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 22,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0022-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0022-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "921be82213763fbd4a015a8121e042a9d294bb06d736ef6a842f89f8bb7dd3dd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0022-header.png",
+            "sha256": "594e46402107339346a18db5b30ecc34d35f3ec17cfa962675e47c6326b81e41",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0022-target-entry.png",
+            "sha256": "3d07972ebc4dbe9dac75beeae2e94cd350427c44f6aee35ce13ef1738ead893d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5218x4277",
+          "targetDimensions": "1542x1127",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ные\nСвівщенники. Тимикей\n2 Мвуштва\nДіанень Мирани Богомовова\nена Микаплавни веросстіяним всинодожу.\nиванавь Ишутини шаканная ясена е\n(еобасія яковлета; аба правноаялте\nChehyennuns Mau eheyeant\nДіаконі, сКивашь Богамотова\nСеревна Кариаика крествянимя Почних.\nчо.\nХахайлова Мсшвирь и заканнен)\nНавайловч М/слверьи,\nего Зарвара Кузвлина; стаправоснах",
+    "localOcrWithSurnameLexicon": "ные\nСвівщенники. Тимикей\nДіанень Мирони Богомовова\nма Микаплавни веросстіяним всинодоу.\nивановь Ишутини маканная ясена его\n(еоосія яковлета; аба правноалте\nChehyennuns Mau eheyeant\nДіаноні, Кивать Богоматова\nСеревна Карманка крестяним я Почини.\nчо.\nХахайлова Матверь и заканнен)\nMaas\nНавайловь М/стверь и,\nего Зарвара Кузьмина; ста правоснах",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Иоанн Матвеев Ампилогов. ... Отец: Матвей Потапиев Ампилогов, крестьянин, деревня Карманка.",
+    "fuzzyQuery": true
   }
 }

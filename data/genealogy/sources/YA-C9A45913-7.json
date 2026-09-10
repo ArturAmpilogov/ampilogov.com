@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0007-target-entry.jpg",
         "sha256": "99a7b99811f3d8f9d7a2fe305341289ffada221688627dd0435b7b07f877d59c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 7,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0007-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0007-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "5befabfce991016f915a2e95741c374736ef8158ad091cc64aaaceb539b0d89e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0007-header.png",
+            "sha256": "fca986e2bc2f3be9b29a3e240db3e47b6d66fcc54d832ab3b898eb2d2883a50f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0007-target-entry.png",
+            "sha256": "3759eb1e9660e87b5eaaf61daead40d57557de4ecb1eef453f5b0ca6dced6909",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4999x4163",
+          "targetDimensions": "1377x899",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "мн-\nТогче сиа критьянинх Амвро-\nсиль Ивановь Гревцевь Шерсетьх- р\nка Марія Касьянова Спро.\nва\nста\nТего мес сеа Креатіянит варнек!\nг/іс\nонІсаь\nСебставч Перев'ь поррівица Менок\nнам\nпа. Осататова Перова.",
+    "localOcrWithSurnameLexicon": "мн-\nТог че сила крить янинх Амвро-\nсиль Иванов. Гревцевь Шерсетх- р\nка Марія Касьянова Спро.\nва\nста\nТего чес са Креатіяний Карне!\nонІст\nСейстав Перевʼя порівица Менок\nнам\nпра. Осататова Перова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Иван Филиппов Ампилогов и солдатка Иустиния Семенова Ковешникова. Псаломщик Алексей Стефанов Тимофей.",
+    "fuzzyQuery": true
   }
 }

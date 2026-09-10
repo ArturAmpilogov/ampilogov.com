@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0158-target-entry.jpg",
         "sha256": "5ccf1905e205c5f68960da9e60657dd6058d6e496e4a549b3b3b8327fab3d3c2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 158,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0158-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0158-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "14845542aa681c693f29e12c88056b7f9b218e3b95e5a6c39d894bd77f6a7028",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0158-header.png",
+            "sha256": "eb72af65e0ced5fa485c49478c5af27f5ef7cc3ea8f296f8a3e75b6cc9f8ca0f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0158-target-entry.png",
+            "sha256": "cd171bf29f660a05900a350527a4ae2f77d7994bda2115d499a1e735bb08269c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2340x3693",
+          "targetDimensions": "1345x754",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Cebenim.\nEска.\nбра.\nДеревни /Карихалки крествянина\n8.\nМирока вилитава Баловнека\nсиня Навель\n2 ное\nДвятенннн2 Тиликай Акуставр\nоганьбовь\nСела Мимойшовки Кроствянина славрепріо\n11.\nИгнатвека спелилова синь ,Пванін\nЗанан\nLLOI\nСвинкреннику плиооеенвустнк\nТахонь спиваний воголюбовь.\nДязанской гувернім, скотинского грора,\n12.",
+    "localOcrWithSurnameLexicon": "Debenim.\nбра.\nДеревни /Карихалки крествянина\n8.\nМирона вилитава Баловнека\nсиня Навель\n2 нод\nогоньбовь\nСела Малоймовки Кростянина лаврепрію\n11.\nгнатека сплова синь , вані7\nЗанен\nLLOI\nахонь спиваний воголюбовь.\nДязанской губернім, скотинского града,\n12.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Тимофеев Ампилогов, крестьянин, деревня Кармалки. ... Умерший: Илия Иванов Ампилогов, 2 недели.",
+    "fuzzyQuery": true
   }
 }

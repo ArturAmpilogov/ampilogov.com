@@ -38,41 +38,55 @@
   "transcription": {
     "status": "complete-with-unresolved-year-and-section",
     "literal": "№ 329. Василій Анпилоговъ. 25 лѣтъ.",
-    "modernInterpretation": "В исповедной ведомости Спасо-Божедомской церкви близ Пречистенки под № 329 записан 25-летний Василий Анпилогов."
+    "modernInterpretation": "В исповедной ведомости Спасо-Божедомской церкви близ Пречистенки под № 329 записан 25-летний Василий Анпилогов.",
+    "localOcr": "LIpAGE\nAsemn\nAAakaй",
+    "localOcrWithSurnameLexicon": "LIpAGE\nAsemn\nAAakaS",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Поисковый сниппет «26. 329. Василий Анпилогов» ошибочно присоединяет к целевой строке возраст 26 лет предыдущего лица — Василия Филиппова. После имени Василия Анпилогова в оригинале и OCR стоит возраст 25 лет. Каталог датирует всё многолетнее дело 1886–1908 годами, но точный год данного листа не указан."
+    "warning": "Поисковый сниппет «26. 329. Василий Анпилогов» ошибочно присоединяет к целевой строке возраст 26 лет предыдущего лица — Василия Филиппова. После имени Василия Анпилогова в оригинале и OCR стоит возраст 25 лет. Каталог датирует всё многолетнее дело 1886–1908 годами, но точный год данного листа не указан.",
+    "querySnippet": "26. 329. Василий Анпилогов.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/41116a74-46c7-4a10-8bd1-9e8262e215a5/0270-full-view.png",
-    "capturedAt": "2026-09-03",
+    "capturedAt": "2026-09-10",
     "sha256": "e4acca59ae77fc5643ef709431115c40d3d38e2ec14f4e61e1dd5af973d04c81",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/41116a74-46c7-4a10-8bd1-9e8262e215a5/0270-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/41116a74-46c7-4a10-8bd1-9e8262e215a5/0270-header.png",
         "sha256": "ca57c002453edc23f08581be5ea7ff4a67fe241783aa25fb31224595d167ac6f",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/41116a74-46c7-4a10-8bd1-9e8262e215a5/0270-target-entry-document-vasily.png",
-        "sha256": "143ba806c5de723ff8763ff264649d7e4da46ac4c5abdc25bcc28ce4751fa696",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/41116a74-46c7-4a10-8bd1-9e8262e215a5/0270-target-entry.png",
+        "sha256": "ff1ef2d6344fb9f2b3ea5ba58587aeee120f443f0aa8354b8581e60988ddfb94",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "829x656",
+      "targetDimensions": "1200x956",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "41116a74-46c7-4a10-8bd1-9e8262e215a5",
+    "scanNumber": 270,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-with-unresolved",
@@ -80,11 +94,13 @@
     "unresolved": [
       "Точный год листа внутри дела за 1886–1908 годы.",
       "Раздел или социальная категория, к которой относится строка № 329.",
-      "Отчество, происхождение, занятие и семья Василия Анпилогова."
+      "Отчество, происхождение, занятие и семья Василия Анпилогова.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

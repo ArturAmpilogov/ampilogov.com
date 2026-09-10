@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cf9d079f-d54b-4229-bb40-51e26bd456fb/0090-target-entry.jpg",
         "sha256": "108f9e37760faf495125975ca367b393ee28d133f6fb3239be86e3642cdd7fee"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cf9d079f-d54b-4229-bb40-51e26bd456fb",
+        "scanNumber": 90,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cf9d079f-d54b-4229-bb40-51e26bd456fb/0090-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cf9d079f-d54b-4229-bb40-51e26bd456fb/0090-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a7006e8c42456aceee61b6580ea5dc07027e82a7d0fdd79fcb63a0fd04381396",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cf9d079f-d54b-4229-bb40-51e26bd456fb/0090-header.png",
+            "sha256": "7f8a1d2a14d0f7036abacc5c780ea8c76e7e348df0192e16b0ed7b63bf983680",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cf9d079f-d54b-4229-bb40-51e26bd456fb/0090-target-entry.png",
+            "sha256": "33fae545fa2e782750855cd98658e1bd8683f480b94fccc38967a17e0e31a60e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5313x4163",
+          "targetDimensions": "1329x1017",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Зачасньй рябовой Вистій\nТимофвесь. Зацениныы Оренбурская\nМыцанская дловща арія\nДі\nЯковлева Иванава\nбласти\nОренбургски лиглуане:\nАлекстки Ивана вч\nВілобородаєь и",
+    "localOcrWithSurnameLexicon": "Зачасний рядовой Вистій\nТимофвесь. Заценины Оренбурская\nМощанская длявиа Дарія\nДі\nЯковлева Иванова\nбласти\nОренбургски лиглуане:\nАлексии Ивана вч\nБілобородавь и",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Оренбургские мещане: Димитрий Стефанов Ампилогов и девица Вера Васильева Полянина. Диакон Иоанн Семенов.",
+    "fuzzyQuery": true
   }
 }

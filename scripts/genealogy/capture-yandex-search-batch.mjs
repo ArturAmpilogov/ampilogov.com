@@ -20,6 +20,17 @@ const allRows = (manifest.batches?.flatMap((batch) => batch.results) ?? manifest
   .filter((row) => row.capture !== false || only.has(`${row.catalogId}/${row.scanNumber}`))
   .filter((row) => !only.size || only.has(`${row.catalogId}/${row.scanNumber}`));
 let uniqueRows = [...new Map(allRows.map((row) => [`${row.catalogId}/${row.scanNumber}`, row])).values()];
+const shardCount = Math.max(1, Number(args.get("--shard-count") ?? 1));
+const shardIndex = Math.max(0, Number(args.get("--shard-index") ?? 0));
+if (shardCount > 1) {
+  if (shardIndex >= shardCount) throw new Error("--shard-index должен быть меньше --shard-count");
+  uniqueRows = uniqueRows.filter((row) => {
+    const key = `${row.catalogId}/${row.scanNumber}`;
+    let hash = 2166136261;
+    for (const character of key) hash = Math.imul(hash ^ character.charCodeAt(0), 16777619) >>> 0;
+    return hash % shardCount === shardIndex;
+  });
+}
 const searchTerm = manifest.queryText ?? manifest.query?.text ?? "";
 // Ищем не только нормализованную форму из запроса, но и документальные
 // окончания/варианты (Ампліева, Ампилонов, оборванное «Ампи…»). Граница

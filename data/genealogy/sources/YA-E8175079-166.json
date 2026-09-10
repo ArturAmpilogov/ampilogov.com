@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0166-target-entry.jpg",
         "sha256": "2c1f261758832755bad548d09eb1974943c9215d6abd76d6d9ff2d3d96b63687"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
+        "scanNumber": 166,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0166-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0166-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d4e269a0d945c115af18a72a35e23f9dd6985536fa8522041928356745dc2d60",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0166-header.png",
+            "sha256": "1bfb803abb52d95a58cf16c606dccaca4407335adafecefbd741577f64d81879",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0166-target-entry.png",
+            "sha256": "387c45fdf988709afe405f436efd39255cfcb37ad4fb55439df4978bb15f4897",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5608x4339",
+          "targetDimensions": "1441x1195",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "сум\nвахурааь НаКусчиніь.\nпотеен\nem\nКлсрвлна: Рержн\n.Нат. и\nКотвевл рефа\nИвань ехоранновова Теркова\nпо неапетпКевави: Ст\nпеть Картач Летовой\nФининт 13 axunhedь\ncue te\nПогребжнняяа.\nMmiлee\nши, приптя Яви\nСввемакнни вfutnр\n1nи2\nАсбіламумкв-Метра Ноправакі\nеиі по вненаун\nи v2",
+    "localOcrWithSurnameLexicon": "сум\nвахерааь На Кусчиніь.\nem\n• Нат. и\nИвань ех оранновова Теркова\n/ 0\nпеть Картач Летовой\nФинит 13 aunted\nПогреблиняка.\nСой.\nMaree\nАспіламункв- Метра Направскі\nекі по вненаун\n2 v2",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Павел Данилов Ампилогов, казак. Поручитель: Сергий Иванов Кузнецов, казак. Поручитель: Иван Афанасьев Чернов, крестьянин.",
+    "fuzzyQuery": true
   }
 }

@@ -15,7 +15,15 @@
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются."
+    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
+    "localOcr": "• енаr\nНво/амени іитив\n20.\n2 купири о\n• я уракеиткаа\nСоосержика, ооль Матром\n•амиреннить Викарiна Плеван\nІ/саломщик? діакані ПОтр-А окровект\nОресненно- прод/квавній\nвалюссинпотстеанин\n•. Торернчи?",
+    "localOcrWithSurnameLexicon": "Ново /аман інтив\n20.\n• я уракликаа\nСосержика, доль Матрони\nРамиреннить Викарн Плеван\nПсаломщик? діакані. ПОтр-А окравект\nОрененно - прод/квавній",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "publicDisplay": false,
@@ -27,10 +35,53 @@
         "sha256": "e7d0454005d7de4b050c8ec66988f682d729e2f2ecbce68c1d24dddd9d7a9f50",
         "description": "Локальный фрагмент, требующий качественного повторного захвата."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
+        "scanNumber": 58,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "071428a4263822ae3d74d3e7f18e3a813303e9eb325d9d0c4375bba469ea43ad",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-header.png",
+            "sha256": "77fd2d0eda4032f6afd96f144168ae4f81e903d7246a6ddea1e05e208071d1d0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-target-entry.png",
+            "sha256": "2c410109767bcb0a19651e4c4cdbe8ef69689edb4c01f72563bfbc03e9b3a4d2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5319x4220",
+          "targetDimensions": "1573x907",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Максимов Бояркин, крестьянин, Ново-Намыский хутор. Отец умершего: Павел Данилов Ампилогов, казак, посёлок Никитинск.",
+    "fuzzyQuery": true
   }
 }

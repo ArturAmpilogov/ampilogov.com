@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0341-target-entry.jpg",
         "sha256": "d66a9374f865697ff06ca7552db23c3182d8cb9650e634f7a147b6b26ed78460"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8a851b08-92e9-4ac5-8ba5-fba48f54564e",
+        "scanNumber": 341,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0341-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0341-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e29a82311e474b5bc87e6186fd89e57bc8099712b71c66d382c0a434f850d4da",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0341-header.png",
+            "sha256": "7ea2cd45a3ea985910a730ba1653748de6643ff0c0b031c3846cff79d7bbc7d3",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8a851b08-92e9-4ac5-8ba5-fba48f54564e/0341-target-entry.png",
+            "sha256": "af664ec8caecebcb179d9c0134a9905036e12b3a04ddc72482c68a78826b9118",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5507x4357",
+          "targetDimensions": "1200x862",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "венный крестьянингіо\nанні. ввсьівь Рослевь, пра\nвосливний, первимь\nраномь\"\n19г.9м\n\"-\"-\nвлшентикь лавел\nИ у Плолщика Павминг в\n26.\nДеревни Драниной пре\nстьянить Павелч Ива\nновь ухинь, правос\nлавний, первняь ора-\n18г. 1/2\nнось -„",
+    "localOcrWithSurnameLexicon": "венный крестьянингіо\nанні. всівь Рослевь, пра\nвосливний, первишь\nраномь\"\n19г. 9м\n\" -\"-\nвлшентись лавел\nИ у Пололщика Павлинг в\n26.\nДеревни Драниной пре\nстоянить Павель Ива\nновь Кусинь, правос\nлавний, первня ора-\n18г. 1/2\nнось -\"",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Андрей Флоров Ампилогов, крестьянин, деревня Дракино, 18 лет 3 месяца. ... Поручитель: Иоанн Флоров Амфилогов, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0026-target-entry.jpg",
         "sha256": "49dfcaa27458293b24c529fdf296a399cd49508e48c46d79e14cc421e3220800"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 26,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0026-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0026-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "798dab5a349726fd4410b92dae57f4b3503712a89b431d2ccf35c92d46af5419",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0026-header.png",
+            "sha256": "af6bce21f8200fd380df85cddb16dccb867825a9acb6be35befeaa31eeb8c8ea",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0026-target-entry.png",
+            "sha256": "53043b5a7d2c6195cc0f96398a29429a3b6d537b0dec3c168afac6a9e4e1210c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4607x3600",
+          "targetDimensions": "1291x746",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "оственныи\nСаи смигалисати береильяиниь Фимитрин (яцеи-\nвуріана Шашинь и органци бвершнія гурт\nВириноби маслови.\nАняси\nМитовки гуктера огрнцерг Виеений Ганл\nпонезаигтикать Лодковирить И Крееть\nгeтоtе\nЯпни Вервсда Огоцоронн Тыни\nстална",
+    "localOcrWithSurnameLexicon": "оственный\nАдріана Шашинь и органци ввершнія гурт\nКирикови маслови.\nАниси\nа Митовки гуктера орицер. Висений Ганул\nпонезатикать Подковирить И Кресть\nЯпни Варвари Огосорон Тыми",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни Карманки крестьянин Егор Алексе - ев Ампилогов и девица, Пераскева Евте ева Рышова. Священик Тимофей Августов с диаконом Михайлом Боголюбовым.",
+    "fuzzyQuery": true
   }
 }

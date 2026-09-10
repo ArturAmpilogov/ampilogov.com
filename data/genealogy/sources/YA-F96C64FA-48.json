@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0048-target-entry.jpg",
         "sha256": "593ffbf32d971b5297859146c9232a7769a89ba22f47e163e75c48930cd28c2c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f96c64fa-c7be-43ac-be20-c18c56bdf38c",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0048-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ebc356ace2a5d16d99184955b472386d70fb5540ec413ca3bb01bb25f31cff56",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0048-header.png",
+            "sha256": "57fa61e58dbe3824549324bbed26ad3d7d29ed02f3f248f4a755928ba9fc535f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0048-target-entry.png",
+            "sha256": "ff2951372a2320849b775b2e0440d64dfb301fa653ddbc1c4286ab60d88e7199",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4889x3801",
+          "targetDimensions": "1555x928",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "заканнай мина Варвара Сте\nпанока, оба нравославная\nСвялсннись Виктильсханесы.\nДгононь, сВерииь водо влюбова.\nамарскай губулній, аогоруслинений\nуквуа деренни Наделизиной Кересто\nлнних Назарій схнашісья існень\nЛннаы и заханная линамо Мат\nрила св стафрийи, ота правлелавные\n(Мренникг. Амкеттора Липранский.",
+    "localOcrWithSurnameLexicon": "заканнай мина Варвара Сте\nпанока, оба нравославная\nСвялсннись Виктиь нанесы.\nДомонь, сВериь во до влюбова.\nук.\nамаскай губулний, аогоруслинений\nуквуа деревни Наделизиной Кресто\nлнних Назарій схнашіся істень\nЛинак и заханная линамо Мат\nрина св стадийн, ота правлелавные\n(Ленникг. Амкетора Липранский.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Агафон Иванов Ампилогов, крестьянин, деревня Кармалки. Отец: Феодор Ларионов Данилов, мещанин, Симбирская губерния, город Корсун.",
+    "fuzzyQuery": true
   }
 }

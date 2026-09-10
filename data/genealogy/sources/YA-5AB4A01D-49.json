@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "екерь летерыленио еер\nТевіьори просльянки\nвни висвки Номів Яко-\nвми волевниАннив\nвисвч Рофаповч. просьо-\nлинпова Молесии\nсливнено віпромеповивфа-\nпраюсиленого віпр\nний первыиіь!\n1 стошль.\n1ри ;tm вавумай пера кто в\nвалинии\nСвятуинт Аигіурі\nгено)\nОр ім конь Алексанв,х Тетлова\nДісгайв Аомлючейй\nА шпилоговч-\nНспирі поробвянний еслн\nНевиори пробраям.",
+    "localOcrWithSurnameLexicon": "Левіьори просльянки\nвни вовки Номів Яко-\nвми воловни Анни в\nвиевч Рофаповч. просьо-\nлинпова Молении\nславлено випромеповивоа-\nпросиланого віпр\nний первалів!\nКалинии\nСвятунт Ампірі\nгено)\nОр ім конь Алексано, х Теплова\nДістай Аомлючейо\nА шпилог овч-\nНАстрі пробний сели",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0049-target-entry.jpg",
         "sha256": "642082732255a86a937087cd09b809b926dd7c3d3ea4f293225a3ee3c6151e5d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 49,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0049-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0049-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9446843fd8801048778e628fded9a69cf7e0d4c5c326347c739c2d18f69398d8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0049-header.png",
+            "sha256": "bffa1a6db4b837ad03e00d78b3bf7e1f2de596d5cbf1c11ae672c8976dd017c0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0049-target-entry.png",
+            "sha256": "b785e142f256cc81ef8a170320dbf753f35c6bf86df57ec05b95f5f342d26d2b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4881x3952",
+          "targetDimensions": "1551x865",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Клавдий Калинский Диакон Александр Теплов Диакон Афиноген Ампилогов. Итого в Январе месяце было браков 17, а лиц 37.",
+    "fuzzyQuery": true
   }
 }

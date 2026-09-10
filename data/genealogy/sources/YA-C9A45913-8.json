@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0008-target-entry.jpg",
         "sha256": "ca2f2840173d78f6782dd330b60b1950ad2f3875c330184ac7a76b4ffb553e68"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 8,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0008-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0008-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "16fb03febd409d04b1600c74bc3d408164dcac2677fafc13eeb22cdad76c3242",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0008-header.png",
+            "sha256": "e9cd00d92caeef1a96b4c717df678f2ebe125fcb23370ba34cbc1808781a6382",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0008-target-entry.png",
+            "sha256": "4bb0e2e9dd75e0d6f302ffc3d552d838d712197845f225187f38e2a15b7b017a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4999x4163",
+          "targetDimensions": "1535x933",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "киоссанносннг.\nело\nСла Михай мовка крастьянат: Комезан-\nти\nзорr\nтиня Миртьовч Мплировьизиканная\nка\nярссна спо вверахія Ульянова; ава\nграоаьные\nmий taєtln\nСвяпус\nДіаконв Ісарнь Любиковь-\nпрапловки солбать тапафрі\nвору\nсна\n/рокотій Ослиттови Овуграшавьи\nусе\nРевтсиноя Иванова; аза пров",
+    "localOcrWithSurnameLexicon": "ело\nСла Михай ловка красть нат: Комазан-\nти\nгорн\nтинг Мирова МАлировь изаканная\nка\nясена спо вверхія Ульянова; ава\nгранение\nmustachin\nДіаконв Ісарнь Любиновь-\nпраловки сомать тапаорі\nвору\nсна\n/роковій Ослитови Овуграшевчи,\nусе\nРетиноя Иванова; аза пров",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Григорьев Ампилогов. ... Отец: Григорий Александров Ампилогов, крестьянин, деревня Кармалка.",
+    "fuzzyQuery": true
   }
 }

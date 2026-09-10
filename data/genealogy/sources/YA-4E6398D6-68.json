@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Священити Анегиантв Сернбриянназ\nПаньмжуит Иванг Рисалові\nСела Гамамтивки крислянима виля\nліана /етрова Чуримиви свияг Георгій\n2 .\nящениим сляк\nцикь Шоомі Дстбнямиа\nсалома\nСла Гамстивки пеаіатьянита Вленені\nНепулови /прубита свил .",
+    "localOcrWithSurnameLexicon": "Священити Ангантв Сернбриянна,\nПаномжим Иван Рисалові\nСела Гамампивки креслянима вил\nліана Ретрова Чуримиви сви Георгій\n2 .\nцик помі Дербнями\nсалома\nСла Гамстиски ператьянита Влені\nНепулови /прубита свил .",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0068-target-entry.jpg",
         "sha256": "1eb1628952440561eb7aa0b24f21bdcc63c38adea55ba581ba0a222a6ffa1dae"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e6398d6-2b49-4ef5-9d4f-f647049ae45c",
+        "scanNumber": 68,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0068-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0068-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b3defa2899b2d52f5654fe1b28ac430e7b24812d4786d99071e2a4bd7237fa27",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0068-header.png",
+            "sha256": "2d0f8bde8cb2da6f587d772005ea6c98b49906aa039f5205cf86dca141127459",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0068-target-entry.png",
+            "sha256": "6b3d85852680e333b36859afca1cf8d3a463bd2dcf0634111a76860050422012",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10149x8239",
+          "targetDimensions": "2768x938",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Муж умершего: Степан Трифонов Ампилогов, крестьянин, село Гамалеевка. ... Умерший: Пелагия Иванова Ампилогова, 52. Умерший: Даниил Сергеев Красников, 5.",
+    "fuzzyQuery": true
   }
 }

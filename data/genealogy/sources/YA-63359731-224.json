@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИПОГРАФІН.\n18935\nК Н\nИ\nH\nALтà\n(bтà\nЗвáніє, йм, бтчество, фамнліл\nй кБронспов'вданіе невесты,\nниXÀ.\nй котóрымк крáкомк.\nНЕК'КСТЫ.\nтого онь есла прое",
+    "localOcrWithSurnameLexicon": "НПОГРАФІН.\n18935\nК Н\nИ\nH\n(brà\nЗваніє, йм, отчество, фамнліл\nй вБронсповданіе невесты,\nй котрымк кракомк.\nНЕК'КСТЫ.\nтого онь осла прое",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/63359731-f313-472a-a390-47e01d85bcd2/0224-target-entry.jpg",
         "sha256": "3e2d635c921d42442aaca667a7b44297fde1109173d50c125abe616cde08c45f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "63359731-f313-472a-a390-47e01d85bcd2",
+        "scanNumber": 224,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/63359731-f313-472a-a390-47e01d85bcd2/0224-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/63359731-f313-472a-a390-47e01d85bcd2/0224-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8d526e65832f5377e565c056eeb639f061b18d10fd1c5ac112c41e32941cae59",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/63359731-f313-472a-a390-47e01d85bcd2/0224-header.png",
+            "sha256": "38499d9b42f3cc1e9ccad0363e8578d5b8b3a050bcd515589ec64315e3821512",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/63359731-f313-472a-a390-47e01d85bcd2/0224-target-entry.png",
+            "sha256": "62aeaee261595c73383f63f97c3e59210bcd2a007603d24e8d5f8c120f5d6ea8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5526x4333",
+          "targetDimensions": "1200x1365",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Феодор Ампилогов, крестьянин, то же село. ... Невеста: Мария Иванова Попова (Ампилогова), крестьянская дочь, то же село, 18.",
+    "fuzzyQuery": true
   }
 }

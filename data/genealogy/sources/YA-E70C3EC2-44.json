@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0044-target-entry.jpg",
         "sha256": "b9b941d04c8a6ee7adb3c2bccfabb4a39b0478dafab53824f62ca5659c798520"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
+        "scanNumber": 44,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0044-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0044-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "454bc5d67f04992d33dd63175536b2b18a862e4d6a0dde7f4f42de091bbf6ed7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0044-header.png",
+            "sha256": "a4609a068cb7a3a67c364241d721376d8f70deff47e3fc9587b8db4b147d5e4e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0044-target-entry.png",
+            "sha256": "6b20f5422ad14f362b6fa76f2b3a0de1dc7a59ec2fc35efb884dadc2a093e868",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6004x4792",
+          "targetDimensions": "1708x813",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЄБЕНТА.\nМбжеска.\nв.\n?\nСела Аарнёвки Крествянскос\nжиша Наталія КoнSратіява\nЗубкова -\n(вялениже Боаии Длиимрсіва\nDéaкaur Лer Лamedabenn",
+    "localOcrWithSurnameLexicon": "ЄБЕНТА.\nМбжеска.\nв.\n?\nСела Харчёвни Крестьянскос\nжита Наталія КонДратіва\nЗубкова -\nСвящениже Боки Дитріва",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Ампилогов Тимофей Максимов, крестьянин, село Георгиевка, 90. Умерший: Стефан Егоров, 2. Умерший: Василий Варфоломеев Мезенцев, 12.",
+    "fuzzyQuery": true
   }
 }

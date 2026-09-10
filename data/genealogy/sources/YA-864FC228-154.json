@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0154-target-entry.jpg",
         "sha256": "923e049fe7b5e67006a0030511b45ba73339fab851871b1e2a2b4746636acf84"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "864fc228-fc2b-4406-a99e-21d5103bf0c7",
+        "scanNumber": 154,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0154-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0154-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "dc6a871e2c692526819f7275129d02042ef1dc8b663a707e381cb27eb4ea3aa3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0154-header.png",
+            "sha256": "239605fcd0058b6e5aad76830124fd53942cdb83c45fa3e1935fc45638465fd7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/864fc228-fc2b-4406-a99e-21d5103bf0c7/0154-target-entry.png",
+            "sha256": "ca09fdcb6c31e8d40a7c7e907b706dbaed419d0740d14d2f849528f1d6a3ce1a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x930",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "dkтà\nА ДЕНЬ\nЗваніє, йма, соучестко й фалнаїа одмершиги.\nодмершагш.\nМбжеска.\nЖенска\nпогребентА.\nусм).\nМасковский губерим, Клин-\nскаг-угозда, Завледовеані\nволісти крестіянима і нан-\nна Цілпкина скламирашн/. 10-\nСвмуенник Наем\nНает Недесатнит.\nПеомолщинь имів Окоднян\nТамбовскнй гуреиии, Сма-\nтамсках упозда,\nсклихкласти дур Протурк\nтома Рм\nКрествяника",
+    "localOcrWithSurnameLexicon": "А ДЕНЬ\nЗваніє, йма, бучестко й фална обмершими.\nМожеска.\nЖенска\nпогребентА.\nу см).\nМасковский губерим, Клин-\nскага угозда, Завледовиані\nволости кристіяника і нан-\nна Цілкина селамирашн/? 10-\nСвмуенник Наем\nНает Недесатнит.\nПсомолщин вмів Окодня,\nТамбовской гуреми, Сма-\nтамсках упозда,\nскли х класти дур Протурк\nКрестьяника",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Евстегней Ампилогов, крестьянин, Орловская губерния, Городищенский уезд, волость село Ягодское.",
+    "fuzzyQuery": true
   }
 }

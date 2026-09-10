@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0081-target-entry.jpg",
         "sha256": "513c7039eaca0ab61c2e27ef1109412adfa57d0660c7b4b7178deac725d60fa9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a3a2554f-ff82-4a98-a610-9d54ed191f3c",
+        "scanNumber": 81,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0081-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0081-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f01aa80bc6905e7a8fb781a9991fef279769f07808871e531e88d8e7365b73d9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0081-header.png",
+            "sha256": "876df8fedbf6ee62524ecb56fc23bbbb0abe4bcd91a8d5a59552f49451ef4be7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0081-target-entry.png",
+            "sha256": "6ba96f00eef6d61e734dd344a46174968cfda9cdcd45b7ceb44f6a8a1e9e38cb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5268x4192",
+          "targetDimensions": "1639x994",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "моерел с сяргіева у имино\nжина-стнь Миленик\nСвященникь Н. Омайскт.\nгокв Вассорлнс\n6.\nРела Жоео-Геаргіевлй кріна\nСергоя Григорьева Кудина\nсинг Василій.\n₴.\nСвянценника Н. имайский\nаконь Фисвійл\nтах\nD.\nРела Носо-Георгісакиперіла\nМихенла Ниписорова\nМаслова- смиг сиковг",
+    "localOcrWithSurnameLexicon": "могрел с сяргева у имина\nжина - стль Миленик\nСвященникь Н. Смайскт.\n6.\nРела Носо-Геаргіевий кріна\nСергия Григорьева Кудина\nсинг Василій.\n₴.\nСвянценника Н. имайский\nаконь Висвійн\nтан\nD.\nРела Носо-Георгісаки періна\nМихенла Нипислорова\nМаслова- смиг синови",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Преображенскаго кр҃на Максима Петрова Ампилогова дочь Анисія. ... Отец умершего: Максим Петров Ампилогов, крестьянин, село Преображенское.",
+    "fuzzyQuery": true
   }
 }

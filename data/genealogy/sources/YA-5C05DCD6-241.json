@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СКОКСКО\nEVNO®\nГальной\nТРИЧЄСКОЙ КНИГИ НА/89У\nЗканіє, ймА, сотчество й фамиліл родителей, й какóги\nродившиуєл.\nв'кронспов'кдантл.",
+    "localOcrWithSurnameLexicon": "СКОВСКО\nТальной\nТРИЧЕСКОЙ КНИГИ НА /893\nЗваніє, ймА, сотчество й фаміліл родителей, й какги\nродившиусл.\nв'Ероиспов' дантА.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0241-target-entry.jpg",
         "sha256": "d85ac23479d83c0590af312563272d0ae5d357aded3bbc30889ddec129ba3a52"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5c05dcd6-62d5-4df8-a218-e96470e8367f",
+        "scanNumber": 241,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0241-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0241-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2645b6fcdb3d8222c43a4a3b40b29336267982f26380e8eb443d9d861326f7ee",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0241-header.png",
+            "sha256": "354bc9e2c42c8923604b724f89417a12cd9c7f97f61d777f3c5ce55d6ff2af11",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5c05dcd6-62d5-4df8-a218-e96470e8367f/0241-target-entry.png",
+            "sha256": "e12bdc896249b0aa85fca955400dda319269aee66f682cc63fb8f5d6bd46412d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5066x4006",
+          "targetDimensions": "1491x1010",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Димитрий Никитин Ампилогов. ... Отец: Никита Иванов Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0081-target-entry.jpg",
         "sha256": "e7c388d88b7c24c13858dbe58aebfb387fc7893af303e50eb38436bfe47a90ac"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f96c64fa-c7be-43ac-be20-c18c56bdf38c",
+        "scanNumber": 81,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0081-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0081-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b3a9f2efa130de27438ebf36be5a1697d2adb027c4a6ea884ff8301eb3c7fd43",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0081-header.png",
+            "sha256": "e5e7b6e99221a8cd2290a1a02cb38f562e0966ff6fb3c26bb2bc80157ad65763",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0081-target-entry.png",
+            "sha256": "58fc043f1360198eba486f26342040f10251891e5b78f53649e1cdcfb5230035",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4857x3838",
+          "targetDimensions": "1694x1136",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "метрической внúги на 189у\"\nЗваніе йма, стчЕстко и фамілід родúтелей, й какóги\nІмЕна роднвшихсА.\nвиронспов-даніл.\nlamanis.\nСсна Михайелньского солдать ормкаи\nермиднтыва Салонихноюи захениим\naa ег Maвga Пakeuda 252\nвиженних свсиксандах ссакривскй\nНосолостирив Аненесторисв\nПасломирий Аленсстор.Анорив)\nсанія Села АиханснвскаЗапастий чи",
+    "localOcrWithSurnameLexicon": "метрической внги на 189у\"\nЗваніе, йма, стчЕстко и фамілід родителей, й какти\nІмЕна родившихсА.\nвиронспов даніл.\nlamanis.\nСела Михайельского солдать орика\nармидатыва Салонихнии завенним\nan en Malga Makeudo 252\nПосольстирив Аменесторисв\nПосломирий Аленсстор. Анорив)\nстанія Села Михансивска Запастий чи",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Наталия Матвеева Ампилогова. ... Отец: Матвей Потапов Ампилогов, крестьянин, деревня Кармалки.",
+    "fuzzyQuery": true
   }
 }

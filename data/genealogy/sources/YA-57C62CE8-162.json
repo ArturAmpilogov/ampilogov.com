@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Песнін Ослнтри Вылиннні\nДерсани в колин\nн овли Вл\nнихо агр. Потрва Воовинь\nsu llcenis Cbuemaias Bralo anaa\nСвяж еним ка сваслий 12. стлові\nкахай зеиполов рвикольом\nпешлім Вмитри порімасьсий\nСела Гаврильвки салі. а акарі\nПстров 1олужинь ж Агри\n1 сна Стапанова; оба правосии",
+    "localOcrWithSurnameLexicon": "Піснім Остори Волинні\nДерсти в колит\nнихо агр. Потрева Воловинь\nСвяж сним ка свастий 12. строві\nкакай заполов рвикольск\nпошлім Вмитри порімаський\nСела Гаврильки салі. а акарі\nП страв Полужинь ж Агри\n12 сна Стапанова; оба правоси",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "54f0939c63a4eceb718998ce0928666bc72754d004225a98a5cc400efdd5ca24",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "57c62ce8-0e11-492f-9ad3-c33da4a7e80e",
+        "scanNumber": 162,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/57c62ce8-0e11-492f-9ad3-c33da4a7e80e/0162-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/57c62ce8-0e11-492f-9ad3-c33da4a7e80e/0162-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0b42a1889ff3d267de6d642c5921f6d00c424ab45c950ceb809d1bca3119f69e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/57c62ce8-0e11-492f-9ad3-c33da4a7e80e/0162-header.png",
+            "sha256": "a2ff40498c224e273df429fac8a7e7ece9f4145c2aa9ca51836a11f7c24159c7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/57c62ce8-0e11-492f-9ad3-c33da4a7e80e/0162-target-entry.png",
+            "sha256": "7ec6195f9f47796e9191553a27289d8f727c78e7dcedcc68fae6c501a8163781",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5306x4377",
+          "targetDimensions": "1619x1137",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Гавриловки крн Григорий Иванов Ампилогов жена Зиновия Иванова ... Родившийся: Анна Григорьева Ампилогова. Родившийся: Никита Яковлев Баранцев.",
+    "fuzzyQuery": true
   }
 }

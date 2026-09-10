@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "заио Лвелочео ленпилогова.\nвейа Писиняго Думісти перобаянина Тро-\nерими риноввева агстанова дого велагея\nоягуенк, Линкції Каникнй.\nДімконь Алекенкіріх текkоko\nіапаів Домечеів Амепилогов'і-\nінсіцівано пеержніснуяи. егона Віоро (с) яксискиго\nСьяпрен Линкфії Лакнежти\nun Ranes\nАмакка новря\nтекроR",
+    "localOcrWithSurnameLexicon": "Села Писяго Думісти перобянина Тро-\nфрими риноввева агстанова дого велагей\nоягувик, Линкції Каникн.\nФінконь Алекснкирь тенков\nДіапаів Домечеів Ампилоговʼі-\nініці вано пеержнісуми. егона Віо (с) яксискиго\nСвятен Линації Ланенти\nun Rades",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0071-target-entry.jpg",
         "sha256": "aa8c22c31a3d9ebf23ae808bdcd7ff8b483803183c73995f91665f8ddab2da5e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 71,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0071-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0071-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "186873315cce9106b186af40bf488c9f00d5d4e227a2bc7af9bd11d80fa5e9eb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0071-header.png",
+            "sha256": "e9bdb295e17ded89dbc666d54ef4ffc8074126968e2e1070b217c122f0830f96",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0071-target-entry.png",
+            "sha256": "366329b0a43f1c69d8c9eb51ba13d14519e737879250a2bf20f32c2baae5c259",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4924x3908",
+          "targetDimensions": "1509x791",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянина Трофима Зиновьева Магорнова дочь Пелагия Священник Клавдий.",
+    "fuzzyQuery": true
   }
 }

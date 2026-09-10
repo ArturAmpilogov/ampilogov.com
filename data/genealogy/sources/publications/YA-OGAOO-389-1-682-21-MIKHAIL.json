@@ -64,51 +64,67 @@
   "transcription": {
     "status": "complete-with-resolved-godfather-surname",
     "literal": "Ноября 3 родился, 4 крещён. Мужской счёт № 65. Михаилъ. Деревни Новоникольской крестьянинъ Михаилъ Ивановъ Анпилоговъ и законная его жена Анна Николаева, оба православные. Воспріемники: Деревни Ново-Никольской солдатъ Иванъ Ивановъ Анпилововъ и дѣвица Евдокія Стратоникова Алехина.",
-    "modernInterpretation": "3 ноября 1891 года у крестьян деревни Новоникольской Михаила Ивановича Анпилогова и Анны Николаевны родился сын Михаил, крещённый 4 ноября; восприемником был солдат Иван Иванович Анпилогов."
+    "modernInterpretation": "3 ноября 1891 года у крестьян деревни Новоникольской Михаила Ивановича Анпилогова и Анны Николаевны родился сын Михаил, крещённый 4 ноября; восприемником был солдат Иван Иванович Анпилогов.",
+    "localOcr": "Бузулукскй мощаним Прам\nстррова Новлов граконная по\nр вримова оба православя\nАнкe",
+    "localOcrWithSurnameLexicon": "Бузулукский мощаним Прам\nстрова Павлов греконная по\nА вримова оба православя",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Сниппет показывает только родителей. OCR этой строки искажает фамилию восприемника как «Анпиловов»; его последующая смертная запись 1892 года называет точную форму «Анпилогов» при совпадении полного имени, деревни и военного статуса. Духовное лицо в доступной расшифровке строки не выделено."
+    "warning": "Сниппет показывает только родителей. OCR этой строки искажает фамилию восприемника как «Анпиловов»; его последующая смертная запись 1892 года называет точную форму «Анпилогов» при совпадении полного имени, деревни и военного статуса. Духовное лицо в доступной расшифровке строки не выделено.",
+    "querySnippet": "Родившийся: Михаил Михайлов Анпилогов. ... Отец: Михаил Иванов Анпилогов, крестьянин, деревня Ново-Никольская.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/254c2739-89fb-41b6-a11e-27d46e8bf0d2/0021-full-view.png",
-    "capturedAt": "2026-09-01",
+    "capturedAt": "2026-09-10",
     "sha256": "51e09a60f5f8d9053ecf3b1f3fd87e2acb9a9ec8463bf4c0a728f6606fbe7de6",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/254c2739-89fb-41b6-a11e-27d46e8bf0d2/0021-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/254c2739-89fb-41b6-a11e-27d46e8bf0d2/0021-header.png",
         "sha256": "1e33534d42c95418de8ac69c2e321a60abe5362e11b7d37309848b815296c232",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/254c2739-89fb-41b6-a11e-27d46e8bf0d2/0021-target-entry-document-upper.png",
-        "sha256": "6be2a977b43b28fb546f0f84b079d4f8c179b379914815a25ffae1c695ca62d5",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/254c2739-89fb-41b6-a11e-27d46e8bf0d2/0021-target-entry.png",
+        "sha256": "e60c7ee4b835c8e4014794b405d60e58bb2a651fef52e43bd40b84801d843e5e",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-01",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1248x643",
+      "targetDimensions": "1200x312",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "254c2739-89fb-41b6-a11e-27d46e8bf0d2",
+    "scanNumber": 21,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-with-unresolved",
     "identityResolution": "Отец связан с P7922 по точному полному имени, крестьянскому статусу и деревне Новоникольской. Анна Николаевна и ребёнок получили отдельные профили. Восприемник связан с P8133 по точному полному имени, той же деревне и военному статусу, подтверждённым смертной записью 1892 года; нечёткое сопоставление не применялось.",
     "unresolved": [
-      "Имя духовного лица в доступной расшифровке строки не установлено."
+      "Имя духовного лица в доступной расшифровке строки не установлено.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

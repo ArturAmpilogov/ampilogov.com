@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/729c6a8f-5c43-4fca-9e79-af1889014ae4/0034-target-entry.jpg",
         "sha256": "80a0f452d836e63160ff2e13dda2a59a21f6a3ae8c83c9704a7fc4b2de682b4b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "729c6a8f-5c43-4fca-9e79-af1889014ae4",
+        "scanNumber": 34,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/729c6a8f-5c43-4fca-9e79-af1889014ae4/0034-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/729c6a8f-5c43-4fca-9e79-af1889014ae4/0034-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2bb52b486726b7b9208186623a658e2b9691471674166b846f897af0bcddc6ac",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/729c6a8f-5c43-4fca-9e79-af1889014ae4/0034-header.png",
+            "sha256": "403fd939ca04875723028105f1c344e8b4f01d02a54f1adc6173131b0495d755",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/729c6a8f-5c43-4fca-9e79-af1889014ae4/0034-target-entry.png",
+            "sha256": "b8d5264334bfe2b1d775a186dbf7e38291d45cef0b9e8490255e0550508f0b75",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4687x3611",
+          "targetDimensions": "1442x1136",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "кашень ти сла сілекатьеь в фи\nchuơt\nи Мставний унчерв-ифицер\nВасилії Ивановь Шсемякинь.\n, свя-\n1 Щоучители по яиеть:\nвікстіі фретбурчский мищашину\nПосілать сомирасва Поповіч\nоенбурчскій спющанинч в донем\nПегатиновь Сомині.",
+    "localOcrWithSurnameLexicon": "кошень ти сла сіменать сь в ди\nи Уставний ундерв-ифицер\nВасилії Ивановь Шеемякинь.\n, свя -\n1 Щоу чители по минеть:\nвісті фетурчкий милашину\nПосілать сомирава Половог\nренбуркій спощанич в донем\nПлатинову Сомині.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Лазарь Иванов Ампилогов, оренбургский мещанин. Поручитель: Егор Иванов Коронбоков, отставной писарь.",
+    "fuzzyQuery": true
   }
 }

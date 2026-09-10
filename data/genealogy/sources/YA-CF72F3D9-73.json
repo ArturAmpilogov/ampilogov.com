@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cf72f3d9-ebed-4699-b95d-3c5ff51d4af6/0073-target-entry.jpg",
         "sha256": "de8415683b8db7175b85cb7642df71580ccc81bc6e31cfc6badb8e1b59f3aceb"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cf72f3d9-ebed-4699-b95d-3c5ff51d4af6",
+        "scanNumber": 73,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cf72f3d9-ebed-4699-b95d-3c5ff51d4af6/0073-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cf72f3d9-ebed-4699-b95d-3c5ff51d4af6/0073-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8969566568ce53b91e7d4f7afa41dabb072e1771e2db45374434942d84190a32",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cf72f3d9-ebed-4699-b95d-3c5ff51d4af6/0073-header.png",
+            "sha256": "d612294eefa0f99d73cd93a016ceb03e84f48e25b6aed583a2a0ed836b9d0104",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cf72f3d9-ebed-4699-b95d-3c5ff51d4af6/0073-target-entry.png",
+            "sha256": "83acc79ecbae021eb514af7f4f85aeac2b66995286f7cd3d6ad88fa7d5665798",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4949x3969",
+          "targetDimensions": "1529x900",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, йма, сотчестко й фланата родителей, й какóги\nцнкшиусл.\nв'Броиспок'Еданта.»\nсна\nСела Абришовки Крестваннив АнФрей Лаврежував\nТретвоков и захинная его френоо Снв,яна\nГерастимова вббв православане\nСвналуєнника Канстандина ткумуеа\nТсаломуись Корнивій Мобацові,\nсна Села Абранивнирмілвнй сандор. Иваків вокова",
+    "localOcrWithSurnameLexicon": "ЗвАніє, йма, сотетко й фланаа родителей, й какги\nв'Ероиспок' данта.»\nсна\nСела Абрамовки Крестваннив АнФрей Лавренував\nТретвоков и заханная его френо С нв,яна\nГерасимова обов православане\nЕвкалуєнника Канстанина тумуеа\nТаломуись Корнивій Мобадове,\nна Села Обранивнирмівня сандор. Иванів Докова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Васильев Ампилогов. Родившийся: Георгий Михайлов Петим. ... Отец: Василий Федотов Ампилогов, крестьянин, село Абрамовка.",
+    "fuzzyQuery": true
   }
 }

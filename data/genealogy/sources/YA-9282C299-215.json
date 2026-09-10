@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-target-entry.jpg",
         "sha256": "eb0535aa9106b23f59433ff430151015cf1f5d791d4fe14b9328bd8151879e4b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9282c299-c266-4d51-b866-c5ff01fd07b9",
+        "scanNumber": 215,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "43fb5058f65fc687729fdd3c01fe97af20d25ca9b57df25e7aac46737bc956bd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-header.png",
+            "sha256": "c03ac418beadfdf075d617b52d2590b2f9d6149d44edf31588ddc3d072b13151",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-target-entry.png",
+            "sha256": "e83d2456a9547f402bcaad4205189c508e5a8c2a153e6fc78d34a9bf59ec4ff3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5577x4572",
+          "targetDimensions": "1654x848",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "low"
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "скоя зрьяшниект поостесалые\nСвиридова\n-\nОвитренникь вненей сорданчикт\nПсаволщики\nЛескснь\n-Аавим\nДеревни\nново - николвск\nКрествянина Вмитрій Ми-\nЗеайлови Ампилосова бочв\n- Маріr\n-\nОвященнит впенір спідамчинахб\nПсоволиить Менк",
+    "localOcrWithSurnameLexicon": "Свиридова\n-\nОвитренники вненей сод анцикт\nПсоволщики,\nДеревни\nново - николвски\nКрествянина Дмитрій Ми -\nЗаймови Ампилогова бочв\n- Марія\n-\nСвященник впенер спіданчинах б\nПсовомиить Мени",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Дмитрий Михайлов Ампилогов, крестьянин, деревня Ново-Никольская. ... Умерший: Мария Дмитриева Ампилогова, 1 месяц.",
+    "fuzzyQuery": true
   }
 }

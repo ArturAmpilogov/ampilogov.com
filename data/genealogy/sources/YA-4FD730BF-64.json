@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "киешних еои\nкрествянский дивища Марія,\nавнн\nеджжва бо\nкини.\nи\nот.\nПай як ддеревни скиуать в0\nкисk Терентісhь свентиногова\nакаи\n1 игай яки уцивни скидатка О\nkа,\nдломанида. Стенанава свлинистгова.\nвенныи аожиЕ\nи еи отетавней цитув\nТого мле сели\nциту",
+    "localOcrWithSurnameLexicon": "крествянский довища Марія,\nавин\nкини.\nи\nот.\nПай як деревни скиать во\nкись Терентівь свентиногова\nакан\n1 игай яки уцевни скидатка ОС\nка,\nдломанида. Стенанава светистова.\nвенныи аожиЕ\nТого мле сели",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "411e0a289391435a7aa6d60b1f84079dc1f424e5c132b17e48cd36e6915b1959",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 64,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0064-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0064-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "03e5be1f06a6443e1c47d59ce6aee83a345da0d21fbee33e5d3ba0a26031a0af",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0064-header.png",
+            "sha256": "ad8da584628ac130dd907d42ae3c9bd68abdad65b09020ac3d6e5f1db2109e0d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0064-target-entry.png",
+            "sha256": "82cae52fef08d81fea76e0578c7d006c12e5c26e5619ae9d832cd577fe916083",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4880x3994",
+          "targetDimensions": "1400x945",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Симеон Павлов Ампилогов крестьянская девица Мария Сергеева Родина. Священник Александр Покровский.",
+    "fuzzyQuery": true
   }
 }

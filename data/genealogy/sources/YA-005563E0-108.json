@@ -24,7 +24,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "На сохранённом фрагменте видна страница рукописной книги с несколькими строками, однако текст и фамилии неразборчивы при имеющемся разрешении.",
     "modernInterpretation": "Нельзя надёжно установить ни фамилию, ни тип записи. Карточка не считается семейной записью и не создаёт профиль, карту или переселение до новой чистой крупной копии страницы и целевой строки.",
-    "indexNote": "Поисковое совпадение Яндекс Архива оставлено только как повод для повторного захвата; OCR не использован как доказательство."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Вма\nuns\nОпставной (коррейтор) фей-\nзаоке /ств /зладилита\nху-\n1мпилогов И Исвастьчом\nкая оиттизанко сдтьвиця 6 ас\nяний\nсвоткія (ханнова Меншер\nмо\nМа\n1 сo\nГальскій миВщанния ПийзьКал\nіьяк\nМирайловь гмімазеви он\nлут,\nСкамстино славакнй губдж: Ок",
+    "localOcrWithSurnameLexicon": "Вма\nins\nОставной (коррейтор) фей-\nда,\nзаоке (ств /зладилита\nху-\n1 мпилогов И Свастичом.\nяний\nвоскія (каннова Меншер\nмо\nМа\nГолоский миВшанния ПийзКол\nів як\nМирайлово гмімазев он\nлут,\nСкамстино славаннй губуж Ок",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -35,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/005563e0-9d13-4a32-baba-ba844bf917e7/0108-target-entry.jpg",
         "sha256": "a0d8c8415aaf3baaf11aeb74c4fd0ab2b2b532dd200b98248b4bc259a63dea48"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "005563e0-9d13-4a32-baba-ba844bf917e7",
+        "scanNumber": 108,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/005563e0-9d13-4a32-baba-ba844bf917e7/0108-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/005563e0-9d13-4a32-baba-ba844bf917e7/0108-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3e5a57af93f950dde63a202bf0af5183b2326038b31f397edffa9c2ac65b2bd5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/005563e0-9d13-4a32-baba-ba844bf917e7/0108-header.png",
+            "sha256": "932d6c2fcde8f4f668bbf6ebc90e9750655ca590381afc58d5f5f8d98719207f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/005563e0-9d13-4a32-baba-ba844bf917e7/0108-target-entry.png",
+            "sha256": "928bd2ba5a00c2acbe3b065f4b78f9af1e1858a04e641acadbedb83c4fc2a15a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x1025",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "low"
+  },
+  "indexData": {
+    "querySnippet": "Отставной (ефрейтор) фейерверкер Петр Владимиров Ампилогов и Севастопольская мещанка девица Евдокия Иоаннова Миллер.",
+    "fuzzyQuery": true
   }
 }

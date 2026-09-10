@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СИПОАДЛЬНИЙ\n1894\"\nKHÁTH HA\nЛЄТРÚЧЕСКОН\nЗвáніє, йма, сбтчество, фамнліА\ndkтà\nЗгáніє, йма, бтчество, флинліА\nЛEтà\nй кбронспок*даніє неквсты,\nй вєронсповєданіє женихі,\nнЕкКсты.\nЖЕНИХА.\nй котóрымх браком%.\nй котóрымх вракомх.\neuarle\nименягопи\nперебіляний ХемевА2и-",
+    "localOcrWithSurnameLexicon": "ИПОДАЛЬНОЙ\n1894\"\nKHÁTH HA\nМЕТРИЧЕСКОН\nЗваніє, йма, сітчество, фамиліА\nЗваніє, йма, отчество, флинліА\nй к бронспокданіє неквсты,\nй веронсповЕданіє женихА,\nнЕкКсты.\nЖЕНИХА.\nй котбрымх браком%.\nй котбрымх бракоми.\nпересіяний РеменвА2-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0028-target-entry.jpg",
         "sha256": "76170c8dd742524a34bfab12245d0f3a5204a522282a2f629e3e1ea1b31bfd09"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 28,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0028-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0028-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "65a87de93c4067129414fe32fe4527d814b13af662fc3d78fe7fbc94d42a9bf9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0028-header.png",
+            "sha256": "ade75d3035d699674f80a5d97f6d743860514d1032d4beb0c5a865e9ef567f27",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0028-target-entry.png",
+            "sha256": "6bba039b77248091f439b9e4eccfe773dd287b2e794fca8e151d38af1365dae3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5393x4244",
+          "targetDimensions": "1815x809",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов. ... Священник Клавдий Калинин Диакон Александр Титов Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true
   }
 }

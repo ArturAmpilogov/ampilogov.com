@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "и которымк праколік.\nи которымх краколх.\nрв.\n4.\nМстирі перебраянийй виро\nПевичети пероер\nмили се\nМавія\nвни босвои Нива Ми\neurebe\nАлевілчева / возмоєи,;\nФ ийлівч бакуииитй прк-\nвосланого вієконстовач-\nПривослинаяс вихданена\n20л.\nвідині пчервяний б'анат 2-\nдмніх, аперв5литв вдськат\nПланарі\nЛами\nвятени,\nдеити",
+    "localOcrWithSurnameLexicon": "в которых праколік.\nи которымх краколх.\nрв.\n4.\nМстирі перебраний виро\nПевичети пероер\nмили се\nМавія\nвни Посвои Нива Ми\nАлевілчева / возмоки,\n3 айків акулий, прк-\nвосланого віоконстовач-\n20 л.\nвідені первяний бʼанат 2-\nдині, аперв литв вусат.\nАланарі\nЛами\nвяжени,",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0055-target-entry.jpg",
         "sha256": "77629e32877f9f58a13747d154710aca8ff38c2b345f05e93712636a5ac35444"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 55,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0055-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0055-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8bc4919438da672a626088bc59a37e3f1f3488b8727d7d937ca4b54cfb904688",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0055-header.png",
+            "sha256": "0be21120ac23b76c65618e2700540a10bfd7b4ef8a0e6ce3fabbdb5565cc5d33",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0055-target-entry.png",
+            "sha256": "6d65b03f1d55760c08d60e24af3e31a581b164c1285085d2efe52d641af0dfa1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4881x3952",
+          "targetDimensions": "1818x908",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Каликин Священн Клавдий Диакон Александр Теплов Диакон Афиноген Ампилогов. По женихе крестьяне деревни Баевки: Семен Крохин и Алексей Крохин.",
+    "fuzzyQuery": true
   }
 }

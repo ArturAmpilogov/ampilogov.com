@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0134-target-entry.jpg",
         "sha256": "1a2bf33410b85fa48968f3ad1794e33ed8417f2e8524a66d5c5383ee8ad347fd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "737be40d-5a8f-4c2f-a518-20b75446e12d",
+        "scanNumber": 134,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0134-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0134-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d70132e3b0424c1468f46a343df4072d0264a1bff36d35f699866c62bf5b8c7e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0134-header.png",
+            "sha256": "2e2ba595d5da3aea627e0a34d4bb116ba6d94401da71b9b04a3015c204620334",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/737be40d-5a8f-4c2f-a518-20b75446e12d/0134-target-entry.png",
+            "sha256": "78773863cc0dacd9bc37487034ab84e9350126b61e19fbf8cd935c76d8de39a7",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4962x3946",
+          "targetDimensions": "1341x990",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "арственный архив\n14\nMona- Яuc Ста креитьяткя\nДаніна /прокримова\n1з ямырь и краипьаннсн)\nвдова Мараа Стетанова. с",
+    "localOcrWithSurnameLexicon": "арственный архив\n14\nДаніна /прокримова\n1 ямырь и крантванск)\nвдова Мараа Степанова. с",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Петр Иосифов Ампилогов и крестьянская жена Евдокия Исаиева Умеренкова.",
+    "fuzzyQuery": true
   }
 }

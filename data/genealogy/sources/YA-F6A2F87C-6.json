@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0006-target-entry.jpg",
         "sha256": "dd3dff8eb23fe82863c818006a2aceef71b55628071a496e81976050161a4661"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 6,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0006-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0006-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6a8cdcc63d18eb1e8a69839355d73a90935ec2d8f2aa3d6b9bbcf2a09de9e26e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0006-header.png",
+            "sha256": "3152dab95ca937bb49ace62442b14d13af44d5654fe0fe32a987889b3b84b1aa",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0006-target-entry.png",
+            "sha256": "36d47f74252a364f9dc3a0076bd87df3895fb9187869281a91479c8fef59ba37",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4648x3529",
+          "targetDimensions": "1265x888",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "нинь, модоровь вальникова\n1Отьонлахенна серасимова мове\nМачинна. .\nтойоне деревня сагдати\nжас\nОргій Василісвь Двиковь 10\nХрествянна Пеенія Василіева,\nНена\nКерейнинко.\nкой опетереьни престаннину\nллеонн\nНавковь Мипипоговь Овя\n4 Крествя\nОвіємь",
+    "localOcrWithSurnameLexicon": "нинь, модоровь вальникова\n1 Отвилахенна серасимова мове\nМачинна. .\nтойоне деревня сагдати\nпас\nОргій Василісвь Двиков 10\nХрествянна Пенія Василіева,\nНена\nПерейкинко.\nкой онеменени престаннину\nНавковь Митипоговь Овс\n4 Крестья\nОвієль",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Симеон Павлов Ампилогов и крестьянка Ирина Григориева Ампилогова. Псаломщик Алексей Стефанов мофей Августов с.",
+    "fuzzyQuery": true
   }
 }

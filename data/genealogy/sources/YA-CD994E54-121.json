@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/cd994e54-c06f-4d3a-931a-e9280114fd8c/0121-target-entry.jpg",
         "sha256": "2646278800817625dec1daa38bd2c796825f7fc75bb4475170d4ce2465a23a32"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cd994e54-c06f-4d3a-931a-e9280114fd8c",
+        "scanNumber": 121,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cd994e54-c06f-4d3a-931a-e9280114fd8c/0121-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cd994e54-c06f-4d3a-931a-e9280114fd8c/0121-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e3c1b1900e541f96fee600a1aae5164605995bfeb59cd058893a81bde0fdbf3b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cd994e54-c06f-4d3a-931a-e9280114fd8c/0121-header.png",
+            "sha256": "932eb8f8aca3fce352852a5d8e34c7787be1dd23f7ab996ecd8715aa3d369097",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cd994e54-c06f-4d3a-931a-e9280114fd8c/0121-target-entry.png",
+            "sha256": "9784467158ad0aee26513d09526ab66ef1a8b376ef8031a28b1844943bdbf952",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4991x4154",
+          "targetDimensions": "1415x945",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "1Bа\nМочозе вела Кристьянинь Манаі\nИвановь Ласьковіз Икритьянсная\nдовщца Марина Васильєва Гуповова.\nМогооро вела притьяниль /9ладимирь\nСемснивн Алпилочква, и Критьяненая\nдтвица Варваро Семинова Ампи-\nЯліч\nлогова.",
+    "localOcrWithSurnameLexicon": "Могоде вела Кристь янинь Манаі\nИвановь Ласьковіз Шеритьянсная\nдовиа Марина Василь єва Гуповова.\nМогоро вела притьянить 19 ладимирь\nСемонивн Ампилочива, и Критьяненая\nдвица Варваро Семинова Ампи-\nаліч\nлогова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Владимир Семеонов Ампилогов, и крестьянская девица Варвара Семеонова Ампилогова.",
+    "fuzzyQuery": true
   }
 }

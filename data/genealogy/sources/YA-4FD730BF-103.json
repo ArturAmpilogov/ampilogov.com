@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МЄТРИЧЕСКОЙ КНЙ\nМkслць\nЗваніє, йма, сотчество, фалнлА\nd-Lта\nй вкронспов'єданіє жениуА,\nй дЕнЬ.\nй котóрымх крáкомк.\nженнра.\nивсро?\nСс\" Мискайсани прсатть\nМнсий сьи митрей Млячи\nловь векотяревь, пр авалани?",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИ\nЗваніє, йма, сотчество, фалнА\nА вкронсповʼєданіє женихА,\nй дЕнЬ.\nй которымх кракомк.\nжениха.\nСс\" Мискайсани посать\nсовь векотвревь, привалани?",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "62740aa86f8a78dea63260d49a50e266b3f18f11a27fe84ae38bae93d8036499",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 103,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0103-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0103-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "db43639bf0cd7b0e0aadc94a406c382b27e33d248324bc6e42a8c18b1da7c9f4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0103-header.png",
+            "sha256": "3944fc6093ac921dc4b3bb00fe31dd9cfa8a76a7b4d027f39aae7be426db6423",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0103-target-entry.png",
+            "sha256": "c4598e6ab6e63bd6b0775cf88559968fc191fcf910c7bf4c569ca8353cfa3893",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5181x3994",
+          "targetDimensions": "1200x1065",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Иван Терентьев Ампилогов, крестьянин, деревня Кармалка, 38. Поручитель: Михаил Сергеев Вишняков, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

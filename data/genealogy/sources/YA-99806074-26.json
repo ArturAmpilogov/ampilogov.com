@@ -14,22 +14,59 @@
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0026-full-view.png",
-    "sha256": "6a6b977d76a0568a1a67f5b0033c7ee7f91e27b226bcedba2fbf55cfb6344184",
+    "sha256": "1835f53abca70a82c9411e744252ed8a42102298a054aa2ef2b2d454a93c5de8",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0026-header.png",
+        "sha256": "dd43aa6c501fbb9964451950be23950980ec5c534a5769ed78bd2677d4e4251e",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0026-target-entry.png",
-        "sha256": "bdda6e26e98002fb233713034d68fcb3b73ed069b92cfcdb9f771da360001fb0"
+        "sha256": "fb02bb204c63e430edd3854745a0faa0d333b0243ac10fa23c9a7a70ac68a5a9",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "99806074-8325-4f68-8f4f-b6c14cc0e44e",
+    "scanNumber": 26,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0026-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x732",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "oonуin\nve se sidt tease tpiemsdeeT\nріbы\nAV\nmthus кMa\nass Rebaun\nUlsuabs Conene\nM-Te-Nunuesudenpt",
+    "localOcrWithSurnameLexicon": "oong in\nve se sidt tease tpiemsdeeT\nBewmpiet Laseaitnde\nAV\nmthus к Ma\nass Rebaun\nUisuabs Conene\nM-Te- Nunuesu denpt",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Муж крестной матери: Иванов Ампилогов, крестьянин, то же село. Отец: Тит Иоаннов Слободин, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

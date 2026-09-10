@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Анірей Антиновь (опова и лиси его\nЄвдокій Аніриви, обипривосинсивне.\nСвлиденки Аслуів Камикикй?.\nОінконь Алекснно рч. Тепкова\nДіакній Логахий Леиилохвіч-\nРила Пимног бусйісти профраяний\nшіь.\n(іслсилій аиперьовї Сисовьи мисни ело-\nСивка Піузмина оба припостатівне.\nвоплентикя Кіаиції Маментоні?\nсоконч Алеканорч Тепкоич\nДісрайв Поможеів Ямпилоховч\nРеuс\nСеа Нимняо вулвсти пробраянийв\nсvьи.",
+    "localOcrWithSurnameLexicon": "Анорей Антоновь (опова и лиши его\nЄвдокій Антрива, обипривосинсивне.\nСлизенки Малів Калиники?.\nінконь Алексино річ. Тепкова\nДіаній Логокий Лемиложвіч-\nРила Пишном бусісти профіяний\nнів.\n/іссилій аперьов: Сисовьи миса ело-\nСивка Півмина оба припостатвне.\nвалентик Кінії Каменті ?\nДіарайв Поможетв Ампилоговч\nГенс\nСела Нимняо вулвети пробраяний\nсльи.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0006-target-entry.jpg",
         "sha256": "f5cae00cf0f2e26b221a325dff44d085288b1ec7e361e5ad5a0b9b12f98129b6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 6,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0006-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0006-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c9882df3bd0311dbbcefc601887953aa07d257de73f2a10955f17156d42a4d9e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0006-header.png",
+            "sha256": "c0eb70c2712944a4f6e731c2dbc0b8ac9495d2852c277cc960c4fa1880fa77df",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0006-target-entry.png",
+            "sha256": "aa69aa03f4b775c2200eece87c91245d3bb2e9f7315fe40e5502835711b03d3b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4480x3767",
+          "targetDimensions": "1512x1134",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Иван Антипов Шепилев и жена его Екатерина Иванова, — оба православные.",
+    "fuzzyQuery": true
   }
 }

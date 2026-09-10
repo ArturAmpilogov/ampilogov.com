@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сла алаливки крестаяних\n1авии Степанова /екутвви\nточь ргелагія.\nСьящиниииь Аеитанік веребряикая\nПсаньмгрит То амивусона)\nСіла Барабосковий крествятина\nСвортлий Стетакося Сухарась -",
+    "localOcrWithSurnameLexicon": "Сла алаливки крестаяних\n/авин Степанова /екутави\nхочь /генагія.\nСвящинина Аситані веребрика\nСіла Барабоковий крествятина\nСвортлий Степанося Су хараль -",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5cfe021e-b8c8-43bd-a3d8-62af29dca465/0060-target-entry.jpg",
         "sha256": "478a826bc5a20f868b1d6581dc070f870f78469c66678d6361a0d0594276368e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5cfe021e-b8c8-43bd-a3d8-62af29dca465",
+        "scanNumber": 60,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5cfe021e-b8c8-43bd-a3d8-62af29dca465/0060-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5cfe021e-b8c8-43bd-a3d8-62af29dca465/0060-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7a097e65fee0d91c1278c7ccaa6edca3dc9033869d328aa8dbe5361f1d953efd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5cfe021e-b8c8-43bd-a3d8-62af29dca465/0060-header.png",
+            "sha256": "6573320605d5c40bc44d6a852977a135ba6040b443f0840939c802b862fd1fe9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5cfe021e-b8c8-43bd-a3d8-62af29dca465/0060-target-entry.png",
+            "sha256": "5a30ab31430d76df189dcffe2538c5e4394e64e0e24465bca725acfb3f6f5b18",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6104x4741",
+          "targetDimensions": "1698x910",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Даниил Степанов Ампилогов, крестьянин, село Гамалеевка. Умерший: Пелагия Павлова Текутьева, 5 месяцев.",
+    "fuzzyQuery": true
   }
 }

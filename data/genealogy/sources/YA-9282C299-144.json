@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0144-target-entry.jpg",
         "sha256": "bb0c01054c95d7757c151200578020a7c231253fe6ef6d5aa9f70b8fb0da3cd5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9282c299-c266-4d51-b866-c5ff01fd07b9",
+        "scanNumber": 144,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0144-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0144-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e983466e210e7f259589b2f6f927c62730a59f806365e8b547e02b4c81c98304",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0144-header.png",
+            "sha256": "4f2a2c9716de31a349a9842530192b8aa78619cbd7c9c99752f7b7aed80a55ff",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0144-target-entry.png",
+            "sha256": "bac1ab45bf5a552d23bd51015f69d8885be8c3cda510c077c4f9e5735161cb1f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5759x4558",
+          "targetDimensions": "1588x1019",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "итростриниколсль Руаряниц.\nПо Жиглан - Села Камилки пулув\nяке: Швснь манари авсучаскик,\nИьсии Сооним Овараснинп\nфрона\nОемнити Василыь Силанунь; по\nченипич: тиоми сила кристіяни:\nИвань Новьси 1 арташевчи\nОсідорі Ивснов Димитрік\nПо вниосп-вела Каменки пре-\nстимне: Игнатій Иванн їим\nчарнов Нинита свориств 1шо\nчов и Сверили Піихонья СидоиеВ\nкСма Налинки\nисть",
+    "localOcrWithSurnameLexicon": "итростри николель Руаряниц.\nПо Жиган - Села Ка минки пулув\nяки: Швань манари Овсучасник,\nфрона\nОмнити Василь Силанунь; по\nченепи: тноми сила кристіяни:\nИвань Новьси 1 арташеч и\nОсідорі Свинив Димитрія\nвили\nПо внеост - вела Каменки пре-\nстимне: натій Лано Пам\nчарнов Никита сверит 1 шо\nчов и Сверили Пілонья СидориеВ\nкСиа Налинки\nисть",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Гавриил Гавриилов Ампилогов, крестьянин, та же деревня. Поручитель: Афонасий Васильев Афин, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

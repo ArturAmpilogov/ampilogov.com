@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0063-target-entry.jpg",
         "sha256": "7361a80a56097115fdfdd66bc9bafa48e8bf47412375b2be3e1823acc661ea6b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 63,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0063-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0063-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f46ca1bbdeef0fbf4b488bcf975737e70e88407878e37c8a4ff61e2a38643d00",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0063-header.png",
+            "sha256": "6106acbf4e9ed9ae4cd6109fea7723337380daa6cc86e91088c13603d28518e5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0063-target-entry.png",
+            "sha256": "7c8e80f19c5916f92e09c4eb9dbd18063d0655e0281cd016c3b55bfcdb5b222b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4607x3605",
+          "targetDimensions": "1393x862",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "УНПОГРА\nйчвекой кииги на /89/ш\nЗбАніє, ймА, сотчество й фалнліл родтелей, й какоги\nБШиХсА.\nввроиспов'єданіл.\nСела Мийаймо вки крестоенить викскорч\nа.\nИвановь Стуколовь и /гаконная оена",
+    "localOcrWithSurnameLexicon": "ТИПОГРА\nичоекой койги на 189/ ш\nЗвАніє, ймА, сотчество й фалилія родітелей, й какоги\nвЕроисповʼяданіл.\nСела Милаймо вки крестонить викскорг\nа.\nИвановь Стуколовь и /гаконная ожена",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Илия Павлов Ампилогов, крестьянин, деревня Кармалка. Отец: Иван Димитриев Сальников, солдат, село Михайловка.",
+    "fuzzyQuery": true
   }
 }

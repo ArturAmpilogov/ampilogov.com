@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e1621897-ad9d-4c6a-8e96-9743be64de8f/0082-target-entry.jpg",
         "sha256": "bec6cce9a0f1e91402e7d7df8fb86992ed60b33f4c3a995495aae083ed4a2537"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e1621897-ad9d-4c6a-8e96-9743be64de8f",
+        "scanNumber": 82,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e1621897-ad9d-4c6a-8e96-9743be64de8f/0082-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e1621897-ad9d-4c6a-8e96-9743be64de8f/0082-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "5ff0aff290e8b7816bc46c3487d1f280bb3d1949f598dee6c9522724583210c9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e1621897-ad9d-4c6a-8e96-9743be64de8f/0082-header.png",
+            "sha256": "aab57ced1cda59b5159e551fb21722b5ae9d1d26548b438e86f1518e4e1b6ab0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e1621897-ad9d-4c6a-8e96-9743be64de8f/0082-target-entry.png",
+            "sha256": "56043aad6e34682936274280d4a8bffd55c804e5a4116c0265b4f7b01b85dfe5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5425x4591",
+          "targetDimensions": "1650x947",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПОГРАФ!\nАлЬНО\n(ЧЄСКОЙ КНЙГИ НЛ/892\nЗвАніє, ймА, сôтчество й фамнлл роднтелєй, й какоги\nІнхсл.\nвЕронспов'вданіл.",
+    "localOcrWithSurnameLexicon": "ТИПОГРАФ!\nАлЬНО\n(ЧЕСКОЙ КНИГИ НА 1 892\nЗвАніє, ймА, сотчество й фамнА роднтелей, й какоги\nІнКсА.\nвЕронсповʼвданіл.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Ново - Георгиевки крн НиС кита Петров Ампилогов и законная жена его Пелагея Спиридонова, - об православные.",
+    "fuzzyQuery": true
   }
 }

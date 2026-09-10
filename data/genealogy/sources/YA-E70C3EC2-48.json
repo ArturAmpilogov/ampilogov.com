@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0048-target-entry.jpg",
         "sha256": "f0986a5801e95edec1d7d27bafbd68a1d5c2bc471d4406e15bbed94398d6e0b3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0048-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "66b921ee75a68e8f3be431ec8f185f1d925545ed55a159449c817dd98e318d52",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0048-header.png",
+            "sha256": "bc2b9516eedcec4c9abeeeb596dc1c1f02451c3b3066161ec8cf191b3796cb79",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0048-target-entry.png",
+            "sha256": "1a968be95481dc410352a46ee949c98b7d4d7e292f5d87d1d56b0a2ae09a8dc4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6004x4792",
+          "targetDimensions": "1764x813",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "7.\nСела Георгіовки крестлятика\nПетра Адріанова Валиева-\nоний Госково —\n1/ mn\n-\nCяеnuина Гauuь Puumріовь\nРела Георчіовки престіянила\nАфаносія Антинова Чуикова\nи\nДль Пераскева -",
+    "localOcrWithSurnameLexicon": "7.\nСела Георгіовки крестлятика\nПетра Адріанова Валиева -\nоний Госково -\n-\nСятина Галь Дитріав\nРела Георгіівки престіяника\nАфанасія Антинова Чуикова\nи\nДло Пераскова -",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Георгиевки крестьянина Феодора Матвеева Ампилогова дочь Евдокия. ... Отец умершего: Феодор Матвеев Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

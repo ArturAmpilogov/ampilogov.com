@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFile, readdir, writeFile } from "node:fs/promises";
+import { access, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
@@ -84,9 +84,12 @@ for (let page = 1; page <= 100; page++) {
     const documentUrl = `https://yandex.ru/archive/catalog/${item.parentId}/${item.sheetPageNumber}`;
     const linked = sourcesByUrl.get(documentUrl) ?? [];
     const number = String(item.sheetPageNumber).padStart(4, "0");
-    const evidence = await filesRecursive(path.join(evidenceRoot, item.parentId));
-    const completeEvidence = [`${number}-full-view.png`, `${number}-header.png`, `${number}-target-entry.png`]
-      .every((name) => evidence.some((file) => path.basename(file) === name));
+    const completeEvidence = (await Promise.all(
+      ["full-view", "header", "target-entry"].map(async (kind) => {
+        try { await access(path.join(evidenceRoot, item.parentId, `${number}-${kind}.png`)); return true; }
+        catch { return false; }
+      }),
+    )).every(Boolean);
     const sourceComplete = linked.some((entry) => entry.reviewStatus.startsWith("complete"));
     const status = linked.length && completeEvidence && sourceComplete
       ? "existing-complete"

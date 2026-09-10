@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/b4a1bea6-22f0-4c4f-bc05-fbac495ba44f/0038-target-entry.jpg",
         "sha256": "d3eb99895580dc2b4120cc42f254175085263344992c4c3d05f811b43ab32144"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b4a1bea6-22f0-4c4f-bc05-fbac495ba44f",
+        "scanNumber": 38,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b4a1bea6-22f0-4c4f-bc05-fbac495ba44f/0038-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b4a1bea6-22f0-4c4f-bc05-fbac495ba44f/0038-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a34d83b3d300f7b1b000e865cec72d1d1616b7838b4b7fa927a2333088e50ed3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b4a1bea6-22f0-4c4f-bc05-fbac495ba44f/0038-header.png",
+            "sha256": "8dc6863cfaa65f4e2672e864e0d714534e86e9f409011642f3f506035979ea0b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b4a1bea6-22f0-4c4f-bc05-fbac495ba44f/0038-target-entry.png",
+            "sha256": "19688068c41aa815d1c8f91587b1f58516e70f185d4637f9d4a0bc95e89120c5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5275x4345",
+          "targetDimensions": "1497x786",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Диакон Александр Теплов Псаломщик Афиноген Ампилогов. Родившийся: Павел Григорьев Заленяцкин.",
+    "fuzzyQuery": true
   }
 }

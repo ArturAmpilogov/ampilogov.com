@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ола Кирайшквки криствяниив вощен\nвла Мирайшивать приотвлти в гур\nКвань Мини? СальникаКК\nи кросотилика свним енгнр Міпра-\nява ссвамка.\n4BGM\nпомоне деревни ерестаянинк\nистартинь поров. Коповалова вомьв\nимоестаянна йплко)",
+    "localOcrWithSurnameLexicon": "Ола Кирайшивки криствянии вещен\nКвань Мини? СальникоК\nи красотилика свним рига Піпра\nева сванка.\n4BGM\nпомоне деревни керестаянинк\nстартинь поров. Коповалова Ломов",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "3d3365ffd39b077e20a1c0dca78d19cfc600439bbbf8d221fe627d250b2fcc54",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
+        "scanNumber": 17,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0017-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0017-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "697cdede05f9d480acbf5c5e9cb0184894ac0715cc63d2f525d0057f8e3203e4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0017-header.png",
+            "sha256": "f9f0d8f247b066451bc25fc83b20f637bbea865678ae8f7096f8cece6a833ac4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4fd730bf-17a9-41e8-8798-5bfd5970d322/0017-target-entry.png",
+            "sha256": "4f6a90830fb69deea93cd6eed9384468278ac438c0f86ce8976540b05777e562",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5030x4094",
+          "targetDimensions": "1452x1000",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Матвей Потапов Ампилогов, крестьянин, та же деревня. Крёстный отец: Феодор Ильин Шаталов, крестьянин, село Архангельское.",
+    "fuzzyQuery": true
   }
 }

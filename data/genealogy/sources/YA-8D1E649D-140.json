@@ -14,22 +14,59 @@
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/8d1e649d-8580-45ea-b86d-310a58330845/0140-full-view.png",
-    "sha256": "1770ae0300b1c559aab3f1775863ad8604e4476e8966006949a088888d3c5179",
+    "sha256": "3c17c3481643a3546b6c10c405f5007906dea0b91376bdb87a7d02a8eff33f9f",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8d1e649d-8580-45ea-b86d-310a58330845/0140-header.png",
+        "sha256": "571b957cb479024348d02ff729111789c057c0fe77f38f765ed40eb76ddfd1ec",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/8d1e649d-8580-45ea-b86d-310a58330845/0140-target-entry.png",
-        "sha256": "79dda6b4513a95bb2f230cd19ad3654e825a2247fcf7cb642cb24578d5da761a"
+        "sha256": "2692f97d074684e3adf0cfe41171d944bba2d42292b2d854b2021ada71dfcdcc",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
+    "scanNumber": 140,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/8d1e649d-8580-45ea-b86d-310a58330845/0140-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x718",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ихаовтe птiвos Ил\nйнна Стифанова Иигртина\nane dempe ras 2\nЗнані, во літеринь\nНеринанни\nгревни\nВилинка Афанасива\nгова сынь Aств* 1a\naymes\nмикер\nвкось",
+    "localOcrWithSurnameLexicon": "йона Стефанова Ингртина\nane dempe reas 2\n22 mar\nЗнані, во літеринь\nНоринанни\nгревни\nВилинка Афанасива\naymes",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Петр Филиппов Ампилогов, 2 года. Умерший: Павел Васильев Хвалев, 2 недели. Умерший: Петр Захаров Харламов, 2 недели.",
+    "fuzzyQuery": true
   }
 }
