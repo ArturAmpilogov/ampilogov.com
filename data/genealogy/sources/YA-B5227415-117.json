@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b5227415-2559-40b0-b329-4ba6473dd225/0117-target-entry.jpg",
         "sha256": "d9daf6346e9854f4adef2bf97fe236b3309bae5915aecd68afc7b7f4db7dd15a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b5227415-2559-40b0-b329-4ba6473dd225",
+        "scanNumber": 117,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b5227415-2559-40b0-b329-4ba6473dd225/0117-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b5227415-2559-40b0-b329-4ba6473dd225/0117-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4e54fdbf9140c67de7224f7d586e11a30c38f9ac622b5f6ee623c69b78b95b85",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b5227415-2559-40b0-b329-4ba6473dd225/0117-header.png",
+            "sha256": "c31b0df6a836a8c3a7061e704ea7a668c0c7a618a2a78bd30a22ac08ce4500df",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b5227415-2559-40b0-b329-4ba6473dd225/0117-target-entry.png",
+            "sha256": "a74d16f1b9f4402cbc9b6b3a19a7344cf165e8143e45f11096affa62b5d33ca9",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x574",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Вижь Севастополіскою купна ВладиміриМи-\nкашковь Минаевь и Рославская, Смоленской\nгубернін, мощанна, Дновица, Марія Ками\nмёва Яновская.\nМыщанинь Гарода Везенберга Гоаннь Алехеа-\nнвровь Эссенсонь и запасного квартиршем",
+    "localOcrWithSurnameLexicon": "Вить Севастополіскою купна Владиміри Ми-\nканновь Минаево и Рославская, Смоленской\nгубернім, мощанна, Довища, Марія Кали\nмева Яновская.\nМощанинь Гарода Везенберга Ганнь Алеха-\nвровь Эссенсонь и запасного кварти рием",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Севастопольский мещанин Феодосий Сергеев Ампилогов, и Симферопольская мещанка Елена Евангелиева Попандопуло.",
+    "fuzzyQuery": true
   }
 }

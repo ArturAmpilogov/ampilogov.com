@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/ac3c1f70-426a-4c2c-9354-fdfd1e9ee834/0176-target-entry.jpg",
         "sha256": "5adbcf9ac1316d48e1c96fb92b368bcec3234869ef943905c99f438d96286e28"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ac3c1f70-426a-4c2c-9354-fdfd1e9ee834",
+        "scanNumber": 176,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ac3c1f70-426a-4c2c-9354-fdfd1e9ee834/0176-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ac3c1f70-426a-4c2c-9354-fdfd1e9ee834/0176-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e1c31e35fa3fe20bf7ce8d3cce86880c29c93846a7d11b24868ab7d032104db9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ac3c1f70-426a-4c2c-9354-fdfd1e9ee834/0176-header.png",
+            "sha256": "62b0b88b0cad5e0cffd12c5b822d06f001c0d546904cccb0cbcc12c4633b9b09",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ac3c1f70-426a-4c2c-9354-fdfd1e9ee834/0176-target-entry.png",
+            "sha256": "a8029d7304a812f0ff11161755eba698f82790316ab9fa8c1bf22b0e8c3b8221",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5300x4326",
+          "targetDimensions": "1282x710",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Евенмія Иванови делетзови.\n201\nцать (I4), женеки поша девять / 9,\nнее сема росовянит опнчом. Яв-",
+    "localOcrWithSurnameLexicon": "Евенія И ванови делетзови.\n201\nцать (I4), женеки поша девять / 9,\nнее сема посовянит опичом. Яв-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Феодор Семенов Ампилогов, крестьянин, тот же хутор. Крёстный отец: Иван Васильев Шабельников, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

@@ -16,7 +16,14 @@
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
     "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "в'кронспок\"Бданіл.\nПруминского рача инорочець Мирлх\nМаннов балгентаева и невоичан-\nнал мено его Нелагіл Давитава;\nоба пракославные. Неsаконнорат-\nвепная\nСвященник) Васиій Самойлов)",
+    "localOcrWithSurnameLexicon": "в кронспок даніл.\nига\nПружинского рава инорочець Мирлих\nМаннов баллентаева и невончан-\nнал мена его Нелагія Давидова;\nоба пракославные. Незаконнорат-\nверная\nСвященник) Васій Самойлов!",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -28,10 +35,53 @@
         "sha256": "d65dbe681fbabef5b9c306a06c143cec44e5024674719c1c51f539a033568e1a",
         "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5612cada-2427-4888-9821-7d62b58d4776",
+        "scanNumber": 366,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0366-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0366-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0d0e6a25af3a917d2bd7209aceb97a35dc5c00c2517775711f970f8452139bce",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0366-header.png",
+            "sha256": "d44faefcca51084826bd016dc3eeefc1eb9430c9239012dd87c139322d0f2d40",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0366-target-entry.png",
+            "sha256": "356dd24451ad42b5414e06870a73b47158759d076bcf96b666ee075a122a8992",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5368x4459",
+          "targetDimensions": "1504x786",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Антонина Михайлова Ампилогова. ... Отец: Михаил Васильев Ампилогов, крестьянин, деревня Каммаркова, Тесинская волость.",
+    "fuzzyQuery": true
   }
 }

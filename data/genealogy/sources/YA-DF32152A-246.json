@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0246-target-entry.jpg",
         "sha256": "9eb2a84e70a2b2e546ee1c508c278c597c4e053772bdcca1ed5310f704f97ee6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "df32152a-a7f5-4516-9a3c-2e843092ab1d",
+        "scanNumber": 246,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0246-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0246-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "408b778214ea7b8d456bd1f943bef1ddce60c6e990b5139a0ed32c975e1adcd8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0246-header.png",
+            "sha256": "01be617b06138fc385866999cb76d50c027ec80eb6e975d7ed6d2b72e1792b24",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0246-target-entry.png",
+            "sha256": "7bfb5ff3dfb1ee2bb0cebb9229dacbb5490b1b5ffb9aa504337254efddd1c0bb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "11040x8829",
+          "targetDimensions": "2595x898",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, ймА, бтЕтво й фамнліА\nвоспріємникшвZ.",
+    "localOcrWithSurnameLexicon": "Званіє, ймА, бЕтво й фаміліА\nвоспріємникшвZ.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Петр Стефанов Ампилогов и женка Екатерина Стефанова Овсянникова.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0304-target-entry.jpg",
         "sha256": "05262bc238001a29f363ef222a5a7d6bc5a98fa93efb7500f8e2411f3435018e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "df32152a-a7f5-4516-9a3c-2e843092ab1d",
+        "scanNumber": 304,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0304-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0304-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bc350a798fb68ca4af90708957d9315be2196a63b7e145fee2099362d762287d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0304-header.png",
+            "sha256": "f9b7420fbb655808886ec89cd22a4112b145cddc1fec18a923b4d1f91b100381",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0304-target-entry.png",
+            "sha256": "50cb677f8efaa61a5a7acd061920b3e1d4e12803a71d8453ae65f1364e091bff",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10864x8653",
+          "targetDimensions": "2861x997",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села Гаманлевни перестьяти-\nни 11аеплія Андриеви вибим-",
+    "localOcrWithSurnameLexicon": "Села Гаманлевни перестьяти -\nни 11алія Андриеви вибим -",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Лукиан Трифанов Ампилогов, крестьянин, село Гамалеевка. ... Умерший: Владимир Ильин Красников, 1. Умерший: Симеон Лукианов Ампилогов, 1.",
+    "fuzzyQuery": true
   }
 }

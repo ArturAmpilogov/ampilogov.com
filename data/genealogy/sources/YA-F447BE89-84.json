@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0084-target-entry.jpg",
         "sha256": "de84aa6f5d5621626efed7b812f4d034c0e666712683ebb0b77a513d65c43433"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f447be89-7926-4a95-8943-34193dffee43",
+        "scanNumber": 84,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0084-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0084-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "defc3e28b440291f91784147c72ff9d45b1cb0b135d38e8f4bce9534772d442c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0084-header.png",
+            "sha256": "0052bb58487be12f903d5cae2f146e1bc33baf811db7c11d7cec740ec1b2fcb4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0084-target-entry.png",
+            "sha256": "0e6f5b59bcee908e878f01bb8e383ecf5eb9f05f8775fd18669676f3e8f5c80c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5954x4722",
+          "targetDimensions": "1585x682",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Зааніє, йма, сотчество й фалиліл одмершиги.\nOỬ MIÉP\nSжЕCка\nела Зобова запасного рядоваго Осодо\n2ки\nта Иванова Никульшино сынь Макоиич\nCo.oneganon-ss t.da",
+    "localOcrWithSurnameLexicon": "Званіє, йма, сотчество й фаміліл обмершаги.\nOỬ MIÉP\nела Зобова запасного рядоваго Ссодо\nЯки\nта Иванова Никульшино сынь Макомич",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Емилиан Андреев Ампилогов, крестьянин, село Зобово. ... Умерший: Акилина Емилианова Ампилогова, 1 год.",
+    "fuzzyQuery": true
   }
 }

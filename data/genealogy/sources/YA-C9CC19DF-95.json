@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0095-target-entry.jpg",
         "sha256": "c88bbe1038147659624308bb6f5c1f29c3a3c12ce0535f37fdd21f1a6410f615"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9cc19df-1d18-4d50-a6c6-b7a4be3700ce",
+        "scanNumber": 95,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0095-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0095-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "338e59f104128f686e2dd6f40e43c7fec405699542e77fb4685836935a92d5de",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0095-header.png",
+            "sha256": "4b72784598bb891a0a7ae28916072135fee798b5a1c233d5ffdec3d6b6abe0b0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0095-target-entry.png",
+            "sha256": "694791316f4b48187c35f8189e1f72d51139cd79a4bc808e0c441d421258c04b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5602x4408",
+          "targetDimensions": "1645x920",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "...Василий Священник Сергий Иллюминарский Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

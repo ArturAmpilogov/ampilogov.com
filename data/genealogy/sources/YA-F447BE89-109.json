@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0109-target-entry.jpg",
         "sha256": "3aebbc15722e741b7ad813f59d3c0bf198d6abd9785107be769a3ed9ba88ece0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f447be89-7926-4a95-8943-34193dffee43",
+        "scanNumber": 109,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0109-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0109-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "481037f701724b47c813da364db6f69969ea4d64ce4440e400edf5b22a1c9db9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0109-header.png",
+            "sha256": "38fb7c2e24f8afef5f0a46de9f25ae8a12ca05b1b4ee5082c5aac1bde4281eaf",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f447be89-7926-4a95-8943-34193dffee43/0109-target-entry.png",
+            "sha256": "a512c6a18510c45c94415fc1c8fc770866e9539054b1a14b65e3565607afa542",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5860x4716",
+          "targetDimensions": "1591x685",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "\"НПОГРАФІЙ\nОсКОВСкОЙ\nСИПОДАЛЬОЙ\nМЄТРИЧЕСКОЙ КНИГИ НА/900-\nh\nЗваніє, ймА, сбтчество й фаміліл осмєршигш.",
+    "localOcrWithSurnameLexicon": "\"ПОГРАФІЙ\nСИПОДАЛЬО!\nМЕТРИЧЕСКОЙ КНИГИ НА/900-\nh\nЗваніє, ймА, отчество й фаміліл обмершии.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Дария Ермолаева, 11. Умерший: Флор Феодоров Тонких, 4 месяца. Умерший: Яков Александров Ампилогов, крестьянин, село Зобово, 75.",
+    "fuzzyQuery": true
   }
 }

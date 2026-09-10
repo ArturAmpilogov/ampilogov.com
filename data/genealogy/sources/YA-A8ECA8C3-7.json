@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e/0007-target-entry.jpg",
         "sha256": "14d267696e1e6ebdb9bd89ce82196d66fe8bfafeef990db54dacb00832e8aa2f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e",
+        "scanNumber": 7,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e/0007-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e/0007-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "253cb87f0a72485a75b180391ad78b44494011a7735a177aed241a612248fb1a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e/0007-header.png",
+            "sha256": "03815a894f2c6b45219bc5ef5493e8965ce797ee070ad41b44233108191c5664",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a8eca8c3-60e0-4f73-bc6f-c5fe59b0d84e/0007-target-entry.png",
+            "sha256": "484665eae5308932698ae8e8621f3df1bd6740416d152ec52ca8ff083d2ae708",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4369x3427",
+          "targetDimensions": "1284x683",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "•Священн\nКивенн\nОДісіні на вані пенн. Пиир\nвосавник,",
+    "localOcrWithSurnameLexicon": "• Священн\nОДісіні на вані пенн. Плир\nвосавник,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Василий Захаров Ампилогов. ... Отец: Захар Миронов Ампилогов, крестьянин, село Баклановка.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0288-target-entry.jpg",
         "sha256": "a7d1ca6cdd3773c4826018f30430e765ac9bdba5b78990824ef2889fc8bcbd0b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "df32152a-a7f5-4516-9a3c-2e843092ab1d",
+        "scanNumber": 288,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0288-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0288-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "09eefa3c7584d0afcff8ccd977a66a25138fd88fcf57360953d231f94c43df6b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0288-header.png",
+            "sha256": "017172bb0bb0340065a6c8c19e57b01fc529cd71b2e8f7d3c8b8ff4b9e466b37",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0288-target-entry.png",
+            "sha256": "864cd9c939af71c010a519e6d37b580c2bed237a1e0acadc3306bd4a53a10bcb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10903x8829",
+          "targetDimensions": "2543x2116",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "-лоснино проннь\nи Гитпь Гшгорый Наза\nповь; по невысть того ясе\nсела крестьянинь Гоаннь\nВасильеть Миханловь и\nзапасный фетьоебель ски-\nкоти хосирові Букчивь.\nСела Гамамьевки кчистьяне\nМаксимь Михаилось Бест-",
+    "localOcrWithSurnameLexicon": "и Гитпь Гигорый Наза\nповь; по невысть того ясе\nсела крестьянинь Граннь\nВасильевь Михаиловь и\nзапасный фетьфебель ски-\nкоти госирові Букрить.\nСела Гамальевки кчистьяне\nМаксимь Михаилось Бест-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Илья Захаров Немяшов, крестьянин, село Гамалеевка. Поручитель: Гавриил Трифанов Ампилогов, запасный рядовой, то же село.",
+    "fuzzyQuery": true
   }
 }

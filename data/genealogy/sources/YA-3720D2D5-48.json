@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СРОДЛЬОЇ\nМЄТРÚЧЕСКОЙ ВHÁTH НА\n18\nЗваніє, йма, сотчество й фамнліл оýмєршигш.\nĐý Mép\nєніл.\nМбжєска\nРели Нишняю Думіори перастляниии\n4г.\nернори Лі нимови Нигорнова-свені /Засилій\nСкажент Килад-\nгінхини\nВ ін ко нч Алексн Nд рч Теплов\nДіараців Аомлотеів Ампиноховії.\nДеревни (пригатовий віроствяннка Ивена\nвояркина - сбенч 1ілоьми-.\n4г.\nСоягуент і\nКиладії\nПахикани-\nOS іn кo Ner Aлexeano pr men 1o вr\nДіаВінії Докожетв Анриноговії\nсии Тероминовки трествянних 12\nтепчнова вельженинова - дочо забимер\nмни-,\nСяжена, Кіладії Ківаний:\n)іоконч Алексанв ра Menkolr\nДіщкийь Аоилочеів Ампилогов'ь,\nРела Нимиляло Пршоери Престьяними Терен-\nтіs Димарієва Стрічивникова. догь 1За/вари\nСвягуемт\nКлисфрї\n3 Кавичнкий\nЗіаконч Алексагідра Текков\nіарнів Покложтй Аитиифіва.\n1.\n(. Нишняо пусубера перествечнина Марсиннін",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0048-target-entry.jpg",
         "sha256": "57c4907058143fc3171985b61fc5d50a0c400c063d02905d0e95e87f665a11a5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0048-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "dfd0fe9e67836cce782a1ab2b3692820c6ee4bd41bb94e837c5bbfaa0c1ec2c8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0048-header.png",
+            "sha256": "d32c43a64e7252abc5bf388e62d606e1b3e5c9d4e6b5b5dd405914324d49afb5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0048-target-entry.png",
+            "sha256": "3102febc209c28671eb82098293a4d99036f18e8a0c19546226923c306b63a22",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4943x4006",
+          "targetDimensions": "1396x2508",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Деревни Баевки крестьянина Сергея Иванова Крохина, - сын Василий Священник Клавдий Калинский Диакон Александр Теплов.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e/0198-target-entry.jpg",
         "sha256": "6f2e566f61c79645299a153f7bb9796df4e4b3ee124276d5802b0d6092179e02"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e",
+        "scanNumber": 198,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e/0198-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e/0198-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "42da0663fe3151010a7db0fa177c25f56ddae9117d9d37ee10a3950dc8c95969",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e/0198-header.png",
+            "sha256": "86e7c64409a8988150ff02fa5f9e9b0f9e5816dd7949dad8ea41e8c75b72fe55",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7f00fe4e-69f6-4fa0-809a-fc3be5c4a67e/0198-target-entry.png",
+            "sha256": "4572f09bf903ec37ad54b42c9f78499ffd236c7a91475cee86c4eff71259108d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5207x4130",
+          "targetDimensions": "1358x634",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сла Арибралинки хрест. Гедронимя Василь-\nлвь Сантковч „мепа его Варвара Геаргієва, обе\nпрабославнам. Свя-ран. Андре? Воршеисхій\nДiakonr Насплт Бабровв.\nСело Преибрамиикр пряст. Гоанна Кириллова\nПескокавьи миня его Соломонів (аррямава,",
+    "localOcrWithSurnameLexicon": "Сла Прибралинки хрест. Георонимя Василь-\nсв Сансков „ мена его Варвара Георгієва, обе\nправославнам. Святран. Андре? Ворисхій\nDiakonr Наст Бобровв.\nСело Преибрами кр прест. Госина Кириллова\nПісковавь и миня его Соломонів Маремава,",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Максим Петров Ампилогов жена его Ксения Ионова, оба православные. ... Родившийся: Марина Максимова Ампилогова.",
+    "fuzzyQuery": true
   }
 }

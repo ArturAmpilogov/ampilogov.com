@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ели Кстмннпреувкіти Лорфири\nНафчеттиті ОпрАпинзеви пуруив.\nни ваврнило СентониваКмі\nОсооров. Сиво\nмлля чазн ессте мин-\nоина Онитинй Рановлева\nшвостент\nСньна Госикитовау\nвлнетии слеканор вероовлих\nПосшолщцик Пльнинь Ускрентй\n//ооко село прецьяния Илья\nЛело Каменникриенним Лосынь\nПикифоров. Сетанов и прирянско\nновк чедаколнник,\nутвища Ирина Кинитика Корски\nНиносчаив Морува\nпісно Лосллова\nпояени Піся",
+    "localOcrWithSurnameLexicon": "ли Катинпреувніти Морфири\nНачетсті ОпрАпиневи перив .\nна вавило Сентонова Клі\nОсоборов. Сиво\nшостент\nвлетии слеканор вероовлих\nПосмолицик Пельминь Ускрент\nЛели Каменникриенним Лосынь\nНикифоров. Станов и придянско\nдавида Ирина Кинитика Корски\nНиносчив Морува\nпісно Лоскова\nпомени Піся",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0083-target-entry.jpg",
         "sha256": "eedfeded1bd6890425ba12419117203b11fd486fe999215923ece45cdc7f61f5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5528d1c6-2601-49c3-bd95-7f157e80a093",
+        "scanNumber": 83,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0083-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0083-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7a91eb73b2a6a4721cbc4c566e7c48bd8b97923d678ac07e971a71ba40e4a0aa",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0083-header.png",
+            "sha256": "e158c6c8a3d08b63a548b8a5c074f2c50685f3ff6c17f47883d16bb5755c0ec1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0083-target-entry.png",
+            "sha256": "936e6cd4e8ce6a375439b2e92fc7cfe846f083854e5c2f9a8915e3a27c97515a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5922x4798",
+          "targetDimensions": "3100x725",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Пераскева Иоаннова Ампилогова. ... Отец: Иоанн Флоров Ампилогов, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

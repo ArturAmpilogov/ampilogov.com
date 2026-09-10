@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0140-target-entry.jpg",
         "sha256": "6720acdb46f0dc6896a4211f54d122e60fe1439dc52ced6f0acbbb7a06fb559c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9e0e2775-88fa-4a41-8e07-30bd228340b5",
+        "scanNumber": 140,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0140-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0140-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9c0d97711c6ad34c04c1765e671c2aebaf81592481a69516fdd94f51dee45fd7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0140-header.png",
+            "sha256": "0be87d6e99e744466dfb92cbab6e1d40972d000024d9cccc627eb27273056fb9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0140-target-entry.png",
+            "sha256": "3b530f5cb6ac75528491405af7c7af889423780931f0b6886001ce6e7056d351",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5645x4302",
+          "targetDimensions": "1480x645",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Пречистенький сітаннув\nвидника /Писисерей Сма-\nнова Растопчинь и Караі-\nКа сЛискоаніра Мнатівкова\ndи aexl\nСребаріват",
+    "localOcrWithSurnameLexicon": "Пречистенький станнув\nвидника /Писинерей Сма-\nнова Растопчинь и Караі-\nКа сЛискоаніра Матівкова\nребаріват-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Леонтий Петров Ампилогов, казак, то же поселение. Крёстный отец: Тимофей Семенов Растопчин, урядник, Пречистенская станица.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f40bfba0-ee18-439c-90e2-3f7f5400d154/0079-target-entry.jpg",
         "sha256": "f82740e0617b1c73017783ab0114dbc34571418313d07f4b941b48b5b12246d9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f40bfba0-ee18-439c-90e2-3f7f5400d154",
+        "scanNumber": 79,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f40bfba0-ee18-439c-90e2-3f7f5400d154/0079-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f40bfba0-ee18-439c-90e2-3f7f5400d154/0079-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bdbed4dfdc06c7d9b0dadbc9926fe8a0484261a0ba28f2adf055a5459f6fc697",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f40bfba0-ee18-439c-90e2-3f7f5400d154/0079-header.png",
+            "sha256": "026317f65ee46b6be1eb5121fcb4d0a5d693ea7f5b2212984cee56bcd93bee94",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f40bfba0-ee18-439c-90e2-3f7f5400d154/0079-target-entry.png",
+            "sha256": "d40a080e8e0cf8c35bcb2b9785cd7e849b757440c6548eb9899373e86ab9ce13",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5280x3985",
+          "targetDimensions": "1314x897",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОВСКОЙ\nСИПОГРАФІЙ\nЕИТОААЛЬНОЙ\nМЕТРИЧЕСКОЙ КНИГИ НЛ 1%\nЗвáніє, йма, сотчестко й фамнліл родúтелей, й ки\nШнХсА.",
+    "localOcrWithSurnameLexicon": "ОСКОВСКОЙ\nСИПОГРАФІЙ.\nМЕТРИЧЕСКОЙ КНИГИ НА 1%\nЗваніє, йма, сотчество й фамилія родителей, й ки",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Параскева Митрофанова Ампилогова. ... Отец: Митрофан Яковлев Ампилогов, крестьянин, деревня Николаевка. Мать: Агафия Николаева.",
+    "fuzzyQuery": true
   }
 }

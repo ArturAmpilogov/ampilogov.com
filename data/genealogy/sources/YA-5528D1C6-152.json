@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Obanity mamy\nл.\nв Кроиспов'вданіл.\nСілакувімиовки крестьянит Ви-\nчилиь списвянові гляринь гего Законная\nо вримоватавипровочив\nСвиннира іКнсишс Назанна",
+    "localOcrWithSurnameLexicon": "banity many\nл.\nв Кронсповʼданіл.\nСілакуві новки крестьянит Ви-\nчиль списвянов глядинь гего Законная\nСвинир. іНаси Назанна",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0152-target-entry.jpg",
         "sha256": "1a45dd87febb7234cbe380dd421176e12d73b6951fc8f450edcb0907d74d5152"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5528d1c6-2601-49c3-bd95-7f157e80a093",
+        "scanNumber": 152,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0152-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0152-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cfc6bab63be28c35196b3782c501939909452ef9c9e13639ccccc96202bb034c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0152-header.png",
+            "sha256": "bd11b8dcdf5a7f0c073f72103368985f8eab06c5c8cbeb9cdcfe151661869db8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0152-target-entry.png",
+            "sha256": "dba412e509c1c751f5e776655164a70c122db6b972c0901f6f81b63c470ed7f9",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5991x4823",
+          "targetDimensions": "1625x629",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Анастасия Дмитриева Ампилогова. ... Отец: Дмитрий Михайлов Ампилогов, крестьянин, деревня Ново-Никольская.",
+    "fuzzyQuery": true
   }
 }

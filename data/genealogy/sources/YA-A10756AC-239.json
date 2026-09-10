@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0239-target-entry.jpg",
         "sha256": "df5b586d93d157e2a6e40f83a127ac616f07ede504b2dbb886df38d9a19fd3ba"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a10756ac-e75d-421b-8ab6-c9fd0c37883d",
+        "scanNumber": 239,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0239-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0239-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cc05d6724eed392e58f1e5c3fdff230d803353f81cf053eafb475ffe44518683",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0239-header.png",
+            "sha256": "1b5b289678f63585abb24dd84e86b066c4e8b6c74cd7255de62f73f41e8bf9e6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0239-target-entry.png",
+            "sha256": "f311d60651b578758cdf59af5597ce7a414ad5e9f0de45411517b430115688fd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5571x4666",
+          "targetDimensions": "1554x1189",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОВСК\nТИПОГРаФи\nVIОА ЛЬНО)\nІЄTЬ RTOPÍM, Ủ ПРАКОСОЧЕТÁЄШ\nКто били порвчйтели.\nСела Носо- Георгіевои хрене:\nгоавень Чоснопосл, гди\nЧеслопоен; помевлосрр:\nЯкщ\nАленченй Абрамоал,\n1авел",
+    "localOcrWithSurnameLexicon": "ОСКОВСК\nТИПОГРаФи\nVIОА ЛЬНО)\nІСТЬ СТОРМ, С ПРАВОСОЧЕТіКИ\nКто били порвчйтели.\nСела Носо - Георгієвои хрене:\nЧеслопоен; по невлосрр:\nЯкщ\nАленченй Абрамоал,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Никита Ампилогов, крестьянин, село Ново-Георгиевка. Поручитель: Григорий Бородин.",
+    "fuzzyQuery": true
   }
 }

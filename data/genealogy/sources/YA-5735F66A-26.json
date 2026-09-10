@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ПОДАЛЬНО\nМЕТРИЧЕСКОЙ КHÁГН НА\n1901\"\nЗвáніє, йма, сотчество й фамнліА родúтелен, й какóги\nIXCA.\nвіронспов даніл.\nСели Мопровки кроствянить Мгнаї Пол-\nоглові Миларова и мсниею Аленесиідри Фи\nколиски ови ппривосаешоо\nДвмискник Сучий Илиомиисарскі.\nАлмгилосові.\nПсаломиик Анатолій Иллюмитарскій\nСела Покровж ерествяниів Вилеримірів Лмкса\nмняв. Сержоні лиши его Анаитасі влистчеки,\nови пправосиленые.\nСвищенникь Сергій Имиоми иарскіі.\nДіщемів Домняннів Аметлосова\n/ Ісалотизивіа Анатолій Лиломинарски\n6 Рмновниперосивяниів Оеофорвданимові\nПристинннх и лиси яго 1 ериснеки\nовитривосииаияе.\nСвященникь Сергій Имиоминарскиї\nДісиів Памколлів Яинтлогова\n1ичА і-Иитопинаросіі",
+    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nМЕТРИЧЕСКОЙ КНИГИ НА\n1901\"\nЗваніє, йма, сотчество й фамнА родителен, й какги\nІХСА.\nвіронспов даніл.\nСели Моровки простянить Мгнаї Полі-\nолові Миларова и менисю Аленесідри Фи\nколиски ови привомаешно\nвникник Сучий Млиомисарск .\nАлегилосові.\nПсаломиика Анатолій Иллюмитарскій\nСела Покровж рествяниів Виперимірів Ммка\nмляв. Серпові лиши его Анаитас влистчеки,\nови правосиленые.\nСвищенникь Сергій И мисоми марсклі.\nДіщенів Доміннів Аметлогова\n/ салатизива Анатолій Лиломинарски\n6 /новнипросивяний Рефорвданимові\nПристинких и лиси его 1 ереснеки\nовитривоснаиве.\nСвященника Сергій Имиоминарскиї\nДістів Памколлів Динтлогова\n1 чА -Литопинароіі",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0026-target-entry.jpg",
         "sha256": "2d6701fdda01735fd748e3c6323926bc2074b90d0b66fdca503ec5accefc1605"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5735f66a-84cc-4f03-b063-5f849be58130",
+        "scanNumber": 26,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0026-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0026-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7f688752173b18627c531faba4325af6041062f438e43d64063e6ed0f968f26d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0026-header.png",
+            "sha256": "7d8050a082e279fa38888145487d65522a68b533564679d10a8967def97f12af",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0026-target-entry.png",
+            "sha256": "65ae495d1c505b757872cd40ee96c64bceb463e267599f150e18c43758e51f64",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5834x4722",
+          "targetDimensions": "1559x2770",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов. ... Священник Сергий Иллюмин Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

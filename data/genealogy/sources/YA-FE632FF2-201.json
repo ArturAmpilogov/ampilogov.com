@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe632ff2-e79f-4877-b395-13b510a0182b/0201-target-entry.jpg",
         "sha256": "1036133dfa9f95af920b4f0ac8cedde6570aeed32df47e81db78e766aebafd5e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe632ff2-e79f-4877-b395-13b510a0182b",
+        "scanNumber": 201,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe632ff2-e79f-4877-b395-13b510a0182b/0201-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe632ff2-e79f-4877-b395-13b510a0182b/0201-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "acdb8af7f0061260c31a36cf5f0a0695af5f08c2154910e6146ef66d2114f4aa",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe632ff2-e79f-4877-b395-13b510a0182b/0201-header.png",
+            "sha256": "4b884b31771aee795f2a05c5e8fa5aa27ac0857a3048019243b68a26d29186f9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe632ff2-e79f-4877-b395-13b510a0182b/0201-target-entry.png",
+            "sha256": "98bb93200cee678cac63423d4a117e4983df43ebf2a498d17ed8e5af3328e92e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5928x4615",
+          "targetDimensions": "1714x666",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МЄТРИЧЕСКОЙ КНИГН Н118994\nЛkта\nЗваніє, ймА, сітчество й фалнлА одмершагш.\nодмершагш.\nИбжеска\nЖенска.\nїA.\nn b.\nДеревниКитуеван арествяника",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ 1118994\nЗваніє, ймА, сітчество й фалилА однершагш.\nодмершагш.\nИзжеска\nЖенска.\nїд.\nДеревни Китреван арествяника",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Василий Васильев Бражников, 2. Умерший: Алексей Мартин Самороков, 1 неделя. Умерший: Андрей Никитин Ампилогов, 2.",
+    "fuzzyQuery": true
   }
 }

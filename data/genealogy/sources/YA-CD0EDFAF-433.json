@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0433-target-entry.jpg",
         "sha256": "a2c27d9b51269609f3cf24e4802f18953f96ff8de003c19fe1c7a4c7f0e7b476"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cd0edfaf-e748-419a-8e5d-7cd0c26042b9",
+        "scanNumber": 433,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0433-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0433-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f53f677df0d7d1bacc665dcc61aefb83ec5d99881b9d7710d00c7aff60704066",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0433-header.png",
+            "sha256": "cb46c90c8b7d565abde1193aed78eff0447dd877811868890b0ea78dfd13035c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0433-target-entry.png",
+            "sha256": "441852765f351f7ca5d82510e7d484355fcbc4048cb9d2baa45456c4c1e28383",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5020x4039",
+          "targetDimensions": "1271x506",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "какинь и крестыянская n\nяана Оеледора Лукіанова Селиакина?\nУ1 Деревин тойіне кріч Аечексій Оcо∞-\nровь Песцовь и крискаа доль оповица вка-",
+    "localOcrWithSurnameLexicon": "накинь и крестьянская n\nона Селедора Лукіанова Селакина?\nУ 1 Деревин точне кріч Алексій Осо∞-\nровь Песцовь и криская доль оповица вка-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Пузырев. Деревни той же крестьянин Павел Димитриев Ампилогов и крнская дочь девица Анисия Михаилова Кавыршина.",
+    "fuzzyQuery": true
   }
 }

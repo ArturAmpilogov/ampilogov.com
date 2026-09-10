@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0055-target-entry.jpg",
         "sha256": "59ab74d7325c1e0e12ec39f7d864c202b275e4af28b6833dc3fc5c3cbc57291d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a10756ac-e75d-421b-8ab6-c9fd0c37883d",
+        "scanNumber": 55,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0055-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0055-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f5a8e5397f94b316b7174b57da7d91b982265e1c0b9d54cb83c2a370fd97e039",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0055-header.png",
+            "sha256": "bccdd97f4f8cc96aaf5b2c6f8d0483f067263ee123c40e495c55bc39f06a9a8b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0055-target-entry.png",
+            "sha256": "170156b377967ed08473cffc7ef0b5219768f3bcd117fd147f855e95f449507d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5991x4741",
+          "targetDimensions": "1706x826",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села Гоартівки вддива креа\nтьянка ведаля Росттока\nумеранкова\nBanenntl, dócua Le\nинтpiéвl\nОріавонь воапнь Поплевинь,\n5.\nРела Горпіовки крествяння\nПетра Николоива Яковисаа\nдо млод. Марія.",
+    "localOcrWithSurnameLexicon": "Села Гартівки водива креа\nтьянка ведаля Ростока\nг/меронкова\nuumpiéll\nОравонь ваннь Поплевинь,\n5.\nРела Герпівки крествяння\nПетра Николосва Яковиска\nдо млод. Марія.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Егор Филиппов Ампилогов, 1. Умерший: Николай Тимошин, 6 месяцев. Умерший: Анастасия Архипова Черниченкова, 4 месяца.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c7bc1c3a-d866-4458-bebd-cdb5e91c4832/0185-target-entry.jpg",
         "sha256": "7dbfd5135703f780f67826a3189637bd48aa73c10d7e66865e940c2b363219c9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c7bc1c3a-d866-4458-bebd-cdb5e91c4832",
+        "scanNumber": 185,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c7bc1c3a-d866-4458-bebd-cdb5e91c4832/0185-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c7bc1c3a-d866-4458-bebd-cdb5e91c4832/0185-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9e2179fbb2ee542a024bc43305cf9255b94bf4a585090dcb4339fa47b7bde905",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c7bc1c3a-d866-4458-bebd-cdb5e91c4832/0185-header.png",
+            "sha256": "139f77e2d70b630cd8fd4a652c69e257452deaae29d203176320063d09c343b9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c7bc1c3a-d866-4458-bebd-cdb5e91c4832/0185-target-entry.png",
+            "sha256": "8431919db7c1295fd81460e5f1bb5425e7f7636b7eadd65793db47ae51356f49",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4926x3756",
+          "targetDimensions": "2559x641",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "TA TaIO\nЗваніє ймА, сотчество й фамнліА\nRr\nЗваніє, ймА, сотчество й флмнліл родителей, й какóгш\nшиусА.\nвоспріємникшв7.\nввіронспов'вданіл.\nн00\nСела Крыма крость янинь Косьма Семенова\n4ого фе села крестояних Ивань Ива-\nвокунь игаменныя мra can o",
+    "localOcrWithSurnameLexicon": "Званіє ймА, сотчество й фамнліА\nЗваніє, ймА, сотчество й фаміліл родителей, й какги\nшихсА.\nвоспріємникшв7.\nввіронсповʼвданіл.\nн00\nСела Крыма кресть я нинь Косьма Семенова\nНого же села крестьяних Ивань Ива-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Василий Иванов Ампилогов. Родившийся: Татиана Михайлова Щугова. Крёстная мать: Елена Феодорова Шолутька, крестьянская жена, то же село.",
+    "fuzzyQuery": true
   }
 }

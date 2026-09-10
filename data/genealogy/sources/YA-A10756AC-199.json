@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0199-target-entry.jpg",
         "sha256": "7277021af9b1caac9bfc4dbc1827ac429ff030de2519c8a232dce2441286a90c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a10756ac-e75d-421b-8ab6-c9fd0c37883d",
+        "scanNumber": 199,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0199-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0199-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ae5baf464bf6149181d91a1baef28b10298cdc0af6c50bd52a518d8ea2efb69c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0199-header.png",
+            "sha256": "1e7cd14119a4bb5c1c8cb1b35aadff14dba404c27ca7bf3b871631138571fd60",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a10756ac-e75d-421b-8ab6-c9fd0c37883d/0199-target-entry.png",
+            "sha256": "1fe99a489760778f808df9b3026618a2d6a82f4d6dcc810d11958d1085f9ffe3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5708x4703",
+          "targetDimensions": "1716x1268",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СКОВСКОЙ\nСПОЛИЛЬНО\nМЄТРИЧЕСКОЙ внÁгН нА /900\nЗвáніє, ймА, сотчЕство й флмнліА родúтелей, й какóги\nинусл.\nв'кронспоБ'даніл.\n10\n100",
+    "localOcrWithSurnameLexicon": "СКОВСКОЙ\nМЕТРИЧЕСКОЙ внгН нА /900\nЗваніє, ймА, сотчЕство й флинліА родителей, й какги\nинусл.\nв кронспоБʼданіл.\n10\n100",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Никита Петров Ампилогов, крестьянин, село Ново-Георгиевское. Мать: Анисія Петрова Яшникова. Мать: Анна Ефремова Маслова.",
+    "fuzzyQuery": true
   }
 }

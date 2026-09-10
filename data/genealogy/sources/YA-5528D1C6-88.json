@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Нно мисимкриты\nмет Пивил Вамурчнини\nкрествянеких grвuца Pcenis\nЛвсилви\nвенныи аох\nB\nМоооподий праданниа Висилй В\nодотов Волистныхсь Икридыянии",
+    "localOcrWithSurnameLexicon": "мет Пивил Вашуренини\nкрествянских урвица Pcenis\nвенныЙ аох\nВ\nдотов Волостныхь И кридыянии",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0088-target-entry.jpg",
         "sha256": "d3719264b82267cc7c51b4387905f94e7d90dc124576737dac2ef9a887953c49"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5528d1c6-2601-49c3-bd95-7f157e80a093",
+        "scanNumber": 88,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0088-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0088-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f373b9b7ee66837baae9779e77d5c25b3b6e5e3d554f05cb688c30d660f8826e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0088-header.png",
+            "sha256": "630654d45ac1d63b10add131974aead89531aaedab974a71dbb9a4d4241a909d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5528d1c6-2601-49c3-bd95-7f157e80a093/0088-target-entry.png",
+            "sha256": "b6b64d0c5cc5aa1f9668661d4a574e8fe25fb85cef648474c9db23969d46914c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5922x4798",
+          "targetDimensions": "1561x654",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Григорий Флоров Ампилогов и крестьянская девица Акилина Иванова Бузаева.",
+    "fuzzyQuery": true
   }
 }

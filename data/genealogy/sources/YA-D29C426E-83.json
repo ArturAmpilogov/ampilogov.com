@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/d29c426e-3648-4903-9cb6-8df6ded9ec1c/0083-target-entry.jpg",
         "sha256": "e66a4b9458eae46322bf4fc9801c2232525159b65ddd665622df6e993893317a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d29c426e-3648-4903-9cb6-8df6ded9ec1c",
+        "scanNumber": 83,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d29c426e-3648-4903-9cb6-8df6ded9ec1c/0083-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d29c426e-3648-4903-9cb6-8df6ded9ec1c/0083-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b0268c27ba9bb61fd75ffd61cd441e2d69ae372dc35a5c18865e8f688f1b53a6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d29c426e-3648-4903-9cb6-8df6ded9ec1c/0083-header.png",
+            "sha256": "43b47562522a6a2698f76f1ad64bd7bf7bd9c4790833a1ecea214748c7a00ce7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d29c426e-3648-4903-9cb6-8df6ded9ec1c/0083-target-entry.png",
+            "sha256": "29dddb0fafe95f72982ac62fe543ac8e474a5bf7c2af2caad9516932565e5952",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5228x4466",
+          "targetDimensions": "1357x907",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "сАлпилоговьн мирани Гаанов\nШевенеть; по невыетьь: ттоже\nписшка ко: Никандль еворимін\nпанддинч и Шгнатій Фоснорова\nШутови.\nПо жненното ду. Гугидков Алех.\nСандрь Никнардгов Пракоптев\nм. и Гоант Мираниов пракопаля\nпоневнотій: у. Прісузиной к\nКиртилОпалсп авсян\nикор",
+    "localOcrWithSurnameLexicon": "Шевелить; по невыть: тооже\nписка ко: Никанд своримін\nпандинь и Шнатій Фоснорова\nШутови.\nПо женното ду. Гуридков Алек.\nСандрь Никнудов Пракотек\nм. и Гоан Мираннов прокопаля\nпо невнетій: у. Прісудиной к\nКиртил Опаль овсян\nикор",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Афанасий Николаев Ампилогов, поселок Иоанно-Сергиевский. Поручитель: Кирилл Андреев Овсянников, деревня Приозерная.",
+    "fuzzyQuery": true
   }
 }

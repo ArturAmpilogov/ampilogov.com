@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "-ТИПОГРАФІН\nTHO LA HD\nМЄТРÚЧЕСКОЙ КНÁГИ На 189%\"\nЗаАніє, ймя, сбтчество й фамиліл родитєлей, й какóги\nXEA.\nв вронспов'єданіл.\n1.\nГела Ниминяго Фумвста кростьянийь\nНиколей вмельянівь Димитрівьи мленя\nего Анстаніра Лимикрієви- ови,привостанива.\nвященни Киакдні\nі Лакнанто\nДіа кожь Алексонтзк тм Lов\nДіалиів Доможив Ампилогівч.\nели Нишицяо пмвста ррествяниця\nтрьсмешива ончаничимисли ех\nЛаріх Никперфрова- Овипривосиалися.\nЛакижими\nвмусти, Какук\nДілконь Мuксанорк nrankala\nСіакатв Поклочейв Ямпиложвч\nела Пишного кейбети прествяннів\nИвань Тимоерієвь Аплаковіьм мениего\nІгапі, Ойторова-обиправожавня.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-target-entry.jpg",
         "sha256": "616fda0ff6e382474396e5f840674f189ee379ae677f6859068a2a69fd47e500"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
+        "scanNumber": 4,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f646e8dac8b5c7f7f114d8ef86b806da0cc2a7f72396a9949a3f8ad96a712fae",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-header.png",
+            "sha256": "279b3d693bb8d1d68b6741ad15168ee2cfc94042eb2372e2701f47018e0400c5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-target-entry.png",
+            "sha256": "15099e0a9dba933d2ed5c5a646654b3a8d180e7f8c9bd645d8fc2d292bea80a3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4837x3933",
+          "targetDimensions": "1373x2185",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Иван Тимофиев Ушаков и жена его Агапия Федорова — оба православные.",
+    "fuzzyQuery": true
   }
 }

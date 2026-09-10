@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТО4 ДЛЬПО\nМЄТРИЧЕСКОЙ КНИГН НА\n18\nЗканіє,\nймА, сбтчЕтко, флмнліА\n•Кслцх\ndkrà\nЗкáніє, йма, сотчестко, флмнліл\n1t\nи вкронспов'Кданіє женихА,\nй ввронспов'даніе некЕсты,\nДЕНh.\nй котóрымх крáкомх.\nЖЕнИКА.\nHEK'E\nй котóрымх Брáкомх.\nпрв.\nЛстиві проствянитй есви\nНевлясит переитвяикодер-\nНилиняго Окибсти Анірси\nвий Шварівки Перискева\nАнаніявь Паровь право\nИванова Помннолеви,\nенивнаю випрансновиви\nпракосливнио відропеню\nніп, пераднів врикосів\n1в.\nвіДино, риркантй брскатв\n1\nвяпуент 1\nвилєдії\nЛастени-\nLLOLCI\nінконеч Алексанірх Женлова\nі прайв. Даможейв\nАмпилоговв.\n13.\nМепивь пряствянийв ести\nПевіьсма рорнеитвянки\nНилиняю Думости Пешрь\nСели Нисняг Ммоба\nористтіва Подеманівь,-\nввдроніг Валарова Еі\nПгракосиавлаговикканстовлй\nс/ангзева - 1г/о а посинаного\nе/ані, перваив брикайі ВиЗм.\nвіхромеровиния перевии\nнаромо-\nКииауів Навижний\nвяпуен,\nвінкожь Алехсамерч Тепров\nі стить Доможть Nе\nнтилогов'ь.\n1б.\nМентрперествяний севи\nНевжста Орейутских\nКівминівки ПешагЛИв.\nситгранкиз сливени Аика\nновь Терекові-пракосиа-\nсрохови виневева-пгра-",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-target-entry.jpg",
         "sha256": "08b75b1b8771db1977eb1715f97f83c6fb1994c0bffe3eb4a509f8496897d784"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
+        "scanNumber": 40,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "74f1146ba45494338b49ff9cbcbef4166e635a2c23ed9dcf19434b58e75a0332",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-header.png",
+            "sha256": "7e158777f5d1158c1188fd3389d8bb03ea3f87b9c00380809f0a1fb5d23b2c69",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-target-entry.png",
+            "sha256": "3d22889927ca1a5487604f7beae2d2de22383b3586a54a4dcb6ea09b15578730",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4862x4006",
+          "targetDimensions": "1740x2604",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов Невеста крестьянка села Нижняго Гумбета Евдокия Захарова Буданцева — православного вероисповедания первым браком.",
+    "fuzzyQuery": true
   }
 }

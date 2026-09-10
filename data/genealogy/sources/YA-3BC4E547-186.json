@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "а-гладиму слеилнний.\nПо мсетияь: Осла Забова кзеетья\nоове нинь Алекеной Алекстьевь Ампи\nлоговим дедевни Лисовки неслу\nдворянинь Мимофей\nлсолуi\nГригоньев Сивцовь. По невльсть!\nела Зобова крестьянинь бворимч!\nл6.\nдоорииовь Маевь изапасной\nВядовой Астов Моофинов Мслевь.",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0186-target-entry.jpg",
         "sha256": "007ea452e9c3f231a6b7886d9077fa8730d472a5a552218c03aadb6d949895ba"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3bc4e547-d620-4b0a-b3a5-7d2d93db0a16",
+        "scanNumber": 186,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0186-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0186-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e1bf46a8bf7c36ad7361c1da84b28b136fda3a92b1df091fdbb730210d60c9f1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0186-header.png",
+            "sha256": "95fc3fe41c22e55e6f64154a19ab6d344edb68820dacdc802072df53c847227f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0186-target-entry.png",
+            "sha256": "6782fbac0f1773d89b7924f164ec23f6e824f300e1b2a352d606c608d06fcad0",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5432x4308",
+          "targetDimensions": "1309x990",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "По женихе : села Зобова крестьянин Алексей Алексеев Ампилогов и деревни Лисовки неслужащий дворянин Тимофей Григорьев Сивцов.",
+    "fuzzyQuery": true
   }
 }

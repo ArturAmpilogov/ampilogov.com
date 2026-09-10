@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c357be34-a2dd-40e7-9976-9ad14696171a/0065-target-entry.jpg",
         "sha256": "f6770e449057f4396f72657db5e18e2030712495f7c2f7ea479b78886a896f4b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c357be34-a2dd-40e7-9976-9ad14696171a",
+        "scanNumber": 65,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c357be34-a2dd-40e7-9976-9ad14696171a/0065-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c357be34-a2dd-40e7-9976-9ad14696171a/0065-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d31349588e8babdbc17461d2fea20f73fb381705d063101c1ab0f80c434a8c87",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c357be34-a2dd-40e7-9976-9ad14696171a/0065-header.png",
+            "sha256": "f06d3a38271353ec46f589603eedcec4709b6e556658e3141c210530c1f25fd1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c357be34-a2dd-40e7-9976-9ad14696171a/0065-target-entry.png",
+            "sha256": "a093421ae132d84ea5c1ede0cf2a1245bab20a92f3320969c5d9e2cd66956906",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4730x4250",
+          "targetDimensions": "1455x760",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Иу Тожломчечека с/ авриать тулелально\nВаший хмерагиф ві настоящні\ng. buarar. Nл, Сілиц. Спифать івера\nИволеннаго вы запаст армии евфеей тиры\nизь крестьяь села Мюменевскаг",
+    "localOcrWithSurnameLexicon": "Ваший мерти ві на стоящні\ng. suarar. Nu, Сіли Спиать крав\nУволеннаго вы запаст армии евоей тири\nизь крестьяь села Тюменев скай",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Муж умершего: Василий Кондратьев Ампилогов, крестьянин, деревня Николаевка. ... Умерший: Феодосия Михайлова Ампилогова.",
+    "fuzzyQuery": true
   }
 }

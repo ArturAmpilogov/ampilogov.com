@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0314-target-entry.jpg",
         "sha256": "874fc440b17f4a9bf6ea2281d1113887c853e1e4768033bfe29bc20eafeca488"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "75ef1582-b142-45e8-b631-5de242c694a9",
+        "scanNumber": 314,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0314-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0314-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f7ea1da8d127b550de5aab65a86df484c3f714c536e87823154de40aa2043661",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0314-header.png",
+            "sha256": "c0d46be17663f2543b31795e8355f515df79df9807d540ec907ab77628ddbc31",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0314-target-entry.png",
+            "sha256": "e9ca9657e7ddda10c3b4f6dfe8bf700dc3ba1b3f779c4f7b6d433fba9401d9fa",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5640x4540",
+          "targetDimensions": "1538x670",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "low"
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Дер. Чумановки Кр. Потр Лаврен-\nтиев Амтилогив, жена Анни Пее.\nрова.",
+    "localOcrWithSurnameLexicon": "Дер. Чумановки Кр. Потр Лаврен-\nтиев Амтилогив, жена Анни Пел.\nрова.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Анна Петрова Ампилогова. Умерший: Петр Лаврентиев Ампилогов, крестьянин, деревня Чумановка.",
+    "fuzzyQuery": true
   }
 }

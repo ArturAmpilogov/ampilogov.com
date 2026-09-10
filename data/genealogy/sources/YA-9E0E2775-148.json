@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0148-target-entry.jpg",
         "sha256": "e80d488b5ab076d2ed6ee805cc4a48f95844b2b3ca4692c60c6e5040b368cf9e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9e0e2775-88fa-4a41-8e07-30bd228340b5",
+        "scanNumber": 148,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0148-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0148-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cba0c3db43b4144a4d3fa1d748ab2ef6fdb451385a70b79e0adb29f7d24aada2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0148-header.png",
+            "sha256": "3d83c7c0109f047e4567ddbfb976a23db76c53bb27340fee37504e717cbf973e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9e0e2775-88fa-4a41-8e07-30bd228340b5/0148-target-entry.png",
+            "sha256": "7a71a11bede3e0fffb4c953b5b37605f61fcd33104ec83208089076eda691a6b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5614x4339",
+          "targetDimensions": "1520x783",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "a alleal\nшесть (в) бугчи яинокоо,\nСим\nмиkа р.рвіка нарив.\nТого як нас. Коиткь Лена",
+    "localOcrWithSurnameLexicon": "шесть (6) бугчи минакоо,\nСим\nмика р. ріка нарив.\nТого як нас. Коиткь Лена",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Леонтий Петров Ампилогов, казак, тот же поселок. Крёстный отец: Филипп Фролов Никитин, поселение Изяк-Никитинское, Казак.",
+    "fuzzyQuery": true
   }
 }

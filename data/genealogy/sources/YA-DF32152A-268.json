@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0268-target-entry.jpg",
         "sha256": "a4419dd1b7fb4bdf6a88f83cbc1abdda2afb627c07cfe751d9a6644cdaeb8e49"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "df32152a-a7f5-4516-9a3c-2e843092ab1d",
+        "scanNumber": 268,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0268-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0268-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a8c005f4fc9740e47a0b562384bea4b408febae1828ef715618a1d22a6e3e382",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0268-header.png",
+            "sha256": "c98127c57dde0c048f918f8100533b473ca291a6234170bb4b929c6803dda368",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/df32152a-a7f5-4516-9a3c-2e843092ab1d/0268-target-entry.png",
+            "sha256": "f491e96dc5bc0a9f27b4f6fd19cc9f455d95c6ff68fb148c985aa9311e3215a5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10966x8829",
+          "targetDimensions": "2895x1499",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "/саломщик оони тусаназ\nСела Гамальськи престьянинь\nПетрь Васльевь Седоровский\nи его жека Густинія Васильева,\nправославныех.\ncaaganus Dinantontaeaa\nNcohon gum toouurtycanah\nСела Гамальевни вчистьянинь",
+    "localOcrWithSurnameLexicon": "Села Гамальски крестьянинь\nПетрь Васильев, Седоровский\nи его жена Густинія Васильева,\nправославныех.\ncaaganus Dinant antaeea\nNcohons gum toouurtycanah\nСела Гамальевни вчистьянинь",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Пелагия Максимова Ампилогова. ... Отец: Максим Антонов Ампилогов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

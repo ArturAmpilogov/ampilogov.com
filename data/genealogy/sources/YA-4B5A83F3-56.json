@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Оретургенія сипцане : Архина Мнюси-\nles\nмовч бухаравни вишнивста Нихо -.\nсаева финатова.\nФолодоравель Гароди Грмгез вева свен\nпилогово.Серенвургекан синизанха\nЄвдопій Трерино ва Марченко.",
+    "localOcrWithSurnameLexicon": "Оретургенія сипищане: Архина Михи -\nles\nмовч бухарав и вишивста Нихо -.\nсаева финатова.\nФолодоравель Городи Григаз вова свен\nпилогов. Серенвургенан синианка\nЄвдорій Трерино ва Марченко .",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4b5a83f3-71b9-491e-b9d0-f40977136c49/0056-target-entry.jpg",
         "sha256": "733993a99e9c4a869d8c6600fb88b6b3060c500560f6a9aea83c5b625a88e215"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4b5a83f3-71b9-491e-b9d0-f40977136c49",
+        "scanNumber": 56,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4b5a83f3-71b9-491e-b9d0-f40977136c49/0056-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4b5a83f3-71b9-491e-b9d0-f40977136c49/0056-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "11558f27ef10d76d37b63a4cc08857f8b747d9b7782bd77a7d74b34edd28aefd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4b5a83f3-71b9-491e-b9d0-f40977136c49/0056-header.png",
+            "sha256": "112ac2c8cbf7104b3d74cfc5817b4bacb27db6b1d1a606aec5a98ae80ac8a590",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4b5a83f3-71b9-491e-b9d0-f40977136c49/0056-target-entry.png",
+            "sha256": "1cb48b3abfec521a33209b9e2b85f69607e47fce72973e33336aa8fa3ac8bb42",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4800x4000",
+          "targetDimensions": "1200x553",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Фельдфебель Гордий Григорьев Ампилогов и Оренбургская мещанка Евдокия Трофимова Марченко. ном Иоанном.",
+    "fuzzyQuery": true
   }
 }

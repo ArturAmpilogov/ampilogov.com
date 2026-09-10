@@ -117,7 +117,7 @@ for (const [position, row] of rows.entries()) {
 
     if (!(await exists(full))) {
       let converted = false;
-      for (let attempt = 1; attempt <= 5; attempt++) {
+      for (let attempt = 1; attempt <= 12; attempt++) {
         try {
           const grantPath = path.join(temporaryDirectory, "grant.json");
           await run("curl", [
@@ -126,7 +126,9 @@ for (const [position, row] of rows.entries()) {
             "--data", JSON.stringify({ nodeId: node.id, type: "original" }), "--output", grantPath,
             "https://yandex.ru/archive/api/image-grant",
           ]);
-          const grant = JSON.parse(await readFile(grantPath, "utf8"));
+          const grantText = await readFile(grantPath, "utf8");
+          if (!grantText.trimStart().startsWith("{")) throw new Error(`Вместо JSON grant получена временная HTML-заглушка: ${pageUrl}`);
+          const grant = JSON.parse(grantText);
           if (!grant?.url || !grant?.token) throw new Error(`Нет grant оригинала: ${pageUrl}`);
           const original = path.join(temporaryDirectory, "original-image");
           await run("curl", [
@@ -138,8 +140,8 @@ for (const [position, row] of rows.entries()) {
           converted = true;
           break;
         } catch (error) {
-          if (attempt === 5) throw error;
-          await delay(attempt * 2000);
+          if (attempt === 12) throw error;
+          await delay(Math.min(30000, attempt * 5000));
         }
       }
       if (!converted) throw new Error(`Не удалось сохранить оригинал: ${pageUrl}`);

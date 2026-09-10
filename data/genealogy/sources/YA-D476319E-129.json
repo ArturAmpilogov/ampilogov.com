@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/d476319e-7335-4976-8072-a679134b8dab/0129-target-entry.jpg",
         "sha256": "90b10e17d3275b3e5ab844463e66dadd2011738c54de2bae32d2e0bf3767f14b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d476319e-7335-4976-8072-a679134b8dab",
+        "scanNumber": 129,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d476319e-7335-4976-8072-a679134b8dab/0129-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d476319e-7335-4976-8072-a679134b8dab/0129-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "de61ece5c1cfdcdb833b02b07130ca99b20e44022802077b688e824730c8f8bc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d476319e-7335-4976-8072-a679134b8dab/0129-header.png",
+            "sha256": "33a50b1b5441c8944a2a8bdfc68c0aa4f7ba406dbba9acc5fbf1325cc319b12c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d476319e-7335-4976-8072-a679134b8dab/0129-target-entry.png",
+            "sha256": "5fd268e1ad213247e169722b0303324cb5b1398776445eb028defb9583059ca6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10876x8690",
+          "targetDimensions": "2733x1058",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Могоонесим Критвенина Приури\nГосннов Свотинкикрить\nМлослима Смничии Полмнекок\nотина Агричина Герасискова.",
+    "localOcrWithSurnameLexicon": "Мого онесим Критенина Приури\nГоаннов Свотини крить\nМнослима Амничи Полянинок\nотина Агрипина Герасискова.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Гавриил Павлов Ампилогов и крестьянина Иоанна Миронова Топилина жена Ирина Флорова.",
+    "fuzzyQuery": true
   }
 }

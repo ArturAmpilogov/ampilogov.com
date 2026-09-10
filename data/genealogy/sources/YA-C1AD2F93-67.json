@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0067-target-entry.jpg",
         "sha256": "00cc11842119643d300bbeb162937edff61b060c93ea0b5516fd0162c11207b9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6",
+        "scanNumber": 67,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0067-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0067-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a63cd05fbcfdbb622f9c5e650724395b8e2ffcc688c8a8c750afb599e556b58c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0067-header.png",
+            "sha256": "59b93d6d15fde4835956f2fda4b646a3a96f24fc320cf292846ac7819994d95c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0067-target-entry.png",
+            "sha256": "6b0652563ef64c6e723c38d7f0fc9c6658c2a633609444a3c20247cfa65fc69c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5416x4164",
+          "targetDimensions": "1347x923",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "low"
   },
   "transcription": {
     "status": "needs-recapture-before-family-record",
     "literal": "Сохранённые локальные полный разворот и целевой фрагмент слишком малы и размыты для надёжного чтения фамилий в предполагаемых строках.",
     "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Орскій гиплуанинх Арте-С\nній вдіeв Антилоговани\n4 Орловской губержи, Севм\nскаго грлода, ЮОрлинской ло\nВолости, деревни СверимоКи\nвичч крестьянская женя\nдтвица Хкритима Филин-\nнова Поченкова\nВюственный іюукя",
+    "localOcrWithSurnameLexicon": "Орскій гипланинх Арте- С\nній вдів Анпилоговани\n4 Орловской губержи, Севм\nспаго глода, Орлинской ло\nВолости, деревни Сверимо Ки\nвичи крестьянская женя\nутвица Харитима Филин-\nнова Коченкова\nВОственный рук",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Орский мещанин Артемий Авдиев Ампилогов и Орловской губернии, Севского уезда, Орлинской Волости...",
+    "fuzzyQuery": true
   }
 }
