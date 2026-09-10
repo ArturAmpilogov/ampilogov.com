@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+import {readFile,readdir,writeFile} from "node:fs/promises";
+import path from "node:path";
+
+const root=process.cwd();
+const outputPath=path.join(root,"data/genealogy/searches/yandex-archive-ampilogov-books-fuzzy-2026-09-10.json");
+const sourcesRoot=path.join(root,"data/genealogy/sources");
+const evidenceRoot=path.join(root,"data/genealogy/evidence-private/yandex");
+
+async function filesRecursive(directory,suffix=""){
+  let entries;try{entries=await readdir(directory,{withFileTypes:true});}catch(error){if(error?.code==="ENOENT")return[];throw error;}
+  return(await Promise.all(entries.map(async(entry)=>{const file=path.join(directory,entry.name);if(entry.isDirectory())return filesRecursive(file,suffix);return entry.isFile()&&(!suffix||entry.name.endsWith(suffix))?[file]:[];}))).flat();
+}
+function canonicalYandexUrl(value){if(typeof value!=="string"||!value.includes("yandex.ru/archive/catalog/"))return null;try{const url=new URL(value);return`${url.origin}${url.pathname}`.replace(/\/$/,"");}catch{return null;}}
+function collectUrls(value,urls=new Set()){if(typeof value==="string"){const url=canonicalYandexUrl(value);if(url)urls.add(url);}else if(Array.isArray(value))for(const item of value)collectUrls(item,urls);else if(value&&typeof value==="object")for(const item of Object.values(value))collectUrls(item,urls);return urls;}
+function extractNextData(html){const marker='<script id="__NEXT_DATA__" type="application/json">';const start=html.indexOf(marker),end=start<0?-1:html.indexOf("</script>",start);if(start<0||end<0)throw new Error("В HTML нет __NEXT_DATA__");return JSON.parse(html.slice(start+marker.length,end));}
+function displayDate(from,to){const months=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];const format=(value)=>{const[d,m,y]=value.split("-").map(Number);return`${d} ${months[m-1]} ${y}`;};if(!from)return"дата не указана";if(!to||to===from)return format(from);return`${format(from)} — ${format(to)}`;}
+
+const sourcesByUrl=new Map();
+for(const file of await filesRecursive(sourcesRoot,".json")){
+  let source;try{source=JSON.parse(await readFile(file,"utf8"));}catch{continue;}if(!source.sourceId)continue;
+  for(const url of collectUrls(source)){const linked=sourcesByUrl.get(url)??[];linked.push({sourceId:source.sourceId,reviewStatus:source.review?.status??""});sourcesByUrl.set(url,linked);}
+}
+
+const results=[];
+for(let page=1;page<=9;page++){
+  const html=await readFile(`/private/tmp/ampilogov-books-fuzzy-stable-page${page}.html`,"utf8");
+  const props=extractNextData(html).props.pageProps;
+  if(Number(props.pageNum)!==page||Number(props.totalPages)!==9||Number(props.totalDocs)!==82)throw new Error(`Неверная страница ${page}`);
+  for(let position=0;position<props.items.length;position++){
+    const item=props.items[position];const documentUrl=`https://yandex.ru/archive/catalog/${item.parentId}/${item.sheetPageNumber}`;const linked=sourcesByUrl.get(documentUrl)??[];
+    const number=String(item.sheetPageNumber).padStart(4,"0"),directory=path.join(evidenceRoot,item.parentId),evidence=await filesRecursive(directory);
+    const completeEvidence=[`${number}-full-view.png`,`${number}-header.png`,`${number}-target-entry.png`].every((name)=>evidence.some((file)=>path.basename(file)===name));
+    const sourceComplete=linked.some((entry)=>entry.reviewStatus.startsWith("complete"));
+    const status=linked.length&&completeEvidence&&sourceComplete?"existing-complete":linked.length?"pending-existing-record-evidence-upgrade":"pending-primary-scan-review";
+    const breadcrumbs=props.breadcrumbs[item.parentId]??[];
+    results.push({absolutePosition:results.length+1,page,position:position+1,catalogId:item.parentId,scanNumber:item.sheetPageNumber,documentUrl,title:breadcrumbs.at(-1)?.name??item.name,publication:breadcrumbs.map((entry)=>entry.name).join(", "),date:displayDate(item.dateFrom,item.dateTo),indexSnippet:(item.snippet??"").replace(/[\u0000-\u001f\u007f]/g,"").replace(/[\[\]]/g,"").trim(),status,capture:status!=="existing-complete",sourceIds:linked.length?[...new Set(linked.map((entry)=>entry.sourceId))].sort():undefined});
+  }
+}
+
+const pending=results.filter((row)=>row.capture);
+const manifest={schemaVersion:1,searchRunId:"yandex-archive-ampilogov-books-fuzzy-2026-09-10",status:"inventory-complete-processing-in-progress",createdAt:"2026-09-10",queryText:"Ампилогов",rules:{sort:"ascending-by-date",fuzzyQuery:true,deduplicateByCatalogAndScan:true,verifyAgainstPrimaryScan:true,localEvidenceRequired:true,publicYandexLinkOnly:true,publicCutoffYear:1950},progress:{pagesInventoried:9,rowsFound:82,rowsCompleted:results.length-pending.length,uniqueScansPending:new Set(pending.map((row)=>`${row.catalogId}/${row.scanNumber}`)).size,rowsRemaining:pending.length},batches:[{index:"books",searchUrl:"https://yandex.ru/archive/search?text=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&pageNum=1&index=books&updateDate=0&excludeSeen=0&rankMode=by_date&sortOrder=ascending&fuzzy=1",reportedPages:9,reportedResults:82,results}]};
+await writeFile(outputPath,`${JSON.stringify(manifest,null,2)}\n`);
+console.log(JSON.stringify(manifest.progress));

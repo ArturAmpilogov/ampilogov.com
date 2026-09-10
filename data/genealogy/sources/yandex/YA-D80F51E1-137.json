@@ -88,7 +88,15 @@
     "status": "complete",
     "literal": "Май. № 32. 9 [родился], 10 [крещён]. Константин. Оренбургский мещанин Никита Димитриев Баранов и законная жена его Дарья Ларионова, оба православные. Восприемники: Оренбургского уезда деревни Кармалки государственный крестьянин Яков Егоров Ампилогов и вдова солдатка Матрена Семенова Карпинская. Священник Николай Шильков, диакон Мефодий Насонов, дьячок Иван Тархов.",
     "layoutNote": "Событие подтверждено двумя архивными экземплярами.",
-    "modernInterpretation": "Яков Егорович Ампилогов из Кармалки был восприемником Константина Баранова при крещении 10 мая 1857 года."
+    "modernInterpretation": "Яков Егорович Ампилогов из Кармалки был восприемником Константина Баранова при крещении 10 мая 1857 года.",
+    "localOcr": "Келютва вараньвоки\nНаимана? Шіслкниад\na.Oii /tananat\nаторнй\n0пинаnй дожnуe\nВл22 диабоннванс\ninseбamall\nDLlLFO\n4тар 14\nLOAE\nкм В усс,ни\nAel ea",
+    "localOcrWithSurnameLexicon": "Намана? Шісльник3\na.Oii /tananast\n• м.\ninsedamalll\nDLlLFO\nИтар 14\nLOIAE\nAel ea",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
@@ -151,6 +159,12 @@
             "path": "data/genealogy/evidence-private/yandex/050e760e-a9f9-461b-8a84-887c11dceb46/0345-target-entry-document-upper-left.png",
             "sha256": "e26698a9c114e67aade3a5698ce073edf16819f666c3a5ba4e4ad107fbd3fec3",
             "description": "Параллельный архивный экземпляр. Увеличенная целевая строка 4 с именами, датами, родством, статусом и соседним контекстом."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/050e760e-a9f9-461b-8a84-887c11dceb46/0345-target-entry.png",
+            "sha256": "3a64473e97744dfc8c8315e33e1fc0648f14bda78a51e49aacfbb9ae369ecd11",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
           }
         ],
         "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
@@ -159,7 +173,11 @@
           "headerVisuallyConfirmed": true,
           "targetRowsVisuallyConfirmed": true,
           "confirmedAt": "2026-08-31",
-          "method": "manual-comparison-with-source-transcription-and-document-context"
+          "method": "manual-comparison-with-source-transcription-and-document-context",
+          "fullDimensions": "1279x1015",
+          "targetDimensions": "1200x979",
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true
         }
       }
     ],
@@ -168,13 +186,19 @@
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-07",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "method": "manual-comparison-with-source-transcription-and-document-context",
+      "fullDimensions": "5529x4553",
+      "targetDimensions": "5529x3000",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true
     }
   },
   "review": {
     "status": "complete",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
       "2026-08-27: для параллельного экземпляра 050e760e-a9f9-461b-8a84-887c11dceb46/345 сохранены чистый полный лист, заголовок и целевые строки; SHA-256 проверены.",
@@ -185,5 +209,9 @@
   "summary": {
     "status": "verified-summary",
     "text": "Яков Егорович Ампилогов был восприемником 10 мая 1857 года в Оренбурге."
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Яков Егоров Ампилогов, государственный крестьянин, Оренбургский уезд, деревня Кармалка.",
+    "fuzzyQuery": true
   }
 }

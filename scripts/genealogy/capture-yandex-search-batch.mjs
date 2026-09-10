@@ -7,6 +7,7 @@ import path from "node:path";
 import { promisify } from "node:util";
 
 const run = promisify(execFile);
+const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const root = process.cwd();
 const args = new Map();
 for (let index = 2; index < process.argv.length; index += 2) args.set(process.argv[index], process.argv[index + 1]);
@@ -14,19 +15,21 @@ const manifestPath = args.get("--manifest");
 if (!manifestPath) throw new Error("Нужен --manifest path/to/search.json");
 
 const manifest = JSON.parse(await readFile(path.resolve(root, manifestPath), "utf8"));
+const only = new Set(String(args.get("--only") ?? "").split(",").filter(Boolean));
 const allRows = (manifest.batches?.flatMap((batch) => batch.results) ?? manifest.results ?? [])
-  .filter((row) => row.capture !== false);
-const uniqueRows = [...new Map(allRows.map((row) => [`${row.catalogId}/${row.scanNumber}`, row])).values()];
-const from = Math.max(1, Number(args.get("--from") ?? 1));
-const limit = Math.max(1, Number(args.get("--limit") ?? uniqueRows.length));
-const rows = uniqueRows.slice(from - 1, from - 1 + limit);
+  .filter((row) => row.capture !== false || only.has(`${row.catalogId}/${row.scanNumber}`))
+  .filter((row) => !only.size || only.has(`${row.catalogId}/${row.scanNumber}`));
+let uniqueRows = [...new Map(allRows.map((row) => [`${row.catalogId}/${row.scanNumber}`, row])).values()];
 const searchTerm = manifest.queryText ?? manifest.query?.text ?? "";
 // Ищем не только нормализованную форму из запроса, но и документальные
 // окончания/варианты (Ампліева, Ампилонов, оборванное «Ампи…»). Граница
 // слева не даёт принять за фамильный ряд отчества вроде «Евлампіева».
 const searchStem = searchTerm.slice(0, 3);
+const surnameSeriesStems = searchTerm === "Ампилогов"
+  ? ["Амп", "Анп", "Апп", "Амф", "Анф", "Онп", "Вамп", "Акп", "Алп", "Амт"]
+  : [searchStem];
 const targetPattern = searchStem
-  ? new RegExp(`(?:^|[^А-Яа-яЁёѢѣІі])${searchStem.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`, "iu")
+  ? new RegExp(`(?:^|[^А-Яа-яЁёѢѣІі])(?:${surnameSeriesStems.map((stem) => stem.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "iu")
   : null;
 const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0 Safari/537.36";
 const metadataRoot = path.join(tmpdir(), `${manifest.searchRunId.toLowerCase()}-metadata`);
@@ -35,6 +38,19 @@ await mkdir(metadataRoot, { recursive: true });
 const exists = async (file) => {
   try { await access(file); return true; } catch { return false; }
 };
+
+if (args.get("--skip-complete") === "true") {
+  const completeness = await Promise.all(uniqueRows.map(async (row) => {
+    const prefix = String(row.scanNumber).padStart(4, "0");
+    const evidenceDir = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId);
+    return Promise.all(["full-view", "header", "target-entry"].map((kind) => exists(path.join(evidenceDir, `${prefix}-${kind}.png`))))
+      .then((states) => states.every(Boolean));
+  }));
+  uniqueRows = uniqueRows.filter((_, index) => !completeness[index]);
+}
+const from = Math.max(1, Number(args.get("--from") ?? 1));
+const limit = Math.max(1, Number(args.get("--limit") ?? uniqueRows.length));
+const rows = uniqueRows.slice(from - 1, from - 1 + limit);
 
 const bbox = (points) => {
   if (!Array.isArray(points) || !points.length) return null;
@@ -69,35 +85,53 @@ for (const [position, row] of rows.entries()) {
   try {
     const pageUrl = `https://yandex.ru/archive/catalog/${row.catalogId}/${scan}`;
     const pagePath = path.join(temporaryDirectory, "page.html");
-    await run("curl", ["--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent, "--output", pagePath, pageUrl]);
-    const html = await readFile(pagePath, "utf8");
     const marker = '<script id="__NEXT_DATA__" type="application/json">';
-    const from = html.indexOf(marker);
-    const to = from < 0 ? -1 : html.indexOf("</script>", from);
-    if (from < 0 || to < 0) throw new Error(`Нет __NEXT_DATA__: ${pageUrl}`);
-    const pageData = JSON.parse(html.slice(from + marker.length, to));
+    let pageData;
+    for (let attempt = 1; attempt <= 8; attempt++) {
+      await run("curl", ["--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent, "--output", pagePath, pageUrl]);
+      const html = await readFile(pagePath, "utf8");
+      const markerFrom = html.indexOf(marker);
+      const markerTo = markerFrom < 0 ? -1 : html.indexOf("</script>", markerFrom);
+      if (markerFrom >= 0 && markerTo >= 0) {
+        pageData = JSON.parse(html.slice(markerFrom + marker.length, markerTo));
+        break;
+      }
+      if (attempt < 8) await delay(attempt * 2500);
+    }
+    if (!pageData) throw new Error(`Нет __NEXT_DATA__ после повторов: ${pageUrl}`);
     const pageProps = pageData.props?.pageProps ?? {};
     const node = pageProps.currentNode;
     if (!node?.id || !node?.originalImageSize) throw new Error(`Нет описания изображения: ${pageUrl}`);
     await writeFile(path.join(metadataRoot, `${row.catalogId}-${scan}.json`), `${JSON.stringify({ row, pageProps }, null, 2)}\n`);
 
     if (!(await exists(full))) {
-      const grantPath = path.join(temporaryDirectory, "grant.json");
-      await run("curl", [
-        "--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent,
-        "--referer", pageUrl, "--header", "Content-Type: application/json", "--header", "Accept: application/json",
-        "--data", JSON.stringify({ nodeId: node.id, type: "original" }), "--output", grantPath,
-        "https://yandex.ru/archive/api/image-grant",
-      ]);
-      const grant = JSON.parse(await readFile(grantPath, "utf8"));
-      if (!grant?.url || !grant?.token) throw new Error(`Нет grant оригинала: ${pageUrl}`);
-      const original = path.join(temporaryDirectory, "original-image");
-      await run("curl", [
-        "--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent,
-        "--referer", pageUrl, "--header", `X-Archive-Image-Token: ${grant.token}`,
-        "--output", original, `https://yandex.ru${grant.url}`,
-      ]);
-      await run("sips", ["-s", "format", "png", original, "--out", full]);
+      let converted = false;
+      for (let attempt = 1; attempt <= 5; attempt++) {
+        try {
+          const grantPath = path.join(temporaryDirectory, "grant.json");
+          await run("curl", [
+            "--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent,
+            "--referer", pageUrl, "--header", "Content-Type: application/json", "--header", "Accept: application/json",
+            "--data", JSON.stringify({ nodeId: node.id, type: "original" }), "--output", grantPath,
+            "https://yandex.ru/archive/api/image-grant",
+          ]);
+          const grant = JSON.parse(await readFile(grantPath, "utf8"));
+          if (!grant?.url || !grant?.token) throw new Error(`Нет grant оригинала: ${pageUrl}`);
+          const original = path.join(temporaryDirectory, "original-image");
+          await run("curl", [
+            "--fail", "--silent", "--show-error", "--location", "--user-agent", userAgent,
+            "--referer", pageUrl, "--header", `X-Archive-Image-Token: ${grant.token}`,
+            "--output", original, `https://yandex.ru${grant.url}`,
+          ]);
+          await run("sips", ["-s", "format", "png", original, "--out", full]);
+          converted = true;
+          break;
+        } catch (error) {
+          if (attempt === 5) throw error;
+          await delay(attempt * 2000);
+        }
+      }
+      if (!converted) throw new Error(`Не удалось сохранить оригинал: ${pageUrl}`);
     }
 
     const image = node.originalImageSize;
@@ -113,9 +147,9 @@ for (const [position, row] of rows.entries()) {
       if (matched.length) {
         box = {
           left: Math.min(...matched.map((item) => item.left)) - 90,
-          top: Math.min(...matched.map((item) => item.top)) - 140,
+          top: image.height - Math.max(...matched.map((item) => item.bottom)) - 140,
           right: Math.max(...matched.map((item) => item.right)) + 90,
-          bottom: Math.max(...matched.map((item) => item.bottom)) + 140,
+          bottom: image.height - Math.min(...matched.map((item) => item.top)) + 140,
         };
       } else {
         box = { left: image.width * 0.08, top: image.height * 0.12, right: image.width * 0.92, bottom: image.height * 0.88 };

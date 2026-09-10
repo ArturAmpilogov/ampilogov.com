@@ -104,7 +104,15 @@
     "status": "complete-with-layout-uncertainty",
     "literal": "Январь 1849 года. Оренбургский мещанин Матфий Егоров, 39 лет, православный, вторым браком; вдова Дарья Михайлова, жена умершего мещанина Лаврентия Васильева, 40 лет, православная, вторым браком. По женихе оренбургские мещане Борис Ампилогов и Егор Ампилогов; по невесте Василий Башкатов и Василий Золотухин. Таинство совершал священник Иоанн Виноградов с диаконом Василием Любочестновым, дьячком Порфирием Никольским и пономарём Львом Муромцевым.",
     "layoutNote": "Порядок строк позволяет отнести поручителей к браку 8 января, но связь граф требует повторной визуальной проверки.",
-    "modernInterpretation": "Борис и Егор Ампилоговы, оренбургские мещане, были поручителями жениха на свадьбе в январе 1849 года."
+    "modernInterpretation": "Борис и Егор Ампилоговы, оренбургские мещане, были поручителями жениха на свадьбе в январе 1849 года.",
+    "localOcr": "діо ЖилиХи Оренблрсекі\nкинеет бермой влчмн\nгові и Л0рів Алепилогод,\nпо жевльств, Василії\nВаткатова и Вастгій\nЗалотрвит.\nс/1/2111",
+    "localOcrWithSurnameLexicon": "діо ЖилиХи Оренбульки\nгові и Лорів Алетилогод,\nпо невлост, Василії\nВаткатова и Васигій\nЗалотрвить.\nс11/2111",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
@@ -135,13 +143,50 @@
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-03",
       "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "6ed3b7ea-d2cf-4885-9216-6cdbc4ef0a6e",
+        "scanNumber": 61,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6ed3b7ea-d2cf-4885-9216-6cdbc4ef0a6e/0061-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6ed3b7ea-d2cf-4885-9216-6cdbc4ef0a6e/0061-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f57fc854519d0e2889e985a15081cc5f3d5b681c38309c1c09e0aed0367d122c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6ed3b7ea-d2cf-4885-9216-6cdbc4ef0a6e/0061-header.png",
+            "sha256": "76b1783dcda53c710952af88772f93224d225b816d128926d11604f57d037eeb",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6ed3b7ea-d2cf-4885-9216-6cdbc4ef0a6e/0061-target-entry.png",
+            "sha256": "f9d59008c2bed64ac464f38879619a22ce16468515e38277c9405396c5547c91",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5334x4167",
+          "targetDimensions": "1528x1296",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-with-uncertainties",
     "transcriptionConfidence": "high-for-target-names-medium-for-layout",
     "unresolved": [
-      "Перепроверить графическое соответствие поручителей браку 8 января."
+      "Перепроверить графическое соответствие поручителей браку 8 января.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
@@ -151,5 +196,9 @@
   "summary": {
     "status": "verified-summary",
     "text": "Борис и Егор Ампилоговы — свадебные поручители в Оренбурге в январе 1849 года."
+  },
+  "indexData": {
+    "querySnippet": "По женихе Оренбургские мещане Борис Ампилогов и Егор Ампилогов а по невесте, Василий Башкатов и Василий Золотухин.",
+    "fuzzyQuery": true
   }
 }

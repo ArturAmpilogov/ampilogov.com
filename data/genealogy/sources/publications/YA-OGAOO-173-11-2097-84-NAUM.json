@@ -37,48 +37,65 @@
   "transcription": {
     "status": "complete",
     "literal": "Іюнь 1/3. Деревни Каршанки Гос. Кр. Наумъ Васильевъ Анпилоговъ, 24, отъ горячки болезни.",
-    "modernInterpretation": "1 июня 1859 года от горячки умер 24-летний государственный крестьянин деревни Каршанки Наум Васильевич Анпилогов; погребён 3 июня."
+    "modernInterpretation": "1 июня 1859 года от горячки умер 24-летний государственный крестьянин деревни Каршанки Наум Васильевич Анпилогов; погребён 3 июня.",
+    "localOcr": "Коральний Аза\nme ee grtte\nVe eial\nСоrкусмеяr7\nhays, Qef\nCweveк d\nДАков Рrр оaовнa\nPinner arerlandf Moreyre ta\nmera Piymageta é mema\n(ing tomein-",
+    "localOcrWithSurnameLexicon": "me me prefe\nCrever de\nPioner arelland Morgue te\n(ing tomein-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Сниппет выдачи повторяет только отчество и фамилию как отдельного умершего; полная строка называет Наума Васильевича."
+    "warning": "Сниппет выдачи повторяет только отчество и фамилию как отдельного умершего; полная строка называет Наума Васильевича.",
+    "querySnippet": "Кр. Наум Васильев Анпилогов. ... Умерший: Васильев Анпилогов, государственный крестьянин, деревня Каршанка, 24.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0084-full-view.png",
-    "capturedAt": "2026-09-03",
+    "capturedAt": "2026-09-10",
     "sha256": "5bdb2d00b21e2895c7917399715f48d3245ee62e237124a21fc1c32f019efc00",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0084-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0084-header.png",
         "sha256": "3852e48d4326812de0d214ae994cdb233998d1fb9172234c07c3c624ad1a63a5",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0084-target-entry-document-main.png",
-        "sha256": "64fbc6ede9e65a5940506fbcc4cb7b26279289a390463909adaa48c5514fe83d",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0084-target-entry.png",
+        "sha256": "3639df2f45a48149f61c1eae88636c5acd1fdac49505cac2a5c6457f187cce3f",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "845x655",
+      "targetDimensions": "1200x576",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "1ae043c9-9401-487c-b5fb-1417ca65b16a",
+    "scanNumber": 84,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",
