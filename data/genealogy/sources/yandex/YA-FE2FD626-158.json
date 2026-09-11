@@ -2,40 +2,80 @@
   "schemaVersion": 1,
   "sourceId": "YA-FE2FD626-158",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
     "scanNumber": 158,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Путятино, Романовка, Старая Богдановка, Стрелецкое за 1909 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Путятино, Романовка, Старая Богдановка, Стрелецкое за 1909 г."
+    "title": "Метрическая книга Старой Богдановки за 1909 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe2fd626-6aeb-4401-807f-5290bf3a0d46/158"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "clergy-service-attestation",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "31 октября — 4 ноября 1909 года",
+      "from": "1909-10-31",
+      "to": "1909-11-04",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Старая-Богдановка",
+      "normalized": "село Старая Богдановка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-FE2FD626-158-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "parish-priest",
+      "personId": "P101760",
+      "displayName": "Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FE2FD626-158-M2",
+      "role": "psalm-reader",
+      "personId": null,
+      "displayName": "Тимофей Горяйнов",
+      "nameAsTranscribed": "Псаломщикъ Тимофей Горяйновъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FE2FD626-158-M3",
+      "role": "deacon",
+      "personId": null,
+      "displayName": "Вонифатий Шкатов",
+      "nameAsTranscribed": "Діаконъ Вонифатій Шкатовъ",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 годъ, часть первая, о родившихся. переход от 31 октября к ноябрю, записи № 68–70. В записях повторено: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ. Діаконъ Вонифатій Шкатовъ».",
+    "modernInterpretation": "Лист метрической книги подтверждает служение Михаила Ампилова священником Старой Богдановки 31 октября — 4 ноября 1909 года. Сослужители сохранены только в контексте источника.",
+    "indexNote": "Короткий индекс Яндекса неверно нормализовал фамилию как «Ампилогов» и потерял контекст строк. Полный лист повторно показывает «Священникъ Михаилъ Ампиловъ» с причтом."
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов. 53. 2.",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full часть первая, о родившихся spread; переход от 31 октября к ноябрю, записи № 68–70; dates, repeated clergy signatures, literal surname, Yandex index discrepancy, and same-source image-copy check"
+  },
   "evidence": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
     "scanNumber": 158,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0158-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0158-full-view.png",
     "capturedAt": "2026-09-11",
@@ -45,51 +85,23 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0158-header.png",
         "sha256": "515ef0071bc982c2bc682c5ff8b8010da2c47b9a72013ac486fac8c9d65a59ef",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок: часть первая, о родившихся, 1909 год."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0158-target-entry.png",
-        "sha256": "69de2b52610adb1657f7261ffbb223730eef03a5e0ca269c811e9cbf551ea5e3",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0158-target-context.jpg",
+        "sha256": "298e665748bb22ebaf7a10bcf90e5cfefe9b138fa6792357d94bd7993fd77166",
+        "description": "Полноширинный крупный фрагмент: переход от 31 октября к ноябрю, записи № 68–70, повторные подписи причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
       "fullDimensions": "5437x4290",
-      "targetDimensions": "1200x1393",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "чехь. колиь Сгмсо-\nбиря-\nска)\nтв.2ссм Горяй\nмит новыень м Фна-\nчая\nва кономь Вони-",
-    "modernInterpretation": "чехь. колиь Сгмсо- биря- ска) тв.2ссм Горяй мит новыень м Фна- чая ва кономь Вони-",
-    "localOcr": "чехь. колиь Сгмсо-\nбиря-\nска)\nтв.2ссм Горяй\nмит новыень м Фна-\nчая\nва кономь Вони-",
-    "localOcrWithSurnameLexicon": "биро-\nска)\nтв. оссм Горяй\nмит новыень м Фла-\nчая\nва кономь Вони-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Священник Михаил Ампилогов. 53. 2.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

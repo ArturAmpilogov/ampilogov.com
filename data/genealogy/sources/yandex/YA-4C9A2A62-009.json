@@ -34,7 +34,7 @@
   "evidence": {
     "catalogId": "4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c",
     "scanNumber": 9,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-full-view.png",
     "capturedAt": "2026-09-11",
@@ -49,8 +49,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-target-entry.png",
-        "sha256": "17089bc39085c34d1de066dd34fbceab1ac5f41eb505c7fc5f76660fa76219ba",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "ac39764f04be1fcd01d6aa7a5cdb4531365b29c0edb0edaba77f88e4b17846b3",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -58,18 +58,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4818x3811",
-      "targetDimensions": "1658x410",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4600x3000",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "status": "complete-primary-scan-transcription-manually-verified",
     "literal": "Опись № 12. Персональные дела. № 62: АМПИЛОВА Галина Николаевна; даты в соседних графах: 12 марта, 21 марта; 4 [листа].",
     "modernInterpretation": "Опись фиксирует персональное дело Галины Николаевны Ампиловой. Материал сохранён для исследования, но исключён из публичного ядра как относящийся к периоду после 1950 года.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "indexNote": "Фамилия и имя прочитаны по строке описи; материал датирован после публичной границы исследования 1950 года.",
     "localOcr": "оня0ра\nUлAлUря\nИванович\nАленсандр\n8\n22\n2I\n66. ВИНОГРАДОВ\nноября\nноября\nАлександр Николаевич\n5\nII\n3\n67. ГАЛКИН\nянваря\nянваря\nЮрий Алексеевии\nTT",
     "localOcrWithSurnameLexicon": "Иванович\nАлександр\n8\n22\n2І\n66. ВИНОГРАДОВ\nноября\nноября\nАлександр Николаевич\n5\nІІ\n3\n67. ГАЛКИН\nянваря\nянваря\nЮрий Алексеевии\nТТ",
     "collation": {
@@ -82,14 +85,20 @@
   "cardKind": "research-material-outside-public-cutoff",
   "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (4600x3000)"
   },
   "indexData": {
     "querySnippet": "62. АМПИЛОВА 12 21 4 Галина Николаевна марта марта. 63. АНДРЕЕВ 8... 18 Александр Павлович октября октября.",
     "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Архивная опись персонального дела Галины Николаевны Ампиловой за 1984–1985 годы.",
+    "identityNote": "Исходная расшифровка сохранена, но профиль не создаётся из-за публичной границы исследования.",
+    "migrationNote": "Карта и переселение не создаются."
   }
 }

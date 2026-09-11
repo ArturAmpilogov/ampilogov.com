@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4FD730BF-136",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death",
   "collection": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
     "scanNumber": 136,
@@ -11,7 +11,17 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4fd730bf-17a9-41e8-8798-5bfd5970d322/136"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-4FD730BF-136-M1",
+      "role": "deceased",
+      "personId": "P91077",
+      "nameAsTranscribed": "Деревни Кармалки крестьянинъ Василій Васильевъ Ампилоговъ",
+      "displayName": "Василий Васильевич Ампилогов",
+      "surnameSeries": true,
+      "ageAsWritten": "46 лет"
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "яшскай аутернйо, гарода слатучи миія\nизанина Картиріs сеаДарнва Caи\nШева снив Ганиь .\nСалиентии? воиностав овокравстй.\nЧоралв дого рностов\nенистской езхерній) Фиблемерни плеклер\nФерекни варадиной зайдовой -скалии\nоій пеmаак demaaх. Dеnо\nмаомй Мвидснина\nривщенники (/)н г",
@@ -24,7 +34,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Март. №32. 16 умер, 18 погребён. Деревни Кармалки крестьянин Василий Васильев Ампилогов, 46 лет; от горячки.",
+    "modernVerified": "Крестьянин Кармалки Василий Васильевич Ампилогов умер 16 марта 1893 года в 46 лет от горячки и был погребён 18 марта."
   },
   "evidence": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
@@ -45,8 +57,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4fd730bf-17a9-41e8-8798-5bfd5970d322/0136-target-entry.png",
-        "sha256": "d14d37242d453082f1e7231d90b2fc4315cbea8ea1cac209246b4002ddd82488",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "689265a169aa640c5d1fd8dd09a799b9474d0a69d60e3ec7017041964a0997e1",
+        "description": "Крупный полноширинный фрагмент целевой записи с соседними строками и всеми графами; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -54,8 +66,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5425x4283",
-      "targetDimensions": "1540x800",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3300",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -111,14 +123,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитана запись смерти №32 на полном развороте: подтверждены полное имя, возраст, даты, причина и место. Связана с P91077 по точному имени, Кармалке и взрослой хронологии; недоказанная миграция не выводилась."
   },
   "indexData": {
     "querySnippet": "Деревни Кармалки крестьянин Василий Васильев Ампилогов Священник Тимофей Августов Диакон Михаил Боголюбов. 46.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 32,
+    "date": {
+      "display": "16 марта 1893",
+      "iso": "1893-03-16",
+      "confidence": "high"
+    },
+    "burialDate": {
+      "display": "18 марта 1893",
+      "iso": "1893-03-18",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "primaryPersonId": "P91077",
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

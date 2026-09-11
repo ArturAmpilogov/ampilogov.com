@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-13BD49F5-11",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "baptism-witness",
   "collection": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
     "scanNumber": 11
@@ -10,7 +10,28 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/13bd49f5-4cb3-4039-8271-9a1af7e280d0/11"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-13BD49F5-11-M1",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "Изякъ-Никитинскаго поселка казакъ Филиппъ Петровъ Ампилоговъ",
+      "displayName": "Филипп Петрович Ампилогов",
+      "surnameSeries": true,
+      "identityCandidates": [
+        "P9010",
+        "P91012"
+      ]
+    },
+    {
+      "mentionId": "YA-13BD49F5-11-M2",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "казачья дѣвица Мавра Наумова Тишина",
+      "displayName": "Мавра Наумовна Тишина",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "тааия занани)14\nКалаеаа Макарова\nОренбурочекій еичща\nмens Weana\nнинг Се\nзуесея и енпицеекая\nбивиа Інликеріяти\nготвавичихунава",
@@ -23,7 +44,9 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
     "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Апрель. №30. 14 родился, 15 крещён. Восприемники: Изяк-Никитинского посёлка казак Филипп Петров Ампилогов и казачья девица Мавра Наумова Тишина.",
+    "modernVerified": "15 апреля 1895 года казак Изяк-Никитинского посёлка Филипп Петрович Ампилогов выступил восприемником. Яндекс верно нашёл фамилию, но профиль не выбран между двумя документированными тёзками."
   },
   "evidence": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
@@ -44,8 +67,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0011-target-entry.png",
-        "sha256": "16fdf93f2e926be60ece91170d12c695349231b034c80d20ec836951ace7faaf",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "1586423c7d8bc8673c0c4e3f549fbbd58e07176504bc0043613304230bfd1d8e",
+        "description": "Крупный полноширинный фрагмент записей №28–31, включающий целевых восприемников записи №30; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -53,8 +76,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5388x4383",
-      "targetDimensions": "1367x792",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5200x3600",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -110,14 +133,38 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Не выбран P9010 или P91012: оба профиля имеют точное имя и связь с Изяк-Никитинским посёлком, но представляют разных тёзок."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот рождений 1895 года прочитан вручную. В записи №30 подтверждены дата, место и Филипп Петрович Ампилогов как восприемник; связь не назначена из-за двух одноимённых профилей P9010/P91012, миграция не выводилась."
   },
   "indexData": {
     "querySnippet": "Иван Никитинского поселка казак Филипп Петров Ампилогов и казачья девица Мавра Наумова Ташина. Священник Виссарион Лявин Диакон Василий Яковлев.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "baptism-witness",
+    "recordNumber": 30,
+    "date": {
+      "display": "15 апреля 1895",
+      "iso": "1895-04-15",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "14 апреля 1895",
+      "iso": "1895-04-14",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский посёлок",
+      "normalized": "Изяк-Никитинский посёлок, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

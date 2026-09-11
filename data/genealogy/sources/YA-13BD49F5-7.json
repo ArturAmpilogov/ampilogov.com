@@ -1,86 +1,20 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-13BD49F5-7",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
-  "collection": {
-    "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
-    "scanNumber": 7
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/13bd49f5-4cb3-4039-8271-9a1af7e280d0/7"
-  },
-  "mentions": [],
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
+  "collection": { "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0", "scanNumber": 7, "asRead": "Метрическая книга за 1896 год, часть первая, о родившихся" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/13bd49f5-4cb3-4039-8271-9a1af7e280d0/7" },
+  "event": { "type": "baptism-register-no-surname-series-hit", "date": { "display": "4–15 марта 1896", "confidence": "high" }, "place": { "asRead": "приход метрической книги", "normalized": null } },
+  "mentions": [{ "mentionId": "YA-13BD49F5-7-M1", "role": "false-index-hit", "personId": null, "nameAsTranscribed": "Фамильный ряд на листе не найден", "displayName": "Ложное fuzzy-совпадение", "surnameSeries": false }],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "10H0300\nСИПОГРА\nМЕТРИЧЕСКОЙ КНÁГН НЛ 1896*\nЗвáніє, йма, сотчестко й фамнліл родителей, й какóгш\nCA.\nв кронспов Еданіл.",
-    "modernInterpretation": "10H0300 СИПОГРА МЕТРИЧЕСКОЙ КНÁГН НЛ 1896* Звáниє, йма, сотчестко й фамнлил родителей, й какóгш CA. в кронспов Еданил.",
-    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
-    "localOcr": "10H0300\nСИПОГРА\nМЕТРИЧЕСКОЙ КНÁГН НЛ 1896*\nЗвáніє, йма, сотчестко й фамнліл родителей, й какóгш\nCA.\nв кронспов Еданіл.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Мартъ 1896 года. На полном крещальном развороте видны записи № 14–18 с датами рождения и крещения 4–15 марта; в формулах причта читаются священник Александр и диакон Василий Иванов. Форм Ампилогов / Анпилогов / Онфилогов и документированных вариантов нет.",
+    "modernInterpretation": "Это посторонний лист метрической книги; он не содержит носителя исследуемого фамильного ряда и не создаёт профиль, связь или карту.",
+    "indexNote": "Исходная карточка сообщала лишь о недостаточной резкости. Полноразмерная копия читается достаточно, чтобы уверенно исключить фамильное совпадение.",
+    "historicalContext": "Отрицательный результат сохранён как проверка поисковой выдачи: похожая графика имён служителей не является основанием включать лист в публичное генеалогическое ядро."
   },
-  "evidence": {
-    "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
-    "scanNumber": 7,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "7800ae8f5fe27d66b32867d811d8213896bdc1add0e5da533f07d648f5fbce55",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-header.png",
-        "sha256": "d845af23a3a88eb1e84367ac96e57206943545fea584f8beacd562c09a89ad21",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-target-entry.png",
-        "sha256": "47bd24d9008b18a2f07a28f3f1873f7b1a923516d315e8d93a6c248bfe83c7f4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5376x4357",
-      "targetDimensions": "1440x692",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-full-view.jpg",
-        "sha256": "f2c8b5404d8525f2b70e28bb22c588c33e4fbbd01b7b71adc718495951aeeac4",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-target-entry.jpg",
-            "sha256": "ce66df5497967e5901053bd4de70a6b18c531da99282c15ff197f7bb82062839",
-            "description": "Нужна чистая полная копия и укрупнение строк."
-          }
-        ]
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
-    "fuzzyQuery": true
-  }
+  "evidence": { "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-full-view.png", "sha256": "7800ae8f5fe27d66b32867d811d8213896bdc1add0e5da533f07d648f5fbce55", "fragments": [{ "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0007-target-entry-deep.png", "sha256": "3b6523abc5b048b2acce6dedcc842fc0a8341209b394996dd28bbd9e51850330", "description": "Полноширинный крупный фрагмент всех видимых мартовских крещальных записей и формул причта." }], "quality": { "originalImageDownloaded": true, "fullDimensions": "5376x4357", "targetDimensions": "5200x3500", "method": "manual-reading-of-full-scan-and-full-width-recrop" }, "publicDisplay": false },
+  "review": { "status": "deep-reviewed-no-match", "transcriptionConfidence": "high-for-exclusion", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Проверены заголовок, все видимые записи № 14–18, родители, восприемники и причт; фамильный ряд отсутствует, поэтому карточка честно оставлена отрицательным fuzzy-hit без публичных сущностей." },
+  "indexData": { "querySnippet": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.", "fuzzyQuery": true }
 }

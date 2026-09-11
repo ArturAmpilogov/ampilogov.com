@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4FD730BF-64",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "baptism-witness",
   "collection": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
     "scanNumber": 64,
@@ -11,7 +11,24 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4fd730bf-17a9-41e8-8798-5bfd5970d322/64"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-4FD730BF-64-M1",
+      "role": "godfather",
+      "personId": "P91083",
+      "nameAsTranscribed": "той же деревни крестьянинъ Симеонъ Павловъ Ампилоговъ",
+      "displayName": "Семён Павлович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-4FD730BF-64-M2",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "крестьянская дѣвица Марія Сергѣева Родина",
+      "displayName": "Мария Сергеевна Родина",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "УСКОВСКОЙ\nзИОЛАЛЬО\nГÓДК, ЧАСТЬ ПЕРВАЛ, І\nЗвáніє, йма, бтчество й фамнлід\nКто\nвоспріємникшв7.\nела Навоскрісатеньского кресть\ndиla\nінииа Михаим, Деадoровt dаgа\nИлт.\nшинаи крестбянсная лист\nщип\nДависова Игонина.\nсвні\nтепан\nаЖИВЕМ\nПаи яке соеревни претвяннй?\nв\nкин\nиешних Павнова Анитилогова\nкрествянокай диваща Марія,\nержаева бад\nчини.\nГон яке деревня скизать во\nчиса Терентісвь свеспиногов)\nи тай яке уцевни скизатка Т\nа. Степанква свлтнатова\nпимитвенный аоХи",
@@ -24,7 +41,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Август. №147. 27 родилась, 28 крещена. Восприемники: той же деревни крестьянин Симеон Павлов Ампилогов и крестьянская девица Мария Сергеева Родина.",
+    "modernVerified": "28 августа 1893 года крестьянин Кармалки Семён Павлович Ампилогов выступил восприемником; Мария Сергеевна Родина сохранена только внутри карточки."
   },
   "evidence": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
@@ -45,8 +64,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4fd730bf-17a9-41e8-8798-5bfd5970d322/0064-target-entry.png",
-        "sha256": "05bb47c72fe309b159be9822aafd20dd3c7cf545433d4fead919cdc47b327bb4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "b94cfa7cfd824a8e68ee1a118ef79842fa030fc1c626d11b19e16340dc5454a8",
+        "description": "Крупный полноширинный фрагмент целевой записи с соседними строками и всеми графами; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -54,8 +73,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4880x3994",
-      "targetDimensions": "1351x2177",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3300",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -111,14 +130,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный крещальный разворот 1893 года прочитан вручную. В записи №147 подтверждены даты, Семён Павлович Ампилогов и Мария Родина; P91083 выбран по точному имени, Кармалке и документированной взрослой хронологии. Недоказанная миграция не добавлялась."
   },
   "indexData": {
     "querySnippet": "Той же деревни крестьянин Симеон Павлов Ампилогов крестьянская девица Мария Сергеева Родина. Священник Александр Покровский.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "baptism-witness",
+    "recordNumber": 147,
+    "date": {
+      "display": "28 августа 1893",
+      "iso": "1893-08-28",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "27 августа 1893",
+      "iso": "1893-08-27",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "primaryPersonId": "P91083",
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

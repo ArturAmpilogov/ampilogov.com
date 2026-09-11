@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-13BD49F5-13",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "baptism-witness",
   "collection": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
     "scanNumber": 13
@@ -10,7 +10,24 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/13bd49f5-4cb3-4039-8271-9a1af7e280d0/13"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-13BD49F5-13-M1",
+      "role": "godfather",
+      "personId": "P91005",
+      "nameAsTranscribed": "Того же поселка казакъ Ефимъ Филипповъ Ампилоговъ",
+      "displayName": "Ефим Филиппович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-13BD49F5-13-M2",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "казачья дѣвица Екатерина Якимова Панькова",
+      "displayName": "Екатерина Якимовна Панькова",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "БоспріємнИКшвZ.\nВрещенни пуро дкава\nІзряненки перадиава\nаагосоник\nгоиs\n,л елиит\nкарееть\n„ Карацини\nКакамал\nШероминиикавь и кре\nотпочаненоя яиека та\nЧина Букрвев\nпиблена рвини",
@@ -23,7 +40,9 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
     "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Май. №35. 23 родился, 24 крещён. Михаил. Восприемники: того же поселка казак Ефим Филиппов Ампилогов и казачья девица Екатерина Якимова Панькова.",
+    "modernVerified": "24 мая 1895 года казак Изяк-Никитинского посёлка Ефим Филиппович Ампилогов был восприемником Михаила. Участница другой фамилии сохранена только внутри карточки."
   },
   "evidence": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
@@ -44,8 +63,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0013-target-entry.png",
-        "sha256": "f77670408faa1d5d30b1145d5ea38029508e89c14e8b620a153ad05adc02826e",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "5ba6608fa9188a04803549e6d6e2ceefb17fb396d739a26107b48a845ba8d38b",
+        "description": "Крупный полноширинный фрагмент записей №34–35 с датами, родителями и восприемниками; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -53,8 +72,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5394x4396",
-      "targetDimensions": "1355x776",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5200x1500",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -110,14 +129,36 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот рождений 1895 года прочитан вручную. В записи №35 подтверждены даты и восприемник Ефим Филиппович Ампилогов; он связан с P91005 по точному имени, сословию и тому же Изяк-Никитинскому посёлку. Миграция не добавлялась."
   },
   "indexData": {
     "querySnippet": "Того же поселка казак Ефим Филиппов Ампилогов и казачья девица Екатерина Якимова Панькова \".",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "baptism-witness",
+    "recordNumber": 35,
+    "date": {
+      "display": "24 мая 1895",
+      "iso": "1895-05-24",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "23 мая 1895",
+      "iso": "1895-05-23",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский посёлок",
+      "normalized": "Изяк-Никитинский посёлок, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

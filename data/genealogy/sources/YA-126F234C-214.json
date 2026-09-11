@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-126F234C-214",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "baptism-witness",
   "collection": {
     "catalogId": "126f234c-927d-4619-94a3-da47c5f6fde0",
     "scanNumber": 214
@@ -13,10 +13,46 @@
   "mentions": [
     {
       "mentionId": "YA-126F234C-214-M1",
-      "role": "unreadable-index-hit",
+      "role": "godfather",
       "personId": null,
-      "nameAsTranscribed": "Предполагаемое индексное совпадение — чтение невозможно",
-      "displayName": "Требуется качественная пересъёмка",
+      "nameAsTranscribed": "Села Зобова крестьянинъ Евфимъ Яковлевъ Ампилоговъ",
+      "displayName": "Евфим Яковлевич Ампилогов",
+      "surnameSeries": true,
+      "identityCandidates": [
+        "P1620",
+        "P1740"
+      ]
+    },
+    {
+      "mentionId": "YA-126F234C-214-M2",
+      "role": "child",
+      "personId": null,
+      "nameAsTranscribed": "Анна",
+      "displayName": "Анна Павловна Попова",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-126F234C-214-M3",
+      "role": "father",
+      "personId": null,
+      "nameAsTranscribed": "запаса Арміи ефрейторъ Павелъ Давыдовъ Поповъ",
+      "displayName": "Павел Давыдович Попов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-126F234C-214-M4",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная его жена Матрона Яковлева",
+      "displayName": "Матрёна Яковлевна [Попова]",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-126F234C-214-M5",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "крестьянская дочь дѣвица Анисья Димитріева Попова",
+      "displayName": "Анисья Дмитриевна Попова",
       "surnameSeries": false
     }
   ],
@@ -32,7 +68,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Локальная страница слишком мала для надёжного чтения фамилий в предполагаемой строке."
+    "preRecaptureResearchNote": "Локальная страница слишком мала для надёжного чтения фамилий в предполагаемой строке.",
+    "literalVerified": "Ноябрь. № 102. 14 родилась, 15 крещена. Анна. Села Зобова запаса Армии ефрейтор Павел Давыдов Попов и законная его жена Матрона Яковлева, оба православные. Восприемники: села Зобова крестьянин Евфим Яковлев Ампилогов и крестьянская дочь девица Анисья Димитриева Попова.",
+    "modernVerified": "15 ноября 1899 года крестьянин села Зобова Евфим Яковлевич Ампилогов был восприемником Анны Павловны Поповой. Яндекс ошибочно склеил имя восприемника с основной строкой; чтение исправлено по скану."
   },
   "evidence": {
     "catalogId": "126f234c-927d-4619-94a3-da47c5f6fde0",
@@ -53,8 +91,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/126f234c-927d-4619-94a3-da47c5f6fde0/0214-target-entry.png",
-        "sha256": "fc9db666fe375b188c4ba0d3b5eb15ec18edf72a9f6182ddfdca26722e9e81b0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "a45609826226e7c8fb7f846aa4901a3bcaf2ffcba5729b253f6ca0f6d44e3a03",
+        "description": "Крупный полноширинный фрагмент записи №102 с датами, родителями и восприемниками; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -62,8 +100,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5187x4195",
-      "targetDimensions": "2254x948",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x1600",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -118,14 +156,38 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Евфим Яковлевич не привязан к одному профилю: P1620 и P1740 оба относятся к Зобову и требуют отдельного разрешения дубля."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитана запись №102 на полном развороте 1899 года: подтверждены даты, родители, восприемники и фамилия Ампилогов. Связь с профилем не назначена из-за двух ранее не объединённых одноимённых профилей P1620/P1740; миграция не выводилась."
   },
   "indexData": {
     "querySnippet": "Села Зобова крестьянин Священник ИоЕвфим Яковлев Ампилогов анн Попов с и крестьянская дочь девица диаконами Орло Анисья Димитриева Попова. вым и Гуменским.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "baptism-witness",
+    "recordNumber": 102,
+    "date": {
+      "display": "15 ноября 1899",
+      "iso": "1899-11-15",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "14 ноября 1899",
+      "iso": "1899-11-14",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "orenburg-uezd"
+    }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

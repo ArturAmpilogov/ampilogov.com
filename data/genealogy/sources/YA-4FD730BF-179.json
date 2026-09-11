@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4FD730BF-179",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death",
   "collection": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
     "scanNumber": 179,
@@ -11,7 +11,25 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4fd730bf-17a9-41e8-8798-5bfd5970d322/179"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-4FD730BF-179-M1",
+      "role": "deceased",
+      "personId": "P102023",
+      "nameAsTranscribed": "сынъ Козьма",
+      "displayName": "Козьма Ильич Ампилогов",
+      "surnameSeries": true,
+      "ageAsWritten": "1 месяц"
+    },
+    {
+      "mentionId": "YA-4FD730BF-179-M2",
+      "role": "father",
+      "personId": "P1220",
+      "nameAsTranscribed": "деревни Кармалки крестьянина Ильи Павлова Ампилогова",
+      "displayName": "Илья Павлович Ампилогов",
+      "surnameSeries": true
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "п ситетух вн\nвадуаті овиі 2. Что скідатил\nReew Mkema Pleluy\nе свиценний и синомнтзі\nРткнив, Mipannes\nПолонтурив висиамер7 вилв.",
@@ -24,7 +42,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Декабрь. №137. 6 умер, 8 погребён. Деревни Кармалки крестьянина Ильи Павлова Ампилогова сын Козьма, 1 месяц.",
+    "modernVerified": "Месячный Козьма Ильич Ампилогов, сын крестьянина Кармалки Ильи Павловича, умер 6 декабря 1893 года и был погребён 8 декабря."
   },
   "evidence": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
@@ -45,8 +65,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4fd730bf-17a9-41e8-8798-5bfd5970d322/0179-target-entry.png",
-        "sha256": "84b2dde0a13fc871aeb498f6393bd4b0c2b6983496d4f73256199725b18fdc86",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "7aea2c00713a6e3a8c656526043b8c4b4201ee2425c0356799e53d5d5661090b",
+        "description": "Крупный полноширинный фрагмент целевой записи с соседними строками и всеми графами; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -54,8 +74,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5407x4244",
-      "targetDimensions": "1559x563",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3300",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -111,14 +131,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитана запись смерти №137 полного разворота. Подтверждены имя ребёнка, отец, возраст, даты и Кармалка; создан P102023 и двусторонняя связь с P1220. С одноимёнными детьми из Томской губернии не объединялся."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Илья Павлов Ампилогов, крестьянин, деревня Кармалки. ... Умерший: Козьма Ильин Ампилогов, 1 месяц.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 137,
+    "date": {
+      "display": "6 декабря 1893",
+      "iso": "1893-12-06",
+      "confidence": "high"
+    },
+    "burialDate": {
+      "display": "8 декабря 1893",
+      "iso": "1893-12-08",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "primaryPersonId": "P102023",
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

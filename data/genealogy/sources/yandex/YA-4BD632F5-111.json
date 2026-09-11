@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4BD632F5-111",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4bd632f5-990c-4ac7-8cbe-6faf2bd319fe",
     "scanNumber": 111,
@@ -25,17 +25,18 @@
   "mentions": [
     {
       "mentionId": "YA-4BD632F5-111-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "4bd632f5-990c-4ac7-8cbe-6faf2bd319fe",
     "scanNumber": 111,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4bd632f5-990c-4ac7-8cbe-6faf2bd319fe/0111-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4bd632f5-990c-4ac7-8cbe-6faf2bd319fe/0111-full-view.png",
     "capturedAt": "2026-09-11",
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4bd632f5-990c-4ac7-8cbe-6faf2bd319fe/0111-target-entry.png",
-        "sha256": "25abdd77d693bbef5d0a9921cc7fb86a9b1e2f0fa0926c3d819800295d77e8b4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "0e241eadcfca8b5a6be15315c48c4bde62c53aedda06ba3daa86451cb1af3f66",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +60,41 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5299x4143",
-      "targetDimensions": "1356x917",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5000x3300",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "нь\nПоли Михей повекено кристьяте\nИвань Спервльниковы, Навел\nШевсловь, т невлать :-\nальм-\nлееть\nтого же сли крастьяме Оте-\nЖнед Пожедаеть, верасимь\nстрплон",
-    "modernInterpretation": "нь Поли Михей повекено кристьяте Ивань Спервльниковы, Навел Шевсловь, т невлать :- альм- лееть того же сли крастьяме Оте- Жнед Пожедаеть, верасимь стрплон",
-    "localOcr": "нь\nПоли Михей повекено кристьяте\nИвань Спервльниковы, Навел\nШевсловь, т невлать :-\nальм-\nлееть\nтого же сли крастьяме Оте-\nЖнед Пожедаеть, верасимь\nстрплон",
-    "localOcrWithSurnameLexicon": "нь\nПоли Михей повенено кристьяте\nИвань Спервльнико вы, Навел\nШевсловь, то невлать :-\nальм-\nлесть\nтого же сли крестьяме Оте-\nЖелед Пожедает, верасимь\nстиральн",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "В проверенной строке перечислены крестьяне села Михайловского Иван Стрельников, Павел Шевцов, Степан Поледаев и Герасим Стрелков; Сергей Ампилогов отсутствует.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Фрагмент Яндекса оказался ошибочным или относился не к показанному листу; вывод сделан по ручному чтению полного сохранённого изображения."
   },
   "indexData": {
     "querySnippet": "Поручитель: Сергей Ампилогов, крестьянин, то же село. Поручитель: Никита Григорьев Мерзликин, крестьянин, село Михайловское.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежняя индексная атрибуция отклонена после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (5000x3300)"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение, отклонённое после чтения полного листа.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для картографической точки или переселения нет."
   }
 }

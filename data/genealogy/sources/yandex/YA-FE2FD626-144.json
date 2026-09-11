@@ -2,40 +2,80 @@
   "schemaVersion": 1,
   "sourceId": "YA-FE2FD626-144",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
     "scanNumber": 144,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Путятино, Романовка, Старая Богдановка, Стрелецкое за 1909 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Путятино, Романовка, Старая Богдановка, Стрелецкое за 1909 г."
+    "title": "Метрическая книга Старой Богдановки за 1909 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe2fd626-6aeb-4401-807f-5290bf3a0d46/144"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "clergy-service-attestation",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "29 марта — 7 апреля 1909 года",
+      "from": "1909-03-29",
+      "to": "1909-04-07",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Старая-Богдановка",
+      "normalized": "село Старая Богдановка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-FE2FD626-144-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилого",
-      "nameAsTranscribed": "Ампилого",
+      "role": "parish-priest",
+      "personId": "P101760",
+      "displayName": "Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FE2FD626-144-M2",
+      "role": "psalm-reader",
+      "personId": null,
+      "displayName": "Тимофей Горяйнов",
+      "nameAsTranscribed": "Псаломщикъ Тимофей Горяйновъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FE2FD626-144-M3",
+      "role": "deacon",
+      "personId": null,
+      "displayName": "Вонифатий Шкатов",
+      "nameAsTranscribed": "Діаконъ Вонифатій Шкатовъ",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 годъ, часть первая, о родившихся. конец марта, мартовский месячный итог и начало апреля. В строках повторено: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ. Діаконъ Вонифатій Шкатовъ».",
+    "modernInterpretation": "Лист части о родившихся подтверждает служение Михаила Ампилова священником Старой Богдановки 29 марта — 7 апреля 1909 года; псаломщик и диакон сохранены только в контексте источника.",
+    "indexNote": "Яндекс нормализовал «Ампилов» как «Ампилогов» и ошибочно прочитал диакона Вонифатия Шкатова как Игнатова. Полный лист многократно повторяет правильные формы."
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым и диаконом Вонифатием Игнатовым. Итого родившихся в Марте...",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full birth-register spread; конец марта, мартовский месячный итог и начало апреля; dates, repeated clergy signatures, literal surname, Yandex row mixing, and same-source image-copy check"
+  },
   "evidence": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
     "scanNumber": 144,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0144-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0144-full-view.png",
     "capturedAt": "2026-09-11",
@@ -45,48 +85,23 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0144-header.png",
         "sha256": "99462f7daa63d78a3ddf877afa9600421331e591c124049eb18033d992388bc5",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок части о родившихся метрической книги за 1909 год."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0144-target-entry.png",
-        "sha256": "a392e31325ced1968b4dd8568300f0b93ecb36d521bced12bd2a0bd5ebe8bae5",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0144-target-context.jpg",
+        "sha256": "47e8a0fb4e3d3fb78e2367399f294e76d6f60a6a8c28edbcb89b54d308202a39",
+        "description": "Полноширинный крупный фрагмент: конец марта, мартовский месячный итог и начало апреля; повторные подписи причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
       "fullDimensions": "5294x4319",
-      "targetDimensions": "3514x3252",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "ІСТРЙЧССКОЙ КНИГИ нА /9094\nГоди, чАсть первад, й родившихел.\nЗваніе, ймл, отчество й фамилід •\nКто совершáла тáннство\nР8коприк\nЗваніє, плгА, отчество й фамиліА родитєлей, й какоги\nциБшиусА.\nБоспріємникWвХ.\nКрЕцIéNiA.\nв'кронспов'вданія.\nУТЕЛЕЙ ЗАП\nТого же хітива Креспівянинв вояшенникь Ми-\nТокскся хиторы, Ивсловской ват\nТимьней почетистинаь Ка-\nсти Мщининь гороши Оренбуоги\nвояилий Порстиливь Дрыгамоь\nпигиникив и критьянкая Дог-\nти Закочния\nци сАвистася Уерасимова ка-хииль Ампилого\nконитантияи\" ови провослсвчые.\nпишникова.\n(вяшенний Маихаміз итичо\nсь Псальмирикомь\nЛсалолшикь сПимоюей срячны\nріяконь ззанидатій Шкартавії\"\nТого дія сели моядить вленові еПалночишь Форяй-\nАлекаловоь Попись и критрян-\nнния Олвичи сТоиписька Ивичова носыл и дланснам\nПодтычнив.\nВонгиритиямь\nШкатоваліь.\nресвуат /1) делнаа поло четндос // а онк-васмийи\nПей жве Деревни крествяния Хвягрнник Мн-\nургивіи Іиьлать соіаникор\nКретьянская Яовнца Хиго Амплтя\nАнім?\nДнаитрівва Сєрова- л. Песнимтринамв\nе Тилинить Прян-\nЛссломгучнь СПікничей Уполинов.\nгяконь /занифатигикктрец•\neens yedh",
-    "modernInterpretation": "ІСТРЙЧССКОЙ КНИГИ нА /9094 Годи, чАсть первад, й родившихел. Звание, ймл, отчество й фамилид • Кто совершáла тáннство Р8коприк Званиє, плгА, отчество й фамилиА родитєлей, й какоги циБшиусА. БосприємникWвХ. КрЕцIéNiA. в'кронспов'вдания. УТЕЛЕЙ ЗАП Того же хитива Креспивянинв вояшенникь Ми- Токскся хиторы, Ивсловской ват Тимьней почетистинаь Ка- сти Мщининь гороши Оренбуоги вояилий Порстиливь Дрыгамоь пигиникив и критьянкая Дог- ти Закочния ци сАвистася Уерасимова ка-хииль Ампилого конитантияи\" ови провослсвчые. пишникова. (вяшенний Маихамиз итичо сь Псальмирикомь Лсалолшикь сПимоюей срячны рияконь ззанидатий Шкартавиї\" Того дия сели моядить вленови еПалночишь Форяй- Алекаловоь Попись и критрян- нния Олвичи сТоиписька Ивичова носыл и дланснам Подтычнив. Вонгиритиямь Шкатовалиь. ресвуат /1) делнаа поло четндос // а онк-васмийи Пей жве Деревни крествяния Хвягрнник Мн- ургивии Іиьлать соианикор Кретьянская Яовнца Хиго Амплтя Аним? Днаитривва Сєрова- л. Песнимтринамв е Тилинить Прян- Лссломгучнь СПикничей Уполинов. гяконь /занифатигикктрец• eens yedh",
-    "localOcr": "ІСТРЙЧССКОЙ КНИГИ нА /9094\nГоди, чАсть первад, й родившихел.\nЗваніе, ймл, отчество й фамилід •\nКто совершáла тáннство\nР8коприк\nЗваніє, плгА, отчество й фамиліА родитєлей, й какоги\nциБшиусА.\nБоспріємникWвХ.\nКрЕцIéNiA.\nв'кронспов'вданія.\nУТЕЛЕЙ ЗАП\nТого же хітива Креспівянинв вояшенникь Ми-\nТокскся хиторы, Ивсловской ват\nТимьней почетистинаь Ка-\nсти Мщининь гороши Оренбуоги\nвояилий Порстиливь Дрыгамоь\nпигиникив и критьянкая Дог-\nти Закочния\nци сАвистася Уерасимова ка-хииль Ампилого\nконитантияи\" ови провослсвчые.\nпишникова.\n(вяшенний Маихаміз итичо\nсь Псальмирикомь\nЛсалолшикь сПимоюей срячны\nріяконь ззанидатій Шкартавії\"\nТого дія сели моядить вленові еПалночишь Форяй-\nАлекаловоь Попись и критрян-\nнния Олвичи сТоиписька Ивичова носыл и дланснам\nПодтычнив.\nВонгиритиямь\nШкатоваліь.\nресвуат /1) делнаа поло четндос // а онк-васмийи\nПей жве Деревни крествяния Хвягрнник Мн-\nургивіи Іиьлать соіаникор\nКретьянская Яовнца Хиго Амплтя\nАнім?\nДнаитрівва Сєрова- л. Песнимтринамв\nе Тилинить Прян-\nЛссломгучнь СПікничей Уполинов.\nгяконь /занифатигикктрец•\neens yedh",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым и диаконом Вонифатием Игнатовым. Итого родившихся в Марте ствуем",
-    "fuzzyQuery": true
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

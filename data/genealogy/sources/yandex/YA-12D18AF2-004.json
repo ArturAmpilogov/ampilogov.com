@@ -14,8 +14,9 @@
   "event": {
     "type": "marriage-surety",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "10 января 1912",
+      "iso": "1912-01-10",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Промысловка, Астраханская губерния"
@@ -24,11 +25,27 @@
   "mentions": [
     {
       "mentionId": "YA-12D18AF2-004-M1",
-      "role": "surety",
+      "role": "bride-surety",
       "personId": "P101765",
       "displayName": "Михаил Николаевич Ампилов (Промысловка)",
       "nameAsTranscribed": "крестьянинъ Михаилъ Николаевъ Ампиловъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-12D18AF2-004-M2",
+      "role": "groom-sureties",
+      "personId": null,
+      "displayName": "Алексей Георгиевич Ткачёв и Алексей Митрофанович Воронин",
+      "nameAsTranscribed": "крестьяне села Промысловки Алексей Георгиевъ Ткачевъ и Алексей Митрофановъ Воронинъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-12D18AF2-004-M3",
+      "role": "bride-surety",
+      "personId": null,
+      "displayName": "Кузьма Семёнович Филиппов",
+      "nameAsTranscribed": "Кузьма Семеновъ Филипповъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -49,8 +66,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/12d18af2-cb34-47ad-b6fe-629bf11dde6b/0004-target-entry.png",
-        "sha256": "1346466d818749622c1b636f78cea9b6d078a0f330ee592b86a7fd1cfbebca45",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "9d2c5bfbca139c7a97974172a2eaee4b439880c93e1aa4e469c0e3c262840c1c",
+        "description": "Крупный полноширинный фрагмент первой брачной записи и обеих колонок поручителей; чёрные поля и интерфейс исключены."
       }
     ],
     "quality": {
@@ -58,8 +75,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4128x3228",
-      "targetDimensions": "1200x729",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3800x1300",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -76,17 +93,19 @@
       "baseLocalOcr": "not-confirmed-by-local-ocr",
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    },
+    "literalVerified": "10 января 1912. По женихе: крестьяне села Промысловки Алексей Георгиев Ткачёв и Алексей Митрофанов Воронин; по невесте: таковые же крестьяне Михаил Николаев Ампилов и Кузьма Семенов Филиппов.",
+    "modernVerified": "10 января 1912 года Михаил Николаевич Ампилов, крестьянин села Промысловки, выступил поручителем по невесте. Остальные участники сохранены в карточке без отдельных фамильных профилей."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Первая брачная запись 1912 года вручную прочитана по полному развороту. Уточнены точная дата и состав поручителей; Михаил Николаевич связан с ранее созданным P101765, чужие фамилии оставлены только mentions; карта и миграция не добавлялись."
   },
   "indexData": {
     "querySnippet": "По женихе: Крне села Промысловки Алексей Георгиев Ткачёв и Алексей Митрофанов Воронин, а По невесте: Таковые же крне: Михаил Николаев Ампилов Кузьма Семенов...",

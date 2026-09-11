@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4CA9F7BD-325",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "evacuation-list",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4ca9f7bd-438c-456d-b73f-80960c3c2f2b",
     "scanNumber": 325,
@@ -24,17 +24,17 @@
   "mentions": [
     {
       "mentionId": "YA-4CA9F7BD-325-M1",
-      "role": "evacuee",
-      "personId": "P101820",
-      "displayName": "Евдокия Степановна Ампилова (эвакуация)",
-      "nameAsTranscribed": "Ампилова Евдокія Степановна",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "4ca9f7bd-438c-456d-b73f-80960c3c2f2b",
     "scanNumber": 325,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-full-view.png",
     "capturedAt": "2026-09-11",
@@ -49,8 +49,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-target-entry.png",
-        "sha256": "526a3bbbb5540b9bb524e0c9ce32f07d6b550970b11171953b98849734ae0bc3",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "72728dff36045865969d1d786a581597e1ea58b6aae1c38d1e5a32416408afc5",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -58,39 +58,42 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4860x3233",
-      "targetDimensions": "1200x1344",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4600x2800",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "Список эвакуированных, прибывающих в Каменский сельсовет. № 583: Ампилова Евдокия Степановна, жена, 1911 года рождения [остальные графы читаются частично].",
-    "modernInterpretation": "Евдокия Степановна Ампилова, родившаяся в 1911 году, внесена в список эвакуированных, размещённых в Чкаловской области.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "7Усанов\n76\nRa\nМульу\n157 Шулй\nМульи\nборкон\n80\nГлизман",
-    "localOcrWithSurnameLexicon": "7 У санов\n76\nRa\nМульу\n157 Шули\nМульи\nборкон\n80\nГлизман",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "В строке № 1 списка читается «Усаньва Анна Андреевна», жена, 1916 года рождения; Евдокии Степановны Ампиловой на листе нет.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Фрагмент Яндекса оказался ошибочным или относился не к показанному листу; вывод сделан по ручному чтению полного сохранённого изображения."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": [
-      "Часть граф маршрута и размещения на строке читается неуверенно.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежняя индексная атрибуция отклонена после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (4600x2800)"
   },
   "indexData": {
     "querySnippet": "Ампилова.",
     "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение, отклонённое после чтения полного листа.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для картографической точки или переселения нет."
   }
 }

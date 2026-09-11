@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4D40B919-064",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4d40b919-853f-422f-92f8-623488b4bcb5",
     "scanNumber": 64,
@@ -25,17 +25,18 @@
   "mentions": [
     {
       "mentionId": "YA-4D40B919-064-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "4d40b919-853f-422f-92f8-623488b4bcb5",
     "scanNumber": 64,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0064-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0064-full-view.png",
     "capturedAt": "2026-09-11",
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0064-target-entry.png",
-        "sha256": "6f6bf7365a28c7a7555c8288560eab11ba8acac59aaa3feb3ad56566c18e9753",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "14b5dcee0b85fa606fc8cff742903664b07cb9455659054d580bf3de3c2d28b8",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +60,41 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5097x4068",
-      "targetDimensions": "1366x704",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x3300",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "віщенника виренні орліва\nПеаламуико Пиуа Спадяь\nві сань мисяуп Сай/яора родивмидся\nствдем своимй подпиалів: вятенникь\nПеоломулта Питра Сковцева.",
-    "modernInterpretation": "вищенника виренни орлива Пеаламуико Пиуа Спадяь ви сань мисяуп Сай/яора родивмидся ствдем своимй подпиалив: вятенникь Пеоломулта Питра Сковцева.",
-    "localOcr": "віщенника виренні орліва\nПеаламуико Пиуа Спадяь\nві сань мисяуп Сай/яора родивмидся\nствдем своимй подпиалів: вятенникь\nПеоломулта Питра Сковцева.",
-    "localOcrWithSurnameLexicon": "віщенника виренні орлова\nПааламулко Пиуа Спадя\nві сань лисяуп Сей/хора родившися\nствдем своимй подполів: вятенника",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Разворот содержит записи № 77–80 за сентябрь–октябрь 1909 года и подписи священника Михаила Орлова и псаломщика Петра Скобелева; Гавриил Анпилогов отсутствует.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Фрагмент Яндекса оказался ошибочным или относился не к показанному листу; вывод сделан по ручному чтению полного сохранённого изображения."
   },
   "indexData": {
     "querySnippet": "Деревни Дракина крестьянин Гавриил Гавриилов Анпилогов и законная его жена Анна Васильева; оба православные. Священник Михаил Орлов.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежняя индексная атрибуция отклонена после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (4900x3300)"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение, отклонённое после чтения полного листа.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для картографической точки или переселения нет."
   }
 }

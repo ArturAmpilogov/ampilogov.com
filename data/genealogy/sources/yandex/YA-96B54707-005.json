@@ -2,40 +2,69 @@
   "schemaVersion": 1,
   "sourceId": "YA-96B54707-005",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-conscription-register",
   "collection": {
     "catalogId": "96b54707-7e02-499f-b875-c681a1b674e4",
     "scanNumber": 5,
     "title": "Дзержинский РВК. Алфавитная книга учета военнообязанных, призванных на военную службу на буквы А – М",
-    "publication": "ОГА Оренбургской области (ОГАОО), Коллекция документов военных комиссариатов Оренбургской области об участниках Великой Отечественной войны 1941-1945 гг., Опись № 1 дел постоянного хранения военных комиссариатов г. Оренбурга 1939-1950, 1960-1968 гг., Дзержинский РВК. Алфавитная книга учета военнообязанных, призванных на военную службу на буквы А – М"
+    "publication": "ОГА Оренбургской области, коллекция документов военных комиссариатов; книга охватывает 1939–1950 годы"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/96b54707-7e02-499f-b875-c681a1b674e4/5"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-conscription-registration",
     "date": {
-      "display": "3 января 1943 — 19 ноября 1943",
-      "confidence": "high-for-catalog-date"
+      "display": "июнь–июль; год на листе не указан, в пределах 1939–1950 годов",
+      "confidence": "low"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "Дзержинский РВК",
+      "normalized": "Оренбург, Оренбургская область, СССР",
+      "placeId": "orenburg-city"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-96B54707-005-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "conscript",
+      "personId": "P102015",
+      "nameAsTranscribed": "Ампилоговъ Иванъ Григорьевичъ",
+      "displayName": "Иван Григорьевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-96B54707-005-M2",
+      "role": "conscript",
+      "personId": "P102016",
+      "nameAsTranscribed": "Ампилоговъ Захаръ Филипповичъ",
+      "displayName": "Захар Филиппович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-96B54707-005-M3",
+      "role": "conscript",
+      "personId": "P102017",
+      "nameAsTranscribed": "Ампилоговъ Петръ Егоровичъ",
+      "displayName": "Пётр Егорович Ампилогов",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-for-all-surname-series-lines-manually-verified",
+    "literal": "Алфавитный лист. № 295: «Ампилоговъ Иванъ Григорьевичъ»; в датных графах 29/VI и 14/VII. № 308: «Ампилоговъ Захаръ Филипповичъ»; в датных графах 2/VII и 3/VII. № 317, учётный № 17382, команда 500: «Ампилоговъ Петръ Егоровичъ»; в датных графах 3/VII и 5/VII. Год на самом листе не проставлен.",
+    "modernInterpretation": "Алфавитная книга Дзержинского районного военкомата фиксирует три отдельных учётных строки Иванa Григорьевича, Захара Филипповича и Петра Егоровича Ампилоговых. Даты относятся к июню–июлю, но точный год нельзя извлечь из этого листа; допустим только диапазон книги 1939–1950.",
+    "indexNote": "Яндекс показал только Петра Егоровича и ошибочно направил прежний узкий crop на соседние фамилии. Полный лист вручную проверен сверху вниз: обнаружены три носителя фамилии; номера строк, имена и датные графы прочитаны по оригиналу. Неясные служебные сокращения не развёрнуты предположительно."
+  },
+  "indexData": {
+    "querySnippet": "697 авсиевич Василий Ермолаевич. 17382 500 Ампилогов Петр Егорович.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "96b54707-7e02-499f-b875-c681a1b674e4",
     "scanNumber": 5,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/96b54707-7e02-499f-b875-c681a1b674e4/0005-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/96b54707-7e02-499f-b875-c681a1b674e4/0005-full-view.png",
     "capturedAt": "2026-09-11",
@@ -45,51 +74,44 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/96b54707-7e02-499f-b875-c681a1b674e4/0005-header.png",
         "sha256": "9b6d68f881707e635b4b3a7846990b73f0c6ea7c6aa008efb23532f32195d43c",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок и графы алфавитной книги военного учёта."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/96b54707-7e02-499f-b875-c681a1b674e4/0005-target-entry.png",
-        "sha256": "bf2ddd5ff3d0125dab62e0defe5f00784fe60f229da4a597a42f86decc36932f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "e2966c3d4adb14e5055555ad1ac5868787a82ba0b9c28b15d00e96a4de98cd3b",
+        "description": "Полноширинный крупный фрагмент листа, включающий все три строки Ампилоговых и окружающий служебный контекст без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "3240x4037",
-      "targetDimensions": "1782x409",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3100x2700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "-16559. 691 акимов\nАлексанфр Павлтви\n536655 Абрамов Василій степа\nсь6% плиханов Магамед Худаяр-\nSі8 1A\n30Ї58 Алекесев Алексанту Иван.",
-    "modernInterpretation": "-16559. 691 акимов Алексанфр Павлтви 536655 Абрамов Василий степа сь6% плиханов Магамед Худаяр- Sи8 1A 30Ї58 Алекесев Алексанту Иван.",
-    "localOcr": "-16559. 691 акимов\nАлексанфр Павлтви\n536655 Абрамов Василій степа\nсь6% плиханов Магамед Худаяр-\nSі8 1A\n30Ї58 Алекесев Алексанту Иван.",
-    "localOcrWithSurnameLexicon": "-16559 691 акимов\nАлексано Павлови\n536655 Абрамов Василій степа\nсь 6% алиханов Магамед Худаяр-\nSі8 1A\n30Ї58 Алекесев Алексанту Иван.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  "isRecord": true,
+  "cardKind": "multi-person-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Алфавитная книга военкомата документирует воинский учёт и направление трёх Ампилоговых в июне–июле неустановленного года.",
+    "identityNote": "Созданы отдельные P102015–P102017. Иван не объединён с P91102 и другими одноимёнными людьми: на листе нет возраста, года рождения или адреса. Для Захара и Петра точных ранее существовавших профилей не найдено.",
+    "migrationNote": "Учёт Дзержинским РВК подтверждает административную связь с Оренбургом, но сам по себе не доказывает переселение."
   },
-  "indexData": {
-    "querySnippet": "697 авсиевич Василий Ермолаевич. 17382 500 Ампилогов Петр Егорович.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-names-and-row-numbers; medium-for-date-columns; low-for-year",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Точный год трёх строк не указан на листе; он остаётся внутри диапазона книги 1939–1950.",
+      "Часть служебных сокращений в графах назначения не развёрнута без достаточного основания.",
+      "Возраст, год рождения и домашний адрес каждого военнообязанного отсутствуют."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full alphabetical military-register page, all rows from top to bottom, three Ampilogov entries 295/308/317, names, row and registration numbers, June-July date columns, service abbreviations, year limits, three separate profiles, duplicate exclusions, index discrepancy, no asserted migration"
   }
 }

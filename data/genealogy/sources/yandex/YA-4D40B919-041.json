@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4D40B919-041",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4d40b919-853f-422f-92f8-623488b4bcb5",
     "scanNumber": 41,
@@ -25,17 +25,18 @@
   "mentions": [
     {
       "mentionId": "YA-4D40B919-041-M1",
-      "role": "surname-series-mention",
-      "displayName": "Данилова-",
-      "nameAsTranscribed": "Данилова-",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "4d40b919-853f-422f-92f8-623488b4bcb5",
     "scanNumber": 41,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0041-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0041-full-view.png",
     "capturedAt": "2026-09-10",
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4d40b919-853f-422f-92f8-623488b4bcb5/0041-target-entry.png",
-        "sha256": "9bf3572ee3736cf4b4d230f92c535099fcb21e2b85dce9799f69cc1fdf731ef9",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "666314ee08e02e42909e41f36dc4654079d03edfbbb34cf0fa3325b8d2e54659",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +60,41 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5028x4037",
-      "targetDimensions": "1211x686",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3300",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "воспріємникwвZ.\nТой -жреа Деревни версатвяннимй Провлитні\nНиколаєві Семенова и Керествянская\nОовица Гливерів Данилова-\nа охивам",
-    "modernInterpretation": "восприємникwвZ. Той -жреа Деревни версатвяннимй Провлитни Николаєви Семенова и Керествянская Оовица Гливерив Данилова- а охивам",
-    "localOcr": "воспріємникwвZ.\nТой -жреа Деревни версатвяннимй Провлитні\nНиколаєві Семенова и Керествянская\nОовица Гливерів Данилова-\nа охивам",
-    "localOcrWithSurnameLexicon": "воспріємникв.\nТой -гра Деревни версатванний Провинні\nНиколасві Семенова и Крествянская\nДовища Гливерів Данилова-\nа охивам",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "В графе восприемников читаются крестьянин Прокопий Николаев Семенов и крестьянская девица Гликерия Данилова; Григорий Ампилогов отсутствует.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Фрагмент Яндекса оказался ошибочным или относился не к показанному листу; вывод сделан по ручному чтению полного сохранённого изображения."
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Григорий Флоров Ампилогов, крестьянин, та же деревня. Крёстный отец: Алексей Петров Артищев, крестьянин, то же село.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежняя индексная атрибуция отклонена после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (4800x3300)"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение, отклонённое после чтения полного листа.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для картографической точки или переселения нет."
   }
 }

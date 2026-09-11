@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4FD730BF-147",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death-of-spouse",
   "collection": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
     "scanNumber": 147,
@@ -11,7 +11,25 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4fd730bf-17a9-41e8-8798-5bfd5970d322/147"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-4FD730BF-147-M1",
+      "role": "husband",
+      "personId": "P0983",
+      "nameAsTranscribed": "крестьянина Максима Егорова Ампилогова жена",
+      "displayName": "Максим Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-4FD730BF-147-M2",
+      "role": "deceased",
+      "personId": null,
+      "nameAsTranscribed": "Евдокія Леонтіева, жена Максима Егорова Ампилогова",
+      "displayName": "Евдокия Леонтьевна, жена Максима Егоровича Ампилогова",
+      "surnameSeries": false,
+      "ageAsWritten": "50 лет"
+    }
+  ],
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
     "literal": "ETm.\nска.\nЙіла Микайловки критвяниа\ndengasa Mbaurka cllegLikged a\nc cacateв.\nСсин сКихайинапи крествянина",
@@ -24,7 +42,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
+    "literalVerified": "Август. №52. 8 умерла, 10 погребена. Деревни Кармалки крестьянина Максима Егорова Ампилогова жена Евдокия Леонтиева, 50 лет.",
+    "modernVerified": "8 августа 1893 года умерла пятидесятилетняя Евдокия Леонтьевна, жена крестьянина Кармалки Максима Егоровича Ампилогова; погребена 10 августа. Отдельный профиль супруги другой фамилии не создавался."
   },
   "evidence": {
     "catalogId": "4fd730bf-17a9-41e8-8798-5bfd5970d322",
@@ -45,8 +65,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4fd730bf-17a9-41e8-8798-5bfd5970d322/0147-target-entry.png",
-        "sha256": "fbda36b91f98ec757d2aae5567184ba6275f195270038d09d3ef6519e5d47367",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "60c3bde38bd9ff5ad15938e8bc5b430cd562651c11d3d30a8e1218d598dfeb76",
+        "description": "Крупный полноширинный фрагмент целевой записи с соседними строками и всеми графами; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -54,8 +74,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5407x4371",
-      "targetDimensions": "1553x673",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3300",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -111,14 +131,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот смертей 1893 года прочитан вручную. Подтверждены жена, её возраст, даты и муж Максим Егорович Ампилогов; последний связан с P0983 по имени, супруге Евдокии Леонтьевне и Кармалке. Индексное смешение соседних строк исправлено."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Емельян Феодоров Пашков, крестьянин, деревня Кармалка. Муж умершего: Максим Егоров Ампилогов, крестьянин, деревня Кармалки.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 52,
+    "date": {
+      "display": "8 августа 1893",
+      "iso": "1893-08-08",
+      "confidence": "high"
+    },
+    "burialDate": {
+      "display": "10 августа 1893",
+      "iso": "1893-08-10",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "primaryPersonId": "P0983",
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

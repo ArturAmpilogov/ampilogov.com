@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-13BD49F5-14",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
     "scanNumber": 14
@@ -22,7 +22,9 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "literalVerified": "Продолжение метрических записей о родившихся за 1895 год, видимые записи №36–38. В строках родителей и восприемников фамилии Ампилогов/Анпилогов/вариантов фамильного ряда нет.",
+    "modernVerified": "Ложное fuzzy-совпадение Яндекса: полный лист проверен, носитель исследуемого фамильного ряда отсутствует."
   },
   "evidence": {
     "catalogId": "13bd49f5-4cb3-4039-8271-9a1af7e280d0",
@@ -43,8 +45,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/13bd49f5-4cb3-4039-8271-9a1af7e280d0/0014-target-entry.png",
-        "sha256": "efa61fc3ece4cc21dc82c0b5842a698c2db471565d07245bbf9c1a41e7fd7c52",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "13b48494d13a8dcd45e9d318d5be3b3b7ddcc976a8b3ee81320597dd920a79c5",
+        "description": "Крупный полноширинный фрагмент всех видимых записей №36–38; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -52,8 +54,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5394x4396",
-      "targetDimensions": "2881x855",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5200x3200",
+      "method": "original-download-plus-manual-full-spread-review-and-large-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -73,14 +75,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-no-match-after-primary-scan-review",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную проверен полный разворот рождений 1895 года: даты, родители, восприемники и духовенство видимых строк №36–38. Фамильного ряда нет; карточка исключена из публичного ядра, связи, карта и миграция не создавались."
   },
   "indexData": {
     "querySnippet": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false
 }

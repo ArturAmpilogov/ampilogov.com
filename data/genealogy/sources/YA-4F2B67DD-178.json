@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4F2B67DD-178",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4f2b67dd-288e-49df-b93a-33634f525d61",
     "scanNumber": 178,
@@ -11,25 +11,27 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4f2b67dd-288e-49df-b93a-33634f525d61/178"
   },
-  "mentions": [],
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Званіє, ймл, отчЕтко й фамнліА\nвоспріемникшвх.\nХим Поршиоьки крествянии Нипрь Никифоровь Плотна Мор",
-    "modernInterpretation": "Званиє, ймл, отчЕтко й фамнлиА восприемникшвх. Хим Поршиоьки крествянии Нипрь Никифоровь Плотна Мор",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "localOcr": "Званіє, ймл, отчЕтко й фамнліА\nвоспріемникшвх.\nХим Поршиоьки крествянии Нипрь Никифоровь Плотна Мор",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+  "mentions": [
+    {
+      "mentionId": "YA-4F2B67DD-178-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
+  ],
+  "transcription": {
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Разворот части первой за июль 1888 года содержит записи №27–30 о детях иных семей; фамилия Ампилогов и её варианты на полном листе не обнаружены.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом; публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Результат Яндекса или прежний OCR отклонён после ручного чтения полного сохранённого изображения."
   },
   "evidence": {
     "catalogId": "4f2b67dd-288e-49df-b93a-33634f525d61",
     "scanNumber": 178,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0178-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0178-full-view.png",
     "capturedAt": "2026-09-11",
@@ -44,8 +46,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0178-target-entry.png",
-        "sha256": "c2734876837b903cdaab971b10800397a9742f29b55495db1d868f6bd7fe783e",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "da5ec7cb3a29de1e1b9136aaf122f04ad8e18f60be87f6a2d1bc86fbf44ec343",
+        "description": "Крупный полноширинный фрагмент проверенных строк и контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -53,11 +55,14 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5123x4114",
-      "targetDimensions": "1335x697",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x3400",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "parallelCopies": [
       {
         "publicDisplay": false,
@@ -74,14 +79,25 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-name-role-date-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежнее совпадение отклонено после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan, headings and surrounding rows, independent surname/name/role reading, date/place/context, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 4900x3400"
   },
   "indexData": {
     "querySnippet": "Индекс не заменяет чтение первичного документа.",
     "fuzzyQuery": true
+  },
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное индексное совпадение.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для карты или переселения нет."
   }
 }

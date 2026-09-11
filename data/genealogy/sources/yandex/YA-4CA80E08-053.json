@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4CA80E08-053",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4ca80e08-de89-4ece-8f7d-d25d22d67a1c",
     "scanNumber": 53,
@@ -25,17 +25,18 @@
   "mentions": [
     {
       "mentionId": "YA-4CA80E08-053-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "4ca80e08-de89-4ece-8f7d-d25d22d67a1c",
     "scanNumber": 53,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/4ca80e08-de89-4ece-8f7d-d25d22d67a1c/0053-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4ca80e08-de89-4ece-8f7d-d25d22d67a1c/0053-full-view.png",
     "capturedAt": "2026-09-11",
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4ca80e08-de89-4ece-8f7d-d25d22d67a1c/0053-target-entry.png",
-        "sha256": "6a77443745ac51581d27a37511531175db1b27da78da2599fb3b77263149125e",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "dafcc9aadd538fb57bbb2a6dae38be6ce703a21fb6c03271c0a69f022c61c554",
+        "description": "Крупный полноширинный фрагмент проверенных строк и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +60,41 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5351x4333",
-      "targetDimensions": "1477x603",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5000x3400",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "паломиика, лежанр\" П.икольск\nРла ваврило вки коестоянина!\nКнитрія ропотдирнова Ла-\nКонстаныт1\nпина сынч\nСващеннина Врій Шативрякол\nгексаторчі Пикольски\nОла . Твчиловки косстбяннна",
-    "modernInterpretation": "паломиика, лежанр\" П.икольск Рла ваврило вки коестоянина! Книтрия ропотдирнова Ла- Констаныт1 пина сынч Сващеннина Врий Шативрякол гексаторчи Пикольски Ола . Твчиловки косстбяннна",
-    "localOcr": "паломиика, лежанр\" П.икольск\nРла ваврило вки коестоянина!\nКнитрія ропотдирнова Ла-\nКонстаныт1\nпина сынч\nСващеннина Врій Шативрякол\nгексаторчі Пикольски\nОла . Твчиловки косстбяннна",
-    "localOcrWithSurnameLexicon": "паломика, лежано\" Пикольск\nРла вавило вки коестоянина!\nКнитрія роподирнова Ла-\nКонстаны 1\nпина сынч\nСвященника Варій Шатив якол\nгексаторчі Пикольски\nОла Тавчиловки косстбаннна",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "В целевой строке читается: «села Гавриловки крестьянина Димитрия Константинова Лапина сын Константин»; Иван Анпилогов отсутствует.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Фрагмент Яндекса оказался ошибочным или относился не к показанному листу; вывод сделан по ручному чтению полного сохранённого изображения."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Иван Анпилогов, крестьянин, село Гавриловка.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-text-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежняя индексная атрибуция отклонена после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan and surrounding rows, independent surname reading, date/place/context, public-cutoff and profile/map/migration eligibility, Yandex index discrepancy, evidence quality (5000x3400)"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение, отклонённое после чтения полного листа.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для картографической точки или переселения нет."
   }
 }
