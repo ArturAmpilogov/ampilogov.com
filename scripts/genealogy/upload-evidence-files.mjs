@@ -74,7 +74,10 @@ async function localFiles(directory) {
     .map(async (entry) => {
       const pathname = `${directory}/${entry.name}`;
       if (entry.isDirectory()) return localFiles(pathname);
-      if (!entry.isFile() || IGNORED_FILES.has(entry.name)) return [];
+      // Capture jobs write large rasters through temporary `.part` files.
+      // They are incomplete by definition and may disappear while this scan is
+      // running, so they must never be treated as evidence or uploaded.
+      if (!entry.isFile() || IGNORED_FILES.has(entry.name) || entry.name.endsWith(".part")) return [];
       const { size } = await stat(path.join(root, pathname));
       return [{ pathname, size }];
     }));
