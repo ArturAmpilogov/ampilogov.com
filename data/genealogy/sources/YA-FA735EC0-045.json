@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/FA735EC0/045-target-entry.jpg",
         "sha256": "940e53ded51222cf9e1955e9416a7b92593e48c2712fd67366654a78cb1350d5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+        "scanNumber": 45,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0045-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0045-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "413fddfe70a0b443469a21178490daf42fd912dd5c1690c4adb67baac6511268",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0045-header.png",
+            "sha256": "8d47bbc557faac7d7fe2b371544844c58bc2f9e11662a515e8cf4615f9208bda",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0045-target-entry.png",
+            "sha256": "cf3959476940adc1fd5c8d3762a90044c1c934a253cfbaafdff77b040dfc21a5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5346x4201",
+          "targetDimensions": "1259x647",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом фрагменте видны майские и июньские записи о крещении детей других фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
     "modernInterpretation": "Проверенный фрагмент не включается в фамильный ряд. Люди в крещальных актах остаются только контекстом страницы: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но видимая часть страницы содержит другие фамилии. Для новой проверки нужен полный разворот или иной фрагмент, указывающий на позицию индекса."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "щроти перенкта) Квалеві.\nкоситенская отайца Лнас-\nKEre madis Masuuaa Mirg D\"-\nТова.\nВого еле вена прос еитсвинит. Мезанть\nМлнли\nГавьлилиннят и",
+    "localOcrWithSurnameLexicon": "проти перента Квалев.\nкостенская отайца Анас-\nТова .\n• Илани\nГавалилиннят и",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Кармалки крнин Симеон Иванов Ампилогов и крестьянская вдова Пераскева Сергеева Осяткина.",
+    "fuzzyQuery": true
   }
 }

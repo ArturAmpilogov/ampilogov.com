@@ -25,7 +25,14 @@
     "status": "primary-scan-transcription",
     "literal": "В числе поручителей по брачной записи названъ Прокофій Ивановъ Ампилоговъ.",
     "modernInterpretation": "Прокофий Иванович Ампилогов выступил поручителем при браке в 1911 году.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "пам-слыистфонасьева полуникь и Констаншинь\nоли\nСеменовь Лальнинг; но невльеми: Села Кар-\nмалки крестьяне: Прокофл Ивановл. Аели-\nлоловы и Явдокимы Явфгановь Лолигсовв.\nnữu\nТо яенихи: Села Вашчина престьяне:\nлом\nВленлій Иванов) Карашнева м РгаріПи-\nдоламофевь гнифиюцевь; моневиемым: Села",
+    "localOcrWithSurnameLexicon": "пом-слыистфонасьев. полунико и Констаншинь\nоли\nСеменовь Лальнинг; но невлеми: Села Кар-\nмалки крестьяне: Прокофил Иванов. Алли-\nолова и Явдокимы Явоганов. Полиговв.\nniu\nТо ленихи: Села Вашчина престьяне:\nлом\nВленлій ванов. Каратнева м Ягарі Пи-\nдоламофевь глифицевь; моневиемым: Села",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -50,16 +57,58 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "6104x4804",
       "targetDimensions": "5744x3974"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "50888295-1a2f-47db-84f3-5a4b6c5570b6",
+        "scanNumber": 141,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0141-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0141-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "f5336611c909ef1805a11a6ea9818f673af0bf27716573a8f94cc7fe918d0db3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0141-header.png",
+            "sha256": "d539246d122ae1895facabd7f360f7fb80336d1de8113de7d86919f14481f956",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0141-target-entry.png",
+            "sha256": "587a4dffaa2f9b0b70c2420d0cfd3342a40138faa664c0073d6839bd449d6ac8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6104x4804",
+          "targetDimensions": "1547x946",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Поручитель: Прокопий Иванов Ампилогов, крестьянин, село Кармалки. Поручитель: Константин Семенов Лапынин, крестьянин, село Ратчина.",
+    "fuzzyQuery": true
+  }
 }

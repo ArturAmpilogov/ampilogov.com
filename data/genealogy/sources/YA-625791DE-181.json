@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села Забова креат6янина вмммйрія Оно\nреева ампилогока дочь Анна\n4\nEbrnsensurs Jocobe dippamads\nтаконь Лихашнь Фазумобо.\nНехиомулис Влайлчр Мних\n).\nКола Забова дойствительного рядового\nТимофея алельстева Омагилогова стин Пеитрр.\n1.\nСолиенник Гаков Мдрать ве\nДіакань михаинь Давумото.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0181-target-entry.jpg",
         "sha256": "adb983cc9d52febb3cfd4ca3eb6775fd56dbbf7304d3966f48693469b25dd888"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 181,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0181-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0181-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9657c4344dedbcf4fe31abdda40fc28e4f6f47aed60093f03ba07cbe28678666",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0181-header.png",
+            "sha256": "ad82588437fcedb7fd15c24a3fa1ab72c656fde3f35211d0a2ee39766a07fb56",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0181-target-entry.png",
+            "sha256": "6caee16ee4943f9dee5a4fb13db1309eccabdcdb3fe54633aed6aee7285b2670",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6079x4697",
+          "targetDimensions": "1623x1067",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Анна Димитриева Ампилогова, 6 месяцев. Умерший: Петр Тимофеев Ампилогов, 1. Умерший: Агафия Ильинова Иноземцева, 4 месяца.",
+    "fuzzyQuery": true
   }
 }

@@ -32,11 +32,12 @@ const pageProps = async (file) => {
 const stable = async (file, page) => {
   try {
     const props = await pageProps(file);
+    const expectedItems = Math.min(10, Math.max(0, expectedDocs - ((page - 1) * 10)));
     return Number(props.pageNum) === page
       && Number(props.totalPages) === expectedPages
       && Number(props.totalDocs) === expectedDocs
       && Array.isArray(props.items)
-      && props.items.length === 10;
+      && props.items.length === expectedItems;
   } catch {
     return false;
   }

@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0232-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0232-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "387b6fba8052a6db57d060daaefc6712dc86270853821324ba4050fcafce3f80",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0232-header.png",
         "sha256": "ddaea8d3e33c0473984c8ff4882c45fcccdf547d91dcc2b72cc8033cd32d3781",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0232-target-entry.png",
-        "sha256": "d09d50b310d52cfa21b461d02d1cd7b7f701e9beb18250c37a2827eb4edfeca0",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "7eb651b9a25ffdc222563a8cdea5bbd31ba5938d4bcfcf8bab80962e5e9230b8",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5759x4434"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5759x4434",
+      "targetDimensions": "1200x931",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Священник Николай Ампилов с причтом. Подпись «Ампиловъ» стоит в служебной части разворота Николаевской церкви села Каргино.",
     "modernInterpretation": "Подпись подтверждает продолжение службы Николая Ампилова в Каргинском приходе.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Тогож села крестьянин Димитрий Иванов Колаков и деревни Туармы крестьянская девица Наталия Никитина Зайцева. Свящ. Ампилов. с причтом.",
+    "fuzzyQuery": true
   }
 }

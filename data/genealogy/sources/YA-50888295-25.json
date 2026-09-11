@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "101\nСола Дуракава. Уорашский губерті Слс-\n/ванавь Млипилиись и заканна урссс\nега (тіоерамид\nне Лениітва\" аба правнала\nСвященниквиНловолай Карновсвил\nевсамамуить Ріскизь Іпальuоа\nвы Rcл eь мнлнi біло bogedeерnое",
+    "localOcrWithSurnameLexicon": "101\nСола Дуракова. Хорамский пуберті Сас-\n/ванавь Алипились и заканна уресс\nего Стіорамид\nна Ленніва \" аба правлала\nСвященники Аловолай Марковсвил\nевонамуить Ресизь Іпальков",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0025-target-entry.jpg",
         "sha256": "8551e45647f25ccdf4b5fc409cd247b84e5c793c601644680aff5ab334e4b78c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "50888295-1a2f-47db-84f3-5a4b6c5570b6",
+        "scanNumber": 25,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0025-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0025-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "65514460a46ffe5cef74e5560faa409cc6afdb2bf8f78107d4ca0428b31c1ca0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0025-header.png",
+            "sha256": "49bc8a766c60a217e1498b87d469b5359fb2de7ff52cf060bd299d707569fb60",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0025-target-entry.png",
+            "sha256": "67cc9ce602018dc07cd225e4e71198124597122deb8dbbc57723bddebebfa17d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5803x4880",
+          "targetDimensions": "1602x1067",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Густина Сергеева Ампилогова. ... Отец: Сергей Иванов Ампилогов, солдат, село Дурасово, Уфимская губерния, Стерлитамакский уезд.",
+    "fuzzyQuery": true
   }
 }

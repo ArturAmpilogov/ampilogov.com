@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "855e070751135018a84894edc24abf1f8a053e9af845383efcf952f93c6c2b8b",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-header.png",
         "sha256": "42e7be1567dd5d8b56cd4e0ed8d62d1b7a1180282ce86e2ca36afe9c2e5886ab",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-target-entry.png",
-        "sha256": "efca53993909bf806a5a5af6b7581d028006e739e4700d85df1526c64134b7b1",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "17917db5e909453930a4b1e31d3fbaf90d2db16468679b3fdb24ce850e2013ca",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4268x3276"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4268x3276",
+      "targetDimensions": "1200x719",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Промысловки Павел Алексеев Чернышев и Феодосия Васильева Ампилова [в строке восприемников].",
     "modernInterpretation": "Феодосия Васильевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "стина Павлова вернышево.\nВлауимировской грбетни, Гора-\nбосьвецкаг уВзда, дерьни Вын\nстпово вавурись расильяви\nНовоччилова и крестьянка\nС. Проншеловки Анна Вібларова",
+    "localOcrWithSurnameLexicon": "стина Павлова вернышево.\nВладимировской губетни, Гора-\nВосьветкаг у Взда, дерьни Вын\nсоково вавурись расильяви\nНовотчилова и крестьянка\nС. Проншеловки Анна Вібларова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Авдеев Священник на вакансии псаломщика Иоанн Соколов. Крестьяне с. Промысловки Павел Алексеев Чернышев и Феодосия Васильева Ампилова.",
+    "fuzzyQuery": true
   }
 }

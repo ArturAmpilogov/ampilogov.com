@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c063a717-2555-4c73-bfc1-1684e7a9b355/0133-target-entry.jpg",
         "sha256": "da614cce17dac8de006a70e27158454955a743f80c4e5c36967213af49229b9a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c063a717-2555-4c73-bfc1-1684e7a9b355",
+        "scanNumber": 133,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c063a717-2555-4c73-bfc1-1684e7a9b355/0133-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c063a717-2555-4c73-bfc1-1684e7a9b355/0133-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d4483af3c707a27947e319dd568d2e2234e58e6b83ef0a6c3c90d7d4ce6f9b56",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c063a717-2555-4c73-bfc1-1684e7a9b355/0133-header.png",
+            "sha256": "d36b78b7f5ffdd3ed7070ed44fb8533008442321ea0fa2b2206828292ddcee8a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c063a717-2555-4c73-bfc1-1684e7a9b355/0133-target-entry.png",
+            "sha256": "c4af1c8709cba5c5eae61813ce769336849f519793b4e29a690722502a825ddc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4180x4125",
+          "targetDimensions": "1337x781",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Оебюбл\nво жишать. Ной же волостт и Деревни\nилом. Крестьян: 6 горы Еригорвеви в аранован\nолг/ж Нерроч Саврниновг Баранова.\nНо невивстть Мой же деревни нрествани:\nБасилій Лсонтіва Марневий и Летр\nПронотьева варанова.\nД Памискаго преоть",
+    "localOcrWithSurnameLexicon": "Оебюдл\nво жимать. Ной же волости и Деревни\nилом. Крестьян: 6 горы Еригорвеви в аранован\nолг / Керро Саврнинова Баранова.\nНо невовсть. Мой же деревни крествани:\nБасилій Леонтіва Марневий и Летр\nПронотьева в аранова.\nД Памискао преоть",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Феодор Феодоров Ампилогов, крестьянин, Тутальская волость, деревня Морковкино.",
+    "fuzzyQuery": true
   }
 }

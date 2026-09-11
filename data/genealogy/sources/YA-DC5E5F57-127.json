@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/dc5e5f57-77fe-4cb3-8335-c059e919f44b/0127-target-entry.jpg",
         "sha256": "fc6ed572f2a40a59e6a2f59535f295f6292bf354b7ace5124500c0d33394fc84"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "dc5e5f57-77fe-4cb3-8335-c059e919f44b",
+        "scanNumber": 127,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/dc5e5f57-77fe-4cb3-8335-c059e919f44b/0127-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/dc5e5f57-77fe-4cb3-8335-c059e919f44b/0127-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ba1e26ea9f77e8d0cc874df38b3182d52323144c3ae5a82fa1de22c63d790f3a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/dc5e5f57-77fe-4cb3-8335-c059e919f44b/0127-header.png",
+            "sha256": "da61cd9a10925d0d6764db8ec8f5a8cacf6ff3c6cd72606cc4b822fd0dba9cd8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/dc5e5f57-77fe-4cb3-8335-c059e919f44b/0127-target-entry.png",
+            "sha256": "6323025bb5d7ea2869f5b4ee9ecfd280dc3568eab91e218747ee5ca622a8a602",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5514x4244",
+          "targetDimensions": "1470x754",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "тенаем Степанида Савелієва.-Иба\nпривосдывные. з.\nАпf e Возмесенск\nСьяпиноав Убонн.\nСела Преображенки крестіятинч сте\nпат Григорвевь Сергьевь и жена его іно-\nтерина Нетрова.- баправославные\nОваправа) Свям. Ан. Розмешекй.\nоні8 Аанно Святинь.\nКала Преображенки крестіянить\nтилофей Ведоров. Малотинь и\nженаого 1осоднія Иванова. - 10 ба",
+    "localOcrWithSurnameLexicon": "тенаем Степанида Савелієва. - Оба\nприводывные. з.\nАпри Вознесенск\nСела Преображенки крестіятинч сте\nпат Григорвевь Серцев и жена его іно-\nтерина Нетрова. - баправославные\nОбаправа) Свят. Ан. Возмешеки .\nоні ванно Святинь.\nКала Преображенки крестіянить\nра.\nтимофей Вендоров. Малотить и\nженаого 1осоднія сванова. - 10 ба",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Александра Димитриева Ампилогова. ... Отец: Димитрий Петров Ампилогов, запасный рядовой, село Преображенка.",
+    "fuzzyQuery": true
   }
 }

@@ -37,38 +37,45 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0040-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0040-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "7d0ea0a7a119835dec36382b639b96c6776a8cbacdd5969e0bf29d241e8161b3",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0040-header.png",
         "sha256": "bd2d7ccca15d45a5655ce33ee838dbf7f6cfb7c3e3e219fce5e27ecb09cd0de6",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0040-target-entry.png",
-        "sha256": "305152964f35b9fda91a06880c689d8031c5dc9d37864da0b66236725bf0195a",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "3b3e12fabee40d4aa5bc5e3c24e89c8460777c508110e03ac4525b304aa4628d",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5438x4452"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5438x4452",
+      "targetDimensions": "1200x1072",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянин Гавриил Трифонов Ампилов, православный, вторым браком.",
     "modernInterpretation": "Гавриил Трифонович Ампилов вступил во второй брак; возрастная последовательность согласуется с его первым браком 1877 года.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Црей Виармір\n/лакань О санну(\nМсалолици / Ишя\n).\nСиа Гаманпевки крсота-\nянинг. Павріии Три-\nдіюнові Ампилові,\nправославный, вто-",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,5 +84,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Жених: Гавриил Трифонов Ампилов, крестьянин, село Гамалеевка, 51. ... Невеста: Евдокия Васильева Ампилова (Бацких), крестьянка, село Барабановка, 37.",
+    "fuzzyQuery": true
   }
 }

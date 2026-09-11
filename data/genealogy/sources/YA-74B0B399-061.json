@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/74b0b399-aa71-4ab0-b86c-1d8add06ebf7/061-target-entry.jpg",
         "sha256": "72030aac43529254797a82dca90611583fb44f5b9feda1c7866507640475da64"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "74b0b399-aa71-4ab0-b86c-1d8add06ebf7",
+        "scanNumber": 61,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/74b0b399-aa71-4ab0-b86c-1d8add06ebf7/0061-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/74b0b399-aa71-4ab0-b86c-1d8add06ebf7/0061-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "8cb11b132e3a33c26a4ff5764b366261865baadd7cf9a7c61600e84fbc46cdaf",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/74b0b399-aa71-4ab0-b86c-1d8add06ebf7/0061-header.png",
+            "sha256": "dec3be9e2fa76cc4972ba8baeeff70e1c3a4ae2cd3b1dcbd21ce0087a1a6709a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/74b0b399-aa71-4ab0-b86c-1d8add06ebf7/0061-target-entry.png",
+            "sha256": "c322a2fd9c07ab1097fb99f47427e67bf7af7e93a1a2c18453204da71ec83510",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5891x4854",
+          "targetDimensions": "1624x711",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "LKOI\nТИПОГРАФІН\nСИПОАAО\nМСТРИЧЕСКОЙ КНИГИ НА 19\nЗвАніє, ймл, бтчЕстко й фамиліА одмéршаги.\n:Cк1.",
+    "localOcrWithSurnameLexicon": "LKO!\nТИПОГРАФІН\nМЕТРИЧЕСКОЙ КНИГИ НА 191\nЗвАніє, ма, отчЕство й фамилід одмершаги.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Гавриил Гавриилов Ампилогов, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

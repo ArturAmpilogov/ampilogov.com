@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0107-target-entry.jpg",
         "sha256": "03161ce7cd084913af65b2aa26e4c93089a2418cc428d3f220162d1f9887b2ca"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b75d6c1c-4ac0-41cf-855a-cd57e4e662e6",
+        "scanNumber": 107,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0107-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0107-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9e78f9d4cc829fe2e25d3e34f7adb2518cd708e808c547cf43ca221328ea1b4b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0107-header.png",
+            "sha256": "71da2bac2c90c52dcfde20bc39d35c134d6668aae1f6fb596814ab3593441342",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0107-target-entry.png",
+            "sha256": "7fa0129621aeb36570bacecb8ed5c3bab6d9a54217b9e885175a62d022f51242",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5224x4099",
+          "targetDimensions": "1323x829",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "-AND\nгÓдЪ, чАсть первАД, й Р\nЗвÁніє, ймл, отчество й фамиліл\nБоспріємникшкх.\nДеревыи Пусниный зребит\nяшииі Гадаріs Дилі\nослаявь и яела\nТТА кребиввивинй",
+    "localOcrWithSurnameLexicon": "- AND\nЗвАніє, йма, отчество й фамиліл\nпоспріємникшку.\nДеревни Пушниной зребит\nякий Радарі Дилі\nославь и села",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Павел Димитриев Ампилогов и крестьянская жена Варвара Петрова Клопова.",
+    "fuzzyQuery": true
   }
 }

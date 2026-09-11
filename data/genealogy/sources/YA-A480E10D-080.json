@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/080-target-entry.jpg",
         "sha256": "74533dd255f3e020c9aa47ba2d0370ab16dad73fca1e6c93c1e4eec31371e251"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a480e10d-0dee-4730-bea6-74f9eff86a00",
+        "scanNumber": 80,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "0d586cfc4873477d8e3ce2a0bc890a8fb72fc975f771392a89eefa8cf4c3c0ec",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-header.png",
+            "sha256": "17a8f8629d6eaeae590dd69859d2fa6ef2d2cc72bb5998a54e0cc99246ec2a6d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-target-entry.png",
+            "sha256": "d21e805b98d45915b94c2a55b1dcd56d359c896b3dfbc0894fc8deb4dc053a25",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5167x3887",
+          "targetDimensions": "1219x656",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЕПЛОДЛЬНО\nгóди, чáсть первад, й.\nFW\nЗвáніє, ймА, бтчество й фалиліл\nR\nвоспріемникшвz.",
+    "localOcrWithSurnameLexicon": "СПОДАЛЬНО\nЗваніє, ймА, отчество й фалилід\nR\nвоспріємникшЕ.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крестьянин Курской Губернии Василий Феофанов Ампилогов и Уладикавказская мещанка Анна Антонова Камолова.",
+    "fuzzyQuery": true
   }
 }

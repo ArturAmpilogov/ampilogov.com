@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ви авел-\nПіскит на вал. пeв. Mстрі\n716\nСки вснкова зрлтмм\nкрнн оицн. но М .р\n1. руси иПаки\nДи на вет. жл. Плир",
+    "localOcrWithSurnameLexicon": "Піскит на вал. пев. 1 стрі\n716\nДи на вет. жл. Петр",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0006-target-entry.jpg",
         "sha256": "c2966c781f71182851f9aeeb22ae9a96d05124770c6b68a2b0e88c0900b849ca"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3f7f9b5a-bf43-4dd1-b562-37726071f9a7",
+        "scanNumber": 6,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0006-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0006-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7b7ebc840af72661abd979052c04fbd45a7f63ead6c3c621be4deab0af4f77b5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0006-header.png",
+            "sha256": "905fc3eea19d5c61ec2dd1a63873a260a1d1411ee842981efecb3a98b8b0f999",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0006-target-entry.png",
+            "sha256": "4bc64b46bf9789f84c98dc8f840d5941b7c6dc74d789562821f2ee0427df8613",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4557x3802",
+          "targetDimensions": "1377x702",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Василий Семенов Ампилогов. ... Отец: Семен Ананьев Ампилогов, крестьянин, село Баклановка.",
+    "fuzzyQuery": true
   }
 }

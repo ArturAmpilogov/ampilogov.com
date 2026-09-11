@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Тага ме хутпра кресть-\nяинись Сендорь Ременись\nмипинчавь и крестьямо\nкая океа ввапкія, Ден\nфатва Фвалека\nТатне села крестьемиь\nДелвить Ст",
+    "localOcrWithSurnameLexicon": "Тага ме хутара кресть-\nякнись Сендорь Семенись\nлипинчавь и крестьямо\nкая окла вваннія, Ден\nфатва Жвалека\nТатне села крестьяниь",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0168-target-entry.jpg",
         "sha256": "4dbd67d756f27d353816e5c3452b8c85815eed81c40e499d260d97885feed095"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "547e2d58-9cf2-40e6-a76e-dead6f939f95",
+        "scanNumber": 168,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0168-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0168-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a1aaa25ab8793c2f5ca02a096b619a867d4e9cf813763f3242c853620c068b0e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0168-header.png",
+            "sha256": "2e6c1c7a6020473e35255e93c34aed65a014746d9289b5a5c3d219e5b09cf57b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0168-target-entry.png",
+            "sha256": "2c7b6e53d3a99b7ac9d2fa4a2550552eca3e411dd6c1814270a26a21da7931a0",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4982x3868",
+          "targetDimensions": "1260x828",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же хутора крестьянин Феодор Семенов Ампилогов и крестьянская жена Евдокия Феофанова Хвалева.",
+    "fuzzyQuery": true
   }
 }

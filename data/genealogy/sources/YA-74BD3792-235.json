@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/235-target-entry.jpg",
         "sha256": "c86850778a27475e7eef67ecb4928b072deec1b4cde9e3a7b40162949d092b75"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "74bd3792-25d5-4c5b-8b14-c4e0d353782d",
+        "scanNumber": 235,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0235-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0235-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e42f790a1067c434ddc63cc1c4b5314483c0570f95e7211c68846e28bbe58a85",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0235-header.png",
+            "sha256": "ede59c0a21e3daa426dadb7afedbbc807f232d1a7dbc66dc4d4530677cb6c221",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0235-target-entry.png",
+            "sha256": "a53a23917673f3695908600be090f7cd466c2569e2c7697c2a1f3cceb14f9569",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4940x3934",
+          "targetDimensions": "1296x739",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "КОВСкО)\nСНПОГРА*\nСИПОА АЛЬОРЕ\nTЬ ВТОРÁA, Щ БРАКОСОЧЕТА",
+    "localOcrWithSurnameLexicon": "ГИПОГРА*",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Сергий Петров Ампилогов, крестьянин, деревня Чумановка. Поручитель: Александр Иоаннов Парашин, крестьянин, село Крутинское.",
+    "fuzzyQuery": true
   }
 }

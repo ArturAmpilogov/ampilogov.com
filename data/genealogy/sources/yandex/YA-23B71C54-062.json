@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0062-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0062-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "2328b888ff8a9489ca3d27c9238a43351041e3c93101c6e12096640dd13b7dc1",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0062-header.png",
         "sha256": "1c89a6e128ed7adff8e3ceea600789ad36bd41332dbd43c42fa4eb3589b4e129",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0062-target-entry.png",
-        "sha256": "7ff962adecd4723730c2d0c78e6664d57f123505bebb3f74912c98f9ef43b577",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "e3c34e2dba543f30cd8a6386c967301d466d2ad08c0db1faa597446559d11ab0",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4592x3544"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4592x3544",
+      "targetDimensions": "1200x559",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Стефан Петров Челяпин и солдатская жена Марфа Иоанникиева Ампилова [в строке восприемников].",
     "modernInterpretation": "Марфа Иоанникиевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Уровловни Престижнинг Ваєшт?\nтокит\nacio\nРавист Покатнвт днь-\n112 б\n11л.\nДорбт. Ялавльсьоо проопньяннна Кимитх",
+    "localOcrWithSurnameLexicon": "У ровловни Престижнинг Ваєшт?\nассо\n112 б\n111.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Марта Иоанникиева Ампилова, солдатская жена. Крёстная мать: Мария Иоаннова Сутормина, крестьянская жена.",
+    "fuzzyQuery": true
   }
 }

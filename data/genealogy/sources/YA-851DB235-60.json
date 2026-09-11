@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/851db235-cffe-402f-bf7b-8bd765770802/0060-target-entry.jpg",
         "sha256": "73c4c3dae0377e9516bd2ff9214d93142b63396c2f15533fa06c8d46086eb73e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "851db235-cffe-402f-bf7b-8bd765770802",
+        "scanNumber": 60,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/851db235-cffe-402f-bf7b-8bd765770802/0060-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/851db235-cffe-402f-bf7b-8bd765770802/0060-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9d23ff63a6b1b02e0f3a79747f76c58d06a64605cf8768f1401f5750fc06f955",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/851db235-cffe-402f-bf7b-8bd765770802/0060-header.png",
+            "sha256": "bbd9e875ce786ebc8525c06752cc7f7486b45717770e86d61d5500957abffcd5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/851db235-cffe-402f-bf7b-8bd765770802/0060-target-entry.png",
+            "sha256": "928bb84fdb2815e9c4d417eda1393406a2eaf1406290ef87aa39f869d6b5391f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4675x4106",
+          "targetDimensions": "1200x934",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОВСКОЙ\n, чáсть первай, й роД\n2ature\nTUEEEN",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\n, чАсть первай, й роД\n2. ture\n%.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Наталия Егорова Ампилогова, крестьянская жена, та же деревня. ... Крёстный отец: Андрей Иванов Ампилогов, крестьянин, деревня Николаевка.",
+    "fuzzyQuery": true
   }
 }

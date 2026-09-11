@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-target-entry.jpg",
         "sha256": "ef07ce890a2a73889ee673ac411746333bb51643fef4741caab4366b335ac735"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "aeb0c6ac-3daa-467b-89b0-2f45f8f4c871",
+        "scanNumber": 305,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "6341d0e1a6f91f595dd0f3dcb799ec448d64705dbd643dcf0669c300eb685398",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-header.png",
+            "sha256": "0fa312897d821ba0d1cf10581d8612ed2bc1916dbc8feaffe77442bbb5397a2a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-target-entry.png",
+            "sha256": "b4d4766aaf6819be026a25902ffbcccef789e3512732bb12ed44bc7adfc24e56",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5344x4383",
+          "targetDimensions": "1377x1233",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Готорій взасливевк Оликова,\nРослорь Оржлито ве Олиго всд\nПоневлитвсмна Мреобрабрслна\nпротавникв Ивайь А\nмковевь\nметанивовь, кема (сорйовая\nпритівниь Летирь Дмитрівч\nКофтовч.\nМорониу?\nСела/вольчева престбівний\nВасний Реодород Іраавиунич,",
+    "localOcrWithSurnameLexicon": "Поторій взасивав Ольнова,\nРослорь Орилито ве Олиго всд\nПоневлитвемна Мреобрабран\nпротавник! Ивань А\nметаниковь, кема (сорйовая\nпритівни Летирь Дмитрівч\nКофтовы.\nСела /вольнева престбівний\nЗасний Реодоро Гравиупич,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Колычева крестьяне Василій Ѳеодоровъ Рукавицынъ Григорій Георгіевъ Курочкинъ, по невѣстѣ: села Колычева крестьяне Петръ Іосифовъ Ампилогов Филиппъ...",
+    "fuzzyQuery": true
   }
 }

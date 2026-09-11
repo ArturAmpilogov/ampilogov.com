@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/340ab656-6238-42da-ac08-590ab5c36a0e/0116-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/340ab656-6238-42da-ac08-590ab5c36a0e/0116-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "2167f66621da73a37770864bfe94517f35d5db1018d0b5dbafa457642ba108a5",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/340ab656-6238-42da-ac08-590ab5c36a0e/0116-header.png",
         "sha256": "8d44cd7da6c9c1ee48d6549f67d6d0aa79f84865a27461bca4a3ef342814dde9",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/340ab656-6238-42da-ac08-590ab5c36a0e/0116-target-entry.png",
-        "sha256": "db661c9fa9f3b98486ba89a40b77b0438507d938bb73b7663e87b9686d4850cb",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "4b6dfc65c91d0e16eb68a091865930e98182de054765b02f4098eeb39bd5ce61",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4776x3192"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4776x3192",
+      "targetDimensions": "1200x543",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-with-uncertainties",
     "literal": "В строке № 415 списка призывников фамилия читается как Капылов (возможен вариант Каплов); имени Ампилов в целевой строке нет.",
     "modernInterpretation": "Ложное срабатывание индекса. Профиль, публичный Record и точка карты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "реульн.\n/ебедевь\nпалВ0 ререіія\nКепрар\n\"Загиеленя\"\nль (аврим\nДополгение призр\nубери-\nМ Симбиректи й\nНя омниского\n- 5 Наморя т.\nришуй\n1Ожоевской І С/л\n~ 4085.\nКокфор фа-\nyeekuf-t/aй\n115337",
+    "localOcrWithSurnameLexicon": "/ебедевь\nпал В0 рересія\n\"Загиеленя\"\nль (аврим\nополчение призр\nубери-\nМ Симбиректи и\nНя омниского\n- 5 Наморя т.\n1О товскої І Сл\n~ 4085.\n1153371",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "research-review",
@@ -77,7 +85,12 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "low",
     "unresolved": [
-      "Фамилия в строке №415 читается как Капылов/Каплов, а не Ампилов; индексный фрагмент смешал соседние поля."
+      "Фамилия в строке №415 читается как Капылов/Каплов, а не Ампилов; индексный фрагмент смешал соседние поля.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ]
+  },
+  "indexData": {
+    "querySnippet": "Городской оборъ, Семирусьева дочь Ампилова. Ростъ 2 арш. 5 1/2 в Грудь 20 в 3 руб. 8 мкр года 4/XI.",
+    "fuzzyQuery": true
   }
 }

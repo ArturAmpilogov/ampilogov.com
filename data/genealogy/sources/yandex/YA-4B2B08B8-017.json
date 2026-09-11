@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0017-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0017-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "ae26b594dd100a15bf2bccadb67047753529f58fd06f7276812e2c84805f6ead",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0017-header.png",
         "sha256": "f7e261e7cf96d0db59897b617ec747fbaa5839f7df0023a24f37aa3a7ce68b62",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0017-target-entry.png",
-        "sha256": "811b23b7ced437a7d15368b58e5b00281803aa43a66bf1fdac489e0a5cfcebc1",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "dde0812848cf32146ee13f93c06d2fafa49a06a2d5f56b4dc7cafc722ecd0640",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4200x2948"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4200x2948",
+      "targetDimensions": "1200x735",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Бахтемирского Ефим Ипатов Ампилов и Мария Иванова Бухарцева [в строке восприемников].",
     "modernInterpretation": "Ефим Ипатович Ампилов назван восприемником.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Буд Кастта ун при-\n10\nCenla\nятим Пeтрs Aлereiяв\nБорикюв Кремивяти\nсим Gapinemiparao /0a\nМ\nленлина Вергаево\nбрвеніина",
+    "localOcrWithSurnameLexicon": "10\nCella\nятим Петр Acreie\nБориков Кремивати\nМ\nбрвенина",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахтемирского Ефим Ипатов Ампилов и Мария Иванова Бухарцева.",
+    "fuzzyQuery": true
   }
 }

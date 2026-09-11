@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/2b57ffb6-c944-420d-9e01-8d0b0a3e43ea/0011-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/2b57ffb6-c944-420d-9e01-8d0b0a3e43ea/0011-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "912905ba40b90c7e21589d1a6513d94a5f996ba16540fbda9c02ebf63fd8ea09",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/2b57ffb6-c944-420d-9e01-8d0b0a3e43ea/0011-header.png",
         "sha256": "5a15d2d34bb1e41ed746bbd79857d7c42f914dd02bcd5858f68b058d55fad623",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/2b57ffb6-c944-420d-9e01-8d0b0a3e43ea/0011-target-entry.png",
-        "sha256": "134a0df95b3d490181853af391f492923254f71d9253ffd7117c0f7412c9b06e",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "077b218bf1e8af492d35c54a3ef04e708eac75d099cae4908afb0fbb212b8d88",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4224x3308"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4224x3308",
+      "targetDimensions": "1200x1164",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянка Вера Никитина Ампилова, православного вероисповедания, первым браком, 18 лет.",
     "modernInterpretation": "Вера Никитична Ампилова документирована как невеста; жених другой фамилии остаётся в расшифровке.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "SUVAAr\nАСТРАХО\nросповосвання\n18.\nперваиий брагетий\n20.\nКашиь иАвдтнв,\n6 a20в2\nRmack\nі Мл\nсела Янбыкь крипа\nАнастасія Васнив\nева Ушакова пса",
+    "localOcrWithSurnameLexicon": "АСТРАХО\nростовостання\n18.\nперваий брагетив\n20.\n6 a20 12\nі Мл\nсела Янбыкь крипа\nАнастасія Васнив\nева Ушакова пра",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "села Промысловки крнъ Михаилъ Карповъ Боевъ, православнаго вѣроисповѣданія первымъ бракомъ. 20. Таковая же крнка Вѣра Никитина Ампилова...",
+    "fuzzyQuery": true
   }
 }

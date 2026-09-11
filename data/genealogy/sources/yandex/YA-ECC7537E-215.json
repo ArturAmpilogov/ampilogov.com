@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0215-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0215-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "ebad3fd377e281900b47d7e82f9a34a4fe1236dab9d9c5386a547f186024a17b",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0215-header.png",
         "sha256": "99aecd3c907e5dcbf67a873785d16cd69073cae555bb01d54702d07e983864e1",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0215-target-entry.png",
-        "sha256": "ad1e3811cab29e19dc69887b2e79df1f57644566140b59767bbe97b23a46e14c",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "cc797da18570c8e1ea3e86d5c4650f0d5e9d6bd06218ca9094714c63f2ec0694",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5652x4566"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5652x4566",
+      "targetDimensions": "1513x856",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Кармалки крестьянин Филипп Васильев Ампилов и законная жена его Гликерия Васильева; оба православные.",
     "modernInterpretation": "Филипп Васильевич Ампилогов записан отцом ребёнка; индексное имя Матфей не перенесено без чтения соответствующей графы.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Димитрієви; оба іправославньх\n(влищенини Димитрї\" (убнини ол\nгія\nСела Кармаліх хрестьяни\nМатоєн Фалинігови Касья-\nновь и захопая жетнаего\nХргина веоги",
+    "localOcrWithSurnameLexicon": "Димитріяви; оба православних\nСвященний Димитрі\" (убнии ол\nгія\nСела Кармалих хрестьяни\nМатоєн Фатинігови Касья-\nновь и захожая жетна его",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Новорождённый, Матфей Филиппов Ампилов. Новорождённый, Петр Стефанов Пашков. ... Мать, Гликерія Васильева Ампилова.",
+    "fuzzyQuery": true
   }
 }

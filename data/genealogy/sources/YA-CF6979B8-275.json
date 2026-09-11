@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0275-target-entry.jpg",
         "sha256": "24a5e78fdfe247dbd61d2bfad3d9bb258f6c7b13e79d9e171460afa35ae68a87"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cf6979b8-23f3-4976-bbef-e1da97619695",
+        "scanNumber": 275,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0275-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0275-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7d0a5fc4fe002494996a6ae48561ae6b6e2e7703601f4f24a3e1d38e6c66169f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0275-header.png",
+            "sha256": "8c3572ce3a7690660de24ab8aa29d27eb20c0540bac8b97efca7d6fd12e361b2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0275-target-entry.png",
+            "sha256": "25d6e14378121453ff5a77d0af202459643fcfcfae1af7c674098f59871c34c5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5056x4108",
+          "targetDimensions": "1387x832",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "КОКСКО\nVNO\nАЛЬНОЙ\nгоди, часть первад, й ро\nЗкАніє, ймА, ботчество й фамилід\nKrò\nкоспріємникшк%.",
+    "localOcrWithSurnameLexicon": "КОКСКО\nVINO\nАЛЬНОЙ\nгоди, часть первал, й ро\nЗкАніє, ймА, ботчество й фамилід\nKirò\nкоспріємникше%.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Павел Димитриев Ампилогов и крестьянская девица Екатерина Феодорова Колодкина.",
+    "fuzzyQuery": true
   }
 }

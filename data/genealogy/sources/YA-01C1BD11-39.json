@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга за 1907 год, часть первая о родившихся; на листе видны записи № 65–67 за сентябрь–октябрь.",
     "modernInterpretation": "В строках родителей и восприемников видимых записей фамильный ряд Ампилогов / Анпилогов и документированные варианты не обнаружены. Карточка не образует Record, профиль, точку карты или маршрут переселения.",
-    "indexNote": "Совпадение в поисковой выдаче Яндекс Архива оказалось ложным. Вывод сделан по локальному первичному скану, а не по OCR."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "1511E9001 D0011 14 110-\nЗваніє, йма, сбтчестко й фамиліл родителєй, й какóгш\nшихсА.\nккронсповданіл.\n1нья\nТволеннам віо зайаев арами розд авої\nизь криво амла Млассневскао\nВасини Павловь Шапалев\" и",
+    "localOcrWithSurnameLexicon": "1511E9001 D0011 14 1101-\nЗваніє, йма, сітчество й фаміліл родителей, й какги\nшихсА.\nв кронсповданія.\nСволеннам ві зайнев арами розд авої\nизь криво асла Млассневскаю\nВасини Павловь Шаталев \" и",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0039-target-entry.jpg",
         "sha256": "c1094e848d7ddba7772a5f23037f627c5ce11b9a0159d5538f44c6faab007bf2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "01c1bd11-1b0d-4084-85b3-6816f7db0cec",
+        "scanNumber": 39,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0039-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0039-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c279cb108f35629b60e124f55fa450a0a367cda6f7fcdb80e367656c196410dc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0039-header.png",
+            "sha256": "3a362bf3ded16514f8808f027032d735047e014f8f755689d95829448995671c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/01c1bd11-1b0d-4084-85b3-6816f7db0cec/0039-target-entry.png",
+            "sha256": "d0142468924eb00d6ec740f33a4bf45481d2e94c8e0365b4f4e9ae87578d6b9e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4996x4103",
+          "targetDimensions": "1500x911",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Савва Иванов Ампилогов. ... Отец: Иван Яковлев Ампилогов, крестьянин, деревня Николаевка.",
+    "fuzzyQuery": true
   }
 }

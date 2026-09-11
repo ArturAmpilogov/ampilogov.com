@@ -14,21 +14,96 @@
   "event": {
     "type": "birth-godparents",
     "date": {
-      "display": "1911",
-      "confidence": "high-for-year"
+      "iso": "1911-07-29",
+      "display": "29 июля 1911 года (рождение); 31 июля 1911 года (крещение)",
+      "calendar": "source-calendar-unverified",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемирское",
+      "normalized": "село Бахтемир, Астраханский уезд, Астраханская губерния",
+      "placeId": "bakhtemir-astrakhan"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-08AF9DDB-022-M1",
+      "role": "subject",
+      "personId": null,
+      "displayName": "Геновефа Фоминична [Бутноярова?]",
+      "nameAsTranscribed": "Геновефа",
+      "patronymicEvidence": {
+        "basis": "Имя отца Фома прямо указано в той же строке.",
+        "confidence": "high"
+      },
+      "uncertainties": [
+        "Фамилия отца читается неуверенно как «Бутнояров»; женская фамилия ребёнка дана только как осторожная реконструкция."
+      ],
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08AF9DDB-022-M2",
+      "role": "father",
+      "personId": null,
+      "displayName": "Фома Павлович [Бутнояров?]",
+      "nameAsTranscribed": "крестьянинъ села Бахтемирскаго Ѳома Павловъ [Бутнояровъ?]",
+      "socialStatus": "крестьянин села Бахтемира",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "села Бахтемирскаго",
+          "normalized": "село Бахтемир, Астраханский уезд, Астраханская губерния",
+          "placeId": "bakhtemir-astrakhan",
+          "confidence": "high"
+        }
+      ],
+      "uncertainties": [
+        "Фамилия читается неуверенно."
+      ],
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08AF9DDB-022-M3",
+      "role": "mother",
+      "personId": null,
+      "displayName": "Анфиса Семёновна",
+      "nameAsTranscribed": "законная его жена Анфиса Семенова",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08AF9DDB-022-M4",
       "role": "godfather",
       "personId": "P101686",
-      "displayName": "крестьянин Стефан Димитріев Ампилов",
+      "displayName": "Стефан Дмитриевич Ампилов",
       "nameAsTranscribed": "крестьянинъ Стефанъ Димитріевъ Ампиловъ",
+      "socialStatus": "крестьянин села Бахтемира",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "села Бахтемирскаго",
+          "normalized": "село Бахтемир, Астраханский уезд, Астраханская губерния",
+          "placeId": "bakhtemir-astrakhan",
+          "confidence": "high"
+        }
+      ],
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-08AF9DDB-022-M5",
+      "role": "godmother",
+      "personId": null,
+      "displayName": "Анна Семёновна Панова",
+      "nameAsTranscribed": "Анна Семенова Панова",
+      "places": [
+        {
+          "relation": "estate-affiliation",
+          "asWritten": "села Бахтемирскаго",
+          "normalized": "село Бахтемир, Астраханский уезд, Астраханская губерния",
+          "placeId": "bakhtemir-astrakhan",
+          "confidence": "high"
+        }
+      ],
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -37,45 +112,72 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/08af9ddb-0f36-483c-b890-34a8f317797e/0022-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/08af9ddb-0f36-483c-b890-34a8f317797e/0022-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "6ffacc3dc63fcff213725c360c0f97cae3c62eae8d14da349286e536937de0f4",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/08af9ddb-0f36-483c-b890-34a8f317797e/0022-header.png",
-        "sha256": "fafe4af45571ce5caed29539c6eb5d112660287221d72b723509df83bb200745",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "sha256": "ebf2ea257d89f9754a535630db4f75d104bf346cc80830cce9106f2ddcc98962",
+        "description": "Крупный фрагмент с печатным заголовком части о родившихся и названиями всех граф."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/08af9ddb-0f36-483c-b890-34a8f317797e/0022-target-entry.png",
-        "sha256": "bc2cdbe92c5d2d4ad4f317c6463308ae84a604aa6fbb5be18f91e39d49778233",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "986b9a0365601f70c0ed4c2e06f3090114c84156f359a6c4566ca879ddc114cd",
+        "description": "Исправленный крупный фрагмент всей строки Геновефы: счёт, даты, ребёнок, родители, восприемники и совершитель крещения."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4388x2948"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4388x2948",
+      "targetDimensions": "4038x850",
+      "method": "original-download-plus-manual-full-row-recrop-and-full-scan-reading"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Стефан Димитриев Ампилов и Анна Семенова Панова [в строке восприемников].",
-    "modernInterpretation": "Стефан Дмитриевич Ампилов назван восприемником; индекс ошибочно прочитал отчество.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "status": "complete-for-relevant-row-with-uncertainties",
+    "literal": "Женского пола № 25. Іюль, 29 родилась, 31 крещена. Геновефа. Крестьянинъ села Бахтемирскаго Ѳома Павловъ [Бутнояровъ?] и законная его жена Анфиса Семенова; оба православные. Восприемники: крестьяне села Бахтемирскаго Стефанъ Димитріевъ Ампиловъ и Анна Семенова Панова. Таинство совершено священником [имя или подпись неуверенно].",
+    "modernInterpretation": "29 июля 1911 года у бахтемирского крестьянина Фомы Павловича и его законной жены Анфисы Семёновны родилась дочь Геновефа; крещена 31 июля. Восприемниками названы Стефан Дмитриевич Ампилов и Анна Семёновна Панова.",
+    "indexNote": "Сниппет Яндекса правильно вывел пару восприемников, но не передал ребёнка, родителей и даты, а фразу о выдаче метрической выписи в 1930 году присоединил из другой строки или пометы. Она не относится к Стефану Ампилову и исключена из расшифровки этого акта. Прежний автоматически вырезанный target-entry относился к соседней записи и заменён.",
+    "localOcr": "са синнуки изакинная\neoz LVгпинг. О циненою\nеогрена Маро. Нинами\nуагда сли Шатрамов\nPG\nКОИ\nпракословные\nкритьям Імонія\nносониь ПОнетина\nНиколєва Шинснансова\nващеннинь Ми\nДіанані Каплоний 6 милн\n•\nопохани в абоссоном/ ченов. падинь г\nнаомось мусиска лана б, срен\nсовит (10)\nштинія.\nСьящзнениаь Ми\nпосажи\nбаланя.\nікан акланин",
+    "localOcrWithSurnameLexicon": "са ситнути изакинния\nсогрена Маро. Никами\nунгда сли Шатрамов\nPG\nКОИ\nпракословные-\nкритьями Імонія\nносониь ПОнетина\nНиколова Шиннансова\nващеннить Ми\nДіанані Каплоний 6 мили\n•\nопахани в абоссоном/ ченов. подина г\nна омось мусиска лана б, срен\nсоват ( 10)\nштинія.\nпосати\nбаланя.\nПікан закланин",
+    "collation": {
+      "baseLocalOcr": "superseded-by-manual-full-page-reading",
+      "assistedLocalOcr": "superseded-by-manual-full-page-reading",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "verified-primary-source-record",
   "publicCore": true,
+  "primaryPersonId": "P101686",
+  "context": {
+    "eventSummary": "Строка фиксирует рождение и крещение Геновефы; Стефан Ампилов участвует как восприемник, а не как отец ребёнка.",
+    "scopeNote": "Поздняя выписка 1930 года из сниппета Яндекса относится к соседнему тексту и не включена в факты о Стефане Ампилове."
+  },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high-with-listed-uncertainties",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full page, register headings, female sequence number 25, birth and baptism dates, child, parents, both godparents and sacrament column; incorrect automated target crop replaced",
+    "unresolved": [
+      "Фамилия отца Геновефы читается неуверенно как «Бутнояров» и не нормализована без оговорки.",
+      "Имя или подпись священника не разобраны.",
+      "Профиль P101806 с тем же именем Стефана Дмитриевича Ампилова пока не объединён: источники того профиля должны быть проверены отдельно."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахмемирского Степан Дмитриев Ампилов и Анна Семенова Панова. 1. Выдана метрическая жена Анна Семенова 13/VИИ 30 год.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Стефан Дмитриевич Ампилов назван восприемником Геновефы, родившейся 29 и крещённой 31 июля 1911 года в Бахтемире."
   }
 }

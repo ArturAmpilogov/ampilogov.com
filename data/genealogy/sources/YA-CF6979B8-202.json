@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0202-target-entry.jpg",
         "sha256": "b0af3411b66fd36a0a21ce87afdf85d8a5307959f020df4c421d2b7079aa9e70"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cf6979b8-23f3-4976-bbef-e1da97619695",
+        "scanNumber": 202,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0202-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0202-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2b479005ef06d339fa2a5faa7ea3e75f8107d236ec1d9f74c984295c21e069a4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0202-header.png",
+            "sha256": "a28eac8d479b74d2a313d28eedb4a2436b07ecae8eb04d2c754397b2d77cf6a4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cf6979b8-23f3-4976-bbef-e1da97619695/0202-target-entry.png",
+            "sha256": "975cf628e15b10f4f84c227f6bf8b1749a2a2fb882bfcdeea563a8d8d30e093b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5088x4108",
+          "targetDimensions": "1423x870",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "мл. ереьни сумено ки кресть-\nмишь Печрь Лавонтіявь\nАмаилтвь и замышая\nжена егь- янна Петрова;\nоба православные.\nсвячщений Н.\nКoщея\nНу. Иааломи. Мексань\nУеллісни)\nсіз.\nФеревни Клате эмы хретйя-\nшишь Платонь Николасв\nИскаренковыи залошец жена\nего ольчи ягнорееви; оба право-",
+    "localOcrWithSurnameLexicon": "м. еревни сумено ки кресть-\nминь Петрь Лавантіява\nАмпиловь и замышая\nжена его - Анна Петрова;\nоба православные.\nсвящений Н.\nНу. Поалом. Мексань\nУелісни\nсіз.\nФеревни Клате омы хрестя-\nшить Платонь Николасв\nИскоренковый залошем жена\nего ольги ягнореева; оба право-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Петр Лаврентиев Ампилогов, крестьянин, деревня Чумановка. Отец: Платон Николаев Искоренков, крестьянин, деревня Китерма.",
+    "fuzzyQuery": true
   }
 }

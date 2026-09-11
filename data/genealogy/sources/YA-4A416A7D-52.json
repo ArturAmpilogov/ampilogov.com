@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "чин пре-\nдановки критьц.\nстьянкий Довжуа\nег псолом-\nжинг Иинь горов\nр\nВарвпра Огоборова\nчеканиково приви-\nНарчукова, пра\nсивныя, первым\nвосливний, первики\n19.\nбриколь.\n17.\nи- е прионь. НЫв\nвядентию Миtaus\nАМпилrое",
+    "localOcrWithSurnameLexicon": "дановки крить.\nстьянкий Довжуа\nег. псалом-\nжинг Шинь Егоров\nр\nВарвира Оговорова\nчеканиково приви-\nНарчукова, пра\nсливных, первым\nвосливний, первики\n19.\nбриколь.\n17.\nвидению Михаль",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0052-target-entry.jpg",
         "sha256": "7676241409cfae28c48c79a595353385510636e91cb79910708831e64a1c45cd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 52,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0052-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0052-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d8b098e140949a7a8fa1c9922fb4cf8641fcae8ecf353112ad11b0f8ad0d8526",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0052-header.png",
+            "sha256": "4f373950cf64eff1b86b47a1991cc6249f134f9008b1075abc0adf418b09c883",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0052-target-entry.png",
+            "sha256": "38b2f9b3b5d9c0d72c8ab29feb3dc4ac49735b5bca59601fe3820e36a47cc70e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5288x4365",
+          "targetDimensions": "2608x597",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов. Ампилогов. 20. 22.",
+    "fuzzyQuery": true
   }
 }

@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0027-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0027-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "135f6da2d52d26c1a07d2d43ed80cabf8b59c8d14f7b377b23283210e1f3620f",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0027-header.png",
         "sha256": "21a31a1eeb6bc1c03094f6e4f2f077737b4e20f85972b7e3d1e8e50e5f88571e",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0027-target-entry.png",
-        "sha256": "7a043dfa4479116cfc368df7209512c266ae7ae3c64c256accdf1a89056cbb54",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "fefa226ea760213ca8ce89769a819a3166e38d888f13a1f0e4dfb104f02fe6fa",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4468x2964"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4468x2964",
+      "targetDimensions": "1200x1372",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин села Бахтемирского Федор Димитриев Мокеев и Анна Михаилова Ампилова [в строке восприемников].",
     "modernInterpretation": "Анна Михайловна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сафранов Герноаренси\nMupaaa Qegapit Hame en .\nрествянесеи- в абоа\nмирекма С/едаріДи-\nмитріяв Монкеви\nАнна Миранлова\nБЛАСТ\n1\nКриствяне смли вад-\nтеширскогю ДванлФи- О\nrol Тkapel.„Hanа-",
+    "localOcrWithSurnameLexicon": "Сафранов Герноарении\nрествяне сеи- в а боа\nмирекма С/едарі Ди-\nмитріяв Монтев к\nАнна Миранлова\n1\nКриствяне сми вад -\nпеширскою ДванФи- О\nrol kapel. \"Hana-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "...Марѳа Ѳедорова Жемерова Крестьяне села Бахтемирскаго Федоръ Димитріевъ Мокѣевъ и Анна Михаилова Ампилова.",
+    "fuzzyQuery": true
   }
 }

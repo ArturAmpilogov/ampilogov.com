@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0011-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0011-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "187fa485d5c2202d208eb5d71a95e4048e3358dd0a6e2b1eb328bb443ca2fd7c",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0011-header.png",
         "sha256": "e493a7ab957c8220cbb09150468c317c4a459c036f527df7f7f093f94c0b1648",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0011-target-entry.png",
-        "sha256": "b3d8cfb3010acbae029dbbaa9a90a63b835929b1ccb98423d4d5db811dd400c2",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "269d3af8100dfee9b3564479dec0cb79ecd7a50455c509d69120d00d2e2e3f99",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5564x4478"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5564x4478",
+      "targetDimensions": "1510x767",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки солдат Симеон Васильев Ампилов и законная жена его Матрона Герасимова; православные.",
     "modernInterpretation": "Семён Васильевич Ампилов записан отцом ребёнка.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ін.\nввадоі Менаиита дравдстуовннн.",
+    "localOcrWithSurnameLexicon": "ін.\nвадоі нить дравровни.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Василий Симеонов Ампилов. ... Отец: Георгий Данилов Камбаров, крестьянин, деревня Андреевка. Мать: Марфа Иоанникиева Ампилова.",
+    "fuzzyQuery": true
   }
 }

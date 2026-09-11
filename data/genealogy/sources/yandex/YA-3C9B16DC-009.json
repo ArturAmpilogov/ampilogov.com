@@ -53,38 +53,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0009-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0009-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "01a262fd1f41d0dc2b677bc326ac2905c3b346f803ee6cce44dae6a5e43af452",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0009-header.png",
         "sha256": "c2308a34d7578591a20a6ba8839ae4f2175eda90db44415932c4532b0e9b7cc0",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0009-target-entry.png",
-        "sha256": "27b95fc1ef6414dd38bf83316e587b686af5def391f9eed472687cddfff3e8fe",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "979191278a460f9faf9867f3dd29dbf76ba23c66e7933c01bedb1f4f1a88f0c9",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4400x3529"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4400x3529",
+      "targetDimensions": "2526x721",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Симеон Василиев Ампилов и законная жена его Марфа Иоанникиева; восприемники: зауряд-прапорщик Афанасий Василиев Сутормин и крестьянская девица Мария Иаковлева Ампилова.",
     "modernInterpretation": "Семён Васильевич Ампилов и Марфа Иоанникиевна названы родителями, Мария Яковлевна Ампилова — восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "мипоонора вввл\nевами ваврваннни\n- Діапонь Каринй во рве\nЛепнос\"\nМрьсирайновка простьянии Скофаннь\n/Простьячснні ічнене\noclae\nкопієва Поршикова\nпрічия\n1...\nЗ0 ll/aunemseteт\nCТИ\n„ Діаконь Воримі\nРіалоітена\nПримирайковки проєтьявтна.\nасія вела Мрим\nрааловм пуветня\nРисполай\nbooh dleraro\nбь и провтьяннов",
+    "localOcrWithSurnameLexicon": "- Діако не Карий варва\nМрасирайновка простьянии Скофань\n/Простьяченні ічнене\nкопієва Поршикова.\nпрічия\n1...\nСТИ\n- Діакон. Ворими\nРеалона\nПримирайковки проєтьянина.\n1. с\nРисполай\nасія вела Мрим\nboh Aleraro\nбь и провтояннов",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -92,6 +100,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Марія Іаковлева Ампилова, крестьянская девица. ... Мать: Анна Алексіева Ореховскія. Мать: Марфа Иоанникіева Ампилова.",
+    "fuzzyQuery": true
   }
 }

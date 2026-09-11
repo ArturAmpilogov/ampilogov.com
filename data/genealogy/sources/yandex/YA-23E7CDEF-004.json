@@ -45,38 +45,45 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "344e508e6efba03861c5a30ea3457ed6fda131d7e7370aebab932ecbf1ecf408",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-header.png",
         "sha256": "f26cd5125cda96374bb412bf33fca72d043764c8f9e92ead31544e25f9a1a706",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-target-entry.png",
-        "sha256": "d285c14a2d3d0b6a04798af5dcab419160737b8844d3d924d42ea5c85acbef69",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "5c628215b11e8cff3650bb145422737452235408e5c4dc84edbc536fa7ed418a",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4472x2932"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4472x2932",
+      "targetDimensions": "1200x1477",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин села Бахтемирского Стефан Димитриев Ампилов и законная жена его Евдокия Сергиева; оба православные.",
     "modernInterpretation": "Стефан Дмитриевич и Евдокия Сергеевна Ампиловы записаны родителями ребёнка.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "d_\nКрествянинь anе bаfme\nширькою С,нефань Дмит\nвісh Ампилов „закан-\nraя Jeнa eго 2 вoaxія\nсва: обо правосавння\n- Сояженникь Двихансь. Юиетина\n1 акаfe) Яарнашний вармму\nСпаурата, уберани, бунні\nволантие чома в Катрій Сто.\nкрествянина Але\nпанов Шииканов. •Закон\nOGVA\nCТ\nная го брона Поланя\nиколаєвсі аба\nввященника Пегравошивнка\nпосаеть Пчити\nДіакабу Харлаший\nваранй\nДі аканг",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -85,5 +92,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Крестьянин села Бахтемирского Стефан Дмитриев Ампилов и законная жена его Евдокия Сергиева...",
+    "fuzzyQuery": true
   }
 }

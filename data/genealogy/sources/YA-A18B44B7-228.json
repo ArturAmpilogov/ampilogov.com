@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0228-target-entry.jpg",
         "sha256": "5c27f44226d5cb16e6f53b47d1b03147a718979f571b41485b742262624b607a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 228,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0228-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0228-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d31ae91bd24be08fbf14b092da2977811a878159c34f6a738ef469c914bb18ad",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0228-header.png",
+            "sha256": "4d434c103d7fe1540de8e9bb62ce2ce62f1feb5640966377ca129cd94889d5c3",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0228-target-entry.png",
+            "sha256": "09e7ffc243d24ea64c567556394d04cbc1ed70bf9449624a2a37a4da7e5036bd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5827x4716",
+          "targetDimensions": "1775x1013",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "коКскоЙ\nГИПОГРА\nУЛОДАЛЬНО\nМОТРИЧЕСКОЙ КНИГИ NА\n1908\nAkтà\nЗваніє, ймя, отчестко й фамнліл одмéршиги.\nоймéршагш.\nÉHіA.\nМбжеска.\nЖéнска.\nСели Старой - Бодановки Крить-\nЯнинсь Оеодэра Восильева Толкачева-",
+    "localOcrWithSurnameLexicon": "ГИПОГРА\nПОДАЛЬНОМ\nМЕТРИЧЕСКОЙ КНИГИ НА\n1908\nAkrà\nЗваніє, ймя, отчестко й фамнлія одмершиги.\nÉHiA.\nМбжеска.\nЖенска.\nСели Старой - Бодановки Крить-\nЯнинс Особора Васильева Толкачева-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Старой Богдановки солдата Лаврентия Иванова Саломыкина дочь Александра 1 г. Священник Михаил Ампилогов Псаломщик Тимофей Горланов Диакон Вонифатий...",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "шкг\nПареритети по гранихит: с. Ново Аранен-\nгельского преет. Николай Дедоровь\nТепаяховг Алтелій Редоровь /удаговьм\nДеревні Ново- Оборовки крест. Андрей\nИмина Фабнось; по невнсты Перевни\nГлухоплово /рес. Митрофанч/а-\nвловь |причинскихч, крест. с. Новогор.\nханг. Ивань.Галовлеви. Доскалев. Ремленч\n136 ги\nИвановь /ичичиніь.\nмуч і\nИ1\nсвм-\nвтрос",
+    "localOcrWithSurnameLexicon": "Поречитет по гранихи: с. Ново Аранен-\nгельского преет. Николай Деборовь\nТегаяхов Антеній Редоровь /удаговьм\nДеревні Ново Оборовки крест. Андрей\nИмина Фаблось; по невнеть Перевни\nГлухоплово рест. Митрофанч/а-\nвловь | причинских, крест. с. Новогор.\nханг. Ивань-Таловсева. Доспалев. Ременч\n136 ги\nИвановь / ичичиніь.\nмуч і\nИ1\nсвм -\nвырос",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e164897-6b1a-47a7-a971-d3e5d5764e44/187-target-entry.jpg",
         "sha256": "f0e6692674de2319c0c307142deda5695ec65ca0ef3e7d36b62e81a7775a5ec6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e164897-6b1a-47a7-a971-d3e5d5764e44",
+        "scanNumber": 187,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e164897-6b1a-47a7-a971-d3e5d5764e44/0187-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e164897-6b1a-47a7-a971-d3e5d5764e44/0187-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d0cbd8155adc8378243fe8f4fe4d9f9e19887a0079178b650bb33d3133ead231",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e164897-6b1a-47a7-a971-d3e5d5764e44/0187-header.png",
+            "sha256": "3fed2c88bb8f1a88e83cbfd9d46d88a084855de7ac2e2260e6d2f1564beb86a6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e164897-6b1a-47a7-a971-d3e5d5764e44/0187-target-entry.png",
+            "sha256": "dabc47b01195ed316dad4489d11e5e1f09e69bf791016d7f9433c61712ccd153",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5330x4179",
+          "targetDimensions": "1316x996",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Наум Ильин Ампилогов, Михаил Ампилогов; по невесте: с. Ново-Арханг. крест. Борис Иванов Трунов, Иустин Стефанов Мезенцев и Федор Непочатых.",
+    "fuzzyQuery": true
   }
 }

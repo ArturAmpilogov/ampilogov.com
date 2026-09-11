@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "75e5b33003a54ff31a174156dfdf0146fd6e1d254ddc7a6c34513f8b5386f5ac",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-header.png",
         "sha256": "25d3b58b66171fd2c6000b3f004c7b67d00683a64b06e9a5c99e03d90c8d70ee",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4ca9f7bd-438c-456d-b73f-80960c3c2f2b/0325-target-entry.png",
-        "sha256": "baa6aa050daf0f098013276f3ed21729e8b7773acb432d1dcc9b39cde2360f9c",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "526a3bbbb5540b9bb524e0c9ce32f07d6b550970b11171953b98849734ae0bc3",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4860x3233"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4860x3233",
+      "targetDimensions": "1200x1344",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-with-uncertainties",
     "literal": "Список эвакуированных, прибывающих в Каменский сельсовет. № 583: Ампилова Евдокия Степановна, жена, 1911 года рождения [остальные графы читаются частично].",
     "modernInterpretation": "Евдокия Степановна Ампилова, родившаяся в 1911 году, внесена в список эвакуированных, размещённых в Чкаловской области.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "7Усанов\n76\nRa\nМульу\n157 Шулй\nМульи\nборкон\n80\nГлизман",
+    "localOcrWithSurnameLexicon": "7 У санов\n76\nRa\nМульу\n157 Шули\nМульи\nборкон\n80\nГлизман",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,7 +85,12 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "medium-high",
     "unresolved": [
-      "Часть граф маршрута и размещения на строке читается неуверенно."
+      "Часть граф маршрута и размещения на строке читается неуверенно.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ]
+  },
+  "indexData": {
+    "querySnippet": "Ампилова.",
+    "fuzzyQuery": true
   }
 }

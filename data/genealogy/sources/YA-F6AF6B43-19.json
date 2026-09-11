@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6af6b43-7ca7-49bd-816f-db8e585ce78f/0019-target-entry.jpg",
         "sha256": "3c978fba40cc0f99cf3e6f031338f2d5bf210afff80b214e6e8db2b5e0a0cf17"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6af6b43-7ca7-49bd-816f-db8e585ce78f",
+        "scanNumber": 19,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6af6b43-7ca7-49bd-816f-db8e585ce78f/0019-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6af6b43-7ca7-49bd-816f-db8e585ce78f/0019-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "09185460bdc533cdee1e5386b70d8fe316eca93d33644b9211444cc48c008ce6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6af6b43-7ca7-49bd-816f-db8e585ce78f/0019-header.png",
+            "sha256": "3646cbe29e64eb1d21c9629aeb3969ed6650977506ef568692d39f05bdd4656b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6af6b43-7ca7-49bd-816f-db8e585ce78f/0019-target-entry.png",
+            "sha256": "98cc67f673a7da307b64f2cdf200dc407284aa4d464de26c894010b27798c23d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5381x4145",
+          "targetDimensions": "1340x648",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сващеннммгмаши Чстенск\nПіапьна чогетй Фонисвев\nналуи нарали иайна\nесинова обапрокостовныя\nвисщенники Іщаним Чейене\nПіспонк Евленій Сварнквач\nХрстора миватлоскай\nмостьяннні",
+    "localOcrWithSurnameLexicon": "Священним маши Успенск\nПістона чогети Фониств\nесинова оба провостовныя\nвищенники Іваним Чейене\nПіспоні Евленій Сварливач\nХератора милайлоскай\nмастьянні",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Иван Павлов Ампилогов, крестьянин, хутор Воскресенский. Отец: Симен Корнилов Воронов, крестьянин, село Крым.",
+    "fuzzyQuery": true
   }
 }

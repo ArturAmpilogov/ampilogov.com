@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0058-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0058-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "ac54bb1eea998acdee06896af3c029aa68f423d7f51dd574201c1355b0138c18",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0058-header.png",
         "sha256": "9b7f21478847f93ee565142fb39b7dae712450a94ab85405f527b5fd0ea32d8d",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0058-target-entry.png",
-        "sha256": "5282aad2168e218d7d199b07ec14055af1d693d34056dbe54e4bf3d64abf0ae0",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "43638ab226424838da858dad8e046a8ff4e512b24006eff0919e31a2e3bcc25c",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5514x4439"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5514x4439",
+      "targetDimensions": "1538x624",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянина Мирона Константинова Ампилова дочь Анна [в записи об умерших].",
     "modernInterpretation": "У Мирона Константиновича Ампилова умерла малолетняя дочь Анна.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОКСКОЙ\nнПогРа\nСИІОАЛЛЬНОУ\nИСТРИЧЕСКОЙ КNИГИ NА W/4\nV914",
+    "localOcrWithSurnameLexicon": "ОСКОКСКОЙ\nнПогРа\nСИРОД ЛЬНО%\nИСТРИЧЕСКОЙ КНИГИ НА W/4\nV9 14",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Евфросиния Михайлова Смульская, 4 месяца. Умерший: Петр Иоаннов Самков, 3 недели. Умерший: Анна Миронова Ампилова, 1 1/2.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "УПО4АЛЫО\nМЄТРИЧЕСКОЙ КНИГИ НА\n1911\n1t\nЗкáніє, ймя, бтчестко й фамнлл оумершигш.\nDỷ MÉPI\nніл.\nМбжЕска.\n2.\nели моновнитераствяннии Мирвшич Трож\nЛастлова, мижа влдатеннаЛЛвстріви\nвЯженниЮї Драннь Холяковь\nДіялтів Яомночів Линтилоявь.\nвил Рииновхитерастваеннии ВВашиц 1В ариа\nсмова Дервичникова догі Маріх\nвященнивсь фоаннь НоляТів.\nДіяпань Помлочеів Мипилогова\nРли (лановтипрсттвяниии Пейри лхо-\nвисва Лесьхова дбить) Деодорь - \"р\nвЯщенниь Фланнь Полявть\nПіатнів Докитлів Петилоові\nвисвинкованперествяннии Лвана Вар\nкастяви ввербиининова, облів ЛІванів-\n2м\nвященнить Франно болаковь:\nДінжиі Лошениї Деилилькова\nенивланівки жраосттвянних Мивинна Ти\nЛонова Ласьлова, догі ввдожя - ..",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ НА\n1911\n1t\nЗваніє, йма, отчестко й фаміля одмершиги.\n\"ỷ MÉPI\nніл.\nМбжЕска.\n2.\nели моновнитераствяннии Мирамич Прож\nЛисткова, межа вадитена /остріви\nвЯженниЮ Драннь Поляковь\nДіяннів Комночів Линиловь.\nвил Ринковнитерствленнии Вашиц 1 В ариа\nслова Первинникова догі Марія\nвященнивсь франнь Поля Тів.\nДіяпань Помочів Мипилогова\nели (лановтипрсттвянии Пейри яхо-\nвиева Леськова сбить) Деодорь - \" р\nвЯщенниь Фланнь Полять\nПітнів Помилів Петилоові\nвисЛинкованперествяннии Лвана Вар\nкастови вербиининова, облів ЛІванів -\n2м\nвященнить Франно Полаковь:\nДінжні Кошений Дентилькова\nОливланівки простванних Миванна Ти\nКонова Ластова, дого Аврож - ..",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/189-target-entry.jpg",
         "sha256": "ea2988eafa6b7a5fc86ce49b66e18b62ec8a89567a780ef325a199b0c62b01b2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+        "scanNumber": 189,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e47f4c99b990eaaf89082089bb53586915312c948479f0274dd43e18301e4b1c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-header.png",
+            "sha256": "907167c972b2c531edef7b551548f58003049448e4b5eecdac8aabaa48c3ec8f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-target-entry.png",
+            "sha256": "00eecca8bda788c79d6b4437e35ef5e2f5a613646a39deda6516171ffb3cd6fc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5233x4177",
+          "targetDimensions": "1465x2671",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянина Петра Яковлева Ласькова сын Феодор.",
+    "fuzzyQuery": true
   }
 }

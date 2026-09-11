@@ -40,38 +40,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0177-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0177-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "6b9b340f9dc03768c36e1de354a3d790b8b3bae4f639671ea680518409275c01",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0177-header.png",
         "sha256": "93c1a5ef379eb0fd3a3e099035eb172f2d9f2dd6b3c22f3a2b99729cdacfdd88",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/9eb7410f-bb89-4e9b-8097-484123528168/0177-target-entry.png",
-        "sha256": "bdfc1301ff2cae582dab11471f7af65be58e10049e0560968ae514238f0aac27",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "2a08fed0bde1741ed3865eead3588ec95d68dd341a6ba99cd047682cb7418dc5",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5759x4434"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5759x4434",
+      "targetDimensions": "1200x1692",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Священник Николай Ампилов с исправляющим должность псаломщика Березиным. [Подпись в итоговой части записей об умерших.]",
     "modernInterpretation": "Оригинал фиксирует Николая Ампилова как священника Николаевской церкви села Каргино; карточки 659 и 661 дублируют один скан.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "А мп. об.\nNemoitona\nДороритвныя\nse polegen\nІнгтублазів.\nподссять (20) мизв.\nкизина виторь Беревинв.\nСвящетьит",
+    "localOcrWithSurnameLexicon": "А мп. об.\nse polegen\nІнтублазів.\nподесять (20) мизв.\nнизина виторь Беревинв.\nСвященент",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -79,6 +87,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Николай Ампилов с исп. об. Псаломщика Березин на отведенном Кладбище. Итого в Апреле месяце умерло: мужского пола шесть (6), женского четыре (4)...",
+    "fuzzyQuery": true
   }
 }

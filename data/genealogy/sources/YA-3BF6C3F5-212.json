@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Неаломирий Улав имира Ильить\nСела Вобова кредьянитй Кириля ива\nновь Ампилогол и законику счожена\nрараслева засилієва, аба православии\nChalueumn Jan's Macaa,S\nДірний Дими цай Вотиснокіч\nПсагомусит Владимирь Ильнін\n2). Деревии Куйуевни фсуіЯний Мимо\nфрей Мирапловь Малвіся, и запомуа\nдго меnА Марі) Иванова; обаправославин",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/3bf6c3f5-615c-4259-8976-19af9f87f255/0212-target-entry.jpg",
         "sha256": "faef4ed337ccb0ada82b83dd62b7502b39fb58be310107e5fb9a99b29464db26"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3bf6c3f5-615c-4259-8976-19af9f87f255",
+        "scanNumber": 212,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3bf6c3f5-615c-4259-8976-19af9f87f255/0212-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3bf6c3f5-615c-4259-8976-19af9f87f255/0212-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "0733c128ee690f3fc1141bc1a50d7e22cd0d70ebbd718390913f2473018cfcea",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3bf6c3f5-615c-4259-8976-19af9f87f255/0212-header.png",
+            "sha256": "bc029bc71a08701709c320008bcdbc34453ef4e33090e7177bb911441e4afca0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3bf6c3f5-615c-4259-8976-19af9f87f255/0212-target-entry.png",
+            "sha256": "e3096615816fd8fd10ba72116161cca75c96d52ad8b3dc147b297078255ca260",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5269x4283",
+          "targetDimensions": "1535x1015",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Алексий Кириллов Ампилогов. Родившийся: Евдокия Тимофеева Матвеева. ... Отец: Кирилл Иванов Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

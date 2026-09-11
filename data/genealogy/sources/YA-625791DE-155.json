@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "православным, первтичо\naкеuь.\n(egenmn, (aa Uurnas\nDiaveno runtaruno Pasgus\nКела Путезина крестьяним\nТихонь Офонасіевь Коrаapовn,\n14\nправославный, первы.\nChingemusdaneg Naer\n¡aroro Muxauu Saoyuo\nРела Забова крестьяними\nСтефрань евфиміевь Омегилогови,",
+    "localOcrWithSurnameLexicon": "православным, первоичо\nDiavono Muntarino Pasqui\nКела Путедина крестьяним\nТихонь Офонасіевь Кодаарови,\n14\nправославный, первы.\nChingenus anng Noer\nРела Забава крестьянини\nСтефань евфиміеть Омегилогови,",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0155-target-entry.jpg",
         "sha256": "acb4e9e8d63643d26d0b6a4f926457ad09f5555816ffe7f75c0e8f2207d2937b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 155,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0155-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0155-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "de24637dead5668a1581b15b70f3c3e460979173621e98cfbe83803ba95b6e95",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0155-header.png",
+            "sha256": "dba1234ae9dd863b5e7796e99b5a463bbe6fdf2cd0c247e13d83b2abd30a424f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0155-target-entry.png",
+            "sha256": "73e8a940ae0d5c483d461008bc4438931b048755964a7dfa8136f3fd31450482",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6010x4697",
+          "targetDimensions": "1200x1324",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Стефан Евфимиев Ампилогов, крестьянин, православный, первым браком, село Забово, 18.",
+    "fuzzyQuery": true
   }
 }

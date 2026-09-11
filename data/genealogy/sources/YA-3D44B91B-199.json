@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЧАСТЬ ВТОРІ\nКто сокершалх\nтлинство.\nнященник,\nСеля\nМикаюль\nукра\nКмпилоговь\nИваї\nЕчдіакинома\nВас\nВасиліем\nСела\nгновелевямь\nКри\nжии\nльсь\n(вященник,\nСел\nЛикайль Але\nтилоговчь V\nнеявиноль\nвокилися\nЯковлявымя\nвес\n120\nДр\n(вященним Фр\nМихагиь АмиСео\nпищдивь ічедів\nпониам виак но\nліяль ЯковляМ\nввкліь\nм",
+    "localOcrWithSurnameLexicon": "ЧАСТЬ ВТОРІ\nКто совершала\nтаинство.\nСеля\nМикаиль\nукра\nКипилоговь\nШваї\nЕч діанинома\nВас\nВасиліям\nСела\nновелев ямь\nКри\nльс\n(вященник,\nСел\nЛикайль Але\nтилоговчь V\nнеявиноль\nвопилися\nЯковлевымя\nвес\n120\nДр\nСвященным Фр\nпищить ічедів\nлісль Яковля М\nввілі\nм",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0199-target-entry.jpg",
         "sha256": "de4f62ed2948419f07f82ae4332f0b385c296a49cd07c4bfacfbd796be14f670"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3d44b91b-6111-4e37-a63f-f15e7b1142c8",
+        "scanNumber": 199,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0199-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0199-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d5f93aa8145358f7457f1b8c571b9d9a00f1d021b3009b19d6b21674e6b64b87",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0199-header.png",
+            "sha256": "6fcdba33256861d805131e761af070d19ee094dd2ae67af2a9b3d97f4d1cfb2b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0199-target-entry.png",
+            "sha256": "ac381487dc03ee984b2ded788d766dd4d8824753c575956a9602a0f0146abd7d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5096x4049",
+          "targetDimensions": "1200x5164",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил А. Милованов Диакон Василий Яковлев. Священник Михаил Ампилогов с диаконом Василием Яковлевым.",
+    "fuzzyQuery": true
   }
 }

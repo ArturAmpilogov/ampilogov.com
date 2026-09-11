@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0065-target-entry.jpg",
         "sha256": "c863a272d992623dad8a72d359845383c28fa54c63c83544f639cc88aaf6ab7a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e0e24bf2-4e7d-427a-8ce7-b31b9aed802e",
+        "scanNumber": 65,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0065-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0065-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2d7882a842bb0289e535da9e758b5e2ee4ca19ef6ac3bd32b1ca11bd96f46861",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0065-header.png",
+            "sha256": "6f5a59a818de365ad94d31442665c76100d29927b874b3346dbf2ede257a6415",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0065-target-entry.png",
+            "sha256": "55c87dec034947ec66c32adf1a6b37e4aa4c49a92ee54caf9365118990ae1a20",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5470x4238",
+          "targetDimensions": "1494x647",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, йма, отчество й фамиліл одмершагш.\nCỷ MÉpI\nЕНЇА.\nМбжЕска.\nоелай\nамамчевки крестьяни-\nна Висилія вгорова Бородини\nсынь Гоаннь ..",
+    "localOcrWithSurnameLexicon": "Званіє, йма, отчество й фамиліл одмершаги.\nЕНЇА.\nосла й\nамальевки крестьяни-\nна Василія огорова Бородина\nсынь Гоаннь ..",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Константин Сергеев Ампилогов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

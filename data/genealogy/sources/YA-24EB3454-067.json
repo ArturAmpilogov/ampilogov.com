@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/24EB3454/067-target-entry.jpg",
         "sha256": "56f68bc87064b71d65f8543620b089efc11463d1f88649690e82d995d146fbf9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "24eb3454-59c3-49fa-bd36-e6792d3754d0",
+        "scanNumber": 67,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0067-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0067-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "7a792b48dac617f299fc70f43bfec4ad1c1faf628990d6da5bec4be683510039",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0067-header.png",
+            "sha256": "9151b23cdda879cb311684d5bed672c3633f8694d5f4f2478723461f971814b1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0067-target-entry.png",
+            "sha256": "658a75c916c2ee8871bbc7dd5660b4cae7d067d37398e0edfaf1fc93249a523b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4607x3625",
+          "targetDimensions": "1210x550",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "partial-primary-scan-transcription",
     "literal": "Того же села крестьянин Иван Филиппов Ампилогов и крестьянка Улиана Евдокимова Сырых.",
     "modernInterpretation": "В записи о крещении Иван Филиппович Ампилогов назван крестьянином того же села; рядом названа Улиана Евдокимова Сырых. Полная связь пары с конкретной строкой ребёнка требует повторного чтения полного разворота.",
-    "indexNote": "Фамилия и имена сверены с видимой строкой скана; индекс использован только для навигации."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села колычева крестьянинь 2ля\nОсиповь Порнарнасць и престьянка\nтефаниа Иванова аоонина\nТай-же деревии к\nкристьянинь Ивайв",
+    "localOcrWithSurnameLexicon": "Села количева крестьянин гля\nОсиповь Порнарнасць и крестьянка\nтефаниа Иванова адонина\nТай - же деревии к\nкрестьянинь Иванв",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-partially-verified",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "medium",
-    "unresolved": ["Год и точная дата этой строки не вынесены в текущую транскрипцию."]
+    "unresolved": [
+      "Год и точная дата этой строки не вынесены в текущую транскрипцию.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Иван Филиппов Ампилогов, крестьянин, то же село. Крёстный отец: Матвей Никаноров Ульянов, волостной писарь Белозерского правления.",
+    "fuzzyQuery": true
   }
 }

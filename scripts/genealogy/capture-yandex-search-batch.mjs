@@ -16,6 +16,7 @@ if (!manifestPath) throw new Error("Нужен --manifest path/to/search.json");
 
 const manifest = JSON.parse(await readFile(path.resolve(root, manifestPath), "utf8"));
 const only = new Set(String(args.get("--only") ?? "").split(",").filter(Boolean));
+const force = args.get("--force") === "true";
 const allRows = (manifest.batches?.flatMap((batch) => batch.results) ?? manifest.results ?? [])
   .filter((row) => row.capture !== false || only.has(`${row.catalogId}/${row.scanNumber}`))
   .filter((row) => !only.size || only.has(`${row.catalogId}/${row.scanNumber}`));
@@ -32,6 +33,7 @@ if (shardCount > 1) {
   });
 }
 const searchTerm = manifest.queryText ?? manifest.query?.text ?? "";
+const evidenceRoot = path.resolve(root, manifest.evidenceRoot ?? "data/genealogy/evidence-private/yandex");
 // Ищем не только нормализованную форму из запроса, но и документальные
 // окончания/варианты (Ампліева, Ампилонов, оборванное «Ампи…»). Граница
 // слева не даёт принять за фамильный ряд отчества вроде «Евлампіева».
@@ -53,7 +55,7 @@ const exists = async (file) => {
 if (args.get("--skip-complete") === "true") {
   const completeness = await Promise.all(uniqueRows.map(async (row) => {
     const prefix = String(row.scanNumber).padStart(4, "0");
-    const evidenceDir = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId);
+    const evidenceDir = path.join(evidenceRoot, row.catalogId);
     return Promise.all(["full-view", "header", "target-entry"].map((kind) => exists(path.join(evidenceDir, `${prefix}-${kind}.png`))))
       .then((states) => states.every(Boolean));
   }));
@@ -86,7 +88,7 @@ const crop = async (input, output, image, box, minimumWidth = 0) => {
 for (const [position, row] of rows.entries()) {
   const scan = Number(row.scanNumber);
   const prefix = String(scan).padStart(4, "0");
-  const evidenceDir = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId);
+  const evidenceDir = path.join(evidenceRoot, row.catalogId);
   const full = path.join(evidenceDir, `${prefix}-full-view.png`);
   const header = path.join(evidenceDir, `${prefix}-header.png`);
   const target = path.join(evidenceDir, `${prefix}-target-entry.png`);
@@ -115,7 +117,7 @@ for (const [position, row] of rows.entries()) {
     if (!node?.id || !node?.originalImageSize) throw new Error(`Нет описания изображения: ${pageUrl}`);
     await writeFile(path.join(metadataRoot, `${row.catalogId}-${scan}.json`), `${JSON.stringify({ row, pageProps }, null, 2)}\n`);
 
-    if (!(await exists(full))) {
+    if (force || !(await exists(full))) {
       let converted = false;
       for (let attempt = 1; attempt <= 12; attempt++) {
         try {
@@ -148,11 +150,11 @@ for (const [position, row] of rows.entries()) {
     }
 
     const image = node.originalImageSize;
-    if (!(await exists(header))) {
+    if (force || !(await exists(header))) {
       const headerHeight = Math.min(image.height, Math.max(260, Math.round(image.height * 0.28)));
       await crop(full, header, image, { left: 0, top: 0, right: image.width, bottom: headerHeight }, 900);
     }
-    if (!(await exists(target))) {
+    if (force || !(await exists(target))) {
       const textBlocks = node.textBlocks ?? [];
       const joined = node.joinedTextBlocks ?? [];
       const matched = textBlocks.flatMap((block, index) => targetPattern?.test(block.text ?? "") ? [bbox(joined[index]?.points)] : []).filter(Boolean);

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ỷ мéршихz.\nВто соБЕршАли погребініЕ, й гдЕ погребены.\nСвященники с\nясиль Амнило\nгов сь жсломуи-\nколі. Мімноосем\n45\nnh\nГоряйновым\nsas osrbeqesimon",
+    "localOcrWithSurnameLexicon": "Вто соБЕршАли погребнЕ, й гдЕ погребены.\nСвященники с\nясиль Ампило\nгов сь жиломуи-\nколі. Міжповем\n45\nnh\nГоряйновым\nsas onrbeqesimon",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0083-target-entry.jpg",
         "sha256": "7b26d7a03d3e65ed284f3e9e671240c8f52f12eac6d83aa447b0a5f57e60bf61"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 83,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0083-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0083-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "19dbcfa9b46c83c9ad5bc3a55ef4be13f0ebec38ac964d700f0533e2c61df998",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0083-header.png",
+            "sha256": "57509d84ea50c5647978c3d3239fcd9c830215fa9888a0138b92167d13d6ba3f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0083-target-entry.png",
+            "sha256": "ec11d36a25f1b3f359610be2b97a98cecea17b3eede543c27f2bc15cab74bcd1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5444x4396",
+          "targetDimensions": "1270x3467",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "хаил Ампилогов с псаломщиком Тимофеем Горяйновым на отведенном кладбище. Отец умершего: Леон Никитин Папин, крестьянин, село Старая Богдановка.",
+    "fuzzyQuery": true
   }
 }

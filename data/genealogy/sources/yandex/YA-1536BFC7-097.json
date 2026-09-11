@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0097-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0097-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "162705d0c744b211ef855f953500d76b0cb9af7000c70fbcdddd2ef5e48cbbcb",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0097-header.png",
         "sha256": "c8d457e7e86a05aae849f0148c49e4bdaab441e2bc7da4deb665a7d7d31e294b",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0097-target-entry.png",
-        "sha256": "8a4630418f21d2c3bc6bf224ea90d593caebbc14e4deec1ceabebaeebc98c20a",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9d061ec12bcdea2bb3ae31631a39ae0999c7c5d21d50ff7d0635a13ad83137ec",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5099x4414"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5099x4414",
+      "targetDimensions": "1356x877",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянин Андрей Стефанов Ампилов и жена его Анна Семенова; православные.",
     "modernInterpretation": "Андрей Стефанович Ампилов и Анна Семёновна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Анна Антосва, правоснавнне\nСвященникь Вланимір Бтинла!\nМальні гваннь (мькова-\nСела башашвевки Моссть янині Косьми\nПепірь Мокина иізсена его ягара\nNh\nПотанква, правосаєнне\nСвякренникь Влатиміо Дімнки",
+    "localOcrWithSurnameLexicon": "Анна Антосва, правоспавне\nСвященники Вланимір Джинла!\nМальні ваннь (макова\nСела башашвевки Моссть янині Посьма\nПопірь Мочина и зсена его ягара\nNh\nПотанова, правосанные\nСвященникь Влатимо Вімнки",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Александра Андрова Ампилова. ... Мать: Анна Семенова Ампилова. Мать: Варвара Тимофеева Вейкова.",
+    "fuzzyQuery": true
   }
 }

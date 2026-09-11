@@ -20,7 +20,19 @@
       "surnameSeries": false
     }
   ],
-  "transcription": {"status":"primary-scan-reviewed-no-match","literal":"Метрическая книга 1902 года, часть первая о родившихся: проверены видимые записи № 83–84. Формы Ампилогов / Анпилогов / Анфилогов в строках нет; записи относятся к другим семьям прихода.","modernInterpretation":"Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.","indexNote":"Индекс был поисковой подсказкой; чтение проверено на локальном развороте."},
+  "transcription": {
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Метрическая книга 1902 года, часть первая о родившихся: проверены видимые записи № 83–84. Формы Ампилогов / Анпилогов / Анфилогов в строках нет; записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ивашовю; аба привосливине\nСвятяннирь Мибанкь Іуднянени\nи в к вбручта Иива вдо\nхристввнтів Ивань Нилон-\nскравь и вихожная жена его\nтови; аба правоскавиче\nСвящеиить рвибхом в. врданіндан\nЛонзомнічо. Илія Клачаревь",
+    "localOcrWithSurnameLexicon": "Иваново; аба правосливине\nСвятеннись МиТанк І уднянени\nхриств вантів Ивань Нилон-\nскравь и вихожная жена его\nтави; аба правоскавиче\nСвящить вича в відміненн\nЛонзомни Илія Клачаревь",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-full-view.jpg",
@@ -30,10 +42,53 @@
         "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-target-entry.jpg",
         "sha256": "0919f0bc4574ad861dfee1eb1a106e334048c33c70a6bbe7f75e2a761dcb6872"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0da322c9-b95d-460a-af7d-edd3c7588ab3",
+        "scanNumber": 92,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8195ba82c4608e6996e81aa4a5d02b39cf79d1afd7d1ed5aa3698749077db21b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-header.png",
+            "sha256": "43c9420f4d20c5b3e0af331de3e4e92ff93a1ff9dcfe608ba3ddb03f41f2c52a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0092-target-entry.png",
+            "sha256": "a221e1a9548d8d6ca75dc6f229364ccf3c0dc8e2149558a919b5c3c0a4f17924",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4997x3952",
+          "targetDimensions": "1399x713",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Сергей Иванов Ампилогов. Родившийся: Параскева Иванова Ампилогова. ... Отец: Иван Евфимиев Ампилогов, крестьянин, село Добринка.",
+    "fuzzyQuery": true
   }
 }

@@ -77,38 +77,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "756d850b14ba5e00dd32773d8a613d6f4f2cbfdc219ac638e75efb56106d8969",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-header.png",
         "sha256": "2241dfdedc22d1328eb31e5198a25b455ec9ec93c74d71e0f958ef1461847718",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-target-entry.png",
-        "sha256": "49f68c6b77fde2a6b4cba7f79284b1bb3b9bc1d85d1b40d6a976f6014e1b93ff",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9da6dba34f0939a458db4f26ddba0a9df1d3c6a778a9129c40d33f2a6636d71b",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4774x3878"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4774x3878",
+      "targetDimensions": "2346x832",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Близнецы Тарасий и Пётр. Села Киселёвки крестьянина, ныне умершего Тарасия Стефанова Ампилова, и законной жены его Марии Александровой. Восприемники: Давид Матвеев Ампилов и девица Мария Феодорова Ампилова; Илия Даниилов Анпилов и Фекла Павлова Ампилова.",
     "modernInterpretation": "После смерти Тараса Степановича Ампилова у Марии Александровны родились близнецы Тарасий и Пётр; четыре восприемника принадлежат фамильному ряду.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "новь и вконнах месла\nшмітріска Родіонованкрих\nвенії\nсго Матрола Васильска:\nкона Пороскоювавкишово\nчав. оРа Пракаснаанье\nаохивам\n'ути Китсирии Металив\nКаледантина Мет\nКаномизикь Антрей Манкон\nто (ЕлаКислькикриплини\nрок\nпамив/авловч. Мопинь и\nаконлац Желаого Аернатти\n-иоака: Ава Проненалные\nТинолві Павивкаї",
+    "localOcrWithSurnameLexicon": "новь и оконная меска\nмінріска Родіонованкрих\nвенії\nсго Матрона Васильска:\nтав. о Ра Прокоснаанье\nархивам\nКаледантина Мет\nКаномизика Антрей Манкон\nто (Ела Кисельки криплини\nрока\nпалив /авловч. Шопить и\nаконлац Жела ого Пернати\nТиколові Павива",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -116,6 +124,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Марія Феодорова Ампилова, крестьянская девица, то же село. ... Мать: Марія Александрова Ампилова.",
+    "fuzzyQuery": true
   }
 }

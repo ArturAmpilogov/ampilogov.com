@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0029-target-entry.jpg",
         "sha256": "a355e02adb64663eb0f6f67a5a23f71cdd6a3ffe2633ba8fdd7467daa7540856"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7e901750-2aaf-42ae-8b7d-da58464d0525",
+        "scanNumber": 29,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0029-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0029-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6b75901f89d9ecc7d6bea18349eae916b0ceeb74db7a093bd58f6ac54a2c8047",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0029-header.png",
+            "sha256": "c1573fd5de7a0959d697697e0d8e6997527a8b2efa5a573dafd469a10b6928a7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0029-target-entry.png",
+            "sha256": "dab7ab4f3f36b6482050a42f9a612679d18ae07c58914dd706d1a0840a2e2f07",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4379x3498",
+          "targetDimensions": "1200x754",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте метрической книги фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОВСКОЙ\nГИПОГРАФІИ\nСИПОДДЛЬКОЙ\nМЕТРИЧЕСІ\nЗвініє, йма, бтчєстко, фамнліл\nЛвта\nAЦ%\nй ккронспов'єданіє женихі,\nжєннуд.\nHh.\nй котóрымх врáкомz.",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nТИПОГРАФІЙ\nМЕТРИЧЕСІ\nЗваніє, йма, отчестко, фамиліл\nЛЕта\nАЦ%\nй кАронсповʼєданіє женихі,\n*еннуд.\nHh.\nй котбрымх вракоми.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец жениха: Григорий Ананиев Ампилогов, крестьянин, село Баклановка. Отец невесты: Иоанн Иоаннов Попов, крестьянин, село Поповка, Бугульминский уезд.",
+    "fuzzyQuery": true
   }
 }

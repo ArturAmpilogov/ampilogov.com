@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/8b2e0bc8-e929-435a-91cb-ae6aa43128f4/0106-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/8b2e0bc8-e929-435a-91cb-ae6aa43128f4/0106-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "f31b71f93e699626b2f79a0f089da729fdfece6fa5c3419a7d271b8112063ec8",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/8b2e0bc8-e929-435a-91cb-ae6aa43128f4/0106-header.png",
         "sha256": "24db55ce9dd7f667e8eaecdc88006f82509e8642fbb21b237d6b3d737998cd86",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/8b2e0bc8-e929-435a-91cb-ae6aa43128f4/0106-target-entry.png",
-        "sha256": "079d0e8943b8dab9e0b46c5aef948e5edede4ce5a6d47513d3b4d6c16db0a5e2",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "687c48f6975be3ec1d2bef46cad15ebc5d42fc9a2f87e9f4697eea2796057370",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5583x4515"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5583x4515",
+      "targetDimensions": "1640x606",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Киселёвки крестьянина Павла Даниилова Ампилова сын Димитрий, 2 лет [в записи об умерших].",
     "modernInterpretation": "У Павла Данииловича Ампилова умер двухлетний сын Дмитрий.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сено киселевки пряст'яникі веатія\nригірькваСМоибковd Сних Квсииі\nЯлід\nСвищенний Влдки/huug\nвобломицись Оluдреn Мdnка 6x\nиd киашськи княстяник! Карпилім\n1.\nCmenduold . МахартoлdСнис Досилій\nХиийя\nСвмщенний Вuдитрkaнgавис",
+    "localOcrWithSurnameLexicon": "Село киселевки престʼяникі веатія\nригарьква Колокова Сних Касти\nЯлид\nСвященний Видки/hug\nd киаськи клястяни! Карпилім\n1.\nImenduold . Махарто Снис Досилій\nСвященний Видитрандавис",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "На отведенных кладбищах. Отец умершего: Павел Даниилов Ампилов, крестьянин, село Киселевка. ... Умерший: Димитрий Павлов Ампилов, 2.",
+    "fuzzyQuery": true
   }
 }

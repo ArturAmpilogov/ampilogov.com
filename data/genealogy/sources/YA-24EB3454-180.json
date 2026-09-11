@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/180-target-entry.jpg",
         "sha256": "eb887f2d096d06ac72c081692842e867e94ca50bbef06c38836f09a4f3b58a31"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "24eb3454-59c3-49fa-bd36-e6792d3754d0",
+        "scanNumber": 180,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0180-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0180-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "eca8a3b92f3b9ca406327b3354b35e90b6006b782728c798636d0076f003c46d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0180-header.png",
+            "sha256": "0c02205617be75bf10112da8dee7e48c526d6d69b1b49e7f061d79ece866de72",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/24eb3454-59c3-49fa-bd36-e6792d3754d0/0180-target-entry.png",
+            "sha256": "9fd8ff81961736080d2495ca600d9e17390a9be555db1426f741cffc6736e0a3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4531x3519",
+          "targetDimensions": "1298x698",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом фрагменте видны мартовские записи раздела об умерших; фамилия «Ампилогов» в показанных строках не читается.",
     "modernInterpretation": "Это индексное попадание не включается в семейный ряд: скан не подтверждает фамилию Ампилогов. Лист сохранён как проверенная поисковая подсказка, без профиля, Record или картографической точки.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но видимая часть страницы содержит другие фамилии. Для новой проверки нужен полный разворот или иной фрагмент, указывающий на позицию индекса."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЄБÉніА.\nMбжеска.\nгъ .\nв.\nСела Богоровского крестьятиа Якова\nсорцєва Терехова сіть Веневиктя 3н\nСвящуспникь Лентіь Апіоллонов\nПсалоницикі Пстр Цвятковь\nз. Деревни Богословки крестьятня",
+    "localOcrWithSurnameLexicon": "ЄБЕніА.\n2ъ .\nв.\nСела Богоровского крестьятиа Якова\nсоргєва Терехова сіть Венивикта 3 н\nСвящусиникь Лентів Апіоллонов\nПсалоницика Потр Цвяткось\nз. Деревни Богословки крестьяния",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Василий Степанов Ампилогов, 3 месяца. Умерший: Иван Николаев Савилов, 8 месяцев. Умерший: Дария Константинова Шелудяшева, 4 месяца.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0195-target-entry.jpg",
         "sha256": "4f2bb97c2f0a7d63a3bc77ca292f89f0d00e0a83c05968b40fef7c24977eb513"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+        "scanNumber": 195,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0195-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0195-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f2faa976df10247096940bc688cba60c80d1f95cff02f63aff926fedbe6f3de3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0195-header.png",
+            "sha256": "c2f76741271806466295d9eda20ecfbbc67b36b5390215dcaeb1c99d78b884c0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0195-target-entry.png",
+            "sha256": "fb026d9868f5a39a063f63d8a2cdc6108a01e4478242dabc22f0691ccd28c5f3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5501x4405",
+          "targetDimensions": "2126x1560",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "циколнь синовеемы\nСhмуМ амтитая\nПоряйновить на оневоии\nноти рисовнныы.\nСвяу. Малпимкив\nто\nенг /) оусенскка полы\nдва /2) а обоего три /3/",
+    "localOcrWithSurnameLexicon": "циконь синовеемы\nПоряйновить на оневои\nноти рисовины.\nСвяд. Малпинтив\nто\nдва /2) а обоего три /3/",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "М. Ампилогов. ... Ампилогов с псаломщиком Тимофеем Горяйновым на отведен.",
+    "fuzzyQuery": true
   }
 }

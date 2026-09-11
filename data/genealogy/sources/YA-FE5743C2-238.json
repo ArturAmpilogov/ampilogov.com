@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0238-target-entry.jpg",
         "sha256": "a92a5e4c8ec6671cf5b01d99a2b30ad6ac9dfb11e7c86266a79def454147d541"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4",
+        "scanNumber": 238,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0238-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0238-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "31e361ae571c25e4efd1b72380f6e5d42b9e62e5f57d309c8afed36cd553f8c7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0238-header.png",
+            "sha256": "e687c3ad56a112f569ad542be756c59704760366c44ec97ffedcb23c98569187",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0238-target-entry.png",
+            "sha256": "a67e66a774a65000bbbc2fbff767e8184b37c66b655f624c7e6107155289317f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2311x1941",
+          "targetDimensions": "1200x807",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "20-\nаноресь мертины солфагтеко)\nжрена Оеодора. Иваново Вуква.\nтгого-о несело запасных (тарит с/р)\nофил Ватииі ввоиміввь Мапасвь\nи с. Ново- Архангеньскогосойдатская\nжсна веобосія Цельгіна Куновина\nвно1о-ореми крестивнни вдреть\nСертгьеве Козловогдось Свяизенника\nвлена Финттрієве Руднянская",
+    "localOcrWithSurnameLexicon": "20-\nаноресь мертины солдатнеко)\nжрана Феодора. Иваново В уква.\nИгого-о не село запасных старит /р)\nофия Ватий ввоимів Манатвь\n0 -\nи с. Ново- Архангеньско го сойдатская\nжена веобосія Цельгіна Куловина\nСертьеве Козловог дось Святенника\nвлена Финттрієве Руднянская",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Тимофей Семенов Ампилогов и крестьянская девица Пераскева Родионова Степанова.",
+    "fuzzyQuery": true
   }
 }

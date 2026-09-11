@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0014-target-entry.jpg",
         "sha256": "b3a5bde948d6a568589735fa62d0c8e314ef15ee8da17943ad0c8a82923073dd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7869f375-f0e3-4bbc-8f40-05a7e14942cd",
+        "scanNumber": 14,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0014-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0014-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4293d62ae49dfde11c1526b6c435c5fac426f7d551415b146a635bd94c26de7d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0014-header.png",
+            "sha256": "983efe0bd5e2801326daccc77758b79946ca9c6d183f84f21ccdefa01de7108e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0014-target-entry.png",
+            "sha256": "77b16f8610368a346dbd9a26afff2e47e1c6f31de9572892e947a344e96a6891",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4455x3766",
+          "targetDimensions": "1200x849",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "и Кресрь янима иловая уло-\n? .\nвва рослива догадовиуа\nапакитасі).\n„Граиколо тва\nла-\nкиуеа. м\nковітка-, чао и удискив кре\nз",
+    "localOcrWithSurnameLexicon": "и Кресть янима иловая уло -\nвка рослова догадовиуа\nапахита сі .\n4м).\n„ Приколо тва\nла -\nквітка, нао и удистив пре\nз",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Симеон Ананиев Ампилогов и крестьянина Петра Ильина Золотухина жена Вера Михайлова.",
+    "fuzzyQuery": true
   }
 }

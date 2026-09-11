@@ -20,7 +20,19 @@
       "surnameSeries": false
     }
   ],
-  "transcription": {"status":"primary-scan-reviewed-no-match","literal":"Метрическая книга 1902 года, часть третья об умерших: проверены видимые записи № 43–47. Формы Ампилогов / Анпилогов / Анфилогов в строках нет; записи относятся к другим семьям прихода.","modernInterpretation":"Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.","indexNote":"Индекс был поисковой подсказкой; чтение проверено на локальном развороте."},
+  "transcription": {
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Метрическая книга 1902 года, часть третья об умерших: проверены видимые записи № 43–47. Формы Ампилогов / Анпилогов / Анфилогов в строках нет; записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ПО4 ДЛЫИ\nМЄТРИЧЕСКОЙ ВНИГН НА\nh\nЗвініє, ймл, сбтчество й флайліл одмершиги.\nоỷмЕр\nбакєскка.\nБЕНЇЛ.",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ НА\nпо2.\nh\nЗвініє, йма, отчество й флакліл одмершиги.\nМакеска.\nБЕНіЛ.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-full-view.jpg",
@@ -30,10 +42,53 @@
         "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-target-entry.jpg",
         "sha256": "1058a2dfbd0ecf26ff7e32f43160d2367d7467911c23017d3dc85c6bfa3a69a7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0da322c9-b95d-460a-af7d-edd3c7588ab3",
+        "scanNumber": 120,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d6e9aef87aa368cec3ba377b288e818f31915c9f35d0ce3272ea26da178b99e4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-header.png",
+            "sha256": "abd095e07ecf0ffa652bd8c3d8936dd3028e4be001fb80bc00b87bc2121246ec",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0da322c9-b95d-460a-af7d-edd3c7588ab3/0120-target-entry.png",
+            "sha256": "9855ee446ce8803c8861cb1c1117e5b4dc6be0073f456394fe9fa1191d8bcf56",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4973x3994",
+          "targetDimensions": "1373x548",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Евфимиев Ампилогов, крестьянин, село Добринка. Умерший: Иоанн Григорьев Колпаков, 1 1/2.",
+    "fuzzyQuery": true
   }
 }

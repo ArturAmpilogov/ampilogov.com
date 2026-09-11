@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0073-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0073-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "7d6b1d032eaf0b43cf40f1cc43943ac5fc198628ca98e752922db3facbdf31cc",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0073-header.png",
         "sha256": "891c4b9ffa999c61e936e001baa6d69d97ed68563d95c84cb98deb8d19047791",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0073-target-entry.png",
-        "sha256": "91b1b312f2ca42b73aacae940fb40155d3b22b3df2e80e3d569037e18eace4c8",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "8d782d86b4c2b147ee1c5d7ad592b2f8a924c253acfaf3e6949be991c3f49eda",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5209x4217"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5209x4217",
+      "targetDimensions": "1290x613",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Алексей Ильин Коршиков и крестьянская девица Мария Яковлева Ампилова [в строке восприемников].",
     "modernInterpretation": "Мария Яковлевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СелаТрисиккайсив 2 преедьяниь Евот\nмій Ідиниое влизнедов и призеяиdая\nрквида Надсуд. Симанова викриндева",
+    "localOcrWithSurnameLexicon": "Села Тристикаймв 2 предьяниь Евот\nмій Іванное влизнедов и призеянва\nАквида Надсуд. Симанова викриндева",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Тримихайловки крестьянинъ Алексій Иліинъ Коршиковъ и крестьянская дѣвица Марія Іаковлева Ампилова. 204 205.",
+    "fuzzyQuery": true
   }
 }

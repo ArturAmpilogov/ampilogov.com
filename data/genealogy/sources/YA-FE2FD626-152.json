@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0152-target-entry.jpg",
         "sha256": "0232124cec686e7011d9f5d46c4b3f2e8a16373cb5e287c24fc6f859e1415d2c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+        "scanNumber": 152,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0152-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0152-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "de9c4392936e333859bba316f504aa59c20868d6cab2bb074e6f70c18d652ac7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0152-header.png",
+            "sha256": "149928c7d11fc00ed0eeb323c324e4b078a2fb78aa9ddcd8acd9cb273e53e915",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0152-target-entry.png",
+            "sha256": "d1eded0386ee1b4e0d882d45bed978bcc48b5700aefc4d270cd7c9077692e91d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5294x4281",
+          "targetDimensions": "1482x1962",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "кончая орина его Азапня ввфремов,\nсвятромилодике.\nмаши мпикосов\nАсаломщикь Тилюей Іоляйнов,\nріяконьзонифатій шкатоль.\nлччень Астемій Иванов /арад-\nпось и законнася осена его Тапа\nяконьдахифотіекатовн\nДеревни Новь-Кикальськя кре\nспівлнинь Филитнь Аггтьевь Ск-\nпиззень и бакожная жена еголння\nплечстьева; оба православные.",
+    "localOcrWithSurnameLexicon": "кончая орина его Азапня ввфремов,\nмаши мникосов\nАсаломщикь Тилей Голяйнов,\nраконь занифатій шкаталь.\nлінчень А темій Иванов /арад-\nпось и законнося сена его Тата\nяконь захифотікатовн\nДеревни Ново-Кивальска кре\nспівлнинь Филить Агетьевь Ск-\nнизень и бакожная жена его яння\nплентьева; оба православные.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей. Той же деревни крестьянин Феодор Андреев Кривопалов и крестьянская жена Параскева Иванова Панкина.",
+    "fuzzyQuery": true
   }
 }

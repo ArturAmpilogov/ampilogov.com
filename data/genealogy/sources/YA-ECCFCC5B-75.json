@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/eccfcc5b-7c73-4cec-8732-4dc37932ca9b/0075-target-entry.jpg",
         "sha256": "00a809f5041dcd4910a110f47885ea1e2d041070d8ea519053628b6363239ec0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "eccfcc5b-7c73-4cec-8732-4dc37932ca9b",
+        "scanNumber": 75,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/eccfcc5b-7c73-4cec-8732-4dc37932ca9b/0075-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/eccfcc5b-7c73-4cec-8732-4dc37932ca9b/0075-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "af0e5f8b4dcedccf0184d632548d7499e7c5eb2d8852d8b9b096184b82dd82e9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/eccfcc5b-7c73-4cec-8732-4dc37932ca9b/0075-header.png",
+            "sha256": "7b509acc3025f0335a675f13c37896255bc77fda96b384cbe5449cb0213230c7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/eccfcc5b-7c73-4cec-8732-4dc37932ca9b/0075-target-entry.png",
+            "sha256": "38ad35a7d2d31b9455d9bb473227c97e436900376459a123e2a4a776aefa41c0",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2897x4257",
+          "targetDimensions": "2191x707",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "UDLALIND\nРаз\n0\nВ БРАК.\nВ БРАК.\nси .\nс/атровічи р. Степапида\nс алексевникр. Динитрей\nТетрова Лукича. 16л 2м\nввачимов Яфгонасьсв 19л.",
+    "localOcrWithSurnameLexicon": "- 11\nUDLALIND\nРаз\n0\nВ БРАК.\nВ БРАК.\nси .\nс атровічи р. Степанида\nс алексевникр. Динитрей\nТетрова Лукича. 16 л 2м\nЗважимов Афганассь 19л.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Матвей Яковлев Ампилогов, деревня Новотроицкая, 17 1/2. Невеста: Степанида Петрова Афонасьева (Лукина), крестьянка, село Петровка, 16.",
+    "fuzzyQuery": true
   }
 }

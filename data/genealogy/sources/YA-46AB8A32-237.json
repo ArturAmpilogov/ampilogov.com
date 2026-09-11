@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/46ab8a32-7303-4ed3-b9c1-433923840f42/237-target-entry.jpg",
         "sha256": "a57b7ba33842c07e038e51ace8c65a1276aa4675b66d65468980664ca9769f6c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "46ab8a32-7303-4ed3-b9c1-433923840f42",
+        "scanNumber": 237,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/46ab8a32-7303-4ed3-b9c1-433923840f42/0237-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/46ab8a32-7303-4ed3-b9c1-433923840f42/0237-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "93625e68ee26d7c106725807308236df6aa40bb790115cefe138928d94eaa290",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/46ab8a32-7303-4ed3-b9c1-433923840f42/0237-header.png",
+            "sha256": "afd8b373861a413a8e21a97725cae7ed57f0fdaa6734d451ceda61c60cd24441",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/46ab8a32-7303-4ed3-b9c1-433923840f42/0237-target-entry.png",
+            "sha256": "ee12491aa2025bf7a299a35f5dc2e04ecd5e354da55ea8b12cf140ce76b9ad5b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4273x3422",
+          "targetDimensions": "2253x1049",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На проверенном сохранённом локальном фрагменте формы Ампилогов / Анпилогов / Анфилогов не обнаружены; видимые записи относятся к другим семьям.",
     "modernInterpretation": "Индексное совпадение не подтверждено. Посторонние участники не получают профили, карту, маршруты или миграционные записи.",
-    "indexNote": "Вывод основан на ручном чтении локального скана."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СКОЯВ\n110Y\nТИПО\nСРОАЛЛЬК\nГОДД, ЧАСТЬ ПеРВад,\nТРиЧеСкой книги на 1915.\nЗвÁніє, йма, бтчество й фамиліА\nKTò\nЗкАніє, ймА, отчество й фамиліА роднєлей, й какóги\nихсА.\nвоспріємни кwвs.\nвАроиспок'вдАнїА.\nДеревки Ивеновки кнстьяить\nДерини Ивановкя престьянні\nсусі\nМираим Антнок Авданнив и\nОеодарі Романча Красикись и.\nн,\nАнна Оеодярова\nкритьянно в 6егасловки Ма\nксив'єсо\nз сксанная жена его с\nаРмілно\nСонисва :",
+    "localOcrWithSurnameLexicon": "СКОЯВ\n110Y\nТИПО\nГОДА, ЧАСТЬ ПеРВад,\nТРиЧеСкой книги на 1915.\nЗвАніє, йма, бучество й фамиліА\nЗвАніє, ймА, отчество й фамілія роднєлей, й какоги\nихсА.\nвоспріємни ква.\nвАроиспок вдАнА.\nДеревни Ивановки крестьянить\nДерини Ивановея престятні\nгорс\nсусі\nМираим Антонок Авданник и\nВедарі Романа Красинись \".\nн,\nАнна Реодярова\nкритьянно в 6егасловки Ма\nковʼяо\nз санная жена его с",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Пелагея Михайлова Ампилогова. ... Отец: Михаил Григорьев Ампилогов, крестьянин, хутор Камай.",
+    "fuzzyQuery": true
   }
 }

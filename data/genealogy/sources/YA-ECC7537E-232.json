@@ -67,12 +67,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5652x4566",
       "targetDimensions": "5292x3736"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+        "scanNumber": 232,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "cbbf3459beff808e408d9c1e337ff6365eaa3b59e1432172eb777eb47f79e6fe",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-header.png",
+            "sha256": "37a0797d9882427f0e9e79697ab38aabb96491bad7f534ae3d70d09ce43f8fff",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0232-target-entry.png",
+            "sha256": "f5558c617380b3253cc8fc63e7106ecffcada709dd2d443a154e44ed40561f3e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4566",
+          "targetDimensions": "1554x982",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -81,8 +119,19 @@
     "status": "primary-scan-transcription",
     "literal": "Села Кармалки крестьянина Ефрема Петрова Ампилогова сынъ Василій. Села Кармалки запаснаго рядового Филиппа Григорьева Ампилогова дочь Татьяна.",
     "modernInterpretation": "Разворот содержит две записи 1911 года о смерти детей из семей Ефрема Петровича и Филиппа Григорьевича Ампилоговых в селе Кармалка.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Димінтухії (судниммій?\nДіяконь\nСела Ларенали запаснагодя вового\nгригорія вварглнем. Мапаевсьсть Ци-\nсеиій\n1л.\nСвенденннай Диинтунії (саідничнскі, ]\nДіаконьь Срлій вобровь.\nКела Кормамой Крестьянина веобораь",
+    "localOcrWithSurnameLexicon": "Димитулії (суднимній?\nДіаконь\nСела Ла нали запасного дя волого\nгригорія варанем. Манаевсьсть Ци-\nситій\n1л.\nСвенденнній Дими тунії рідненскі І\nДіаконь Срій вобровь.\nКела Кормамой Крестьянина Реобора",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Умерший, Василий Ефремов Ампилогов, 1 неделя. Умерший, Татьяна Филиппова Ампилогова, 1 месяц.",
+    "fuzzyQuery": true
+  }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0037-target-entry.jpg",
         "sha256": "dbfa9032009eba1a2248eb01a547701b3a97b31776691f282d9dbfaeb7cd23a9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7e901750-2aaf-42ae-8b7d-da58464d0525",
+        "scanNumber": 37,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0037-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0037-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0b9ceba6b405baa0aab226c16a42fe717c720567bf7785c1e3c179f03113bbf4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0037-header.png",
+            "sha256": "1fdcc786981e3470e4a4013d0a35ee6c6126bc308a567a2439544a10d4b5fa1b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0037-target-entry.png",
+            "sha256": "ac50d7d555aec2efc48f47093d8106554cc5a2443da475a1fb54a41f23626cf4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4379x3513",
+          "targetDimensions": "1200x486",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте метрической книги фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "м, что и свнуптельстверетср:\nвосяуп смарано оти на Інло, что\nший (\nDirigs Oa mahuarg.-",
+    "localOcrWithSurnameLexicon": "м, что и с внуптельстверетср:\nвосяуа смарано оти на Інло, что\nший (\nDirigs Oa ma huarg.-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Сергий Поликарпов Ампилогов, крестьянин, село Баклановка, 40. Умерший: Татиана Леонтиева, 67.",
+    "fuzzyQuery": true
   }
 }

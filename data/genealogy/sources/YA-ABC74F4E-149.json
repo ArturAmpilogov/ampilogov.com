@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0149-target-entry.jpg",
         "sha256": "ecc237446cb66550e36c90765f02334d52675d6ed2230237c003bc3a0d9491eb"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "abc74f4e-60e9-4ef6-9069-0d2ab70de888",
+        "scanNumber": 149,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0149-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0149-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ab6054e1a552cd8a38b76cef4364599aa79e1544c2be62da31b992e43876d1b2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0149-header.png",
+            "sha256": "cc2b7ab9e943c23ede6b8bd8d523abc7916b641976acf3abb7c470a2c75632ff",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0149-target-entry.png",
+            "sha256": "204aeb5747bce97772acfafebd5539289dfea53fec8174f388236f7f7b859b8c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4490",
+          "targetDimensions": "2948x709",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "IA TI\nJL.\nЗАніє, ймА, сотчЕство й фамúлїА родитЕлей й какóги\nЗаáніє, ймя, сбтчЕстко й фалиліл\nнуCA.\nвкронспов'Кданіл.\nвоспріємникшкZ.\nСенe Капенки приствлиниь Лескреитй Ло-\nАрашлив нели приствил: Вненний Васичай\nШузаик и якни Кроли: мгратин Асекстева\nчинив миаристоних и закииики яини его\nКубрчлева и Янв Меелив Венкургелико\nЛнна Пегалива; ито привосивини.\nСвепсния Лниіска Вемуркнин.",
+    "localOcrWithSurnameLexicon": "JL .\n4142\nЗАніє, ймА, сотчЕство й фамілА родитЕлей й какги\nЗваніє, йма, сотчЕстко й фалилід\nв кронспов 'даніл.\nвоспріємникик.\nl :\nСене Каменки приствлиниь Лескреитй Ло-\nбрашлив нели приствил: Внений Васинай\nШубник и якни Кроли: Агратин Алекства\nчинив марисоних и закиники яини его\nАнна бегалива; ито приволивини.\n- Оверна Книіска В емуркнин.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Вера. Псаломщик Дмитрий Воробьев Деревни Дракиной крестьянин Гавриил Гавриилов Ампилогов и законная жена его Анна Василиева...",
+    "fuzzyQuery": true
   }
 }

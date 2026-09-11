@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/270-target-entry.jpg",
         "sha256": "15b4078dea392c4be8dacdbc635ce3cde9696d7fde2cfb40859e27996f2afaac"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "74bd3792-25d5-4c5b-8b14-c4e0d353782d",
+        "scanNumber": 270,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0270-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0270-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "058dbae474c33b16c5e20e9659a0f8faed2458652c11f94bdbddf762817e1c21",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0270-header.png",
+            "sha256": "03207dfa3e7176f1688fcc44790ca4746bbd79e0e620fbcf699f1d0afeed38dc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0270-target-entry.png",
+            "sha256": "8319ff468f2d61b27846700440f3bed4426c9cf9d10625a29b3058d412c208ae",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5016x3940",
+          "targetDimensions": "1558x586",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "W\nДеревни амаровки крестянина сврила\nлицек\nватова овиль Кoаниг,\n5\nи\nв Якинииь на віємьнений венансі\nДіакат на псаноми. вапан. Аленантро Фровенів\nДелевни Самаровки пребит ялина ворчі;\n6\nнебпо",
+    "localOcrWithSurnameLexicon": "W\nДеревни амаровки крестянина соврила\nватова свиль Коани,\n5\nи\nв Якинии на віємонний ванансі\nДіакат на псаном. валан. Алекантро Фровенів\nДелевни Самаровки пребит ялина воро;\n6",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни Чумановки крестьянина Павла Димитріева Ампилогова дочь Елена Священникъ на діаконской ваканс. мца 1 1/2.",
+    "fuzzyQuery": true
   }
 }

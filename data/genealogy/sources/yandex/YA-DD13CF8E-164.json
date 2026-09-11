@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/dd13cf8e-ce4d-4262-9ae7-b81da081b741/0164-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/dd13cf8e-ce4d-4262-9ae7-b81da081b741/0164-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "38c2a0517a1c19b9b0b00965614a9831668d21e5af34eaa09ae9dd81308dd1b7",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/dd13cf8e-ce4d-4262-9ae7-b81da081b741/0164-header.png",
         "sha256": "8a0d39456494d18a1979a71ac2f0557940d61304e9da39a1ed9b7c692d9a8fb9",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/dd13cf8e-ce4d-4262-9ae7-b81da081b741/0164-target-entry.png",
-        "sha256": "4c6f5f47dba3531d259596f59dcb2d7521274262c00b2265170abc103961833c",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "5ddbc9dc54bb6fd40c37bd0b21ff5fdb5ee7f92febb509b6e550fcf9192efa91",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "10539x8591"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "10539x8591",
+      "targetDimensions": "2797x1127",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянина Симеона Васильева Ампилова дочь Анна. Умерла 18, погребена 19 ноября 1909 года; 3½ года; от дифтерита.",
     "modernInterpretation": "18 ноября 1909 года от дифтерита умерла трёх с половиной летняя Анна, дочь Семёна Васильевича Ампилова.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "зинь сжлений с сюжнек\nеревни Лковлськи Крестьянина сімеона\nооа до мииюь опненайоо",
+    "localOcrWithSurnameLexicon": "еревни ковлеьки Крестьянина сімена",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Анна Симеонова Ампилова, 3 1/2. Умерший: Василий Савелиев Алдабаев, крестьянин, село Тримихайловка, 59.",
+    "fuzzyQuery": true
   }
 }

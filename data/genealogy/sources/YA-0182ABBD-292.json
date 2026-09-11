@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-0182ABBD-292",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "0182ABBD",
     "scanNumber": "292"
@@ -10,14 +10,42 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/0182ABBD/292"
   },
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 47,
+    "date": {
+      "display": "умер 24 апреля, погребён 25 апреля 1915",
+      "deathIso": "1915-04-24",
+      "burialIso": "1915-04-25",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "Зобово, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "placeId": "zobovo-orenburg"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-0182ABBD-292-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
-      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
-      "surnameSeries": false
+      "role": "deceased-child",
+      "personId": "P101911",
+      "nameAsTranscribed": "сын Александр",
+      "modernName": "Александр Андреевич Ампилогов",
+      "displayName": "Александр Андреевич Ампилогов",
+      "sex": "male",
+      "age": "1 год",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-0182ABBD-292-M2",
+      "role": "father",
+      "personId": "P101912",
+      "nameAsTranscribed": "Села Зобова крестьянина Андрея Моисеева Ампилогова",
+      "modernName": "Андрей Моисеевич Ампилогов",
+      "displayName": "Андрей Моисеевич Ампилогов",
+      "sex": "male",
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -29,19 +57,76 @@
         "path": "data/genealogy/evidence-private/yandex/0182ABBD/292-target-entry.jpg",
         "sha256": "c40d09c29943d18e5c020b7ee64098fcba192a65fbf78dc88b498fe63c47c6f4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0182abbd-3a16-4f20-ac42-08cf57cd765b",
+        "scanNumber": 292,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0182abbd-3a16-4f20-ac42-08cf57cd765b/0292-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0182abbd-3a16-4f20-ac42-08cf57cd765b/0292-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "fe0bb04561d7d885068ef3b861b835622c2345dc77201fb02594c516f136d387",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0182abbd-3a16-4f20-ac42-08cf57cd765b/0292-header.png",
+            "sha256": "3b4007e47f50ea134f347909333b080dba3a0206150e2b67059b11f69ac2d92c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0182abbd-3a16-4f20-ac42-08cf57cd765b/0292-target-entry.png",
+            "sha256": "41c776abd0e602cbdf52bc9339a2b821e1f8394184811f1c83f5d7e407092596",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5305x4326",
+          "targetDimensions": "1444x664",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видны июльские записи об умерших 1913 года; фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не включается в фамильный ряд. Умершие и другие названные лица остаются контекстом первоисточника: для них не создаются Record, профили, события переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но видимая часть страницы содержит другие фамилии. Для повторной проверки нужен полный разворот или иной фрагмент, указывающий на позицию индекса."
+    "status": "complete-for-relevant-row",
+    "literal": "1915 год, часть третья, о умерших. Апрель. Мужского пола № 47. 24 умер, 25 погребён. Села Зобова крестьянина Андрея Моисеева Ампилогова сын Александр, 1 [года]. От кори.",
+    "modernInterpretation": "24 апреля 1915 года в Зобове умер от кори годовалый Александр, сын крестьянина Андрея Моисеевича Ампилогова; погребён 25 апреля.",
+    "indexNote": "Прежний вывод об отсутствии фамилии был вызван неверным автоматическим фрагментом. Полный разворот показывает запись № 47; год, месяц, даты, отец, ребёнок, возраст и причина смерти заново прочитаны по изображению, без принятия сниппета Яндекса на веру.",
+    "localOcr": "Прианаи Миалови Шитикови\nCluaль Menapir\nPlutyenmutrud lecuach\n8i mm Mng ui Phng nữ\n/елиомирить /злавмитуріь Н ащешивь\nРибови /вошатамилин Сокати\nHenkau",
+    "localOcrWithSurnameLexicon": "Cluai Menapir\nPlutnyenmutrud lecuach\n8i mm Mng ui Phng nữ\n/еламирить /зламитіь Наленивь\nРибови /вонатамилин Соками\nHenkuau",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "manually-verified-from-full-scan",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full-page, death table header, record number 47, dates, deceased, father, age and cause of death",
+    "unresolved": [
+      "Мать в записи о смерти не названа.",
+      "Андрей Моисеевич не объединён с одноимёнными упоминаниями до проверки соответствующих первичных сканов."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Андрей Моисеев Ампилогов, крестьянин, село Зобово. ... Умерший: Александр Андреев Ампилогов, 1.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Годовалый Александр Андреевич Ампилогов умер от кори в Зобове 24 апреля 1915 года и был погребён 25 апреля."
   }
 }

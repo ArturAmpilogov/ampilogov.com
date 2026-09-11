@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/124-target-entry.jpg",
         "sha256": "35d3ae278ab9503b22521227f8984fef10fca289308a4a2b76b2dc5dac24a740"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 124,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0124-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0124-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "dac6ca7379b980ffc8396875a9b3b8a6f8ff1716d0bdb3ed826466d30c2c056f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0124-header.png",
+            "sha256": "d5e884100a3d599edb7b50f0d95b4a5fec62d09cfecff63c43f088d51b06160a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0124-target-entry.png",
+            "sha256": "4d4806b68e6a62799f7176eb200e52b81f146f1df43e44e311348b057b685972",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5866x4628",
+          "targetDimensions": "1531x2031",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИЛОГРаФ\nVHOAAAAIО\nАСТЬ ВТОРАД, Щ БРАКОСОЧеТА\nПо/\nКто Бьли порбчйтели.\nоино\nчетыре). У) ЧтгосвидВі\nцикг Андрей Колодочним.\nПожениах с Кармашки\nкростьяне: Нгузьми Овсятки\nковь, Псттрь Агкасовь и Клади-\nмирь Манаевь; то невльстнс.\nНарманки крейьяне . Лепин?",
+    "localOcrWithSurnameLexicon": "ТИЛОГРаФ\nWHO LAID%\nАСТЬ ВТОРАД, Ш БРАКОСОЧеТА\nПо/\nКто Были порбуйтели.\nосно\nчетыре). 4) ЧтосвидВі\nцик Андрей Колодочним.\nПожениах с Кармашки\nкрестьяне: Нузьми Овсянки\nковь, Пстрь А гкасовь и Клади-\nмирь Маневи; то невльстис.\nНарманки кресьяне. Перин?",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе с. Кармалки крестьяне: Георгий Ампилогов Владимир Манаев и крестьянин с. Михайловского Степан Черномырдин; по невесте с...",
+    "fuzzyQuery": true
   }
 }

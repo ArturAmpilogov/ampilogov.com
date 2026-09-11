@@ -16,6 +16,7 @@ const concurrency = Math.max(1, Number(args.get("--concurrency") ?? 6));
 if (!manifestArgument || !outputArgument) throw new Error("Нужны --manifest и --output");
 
 const manifest = JSON.parse(await readFile(path.resolve(root, manifestArgument), "utf8"));
+const evidenceRoot = path.resolve(root, manifest.evidenceRoot ?? "data/genealogy/evidence-private/yandex");
 const only = new Set(String(args.get("--only") ?? "").split(",").filter(Boolean));
 let rows = [...new Map(
   manifest.batches.flatMap((batch) => batch.results)
@@ -26,7 +27,7 @@ if (only.size) rows = rows.filter((row) => only.has(`${row.catalogId}/${row.scan
 if (args.get("--skip-missing") === "true") {
   const availability = await Promise.all(rows.map(async (row) => {
     const prefix = String(row.scanNumber).padStart(4, "0");
-    const imagePath = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId, `${prefix}-target-entry.png`);
+    const imagePath = path.join(evidenceRoot, row.catalogId, `${prefix}-target-entry.png`);
     try { await access(imagePath); return true; } catch { return false; }
   }));
   rows = rows.filter((_, index) => availability[index]);
@@ -51,7 +52,7 @@ const worker = async () => {
     if (index >= rows.length) return;
     const row = rows[index];
     const prefix = String(row.scanNumber).padStart(4, "0");
-    const imagePath = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId, `${prefix}-target-entry.png`);
+    const imagePath = path.join(evidenceRoot, row.catalogId, `${prefix}-target-entry.png`);
     let stdout = "";
     let error = null;
     try {
@@ -85,7 +86,7 @@ const output = {
     ? "Apple Vision ru-RU accurate, language correction enabled, surname-variant custom words"
     : "Apple Vision ru-RU accurate, language correction disabled",
   role: "independent local OCR aid; final reading must be checked against the saved scan",
-  generatedAt: "2026-09-10",
+  generatedAt: new Date().toISOString().slice(0, 10),
   readings,
 };
 await writeFile(path.resolve(root, outputArgument), `${JSON.stringify(output, null, 2)}\n`);

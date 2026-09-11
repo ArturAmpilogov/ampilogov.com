@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/e1df294c-fba5-4013-a804-bfa274fb360f/0029-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/e1df294c-fba5-4013-a804-bfa274fb360f/0029-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "fcc85633bcd7da056955dfdb6b6d4dd9418a6b347132b17d3ecf37f357ce64ee",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e1df294c-fba5-4013-a804-bfa274fb360f/0029-header.png",
         "sha256": "a255df32593471c34861e79baa27c421e19b645b84b91d43f383c8f9a9d119e2",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e1df294c-fba5-4013-a804-bfa274fb360f/0029-target-entry.png",
-        "sha256": "e27bf3e5bbca74141ea90c43f0f669fcf09a029137217af0d1d5b17ca9790ba3",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9a076149a483b1694a2a1e736930f697375fa3f22a83db9aeefaaa72d2e46cbc",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3972x2880"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3972x2880",
+      "targetDimensions": "1200x651",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Бахтемирского крестьяне Иван Ильин Ушаков и Мария Степанова Ампилова [в строке восприемников].",
     "modernInterpretation": "Мария Степановна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Krò co\nЗкАніє, ймл, отчество й фамиліл\nкоспріёмникшк%.\n•Баsтеміровesie предйв-l0l\nякеоВастнй даниіви ти-\nмежкавле и фіялици вии~",
+    "localOcrWithSurnameLexicon": "Kro co\nЗкАніє, йма, отчество й фамиліл\nкоспріёмникшк%.\n•Батеміров предив - 0l\nякоВаснй даниів ти-\nменкав и філици вии~",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Бахтеміровскаго крестьяне Иванъ Ильинъ Ушаковъ и Марія Степанова Ампилова. Псаломщикъ Алексѣй Стефановъ Михаилъ Житинъ съ псаломщикомъ...",
+    "fuzzyQuery": true
   }
 }

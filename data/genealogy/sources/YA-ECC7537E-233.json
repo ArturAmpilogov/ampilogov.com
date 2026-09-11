@@ -51,12 +51,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5652x4566",
       "targetDimensions": "5292x3736"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+        "scanNumber": 233,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "34267aab43b779330a78dd82077bd78a812ef350bd9743d5ae089abfdd5129a6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-header.png",
+            "sha256": "4cb4a0366d9f69d09a507c06449746c9fc5c0b1a59ca91f70056117b81dcb7c1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0233-target-entry.png",
+            "sha256": "910b49b8c7a09eb4dfaa578741f85e52bd9d588e8a3df4ef27e9d050ba7c8106",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4566",
+          "targetDimensions": "1477x673",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -65,8 +103,19 @@
     "status": "primary-scan-transcription",
     "literal": "9. 10. Села Кармалки крестьянина Михаила Спиридонова Ампилогова дочь Марія, 2 мѣс.",
     "modernInterpretation": "9/10 числа 1911 года зарегистрирована смерть двухмесячной Марии, дочери крестьянина села Кармалки Михаила Спиридоновича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "доснолющаговос. паранино записнагю\nядового ерегорія Павловакожовниковосьинь\nлексо\"\nСвященник Дишттцій реджилюмй\nДіаконьарнії воброво\nСела Карасаакт Крестьянина Слильяис Алек-\nспева огльнима сыио Накашли .",
+    "localOcrWithSurnameLexicon": "доколющаговос. паранано запаснаю\nядового ергорія Павловакожовниковосьнь\nлексо\"\nСвященних Диштицій режимоми\nДіаконь Фонії воброво\nСела Карасаакт Крестьянина Солилья ис Алек-\nспева опильнима сыно Накаши .",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Отец умершего: Михаил Спиридонов Ампилогов, крестьянин, село Кармалки. ... Умерший: Мария Михайлова Ампилогова, 2 месяца.",
+    "fuzzyQuery": true
+  }
 }

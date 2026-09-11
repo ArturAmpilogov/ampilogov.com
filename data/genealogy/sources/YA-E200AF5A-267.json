@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e200af5a-8448-4bd1-9d06-fce58cb75b97/0267-target-entry.jpg",
         "sha256": "f477e487b0061d56fb2e0b318b4cef308d6a618b072cfadb4ae18e970005da4f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e200af5a-8448-4bd1-9d06-fce58cb75b97",
+        "scanNumber": 267,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e200af5a-8448-4bd1-9d06-fce58cb75b97/0267-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e200af5a-8448-4bd1-9d06-fce58cb75b97/0267-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "60842406edd4c5ef15751e6577095d6339163bbd8511bc76d3d85e6544287afb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e200af5a-8448-4bd1-9d06-fce58cb75b97/0267-header.png",
+            "sha256": "827699541c3ce6bab81a431aef6079ffe6f6a71bc7050747dce620acb6264509",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e200af5a-8448-4bd1-9d06-fce58cb75b97/0267-target-entry.png",
+            "sha256": "763ff87db3aa2eee56630b83f43d90a4e6ba4b4a7b4383e520af2aac9fd72e70",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5104x4122",
+          "targetDimensions": "1339x422",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Невави\nгрестбянииа Симебирской гувідніс, в\nСВпвданского\nЮвда, оикольской волости Серівя Никийина Лаkел-\nКика скст 1 етрг\nСhян. Kualh",
+    "localOcrWithSurnameLexicon": "Невави,\nрестоянина Силебирской гува, в\nвда, осикольськой волости Серівя Никитина Лакел-\nКина скот 1 етрг.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Николай Ампилогов, оренбургский мещанин, 1 1/2. Умерший: Анастасия Петрова, 4. Умерший: Михаил Алексеев Тихонов, 3 месяца.",
+    "fuzzyQuery": true
   }
 }

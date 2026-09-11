@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/279-target-entry.jpg",
         "sha256": "2df0819dce3b028e67f191427d99a9bcf964b7a2fdaae7e6a5ee0e0ff4f8f2ed"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+        "scanNumber": 279,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0279-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0279-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "51f7bbc56f9c65951faf414d58e0c520c783189760ce8e0d49721bff9b1c5261",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0279-header.png",
+            "sha256": "5cc71f7c1e72d12ffe9ba6527ef348c7c7103aca8324ec5ebaae693d0d62339d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0279-target-entry.png",
+            "sha256": "62d4b04939335d6c328a64b6fef41685673af213a1933dafb3dd2b81defbcfb1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5289x4092",
+          "targetDimensions": "1290x1069",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом фрагменте видны июньские брачные записи, подписи священника Иоанна Шемарницкого (?) и диакона Михаила Грабинского; фамилия «Ампилогов» или близкий вариант не читается.",
     "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Участники брачных актов и церковнослужители сохранены только как контекст страницы: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет ни этой фамилии, ни документированного близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией, на которую ссылается индекс."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "янчиков Петрь Мажимовь прюжось и\nГавреиая Подлинныось; по невыстыч: с.\nНово Араанг-Крост. Злашимівы Тродои\nмове Косилові. Швань/пириилловь посиловь\n«Касилій Мажимовь Посиловь.\n- по греенихиг: селаН овогвросаніслескам\nкрест. Нижита асинасиа», салор.",
+    "localOcrWithSurnameLexicon": "янчиков Петрь Мажимовы прюгось и\nГавреи ая Подлинныюсь; по невысты: с.\nНово Араанг. Крост. Златимін родои\nмове Посилові. Швань/пирисловь посиловь\n«Касилій Мажимовь Посиловь.\n- по гренихи: селаН огогоросаніслескам\nкрест. Нижита асинасиа», сало.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Трифон Коннов и Александр Чаплыгин; по невесте : с. Кармалки крест. Михаил Егоров Ампилогов, с. Михайловского крест.",
+    "fuzzyQuery": true
   }
 }

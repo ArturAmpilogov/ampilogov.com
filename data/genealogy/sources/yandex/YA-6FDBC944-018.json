@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0018-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0018-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "090ff54ca07efbd6021ac1e6103b291a7f72cbe69f4944c70fb1a895c97c8633",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0018-header.png",
         "sha256": "f8fbd7d3bc237bc821ff1f46e3a1dc93fcbc15f9b0184d5bd593b910aa29d8df",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0018-target-entry.png",
-        "sha256": "6eede3c970d7661e53162cb920677c68c821795803939910c57dc941d0bb9a44",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "2dabe53c245b237bd4a6bb052a7ec3745df76de63b90ba10cb060ed6ef9c132e",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3972x2932"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3972x2932",
+      "targetDimensions": "1200x807",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянина села Бахтемирского Алексия Спиридонова Ампилова жена Параскева Дмитриева [в записи об умерших].",
     "modernInterpretation": "У Алексея Спиридоновича Ампилова умерла жена Параскева Дмитриевна; её собственная фамилия в строке не повторена.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "3г\nС свити С Кцтикв.\nтіснат Ягрлосі\n6afers\nКрепривяними сие.\nіранась Стефране Морамові\nЧивева сыинь М мисть\nоямдненить Михаuд Аитин.\n•лакии\n• apanol\n9.\nсвада, Пароговакй вам\n45.\nкредиванина.\n21\nсело",
+    "localOcrWithSurnameLexicon": "3г\nтісним Ягрлосі\nКрепливяними сие.\nіранось Старане Моратові\nЧивева свинь М мисть\n•лакии\n• apanol\n9.\nсвада, Пароговакй вам\n45.\nпредиванина.\n21\nсело",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьянина села Бахтемiрскаго Алексія Спиридонова Ампилова жена Параскева Дмитріева Священникъ Михаилъ Юштинъ діаконъ Харлампiй Басмо.",
+    "fuzzyQuery": true
   }
 }

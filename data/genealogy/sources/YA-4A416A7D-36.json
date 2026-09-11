@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, ймд, бтчество й фамилід\nВто соБЕршААх гАинство\nP8KоI\nвоспріємникшку.\nкрецієніл.\nТЕЛЕЙ\nМого же сили Пошом-\nСвятренник\nщинь Айненовей Воиила\n•ев Гаряйнов и Свяжен-\nническая жении Анна\nМижтиль\nСтефогнова Ампигогова\nАмгпилогови\nМой оа деревній крить\nЯниия бвошнйй Алексльев иг оиматр-\nКанкиновь и крестьянская\n• Отвида вворрошнія відива-\nКил\nчини.\nCТВеНІ\nколи Мима\n• Того мі сели кристьяним\nІнтфь Пальцовь Жердеви\nи кринвянская жина\nГоролй\nQeesь\nМивлини Анйрива",
+    "localOcrWithSurnameLexicon": "Званіє, йма, отчество й фамилід\nВто совЕршАх тАинство\nвоспріємникшку.\nкрецієніл.\nТЕЛЕЙ\nМого же сили Пошом-\nСвященник\n• ев Гаряйнов и Свяжен-\nническая жении Анна\nМистиль\nСтефонова Ампилогова\nАмпилогови\nМой на деревній крить\nЯния Евоннй Алекстьев иг ниматр-\nКанкиновь и крестьянская\n• Отвида вворрошнія відива-\nКил\nчини.\nСТВеНІ\nколи Мима\n• Того мі сели критьяним\nІнтоь Тальков Жердеви\nи критянская жина\nГорой\nМивлини Андрива",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0036-target-entry.jpg",
         "sha256": "d4cae4c7b4a3bcceea4ae716cfdcd9a177987dcd6a29104c6b307897e0348d63"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 36,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0036-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0036-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e4da541a92c1f96d0a6d97e3ad8d94963b192ed8ed3f816145430ba94015671d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0036-header.png",
+            "sha256": "569c80d515b483538cf427f3d838048bc261f38a5614bee88c9df973a30eb7b6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0036-target-entry.png",
+            "sha256": "c5540de839a70add2b29763075b3f3942afbec7a306171b1c002cf2a1a95fa51",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5507x4377",
+          "targetDimensions": "1993x2361",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяй. ... Жена крестного отца: Анна Стефанова Ампилогова, священническая жена.",
+    "fuzzyQuery": true
   }
 }

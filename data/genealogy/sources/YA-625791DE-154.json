@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "IсКОИ\nСИПОАЛЛЬО\nМЕТРИЧЕ\nЗваніє, йма, сбтчество, фаинлід\nЛkтà\nЦ%\nн кєронспокєданіє женихл,\nженихА\nh.\nй котóрымх крáкомx.\nДеревни Лочной крестья-",
+    "localOcrWithSurnameLexicon": "СИНОДАЛЬО!\nМЕТРИЧЕ\nЗваніє, йма, сотчество, фаннлід\nAkrà\nЦ%\nн кАронспокАданіє женихА,\nженикА\nh.\nДеревни Ложной крестья-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0154-target-entry.jpg",
         "sha256": "bb70e9ff23559fd379764b608f660b7000f66fdde982a72540f7763d8a51fa8b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 154,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0154-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0154-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "927b5fa4a9dc458116863aa9f3aca32d8a2f4ebccf4c8a9c207ae817cef16cce",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0154-header.png",
+            "sha256": "e6968dbfb28b196056d8835db0bb88acd1bc380ecb6665911fc0ffa5d13d11b7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0154-target-entry.png",
+            "sha256": "33e5f365719acfd98b7c520bac5fa9dc33d23e749ec290b6ba540134fb4ea8dc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6010x4697",
+          "targetDimensions": "1200x923",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Гавриил Иосифов Ампилогов, крестьянин, село Зобово, 20. Отец невесты: Димитрий Лихачев, солдатская дочь, село Зобово.",
+    "fuzzyQuery": true
   }
 }

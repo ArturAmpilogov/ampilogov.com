@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/131-target-entry.jpg",
         "sha256": "f3fc5ccde07090d4cccf7419524ee9e28baa36fdd44f7d7565a18f41b7d98021"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 131,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0131-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0131-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "12abc9b98ee1b41d2ac09ef4475f42c1376ffe1d393aaa8e638aeb78efee853f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0131-header.png",
+            "sha256": "44b25ac14428f189b018c6f2eb0600a5cd2e173c0e1f86a7f387ec7a8117d5f5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0131-target-entry.png",
+            "sha256": "51d410348ed404cc1a106699392f3fb5a42243432011ae0c6169dbff7df927e8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5928x4679",
+          "targetDimensions": "1787x1949",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОТРИЧЕСКОЙ КНИГИ NА /Л\n(% H ДÉНЬ\nЗвáніє, ймА, бтчество й фамиліл одмершаги.\nỦỶ MÉ\nпогребеніл.\n1&жескА.\n6ль.\nСели Кармаки кресть янина\nСтеани Старанова Ряховскихь\nдючь Параскева\nСвятриник\nСіклена всородомнаг\nПосломизикь Анбрей Колодочнить.\nСели Коомалки хритьятина\nСемени Бортева Овсянтикова\nдось Парисава-\nСіаині\nСвягуш\nл4ке2\nПсаломирщи Вагірей Калідичниць.\n14.\nСела Кармалки христоянила\nТоипаія Перенойєва Аміэнногова!",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ НА /Л\n1% H ДЕНЬ\nЗвАніє, ймА, отчество й фамиліл одмершаги.\nỦỶ MÉ\nпогребенія.\n6ль.\nСели Кармалки кресть янина\n3.\nСтеани Стаханова Ряховскихо\nдочь Параскева\nСвятриник\nСілена соро домна?\nПосломирись Андрей Колодочнить.\nСели Коомалки христьянина\nСемени Бортева Овсянникова\nдось Парасава-\nСпанні\nПсаломирши Вагірей Калідичниць.\n14.\nСела Кармалки кристоянила\nКомпанія Перенойова Аміэнногова!",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Кармалки крестьянина Аѳанасія Терентіева Ампилогова дочь Ѳеодора. ... Отец умершего: Афанасий Терентьев Ампилогов, крестьянин, село Кармалки.",
+    "fuzzyQuery": true
   }
 }

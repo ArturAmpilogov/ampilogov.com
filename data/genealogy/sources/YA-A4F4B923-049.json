@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a4f4b923-943d-493b-9d81-d7539dab2b88/049-target-entry.jpg",
         "sha256": "e1be9db63edb5e1ecc52eeb7a65d4aa020573aa4e8727e803077ee620a9f41ce"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a4f4b923-943d-493b-9d81-d7539dab2b88",
+        "scanNumber": 49,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a4f4b923-943d-493b-9d81-d7539dab2b88/0049-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a4f4b923-943d-493b-9d81-d7539dab2b88/0049-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "2d81618cace6894dc84ef3e38ac2ba2f24a528a41147d09f2c12802b1aa8df0f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a4f4b923-943d-493b-9d81-d7539dab2b88/0049-header.png",
+            "sha256": "613d06bdaf0688761a1aaea9974550abc88c3a23765006fac32a3fba0440a333",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a4f4b923-943d-493b-9d81-d7539dab2b88/0049-target-entry.png",
+            "sha256": "5e3072b01262ff8333bab8446f887e7f759dcad95c1c25d340bc0721fdfc7818",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5244x4245",
+          "targetDimensions": "1337x898",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Won sue\n-станиул\nОор Шихситві Зallo\nды1 казака\nМоріяу Симс\nавва 20\nв4ялова\nИл.\n+- Озерного почтовало",
+    "localOcrWithSurnameLexicon": "Won sue\nСор Шихтові Завіо\nды1 казака\nМо рія Сими\nавва 20\nв4 ялова\nИл.\n- Озерного почтовало",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Тимофей Филиппов Ампилогов, крестьянин, Оренбургская губерния, Михайловская волость, село Кармалка.",
+    "fuzzyQuery": true
   }
 }

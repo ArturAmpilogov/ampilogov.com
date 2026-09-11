@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0006-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0006-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "0cf5289a290c94b604f1f85dc476313be172c4c90298beeda6b6138192e34fa5",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0006-header.png",
         "sha256": "eb456dda9b15c5bcad00f1cee011380d7638588bd45da30d8585c6a2c295b568",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0006-target-entry.png",
-        "sha256": "99935d25323420f89cea4747853fec77a09cd4eddbc4e58c3196382c2a79bd48",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "3e2bd16edd6533a7eec682813403bbd655d2271a9799f455cc0d77d213934a11",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5753x4634"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5753x4634",
+      "targetDimensions": "1372x852",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села крестьянин Афанасий Стефанов Тихонов, девица Дария Андреева Дудина и девица Анисия Максимова Ампилова [в строке восприемников].",
     "modernInterpretation": "Анисия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Могю же ола Проссплянинт\nНикифорь Канстантинові,\nМовткавь и орявима Пела-\nнія Никотава Меьина",
+    "localOcrWithSurnameLexicon": "Мого же ола Просоплянинт\nНикифорь Канстантинові,\nМовткавь и отвина Пела-\nнія Никотва Мечина",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянинъ Афонасій Стефановъ Тихоновъ, дѣвица Дарія Андреева Дудина и дѣвица Анисія Максимова Ампилова.",
+    "fuzzyQuery": true
   }
 }

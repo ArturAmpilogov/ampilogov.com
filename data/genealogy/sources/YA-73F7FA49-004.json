@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0004-target-entry.jpg",
         "sha256": "9cebe5e0d5b960b8e5b25d94d8af499c28e91dc1a2ba7b256cb8c876c5b1eacd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "73f7fa49-8612-486a-b9c3-4043e01829ec",
+        "scanNumber": 4,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0004-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0004-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "35e27a905892dab91e4a272a6100005029fb47b62886b714d3c6efef38b30846",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0004-header.png",
+            "sha256": "57f5a010e9029a530ca303abf42332ee0e8d6264593d472dd9ffed9c1cb10ef5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0004-target-entry.png",
+            "sha256": "7a91f84664abac4dbe1ef339025bbce3f3d8e2c9900d106514acd392725fc2a3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2472x1899",
+          "targetDimensions": "1200x856",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ховь и кресувяненая опвида\nВарвара ігорова Ольроа\na\nдарственный архив\nОблас креіяни?\nМого ясе село\nСтепан? Яка лег Кривожесь\nи креерянекая дивида\nпова\nмаря іригоре\nТогоясо села кресдічник?.",
+    "localOcrWithSurnameLexicon": "Ховь и кресвяненая опвида\nВарвара ігорова Ольроа\nа\nдарственный архив\nОблас краяни?\nМого ясе село\nСтепан? Яка лег Кривожесь\nи крестянекая дивида\nпова\nмаря тригоре\nТого ясо села кресдичник?.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Гавриил Исаиев Ампилогов, крестьянин, село Старая Георгиевка. Крёстный отец: Никифор Николаев Мышляев, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

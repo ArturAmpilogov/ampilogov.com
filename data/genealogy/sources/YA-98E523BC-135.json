@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/98e523bc-426c-4a14-98aa-125f171d26a0/0135-target-entry.jpg",
         "sha256": "e9f6fd8df0fa1157ef919cf23c39487adde424149d4a6de67fc43517b44c2c9f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "98e523bc-426c-4a14-98aa-125f171d26a0",
+        "scanNumber": 135,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/98e523bc-426c-4a14-98aa-125f171d26a0/0135-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/98e523bc-426c-4a14-98aa-125f171d26a0/0135-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "13c70dbfe4c9ef9ec76959abe5dd8601ec15063e777e297fc9f8bc9f5ab09a53",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/98e523bc-426c-4a14-98aa-125f171d26a0/0135-header.png",
+            "sha256": "8d1554782b53e7bff6d1edef3a07e082413c3e3d80999821285ac2e2b0b641ce",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/98e523bc-426c-4a14-98aa-125f171d26a0/0135-target-entry.png",
+            "sha256": "35825c9f860d1b0aa44679a47e8414093753975406c1c2b0e4f2a69ab27c04fe",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5212x4189",
+          "targetDimensions": "1341x1182",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "16\nШОA\nВто были порбчители.\n3án\nТеrь\nЛа. жетики : Фрамбургеріе мвлук\nовь\nДимитои квановь Нетрав; по\nчевлст: еретирниемли\nямі же: Васил СеменовоКовалевч\nашік бриговій Ивантвь Пет-\nИ рровк!\n., мув четыре (ч./ что с\nемь: Святстими Ис век кМа\n66\nМьмше",
+    "localOcrWithSurnameLexicon": "16\nВто были поручители.\n3án\nТель\nЛа метики: Бамбурге мАлук\nовь\nДимитри иванов Нетрав; по\nалі же: Васили СеменовоКовалевч\nанік бриговій Ивант Пет-\nИ рова!\n- 2.\n., мук четыре (ч./ что с\nемь: Свят стики И с век кМа\n66.\nСомнет",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Александр Афиногенов Ампилогов, учитель Ново-Покровского училища, Оренбургского уезда.",
+    "fuzzyQuery": true
   }
 }

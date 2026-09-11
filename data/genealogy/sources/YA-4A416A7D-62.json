@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИОАДЛЬНО\nчість третід, й оумершихи.\nКто йспов'дывали й пріокцблк.\nВто совЕршАли погрЕбеніЕ, й где погрЕвены.\nСьященникь Ми-\nсвам\nхачичь с\nАмпгигогова\nсь псслануиком\nМинодсинь Горяй\n2.\nзенный архив\nновымь на\nLаСТИ\n5) оиснски полал четкуре/ч) и овоего- дееято\nотведеннань Клид-",
+    "localOcrWithSurnameLexicon": "чАсть третід, й оумершихи.\nКто сповʼдывали й пріокція.\nВто говЕршАли погрЕбенів, й где погрЕвены.\nСьященникь Ми-\nсвам\nхачичь с\nАмплигогова\nсь посланциком\nМинодень Горяй\n2.\nзенный архив\nновымь на\nаСТИ\n5) оски пошал четкуре/ч) и обоего - десято\nотведеннать Клад-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0062-target-entry.jpg",
         "sha256": "89ad251ae984b70de93a37c989666b611258f07ec3b61e0fafd2d6d078da4789"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 62,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0062-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0062-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ef8ac7c1eb28285e6b257e44de85c9eb764ca2730de7507fb61f3435d3bb9825",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0062-header.png",
+            "sha256": "3319b7fd16a72b9647530f51fd90c4a5ffd7b5a8ec37ee02b29b76b48ca561ac",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0062-target-entry.png",
+            "sha256": "3b79bc0d0801a1c456dc4a3be81ec508136d1130368caa6124ff919ca537b849",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5495x4414",
+          "targetDimensions": "2067x3159",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым на. пола пять (5) женского пола четыре (4) и обоего - девять (9) что.",
+    "fuzzyQuery": true
   }
 }

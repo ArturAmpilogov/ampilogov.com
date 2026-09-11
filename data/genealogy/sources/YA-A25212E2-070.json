@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0070-target-entry.jpg",
         "sha256": "ea892daae948bc169b3e85022149365a3956d42be8f1d99c55c735252c581bda"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a25212e2-27ad-453b-984b-b0b3fa2b0e6d",
+        "scanNumber": 70,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0070-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0070-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "562845668bccd91ed8ca1858013bc6798aed113c315637fcfdf1b1185db75e11",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0070-header.png",
+            "sha256": "23da1b6510142241012c65a711490dd92db4dd8aaa55b020ff08ea5d8515a9ae",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0070-target-entry.png",
+            "sha256": "75314007a3935a61928d654bd1bdfee0a34b6260756988f07bb5f9836770e468",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5840x4578",
+          "targetDimensions": "3688x1543",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "спув\nсвящеттво Никологй Мам\nбге Бриносотставштвся два 2)\nЛааломурись Флитри Влтилого\nОбрединенный госудерственный архив\nОренбургской области.",
+    "localOcrWithSurnameLexicon": "свящеттво Николой Мам\nбге Бриносоставшився два 22)\nЛаломурись Флитри Алтилого\nОбрединенный государственный архив\nОренбургской области.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "священник Николай Пальмин с псаломщиком Дмитрием Ампилоговым. ... Священник Николай Пальмин Псаломщик Дмитрий Ампилогов.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0027-target-entry.jpg",
         "sha256": "12ae2074b84cbeb0d5485ef7fa638ecbcf0a1ebed0a3d893cbd10d64e24ac8a8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7869f375-f0e3-4bbc-8f40-05a7e14942cd",
+        "scanNumber": 27,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0027-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0027-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "37a5356c914eac50d28ccec08f2bb79cbc8175639c9972da80340751faf2e309",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0027-header.png",
+            "sha256": "56693d41882f18b116c35a87f41f0b4e6fab029a9fb43c205125224fd6e3cfc1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0027-target-entry.png",
+            "sha256": "d792e22c45f3b730d88dfb467d6970eaf972f4b1d00e5ffcdc29c1fa3def30ad",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4455x3766",
+          "targetDimensions": "1316x765",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "я рокдиюсь й крииено младпурса) н\nхеь яноурв одити.\nевтартй, а пбочгб итва д\nъедине\nНЫЙI\nОренб\nQеuяаmnь\n• Pae s Cautl apusrama Custam",
+    "localOcrWithSurnameLexicon": "ъединен\nОренб\n• Pres Carti purama Custam",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Баклановки крестьянин Поликарп Афонасиев Ампилогов и законная жена его Евфросиния Евсевиева, оба православные.",
+    "fuzzyQuery": true
   }
 }

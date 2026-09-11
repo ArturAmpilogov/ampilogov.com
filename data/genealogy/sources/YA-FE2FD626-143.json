@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0143-target-entry.jpg",
         "sha256": "2dcdf2e9e178c7e59aaa38c2082b11113867cd26ee1e51f9d033b21bacffc7ba"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+        "scanNumber": 143,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0143-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0143-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "34f689c4ba654d513a7a6c8936d6b8292f538423abdbeec218dbef2abf62ce25",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0143-header.png",
+            "sha256": "cbebba76480e39b7db1cd3a8a772e7bd8654b568d93241dd354f35fb900d3d89",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0143-target-entry.png",
+            "sha256": "29b4aa8584e6784e70e1223364a4bcbe0f05741d7cdc9914e35784bd1083f201",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5294x4319",
+          "targetDimensions": "1340x870",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Мой гре теривни крестьяминь\nАсоаоть вовились згбковч и Си-\nмарской ггберні и грьзба деревии\nМамиковой крествячския\nНлчила восттва ииллинова. сп\nТогі за сла притівянілв Вк-\nЛпохоровь Колесниковь\nсили",
+    "localOcrWithSurnameLexicon": "Мой гре тервни крестьянинь\nАсать вовились зубковь и Си-\nмарской герні и гроза деревни\nМимиковой крествянская\nНечила восттва иллинова. сп\nТого за сла притіляні Вік-\nЛохоровь Колесниковь\nсили",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Старой - Богдановки Священник Михаил Афиногенов Ампилогов и Мещанская жена города Оренбурга Ольга Иванова Дрыганова. мофеем Горяй.",
+    "fuzzyQuery": true
   }
 }

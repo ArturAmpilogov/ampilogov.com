@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0036-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0036-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "1c7db442a2b3d2d3bde259788339522137c90cb02267aa77a74425ebb0140b19",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0036-header.png",
         "sha256": "c3e93e4ee00b2293f321ee792251eb46b87db06a92ae355062e730611a81f5fc",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0036-target-entry.png",
-        "sha256": "a9e9937d11c05da6006b1dc2100f08a1f974f9e576ccc70061b546e43ec1a300",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "3eecc97060dfcae4ce0ea7197560ff8d0a39b1009eedc5e487f8adfbb2f9e655",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5294x4252"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5294x4252",
+      "targetDimensions": "1437x639",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Иаков Васильев Ампилов и законная жена его Евдокия Павлова; православные.",
     "modernInterpretation": "Яков Васильевич Ампилов записан отцом ребёнка; фамилия супруги отдельно на скане не повторена.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, ймл, бтчество й фамиліл родителєй, й какóги\nшихсА.\nввроиспов вданіл.\nдеревни сндреевки солдиж'ь Ми\nорь\nіевь профоровскій и за\nконная жена его Александра Ка.",
+    "localOcrWithSurnameLexicon": "Званіє, йма, отчество й фамиліл родителей, й какги\nшихсА.\nверонспов вданіл.\nдеревни андреевки солдать Ми\nорь\nлевь профоровскій и за\nконная жена его Александра Ка.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Елена Иакова Ампилова. ... Мать: Евдокія Павлова Ампилова. Мать: Евфросиния Фаддеева Коршикова.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Яво-Ожикановкм цицьятиий в\nTohi Ab nuod Kyy o nau\nмена 1го Фаря бо сиива, оба\nна..\nСковаинашками цо лу алии.\nвасивій Пеиідна Тарамет\nтело",
+    "localOcrWithSurnameLexicon": "Яво-Ожикановом цицьяний в\nна ..\nрасивій Пенідна Тарамит\nтело",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0119-target-entry.jpg",
         "sha256": "d28d063093a172f0d1cd7589295a49b83f5ba1d9467fdb412c6e18994b4667f0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e61d61c-8cbf-426b-86e5-d58af8421452",
+        "scanNumber": 119,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0119-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0119-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b347bc658c473481b0ec490c96c702f01206a8f9d90c01c25b405abec8802395",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0119-header.png",
+            "sha256": "9a43c96d363ac2c515ed3db6eb80395b1b457e42f912b8dc9f1dff05645dd6ba",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0119-target-entry.png",
+            "sha256": "48b5615c4e2ab5eafc4a2d4ffa1eb84e58875f0acc034f11d4ea0102837bd153",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5080x3984",
+          "targetDimensions": "1427x958",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Михаил Поликарпов Ампилогов. Родившийся: Иоанн Васильев Рыжков. ... Отец: Поликарп Афанасьев Ампилогов, крестьянин, село Баллановка.",
+    "fuzzyQuery": true
   }
 }

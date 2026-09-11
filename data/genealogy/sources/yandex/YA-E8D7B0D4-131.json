@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "8ea46d9fdcb1310a5c7b2471ed72b014168dc1f603729b60866e007cbfbf513f",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-header.png",
         "sha256": "0b0d4004fd57cd1fd166cad0a55d27848ffdf9fcc04d576874351ebe8f325587",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-target-entry.png",
-        "sha256": "4f6d1ae0d2320d02a145857fee9f797d4806ab377950aa7525a6c74b17493399",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "d7db862b8052fea5b5831b12b9cb58041a02e4eefac1b4aac6d790a5eb314337",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5192x3824"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5192x3824",
+      "targetDimensions": "1293x842",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Мальтинской волости, Половинской деревни крестьянин Александр Александров Васильев и той же деревни крестьянская жена Анастасия Николаева Ампалова [в строке восприемников].",
     "modernInterpretation": "Анастасия Николаевна Ампалова из деревни Половинской названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "воспріємникива.\nязанской губ„ сгорьевскаго\nбда, Дерусновскый волостю,\nдоровни Новоселовки престб-\nянина Ивань ринирвова\nМинесва и Кистивтолсной н\nволости и тоомле села пре-\nствянская жена Акилина\nПавлєва Димнтрева.",
+    "localOcrWithSurnameLexicon": "воспріємникива.\nязанской губ, егорьевскаго\nода, Дерусновской волостю,\nдоровни Новоселовки престо-\nянина Ивань ринарвова\nМинеста и Кисливтоленой н\nволости и тооме села пре-\nствянская жена Акилина\nПавлова Димитрева.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Анастасия Николаева Ампилова, крестьянская жена, та же деревня. Крёстная мать: Александра Григорьева Панчина, крестьянская девица, Касьяновская деревня.",
+    "fuzzyQuery": true
   }
 }

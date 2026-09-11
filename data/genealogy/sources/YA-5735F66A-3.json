@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОИПОЛЬНО\nМЄТРИЧЕСКОЙ КНÁГИ НА 1901:\nЗваніє, ймА, сотчЕство й фамнлА роднтєлй, й какóги\n(сm.\nпронспов'тданіл.\nПеревни Мирайновно перествянить велен\nПетров Полпрково и мижнега впершеки\nвиЛванови - обипривомавише\nСвященникь Серий Илиоминаря\nДішнків Помчків Амигилоння\nПсалолщика Анатолій Илпоминар\nЛуторавискинекио я гриствянцців Мивців\nМ рилов. Иванові и мена сто вееросі\nМарноси-обалгрикосиавные.\nввященників (с\nрг й Имидмикарскиі.\nДілкиь Аомньків Амитинонові",
+    "localOcrWithSurnameLexicon": "МСТРИЧЕСКОЙ КНАГИ НА 1901:\nЗваніє, ймА, сотчЕство й фаннлА родителй, й какги\n(сл.\nпронсповеданіл.\nПеревни Мирайновно перествянить велен\nПетров. Пострково и мон ега впершеки\nвиТвинови - обипривомавине\nСвященникь Серий Илиоминаря\nДіснків Поляків Амигилання\nПсаломщика Анатолій Илпоминар\nЛуторавискинекио я гриствянців Мивція\nМ рилов. Швинові и мена сто внеросі\nМарноси-обагрикосиавные.\nввященників (с\nри \" Ммадмикарскиї.\nДілкив Помньків Анитинонові",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0003-target-entry.jpg",
         "sha256": "ff50e40de290c2f702030fa549375d1ff5ecf62db76ddd98cddcc4a914ea3078"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5735f66a-84cc-4f03-b063-5f849be58130",
+        "scanNumber": 3,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0003-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0003-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "03c3453caaf2663810dcd7adfa0cbb03af57870317d6601d8c77e1ef259d8e5f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0003-header.png",
+            "sha256": "23617877dc4f3270b9ec305a6531a6f2a41126bee7e3fec9c5127edb4447e3c9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0003-target-entry.png",
+            "sha256": "3c45b0ac705d0396e16812d4ef338e1af55413fd67af1d1dceb4d33401abfce3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5860x4734",
+          "targetDimensions": "1636x2578",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминар Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

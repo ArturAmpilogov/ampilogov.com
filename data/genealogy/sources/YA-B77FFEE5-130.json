@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/130-target-entry.jpg",
         "sha256": "cab1b633cc5614bdf4f8e676ace599821475c521b7d1413f04e00e9a9b0a859c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 130,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0130-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0130-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d6a8fd7fdf37f6fd31eb8c11e4a088fa7af1b87820128df428092e7ed30f233d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0130-header.png",
+            "sha256": "fba3b5625f6b9393e81570b405860f4df253446029dfc4a692f703f059100d27",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0130-target-entry.png",
+            "sha256": "e0bac64864e8ca2576a39418b9e8474031f038b26cf04539edd8a5b4424c0eca",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5928x4679",
+          "targetDimensions": "1685x1232",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "г0.\nСела ссеромалки христьятими\n14.\nЕвтийтй /В-ссильев Дымовь\n63л\nСАяиник Сіман. Оеаелка\nПсилолиинь Андрей Сколобагкина.\n21.\nСела Чарманки солдита\nЯнова Осодорова Овсянникова\nсмль Имія. .\n-\nУм.\nСвтреити. Qкмон вeo деqeии\nполицись А,йрей Колодочкит.\n22.\nСела Карменки крестьянита\nІьтовія М хайлова Пмінлого.",
+    "localOcrWithSurnameLexicon": "го.\nСела ксеромалки христьяними\n14.\nЕвтийти /Васильев Дымовь\n6 3л\nСАДитик Сімен. Сеалка\nПсаломиинь Андрей Сколотогкина.\n21.\nСела Чарманки солдита\nЯнова Осодорова Овсянникова\nсиль Имія. .\n-\nУм.\nполицись Айрей Колодочкит.\n22.\nСела Карменки крестьянита\nТомовія М хайлова Плінлого.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Григорий Михайлов Ампилогов, крестьянин, село Кармалки. ... Умерший: Иоанн Прокопиев Ампилогов, 12. Умерший: Петр Григорьев Логачев, 7 месяцев.",
+    "fuzzyQuery": true
   }
 }

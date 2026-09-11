@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/302-target-entry.jpg",
         "sha256": "79d21213968ce72f9cf15101e249cc94bbf7c67a0f57e612f877ff4e41afc552"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
+        "scanNumber": 302,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0302-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0302-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "515ca874c75ec0e069b5a806c3630577f5b1f8454f0a73162528d9ad072cdd62",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0302-header.png",
+            "sha256": "37da1ec6ac8d687ab8a683c33aa59d693919455687a3f6bdf8532ded659709d1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0302-target-entry.png",
+            "sha256": "e0a7e535eca61ddfb6de920a776d78c1b34676d9017907dc4edbbfe736e434ee",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5702x4634",
+          "targetDimensions": "1548x1324",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ПОДАЛЬТ\nМОТРИЧЕСКОЙ КНИГИ NА\n1 с\nЗвáніє, ймл, бтчество й фамиліл оумéршаги.\nOỷ MÉ\nÉніл.\nМ8жеска.\nКрестьянних сева Рармавки,\nНиханловской вовости, Орегбургокои\nгуборпінн уюра. свара Олорова\nРяховскаго, доб Мараскева\n3att Muzeries Beyasget\nвомннка Имівсанізї Взизнсаниий\nккквмалви",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ А\n1 с\nЗвніє, йма, отчество й фамиліл оумершаги.\nOỷ MÉ\nЕніл.\nКрестьянних сева Кармавки,\nНиханловской вовости, Оренбургоког\nгонін уора. вара Осорова\nРяховскаго, доб Мараскова\n3att Muzeries Beyasgept\nволинка Имівсанізі Взизнаний",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Фома Миронов Ампилогов, 1 месяц. Умерший: Анастасия Иванова Ампилогова, 1 месяц. Умерший: Марфа Арсеньева Ампилогова, 5 месяцев.",
+    "fuzzyQuery": true
   }
 }

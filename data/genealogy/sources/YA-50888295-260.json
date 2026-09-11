@@ -25,7 +25,14 @@
     "status": "primary-scan-transcription",
     "literal": "Восприемники: села Ново-Георгіевки крестьянинъ Семенъ Исаевъ Ампилоговъ и Елена Иванова Шомина.",
     "modernInterpretation": "Крестьянин села Ново-Георгиевки Семен Исаевич Ампилогов назван восприемником при крещении в 1911 году.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "дарственный ао›\nой области",
+    "localOcrWithSurnameLexicon": "дарственный ао›\nой области",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -50,16 +57,58 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "6073x4898",
       "targetDimensions": "5713x4068"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "50888295-1a2f-47db-84f3-5a4b6c5570b6",
+        "scanNumber": 260,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0260-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0260-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "7eb713fff9ee6a2be8e8a6c88cf3601da159adfbb4a656a95c67cd58a335b661",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0260-header.png",
+            "sha256": "5a8cbb5482989f8a9651cc8979b67a1d9921099b38551036b1a54a2ee48d06bc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0260-target-entry.png",
+            "sha256": "6b7204cb878bea7e3ee5ec1c9dd8460a5454c1cf44ef9b3725fcd44a2d63f760",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6073x4898",
+          "targetDimensions": "1367x799",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Села Георгиевки солдат Семеон Исаев Ампилогов и села Колычева крестьянка Елена Иванова Шомина.",
+    "fuzzyQuery": true
+  }
 }

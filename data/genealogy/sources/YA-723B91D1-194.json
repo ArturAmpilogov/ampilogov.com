@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0194-target-entry.jpg",
         "sha256": "6f872629005f864748e2fe7c2f3dd3806121d6b12531a71183386e5396af1850"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "723b91d1-2a54-4b6a-a1db-7a23cede5cff",
+        "scanNumber": 194,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0194-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0194-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cfbd8b1083606336923419bd26053cffe2750f9ead7d05cbbeb37ae1ff71c7c5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0194-header.png",
+            "sha256": "60655084a5946b30b0fa706c21f83708973fe9c204f6144dd6bc1cf45c9f41bf",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0194-target-entry.png",
+            "sha256": "209a60aedc6c4f4e79d1146ac4481363d2adab5ea6eb06627d0760c337e47c83",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x587",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "éніл.\nAISЖE\nЖЕНСI\n6.\nстеркенской гуверни Скнсаверрадскай\nвовровиткковскойволоєри\nкела,снівверезвянки отквицв\nИрины Зарариевой верербовой Конеран\nтинв—.\n3 муа\nсьмуетиика Яали Переслй Кии\nвіаканг Тіарні Піржницні",
+    "localOcrWithSurnameLexicon": "*ніл.\nЖЕНС\n6.\nстеркенской губерни Скисаверрадскай\nавровитковсковолости\nсела снів перевянки орквицв\nИрины Зараривой ведербовой Конезан\nтинь — .\n3 муа\nсьмуетика Дали Пересей Кии\nвіаганг Тіарті Першині",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Григорий Григорьев Ампилогов, 9 месяцев. Умерший: Алексей Иоаннов Спано, сын балаклавского мещанина, 1.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/96414978-2755-411c-9b15-5e5e47a6a7da/0297-target-entry.jpg",
         "sha256": "1b439534dfb4dd779791c4cd3cbe7ca86b4533aa9dc174170add862433f72e44"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "96414978-2755-411c-9b15-5e5e47a6a7da",
+        "scanNumber": 297,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/96414978-2755-411c-9b15-5e5e47a6a7da/0297-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/96414978-2755-411c-9b15-5e5e47a6a7da/0297-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c3939cb395bc40683cd653e9bef26bfd4dae967e33fcd643dc4adc756b8c3aca",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/96414978-2755-411c-9b15-5e5e47a6a7da/0297-header.png",
+            "sha256": "606a2166a2f7e0d688a25363edf75f10feb35f06cd38dba89cf187868360fbed",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/96414978-2755-411c-9b15-5e5e47a6a7da/0297-target-entry.png",
+            "sha256": "3e03496b0cef6ba80ce49dc1be04d96e5a32edeb7c3336cd9c1ed9038c9fbe10",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5815x4672",
+          "targetDimensions": "1424x1124",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОКСКОЙ\nТНПОГРАФ\nСИПОААЛЬО\nСТЬ ВТОРАД, Ш БРАКОСОЧЕТА\n1%\nКто выли поручители.\nПолеп11:\nОелаКольчева пристіяне;\n-\nТишофей Косшиик ЛуіЯлчинсовк-\nЦоторій\nБашивевь Олиговч-",
+    "localOcrWithSurnameLexicon": "ОСКОКСКОЙ\nТИПОГРАФ\nСИНОДАЛЬНО\nСТЬ ВТОРАД, Ш БРАКОСОЧЕТА\n1%\nКто выли поручители.\nСела Кольчева пристіяне;\n-\nТишефей Косих ЛуіЯичинсова\nХоторій\nБашивевь Олиговч-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Колычева крестьяне Григорий Георгиев Курочкин, Тимофей Сафонов Гладких, По невесте; Села Колычева крестьяне; Архип Григорьев Головин, Петр Иосифов Ампилогов.",
+    "fuzzyQuery": true
   }
 }

@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0019-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0019-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "0fda062078dad198d0f846703edef6371e223196d7ad018767a7ccc635c17340",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0019-header.png",
         "sha256": "38cdbc1c0ce95a2fb1c27aa77ee1729de83069ce6adc85a7a238351b0186ab2d",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0019-target-entry.png",
-        "sha256": "44d008d4ba9afe01c35b245360e330b12d03e26cd3e6787b832bb7c3edc1e15f",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "d19ce4d7358b4fa3f992e8e73fc9470d98992ef1d89c222bacb09b4f3364597f",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5228x4250"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5228x4250",
+      "targetDimensions": "1497x715",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки солдат Герасим Васильев Ампилов и законная жена его Мария Григориева, православные.",
     "modernInterpretation": "Герасим Васильевич Ампилов записан отцом ребёнка; карточки 680 и 684 ведут к одному скану.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "(вясуяив Нипоний Сровсеаи. І\n(июь сплексій с/обимовь.\nія\nимихайловки солдсть (сорижль\nОпефановь Назаровь изаконная окенаего\nсвінна Аикитина, православного.\n- Усиии\naa Chameоnи\nНоало мунн с\nокія Деревни Яповлевки крестьянинь Веодорь",
+    "localOcrWithSurnameLexicon": "(вять Ниноний Срес. І\nмю сплексій с/обимовь.\nція\nи михайловки солдать (сориль\nСтефановь Назаровь и законная опена его\nсвінна Никитина, православного.\na Chameon\nокія Деревни Яковлевки крестьянинь Веодорь",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Матрона Герасимова Ампилова. ... Мать: Мария Григорьева Ампилова. Мать: Анна Иоаннова Назарова.",
+    "fuzzyQuery": true
   }
 }

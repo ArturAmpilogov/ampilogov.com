@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0018-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0018-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "a6bfa0c81c8eb26d840e4ecb744aad235d20cef84d5f2fa7e1dd122128591861",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0018-header.png",
         "sha256": "efc6ac6be82d50a7bf67290627103479054e01e9d31cb57fb8206c3f185de85b",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0018-target-entry.png",
-        "sha256": "6bd756726ae061ee64229c85a2f4019ae7b4d93784bb02d184fc30812bf09b4c",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9e428c8b05beff1049883b23fc62ab1a86c764ff3aec9cbb9d803077f7244d3a",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4228x2948"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4228x2948",
+      "targetDimensions": "1200x1276",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Бахтемирского Павел Сергиев Софронов и Ирина Алексиева Ампилова [в строке восприемников].",
     "modernInterpretation": "Ирина Алексеевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СПОДАЛЬО\nГОДИ, ЧАСТЬ ПЕРВЛД, Й РОДІ\nКтò совsр\nЗвáніє, ймл, бтчество й фамиліл\nкp\nвоспріємникшЕ2.\nКретвяне семе Бадий\nмірскаю Стпепань Сол\nпалов бурарцевиКи\nбiя Сненаноle 2рoшева\nКреатване сели Балт- М\nР2но2",
+    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nГОДИ, ЧАСТЬ ПЕРЕЛА, Й РОДІ\nКто совер\nЗвАніє, ймА, отчество й фамиліл\nвоспріємникшЕ2.\nКретвяне семе Бабий\nмінскаю Степань Сон\nпалов бурарцев иКи\nКреатване сели Балт- М",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахтомирскаго Павелъ Сергіевъ Софроновъ и Ирина Алексіева Ампилова.",
+    "fuzzyQuery": true
   }
 }

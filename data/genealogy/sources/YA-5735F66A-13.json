@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "SУОАNЬO\nИСТРИЧЕСКОЙ КНÁГН НА\n1901*\nЗвАніє, ймА, отчЕство й фамнліл родúтелй, й какóги\nХA.\nв'кронспов'ЕданїА.\nРоми-\n(маари ягроствянийв 2мми\nворій Тросраиман Порецьий и смеліа\nЕло Метрена Яховисем ови Привоиива.\nОвмуенникь Серій Имиолимар\nДімів Хоимотів Дитимена.\nПсайалицика Анатолій Илломитарскій\nПь. сим Рикнати крамів Якнив Варинади-\nвменова Короиневьм миснаєю, арл\nПиполневи - оба пгривомивиня.\nОвичщенникь\nСургій Имкомишар\nФіанктв Момкив Лк\nМсалолиикь Анатілій Иллюминарскій\n1 с\nірогіра- Манівсо просиівяниов\nМаріт Мванова - облі 1гравославивао.\nСвященникь Сергій Имломипар\nДісгнив Арклькаив Длитлокова\nПсаломщакч. Анастами Иля Д коминар.сбіи\n. ене Іманіівки проситвяннив Иватів\" Решенов.\nановм мшсна ето Но прня",
+    "localOcrWithSurnameLexicon": "ИСТРИЧЕСКОЙ КНИГИ НА\n1901*\nЗвАніє, ймА, отчЕство й фамілА родителй, й какоги\nХА.\nв кронсповʼЕданіА.\nРоми-\nмасари я гросвянийв 2 мми\nворій Тросаман Порець и селіа\nОвмуенникь Серій Имиолимар\nДілів Понов Дитимена.\nПсалалицика Анатолій Илломитарскій\n1ь. сим Ринат крамів Якив Варинади\nменова Короневім минаєю, аре\nПиполева - оба привомавиня.\nОвищенникь\nСергій Имкомишар\nДіанаів Домнив Мк\nМалолиик Анатілій Иллеминар скій\n1 с\nПідпі Манів просіянив.\nМарії Аванова - облі 1 гра вославивно.\nСвященникь Сергій Имномипар\nДілків Арилькаив Длитлокова\nПсаломщикч. Анастами Иля До коминар скін\n. ене манівки просив який ватів Селенов.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0013-target-entry.jpg",
         "sha256": "34e6944e358ae19ec4c122b519e19dd36d9bc2c8539ce8ca31ac72e5b852343c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5735f66a-84cc-4f03-b063-5f849be58130",
+        "scanNumber": 13,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0013-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0013-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "dc1310afb9c11171c0769ab003fdcc8e5bac74fcb996149d9972e2b7adbcba92",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0013-header.png",
+            "sha256": "e1c2b433a9417f90363dbfbf2c82de315dc7118ecbc4c9dd3733b4b50bfa90e7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0013-target-entry.png",
+            "sha256": "44191eb9d82c80e3103959a3191ebb959761c94fcefdd77c0fc5fc136a180537",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5834x4697",
+          "targetDimensions": "1617x2849",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Сергей. Священник Сергий Иллюминар Диакон Афанасий Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

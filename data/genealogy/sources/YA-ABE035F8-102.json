@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0102-target-entry.jpg",
         "sha256": "988734c23b09528f0666b95f3c6924f7e9a51ce6d1b2a733af31bb517c480a54"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
+        "scanNumber": 102,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0102-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0102-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "701278540940fb740a186cf1fa359fc1721cfc6fc305481f8196ee7942c2cfbd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0102-header.png",
+            "sha256": "549cadf84c61ecc2476d1f515b6252ad50f76910f89f4e5dd48bbb2796dd910d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0102-target-entry.png",
+            "sha256": "aa81738fea37300947605efdb3833b87ba7255f07187658eceb448e6a5bf9110",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5407x4320",
+          "targetDimensions": "1499x2803",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИСТРИЧЄСКОЙ КНИГИ НА 1910*Г\nЗкáніє, йма, отчество й фамиліл родителей, й какóги\nзихсА.\nворонспов Кданіл.\n6.\nДерквим Анерсевош переситвянийв Албрей\nМелетневл Долчанени м законная лиме\nего Пелитя Нирипери Два привосиранню.\nвяженникі фоснінь Молявово\nітсаніб Помнолсів Ампинціві.\nДеревни Анірревнаперяствяншив вириданів\nоверимбвв (инанлийо и заличиети, снеца\nего Марій Аснеанірів\nо а ебопривосме\n1Т прлстив врожнна Колявов?\nДіаатв Донгореїв Хмпилокова\nя виивегоповхиперествляниив Мираить\nбноторо стирев изинииия\nтеерацова обо\nпривосианоелеу\nСвятеналиіво драннв Ноліявава",
+    "localOcrWithSurnameLexicon": "ИСТРИЧЕСКОЙ КНИГИ НА 1910 Г\nЗвАніє, йма, отчество й фамиліл родителей, й какоги\nворонспов жданіл.\n6.\nПерквим Анарсевои переситвянийв Албрей\nМелетнев Долчанени м законной лиме\nего Пелетя Нилинери Два привосиранно.\nвяженникі боснінь Молявово\nПітаній Домносів Ампинціва.\nДеревни Аніревнапрятваншив виродонів\nего Марій Менеанірів\nДіанатв Донорств Хипилокова\nя вии вегоповкиперествляниив Мирать\nтерацова обо\nСвященнив кранні Молявава",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов. Того же села крестьянин Иван Феодотов Щурев и девица Анастасия Андреева Лихвинцева.",
+    "fuzzyQuery": true
   }
 }

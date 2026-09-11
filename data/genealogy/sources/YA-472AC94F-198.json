@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ПОДАЛ\nАСТРИЧЕСКОЙ КНИГИ НА\n19\nЗвáніє, ймл, бтчество й фамилід оумéршаги.\nơý M\nБÉНіА,\nели Летровкипростванниа Григорія\nригарвова Проодновсдевлів ссловіьр\n8\nвященняь франнь ліляковь\nДістаїв Аамнючнів Длетинохів'в\nмнивлнбали перествяннии Мистелься Ону\nврісви Плснневина сбитр О/имепрій-)\nСвятенниь рояннь ПолЯково\nФлістчнсь Хоипочеів Деітильгова,\nРели Рипноваитероствяннии Де\nprcrоhan aгороby eini alleo Pla\nСвиженнись рояень Полянові\nФістнів Момночетв Детильговь.\nланбоки пероственняиа О свриела Лва\nнова Ярметинтови дочі ввдоміх -,-",
+    "localOcrWithSurnameLexicon": "ИСТРИЧЕСКОЙ КНИГИ НА\n19\nЗваніє, ймА, бучество й фамилід одмершаги.\nơ/ M\nБНіА,\nСли Метрівкипростванна Григорія\nригорвова Продновсевлів словіьр\n8\nСвященняь фанть ліляковь\nДістатв Ламночнів Длетинохівв\nмни влибали перествяннии Листелься Ону\nарієви Пискивина сбитр Оиметрій-)\nСвятенниь роеннь ПолЯково\nФрістнсь Хонпочів Денітильгова,\nРели Рановаитероствяннии Де\nprcroha aruby eini alleeio Pla\nСвященнись ромень Полякові\nВістнів Домночетів Детильговь.\nланоки перественяка С свриела Мва\nнова Аметинтови дочі вводомін -, -",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0198-target-entry.jpg",
         "sha256": "ae30bb84d8ea04604abb737d47c702f99c1e658e61c84aaa7e8269311ee495ac"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+        "scanNumber": 198,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0198-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0198-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "f0b73d8f1f300c96de8df84a4521667e77effe2cdbd8f7da37c8b4ca1039fa08",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0198-header.png",
+            "sha256": "7ad25d5894ad81535d77f38dd903f7beaa79573fd85e802ab738808f7df5faef",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0198-target-entry.png",
+            "sha256": "eeb2e6deab863290207156d7787cba84338d69efd895485c6739722cf6994e0d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5281x4197",
+          "targetDimensions": "1421x2240",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянина Гавриила Иванова Христинкова дочь Евдокия Священник Иоанн Поляков.",
+    "fuzzyQuery": true
   }
 }

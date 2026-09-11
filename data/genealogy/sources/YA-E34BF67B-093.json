@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/093-target-entry.jpg",
         "sha256": "546874ec30d06aa23289f48042e8e3233b200fb44df1a4dd1bfbc9b3a927e10b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
+        "scanNumber": 93,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0093-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0093-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "562865523efb7278603307d1c7da99a440535f08d3a4f7b8420e050cfb36ae9f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0093-header.png",
+            "sha256": "01fa7a603e350cea224eba01d48e63ef2fa90b543e78930b1489ad911573b005",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0093-target-entry.png",
+            "sha256": "9fc017cee01c52f36ca7eca7bda3d8d5bfd11c55787c053e32f694cab3daa9b2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10236x8214",
+          "targetDimensions": "2833x1234",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "метейческой книги на /9/4",
+    "localOcrWithSurnameLexicon": "метейческой книги на 19/4",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Стефан Васильев Ампилогов, крестьянин, село Георгиевка. Умерший: Иаков Алексеев Кретов, 2 месяца.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/117-target-entry.jpg",
         "sha256": "b5014dab522ac26031b94fe17165890a0061d7fcf6d156cdc764551facbbfb41"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 117,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "bdd2e75fa19eea74e734baf57b628f2cca16280acbdfc7421cf76895a66497af",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-header.png",
+            "sha256": "097767c4513fec82aacba18d5e1b5d63db41e40e60b30e24ffd3ee09eaede45a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-target-entry.png",
+            "sha256": "bda2b628cf2bd54fba1665dc1c63cbc7d83585b89a44e78fb13c2e896d9991b8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5946x4685",
+          "targetDimensions": "1585x929",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "осалолиуи\nго. Села Карпалки крастьнним\nТипооей Хванові Амігилоговіг\nраконная женнего Дарія Деофа-\nнова; оба правосливные.\nсвнуми-Свитив сцакная\nУкаломуикь Дл Дрей Поладочким.\nвели Карманки зипасний соіду",
+    "localOcrWithSurnameLexicon": "го Села Кармалки крастенним\nТиповей Хванові Амігилоговіг\nзаконная женнего Дарія Феофа-\nнова; оба правосливные.\nУкалолуинь Дл Дрей Колодочким.\nвели Карманки зипасний сайду",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Иоанн Тимофеев Ампилогова. ... Отец: Тимофей Иванов Ампилогов, крестьянин, село Кармалка.",
+    "fuzzyQuery": true
   }
 }

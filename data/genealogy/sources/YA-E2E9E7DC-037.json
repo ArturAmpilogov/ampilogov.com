@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e2e9e7dc-8aae-4d27-92e8-9343d77e3d88/0037-target-entry.jpg",
         "sha256": "91619cd661a23212f15026adb0262ff19b00e586b9b15f780193449948012610"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e2e9e7dc-8aae-4d27-92e8-9343d77e3d88",
+        "scanNumber": 37,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e2e9e7dc-8aae-4d27-92e8-9343d77e3d88/0037-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e2e9e7dc-8aae-4d27-92e8-9343d77e3d88/0037-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "400d078ec16c00c79df90173ddc3c0afb2cd3c0368add210683409003a97f47e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e2e9e7dc-8aae-4d27-92e8-9343d77e3d88/0037-header.png",
+            "sha256": "32f8b20a24d9bd1cd98423a691773ab93c9f24a0b931b3bd39a372a5ebe671ec",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e2e9e7dc-8aae-4d27-92e8-9343d77e3d88/0037-target-entry.png",
+            "sha256": "192fe1c14930dd61ddc5ffb9618eef30ad70a21a0888a8634ecfa5c2a8c97505",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5407x4314",
+          "targetDimensions": "2631x695",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "вліщеннит Михили. Орить\nМеммосиик Допитрий ВЗарабьв\nСене Камшики крестолниик Сатрентличе\nЖыгииав сла крествлнння Лавреипий\nМенчеисно ве бопорови и закиикал мили его\nМеттрова отенові и пр сстоминеча\nМатреома, Нетрова; иби привосиаеные\nМена Метеe Миколлива Манарова\nСклиним Мусии? Крий\nои области\nМесілостична Догитраій ВЗправаер?!\nСеслю Конченки пересть чиних Сагрей кича\nНечени в ема притвлиник Швжино)",
+    "localOcrWithSurnameLexicon": "віщеннит Михали. Орить\nСене Каммики престолнии Сатрентличе\nВигили сла крествлнния Лаврентий\nМениско ве бопорова и закишал мили его\nМетрова хотанові и пр стомилоча\nМатрена, Метрова; сва провосианые\nМена Мете Миколлива Манарова\nои области\nНеслостична Допитра ВВправле?!\nСеслю Конченки пересто линии Сагей кича\nНачини в ема приствлиник Шмино)",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Павел Гавриилов Ампилогов. ... Отец: Гавриил Гавриилов Ампилогов, крестьянин, деревня Драйкино.",
+    "fuzzyQuery": true
   }
 }

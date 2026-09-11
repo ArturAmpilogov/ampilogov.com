@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОРСКОЙ\nОСКОКСКОЙ\nГИПОгра\nППОАЛШНО)\n«НОДАЛЬНО\nГРИЧЕСКОЙ КNИГИ NА 1948.2\nГоди, часть пеРвАД, W Р\nЗвáніє, ЙМА, бтчЕсТво й фамИліл родителей, й какóги\nЗвáNїє, пмА, бтчЕство й фамИліА\nKтò\nиусл.\nвовроиспов Кданіл.\nБоспріємникшвZ.\nТого яке села Крествяиинь Ивань\nа косстьнилив уа",
+    "localOcrWithSurnameLexicon": "ОСКОРСКОЙ\nОСКОКСКОЙ\n«ПОЛЛИНО\n«ПОДАЛЬНО\nГРИЧЕСКОЙ КНИГИ NA 1948.2\nГоди, часть пеРвАД, W Р\nЗвніє, ЙМА, ОтчЕсТво й фамИліл родителей, й какги\nЗвіє, пмА, отчЕство й фамИлід\nKTò\nиуса.\nвовроиспов даніл.\nБоспріємникше.\nТого яке села Крестять Ивань",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0182-target-entry.jpg",
         "sha256": "c11a0d7489a66d95fc33079a8e41ea29a784f8068629db09a06e158bea3b0344"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "547e2d58-9cf2-40e6-a76e-dead6f939f95",
+        "scanNumber": 182,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0182-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0182-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e4fb12c4569a56eba9db006f7dbd4bfbb24eb89d1bcf9b08d2e340903ff08ebe",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0182-header.png",
+            "sha256": "0e441b59dc2235ce89d5af327c1f13bceb341d8ef8e7058ad243666ab0510955",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/547e2d58-9cf2-40e6-a76e-dead6f939f95/0182-target-entry.png",
+            "sha256": "7dc6f3e248fab6e39f8aa268c2242b1b6a458e7ed191d88989a8ae93a540e878",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4911x3782",
+          "targetDimensions": "2470x765",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же хутора крестьянин Владимир Симеонов Ампилогов и крестьянская девица Параскева Симеонова Ампилогова.",
+    "fuzzyQuery": true
   }
 }

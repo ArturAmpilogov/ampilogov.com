@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/77940bed-fa73-41ff-b33c-00288499b2da/0016-target-entry.jpg",
         "sha256": "be2f98872fc5e8c1b503f27a0a4fe762a445c8010879021b31b3188742e8be04"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "77940bed-fa73-41ff-b33c-00288499b2da",
+        "scanNumber": 16,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/77940bed-fa73-41ff-b33c-00288499b2da/0016-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/77940bed-fa73-41ff-b33c-00288499b2da/0016-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e06b385e9a959b29d183d02da1991dbd7ac2a6e06996d2f1685708850a0a68b7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/77940bed-fa73-41ff-b33c-00288499b2da/0016-header.png",
+            "sha256": "00a6b5fa47aff923f0a0f1c64df9180063afca7b27e17b7c8a9d9e3fab6a0910",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/77940bed-fa73-41ff-b33c-00288499b2da/0016-target-entry.png",
+            "sha256": "86a4fb6f39d8dc7c331cd50f9d95c234d0699451250b34969feee9f5d26d4490",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5122x4106",
+          "targetDimensions": "1382x794",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте метрической книги за 1906 год фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "беревия ворковь кристьяннив Пиктмлч\nвершмов Ольдов, и жшаего Пирас-\nкова Осощарова, аби привиславате.\nвященнятв Ташів Porael\nПсасишщиь Осодоть Бишинь.\nСла Парадкьова Праствянииь Яновль\nДасильевь Лошкарев и Зшнего Водо-\nкія Филатова на православиче\nМятроннинь боанич Ночаов\nПолотацинь Олдопів'ямлтв",
+    "localOcrWithSurnameLexicon": "° .\nдеревия ворковь крестьянкив Пиктнич\nверимов Ольдов, и жмаего Пирас-\nкова Осоторова, аби привиславате.\nвищення Ташів Porach\nПасисщиь Осодоть Биминь.\nСла Парадкьова Проствяниь Яновл\nВасильеви Ложкарев и Зенего Водо-\nлія Филатова на православиче\nМатроннинь боанич Нечасв\n2 Полотацинь Олдоповимитв",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Гавриилов Ампилогов. ... Отец: Гавриил Исаиев Ампилогов, временно проживающий в селе Парадееве крестьянин, село Парадеево.",
+    "fuzzyQuery": true
   }
 }

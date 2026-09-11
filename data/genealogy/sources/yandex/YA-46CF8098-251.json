@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/46cf8098-f63c-44bf-b11f-968d82f298df/0251-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/46cf8098-f63c-44bf-b11f-968d82f298df/0251-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "0fc495e5584b0f7517073ad7eeb3100ee0d2438822ef66f27533d1ecceaec561",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/46cf8098-f63c-44bf-b11f-968d82f298df/0251-header.png",
         "sha256": "624f2bf3dc37d7ceca837afd2d135cb3c944494ef46552bc87e8abd10bf1d260",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/46cf8098-f63c-44bf-b11f-968d82f298df/0251-target-entry.png",
-        "sha256": "7ad00727ebc3e912cf3698ad20587998cb59e8d6ad9bc7e8c1b56da8d948e247",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "3d22bf51c4fcb06e06fafa9dc188e4a14f7f51eed68ddb6451a759e6511b911b",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5649x4465"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5649x4465",
+      "targetDimensions": "1395x957",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Поручители: зарайский мещанин Пётр Михайлов Самуров и 17-го сапёрного батальона младший писарь Павел Иванов Ампилов.",
     "modernInterpretation": "Павел Иванович Ампилов назван поручителем и идентифицируется по части и чину с записью воинского списка.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ки- огосo.\nтин- аперного баталона Тимоsей /com\nоловьровь Пислечинь и силбижий писарь.\nточачсе баталічна Павельь Шошовь\nвомпиловь.\nДожетимо: Подпропортжяв1 20 Са\nад ов перноо баталівна рикторы Матвльевь\nвано Наротв и Заройского ріхоа, села вуп-\nен-Сухачевь; по невісти; ря Сапер\nсолиз ноно бажаліона ветовый Сергой Ми-",
+    "localOcrWithSurnameLexicon": "тин- аперного баталона Тимовей / com\nоловьровь Пислечинь и силиний писарь.\nточаче баталічна Павель Шошовь\nвАмпиловь.\nДоженимо: Подпрапортжи1 20 Са\nад ов перного баталівна Дикторы Матвиьевь\nвано Нарть и Заройского ріка, села вуп-\nен-Сухачевь; по невісти; ря Сапер\nсоли ноно бажалона ветовый Серий Ми-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,5 +85,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Илья Тимофеев Голубев, зарайский мещанин. Поручитель: Павел Иванов Ампилов, младший писарь, 17-й саперный батальон.",
+    "fuzzyQuery": true
   }
 }

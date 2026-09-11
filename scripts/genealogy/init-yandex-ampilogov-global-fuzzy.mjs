@@ -8,9 +8,11 @@ const args = Object.fromEntries(process.argv.slice(2).map((arg) => {
   const [key, ...parts] = arg.replace(/^--/, "").split("=");
   return [key, parts.join("=")];
 }));
-const runId = args["run-id"] || "yandex-archive-ampilogov-global-fuzzy-2026-09-10";
+const today = new Date().toISOString().slice(0, 10);
+const runId = args["run-id"] || `yandex-archive-ampilogov-global-fuzzy-${today}`;
 const pagePrefix = args["page-prefix"] || "/private/tmp/ampilogov-global-fuzzy-page";
 const expectedDocs = Number(args["expected-docs"] || 8928);
+const pageCount = Number(args.pages || Math.min(100, Math.ceil(expectedDocs / 10)));
 const searchUrl = args["search-url"] || "https://yandex.ru/archive/search?text=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&updateDate=0&rankMode=by_date&sortOrder=ascending&index=archive&excludeSeen=0&fuzzy=1";
 const outputPath = path.join(root, `data/genealogy/searches/${runId}.json`);
 const sourcesRoot = path.join(root, "data/genealogy/sources");
@@ -74,9 +76,10 @@ for (const file of await filesRecursive(sourcesRoot, ".json")) {
 }
 
 const results = [];
-for (let page = 1; page <= 100; page++) {
+for (let page = 1; page <= pageCount; page++) {
   const props = extractNextData(await readFile(`${pagePrefix}${page}.html`, "utf8")).props.pageProps;
-  if (Number(props.pageNum) !== page || Number(props.totalPages) !== 100 || Number(props.totalDocs) !== expectedDocs || props.items.length !== 10) {
+  const expectedItems = Math.min(10, Math.max(0, expectedDocs - ((page - 1) * 10)));
+  if (Number(props.pageNum) !== page || Number(props.totalPages) !== pageCount || Number(props.totalDocs) !== expectedDocs || props.items.length !== expectedItems) {
     throw new Error(`Неверная или нестабильная страница ${page}`);
   }
   for (let position = 0; position < props.items.length; position++) {
@@ -118,7 +121,7 @@ const manifest = {
   schemaVersion: 1,
   searchRunId: runId,
   status: "inventory-complete-processing-in-progress",
-  createdAt: "2026-09-10",
+  createdAt: today,
   queryText: "Ампилогов",
   rules: {
     sort: "ascending-by-date",
@@ -131,7 +134,7 @@ const manifest = {
     yandexAccessiblePageCap: 100,
   },
   progress: {
-    pagesInventoried: 100,
+    pagesInventoried: pageCount,
     rowsFoundOnAccessiblePages: results.length,
     rowsCompleted: results.length - pending.length,
     uniqueScansPending: new Set(pending.map((row) => `${row.catalogId}/${row.scanNumber}`)).size,
@@ -140,7 +143,7 @@ const manifest = {
   batches: [{
     index: "archive",
     searchUrl,
-    reportedPages: 100,
+    reportedPages: pageCount,
     reportedResults: expectedDocs,
     accessibleRows: results.length,
     results,

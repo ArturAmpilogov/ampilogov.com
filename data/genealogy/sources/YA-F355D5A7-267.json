@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/267-target-entry.jpg",
         "sha256": "ed535473a8f46dab18aeb26a357c4a1970be175f2b1d5de119f2c499275d88e2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
+        "scanNumber": 267,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ec8bf1e70db3853b89567007c4a40e4a246b46fd1c8403e4e4e57145c7d9f8e7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-header.png",
+            "sha256": "ac8c1ab43b143c358023ad3d8b138d30377655b92ce3e5b1dc7fedfaf5dc5680",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-target-entry.png",
+            "sha256": "cd20e8b5be1f5fc2ce5ca2a52150392ed5e64e46cb7843f6d3cef1cd375ae03d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5803x4634",
+          "targetDimensions": "2881x816",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Объединенный гос\nдарственный архи\nй области\nОренбург",
+    "localOcrWithSurnameLexicon": "Объединенный гос\nдарственный архи\nй области\nОренбург",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Петр Григорьев Ампилогов. ... Отец: Григорий Михайлов Ампилогов, крестьянин, село Кармалки.",
+    "fuzzyQuery": true
   }
 }

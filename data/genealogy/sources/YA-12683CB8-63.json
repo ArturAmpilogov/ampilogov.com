@@ -1,95 +1,23 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-12683CB8-63",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
-  "collection": {
-    "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e",
-    "scanNumber": 63
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/63"
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "archival-mention",
+  "collection": { "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 63, "asRead": "Метрическая книга за 1892 год, часть третья, об умерших" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/63" },
+  "event": { "type": "burial-register-ministry", "date": { "display": "28 августа — 2 сентября 1892", "confidence": "high" }, "place": { "asRead": "приход Верхнего Гумбета", "normalized": "Верхний Гумбет" } },
   "mentions": [
-    {
-      "mentionId": "YA-12683CB8-63-M1",
-      "role": "unconfirmed-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Индексное совпадение требует повторного чтения",
-      "displayName": "Требуется качественная копия",
-      "surnameSeries": false
-    }
+    { "mentionId": "YA-12683CB8-63-M1", "role": "psalm-reader-at-burial", "personId": "P1543", "nameAsTranscribed": "Псаломщикъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true },
+    { "mentionId": "YA-12683CB8-63-M2", "role": "priest", "personId": null, "nameAsTranscribed": "Священникъ Григорій Поповъ", "displayName": "Григорий Попов", "surnameSeries": false }
   ],
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный разворот и фрагмент недостаточно резки для побуквенного чтения фамилии.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Ареталано в скова Моово да , ийди-\nНепловидинч Аомоийа Амнилочове\nлль умершир, мулинекии доли двавцит в оуній/ 21/\nОвиинтеивствцейвї\nСвящепчані Примлил Тож\nПеаланщан Аванно",
-    "localOcrWithSurnameLexicon": "ли утершив, мулискии доли двовит одній / 21/\nСвиннтивствуеті:\nСвященчані Примлил По\nПосланнин Конно",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-for-target-ministry",
+    "literal": "Конец августа и начало сентября. После строк 28–29 августа подведён августовский итог; далее идут смерти 1-го и погребения 2 сентября. Под итогом и при строках читаются «Священникъ Григорій Поповъ» и «Псаломщикъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов подписал августовский итог и продолжил службу псаломщиком при первых сентябрьских погребениях.",
+    "indexNote": "Индекс смешал Афиногена с Архипом Гаврииловичем Козелковым из отдельной погребальной строки. Фамилия и роль Афиногена уверенно читаются в итоговой подписи.",
+    "historicalContext": "Переход между месяцами особенно наглядно показывает непрерывность службы одного и того же причта."
   },
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-full-view.jpg",
-    "sha256": "3e897d04c6c6ee0f51264c9ea23f85f8b77b6afe08a80bd98bc3127552631742",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-target-entry.jpg",
-        "sha256": "6b1a81f6a866b2a3f6232658a5dc46b8941192b17bbcf185e7d3afc29a3b17aa",
-        "description": "Низкоразрешённый фрагмент; нужна пересъёмка."
-      }
-    ],
-    "parallelCopies": [
-      {
-        "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e",
-        "scanNumber": 63,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-full-view.png",
-        "capturedAt": "2026-09-10",
-        "sha256": "e977ecddec5c6829f6e1d8a5b14d785a4838a59378f806899294757142ae04ef",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-header.png",
-            "sha256": "c1806a29e3a75439e288e8faa03d22c005362ca62cd1dd96dc284fa0ed41442d",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-target-entry.png",
-            "sha256": "7ea2e67544e4342ea3b10317990add7853de1eac66350ae8b6637cfcfb375da3",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5652x4472",
-          "targetDimensions": "1552x865",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "low",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Псаломщик Афиноген Ампилогов Хутора Кармалинского крестьянин Архипп Гавриилов Козелков Священник Григорий Попов.",
-    "fuzzyQuery": true
-  }
+  "evidence": { "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-full-view.png", "sha256": "e977ecddec5c6829f6e1d8a5b14d785a4838a59378f806899294757142ae04ef", "fragments": [{ "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0063-target-entry-deep.png", "sha256": "39f0a2c25844d42c1774b1deb1ec48f2a1ac8ae5a0af66c1ac482363eca9be4e", "description": "Полноширинный крупный фрагмент конца августа, месячного итога и начала сентябрьских записей." }], "quality": { "originalImageDownloaded": true, "fullDimensions": "5652x4472", "targetDimensions": "5400x3500", "method": "manual-reading-of-full-scan-and-full-width-recrop" }, "publicDisplay": false },
+  "review": { "status": "deep-reviewed", "transcriptionConfidence": "high-for-name-role-and-month-boundary", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Проверен весь переходный лист августа–сентября, включая итоговые подписи; исправлено индексное смешение, Афиноген связан с P1543 по непрерывной формуле того же причта." },
+  "indexData": { "querySnippet": "Псаломщик Афиноген Ампилогов Хутора Кармалинского крестьянин Архипп Гавриилов Козелков Священник Григорий Попов.", "fuzzyQuery": true }
 }

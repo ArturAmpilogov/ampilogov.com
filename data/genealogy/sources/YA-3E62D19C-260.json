@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/3e62d19c-aa8e-4efa-a582-c72d2e8bb730/260-target-entry.jpg",
         "sha256": "021626e979d01878aa9d7a3b2873c04af1c37d406dc59009d1dea56abe212bf3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3e62d19c-aa8e-4efa-a582-c72d2e8bb730",
+        "scanNumber": 260,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3e62d19c-aa8e-4efa-a582-c72d2e8bb730/0260-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3e62d19c-aa8e-4efa-a582-c72d2e8bb730/0260-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1aa68bca378bd29edaa9bf94b80dab0ad80ec6f7944343b5cb7a229909142695",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3e62d19c-aa8e-4efa-a582-c72d2e8bb730/0260-header.png",
+            "sha256": "29d3bca92eb989d21d438ae035a7ae28d4fd1ae48c5722420227bb798365c870",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3e62d19c-aa8e-4efa-a582-c72d2e8bb730/0260-target-entry.png",
+            "sha256": "856f4bf06a7c319c84f21ddda65fe3872b426a13f89d8cd7c726888f694a46ee",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5086x3935",
+          "targetDimensions": "1571x625",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга, часть третья об умерших: проверены видимые записи № 89–95. Формы Ампилогов / Анпилогов / Анфилогов в строках умерших и связанных с ними сведениях не читаются.",
     "modernInterpretation": "Индексная выдача не подтверждена первичным сканом. Участники других семей не получают профили, карту, маршруты или записи о переселении.",
-    "indexNote": "Яндекс-индекс был только поисковой подсказкой; вывод основан на ручном чтении локального разворота."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СИПРА ДЛЬНО\nМОТРИЧЕСКОЙ КНИГИ НА ІеД\"\nАtтà\nЗБАніє, йМА, оТЧЕсТво й фАМИЛіА оýмерШАГи.\nомєршагш.\nМ8жєска.\nЖЕНсКА.\nSÉHĨA:",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ НА СеД\"\nАвта\nЗВАніє, йМА, оТЧЕсТво й фАМИЛіА одмерШАГи.\nольєршагш.\nМ8жеска.\nЖЕНсКА.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Петр Лаврентьев Ампилогов, крестьянин, деревня Чумановка. ... Умерший: Павел Андреев Голохов, 1 1/2. Умерший: Евдокия Петрова Ампилогова, 1.",
+    "fuzzyQuery": true
   }
 }

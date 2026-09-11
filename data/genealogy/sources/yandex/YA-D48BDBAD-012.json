@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/d48bdbad-9207-44fb-a1bc-8efe8b1677f3/0012-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/d48bdbad-9207-44fb-a1bc-8efe8b1677f3/0012-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "d0d2b2d6f83e683747585c94d848a0c3c37e128b303cc29b3360ea4adc0e8e84",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/d48bdbad-9207-44fb-a1bc-8efe8b1677f3/0012-header.png",
         "sha256": "227d32a10caf9bd1b56ae85c280670cac79dcefadaa250c94b9aa8b21bf8cee4",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/d48bdbad-9207-44fb-a1bc-8efe8b1677f3/0012-target-entry.png",
-        "sha256": "256946f8188ed014a2f0a0fc0e252d2699372046ccb4801f9d266e87a0bab372",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "5b0613dc9044cee97637c2468ce2f1d6eaa18d801d30019cd2c3983e0bbf710e",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5376x4164"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5376x4164",
+      "targetDimensions": "1463x1189",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "У Виктора восприемники: крестьянин села Тырети Семен Иванов Агафонов и иркутская мещанка Елисавета Иванова Ампилова.",
     "modernInterpretation": "Елизавета Ивановна Ампилова названа восприемницей в Тыретском приходе.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "робивишкся мержскаго\n„13\" обоегопола\nть\nвИ аСХИВ\nобдасти\nпо Мевяснинй",
+    "localOcrWithSurnameLexicon": "робивишкая мержескаго\n„13\" обоего пола\nть\nобласти",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Виктор Алексиев Агафонов. Родившийся: Домна Наталия Попова. Крёстная мать: Елизавета Иванова Ампилова, Иркутская мещанка.",
+    "fuzzyQuery": true
   }
 }

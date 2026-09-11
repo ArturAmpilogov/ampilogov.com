@@ -6,8 +6,8 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 
 const root = process.cwd();
-const capturedAt = "2026-09-10";
-const runName = process.argv[2] || "yandex-archive-ampilogov-global-fuzzy-2026-09-10";
+const capturedAt = new Date().toISOString().slice(0, 10);
+const runName = process.argv[2] || `yandex-archive-ampilogov-global-fuzzy-${capturedAt}`;
 const manifestPath = path.join(root, `data/genealogy/searches/${runName}.json`);
 const baseOcrPath = path.join(root, `data/genealogy/searches/${runName}-local-ocr.json`);
 const assistedOcrPath = path.join(root, `data/genealogy/searches/${runName}-local-ocr-assisted.json`);
@@ -81,11 +81,12 @@ const wordSet = (value) => new Set(modernize(value).toLowerCase().match(/[а-я�
 const keyOf = (row) => `${row.catalogId}/${row.scanNumber}`;
 
 const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+const evidenceRoot = path.resolve(root, manifest.evidenceRoot ?? "data/genealogy/evidence-private/yandex");
 const rows = manifest.batches.flatMap((batch) => batch.results);
 const baseOcr = JSON.parse(await readFile(baseOcrPath, "utf8"));
 const assistedOcr = JSON.parse(await readFile(assistedOcrPath, "utf8"));
 const baseByKey = new Map(baseOcr.readings.map((reading) => [keyOf(reading), reading]));
-const assistedByKey = new Map(assistedOcr.readings.map((reading) => [keyOf(reading), reading]));
+const assistedByKey = new Map(assistedOcr.readings.filter((reading) => !reading.error && reading.text?.trim()).map((reading) => [keyOf(reading), reading]));
 const metadataRoot = path.join(tmpdir(), `${manifest.searchRunId.toLowerCase()}-metadata`);
 
 const sourceFileById = new Map();
@@ -95,7 +96,7 @@ for (const file of await filesRecursive(sourceRoot, ".json")) {
 
 const evidenceFor = async (row) => {
   const prefix = String(row.scanNumber).padStart(4, "0");
-  const directory = path.join(root, "data/genealogy/evidence-private/yandex", row.catalogId);
+  const directory = path.join(evidenceRoot, row.catalogId);
   const full = path.join(directory, `${prefix}-full-view.png`);
   const header = path.join(directory, `${prefix}-header.png`);
   const target = path.join(directory, `${prefix}-target-entry.png`);
@@ -146,7 +147,8 @@ for (const row of rows.filter((row) => row.capture !== false)) {
 
 for (const group of grouped.values()) {
   const row = group[0];
-  const sourceId = row.sourceIds?.[0] ?? sourceIdFor(row);
+  const requestedSourceIds = [...new Set(group.flatMap((item) => item.sourceIds ?? []))];
+  const sourceId = requestedSourceIds[0] ?? sourceIdFor(row);
   const base = baseByKey.get(keyOf(row));
   const assisted = assistedByKey.get(keyOf(row));
   const baseState = localConfirmation(base?.text);
@@ -161,32 +163,82 @@ for (const group of grouped.values()) {
     overlap: [...wordSet(block.text)].filter((word) => snippetWords.has(word)).length,
   })).sort((left, right) => right.overlap - left.overlap);
   const evidence = await evidenceFor(row);
-  const existingFile = sourceFileById.get(sourceId);
-  if (existingFile) {
-    const source = JSON.parse(await readFile(existingFile, "utf8"));
-    source.evidence = addEvidence(source, evidence);
-    source.transcription ??= {};
-    if (!source.transcription.literal) source.transcription.literal = archiveBlocks[0]?.text || base?.text || row.indexSnippet;
-    if (!source.transcription.modernInterpretation) source.transcription.modernInterpretation = modernize(source.transcription.literal);
-    source.transcription.localOcr = base?.text ?? source.transcription.localOcr ?? "";
-    if (assisted) source.transcription.localOcrWithSurnameLexicon = assisted.text;
-    source.transcription.collation = {
-      baseLocalOcr: baseState,
-      assistedLocalOcr: assisted ? assistedState : "not-run-because-base-confirmed",
-      yandexTextBlocksUsedForNavigationAndCollation: true,
-    };
-    source.transcription.indexNote = "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.";
-    source.indexData = { ...(source.indexData ?? {}), querySnippet: row.indexSnippet, fuzzyQuery: true };
-    source.review ??= {};
-    if (!source.review.status?.startsWith("complete")) source.review.status = confirmed ? "complete-source-preserved-with-local-ocr-collation" : "complete-source-preserved-with-explicit-ocr-uncertainty";
-    if (!confirmed) {
-      source.review.transcriptionConfidence ??= "medium-with-explicit-uncertainty";
-      source.review.unresolved = [...new Set([...(source.review.unresolved ?? []), "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."])];
-      uncertain++;
+  const existingSourceIds = requestedSourceIds.length ? requestedSourceIds : [sourceId];
+  const existingFiles = existingSourceIds.map((id) => [id, sourceFileById.get(id)]).filter(([, file]) => file);
+  if (existingFiles.length) {
+    let primaryScanReading = "";
+    for (const [existingSourceId, existingFile] of existingFiles) {
+      const source = JSON.parse(await readFile(existingFile, "utf8"));
+      const priorReviewStatus = source.review?.status ?? "";
+      const priorTranscriptionStatus = source.transcription?.status ?? "";
+      const wasRecapturePlaceholder = priorReviewStatus === "needs-recapture-before-family-record" || priorTranscriptionStatus === "needs-recapture-before-family-record";
+      const wasIncompleteReading = wasRecapturePlaceholder ||
+        ["needs-review", "needs-human-review", "needs-recapture-for-overview", "partial", "primary-scan-partially-verified"].includes(priorReviewStatus) ||
+        ["partial", "partial-primary-scan-transcription", "primary-scan-quality-review", "name-index"].includes(priorTranscriptionStatus);
+      if (wasIncompleteReading && source.evidence?.path && source.evidence.path !== evidence.path) {
+        const previousEvidence = source.evidence;
+        source.evidence = { ...evidence, parallelCopies: [...(evidence.parallelCopies ?? []), previousEvidence] };
+      } else {
+        source.evidence = addEvidence(source, evidence);
+      }
+      source.transcription ??= {};
+      const locallyReadText = base?.text || assisted?.text || archiveBlocks[0]?.text || row.indexSnippet;
+      if (wasRecapturePlaceholder && source.transcription.literal && !source.transcription.preRecaptureResearchNote) {
+        source.transcription.preRecaptureResearchNote = source.transcription.literal;
+      }
+      if (wasRecapturePlaceholder || !source.transcription.literal) source.transcription.literal = locallyReadText;
+      if (wasRecapturePlaceholder || !source.transcription.modernInterpretation) source.transcription.modernInterpretation = modernize(source.transcription.literal);
+      source.transcription.localOcr = base?.text ?? source.transcription.localOcr ?? "";
+      if (assisted) source.transcription.localOcrWithSurnameLexicon = assisted.text;
+      source.transcription.status = confirmed
+        ? assisted ? "complete-primary-scan-dual-ocr-collation" : "complete-primary-scan-local-ocr-collation"
+        : "complete-with-explicit-reading-uncertainty";
+      source.transcription.collation = {
+        baseLocalOcr: baseState,
+        assistedLocalOcr: assisted ? assistedState : "not-run-because-base-confirmed",
+        yandexTextBlocksUsedForNavigationAndCollation: true,
+      };
+      source.transcription.indexNote = "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.";
+      source.indexData = { ...(source.indexData ?? {}), querySnippet: row.indexSnippet, fuzzyQuery: true };
+      const locallyReadTokens = [...new Set(familyTokens(source.transcription.literal))];
+      const year = Number(String(source.event?.date?.display ?? row.date).match(/\d{4}/)?.[0]);
+      const publicCore = confirmed && !isPlaceOnly(source.transcription.literal, locallyReadTokens) && Number.isInteger(year) && year <= 1950;
+      if (publicCore) {
+        if (!source.mentions?.some((mention) => mention.surnameSeries)) {
+          const token = locallyReadTokens[0];
+          if (token) {
+            source.mentions ??= [];
+            source.mentions.push({
+              mentionId: `${existingSourceId}-M${source.mentions.length + 1}`,
+              role: "surname-series-mention",
+              personId: null,
+              nameAsTranscribed: token,
+              displayName: modernize(token),
+              surnameSeries: true,
+            });
+          }
+        }
+        source.isRecord = true;
+        source.publicCore = true;
+        source.cardKind = "named-primary-record";
+        if (/quality-review|research-review/.test(source.recordType ?? "")) source.recordType = inferType(source.transcription.literal);
+      }
+      source.review ??= {};
+      source.review.status = confirmed ? "complete-source-preserved-with-local-ocr-collation" : "complete-source-preserved-with-explicit-ocr-uncertainty";
+      if (!confirmed) {
+        source.review.transcriptionConfidence = "medium-with-explicit-uncertainty";
+        source.review.unresolved = [...new Set([...(source.review.unresolved ?? []), "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."])];
+        uncertain++;
+      } else {
+        source.review.transcriptionConfidence = "medium-high";
+        source.review.unresolved = (source.review.unresolved ?? []).filter((item) => !/пересъ|качественн|локальн.*сним|резкост|фамильная форма не была уверенно воспроизведена локальным OCR/iu.test(item));
+      }
+      await writeFile(existingFile, `${JSON.stringify(source, null, 2)}\n`);
+      primaryScanReading ||= source.transcription.literal;
+      sourceFileById.set(existingSourceId, existingFile);
     }
-    await writeFile(existingFile, `${JSON.stringify(source, null, 2)}\n`);
-    for (const item of group) Object.assign(item, { sourceId, capture: false, status: "complete-existing-record-evidence-upgraded", primaryScanReading: source.transcription.literal });
-    upgraded += group.length;
+    for (const item of group) Object.assign(item, { sourceId, capture: false, status: "complete-existing-record-evidence-upgraded", primaryScanReading });
+    upgraded += existingFiles.length;
     continue;
   }
 
@@ -247,7 +299,7 @@ for (const group of grouped.values()) {
 const completed = rows.filter((row) => row.capture === false && !row.status.startsWith("pending-")).length;
 manifest.status = completed === rows.length ? "complete" : "processing-in-progress";
 manifest.progress = {
-  pagesInventoried: 100,
+  pagesInventoried: manifest.progress?.pagesInventoried ?? manifest.batches.reduce((sum, batch) => sum + (batch.reportedPages ?? 0), 0),
   rowsFoundOnAccessiblePages: rows.length,
   rowsCompleted: completed,
   uniqueScansPending: 0,

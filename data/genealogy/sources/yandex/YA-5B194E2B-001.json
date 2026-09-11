@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5b194e2b-b586-4ee0-a6c2-ef3f6876a2fd/0001-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5b194e2b-b586-4ee0-a6c2-ef3f6876a2fd/0001-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "d47ae8b5b6132e36114ee1699addb89d6b408718d3aad21c4a439d4bb6aa0161",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5b194e2b-b586-4ee0-a6c2-ef3f6876a2fd/0001-header.png",
         "sha256": "a141c225bbbd92fee32863238172ddf3765c8e6ecf54be2b71ad19f3fb4d48ea",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5b194e2b-b586-4ee0-a6c2-ef3f6876a2fd/0001-target-entry.png",
-        "sha256": "420989af43b64f5011af546b36d9858b9a16c1dfeeda00a9164b54cae9a5d614",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "da9ea6771ac2a2389fc3b875340943159e769f12fda3383d838930d37f5f2962",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4084x3060"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4084x3060",
+      "targetDimensions": "1200x511",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянина села Промысловки Николая Никитина Ампилова сын Георгий, 6 месяцев [в записи об умерших].",
     "modernInterpretation": "У Николая Никитича Ампилова умер шестимесячный сын Георгий.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "NO\nP80009\nоrмÉри\nЕБЕНіА.\nЛбжЕвкА.\nКресттанить Сиибпросночі\nгубереци Куремочшского уроу\nгастаевсккой\n-валосп феревни\nОнтелановки велдарь Сеодора",
+    "localOcrWithSurnameLexicon": "NO\nБЕНіА.\nЛбжЕскА.\nКресттянить Симбиросночі\nгубераци Куремочиского гроу\nгастаевской\n-волоси феревни\nантелановки ведерь Седора",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьянина села Промысловки Николая Никитина Ампилова сынъ Георгій. 6 мцовъ. Отъ простуды.",
+    "fuzzyQuery": true
   }
 }

@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0059-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0059-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "9d2fad8e8d3e40face901c8ce6928c8255af9a923f4d2e803b315b64ec10eeca",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0059-header.png",
         "sha256": "42de205fb66b2b830423c8f4c000920c0a89721fac13cab29ecca9f920f3c1a1",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e04c51e5-7cb6-4e93-abc1-95157fefa730/0059-target-entry.png",
-        "sha256": "d0303bef4ccb2618f6146d63611f8d4cb42a2cea41db9162eebc253e60642b77",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "bf4759a560b4c7e3c085d94f4c17744a5a8d2be06689ca65e039dc30aa72bf51",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5514x4439"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5514x4439",
+      "targetDimensions": "1498x586",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянина Сергия Константинова Ампилова дочь Александра [в записи об умерших].",
     "modernInterpretation": "У Сергея Константиновича Ампилова умерла дочь Александра.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "осими\n„і Владилід Килазеваній\nвереі\nтакинь Хoаннь Сиєкавs\nМестатинк Иля Соболевч\nСела Гаматевкки крестажнина воргім Алех-\nсієва Шепелева свинг Миханик-",
+    "localOcrWithSurnameLexicon": "1 u\nі Владилів Килазиваній\nверні\nначинь Хваннь Сиєкавs\nМестатинк Иля Соболевч\nСила Гаматевки престижнина вергім Алек-\nсієва Шепелева свінг Миханик-\n1 г",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Александра Сергеева Ампилова, 2 месяца. Умерший: Василий Димитриев Титов, 4 месяца. Умерший: Михаил Сергиев Шепелев, 1 год.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/100-target-entry.jpg",
         "sha256": "a80808a65d3e1318bd6241b11752bfe285292b63b1b0b8db458daa9c9d38838b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87",
+        "scanNumber": 100,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0100-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0100-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "a4c81d70fa1e8e507da6c74af4b75a4bcf4f860a2344064526071f66e1eed515",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0100-header.png",
+            "sha256": "a08b78e908ccb7b7b57339a0d8110ca2d1dd4bb5bd993aa73869a6a0f72a4b30",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0100-target-entry.png",
+            "sha256": "3d91d1d5308cebf8e792f12573fdf29a82230bc5f50671c28f66188ffe03704b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5438x4345",
+          "targetDimensions": "1463x949",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "дпус-\nжска егт Анна Мимодогьска оба\nаспавннє\nCuneum fanfellaeray\nМилания\nРаломнннв АлександраМуросав.\nДооевни Спокловки прествянинь\nтовринить Нетров Реголовь итакоч\nднунав жена его Матуосна Констанн\nга оба похвославные.\nно\nc).\nPinjeummfang Masas",
+    "localOcrWithSurnameLexicon": "жиска ест Анна Милодотьска оба\nвиспавнн\nCuneum fanfellaeray\nМелания\nРаломннь Александра Мурогов.\nДоревни Спокловки прествянинь\nтов чинить Нетров Реголовь и такоч\nдну нав жена его Матросна Констанн\nга оба похвославные.\nно\nc) .\nPinjeummfang Masas",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Симион Тимофеев Ампилогов. ... Отец: Тимофей Алексеев Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

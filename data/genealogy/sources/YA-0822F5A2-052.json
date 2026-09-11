@@ -29,19 +29,68 @@
         "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0052-target-entry.jpg",
         "sha256": "e4e6b1abd3fa97245e0522de69524d0bba62ac5f28875f69d5ec5e3bffdd88f6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0822f5a2-cac0-40d2-a2f7-8d00e8c02f34",
+        "scanNumber": 52,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0052-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0052-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4a634e0e30d61f73833123297e491e143d5ddfd860244b92d6651ef71f4ac3c6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0052-header.png",
+            "sha256": "455619bac35b03284c5dd6ce7d6bd31c5661fc5f4fd1d13be8e286a0d3337ec8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0052-target-entry.png",
+            "sha256": "fc278089882bf7495fd36814db7599d1191f7d6de506fbef5273af4345fd59cd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4876x3939",
+          "targetDimensions": "1200x650",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-context-review",
     "literal": "Метрическая книга за 1905 год, часть вторая, о бракосочетавшихся. В нескольких видимых строках брачного раздела прямо встречается социальный статус «переселенец» / «переселенцы». Фамилия «Ампилогов» или документированный близкий вариант на фрагменте не читается.",
     "modernInterpretation": "Лист сохранён как первичный контекст миграционного статуса в приходе: несколько участников браков прямо названы переселенцами. Этот статус относится только к названным в их собственных строках людям и не может автоматически приписываться Михаилу Ампилову (?) или другим участникам без отдельного документа. Поскольку фамильный ряд не подтверждён, профили, маршрут переселения и карта не создаются.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», однако на доступном фрагменте нет этой фамилии и близкого варианта. Лист оставлен в данных исключительно как проверенный контекст явного употребления статуса «переселенец»."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Выховь, окроожил опретвятовчі.\nпо невчатів крествяти тоги -оже\nи всла слткснй фергень ийодуск,\nХутора Оббтикова крествян\nНавелк Ампильговч. Вжстий\n-.\nДевяткин'ч\" по невічати креств",
+    "localOcrWithSurnameLexicon": "Выховь, рожи претвятовчі.\nпо невчатів крестяти тоги - оже\nХутора Обстикова крествян\nПавелк Ампилоговч. Ваним\n-.\nДевяткині\" по невичати креств",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "migration-context-index-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high",
-    "unresolved": ["Нужна отдельная построчная расшифровка брачных актов, если потребуется исследовать сами семьи переселенцев."]
+    "unresolved": [
+      "Нужна отдельная построчная расшифровка брачных актов, если потребуется исследовать сами семьи переселенцев."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Хутора Объедкова крестьяне Павел Ампилогов Василий Девяткин; по невесте крестьяне хутора Саратовского Никифор Суровцов, Феодор Чиднов.",
+    "fuzzyQuery": true
   }
 }

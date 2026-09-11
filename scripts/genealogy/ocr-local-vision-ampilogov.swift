@@ -1,4 +1,4 @@
-import AppKit
+import Foundation
 import Vision
 
 guard CommandLine.arguments.count > 1 else {
@@ -14,19 +14,12 @@ let surnameWords = [
 
 for path in CommandLine.arguments.dropFirst() {
   autoreleasepool {
-    guard let image = NSImage(contentsOfFile: path),
-          let data = image.tiffRepresentation,
-          let bitmap = NSBitmapImageRep(data: data),
-          let cgImage = bitmap.cgImage else {
-      print("@@FILE\t\(path)\n@@ERROR\timage-load")
-      return
-    }
     let request = VNRecognizeTextRequest()
     request.recognitionLevel = .accurate
     request.recognitionLanguages = ["ru-RU"]
     request.usesLanguageCorrection = true
     request.customWords = surnameWords
-    let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+    let handler = VNImageRequestHandler(url: URL(fileURLWithPath: path), options: [:])
     do {
       try handler.perform([request])
       let observations = (request.results ?? []).sorted {

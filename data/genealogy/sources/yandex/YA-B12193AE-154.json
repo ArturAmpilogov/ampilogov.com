@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0154-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0154-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "1ad91a855cb97d5c44c304f22d7c0639be5cd89ced7aa1f1450dad95d5f88966",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0154-header.png",
         "sha256": "9282364374af4abb0ae90cce3f13a13d3f7d748d305742a24071867ba1c760b4",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/b12193ae-1488-4cd7-ac1d-e9a4993e09d5/0154-target-entry.png",
-        "sha256": "5b9aed41ab57d6d56e40f8d6650d0fc5353396972ba60c9bb2e0c1bdcf4c61fe",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "78abb8ddd09936b0787c71464943abf08ef3c6232bbc0ca73f063fdce9d718a9",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5571x4427"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5571x4427",
+      "targetDimensions": "1577x1057",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки солдата Герасима Васильева Ампилова дочь Наталия [в записи об умерших].",
     "modernInterpretation": "У Герасима Васильевича Ампилова умерла дочь Наталия; индекс ошибочно присоединил соседнюю умершую.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГНПОГРА\nИПОА АЛЕ\nЖЕТРИЧЕСКОЙ КНИГИ NА\n1911:\nДÉНЬ\nЗвáніє, йма, отчество й фамиліл одмéршаги.\ncy Mé\nГрЕБЕНіл.\nМбжеска.\n16\nела М\n10\nшмтрайковки престьянина\nсксля\nсаносттрнн. с",
+    "localOcrWithSurnameLexicon": "ТИПОГРА\nМЕТРИЧЕСКОЙ КНИГИ NА\n1911:\nДẾНЬ\nЗваніє, ма, отчество й фамиліл одмершаги.\ncy Mé\nГрЕБЕНі».\n16\nела М\n10\nимпрайковки престьянина",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Матрона Герасимова Ампилова, 1 месяц. Умерший: Анисья Петрова Кривонерстова, крестьянская вдова, село Тримихайловка, 50.",
+    "fuzzyQuery": true
   }
 }

@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0029-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0029-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "356b053ecae74d157032b9938099e9b0c5ce476b6e55a3e0bf2ca711076b1c41",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0029-header.png",
         "sha256": "66fe10ed6aaf0e3f746585fefa6ade1c925fdbe5d3ebaed1f161809b8ebae08e",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0029-target-entry.png",
-        "sha256": "258f604b9917c617658a63732e17dc669e5cda25e4a37b0ba30248a4ffcc0f20",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "d9df491d92a310a4be40f6391dd4bc4aefa44c0e3a5180536b1323ec5840d096",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4683x3807"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4683x3807",
+      "targetDimensions": "1200x699",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села крестьянин Иосиф Григорьев Ефремов и девица Евдокия Максимова Ампилова [в строке восприемников].",
     "modernInterpretation": "Евдокия Максимовна Ампилова повторно названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "на\n„ сема Сорочинскаю крести, яненая\nна0\nвдово Христит Микалико\nого хасела Киестьяник\"\nмя Митановь (тепаньвз\n4, Сена Падеуснина кристі, янка\nсАнна Картова Годвонова",
+    "localOcrWithSurnameLexicon": "на\nи сема Сорочинскаю крести, янекая\nого ха села Крестьяник,\nмя Митановь степанов)\n4 Сена Надруснина кристі, янка\nсАнна Картова Годонова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Евдокия Максимова Ампилова, девица. Крёстная мать: Христина Михайлова Байдина, крестьянская вдова, село Сорочинское.",
+    "fuzzyQuery": true
   }
 }

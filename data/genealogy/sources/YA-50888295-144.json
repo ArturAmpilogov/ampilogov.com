@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ом-Андрей Серескь криснымь и Василй\nолиг Комасонова; по невльемиь: Сели Валчика\nкрестьяме: Ивлень Серйевь Ламыниньи\nСиміннг Константиновь Сарычовь.\nТо яенияи: Села Зашчини крестьяне:\nМашвий Касильев» Тпоовисмова и Иваи",
+    "localOcrWithSurnameLexicon": "ом-Андрей Сериск красным и Василий\nоли Компасонова; по невлемиь: Сели Валичика\nкрестьяне: Ивлень Сергевь Ламынинь и\nСимінг Константинов. Сарычов.\nТо ленили: Села Заличини крестьяне:\nМашивий Васильев» Тпооимова и Иван",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0144-target-entry.jpg",
         "sha256": "88f33ba4350d0c823c4aacd9a21e415636ee5dca781a65a3c341d9abc54132d8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "50888295-1a2f-47db-84f3-5a4b6c5570b6",
+        "scanNumber": 144,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0144-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0144-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "40f5f5f6c9c31fcfbea8fbdaff5f75b1138bc6ced77e07153b8138f2bb8a77e6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0144-header.png",
+            "sha256": "5b18c1681282989c814fe7056c6feb0976f8ff0ade5cb8e7d1522d334928f8b0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/50888295-1a2f-47db-84f3-5a4b6c5570b6/0144-target-entry.png",
+            "sha256": "e93a6aa51be43a350103bbed40ddf1c2fd87bfd0b91b17e6db930bdcc1ac481f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6104x4804",
+          "targetDimensions": "1503x885",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених: Матвей Петров Плохов, крестьянин, село Ратчино, 17 1/2. Поручитель: Сергий Александров Ампилогов, крестьянин, хутор Орловский.",
+    "fuzzyQuery": true
   }
 }

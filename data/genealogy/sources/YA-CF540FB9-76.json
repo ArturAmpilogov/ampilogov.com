@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cf540fb9-7678-4b1f-89d9-b008c926901a/0076-target-entry.jpg",
         "sha256": "f8eaa75a38518e102c5e53f187fd1e9fb7fafd63f09c348516dfb4269f78afda"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cf540fb9-7678-4b1f-89d9-b008c926901a",
+        "scanNumber": 76,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cf540fb9-7678-4b1f-89d9-b008c926901a/0076-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cf540fb9-7678-4b1f-89d9-b008c926901a/0076-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "446ef52d35b11695c901d4a49f6010e7d15ebe9189d3f09cb17883e7727fd935",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cf540fb9-7678-4b1f-89d9-b008c926901a/0076-header.png",
+            "sha256": "f0046a4e742a19fb9f48279bbd6da1d31b265b53fe13c41048794bcb5966b1cc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cf540fb9-7678-4b1f-89d9-b008c926901a/0076-target-entry.png",
+            "sha256": "1ad9d034b32cffeb2748141d7d83dc2c51002b4e013a45ff697d8c7b3d23b9de",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5846x4672",
+          "targetDimensions": "1564x663",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "нсих тяна чю Аплкія ваяулигова,\nоба православнне.\nСомцелнитв Риснсв Блаляево.\nДер. Драминой кракувльни глвунитв\nшиз-\nгаврилаяв Алипилогогов и законисир,\nняна сго Апиан Втаний свки; оба\nпривосавння.",
+    "localOcrWithSurnameLexicon": "них пяна о Аплія варилова,\nоба православнне.\nСомуетнитв Риснив Блаляево.\nДер. Драминой кракувльни гивунитв\nшиз-\nгаврилав Алипилогогов и законисир,\nняна сго Апиан Втаний свае; оба\nпривосавння.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Иоанн Гаврилов Ампилогова. ... Отец: Гаврил Гаврилов Ампилогов, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

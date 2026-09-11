@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/115-target-entry.jpg",
         "sha256": "7cb86df1ead25707c452d66bbae738ec15f89e13bbf7b298c81a4668eb834e31"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f99824ad-641e-4852-9282-01d028ecc542",
+        "scanNumber": 115,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0115-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0115-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "9c28563f885ab09e22eab17b1e3bf687035d5e8e81c992a1a09be8de422a794f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0115-header.png",
+            "sha256": "4fc3c718a04395430b58d692df9c441f72a77fee277a91777ef4bc6a04c0b35c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0115-target-entry.png",
+            "sha256": "aec88775c197c65943bb2727a8b350fc1f0512ccbdd7799d1aa6894ae13095a7",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4632x3792",
+          "targetDimensions": "1245x518",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ми.\nрентуречский яогуанинь Мань Профилиова\nРосляковь и законнам мена ейі Матрана\nПнтонова, оба православное\nСвященний Галн. Шпрет]\nДіаконь Басноій Полюва. І\n10\nКрестілнинь Блатитев (вановь П/гитренктви)",
+    "localOcrWithSurnameLexicon": "ми.\nрентуреский ялогуанинь Мань Профилова\nРосляковь и законнам мена его Матрана\nАнтонова, оба православной\nСвященний Гала. Шпрет]\nДіаконь Басноій Полюва. П\n10\nКрестіянинь Блатитев (вановь П/читренкти",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Анастасия Павлова Ампилогова. ... Отец: Павел Лазарев Ампилогов, оренбургский мещанин.",
+    "fuzzyQuery": true
   }
 }

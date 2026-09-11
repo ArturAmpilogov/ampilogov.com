@@ -53,38 +53,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/377d3440-ec87-4079-8fa8-495960999009/0019-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/377d3440-ec87-4079-8fa8-495960999009/0019-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "7043241dc8b916e70aef1fcdfd1987e2d0e0893b8d9e0f592752c64788652946",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/377d3440-ec87-4079-8fa8-495960999009/0019-header.png",
         "sha256": "b18c99ac3788b02577184fb3ce1bc7d34655f12edb857a41f1b5a484c4dc4959",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/377d3440-ec87-4079-8fa8-495960999009/0019-target-entry.png",
-        "sha256": "963d9cfd947679e9269707dccf2d5b1c1b2859c2bd57910e285087acc3384009",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "b951b93f43df6e5612f9652b40de64ae1299b70046e475ee23c2ad9c6a373a94",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3864x2686"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3864x2686",
+      "targetDimensions": "1709x728",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Обильного Черноярского уезда крестьянин Иван Петров Ампилов и законная жена его Параскева Иванова; оба православные. Восприемники: Семен Васильев Брагин и Марфа Семенова Ампилова.",
     "modernInterpretation": "Иван Петрович и Параскева Ивановна названы родителями; Марфа Семёновна Ампилова — восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НОА ДЛЦНО\nієтрической вниги на /9/6\nгóди, члсть первал,\nЗвáніє, йла, отчество й фамиліл родúтєлєй, й какóгш\nЗвАніє, блд, отчество й флмилід\nxcA.\nвкроиспов'вданім.\nвоспріємникива.",
+    "localOcrWithSurnameLexicon": "НОА ДЛИНО\nвтрической книги на /9/6\nгоди, чАсть первал,\nЗвАніє, бла, отчество й фамиліл родителєй, й какги\nЗвАніє, блА, отчество й фамилід\nхсА.\nв кроисповʼвданія.\nвоспріємникива.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -92,6 +100,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Васильевъ Брагинъ и Марфа Семенова. Ампилова. ... Ампилова. Псалом. Священник Феодор Очкуренко, диакон Григорий Курбатов и.",
+    "fuzzyQuery": true
   }
 }

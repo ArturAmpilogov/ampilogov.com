@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0013-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0013-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "c88e58ed5b60b46991192df1ddc4d466c775b8c199ce3387981138692b123b9d",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0013-header.png",
         "sha256": "9aef8028cbfb577279f735eacb5cf1f8915254997337c3215d7f56399dd8a2b2",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0013-target-entry.png",
-        "sha256": "97825beace214f1b9fe84329c2d045d439e3691ef16512f07d0cdb7aa482966a",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "0374527848ed0ac4c6ef5dfb449e1320d74e8fcca3e1fe83de7b36fcc7f0021f",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "10851x8452"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "10851x8452",
+      "targetDimensions": "2545x1109",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села крестьянин Тихон Петров Клюев и крестьянская жена Екатерина Даниилова Ампилова [в строке восприемников].",
     "modernInterpretation": "Екатерина Данииловна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "лoвd.",
+    "localOcrWithSurnameLexicon": "nobd.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянинъ Тихонъ Петровъ Клюевъ и крестьянская жена Екатерина Даніилова Ампилова. Священникъ Владиміръ Князевскій.",
+    "fuzzyQuery": true
   }
 }

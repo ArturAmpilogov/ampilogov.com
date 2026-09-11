@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "95aaabe65f8b48c9aef3b5f5aa9c7f9e620773f7f45b7ad0c728066ad89f309f",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-header.png",
         "sha256": "b0500076d5e24980dc5134097b66a7d02ff21547c8a4e3e901771157fb948c02",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4c9a2a62-a3fe-4c7b-9c8f-4438a6f9615c/0009-target-entry.png",
-        "sha256": "a64fd192f3b80848d5e8e8f722bc5bb6cb8d2151061847ce6b52ceb847a5eb01",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "17089bc39085c34d1de066dd34fbceab1ac5f41eb505c7fc5f76660fa76219ba",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4818x3811"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4818x3811",
+      "targetDimensions": "1658x410",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Опись № 12. Персональные дела. № 62: АМПИЛОВА Галина Николаевна; даты в соседних графах: 12 марта, 21 марта; 4 [листа].",
     "modernInterpretation": "Опись фиксирует персональное дело Галины Николаевны Ампиловой. Материал сохранён для исследования, но исключён из публичного ядра как относящийся к периоду после 1950 года.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "оня0ра\nUлAлUря\nИванович\nАленсандр\n8\n22\n2I\n66. ВИНОГРАДОВ\nноября\nноября\nАлександр Николаевич\n5\nII\n3\n67. ГАЛКИН\nянваря\nянваря\nЮрий Алексеевии\nTT",
+    "localOcrWithSurnameLexicon": "Иванович\nАлександр\n8\n22\n2І\n66. ВИНОГРАДОВ\nноября\nноября\nАлександр Николаевич\n5\nІІ\n3\n67. ГАЛКИН\nянваря\nянваря\nЮрий Алексеевии\nТТ",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "research-material-outside-public-cutoff",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "62. АМПИЛОВА 12 21 4 Галина Николаевна марта марта. 63. АНДРЕЕВ 8... 18 Александр Павлович октября октября.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0239-target-entry.jpg",
         "sha256": "9311e8028a05680ef7324731f7a5298f4f3af75de3a46a7a64ccd246e3ec2a57"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4",
+        "scanNumber": 239,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0239-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0239-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "54f205507f76172c73bb279fd4965e9942ff02c1cd4ffd8d2e52055da3b29fa2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0239-header.png",
+            "sha256": "42b786fe8f9a297f53aa3be412714ca1a8463796177d34c0f895feb0a0df6088",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0239-target-entry.png",
+            "sha256": "4d9aee4fbbee28c7a1c0ee3c0090b247035066a098362aacad2bee5262155d87",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2311x1941",
+          "targetDimensions": "1200x887",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОСКОКСКО\nOKCT\nКIО4 ДЛННО\nГОДИ, ЧАСТЬ ПеРВАД, Щ РОДІ\nЗвАніє, йма, бтчество й фамиліл\nKтò COBE\nвоспріємникв%.\nK\nЛого-оресеиа крествянить Якова Семе-",
+    "localOcrWithSurnameLexicon": "ОСКОКСКОМ\nOKCT\nГОДИ, ЧАСТЬ ПеРВАД, Й РОДІ\nЗвАніє, йма, отчество й фамиліл\nKTò COBE\nвоспріємник ва.\nK\nЛого-оресена крестьянить Якова Семе-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Григорий Иустинов Ампилогов и крестьянская жена Варвара Борисова Потехина. псаломщи. Родившийся: Андрей Ионов Тябердин.",
+    "fuzzyQuery": true
   }
 }

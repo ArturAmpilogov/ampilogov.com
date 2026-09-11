@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/158-target-entry.jpg",
         "sha256": "6f45a91047f405d85e000cadf0c1d6c99485bc04852aa0447c5ffc0c4ceec038"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87",
+        "scanNumber": 158,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0158-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0158-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "f3dc5d2cd84c0a993bdac244fdab210d35734efc6ae5e80719af4954d2d5880f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0158-header.png",
+            "sha256": "91f6e2356d300f31b858b29150bea1154b2eeb8d5d55b511fdac051bfd3503d4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0158-target-entry.png",
+            "sha256": "23e9a49ae01e093f134bfcd7333e5353cda634b28f681b334f77f1e658e82575",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5294x4308",
+          "targetDimensions": "1200x959",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "OLIC\nпіонові .ворааевь.\nправославний\n10.\nпершимь спакомо\nChingemmtamgllaen\num MudauM\n(ам)\nПсаломииісь Ал\nсса\nP.\nСела Ролога крестия\nнинь Ивань Аналіа",
+    "localOcrWithSurnameLexicon": "CLIC\nпіонові вораеть.\nправославний\n10.\nпершими стакомо\nChingem tangellaes\nПсаломилісь Ал\nсса\nСела волога крести\nнинь Ивань Аналіа",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Григорий Ефимов Ампилогов, крестьянин, село Зобово, 18. Поручитель: Стефан Яковлев Сухов, крестьянин, деревня Воронина.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0065-target-entry.jpg",
         "sha256": "42fbb653fb07b74613221e544ed2af4ec43c0acf3a51031cce4e02a40249c2f0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cb36f7f0-ba71-42b5-a9aa-94c41b455802",
+        "scanNumber": 65,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0065-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0065-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9fc55bedeec68b8e5e686df8c1d873fe67dd07a3326718b017a1e81d52e5a1b2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0065-header.png",
+            "sha256": "bfd7618eeca97ec1738c9f170f1107b289b4e5ae3aa15870edfc64fd489c5915",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0065-target-entry.png",
+            "sha256": "3d8047cd77e5cd55a7ab024b7da1a91c647732ac687ec74ab5a7d8468457f606",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5105x4314",
+          "targetDimensions": "2520x676",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ПОД АЛЬНЕ\nІ6ТРИЧеСкой внÚгИ нА /903 й гóдА, ЧАСТЬ ПеРВИД, й РОД\nЗБаніє, ймя, бтчЕстко й фамнліл родúтелей, й какóги\nЗБАніє, ймА, сотчЕство й фамнлїл\nXCA.\nквіронспов'даніл.\nкоспріємникшка.",
+    "localOcrWithSurnameLexicon": "ПОДАЛЬНЕ\nІСТРИЧеСкой внИгИ нА /903 й годА, ЧАСТЬ ПеРВИД, й РОД\nЗваніє, ймА, отчЕстко й фаміліл родітелей, й какги\nЗвАніє, ймА, сотчЕство й фамнліл\nХСА.\nкронспов' даніл.\nкоспріємникшка.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Ольга Тимофеева Ампилогова. ... Отец: Тимофей Алексеев Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

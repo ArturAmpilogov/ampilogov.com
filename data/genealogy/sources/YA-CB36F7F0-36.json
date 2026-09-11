@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0036-target-entry.jpg",
         "sha256": "293d2303b0038976983583c5a10bf1bf2dfe761d3b8398aaabe55fbaf500acf1"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cb36f7f0-ba71-42b5-a9aa-94c41b455802",
+        "scanNumber": 36,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0036-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0036-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ba52c9fd7e0a989386ead5ce235bb0069b7e4a382fc92df1301520a2eb7475b5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0036-header.png",
+            "sha256": "aeab6c607325d52e0873a958377aca3bb5f79a001d736f90b7453159f7d5e19b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0036-target-entry.png",
+            "sha256": "2bcc72f82ea07e8558eecdb6deb85a35d8eca5a6cbb314b361a832fd6c2c3aeb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5257x4383",
+          "targetDimensions": "1477x555",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "чела обтва крестоянинь сотше\nАлексиндровь бооробинь и зиночния эе.\nна его Алексах Дра бустинови; оби\nпридвасливныет\nPhiryumинeS cmobr Ncuaeв\nПсаланицинь Милали. ВаВушовь.\nПсилольщина Лавелч Лихегева-",
+    "localOcrWithSurnameLexicon": "чела обова крестоянинь сотне\nАлександрова боробинь и заночния же.\nна его Алексах Дра бустинови; оби\nпризвасливныет\nPhiryum neS cmobr Ncuaek\nПсаланицить Мил али. В Вушовь.\nПсилольщина Лавел Лижегова-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Параскева Стефанова Ампилогова. ... Отец: Стефан Андреев Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/3b19c047-dadb-4691-9530-305acccbe456/0089-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/3b19c047-dadb-4691-9530-305acccbe456/0089-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "d014a4d28bfb8b738ad069d26be562bfdb63c8d8a5760c7db88c1d8700484d1b",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/3b19c047-dadb-4691-9530-305acccbe456/0089-header.png",
         "sha256": "a0211b226d3f6ce91be7c9a9a33474a9eb3600381ba3e39595cc0c740e2b0b42",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/3b19c047-dadb-4691-9530-305acccbe456/0089-target-entry.png",
-        "sha256": "284bf2b10d4bfac2f3b2f33343ac81d920ef79e8e0dec370657826bd680e3db4",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "79883c62802321c93bc0983548a53c947cff6a9e43a2e10c11f31ae112c75f5b",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5045x4153"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5045x4153",
+      "targetDimensions": "1200x1370",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин поселения Нифонтовского Василий Иванов Ампилов, православного вероисповедания, 36 лет [в графе жениха].",
     "modernInterpretation": "Василий Иванович Ампилов из Нифонтовского документирован как 36-летний жених.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "18\nКр у. Нишених\nКирину вв\nRonem aumen\nИвилів Ради\nправсинип.\nвким ври\nСвяинии\nug. l",
+    "localOcrWithSurnameLexicon": "18\nПр у. Нишених\nКирину вв\nИвилів Ради\nСвяинии",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Невеста: Мария Иванова Рабыш (Дубко), крестьянка, деревня Нифонтовка, 20. Невеста: Федотова Меунская Ампилова, крестьянка, поселение Ольгинское, 18.",
+    "fuzzyQuery": true
   }
 }

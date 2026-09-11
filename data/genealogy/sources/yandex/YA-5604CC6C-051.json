@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0051-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0051-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "389c4ffc91f38188dfe802fae8d7c460ac1bdfc5f98d97353d4571c1a15c5a93",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0051-header.png",
         "sha256": "b8344926b76528c26ed0bf2f30333b53051c88b684614e594bd02569d99cfed7",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5604cc6c-958a-4add-8661-061a47d0b2f4/0051-target-entry.png",
-        "sha256": "258ea3ee47856cb2ef28155dc2f99f60d7691ae80e26647b255098759ac4f8ea",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "2d9938a8a666620db077a3e55e47fffc10a1eae4359ee30e0bd9d60a749c2934",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5690x4716"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5690x4716",
+      "targetDimensions": "1200x1072",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянка Анна Лукианова Ампилова, православная, первым браком, 18 лет 10 месяцев.",
     "modernInterpretation": "Анна Лукьяновна Ампилова документирована как невеста; сведения о женихе остаются в полном скане.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "map 14 ypaн-citо\nСена Гаmантeвки\nфреатьянка Аина\nЛікіанова ссипи-\nнова, проакосильная\nпервыть бра-\nКомь.\n5\nаcsюm.",
+    "localOcrWithSurnameLexicon": "map 14 pan citi\nСена Рамантевки\nКреатьянка Анна\nЛікіалова сити -\nнова, проакосильная\nпервыть бра-\nКоми .\n5\nя 3c\nacrom .",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "18 л. 10 мц. Села Гамалѣевки крестьянка Анна Лукіанова Ампилова, православная первымъ бракомъ.",
+    "fuzzyQuery": true
   }
 }

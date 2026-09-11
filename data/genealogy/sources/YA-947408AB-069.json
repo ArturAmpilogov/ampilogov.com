@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/947408ab-66b2-472d-aaa7-3c5b62f73db1/0069-target-entry.jpg",
         "sha256": "e652b9dca4a1a50dba5f2701355a6d9a86f77af38daed241774ec7c238fe1950"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "947408ab-66b2-472d-aaa7-3c5b62f73db1",
+        "scanNumber": 69,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/947408ab-66b2-472d-aaa7-3c5b62f73db1/0069-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/947408ab-66b2-472d-aaa7-3c5b62f73db1/0069-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "43671064c5dd3d761bd893116db8f2eff9a2c2ff9aa7d79e58ebe2c49c04a636",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/947408ab-66b2-472d-aaa7-3c5b62f73db1/0069-header.png",
+            "sha256": "5677a12d61f791a1a7daa226b297c49e9a02113336f6a1ab6f9f3266bb91729c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/947408ab-66b2-472d-aaa7-3c5b62f73db1/0069-target-entry.png",
+            "sha256": "a082039d58c9068f11c227ff4b1e1fd3cb731e21bf63450e21db87ecd5c23499",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5915x4767",
+          "targetDimensions": "1322x793",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "умановь Амипилоговть и\nсипцанская жена Maрія\nРодокимова Мощаненкова.\nОрскій сиъщании Леваль\nИваноел, Лусаровь и силь-\nкансная жена Пелагея",
+    "localOcrWithSurnameLexicon": "умановь Ампилоговь и\nсипианская жена арія\nРедокимова Мощаненкова.\nОрскій сищании Леваль\nИвановл, Лусаровь и силь-\nкансная жена Пелагея",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Орский мещанин Георгий Иулианов Ампилогов и мещанская жена Мария Евдокимова Мещаненкова.",
+    "fuzzyQuery": true
   }
 }

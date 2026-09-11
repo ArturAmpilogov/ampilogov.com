@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/216-target-entry.jpg",
         "sha256": "b64e7ba14ba1d27b086d4d8248aee48b1e8e29490012f78fffdd3568c7fa53cc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "74bd3792-25d5-4c5b-8b14-c4e0d353782d",
+        "scanNumber": 216,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0216-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0216-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "35d9c484765701cac354add3957ed44492b5a5e8e08fe33788a95acba4c62840",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0216-header.png",
+            "sha256": "c4d3e7f248729a352d3939742490e8abdca9ae10d34f37a00f4668c1ab10d79b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/74bd3792-25d5-4c5b-8b14-c4e0d353782d/0216-target-entry.png",
+            "sha256": "1197e130dd0a31c20d3e1f5ee9a321e333d06ad5403c2e3bef5292a051586049",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5040x3965",
+          "targetDimensions": "1411x941",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "мась яне нерсьни\nсантанма Метяв свисксан-\nгровь вутрові и деревни вима\nам.\nшовки сергйй Нибрововыти\nХожентерь: Деревни Тимановки\nКрестівне: НавельДимитрі-\nень литилоговьи вргій пет-\nровь офехтилогов.- По невсь-\nсчиь: Доревни Суманьвки\nЕреаттвне: Сейаь Лаврен\nтіeь свлитилогов. и",
+    "localOcrWithSurnameLexicon": "мась ине нерени\nсантанма Метов свискан-\nгровь утрові и деревни ви ма\nам.\nшовки сергій Нибрововыти\nХожентер: Деревни Ти мановки\nКрестівне: Навель Димитрі-\nень мити логови Оргій пет-\nровь фехтилогов. - По невсь-\nсть: Доревни сумановки\nкреаттвне: Себаь Лаврен\nши\nтіль солитилогов. и",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе: Деревни Чумановки крестьяне: Павел Димитриев Ампилогов и Сергий Петров Ампилогов.",
+    "fuzzyQuery": true
   }
 }

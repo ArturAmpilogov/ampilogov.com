@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0241-target-entry.jpg",
         "sha256": "a1ab88f3022d2f65d2ba5f01f365494f86310f79c7a8b56c40d8801009c40e2d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 241,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0241-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0241-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ac2e41be9898ac4e66b21b29ab4b5f20e276beaecfadc951d072bfb86654345b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0241-header.png",
+            "sha256": "cde9534b47bf9d31a9e5533540e2f37b26f2e31ed89330b389df8d571a0bc154",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0241-target-entry.png",
+            "sha256": "c58e6a192c30aed0da4d3b88171fbd1ec4539cb1bbc916ad52ce47697a2847de",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5827x4716",
+          "targetDimensions": "4401x3399",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОТРИЧЕСКОЙ КНИГИ НЛ\nГóда, чАСть тРетіА, й оумершихи.\nAkrà\nЗвáніє, йма, отчЕстко й фамнліл одмéршагш.\nоỶ мéршагш\nЧЕГШ оỷмЕр%.\nКтò йспов'дывали й пріобцáль.\nКто соБЕршАли погребеніЕ, й где погрЕбены.\nніл.\nMoжces\nОвященник Млянгоь\nДеревни Ново-Никольской крестьянина\nДебра Николаева слаженкова Дочь\nНапуеитит Маом із А лутлачая.\nпоноса.\nДляканчьонифатій) Шкатавь.\nаохивам\nАмпилогово съ Посломигуи-\nпоноса.\nКомь Тамонемь Горяй-\n2низ\nСлабости.\nновномь и Дішкономь\nПоноса.\nдарственный архиз\nВілифитісмь Мкито-\nей области •\nПоноса.\nІсальмжинь 01\nПоящантий Угнчимй Мтлпавн.\nвым на ответенном\nняконь вданифратій шикатовь\nДереьни Лово- Никольской Крестьянина\nслабости.\nІтгепана Летрова Делигла Дочь Ольга\nЗне",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов. ... М. А. Ампилогов.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звініє, ймА, ботчЕсТво й фалШлА родітЕлей, й какóги\nшиусл.\nв'ііронспов'Бданіл.\nсоріь.\nСела виснавхи проствянииь Апібрей Пей\nпри дое. ова піривостыоо ввоздотій\nвященних Серчі Илмолинадскиї\n/салілицикч.Пнатоми Литаминарскій\nДеровни Ммайлівии пепратвянийв Димикри\nПихослеві Пижйрниь м сискасго сПонтрени\n(еменови, обилгривосавивля.\nСвященникь Сергій Млиолиарский\nДіакнів Аомотейв Ампилогові\nНеоломициік Анатомій Иллюминарсблй\nола Хлановим пгроситвіянийв ОНипоне\nа геодоров. Поссилиавьи лисии его Пека-\nмis Инексцьеви- оби привославився.\nСвященнкь Аргій Имиолишарский.\nДімнтв Аомокаив Алиписолови 6\nНеалолицика Анатолій Ииаминарсвій\nloue ll\nни - масловки перествянийв вгоріь Пайрова\nЛиктовь и мсинею.\nДаріо Мосновся\nобопривосавивю.\nСвященникг Сухчй Имломи над\nDiahoub to",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0158-target-entry.jpg",
         "sha256": "6697d7be240a412da11c1dbb27212e1718bdf745610258af9c8b407cd9866941"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ff34218-795d-4b30-9c76-24191f45b68d",
+        "scanNumber": 158,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0158-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0158-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7b530dd0ddfa3234a2f0414199e8b6ac17bd12f79d9eae8e5a3d718b7a23edd4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0158-header.png",
+            "sha256": "9dfd3cc38a08aa69e204360dd90728f52dacc69f46f281dd65fcabf53be06f68",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0158-target-entry.png",
+            "sha256": "e08af7e15e355a4b3806b511fa8ce69155f5ffbf0f9303de1afc91f57df22e57",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5004x3921",
+          "targetDimensions": "1429x2366",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминарский Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

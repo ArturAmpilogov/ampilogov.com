@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/dcf9898a-ce1d-46b0-a425-c17fecd019fe/0023-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/dcf9898a-ce1d-46b0-a425-c17fecd019fe/0023-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "cebb34c029b1d65831825dfc2967e832544ab803d39921a11d02456e6108b6dd",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/dcf9898a-ce1d-46b0-a425-c17fecd019fe/0023-header.png",
         "sha256": "94db6607870ab8dda335f70f9d2bb0431a9ce3a5ec1081c7f11ccc9ea9419a7f",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/dcf9898a-ce1d-46b0-a425-c17fecd019fe/0023-target-entry.png",
-        "sha256": "f0205bdddf3e1ba33f9f8e9fde16ee890615a1ddd0170f31a42de64566a7af52",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "e513ca7318ed4ac9cde919bd13bd5b2aa0a18a8fb1587136e84093efa4733aa4",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5552x4496"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5552x4496",
+      "targetDimensions": "1392x684",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки солдат Герасим Васильев Ампилов и солдатская вдова Елена Симеонова Горбачёва [в строке восприемников].",
     "modernInterpretation": "Герасим Васильевич Ампилов назван восприемником.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "NO\nально\nгоди, часть первад, й Р\nЗвáніє, Пма, отчество й фамиліл\nKTò\nвоспріéмникшвz.\nТеас Принтрайловки перестьянит и",
+    "localOcrWithSurnameLexicon": "NO\nсально\nгоди, часть первад, й Р\nЗвАніє, ма, отчество й фамиліл\nKrò\nвоспріємникше.\nТвас Принтрайловки перестьяним и",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Тримихайловки солдат Герасим Василиев Ампилов и солдатская вдова Елена Симеонова Горбачева. с причтом.",
+    "fuzzyQuery": true
   }
 }

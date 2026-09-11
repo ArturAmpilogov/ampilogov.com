@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "%\nв мякіань екадрлю\nСогканнац Яера сю Діамія ввіх -\neaupmin neja Cie wer det\nИвань Авекинна С мингвена\nи/акщинах мина его вадокая ри -\nгарнаа, аба дд неосвранне.",
+    "localOcrWithSurnameLexicon": "%\nв мякіань скадолю\nСанканнац Аера сю Дарія ввіх -\nИвань Аветина С лингвена\nи акцинах мена его вадокая ри -\nгарная, аба до но саванне .",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0114-target-entry.jpg",
         "sha256": "3c163550c756c1168e9a4e0939445c271431ca30b0bb9a039c6f2a8e1ae0b73e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e61d61c-8cbf-426b-86e5-d58af8421452",
+        "scanNumber": 114,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0114-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0114-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "92fa608a5f14c491962240c1393d1bcaa22e35747ad572b4697c99162139a356",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0114-header.png",
+            "sha256": "deefc441f85e36dd2ef12e42bfc2bfff93b94a2d61694b40d60d79af6245af38",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0114-target-entry.png",
+            "sha256": "e766e89acf9847a3b33a693e6266be97e1d36b463a7a7ae82a252f6a2d57133a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5080x3984",
+          "targetDimensions": "1537x944",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Евфросиния Захарьева Ампилогова. ... Отец: Захарій Миронов Ампилогов, крестьянин, село Баклановка.",
+    "fuzzyQuery": true
   }
 }

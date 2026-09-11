@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/102-target-entry.jpg",
         "sha256": "c8e9ac45c0ddeb2697c31f2323bf99802ae3bb972c8c50c8a62ecb751f35f9fd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f99824ad-641e-4852-9282-01d028ecc542",
+        "scanNumber": 102,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0102-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0102-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e478bf4283807b7c50d0ddc12c1bac1aa4b7019e9da18c63a8456edebbb25f9b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0102-header.png",
+            "sha256": "efae0981cf049e645152d82798cdf675135892746b2668510557f0c0b6b55674",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f99824ad-641e-4852-9282-01d028ecc542/0102-target-entry.png",
+            "sha256": "44dead012ac8ef275235d1ab67007d04d4a3565496a05ca60e2f6ba3348f1499",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4511x3792",
+          "targetDimensions": "1200x657",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "реногерганнсівщанинн\nПрокопій Оларова Ловров\n2 Прествятки пазанскою іуї\nСпасского гразі і в ерісточий\nвольстк сала Міинертева.\nА кулипа Яховиєва Серникова",
+    "localOcrWithSurnameLexicon": "реногерганимощатин\nПрокопій Окладова Лавров\n2 Прествятки пазанскою вії\nСпасского гразі і в ерісточий\nвольсти сала Міннерева.\nА кулина Оховиєва Серникова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Димитрий Степанов Ампилогов, оренбургский мещанин. Крёстный отец: Прокопий Флоров Лавров, мещанин, Оренбургская губерния.",
+    "fuzzyQuery": true
   }
 }

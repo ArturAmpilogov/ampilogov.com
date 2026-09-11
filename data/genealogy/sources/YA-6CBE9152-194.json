@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0194-target-entry.jpg",
         "sha256": "dbc3a5aa727b854c87cf5f22750d20b049a35f4427d2880625a99f6960ce4104"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6cbe9152-3991-4afd-bb8b-7b657816a94a",
+        "scanNumber": 194,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0194-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0194-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0f774813e9a70d2acdfd4fc9694d67ec08deed0b077c617901f575f2f91399e6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0194-header.png",
+            "sha256": "f489677dfd5bf172495c1dd664f46ffe6ca2b0a2b26b898d0be62cd60a6fe454",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0194-target-entry.png",
+            "sha256": "db9e3c180439fd085bd9844465c33f8a3924b72d1bf2d7b49ef920fe0f85d477",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6110x4816",
+          "targetDimensions": "1200x1133",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены при чтении сохранённых локальных полного разворота и целевого фрагмента.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "GA.\nР8коприклáдство свидж-\nТєлей зáписи по желанію.",
+    "localOcrWithSurnameLexicon": "GA.\nР8коприклáдство свидж-\nТЕлей записи по желанію.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "в графе кто совершал таинство ошибочно написано Михаил Ампилогов, а следует Василий н Коноплев чему верить Свящ.",
+    "fuzzyQuery": true
   }
 }

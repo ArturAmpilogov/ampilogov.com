@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/73a8e2e7-eb6b-45c9-a10b-f30be785424c/0180-target-entry.jpg",
         "sha256": "a5ee21472e7bd2f40536cc2dcd08033baa1bc632c8c597aabffa688b19367dd0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "73a8e2e7-eb6b-45c9-a10b-f30be785424c",
+        "scanNumber": 180,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/73a8e2e7-eb6b-45c9-a10b-f30be785424c/0180-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/73a8e2e7-eb6b-45c9-a10b-f30be785424c/0180-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9d0776759cbb27ee62db820221e7da3159f18ed4cbd31b066ff82ed4a5940b95",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/73a8e2e7-eb6b-45c9-a10b-f30be785424c/0180-header.png",
+            "sha256": "f704a70a8fe24e3bbf5b8e48d202b6293cdb638116dd24efd3a3c490182e8ff4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/73a8e2e7-eb6b-45c9-a10b-f30be785424c/0180-target-entry.png",
+            "sha256": "9881d45846cf76641677708c8fb6d3e415b1ced0d05519a5f8700e6f539c77a0",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5727x4521",
+          "targetDimensions": "1522x561",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ригирьеть уднивь и его жена варвара Дк\nдреева, православные.\nChяц, Obяn Tulue\nДлакон сергій Авановір\nРимолицит Павеиг Руссоя -5\nБела баматьевки крествяний. Деююр?",
+    "localOcrWithSurnameLexicon": "ригорыть уднивь и его жена варвара Дл\nдреева, православные .\nДіакон сергій Авановір\nБела баматьевки крестьяний. Деююр?",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Варвара Максимова Ампилогова. ... Отец: Максим Антонов Ампилогов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

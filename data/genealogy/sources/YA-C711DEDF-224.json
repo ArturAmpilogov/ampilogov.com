@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0224-target-entry.jpg",
         "sha256": "5fe13b0ce0a00da49b6e28c0856cb9cc080dcacb834ac80c62b10e978b793d4c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
+        "scanNumber": 224,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0224-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0224-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d6968791d157e17473a172b99d0478a8518ef25461f0df0f26736178ceb2a69f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0224-header.png",
+            "sha256": "99e52b25425255f73b43a1f0899460bec43d2b51d6ef07b6008e2ffd237bf4ce",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0224-target-entry.png",
+            "sha256": "bda8963cdde5eda2511bf9c15f4f1953a872bbe64f0cb948445a753dd44537f6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5307x4111",
+          "targetDimensions": "1440x642",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ига Уосифова Гоотевасьнь, Михаиль\nСвяяиденнни Джинтерній рОдниисні\nсапонь орит всровь\nСела Кароалки прествяниа ИЛвана Алек\nневаАлитслоговодотв 6лена.\nСвященнам Дамитрій\nрорінитанів\nДіаконь Фргій Боброва",
+    "localOcrWithSurnameLexicon": "Ига Уосифова Гостевасынь, Михаиль\nСвоя денним Джинтій рОднимсті\nсапонь оди воровь\nСела Каралки крестьяниа Ивана Алек\nнева Алиногово дотв 6 лена.\nСвященнам Димитрій\nрерінитанів\nДіаконь Фргій Боброва",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Алексеев Ампилогов, крестьянин, село Кармалки. ... Умерший: Елена Иванова Ампилогова, 12.",
+    "fuzzyQuery": true
   }
 }

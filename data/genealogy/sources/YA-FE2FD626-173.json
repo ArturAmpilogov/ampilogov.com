@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0173-target-entry.jpg",
         "sha256": "adb612c43420be69f5308f9efe21f1c20be8e1e759b29525ea9ecc8b66714b6d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+        "scanNumber": 173,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0173-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0173-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "5ce87a9006d5bca55fd35571f982604a4041e755f25ba370d821f92bdf57f999",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0173-header.png",
+            "sha256": "a6b28070c505f26398e22d377184f9ee7cfbb8afc360b15d5d239f0bffc2ff40",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0173-target-entry.png",
+            "sha256": "6a2ddf8ee686247f4830109e08f88faeaaa0cd78d2a52da199c0e414048f0323",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5452x4274",
+          "targetDimensions": "2731x2139",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Кожиденний стьяненя Грасельь Канотан Ранибеетиним\nстъянины Грасииеь Констчак- науписинному\nтиновч Капигичинов и сол впраті Свлі: М Рмтивна\nМичененса по нивороене сптинуайт двтиь\n(гикинскаго хагртара, 6гру.\nлучского грьзох, Самарсвой\nггберни соядать Влади-\nМглаиль\nвчидь евнічонов. Ревжовьмі\nКрестьянинь Ачтрой Яновнв.\nПо Ісенлать Кела Старо\nбогдановки Крестьяне.\nФдлипп? Васильев. Золо-\nжзангов. и Василій Ачоснов.\nШнатові' по невзьепіі\nтого ясе села коествяне!\nАмпилогові\nИван Пстровь Г/чжинь\n2 С содорг. Данвилов сРо\nповь.\nПо Песнихк: деревни Нова-",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов. По женихе Села Старой Богдановки крестьяне: Филипп Васильев Голощапов и Василий Аксенов Шкатов; по невесте того же села крестьяне...",
+    "fuzzyQuery": true
   }
 }

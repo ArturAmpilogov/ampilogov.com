@@ -40,38 +40,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "745461e8d402834fd23932740baf36e3aaa1197c6a4ee3fd7838361558039131",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-header.png",
         "sha256": "35e4aee2ffd0dadb50503ba57616f9428465ce5cc3c42b1dc423f4660f469cfd",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-target-entry.png",
-        "sha256": "30c5f429f66093f8a45a2f637531aa353994fe9c19244f79b20c18f804dae62e",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "6a753c153d6a95cdb3a4811bba7491817bce05745c3463f5892dc7cef0b8bf35",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "10953x8879"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "10953x8879",
+      "targetDimensions": "2572x1852",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "По женихе: села Гамалеевки крестьяне Максим Антонов Ампилов и Николай Михайлов Михайлов; по невесте — Харитон Петров Самков и Степан Яковлев Хомяков.",
     "modernInterpretation": "Максим Антонович Ампилов назван поручителем; карточки 640 и 641 ведут к одному скану.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НПОГРАФІЙ\nСИПОАДЛЬНО!\nРАД, С БРАКОСОЧЕТАВШИХ\nПс\nКго выіли порбчйтели.\n3",
+    "localOcrWithSurnameLexicon": "ПОГРАФІЙ\nРАД, С БРАКОСОЧЕТАВШИХ\nПс\nВго вили порочители.\n3",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -79,6 +87,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Максим Антонов Ампилов, крестьянин, село Гамалеевка. Поручитель: Степан Яковлев Хомяков.",
+    "fuzzyQuery": true
   }
 }

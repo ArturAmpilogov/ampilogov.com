@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/252-target-entry.jpg",
         "sha256": "2e723feef44dc91c7f2ddb22ff7d26ceb97e0b2604673113ba49d59b71efa73a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d80785ec-5ad4-49c6-8de9-6ff073942fdc",
+        "scanNumber": 252,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "cf5134ec1f78550e5847c2b17e1ece8eab1a430adb492ea602ab758e624ab983",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-header.png",
+            "sha256": "d54feba3463e6b330307bcfb68028b33c0ca6bc96ec0c57f42693ae2ee061a5f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-target-entry.png",
+            "sha256": "e13764e2e31ab29f4fe0d46ae29e24acd99ca7d709217710c8ffd0156388103b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5306x4150",
+          "targetDimensions": "1417x831",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "нова хоаправосаныя.\nCвamnnuns Voarnet Ginumpicth\nоъединенный го\nlena Seoprielкa Криоsнин Пemра\nбанновь Писаревь и Вининния окока\nСвящитнюч Хoaниz Длитріва",
+    "localOcrWithSurnameLexicon": "нова направосаных.\nChannun Voarne Dinumpica\nбъединенный го\nlena Scopriera Криони Петра\nДанновь Писаревь и Ванинния окка\nСвящитнюк Хони Длитріва",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Гавриил Ворфоломеев Ампилогов. ... Отец: Ворфоломей Феодоров Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

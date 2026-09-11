@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/995932b6-f11b-4015-ad5d-5c842468512c/0110-target-entry.jpg",
         "sha256": "b3a6beddf0910f381dbc5a7c51c4148a1a24d35a4291cdec41bfcba924675f1f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "995932b6-f11b-4015-ad5d-5c842468512c",
+        "scanNumber": 110,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/995932b6-f11b-4015-ad5d-5c842468512c/0110-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/995932b6-f11b-4015-ad5d-5c842468512c/0110-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9ac8af7f0dc636fd78419f9932a412c3bd9392739fd37911cbe9df4d8d9f2b71",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/995932b6-f11b-4015-ad5d-5c842468512c/0110-header.png",
+            "sha256": "b473c1a9617b42b8b5e410e3f7af420ef21755905f86e656da833307c94e5a2b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/995932b6-f11b-4015-ad5d-5c842468512c/0110-target-entry.png",
+            "sha256": "872cff6b88c6c996a234a2d47259fc3224125f7853bd1cfbcc060486053e1ed2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5872x4672",
+          "targetDimensions": "3010x1043",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЛИтАВской\nТИПОГРа\nВСКОЙ\nЯИО ДАЛНО ОС\nТРИЧеСкОЙ КНИГИ нА /905\nГОДИ, ЧАСТЬ ПЕРВЛА, Й РОДИ\nЗвініє, ймА, отчЕство й фалиліА\nКто сов\nЗганіє, ймл, отчестко й фамиліл родичєлєй, й какоги\nКсл.\nвоспріємникwвъ.\nв'вроиспов'вданід.\nренбурсскиго убози, жик\nч.\nОренбургскао Войска Кидь\nровекий\nволости исели",
+    "localOcrWithSurnameLexicon": "ТИПОГРа\nВСКОЙ\nТРИЧеСкОЙ КНИГИ нА /905\nГОДИ, ЧАСТЬ ПЕРЕЛА, Й РОДИ\nЗвАніє, ймА, отчЕство й фалиліА\nКто сов\nЗваніє, ймд, отчество й фамиліл родителєй, й какоги\nКсл.\nвоспріємникше%.\nвЕроиспов вданія.\nренбурсского убози, жик\nч.\nОренбургскао Войска Кидан,\nровекий\nволости исели",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Оренбургский мещанин Александр Гордеев Ампилогов и Нижнегородского уезда, Безводенской вол., и села Александра Петрова Чибелева.",
+    "fuzzyQuery": true
   }
 }

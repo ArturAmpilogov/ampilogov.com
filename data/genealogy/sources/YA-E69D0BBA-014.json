@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry.jpg",
         "sha256": "d295fc2d58bb07ad9db02ab5208f704342b95737f139a7769b538760ff6d6d08"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
+        "scanNumber": 14,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "4d8a0102aa4b33c4871136bcf60d1909eca86a56edce41212b556006cd34b670",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-header.png",
+            "sha256": "7a12f9e134b4005799112f8ae75486b549f42e617a6bfeef32290dd3154b4efe",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry.png",
+            "sha256": "fa5845f401d712093219e559899a624634ed57e552bab3689cd3d145a40271b6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6073x4734",
+          "targetDimensions": "1428x666",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "пии усадинчивесий санна\nНаанова Достонкіка,\nный аох\nарственный",
+    "localOcrWithSurnameLexicon": "пии усадинчивений санна\nНапова Достонкона,\nный арх\nарственный",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Мария Евфимова Ампилогова. ... Крёстный отец: Евфим Алексеев Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

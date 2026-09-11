@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/46fee7dc-da5d-43b6-9901-9985622e463b/0029-target-entry.jpg",
         "sha256": "3bb6c3de010285f80a86269aa4910f749d80f22d048729c64497a6e120e29437"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "46fee7dc-da5d-43b6-9901-9985622e463b",
+        "scanNumber": 29,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/46fee7dc-da5d-43b6-9901-9985622e463b/0029-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/46fee7dc-da5d-43b6-9901-9985622e463b/0029-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "218d211cb07510557b3bd839fb84233af3a0e42d1d087d74e13f1e3499e80b4f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/46fee7dc-da5d-43b6-9901-9985622e463b/0029-header.png",
+            "sha256": "28de98257513c49e9c74a33151674cb69a66a1d539d6857e5cf4a637e322856a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/46fee7dc-da5d-43b6-9901-9985622e463b/0029-target-entry.png",
+            "sha256": "ac88e76099a429319aa9c24703f36bc4afac3ba0725ee0f8ce29a7d59812f91b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5478x3868",
+          "targetDimensions": "1297x979",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На проверенном сохранённом локальном фрагменте формы Ампилогов / Анпилогов / Анфилогов не обнаружены; видимые записи относятся к другим семьям.",
     "modernInterpretation": "Индексное совпадение не подтверждено. Посторонние участники не получают профили, карту, маршруты или миграционные записи.",
-    "indexNote": "Вывод основан на ручном чтении локального скана."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Oniguaa a haaureteupantuen\nng.\nКалинна? - йо реатерь- Кресрия.\nondceRo G aukanuannu Cfruhunis\n/иклфинна Книла и гридев\nНешикий шкаки Vашів\nloed Jасточкиer.\nскивп\nди: (6ЛyРиmий\nЯ лк",
+    "localOcrWithSurnameLexicon": "ng .\nandRo banka manu future\nНешки? шкаки Наші!\nloed Ласточки .-\nскивп\nЯ лк",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе - села Балвановки крестьяне: Максим Миронов Носков и Роман Ананиев Ампилогов...",
+    "fuzzyQuery": true
   }
 }

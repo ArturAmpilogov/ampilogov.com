@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0123-target-entry.jpg",
         "sha256": "e210e73d185b504b12a453576e1f16a21431997e0c113de947e7ddd9ca41870c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "73f7fa49-8612-486a-b9c3-4043e01829ec",
+        "scanNumber": 123,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0123-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0123-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b2b79041a08584c9d14be6160fc52fdc62d2c2e11f0db1df32c72e55920e801e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0123-header.png",
+            "sha256": "48779f504a2ebb4fe5b2dd97fa2aaaed4ddaff58760ad15860f40ff6206c0fbc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/73f7fa49-8612-486a-b9c3-4043e01829ec/0123-target-entry.png",
+            "sha256": "cbcde89d93dee1e7b26edd0c4cf7d218e8beef81d84a4f4df8234cf37ed0ea17",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2476x1932",
+          "targetDimensions": "1200x765",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "цзова.\nМогожесела крествянино Аоопокии\nДеодоров Артамюновьи крествян-\nскавдтьвиа бёкла Васильева\nАкулови.\n3-2(2\n1a2\nМоюже села запосении реядовой Ни\nкита Мароновь Стуколов и креть-\n-\nянокая дВвици Агрипина Лкимо\nва вашкатова.\nВеложе селазапосный рсбодовек ори.\nuитs Копасы и крестоянкая жа\nна Екатерина Гоанноба Мамоти-",
+    "localOcrWithSurnameLexicon": "зова.\nМогоже села крест'янино Аоопоки\nДеодоров Артамоновь и крестьян -\nскавдвиа бёкла Васильева\nАкулови.\n352(2\n1а2\nМоюже села запоении рядовой Ни\nкита Мироново Стуколов и креть-\n-\nянокая дВвици Агрипина Акимо\nва в ашкатова.\nВложе селазапасный реборовек ори.\nсить Конасы и крестоянкая жа\nна Екатерина Гоанноба Малоти -",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села запасный рядовой Димитрий Петров Ампилогов и крестьянская девица Надежда Алексеева Макалёва, проживающая в селе Преображенке, Уфимской губернии.",
+    "fuzzyQuery": true
   }
 }

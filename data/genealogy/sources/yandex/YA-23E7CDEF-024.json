@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "e9764f05f38270875c58fb4b3cfce9cd15b86fcfec672feae102c993d9247afd",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-header.png",
         "sha256": "19ea8385db0801d162fe1d980cf834a193947428b3887575fc3d490d13fddd07",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-target-entry.png",
-        "sha256": "529297c035919f9fa1c1fe0ccd69800e7a17cd3779e72b08aaec6a276b03174b",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "dd7b30c425efc2c9393e16a1e068ff9c062e6537e868033a779d5cc19688c996",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4484x2948"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4484x2948",
+      "targetDimensions": "1902x778",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин села Бахтемирского Ефим Ипатов Ампилов и законная его жена Мария Степанова; оба православные.",
     "modernInterpretation": "Ефим Ипатьевич Ампилов записан отцом ребёнка; имя ребёнка находится вне целевого фрагмента.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Маним- Яаресни о а\nКриивяне сма ворути\nя\nКрествання сма Бирт\nарурикаю ДІваньПа.. рок\nирекаю Гавритив Ліордир\nннников „Лелагія\nАну рлава Мавснтова\ndо Sена Hamaniя. Aфа\nЕма,очствекало зо гда, в оихун-\nля\nчкайвоканни сееа Сонрмень\nтовенкрествянинг і\nи семе Сokруповки кред\nная Грена яо Наrпаліr\nянка детвища Анастам)",
+    "localOcrWithSurnameLexicon": "Кривяне сма ворути\nя\nКрествання сма Барте\nскрипалю ДІвань Па.. рок\nкрекао Гавритив Лорди\nниников \" Пелагія\nАну рлава Мавеннова\nего ена Hamani. Aoa\nля\nчкай вокатни ссеа Сокрумень\n-овен крествянинг і\nи семе Сокруповки кред\nная Грена яо Напаліч\nянка детвища Анастаси",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьянин села Бахтемирского Ефим Ипатов Ампилов и законная его жена Мария Степанова оба православные Священник Михаил Юштин Диакон Харлампий Баселанов.",
+    "fuzzyQuery": true
   }
 }

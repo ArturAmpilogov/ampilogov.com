@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0191-target-entry.jpg",
         "sha256": "a422052d2936a282fd704d71e8fb926046df4f524426be99bf1f1b6dcac7c685"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 191,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0191-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0191-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "10332925cf650fe2f9e89a93b35d0d60fcb810e3153433223c78e9e72c7fbdee",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0191-header.png",
+            "sha256": "4a5544c59c6a467be4c8dd3d672eeb4f8f416da56c86e0d83d81a8af885857df",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0191-target-entry.png",
+            "sha256": "9a6d6707b75a8e9df59d3168ce92482f5f1af28ad087e69541806e55a207caf3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5790x4741",
+          "targetDimensions": "1200x3957",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПОГРАФІ\nЯИПОА ЛЛЬО\n, Ш РОДИВШИХСЛ.\nКто совершáль тлинстко\nP8коп(\nкрЕцІєніА.\nТЕЛЕЙ\nииь\nвоящетнить Мн-\nаятя\nханль о\nмналоговг\nа.\nПохлалтуикамь\nБТмпльчий Гармі-\n92мь\nсть-\nОХИВ\nмич\nнивалі) „ Діака-\nвсков",
+    "localOcrWithSurnameLexicon": "ТИПОГРАФІ\n, Ш РОДИВШИХСА.\nКто совершаль тАинство\nP8коп(\nкрЕцІєніА.\nТЕЛЕЙ\nаята\nханль о\nмнилогова\nин-\nа.\nПохлалтикамь\nТильний Гармі-\n92мь\nсть -\nОХИВ\nмич-\nнивалі? \" Діака-\nвсков",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Пермновым и Диаконом Вонифатием Шкатовым. Родившийся: Александра Иакова Кретова.",
+    "fuzzyQuery": true
   }
 }

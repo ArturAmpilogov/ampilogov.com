@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0291-target-entry.jpg",
         "sha256": "81e6106d4e13480214318ceeda1ac9f6418c7f1e0cb836ab8f7f38f99fffa4c6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 291,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0291-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0291-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c26fac210163bd9ed546ff5014ca8609857b37e52bda8c8a615f8263b3caddc1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0291-header.png",
+            "sha256": "37eb1b6866482fcc6ae8203f39a9910b833b2081192254d7a05b28138295c5f4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0291-target-entry.png",
+            "sha256": "c03994c78fe05a6ac6611ca6397708ad30604e1b059770074095ddec6847a9eb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5778x4628",
+          "targetDimensions": "1571x915",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "з запоннося жено лехаса\nОгелиптова обы провославные\nОвсщетня Нрасит Менкуй\nДіаконч Восилій Пковлич\nСела устеним Крестьянинч\nҐоаннч Легнатове Латеринч\nи залонныя жена его /бсерварся\nТимофсева оба праваславния\nОвситенкк Сраснв (Мимі)",
+    "localOcrWithSurnameLexicon": "не запоннося жено летоса\nОселиптова обы православные\nОванення Нрасит Менкуй\nДіоконь Восилій Пковлич\nСела успении Крестьянинч\nІоаннч Легнатове Латеринч\nи залонная жена его /перворся\nТимофева оба православная\nОв ситенки Сасив (Миші)",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Анастасия Павлова Ампилогова. ... Отец: Павел Михайлов Ампилогов, крестьянин, деревня Борисовка.",
+    "fuzzyQuery": true
   }
 }

@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "fab5f48d51fce56772a3b2183f094732658a5ca3fe251e0d36b7e4114b3e9ec1",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-header.png",
         "sha256": "33e47d090b57e30fd53a8481030bd859290c9708466448e20ef0c78ca9bf42b7",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-target-entry.png",
-        "sha256": "6fcc4911148393ecf5307d6f633cad191436e0df2c4b76957e12dbff164a20e5",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "bb05a3237dff5ee4ce3138ef3b972353a5e65e647639c88557c160e40365fa94",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4724x3848"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4724x3848",
+      "targetDimensions": "1334x744",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Гамалеевки крестьянина Максима Антонова Ампилова сын Иоанн [в записи об умерших].",
     "modernInterpretation": "У Максима Антоновича Ампилова умер сын Иван.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Їнинв синсеткь гриерие муусано пама\nВньввно:\nикь\nкладили\nріскань с саннь шьнові\nматашантльки кристьянина Наканора\nНикифорова Мрубина дочь буманій\nлио втлнткиі\nСвященника\nтаканьсаннь слькові",
+    "localOcrWithSurnameLexicon": "(кинь синень гриерие мусано пама\nикь\nгладили\nрікань с саннь льнові\nма амантльки крестьянина Никанора\nМикифорова трубина дочь буманій\nли втини:\nСвященника\nтакань саннь ількові",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Гамалеевки крестьянина Максима Антонова Ампилова сын Иоанн Священник Владимир Бельский Диакон Иоанн Сивков Псаломщик Илия Соболев.",
+    "fuzzyQuery": true
   }
 }

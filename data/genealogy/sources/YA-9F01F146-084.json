@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/084-target-entry.jpg",
         "sha256": "cc055c455801ad0efdee259e03de1228ce034e3338857927a60d3349e4eb5773"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9f01f146-77bc-48b4-a581-9ee41cd643d5",
+        "scanNumber": 84,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0084-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0084-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1fd5bf7d248c1acaea1c67d64b2df41c00f99e0c955adf8bd7d9fa92833e8dbb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0084-header.png",
+            "sha256": "9f85b21977418b7a00a3b2ac484273c13e3bbac3edf4fcc6f4513a1745dc1589",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0084-target-entry.png",
+            "sha256": "057d01482f94d53cb6b5e0b530138741bfce444c45461e3fd3a640e02b3aaa32",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4943x3908",
+          "targetDimensions": "1200x733",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЗбАніє, ймА, бпчество й фалиліл\nвоспріємникшеZ.\nДла Лараднява крествошниі\nПавеля Длепсалбро вч. Святпив\nи Крестіяшьная дивица села\nПаразпьв а Марія (ригорьсь- И можика",
+    "localOcrWithSurnameLexicon": "ЗбАніє, ймА, опчество й фалиліл\nвоспріємникше%.\nСла Параднева крествошний\nПавеля Длепсалоро вч. Святпив\nи Крестіяшеная дивица села\nПаразльва Марія (ригорьсь: И можна",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того - же хутора крестьянин Феодор Феодоров Ампилогов и крестьянская жена хут. Камая Татьяна Егорова Ярыгина.",
+    "fuzzyQuery": true
   }
 }

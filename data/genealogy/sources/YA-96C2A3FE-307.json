@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0307-target-entry.jpg",
         "sha256": "011d96cc17435822dc7f0d7ef83ed55a050c6ddb0e3439b7953fc8b2fcee5460"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
+        "scanNumber": 307,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0307-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0307-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "0affa8e069a90d4a39459eea73d53e6d2713142f9c8bed9a32f49595ce92a292",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0307-header.png",
+            "sha256": "a5fae87ea8464e9c988dcdb9ad1237712da458b0d92684594f3fe66394727e3a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0307-target-entry.png",
+            "sha256": "e7ac899440e887fad57da9908b630cf2847aaefbaf602ca936e08a0f732ceede",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5257x4213",
+          "targetDimensions": "3962x1760",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Иоященнин\nкраиль\nДерени Аосо. Аикельской Крестьяника\nАвстра Анбіива Алелина син Ал\nсанбря\n1\"2 ш-\nславіти.\nBall\nФвітриний Михани випилячав,\nАмпилоговь с жалом-\nОбляй кови-\nСколомизавь Мимоочи\nсела Старой - Вогорановки крестьянина\nФишична Дспростьева ММарчурсова Д)/сеа\nоть Сторчесной\nСТимовиль\n65\nОвітрестой\nімагія Никочасьа\nгушкомь\nболіізни.\nДватренний Махаим АМти логав\nПсиломиень Симооми Убгийтв-\nни\nста Стагой - Догорановки престьянская\nПрийновим\nМарід Васильска Мопово\n68\nДремости.\nАикажин\nСатулий Nhuponn Pu.cat)\nАсалемирень С имоое\n1B\nКлад-\nДерськи Миршйловки крестеяник\nотведснномь\nВонифатий Астров. Бурый\nom yopyung\nPsimmuroe\n58",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов. 15. Деревни Михайловки крестьянин Вонифатий Петров Бурый.",
+    "fuzzyQuery": true
   }
 }

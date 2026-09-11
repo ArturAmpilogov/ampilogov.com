@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0099-target-entry.jpg",
         "sha256": "03ef11d332d70ea3bc5ceecb06f300faf19aaece68f9fc95287f9f2d3e210060"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6e99d0f9-4444-4053-919d-0a113c6de07d",
+        "scanNumber": 99,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0099-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0099-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "a7bb695b3bf841b80b31577cab728432dd5d7b9dcbddc1bd0a16c640595f670d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0099-header.png",
+            "sha256": "eef9b26baf99b0828df9e345f6d72080a31366bc78003f45a6afb20ef348f2f0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0099-target-entry.png",
+            "sha256": "c89866e93c1da53785a5138e1ea8588a7bbf75bff2e31728b9ce9cbace360211",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5526x4326",
+          "targetDimensions": "1528x1465",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены. В метрической книге 1903 года повторяющаяся подпись причта читается как «Діаконъ Алексей Антиповъ», а не фамилия исследуемого ряда.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence, включая увеличенное чтение подписи диакона и целевой записи."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МЕТРИЧЕСКОН КИНГИ НА 113\nЗБАніє, ймА, сотчЕстко й фамнліл родителєй, й какóги\nинусА.\nкАронспокФданіл.\nай. СелаСлоновыи крестияних Влабимира\nНавловч Пиваварова и забанняя жена ео\nИатрена Евуяблмова ; оба православа-\nСьященникг Сергй Илиоминад:\nСвященникь Сеогий\nДіапийв Аамонсів Ампилокові\nМеалалцийч Алатілії Илломинарекій.\nДеревни Михайловби хрестьяниич Л2он-",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОН КИНГИ НА 1103\nЗвАніє, ймА, сотЕстко й фаміл родителей, й какоги\nинусА.\nкАронспок даніл.\nай. СелаСлоновии крестиятих Власимира\nПавлове Пиваварова и забанняя жена ио\nНатрена Свобимова оба православн-\nСвященника Серий Илиоминад:\nСвященникь Сергий\nДістатв Аамонсів Ампилокові\nМеалалич Алатілії Илломинарекій.\n- .\nДеревни Михайловии хрестьянины Леон-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Илмолитор Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюмский. Той же деревни крестьянин Егор Прокопьев Белик и крестьянка Мария...",
+    "fuzzyQuery": true
   }
 }

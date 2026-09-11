@@ -51,12 +51,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5652x4566",
       "targetDimensions": "5292x3736"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+        "scanNumber": 214,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0214-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0214-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "a14160918bde153fcacf0dce2e6d6b35bb3abee4570d268261735fd0eda6e3e1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0214-header.png",
+            "sha256": "cc51188c74d55d6457c99c73af01b4bc22ed63ba696f3616c9ce2ff7b8ee1b12",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0214-target-entry.png",
+            "sha256": "ae45c9939eea779fb7e05445ca64deccd95c0a9c692458feeb63522dae5bbba4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4566",
+          "targetDimensions": "1448x632",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -65,8 +103,19 @@
     "status": "primary-scan-transcription",
     "literal": "Наталія. Села Кармалки крестьянинъ Тимоѳей Ивановъ Ампилоговъ и законная жена его Дарія Ѳеофанова.",
     "modernInterpretation": "В 1911 году у крестьянина села Кармалки Тимофея Ивановича Ампилогова и его жены Дарьи Феофановны родилась дочь Наталья.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОВСКОЙ\nГИПОГРа\nSNПOA ANHON\nгриЧеской книги на /9N'4",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nSNIDA AND\nгриЧеской книги на /9N'4",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "С. Кармалки крестьянин Тимофей Иванов Ампилогов и законная жена его Дария Феофанова; оба православные. Священник Димитрий Руднянский.",
+    "fuzzyQuery": true
+  }
 }

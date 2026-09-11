@@ -21,24 +21,74 @@
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-full-view.jpg",
-    "sha256": "2eb8ffc81dcacc79c3a7ab6488dff5acf92d904e8462f105babd77c7b2dee405",
+    "catalogId": "f1b8012f-45fa-4f01-a20e-a5a49b7fa149",
+    "scanNumber": 182,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "fabce44b11a13fbdee657c84e46c8e6918fb1fb204e9ea55fa5b962fe95c6452",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-target-entry.jpg",
-        "sha256": "08636ab0d65863faec8e2a6b689ac671e908d45d3fbfc34daeb1a292e46d6149"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-header.png",
+        "sha256": "5d085cafcb8045610a37d81a043f4fc5c1d7d9f55b424d8e992e8ad45d9abb23",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-target-entry.png",
+        "sha256": "599792932ae16c59d4c1de52e3ab09439c5e1d5afbbae03118531e3844cf94bd",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5236x4109",
+      "targetDimensions": "1382x855",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-full-view.jpg",
+        "sha256": "2eb8ffc81dcacc79c3a7ab6488dff5acf92d904e8462f105babd77c7b2dee405",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/f1b8012f-45fa-4f01-a20e-a5a49b7fa149/0182-target-entry.jpg",
+            "sha256": "08636ab0d65863faec8e2a6b689ac671e908d45d3fbfc34daeb1a292e46d6149"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-with-explicit-reading-uncertainty",
+    "literal": "Комаровв.\nетвеннаи аохив:\nТогоже села Крестьянинг\nИвань Лаврентвевь Кирицить\nкресньвинская дієвица\nвина Оедоровалковлева.\nпамниико",
+    "modernInterpretation": "Комаровв. етвеннаи аохив: Тогоже села Крестьянинг Ивань Лаврентвевь Кирицить кресньвинская диєвица вина Оедоровалковлева. памниико",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
+    "localOcr": "Комаровв.\nетвеннаи аохив:\nТогоже села Крестьянинг\nИвань Лаврентвевь Кирицить\nкресньвинская дієвица\nвина Оедоровалковлева.\nпамниико",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
   }
 }

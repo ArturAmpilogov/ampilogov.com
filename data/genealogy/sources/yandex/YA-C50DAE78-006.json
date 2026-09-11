@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c50dae78-727f-40f2-ac43-d1ea2d0a0d8e/0006-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c50dae78-727f-40f2-ac43-d1ea2d0a0d8e/0006-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "f8dd8977ce2cc5817fbc2f238bc326f377e53066f7c032047f9f5f7fdb84e514",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c50dae78-727f-40f2-ac43-d1ea2d0a0d8e/0006-header.png",
         "sha256": "37286203aa5dac0335cc4e219746d57caf2193aeeb9e06659b428c9b8c5df6ed",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c50dae78-727f-40f2-ac43-d1ea2d0a0d8e/0006-target-entry.png",
-        "sha256": "61a47b82ceba65047ef27a470facc9d9beebf4f45dc43f18806e3bc4d03bbbef",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "707a910810d9b5fe606a68d7231ad7097fe078b541aa5e19b11ec925bd3f1364",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3984x3088"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3984x3088",
+      "targetDimensions": "2847x921",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин села Бахтемирского Александр Ипатов Ампилов, православного вероисповедания, первым браком, 25 лет. Невеста Зиновия Михайлова, 17 лет.",
     "modernInterpretation": "Александр Ипатьевич Ампилов вступил в первый брак; невеста другой фамилии сохранена только в расшифровке.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "шиур два чемавинка\nо ва Гланп бракови\nбала\nадинг,• брачаиицу\nСвЯжелнив\nAuocau\nАчитинN.\niahares Rapranenfint\nный а 9і\nсршид.\nаСтРаХаНС\nВИ ОБлаС\nполловику 1901г. евлеримеельстват\nиаи абраносочетанииы) замераука\nмиимі, Свяжетик. Г). Икоснувемя",
+    "localOcrWithSurnameLexicon": "шир два чемавинка\nо ва Глана бракови\nбала\nадинг, • брачаницу\nАчитин .\nСвЯжелнив\nный & 9і\nаСтРаХаНС\nполовину 1901 г. евларимельства\nмак обракосочетанимы) замераука\nмині, Священик. Г). Шкошукм",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьянин села Бахтемирского Александр Ипатов Ампилов православного вероисповедания первым браком Священник Миха.",
+    "fuzzyQuery": true
   }
 }

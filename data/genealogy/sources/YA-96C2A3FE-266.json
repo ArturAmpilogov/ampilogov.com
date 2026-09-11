@@ -43,12 +43,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5251x4207",
       "targetDimensions": "4891x3377"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
+        "scanNumber": 266,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0266-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0266-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "87c8c16794413dbc34fb427ce250f2351a4b00d72864cb2f0817c6025f79a6cf",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0266-header.png",
+            "sha256": "d895e2506e9effade9283748ec92ee5a5de0527abc20a76c3b8be151695771cc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0266-target-entry.png",
+            "sha256": "e48f22b52282807886ec4d16538991c5af04cf1aeebb33d13e5d1cbdbd469163",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5251x4207",
+          "targetDimensions": "1200x3470",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -57,8 +95,19 @@
     "status": "primary-scan-transcription",
     "literal": "[В записях разворота:] Священникъ Михаилъ Ампилоговъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ.",
     "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи священника Михаила Афиногеновича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": ", Ш РОДИВШИХЕЛ\nКIто соБЕрШÁлу тÁннство\nР8коп\nKрєцéнiA.\nТЕЛЕЙ\nинь\nМа-\nСвященникь\nя\nАлипи-\nнь\nлстинь\nвг\noih\nс.\nлоівь сь псалом-\nмуп щиномь Мимо-\nний\nбог\nнуа\nа очль „Гормі-",
+    "localOcrWithSurnameLexicon": ", Ш РОДИВШИЕЛ\nР&коп\nТЕЛЕЙ\nинь\nМа-\nв и\nСвященникь\nя\nАлипи-\nнь\nвг\nс.\nлоіть сь палом-\nмуп цином Мимо-\nний\nбог\nта очень Гормі-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Иван Егоров Чекаников и крестьянская девица Вера Семенова Подтынных. хаил Ампилогов с псаломщиком Тимофеем Горяйновым.",
+    "fuzzyQuery": true
+  }
 }

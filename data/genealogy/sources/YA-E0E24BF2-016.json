@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0016-target-entry.jpg",
         "sha256": "6ca0d9d424030c4f601cc591d2813e5076e4c9696cee377281dfabf147f11a91"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e0e24bf2-4e7d-427a-8ce7-b31b9aed802e",
+        "scanNumber": 16,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0016-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0016-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c811f27c29cb334672f3d4c8fb041668376fcaa2b5d5706e257bc1f7a5d2c9eb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0016-header.png",
+            "sha256": "5be702ff06f80a9ee9541266101fc2f5a0181c6f70b89530caf6d2f8f00627d7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e0e24bf2-4e7d-427a-8ce7-b31b9aed802e/0016-target-entry.png",
+            "sha256": "2561a53046d1430daf6ede5b445d71300ed0fff7178cf87eba10872075ddfa48",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5401x4295",
+          "targetDimensions": "1366x729",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОХИваМ\nВела бималььевби пресрьянинко\nЗавріиль вприбаовь Павловчи\nКрестьянькая дговица Телагія\nвелиснова Логиновскаяо",
+    "localOcrWithSurnameLexicon": "ОХИваМ\nВела бимальевои пресьянинко\nЗавріиль вправаовь Павловчи\nКрестьянская довица Телигія\nвелиснова Логиновская о",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Гамалеевки крестьянин Семен Миронов Ампилогов и крестьянская жена Ирина Димитриева Мальгина. Диакон Сергий Иванов.",
+    "fuzzyQuery": true
   }
 }

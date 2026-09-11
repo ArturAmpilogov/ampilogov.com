@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/071-target-entry.jpg",
         "sha256": "de68b1702c4a6d5a25170485eb6624af9f888c8eb3d6ba28c1bff3869957f891"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9f01f146-77bc-48b4-a581-9ee41cd643d5",
+        "scanNumber": 71,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "fd1d60be48dcec9dcf85b137d0bd79cf11e08ec4fcbd8af9f0edefbc93aed746",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-header.png",
+            "sha256": "12cd6cb97db50366a93b426151fd31d8580e010a1d6521d1fd63c636607a77af",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-target-entry.png",
+            "sha256": "143f764a95c347e989dd04fb63edf680a3042326e2659412440b3cecc355b170",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5072x3964",
+          "targetDimensions": "1303x610",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГНЛОГРАS\nистрической книги на 1913г\nЗвáніє, йма, опчество й флиліа родитлєй, й какóги\nIнусА.",
+    "localOcrWithSurnameLexicon": "истрической книги на 1913г\nЗваніє, йма, отчество й файлід родитлей, й какги",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Василий Тимофеев Ампилогов. ... Отец: Тимофей Захаров Ампилогов, крестьянин, хутор Камай.",
+    "fuzzyQuery": true
   }
 }

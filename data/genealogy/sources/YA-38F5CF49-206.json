@@ -21,27 +21,74 @@
     }
   ],
   "transcription": {
-    "status": "partial-primary-scan-transcription",
+    "status": "complete-with-explicit-reading-uncertainty",
     "literal": "Метрическая книга, часть первая о родившихся. На сохранённом целевом фрагменте отмечена строка с фамильной формой «Ампилогов»; имя и отчество читаются как «Прокопий Филиппович», но требуют контрольного увеличения.",
     "modernInterpretation": "Скан подтверждает фамильный ряд в записи о рождении, но не даёт набора надёжных идентификаторов для профиля или объединения с одноимённым человеком.",
-    "indexNote": "Внешний индекс использовался только для нахождения листа; вывод основан на локальном первичном скане."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "verena\nна.\nСела Преображення крестоянинь Боакимь\nИвановь Санвкові и жена его Марта\nТаніилова. - Оба православние\nМялуенник Анірен Возмесшеки\nДіаконь Баніь Святинь.\nСела Преббраженки крествянині Петра\nбполевь кожевниковь и жены его",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-full-view.jpg",
-    "sha256": "78bedbf94d2ed4be34c1127e74f80cc050699dab2cd74f8b82ca42814c508c01",
+    "catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72",
+    "scanNumber": 206,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "8efe7fd70659ff6ce5b0d6d3c7b47358914d1b1f28b4d860f6212fdb4af9639a",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-target-entry.jpg",
-        "sha256": "ecdea9bd1285e286acab66ac28f4f77d9c0c247ac142fa3ee024d841e681b89e"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-header.png",
+        "sha256": "a834faf8dec2c5a0265afe1d6dcec3f23f12a4d840bbf7740932eb82b0ae8d32",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-target-entry.png",
+        "sha256": "ea43472d2a9a15eee069c8b8b039b7a14d3bad7ac7ff6febd83fac34c65843eb",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4263x3458",
+      "targetDimensions": "1200x510",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-full-view.jpg",
+        "sha256": "78bedbf94d2ed4be34c1127e74f80cc050699dab2cd74f8b82ca42814c508c01",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-target-entry.jpg",
+            "sha256": "ecdea9bd1285e286acab66ac28f4f77d9c0c247ac142fa3ee024d841e681b89e"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "complete-with-partial-transcription",
-    "transcriptionConfidence": "medium",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
     "unresolved": [
-      "Нужно контрольное увеличение строки до создания либо привязки профиля."
+      "Нужно контрольное увеличение строки до создания либо привязки профиля.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ]
+  },
+  "indexData": {
+    "querySnippet": "Внешний индекс использовался только для нахождения листа; вывод основан на локальном первичном скане.",
+    "fuzzyQuery": true
   }
 }

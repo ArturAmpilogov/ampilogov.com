@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/284-target-entry.jpg",
         "sha256": "7eddf22be163c978eee4958b463593589a754293a3cd92c051a4b63bed033fbb"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
+        "scanNumber": 284,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0284-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0284-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "b5b9c249e4d9c6c0997db9c297c0377244193802adfa7b0ff435e22f317ab1a0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0284-header.png",
+            "sha256": "9c598cf8147cff0b741989bafebe02cd2c866c7dbb56e9934dee33873eafd5d3",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0284-target-entry.png",
+            "sha256": "2639839fb1da9ab3cdf972825732323ecea5162fb5e2d0020cd492cf5025ae37",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5821x4634",
+          "targetDimensions": "1200x1101",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ігравославнаго\nгаповвіннтя.\nПорвнлл бракомь\nсамрині сімкиі ала\nЛеаломицитАнірей\n0.\nвели Карпалти\nКрестьянинг",
+    "localOcrWithSurnameLexicon": "га.\nігравославного\nнаповвіння.\nПорвнил бракомь\nсамрині сімкиі ала\nПаломицитАнрен\n0.\nвели Кармалти\nКрестьянина",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "7. 10. Села Кармалки крестьянин Василий Терентиев Ампилогов; православного исповедания. Первым браком.",
+    "fuzzyQuery": true
   }
 }

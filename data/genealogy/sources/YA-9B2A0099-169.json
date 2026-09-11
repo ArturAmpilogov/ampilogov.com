@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0169-target-entry.jpg",
         "sha256": "c429d977234ed2e90cc0aae1c8c3d6ca316512d6429e1134a490095f336a5431"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9b2a0099-ef9e-4434-bf0e-2fc3a1737e31",
+        "scanNumber": 169,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0169-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0169-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "af847247c08d113af80847fdd4758344088011a0d16d3350fbc370ebbd799a35",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0169-header.png",
+            "sha256": "5ec7ea90ecb0c5462da8fa883ae849aa5bc1a2d7078fc82e0611d3ac9e594042",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0169-target-entry.png",
+            "sha256": "f7ff66cf6fdef48f669f914351f42ae3ecffaa91ef8a1a991f8c00cf84fa733d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5507x4578",
+          "targetDimensions": "1444x758",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Иваковь Стаплишинь идльвица Мав -\nи -,\nра баковлва Ладанина...\nСла Карманки, крастьянинь Ми-\nхачич Павловь Длнгшоговь и соидат-\nо села Ново- Овкангальскаго Евфи - И",
+    "localOcrWithSurnameLexicon": "Ивановь Станишинь и дровица Мав -\nи - ,\nра баковлва Ладанина...\nСла Карманки, крестьянинь Ми -\nхачи Павловь Длинглоговь и со идат -\nко села Ново- Оканальскаго Евфи - ИЛ",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Кармалки крестьянин Михаил Павлов Ампилогов и солдатка села Ново-Архангельского Евфимия Андреева Мезенцева.",
+    "fuzzyQuery": true
   }
 }

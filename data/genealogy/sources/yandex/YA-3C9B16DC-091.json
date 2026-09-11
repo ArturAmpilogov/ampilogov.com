@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0091-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0091-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "44c638e83c750f29c4816f91b5dda67ed94de25ca8567e218062ab855ad81c58",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0091-header.png",
         "sha256": "c786f436a307d1b7d3f0f69a035465b6746c8f400faa92f8059ac86060891f03",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/3c9b16dc-24d2-47d2-9a20-c73e9cb2cf1f/0091-target-entry.png",
-        "sha256": "b51915dd64fd84664ef77262b97cebbc336328fb85cad3623d4d959effd53834",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "3fffeee000d16183d23218a0448cb20ac1394b462013868fb9dcc46abb8fbfee",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4303x3468"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4303x3468",
+      "targetDimensions": "2167x620",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Герасим Васильев Ампилов и законная жена его Мария Григориева; православные.",
     "modernInterpretation": "Герасим Васильевич Ампилов и Мария Григорьевна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "елаМриспансовки солдать\nЛет\nпов. Я косов и прастьяньпая дновниа\nжда Оеодорвва Добрьсниий\nсл.абрія\nеревни Лновлевки пристьянинь Лантлй→\nмьановь ипрестьятсная\nКторо вес- Зимвсєве вогамоства\nНипист Цеканісвь Подльяниькові и законнао жотнею\nдквишас\nкнабра",
+    "localOcrWithSurnameLexicon": "елаМриспансовки солдать\nЛет\nпов. А носов и крастьянная дновниа\nжда Феодорова Добросний\nслабрія\nеревни Ановлевки простьянинь Панай→\nмановь и крестьянская\nКоро в Зимвсеве вгамоства\nНикист Неканісв Подльяниькові и законнао жотею\nоквинас\nскабра",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Тримихайловки крестьянинъ Георгій Симеоновъ Ампиловъ и крестьянская дѣвица Марія Іаковлева Ампилова. 269.",
+    "fuzzyQuery": true
   }
 }

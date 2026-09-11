@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0050-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0050-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "b2330092410151a87229bf0e9f490a0d1e500fcacda800842523c906e751821b",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0050-header.png",
         "sha256": "9794289183598548f4dbbc464593aee4c704c4e90f514678d349702eb64f0802",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0050-target-entry.png",
-        "sha256": "4278ba0cf218d15e0388d98b083b04af4752b272a04304627d9357f249a0a3f7",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "18d90609ab895c0abe17f51373eaf218a5284f134ad5f667e39eb6881670970f",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4084x2848"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4084x2848",
+      "targetDimensions": "1200x812",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Бахтемирского крестьяне Стефан Димитриев Ампилов и Анна Михайлова Ампилова [в строке восприемников].",
     "modernInterpretation": "Стефан Дмитриевич и Анна Михайловна Ампиловы названы восприемниками.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "прим и Лінтонина Ди\nмитрілва Летерина:\nМ\nтин\nСлла вариеніракапа щи\nКраствяне Стефан\"Ди»\nмитділь? Ялепилов? п.Ан-\nН0.",
+    "localOcrWithSurnameLexicon": "прим и Лінтонина Ди\nмитріла Ленерина:\nМ\nтин\nСила варимніракапа щи\nКраствяне Стефан\"Ди»\nмитділь? Ялинилов? п. Ан -\nН0 .",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Бахтемiрскаго крестьяне Стефанъ Димитріевъ Ампиловъ и Анна Михаилова Ампилова.",
+    "fuzzyQuery": true
   }
 }

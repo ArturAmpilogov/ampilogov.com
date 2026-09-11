@@ -12,24 +12,74 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-full-view.jpg",
-    "sha256": "5aa63de60e551ceae0a1ffb5aa550534670dc687d5ab35d19d1cb9a2d9f9c06d",
+    "catalogId": "77b97cef-28fb-4b73-a2d2-fcb94a4b12d3",
+    "scanNumber": 51,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "62dbf886fe5ee8260d8c242d17ab5586dab6b4af81f21a1503450a0ef65057b1",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-target-entry.jpg",
-        "sha256": "391f41ceb0afc0d7da6c484d3f561243d4ef845e641a1ad1ef8632f0462ccb7e"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-header.png",
+        "sha256": "d6feee24aa657ee2aaa86b7a9727a7e91bfeb7a045fcb46ec419fed15701d0f4",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-target-entry.png",
+        "sha256": "4546ad0faa2dc6ffaba50751b0db50dcba21d2911b9c98b8dfbf04e4468ed6a9",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5753x4527",
+      "targetDimensions": "1378x850",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-full-view.jpg",
+        "sha256": "5aa63de60e551ceae0a1ffb5aa550534670dc687d5ab35d19d1cb9a2d9f9c06d",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/77b97cef-28fb-4b73-a2d2-fcb94a4b12d3/0051-target-entry.jpg",
+            "sha256": "391f41ceb0afc0d7da6c484d3f561243d4ef845e641a1ad1ef8632f0462ccb7e"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-with-explicit-reading-uncertainty",
+    "literal": "ОСКОКСКО\nГОДА ЧАЄТЬ ПЕРААА",
+    "modernInterpretation": "ОСКОКСКО ГОДА ЧАЄТЬ ПЕРААА",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "localOcr": "ОСКОКСКО\nГОДА ЧАЄТЬ ПЕРААА",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
   }
 }

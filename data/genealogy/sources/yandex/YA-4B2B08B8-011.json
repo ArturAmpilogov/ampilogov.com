@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0011-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0011-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "4e93d5661d87eea1f87e8ac2e933e0da95257ea3eb867bfebdd7023838056128",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0011-header.png",
         "sha256": "614d91a93cc1b9dea8360d3276a6dc52d851b95e6f7f5708a344645cdce8b073",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/0011-target-entry.png",
-        "sha256": "e98ace44bc1abc66144cb1fb787ae75f8c3d06bd6917983be72c1e042984439e",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "8d30bf4e821c7ffb76785b4026f49d6073e336ec75ae55504742823f5b64bd8d",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4052x2996"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4052x2996",
+      "targetDimensions": "1200x905",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Бахтемирского Иоанн Павлов Курдюков и Евдокия Исаева Ампилова [в строке восприемников].",
     "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "KTò c\nЗваніє, йлл, отчество й фамиліл\nБоспріЁмникшк%.\nКрествяния сги бар.\nнемічскаю Варвара\nTes pricke Сафранова",
+    "localOcrWithSurnameLexicon": "KTò c\nЗваніє, ілл, отчество й фаміліл\nБоспрімникшЕ%.\nКрествяния сеги бар.\nнемічскаю Варвара\nTes pricke Сафронова",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахтемирскаго Иванъ Павловъ Курьдюковъ и Евдокія Исаева Ампилова. Священни Михаилъ Юшкинъ Діаконъ Харлампiй Барановъ.",
+    "fuzzyQuery": true
   }
 }

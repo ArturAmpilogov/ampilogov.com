@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/FA735EC0/204-target-entry.jpg",
         "sha256": "4eca6069f9d62aaa131b40a2bccd9982a6b3e82ea91ae90efe00ae8769d848a9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+        "scanNumber": 204,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0204-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0204-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "7801637bb88dba44290db36e75ef852b71ce79cb03c99bf0dd0fc629246a066e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0204-header.png",
+            "sha256": "666602971619a1b816eecfd7ce80ce16cb69a189b6e6a7da99f5bea31bb34a52",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0204-target-entry.png",
+            "sha256": "10a9203e15de13e2b6d5cf43bd0ca6611b56c591a8f477910dceac8e0732c67c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5205x4132",
+          "targetDimensions": "1314x1002",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "partial-primary-scan-transcription",
     "literal": "Крёстный отец Алексей Алексеев Ампилогов, крестьянин села Кармалки Михайловской волости Оренбургской губернии и уезда.",
     "modernInterpretation": "Алексей Алексеевич Ампилогов указан восприемником; его приписка фиксирует Кармалку Михайловской волости Оренбургского уезда и губернии. Это локальный контекст проживания, но само по себе не доказывает отдельного переселения.",
-    "indexNote": "Населённый пункт и роль проверены по скану; индекс Яндекса не является источником чтения."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Рва Кармавки, Микотьк во\nакт\nокой вокости, Франбурі\nОран\nкой губорийнутвя\nкорать верчй вемоковы\nПатрова, н кота докоази\nек.\nСока Кармакьи, Онастасія\nобы\nЄворостова Раховерихо.\nва\nжулеска то вы быоко",
+    "localOcrWithSurnameLexicon": "Ова Кармавки, Микоток во\nакти\nокой вокости, Франбурі\nОран\nкой зуборийнутвя\nПатрова н кона докорази\nек.\nка Кармакти, Опастасія\nобы\nвверостова Раховериха.\nва",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-partially-verified",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "medium",
-    "unresolved": ["Дата и имя ребёнка в соответствующей строке требуют отдельной построчной расшифровки."]
+    "unresolved": [
+      "Дата и имя ребёнка в соответствующей строке требуют отдельной построчной расшифровки.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец, Алексей Алексеев Ампилогов, крестьянин, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
+    "fuzzyQuery": true
   }
 }

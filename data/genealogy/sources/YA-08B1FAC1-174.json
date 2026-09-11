@@ -2,18 +2,145 @@
   "schemaVersion": 1,
   "sourceId": "YA-08B1FAC1-174",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
-  "collection": {"catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf", "scanNumber": "174"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/08b1fac1-1f47-471b-89cd-0092199073cf/174"},
-  "mentions": [{"mentionId": "YA-08B1FAC1-174-M1", "role": "other", "personId": null, "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом", "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено", "surnameSeries": false}],
-  "evidence": {"publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/174-full-view.jpg", "sha256": "5b1b594084ba9c02d813dc464d300a7a472c8e712da462d7ed9ade51c42da4f3", "fragments": [{"path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/174-target-entry.jpg", "sha256": "cc4f923530e600d6e49593407e7795bfae1c714e137b28233dc8c2b04793bb9d"}]},
-  "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видны февральские записи об умерших иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Умершие, их родственники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+  "recordType": "death",
+  "collection": {
+    "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
+    "scanNumber": 174,
+    "asRead": "Метрическая книга 1913 года, часть третья о умерших; апрель, мужского пола № 10"
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
-  "review": {"status": "primary-scan-reviewed-no-match", "transcriptionConfidence": "high", "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]}
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/08b1fac1-1f47-471b-89cd-0092199073cf/174"
+  },
+  "event": {
+    "type": "death",
+    "date": {
+      "iso": "1913-04-14",
+      "display": "14 апреля 1913 года (смерть); 16 апреля 1913 года (погребение)",
+      "calendar": "source-calendar-unverified",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбургскаго мѣщанина",
+      "normalized": "Оренбург",
+      "placeId": "orenburg-city"
+    }
+  },
+  "primaryPersonId": "P101935",
+  "mentions": [
+    {
+      "mentionId": "YA-08B1FAC1-174-M1",
+      "role": "deceased",
+      "personId": "P101935",
+      "nameAsTranscribed": "Оренбургскаго мѣщанина Ѳеодора Ампилогова сынъ Петръ",
+      "displayName": "Пётр Фёдорович Ампилогов",
+      "age": {
+        "display": "2 года",
+        "confidence": "medium"
+      },
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-08B1FAC1-174-M2",
+      "role": "father",
+      "personId": "P101936",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Ѳеодоръ Ампилоговъ",
+      "displayName": "Фёдор Ампилогов",
+      "socialStatus": "оренбургский мещанин",
+      "surnameSeries": true
+    }
+  ],
+  "evidence": {
+    "publicDisplay": false,
+    "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-full-view.png",
+    "sha256": "8d09d21cc1c58c9c5428690f79aec598c3cf0e57ee8bdfc1fa7c18305c62cbbb",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-header.png",
+        "sha256": "110a9272459b9145ec0dc5afebe733f5a44ca65aa50080d6eee8450eac7a19f5",
+        "description": "Заголовок метрической книги 1913 года и названия граф части о умерших."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-target-entry.png",
+        "sha256": "ae2d17b0751eb6f50dd055d2394ede699f5b434e9a78677f9ceae0befbcbc29b",
+        "description": "Исправленный крупный фрагмент полной строки смерти Петра Ампилогова."
+      }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
+        "scanNumber": 174,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "8d09d21cc1c58c9c5428690f79aec598c3cf0e57ee8bdfc1fa7c18305c62cbbb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-header.png",
+            "sha256": "110a9272459b9145ec0dc5afebe733f5a44ca65aa50080d6eee8450eac7a19f5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0174-target-entry.png",
+            "sha256": "ae2d17b0751eb6f50dd055d2394ede699f5b434e9a78677f9ceae0befbcbc29b",
+            "description": "Исправленный крупный фрагмент полной строки смерти Петра Ампилогова."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5432x4402",
+          "targetDimensions": "5050x1000",
+          "method": "original-download-plus-manual-full-row-recrop-and-full-scan-reading"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
+  },
+  "transcription": {
+    "status": "complete-for-relevant-row-with-minor-uncertainty",
+    "literal": "1913 год, часть третья, о умерших. Апрель. Мужского пола № 10. 14 умер, 16 погребён. Оренбургскаго мѣщанина Ѳеодора Ампилогова сынъ Петръ. 2 года [единица возраста читается по графе не вполне отчётливо]. Отъ коликъ. Исповедь и причащение не отмечены. Погребение совершил священникъ Николай Ивановъ съ діакономъ Василіемъ [фамилия не разобрана], на церковномъ кладбищѣ.",
+    "modernInterpretation": "14 апреля 1913 года умер Пётр Фёдорович Ампилогов, двухлетний сын оренбургского мещанина Фёдора Ампилогова; погребён 16 апреля на церковном кладбище. Причина смерти записана как колики.",
+    "indexNote": "Индекс Яндекса указал умершего и отца, но прежняя карточка ошибочно проверяла только февральские строки и объявила совпадение неподтверждённым. Целевая апрельская строка найдена внизу полного разворота; фрагмент заменён.",
+    "localOcr": "ВСКОL\nСГипог\nТПОАЛЛИНО\nМСТРИЧЕСКОЙ КНИГИ NА/У\nЗвáніє, ймл, бтчество й флиилід одмéршигш.",
+    "localOcrWithSurnameLexicon": "ВСКОШ\nМЕТРИЧЕСКОЙ КНИГИ NA /У\nЗвАніє, йма, отчество й флийлід одмершигш.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Запись относится к смерти малолетнего сына оренбургского мещанина; она не подтверждает переселение семьи.",
+    "scopeNote": "Фёдор Ампилогов не объединён с Фёдором Фёдоровичем Ампиловым из записи о рождении Александра: в этой строке отчество отца отсутствует."
+  },
+  "review": {
+    "status": "manually-verified-from-full-scan-corrected-false-negative",
+    "transcriptionConfidence": "high-with-minor-age-unit-uncertainty",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1913 death spread, headings, April male record no. 10, death and burial dates, deceased, father, age, cause, sacrament and burial columns; false negative and wrong target crop corrected",
+    "unresolved": [
+      "Единица возраста после цифры 2 и фамилия диакона читаются недостаточно отчётливо.",
+      "Отчество Фёдора в этой строке не указано, поэтому профиль не объединён с одноимёнными оренбургскими мещанами."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Оренбургскаго мѣщанина Ѳеодора Ампилогова сынъ Петръ. ... Отец умершего: Феодор Ампилогов, оренбургский мещанин.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Пётр, малолетний сын оренбургского мещанина Фёдора Ампилогова, умер 14 и был погребён 16 апреля 1913 года; причина смерти — колики."
+  }
 }

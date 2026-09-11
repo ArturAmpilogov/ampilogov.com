@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "раль\nвтуниц,\nЛели Старой - 60г-\nСели Ивиновки\nдиновки кристі\nкритьянския\nянинь льинг\nоровица Мит\nИвиновч Карач.\nрони Встальско-\nМнатили\nкови православ\nНестерова, пра-\nночи, перонлг\nвослвная, пео-\nорикоми\n20.\nвышг брателіз\n19.\nАлитилоговия\nДвященний Прихожно\nАмипилоговг\nн\nМмлочцин\nСітноом Горяйнави.\nа палажуи г\nВяпекой гувернм,\nДеревни Новопи-\nвлавужентьое упо-\nкольскала. Кресть-\nсини Аино\nколі Сймою\nянская дявтри\nСержть спдет\nУннов\nОсодари\nАлексти\nгеви\nКивит-\nШерчинч, право-\naрgі\nкина право\nславныи первим\nсливний педвит?\nерикані.\n- .\nЗрикані\nсп\nвепречний Мрихагль р Мпииоавди з\nжовыш,\nСістом\nит. Симнобей Горінновь",
+    "localOcrWithSurnameLexicon": "раль\nЛели Старой - 60-\nСели Ивиновки\nдиновки кристі\nкритьянския\nянинь линг\nотовица Мит\nИвинов Карач.\nрони Витальска-\nМнатили\nкова. правослов\nНестерова, пра-\nноги, перонл\nвосления, пео-\nорикоми\n20.\nвышг братал\n19.\nАлитилоговия\nДвященний Прихожно\nАмпилогово\nн\nМиланцин\nЛітньом Горяйнави.\nа налажуи г\nВятской гуверни,\nДеревни Новоли-\nкольскала. Кресть-\nсини Алино\nколи Сймою\nянская довтри\nУнков\nОгодари\nАлекси\nлеви\n-Кивит-\nШерчинч, право-\nарді\nкина право\nславный первим\nсливний подвит?\nрикані.\n- .\nЗрикані\nсп\nховыш,\nСістом\nить Симпобей Горінновь",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0048-target-entry.jpg",
         "sha256": "6c8fa4f2a3e45bc4336bf6eae3d4d533898b6038b2af5c1d7e24952ee5893e84"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0048-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "4722d0d008aea853f79c0b6a498862151637e6128c95a16ba101d0e3cccf0ebb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0048-header.png",
+            "sha256": "5359d560b56d593b7e521cbb8f5bfe1fca512a4daa8b21a8f49653113ec5a954",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0048-target-entry.png",
+            "sha256": "f4095bf23735d6d551730f01fe5e94f89b02ad8d1af0314c02244ffffc235616",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5376x4302",
+          "targetDimensions": "2739x2290",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов. ... Священник Михаил Ампилогов с псаломщиком Тимо.",
+    "fuzzyQuery": true
   }
 }

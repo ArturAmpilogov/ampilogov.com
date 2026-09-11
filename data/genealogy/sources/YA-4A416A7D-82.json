@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "22\nчинии дось влека\nДвягденнию Прихани Диетевтия 1\nенный арх\n1B\nV2 Хорци\nАсмлапщин Мгинооиі\nИ области\nСила Старой - Вогдсновки\nкритьянинь Висииій Петров\noocea Tafazieno\nОвму. Н. РМпивагов.\nскороности\nожно.\nОв мерелтии Мрихаим ярАпииниу)\nПсилотуши Миноєси Україно\nвнинь чи отве-\nДеревни Михийловгн критья-",
+    "localOcrWithSurnameLexicon": "22\nлинии дось влека\nДвягденни Прихани Детивия 1\nенный арх\n1В\nАстанщин Минаєм\nИ области\nСила Старой - Богдановки\nкритьянинь Виший Петров\nО вму. Н. РМпивагв.\nскоропости\nожно.\nПсаломуши Милоси Україна\nвнить чи отве-\nДеревни Михайлован критья-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0082-target-entry.jpg",
         "sha256": "23c12d411d7f891d3625c7014967752a7907c611aad603f6208a97f83f65e79a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 82,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0082-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0082-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "6ddb17afdfadf5b22e4d97dacf43b70fe949cafee6f385dafa2148b83f71e5bc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0082-header.png",
+            "sha256": "8a241c7b3b808e0064ac771cf7b268f9720a3281780624ba5af8fa032bce0e26",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0082-target-entry.png",
+            "sha256": "76310300ec8b52ab64e75b8b86838e0fe78e8180ef7801984809bc46eafafb0c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5444x4396",
+          "targetDimensions": "3995x859",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "29. 30. села Старой - Богдановки солдата Романа Вавилова Шкатова дочь Елена Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов.",
+    "fuzzyQuery": true
   }
 }

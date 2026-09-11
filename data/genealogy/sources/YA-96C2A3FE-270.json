@@ -43,12 +43,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5251x4207",
       "targetDimensions": "4891x3377"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
+        "scanNumber": 270,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0270-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0270-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "3d48033088022652923a129e8fb4fe9e4c3f23f5fd9fc50daf0abcb2ebcf755e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0270-header.png",
+            "sha256": "88f519384221b21fbe425da9be7118020d279ba4cee80291b41b10278580a211",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0270-target-entry.png",
+            "sha256": "23bbacb78ca788ccde6e7965b8a16072c82785ce1b1f92bd31175f56ba687edf",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5251x4207",
+          "targetDimensions": "1200x2827",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -57,8 +95,19 @@
     "status": "primary-scan-transcription",
     "literal": "[В записях разворота:] Священникъ Михаилъ Ампилоговъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ.",
     "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи священника Михаила Афиногеновича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Кто совєршáль тáинство\nР8ког\nKрЕцIÉNiA.\nТТЕЛЕЙ\nель\n1 глв\nСьящренник Ми-\nсн-.\nімва\nланм Алпи-\nвли-\nлова\nлочовь сч Жалом-\nнь\nщиноть Тимо-\nнь\nоонід\n1B",
+    "localOcrWithSurnameLexicon": "Вто совершАль тАинство\nР8ког\nТЕЛЕЙ\nель\n1 гель\nСвященник Ми-\nсн-.\n' мва\nлани. Алипи-\nвли-\nлова\nмочовь сч Жалом -\nнь\nщиноть Тимо-\nнь\nсонід\n1В",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "хаил Ампилогов с псаломщиком Тимофеем Пряйновым. Священник Михаил Г. Милосов Псаломщик Тимофей Горяйков.",
+    "fuzzyQuery": true
+  }
 }

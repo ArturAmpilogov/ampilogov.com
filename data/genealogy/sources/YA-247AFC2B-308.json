@@ -49,7 +49,14 @@
     "status": "primary-scan-transcription",
     "literal": "Близнецы Константинъ и Елена. Родители: Василій Ѳеодоровъ Ампилоговъ и законная жена его Наталія Егорова. Восприемница: Анна Павлова Ампилогова.",
     "modernInterpretation": "Метрическая запись 1911 года сообщает о рождении близнецов Константина и Елены у Василия Федоровича Ампилогова и Натальи Егоровны; Анна Павловна Ампилогова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "C. Lopichoa ncamfaunl Racueni\nС. Гсоргсвом престизнийь Фроливаново\nПарамов, захонилу оресна пі прина\nMapénuf Anucuno, cosfaman) /c\nрасильста, оба прапосваєтне\nMamiera fargeupian Ct\nbelsanнuк Jouml Nunumpilh\nRXLEEM\nРешиоиь восииу Напиевиц,\nС. Георгєвки престарима Расилті\nСеоргіськи простоянии ПетряКод-",
+    "localOcrWithSurnameLexicon": "С. Георгсвом престизний Фроливаново\nПарамов, закони ореста пі прина\nMapón of Anuno, confaman) / c\nзасилиста, оба православне\nС. Георгієвки просторима Расилті\nНеоргськи простояти ПотряКод-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -74,16 +81,58 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "6004x4816",
       "targetDimensions": "5644x3986"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
+        "scanNumber": 308,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0308-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0308-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ab53d9d9b8722a50084a19dff7e973024f2e40086dd8de35687850837843eae6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0308-header.png",
+            "sha256": "c47dd2062d7c2e3571907db1e07d3fda7d44e338da3aeefa4bf1f4cba00010ec",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0308-target-entry.png",
+            "sha256": "788e2a9d4669ab8279e4a562c24cbee506694369558eaa63bef21bd17598d2f2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6004x4816",
+          "targetDimensions": "2939x846",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "С. Георгиевки крестьянин Василий Феодоров Ампилогов, законная жена его Наталия Егорова, оба православные Священник Иоанн Дмитриев.",
+    "fuzzyQuery": true
+  }
 }

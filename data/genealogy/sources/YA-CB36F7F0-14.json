@@ -29,16 +29,62 @@
         "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0014-target-entry.jpg",
         "sha256": "26b952d004109a36f46676e11c9baae4e197da80733ad0a327d0fe1fa74ec30a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cb36f7f0-ba71-42b5-a9aa-94c41b455802",
+        "scanNumber": 14,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0014-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0014-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "be52143bc807e0da3cd2580e8ee8fc5e349c3d366ce5a469ede4d881b334eec0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0014-header.png",
+            "sha256": "e542fddd3b0910b4aca03668098614acb1f44db7c74166ca9f80ed3fd1d29cab",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0014-target-entry.png",
+            "sha256": "6e534e996d578e1aac52760744a2df81cf1610b63d956434587397531db6058f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5407x4314",
+          "targetDimensions": "2777x686",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "„налини\nПсаломмчик Алекслині\nПосломиикь Ливаним Лихичивавь\nЕела Зобова запасной рябовой Єме-\nСела Зобова крестьянина Можей\nа.\nГоаннова Ампилоговь и законная же\nГи\nмань Андреева Ампилоговь и сол\nЧатекня жена Марія Георгіеви\nсь\nни его Наталія Короьева; оба пра-\nвославные.\nШетинина.",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Моисей Иоаннов Ампилогов, крестьянин, село Зобова. Отец: Матвей Иоаннов Захаров, Стерлитамакский мещанин, деревня Лисовка.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/160-target-entry.jpg",
         "sha256": "10f6a9beda98e5a6450369a8f5a3647d5235161520393b7c4b9f1c0eb7506bb5"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87",
+        "scanNumber": 160,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0160-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0160-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "a97e588dfb1cfbf913d2657d4048b8fc61db9e08c6ced586b5d4c2e0b1e80570",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0160-header.png",
+            "sha256": "3211f19391d33d31a3ed0d09b3bec19ac84284134a1a069f9ff39e72e84e3289",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8ff0893f-74ce-4e1b-b59e-5a81c1dc5a87/0160-target-entry.png",
+            "sha256": "000dbb07626f972798239cfcbae8099c9ef19ce03b06069add8c03ee0d7d2abc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5294x4308",
+          "targetDimensions": "1372x2264",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЧЛОAАЛЫР\nАсть втОРАл, й БРакосочета\nіль\nПод\nКто вили поручители.\nзáп\nПоженимь: Делевни 130,тотито\nкрестьяне косидої Едореловь\nИромемис з ведстй ливень\n1го невлосеть: престояне деж\nвни Рурасовой втедань Свдотеліи\nВалнинь и Иванс Евдопемось\nВарнинь\nПометимт: Врссталне і сла восоа\nРеврййи оливилочко й Де-\nлитрій Шелатискич. /го-\nневната: Девовни (ілве)\nвти пусесталне Миланль\nи Констаннинн в уівакок.\nПо мяними: села добова крро-\nстачне Андрев восриках\nи гоаката-",
+    "localOcrWithSurnameLexicon": "Асть втОРАл, й БРакосочета\nіль\nПод\nКто вили поручители.\nПоженимь: Деревни 130, топито\nрестьяне посидої Едреловь\nПроменис зе ведстй ливень\n1го невласть: престолне депе\nвни Бурасовой втедань Европел\nВальнинь и Ивана Евдопомось\nВарнинь\nПоленимт: Вусаталне і сла воста\nмитрій Шелатискич. /го\nневста: Девовни (ілве)\nвки престолне Миланль\nи Констанична в увакок.\nПо меними: села добова про-\nстояне Андрей вотриках\nи госкан-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Гавриил Ампилогов, крестьянин, село Зобово. Поручитель: Константин Зубаков, крестьянин, деревня Тульевка.",
+    "fuzzyQuery": true
   }
 }

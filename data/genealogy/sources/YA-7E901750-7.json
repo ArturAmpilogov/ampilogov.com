@@ -29,16 +29,63 @@
         "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0007-target-entry.jpg",
         "sha256": "d6d6429b00de1c072d42556c1f554cfd485debff1badf6861ba330956e6f57c6"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7e901750-2aaf-42ae-8b7d-da58464d0525",
+        "scanNumber": 7,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0007-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0007-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "75a86fe49057d60f04daa8371eb42ba64307061e537c9a39e65eccf314f80cb1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0007-header.png",
+            "sha256": "6d3e1663f6213a3b652f8de1f9f1cad6b77bdde3bb46b50805698830e0fff089",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7e901750-2aaf-42ae-8b7d-da58464d0525/0007-target-entry.png",
+            "sha256": "7f30562c7e26dd1c234ce81117ce8e659d4b466602c6c8d28daadd5b35314ebc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4379x3453",
+          "targetDimensions": "2283x749",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте метрической книги фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "саз,\nкрестьянинь\nТогоже села крестнянині\nseй\nСела ваклановки\nЧвань Василіявк Орлави и\nЗаларія миронові Амипилогову\nкрестнянина матоя оа\nи законная жена его Ариппина\nнасіева Ампилагова досоуна\nРакаріева, на православнне\nвина Татіана.\nЛьшшки\nвященний Найри О)\nтого-же села крестнянин.\nСела баклановки крестнений\nЯ\nпетри прокопіе вы Фыонковк\nівсевій Иларісновь тарасові\nи крестьянина Ивана оео-\nи законная онена его Пелагея\nдорова Гуськова жена марія.\nфракотієва, оба православные\nпрокоміява„оИао",
+    "localOcrWithSurnameLexicon": "сад,\nкрестьянинь\nТогоже села крестнянині\nСела ваклановки\nЧвань Василіявк Орлови и\nЗаларія миронові Ампилогову\nкрестьянина матья оа\nи законная жена его Ариппина\nнасієва Ампилогова докодна\nРакарева, на православне\nвина Татіана .\nМошики\nвященний Найди О)\nтого- же села крестнянин.\nСела баклановки крестьяний\nЯ\nпетри прокопіе в Фонкова\nівсевій Иларіонова тарасові\nи крестьянина Ивана оло-\nи законная олена его Пелагея\nдорова Гуськова жена марія.\nфракотєва, оба православние\nпроколіва онао",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "low"
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Тимофей Захаріев Ампилогов. Родившийся: Евдокия Евсеева Тарасова. ... Отец: Захарій Миронов Ампилогов, крестьянин, село Баклановка.",
+    "fuzzyQuery": true
   }
 }

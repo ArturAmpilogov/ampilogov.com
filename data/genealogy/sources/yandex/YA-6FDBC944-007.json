@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0007-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0007-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "55247e43eef4ddcbe5c7ddd23282cdb35bc86b31f5f8f7da381ec2a90adbf2d9",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0007-header.png",
         "sha256": "73af464187cb21731bbf7907dd813ce58e24c23379050ef50f92b2dab15f8338",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/6fdbc944-e18c-419a-b748-6a809367d11a/0007-target-entry.png",
-        "sha256": "553e0350985355a13c0104c3b760db6b9d85833606bdba314dc621142c40f0fc",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "1f90b254bd34836df0839ab10a1d9e8480ee3dd906735a146f8e06d819780e64",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4004x2980"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4004x2980",
+      "targetDimensions": "1200x985",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьянин села Бахтемирского Ипатий Михайлов Ампилов [в записи об умерших].",
     "modernInterpretation": "Запись об умерших документирует Ипатия Михайловича Ампилова.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИЄТРИЧЕСКОЙ КНИГИ NА\nЛLтà\nЗкАніє, йма, бтчество й фамиліл одмéршагш.\nпймершаги.\nИ8жескл.\nЖінска.\nБÉHіM,\nкрествяника Педора Дваллова\nм\nвлящентик, Миханця Донутинв.\nнол.\nнежеянь-\nшо\nмл\nімер\nмусио\nCngauenь tamur Diowana,\nПаренамиі\nдіакан",
+    "localOcrWithSurnameLexicon": "МСТРИЧЕСКОЙ КНИГИ НА\nЛLтà\nЗкАніє, йма, отчество й фамиліл сумершаги.\nоймершаги.\n18жескл.\nЖінска.\nкрествяника Педора Д валлова\nм\nвлящентик, Миханця Допутина.\nнол.\nмежень -\nшо\nмл\nі мер\nCnganena tuamur Diowana,\nПаренанні\nдіанан",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "...Александра Ипатова 3 мца Ампилова сынъ Константинъ Священникъ Михаилъ Юштинъ діаконъ Харлампiй Барановъ.",
+    "fuzzyQuery": true
   }
 }

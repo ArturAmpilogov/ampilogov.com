@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "8c8f0331f16be0489fb425c4d733078539bc2cbbeaedb2add91eafb7d196b073",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-header.png",
         "sha256": "05a23928ee038d8108d8e47cd9fee089e66a368e88c49dcdba5ea1ab7e0d60ac",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-target-entry.png",
-        "sha256": "a4e098c39e367fdfd7fe048abb1988e7dd24393a5b130b8d764991828750a325",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9d1c67de6f16b8f156a1ab4da89cb1d1df4c1e9fea3aa8a33222a24501dd90eb",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5796x4666"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5796x4666",
+      "targetDimensions": "1543x1315",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Священник Иоанн Поляков. Диакон Афиноген Ампилогов.",
     "modernInterpretation": "Оригинал подтверждает подпись диакона Афиногена Ампилогова; индекс ошибочно назвал его Афанасием.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Фонннг Полякавь.\nСвяженнивсь\nДіанайв Домонів Алітлитіві.\nСена Ритківнипрестваннна Дненельяя\n(жовлева весова сринв Мявець-\nащенним доаинь Лолякові\nДійнень Двинантв Дитилаювіь\nСвия Риноваи прествянним Мелькь\nПетрова Пощавлидова свиль Веарілиь-\n-\nОяценнила фоянн. Лоляковь.\nДіапнів Домгожів Яителоговч.\nяка (ишновки перествиннив Реодорть\nТрофримові хгоронрій -\n30.\n•в Атеннить рваннь Поляковь.",
+    "localOcrWithSurnameLexicon": "Фонннг Поляковь.\nСвяжеттивсь\nДіанайв Домонів Алітлиців.\nСена Ринківнипрествання Дненея»\n(овлева весова свинь Мавець-\nваженним досинь Лолякові\nДійнень Двинанів Дитилава\nСвия Виновни перествянним Мелька\nПетрова Пощавидова свиль наріниь-\n-\nОятеннила доенн. Поляковь.\nДіапків Доможів Яителогова.\nяка (инновки перествиннив Деодорть\nТрофимові горонрій -\n30.\n•в Апеннить рваннь Поляковь.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Феодор Трофимов Корецкий Священник Иоанн Поляков. 35.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/079-target-entry.jpg",
         "sha256": "0c7d448d9a6c3657f64f1388ccac44c066d74c02ae26473c4284a1aec3fde645"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
+        "scanNumber": 79,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "623b3845fdf53ffdc4e3b259b9027cc8c08eeeec87615f4ca7c239ecf7b6f1e8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-header.png",
+            "sha256": "0efcc9feeb98817fc357b9f9f8391d11cd470267b8ed753afb6a7d9a3841f8fe",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-target-entry.png",
+            "sha256": "8a3eb1854e87b008d0bd503c9d93869da0c6ff5f9cd83717eb421e018b50c79e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5934x4734",
+          "targetDimensions": "1635x548",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НОСКОВСКОЙ\nТИПОГРАФІН\nС НОДАЛЬНОМ",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nТИПОГРАФІН",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Василий Андреев Ампилогов, крестьянин, село Зобово. Умерший: Михаил Димитриев Димитриев, крестьянин, деревня Стрелковы, 77.",
+    "fuzzyQuery": true
   }
 }

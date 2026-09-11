@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/006-target-entry.jpg",
         "sha256": "f1d3a05225cb10cd2bf88378f6e8fbbb4145b073ea984b0732a39cb994e6d498"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c50ab4a9-8b32-4d29-b6b6-ad166880a4ff",
+        "scanNumber": 6,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1b66c472570c8b643a81c2c9fca9900e42459ca3d724d38a25febcce8b86f757",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-header.png",
+            "sha256": "bfcffb4687a9f47fbc4ce43b39b0382a43f5c2756da7ed62235e040a850f4dbb",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-target-entry.png",
+            "sha256": "1b45859a02e17e5b242fab9e58871503275ef12d59a160bf64f4f96832e95fcf",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5884x4666",
+          "targetDimensions": "1613x1129",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "вкронспов Еданіл.\nКрісткятті Села Павлавки тойле\nКалсти Млая Ванотова Матоники\nи з акоиад жен ео скатерчиса\nChрamoел, оба пракославное.\nвевиренникя А. Сприбоновя\nDianona Aннnnор Аврааня.\nДракои Сеаво-Орегглугени Пеоржевок",
+    "localOcrWithSurnameLexicon": "веронспов іданіл.\nКрестятті Села Павлавки толе\nКалисти Илая Ванотова Матеники\nи законад жен его скатерчиса\nChamoe , оба пракославное.\nсвиренник А. Спирибоновя\nDianon Анно Авраа).",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Димитрий Георгиев Ампилогов, бывший псаломщик, Нижне-Чибенский поселок. Отец: Иван Яковлев Бобылев, казак, Оренбургская станица.",
+    "fuzzyQuery": true
   }
 }

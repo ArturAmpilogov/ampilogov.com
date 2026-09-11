@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/AD6CE358/205-target-entry.jpg",
         "sha256": "4d4d43c92e3bede0c388cb9eadcdf718a5d1c3abecc06a0c90b37037a5dcfb4c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ad6ce358-a855-4902-97a2-75df7fe50167",
+        "scanNumber": 205,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "5bcfc281e932ad0f32f178925ae7df3a6676588ef3d7c2828d17b0be6bb581ea",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-header.png",
+            "sha256": "b0ebc4c88313e6885b4e10334d4807b7351f2e514ad3a2cc020699366ff8c986",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-target-entry.png",
+            "sha256": "41d64511b51d3c3ebe10c766a8f6a61944581c39a399cf348ca5dfa2143820d3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2551x3908",
+          "targetDimensions": "1200x890",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОКСКОЙ\nТИПОГРАФІИ\nСІРОА АЛЬКО\nДеревни Фрилки кріс п чаг\npom\nсемейные\nПОЛА.\nІвжеска пóла.\nЕНСКА",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nТИПОГРАФІИ\nСПРОА АЛЬКО\nДеревни Фрилки кріс п чаг\npom\nсемейные\nПОЛА.\nвжеска пла.\nЕНСКА",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "1404. 1405. Ампилогов Феодор Иванов, вд. мещ. сын его Григорий солд. жена его Мелания Алексеева дети их: Петр Николай Михаил.",
+    "fuzzyQuery": true
   }
 }

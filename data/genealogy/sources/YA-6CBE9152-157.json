@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0157-target-entry.jpg",
         "sha256": "6fcb9330bda0dc44b754975f559f53451a6082ca2776c1adcd3d90a96c0a5077"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6cbe9152-3991-4afd-bb8b-7b657816a94a",
+        "scanNumber": 157,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0157-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0157-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f0b6e64bcfa37c826de01aac209f3f709cc5890375a6f66e09415cf5071f98c7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0157-header.png",
+            "sha256": "c80e1f6b82b887d639415dec956f4ad74af0efc02f3d5d6bf3f591bdadad2c1e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6cbe9152-3991-4afd-bb8b-7b657816a94a/0157-target-entry.png",
+            "sha256": "b43bd127813a017617ba7d46b9aa49b982e7a659d0fba4406d9671fe49f0650f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6079x4634",
+          "targetDimensions": "1568x673",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены при чтении сохранённых локальных полного разворота и целевого фрагмента.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Миrгусттс, а Малиан\nДіакoн Михалиь Фавумови.\nЖаломиии Впобимця Ильмий\nСела Зобава крествянини, Серйка Леон\n2\nніява Летарева сань іапов..",
+    "localOcrWithSurnameLexicon": "Ді аком Михаль Фавумови.\nНаломини Впалиму Ильмий\nСела З обава крест вянини, Серека Леон\n2\nліява Летарева сань іапов..",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Василий Андреев Ампилогов, запасной рядовой, село Зобово. ... Умерший: Пелагия Лаврентьева Пирожков, 6. Умерший: Татьяна Васильева Ампилогова, 1.",
+    "fuzzyQuery": true
   }
 }

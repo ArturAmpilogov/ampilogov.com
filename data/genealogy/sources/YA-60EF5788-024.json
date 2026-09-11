@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЗвАніє, ймА, бтчЕство й фамиліА родителей, й какóги\nхсл.\nвфроиспов'вданіА.\nСема абратовки кресрьднинь Іа-\nKrev Стипанова Накифоровь и\naкinmaя Asema eгo Mapig lzn-\nгидьльа на правосмавные.\nДіякось Восилій Шоштовь\nСема Владимировки кресрьянинь\nАикита Васильев лькинь п на\nкоптая пста его темагея и-\nпиллова на православнне.",
+    "localOcrWithSurnameLexicon": "ЗвАніє, ймА, отчЕство й фамиліА родителей, й какги\nхсл.\nв Бронспов•вданіА.\nСема абрамовки кресродинь За-\nKrev Степанова Никифоровь и\nгиньла на православные .\nДіянось Восилій Монтовь\nСема Владимировки кресьянинь\nНикита Васильев лькинь и на\nкоптая дста его немагея и -\nпиллова на православине .",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/60ef5788-e56e-4d4f-bc6d-fdd112664077/024-target-entry.jpg",
         "sha256": "07fe6a8cb0639f44d415ce8a6186f35a7f5094d126dfab0a193c4e59f750986d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "60ef5788-e56e-4d4f-bc6d-fdd112664077",
+        "scanNumber": 24,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/60ef5788-e56e-4d4f-bc6d-fdd112664077/0024-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/60ef5788-e56e-4d4f-bc6d-fdd112664077/0024-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "c8104d4a822f1d36946fd2d4179d8cc19ec48a34daa5d1b5eb6ffe7fad45aaca",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/60ef5788-e56e-4d4f-bc6d-fdd112664077/0024-header.png",
+            "sha256": "91307afbf05832e74f52969de6ce735c558effec5f9456e39112f66db23c7205",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/60ef5788-e56e-4d4f-bc6d-fdd112664077/0024-target-entry.png",
+            "sha256": "6216528741d03c78dbea203c2ebfbea661e1839785c54af8c57e122e8f0f021d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5212x4465",
+          "targetDimensions": "1491x1451",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Абрамовки крестьянин Феодор Васильев Ампилогов и законная жена его Екатерина Михайлова; оба православные.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0009-target-entry.jpg",
         "sha256": "08ad6a13778680fa13d311f5113d2ffe935cbe37ced35fdba838153bdbcbd5cc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7869f375-f0e3-4bbc-8f40-05a7e14942cd",
+        "scanNumber": 9,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0009-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0009-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b5a7457502929dd463f4d25dfbea0b00787a601e81c3879d14180cd72acd3501",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0009-header.png",
+            "sha256": "06b549c32aa33f26764851664db857a0b9d363700bee6044b5c68444a5c023cb",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0009-target-entry.png",
+            "sha256": "24f6333d03cbb85bd2fe6d37062d62d5c7249d4859d51a46c8f2ad72cc49992f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4475x3751",
+          "targetDimensions": "2176x922",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Іаніт.\"\n4| V37\nязм\nскаденую срічнкого пова\nто итриднвс и восия\nа, чтич уіле\nàngnpưa Clnh\nерако, а всен пийнуя (4р) чероєн\nой области-\nVpгC\nМого ми ина цоеиті який\nта.\nСева всикванавкм цоссурячиий\nДа нвій Серглла Серназна)\nИваю Нивовача марнатиа\nУргнвй'яним взасннія Сергио-\nи акеоннам мина его ввд нія\nва дватррина плека",
+    "localOcrWithSurnameLexicon": "Іаніт.\"\n4| V 37\nярм\nсадену сорекого пова\nа, чтих уіле\nàn np ưi Cenh\nерах, а всен пий туя (4) чероєн\nой области\nVprC\nМого ми яка цить який\nта.\nДа твій Сергля Серназна\nИваю Нивовача марнатиа\nУраніʼяним взасння Серг-.\n2 аноннам мина его вад нія\nва доватрина плека",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Трофим Григорьев Ампилогов. Родившийся: Александра Адрианова Воробьева. Родившийся: Никита Иванов Махнатов.",
+    "fuzzyQuery": true
   }
 }

@@ -53,38 +53,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/aa71dc9a-68a1-44f5-96fa-9b743dbbaa27/0108-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/aa71dc9a-68a1-44f5-96fa-9b743dbbaa27/0108-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "02cfbb19b35425ef8f71a58eaa652ce72b12605920094ebef17c93d7656d9b5b",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/aa71dc9a-68a1-44f5-96fa-9b743dbbaa27/0108-header.png",
         "sha256": "0608ca37170abab7cdd5009c3a1acd8e04f0cb7b424c588f35f22ecbb80c3130",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/aa71dc9a-68a1-44f5-96fa-9b743dbbaa27/0108-target-entry.png",
-        "sha256": "628b68174fcafb9454ea2c7f7c44afe4a389cf3559be6989ba6f6add17efe625",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "ecdd22c7d11df64a7b9a7635091791fbc85834ec9b57eef37b436a711903ca24",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4998x4023"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4998x4023",
+      "targetDimensions": "2558x843",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки гражданин Герасим Василиев Ампилов и законная жена его Мария Григориева; православные. Восприемники: Иоанн Иоаннов Ряшенцев и гражданка Юлия Иаковлева Ампилова.",
     "modernInterpretation": "Герасим Васильевич и Мария Григорьевна названы родителями; Юлия Яковлевна Ампилова — восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Рела тожмихсайловери граянданинь (\nа силій сонк\nганкий Мидресевоа дова Ноткаян-л\nРела Тримихан новри гражеданинч\nваннь боаловь зешения Нь п\n- м\nна Юмів Ааковлева осипилова.\nЄрі",
+    "localOcrWithSurnameLexicon": "Рела тожмихсайловки граянданинь в\nа силій сонк\nРела Тримихан но ври гражданин\n- м\nна Юлів Раковлева осипилова.\nСрі",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -92,6 +100,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Пелагия Герасимова Ампилова. Родившийся: Александр Петров Рылеев. ... Крёстная мать: Юлия Яковлева Ампилова, гражданка.",
+    "fuzzyQuery": true
   }
 }

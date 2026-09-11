@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "e460f079933c1f62b3b0754e178d85da1bf49a995be83c47c530f2dacfabe96e",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-header.png",
         "sha256": "5415357212aa4350c87ef93c9aba8d2f630c44a2ef2035f074dfaf8a57388d49",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-target-entry.png",
-        "sha256": "769471a790db835948ddb4a5d9fe2b9184cedd0ee5db04daba5cf12102145f74",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9017aabbe4a83d2e4274e4455210d5c0e51e395117aa317af278429ebea04f92",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5308x4244"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5308x4244",
+      "targetDimensions": "1200x899",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села крестьянин Григорий Федоров Осипов, Марина Максимова Лаврентьева и девица Марфа Гаврилова Ампилова [в строке восприемников].",
     "modernInterpretation": "Марфа Гавриловна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОВСКО'\nИЛOA AЛY\nГОдА, чАСтЬ пеРвАд, Ủ\nЗвАніЕ, ймА, бтчЕство й фамИлЇА\nвоспріємникwв%.\nТого одо сеца преспівяринх",
+    "localOcrWithSurnameLexicon": "ОБСКО'\nГОдА, чАСтЬ пеРвАд, й\nЗвАніЕ, ймА, бучЕство й фамИлА\nвоспріємникшЕ%.\nТого одо сена преспіяриня.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Марфа Гаврилова Ампилова, девица. Муж крестной матери: Максим Максимов Лаврентьев.",
+    "fuzzyQuery": true
   }
 }

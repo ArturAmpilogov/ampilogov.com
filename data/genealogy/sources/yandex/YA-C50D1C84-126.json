@@ -45,38 +45,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "5665bcd13c23a832099d9401eb21267c0d4e884a1906efd3eeb8eea15aee6e84",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-header.png",
         "sha256": "bbfde1fe82b7878b4d3419bf08158940fb8d60a2b972dab143e7e7201a23fbd9",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-target-entry.png",
-        "sha256": "9c43a9676f4b55a55549e39a5b3c6dc40766c43cc17f63b2c7a8d8eaf7d476ee",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "4bd54b9dc95ea90078353f729436640c52dafc5389c99ca5c733b8ca718f3ecc",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4602x3832"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4602x3832",
+      "targetDimensions": "1350x556",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Киселёвки крестьянина Сергия Симеонова Ампилова сын Иоанн, 1 1/2 года [в записи об умерших].",
     "modernInterpretation": "У Сергея Семёновича Ампилова умер полуторагодовалый сын Иван.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "перенниека\nПоспора захоріела /черзн\n12г.\nсниь Стлрчи -\nОмуртицу КнийтащіпЛентиву\nЕаломик\"Анорий Манховг\nспакистсхи крестямено. зинає\nваннова (Сенкнихова Шена Пера\nскна миввила\n1,",
+    "localOcrWithSurnameLexicon": "Поспора захоріела /черзн\n12г.\nамурнику КнийтатпЛентиву\nСаломик\"Анорий Манховг\nспакистехи крестямино. зинає\nваннова (Секлихова Шена Пера\nсина ливвила\n1,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -84,6 +92,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Псаломщикъ Андрей Манковъ Села Киселевки крестьянина Сергія Сѵмеонова Ампилова сынъ Іоаннъ Священникъ Константинъ Летиновъ.",
+    "fuzzyQuery": true
   }
 }

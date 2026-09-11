@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0015-target-entry.jpg",
         "sha256": "af38bb2bfad11f1f77d3aa8aee4b6e2beaf090ae566ccf5039ea2f0759570491"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "723b91d1-2a54-4b6a-a1db-7a23cede5cff",
+        "scanNumber": 15,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0015-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0015-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "5276763761e9e0662029ba04ec761b3b2c552cf3497d1984bba3a287a0bfece8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0015-header.png",
+            "sha256": "b4744586c3a38e6db8a9856541a0f7223b0e6476c24448a3e4b7cffc49553848",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0015-target-entry.png",
+            "sha256": "b4e7205137e7fd384f9a9d9dbbf83179b33efbaccca5da17e5fd27755d385032",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x848",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "КСКОВ\nHRОR\nСУПОАДЛНО\nгÓдА, ЧАСТЬ ПеРКИД, й РОДНЕШ\nЗканіє, ймя, отчЕстко й фамнлА\nRтo co\nкоспріємннкшка.\nКуракой губерніи, Карочанста-Ллиа\nгалара села вімаговерес\nначор\nникі /Засими ма,влеви\nЩро п",
+    "localOcrWithSurnameLexicon": "КСКОВ\nС ПОДАЛЬНО\nЗваніє, ймя, отчЕстко й фамилА\nКТо со\nкоспріємннкшка.\nКураной губерніи, Нарочанста Ли-\nга мара села вілаговерес\nначор\nнині З асими матвлеви",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Никита Аристархов Ампилогов, крестьянин, Орловская губерния, село Лютское.",
+    "fuzzyQuery": true
   }
 }

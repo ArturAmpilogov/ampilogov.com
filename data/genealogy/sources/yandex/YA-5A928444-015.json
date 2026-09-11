@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "0dc04ad55065646356854f5067cf41a2681e0a6dd8cacf571357e275d9b565dd",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-header.png",
         "sha256": "565540ea16a2c320b08364e4334d487c948497e5aa98df9944fe1c68d18a77d9",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-target-entry.png",
-        "sha256": "48ffcf9293d3341bb43d0b96d1108913f44d73311fd96bb221d84f2ebd614452",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "9e4a828fd3b668b026b34f620a8f8b3a7b2604f67fb4d6d41506f540059b2c67",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5217x4270"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5217x4270",
+      "targetDimensions": "1348x791",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Деревни Яковлевки крестьянин Антоний Димитриев Овинов и крестьянская жена села Тримихайловки Марфа Иоанникиева Ампилова [в строке восприемников].",
     "modernInterpretation": "Марфа Иоанникиевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Krò coB\nЗвáніє, йма, бтчество й фамилід\nвоспріємникш к%.\nдеревни яковиевки крестьянинь\nНатвіей Ланнов'в Шипило в'о и крестьян-\nския жена Мароабаннова Шипи-\nлова.\nДеревни свидреввки престьянинь Алек-",
+    "localOcrWithSurnameLexicon": "Kirò coB\nЗваніє, йма, бтчество й фамилід\nвоспріємникш к%.\nдеревни яковлевки крестьянинь\nНатвіей Ланновів Шипило во и крестьян-\nския жена МарсаЛаннова Шипи-\nлова.\nДеревни свидревки престьянинь Алек-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Деревни Яковлевки крестьянинъ Антоній Димитріевъ Овиновъ и крестьянская жена села Тримихайловки Марѳа Іоанникіева Ампилова.",
+    "fuzzyQuery": true
   }
 }

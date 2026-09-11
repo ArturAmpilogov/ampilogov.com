@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПОГРАФІЙ\nУПОААИО\n1902\"\nИСТРИЧЕСКОЙ ВНÚГИ НА\nЛkта\nЗваніє, ймл, сотчєство й фаліліл одмершиги.\nодмєршигш.\nМбкЕска\nЖéнска.\nІїл.\nели Повновки пересців'янки овнни сино-\nва Мистямова -„-\n-\nСвященникь Серий Иммолимарскані\nРіанаів Аомогоів свентилоховч\nМаломицийч Аматолій Иимоминаревій\nРіла /овороваш херослів якииа втерочиа бур-\nтосивева Лповлева дочб Нектслés\n3 мл\nСвященник Срій Млиоммырска?\nДіавгннть Аамючсич Алітиногівч\nНалілициво Анатолій Илинминарскії\nРолі в манковон перосейлвяий Мробраии Ки\n\"\n/инитва Марієнкова дочь вокитерила - .-\n2rie",
+    "localOcrWithSurnameLexicon": "ТИПОГРАФІЙ\n1902\"\nИСТРИЧЕСКОЙ ВНИГИ НА\nЛ та\nЗваніє, йма, отество й фалілія одмершиги.\nодмершиги.\nЖінска.\n1їл.\nели Повновки пересівʼянки овни сино-\nва Мистямова -„-\n-\nСвященникь Серий Имнолимарскан\nДіанаів Аомогоів сенти лохові\nМаломиций Аматолій Иимоминаревій\nРіла Повароваш теросів якима впертиа бур-\n3 ме\nСвященник арій Млноммырска?\nДіавгант Памочич Алітиногівч\nНалолицив Анатолій Илинминаревії\nРолі маново перослви Морати Ки\n\"\n/инитва Марінкова доль воритерила - .-\n2rie",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0214-target-entry.jpg",
         "sha256": "d6bda8b21867033820fc94c4060c125aef303eb93106ddf1e89be0e2d920106d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ff34218-795d-4b30-9c76-24191f45b68d",
+        "scanNumber": 214,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0214-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0214-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c030a092d29e1cdf209cf2562733671d2338cb3f795e7817a2d0876b95c5be36",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0214-header.png",
+            "sha256": "c79a4a50f279b82396a831506b390844f2fb44febc1d9fa6e08a9880e1d16e13",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0214-target-entry.png",
+            "sha256": "6f26a8dda608f9f53702bacba04f4413155fcd618f8cd1cedc886a2ed70e0404",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4943x3902",
+          "targetDimensions": "1455x1987",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминар Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский. От боли груди. ский.",
+    "fuzzyQuery": true
   }
 }

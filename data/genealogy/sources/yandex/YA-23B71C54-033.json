@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0033-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0033-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "3c10e77471dc392413f2cc4a400eaf82a3d492149fbdb14a9323b5221e51499f",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0033-header.png",
         "sha256": "247b48c2182f60a62f9e523f721ed85ad6b00b4f5c6bcfbec9b6499fc790eb89",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23b71c54-ff99-4d60-ae0d-724b5390acf2/0033-target-entry.png",
-        "sha256": "188c3fe7d6634ce8b86a4fdb6b6dc5283783efbcf77670c5d63a08f546511f6b",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "589e2c88e5124c49cd07d3f3b31af196aed83519233808302921ee5a5005138e",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4592x3544"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4592x3544",
+      "targetDimensions": "1200x615",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Села Тримихайловки крестьянин Иван Львов Лебедских и крестьянская девица Мария Иаковлева Ампилова [в строке восприемников].",
     "modernInterpretation": "Мария Яковлевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Доповний\nАпрсовыиосидиа ветония\n1.Простровання\nLaOX\nЛена Тримпбтіновки прост'янина боанка-\nmich Muramolng\nЧковлсвим пристьят -",
+    "localOcrWithSurnameLexicon": "Доповний\n1. Прострованна\nLaeX\nЛена Тримайновки простʼянина боанка\nmich Miramong\nИновисвии пристьят -",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Грачевки на Току, Бузулукского уезда крестьянин Иван Львов Лебедких и крестьянская девица села Тримихайловки Мария Иаковлева Ампилова.",
+    "fuzzyQuery": true
   }
 }

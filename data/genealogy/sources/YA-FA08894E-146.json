@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/146-target-entry.jpg",
         "sha256": "596caf939872b72ab4c008a164eb5556a10eea821200b07234e9a45740a35c4f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fa08894e-531a-43b4-9db4-100a48c99ec7",
+        "scanNumber": 146,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0146-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0146-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "57c7f69ca421f429a00ff467fa519d1d106f5b3aa5364ae06d2309429cb59ba8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0146-header.png",
+            "sha256": "2afd6d96b832a142c1009f93b2161a33e2a192e9db4637f12bbcce13bc4ed580",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0146-target-entry.png",
+            "sha256": "4de3e05d1403c475b65e787bd2294369e4353bfedb9dd8934a5c18a9f2a06374",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5659x4672",
+          "targetDimensions": "2993x680",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "чсноо ныс\nмгуетивам( Масла)\nцанть Михаn Mыfanuoв.\nзАеаломщуинь\n4шк\nуріді\nЗотева крестічним\nговь\nЦки Зніова н\nестьмне: Д\nИзви. бай зажинная лисчель ввеснео Нароки-\nМирплини\nшинизнй\nЛитторові и Варвара\nЛукгялива Сушуєва\nвязуетиваирмаская )\nцити Мирани. Мирний\nкалониинь Плександзь лузи\n0 83в креппятин Zaвhій",
+    "localOcrWithSurnameLexicon": "занть Миха Maanuo.\nурізн\nЗобава крестічним\nгова\nУки Змова н\nестьяне: Д\nМерилини\nЛитторові и Варвара\nЛуклялива Сутуєва\nцисти Мирами. Мирний\nкалониень Плександзь лузи\n0 83в кремятин вавій",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Гавриил Иосифов Ампилогов, крестьянин, село Зобово. Отец: Ларион Авксентиев Попоголо, крестьянин, Сомирский хутор.",
+    "fuzzyQuery": true
   }
 }

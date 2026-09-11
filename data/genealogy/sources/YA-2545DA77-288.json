@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Видимые метрические строки об умерших проверены по сохранённому фрагменту; формы Ампилогов / Анпилогов / Анфилогов не читаются. Имена и фамилии относятся к другим семьям.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; итог основан на локальной визуальной проверке сохранённого фрагмента."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОД АЛЬНО\nМСТРИЧЕСКОЙ КНИГИ НА\nЗваніє, ймА, отчЕство й фамиліА одмершагш.\nQỷ Hépu\nЕБÉніл.\nЮрестыянина Сора Кармавки\nНихайновской вокости, Орекбург\n„Терептія\nдоь Скодосія. . .\nгиосивь Мвиканвь Анукорир\nКрестыганина Сора Картанки\nвихайновской Ковости. Оронбург,\nсой пувтр Стржа саитя бикрімк.\nикивь. Миканнь Анужфаро\nСОБеДИНеаниИ\nКрестьянии\nМихайновской вокости ззаенбурь)\nсрой пуборнін ж грира, Вахара\nЛнірсева втопанова, Дого Уворосна .\nВо Мвиканко\n. Авнунберов",
+    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nМОТРИЧЕСКОЙ КНИГИ НА\nA-L-\nЗваніє, мА, отчЕство й фамиліА одмершаги.\ncỷ Hépu\nЕБенія.\nДрестьянина Сора КармаНки\nНихайновской вокости, Оренбург\n„ Терептія\nдоь Сходосія. . .\nглоствь Миканв Анукорир\nКрестьянина Сора. Карманки\nвыхайновской Ковости. Оронбург,\nкой пут Стра натя бикр\nКрестьянии\nМихайловской вокости звентурь)\nсрой пуборній ж грира, Захара\nАнтрева втопанова, Дого Хвороста\nВо Миканко\n. Авнунберов",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -37,10 +44,53 @@
         "sha256": "5f84274cf1870b54617c5667f7d12f6156f749e727eba14d78cb89d9e6aaf8a3",
         "description": "Проверенный вручную локальный фрагмент метрических строк."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
+        "scanNumber": 288,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0288-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0288-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "a772e2f886a58198d7ae0b6ff1e896bb7befbcdd9016d9f98c5e40737399ba15",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0288-header.png",
+            "sha256": "3baf59deaabb3b3f09ec60b6972d46d46bccb79121ac92a64e33f564de9e888c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0288-target-entry.png",
+            "sha256": "61ca3c9b3dd510cbb26ee1fb75f50426bb038e6bfaf8c0f4fabd9dbe3f2d2159",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5302x4210",
+          "targetDimensions": "1499x2839",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Терентий Филипов Ампилогов, крестьянин, село Кармалки, Михайловская волость, Оренбургская губерния и уезд.",
+    "fuzzyQuery": true
   }
 }

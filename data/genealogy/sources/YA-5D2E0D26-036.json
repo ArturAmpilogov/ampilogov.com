@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "в'кроиспов'даніл.\nБоспріємникШвЪ.\nСиа веконевти кресянник веторь\nТимикск Чликренкавав зорован\nШисойвевь Фрормовь, змолкао кашна\nВлата все оина) севн Естей)\nвірніз Ленсік Доа православнтя.\nИінтrав Сторошна\nСв'ятуониикв, воать Динтфієва\nШимань\n- систк\nкокавнив.\nИBOМ\nДаровин КаУемии прдстоятнии Конерек\nИоеть робг ралаший соло\nжить (Засилтева Месполентові,\ntй tmo lam, Cиr la\nСстаслаа ічест его Карискова\nВанин крествана Марина Мра.\nробримова\nоба привколиєтье.\nепийй ва воодлввсна),",
+    "localOcrWithSurnameLexicon": "віроспов' даніл.\nБоспріємникивЪ.\nСла веконевти крестянник ветерь\nТими кст Чликрентавав го рован\nвірніз Сенсік Доа православни.\nМіста Скоромна,\nСвʼятаник, вость Динтрієва\nШимань\n- истк\nкоклавнив.\nИВОМ\nДаровин КаМении прдстоянии понерек\nжита /Засилаєва Месполентові\nУсталаа ічест ого Написнова\nВанин крествана Марина Мира.\nпробримова\nоба привалиютье.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5d2e0d26-f022-400b-a756-3f6952b2b80d/0036-target-entry.jpg",
         "sha256": "610595362dafbd5bce5fe22286015905ca64a999ff7d1931bfbcc3125f3c66e1"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5d2e0d26-f022-400b-a756-3f6952b2b80d",
+        "scanNumber": 36,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5d2e0d26-f022-400b-a756-3f6952b2b80d/0036-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5d2e0d26-f022-400b-a756-3f6952b2b80d/0036-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4fa51cb099e2c4b9aa2f1359f8a451d92966379a02089a632fffd9a8f6d85da7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5d2e0d26-f022-400b-a756-3f6952b2b80d/0036-header.png",
+            "sha256": "e96db42dd19c5d09797fcac0806c9c95a5e2b5a0d0bce784ee5876dc79d990a1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5d2e0d26-f022-400b-a756-3f6952b2b80d/0036-target-entry.png",
+            "sha256": "7341d7caa4eaab2ddd28d51820c1f01b0aefacc801a3437e289d171977db98b5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4875x3903",
+          "targetDimensions": "2815x1249",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Георгиевки крестьянин Иван Феодоров Ампилогов, законная жена его Параскева Дмитриева, оба православные.",
+    "fuzzyQuery": true
   }
 }

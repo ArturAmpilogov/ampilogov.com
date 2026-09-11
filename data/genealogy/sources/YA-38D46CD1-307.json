@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "реаломи,ико Сvй Godprhe2\nСела Карменни валасиам уитетОфе.\nu- /n.\n2.\nСетена Иванови Кадловадияв Ялана\nРвященник Дминтрй. Дормінсннв\n1сотосищикь Согі Юоброва.\nСела Карманни Крествянина\n4л.\nГрнгоргія глорови Хорошиловодогь Анна-\nСвищеннии римитирій реуднинани.\nКсалостцикь Сут 1000\nСемоказмоит Критвваох ТРЧ и )\n2.",
+    "localOcrWithSurnameLexicon": "Села Карманни валасна уитет Офе.\n2.\nСелена Иванови Кадловадаяв Елана\nРвященник Дминтри. Дормінснив\n1 сотосищикь Согі оброва.\nСела Карманни Крествянина\n4л.\nГригорія торови Хорошиловодог Анна -\nСвященнии риматирі реуднинани.\nКсаностико Сут 1000\n2.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0307-target-entry.jpg",
         "sha256": "5dc3ee8222c7f2636679b98f169a32c99e7e2efa95e3aff807a75ac37f648aff"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
+        "scanNumber": 307,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0307-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0307-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2bcd66b3248443e3aed2eedb9db84ec12cc5bc04aa42507bad539a387fa4ed27",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0307-header.png",
+            "sha256": "ac1f414d998398a4b4cc0457b815726619dec1ca761e4b39a71bfd8c4e1c0c8e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0307-target-entry.png",
+            "sha256": "da8f91c086a3a25d8683123fa814737ccf3a3b3d19341711f7dd6d2efd47450b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2206x1859",
+          "targetDimensions": "1200x694",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Александр Иванов Ампилогов, 4 месяца. Умерший: Георгий Васильев Дымов, 1/2.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/7c1ca69a-ec0c-47ab-84ee-ce61624e903a/0063-target-entry.jpg",
         "sha256": "47e981fab7709c7ba2ffe3cb3968deb5676b0e604dced0c2492cd7eab09b9c08"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7c1ca69a-ec0c-47ab-84ee-ce61624e903a",
+        "scanNumber": 63,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7c1ca69a-ec0c-47ab-84ee-ce61624e903a/0063-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7c1ca69a-ec0c-47ab-84ee-ce61624e903a/0063-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "433a72078e6468e44e44a67af1e5bee29676566961a4220cc1ec59e9d9e1bb31",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7c1ca69a-ec0c-47ab-84ee-ce61624e903a/0063-header.png",
+            "sha256": "9bf1617b4e0fdad34d77997e8acb82c94f6d58d0c9fa80f1f6bd8207561de666",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7c1ca69a-ec0c-47ab-84ee-ce61624e903a/0063-target-entry.png",
+            "sha256": "1fd8375a9c799ea72e062f23b6f084f43879c47945f0383186862b2cc55fa56a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4668x3759",
+          "targetDimensions": "2293x698",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На сохранённом локальном развороте метрической книги за 1908 год фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
     "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "\"апимиь м\ncnuumaй veena ma\nиесилово Адарилю и кераствличния\nМарина ялепстсва; обы привосливным.\nМинa Пересквe Алenevela bycrarska.\nСвияеннит Мирсиий Оfuє\nАканомицика Доитуій 13 кра3аавн-\nохивам\nДеревии Фрайчимай кересттвяниии Мазарь-\nМой яе деревии прествлнить М6 епл\nAverressebr Agрunь i opsnвous\nИвиновь Геекковх и заклниная чсена его.\nОлотоеія Весильевал: оби привослившие\nЯнено Матрона Вимивеви Коновел.\nСвященник Мираиий Оринв\nНеалостиныы Деитроей Вворовчевчо.\nPecrи Keмeuки eArnfAlI",
+    "localOcrWithSurnameLexicon": "ликсилово Адарилю и пераствличния\nМарина лепетва; обы правосливным.\nМина Переква Алепв, Gycrarska.\nСвященнит Мирсний Орив\nАканомицика Дитрій 13 крававн-\nохивам\nДеревин Фрайкимай керествяними Лазарь-\nМой же деревии престолнить 16 спл\nИвиновь Гееккова и законная чена его.\nОлотосія Висильева: оби привослившие\nЯнено Матрона Виливев Коно вел.\nСвященник Мираний Орина\nНеалостины Деитрей Взоровчевчо.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "low",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Александр Иванов Ампилогов. ... Отец: Иван Флоров Ампилогов, крестьянин, деревня Дрейкина.",
+    "fuzzyQuery": true
   }
 }

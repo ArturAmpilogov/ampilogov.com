@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "ae37242493f9dae81753f16a03f0ce8da664508ec37255ed8ace0715da289d54",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-header.png",
         "sha256": "1d042f3155ef07f0ed88d4c91624829bb091260020ab110c11de60e38c6a52f6",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-target-entry.png",
-        "sha256": "b67f06e0c1589f029520d7506148684cc1fc90bcc4b1f3808e02d6cb27ad6275",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "6c8579019d9cb3e5b641d7c1c5f1098918f427b6a09f992d1d6b910f775fd249",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4484x2964"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4484x2964",
+      "targetDimensions": "1200x731",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Бахтемирского Иван Михайлов Улзев и Зиновия Михайлова Ампилова [в строке восприемников].",
     "modernInterpretation": "Зиновия Михайловна Ампилова вновь названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "воспрієлникшвг.\nКрестіяне смо баута\nменаю владшлир\n9/ванив Ширинк и Мари)\nМиранлова Коломицвена",
+    "localOcrWithSurnameLexicon": "воспріємникшва.\nКрестяне село барта\nменаю владимир\n9/ вани Ширинк и Мари)\nМиранлов. Коломиц вена",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахтемирскаго Иванъ Михаиловъ Улзевъ и Зиновія Михаилова Ампилова.",
+    "fuzzyQuery": true
   }
 }

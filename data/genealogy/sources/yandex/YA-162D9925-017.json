@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0017-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0017-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "a16b6a492bff6bbadc8c8f46f265fdec6504cd8e1d8012017e07a3e732549012",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0017-header.png",
         "sha256": "f3f9f87959af97b276c0a4b447f0ed3f2f1a4697528d30b8052811f96e176746",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/162d9925-c839-4378-b41f-9bc370c0e505/0017-target-entry.png",
-        "sha256": "5ab28c0462de91ea6dbe40d5436da996579ad599192d5983b0fff5e4c5a1f895",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "0c5479e36e283033130def30f69bd9a5e781c74a627bdf6b7f3c5a91aa6b3622",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3860x2832"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3860x2832",
+      "targetDimensions": "1200x1412",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Крестьяне села Бахтемирского Семен Константинов Софронов и Евдокия Сергиева Ампилова [в строке восприемников].",
     "modernInterpretation": "Евдокия Сергеевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звáніє, йма, отчество й фалиліл\nКто соБ\nБоспрієлнИкWК%.\nАепраранстий личир-\nнин-\nПавесл Андрі-\ncnol Заттьевг\" Н.\nЛомовскаю уледа сеии\nкварешном Оедам)\nСтенанова Вварибков.\nКрестьяло оси Бар\nтемірани Самен\nКанетантиновСу\npanol. IlgoliadCoy-\nпієва Аеипинова.",
+    "localOcrWithSurnameLexicon": "ЗвАніє, йма, отчество й фалиліл\nКто соБ\nБоспрілнИкШ%.\nАпраранстий личи-\nНавеся Андрі-\nanol Заттьев \" Н.\nЛомовскаю уледа семи\nкварешном Редам)\nСтенанова Вварибков.\nКрестьяло оси Бар\nтомірани Селен\nКанетантинов Соу\nпієва Анпилова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,5 +85,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне села Бахтемiрскаго Семенъ Константиновъ Софроновъ и Евдокія Сергіева Ампилова.",
+    "fuzzyQuery": true
   }
 }

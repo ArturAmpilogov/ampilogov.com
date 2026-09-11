@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТРЙЧЕСКОЙ ВНÚГИ НА\n1902.\"\nЗвáніє, ймд, сотчЕство й фамнліл родітелєй, й какóгш\nшнусл.\nв'tкронспов-Бдані».\nЛь.\nСели Почеровжи перествянийв ОгофороПи-х\nконсевь Прибачинть и мслаело Марак\nАлекитева-обитривомисльсо.\nвищенникь Серий Иигномина\nРіакнів Помлажсив Алпимосовв\n1еамомицива Анатолії Имиаминаравій\nДеровия Мирайловхи перествянийв Муввьмки\nформсовль в сижировть и сисниего (Карвара\n/ісенофапрова-обстривомлальо\nвсиненникь Сергій Лмномитор сьой\nДіакинв Аомоленв Ампалогові С\nПаломициіч Анатолій Лимоминарсвій\nтer\nДоровия Митенловки пероствяннич Пиволч\nпересимовь (сплимитинь млишеего Дошки\nДонтикови- обитриволиальня.\nСвощенникв Серній Натомик с\nРішнаив Ламлюбів Ампиногова\n/еалолици(2 Анатолій Иимолинарскій\nстeл\nДорозіи Ливийнівлиперествянийв Данінів",
+    "localOcrWithSurnameLexicon": "ТРИЧЕСКОЙ КНИГИ НА\n1902. \"\nЗваніє, ймА, сотчЕство й фамілія родителєй, й какгш\nшнусл.\nв кронспов-дані».\nЛь.\nСели Попровки перествяний Особоро и -\nконневь Прибачинь и мелисто Марак\nАлекслева- обитривомисльо.\nвыщенникь Серий Имгномина\nДіактів Поможив Ампилоговв\nНамолицина Анатолії Имиаминаравій\nДеровия Мирайловки перествянийв Турви\nформовл в сижировь и сиси его ( Карвара\n/сенофпрова- обстривошланьо\nвиненника Сергій Млномитар скай\nДілкінв Аомоленв Ампилогові С\nПаломициіч Анатолій Кимоминаравій\nДоровия Нитейловки проствянич Пиволч\nпересимов (сплиситень млишеего Дошки\nПоникова - обитриволиальня.\nСвященника Серій Натомик с\nРішнаив Ламобів Ампилогова\n/ саломици(2 Анатолій Кимолинарскій\nДорозі Л вийнівлиперестванийв Данінів",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0170-target-entry.jpg",
         "sha256": "36f0deb2b16e250c1de1f0d090a898621c2d508281b0315d8d254a288bdcec46"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ff34218-795d-4b30-9c76-24191f45b68d",
+        "scanNumber": 170,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0170-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0170-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2864fffca7b8c9c3851415251380d797178952bc012eb65fe040f2c5dc4279b7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0170-header.png",
+            "sha256": "424982edd683f04b5b08f3cae3b6c870c9a28f496ad7752fc1d6a44293501502",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0170-target-entry.png",
+            "sha256": "a2a3860b75082a63d2ab882becd70c344a03d693fe8eb72311a5f6d15c967e96",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5004x3921",
+          "targetDimensions": "1457x2280",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминар Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "пдосяним Ивини Стіптови\nСпоков и запонный онсыи его\nзахоннос оненмего\nПариняки Льинова; я8 на іза\nвиславные\nовтинти я іен ка о в еил\nбеайантрит биитани Годбинн.\nCaine Стадай Вогдолювни пра\nстьянинь Осодорь Акттовь Су\nботинь их зикожния драмиопо\nМатрони\n•вчорови! ова",
+    "localOcrWithSurnameLexicon": "посяним Ивина СПитови\nСпоков и запонный онси его\nзаконнос онем его\nПариняки Лоинова; об на іза\nвиславные\nстьянинь Осодорь Актнов Су\nботинь их зикожния драми опо\nМатрони\n•вгорови! о ова",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.jpg",
         "sha256": "11d5375c0e8000d6419b45e4d4d33cdd58df74ec1ae16e792dc730eaf1ed0ae0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 10,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "12f6cc3e70f7beb54f2bb660b4f1038283acb12882618981e547d3adf8f95953",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-header.png",
+            "sha256": "1caed5657043ae12c3426b284a4d45bc8f5d0c167b500480e6d86db86e0c7bf2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.png",
+            "sha256": "9ada3c8c9a0a5278402fd80727993ae992d53c4b3d827528032e446dbb9c0fc4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5464x4351",
+          "targetDimensions": "1521x1062",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горчаков. Того же села солдат Ермолай Павлов Сдвижков и солдатская девица Евдокия Филиппова Попова.",
+    "fuzzyQuery": true
   }
 }

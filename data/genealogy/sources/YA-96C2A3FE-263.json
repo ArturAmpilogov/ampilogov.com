@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0263-target-entry.jpg",
         "sha256": "46f218e8e25539299f99ba6fa665c448f730b5f4edbac255d2a2020f7674b25c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
+        "scanNumber": 263,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0263-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0263-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "d275e531187341ea7ce3ad832cd20dfc484d2e491002904c7689b3040923fb99",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0263-header.png",
+            "sha256": "ca8089625c805364bc7b6c59630cb245780ea93d0e1dc3cf1f556f31b191c9aa",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0263-target-entry.png",
+            "sha256": "3503d56c7855c05450fc791b7d116e7ca820cdcd3a6b682d08cfcd2e32c4ff71",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5251x4207",
+          "targetDimensions": "1345x893",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села Старой - Вогорановки Крествя-\nнинь Максиль СПетровь Гончаров-\n„ Законная бранаего Аниія Григоран;\nова православные.\nОруnnй Мasnи Prmoarь\nКоломщинь. Тимооей Гормінова\nЛишка Дубоваго, Бузулунского гуіч-\nзе/а, Самараній гуверній солоситіь\nв Вакуловь и Закон-",
+    "localOcrWithSurnameLexicon": "Села Старой - Богорановки Крествя-\nнинь Максимь Петровь Гончаров-\n\" Законная бана его Аниія Григоран;\nова православные.\nOpynns Макки Prmuoaro\nКоломщинь. Тимосей Гормінова\nМашка Дубоваго, Бузулунского гріч-\n3е/а, Самараній гуверний солонитів\nв Вакуловь и Закон-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Пряйков. Того же села крестьянин Архипп Иаковлев Гугнин и солдатская жена Марина Петрова Усанова.",
+    "fuzzyQuery": true
   }
 }

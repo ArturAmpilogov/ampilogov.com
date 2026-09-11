@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0109-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0109-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "699d84cc6f7ef499fd3a0c57e9924f29565f4c750d8c8a526f058ff7bc8c511a",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0109-header.png",
         "sha256": "9fb7a25451aadbfe928a846e9d459f3a2bcba95bb19fe415ac59250c7c63e861",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/1536bfc7-39be-4528-b538-dd1cecb0286c/0109-target-entry.png",
-        "sha256": "f183a50c0433d2b6df09dd0046f4ce9877209692971011fb236c715d6610a4b1",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "e62ced6e88704d32d7a32d5d0fdb1823d1941592cee95af582032b1abbc1da74",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5099x4414"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5099x4414",
+      "targetDimensions": "1203x598",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села псаломщик Илья Кириллов Соболев и крестьянка Дарья Алексиева Ампилова [в строке восприемников].",
     "modernInterpretation": "Дарья Алексеевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Оно же села Крествянина вив,\nтровСтенанів и крествянка\nKis\nВітета Манттрова Мирамибва\nдарственный",
+    "localOcrWithSurnameLexicon": "Оно же села Крествинина вив,\nтро Степанів и крествянка\nKis\nВітета Канторова Мирамибка\nдарственный",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -76,6 +84,12 @@
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же села Псаломщикъ Илья Кирилловъ Соболевъ и крестьянДарья Алексіева Ампилова. ... Крёстная мать: Дарья Алексиева Ампилова, крестьянка.",
+    "fuzzyQuery": true
   }
 }

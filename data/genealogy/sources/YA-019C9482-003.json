@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-019C9482-003",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "birth-and-baptism-godparent-mention",
   "collection": {
     "catalogId": "019C9482",
     "scanNumber": "003"
@@ -10,14 +10,40 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/019C9482/3"
   },
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 3,
+    "date": {
+      "display": "родился 6 января, крещён 11 января 1915",
+      "birthIso": "1915-01-06",
+      "baptismIso": "1915-01-11",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход метрической книги Путятина и Софийского",
+      "normalized": "Путятино или Софийское, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "confidence": "medium; конкретный приход требует сверки титульного листа раздела"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-019C9482-003-M1",
-      "role": "other",
+      "role": "godfather",
+      "personId": "P1653",
+      "nameAsTranscribed": "Заведующий Михайловской второклассной школой священник Михаил Афиногенов Ампилогов",
+      "modernName": "Михаил Афиногенович Ампилогов",
+      "displayName": "Священник Михаил Афиногенович Ампилогов",
+      "sex": "male",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-019C9482-003-M2",
+      "role": "baptized-child",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
-      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
-      "surnameSeries": false
+      "nameAsTranscribed": "Веніамин",
+      "modernName": "Вениамин [фамилия семьи не входит в исследуемый ряд]",
+      "displayName": "Вениамин",
+      "sex": "male"
     }
   ],
   "evidence": {
@@ -29,19 +55,76 @@
         "path": "data/genealogy/evidence-private/yandex/019C9482/003-target-entry.jpg",
         "sha256": "40f142b7afd68103fc139dd017ff0bdd80a0e41389f7007d36ca972bc9bebe58"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "019c9482-5d4a-4061-9b5c-e7f04c73635d",
+        "scanNumber": 3,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0003-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0003-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "40a966b69fb4a56f16ee5d5969ad632fd07bf32315c19d241b2b778df60b0daf",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0003-header.png",
+            "sha256": "e1202210ac5b7bc09835cc85584366e7e1dcf5078b4e93756e36603052829fda",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0003-target-entry.png",
+            "sha256": "2d2f372117be6594f11da55a6ff40b1d5257c0264ede58e1bf8b1392a8b2a164",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4238x3493",
+          "targetDimensions": "1200x847",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видны январские записи о крещении детей других фамилий и подписи священника Владимира Пойгава (?) с псаломщиком Николаем Красносвободским (?); фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Участники крещений и церковнослужители сохранены только как контекст первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "status": "complete-for-relevant-row-with-explicit-minor-uncertainty",
+    "literal": "1915 год, часть первая, о родившихся. Январь. Мужского пола № 3. 6 родился, 11 крещён. Веніамин. [Родители прочитаны частично.] Восприемники: заведующий Михайловской второклассной школой священник Михаил Афиногенов Ампилогов и дочь заштатного священника Анна [дальнейшее имя читается неуверенно].",
+    "modernInterpretation": "11 января 1915 года священник Михаил Афиногенович Ампилогов, заведующий Михайловской второклассной школой, был восприемником при крещении Вениамина, родившегося 6 января.",
+    "indexNote": "Прежнее отрицание совпадения было ошибкой автоматического чтения. Полный разворот подтверждает редкую связку должности, сана, имени, отчества и фамилии Михаила Ампилогова; даты, номер записи и роль проверены непосредственно по скану.",
+    "localOcr": "Масловская.\nеB -\nНого - ме села крестьянии\nПавель Флоріво Поріьлинь\nи престьянсная менц Мо= М\nоича Флорова ввиридова.\nП-\nЗавібугощій Михайловской\nвторокласьной гнолой свящек:\nжинь Михалісь Оориноченива\nИлтильгові и дочь з амтат - п\nа Спна",
+    "localOcrWithSurnameLexicon": "Масловская.\nеВ -\nНого - ме села крестьянии\nПавель Флорів Порівлинь\nи крестьянская менц Мо = М\nрича Флорова ввиридова.\nП -\nЗавідугощій Михайловской\nвтороклассной гнолой священ:\nжинь Михаліль Совиноченов\nИлтильгов и дочь з алтат - п\nа Сина",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high-for-target-person-role-and-dates; medium-for-non-target-family",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full-page, birth table header, record number 3, dates, child and godparents",
+    "unresolved": [
+      "Конкретный приход внутри сводной книги Путятина и Софийского требует сверки разделительного титульного листа.",
+      "Не относящиеся к фамильному ряду участники оставлены в расшифровке без отдельных профилей."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Михаил Афиногенов Ампилогов, священник, заведующий Михайловской второклассной школой.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Священник Михаил Афиногенович Ампилогов, заведующий Михайловской второклассной школой, был восприемником при крещении Вениамина 11 января 1915 года."
   }
 }

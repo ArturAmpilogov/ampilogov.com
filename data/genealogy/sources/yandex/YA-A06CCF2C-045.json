@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "fd4952a0c2238c9317df313d6f3bc0a35feb63def7b6975ca81e8b7f8d44c8c7",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-header.png",
         "sha256": "f0778b4e2f044588c905b11be13043acc91575e7e80e43cffce71d916bac87e7",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-target-entry.png",
-        "sha256": "6ff8b18c3de7472a8428c732a21756b584f71e90e72d98d5511fa8d34ebdb36f",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "6c2806a826502b251abcf6a63a50170c719dee0d4a3319e57aeb767bda8882a2",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3792x3040"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3792x3040",
+      "targetDimensions": "1200x902",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Нижнеломовского уезда села Скворечного крестьянин Трофим Павлов Привалов и крестьянка села Бахтемирского Евдокия Исаева Ампилова [в строке восприемников].",
     "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей; происхождение Нижнеломовского уезда относится к другому участнику.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "санбра Васшлвова Кака-М.\nрова\n20\n1яда се\nСтоловасаю ун\nТекориик Павнов При- де.\nвонов нкрестічинна Я\nCfIl\nасть Барі-темирском.\nКОИ\nОБ\n• Кракия Дсасвс Алпилова",
+    "localOcrWithSurnameLexicon": "санбра Василвова Кака-М.\nрова\n20\nТенориик Павлов При- де.\nволов н крестічинна Я\nCAIl\nаста Барі-немирском.\nКОИ\nОБ\n• Крания Дас вс Ампилова",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,5 +85,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Н. Ломовскаго уѣзда села Скворешнаго крестьяни Трофимъ Павловъ Приваловъ и крестьянка села Бахтемирскаго Евдокія Исаева Ампилова.",
+    "fuzzyQuery": true
   }
 }

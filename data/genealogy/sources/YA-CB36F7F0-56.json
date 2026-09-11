@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0056-target-entry.jpg",
         "sha256": "315af72a483328f40d04a186223a2eff31f05f0463d4c0aed8de380d838d8420"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cb36f7f0-ba71-42b5-a9aa-94c41b455802",
+        "scanNumber": 56,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0056-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0056-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6c76c381c471fe151bc3b547c2c218c23d8c5eee390184f51ec607fc10dba5ca",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0056-header.png",
+            "sha256": "fa5f930dd98162b806a189c7e67fb1740de97a9f076c93b34ccefac690a36eb0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0056-target-entry.png",
+            "sha256": "b3b5c614a3a7b042a86d390e0e75640c2b9338a217297eaff4ef4532f2646dd1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5105x4314",
+          "targetDimensions": "2595x834",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОвскоЙ\nГИПОГРО\nСИНОДАЛЬНОР\nвтричеевой внúги на /903 й\nГОДА, ЧАСТЬ ПЕРЕАД, й РОДИ\nЗваніє, ймл, отчЕстко й фамнаїл родителей, й какоги\nЗваніє, ймА, сотчество й флмнліл\n(CA.\nвкронспов-Кданіл.\nвоспріємникшвк.\nв 3 просточниия Нинита Влнl",
+    "localOcrWithSurnameLexicon": "ОвскоЙ\nГИПОГРО\nСИНО ДАЛЬНОР\nвтричеевой вниги на 1903 ÷\nГОДА, ЧАСТЬ ПЕРЕАД, й РОДИ\nЗваніє, ймл, отчЕстко й фамїл родителей, й какоги\nЗваніє, ймА, сотчество й фамнліл\n(СА.\nвіроспов-даніл.\nвоспріємникшва.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Димитрий Васильев Ампилогов. Родившийся: Иаков Григорьев Богданов. ... Отец: Василий Андреев Ампилогов, запасной рядовой, село Зобово.",
+    "fuzzyQuery": true
   }
 }

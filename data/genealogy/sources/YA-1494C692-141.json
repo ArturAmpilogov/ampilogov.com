@@ -32,7 +32,14 @@
     "status": "primary-scan-transcription",
     "literal": "Ѳеодоръ. Воскресенскаго хутора крестьянинъ Иванъ Павловъ Ампилоговъ и законная жена его Мавра Прокопіева.",
     "modernInterpretation": "В 1911 году у крестьянина Воскресенского хутора Ивана Павловича Ампилогова и его жены Мавры Прокопьевны родился сын Федор.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "пистьятинь бощень\nАепилогок изи\nколная еготнена Мавра\nПропопісва, оби правосі\n-діельньи\nенцинткмлаииснел\nФілконк Евгній Вічляче\nСелга Крыма триетвумнк\nФимитрій Пивлоч. При-\nОлевизанонная",
+    "localOcrWithSurnameLexicon": "пристьятин бощень\nАмпилогок изи\nконная егоднена Мавра\nПрополісва, оби правосі\n-діелань\nФілконк Евгній Вічляе\nСела Крыма триетвинк\nДимитрій Павлог. При-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -57,7 +64,43 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5394x4308",
       "targetDimensions": "5034x3478"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "1494c692-cbd3-4f72-a52d-26cb43ffdd48",
+        "scanNumber": 141,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/1494c692-cbd3-4f72-a52d-26cb43ffdd48/0141-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/1494c692-cbd3-4f72-a52d-26cb43ffdd48/0141-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "74258f5a08d7e53b249cae20bcf473027a6fc8faf624089da2793084a16be438",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/1494c692-cbd3-4f72-a52d-26cb43ffdd48/0141-header.png",
+            "sha256": "1d75d6afd5dfd198eb3ef559204c6288f3d0198c345fa0ec119485167d7859ce",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/1494c692-cbd3-4f72-a52d-26cb43ffdd48/0141-target-entry.png",
+            "sha256": "4a4bab6c274f938a378571be38ad1cc9b81a92597f6c5241c47377ced2d9fbc4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5394x4308",
+          "targetDimensions": "1409x784",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
@@ -68,5 +111,9 @@
     ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Родившийся: Феодор Иоаннов Ампилогов. ... Отец: Иоанн Павлов Ампилогов, крестьянин, хутор Воскресенский.",
+    "fuzzyQuery": true
+  }
 }

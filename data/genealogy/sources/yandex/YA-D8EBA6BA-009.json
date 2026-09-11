@@ -37,38 +37,46 @@
     "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0009-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0009-full-view.png",
-    "capturedAt": "2026-09-10",
+    "capturedAt": "2026-09-11",
     "sha256": "bc65497983c8a7892e7a34bd199cbaf5e350ddd4b1977c292fdb346f61d6558a",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0009-header.png",
         "sha256": "c1fa2ab390f40d1cbf8fc7433e1cd26c926c489e2a4fc3c9d89997856fc8a514",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0009-target-entry.png",
-        "sha256": "f8500ea0eed8e79b87df16f8dc261ac4bb0439e159e8c1e07e1216301edb7b34",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "b14cfe50acc2c24254c54f7ca258a83212a934817998d71db9fbe498abac6770",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "5115x4130"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5115x4130",
+      "targetDimensions": "1200x626",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
     "literal": "Того же села крестьянин Леонтий Тимофеев Ильин и крестьянка Евдокия Максимова Ампилова [в строке восприемников].",
     "modernInterpretation": "Евдокия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Максилова лмпилова.\nТоо жеста Крестьянинь\nСтефань Кирилиссь Тировь\nидлявица ввдиних соаннова\nВялкова-",
+    "localOcrWithSurnameLexicon": "Максимова смилова.\nТоо жеста Крестьянинь\nСтефань Кирились Туровь\nидлявица ввдиних соаннова\nВилкова.\n1 а",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -77,5 +85,9 @@
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянинъ Леонтій Тимофеевъ Ильинъ и крестьянка Евдокія Максимова Ампилова.",
+    "fuzzyQuery": true
   }
 }
