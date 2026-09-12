@@ -51,7 +51,15 @@
   "transcription": {
     "status": "complete",
     "literal": "Декабрь. №66. 3 [умерла], 6 [погребена]. Деревни Кармалки государственного крестьянина Владимира Ампилогова дочь Феодосия, 1/2 года, от младенческой болезни. Погребена на отведённом кладбище священником Виктором Александровским и диаконом Василием Юловским.",
-    "modernInterpretation": "Феодосия Владимировна Ампилогова умерла 3 декабря 1863 года в возрасте примерно полугода."
+    "modernInterpretation": "Феодосия Владимировна Ампилогова умерла 3 декабря 1863 года в возрасте примерно полугода.",
+    "localOcr": "ADianoes Parunii Duable\nДлare Олекини Сатраловкя\nвесrа Мирайловки\nCosedamkaClyckiis\nЛаріанова Перова\n26\nDiaross Pannih Doue",
+    "localOcrWithSurnameLexicon": "ADianoes Parunii Duable\nвесла Мирайловки\nCo sedamkaClyckiis\nЛаріанова Перева\n26\nDiaross Pannih Doue",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "sourceUrl": "https://yandex.ru/archive/catalog/88608aeb-0930-4cc2-aca9-9b51895f325b/363",
@@ -81,13 +89,55 @@
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-06",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "method": "manual-comparison-with-source-transcription-and-document-context",
+      "fullDimensions": "4971x4485",
+      "targetDimensions": "3700x1900",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "88608aeb-0930-4cc2-aca9-9b51895f325b",
+        "scanNumber": 220,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0220-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0220-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fdec21a3de8c23aa1ac8f88a48c6e05ea0c83ffa8e645a64e9e58f83208f0f58",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0220-header.png",
+            "sha256": "29f2d72071632e722e9c17e44b9f52601103c576904d796634b8fa495ae2c995",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0220-target-entry.png",
+            "sha256": "2aeae986e853ca05e29b4dbaeed8c7baa8f3272a16698f7c910ff693a726ef19",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5035x3899",
+          "targetDimensions": "1333x928",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-08-25: сохранены локально полный разворот, заголовок и увеличенная целевая строка; SHA-256 проверены.",
       "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
@@ -96,5 +146,9 @@
   "summary": {
     "status": "verified-summary",
     "text": "Смерть Феодосии Владимировны Ампилоговой 3 декабря 1863 года в возрасте примерно полугода."
+  },
+  "indexData": {
+    "querySnippet": "Деревни Кармалки Гот крестьянина Владиміра Ампилогова дочь Ѳеодосья. ... Отец: Владимир Ампилогов, крестьянин, деревня Кармалки.",
+    "fuzzyQuery": true
   }
 }

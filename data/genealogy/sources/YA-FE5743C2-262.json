@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0262-target-entry.jpg",
         "sha256": "26abbe168769627f8cba5757c092c8f655f895aeede6b052c5191c2105a9813d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4",
+        "scanNumber": 262,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0262-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0262-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bc35274563c3e61f219e333b2c7e3cda9fd31d6e1304916377f4e7b63d953112",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0262-header.png",
+            "sha256": "6df1c52b09523e549cbbf1aa44605db7a0cb58be91c8c45bca33a4df1d3c2f3a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0262-target-entry.png",
+            "sha256": "6cbffc7933713cb52c3fcc0447b796323e4f5e6ccf9fa6a987d8abc42f85557f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2271x1876",
+          "targetDimensions": "1200x932",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НОСКСКСКОЙ\nТИПОгРАФ!\nАДЛИО\nИСТРиЧеСКой кнИГИ нА 1907\n1 ЛЁнь\nЗваніє, йлд, бтчество й фалилід одмéршаги.\nвдлéршка\nпогрЕGéнія.\nМУжеска\nРоло пармалки крестьянина Нихажла\nвасилвева корносовадочь я нна\nСвяященник рилитері\nроурнананіи\nАсалолищики Серцїй Єотровь.\n1 4",
+    "localOcrWithSurnameLexicon": "НОСКСКСКОЙ\nТИПОгРАФ!\nИСТРиЧеСКой кнИГИ нА 1907\n4 т.\nЗваніє, пля, отчество й фалилід обмершаги.\nпогрЕБнія.\nМУжеска\nРоло пармалки крестьянина Миханла\nвасилвева порносовадочь я нна\nСвященникі рилитері\nрудникані.\nреалолищики Серцій вотровь.\n1 4",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Александр Спиридонов Ампилогов, запасный старший унтер-офицер, село Кармалки, 27.",
+    "fuzzyQuery": true
   }
 }

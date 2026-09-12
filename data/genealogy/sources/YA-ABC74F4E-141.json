@@ -29,16 +29,62 @@
         "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0141-target-entry.jpg",
         "sha256": "1c84fc834873c460a4566d648a6f9ba8a4dcbb906f45c72f1ebb9c98455ad43b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "abc74f4e-60e9-4ef6-9069-0d2ab70de888",
+        "scanNumber": 141,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0141-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0141-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9f4f4e33d0a2e192479f7d669f04b9c93ffb775bd8420aada8ca25d7b89b0016",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0141-header.png",
+            "sha256": "66c9d0f8f001bac635ab155568c8c437b64fc59e35845ad890272481d0a84703",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0141-target-entry.png",
+            "sha256": "0bd4ba56804bde404610c0ecf6eb28bf6b35a2eeb4259fdba9163b293c955ebc",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4490",
+          "targetDimensions": "1448x2310",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СИПОАЛЛЬНО\nгÓдZ, чÁсть перкаА, й РОДИ\nЗвáніє, ймА, сбт'єство й фамнліл\nKT\nкоспріéмникшкZ.\nТай ми деревни прествяттс 1иполий\nZeneefrнo evо и грестóчискх мила\nНатенія Иветова.\nОної м дерееми критвчнимь Берменичь\nAueserelrs u поркmвчнenсиs @reмyяй\nСвгенія Алекенива.\nШой ми деревки акритічинич Мирелив\nНиколелеь Червитовно N перипічискаа\nяна Степенйа Ивенива Анпилого ва",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Гавриил Гавриилов Ампилогов и крестьянская девица Евдокия Михаилова Маковлева.",
+    "fuzzyQuery": true
   }
 }

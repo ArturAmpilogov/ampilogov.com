@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0044-target-entry.jpg",
         "sha256": "f93bd8adb14f0e48739d2dbef080b1d0407ab89b33ba8dc3e260d4e28437cf85"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4",
+        "scanNumber": 44,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0044-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0044-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "53aa9743c9301d6cd8b6566b7ed419c4de66ee1710ae0d9b03df104728578d3e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0044-header.png",
+            "sha256": "df62a375079fa51ce0df25b19885f6df8187f979a3282ebfa8ced887778f4308",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0044-target-entry.png",
+            "sha256": "3b339c8d348bcb69f02c6564ed8095370354091e0646512510a1e5679b67393e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5484x4006",
+          "targetDimensions": "1292x979",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Мо дрислолянь, сила бимияськи\nКрестьяне: Вамиш Авчкааиловї\nвтепановь и Франнь Заларбевь Хіль-\nи -\nхаповь ; -по невіостіь-тогомне се\nсга крестьяне: Метрь Раковлеть\nПомякова и Максилич Антоновч\nАмпилоговче,\nсь\nМо оренянь сили ваммонвсвки приь-",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Василий Михайлов Степанов, крестьянин, село Гамалеевка. Поручитель: Максим Антонов Ампилогов, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-CD78EDB0-224",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "cd78edb0-36cb-47ab-b390-6623066f7176",
-    "scanNumber": "224"
+    "scanNumber": 224,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Ново-Михайловка (Молочай), Покровка (Мокринка), Казанка, Романовка, Покровка (Куюргаза), Слоновка за 1907 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/cd78edb0-36cb-47ab-b390-6623066f7176/224"
   },
-  "mentions": [],
+  "event": {
+    "type": "baptism-clergy-multiple-entries",
+    "date": {
+      "display": "1907",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Слоновка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-CD78EDB0-224-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-full-view.jpg",
-    "sha256": "8f3e0749922946d3a743a223b78decfd08830c98e41d81c1790b8a1ca4795132",
+    "catalogId": "cd78edb0-36cb-47ab-b390-6623066f7176",
+    "scanNumber": 224,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "9275f2646cdf7beb01d2771289d78145b2f3507fbe8a6931e11b8c8600a423db",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-target-entry.jpg",
-        "sha256": "26baaf360519f985f6831f0277ea2240f89c95342cbe873cc2d0e05b590a7561"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-header.png",
+        "sha256": "aaeb90cf1befd6bf272d16a464b7a7e541ab73928018da544ba8efbaecf0068b",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0224-target-entry.png",
+        "sha256": "1f35d0353d40bc0589619af9e59d42c9460b5d4c075478147f3d417ede9fbfff",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5690x4603"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Василій Миловановъ. Діаконъ Аѳиногенъ Ампилоговъ. [Участие и подписи повторяются при крещениях на развороте.]",
+    "modernInterpretation": "Диакон Афиноген Ампилогов служил при крещениях и подписывал записи; первичный лист исправляет прежнюю ошибочную отметку о ложном совпадении.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

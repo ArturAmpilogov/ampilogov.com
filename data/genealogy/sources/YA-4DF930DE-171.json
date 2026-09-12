@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ела Леорчісвки Крестьянина Шана Лорл-\n11\nнова дочь, дкв. Пераскева\nценник Гожин Умитрієво\n1соломмніь 1опуь Алвбливк\n5.\nСела Реозогіовка Врасотіянина- Аноніх Аддіф\nнова Вонева сань Петрь\n1. миоху\nДмитрість\nСвялиникь Сажит\nПедиоминиви тетпрьяльомувл\nмисрик\n%\nела беоргевки престьяниь\n90\nА кстевь Алеоинь -.",
+    "localOcrWithSurnameLexicon": "ела борчівни Крестьянина Шана боря-\n11\nнова дочь, дкв. Пераскева\nценник Гожин Умитрієво\n/соломяні 10 трь Мавбливи\n5.\nСела Реооговка красотіянина: Анонія Адрі\nнова Ванева сань Петрь\nДмитріст\nСвялинить Сажит\n%\nела Георгевки Крестьяниь\n90\nА кставь Алехинь - \"",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0171-target-entry.jpg",
         "sha256": "2ca62928a479a88c648bd9c32cb16f5bca12a1d3a08f3b4ebda9d3398c3c964b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4df930de-a499-495f-820d-2eb4d8bb8d77",
+        "scanNumber": 171,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0171-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0171-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cd32e5cb50cd0b8beb7b8439a9462e140c1815c022a0a8fb90bcc1fb05ca97e3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0171-header.png",
+            "sha256": "c326edf908cd0fba017aa998a57dde17c257f92cacb771e5a7eea03fceac3f75",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0171-target-entry.png",
+            "sha256": "8bf1f04a83055c7120168aecb4df40919e46cc72c8de56ad34afb41fa01248f5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5257x4170",
+          "targetDimensions": "1581x772",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Георгіевки Крестьянина Феодора Тимофеева Ампилогова жена Наталія Стефанова. ... Муж умершего: Феодор Тимофеев Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

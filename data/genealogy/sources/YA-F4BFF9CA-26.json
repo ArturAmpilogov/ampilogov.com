@@ -1,27 +1,75 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F4BFF9CA-26",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "parallel-full-sheet-container",
+  "parallelOf": "YA-F4BFF9CA-26-F57",
   "collection": {
     "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
-    "scanNumber": 26
+    "scanNumber": 26,
+    "asRead": "Метрическая книга на 1888 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f4bff9ca-06fb-44b8-887f-186c2a62df15/26"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-F4BFF9CA-26-M1",
+      "role": "child",
+      "personId": "P91093",
+      "displayName": "Марфа Данииловна Ампилогова",
+      "nameAsTranscribed": "Марѳа",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-F4BFF9CA-26-M2",
+      "role": "father",
+      "personId": "P1431",
+      "displayName": "Даниил Степанович Ампилогов",
+      "nameAsTranscribed": "села Гамалеевки крестьянинъ Даніилъ Степановъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Метрической книги на 1888-й год. Август. Женского пола № 57. 28 родилась, 28 крещена. Марѳа. Села Гамалеевки крестьянинъ Даніилъ Степановъ Ампилоговъ и жена его Аѳанасія Никанорова, православные.",
+    "modernInterpretation": "Марфа Данииловна родилась и была крещена 28 августа 1888 года. Событие уже представлено исправленным granular Record YA-F4BFF9CA-26-F57.",
+    "indexNote": "Полный заголовок ясно даёт 1888, поэтому прежний производный год 1889 исправлен также в granular Record и двух связанных профилях."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0026-full-view.png",
-    "sha256": "09d4275ae6954e9914f8c547386a6757f9a8387b453e458f97ff3591579a90de",
+    "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
+    "scanNumber": 26,
+    "captureType": "yandex-archive-original-image-download-with-full-width-context",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0026-full-view.png",
+    "sha256": "5d7118a374931af7ff7a150d7f9d16a287671170c2027b3ef8ec89ae41e7b398",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0026-target-entry.png",
-        "sha256": "c2fa9aff9966d010c6c20ede85ab0444ce78163a3c605e2f8f4bf24fed599b32"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0026-deep-context.jpg",
+        "sha256": "42d9cd535c9338865621bbd624bce6ada90d8093527c45184c05007f24fd7f1c",
+        "description": "Полноширинный чистый фрагмент записи № 57 и соседних граф."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5476x4396",
+      "contextDimensions": "5200x1700",
+      "method": "manual-reading-of-full-original-header-and-granular-record-boundary-collation",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-remote-list-timeout"
   },
-  "transcription": {"status": "needs-recapture-before-family-record", "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.", "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.", "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."},
-  "review": {"status": "needs-recapture-before-family-record", "transcriptionConfidence": "low"}
+  "isRecord": true,
+  "cardKind": "parallel-full-sheet-container",
+  "publicCore": false,
+  "review": {
+    "status": "complete-primary-scan-parallel-container-year-corrected",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный лист, заголовок 1888 года, границы записи № 57 и соседние строки прочитаны вручную; root сопоставлен с YA-F4BFF9CA-26-F57, а прежняя ошибка 1889 года исправлена."
+  }
 }

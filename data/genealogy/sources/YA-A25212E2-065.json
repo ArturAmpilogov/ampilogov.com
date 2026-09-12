@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0065-target-entry.jpg",
         "sha256": "cd32a69c5896f2ba4331c21c7afd20fd1707fd9afce27cbc185f1b5e8460fd44"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a25212e2-27ad-453b-984b-b0b3fa2b0e6d",
+        "scanNumber": 65,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0065-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0065-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3ba745deb251c550be688437ef2d24544ff9f557fde5be7eca47ee7f4fde4b59",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0065-header.png",
+            "sha256": "9584722228750a9e7886ac8276f0e019dba3b3903ebc12372b0de163848aaeb5",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a25212e2-27ad-453b-984b-b0b3fa2b0e6d/0065-target-entry.png",
+            "sha256": "1b8dbeacef8e3b935c91641617e6b15be94c5a71eabb57c8668c467767026e7c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5796x4566",
+          "targetDimensions": "1735x917",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "і (3)\nСвячщетий На Николані Малольсить\nпохломомиулть Фмирий Длишилого)\nОреноург\nЛимвирскті пудериі.\nсолак\nСиманрскагом пву, а волости\nМелекесской варестняши.:\nАлекослійВ с вибривь Сергпен",
+    "localOcrWithSurnameLexicon": "¿ (3)\nСвящетий На Наколок? Малоль\nпохломомулть Флирий лишилого)\nОренбург\nЛимвирскі пудериі.\nсолам\nи манр скагом пв, а волости\nМелекесской варестняши:\nАлекослій В витривь Сергпен",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Новочеркасского поселка казак Яков Иванов Мещеряков и законная жена его Анисия Иванова; оба православные Священник Николай Пальмин Псаломщик Дмитрий Ампилогов.",
+    "fuzzyQuery": true
   }
 }

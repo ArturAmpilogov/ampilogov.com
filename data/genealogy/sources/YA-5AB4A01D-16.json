@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "волкскко Киавдн.\nАмалдрії Палихной\n) інконь Алексинірч Теплові\nДісрийв Аомикив А\nлнпилоэв.\nРи Нишняю бумвета переерваний\nфій\n13силій Митрофанівк Попові н сисии\nегобвайнями Ненфирова, оби привосиами-\nватвини\nСвстуент Кикерії\nДіаколиь Алекоонорь тепловч",
+    "localOcrWithSurnameLexicon": "Аладії Малинний\n/ інконь Александрч Теплові\nДіснів Аамиків А\nшипилоэв.\nРи Нишня Думаета переерваний\nфій\n1 силій Митрофановк Попові н самии\nегоб вайнями Ненфирова, оби привосам-\nЛатвини\nСвятект викорі\nДіаколь Алексано рь теплови",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0016-target-entry.jpg",
         "sha256": "413755e011e20a96ce4b4ebbbb75331da6b2243c7be2d9e51cebcb289d06ed97"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 16,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0016-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0016-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bae19ea6e970bee1bf9de8fb625ab6303c8cbd717b7db16f2fba33d632c01059",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0016-header.png",
+            "sha256": "9ba691c0af9c7101bfc2b53f7d3c703130f4ebf6d966fb454f1a04e24b383a66",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0016-target-entry.png",
+            "sha256": "f30ec5fa2febb7e5f920b7e39d95ec012f5c07736489cfd81d3608153d6c1529",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4746x3946",
+          "targetDimensions": "1570x886",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Иван Павлов Бучнев и жена его Анастасия Феодорова, — оба православные.",
+    "fuzzyQuery": true
   }
 }

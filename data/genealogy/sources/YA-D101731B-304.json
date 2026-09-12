@@ -12,24 +12,74 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0304-full-view.jpg",
-    "sha256": "e6ac93f51b8b6742098ec40b2e8b365c537a51999236c12c2ff77b2843c7dc10",
+    "catalogId": "d101731b-1613-48e1-a844-243286b65e4e",
+    "scanNumber": 304,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0304-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0304-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "5b508cd6ade38cdff8f5210c50b1459ff97d04b24bec4c8389c65d8dafb52fd9",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0304-target-entry.jpg",
-        "sha256": "b0a8cfffeea07c38b9f707f3f7ed251a6765c18ff5f54297fec747297535a123"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0304-header.png",
+        "sha256": "de5637e6a18455a02b31bfbb7ad9ff9e2a3c35be50ff1ce2b2aa93cd047fe01f",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0304-target-entry.png",
+        "sha256": "deeceec462d7bca6c7bc66c873d40a1308148d920d1066e50dcab9543fcc709f",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5220x4247",
+      "targetDimensions": "1476x639",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0304-full-view.jpg",
+        "sha256": "e6ac93f51b8b6742098ec40b2e8b365c537a51999236c12c2ff77b2843c7dc10",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0304-target-entry.jpg",
+            "sha256": "b0a8cfffeea07c38b9f707f3f7ed251a6765c18ff5f54297fec747297535a123"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-with-explicit-reading-uncertainty",
+    "literal": "МЕТРИЧЕСКОЙ КНИГИ НА/99.\nЗвáніє, ймА, сотчество й фаміліл одмéршиги.\nЕБÉніА.\nСема Мисайловском кресня",
+    "modernInterpretation": "МЕТРИЧЕСКОЙ КНИГИ НА/99. Звáниє, ймА, сотчество й фамилил одмéршиги. ЕБÉниА. Сема Мисайловском кресня",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "localOcr": "МЕТРИЧЕСКОЙ КНИГИ НА/99.\nЗвáніє, ймА, сотчество й фаміліл одмéршиги.\nЕБÉніА.\nСема Мисайловском кресня",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
   }
 }

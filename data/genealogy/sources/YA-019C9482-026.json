@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-019C9482-026",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "marriage-witness-mention",
   "collection": {
     "catalogId": "019C9482",
     "scanNumber": "026"
@@ -10,14 +10,39 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/019C9482/26"
   },
+  "event": {
+    "type": "marriage",
+    "recordNumber": 8,
+    "date": {
+      "display": "15 июня 1915",
+      "iso": "1915-06-15",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход метрической книги Путятина и Софийского",
+      "normalized": "Путятино или Софийское, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "confidence": "medium; конкретный приход требует сверки титульного листа раздела"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-019C9482-026-M1",
-      "role": "other",
+      "role": "marriage-witness-for-bride",
+      "personId": "P1653",
+      "nameAsTranscribed": "священник Михаил Ампилогов",
+      "modernName": "Михаил Афиногенович Ампилогов",
+      "displayName": "Священник Михаил Афиногенович Ампилогов",
+      "sex": "male",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-019C9482-026-M2",
+      "role": "marriage-witness-for-groom",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
-      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
-      "surnameSeries": false
+      "nameAsTranscribed": "окончивший курс Оренбургской духовной семинарии Илья Маллицкий",
+      "modernName": "Илья Маллицкий",
+      "displayName": "Илья Маллицкий",
+      "sex": "male"
     }
   ],
   "evidence": {
@@ -29,19 +54,76 @@
         "path": "data/genealogy/evidence-private/yandex/019C9482/026-target-entry.jpg",
         "sha256": "8334238c4dc65bb66fcd09a238ef6b10c20d964d8a6dedecfc7314d112610b74"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "019c9482-5d4a-4061-9b5c-e7f04c73635d",
+        "scanNumber": 26,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0026-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0026-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e29f324f56d278dbd078f343c1c8a2bc466a160ed27ba2e8be3f26ba846d9c24",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0026-header.png",
+            "sha256": "3f4c1708eae3337e13d6b64fa56590d8baeff38166228f5c8c5d6f4f2d3b01a6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/019c9482-5d4a-4061-9b5c-e7f04c73635d/0026-target-entry.png",
+            "sha256": "6479bcd6978aff2af3e35ed9cfb97f7abf0cce45cd4694d4863abd971caed133",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4238x3503",
+          "targetDimensions": "1234x1143",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видна августовская запись о крещении ребёнка других фамилий, подписи священника Владимира Пойгава (?) и псаломщика Николая Красносвободского (?); фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все участники записи сохранены только как контекст первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "status": "complete-for-relevant-marriage-row-with-explicit-minor-uncertainty",
+    "literal": "1915 год, часть вторая, о бракосочетавшихся. Июнь. № 8. 15 [день]. [Жених и невеста — первым браком, 21 и 18 лет; часть имён читается неуверенно.] По женихе: священник [имя читается неуверенно], канцелярский служащий Сергей Лукьянов и окончивший курс Оренбургской духовной семинарии Илья Маллицкий. По невесте: заштатный священник Артемий Соколов, протоиерей Феодор Смирнов и священник Михаил Ампилогов.",
+    "modernInterpretation": "15 июня 1915 года священник Михаил Афиногенович Ампилогов выступил поручителем со стороны невесты при браке № 8. Его тождество установлено по сочетанию имени, сана, времени и уже документированной служебной биографии.",
+    "indexNote": "Прежнее отрицание совпадения было вызвано просмотром неверного автоматического фрагмента. Полный разворот подтверждает Михаила Ампилогова среди поручителей со стороны невесты; номер и дата брака, сторона поручительства и соседний контекст проверены по оригиналу.",
+    "localOcr": "подпся четвере (4 чт мвомвок\nСвятренних Рладитер. А цімев.\nПосгалуть. Киночи Вритис\nсіоднй СирСитриов).\nенныи аохив\nСТИ",
+    "localOcrWithSurnameLexicon": "Святенних Владитер. А мілев.\nсіоні Сир Ситриов).\nенныи а охив\nСТИ",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high-for-target-person-role-date-and-record-number; medium-for-couple",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full-page, marriage table header, record number 8, date, ages and both witness groups",
+    "unresolved": [
+      "Часть имён брачующейся пары читается неуверенно и не восстановлена по догадке.",
+      "Конкретный приход внутри сводной книги Путятина и Софийского требует сверки разделительного титульного листа."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Михаил Ампилогов, священник. Поручитель: Илья Маллицкий, окончивший курс Оренбургской духовной семинарии.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Священник Михаил Афиногенович Ампилогов был поручителем со стороны невесты при браке № 8 от 15 июня 1915 года."
   }
 }

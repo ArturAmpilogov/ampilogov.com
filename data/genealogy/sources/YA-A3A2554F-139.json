@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0139-target-entry.jpg",
         "sha256": "d95d2e713f55fb53397a32a19d37fbc34d3497d89265ec74ac7d1e49f14f5669"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a3a2554f-ff82-4a98-a610-9d54ed191f3c",
+        "scanNumber": 139,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0139-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0139-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "706ba14470ac21c140c1c32fbf2a8d2fd3d826273d0145ce0c6d2b8292f555a3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0139-header.png",
+            "sha256": "95674ebf286595eb162e185d5ab5c1f9b041aaead8a122588af81c2f7db80fa8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0139-target-entry.png",
+            "sha256": "12b83a41be820e1eb85de4132a86cee6108562033ef61ffd8aa61dc6e344cb5a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5276x4204",
+          "targetDimensions": "1409x912",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "оуети ра осоо 1 1рообррй ареваe Заврна\nПротулово .Аиконат вал\nговч сі поневен\nНовв\n....вкs\n1a\n.0в, 1.0\nов НQ Д в.1.\nовг „Миооо\nApmeniвь.\nПо дран ото hoagoum кpolone",
+    "localOcrWithSurnameLexicon": "гова сі по невен\n1a\n.. в, 1.0\nAperils.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе села Преображенки запасные солдаты Феодор Ампилогов и Григорий Золотухин а по невесте села Георгиевки крестьянин Стефан Хохлов и Капитон Кофонов.",
+    "fuzzyQuery": true
   }
 }

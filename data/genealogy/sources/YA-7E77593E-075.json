@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/7e77593e-2e86-40ea-8a1a-e64c5cbf99a8/0075-target-entry.jpg",
         "sha256": "2c4142537bfdbbe65466114db9eefa1c956672ccbc436c94d8674db96b03263a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "7e77593e-2e86-40ea-8a1a-e64c5cbf99a8",
+        "scanNumber": 75,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/7e77593e-2e86-40ea-8a1a-e64c5cbf99a8/0075-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/7e77593e-2e86-40ea-8a1a-e64c5cbf99a8/0075-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "68abed746a0b7372a98792dc267c4547c0039f487b1f1aaf35cab375aaa2b071",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/7e77593e-2e86-40ea-8a1a-e64c5cbf99a8/0075-header.png",
+            "sha256": "3afd8e8cd1962c0dfca942788532b9c1e4660de1c36a9ba709154f1535676d2e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/7e77593e-2e86-40ea-8a1a-e64c5cbf99a8/0075-target-entry.png",
+            "sha256": "5e5129a32da7ec184a8e56e9cd4f67af2e96ef600af09d1ee0ad0f91df893640",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5293x4075",
+          "targetDimensions": "1232x578",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Швеновь Аварлевжннаи перестблистнся\nОоамца Песланля Пегитенииникави Кубречлева\nТей ям Деревли крестілних Ивешню\nМиигостслева в у восвы и переетвлислено дон\nвииж Перелекева Миколснва виват",
+    "localOcrWithSurnameLexicon": "Ивановь Аварлвжнии перестблистися\nТой як Деревли крестілних Мвелю\nвиж Перелекева Миколонва вивал",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Григорий Флоров Ампилогов и крестьянская жена Пелагея Иванова Коровина.",
+    "fuzzyQuery": true
   }
 }

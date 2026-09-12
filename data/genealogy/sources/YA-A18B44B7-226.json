@@ -1,44 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-A18B44B7-226",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "burial-clergy-index-correction",
   "collection": {
     "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
-    "scanNumber": "226"
+    "scanNumber": 226,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Софийское, Старая Богдановка, Стрелецкое, Успенка за 1908 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/226"
   },
+  "event": {
+    "type": "burial-clergy-index-correction",
+    "date": {
+      "display": "1908",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Старая Богдановка"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-A18B44B7-226-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "role": "priest",
+      "personId": "P1653",
+      "displayName": "Священник Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-full-view.jpg",
-    "sha256": "72eb0364b04057751b49049ad6a4bb70bf3dcc003c00befe385cac298be0b49d",
+    "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+    "scanNumber": 226,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "de928cd78b3a55183425c153d707437c97aa4fd30bd10d32bc2563fd0b4eab9e",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-target-entry.jpg",
-        "sha256": "e26573d446286bafb3e68441192ed630605ab78c8022e42421ca8c8ad7eb4b56"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-header.png",
+        "sha256": "83296131d53be5fe8940e5b9c447be2e4316df8fcbb379a38a414b501a867210",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0226-target-entry.png",
+        "sha256": "1319683f80d25803a045fcd89eba54e7bf505e52867b4c74d7a802c3e1d09fe5",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5827x4716"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Михаилъ Ампиловъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ. [Подпись относится к совершавшему погребение.]",
+    "modernInterpretation": "Возраст и причина смерти в индексе относятся к умершему соседней строки; Михаил Ампилов здесь священник.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

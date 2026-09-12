@@ -20,16 +20,65 @@
         "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0055-target-entry.jpg",
         "sha256": "d99b5160610c9b02d315ba423be143aa137afe77393a69a672083f39f847e848"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a3a2554f-ff82-4a98-a610-9d54ed191f3c",
+        "scanNumber": 55,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0055-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0055-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "aa60f08c55e535d8a1d49bf4239a6b0c589159512dd4365b53e52e278c4908c5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0055-header.png",
+            "sha256": "e6b1301a9575e4cb10764c1f34638b60c6e544871100ecc25dd11005bb348158",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a3a2554f-ff82-4a98-a610-9d54ed191f3c/0055-target-entry.png",
+            "sha256": "efd8c189cce73d1e379b5526e6397c471bd6f05f7cbd1f6dd43846f22b9aec00",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5289x4152",
+          "targetDimensions": "1490x1080",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Нванава Новинова.\nДела Hoco-Гeapsieаки sрinь\nНичита Метроаь сАм-\nпилогось исолфетка\nМарія Нмголеева\nПучогова.\nМогомесела періже:\nРвасиий КимоеярД",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Ново-Георгиевки крн Никита Петров Ампилогов и солдатка Мария Николаева Пучкова. ... Крёстный отец: Никита Петров Ампилогов, крестьянин, село Ново-Георгиевка.",
+    "fuzzyQuery": true
   }
 }

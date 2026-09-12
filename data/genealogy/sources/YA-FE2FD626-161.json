@@ -1,35 +1,99 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FE2FD626-161",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
-    "scanNumber": "161"
+    "scanNumber": 161,
+    "title": "Метрическая книга Старой Богдановки за 1909 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe2fd626-6aeb-4401-807f-5290bf3a0d46/161"
   },
-  "mentions": [],
+  "event": {
+    "type": "clergy-service-attestation",
+    "date": {
+      "display": "22–28 октября 1909 года",
+      "from": "1909-10-22",
+      "to": "1909-10-28",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Старая-Богдановка",
+      "normalized": "село Старая Богдановка, Оренбургская губерния",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FE2FD626-161-M1",
+      "role": "parish-priest",
+      "personId": "P1653",
+      "displayName": "Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FE2FD626-161-M2",
+      "role": "psalm-reader",
+      "personId": null,
+      "displayName": "Тимофей Горяйнов",
+      "nameAsTranscribed": "Псаломщикъ Тимофей Горяйновъ",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 годъ, часть первая, о родившихся. Октябрь, три записи и месячный итог. В записях повторено: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ».",
+    "modernInterpretation": "Лист метрической книги подтверждает служение Михаила Ампилова священником Старой Богдановки 22–28 октября 1909 года. Сослужители сохранены только в контексте источника.",
+    "indexNote": "Яндекс неверно нормализовал «Ампилов» как «Ампилогов» и местами смешал подпись со строками родителей. Полный лист и месячный итог повторяют фамилию священника «Ампиловъ»."
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым. Священник Михаил Александров...",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full часть первая, о родившихся spread; Октябрь, три записи и месячный итог; dates, repeated clergy signatures, literal surname, Yandex index discrepancy, and same-source image-copy check"
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-full-view.jpg",
-    "sha256": "62bef574dfc93fa62aa8e564ce6071624a2474c84152d50b0f21f8de8d4d010f",
+    "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+    "scanNumber": 161,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "cb5b72747af404a9a25dc884d01b1a59ddaf3932f45cdd1ae7a5ae12e0967c98",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-target-entry.jpg",
-        "sha256": "0ae0a186b0fc3fa58da4150c62da40754febc8173e53d43a8267b561507e1928"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-header.png",
+        "sha256": "a0099d498b8f58c57bf1437cb0f4da5a438884898b96254940707bec181dea33",
+        "description": "Заголовок: часть первая, о родившихся, 1909 год."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0161-target-context.jpg",
+        "sha256": "d8f0b6d0a08fc28440586843152f0ae03e13c8152e0002afc61ff988ecc0ec09",
+        "description": "Полноширинный крупный фрагмент: Октябрь, три записи и месячный итог, повторные подписи причта."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5312x4307",
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

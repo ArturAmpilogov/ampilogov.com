@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-153",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "burial-clergy",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 153
+    "scanNumber": 153,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Александровка, Слоновка, Нижний-Гумбет, Успенка, Ильинка за 1904 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/153"
   },
-  "mentions": [],
+  "event": {
+    "type": "burial-clergy",
+    "date": {
+      "display": "1904",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Слоновка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-772ECBA6-153-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-full-view.jpg",
-    "sha256": "8537c07cd88de1e612dbd6cff3d16d3b7e49b80963f1047d102ce28f0bc192a0",
+    "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
+    "scanNumber": 153,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "a95553693c7bdfc2ff607bb40daf5a71ed202ea44a3cd007d1ba2ffa1a4baee0",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-target-entry.jpg",
-        "sha256": "bac1e44872f86d8c96277d6cc96003be5c20153f55cc598e1bcb26c934cc4048"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-header.png",
+        "sha256": "cd6abce8f0baffbccb93c1cc41065d745deac5c78576712840e5951cfb35d062",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0153-target-entry.png",
+        "sha256": "3456dc9df29795c1ccaa1b9ebc540ef1dc0e1e16d47aee84b4e79cda1eac6a6b",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5946x4759"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Сергій Иллюминарскій. Діакономъ Аѳиногеномъ Ампиловымъ на мірскомъ кладбищѣ. Діаконъ Аѳиногенъ Ампилоговъ.",
+    "modernInterpretation": "Диакон Афиноген Ампилогов участвовал в погребении и подписал метрическую запись; внутри строки фамилия склонена как «Ампиловым».",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

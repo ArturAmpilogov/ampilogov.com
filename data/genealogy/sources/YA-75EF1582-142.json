@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0142-target-entry.jpg",
         "sha256": "731fa0e90e1ca5301e9c2e7094bf1f4c3ddb767706d11e723e2d150bba31a801"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "75ef1582-b142-45e8-b631-5de242c694a9",
+        "scanNumber": 142,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0142-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0142-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "edae3a5af2e7594f431c25420301cdb31a3c2e9b2c699da342f14756f4115146",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0142-header.png",
+            "sha256": "f3ed3e1f0099c18fe72c5fb908d2d828a99778720ea3b8649868d9eb1c689841",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/75ef1582-b142-45e8-b631-5de242c694a9/0142-target-entry.png",
+            "sha256": "7ad3d090cf8278b695d51f8be39a04101edaaab42be7ab96da00543be03ef4ee",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5265x4507",
+          "targetDimensions": "1538x686",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Самаровпи крн Николай Григорись\nУАрпин \" Мария Васимиска.\nгні д Мурасьвий крн Мимофей Сн\nЯив Литвинов и Параскева",
+    "localOcrWithSurnameLexicon": "Самаровки крн Николай Григорись\nЗАрнин \" Мария Васимиска.\nгні д Мурасьевий крн Тимофей Сін\nЯрив Литвинов и Параскева",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Анна Петрова Ампилогова. Умерший: Петр Лаврентиев Ампилогов, солдат, деревня Чуманово. Невеста: Мария Василиева Юркин.",
+    "fuzzyQuery": true
   }
 }

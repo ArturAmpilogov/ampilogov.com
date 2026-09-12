@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0240-target-entry.jpg",
         "sha256": "cddd813f5010f587dbfb9f3b8689315e1a687a5b9ef2579564aad63fa6115d54"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 240,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0240-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0240-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "aa31cc21a60b310fbd1c8a6f848f8a1423dac347622be7652e96b9ec83bfb7c8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0240-header.png",
+            "sha256": "c289858405ca176413210e6e39967adbf9bae86916991f7740c64164a9bf9830",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0240-target-entry.png",
+            "sha256": "7d55dfa7b8c0ef9fcad1b49335c0d5b473d8a3e7714b15384f4e613f3e57d347",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5827x4716",
+          "targetDimensions": "1664x844",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "янина оглитка Уригорьева\nполядина сынь Тетрь-,-\nЗне\nвпреннию Лчканиия Миоилочов\nсаломщикь Шилюєен С/кочиноВь\nДія\nконь (вонифатій гиротовь.\nДеревии Михийлівки сойатк\nРактoа Митрофанова Нівикова\nсонь соанни гуаим Мтилогову",
+    "localOcrWithSurnameLexicon": "янина оглитка У ригорьева\nполядина сынь Тетрь-, -\nЗне\nсаломщинь Диловен СпочиноВ\nДія\nконь (зонифатій гротовь.\n13.\nДеревин Михайлівки сайатк\nРактоа Митрофанова Повикова\nсонь соанни гудим Мтилогову",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Старой Богдановки крестьянина Филиппа Григорьева Колядина сын Петр Священник Михаил Ампилогов Псаломщик Тимофей Горяинов иакон Вонифатий Шкатов.",
+    "fuzzyQuery": true
   }
 }

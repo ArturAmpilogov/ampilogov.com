@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0507-target-entry.jpg",
         "sha256": "775bffe4a06a412433020eae401ef07fcefb17668d855d01c4d76628b1febea1"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cd0edfaf-e748-419a-8e5d-7cd0c26042b9",
+        "scanNumber": 507,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0507-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0507-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "07a70d3e886092bc59323e2ad9e26517a5df1e69bd9800c431bca07d75c8f09f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0507-header.png",
+            "sha256": "1b98051674cc820074b28117309c59a6c96a9826cc7cf1021160502acf0393ce",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0507-target-entry.png",
+            "sha256": "6d738f9454cd84051eaf25f7834fb19db505630db2054de0bafa483af4bc3356",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5124x4040",
+          "targetDimensions": "1321x610",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "pamnaim\nБОсПріємнИкШКХ.\nДоряза Тюкаминска мпеизаннич\nДелександрь валкарлевь Аригорыевои\nсли крутинскаю вдова преспевнапаках",
+    "localOcrWithSurnameLexicon": "БОсПріємнИкШКУ.\nДоряза Токаминска мнензаннич.\nДелександрь валкарлевь Оригорыевои\nсли крутинскаю вдова преспевапака",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни той же солдат Феодор Лаврентиев Ампилогов и солдатская жена Акилина Василиева Слободина. Псаломщик Алексей Стефанов Калугин с диаконом.",
+    "fuzzyQuery": true
   }
 }

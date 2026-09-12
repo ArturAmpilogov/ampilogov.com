@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0045-target-entry.jpg",
         "sha256": "5265dcbda4925654f21064e51b3b5d2444c44f03f8957e4706f6f73c256cc84f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0822f5a2-cac0-40d2-a2f7-8d00e8c02f34",
+        "scanNumber": 45,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0045-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0045-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ff15d9c9e3d2d55ba8ffe0d9a96c01e1f00e45c5d390aae901d4142849d588be",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0045-header.png",
+            "sha256": "bd795b65a3495ec846bb62d60e555106de16e64513a8d414167ad1890a378648",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0045-target-entry.png",
+            "sha256": "27b323e078368218e97da882728cb45e3b30a12a40de25e0514644432c237768",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4876x3939",
+          "targetDimensions": "1213x753",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом фрагменте видны брачные записи других семей и подписи священника Виктора (?) с диаконом Евмением Благещевским (?); фамилия «Ампилогов» или документированный близкий вариант не читается.",
     "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Участники браков и церковнослужители сохранены только как контекст первоисточника: для них не создаются Record, профили, переселения или точки на карте. Прямого указания на переселение на доступном фрагменте не установлено.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ренині Сементвь зарячний\nАитьнч Василісвь Сиятеть.\nеч Села сТерыма Іерествяне:\nКілименті Фньсовь, Васний\nл\nУтазолина; по невнют вереств-\nІcтй\nякнетого дне села Свериич\nНоопянговч Анорей Мананни-\nмль\nниг",
+    "localOcrWithSurnameLexicon": "ренені Селенть зарічний\nАнтанч Василісвь Сиятеть.\nч Села серыма Уерествяне:\nКлименті Фольсовь, Васний\nл\nУтазолин; по невнют вереств-\nякне того дне села Сверил\nНоопяновч Анорей Мананни-\nиль\nниг",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Павел Тимофеев Ампилогов, крестьянин, тот же хутор. Поручитель: Харитон Попов, крестьянин, село Крымка.",
+    "fuzzyQuery": true
   }
 }

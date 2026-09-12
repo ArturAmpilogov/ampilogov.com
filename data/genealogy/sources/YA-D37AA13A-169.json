@@ -12,24 +12,74 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-full-view.jpg",
-    "sha256": "a663a7e35d34c8d820ff78694db303f7726df124a6e207e9fe321b9e71d3067f",
+    "catalogId": "d37aa13a-c421-4c57-9c50-baaa35bd8a7a",
+    "scanNumber": 169,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "c47349d2e7435d3cdd32b574c4c6be655c9c429ca0620b00e41fa62cb14c1137",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-target-entry.jpg",
-        "sha256": "8c65cae4403f41a295e8ab1a2e483d04be1927e9866c53881bfc198bb6424a7f"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-header.png",
+        "sha256": "b8eed9d0661a82d2ea11023e4d43a7c80b9f0c6c1fb6268f9bf52bd2216e3417",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-target-entry.png",
+        "sha256": "06852d00184c53edd0a24051b6123e495d0fd1551d0c8d02f8fb6aac57ed2efc",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4966x3982",
+      "targetDimensions": "1284x486",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-full-view.jpg",
+        "sha256": "a663a7e35d34c8d820ff78694db303f7726df124a6e207e9fe321b9e71d3067f",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-target-entry.jpg",
+            "sha256": "8c65cae4403f41a295e8ab1a2e483d04be1927e9866c53881bfc198bb6424a7f"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-with-explicit-reading-uncertainty",
+    "literal": "Ола вобяка креатлятина Окфпта\nУхавлева Апписаяса свив Оитекив.",
+    "modernInterpretation": "Ола вобяка креатлятина Окфпта Ухавлева Апписаяса свив Оитекив.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "localOcr": "Ола вобяка креатлятина Окфпта\nУхавлева Апписаяса свив Оитекив.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
   }
 }

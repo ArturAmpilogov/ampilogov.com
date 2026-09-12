@@ -1,45 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-189",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 189,
-    "asRead": "Метрическая книга на 1911 год; проверены видимые строки разворота"
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Часть третья об умерших; апрельские записи № 1–4"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/189"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "4–20 апреля 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-472AC94F-189-M1",
-      "role": "false-index-hit",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-472AC94F-189-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-for-surname-bearing-signatures-and-page-context",
+    "literal": "4–20 апреля 1911 года. Во всех видимых строках соответствующего раздела повторяется формула: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Диакон Афиноген Егорович Ампилогов исполнял служебную роль в актах Слоновского прихода (4–20 апреля 1911 года); семьи в строках — участники отдельных актов, родство с диаконом не следует.",
+    "indexNote": "Исправлено ложное отрицательное чтение: фамилия Ампилогов ясно повторяется в подписи диакона. Имя, сан, период и контекст проверены по всему первичному развороту."
+  },
+  "indexData": {
+    "fuzzyQuery": true,
+    "discrepancy": "Исправлено ложное отрицательное чтение: фамилия Ампилогов ясно повторяется в подписи диакона."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/189-full-view.jpg",
-    "sha256": "6aeeece78291deba2c01b3d4ad3f4e32d8d3b48583e015cd9cd7589a65a8a186",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 189,
+    "captureStatus": "complete-with-local-copy",
+    "uploadStatus": "verified-exact",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "e47f4c99b990eaaf89082089bb53586915312c948479f0274dd43e18301e4b1c",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/189-target-entry.jpg",
-        "sha256": "ea2988eafa6b7a5fc86ce49b66e18b62ec8a89567a780ef325a199b0c62b01b2"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0189-target-context-deep.jpg",
+        "sha256": "3a1dea0e8f0563ab74c00f0a34cc7f951a2a43a351440885f5a840895220a8c3",
+        "description": "Крупный полноширинный фрагмент всех видимых строк, дат, участников и повторных подписей причта."
       }
-    ]
+    ],
+    "quality": {
+      "fullDimensions": "5233x4177",
+      "targetDimensions": "4900x3650",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-spread-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова: 4–20 апреля 1911 года.",
+    "identityNote": "P1543 подтверждён точным редким именем, саном, тем же каталогом и Слоновским приходом, неизменным священником Иоанном Поляковым и непрерывной серией соседних листов.",
+    "migrationNote": "Служебная подпись не сообщает родства с семьями актов и не доказывает переселение."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "Исправлено ложное отрицательное чтение: фамилия Ампилогов ясно повторяется в подписи диакона."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full primary spread scan 189; Часть третья об умерших; апрельские записи № 1–4; all visible date/name/role columns and repeated clergy signatures checked; P1543 service-only identity by exact name, rank, catalog, parish, Ioann Polyakov and contiguous leaf series; no kinship or migration; 4900x3650 crop"
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0139-target-entry.jpg",
         "sha256": "c780dcd6195008e90de0d15caf4e34547bbd9b5235822315858b3b6fb84e43b4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 139,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0139-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0139-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4d89fc4efa5ac0f8028b9a730b596738eba29aae738b63502f626b56af819f9f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0139-header.png",
+            "sha256": "3bf292ed20eeea760a2f70bbb905109b55e3deb02c9dddd38eca5d2fbd79fbb0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0139-target-entry.png",
+            "sha256": "2eccbd7e3cabd9e3ccc94d6de396916646b3d36b6d04ff536b7cbea2ed14d413",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5181x4271",
+          "targetDimensions": "1525x791",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Діактна Сланнь /зисідинь.\n25.\nена мирайньіка переатвійнина Махолиа\nгренгаріява єСлансьа доь, ввданіц. -\n\"\nРарценнину Тимакси Атустяки\nДіактніванн 24 стд.\nв.\nСена Маусальнн- престянина Я кова\nАнтаміска Понтрачина с. Онисенки\n12г\nСвивиротнин Mимааей Ahuanastr\nДіанюнь Мирашь Богановивь.\n2в.\nСuаМихатлавки крестьянинивнинетя\nзнатиттрова Литеновиннк у данна -\n1\nз\nСвтуанненик Титоясі скрустови",
+    "localOcrWithSurnameLexicon": "Діактні Сланив /засидинь.\n25.\nена мирайньки перествійнина Махалиа\nгренгаріява Сланка доб, ввданіц. -\n\"\nРавеннину Ти макси Атустяки\nДіактніванн 24 стд\nСела Марсальник престянина Я кова\nАнтаміска Потрачина с. Описенки\n12г\nДіанонь Мирашь Богановива.\n2в.\nСнаМихатлавки крестьянинивнетя\nзнатитрова Латеновиник у данна. -\n1\nз\nСвітанненик Титоясі скрустови",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Феодор Семенов Ампилогов, крестьянин, деревня Кармалки. Отец умершего: Михаил Григорьев Хвалев, крестьянин, село Михайловка.",
+    "fuzzyQuery": true
   }
 }

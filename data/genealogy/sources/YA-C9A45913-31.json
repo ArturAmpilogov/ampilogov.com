@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0031-target-entry.jpg",
         "sha256": "66d6789a41bf8e4cbd24e2baefa8d2828af5476cd407e4c2be75096bcc5c4799"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 31,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0031-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0031-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b5a1bcd28ec6518f280ee1168fa5dca048c7537bf470764a7318ac0a909fac89",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0031-header.png",
+            "sha256": "42c267f000b2771dc1e4abd98543a9d146691d008d9701bfa590386133f78fe8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0031-target-entry.png",
+            "sha256": "bb786ea69125a919a4c273a5d9598af67be44497e40dd99d95ec3a4c6f00da44",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5218x4277",
+          "targetDimensions": "1513x901",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "*ПОгр\nЧЄСКОЙ КНЙГИ НА",
+    "localOcrWithSurnameLexicon": "ЧЕСКОЙ КНИГИ НА",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Афанасий Ампилогов, крестьянин, деревня Кармалка. Мать: Пераскева Антониева Дегтярева. Мать: Гликерія Петрова Ярныхъ.",
+    "fuzzyQuery": true
   }
 }

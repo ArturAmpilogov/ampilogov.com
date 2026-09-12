@@ -29,19 +29,70 @@
         "path": "data/genealogy/evidence-private/yandex/08ee8ca6-c018-48bc-93f2-33f29be43c84/0004-target-entry-document-row.png",
         "sha256": "884ee3f36613fd52e42d099d71eef34e82431ba96ca32b58a3aef266646cbb4f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "08ee8ca6-c018-48bc-93f2-33f29be43c84",
+        "scanNumber": 4,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/08ee8ca6-c018-48bc-93f2-33f29be43c84/0004-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/08ee8ca6-c018-48bc-93f2-33f29be43c84/0004-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "64c821b21c178a114f981801cc7d553c85e41d17297fbde71e3eb8b57171f809",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/08ee8ca6-c018-48bc-93f2-33f29be43c84/0004-header.png",
+            "sha256": "378c081367cc4d0652643d82f77ffa6ad468adf15f618bfa81141db6d9860245",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/08ee8ca6-c018-48bc-93f2-33f29be43c84/0004-target-entry.png",
+            "sha256": "540d4befc261024ad3cb7ef5f6d12d2f98be6ac5c53e54a17a594358b4a0c033",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "1322x1015",
+          "targetDimensions": "1200x809",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "partial-primary-scan-transcription",
     "literal": "[Крещальная запись Иоанна.] На сохранённом фрагменте видна строка отца — крестьянина Ивана Тимофеева; чтение его фамилии недостаточно резкое. Индекс Яндекса даёт «Ампилогов».",
     "modernInterpretation": "Иван Тимофеевич с кандидатным чтением фамилии «Ампилогов» сохранён как возможный носитель исследуемого ряда в строке отца крещёного ребёнка. Из-за качества доступного скана нельзя считать фамилию подтверждённой, объединять этого человека с другими упоминаниями, создавать профиль или наносить событие на карту. Сведений о переселении запись не содержит.",
-    "indexNote": "Внешний индекс указал «Иван Тимофеев Ампилогов». На локальном скане имя и патроним отца просматриваются, но фамилия требует контрольного чтения по более резкому оригиналу; индекс не используется как доказательство чтения."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Звінть, ймя, ситчестко й фрамнита\nКто собеош\nвоспрібленняка.\nlipE\nВ ладимінекой губернім,\nСвяше\nИлвин\nПонловскаго утьзда, Копнин-\nской волостиь, деревни Та діяко\nгосра крествянині Григорій\nАлекса\nвевооровь и крествянка На- Амевр",
+    "localOcrWithSurnameLexicon": "Звінть, ймя, ситчестко й фрамнита\nКто соберш\nпоспрібленняка.\nВ ладимінской губернім ,\nСвяте\nИльин\nПолловскаго утозда, Копнин-\nской волости, деревни Та діоко\nгос/а крествянині Григорій\nАлекса\nвело оровь и крествянка На - Амвр",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "ambiguous-primary-record",
   "review": {
-    "status": "primary-scan-partially-verified",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "low",
-    "unresolved": ["Нужна более резкая копия строки отца для независимого чтения фамилии.", "Нужно уточнить дату и полную формулу крещальной записи по исходному развороту."]
+    "unresolved": [
+      "Нужна более резкая копия строки отца для независимого чтения фамилии.",
+      "Нужно уточнить дату и полную формулу крещальной записи по исходному развороту.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Иван Тимофеев Ампилогов, крестьянин, деревня Кармалка. Крёстный отец: Косма Иларионов Мерлакин, крестьянин, село Михайловка.",
+    "fuzzyQuery": true
   }
 }

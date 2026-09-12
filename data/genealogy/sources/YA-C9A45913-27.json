@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0027-target-entry.jpg",
         "sha256": "2e055297d516bff4f908b01cf59e07d187b6f08d6c40859999c6b42d15229b2d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 27,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0027-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0027-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8e1b3c36de041c107091a1d799c9792c39d7765341bec731db2dda1eeb303e46",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0027-header.png",
+            "sha256": "0c1555b4340733096d89d6abf3bbc8a074c5616b339302bb8150d73c778e9173",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0027-target-entry.png",
+            "sha256": "822a762103ea4b02999d561975ca65008958a1d0251a95258be8b4256f1d40c6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5218x4277",
+          "targetDimensions": "1384x922",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СVПOAДND\nГОДД, ЧАСТЬ ПЕРЕЛЛ,\nóгw\nЗкАнтє, йлА, отчество й фамилтА\nвоспрієлникоку.\nПо-\n(ерекни Карманки крестіянину\nНиклфарань Пяравски\n-m.\nи Крестіянка\nтий яас деревни\nЧазная Илина Агкаська\"",
+    "localOcrWithSurnameLexicon": "CVIOANDS\nГОДА, ЧАСТЬ ПЕРЕЛЛ,\nóгw\nЗвАнте, ймА, отчество й фамілтА\nБоспріЕлникоку.\nПо-\n/ерекни Карманки крестіянини\nНикифарань Паравски\n-m.\nи Крестіянка\nтий яас деревни\nКазная Ильина огкаська\"",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Владимир Василиев Ампилогов и Солдатка Матрона Трофимова Мерзликина. Псаломщик Алексей Стефанов. фей Августов с.",
+    "fuzzyQuery": true
   }
 }

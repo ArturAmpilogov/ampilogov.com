@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0032-target-entry.jpg",
         "sha256": "153f5a47e9ce262e2d93038365592ac878723d3739909ea3e64d9c2d262542b3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cb36f7f0-ba71-42b5-a9aa-94c41b455802",
+        "scanNumber": 32,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0032-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0032-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0289601baec21b07a671a05979ff48c107c7ebf8696d88988335cdcf0cb728ac",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0032-header.png",
+            "sha256": "4d085889d1a249bef5a2635589258c093854152cca3b08aa1ffd227794412dfd",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb36f7f0-ba71-42b5-a9aa-94c41b455802/0032-target-entry.png",
+            "sha256": "29e38bc4b28f41e375d37d9c50a5549839fc0c8a4907aae2b5607c386934aedd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5288x4326",
+          "targetDimensions": "1307x580",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "и солдитекия жени Вирвира Квос-сь\nмена Димитріеа.\n1 области\nСема Забовы записной унетера\nофицера вергті Афонасієва",
+    "localOcrWithSurnameLexicon": "и солитекая жени Вирвира Квас-сь\nмена Димитріва.\n1 области\nСема Забова запасной унтера\nофицера версті Афонасієва",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Кирилл Иоаннов Ампилогов, крестьянин, село Зобово. Крёстный отец: Иоанн Михаилов Димитриев, крестьянин, деревня Стрелковы.",
+    "fuzzyQuery": true
   }
 }

@@ -1,35 +1,115 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FC9E22F5-56",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "excluded-fuzzy-hit",
   "collection": {
     "catalogId": "fc9e22f5-de51-42e9-a82b-3ffc574342e8",
-    "scanNumber": 56
+    "scanNumber": 56,
+    "title": "Метрическая книга, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fc9e22f5-de51-42e9-a82b-3ffc574342e8/56"
   },
-  "mentions": [],
+  "event": {
+    "type": "death-register-page",
+    "date": {
+      "display": "18 января — 11 февраля; год на развороте не заполнен",
+      "confidence": "medium"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FC9E22F5-56-M1",
+      "role": "parish-priest",
+      "personId": null,
+      "displayName": "Иоанн Попов",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поповъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FC9E22F5-56-M2",
+      "role": "psalm-reader",
+      "personId": null,
+      "displayName": "Валериан Успенский",
+      "nameAsTranscribed": "Псаломщикъ Валеріанъ Успенскій",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FC9E22F5-56-M3",
+      "role": "deacon",
+      "personId": null,
+      "displayName": "Иоанн Успенский",
+      "nameAsTranscribed": "Діаконъ Іоаннъ Успенскій",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified-no-surname-series-match",
+    "literal": "Метрической книги, часть третія, о умершихъ. Январь и Февраль, записи № 7–10. В строках служителей читаются: «Священникъ Іоаннъ Поповъ съ причтомъ», «Діаконъ Іоаннъ Успенскій», «Псаломщикъ Валеріанъ Успенскій». Фамилии Ампилов / Ампилогов и варианты исследуемого ряда на листе отсутствуют.",
+    "modernInterpretation": "Разворот относится к записям об умерших в селе Зобове. Он не содержит носителя исследуемого фамильного ряда и исключён из публичного ядра, карты и профилей.",
+    "indexNote": "Прежняя карточка не имела содержательного индекса. Ручное чтение полного оригинала уверенно исключает искомую фамилию; внешние имена сохранены только для объяснения отрицательного результата."
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; полный скан проверен вручную.",
+    "fuzzyQuery": true
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-hit",
+  "publicCore": false,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Год в печатном заголовке разворота не заполнен."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full death-register spread, January-February entries 7-10, all clergy names, place, blank year field, and exclusion of surname-series match"
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-full-view.png",
-    "sha256": "f961de5860c72ce4a9c302dc223fca4c9b273fad43bf04291c00214c1f2790f1",
+    "catalogId": "fc9e22f5-de51-42e9-a82b-3ffc574342e8",
+    "scanNumber": 56,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "67edbcbbd65048403e63be02b49bf10a5e44b81d2eb69e1fa087f24765d6d700",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-target-entry.png",
-        "sha256": "49220d0e979db386684d81b88c75709c869b20be9297f7911f56e79112224e2e"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-header.png",
+        "sha256": "b4788fcac2d9487188e884b0eaff5f3eb8221098e1a86b5ede1bcec2a67ce10e",
+        "description": "Заголовок части об умерших; поле года не заполнено."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-target-context.jpg",
+        "sha256": "79326df475315a98c102a336f864326f915ac3bb88412a25da011cb5de548e4d",
+        "description": "Полноширинный фрагмент январско-февральских записей с именами служителей."
       }
-    ]
-  },
-  "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
-  },
-  "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    ],
+    "parallelCopies": [
+      {
+        "captureType": "earlier-low-resolution-copy-of-same-source-scan",
+        "path": "data/genealogy/evidence-private/yandex/fc9e22f5-de51-42e9-a82b-3ffc574342e8/0056-full-view.png",
+        "sha256": "76d3408bd42f1ac2a0df8cae29a613cf43c9ca449639351bbe4437b19799e09e",
+        "sameEvent": true
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5526x4357",
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

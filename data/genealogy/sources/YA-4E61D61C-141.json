@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Bin t, minmin eme?\nПррші Дасивоко Катква сoun\nалуимиа П Яіда рвмнинн\nF Guulanot u yeipdua t",
+    "localOcrWithSurnameLexicon": "Bin to minion me?\nПрий Пасивоко Катова сни\nали 1 Яід ромнини",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0141-target-entry.jpg",
         "sha256": "13bc20d8921caf69d676575d8b694b2c61873283c65bc5da12b1ef1e931b5796"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e61d61c-8cbf-426b-86e5-d58af8421452",
+        "scanNumber": 141,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0141-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0141-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "0a0d6fb68f3749dbbfc2385a2498db4d4b1c703bcf4b3224d78734996b5ab297",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0141-header.png",
+            "sha256": "1302f9301a2c63eaab28f710dfa109209f602acde479ff6447ae690fa69a820c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0141-target-entry.png",
+            "sha256": "8185e279a7b9763ab0e7c0d221181c05ad7e331864a9af1ea65064a7d1006879",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5338x3984",
+          "targetDimensions": "1444x683",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Григорий Ананиев Ампилогов, крестьянин, село Баллановка. ... Умерший: Наталия Григорьева Ампилогова, 1/2. Умерший: Феодор Архипов Котов, 2 недели.",
+    "fuzzyQuery": true
   }
 }

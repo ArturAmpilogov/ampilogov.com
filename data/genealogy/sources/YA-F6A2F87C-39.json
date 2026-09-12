@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0039-target-entry.jpg",
         "sha256": "0ec038c8a705358d82b69c4c2979caa49368545d272162deaf675ec165d91699"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 39,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0039-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0039-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7c1db9f5a97e616800828b00f2f674fb51fe804f4d68157c2cdc2b6c286fccb9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0039-header.png",
+            "sha256": "f0d782fa5a156a6c1dc17827b8cbe2b32dbfe2e6fd6e2e0b03cd892c727d464f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0039-target-entry.png",
+            "sha256": "92118aa8e9ad0059476c1a7cf9abad2b481697da7ca506be98b1cc825b7fd9db",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4648x3600",
+          "targetDimensions": "1397x1007",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НПОГРАФіН\nІЛЬНОЙ\nРИЧЕСКОЙ ВНИГИНА\n111\nЗваніє, йлА, сотчЕстко й фамнліА родителей, й какóто\nдившиусл.\nвіронснов'вданіл.\nФерени Кариники верамнянииь лааи терельтиоь\nАсититть и занжштя оконаего, Анастанія",
+    "localOcrWithSurnameLexicon": "ПОГРАФіН\nІЛЬНОЙ\nРИЧЕСКОЙ КНИГИ НА\n111)\nЗваніє, ймА, сотчЕстко й фала родителей, й какого\nдившиусА.\nвіронсновʼвданія.\nАситить и заношта оконаео, Анастасія",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни Кармалки солдат Борис Терентиев Ампилогов и законная жена его Ксения Васильева; оба православные.",
+    "fuzzyQuery": true
   }
 }

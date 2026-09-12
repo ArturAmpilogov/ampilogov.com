@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Майские записи об умерших. Проверенный увеличенный фрагмент содержит записи о женщинах и детях иных фамилий; формы Ампилогов / Анпилогов / Анфилогов в доступной целевой области нет.",
     "modernInterpretation": "Яндекс Архив выдал лист по неточному совпадению, которое не подтвердилось по скану. Чужие участники не становятся Records фамильного ряда, профилями, картографическими точками или переселениями.",
-    "indexNote": "Поисковый индекс использован только для навигации; итог сделан по локально сохранённому увеличенному фрагменту."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ОВСКОЙ\nИПОЇ\nмоТричеСкой клиги на/9\nДÉHH\nЗваніє, ймл, отчсство й фамиліл одмéршаги.\noỷ11\nпогреБéнія.\nMSжECKл.\n- и.\nСела Кармалки солдатта\n2.\nТакова Олодовова Овсянникова\nдось Пираскева.\nСврщднка Сrопань\nдликке\nПосомизита Анірей Кологрочнить\n10.\nСела Кармалки крестьяника",
+    "localOcrWithSurnameLexicon": "ОВСКОЙ\nИПОЇ\nмеТричеСкой книги на /9\nЗваніє, йма, бучество й фамиліл одмершаги.\noỷ11\nпогреБенія.\nMSжECKл.\n- и.\nСела Кармалки солдата\n2.\nТакова Олодовова Овсянникова\nдось Параскева.\nПосолизита Анірей Кологрочнить\n10.\nСела Кармалки крестьянина",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -37,10 +44,53 @@
         "sha256": "4774927e6a0960b3451e5db295785419c3829b535dfeb27e62fa84878e6859f4",
         "description": "Увеличенная чистая область майских записей об умерших, проверенная вручную."
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 133,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0133-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0133-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "29d6f166d5e51f7ff1d6b6a1b0f648196bafae593785ab9e33de02269b704c70",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0133-header.png",
+            "sha256": "863f2df994a5867352aae474087c9b1170ceddb8ff0ec38fb2e174e50265366e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0133-target-entry.png",
+            "sha256": "d82e294f6c0a70bf2ebef1e65f089ddd996d0afe2836dc69742b5411eed23d94",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5928x4679",
+          "targetDimensions": "1688x1439",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Григорий Михайлов Ампилогов, крестьянин, село Кармалки. Умерший: Параскева Иакова Овсянникова, 2 1/2.",
+    "fuzzyQuery": true
   }
 }

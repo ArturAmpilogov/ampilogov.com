@@ -1,44 +1,104 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-3DFA5D12-302",
-  "provider": "Яндекс Архив — локально сохранённый первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth-and-baptism",
+  "primaryPersonId": "P102302",
   "collection": {
     "catalogId": "3dfa5d12-6c75-414e-bdd9-4665547f579f",
-    "scanNumber": "302"
+    "scanNumber": 302,
+    "asRead": "Метрическая книга за 1914 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/3dfa5d12-6c75-414e-bdd9-4665547f579f/302"
   },
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 144,
+    "date": {
+      "display": "родилась 8 октября, крещена 15 октября 1914 года",
+      "birthIso": "1914-10-08",
+      "baptismIso": "1914-10-15",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбургскій мѣщанинъ",
+      "normalized": "Оренбург, Оренбургская губерния",
+      "placeId": "orenburg-city"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-3DFA5D12-302-M1",
-      "role": "false-index-hit",
+      "role": "child",
+      "personId": "P102302",
+      "nameAsTranscribed": "Зинаида",
+      "displayName": "Зинаида Ивановна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-3DFA5D12-302-M2",
+      "role": "father",
+      "personId": "P1350",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Иванъ Николаевъ Ампилоговъ",
+      "displayName": "Иван Николаевич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "strongly-supported"
+    },
+    {
+      "mentionId": "YA-3DFA5D12-302-M3",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда на проверенном листе не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "законная жена его Александра Семенова",
+      "displayName": "Александра Семёновна",
       "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Октябрь. № 144. 8 [родилась], 15 [крещена]. Зинаида. Оренбургскій мѣщанинъ Иванъ Николаевъ Ампилоговъ и законная жена его Александра Семенова, оба православные.",
+    "modernInterpretation": "8 октября 1914 года в семье оренбургского мещанина Ивана Николаевича Ампилогова и Александры Семёновны родилась дочь Зинаида; крещена 15 октября.",
+    "indexNote": "Индекс Яндекса верно указал ребёнка и отца, но даты, номер строки, мать, статус и роль каждого участника установлены ручным чтением полного листа."
+  },
+  "context": {
+    "eventSummary": "Запись № 144 документирует рождение и крещение Зинаиды Ивановны Ампилоговой в Оренбурге.",
+    "identityNote": "Отец связан с P1350 как strongly-supported по точному имени, отчеству, фамилии, редкому статусу оренбургского мещанина и месту. P0303 исключён: он документирован в Самарской губернии, был примерно на семнадцать лет моложе и состоял в браке с Марией Ильиничной.",
+    "unresolvedIdentityNote": "В записи 1914 года мать названа Александрой Семёновной, тогда как в записи другого ребёнка P1350 за 1912 год — Александрой Артемьевной. Это может быть ошибкой отчества либо вторым браком; женщины не объединены и отдельный профиль матери не создан."
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Зинаида Иванова Ампилогова. Отец: Иван Николаев Ампилогов, оренбургский мещанин.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс не передал точные даты, номер записи и имя матери; они прочитаны непосредственно на листе."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/3dfa5d12-6c75-414e-bdd9-4665547f579f/302-full-view.jpg",
-    "sha256": "0675c861d6850bd86293f78034a31c5f1b7a27b6a44d41ac29c043fa1c091af2",
+    "catalogId": "3dfa5d12-6c75-414e-bdd9-4665547f579f",
+    "scanNumber": 302,
+    "path": "data/genealogy/evidence-private/yandex/3dfa5d12-6c75-414e-bdd9-4665547f579f/0302-full-view.png",
+    "sha256": "4423497198f481e2fef59c68b7ee6e4574ef18d1b1b1c0a328dc9754e8ac3f4d",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/3dfa5d12-6c75-414e-bdd9-4665547f579f/302-target-entry.jpg",
-        "sha256": "d4d0e30c365c2b60b27389d0b6fb74ef37f95d63a8fec97d3f0883dbfbd4b864"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/3dfa5d12-6c75-414e-bdd9-4665547f579f/0302-target-context-deep.png",
+        "sha256": "abb3493341386de27949e73076ec674f0a8fb988200641340d039c03be91671b",
+        "description": "Крупный полноширинный чистый фрагмент записи № 144 с датами, ребёнком, родителями, восприемниками и причтом."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "5066x4068",
+      "targetDimensions": "4800x1400",
+      "method": "manual-reading-of-full-scan-and-clean-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный лист и соседние строки прочитаны вручную; проверены № 144, обе даты, ребёнок, родители, статус, восприемники и причт; проведён поиск дублей P1350/P0303, расхождение отчества матери сохранено как нерешённое."
   },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Метрическая книга, часть первая о родившихся: в видимых строках № 172–174 формы Ампилогов / Анпилогов / Анфилогов не обнаружены.",
-    "modernInterpretation": "Индексная выдача не подтверждена первичным сканом. Участники других семей не получают профили, карту, маршруты или записи о переселении.",
-    "indexNote": "Яндекс-индекс был только поисковой подсказкой; вывод основан на ручном чтении локального разворота."
-  }
+  "isRecord": true,
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

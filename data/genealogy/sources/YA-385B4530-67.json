@@ -25,21 +25,58 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Hre ompeiss Tinres\n3úali, Áxa, Óru À fanida\nпнтракн\nHЕ.\nsengieta\nTER\nкоже поселки казинг Про Сеяионнивь\nз. Алекотові Апиеттив\nазагов окена vT\nзрасневий\nпева Mancta-\nВиссавітнь\nЛявинь еь",
+    "localOcrWithSurnameLexicon": "sangieta\nTER\nкоже поселки казинг Про Се яконнивь\n6. Алекстові Апистив,\nзрасневи\nВиссавітнь\nЛявинь сь",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/385b4530-4a7e-46be-8420-b41ae4b33695/0067-full-view.png",
-    "sha256": "a8bb1efeddb0ac73882cefe31dc5f5d6a653fda015690c9ddfd5c824f96ec2f9",
+    "sha256": "5e8c1066c2fafffd58939d808f8320b50fd3bd91f2b93c4230dae30b422cb62f",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/385b4530-4a7e-46be-8420-b41ae4b33695/0067-header.png",
+        "sha256": "709e7b7db98798e498f894592098fe6b858664a518884dc051af3c953514b6b6",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/385b4530-4a7e-46be-8420-b41ae4b33695/0067-target-entry.png",
-        "sha256": "e8aedbf79fb50122e7ba00efde8a25ca41204777dc2fd114b5ff32823eb6d53a"
+        "sha256": "5230ca9da8a3ceb2d02720d42e31a1ae52732d4b439c13d38817a2c10b36c135",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "385b4530-4a7e-46be-8420-b41ae4b33695",
+    "scanNumber": 67,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/385b4530-4a7e-46be-8420-b41ae4b33695/0067-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x907",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того же поселка казачий сиденок Ефим Филиппов Ампилогов и казачья дочь девица Евфимия Герасимова Воробьева. илом Анци.",
+    "fuzzyQuery": true
   }
 }

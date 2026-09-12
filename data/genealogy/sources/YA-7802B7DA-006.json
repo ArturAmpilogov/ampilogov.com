@@ -1,76 +1,94 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-7802B7DA-006",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный печатный лист",
+  "recordType": "educational-status-list",
   "collection": {
     "catalogId": "7802b7da-cc67-4c9a-82ac-675e2b0f87ea",
     "scanNumber": 6,
     "title": "Оренбургские епархиальные ведомости, 1909, № 27/28",
-    "issueDate": "1909"
+    "issueDate": "1909",
+    "asRead": "стр. 210, результаты испытаний учащихся IV класса"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/6"
   },
+  "event": {
+    "type": "withdrawal-from-course",
+    "date": {
+      "display": "1909, до публикации № 27/28",
+      "confidence": "medium"
+    },
+    "place": {
+      "asWritten": "учебное заведение следует из контекста епархиального списка; на странице полностью не названо",
+      "normalized": "Оренбургская епархия"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-7802B7DA-006-M1",
-      "role": "subject",
-      "personId": null,
+      "role": "student-withdrawing-by-request",
+      "personId": "P102270",
       "nameAsTranscribed": "Ампилоговъ Александръ",
       "displayName": "Александр Ампилогов",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-print-reading",
+    "literal": "IV классъ. Разрядъ 1-й: ... Разрядъ 2-й: ... Допускаются къ экзаменамъ и переэкзаменовкамъ: ... Оставленъ на повтор. курсѣ: ... Увольняется по прошенію Ампилоговъ Александръ.",
+    "modernInterpretation": "В списке результатов IV класса за 1909 год Александр Ампилогов указан как увольняющийся по собственному прошению.",
+    "indexNote": "Строка и её учебный контекст прочитаны на первичном листе. Отчество, возраст и полное название учебного заведения на странице отсутствуют; индексом они не дополнялись."
+  },
+  "indexData": {
+    "querySnippet": "Строка прочитана на первичном листе в составе разрядного списка IV класса.",
+    "fuzzyQuery": true
+  },
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "7802b7da-cc67-4c9a-82ac-675e2b0f87ea",
+    "scanNumber": 6,
     "captureStatus": "complete-with-local-copy",
-    "rightsNote": "Локальные копии полного листа и увеличенных фрагментов сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив.",
-    "captureType": "official-source-pdf-page-with-enlarged-fragments",
-    "captureSource": "Официальный PDF проекта «Духовенство Русской Православной Церкви в XX веке», указанный в карточке Яндекс Архива",
-    "captureSourceUrl": "https://pravoslavnoe-duhovenstvo.ru/media/priestdb/materialattachment/attachment/08/74/087405ed-5134-4594-a0ca-20b7738a266d.pdf#page=6",
-    "localBackup": "data/genealogy/evidence-private/yandex/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-full-view.png",
-    "capturedAt": "2026-09-08",
-    "sha256": "f3ff5cfbc2cbe759042b8a6b64852adee930cb338f62c8ef48c62d2738b74d94",
+    "captureType": "yandex-archive-original-image-download-with-clean-context-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "79d2176041fecfae5f60bd27e9381c777613cf2dedb33fcd8f7b16885dc6d326",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-header.png",
-        "sha256": "78b24ce578ebf17ec780a1dfa478a7f86eca95569ef150a4d8bd462af7d76f0f",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-target-entry-dismissal.png",
-        "sha256": "66c6c4215047c6a5e5d5ea928b7368b38d5c4ba9a21e9158afbeba33089fe8a6",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/7802b7da-cc67-4c9a-82ac-675e2b0f87ea/0006-target-entry.png",
+        "sha256": "6695d9a9f5d9b5dcf8ac5f8d14160978533beadbd7cee719b7dd7c9a5c4d447f",
+        "description": "Чистый крупный контекстный фрагмент без интерфейса, сохраняющий целевую строку и соседний текст."
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
       "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-08",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
-  },
-  "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Увольняется по прошенію Ампилоговъ Александръ.",
-    "modernInterpretation": "Александр Ампилогов увольняется по собственному прошению.",
-    "indexNote": "Строка прочитана на первичном листе в составе разрядного списка IV класса. Из видимой части листа не следует безопасно ни отождествление с Александром из записи 1905 года, ни полное наименование учебного заведения; индекс не использован как доказательство."
+      "fullDimensions": "1240x1755",
+      "targetDimensions": "1000x1450",
+      "method": "manual-full-page-reading-and-clean-context-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P102270",
+  "context": {
+    "eventSummary": "Увольнение Александра Ампилогова по прошению из IV класса.",
+    "identityNote": "Отдельный профиль создан из-за отсутствия отчества и адреса. P1629 и другие тёзки хронологически возможны, но прямой связки нет; объединение не выполнено.",
+    "migrationNote": "Учебный список не доказывает происхождение или переселение."
+  },
   "review": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "transcriptionConfidence": "high",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-action-class-and-page-context",
     "unresolved": [
-      "Нужно проверить заголовок разрядного списка и возможную связь с Александром Ампилоговым из других учебных записей до создания Person или карты."
+      "Полное название учебного заведения и отчество на этом листе отсутствуют.",
+      "Тождество с P1629 и другими Александрами не доказано."
     ],
-    "correctionHistory": [
-      "2026-09-08: из официального PDF сохранены чистый полный лист, фрагмент IV класса и крупная строка увольнения Александра Ампилогова по прошению; комплект визуально проверен, SHA-256 записаны."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full printed page 210 of 1909 issue 27/28; entire IV-class result list headings and categories, exact withdrawal line and surrounding educational context checked; separate P102270 due absent patronymic/address; no merge or migration; 1000x1450 clean page crop"
   }
 }

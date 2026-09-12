@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Еела Париолви КрестьЛнина Мапивня Пер-\n41.\nплбева Ворожино дотв Маптрокс\nДжинтрій рсудеинан\nСвященника\nФіакоть Оргій Добровь.\nКела Кариалки Крествянина Васииія Алексакд-\nбл.\nрова винаєвосьх Алексій\nСвященним Римтрій СОрлинонй\nДіаконо Срті Вірова.\nвоооовои Карлвиль крестьянска",
+    "localOcrWithSurnameLexicon": "Есла Кариолви Крестьянина Напивая Пер-\n41.\nАлбева Воронино дотв Мантроис\nДжинтрій (судинном\nСвященника\nФіакоть Оргій Доброво.\nКела Карталки Крествнина Василія Александ-\nбл.\nрова винаєвосьох Алексій\nСвященним Димитрій Сулинанй\nДіа коно Суті Вірова.\nо овои Карлвиль крестьянска",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0309-target-entry.jpg",
         "sha256": "d9cb3737daede2a289e984c1de3e6f224ab432e6d69c3cce87e5ef0f537f00b3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
+        "scanNumber": 309,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0309-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0309-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "11a92021fd06ad6c4e8541392664936cf05b31488c95514453641f2ceae4d4b2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0309-header.png",
+            "sha256": "4a2d0c87ad3e4e2ae2cd4cfa7576072483e794cc14fb04e0b2cd3ea55d9503cd",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0309-target-entry.png",
+            "sha256": "dec1e70f9d55bad4f4728d73496d21e92819ea1907b07caca72f7af93e1fd57b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2231x1834",
+          "targetDimensions": "1200x610",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Кармалки крестьянина Афонасия Терентиева Ампилогова дочь Марфа. ... Отец умершего: Афонасий Терентиеев Ампилогов, крестьянин, село Кармалки.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/cea3d65f-8beb-480b-8206-936a3662e27a/0210-target-entry.jpg",
         "sha256": "3a4e2a96940f563fa9b8e8c62dd04ac7c9194688ea604715dd00964e2dee7a7e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cea3d65f-8beb-480b-8206-936a3662e27a",
+        "scanNumber": 210,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cea3d65f-8beb-480b-8206-936a3662e27a/0210-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cea3d65f-8beb-480b-8206-936a3662e27a/0210-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7fa98d38e21c21fe8275762f486b2c868ad80f9ec9af639444d94081891e8563",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cea3d65f-8beb-480b-8206-936a3662e27a/0210-header.png",
+            "sha256": "68aae65f8404cb2e32dd39a5d037048b1c10c1d55abc5eebf899277f72374027",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cea3d65f-8beb-480b-8206-936a3662e27a/0210-target-entry.png",
+            "sha256": "83febed1ec85f38481dc23da81566acbc60cff1756a0be60ec3ae43d068f486a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5282x4156",
+          "targetDimensions": "1415x926",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "AТОBЫAR HOр0101E.\n3ÁMH\nКрестьяме кутара А бросимова\nчаноя каго Потр Лупьялася Каколова\nВа-\nи Никита истеть. уценко\nоль-\nа по жиьсты деревиви\nничій и Стеорать Уолубничій.\naM",
+    "localOcrWithSurnameLexicon": "3ÁMH\nКрестьям бутара А бросимова\nчане каго Потр Лупьялся Каколова\nВа-\nи Никита истесь. уценко\nоль-\nя по жесты деревои\nничій и Сторать Голубничій.\naM",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Михаил Никитин Калужин, крестьянин, село Михайловское. Поручитель: Григорий Ампилогов, сельцо Кармалка.",
+    "fuzzyQuery": true
   }
 }

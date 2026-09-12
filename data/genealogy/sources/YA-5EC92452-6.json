@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Перминикв)\nКарастині\nфидай Перивими прокклоанн\nпрайловв аситило\n1ь икрастьянская мсне\nЖатвяна Басильева АК\nвитична.",
+    "localOcrWithSurnameLexicon": "Перминикв)\nКарастині\nпрайсовь аситило\n20.\n1ь икрастьянская мене\nЖатвана Васильева АК\nвитина.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ec92452-4572-4143-b2da-90c912d26ba8/0006-target-entry.jpg",
         "sha256": "44d44dd6f6fd26c4ee6571d760ab5bec18ce234d7d8b31ef3325b29532cbe5bd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ec92452-4572-4143-b2da-90c912d26ba8",
+        "scanNumber": 6,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ec92452-4572-4143-b2da-90c912d26ba8/0006-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ec92452-4572-4143-b2da-90c912d26ba8/0006-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fefb578d40f4565a6dc848697e235a71b2683225492be49c955939804ec3382e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ec92452-4572-4143-b2da-90c912d26ba8/0006-header.png",
+            "sha256": "d645aa61d31b2fed090f340bcba4ac27b9d26799a76b5b7529299bcad2464ded",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ec92452-4572-4143-b2da-90c912d26ba8/0006-target-entry.png",
+            "sha256": "c598fe0a9010eb2ac1e9e613c25f584c546491d1e092afef3def6e35c9fd2346",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5545x4333",
+          "targetDimensions": "1490x838",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Фадей Михайлов Ампилогов и крестьянская жена Татьяна Васильева Акушкина. Феодор Каллиников Алексеем Корыстиным.",
+    "fuzzyQuery": true
   }
 }

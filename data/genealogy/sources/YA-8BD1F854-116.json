@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/8bd1f854-2e09-4e5a-94c4-2090480b11a6/0116-target-entry.jpg",
         "sha256": "2b79f1f10c1d1844e67a1a9c3c52aed66113f423269489d61f00fd4a63b24434"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8bd1f854-2e09-4e5a-94c4-2090480b11a6",
+        "scanNumber": 116,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8bd1f854-2e09-4e5a-94c4-2090480b11a6/0116-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8bd1f854-2e09-4e5a-94c4-2090480b11a6/0116-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b468ac6e24b8ba1865c9535f6e1ec2b92be37bda391be24b8484bb5fb028f7c9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8bd1f854-2e09-4e5a-94c4-2090480b11a6/0116-header.png",
+            "sha256": "433c8b195b6f2b7255e0d71939cdba921c4cdfccf2b8fa9c86cb5081d7e878e4",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8bd1f854-2e09-4e5a-94c4-2090480b11a6/0116-target-entry.png",
+            "sha256": "992b818c85089e42fe3679bff2ed63fc80c19bb18dd740ba73747d77290187a6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5244x4075",
+          "targetDimensions": "1413x714",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "сторветь Ипртн сВ\nТа Матрона Монло виОваянникови.\nСоли ко льчеви кресть ятит вживії\nяленатировь боноринко вьн\nКростьянка соломида ( Юинолаєви\nволяненковот",
+    "localOcrWithSurnameLexicon": "Та Матрона Молло виО ваянникови.\nСоли ко лачеви кресть яти вживії\nПростьянка соломина / Юнколаєви\nв оляненковот",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Георгиевки крестьянин Варфоломей Феодоров Ампилогов и крестьянка деревни Козиама Ксения Григорьева Маргукова.",
+    "fuzzyQuery": true
   }
 }

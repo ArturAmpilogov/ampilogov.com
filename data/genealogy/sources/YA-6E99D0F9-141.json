@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0141-target-entry.jpg",
         "sha256": "b31eb0e1382d50e9647bcdfc7c83d93924a89fa5faf6c3750f02535019f35efd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6e99d0f9-4444-4053-919d-0a113c6de07d",
+        "scanNumber": 141,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0141-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0141-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "162ce55ac84f8c2227638af90344d4638b3b63154147fbc1ca2cce64495f0882",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0141-header.png",
+            "sha256": "883e3b372896d021714bc44d0fab224551127541c9a89684d0e7a636abf54523",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0141-target-entry.png",
+            "sha256": "ac46e598af8511e788bbc0e6814c166f836f97214e8eaf265aee4f47dec90aa2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5444x4314",
+          "targetDimensions": "4104x1251",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга 1903 года; при чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены. Повторяющаяся подпись причта читается как «Діаконъ Алексей Антиповъ», а не фамилия исследуемого ряда.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence, включая увеличенное чтение подписи диакона."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "оверимови Молярови\n1оич А\nмегилотовяйтого мо Село Киреинил Меля.\nіво Кристинківч- при\nприкосщивного вскраметевся.\nосливниковлчниметович\nfоtа«Деофoрь Малярові.\nаніц первянив ранеить 1Ви. О л. филеі, первалитя враакома ВВи. РСио\nСвященникг\nСергий\nИллюминарснні.\nДіакніч Ааинокиї Ашпильковв\n• либлесуь Рельне Брантова темв (б) , а сиуь долято (РС) КЗГК0 сиб и скидиотивийвуситв: Священнит Сочий Илиии\n75 2 71712",
+    "localOcrWithSurnameLexicon": "оверимова Молярови\n1оич А\nмегилотовий того мо Село Киренния Меля.\nво Пристинків)- при\nприкосивного вскраменевся.\nосливнико влениметович\nрова « Феодор Малярові.\nанім перванив ранеить Ви О л. дил, первали враакома ВВи. ОСи\nСвященник\nСергий\nИллюминарсині.\nДіакнії Ааинокий Ампилькові\n75 2 71712",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминарский Диакон Афиноген Ампилогов. Итого в Ноябре месяце было браков пять (5), а лиц десять (10).",
+    "fuzzyQuery": true
   }
 }

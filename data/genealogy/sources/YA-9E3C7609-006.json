@@ -1,16 +1,85 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-9E3C7609-006",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "clergy-service-register",
-  "primaryPersonId": "P91076",
-  "collection": {"catalogId": "9e3c7609-6c01-4850-b6b8-7ed79f4846eb", "scanNumber": "6", "title": "Метрическая книга за 1918 год, часть первая, о родившихся"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/6"},
-  "event": {"type": "clerical-service-at-baptisms", "date": {"display": "1918 год", "date": "1918", "confidence": "high"}, "place": {"asWritten": "приход в видимой части листа не назван", "normalized": "приход не установлен"}},
-  "mentions": [{"mentionId": "YA-9E3C7609-006-M1", "role": "priest", "personId": "P91076", "nameAsTranscribed": "Священникъ Димитрій Ампилоговъ", "displayName": "Священник Дмитрий Ампилогов", "surnameSeries": true}],
-  "transcription": {"status": "primary-scan-transcription", "literal": "Метрической книги на 1918 год, часть первая, о родившихся. При последовательных записях № 10–15 повторяется подпись: «Священникъ Димитрій Ампилоговъ».", "modernInterpretation": "Лист 1918 года документирует Дмитрия Ампилогова уже в сане священника при нескольких крещениях.", "indexNote": "Фамилия прочитана по повторяющейся подписи на оригинале. Семьи детей иных фамилий остаются контекстом листа и не получают профилей."},
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-mention",
+  "collection": {
+    "catalogId": "9e3c7609-6c01-4850-b6b8-7ed79f4846eb",
+    "scanNumber": 6,
+    "title": "Метрические книги жителей поселков Оренбургской губернии за 1918 г.",
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория, опись № 16"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/6"
+  },
+  "event": {
+    "type": "parish-service",
+    "date": {
+      "display": "июнь–июль 1918",
+      "confidence": "high-for-months-and-year"
+    },
+    "place": {
+      "normalized": "посёлок Карасай, Оренбургская губерния",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-9E3C7609-006-M1",
+      "role": "officiating-priest",
+      "displayName": "Священник Дмитрий Ампилогов",
+      "nameAsTranscribed": "Священникъ Димитрій Ампилоговъ",
+      "surnameSeries": true,
+      "personId": "P91076"
+    }
+  ],
+  "evidence": {
+    "catalogId": "9e3c7609-6c01-4850-b6b8-7ed79f4846eb",
+    "scanNumber": 6,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-original-full-view-and-full-width-context-crop",
+    "localBackup": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0006-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0006-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "9f6ebb62ac010051e437a90626ce73fd3262b6e6b48c963cd8a865aacbde1080",
+    "fragments": [
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0006-target-entry.png",
+        "sha256": "ef3b12ea631753afffdc5b1200b04dabd84d66c4dd7aeb5da0e464e336d2cf60",
+        "description": "Полноширинный крупный контекст всего рабочего поля следующего разворота с повторяющимися подписями священника."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetGeneratedFromOriginal": true,
+      "fullDimensions": "5134x3993",
+      "targetDimensions": "5134x3450",
+      "method": "manual-full-scan-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "transcription": {
+    "status": "complete-target-role-manual-reading",
+    "literal": "В графе «Кто совершалъ таинство крещенія» при каждой видимой записи повторено: «Священникъ Димитрій Ампилоговъ». В соседней графе восприемников встречаются другие лица; «псаломщик Алексей Стефанов» не является частью имени Дмитрия Ампилогова.",
+    "modernInterpretation": "Священник Дмитрий Ампилогов продолжал совершать крещения по последовательным записям Карасайского прихода летом 1918 года.",
+    "indexNote": "Яндекс склеил имя псаломщика/восприемника из соседней графы с подписью священника. Оригинал разделяет этих лиц и роли вертикальной границей таблицы."
+  },
+  "context": "Последовательный разворот подтверждает ту же служебную роль P91076 в 1918 году. Родство с участниками крещений и миграция не следуют из документа; P91076 оставлены лишь несвязанными кандидатами.",
+  "indexData": {
+    "querySnippet": "Священник Димитрий Ампилогов ... Псаломщик Алексей Стефанов Димитрий Ампилогов",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал соседние графы; подтверждена отдельная подпись «Священникъ Димитрій Ампилоговъ»."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": {"status": "primary-scan-verified-and-probably-linked", "transcriptionConfidence": "high", "identityResolution": "Сан и 1918 год согласуются с документированным назначением P91076 на священническое место в марте 1917 года; связь вероятна, хотя приход на листе не назван.", "unresolved": ["Название прихода не выводится из одного имени и не добавляется на карту."]},
-  "evidence": {"publicDisplay": false, "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entry", "path": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0006-full-view.png", "sha256": "e1de47562e0318a8f3f66744ff8e3093dd4e21290de0c16d43f6451c03345131", "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0006-target-entry.png", "sha256": "ab427d7ff1ac04d4a271b8149952fe161dbb292734b7db47c7125ca8d5c7f535"}], "quality": {"documentOnlyVisuallyConfirmed": true, "siteAndBrowserChromeExcluded": true, "blackDefectsExcluded": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-11"}}
+  "publicCore": true,
+  "review": {
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high-for-priest-and-role",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Просмотрен весь следующий разворот за июнь–июль 1918; сверены вертикальные границы граф, восприемники и все подписи совершавшего крещение. Склейка с псаломщиком отвергнута. Связано с каноническим P91076 после подтверждённого объединения профилей; родство и миграция не выводились. Crop 5134×3450 без UI."
+  },
+  "primaryPersonId": "P91076"
 }

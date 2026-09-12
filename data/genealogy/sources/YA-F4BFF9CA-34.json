@@ -1,27 +1,65 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F4BFF9CA-34",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
-    "scanNumber": 34
+    "scanNumber": 34,
+    "asRead": "Метрическая книга на 1888 год, часть первая, о родившихся; записи № 73–76"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f4bff9ca-06fb-44b8-887f-186c2a62df15/34"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-F4BFF9CA-34-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Фамильный ряд в записях № 73–76 не обнаружен",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-reviewed-no-match",
+    "literal": "Октябрь 1888 года. На полном развороте проверены записи о рождении № 73–76; во всех графах родителей, восприемников и служителей формы Ампилогов / Анпилогов / Ампилов и документированные варианты отсутствуют.",
+    "modernInterpretation": "Полный лист исключает фамильное совпадение. Участники иных семей не получают профилей, связей или точек карты.",
+    "indexNote": "Индекс был только поисковой подсказкой и не подтвердился ручным чтением всех видимых строк."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0034-full-view.png",
-    "sha256": "c192e980859ecefca2da5a60a8541cbe19010072310609ddb75ab9a9dee06f5e",
+    "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
+    "scanNumber": 34,
+    "captureType": "yandex-archive-original-image-download-with-full-width-context",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0034-full-view.png",
+    "sha256": "9e1c32bb38fd6a494f2f105666d5c3509fdc094f31636dfbca1beaab56545784",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0034-target-entry.png",
-        "sha256": "d8276744b075f3071b72434fc448b9086778c4e7c3917133105a3df74a34fc69"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0034-deep-context.jpg",
+        "sha256": "82a1ba41fdae6388a61cbee2f96570736b8ac2179c234d7ed224635663dcbb7d",
+        "description": "Чистый почти полный разворот с проверенными записями № 73–76."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "fullDimensions": "5476x4396",
+      "contextDimensions": "5200x3500",
+      "method": "manual-reading-of-full-original",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-remote-list-timeout"
   },
-  "transcription": {"status": "needs-recapture-before-family-record", "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.", "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.", "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."},
-  "review": {"status": "needs-recapture-before-family-record", "transcriptionConfidence": "low"}
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
+  "review": {
+    "status": "complete-primary-scan-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный разворот, заголовок и все видимые графы записей № 73–76 прочитаны вручную; фамильный ряд исключён."
+  }
 }

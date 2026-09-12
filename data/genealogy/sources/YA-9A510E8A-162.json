@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/9a510e8a-04dc-4f16-bf52-44611d7e8809/0162-target-entry.jpg",
         "sha256": "e9e35adce8808afaeb4e21bc331409061cc14a48794e7f13be94b83b04a98553"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9a510e8a-04dc-4f16-bf52-44611d7e8809",
+        "scanNumber": 162,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9a510e8a-04dc-4f16-bf52-44611d7e8809/0162-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9a510e8a-04dc-4f16-bf52-44611d7e8809/0162-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d002a8266c87ed106ccf79640bf939cf2f85702feb17deb965dccc830d749ad3",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9a510e8a-04dc-4f16-bf52-44611d7e8809/0162-header.png",
+            "sha256": "5f40f50d0c136f8f76330063d800573dd86c694549542e8f1ec28b1e3a16e975",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9a510e8a-04dc-4f16-bf52-44611d7e8809/0162-target-entry.png",
+            "sha256": "1bdf8406dca433bc6aa78a3d700504fed8a0004d50e210230cbfffa6d8b461c6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5306x4138",
+          "targetDimensions": "1362x672",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Св\nсейниковь и хробвансная дпанда\n(дохіяб Андрива Жаракова\nОргенбурчской губ.и урзда причиелен-\nный ка Нстровока й ваности кресья-\n1л0г\nнино Киупилл Мажинова Ніредья\nвовои пресльянская микананныя",
+    "localOcrWithSurnameLexicon": "Св\nсейниковь и хрованана я опанда\nдохіяб Андрива Жаракова\nОренбураской губ. и уруда причислен-\nный ка Потровока и виности крестья-\n120г\nрино Клучиля Мажинова Ніредня\nвовои пресльянская микананныя",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Хутора Объедкова крестьянин Иван Павлов Ампилогов и крестьянская девица Евфросиния Павлова Ампилогова. Священник Иоанн Успенский.",
+    "fuzzyQuery": true
   }
 }

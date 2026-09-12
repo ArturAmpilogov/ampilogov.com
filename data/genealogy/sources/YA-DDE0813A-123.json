@@ -12,24 +12,74 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-full-view.jpg",
-    "sha256": "c090204299047f6a73df6891d37305d971b9b022a89b37d4fdd54ca893aac376",
+    "catalogId": "dde0813a-de4a-4628-84b0-70d6180a4ab8",
+    "scanNumber": 123,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "b79ebae4d14804d09f2d69dcf37348e1db7714410217c98b35e76c7a187a46e1",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-target-entry.jpg",
-        "sha256": "d5f12f18a49c51bb097767891744f9bebc178718e0d3acdc29d81b8330313268"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-header.png",
+        "sha256": "0c530f6da9df8cf7ab9b2f94cc0b06db6f152e6122c053c37ca6afe7aee62cf8",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-target-entry.png",
+        "sha256": "85af867ce6c8bb3b0ec46520dc0e561f951155607350bcafbf48c42a3c542555",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5109x4006",
+      "targetDimensions": "1371x627",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-full-view.jpg",
+        "sha256": "c090204299047f6a73df6891d37305d971b9b022a89b37d4fdd54ca893aac376",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/dde0813a-de4a-4628-84b0-70d6180a4ab8/0123-target-entry.jpg",
+            "sha256": "d5f12f18a49c51bb097767891744f9bebc178718e0d3acdc29d81b8330313268"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-with-explicit-reading-uncertainty",
+    "literal": "Сена вавринивки прицполтна\nІстрь Андривь Затаривь, ярена\nго Вожна Оефорова, абы правостав-\nиве.\n1в Аиновнй верировва\nФіиканіт Алексанорії Ренсв.",
+    "modernInterpretation": "Сена вавринивки прицполтна Істрь Андривь Затаривь, ярена го Вожна Оефорова, абы правостав- иве. 1в Аиновнй верировва Фииканит Алексанориї Ренсв.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
+    "localOcr": "Сена вавринивки прицполтна\nІстрь Андривь Затаривь, ярена\nго Вожна Оефорова, абы правостав-\nиве.\n1в Аиновнй верировва\nФіиканіт Алексанорії Ренсв.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
   }
 }

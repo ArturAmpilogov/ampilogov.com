@@ -1,36 +1,52 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-9D95BB83-038",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "search-index-false-positive-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "archival-finding-aid-entry",
   "collection": {
     "catalogId": "9d95bb83-6560-4337-8899-4713ac16446d",
-    "scanNumber": "38",
-    "title": "Печатный алфавитный указатель"
+    "scanNumber": 38,
+    "title": "Опись №1",
+    "publication": "ЦГА Москвы, коллекция документов о политических репрессиях, собранная М. Б. Миндлиным"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/9d95bb83-6560-4337-8899-4713ac16446d/38"
   },
-  "transcription": {
-    "status": "primary-scan-control-reading",
-    "literal": "На правой странице напечатаны фамилии Анисимов / Анисимова с различными именами и отчествами. Фамилия Анпилогов / Ампилогов отсутствует.",
-    "modernInterpretation": "Поиск ошибочно сблизил печатную фамилию Анисимов с запросом «Ампилогов»."
+  "event": {
+    "type": "finding-aid-index-entry",
+    "date": {
+      "display": "дата события не указана; диапазон коллекции 1932–2001",
+      "confidence": "high-for-absence-of-entry-date"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
   },
-  "mentions": [],
-  "indexData": {
-    "provider": "Яндекс Архив",
-    "warning": "Ложное OCR-совпадение; профиль и карта не создаются."
-  },
-  "isRecord": false,
-  "review": {
-    "status": "false-positive-confirmed"
-  },
+  "mentions": [
+    {
+      "mentionId": "YA-9D95BB83-038-M1",
+      "role": "indexed-person",
+      "displayName": "Михаил Артемьевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Михаил Артемьевич",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "captureType": "document-only-local-clean-copy-and-control-fragment",
-    "path": "data/genealogy/evidence-private/yandex/9d95bb83-6560-4337-8899-4713ac16446d/9d95-0038-full-view.png",
-    "sha256": "4a5e3d26186022ec852dd74c5d910375481c87f88b00d5078fbc242db3c3d5f9",
+    "catalogId": "9d95bb83-6560-4337-8899-4713ac16446d",
+    "scanNumber": 38,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-original-full-view-and-full-width-context-crop",
+    "localBackup": "data/genealogy/evidence-private/yandex/9d95bb83-6560-4337-8899-4713ac16446d/0038-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/9d95bb83-6560-4337-8899-4713ac16446d/0038-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "b65004853642e33568a1fa0abfffcaa6df7bc391ebd933b3c9d0d64e262c95fa",
     "fragments": [
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9d95bb83-6560-4337-8899-4713ac16446d/0038-target-entry.png",
+        "sha256": "91397c147d60ddbe5ee29f318d7ebcf418a6e07de38734c634f453c7ade08be6",
+        "description": "Полноширинный контекст алфавитного разворота, включая строку Ампилогова и обе ссылочные графы."
+      },
       {
         "kind": "control-fragment",
         "path": "data/genealogy/evidence-private/yandex/9d95bb83-6560-4337-8899-4713ac16446d/9d95-0038-target-entry.png",
@@ -38,11 +54,56 @@
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "targetGeneratedFromOriginal": true,
+      "fullDimensions": "5027x3546",
+      "targetDimensions": "5027x2200",
+      "method": "manual-full-scan-reading-and-full-width-recrop",
       "documentOnlyVisuallyConfirmed": true,
       "siteAndBrowserChromeExcluded": true,
       "blackDefectsExcluded": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11"
-    }
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "transcription": {
+    "status": "complete-target-line-manual-reading",
+    "literal": "Ампилогов Михаил Артемьевич — 77 — 21.",
+    "modernInterpretation": "Алфавитный указатель описи содержит Михаила Артемьевича Ампилогова и отсылает к позициям 77 и 21 соответствующих граф.",
+    "indexNote": "ФИО подтверждено оригиналом. Внешний индекс не объясняет значение чисел и не даёт даты, места или содержания дела; они не реконструируются."
+  },
+  "context": "Это указательная, а не биографическая запись. P102053 имеет то же редкое полное имя, однако без даты, места и самого дела тождество не доказано; связь и миграция не создаются.",
+  "indexData": {
+    "querySnippet": "Ампилогов Михаил Артемьевич",
+    "fuzzyQuery": true,
+    "discrepancy": "В старой карточке mention был ошибочно записан как «Аминов»; оригинал однозначно даёт «Ампилогов Михаил Артемьевич».",
+    "provider": "Яндекс Архив",
+    "warning": "Ложное OCR-совпадение; профиль и карта не создаются."
+  },
+  "isRecord": true,
+  "cardKind": "named-research-record",
+  "publicCore": false,
+  "review": {
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high-for-name-and-references",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Просмотрен полный алфавитный разворот; вручную проверены ФИО и числа 77/21, соседние строки и характер указателя. Ошибка mention «Аминов» исправлена. P102053 оставлен только кандидатом без personId/backlink по решению координатора; запись исключена из public core из-за недатированности в диапазоне до 2001. Crop 5027×2200 без UI.",
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-9D95BB83-038.json",
+        "mentions": [],
+        "transcription": {
+          "status": "primary-scan-control-reading",
+          "literal": "На правой странице напечатаны фамилии Анисимов / Анисимова с различными именами и отчествами. Фамилия Анпилогов / Ампилогов отсутствует.",
+          "modernInterpretation": "Поиск ошибочно сблизил печатную фамилию Анисимов с запросом «Ампилогов»."
+        },
+        "review": {
+          "status": "false-positive-confirmed"
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
   }
 }

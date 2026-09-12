@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/ebcc71a1-ab11-486d-a19f-3b71f63b7c22/0025-target-entry.jpg",
         "sha256": "7c842e4301cd4ad497c0834f7a35a567189aefb32ec9ae9c3866020f847ff509"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ebcc71a1-ab11-486d-a19f-3b71f63b7c22",
+        "scanNumber": 25,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ebcc71a1-ab11-486d-a19f-3b71f63b7c22/0025-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ebcc71a1-ab11-486d-a19f-3b71f63b7c22/0025-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "82b5b4cb43ae899fce2a84a5ee9ca9a166adddf22bc4c9527dd37cdce985cf97",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ebcc71a1-ab11-486d-a19f-3b71f63b7c22/0025-header.png",
+            "sha256": "5469508ed32486f5f00d2e26057ec2a089ec2716f0f914145ca9473813b13321",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ebcc71a1-ab11-486d-a19f-3b71f63b7c22/0025-target-entry.png",
+            "sha256": "6db37a1582b0915f398e1586ff17c9036ce6d079db4db13ae4e7d446c97f53d7",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5520x4490",
+          "targetDimensions": "1425x1105",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "розаоннхог. Виадиміртали\nКротьяна : Маковач\nВaсиu.\nМоска-одк\nи вверад Васеиь\nМосканаики, по навлешк-\n8/т.Фа •. Соколова Кроомво2а\nЦевакова Радогинь\"\nu.u\nдоггороея фрисонтлна\nЛe и p • 28\n•о2\n7.\nоедiиdоs\nhocou l\nrino u chugn",
+    "localOcrWithSurnameLexicon": "ро засни ха. Владиміртали\nМосканаики, по навленк-\nЦе вакова Радолинь\".\nR a\nс г\nu.u\n7.\nrino uchugn",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Ферапонт Григорьев Ампилогов, крестьянин, деревня Ново-Николаевка.",
+    "fuzzyQuery": true
   }
 }

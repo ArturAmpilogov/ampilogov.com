@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a5c333b7-18ad-4d39-8c61-23458f256064/0028-target-entry.jpg",
         "sha256": "57e416354a79c86a8eb1762632ff0b7754f43a687fdf52e0cef101a13e489f1c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a5c333b7-18ad-4d39-8c61-23458f256064",
+        "scanNumber": 28,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a5c333b7-18ad-4d39-8c61-23458f256064/0028-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a5c333b7-18ad-4d39-8c61-23458f256064/0028-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "649fb59befda9bfc5d8919f384edce9912353d628eac835f00521892ff44c5be",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a5c333b7-18ad-4d39-8c61-23458f256064/0028-header.png",
+            "sha256": "cdce9a807cf86fca7d678cc3f635c030efa56a5b3e75f66b63fbb3c8c6e3b8c6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a5c333b7-18ad-4d39-8c61-23458f256064/0028-target-entry.png",
+            "sha256": "65185f801d0fc7743be79873ee7d7b42daa04e100ea4c9123199e896806ed148",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5257x4248",
+          "targetDimensions": "1443x517",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "пресдоянних Мирииская вал!\nисела Ування редодова всердова-\n5І.\nвященнит соаннь\nДаруки А\nОлакань Касикий\nМикальеан\nДачв крествянина ала Мик?.",
+    "localOcrWithSurnameLexicon": "пресдоянних Мирииская вал!\nи села Ування редодова всердова-\n50.\nСвященники саннь\nОлакань Касисий\nМикальеан\nДов крествянина ала Мик?.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Филипп Иаков Ампилогов, 2 недели. Умерший: Иаков Игнатьев Аграшев, 1 год. Умерший: Тихон Трофимов Костин, 4 месяца.",
+    "fuzzyQuery": true
   }
 }

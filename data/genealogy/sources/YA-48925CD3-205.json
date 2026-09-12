@@ -2,19 +2,168 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-205",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-register-with-surname-clergy",
+  "recordType": "clergy-service-on-birth-register-page",
   "primaryPersonId": "P1543",
-  "collection": {"catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3", "scanNumber": "205", "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/205"},
-  "event": {"type": "baptism-clergy-service", "recordNumber": 40, "date": {"display": "4–5 мая 1916 года", "confidence": "high"}, "place": {"asWritten": "село Слоновка", "normalized": "село Слоновка, Оренбургский уезд", "placeId": "orenburg-uezd"}},
+  "collection": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 205,
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть первая, о родившихся"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/205"
+  },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "4–18 мая 1916 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Слоновка",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high",
+      "placeId": "orenburg-uezd"
+    },
+    "recordNumber": 40
+  },
   "mentions": [
-    {"mentionId": "YA-48925CD3-205-M1", "role": "child", "personId": null, "nameAsTranscribed": "Ирина", "displayName": "Ирина Максимовна Шинкарева"},
-    {"mentionId": "YA-48925CD3-205-M2", "role": "father", "personId": null, "nameAsTranscribed": "крестьянинъ Максимъ Абрамовъ Шинкаревъ", "displayName": "Максим Абрамович Шинкарев"},
-    {"mentionId": "YA-48925CD3-205-M3", "role": "church-clergy", "personId": "P1543", "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true}
+    {
+      "mentionId": "YA-48925CD3-205-M1",
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-48925CD3-205-M2",
+      "role": "parent-of-baptized-child-context",
+      "personId": null,
+      "nameAsTranscribed": "Іаковъ Кузьминъ Ласковъ",
+      "displayName": "Іаков Кузьмин Ласков",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-48925CD3-205-M3",
+      "role": "parent-of-baptized-child-context",
+      "personId": "P1543",
+      "nameAsTranscribed": "Надежда Іосифова",
+      "displayName": "Надежда Іосифова",
+      "surnameSeries": false
+    }
   ],
-  "transcription": {"status": "primary-scan-transcription", "literal": "1916 год. Май. № 40. 4 [родилась], 5 [крещена]. Ирина. Села Слоновки крестьянинъ Максимъ Абрамовъ Шинкаревъ и законная жена его Наталія Ѳеодотова, оба православные. Воспріемники: Иванъ Ѳеодотовъ Глазовъ и Анна Николаева Пивоварова. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Диакон также указан в записях № 41, 36 и 42.", "modernInterpretation": "4 мая 1916 года родилась Ирина Шинкарева, крещена 5 мая; Афиноген Егорович Ампилогов служил диаконом. Лист подтверждает ещё три его майские службы.", "indexNote": "Яндекс показал соседнюю строку восприемников; роль Афиногена установлена по колонке духовенства и повторной подписи на оригинале. OCR-формы «Алимонов/Алимогов» отвергнуты."},
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть первая, о родившихся». В целевой строке родители: Іаковъ Кузьминъ Ласковъ и законная жена его Надежда Іосифова, оба православные. Вслед за родителями и в других строках листа повторяется: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон, служивший при крещениях детей других семей Слоновского прихода. Он не является родителем или восприемником этих детей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с именами родителей соседней графы. Полный разворот позволяет строго разделить роли."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова при крещениях (4–18 мая 1916 года).",
+    "relationshipBoundary": "Родители, дети и восприемники относятся к другим фамилиям; они сохранены как контекст без профилей. Родство и миграция Афиногена из листа не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Иаков Кузьмин Ласков и законная жена его Надежда Иосифова, оба православные.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье крещаемого ребёнка."
+  },
+  "evidence": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 205,
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0205-full-view.png",
+    "sha256": "b12a9c71dfb79f8b1cd07800eb016369952cdc11dd234e1a737df250b865c02e",
+    "fragments": [
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0205-target-context-deep.jpg",
+        "sha256": "afb8a9b5edf3f1e2eeafdbd0a66d6a78b7c886881c359145fe964c02683dc3de",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых записей, дат, родителей, восприемников и подписей причта."
+      },
+      {
+        "kind": "target-entries",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0205-target-entry.png",
+        "sha256": "544e7d42eefcdd99dbd8c5c6d670c7f6c1d7f060e068fb68bb09d70f50dc75d6"
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "4526x3686",
+      "targetDimensions": "4300x3400",
+      "method": "manual-full-page-reading-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries"
+  },
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 205 и все видимые строки прочитаны вручную; проверены номера и даты крещений, родители, восприемники, границы месяцев и повторная формула причта. P1543 подтверждён только в служебной роли.",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-48925CD3-205.json",
+        "event": {
+          "type": "baptism-clergy-service",
+          "recordNumber": 40,
+          "date": {
+            "display": "4–5 мая 1916 года",
+            "confidence": "high"
+          },
+          "place": {
+            "asWritten": "село Слоновка",
+            "normalized": "село Слоновка, Оренбургский уезд",
+            "placeId": "orenburg-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-48925CD3-205-M1",
+            "role": "child",
+            "personId": null,
+            "nameAsTranscribed": "Ирина",
+            "displayName": "Ирина Максимовна Шинкарева"
+          },
+          {
+            "mentionId": "YA-48925CD3-205-M2",
+            "role": "father",
+            "personId": null,
+            "nameAsTranscribed": "крестьянинъ Максимъ Абрамовъ Шинкаревъ",
+            "displayName": "Максим Абрамович Шинкарев"
+          },
+          {
+            "mentionId": "YA-48925CD3-205-M3",
+            "role": "church-clergy",
+            "personId": "P1543",
+            "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+            "displayName": "Афиноген Егорович Ампилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "primary-scan-transcription",
+          "literal": "1916 год. Май. № 40. 4 [родилась], 5 [крещена]. Ирина. Села Слоновки крестьянинъ Максимъ Абрамовъ Шинкаревъ и законная жена его Наталія Ѳеодотова, оба православные. Воспріемники: Иванъ Ѳеодотовъ Глазовъ и Анна Николаева Пивоварова. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Диакон также указан в записях № 41, 36 и 42.",
+          "modernInterpretation": "4 мая 1916 года родилась Ирина Шинкарева, крещена 5 мая; Афиноген Егорович Ампилогов служил диаконом. Лист подтверждает ещё три его майские службы.",
+          "indexNote": "Яндекс показал соседнюю строку восприемников; роль Афиногена установлена по колонке духовенства и повторной подписи на оригинале. OCR-формы «Алимонов/Алимогов» отвергнуты."
+        },
+        "review": {
+          "status": "primary-scan-verified",
+          "transcriptionConfidence": "high",
+          "unresolved": []
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {"status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": []},
-  "evidence": {"publicDisplay": false, "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0205-full-view.png", "sha256": "b12a9c71dfb79f8b1cd07800eb016369952cdc11dd234e1a737df250b865c02e", "fragments": [{"kind": "target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0205-target-entry.png", "sha256": "544e7d42eefcdd99dbd8c5c6d670c7f6c1d7f060e068fb68bb09d70f50dc75d6"}], "quality": {"documentOnlyVisuallyConfirmed": true, "siteAndBrowserChromeExcluded": true, "blackDefectsExcluded": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-11"}}
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

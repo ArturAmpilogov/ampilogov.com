@@ -2,44 +2,48 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-229",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "marriage-register-clergy-mention",
+  "recordType": "clergy-service-on-marriage-register-page",
   "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
-    "scanNumber": "229",
-    "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год"
+    "scanNumber": 229,
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть вторая, о бракосочетавшихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/229"
   },
   "event": {
-    "type": "clerical-service-at-marriages",
-    "recordNumber": "18–20",
+    "type": "clergy-service",
     "date": {
-      "display": "27–31 января 1916 года",
+      "display": "22–31 июля 1916 года",
       "confidence": "high"
     },
     "place": {
       "asWritten": "село Слоновка",
-      "normalized": "село Слоновка, Оренбургский уезд, Оренбургская губерния",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high",
       "placeId": "orenburg-uezd"
-    }
+    },
+    "recordNumber": "18–20"
   },
   "mentions": [
     {
       "mentionId": "YA-48925CD3-229-M1",
-      "role": "church-clergy",
+      "role": "church-clergy-deacon",
       "personId": "P1543",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Ампилогов, диакон",
-      "surnameSeries": true
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     },
     {
       "mentionId": "YA-48925CD3-229-M2",
-      "role": "groom-record-18",
+      "role": "marriage-party-or-witness-context",
       "personId": null,
-      "nameAsTranscribed": "Никифоръ Димитріевъ Москвинъ",
-      "displayName": "Никифор Дмитриевич Москвин"
+      "nameAsTranscribed": "Анна Семенова Малярова",
+      "displayName": "Анна Семенова Малярова",
+      "surnameSeries": false
     },
     {
       "mentionId": "YA-48925CD3-229-M3",
@@ -78,24 +82,32 @@
     }
   ],
   "transcription": {
-    "status": "relevant-rows-read-from-primary-scan",
-    "literal": "Январь. № 18, 27 января: Никифоръ Димитріевъ Московкинъ и Анна Семенова Малярова. № 19, 27 января: Степанъ Алексѣевъ Ласьковъ и Марія Иванова Балдина. № 20, 31 января: деревни Андреевки крестьянинъ Иванъ Васильевъ Левченко и Меланія Александрова Соломко. При всех трёх записях повторяется состав духовенства: Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ.",
-    "modernInterpretation": "В конце января 1916 года диакон Афиноген Ампилогов вместе со священником Иоанном Поляковым совершал три последовательных венчания № 18–20 в Слоновском приходе. Все три пары названы в расшифровке для документального контекста.",
-    "indexNote": "OCR-варианты фамилии диакона отброшены: на оригинале и соседних листах устойчиво читается «Афиноген Ампилогов». Индекс использован только для нахождения страницы."
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть вторая, о бракосочетавшихся». В целевой строке/графе контекста читаются: Анна Семенова Малярова. При каждой видимой записи повторяется подпись причта: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон при венчаниях других семей Слоновского прихода. Он не является членом перечисленных семей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с участниками соседних граф. Полный разворот разделяет роли."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {
-    "status": "primary-scan-verified",
-    "transcriptionConfidence": "high-for-surname-mention",
-    "unresolved": []
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова (22–31 июля 1916 года).",
+    "relationshipBoundary": "Участники актов имеют другие фамилии и сохранены только как контекст без профилей; родство и миграция Афиногена не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Села Слоновки крестьянка Анна Семенова Малярова, православного вероисповедания первым браком. 18 л. Священник Иоанн Поляков Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье или поручителям акта."
   },
   "evidence": {
-    "publicDisplay": false,
-    "captureType": "source-image-with-clean-document-crop-and-enlarged-target-entries",
-    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0229-full-view.jpg",
-    "sha256": "43e815fae4f36af1a7a1f47559b65d27e77abd838d89ccf56c99ec91b8c3cea8",
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 229,
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0229-full-view.png",
+    "sha256": "f1d4290a55324e36d40bd272d439c2d389ba75bb83c2a5ff9db384deec10a316",
     "fragments": [
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0229-target-context-deep.jpg",
+        "sha256": "56b157274a47b9b90235c28ea8433a17d1dbeba768f69dec9e5424c1a5e3d9e5",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границ раздела и служебных подписей причта."
+      },
       {
         "kind": "target-entries",
         "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0229-target-entries.jpg",
@@ -104,12 +116,110 @@
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "4632x3640",
+      "targetDimensions": "4200x3350",
+      "method": "manual-full-page-reading-and-clean-wide-recrop",
       "documentOnlyVisuallyConfirmed": true,
       "siteAndBrowserChromeExcluded": true,
       "blackDefectsExcluded": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11"
     },
-    "rightsNote": "Закрытая исследовательская копия; публичная ссылка ведёт на архивный сервис."
-  }
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "source-image-with-clean-document-crop-and-enlarged-target-entries"
+  },
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 229 и все видимые строки прочитаны вручную; проверены даты, участники, возраст/брачный статус, поручители и венчание, месячные границы/итоги и повторная подпись причта. P1543 подтверждён только в служебной роли; полноширинный крупный фрагмент создан из full-view и сверен с оригиналом.",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-48925CD3-229.json",
+        "event": {
+          "type": "clerical-service-at-marriages",
+          "recordNumber": "18–20",
+          "date": {
+            "display": "27–31 января 1916 года",
+            "confidence": "high"
+          },
+          "place": {
+            "asWritten": "село Слоновка",
+            "normalized": "село Слоновка, Оренбургский уезд, Оренбургская губерния",
+            "placeId": "orenburg-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-48925CD3-229-M1",
+            "role": "church-clergy",
+            "personId": "P1543",
+            "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+            "displayName": "Афиноген Ампилогов, диакон",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M2",
+            "role": "groom-record-18",
+            "personId": null,
+            "nameAsTranscribed": "Никифоръ Димитріевъ Москвинъ",
+            "displayName": "Никифор Дмитриевич Москвин"
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M3",
+            "role": "bride-record-18",
+            "personId": null,
+            "nameAsTranscribed": "Анна Семенова Малярова",
+            "displayName": "Анна Семёновна Малярова"
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M4",
+            "role": "groom-record-19",
+            "personId": null,
+            "nameAsTranscribed": "Степанъ Алексѣевъ Ласковъ",
+            "displayName": "Степан Алексеевич Ласков"
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M5",
+            "role": "bride-record-19",
+            "personId": null,
+            "nameAsTranscribed": "Марія Иванова Балдина",
+            "displayName": "Мария Ивановна Балдина"
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M6",
+            "role": "groom-record-20",
+            "personId": null,
+            "nameAsTranscribed": "Деревни Андреевки крестьянинъ Иванъ Васильевъ Левченко",
+            "displayName": "Иван Васильевич Левченко"
+          },
+          {
+            "mentionId": "YA-48925CD3-229-M7",
+            "role": "bride-record-20",
+            "personId": null,
+            "nameAsTranscribed": "Меланія Александрова Соломко",
+            "displayName": "Мелания Александровна Соломко"
+          }
+        ],
+        "transcription": {
+          "status": "relevant-rows-read-from-primary-scan",
+          "literal": "Январь. № 18, 27 января: Никифоръ Димитріевъ Московкинъ и Анна Семенова Малярова. № 19, 27 января: Степанъ Алексѣевъ Ласьковъ и Марія Иванова Балдина. № 20, 31 января: деревни Андреевки крестьянинъ Иванъ Васильевъ Левченко и Меланія Александрова Соломко. При всех трёх записях повторяется состав духовенства: Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ.",
+          "modernInterpretation": "В конце января 1916 года диакон Афиноген Ампилогов вместе со священником Иоанном Поляковым совершал три последовательных венчания № 18–20 в Слоновском приходе. Все три пары названы в расшифровке для документального контекста.",
+          "indexNote": "OCR-варианты фамилии диакона отброшены: на оригинале и соседних листах устойчиво читается «Афиноген Ампилогов». Индекс использован только для нахождения страницы."
+        },
+        "review": {
+          "status": "primary-scan-verified",
+          "transcriptionConfidence": "high-for-surname-mention",
+          "unresolved": []
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
+  "isRecord": true,
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

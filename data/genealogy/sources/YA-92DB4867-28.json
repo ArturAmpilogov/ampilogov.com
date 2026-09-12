@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/92db4867-b3c0-4112-a0cd-97c0b70f5f08/0028-target-entry.jpg",
         "sha256": "a4f88de58ffa370ffbea1540b0d3b4687b20a55149f208977e81f4d95d3f2213"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "92db4867-b3c0-4112-a0cd-97c0b70f5f08",
+        "scanNumber": 28,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/92db4867-b3c0-4112-a0cd-97c0b70f5f08/0028-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/92db4867-b3c0-4112-a0cd-97c0b70f5f08/0028-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "37913decf54df77f4ba1b4fedc4cf480f3fd80ba6f80e84d2cb1a894d91caafd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/92db4867-b3c0-4112-a0cd-97c0b70f5f08/0028-header.png",
+            "sha256": "fbdccaab5c80aaae58c6de335d8a6e6a611617c217723dcc547df694f3dff1cf",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/92db4867-b3c0-4112-a0cd-97c0b70f5f08/0028-target-entry.png",
+            "sha256": "561ecd565cc99ef3de56e62c5c6c6fa231a9951cc5168d1c1b203394f75d7086",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2983x2592",
+          "targetDimensions": "1200x647",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "комныя его слна-тименке стусток\nоба православные\nСвіящешнихі\nСпарній інттерь вфрицерг /- Укс\n160\nтиский залезно фородснао батилйна\nli lA\nлиисата вокчав/согоней и завтн\nная си сучени Парасвева петрова,\nправаславные\nвященнит\n5) риогедеоа\nРіснтнг /бонетин",
+    "localOcrWithSurnameLexicon": "оба православные\nСвященнихі\nСпарний інтерь воридерг / Уку\n160\nтиский залезно фородснао батилйна\nная си сучени Парасева петрова,\nправаславные\nв ященнит\nЯ 1.\nРістона /банерин",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Екатерина Николаева Ампилогова. ... Отец: Николай Виссарионов Ампилогов, рядовой 1-го Уссурийского железнодорожного батальона.",
+    "fuzzyQuery": true
   }
 }

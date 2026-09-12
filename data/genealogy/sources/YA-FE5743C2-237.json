@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FE5743C2-237",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4",
-    "scanNumber": "237"
+    "scanNumber": 237,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Рождественка, Бараково, Титовка, Кармальское за 1907 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/237"
   },
-  "mentions": [],
+  "event": {
+    "type": "birth-godparents",
+    "date": {
+      "display": "22 сентября 1907",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Кармалка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FE5743C2-237-M1",
+      "role": "godfather",
+      "personId": "P1531",
+      "displayName": "крестьянин Прокопій Григорьев Ампилнов",
+      "nameAsTranscribed": "крестьянинъ Прокопій Григорьевъ Ампилновъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-full-view.jpg",
-    "sha256": "dd1d9745061aa98f035ce1e31769e9f9c7e54af6ed496c35bba8fda0199e3ec9",
+    "catalogId": "fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4",
+    "scanNumber": 237,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "72db037f4ecbc9847ec11af63c81977b18288e9db425524afd0538413b49bcb5",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-target-entry.jpg",
-        "sha256": "547b79f5c010f8efd070a1e3acce43ab215e28d0c91d89a4ac04c43e0f45abdc"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-header.png",
+        "sha256": "9677d761ad81c98e481cb350c455986833813851b8f24fbbf027be99599c2c91",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fe5743c2-9973-4f0b-86cf-3fa5eb2a75b4/0237-target-entry.png",
+        "sha256": "d786e5717e70095f59b674f73ca5acbab324fadd4b49e2fa7b823ac2d4b7299c",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "2311x1941"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Елизавета. Села Кармалки крестьянинъ Ѳеодосій Яковлевъ Верейкинъ и законная жена его Матрона Аѳонасьева. Восприемники: того же села крестьянинъ Прокопій Григорьевъ Ампилновъ и солдатская жена Варвара Яковлева Миляева.",
+    "modernInterpretation": "22 сентября 1907 года Прокопий Григорьевич Ампилогов и Варвара Яковлевна Миляева стали восприемниками Елизаветы; оригинал даёт вариант фамилии «Ампилнов».",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

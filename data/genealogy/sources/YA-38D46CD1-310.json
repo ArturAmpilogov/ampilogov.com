@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "126\nПела Картсики кресттьянина Навии григорьева\nВерейкина сынь Симеонь\n\"\nСвяященниК. Днсттрій раздициен\nДіаконь Суті Віровь.\nСела Каричики Кресттьяиской вдово бка-\nОрен\nперина веодорово Родина ,\nСвищониина\" Вимитиріл роуднинани\nДіаконь Серий Вобровь.",
+    "localOcrWithSurnameLexicon": "126\nНела Картики крестьянина Навии григорьева\nВерейкина сынь Симеонь\n\"\nСвященниК. Дисттрій роздициен\nДіаконь Суті Віровь.\nСела Каритики Крестья иская вдово бка-\n\" 8l\nОрен\nперина водорово Родина ,\nСвящонина Вимитирін роуднинани\nДіаконь Серий Добровь.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0310-target-entry.jpg",
         "sha256": "4ea3f7bf80014f156a69e6e5b994c7a96efbd865852d3324ff76ee3017f0c454"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
+        "scanNumber": 310,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0310-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0310-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9f2a0962ffd76594fa212fa1740f1d7d9041cd492e8a12c51f24fef94298f3e9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0310-header.png",
+            "sha256": "49ff204b3a40e5578807747d0088ccc1259e5e2d7d0984ddc6e47afe19eaba93",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0310-target-entry.png",
+            "sha256": "b6c589c873bdd63b881191d6f2363f09eeaeddbef98aea88d545c4f25f589aa2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2231x1819",
+          "targetDimensions": "1200x622",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Тимофеев Ампилогов, крестьянин, село Кармалки. ... Умерший: Андрей Иванов Ампилогов, 9 месяцев.",
+    "fuzzyQuery": true
   }
 }

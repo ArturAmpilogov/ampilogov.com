@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0038-target-entry.jpg",
         "sha256": "2c38d08005744b87c20ce3f74846a4da9eece34969bd0532eeb1c24d072152a2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8ac212da-ea93-43f1-82be-ea4b5f29b950",
+        "scanNumber": 38,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0038-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0038-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "82b894e550db71c27ea9d049e4fba319df1ec568bcc621f7a614421ff20681e7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0038-header.png",
+            "sha256": "f1b723686ff991e53417afb4577275210106109bf42c93ed1420e24f4c4e579c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8ac212da-ea93-43f1-82be-ea4b5f29b950/0038-target-entry.png",
+            "sha256": "5087e78b080e0677f5db39db2b4ac1163c23cdbabfd4eda19e62fb9ca9114aac",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5032x4000",
+          "targetDimensions": "1375x753",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Rтò\nЗвáніє, йма, отчество й фамиліл\nвоспріéмникшвz.\nКримвлне тиго лус села\nбисікить Василія Гидии\nцевь и агинія Жилин-\nтова . Мостина.",
+    "localOcrWithSurnameLexicon": "RTò\nЗваніє, йма, отчество й фамиліл\nвоспріємникшва.\nПримвяне тиго лус села\nбискить Василія Гидии\nцевь и агинія Жилин-\nтова . Мостина.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне того же села Симеон Терентиев Ампилогов и Параскева Косьмина Верейкина. августовым. Родившийся: Агрипина Александрова Костина.",
+    "fuzzyQuery": true
   }
 }

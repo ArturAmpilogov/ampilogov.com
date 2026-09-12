@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0054-target-entry.jpg",
         "sha256": "b6914078d97199c154289b4767d63270aa46fa4fa39f21a3eb6bf36fc8d615cc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 54,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0054-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0054-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "1865cad110f52780eb417441130c42fdfed51d3f16af9b74fe8edbb91b212184",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0054-header.png",
+            "sha256": "f1b09ed48eee043891f555eb03522989f76f925bf9e494830d578a960c513229",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0054-target-entry.png",
+            "sha256": "b5f6177e7aa1fa74c61161c5387bdc2e4b7ae553f6fb11db949eb5c114a087ac",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4567x3610",
+          "targetDimensions": "1396x931",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Законная отона сго, Норао Фробова,\nнда правословння кираитв\nвимуннялаи молеой\nІтанонч иашь вогомобавь-\nйч Села Михагловни крестіянин)\nпинитть фрешовь Мершкиюь и\nРаконнай оена со; Новія Яховрева,\nоба правословнннн м . Двуктитва\nДіанань скихатнь воголобавь.\nДеревни Каоманки Крестьяниць\nнь.\nлоеронь Иванавь сх\nчаньнная оненасг Пераскева",
+    "localOcrWithSurnameLexicon": "Законная отона сго, Нарко Фр обова,\nода православня кидать\nтаконч пихать воголобавь-\nіч Села Михановни крестіянин-\nВинить фрешовь першкиюь и\nРаконнай жена со; Новія Яковрева,\nоба правословинн ми Двуки ва\nДіанань скихать воголобавь.\nДеревни Карманки Крестьянинь\nнь.\nлоконь Иванавь сх\nчаньнная оненасг Пераскева",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни Кармалки крестьянин Агафон Иванов Ампилогов и законная жена его Пераскева Петрова; оба православные.",
+    "fuzzyQuery": true
   }
 }

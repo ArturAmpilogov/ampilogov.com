@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЗвАніє, ймА, сотчество й фамнліл роднтелей, й какóги\nЗваніє, йма, сбт'ство й фамнліА\nIXCA.\nввронспок'вданіл.\nоспріємникшкх.\nТой же деревни ккрестнянить веронией Св\nДеревии Ч гутуевви веребдвянита вврим\nВисиилево Чапипево и Черевни Воронини \"ер\nВасииевь Чапишево и зи конния жени еге-\nов. Никитинатова\nкрествянская жена А гаорій Тимосресьа І\nа православные.",
+    "localOcrWithSurnameLexicon": "ЗвАніє, ймА, сотчество й фаміліл родителей, й какги\nЗваніє, йма, сотество й фамнлА\nІХСА.\nввронспокʼвданія.\nпоспремникшки.\nТой же деревни крестямить веронией Св\nВисилев. Чапишево и Деревни Воронина \"е\nВасилев Чатишево и зи конния жени его-\nов. Никитина ова\nкрествянская жена А гарія Тимореськ І\nа православные.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0133-target-entry.jpg",
         "sha256": "a1c7cd749a1065633304d4fec9f55171adb88c50193ed8b68b15204cb86b9ddd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3bc4e547-d620-4b0a-b3a5-7d2d93db0a16",
+        "scanNumber": 133,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0133-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0133-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "5f3b154c01e2bf876454087b38780138cd283126ed440abcdfb380aeaa4d0673",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0133-header.png",
+            "sha256": "acf1176c30caababf45c32b1d3c0bf039b84800d1e197d3ce2df9437492037da",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0133-target-entry.png",
+            "sha256": "409e9d24d57f7a7a814f18a0cbdb5f5dfdbc69a4d96ad2b30057d3d5e1504f01",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5325x4365",
+          "targetDimensions": "2842x821",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец: Моисей Иванов Ампилогов, запасной солдат, село Зобово. Отец: Василий Романов Понкратов, крестьянин, деревня Стрелковки.",
+    "fuzzyQuery": true
   }
 }

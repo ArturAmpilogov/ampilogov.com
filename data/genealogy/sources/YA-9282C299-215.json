@@ -1,35 +1,58 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-9282C299-215",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "death",
   "collection": {
     "catalogId": "9282c299-c266-4d51-b866-c5ff01fd07b9",
-    "scanNumber": 215
+    "scanNumber": 215,
+    "title": "Метрическая книга на 1903 год, часть третья, об умерших",
+    "catalogTitleAsIndexed": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Елховка, Жидиловка, Злобинка, Каменка, Кузминовка за 1893 г."
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/9282c299-c266-4d51-b866-c5ff01fd07b9/215"
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/9282c299-c266-4d51-b866-c5ff01fd07b9/215"},
+  "event": {
+    "type": "death-and-burial",
+    "date": {"display": "смерть 20 ноября 1903; погребение 21 ноября 1903", "deathIso": "1903-11-20", "burialIso": "1903-11-21", "confidence": "high"},
+    "place": {"asWritten": "деревня Ново-Никольская", "normalized": "деревня Ново-Никольская; точная административная привязка требует проверки"}
   },
-  "mentions": [],
+  "primaryPersonId": "P102846",
+  "mentions": [
+    {"mentionId": "YA-9282C299-215-M1", "role": "deceased-daughter", "personId": "P102846", "sex": "female", "nameAsTranscribed": "дочь Марія", "displayName": "Мария Дмитриевна Ампилогова", "surnameSeries": true, "patronymicEvidence": {"basis": "derived-from-father-given-name", "sourceMentionId": "YA-9282C299-215-M2", "confidence": "high"}},
+    {"mentionId": "YA-9282C299-215-M2", "role": "father", "personId": "P102845", "sex": "male", "nameAsTranscribed": "деревни Ново-Никольской крестьянина Димитрія Михайлова Ампилогова", "displayName": "Дмитрий Михайлович Ампилогов", "surnameSeries": true, "socialStatus": {"asWritten": "крестьянин", "normalized": "крестьянин"}, "places": [{"relation": "residence-or-registration", "asWritten": "деревни Ново-Никольской", "normalized": "деревня Ново-Никольская", "confidence": "high"}]},
+    {"mentionId": "YA-9282C299-215-M3", "role": "officiant", "personId": null, "nameAsTranscribed": "Священникъ Евгеній Афанасьевъ", "displayName": "Евгений Афанасьев", "surnameSeries": false},
+    {"mentionId": "YA-9282C299-215-M4", "role": "psalm-reader", "personId": null, "nameAsTranscribed": "Псаломщикъ Алексѣй Акимовъ", "displayName": "Алексей Акимов", "surnameSeries": false}
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-full-view.jpg",
-    "sha256": "c5182b76af5d077e9c0f846453069acdb82526e97af134eac4012adb341f40e9",
+    "catalogId": "9282c299-c266-4d51-b866-c5ff01fd07b9", "scanNumber": 215,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-full-width-target",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-full-view.png", "capturedAt": "2026-09-11", "sha256": "43fb5058f65fc687729fdd3c01fe97af20d25ca9b57df25e7aac46737bc956bd",
     "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-target-entry.jpg",
-        "sha256": "eb0535aa9106b23f59433ff430151015cf1f5d791d4fe14b9328bd8151879e4b"
-      }
-    ]
-  },
-  "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+      {"kind": "header", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-header.png", "sha256": "c03ac418beadfdf075d617b52d2590b2f9d6149d44edf31588ddc3d072b13151", "description": "Заголовок части об умерших с видимым годом 1903."},
+      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/9282c299-c266-4d51-b866-c5ff01fd07b9/0215-target-entry.png", "sha256": "67c039ad14c71fcf95f5e127eb926ea66fe3fce2adfc1ffeb6ca38f4211cd29b", "description": "Полноширинный крупный фрагмент записи № 75 со всеми графами и соседней итоговой строкой."}
+    ],
+    "quality": {"originalImageDownloaded": true, "targetRowsVisuallyConfirmed": true, "fullDimensions": "5577x4572", "targetDimensions": "5400x1600", "method": "manual-reading-of-original-resolution-local-copy"},
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-primary-scan-transcription",
+    "literal": "Ноябрь. № 75 женского пола. 20 [умерла], 21 [погребена]. Деревни Ново-Никольской крестьянина Димитрия Михайлова Ампилогова дочь Мария. 1 месяц. От младенческой [болезни]. Священник Евгений Афанасьев. Псаломщик Алексей Акимов.",
+    "modernInterpretation": "Мария Дмитриевна Ампилогова, месячная дочь крестьянина деревни Ново-Никольской Дмитрия Михайловича Ампилогова, умерла 20 ноября 1903 года и была погребена 21 ноября. Документ подтверждает отцовство и местную принадлежность на дату акта, но не сообщает о переселении.",
+    "indexNote": "Основные имя, родство, даты и возраст подтверждены непосредственно по полному скану. При этом каталог Яндекса датирует подборку 1893 годом, тогда как заголовок самого листа ясно показывает 1903 год; приоритет отдан первичному изображению."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "review": {
+    "status": "manually-verified-from-full-scan-corrected-index-metadata",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1903 death spread, heading and complete female record no. 75; death and burial dates, deceased child, age, father, locality, cause and clergy checked; separate father-child profiles created; catalog year discrepancy and absence of migration recorded; narrow crop replaced with full-width target",
+    "identityResolution": "Dmitry Mikhailovich in this 1903 record is not P99597: that profile is documented as born in 1893 and therefore could not be the father of a child in 1903; a separate profile P102004 is used.",
+    "unresolved": ["Точная административная привязка деревни Ново-Никольской не установлена по одному развороту."]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Дмитрий Михайлов Ампилогов, крестьянин, деревня Ново-Никольская. Умерший: Мария Дмитриева Ампилогова, 1 месяц.",
+    "fuzzyQuery": true,
+    "warning": "Каталожный 1893 год противоречит ясно напечатанному на первичном листе 1903 году; запись датирована по скану."
   }
 }

@@ -1,57 +1,97 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-226",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-attestation",
   "collection": {
-    "catalogId": "FA735EC0",
-    "scanNumber": "226"
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 226,
+    "title": "Метрическая книга села Кармалки за 1915 год, часть третья, об умерших"
   },
   "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/FA735EC0/226"
+    "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/226"
+  },
+  "event": {
+    "type": "clergy-service-attestation",
+    "date": {
+      "display": "15–22 февраля 1915 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "confidence": "high"
+    }
   },
   "mentions": [
     {
       "mentionId": "YA-FA735EC0-226-M1",
-      "role": "church-clergy",
+      "role": "parish-priest",
       "personId": null,
-      "nameAsTranscribed": "Священникъ Михаилъ Анциферовъ",
       "displayName": "Михаил Анциферов",
+      "nameAsTranscribed": "Священникъ Михаилъ Анциферовъ",
       "surnameSeries": false
     },
     {
       "mentionId": "YA-FA735EC0-226-M2",
-      "role": "church-clergy",
+      "role": "psalm-reader-and-deacon",
       "personId": "P91076",
-      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
       "displayName": "Дмитрий Ампилогов",
+      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
       "surnameSeries": true
     }
   ],
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/FA735EC0/226-full-view.jpg",
-    "sha256": "0bce430ae3488af0723d203bb226b8a3f6cca79a4daccd289b240dc8c053e202",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/FA735EC0/226-target-entry.jpg",
-        "sha256": "d00a1199a044f842a4d08559917ce297fcdbe782316c3bb8e7eab544d33986bd"
-      }
-    ]
-  },
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Февраль. [Записи об умерших солдатах и крестьянах села Кармалки.] Священникъ Михаилъ Анциферовъ; псаломщикъ, діаконъ Димитрій Ампилоговъ.",
-    "modernInterpretation": "В февральских записях раздела об умерших священник Михаил Анциферов указан в подписи как священник; рядом назван псаломщик-диакон Дмитрий Ампилогов. Умершие и их родственники относятся к другим фамилиям и сохранены только в самом акте. Служение в приходе не доказывает переселение Дмитрия.",
-    "indexNote": "Индекс использован только для поиска листа. По сохранённому скану и независимой параллельной записи YA-B1A1ABE2-129 священник читается как Михаил Анциферов, а псаломщик-диакон — как Дмитрий Ампилогов; фамильное упоминание относится к Дмитрию."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Февраль, записи 15–22 февраля. В строках погребавших повторены священникъ Михаилъ Анциферовъ и «псаломщикъ, діаконъ Димитрій Ампилоговъ». Умершие — Аксенова, Черкасова, Тулочина, Быкова и другие лица чужих фамилий.",
+    "modernInterpretation": "Разворот подтверждает службу Дмитрия Ампилогова как псаломщика-диакона Кармалки в 15–22 февраля 1915 года; умершие имеют другие фамилии.",
+    "indexNote": "Индексный «Андрей Михайлов Ампилогов» возник из смешения соседних строк и подписи Дмитрия; такого отца на полном развороте нет."
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Андрей Михайлов Ампилогов, крестьянин, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
+    "fuzzyQuery": true
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-partially-verified",
-    "transcriptionConfidence": "medium",
-    "unresolved": [
-      "Нужно прочесть полные данные умерших при отдельной расшифровке актов."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную прочитан весь разворот по всем графам. Андрей Михайлов Ампилогов отсутствует; ложный профиль, родство и карта не созданы. Подтверждена только служебная подпись P91076."
+  },
+  "evidence": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 226,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0226-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0226-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "eb03b119df45560d3c861dc2d195faf71306b2323ba7f67c2ebdcd86a781141b",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0226-header.png",
+        "sha256": "6a87eda2a7c3d8ac6e8ee394b03bb43ca6d8b7a497f989d1035c2f14b666987b",
+        "description": "Заголовок метрической книги 1915 года, часть об умерших."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0226-target-context.jpg",
+        "sha256": "0df3fabfd59c8420eff7b37b7d60cea9ae2315905f504b9996a9a0931fc0fd7d",
+        "description": "Полноширинный крупный фрагмент всех строк и повторных подписей причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5291x4149",
+      "targetDimensions": "5100x3700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

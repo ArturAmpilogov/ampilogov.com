@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "SМОАЛЛЬО\nТРИЧЕСКОЙ КНÚГИ НА 1902-\nЗвáніє, ймА, сотчЕство й фамнАїА родителєй, й какóгш\nuнKCл.\nвАронсповєданіл.\nСола вионовхичеросиівяниів Гаартив Анброову\nПартуринь и мискиего воломані веодорови-\nоба пгривосавльля.\nОвоуенник врій Млиолишар\nliaseaer\nАомночейь Ампиноговч\nМамолцива Анатолій Иллюминаревій\nРела Рельновки перосттвянинч веменч Деодотовя\nЭивнин Гливевть и мисо его Ирини Можсльеви, ова\nпривославлвле.\nСвонуенникг Сергиі Имиолишар скій.\nДіщенів Аамлючейв Ампилоговч.\nПеаламиикьА,\nнатами\nИмлюминарскій\nРели Рлнновни пероствянийв Стириботв Сте-\nпанові Шлихаревы и лисиеего Полигтяя Ва-\nсисвева- оби пгривосиаетвле.)\nвліценникг Серий Илиомшарскиї.\nДісценнть Аомложів Алигилонівв\nНеальмцива А.атолій Илломинаренійй",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0168-target-entry.jpg",
         "sha256": "478170d7a7c930bf426f0a29575a3a77834372ebea9200381731ad0f6c85e81d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ff34218-795d-4b30-9c76-24191f45b68d",
+        "scanNumber": 168,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0168-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0168-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "893f4a1370deca5478e22ec56e07a9899b1886f928a40b976697ef2e3c4fba0e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0168-header.png",
+            "sha256": "2b9f6c701ee4cd494031e31303329636dd951be74a959b5d6b089e2361be1b69",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0168-target-entry.png",
+            "sha256": "95397e17d973d3fd2774c1e768f05d7feea6dc1e7688cb262d0a2ea9e8749c46",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5004x3921",
+          "targetDimensions": "1467x2777",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Псаломщик Алексей Стефанов Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

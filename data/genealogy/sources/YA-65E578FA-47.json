@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "дещента Лиакуі Панинить\nДіаконь Алексонорь тенkовч\nДімнийй Ланатть Хингшногова-\n1.\nСел\")илннооо Периберапроельяника\nова впісневаенив Ностів\nемена Мресилова в\nКавикн.\nвапент мловух-.\nDianosr Алехсанй,ев тек Кeвt\nПімконь Хомочеть Ялмилодова\nРела Иининято Грсиветта перосрьянись\nО.\nНетра Лновиов! Трижинй-\nКиладії ватиини?\nWіяnцент,\nВіннона Книхнав не тинкова",
+    "localOcrWithSurnameLexicon": "демента Лискуі Паннить\nЗаконь Алексанорь танКові\nДілний Ланать Дининогова-\n1.\nСели и лино Перивера проельяника\nова вічневаснив Постів\nелена Тресилова в\nКавикн.\nПішконь Домочеть Ялти подова\nРела Хининя Грсивета пероерьянись\nО.\nНетра Яковлов! Тришинй-\nвиладії ватики?\nШанцент,\nінтона Зникав на тинкова",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0047-target-entry.jpg",
         "sha256": "272f25e3df2a81fa2cebf3c8299ca3c653bc38fae3168a9273fa73d125072e4e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 47,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0047-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0047-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2d3d3574c69c375af57ea8275aa855e1463f57ca869de46d3dbaa5cca7fd2d63",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0047-header.png",
+            "sha256": "1f5862c12fd79c1e582b7cf8f5e3e02bbafca233298880ba10d1ae805172b878",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0047-target-entry.png",
+            "sha256": "c3ba7002bf7ec545ea9515630e9bd66db9d45090ca6580c09ebaef4b6a519808",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5463x4276",
+          "targetDimensions": "1499x970",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянина Семена Трофимова Бучнева сын Иван Священн Клавдий Коликин Диакон Александр Теплов.",
+    "fuzzyQuery": true
   }
 }

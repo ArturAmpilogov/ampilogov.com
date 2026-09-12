@@ -2,64 +2,86 @@
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-167",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "clergy-service-on-birth-register-page",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 167,
-    "asRead": "Метрическая книга на 1911 год, часть первая, о родившихся; проверены видимые строки разворота"
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Сентябрьские записи о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/167"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "4–13 сентября 1911 года",
+      "fromIso": "1911-09-04",
+      "toIso": "1911-09-13",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-167-M1",
-      "role": "church-clergy",
+      "role": "church-clergy-deacon",
       "personId": "P1543",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Егорович Ампилогов, диакон",
-      "surnameSeries": true
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "[В записях разворота:] Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ.",
-    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи диакона Афиногена Егоровича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Сентябрь: Феодоръ — 4/6; Іоаннъ — 7/8; Викторъ — 7/8; Сергій — 12/13; Петръ — 12/13. При каждой строке: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов участвовал только как диакон при крещениях детей чужих семей; родства и переселения лист не сообщает.",
+    "indexNote": "Сниппет Яндекса смешал повторную служебную подпись причта с родителями или восприемниками соседней строки; роли разделены по полному оригиналу."
+  },
+  "context": {
+    "eventSummary": "Последовательные служебные подписи диакона Афиногена в Слоновском приходе.",
+    "relationshipBoundary": "Все семьи и восприемники имеют другие фамилии; родство и миграция не выводятся."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Деревни Андреевки крестьянин Иван Александров Соломко и законная жена его Пераскева Прокопиева, оба православные.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное присутствие ограничено служебной подписью диакона."
   },
   "evidence": {
-    "publicDisplay": false,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0167-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0167-full-view.jpg",
-    "capturedAt": "2026-09-09",
-    "sha256": "18428f77f2269dec16ddb29c84a4ea36a7d9687252247b303ab11b5b7b10a531",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 167,
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0167-full-view.png",
+    "sha256": "39d6558c562ebd0155f0c7d1b39125d8eaa5ebf40e9b3c914a4e306cc23c0cef",
     "fragments": [
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0167-target-entry.jpg",
-        "sha256": "8b2904c4881bcc768ae880e839596812c951460f20b65fa8d245c317be08bc85",
-        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0167-target-context-deep.jpg",
+        "sha256": "d756398161f9d5f23330ae7a8994d51a9e665186f5e947b28f40c05e24fec4e8",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границы месяца и подписей причта."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
+      "originalImageDownloaded": true,
       "fullDimensions": "5260x4181",
-      "targetDimensions": "4900x3351"
-    }
+      "targetDimensions": "5000x3600",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed",
     "transcriptionConfidence": "high",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 167 и все видимые строки прочитаны вручную; проверены даты, дети, родители, восприемники, границы месяцев/итоги и повторные подписи причта; P1543 подтверждён только в служебной роли."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

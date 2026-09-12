@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0127-target-entry.jpg",
         "sha256": "b6d04632c423817f0dbc7d814979ccba073f274be3a231ccd3927c7baa6a05bc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9a45913-7038-4a07-8b1f-fb297c25f02b",
+        "scanNumber": 127,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0127-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0127-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e615360ee2c46ce3721fc4dfbe053cd21e33db00d76db59f142227ffd27a3257",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0127-header.png",
+            "sha256": "b4f8f25bed592f93629bc87f587eee50988ca85403fe643c27356cbbeac7c0c9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9a45913-7038-4a07-8b1f-fb297c25f02b/0127-target-entry.png",
+            "sha256": "670543bb1a748572eca39c2718e26fcedd686390f49ab2c589c7a67d035726c0",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5181x4271",
+          "targetDimensions": "1529x824",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "дерськи паршанка крестбинина пузнии\nгренгаріява Церейкина с/счь Сенна. —\n\"\nСвитиснмикчи Ти мигані іввиснова\nДіжинь Лкиань Богомававь.\nСена Мифстлааки юрестоянина рихеуелу\n3.\nманка Сіьроваснчь Ольга.\n\"\n2\nвиниенники Тишаюоь сприуанити\nДіаноль Широмь в осамововв\nСела мифитлсани протіянина Стетана-\n3.\n4.\nСтвменника Тичисани Л\nДіаньнь (ивать богалтвава",
+    "localOcrWithSurnameLexicon": "дерськи паршина престбинина пухнии\nгрена ріва Церейкина с/сь Сенна. —\n\"\nСвитисники Ти магай іввиснова\nДітинь Якиань Богомававь.\nСена Мифитлааки юрестоянина ринуслу\n3 .\nманна Сірова сні Ольга.\n\"\n2\nДіаноль Мироль в осамовова\nСела миритиса протіянина Стетана-\n3.\n4.\nСтаменника Тимисами Л\nДіаньнь сивать боголтава",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Тимофеев Ампилогов, крестьянин, деревня Кармалки. Умерший: Матрона Сергеева Хвалева, 5 месяцев.",
+    "fuzzyQuery": true
   }
 }

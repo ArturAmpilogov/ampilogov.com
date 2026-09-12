@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5B4E7076-13",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "5b4e7076-fddb-43b1-bb35-288c1cb7d15c",
     "scanNumber": 13
@@ -13,33 +13,90 @@
   "mentions": [
     {
       "mentionId": "YA-5B4E7076-13-M1",
-      "role": "unconfirmed-index-hit",
+      "role": "false-index-hit",
       "personId": null,
-      "nameAsTranscribed": "Индексное совпадение требует повторного чтения",
-      "displayName": "Требуется качественная копия",
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый разворот и целевой фрагмент недостаточно чётки для надёжного чтения всех фамилий.",
-    "modernInterpretation": "До нового полного и увеличенного снимка нельзя подтверждать или исключать носителя фамильного ряда; профиль, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "1889 год, часть о родившихся, записи № 26–41. Полностью просмотрены обе половины разворота, включая родителей и восприемников; фамилия исследуемого ряда не обнаружена.",
+    "modernInterpretation": "Ложное нечёткое совпадение: качественная локальная копия не содержит Ампилоговых, Ампиловых или документированного варианта фамилии.",
+    "indexNote": "Индекс не даёт проверяемого целевого имени; полный оригинал исключает фамильное совпадение."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
-    "sha256": "3ae570d9c1657a992749b99e358b16fc74c84421e9fbea3198e17e62377d41f7",
+    "catalogId": "5b4e7076-fddb-43b1-bb35-288c1cb7d15c",
+    "scanNumber": 13,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "fdc8b4ef3abae93893280fbaf916c1bdff6d9f91118e46a5c840b7348b0fd899",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-target-entry.png",
-        "sha256": "73c53f4eaf11c05c3827c643d84724bacae55e4d41da0d4d326587c7ba603819",
-        "description": "Фрагмент недостаточно чёток; требуется полный чистый захват строки."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
+        "sha256": "fdc8b4ef3abae93893280fbaf916c1bdff6d9f91118e46a5c840b7348b0fd899",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены целевая запись и окружающий контекст."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "6085x4804",
+      "targetDimensions": "6085x4804",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
+        "sha256": "5ee646f68b730c7b0519955c42918d52834b725abf6f32aa670cde3dc6884741",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-target-entry.png",
+            "sha256": "cf430208aadbce6a244960da2ddd9c3bace996f346a509f01da22938da81c49f",
+            "description": "Фрагмент недостаточно чёток; требуется полный чистый захват строки."
+          },
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-header.png",
+            "sha256": "55d208f239f21a7cecab83c0c8bb40b06c4d305108412a810c5259ebe31dfc39",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          }
+        ],
+        "quality": {
+          "fullDimensions": "1238x986",
+          "targetDimensions": "570x650",
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true
+        }
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
-  }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
+  },
+  "indexData": {
+    "querySnippet": "Индекс не заменяет чтение первичного документа.",
+    "fuzzyQuery": true
+  },
+  "event": null,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false
 }

@@ -1,30 +1,213 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B1A1ABE2-161",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-register-surname-family-and-clergy",
-  "primaryPersonIds": ["P101849", "P101850", "P91009", "P101853", "P91076"],
-  "collection": {"catalogId": "b1a1abe2-cf06-4ed6-b459-5de850dbba79", "scanNumber": "161", "title": "Метрическая книга Параскевинской церкви Кармалки за 1912 год, часть третья, об умерших"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/b1a1abe2-cf06-4ed6-b459-5de850dbba79/161"},
-  "event": {"type": "death-and-burial", "date": {"display": "9–13 июня 1912 года", "confidence": "high"}, "place": {"asWritten": "село Кармалка", "normalized": "Кармалка, Оренбургский уезд", "placeId": "karmalka-orenburg"}},
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "death-and-burial",
+  "collection": {
+    "catalogId": "b1a1abe2-cf06-4ed6-b459-5de850dbba79",
+    "scanNumber": 161,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Бараково (Георгиевская церковь), Илькульган (Николаевская церковь), Кармалка (Параскевинская церковь), Колычево (Покровская церковь), Константиновка (Покровская церковь) за 1916 г.",
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Бараково (Георгиевская церковь), Илькульган (Николаевская церковь), Кармалка (Параскевинская церковь), Колычево (Покровская церковь), Константиновка (Покровская церковь) за 1916 г."
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/b1a1abe2-cf06-4ed6-b459-5de850dbba79/161"
+  },
+  "event": {
+    "type": "death-and-burial",
+    "date": {
+      "display": "9–13 июня 1912 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
+    }
+  },
   "mentions": [
-    {"mentionId": "YA-B1A1ABE2-161-M1", "role": "deceased-child", "personId": "P101849", "nameAsTranscribed": "Николая Ефремова Ампилогова сынъ Андрей", "displayName": "Андрей Николаевич Ампилогов", "surnameSeries": true},
-    {"mentionId": "YA-B1A1ABE2-161-M2", "role": "father", "personId": "P91009", "nameAsTranscribed": "Николай Ефремовъ Ампилоговъ", "displayName": "Николай Ефремович Ампилогов", "surnameSeries": true},
-    {"mentionId": "YA-B1A1ABE2-161-M3", "role": "deceased-child", "personId": "P101850", "nameAsTranscribed": "Якова Ефремова Ампилогова сынъ Андрей", "displayName": "Андрей Яковлевич Ампилогов", "surnameSeries": true},
-    {"mentionId": "YA-B1A1ABE2-161-M4", "role": "father", "personId": "P101853", "nameAsTranscribed": "Яковъ Ефремовъ Ампилоговъ", "displayName": "Яков Ефремович Ампилогов", "surnameSeries": true},
-    {"mentionId": "YA-B1A1ABE2-161-M5", "role": "church-clergy", "personId": "P91076", "nameAsTranscribed": "псаломщикъ, діаконъ Димитрій Ампилоговъ", "displayName": "Дмитрий Егорович Ампилогов", "surnameSeries": true}
+    {
+      "mentionId": "YA-B1A1ABE2-161-M1",
+      "role": "deceased-child",
+      "personId": "P101849",
+      "nameAsTranscribed": "Николая Ефремова Ампилогова сынъ Андрей",
+      "displayName": "Андрей Николаевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-B1A1ABE2-161-M2",
+      "role": "father",
+      "personId": "P91009",
+      "nameAsTranscribed": "Николай Ефремовъ Ампилоговъ",
+      "displayName": "Николай Ефремович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-B1A1ABE2-161-M3",
+      "role": "deceased-child",
+      "personId": "P101850",
+      "nameAsTranscribed": "Якова Ефремова Ампилогова сынъ Андрей",
+      "displayName": "Андрей Яковлевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-B1A1ABE2-161-M4",
+      "role": "father",
+      "personId": "P101853",
+      "nameAsTranscribed": "Яковъ Ефремовъ Ампилоговъ",
+      "displayName": "Яков Ефремович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-B1A1ABE2-161-M5",
+      "role": "church-clergy",
+      "personId": "P91076",
+      "nameAsTranscribed": "псаломщикъ, діаконъ Димитрій Ампилоговъ",
+      "displayName": "Дмитрий Егорович Ампилогов",
+      "surnameSeries": true
+    }
   ],
+  "evidence": {
+    "catalogId": "b1a1abe2-cf06-4ed6-b459-5de850dbba79",
+    "scanNumber": 161,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "5809e1be5f1ab7651af6a0fab5186e369bf71cc310beb4786831cc03dff457a1",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-header.png",
+        "sha256": "f4583936fdb8fa871bbd398fc2e2d54e5961985bd1533dfd798490176b2cce6d",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-target-entry.png",
+        "sha256": "af80fb47575aaa8e6ac8c1d4dfe4c28286e2597c1025008af17b9b61ae0fd96b",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4222x3630",
+      "targetDimensions": "3751x2823",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
   "transcription": {
     "status": "primary-scan-transcription",
     "literal": "Метрической книги на 1912 год, часть третья, об умерших. Іюнь. № 25. 9 [умер], 10 [погребён]. Крестьянина села Кармалки Николая Ефремова Ампилогова сынъ Андрей, 10 месяцев, от кори. № 26. 12 [умер], 13 [погребён]. Крестьянина села Кармалки Якова Ефремова Ампилогова сынъ Андрей, 10 месяцев, от кори. Погребения совершил священник Михаил Анциферов с псаломщиком, диаконом Димитрием Ампилоговым, на отведённом мирском общественном кладбище.",
     "modernInterpretation": "В июне 1912 года в Кармалке от кори умерли два десятимесячных мальчика по имени Андрей: сыновья Николая и Якова Ефремовичей Ампилоговых. Оба погребения совершены при участии диакона Дмитрия Егоровича Ампилогова.",
     "indexNote": "Оригинал уверенно даёт 1912 год, отчества отцов «Ефремов» и возраст обоих детей. Общий каталожный диапазон Яндекса 1916 года и OCR-формы фамилии «Алитногов/Амилогов» отклонены."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {"status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": []},
-  "evidence": {"publicDisplay": false, "captureType": "vercel-private-original-derived-full-view-with-header-and-enlarged-target", "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-full-view.png", "sha256": "5809e1be5f1ab7651af6a0fab5186e369bf71cc310beb4786831cc03dff457a1", "fragments": [
-    {"kind": "header", "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-header.png", "sha256": "f4583936fdb8fa871bbd398fc2e2d54e5961985bd1533dfd798490176b2cce6d"},
-    {"kind": "target-entries", "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0161-target-entry.png", "sha256": "af80fb47575aaa8e6ac8c1d4dfe4c28286e2597c1025008af17b9b61ae0fd96b"}
-  ], "quality": {"documentOnlyVisuallyConfirmed": true, "siteAndBrowserChromeExcluded": true, "blackDefectsExcluded": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-11"}}
+  "indexData": {
+    "querySnippet": "Умерший: Андрей Яковлев Ампилогов, 10 месяцев. Умерший: Александр Александров Харламов, 12 месяцев.",
+    "fuzzyQuery": true
+  },
+  "isRecord": false,
+  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "publicCore": false,
+  "review": {
+    "status": "primary-scan-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-B1A1ABE2-161.json",
+        "event": {
+          "type": "death-and-burial",
+          "date": {
+            "display": "1 января 1916 — 31 декабря 1916",
+            "confidence": "high-for-catalog-date"
+          },
+          "place": {
+            "normalized": "не установлено",
+            "asWritten": "село Кармалка",
+            "placeId": "karmalka-orenburg"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-B1A1ABE2-161-M1",
+            "role": "surname-series-mention",
+            "displayName": "Ампилогов",
+            "nameAsTranscribed": "Ампилогов",
+            "surnameSeries": true,
+            "personId": "P101849"
+          },
+          {
+            "mentionId": "YA-B1A1ABE2-161-M2",
+            "role": "father",
+            "personId": "P91009",
+            "nameAsTranscribed": "Николай Ефремовъ Ампилоговъ",
+            "displayName": "Николай Ефремович Ампилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-B1A1ABE2-161-M3",
+            "role": "deceased-child",
+            "personId": "P101850",
+            "nameAsTranscribed": "Якова Ефремова Ампилогова сынъ Андрей",
+            "displayName": "Андрей Яковлевич Ампилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-B1A1ABE2-161-M4",
+            "role": "father",
+            "personId": "P101853",
+            "nameAsTranscribed": "Яковъ Ефремовъ Ампилоговъ",
+            "displayName": "Яков Ефремович Ампилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-B1A1ABE2-161-M5",
+            "role": "church-clergy",
+            "personId": "P91076",
+            "nameAsTranscribed": "псаломщикъ, діаконъ Димитрій Ампилоговъ",
+            "displayName": "Дмитрий Егорович Ампилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "160\nжоТРической вийги на 29моди, чисть третід, щ оумершихи.\nGIếT%\nЗвáніє, ймА, бучестко й фамиліл одмéршаги.\nоỷuéршнуж.\nМÉсaц й дéнь\nО чегий обмЕрж.\nКтò йсповдыкалх й пріовірáли.\nКто соБЕршАли погрЕбеніЕ, й гдб погрЕБены.\n•ỷ мépwn\nCHÉPTH.\nПоГрЕБЕНіЯ.\nтгонь\nСващоннинь Миханко\n23. -\n3.\n5.\nгрестьянинь Cela\nРармаври\nСвянзаннивь Ануиграровь оз пеовозиу\nИиханловскої\nМгканин\nромь, паконось\nвовоти, ддом-\nДеикткого вз не\nГургекой гувернін нутьга\n3 товриоки. Авнуифродо ва. пр подтива в ро\nВаспитевь Овсянтіков\nМиканкь Авнупфрор\nНеакомиивь, діаконх Димитрій Доитиочова\nСвжанник Миханио\n24. -\n%.\n8.\nсвиуатеровь, сь Пеавониу\nКолал, діапоносиь Дниктрі\nчиб житивоговы\n4 отв\nданносиь. Мирок.\nобщоственноь ЮRаЯбнуть,\nm3 Rokkoma.\nСвянзанниВь Микотеть\n25. -\nКростьятена сева РармаКки,\nнупбродь ва оз носвом\nвикайловской\nоронвура\nштріять пипивоговои\nчибевнижцть\nКипока\nдарственный ар›\nНа отведенномь м\n(вьстова Алтивогова соснь\nКомъ обноствонкомь розо\nсвибрей. .. Д.еє\nперикриоласти\nПсах\nсарь, Діаконь Димитвій Алитло го\nСвянзанникь Миканка\n%. -\n19.\n13.\nКрестоятина сова Картавк\nсровь оз пеавом\nАпуміа\nАхкон\nсиs\nМикайновской Довости оран-\nвгскойг\nмитвіеть обситивоговочн\nерпінптів",
+          "modernInterpretation": "160 жоТРической вийги на 29моди, чисть третид, щ оумершихи. GIếT% Звáниє, ймА, бучестко й фамилил одмéршаги. оỷuéршнуж. МÉсaц й дéнь О чегий обмЕрж. Ктò йсповдыкалх й приовирáли. Кто соБЕршАли погрЕбениЕ, й гдб погрЕБены. •ỷ мépwn CHÉPTH. ПоГрЕБЕНиЯ. тгонь Сващоннинь Миханко 23. - 3. 5. грестьянинь Cela Рармаври Свянзаннивь Ануиграровь оз пеовозиу Ииханловскої Мгканин ромь, паконось вовоти, ддом- Деикткого вз не Гургекой гувернин нутьга 3 товриоки. Авнуифродо ва. пр подтива в ро Васпитевь Овсянтиков Миканкь Авнупфрор Неакомиивь, диаконх Димитрий Доитиочова Свжанник Миханио 24. - %. 8. свиуатеровь, сь Пеавониу Колал, диапоносиь Дниктри чиб житивоговы 4 отв данносиь. Мирок. общоственноь ЮRаЯбнуть, m3 Rokkoma. СвянзанниВь Микотеть 25. - Кростьятена сева РармаКки, нупбродь ва оз носвом викайловской оронвура штриять пипивоговои чибевнижцть Кипока дарственный ар› На отведенномь м (вьстова Алтивогова соснь Комъ обноствонкомь розо свибрей. .. Д.еє перикриоласти Псах сарь, Диаконь Димитвий Алитло го Свянзанникь Миканка %. - 19. 13. Крестоятина сова Картавк сровь оз пеавом Апумиа Ахкон сиs Микайновской Довости оран- вгскойг митвиеть обситивоговочн ерпинптив",
+          "localOcr": "160\nжоТРической вийги на 29моди, чисть третід, щ оумершихи.\nGIếT%\nЗвáніє, ймА, бучестко й фамиліл одмéршаги.\nоỷuéршнуж.\nМÉсaц й дéнь\nО чегий обмЕрж.\nКтò йсповдыкалх й пріовірáли.\nКто соБЕршАли погрЕбеніЕ, й гдб погрЕБены.\n•ỷ мépwn\nCHÉPTH.\nПоГрЕБЕНіЯ.\nтгонь\nСващоннинь Миханко\n23. -\n3.\n5.\nгрестьянинь Cela\nРармаври\nСвянзаннивь Ануиграровь оз пеовозиу\nИиханловскої\nМгканин\nромь, паконось\nвовоти, ддом-\nДеикткого вз не\nГургекой гувернін нутьга\n3 товриоки. Авнуифродо ва. пр подтива в ро\nВаспитевь Овсянтіков\nМиканкь Авнупфрор\nНеакомиивь, діаконх Димитрій Доитиочова\nСвжанник Миханио\n24. -\n%.\n8.\nсвиуатеровь, сь Пеавониу\nКолал, діапоносиь Дниктрі\nчиб житивоговы\n4 отв\nданносиь. Мирок.\nобщоственноь ЮRаЯбнуть,\nm3 Rokkoma.\nСвянзанниВь Микотеть\n25. -\nКростьятена сева РармаКки,\nнупбродь ва оз носвом\nвикайловской\nоронвура\nштріять пипивоговои\nчибевнижцть\nКипока\nдарственный ар›\nНа отведенномь м\n(вьстова Алтивогова соснь\nКомъ обноствонкомь розо\nсвибрей. .. Д.еє\nперикриоласти\nПсах\nсарь, Діаконь Димитвій Алитло го\nСвянзанникь Миканка\n%. -\n19.\n13.\nКрестоятина сова Картавк\nсровь оз пеавом\nАпуміа\nАхкон\nсиs\nМикайновской Довости оран-\nвгскойг\nмитвіеть обситивоговочн\nерпінптів",
+          "localOcrWithSurnameLexicon": "160\nмеТРической вийги на 29мда, чисть третід, щ одершихи.\nGIếT%\nЗваніє, ймА, бучестко й фаниліл обмершаги.\nA kr\nО чегий обмЕрж.\nКто йсповдыка й пробуріли.\nКто соБЕршАли погрЕбеніЕ, й гдЕ погрЕБены.\n•ỷ Mépwn\nCHÉPTH.\nПоГрЕБЕНіЯ.\nогонь\nСващоннинь Миханко\n23. -\n3.\n5.\nкрестьянинь Cola\nРармаври\nниханновскої\nМиканин\nронь, паконось\nДеисткого вз не\nТургекой гувернін нульга\nВасилтев. Овсянтіков\nМиканкь Авнупрор\nНеакомивь, діакоих Димитрій Двитиогова\n24. -\n%.\n8.\nсвищитеровь сь Плавонку\nВолан, діаконосиь Дниктрі\nчий житивого выс\n4 отв\nданномиь. Мирок\nm3 Rokkoma .\nСвязанниВь Микотеть\n25. -\nКрестьянина сеКа РармаКки,\nСикайловской\nштріять питвоговоси\nдарственный ар›\nНа отведенномь м\nвоскова Алитивогова соснь\nКомь обноствонкомь разо\nсвибрей. . Дає\nпери проласти\nПсах\nсарь, Діоконь Димитвій Злито гон\nСвязанникь Миканка\n%. -\n19.\n13.\nКрестоятина сова Картаво\nсровь оз пешком\nАнулів\nсиг\nМикайновской Дорости оран-\nваской г\nмитвіеть обситивоовочн\nерпі путіва",
+          "collation": {
+            "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "После объединения веток основным сделано чтение с более сильной ручной проверкой оригинала; прежняя версия сохранена как альтернативная."
+  },
+  "primaryPersonIds": [
+    "P101849",
+    "P101850",
+    "P91009",
+    "P101853",
+    "P91076"
+  ]
 }

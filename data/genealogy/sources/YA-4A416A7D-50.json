@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЕИПОААЛЬНОЙ\nГÓдА, ЧАСТЬ ВТОРАД, й БРаКОСОЧеТАВШИХСА.\nКтò совершÁл%\nПóдпись свидКтелей\nКто выли порбчители.\nТáинство.\nзáписи по желАнію.\nЙо жентян: чили сти-\nСвященник\nроже - огуиновки кре-\nстьянині\nЗаосиря коннов\nнининиковь и солінт\nМихаим\nтогоже сели ньин\nписиилов Пероввев,\nпо невтит Янкинск\nАмпилогова\nго опори, Дузулучскио\nуни , Симрнон губо.\nснень. Осодоровь Бого-\nсь 1салонуи нолове и\nМігтооми\nШвинов. Ревтови.\nно жнениять\nсели/ Стга\nкат Wи-\nИошловки\nв граеп п ручитевнй\nрон-огуановки кре-\nпеновлетним „ Стари\nстьянинь СтефриньДи-\nбспорановкй\", ка\n1 на\n1BC\nжианту по о\nсртуиь о. прикнт\nа Свму М А мп\nмооеееь\nскон креснянинь ба-\nМсалоийрит М\nпряни\nков Сергнев Скитинь;\nпо невтость Деревни\nГаряй-\nНово Н/икольской кре;\nспіянинь Виинцій\nСитоков Кипистрав",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0050-target-entry.jpg",
         "sha256": "64cac72b68d53e514af4a6e1b1066b6e7b90500a28cec0d84c089a724fa647c4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 50,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0050-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0050-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "94fda2cea368356288b7bab2abbf793c589887abd4a49aebca47b5fddfd2e825",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0050-header.png",
+            "sha256": "0f1159a040bfe92acc5b721dc9dfe4f90a5a6b4097645e61ad47684942375246",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0050-target-entry.png",
+            "sha256": "58937676d2045ef2432b7bc466fc622177ebf5838238fd3c2c01b0188eb3ca11",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5483x4314",
+          "targetDimensions": "2820x3181",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с Псаломщиком Тимофеем Горяйновым. По женихе: села Старой...",
+    "fuzzyQuery": true
   }
 }

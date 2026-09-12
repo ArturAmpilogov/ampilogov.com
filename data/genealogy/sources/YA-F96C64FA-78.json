@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0078-target-entry.jpg",
         "sha256": "88528360ef0fc1ec120749ab374dbf5a98c908ce9a2cd96b98b6016adb75ceeb"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f96c64fa-c7be-43ac-be20-c18c56bdf38c",
+        "scanNumber": 78,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0078-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0078-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "347612b69b4756895eb3ece5b7d4b6493c3e5a29a97b0987dbd59d744460b97c",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0078-header.png",
+            "sha256": "5510c5ca963418c66656ddbe74e4125b2f5295f4f8ad1481f176f99ebff76291",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f96c64fa-c7be-43ac-be20-c18c56bdf38c/0078-target-entry.png",
+            "sha256": "241778755335dfbabeecbbe314cdc3bbb8d22ce2127ad29740b9f762c9a9404e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4856x3839",
+          "targetDimensions": "1833x1186",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИОТРИЧеСКОЙ ВНÁГИ НА 1894й\nЗвáніє, йма, сотчество и фамнліл родителєй, й какóги\nЙмЕна родившиусл.\nв*троиспов Кданіл.\nВасии\nСела Михайновского крествяни?\nкеиь Лустинеь Шиутинь и за\nканная мина его Матрина (уакт\nпіска, аба правлславние.\nСвмуниинн своиксотврн Некаовскій.\nЗсалдшунив, Ледномор. Анори)\nказанелки гбеані, с",
+    "localOcrWithSurnameLexicon": "МеТРИЧеСКОЙ ВНЙГИ НА 1894й\nЗваніє, йма, сітчество и фамнлід родителєй, й какги\nИмЕна родившиусл.\nв тронспов Аданіл.\nВасилий\nСела Михайловского крествяни?\nкель Лустинь Илутинь и за\nканная мина его Матрина пакт\nпіска, аба правленавние.\nСомуниина своикствра Некровскій.\nсалдиуни), Ледномор. Анори)\nказаненки губерні, с",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Наталия Иванова Ампилогова. ... Отец: Иван Иванов Ампилогов, крестьянин, деревня Кармалки. Мать: Матрена Прокопиева Ишутина.",
+    "fuzzyQuery": true
   }
 }

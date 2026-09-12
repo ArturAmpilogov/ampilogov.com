@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0005-target-entry.jpg",
         "sha256": "4ce384e4ba88413bdd9f0e0b51e4fd2b75285353d5240d5db8d6c1a1f6238473"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4",
+        "scanNumber": 5,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0005-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0005-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3ee46cb669c6c0b9298b03912d2a408051c0c21c5cc8bea8ed898cf51cb8c2fd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0005-header.png",
+            "sha256": "6346bfae46f59a5b30a7acd90c1879c10dbc2282ee72467c5afaf77ba0cc9ee8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ffc93972-2fb1-4e70-ac3a-0b0f552bc3d4/0005-target-entry.png",
+            "sha256": "90d213c94debb65b1be034aee4827ee258ede5fa1ffa8c00d18556f742ee35d9",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5318x3975",
+          "targetDimensions": "1381x554",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Связки ВЕону\nДіанень вергій Шванове\nОоъединенный\nвела бсгмамьеьки крестьянинх Ми\nроно веменов Нинко и его орена\nnurnhe",
+    "localOcrWithSurnameLexicon": "Діанень вергій Шванове\nОбъединенный\nвела бимамьевки крестьянинь Ми\nроно вемено Нинко и его трена",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Мария Миронова Ампилогова. ... Отец: Мирон Константинов Ампилогов, крестьянин, село Гамалеевка.",
+    "fuzzyQuery": true
   }
 }

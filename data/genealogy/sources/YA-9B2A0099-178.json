@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0178-target-entry.jpg",
         "sha256": "f1037ae7fc5331225595cf7d6cbae7014ff4694f8bfc22230d5c27b9a3e8c61c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "9b2a0099-ef9e-4434-bf0e-2fc3a1737e31",
+        "scanNumber": 178,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0178-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0178-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "09b3806cb2fe44d9faaf8726953aa627906d725bcdbeedf78cba261b7cbf7826",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0178-header.png",
+            "sha256": "534dc010460b43d8edc8d5c5561a274cbbf837e26552382e161aae63e8a582d1",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9b2a0099-ef9e-4434-bf0e-2fc3a1737e31/0178-target-entry.png",
+            "sha256": "f2e7123eefe23a2a3b6612df064b4685dbf439e52c50b88d027d58d72fe478a5",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5507x4615",
+          "targetDimensions": "1490x1046",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "сть. ново-моманнт\nяня: Мирсиич Льфимивї Оечинникавч,\nчишыть Пятровь Тучинь и с. гробрадечн-\nки, крест. Питрь Иванові Аляяновь.-\nПоручитили по осянирь: Ново-архан-\nилькаго сила, крастьяня: (о манчила-\nинь Поповь, Счоргій Петровь Крячетовч и\nТитивки, крастьаня: Пятрь Карповчь\nГосковыровь, Васиит андряевь Нданивы\nл Трофиич Ивановч Подковыробь.-",
+    "localOcrWithSurnameLexicon": "яня: Мирсич димив Оечинникавч,\nчишыть Пятровь Тучинь и с. пробрадечн-\nки, крест. Патрь Иванові Аляяновь. -\nПоручитили по оснирь: Ново -архан-\nиль каго сила, кристьяня: (о манчила-\nинь Поповь, Соргій Петровь Кречетив и\nТитивки, крастьаня: Петрь Карповч\nГосковыровь, Васит андревь данов\n1 Трофич Ивановч Подковыробь. -",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Тимофей Порфириев Ампилогов и с. Ново-Архангельского, крест. ... Поручитель: Тимофей Порфириев Ампилогов, крестьянин, село Кармалка.",
+    "fuzzyQuery": true
   }
 }

@@ -1,47 +1,66 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-38F5CF49-206",
-  "provider": "Яндекс Архив — локально сохранённый первичный скан",
-  "recordType": "birth",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72",
-    "scanNumber": "206"
+    "scanNumber": 206,
+    "title": "Метрическая книга за 1912 год, часть первая, о родившихся",
+    "asRead": "Село Преображенка; июнь; запись № 59"
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/38f5cf49-ff47-4ea6-a429-571daac47e72/206"
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/38f5cf49-ff47-4ea6-a429-571daac47e72/206"},
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {"display": "14–15 июня 1912 года", "from": "1912-06-14", "to": "1912-06-15", "confidence": "high"},
+    "place": {"asWritten": "село Преображенка", "normalized": "село Преображенка, Оренбургская губерния", "confidence": "medium"}
   },
   "mentions": [
-    {
-      "mentionId": "YA-38F5CF49-206-M1",
-      "role": "family-member",
-      "personId": null,
-      "nameAsTranscribed": "Прокопий Филиппович Ампилогов (чтение требует контрольного увеличения)",
-      "displayName": "Прокопий Филиппович Ампилогов",
-      "surnameSeries": true
-    }
+    {"mentionId": "YA-38F5CF49-206-M1", "role": "child", "personId": "P102245", "nameAsTranscribed": "Ѳеодоръ", "displayName": "Фёдор Дмитриевич Ампилогов", "surnameSeries": true},
+    {"mentionId": "YA-38F5CF49-206-M2", "role": "father", "personId": "P101868", "nameAsTranscribed": "села Преображенки солдатъ Димитрій Петровъ Ампилоговъ", "displayName": "Дмитрий Петрович Ампилогов", "surnameSeries": true},
+    {"mentionId": "YA-38F5CF49-206-M3", "role": "mother", "personId": null, "nameAsTranscribed": "жена его Марія Иванова", "displayName": "Мария Ивановна", "surnameSeries": false},
+    {"mentionId": "YA-38F5CF49-206-M4", "role": "godfather", "personId": null, "nameAsTranscribed": "того же села крестьянинъ Илья Симеоновъ Кондауровъ", "displayName": "Илья Семёнович Кондауров", "surnameSeries": false},
+    {"mentionId": "YA-38F5CF49-206-M5", "role": "godmother", "personId": null, "nameAsTranscribed": "солдатская вдова Марѳа Иванова Кондаурова", "displayName": "Марфа Ивановна Кондаурова", "surnameSeries": false}
   ],
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Метрическая книга, часть первая о родившихся. На сохранённом целевом фрагменте отмечена строка с фамильной формой «Ампилогов»; имя и отчество читаются как «Прокопий Филиппович», но требуют контрольного увеличения.",
-    "modernInterpretation": "Скан подтверждает фамильный ряд в записи о рождении, но не даёт набора надёжных идентификаторов для профиля или объединения с одноимённым человеком.",
-    "indexNote": "Внешний индекс использовался только для нахождения листа; вывод основан на локальном первичном скане."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Июнь. № 59 мужского пола. 14 родился, 15 крещён. Феодор. Села Преображенки солдат Димитрий Петров Ампилогов и жена его Мария Иванова, оба православные. Восприемники: того же села крестьянин Илья Симеонов Кондауров и солдатская вдова Марфа Иванова Кондаурова. Священник Андрей Вознесенский; диакон Иоанн Святин.",
+    "modernInterpretation": "14 июня 1912 года в семье проживавшего в селе Преображенке солдата Дмитрия Петровича Ампилогова и Марии Ивановны родился сын Фёдор; 15 июня его крестили. Запись прямо устанавливает отцовство Дмитрия, но не сообщает о переселении семьи.",
+    "indexNote": "Яндекс был использован только для навигации и дал неверное чтение «Прокопий Филиппович». Полноширинный скан уверенно читается как запись № 59 о Феодоре, сыне Димитрия Петрова Ампилогова."
+  },
+  "indexData": {"querySnippet": "Внешний индекс использовался только для нахождения листа; вывод основан на локальном первичном скане.", "fuzzyQuery": true, "discrepancy": "wrong-person-reading-corrected-from-primary-scan"},
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P102245",
+  "context": {
+    "eventSummary": "Рождение 14 июня и крещение 15 июня 1912 года Фёдора, сына Дмитрия Петровича Ампилогова, в Преображенке.",
+    "identityNote": "Отец и сын заведены как отдельные документированные носители фамильного ряда; мать и восприемники сохранены только внутри Record.",
+    "migrationNote": "Акт фиксирует место проживания отца, но не направление и не факт переселения."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-full-view.jpg",
-    "sha256": "78bedbf94d2ed4be34c1127e74f80cc050699dab2cd74f8b82ca42814c508c01",
+    "catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72",
+    "scanNumber": 206,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "8efe7fd70659ff6ce5b0d6d3c7b47358914d1b1f28b4d860f6212fdb4af9639a",
     "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/206-target-entry.jpg",
-        "sha256": "ecdea9bd1285e286acab66ac28f4f77d9c0c247ac142fa3ee024d841e681b89e"
-      }
-    ]
+      {"kind": "header", "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-header.png", "sha256": "a834faf8dec2c5a0265afe1d6dcec3f23f12a4d840bbf7740932eb82b0ae8d32", "description": "Заголовок метрической книги за 1912 год, часть первая, о родившихся."},
+      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/38f5cf49-ff47-4ea6-a429-571daac47e72/0206-target-entry-deep.png", "sha256": "db582f1a1139ddda89d7e70978b7626011a2eb2b4faf07c862af82ac20750baf", "description": "Чистый полноширинный крупный фрагмент записей № 58–61; целевая запись № 59 включает даты, ребёнка, родителей, восприемников и причт."}
+    ],
+    "quality": {"originalImageDownloaded": true, "documentOnlyVisuallyConfirmed": true, "targetRowsVisuallyConfirmed": true, "fullDimensions": "4263x3458", "targetDimensions": "4100x1800", "method": "manual-full-page-reading-and-full-width-recrop"},
+    "uploadStatus": "pending",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "complete-with-partial-transcription",
-    "transcriptionConfidence": "medium",
-    "unresolved": [
-      "Нужно контрольное увеличение строки до создания либо привязки профиля."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-record-number-dates-child-parents-godparents-and-clergy",
+    "unresolved": ["Современная административная привязка Преображенки не нормализована без отдельного доказательства."],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную прочитан разворот 1912 года и запись № 59: даты рождения и крещения, имя ребёнка, родители, оба восприемника и причт; ошибочное индексное имя заменено чтением оригинала; созданы отдельные профили отца и сына и прямая связь."
   }
 }

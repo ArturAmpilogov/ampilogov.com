@@ -1,14 +1,29 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-96C2A3FE-246",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clerical-service-register",
   "collection": {
     "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
-    "scanNumber": "246"
+    "scanNumber": 246,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Ново-Никитино, Преображенка, Путятино, Старая Богдановка, Романовка за 1911 г.",
+    "asRead": "Часть первая, о родившихся; Старобогдановский приход"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/246"
+  },
+  "event": {
+    "type": "clerical-service",
+    "date": {
+      "display": "1–6 марта 1911",
+      "from": "1911-03-01",
+      "to": "1911-03-06",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход села Старой Богдановки",
+      "normalized": "Старая Богдановка, Оренбургский уезд, Оренбургская губерния, Российская империя"
+    }
   },
   "mentions": [
     {
@@ -18,47 +33,76 @@
       "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
       "displayName": "Михаил Афиногенович Ампилогов, священник",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-96C2A3FE-246-M2",
+      "role": "psalmist",
+      "personId": null,
+      "nameAsTranscribed": "псаломщикъ Тимоѳей Горяйновъ",
+      "displayName": "Тимофей Горяйнов",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-role-and-page-context",
+    "literal": "1911 год, часть первая, о родившихся. На развороте четыре записи о крещениях Алексея, Василия и двух Анастасий. При каждой записи повторяется: «Священникъ Михаилъ Ампилоговъ; псаломщикъ Тимоѳей Горяйновъ».",
+    "modernInterpretation": "Разворот документирует непрерывное служение священника Михаила Афиногеновича Ампилогова в Старобогдановском приходе: он совершал крещения в период 1–6 марта 1911. Родители, дети и восприемники иных фамилий сохранены как контекст и не получают профилей.",
+    "indexNote": "Индекс использован только для навигации; полная фамилия, сан и повторные подписи проверены вручную по оригиналу."
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов; псаломщик Тимофей Горяйнов.",
+    "fuzzyQuery": true
+  },
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "96c2a3fe-0af3-41e9-9c75-daa618cbf2a0",
+    "scanNumber": 246,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-full-view.jpg",
-    "capturedAt": "2026-09-09",
-    "sha256": "328abb678209ef328f4527ee972358d05974b24b46f266d5ad455eecd7ec1024",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "9241745d59db61260674f626cf25b8f1c3c2a00335f016be147af1e56d77d918",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-header.png",
+        "sha256": "2f02a77557371109b294b4dab2e02817e035f37e2dd5baa53090bf192f728e5c",
+        "description": "Полноширинный заголовок метрической книги 1911 года, части первой о родившихся."
+      },
+      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-target-entry.jpg",
-        "sha256": "5f26c690cdb6d237a0b0f656cc2f1af3c0edffacdb55fa0f85bd3f47f46a60ec",
-        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
+        "path": "data/genealogy/evidence-private/yandex/96c2a3fe-0af3-41e9-9c75-daa618cbf2a0/0246-target-entry.png",
+        "sha256": "ba0b471dc9810ca98416f577cb04b373e1ad966eafeadb11da67731cd79bd00a",
+        "description": "Полноширинный крупный фрагмент всех видимых строк с датами, семьями, восприемниками и повторными подписями причта без интерфейса Яндекса."
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
       "documentOnlyVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5269x4226",
-      "targetDimensions": "4909x3396"
-    }
-  },
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
-    ]
-  },
-  "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "[В записях разворота:] Священникъ Михаилъ Ампилоговъ съ псаломщикомъ Тимоѳеемъ Горяйновымъ.",
-    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи священника Михаила Афиногеновича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+      "targetDimensions": "5000x3400",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Михаил Афиногенович Ампилогов совершал крещения в Старобогдановском приходе (1–6 марта 1911).",
+    "identityNote": "P1653 подтверждён совокупностью полного имени, сана, Старой Богдановки, 1911 года и непрерывного ряда соседних листов.",
+    "migrationNote": "Запись показывает место служения, но не сообщает о переселении."
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-role-date-range-and-repeated-signatures",
+    "unresolved": [
+      "Отчество Михаила на этом развороте не выписано; связь с P1653 основана на согласованной серии источников."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1911 birth spread scan 246, headings, четыре записи о крещениях Алексея, Василия и двух Анастасий, dates, parents, godparents, repeated clergy signatures, P1653 identity, index discrepancy, no migration"
+  }
 }

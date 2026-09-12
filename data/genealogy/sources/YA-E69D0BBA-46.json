@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0046-target-entry.jpg",
         "sha256": "bfc9171cd387a4c386cbf063b3313f83fcffc8d15a40b3faa0797f4349f58112"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
+        "scanNumber": 46,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0046-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0046-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1ea61d2048bf7b205804d29e1ddd600b4bb98a112f993e6bdd18cc6b70d24cea",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0046-header.png",
+            "sha256": "e0521c67625ff21e326dd5998136c6da8cefc571a8705d56aff4f8b65f75f0ef",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0046-target-entry.png",
+            "sha256": "2b3388a2c9777f50a5faca74c388ed82f8facba7f28098e24a7d38364819c5ff",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5960x4722",
+          "targetDimensions": "1386x847",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "OKC\n4АЛЬНО\nГОДИ, ЧАСТЬ ПОРВЛД, Ủ Р\nЗвАніє, ймА, отчЕство й фамкліА\nвоспріємникШв%.",
+    "localOcrWithSurnameLexicon": "ОКС\nГОДИ, ЧАСТЬ ПЕРЕАД, Й Р\nЗвАніє, мА, отчЕство й фамиліА\nБоспріємникШ%.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "села Зобова крестьянин Андрей Моисеев Ампилогов крестьянка Марфа Романова седых. священник Иаков Мамаев с причтом.",
+    "fuzzyQuery": true
   }
 }

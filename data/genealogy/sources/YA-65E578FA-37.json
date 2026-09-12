@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "10могень\nСиДідасквй Гуверніи Ворсунського гля.\nдо смавлививетенки проертянинч\n50\nПлименть рихорвень Зіхвикинч...\nСвяження вльвуні? Постинит\nDiaroner Алексан рs Тинкоkь\nДіаконь Помочень Ампгилоговії.",
+    "localOcrWithSurnameLexicon": "10 мочень\nДідастй Гуверній Ворсунського гля.\nдо ставлививетенки проертянинч\n50\nПлименть ригорвень Зіхвикинч...\nСвятення Кловні? Постит\nSirroner Алексан рs Тинкокь\nДіаконь Помочень Ампилоговії.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0037-target-entry.jpg",
         "sha256": "485cf8b908b323c6eebea9d5c3a327cd022893d0753772837f4ee432999a81ab"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 37,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0037-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0037-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3c66cd9438e96dd897b8d3c82b8c7a6d08d363135ef5666aab262b0d2324a042",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0037-header.png",
+            "sha256": "dba8f058895c9531aa3f6bada5882a0cac09a34af561bc2209aa9add2169b478",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0037-target-entry.png",
+            "sha256": "6affe6d3ef045de945819ddda53d77985409e40f6aa5df7f8afbc4734db3d8c3",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5263x4256",
+          "targetDimensions": "1534x766",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Егор Флоров Тактин. 45. от боли горячки.",
+    "fuzzyQuery": true
   }
 }

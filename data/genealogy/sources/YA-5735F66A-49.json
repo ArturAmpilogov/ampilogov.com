@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МЕТРИЧЕСКОЙ КНÚГН На 1921-\nЗвáніє, ймА, сотчство й фамиліл родителей, й какóги\nшиусА.\nв'Бронспов'Éданіл.\nвoсr. вл. Слоновані просйтв'янитв Mrilis\nАнскачеві Олавевіь м миснного Мрина\n1Висилвава - обл пправослививо\nОвмиенникь Q\nерній Имиьмина\nДіменів Помложив Амтиночова)\nПеомолиика Анатолій Илцомитарсблій\nДеровли Анібросвни проствянтів Крвємсі\nлай авиговевь О\nломло м мисна его 1 Засса\nОеофеньа ов и правомаєиьо.\nСвмиенникь С\nІрчий Иммімикарени\nДімкаїв Помочків Алпилочовч.\nЖеалалиик) Анатолій Иллюминарскій\nб.\nЛуторри Сискинскиж перетвянийв Івавати\nПотрюь Догтяреві и лимасть Миенаситора т\nПавнова-обаягравославивір.\nСвлиенникв\nСучні Ило -\nми назоский\nДісииів Аомосеів Ампилоговч\n20-1071\nПеаломнитх Анатоі2 погоач",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0049-target-entry.jpg",
         "sha256": "2d0373943433fb4f44591cbdfb77cf9e5bd235adc7a79845489d22ede0760916"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5735f66a-84cc-4f03-b063-5f849be58130",
+        "scanNumber": 49,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0049-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0049-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "3f15a30ceb05515744761c722904e24cd7a429028b2f3ff8cc776dfcc35d2f53",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0049-header.png",
+            "sha256": "a5d349839c26cada1a78d4aa18402e94743a7952dc252bfb903d4f41064fbc98",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0049-target-entry.png",
+            "sha256": "46c4622bec527dca2c3b4ad456ef2e9565eccd23c22cd14888a3fe9fcd08a53f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5803x4747",
+          "targetDimensions": "1633x3467",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Псаломщик Михаил Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский. Родившийся: Варвара Ильина Глазева.",
+    "fuzzyQuery": true
   }
 }

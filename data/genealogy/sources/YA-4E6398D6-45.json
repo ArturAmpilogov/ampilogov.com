@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "мпасви солит нм\nній Флрива Сфррамнав.\nННЫЙ архив\nИ лагоч\nстивовии-\nАристар\nгусипик",
+    "localOcrWithSurnameLexicon": "ній Фрива Серамнав .\n..\nННЫЙ архив\nИ лаго ч\nАристар\nгусиник",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0045-target-entry.jpg",
         "sha256": "a46a55da4fa07b8b3a8add2b2b44d925856ea3cab343ec68469d69eda660a040"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e6398d6-2b49-4ef5-9d4f-f647049ae45c",
+        "scanNumber": 45,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0045-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0045-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "1b892d94bb4ab9e002df643be24b7577e651380844c5013ed44646dd85fc114b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0045-header.png",
+            "sha256": "e2c59f6c7a255b6e9ac6418353ad551a46f90304fe929a284c744e3639131656",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0045-target-entry.png",
+            "sha256": "0d4ad08139133a7b2b2398466e54ba0e9f9b687607db03fe6170c0acf7c319c7",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10199x8112",
+          "targetDimensions": "2425x2250",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "По женихе села Гамалеевки крестьяне Степан Трифанов Ампилогов и Феодор Ильин Михайлов...",
+    "fuzzyQuery": true
   }
 }

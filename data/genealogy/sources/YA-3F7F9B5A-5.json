@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": ".\" Мамись\nрин ввормови виривь Мантвв",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0005-target-entry.jpg",
         "sha256": "5357dbeb34f2480dbb0686ae96c4b9c70c0d001a0f048706baa4674da0057642"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3f7f9b5a-bf43-4dd1-b562-37726071f9a7",
+        "scanNumber": 5,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0005-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0005-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fcc5b1a11fb222f0599ad0e2cf7336868d7aa4f62025e10d846e3400e5607416",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0005-header.png",
+            "sha256": "2d4336ab1c946fa8a27e1eddebe05363d8121c030e9fb2ce2e6efc9fa16da7e8",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3f7f9b5a-bf43-4dd1-b562-37726071f9a7/0005-target-entry.png",
+            "sha256": "177e1d381678bb2f148d9433cd6573e24eca092ce198d7a4133778025c8574a8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4557x3802",
+          "targetDimensions": "1388x894",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Евфимий Поликарпов Ампилогов. ... Отец: Поликарп Афанасьев Ампилогов, крестьянин, село Баклановка.",
+    "fuzzyQuery": true
   }
 }

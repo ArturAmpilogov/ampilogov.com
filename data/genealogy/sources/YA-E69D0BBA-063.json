@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-target-entry.jpg",
         "sha256": "9f86d25825e141555dfab8ae4589adfb7a9887c4418ede30896e3cdee7134bc4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
+        "scanNumber": 63,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "91705c3e4bffb873e7d383f4b57ef3acb06ae585aea69336fc74fcea30cf7b39",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-header.png",
+            "sha256": "59345578f3dfe0b8013cb51fd36ead48dd41e70823df29923e6cc7a7e5c83b8b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-target-entry.png",
+            "sha256": "4648bea3a15d24b99a707c32cb0bb4c5fc5deda997446cc786c3c1c8cd3467fd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5922x4659",
+          "targetDimensions": "1200x1042",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МеТРИЧеСВ\nЗвáніє, йма, бтчество, фамиліл\nАвтà\nАЦЬ\nй ккроиспов'іданіє жениха,\nженихÀ.\nÉNA.\nй котóрыми брáкому.\n! Cha 2,0 hakgernsrm\nМимьереї рпгеркев\nRлaчуr. noa kohabn",
+    "localOcrWithSurnameLexicon": "МеТРИЧеСВ\nЗвАніє, йма, отчество, фамиліл\nАвта\nАЦ%\nй кароисповіданіє жениха,\nжених.\nÉNA.\nй которыми бракому.\nМитьереї ригоркев",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Жених: Феодор Димитриев Ампилогов, крестьянин, село Зобово, 17 1/2. Поручитель: Григорий Николаев Даньшин, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

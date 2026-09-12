@@ -61,57 +61,68 @@
   "transcription": {
     "status": "complete",
     "literal": "12 января родился, 14 января крещён Іоаннъ, сынъ Дементія Никитина Павлова и Параскевы Яковлевой. Воспріемники Владимиръ Артеміевъ Анпилоговъ и Ксенія Петрова Коновалова.",
-    "modernInterpretation": "14 января 1845 года Владимир Артемьевич Анпилогов и Ксения Петровна Коновалова были восприемниками Иоанна Дементиевича Павлова."
+    "modernInterpretation": "14 января 1845 года Владимир Артемьевич Анпилогов и Ксения Петровна Коновалова были восприемниками Иоанна Дементиевича Павлова.",
+    "localOcr": "Дя\nТоблие деревки Государственнк? Кро.\nстінхинь. Зладимар Авртекісі\nСві\nAxпкRocoкo и Duerxa Klen'su Hom\nhola Roxo RockoRa.\nanososs Coea: Yaapembenaoo\nКон\nКз.",
+    "localOcrWithSurnameLexicon": "Дя\nТоблие деревки Государственнк? Кро\nстінкинь. Зладимар Артемісі\nСві\nhola Roxo Rocko Ra.\nКон\nКз.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "OCR Яндекса ошибочно распознаёт заголовок листа как «1912-й год»; оригинал озаглавлен «Метрической книги на 1845 год»."
+    "warning": "OCR Яндекса ошибочно распознаёт заголовок листа как «1912-й год»; оригинал озаглавлен «Метрической книги на 1845 год».",
+    "querySnippet": "Той же деревни Государственный Крестьянин Владимир Артемиев Анпилогов и женка Ксения Петрова Коновалова.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-full-view.png",
-    "capturedAt": "2026-09-04",
+    "capturedAt": "2026-09-10",
     "sha256": "7a85663901a6d6935879d113c3022df2e287357b94216b5b8f2e51096748ff04",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-header.png",
         "sha256": "49fcfe827976b411ea99e3b78c51c4494774075d9f3d84e13e2e3155f776c9ff",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-target-entry-document-right.png",
-        "sha256": "9159eb542b06e26477e72e4d344ab3c4dbe1a853ae25fa6589d0486c1d19828f",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-target-entry-document-upper.png",
-        "sha256": "d9b96e2ad5e2f4426b761df408da59be49b67379955799ef6451600c271fafb6",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/33eb255f-b25f-49ae-bab1-0cd309967332/0357-target-entry.png",
+        "sha256": "440b6bcb55bcca94e44c3ef0eacb5a6a04afee83a4892d6ff75e28e57ee76e15",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-04",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "2640x2020",
+      "targetDimensions": "1200x793",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "33eb255f-b25f-49ae-bab1-0cd309967332",
+    "scanNumber": 357,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
       "2026-09-03: предыдущая проверка ошибочно сочла запись отсутствующей.",
       "2026-09-04: повторная проверка чистого полноэкранного листа подтвердила запись № 3: Владимир Артемиев Анпилогов и Ксения Петрова Коновалова — восприемники Иоанна Дементиева Павлова.",
       "2026-09-04: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

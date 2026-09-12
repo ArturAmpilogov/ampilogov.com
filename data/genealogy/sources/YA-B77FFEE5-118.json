@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/118-target-entry.jpg",
         "sha256": "2e89fbffe7bcf84d46e076b71b9ede1c8fa66c27e88e0b23c091a097d69ca6ad"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 118,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0118-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0118-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "58bfdc08fee3083be3cb7599cf002aa35ab6a6a2dbb6e411dcedad32137a922b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0118-header.png",
+            "sha256": "33d558e819c9fed152736c39e7b21d7958261ee55a0aa2dbddf95a8ff6b0fc7b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0118-target-entry.png",
+            "sha256": "614cbffa023161a9fad4e0fa51c8c6bb41edaa93e32c10c7e1bdc4d264371297",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5946x4685",
+          "targetDimensions": "1431x853",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Того-же сель престьянии\nУссков. Пельить Аий плоговии\nкриттянская дывнца Агрийки-\n1а Микайлов Алпилогови.\n2\nСела Михайловекаго преільжнння",
+    "localOcrWithSurnameLexicon": "Того-же сели престании\nУсков. Пельгить Аий плоговии\nкритянская давида Агрийки-\n1а Михайлов, Ампилогова.\n2\nСела Михайловскао пральжиння",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Иаков Ильин Ампилогов и крестьянская девица Агриппина Михайлова Ампилогова.",
+    "fuzzyQuery": true
   }
 }

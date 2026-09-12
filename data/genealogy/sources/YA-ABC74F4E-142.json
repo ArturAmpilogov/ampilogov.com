@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0142-target-entry.jpg",
         "sha256": "695736bf8915926920b0eb9d47d116958fe42226d099cb65ea3f0eccb75d36d3"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "abc74f4e-60e9-4ef6-9069-0d2ab70de888",
+        "scanNumber": 142,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0142-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0142-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "cadce02931c4e743ea0f74f9e5cad56ba47b2ab008370bcba6e6448815658845",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0142-header.png",
+            "sha256": "abb2b901baf34e9a889e0d58f89480366bd7c28c89c6055e41e3401d6fa2fedc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/abc74f4e-60e9-4ef6-9069-0d2ab70de888/0142-target-entry.png",
+            "sha256": "fcdfa3a34be8e877617dc88e5c9478e218277b017580b3827f804e2a9082f0aa",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4490",
+          "targetDimensions": "2886x718",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Макенснова и дсв чакина длеми e\nСлизивата (азапова; 3м правоснавим\nЛюдбенина Певишкова Церевокан--\nСвященьнив Інаетав Б пашайов.\nПеалотинач ДДмитрій Варабиво.\n/ -\nДеревие Дременний агрестибчиния Ив есич\nЗ Нав ми деревли критвленя Реврілсь\nПевріновь ллигиногово и гереетілиется\nФляровь Алгигиногиво и закешинкя лила\nего Метенія Ивенова; аби правосиаення.\nяксна Ииила Флугоч а Мопонина!.\nСьящитий іжатів Блакеев!\nМенностлен\nДемширй Вараваеи.",
+    "localOcrWithSurnameLexicon": "Слизивата Казанова; 3 православие.\nЛюдбенина Певишкова Церевокан-.\nСвященнив Інав Б наштов.\nПеклотина Дмитрій Вариваво.\n/ -\nДеревие ременний арестивчиния Ив еси\n1 Нав ми деревни притвленя Реврісь\nПевріновь асигногово и перетіллется\nФеровь Алгигиногово и закешиная лила\nего Метенія Ивенова; аби православння.\nСвятий іжатів Блане!\nМенностичен",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Георгий Иванов Ампилогов. ... Отец: Иван Флоров Ампилогов, крестьянин, деревня Дракино.",
+    "fuzzyQuery": true
   }
 }

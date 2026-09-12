@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-target-entry.jpg",
         "sha256": "b9d7bba1ee4ce18a10ecaea24c1b1519dd96f79920e26f9bb869b64e421ac809"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
+        "scanNumber": 15,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "be54e5a2e7fe425452e308e7a5b29ab162298607792f14654202a8966804553f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-header.png",
+            "sha256": "efe1fed4376ea17200e380e1eb9dc0eb68536c5422dc2f440649606b06a6390a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-target-entry.png",
+            "sha256": "a81bdde98ea65c972ffd05179f50a9f14ffcedcda3f30ef109eb789b38dfa594",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6061x4734",
+          "targetDimensions": "1709x987",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "wurwur\nоннх папи\nГлкань ктттоно донесеноки\nПсалолииюь Алексанфра Жургатов\nЛо Дехевии Статркови. Rрeстї. Мhаwь\nвавидтв Рябишичи 2ататлапите\nМатоких Локочнова нбатрасосвавно\nСпентии, Малидвірменькей.",
+    "localOcrWithSurnameLexicon": "- 0\nПсалолиень Александра Муратов\nМо Дедевни Статрков. Reet\". Мань\nМатоких Лукьянова натасовавно\nСенти Мали вірменки.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Емельян Андреев Ампилогов и Законн. жена его Параскева Гордиева, оба православные Священник Маслов Диакон Димитрий Вознесенский Псаломщик Александр Туркин.",
+    "fuzzyQuery": true
   }
 }

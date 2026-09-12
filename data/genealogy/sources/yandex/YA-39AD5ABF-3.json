@@ -38,44 +38,57 @@
     "status": "complete-for-relevant-entry",
     "literal": "[Алфавитный указатель:] Альбрехт — 327; Астафьев — 364; Ампилогов — 365; Ананов — 366; Апуньков — 367; Акимов — 368; Аврамов — 369.",
     "layoutNote": "Это не биографическая запись, а ссылка алфавитного указателя на единицу или лист 365; имя и инициалы не приведены.",
-    "modernInterpretation": "Архивная опись содержит указательную статью «Ампилогов — 365»; для установления лица требуется открыть указанную единицу."
+    "modernInterpretation": "Архивная опись содержит указательную статью «Ампилогов — 365»; для установления лица требуется открыть указанную единицу.",
+    "localOcr": "woridy\nRDOOsOrY\nEOSRRY\nEDERDOdY\nCOSNSTN",
+    "localOcrWithSurnameLexicon": "SOBERY\nCOS NINT",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "sourceUrl": "https://yandex.ru/archive/catalog/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/3",
     "publicDisplay": false,
     "localBackup": "data/genealogy/evidence-private/yandex/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/0003-full-view.png",
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "path": "data/genealogy/evidence-private/yandex/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/0003-full-view.png",
-    "capturedAt": "2026-09-03",
+    "capturedAt": "2026-09-10",
     "sha256": "b190e42cbbb49c47105ff4ecc434ce339385307e2d70987e6edf2ea943880801",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/0003-header.png",
         "sha256": "a4762da9b9f8382efbd195294d82246a374406fed3a9bcfbba105ebc30cc8b98",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/0003-target-entry-document-ampilogov.png",
-        "sha256": "080112836d74a52c7d7c54c0621662e22bc75c69b6b7de74fe8b377f3d8a5126",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/39ad5abf-6731-4199-bb24-fe08fa5bf8b0/0003-target-entry.png",
+        "sha256": "e4598705f6cb5e7015f84f8ff4f2a189ffa672f1c4335f499d53ba9c05b9d8e3",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "829x656",
+      "targetDimensions": "1200x1200",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "39ad5abf-6731-4199-bb24-fe08fa5bf8b0",
+    "scanNumber": 3,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-as-finding-aid",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Открыть и атрибутировать позицию 365 описи."
+      "Открыть и атрибутировать позицию 365 описи.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
@@ -85,5 +98,9 @@
   "summary": {
     "status": "research-lead",
     "text": "В алфавитном указателе описи № 33 фамилия «Ампилогов» отсылает к позиции 365."
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов.",
+    "fuzzyQuery": true
   }
 }

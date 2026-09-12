@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МЄТРИЧЕСКОЙ КНÁГН НА 1901г\nЗвАніє, йлА, сот'ество й фалиліл родúтелей, й какóги\nIHXCA.\nвкронспов'єданіл.\nна.\nла Релановни пероситвянить Тимоорей\nСверимові Інмотенів и лисаєго Меттрена\nОтепанова- ови ягривослаливно.\nОвнщенник. Фучій И лиолньиоу\nДіскнів Аамлонтів Алигилочові\nПсамілицикє Анатілій Иммомитар спії\nДеревкм Мириймівти проствянийв Євериив\nвчирові Серо/анжинів и сисано Десерсії Пота-\nпова- овиягривосиианво.\nввященникь С\nуочій Илиомикорский\nДісикоів Ломложів Алигилоківо.\nНеаломщинч Анятолій Лменеминарскій\nне Митора Онскинскаго перествяики Кситя\n146к Мивайліва Труририна прекомаамася\nОвмденникь Серий Милиминарский\nІіахатів Аомгочків Ашпилогові\nТеаломииби Апатолій Цигіалитарнскій",
+    "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГН НА 1901 г\nЗвАніє, плА, сотество й фалиліл родителей, й какги\nв кронсповʼєданіл.\nна.\nвла Селановни проситвянить Тимоорей\nвверимові Інматенів и лисао Метрена\nСтепанова - ови гривослаливно.\nОвищенник. Сумій М мильноу\nДіснів Памонтів Алигилокові\nПсамілицик Анатолій Иммомитар слії\nДеревим Мирийнівни проствяний ввершив\nвчирові Серо/антинів и лисано Десерсії Пота-\nпова- ови гривосиианво.\nСвященникь С\nучий Имкомикорский\nДіскаів Поможів Алегилоківо.\nНеаламщини Аняталій менеминарскій\nне Митора Онскинского перествянки Псиття\n146к Мирайніва Труририа прикомамася\nСвященник. Серий Миниминарский\nПіскатів Аомочів Ашпилогові\nТеаломщини Анатолій Цигіалитарскій",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0047-target-entry.jpg",
         "sha256": "9ebf786494a88bcb83764cb511b7eb6cd7cbb4a5b0759bb26b1910b31e1ce432"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5735f66a-84cc-4f03-b063-5f849be58130",
+        "scanNumber": 47,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0047-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0047-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "eef39b052d97faafb44c63546dab21292123cd102796fd5d33bd0535dfeee015",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0047-header.png",
+            "sha256": "040a99026dd343c67533e313f8c30f082a2a35e843e181a4b64f13a7e70a9e2d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5735f66a-84cc-4f03-b063-5f849be58130/0047-target-entry.png",
+            "sha256": "e9edaf368d8fa850db6e8f96a6f609bdbc819a99ae33c5dc98a962941b81cf07",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5803x4747",
+          "targetDimensions": "1609x3155",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминар Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

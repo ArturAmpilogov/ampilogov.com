@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0081-target-entry.jpg",
         "sha256": "3fcd7b0b05fa24ecae799310563160501a1e3c6d5254dbac43522918b0605f7a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 81,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0081-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0081-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "de2f74bb9c81d17a4541360b89948b75e3bd919ac6dd2912c9ae2effd946d0fc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0081-header.png",
+            "sha256": "49c835d7764d08d77c2e621a79dcc96a75557e3fd802b807c23bd3f1e2313282",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0081-target-entry.png",
+            "sha256": "2e68073c3472606946cb71133b916d4b66a7a4f1377e812173eb1d2cfb8c4eb4",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4607x3605",
+          "targetDimensions": "1389x1039",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Свевщенника Тимаккй Мну\nрановчи\nЗтаконь с Киванть боголюйьки.\nиль. Сага Ликамовни крествяниеч\nПосцерь Расілісьь Росзоловь и\nЗаконная жена его, игена Прохорока,3\nоба правосновине.\n3 Авустови\nОвевиуенника Тимисоай\nДіаконь Михашь богольбовь.\nтій. Деревни Карикалки крествянин\nІригорій Ивоновь Ов'яннинокаи\nГаконная оенасю; Матйана\nернева оба провославнне\nпкей 1О huemовк",
+    "localOcrWithSurnameLexicon": "Священника Тимаккй Мну\nЗаконь с Киванть боголюйски.\nиль. Сага Ликамовни крествяниеч\nПосцерь Василісь Росзоловь и\nЗаконная жена его, ичена Прохоро ка,3\nоба правословине.\n3 Авустови\nОвевиенника Тиминоай\nДіаконь Михашь боголюбовь.\nтій. Деревни Карикалки крествянин\nГригорій Иванов. Овʼяннинока и\nГаконная женасю; Татйана\nерева, оба православне\nпрей 10 huemakn",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец: Филипп Афонасиев Ампилогов, крестьянин, деревня Кармалки. Отец: Яков Евфремов Баловнев, крестьянин, село Михайловка.",
+    "fuzzyQuery": true
   }
 }

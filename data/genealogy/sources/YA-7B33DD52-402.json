@@ -1,35 +1,107 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-7B33DD52-402",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "marriage-sureties",
   "collection": {
     "catalogId": "7b33dd52-46e1-48b1-8697-efa85c9bc1f9",
-    "scanNumber": 402
+    "scanNumber": 402,
+    "title": "Метрическая книга за 1873 год, часть о бракосочетавшихся",
+    "asRead": "Ноябрьская запись № 59 и соседние браки № 60–62"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/402"
   },
-  "mentions": [],
+  "event": {
+    "type": "marriage-sureties",
+    "recordNumber": 59,
+    "date": {
+      "display": "5 ноября 1873",
+      "from": "1873-11-05",
+      "to": "1873-11-05",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбург; оба фамильных поручителя названы оренбургскими мещанами",
+      "normalized": "Оренбург, Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-city"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-7B33DD52-402-M1",
+      "role": "groom-side-surety",
+      "personId": "P1631",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Иванъ Стефановъ Ампилоговъ",
+      "displayName": "Иван Степанович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "strongly-supported"
+    },
+    {
+      "mentionId": "YA-7B33DD52-402-M2",
+      "role": "bride-side-surety",
+      "personId": "P1096",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Стефанъ Симеоновъ Ампилоговъ",
+      "displayName": "Степан Семёнович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "strongly-supported"
+    }
+  ],
+  "transcription": {
+    "status": "complete-for-target-record-and-full-page-context",
+    "literal": "Ноябрь. № 59. 5-го дня совершён брак лиц иных фамилий. Поручители по жениху: оренбургскіе мѣщане Иванъ Стефановъ Ампилоговъ и Григорій Семеновъ Скуростовъ. Поручители по невѣстѣ: оренбургскіе мѣщане Павелъ Петровъ Абдряшевъ и Стефанъ Симеоновъ Ампилоговъ. Ниже на листе следуют браки № 60–62.",
+    "modernInterpretation": "5 ноября 1873 года оренбургские мещане Иван Степанович и Степан Семёнович Ампилоговы выступили поручителями на браке лиц других фамилий: Иван — со стороны жениха, Степан — со стороны невесты.",
+    "indexNote": "Индекс верно указал обоих фамильных поручителей, но год и роли проверены по заголовку и полной строке оригинала. Заголовок читается как 1873, не 1925."
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Иван Стефанов Ампилогов, оренбургский мещанин. Поручитель: Стефан Симеонов Ампилогов, отставной унтер-офицер.",
+    "fuzzyQuery": true,
+    "discrepancy": "На строке оба названы оренбургскими мещанами; военный статус Степана в данной формуле не нормализован из индекса."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-full-view.jpg",
-    "sha256": "f30a8c34dd1a60eed2f7f026f0d33ec6d8aa0c85a241ffc5ec3846403744af67",
+    "catalogId": "7b33dd52-46e1-48b1-8697-efa85c9bc1f9",
+    "scanNumber": 402,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "e75ca9bc4c1acf7d78896a9640edcee2504cb65280bd43c2846b3eb7215a9895",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-target-entry.jpg",
-        "sha256": "926161ecd599e3a970f3fb659ad89a852ce0f21819e823d8d0b90ddfaaabada7"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/7b33dd52-46e1-48b1-8697-efa85c9bc1f9/0402-target-entry.png",
+        "sha256": "2026a082aa24c391297cb17d6af92f54a616866531690a77cb97b3b054d76ca5",
+        "description": "Крупный полноширинный чистый фрагмент разворота с записью № 59, поручителями и соседними браками."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5263x4195",
+      "targetDimensions": "5100x3800",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P1631",
+  "context": {
+    "eventSummary": "Поручительство Ивана Степановича и Степана Семёновича Ампилоговых при браке 5 ноября 1873 года.",
+    "identityNote": "Иван связан с P1631 как strongly-supported по точному ФИО, оренбургскому мещанству и совместимой последующей семейной записи 1881 года. P0979 исключён: он родился в Кармалке в 1858 году и в 1873 году был лишь 15-летним. Степан связан с P1096 по редкому точному ФИО, взрослой хронологии с 1860 года и согласующемуся позднейшему военному/мещанскому контексту; абсолютное тождество формул без возраста не заявлено.",
+    "migrationNote": "Поручительство и сословная формула не используются как доказательство переселения или родства между поручителями."
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
-  },
-  "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-year-date-record-number-names-estate-and-surety-roles",
+    "unresolved": [
+      "Возраст поручителей на листе не приведён; обе идентификации имеют strongly-supported, а не абсолютный статус."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1873 marriage-register spread scan 402; November records 59–62, target date, spouses' rows, four sureties and officiants checked; strongly-supported P1631/P1096 backlinks with P0979 age/place exclusion; roles only, no kinship or migration; 5100x3800 crop"
   }
 }

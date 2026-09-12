@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/973746f2-4f81-4ad1-8550-5f1d68dc1d63/0087-target-entry.jpg",
         "sha256": "1250b3defa7ac161a4181f1b22200ffec3257ec208dc23e090670198a56749ec"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "973746f2-4f81-4ad1-8550-5f1d68dc1d63",
+        "scanNumber": 87,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/973746f2-4f81-4ad1-8550-5f1d68dc1d63/0087-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/973746f2-4f81-4ad1-8550-5f1d68dc1d63/0087-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6765da76b3b246ad66d8c7674b3895faec18ffc87460bff3c990545c54d89eeb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/973746f2-4f81-4ad1-8550-5f1d68dc1d63/0087-header.png",
+            "sha256": "7590212febfa8b56807d18f760079aa758267d4c15c07ec2b90e82cdcbf5affb",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/973746f2-4f81-4ad1-8550-5f1d68dc1d63/0087-target-entry.png",
+            "sha256": "416367197c5771bb4bb7c2b2d3a9f44e67cddd165f02f951a3c13f1026f54c29",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5213x4081",
+          "targetDimensions": "1431x1001",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "аядивом\nТогаfme Сенаfайаснв'\"\nбариов Терентісв Аатильгови\n\"Санцатскац яисо Устинья Семенова\nКавешникава.\nБогаше Села Крествянннг Майвн»\nПатанов Алітилоговиикростван-\nсхам мена тлексанбра в\nДвешови.\nвмельяна\nТагомиа Сала Престовльнини ?\nДекдирте Помиккав, \"вкре стивлми онки\"\nШена ? Катернна Рельсной Шабанова.",
+    "localOcrWithSurnameLexicon": "а ядовом\nMorafue Сенадайасив\"\nбарно Терентісв Антильгови\n\" Санцатскац янсо Устинья Семенова\nКовешникава.\nБогоне Села Крествяннни Майви»\nПатанов Алітилоговиикростван-\nсжам мена т лексанбра в\nДвешови.\nЕмельяна\nТогома Сала Престовльнин ?\nШена ? Катерина Рельсной Шабанова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же Села запасный рядовой Борис Терентиев Ампилогов и Солдатская жена Устинья Семенова Ковешникова.",
+    "fuzzyQuery": true
   }
 }

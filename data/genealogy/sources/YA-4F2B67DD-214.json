@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4F2B67DD-214",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4f2b67dd-288e-49df-b93a-33634f525d61",
     "scanNumber": 214,
@@ -11,27 +11,105 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4f2b67dd-288e-49df-b93a-33634f525d61/214"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-4F2B67DD-214-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Разворот части третьей за май 1888 года содержит записи №11–14 о смерти людей иных семей; фамилия Ампилогов и её варианты на полном листе не обнаружены.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом; публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Результат Яндекса или прежний OCR отклонён после ручного чтения полного сохранённого изображения."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/4f2b67dd-288e-49df-b93a-33634f525d61/0214-full-view.png",
-    "sha256": "ec998d516c2ce3d4b0355cf793babdfd160b1edede541492a6ecbc4059c602d2",
+    "catalogId": "4f2b67dd-288e-49df-b93a-33634f525d61",
+    "scanNumber": 214,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0214-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0214-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "dd2d52d67fc724995cf6253544401ee0a971036930c9222ac8889911c9475de6",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/4f2b67dd-288e-49df-b93a-33634f525d61/0214-target-entry.png",
-        "sha256": "1e18ffd4be218636c659959154ed1c46113d3213e568f611177d26c1fa72c357",
-        "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0214-header.png",
+        "sha256": "bfe4125b26885bbb1c47af8170bcf4a6a2e48f2c89bc4fb19dfae317cbc3e780",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/4f2b67dd-288e-49df-b93a-33634f525d61/0214-target-entry.png",
+        "sha256": "b70096390629cf49fa59ac5c9bd8cc8acbbe0f2769ab21e3657bc32e9694fa11",
+        "description": "Крупный полноширинный фрагмент проверенных строк и контекста без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5190x4206",
+      "targetDimensions": "5000x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/4f2b67dd-288e-49df-b93a-33634f525d61/0214-full-view.png",
+        "sha256": "46df46e26abb92c34e9e439b2ba73a8728d5b48ea58daff882da4968aa977577",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/4f2b67dd-288e-49df-b93a-33634f525d61/0214-target-entry.png",
+            "sha256": "8b7a48a6973356483972a562d68c747173c6e789d187bdd36ce1eddd664610d9",
+            "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
+          },
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4f2b67dd-288e-49df-b93a-33634f525d61/0214-header.png",
+            "sha256": "1d6c66b527c2c876fb7880ae843ee701febda2b8e30d28336c5fd3c07e9d07b3",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          }
+        ],
+        "quality": {
+          "fullDimensions": "1238x986",
+          "targetDimensions": "570x650",
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true
+        }
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-name-role-date-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-11: прежнее совпадение отклонено после ручного чтения полного скана."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full scan, headings and surrounding rows, independent surname/name/role reading, date/place/context, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 5000x3500"
+  },
+  "indexData": {
+    "querySnippet": "Индекс не заменяет чтение первичного документа.",
+    "fuzzyQuery": true
+  },
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное индексное совпадение.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для карты или переселения нет."
   }
 }

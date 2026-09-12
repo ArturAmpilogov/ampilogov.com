@@ -1,19 +1,109 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-219",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": { "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591", "scanNumber": "219" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/219" },
-  "mentions": [{ "mentionId": "YA-FA735EC0-219-M1", "role": "parent-of-deceased", "personId": null, "nameAsTranscribed": "Михаилъ Спиридоновъ Ампилоговъ, солдатъ, села Кармалки", "displayName": "Михаил Спиридонович Ампилогов, солдат", "surnameSeries": true }],
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/219-full-view.jpg", "sha256": "e5a19051fcd5c63bf80ce6698ef35b00d5741b4ff746b2ae2fc3f2672b6b8869", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/219-target-entry.jpg", "sha256": "c6fb6636e2c6c79b5fe821c63d260e2de441743862271586d87e9457f1a896fe" }] },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "death-and-burial",
+  "collection": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 219,
+    "title": "Метрическая книга села Кармалки за 1915 год, часть третья, об умерших"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/219"
+  },
+  "event": {
+    "type": "death-and-burial",
+    "deathDate": "1915-01-15",
+    "burialDate": "1915-01-16",
+    "cause": "младенческая болезнь",
+    "placeAsWritten": "село Кармалка",
+    "placeId": "karmalka-orenburg"
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FA735EC0-219-M1",
+      "role": "deceased-child",
+      "personId": "P102124",
+      "displayName": "Михаил Михайлович Ампилогов",
+      "nameAsTranscribed": "сынъ Михаилъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FA735EC0-219-M2",
+      "role": "father-of-deceased-child",
+      "personId": "P102732",
+      "displayName": "Михаил Спиридонович Ампилогов",
+      "nameAsTranscribed": "Солдата села Кармалки Михаила Спиридонова Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FA735EC0-219-M3",
+      "role": "parish-priest",
+      "personId": null,
+      "displayName": "Михаил Анциферов",
+      "nameAsTranscribed": "Священникъ Михаилъ Анциферовъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FA735EC0-219-M4",
+      "role": "psalm-reader-and-deacon",
+      "personId": "P91076",
+      "displayName": "Дмитрий Ампилогов",
+      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Отец умершего: Михаилъ Спиридоновъ Ампилоговъ, солдатъ, села Кармалки, Михайловской волости, Оренбургской губернии и уезда.",
-    "modernInterpretation": "Михаил Спиридонович Ампилогов указан как солдат и отец умершего; его место — село Кармалка Михайловской волости Оренбургского уезда и губернии. Это запись о месте и статусе на момент акта, а не доказательство переселения.",
-    "indexNote": "Индексная строка сопоставлена с сохранённым сканом; имя умершего и даты требуют дочитывания всей записи."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Январь. Мужескаго пола № 9. 15 умеръ, 16 погребенъ. Солдата села Кармалки, Михайловской волости, Оренбургской губерніи и уѣзда, Михаила Спиридонова Ампилогова сынъ Михаилъ, 6 мѣсяцевъ. Отъ младенческой. Священникъ Михаилъ Анциферовъ съ псаломщикомъ, діакономъ Димитріемъ Ампилоговымъ; на отведенномъ мирскомъ общественномъ кладбищѣ.",
+    "modernInterpretation": "15 января 1915 года умер шестимесячный Михаил, сын солдата Михаила Спиридоновича Ампилогова из Кармалки; погребён 16 января.",
+    "indexNote": "Индекс верно назвал отца, но опустил ребёнка, точные даты, возраст, причину смерти и подпись диакона Дмитрия."
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Михаил Спиридонов Ампилогов, солдат, село Кармалки, Михайловская волость, Оренбургская губерния и уезд.",
+    "fuzzyQuery": true
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": { "status": "primary-scan-partially-verified", "transcriptionConfidence": "medium", "unresolved": ["Не расшифрованы все сведения об умершем и даты смерти/погребения."] }
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную прочитан разворот и строка № 9 по всем графам: даты, ребёнок, отец, возраст, причина, исповедь, погребение и причт. P101788 подтверждён точным ФИО, статусом солдата и местом; создан детский профиль без миграции."
+  },
+  "evidence": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 219,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0219-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0219-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "0d41161974af1e99468de72e6c62b2a4fed5a45b675f01c8ccbda9c0894f6787",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0219-header.png",
+        "sha256": "a01ea745d8be410f80d417f63bc326d69fee36579bcadbf4ae9fccb03b767e42",
+        "description": "Заголовок метрической книги 1915 года, часть об умерших."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0219-target-context.jpg",
+        "sha256": "c3c640dabe8581d1346a0e290801fff33f4c5e1d9ed868aa5225c56b4d2ff710",
+        "description": "Полноширинный крупный фрагмент всех строк и повторных подписей причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5285x4195",
+      "targetDimensions": "5100x3700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  }
 }

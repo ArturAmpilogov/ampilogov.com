@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГИnОг®\nVNO\nАлЬНОй\nТРЙЧОСКОЙ ВНЙГИ НА 18924\n1trà\nЗвáніе, ймл, сбтчество й флмнлта одмершаги.\n16\nодлєршагш\nМбжеска.\nЖенска.\nБЕНTА.",
+    "localOcrWithSurnameLexicon": "VINO\nАлЬНОй\nТРИЧЕСКОЙ КНИГИ НА 18924\nЗвАніе, йм, сотчество й флмна одмершаги.\n16\nодлершагш\nМбжеска.\nЖенска.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0309-target-entry.jpg",
         "sha256": "ffa840f4620c2e99e09957b02ae339657daf2c26b053e12ce950d0dfc0d7c934"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5a9f0e21-dfa3-408c-add7-ef0803d433d5",
+        "scanNumber": 309,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0309-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0309-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "73d53b28ee1df24e55efd10e3dc598a002ac56d2843d61423fff438c29948957",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0309-header.png",
+            "sha256": "f5481f9802862955ac3b19438e8bfc12f628649d345e694649308cc2c1c2ed2f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5a9f0e21-dfa3-408c-add7-ef0803d433d5/0309-target-entry.png",
+            "sha256": "94b2a9232ac396bb9e47f6a219bc300e5ea0bdca718072ab73a51af3c4423851",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5633x4659",
+          "targetDimensions": "1722x1270",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Гавриил Трифанов Ампилогов, запасный солдат, село Гамалеевка. Умерший: Ксения Михайлова Гришаева, 4 месяца.",
+    "fuzzyQuery": true
   }
 }

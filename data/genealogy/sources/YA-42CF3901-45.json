@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/42cf3901-6956-423d-8e4b-18ee4aed8a29/0045-target-entry.jpg",
         "sha256": "26fcb49ac74eb989639e6db0d9ef129fe09d9a60bd21e1a7ab204b058f1aa234"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "42cf3901-6956-423d-8e4b-18ee4aed8a29",
+        "scanNumber": 45,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/42cf3901-6956-423d-8e4b-18ee4aed8a29/0045-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/42cf3901-6956-423d-8e4b-18ee4aed8a29/0045-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "97f69ef707e90b4f4f1d8346f12d0ab276250976db8506812e75aefa276fede4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/42cf3901-6956-423d-8e4b-18ee4aed8a29/0045-header.png",
+            "sha256": "fbac2366e2e8a272b59a22d6a9a20aaa647ea82c2c4682ad4a91b9208baf1138",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/42cf3901-6956-423d-8e4b-18ee4aed8a29/0045-target-entry.png",
+            "sha256": "9ab4cf655edbd93c72ea060da72e2525bf207e79f4e786c1d474393a30e8f3ca",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5181x4195",
+          "targetDimensions": "1313x646",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга 1902 года, часть первая о родившихся: в видимых строках № 108–111 формы Ампилогов / Анпилогов / Анфилогов не обнаружены.",
     "modernInterpretation": "Индексная выдача не подтверждена первичным сканом. Участники других семей не получают профили, карту, маршруты или записи о переселении.",
-    "indexNote": "Яндекс-индекс был только поисковой подсказкой; вывод основан на ручном чтении локального разворота."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "жена Феодасіs Кодіонова Богуанова.\nLOXMвам\nдеревни Путятином крестьянинь\nМокій Фаимитррево Псаковьс\nкрестьянская жена анна Михаило\nва веливанова.",
+    "localOcrWithSurnameLexicon": "жена Феодосія одіонова Бо гуа нова.\nдеревни Путятином крестьянинь\nМокій Фантрево Паковьс\nкрестьянская, жена анна Михаило\nва Селиванова.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Забова крестьянин Степан Андреев Ампилогов и солдатская жена Матрона Леонтиева Даньшина.",
+    "fuzzyQuery": true
   }
 }

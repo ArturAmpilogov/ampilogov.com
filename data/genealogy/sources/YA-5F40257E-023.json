@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГÓДІ, ЧАСть ПеРВаД, й РО\nЗБАніє, ПМА, бТчЕсТвО й фалИліА\nKтò\nБОСпріЁМНИКШЕ/.",
+    "localOcrWithSurnameLexicon": "ГОДІ, ЧАСть ПеРВаД, й РО\nЗАніє, ЙМА, бТчЕсТвО й фалИліА\nБОСпрМНИКШЕ/.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5f40257e-83fd-422b-a5de-554486568bd0/023-target-entry.jpg",
         "sha256": "279972c83fcd8d5268375d86337b78bbacbe34754edfc2eb89f45fd546c8f25a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5f40257e-83fd-422b-a5de-554486568bd0",
+        "scanNumber": 23,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5f40257e-83fd-422b-a5de-554486568bd0/0023-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5f40257e-83fd-422b-a5de-554486568bd0/0023-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "f08fd150e64c498a51c24264ed75514743d82275434e7d8b6eefba6e260c9868",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5f40257e-83fd-422b-a5de-554486568bd0/0023-header.png",
+            "sha256": "bba8212312436d8b42408c845ebe1eb2d7e0918596e4bf0d2d1fdf5d6fd5f219",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5f40257e-83fd-422b-a5de-554486568bd0/0023-target-entry.png",
+            "sha256": "4ec018c8238e6045babee54dea8403017add00c8345341a3667aff347fa18e3e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5853x4759",
+          "targetDimensions": "1512x947",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священник села Старой - Богдановки Михаил Афиногенов Ампилогов и дочь священника Мария Стефанова Краснослободская.",
+    "fuzzyQuery": true
   }
 }

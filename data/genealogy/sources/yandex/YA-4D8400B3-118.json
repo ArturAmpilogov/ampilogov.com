@@ -78,9 +78,17 @@
     }
   ],
   "transcription": {
-    "status": "complete",
+    "status": "complete-with-explicit-reading-uncertainty",
     "literal": "Октябрь. № 131. 29 [родилась], 30 [крещена]. Зиновия. Деревни Кармалки у государственного крестьянина Максима Егорова Ампилогова и жены его Евдокии Леоновой, оба православного вероисповедания. Восприемники: той же деревни государственный крестьянин Парфен Агафонов Ампилогов и женка Акилина Иванова Дымова. Священник Николай Добролюбов, диакон Иаков Грифонов, пономарь Алексей Тихонравов.",
-    "modernInterpretation": "29 октября 1858 года у Максима Егоровича и Евдокии Леонтьевны Ампилоговых родилась дочь Зиновия; крещена 30 октября. Восприемником был Парфен Агафонович Ампилогов."
+    "modernInterpretation": "29 октября 1858 года у Максима Егоровича и Евдокии Леонтьевны Ампилоговых родилась дочь Зиновия; крещена 30 октября. Восприемником был Парфен Агафонович Ампилогов.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
@@ -117,12 +125,50 @@
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-04",
       "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "4d8400b3-261f-48b0-8a75-c0df5f624d3a",
+        "scanNumber": 118,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4d8400b3-261f-48b0-8a75-c0df5f624d3a/0118-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4d8400b3-261f-48b0-8a75-c0df5f624d3a/0118-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e8d4259ff50f4b1a81b608e2d3c98b1ccbf37db1da2a8d972e91e5b532642617",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4d8400b3-261f-48b0-8a75-c0df5f624d3a/0118-header.png",
+            "sha256": "9634eca803a3925da13ec3e98110e61a836e14247db68699e500c004277583ea",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4d8400b3-261f-48b0-8a75-c0df5f624d3a/0118-target-entry.png",
+            "sha256": "ed6b426ff923da2d34b388f271bbe71f349518ddc6866a7e5a969a74770d8c31",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "1280x720",
+          "targetDimensions": "1200x680",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
-    "status": "complete",
-    "transcriptionConfidence": "high",
-    "unresolved": [],
+    "status": "complete-but-reading-uncertain",
+    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
       "2026-09-04: ссылка 118 вела на следующий лист и не содержала этот акт; источником исправлен лист 116, на котором визуально сверена запись № 131. Сохранены чистый разворот, заголовок и строка акта.",
@@ -132,5 +178,9 @@
   "summary": {
     "status": "verified-summary",
     "text": "Рождение Зиновии Максимовны Ампилоговой 29 октября 1858 года в Кармалке."
+  },
+  "indexData": {
+    "querySnippet": "Кр. Парфен Агафонов Ампилогов и женка Акилина Иванова Дымова Священник Николай Добролюбов. шийся под.",
+    "fuzzyQuery": true
   }
 }

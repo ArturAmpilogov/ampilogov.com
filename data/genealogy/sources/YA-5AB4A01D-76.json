@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "оришити возннттова виеовотебий Мивчйь\nЛiagii Kekuem den\nв'ятьнт, Ли\nS'iviKe nic Anek canis pr mentehs\nДістнтй Посожий А\nмпилохтох\nя мясацьволо о/меринра муши мола в стберос (-\nwoeua\nвнанки\nвягрен\nипкер\n•",
+    "localOcrWithSurnameLexicon": "11г.\nДістатй Поможив А\nя мясацьболо о меринра мули пола в стберс ( -\n® Ла\nвнанки\n•",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0076-target-entry.jpg",
         "sha256": "1193bb1d299193259077e23f17f2ecbbefbf5ad687debed21e9cf94087139b93"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 76,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0076-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0076-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "03d3e6932077468d97f8d3d0bb46fcfa095cdc82b6dc83c68607157fdba04d39",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0076-header.png",
+            "sha256": "a9ecf1663a878f6bab14ea7b780e7fde09afbf59d718b8be02df873495c8be46",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0076-target-entry.png",
+            "sha256": "1bdcdc099086d9554ef8c8ea02341402775b2a18e39981449135694a9441d533",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5010x3908",
+          "targetDimensions": "1628x796",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Александр Теплов Диакон Афиноген Ампилогов. 1897 года Августа 2 дня Свидетельствовал Благочинный, Священник Клавдий Каменский.",
+    "fuzzyQuery": true
   }
 }

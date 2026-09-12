@@ -1,12 +1,23 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-12683CB8-65",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
-  "collection": { "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 65 },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "archival-mention",
+  "collection": { "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 65, "asRead": "Метрическая книга за 1892 год, часть третья, об умерших" },
   "links": { "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/65" },
-  "mentions": [{ "mentionId": "YA-12683CB8-65-M1", "role": "unconfirmed-index-hit", "personId": null, "nameAsTranscribed": "Индексное совпадение требует повторного чтения", "displayName": "Требуется качественная копия", "surnameSeries": false }],
-  "transcription": { "status": "needs-recapture-before-family-record", "literal": "Сохранённый локальный разворот и фрагмент недостаточно резки для побуквенного чтения фамилии.", "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.", "indexNote": "Индекс не заменяет чтение первичного документа." },
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0065-full-view.jpg", "sha256": "875802a4b382405466a67859333a6a8c5db1711ce4f57dd1c887ab0ee9b8e711", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0065-target-entry.jpg", "sha256": "17494ebe36b36bfa1d670156d043fba76d9bd1621df25247854d230bee72067f", "description": "Низкоразрешённый фрагмент; нужна пересъёмка." }] },
-  "review": { "status": "needs-recapture-before-family-record", "transcriptionConfidence": "low" }
+  "event": { "type": "burial-register-ministry", "date": { "display": "12–25 сентября 1892", "confidence": "high" }, "place": { "asRead": "приход Верхнего Гумбета", "normalized": "Верхний Гумбет" } },
+  "mentions": [
+    { "mentionId": "YA-12683CB8-65-M1", "role": "psalm-reader-at-burial", "personId": "P1543", "nameAsTranscribed": "Псаломщикъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true },
+    { "mentionId": "YA-12683CB8-65-M2", "role": "priest", "personId": null, "nameAsTranscribed": "Священникъ Григорій Поповъ", "displayName": "Григорий Попов", "surnameSeries": false }
+  ],
+  "transcription": {
+    "status": "complete-for-target-ministry",
+    "literal": "Сентябрь. Записи охватывают смерти 12, 18 и 22 сентября и погребения 13, 19 и 25 сентября. Формула «Псаломщикъ Аѳиногенъ Ампилоговъ» повторяется по листу и под месячным итогом; рядом подписан священник Григорий Попов.",
+    "modernInterpretation": "Лист подтверждает службу Афиногена Ампилогова псаломщиком во второй половине сентября 1892 года.",
+    "indexNote": "Индекс смешал причт с Георгием, сыном Макара Фомина Козина. Оригинальные колонки ясно разделяют умершего и служителей.",
+    "historicalContext": "Итоговая подпись вслед за серией строк позволяет уверенно отнести все повторения к одному должностному лицу прихода."
+  },
+  "evidence": { "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0065-full-view.png", "sha256": "8ad15ce58dbd28a64a1b6eb66862c545e2f2ac7b1784e20f0272ff91664cfda1", "fragments": [{ "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0065-target-entry-deep.png", "sha256": "b7f21d947406802151d78d871eee3f64279bad7917af16de209dcecb586dc010", "description": "Полноширинный крупный фрагмент записей второй половины сентября и итоговых подписей." }], "quality": { "originalImageDownloaded": true, "fullDimensions": "5652x4472", "targetDimensions": "5400x3500", "method": "manual-reading-of-full-scan-and-full-width-recrop" }, "publicDisplay": false },
+  "review": { "status": "deep-reviewed", "transcriptionConfidence": "high-for-name-role-and-date-range", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Проверен весь сентябрьский лист и месячный итог; индексное смешение с ребёнком устранено, Афиноген связан с P1543 по непрерывному составу причта одной книги." },
+  "indexData": { "querySnippet": "Псаломщик Афиноген Ампилогов Хутора Кармалинского крестьянина Макара Фомина Козина сын Георгий Священник Григорий Попов.", "fuzzyQuery": true }
 }

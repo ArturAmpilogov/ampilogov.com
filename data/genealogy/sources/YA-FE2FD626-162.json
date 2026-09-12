@@ -1,44 +1,113 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FE2FD626-162",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
-    "scanNumber": "162"
+    "scanNumber": 162,
+    "title": "Метрическая книга Старой Богдановки за 1909 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe2fd626-6aeb-4401-807f-5290bf3a0d46/162"
   },
+  "event": {
+    "type": "clergy-service-attestation",
+    "date": {
+      "display": "5–11 ноября 1909 года",
+      "from": "1909-11-05",
+      "to": "1909-11-11",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Старая-Богдановка",
+      "normalized": "село Старая Богдановка, Оренбургская губерния",
+      "confidence": "high"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-FE2FD626-162",
-      "role": "false-index-hit",
+      "mentionId": "YA-FE2FD626-162-M1",
+      "role": "parish-priest",
+      "personId": "P1653",
+      "displayName": "Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FE2FD626-162-M2",
+      "role": "psalm-reader",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "displayName": "Тимофей Горяйнов",
+      "nameAsTranscribed": "Псаломщикъ Тимофей Горяйновъ",
       "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 годъ, часть первая, о родившихся. Ноябрь, записи № 61–64. В записях повторено: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ».",
+    "modernInterpretation": "Лист метрической книги подтверждает служение Михаила Ампилова священником Старой Богдановки 5–11 ноября 1909 года. Сослужители сохранены только в контексте источника.",
+    "indexNote": "Яндекс вырвал фамилию из подписи и нормализовал её как «Ампилогов». Повторные строки полного скана ясно читаются «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ»."
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов. 19. с. ... Священник Михаил Ампилогов Псаломщик Тимофей. 1.",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full часть первая, о родившихся spread; Ноябрь, записи № 61–64; dates, repeated clergy signatures, literal surname, Yandex index discrepancy, and same-source image-copy check"
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-full-view.jpg",
-    "sha256": "1a13446c180ac9b8f5e5091e042a17119aab2cdb0a24467316e5b320b4283da4",
+    "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+    "scanNumber": 162,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "caf0e83d009e108fb3b25b8ccb0afdde0cb48595c753b19ab38ebc371b7e9fe7",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-target-entry.jpg",
-        "sha256": "db0160c56dcb8d8e0d87b830c36cc6d0f6ee1e00c1c2075a9055ba3c228b7f96"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-header.png",
+        "sha256": "2e79c0aa9f011b4411073db4fe17481b39c2ade1d4ba67121d0ce17c9735752e",
+        "description": "Заголовок: часть первая, о родившихся, 1909 год."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-target-context.jpg",
+        "sha256": "4ab7c923680580ce143b4beaba7f03c3784fcd7c8f9af00738eef4a96d82c48b",
+        "description": "Полноширинный крупный фрагмент: Ноябрь, записи № 61–64, повторные подписи причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5349x4307",
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "captureType": "parallel-local-jpeg-copy-of-same-source-scan",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-full-view.jpg",
+        "sha256": "1a13446c180ac9b8f5e5091e042a17119aab2cdb0a24467316e5b320b4283da4",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0162-target-entry.jpg",
+            "sha256": "db0160c56dcb8d8e0d87b830c36cc6d0f6ee1e00c1c2075a9055ba3c228b7f96"
+          }
+        ],
+        "sameEvent": true
       }
     ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
   }
 }

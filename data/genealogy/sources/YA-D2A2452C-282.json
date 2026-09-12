@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0282-target-entry.jpg",
         "sha256": "3531839104710ec687e0d07a9d14c8cc8fa102ed6ab7bae790c3e10595766b47"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d2a2452c-310d-4063-8c24-f66ea4a2d7af",
+        "scanNumber": 282,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0282-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0282-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2f2a673000934d6a38789eeda15991c7ca5e3227b0c8353c184b0b3ca7f99fdd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0282-header.png",
+            "sha256": "4d4bbd053cdb3609c7f57067629fa0772781d8551d11e80176d8deaf7e49f618",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0282-target-entry.png",
+            "sha256": "5c774e172a1f4b763310817c7417b73e0401902cb80e2d5a12f57a5639dfe92f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5745x4860",
+          "targetDimensions": "1625x594",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Lіскоть\nОдаенані Воврова\nела 1 рсобр.\nсоленки креси.\nстолонуини диньвколосвь\nмегсаего\nМетика Наеидина\", обапревославные\nСняще\nнін оера Вовнеслькі\nела 11 реобосорентя запос. сомд.р.\n1l menceero\nзаравославные\nX2 Апідай ВВнеастикі\nТсскогсь\nВеесиита Б0р",
+    "localOcrWithSurnameLexicon": "іскоть\nОденані Ворова\nела 1 реобр\nсаленки крести.\nмега его\nМетка Наедина\", оба православные\nін опера Вовнеслькі\nела 11 собос орент запос. солд. .\n1l mentaero\nправославные\nX2 Анізай ВВпасникі",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Феодор Петров Ампилогов и жена его Васса Евфимова, оба православные Священник Андрей Вознесенский.",
+    "fuzzyQuery": true
   }
 }

@@ -2,44 +2,95 @@
   "schemaVersion": 1,
   "sourceId": "YA-3720D2D5-40",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
     "scanNumber": 40,
-    "asRead": "Метрическая книга на 1897 год, часть вторая, о бракосочетавшихся; проверены видимые строки разворота"
+    "title": "Метрическая книга Нижнегумбетского прихода за 1897 год, часть вторая о бракосочетавшихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/40"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "12–17 октября 1897 года",
+      "fromIso": "1897-10-12",
+      "toIso": "1897-10-17",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Нижний Гумбет",
+      "normalized": "Нижний Гумбет, Оренбургский уезд"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-3720D2D5-40-M1",
-      "role": "false-index-hit",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-3720D2D5-40-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Священникъ Клавдій Калининъ",
+      "displayName": "Клавдий Калинин",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-3720D2D5-40-M3",
+      "role": "deacon",
+      "personId": null,
+      "nameAsTranscribed": "Діаконъ Александръ Тепловъ",
+      "displayName": "Александр Теплов",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-primary-scan-reading",
+    "literal": "На полном развороте часть вторая о бракосочетавшихся за 12–17 октября 1897 года при венчании людей других фамилий повторяется состав причта: «Священникъ Клавдій Калининъ. Діаконъ Александръ Тепловъ. Діаконъ Аѳиногенъ Ампилоговъ». Лист содержит октябрьские брачные записи.",
+    "modernInterpretation": "Афиноген Ампилогов служил диаконом Нижнегумбетского прихода при венчании людей других фамилий; это служебное участие, не родство.",
+    "indexNote": "Индекс смешал служебную подпись Афиногена с описанием невесты; оригинал показывает его диаконом при чужих браках."
+  },
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова при венчании людей других фамилий за 12–17 октября 1897 года.",
+    "documentContext": "Лист содержит октябрьские брачные записи.",
+    "identityNote": "Отождествление с P1543 основано на редком имени, той же должности и приходе и неизменном составе причта Калинин–Теплов–Ампилогов.",
+    "migrationNote": "Запись не сообщает родства с участниками актов и не доказывает переселение."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-full-view.jpg",
-    "sha256": "e6eb3cc68f0a9e60574fd0eb9e80624a67f986ec9b02a89651af5c5bf63fd4ab",
+    "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-full-view.png",
+    "sha256": "74f1146ba45494338b49ff9cbcbef4166e635a2c23ed9dcf19434b58e75a0332",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-target-entry.jpg",
-        "sha256": "08b75b1b8771db1977eb1715f97f83c6fb1994c0bffe3eb4a509f8496897d784"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0040-target-entry-deep.png",
+        "sha256": "7fbb60a3667f4cb97c908f171de8836d1485958c80603970981e1e9f27b4e3dc",
+        "description": "Крупный полноширинный фрагмент без интерфейса: все графы, контекст чужих актов и подписи причта."
       }
-    ]
+    ],
+    "quality": {
+      "fullDimensions": "4862x4006",
+      "targetDimensions": "4500x3600",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь разворот: часть вторая о бракосочетавшихся, 12–17 октября 1897 года; проверены раздел, даты и состав причта; подтверждена только служебная связь P1543, без родства и миграции."
   }
 }

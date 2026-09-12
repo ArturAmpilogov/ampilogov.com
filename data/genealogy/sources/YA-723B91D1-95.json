@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0095-target-entry.jpg",
         "sha256": "489d8fb44e21144b19df6041b86186327b14092767600b9c6eb2b73d2476727a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "723b91d1-2a54-4b6a-a1db-7a23cede5cff",
+        "scanNumber": 95,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0095-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0095-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "1b873e1aa651212f5f50f7b99c614552d5f0e717e4adae93c4169145903ea4dd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0095-header.png",
+            "sha256": "2c4e01523d882fee6369453ff64e3dc88d930b3c7e6668e0cbe400f5b85d855b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/723b91d1-2a54-4b6a-a1db-7a23cede5cff/0095-target-entry.png",
+            "sha256": "9173c950ab5309839cb27bd7c2a4f1dd4ea8c7ecde623bbda7b937c539b00a6e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x769",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга 1904 года, часть первая о родившихся; при чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Тульской губерни мурзва, се-\n4)\nла мясного пресівянинх ери-\nгорій Лаанновь Салактіонови\nІн-\n\"Лерсонсоой губерни и утзба\nсела Миранловки. Кересрянка\nва-\nАлетланера вириллова вовалова.\nРеваозопольснія мічизане: Олен-\nанк-\nкайоря. воаннов. Горарови и\nзсе-",
+    "localOcrWithSurnameLexicon": "Тульской губерни мурзва, се-\n4)\nла мясного пресівянин ери-\nгорій Ланновь Салактіонови\nІн-\n\"Лерсонсоой губерни и утуба,\nсела Миранловки. Пересроянка\nва-\nАлтанра вириллова Ковалева.\nРеваоропольсья мічизане: Олен-\nкайоря. воаннов. Газарови и\nУсе-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Филипп Симеонов Ампилогов и Ярославской губернии, Ростовского уезда, села Борисоглебска крестьянка Александра Павлова Иванова.",
+    "fuzzyQuery": true
   }
 }

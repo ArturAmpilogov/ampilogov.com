@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C31F8E91-147",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "burial-clergy-multiple-entries",
   "collection": {
     "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
-    "scanNumber": "147"
+    "scanNumber": 147,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Романовка, Покровка (Куюргаза), Слоновка, Ильинка, Нижний-Гумбет за 1912 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c31f8e91-64b4-4928-809d-8457fa2ab002/147"
   },
-  "mentions": [],
+  "event": {
+    "type": "burial-clergy-multiple-entries",
+    "date": {
+      "display": "1912",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "Слоновский приход"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-C31F8E91-147-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/147-full-view.jpg",
-    "sha256": "279710ebed886a313430b386be98466170a26b75973387fa9d1230caacabe401",
+    "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
+    "scanNumber": 147,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0147-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0147-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "dacda24bb04dd1e91ba40f6294c8e1d0ecda56b39da87fe88291d0b128d3817e",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/147-target-entry.jpg",
-        "sha256": "942b65f902a4826d421c5b9dc49bcbe6ee7476418a50f487e1053630d325f289"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0147-header.png",
+        "sha256": "e552e28ac594c850d881b8323e2e461ba5852b146b4f449516570801b408f624",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0147-target-entry.png",
+        "sha256": "ac80fb9a673b0ab4a99298136c0d08e79026dfb1791b5b090cdcdeb7f9a30d97",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5796x4666"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священник Иоанн Поляков. Диакон Афиноген Ампилогов. [Повторяющиеся подписи при записях об умерших.]",
+    "modernInterpretation": "Индекс ошибочно склеил соседнее слово «Архангельском» с фамилией; оригинал подтверждает служебную подпись Афиногена Ампилогова.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

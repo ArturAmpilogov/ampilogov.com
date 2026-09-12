@@ -57,52 +57,68 @@
       "age": 46,
       "causeOfDeath": "горячка",
       "birthYearEstimated": "1784–1785"
-    }
+    },
+    "localOcr": "Towec\n21\nmalo\nгорит. Овировь-\namit nAbuwenared\nc.2\naumis ofee a? ne. 43\nDеpe вue NaRиn-\nтрет\nslona\nскавоймамдвлно\ngecs\nть\nПреслватинь ни-\nМалай И виповів Ма-\nрикиль\n-\nant nt baur dofredenie\nahe a dapo 62",
+    "localOcrWithSurnameLexicon": "21\nmalo\nгорит. Отваровь-\nc. 2\nтрет\ngecs\nть\nПрестватинь ни-\nМалай И вито вів Ма-\nрикиль\n-\nand nt baur do fredenie\nare a lapa 62",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
     "snippet": "11. Седмаго. Деревни Егоровки однодворец Максим Герасимов сын Анпилогов.",
-    "warning": "Яндекс ошибочно разбил отчество и слово «сын»; дата, возраст и причина смерти восстановлены по структуре таблицы."
+    "warning": "Яндекс ошибочно разбил отчество и слово «сын»; дата, возраст и причина смерти восстановлены по структуре таблицы.",
+    "querySnippet": "11. Седма чо. Деревни Егоровки однодворец Максим Герасим в сн Анпилогов. Служником.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/6058990b-84a6-48ab-aee7-b501e6c2d9ef/0027-full-view.png",
-    "capturedAt": "2026-09-05",
+    "capturedAt": "2026-09-10",
     "sha256": "4257dd5a4da994df911bd1ba20ae866b07dd01cd4a953da7ac6ac858cdf1ae94",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/6058990b-84a6-48ab-aee7-b501e6c2d9ef/0027-header.png",
         "sha256": "04337555f413e3169b80814e7d2c4ffd50b6fb1f6eff8288cca44aa384299bdc",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/6058990b-84a6-48ab-aee7-b501e6c2d9ef/0027-target-entry-document-upper-right.png",
-        "sha256": "97fba18aa1075e70b20d2798e9037aa9705bce0cb3550209c243a8118a02a49a",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/6058990b-84a6-48ab-aee7-b501e6c2d9ef/0027-target-entry.png",
+        "sha256": "dd96e9cd009feaa9fabcd49695bae6740654a4871bdd383a7cb1c9bc7eebc47a",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "localBackup": "data/genealogy/evidence-private/yandex/6058990b-84a6-48ab-aee7-b501e6c2d9ef/0027-full-view.png",
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-05",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "2580x1900",
+      "targetDimensions": "1200x1118",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "6058990b-84a6-48ab-aee7-b501e6c2d9ef",
+    "scanNumber": 27,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-with-uncertainties",
     "identityResolution": "Новая самостоятельная запись; не объединена с другими Максимами Анпилоговыми без семейного доказательства.",
     "unresolved": [
-      "Независимо перечитать графы исповеди, причащения и места погребения."
+      "Независимо перечитать графы исповеди, причащения и места погребения.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-05: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-summary",

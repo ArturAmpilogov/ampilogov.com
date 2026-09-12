@@ -1,44 +1,95 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C60FE1E4-213",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "c60fe1e4-04c3-45ac-ad06-62da21d4d2a3",
-    "scanNumber": "213"
+    "scanNumber": 213,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Покровка (Мокринка), Казанка, Романовка, Покровка (Куюргаза), Слоновка, Нижний Гумбет, Дмитриевка за 1909 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/213"
   },
+  "event": {
+    "type": "baptism-clergy-multiple-entries",
+    "date": {
+      "display": "1909",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "Слоновский приход"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-C60FE1E4-213",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-C60FE1E4-213-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Діакон Аѳиноген Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-full-view.jpg",
-    "sha256": "5a8180ef17b60778e707069c413836fd39bc9e16555f30f78d7a90db129fbbde",
+    "catalogId": "c60fe1e4-04c3-45ac-ad06-62da21d4d2a3",
+    "scanNumber": 213,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "044405c3fe07dddff775137a6dd6ece772dbe5c79a52289659bb48343c323c78",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-target-entry.jpg",
-        "sha256": "5e67a6312d5cb2a8050c2596e3c44c2ffebf08d92ac09425d96de13926adeebc"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-header.png",
+        "sha256": "9ceab296452ce0fdeb00f75daf56674c593db2842954f830250e866e3a228497",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c60fe1e4-04c3-45ac-ad06-62da21d4d2a3/0213-target-entry.png",
+        "sha256": "92ffb67c0b1ad9e61ea7174ee528d524d7b3889e7308b15b25aa39caf4f49fc3",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "2265x1966",
+      "targetDimensions": "1585x1548",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священник Иоанн Поляков с диаконом Афиногеном Ампилоговым. Подпись повторяется на развороте.",
+    "modernInterpretation": "Крупная копия подтверждает подпись Афиногена Ампилогова; прежнее ложное отрицание исправлено.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ІСТРИЧЕСКОЙ ВНИГИ НА 19094\nГОдЪ, ЧАСтЬ первал, й родившихел.\nЗвАніє, йльА, отчество й фамиліл родúтелєй, й какóги\nДиБШиХсА.\nЗваніє, ймя, бтчество й фамиліл\nввройспов'бданіл.\nВго говерШÁл% тáннство\nР8копр\nвосПріємнИкШ52.\nкрецрéніл.\nТЕЛЕЙ :\nія\nелиРилінівки пенейвянич Зпраач\nуланіями пересив'янничВин\nНап\nИвановл вослдити дипиннал мични\nдимінч Евдожиміь Кощееві \"\nего-вреатванна Певжшима, аі я\nСвінцинн\nпо но\nволдийоти Двискситори Ивана\n„ вул\nваннь Полявивв\nвЯженняксь ;\nОХИВаМ\nСвяну я\nДіатиніч,\nЛоинояст Ампилоябы\nГоаніч\nгія\nДержвни Анбриваи перествянийв\nМоймеядеревня перествиннич\nАлекесіірль Ивановь епряньиз\nвамачбовівичлиноввитроливяи.\nреинная лисни его вилеорія ввере\nских мисни Марія вверетво\nмова оби привосивноса,\nвятенняь просцнь Полявовв.\nШишлко\nПоляковч\nДіятціь Пашонич Аипимантва\nСuaПоеровnи прямтвянииьМмешаї\nМого мня осии перемлянлийНи\nвени.\nИвинтвы Лиминовы и затоннас лисна\nКолен Мигейлівь. Повенянівч\nего Вачри Мивийлкви ови привосие\n\"дівлц и Миріи Мванови\nPamenmita рaн Пeляaь.\nФимитоваєннЫИ а\nДіакань Дошонтів Аинілноков\nобласти\nДіатонолі\nсви)\nвиПопровжиперествяниів Васими\nМогю моосиплерествяннич\nонив Аормпловів / озбняютьь м зинан сохам\nПеттрч Мартвикові (овонс).\nоншиного / свяни Мвенива оба\nПовь провищи Сеігии втепенсова\nпривосинанвя.\nпородженова и срявида ешиео//ан-Долноеком\nСвяцньтварання Чоляви.",
+    "localOcrWithSurnameLexicon": "СТРИЧЕСКОЙ КНИГИ НА 19094\nГОдА, ЧАСтЬ первал, й родившихел.\nЗвАніє, йлА, отчество й фамиліл родителей, й какоги\nДиБШиХсА.\nЗваніє, ймя, бучество й фаміліл\nв вроиспов даніл.\nВто соверШАл% тАннство\nРУкопр\nвосПріємнИкШ52.\nкреценіл.\nТЕЛЕЙ Е\nпія\nели Рилінівки пенейв янич Зараза\nуланіями пересиляннитВин\nНап\nдимінч Євдожиміь Кощееві \"\nего-Братання Певними, аі я\nСвінцинн\nпо на\n„ в ул\nваннь Поляновв\nв Ятення сь к\nОХИВаМ\nСвяну я\nДіатиніч ,\nГоаніч\nлія\nДеревни Анбриваи перестлянийв\nМой мея деревня перестаиннич\nАленесіль Ивановь епряниз\nвалятові вічниковвитроливии.\nаннал листи его вилерія ввере\nских мни Мерія веретво\nмова оби приносивноса,\nверениь просцень Поляковв.\nПоляновч\nДіатції Нашинич Аипиманова\nСлиПерови прясвяниь Мнемаї\nМого мня осии перемляний Ни\nвени.\nИвановы Лилиновы и затонас лиса\nКолен Мигайлівь. Повеняніва\nего Вани Мивийскви ови привосие\n\"дівлз и Марін Мванови\nCamento am Dea.\nСилитоваєннЫн а\nДіакань Домонтів Анніяноков\nобласти\nДіатономі\nсви)\nви Попровниперествяниів Васими\nМого мо осиплерественнич\nоний Дорипловів / озвнять м зикам санам\nПетра Мартвикові Поване).\nяншиного / свяни Мвенива оба\nПовь провиди Селени (теленсова\nпривосинанве.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Деревни Андреевки крестьянин Александр Иванов Серяк и законная жена его Гликерия Евфимова, оба православные.",
+    "fuzzyQuery": true
   }
 }

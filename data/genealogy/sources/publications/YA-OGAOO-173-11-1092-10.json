@@ -53,47 +53,62 @@
       "age": 46,
       "causeOfDeath": "горячка",
       "birthYearEstimated": "1784–1785"
-    }
+    },
+    "localOcr": "Прествяти Nа пи-\npa nei a cuno-\nMgeadun -\n3.5\noutnt 2ant nozrederie\nКепиль ерейдор.ев\nИ лан\nayaвaloppeemis\no nobl\n1-01/74\nLgmmonola depla.\nlune\nА виль",
+    "localOcrWithSurnameLexicon": "Прествяти ма пи-\nparei a cano a-\nMeradun --\n3.5\n1-01/74\nLemmono la deplia\nlune",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Дата, возраст и причина смерти восстановлены по структуре таблицы; запись является параллельной копией того же события в делах 1090 и 1087."
+    "warning": "Дата, возраст и причина смерти восстановлены по структуре таблицы; запись является параллельной копией того же события в делах 1090 и 1087.",
+    "querySnippet": "Деревни Егоровки однодворец Максим Герасимов Анпилогов. дваде сять первого. однодворец Гавриил Сергиев воронков.",
+    "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "path": "data/genealogy/evidence-private/yandex/58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6/0010-full-view.png",
-    "capturedAt": "2026-09-04",
+    "capturedAt": "2026-09-10",
     "sha256": "25739ec888da76e26b318367e81e0550cef7d6445aed30a3e2724410137b413f",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "localBackup": "data/genealogy/evidence-private/yandex/58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6/0010-full-view.png",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6/0010-header.png",
         "sha256": "7beded9a9b40865af585615a45c5ef85cf032eb0c70d9e52ac75b74360b7854a",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6/0010-target-entry-document-upper.png",
-        "sha256": "3cee55328cc290f4857d888a80cfbc7d3392822ca221d1abc6587d6213572876",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6/0010-target-entry.png",
+        "sha256": "f853045c74ff9e78b1d7e92327122d19ee295c095b6bf02522ca998647c1fbd8",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-04",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1330x1020",
+      "targetDimensions": "1200x1049",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "58ae97cc-26d3-41bc-b7e7-f5fafeb57fb6",
+    "scanNumber": 10,
+    "captureStatus": "complete-with-local-copy"
   },
   "review": {
     "status": "complete-with-uncertainties",
     "identityResolution": "Связано с P1006 по полному имени, деревне, возрасту, дате и причине смерти; это параллельная копия, а не новое событие.",
     "unresolved": [
-      "Независимо перечитать графы исповеди, причащения и места погребения."
+      "Независимо перечитать графы исповеди, причащения и места погребения.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-04: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-81C0E748-77",
   "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "recordType": "technical-source-alias",
   "collection": {
     "catalogId": "81c0e748-0ddb-40e7-a3c2-85c43ffc9e84",
     "scanNumber": "77"
@@ -12,24 +12,61 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-full-view.jpg",
-    "sha256": "97d851d343a83d96a35bc3c4adef8e7a8199814e7257e1b4ba50f6285437f9b5",
+    "catalogId": "81c0e748-0ddb-40e7-a3c2-85c43ffc9e84",
+    "scanNumber": 77,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "0849a487be98d1f4e1dafa0f957bdc5c522cae652fb1b23702f47bc98265ce71",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-target-entry.jpg",
-        "sha256": "148ad8dab59cb9383e91b23da662f3ecc32d9d7cda7e45c729baa8793b99bdb9"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-header.png",
+        "sha256": "82dcd54afd7ba871816e379086867d3db6080cbcfb9ecb241b1d120209d3571f",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0077-target-context-deep.jpg",
+        "sha256": "021e5fecf6eed45020c5ee0aeab61c59235d5cc24734b7c222b692d2f363f912",
+        "description": "Крупный полноширинный clean crop без интерфейса; вручную проверены полный лист и соседние строки."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5103x4069",
+      "targetDimensions": "4600x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "verified-exact"
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-and-scan",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "exact catalogId, scanNumber 77 and prior JPG SHA 97d851d343a83d96a35bc3c4adef8e7a8199814e7257e1b4ba50f6285437f9b5 match YA-81C0E748-077; shared clean crop/SHA; no duplicate event/profile/backlink"
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-technical-duplicate-verified",
+    "literal": "Тот же полный лист скана 77, что и YA-81C0E748-077; Евдокии Петровой и Петра Лаврентиева Ампилоговых нет.",
+    "modernInterpretation": "Вариант sourceId сохранён только как технический alias канонической карточки; отдельное событие и backlinks не создаются.",
+    "indexNote": "Индекс и первичный скан представлены канонической карточкой."
+  },
+  "parallelOf": "YA-81C0E748-077",
+  "event": null,
+  "isRecord": true,
+  "cardKind": "technical-source-alias",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Технический вариант идентификатора того же скана.",
+    "identityNote": "Лица и связи представлены только канонической карточкой.",
+    "migrationNote": "Alias не создаёт точки или маршрута."
   }
 }

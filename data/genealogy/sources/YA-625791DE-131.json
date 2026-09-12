@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ФІН\nТипогра\nСКОЙ\nСИРОТАЛЬО\nТРИЧЕСКОЙ КНИГИ НА 1906ж\nЗвáніє, ймА, бтчество й фамиліл родічтєлєй, й какóгш\nХсA.\nв Броиспов вданіл.",
+    "localOcrWithSurnameLexicon": "ФІН\nТипогра\nСКОЙ\nСИРОТАЛЬО\nТРИЧЕСКОЙ КНИГИ НА 1906ж\nЗвАніє, ймА, отчество й фамиліл родіттєлєй, й какги\nХсл.\nв Броиспов даніл.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0131-target-entry.jpg",
         "sha256": "3342e17be57c0d2f0644fbf5e85d717653c001dee1708f07b329a3165a152564"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 131,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0131-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0131-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "7e0ee02bc66b63d9e002e32cdf1bd4c5c4f4c8402b1f7f61a6ce64e5db9ba5aa",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0131-header.png",
+            "sha256": "148a545e649ed3d23be8e07867369570c8fa72cf365049e35b8d000a0cf66fab",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0131-target-entry.png",
+            "sha256": "4aa81c8b8cb52154dd9812575435e994131842cdebd7ad9a11cdf40d2be234a2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5891x4646",
+          "targetDimensions": "1622x1102",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Лаврентий Кириллов Ампилогов. Крёстная мать: Анисия Васильева Колесникова, крестьянская жена.",
+    "fuzzyQuery": true
   }
 }

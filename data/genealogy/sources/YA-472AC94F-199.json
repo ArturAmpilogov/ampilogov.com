@@ -2,44 +2,84 @@
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-199",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "clergy-service-on-death-register-page",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 199,
-    "asRead": "Метрическая книга на 1911 год, часть третья, об умерших; проверены видимые строки разворота"
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/199"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "26–30 июня 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-199-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Метрической книги на 1911 год, часть третія, о умершихъ. Июньские записи оканчиваются итоговой строкой; при актах и под месячным итогом стоят: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон при исповеди/причащении и погребении умерших из других семей прихода. Это служебная роль, а не родство с умершими.",
+    "indexNote": "Сниппет Яндекса склеивает имя диакона со сведениями об умершем или его семье. По структуре полного разворота фамильное упоминание относится к причту."
+  },
+  "context": {
+    "eventSummary": "Служебные записи диакона Афиногена Ампилогова в части III метрической книги (26–30 июня 1911 года).",
+    "relationshipBoundary": "Умершие и их семьи имеют другие фамилии; новых профилей, родства, карты и миграции из этих строк не выводится."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянина Афонасия Матвеева Зимина, сын Иван Священник Иоанн Поляков.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс не разделяет участника акта и служебную подпись причта; роль Афиногена исправлена на диакона."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0199-full-view.jpg",
-    "sha256": "2c4d5a512282a959a3a6f8a643d4c99154eb5425da76a4fb3049e9f466f58807",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 199,
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0199-full-view.png",
+    "sha256": "b3898fe5e9e5789fd1b4f2a8fcb0d428afd4ed969609a6818a9e20a3f1be366f",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0199-target-entry.jpg",
-        "sha256": "6bf0c934f287d1c28391a4f47bebf876b54c0dc15ec8a0ed8c7722fdf5ab0611"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0199-target-context-deep.jpg",
+        "sha256": "ca41c3d02f5f19188b5b79b61b040eff85478e12435d6e7f7493b617ed2e6847",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, дат, причин смерти и служебных подписей причта."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "5319x4205",
+      "targetDimensions": "5000x3600",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  }
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 199 и все видимые строки прочитаны вручную; проверены часть книги, месячные границы/даты, умершие, причины, графы исповеди и погребения, повторные подписи причта. P1543 подтверждён только в служебной роли."
+  },
+  "isRecord": true,
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

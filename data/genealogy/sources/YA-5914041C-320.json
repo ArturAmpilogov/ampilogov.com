@@ -2,44 +2,104 @@
   "schemaVersion": 1,
   "sourceId": "YA-5914041C-320",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "birth-multiple-entries",
   "collection": {
     "catalogId": "5914041c-3df1-45b9-b542-1770bbafe7a0",
     "scanNumber": 320,
-    "asRead": "Метрическая книга; проверены видимые строки разворота"
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Илькульган, Рождественское, Бараково, Кармалка, Титовка за 1904 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/5914041c-3df1-45b9-b542-1770bbafe7a0/320"
   },
+  "event": {
+    "type": "birth-multiple-entries",
+    "date": {
+      "display": "1904",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Кармалка"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-5914041C-320-M1",
-      "role": "false-index-hit",
+      "role": "child",
+      "personId": "P102615",
+      "displayName": "Анастасия Филипповна Ампилогова",
+      "nameAsTranscribed": "Анастасія",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-5914041C-320-M2",
+      "role": "father",
+      "personId": "P102614",
+      "displayName": "Филипп Васильевич Ампилогов",
+      "nameAsTranscribed": "крестьянинъ Филиппъ Васильевъ Ампилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-5914041C-320-M3",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках разворота не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "displayName": "законная жена его Гликерія Васильева",
+      "nameAsTranscribed": "законная жена его Гликерія Васильева",
       "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-5914041C-320-M4",
+      "role": "godmother",
+      "personId": "P1190",
+      "displayName": "крестьянская жена Евдокія Тимофѣева Ампилтова",
+      "nameAsTranscribed": "крестьянская жена Евдокія Тимофѣева Ампилтова",
+      "surnameSeries": true
     }
   ],
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
-  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-full-view.jpg",
-    "sha256": "e496329756e275af488bd94240a5b9743f3fe23d91a9e7e9207ce006bde77fae",
+    "catalogId": "5914041c-3df1-45b9-b542-1770bbafe7a0",
+    "scanNumber": 320,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "b10f0b7cbae5e4d147ff7be7eb2a02aec0270909391fd092940b7a8111c278ce",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-target-entry.jpg",
-        "sha256": "927169b5a92e460062374142f957018a77c8b1d0de6180b5e87bedec02be5415"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-header.png",
+        "sha256": "7647b457ad4ba76c31c667a5e6ac669a85fd59e771df4263e63bd8fa38f921a5",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/5914041c-3df1-45b9-b542-1770bbafe7a0/0320-target-entry.png",
+        "sha256": "285c7e3f4259b8ef7b9164adfeff42030fc0cf0cf47944a2676743aa6a73f4dc",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5413x4320"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "transcription": {
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Анастасія. Села Кармалки крестьянинъ Филиппъ Васильевъ Ампилоговъ и законная жена его Гликерія Васильева; оба православные. [В другой записи:] того же села крестьянская жена Евдокія Тимофѣева Ампилтова.",
+    "modernInterpretation": "На развороте записано рождение Анастасии Филипповны Ампилоговой; в другой записи Евдокия Тимофеевна названа восприемницей с написанием «Ампилтова».",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

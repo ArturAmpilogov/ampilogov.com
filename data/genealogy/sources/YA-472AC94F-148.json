@@ -1,44 +1,84 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-148",
-  "provider": "Яндекс Архив — локально сохранённый первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "clergy-service-on-birth-register-page",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
-    "scanNumber": "148"
+    "scanNumber": 148,
+    "title": "Метрическая книга Слоновского прихода",
+    "asRead": "Январский участок части первой о родившихся; год после границы раздела отдельно не повторён"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/148"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "3–21 января; год в заголовке участка не повторён",
+      "confidence": "high-for-days-year-unresolved-after-boundary"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-148-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда на проверенном листе не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Январь. Видимые строки: Ксенія — 3/4; Дарія — 5/6; Сергій — 18/19; Митрофанъ — 19/20; Митрофанъ — 20/21. При каждой строке: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов служебно подписал пять январских актов чужих семей. Год участка на этом листе не повторён.",
+    "indexNote": "Сниппет захватил подпись диакона и чужую семью как единый блок; роли разделены по колонкам оригинала."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона при январских крещениях.",
+    "relationshipBoundary": "Родство и переселение не следуют из документа."
+  },
+  "indexData": {
+    "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов...",
+    "fuzzyQuery": true,
+    "discrepancy": "Афиноген относится к причту, а не к семьям строк."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0148-full-view.jpg",
-    "sha256": "07165f59f833924da9769ccae6dac1f6e87e8e901606341d3b156b56b6782263",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 148,
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0148-full-view.png",
+    "sha256": "35419a1029a99571ca54c8adf0469687a615cfe1546ad8c097b33faba5f593d8",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0148-target-entry.jpg",
-        "sha256": "d86db8eded214975c23eb65f641ecbf350f08c6d625be070de2fdc78f2366e2b"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0148-target-context-deep.jpg",
+        "sha256": "14734cbf30509fdbbbe5e121e1ccff628f4bcfeaa5af5c960f12653148b09892",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых январских строк."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "5253x4177",
+      "targetDimensions": "5000x3600",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
+    },
+    "publicDisplay": false
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high-with-explicit-year-boundary",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный январский разворот и пять строк прочитаны вручную во всех графах; год не экстраполирован, P1543 связан только как диакон."
   },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "На проверенном сохранённом локальном развороте формы Ампилогов / Анпилогов / Анфилогов не обнаружены; видимые записи относятся к другим переселенческим семьям.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Иные семьи остаются только в расшифровке и не получают профили, карту, маршруты или миграционные записи.",
-    "indexNote": "Яндекс-индекс был только поисковой подсказкой; вывод основан на ручном чтении локального скана."
-  }
+  "isRecord": true,
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

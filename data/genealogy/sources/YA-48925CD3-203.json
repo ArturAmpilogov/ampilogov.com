@@ -2,19 +2,168 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-203",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-register-with-surname-clergy",
+  "recordType": "clergy-service-on-birth-register-page",
   "primaryPersonId": "P1543",
-  "collection": {"catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3", "scanNumber": "203", "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/203"},
-  "event": {"type": "baptism-clergy-service", "recordNumber": 34, "date": {"display": "12–13 апреля 1916 года", "confidence": "high"}, "place": {"asWritten": "село Слоновка", "normalized": "село Слоновка, Оренбургский уезд", "placeId": "orenburg-uezd"}},
+  "collection": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 203,
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть первая, о родившихся"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/203"
+  },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "12–20 апреля 1916 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Слоновка",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high",
+      "placeId": "orenburg-uezd"
+    },
+    "recordNumber": 34
+  },
   "mentions": [
-    {"mentionId": "YA-48925CD3-203-M1", "role": "child", "personId": null, "nameAsTranscribed": "Александра", "displayName": "Александра Никитична Кривцова"},
-    {"mentionId": "YA-48925CD3-203-M2", "role": "father", "personId": null, "nameAsTranscribed": "крестьянинъ села Слоновки Никита Егоровъ Кривцовъ", "displayName": "Никита Егорович Кривцов"},
-    {"mentionId": "YA-48925CD3-203-M3", "role": "church-clergy", "personId": "P1543", "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true}
+    {
+      "mentionId": "YA-48925CD3-203-M1",
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-48925CD3-203-M2",
+      "role": "parent-of-baptized-child-context",
+      "personId": null,
+      "nameAsTranscribed": "Никита Егоровъ Кривцовъ",
+      "displayName": "Никита Егоров Кривцов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-48925CD3-203-M3",
+      "role": "parent-of-baptized-child-context",
+      "personId": "P1543",
+      "nameAsTranscribed": "Анастасія Петрова",
+      "displayName": "Анастасія Петрова",
+      "surnameSeries": false
+    }
   ],
-  "transcription": {"status": "primary-scan-transcription", "literal": "1916 год. Апрель. № 34. 12 [родилась], 13 [крещена]. Александра. Села Слоновки крестьянинъ Никита Егоровъ Кривцовъ и законная жена его Анастасія Петрова, оба православные. Воспріемники: Алексѣй Ивановъ Кривцовъ и дѣвица Ольга Максимова Шелестова. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Диакон повторно указан в записи от 19–20 апреля.", "modernInterpretation": "12 апреля 1916 года родилась Александра Кривцова, крещена 13 апреля; Афиноген Егорович Ампилогов служил диаконом.", "indexNote": "Имена и подпись сверены по крупному фрагменту. OCR использован только как указатель строки."},
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть первая, о родившихся». В целевой строке родители: Никита Егоровъ Кривцовъ и законная жена его Анастасія Петрова, оба православные. Вслед за родителями и в других строках листа повторяется: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон, служивший при крещениях детей других семей Слоновского прихода. Он не является родителем или восприемником этих детей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с именами родителей соседней графы. Полный разворот позволяет строго разделить роли."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова при крещениях (12–20 апреля 1916 года).",
+    "relationshipBoundary": "Родители, дети и восприемники относятся к другим фамилиям; они сохранены как контекст без профилей. Родство и миграция Афиногена из листа не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Никита Села Слоновки крестьянин Егоров Кривцов и законная жена его Анастасия Петрова, оба православные.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье крещаемого ребёнка."
+  },
+  "evidence": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 203,
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0203-full-view.png",
+    "sha256": "515223a598750bf378052be297308b4cba562306bc949525b0688f09149f4fe8",
+    "fragments": [
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0203-target-context-deep.jpg",
+        "sha256": "1c86192df086bd5b3a170b9e773dad26b2e2b848fedd05bfa92fb3a37ccc8665",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых записей, дат, родителей, восприемников и подписей причта."
+      },
+      {
+        "kind": "target-entries",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0203-target-entry.png",
+        "sha256": "fd126b0f461cd3c1206f050d9cf230e145de89fdcbae28487144027e86c71584"
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "4521x3686",
+      "targetDimensions": "4300x3400",
+      "method": "manual-full-page-reading-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries"
+  },
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 203 и все видимые строки прочитаны вручную; проверены номера и даты крещений, родители, восприемники, границы месяцев и повторная формула причта. P1543 подтверждён только в служебной роли.",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-48925CD3-203.json",
+        "event": {
+          "type": "baptism-clergy-service",
+          "recordNumber": 34,
+          "date": {
+            "display": "12–13 апреля 1916 года",
+            "confidence": "high"
+          },
+          "place": {
+            "asWritten": "село Слоновка",
+            "normalized": "село Слоновка, Оренбургский уезд",
+            "placeId": "orenburg-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-48925CD3-203-M1",
+            "role": "child",
+            "personId": null,
+            "nameAsTranscribed": "Александра",
+            "displayName": "Александра Никитична Кривцова"
+          },
+          {
+            "mentionId": "YA-48925CD3-203-M2",
+            "role": "father",
+            "personId": null,
+            "nameAsTranscribed": "крестьянинъ села Слоновки Никита Егоровъ Кривцовъ",
+            "displayName": "Никита Егорович Кривцов"
+          },
+          {
+            "mentionId": "YA-48925CD3-203-M3",
+            "role": "church-clergy",
+            "personId": "P1543",
+            "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+            "displayName": "Афиноген Егорович Ампилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "primary-scan-transcription",
+          "literal": "1916 год. Апрель. № 34. 12 [родилась], 13 [крещена]. Александра. Села Слоновки крестьянинъ Никита Егоровъ Кривцовъ и законная жена его Анастасія Петрова, оба православные. Воспріемники: Алексѣй Ивановъ Кривцовъ и дѣвица Ольга Максимова Шелестова. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Диакон повторно указан в записи от 19–20 апреля.",
+          "modernInterpretation": "12 апреля 1916 года родилась Александра Кривцова, крещена 13 апреля; Афиноген Егорович Ампилогов служил диаконом.",
+          "indexNote": "Имена и подпись сверены по крупному фрагменту. OCR использован только как указатель строки."
+        },
+        "review": {
+          "status": "primary-scan-verified",
+          "transcriptionConfidence": "high",
+          "unresolved": []
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {"status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": []},
-  "evidence": {"publicDisplay": false, "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0203-full-view.png", "sha256": "515223a598750bf378052be297308b4cba562306bc949525b0688f09149f4fe8", "fragments": [{"kind": "target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0203-target-entry.png", "sha256": "fd126b0f461cd3c1206f050d9cf230e145de89fdcbae28487144027e86c71584"}], "quality": {"documentOnlyVisuallyConfirmed": true, "siteAndBrowserChromeExcluded": true, "blackDefectsExcluded": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-11"}}
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ат Скатрооранасяи 2вак\nНипотаеаь Маамиам\nмнг\nпомеснеть каваки: в\neneubrans eAeserence\nУсттнхоея и верм Сер\nчесиль Амехя\nПоруштели па днажиап\nни,\nКаeн:екпханиz1l\"-\nКоласач лкненекнаг\n\" Зипавій Матвееві\na lc\nРедорояч; погловлени\nНаваки: Іпилоти Рот",
+    "localOcrWithSurnameLexicon": "ат Скатросранаси гвак\nинг\nпоменять каваки: в\nгами\nчесаль А меря\nПоруштели па днажиап-\nни,\nКолесач Аннененаг\n\" Зиковій Матвееві\na l\nРедоронч; поговлени\nНаваки: Іпилоти Рот",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0029-target-entry.jpg",
         "sha256": "891749b2b7c18ada78b67c671df46a2a247da9324a517bb426153be9873f7381"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
+        "scanNumber": 29,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0029-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0029-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c999a5848dc612c5f7af29906740e57b4d75d642247dbfcf38c526a0c1e9e39e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0029-header.png",
+            "sha256": "1ca459cc293a9989b197a9c6c7f088c8da2032ac6b5f76ee749435df6848bc4c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0029-target-entry.png",
+            "sha256": "351f04bd6daab7fb353502e265ba2de5f8cbe405253d25737ccb022a33401160",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5251x4220",
+          "targetDimensions": "1455x1063",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручители по женихе казаки: Николай Федоров Букреев и Серым П Филиппов Ампилогов по невесте казаки: Яков Якимов Нагин и Семен Димитриев Русанов.",
+    "fuzzyQuery": true
   }
 }

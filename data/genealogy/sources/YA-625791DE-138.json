@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СІРИЕСОКОЙ КЛИГИ NЯ 19064\nЗвÁніє, йма, бтчество й фамиліл родіттєлей, й какóги\nихсл.\nввронспов-бданіА.\nСела Заава крестьянишь Минтрофаль вавом-\nловь Голевьгл заканная его я,сена Алексамора\nЖиколаева; оба православные.\nСвіметтиДст Мислая",
+    "localOcrWithSurnameLexicon": "СТРИТСОКОЙ КНИГИ N 19064\nЗвніє, йма, отчество й фамиліл родіттелей, й какоги\nверонспов даніл.\nСела За ава крестьянинь Митрофань вавом -\nлов. Голевого заканная его ясена Алексамора\nНиколаева; оба православные.\nСвіметти сти Мистая",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0138-target-entry.jpg",
         "sha256": "cb7c674f86c2f1f13b66ca3139076c146f85099e30822f08f750328fa9ee71ca"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 138,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0138-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0138-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fdbfdadefb193b0e5916040e0918758427987ef9a0445256db139dc95d07cefd",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0138-header.png",
+            "sha256": "623559d0f209303493b30f22dee8c2daf867d6195e6d78290d22c8f192fd54fc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0138-target-entry.png",
+            "sha256": "e68e8513ed25802223313af395b9a9e146db10eab0acdf9b63b510dec125a765",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5915x4697",
+          "targetDimensions": "1613x925",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Алексей Диомидов Ампилогов. ... Отец: Диомид Поликарпов Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

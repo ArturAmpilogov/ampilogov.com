@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-99806074-27",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "99806074-8325-4f68-8f4f-b6c14cc0e44e",
     "scanNumber": 27
@@ -12,24 +12,69 @@
   },
   "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-full-view.png",
-    "sha256": "742e352861471774503b5c117e7c1cd1070862dbaf1f4aa35aca35eb0207d75f",
+    "catalogId": "99806074-8325-4f68-8f4f-b6c14cc0e44e",
+    "scanNumber": 27,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "d4a81be5edad31b349c17fba8d0b467332feb166381153fa3dc26d7c52460857",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-target-entry.png",
-        "sha256": "929f3b96f39a3b5d07485f985f7026bede192e1ae45403763878e8b5bf6afb47"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-header.png",
+        "sha256": "46cd8ccee18aee266fbba16386b2c515894892b269ba2f19d602cb0f255f5810",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-target-entry.png",
+        "sha256": "982623057ca3efaed71247b9e9ea761e8c72b53e8b8ead201c4a6c7d68950b6f",
+        "description": "Полноширинный крупный фрагмент записей № 53–56 без интерфейса Яндекса; позволяет проверить весь лист."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4973x3969",
+      "targetDimensions": "4650x3000",
+      "method": "original-download-plus-full-width-manual-review"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-full-view.png",
+        "sha256": "742e352861471774503b5c117e7c1cd1070862dbaf1f4aa35aca35eb0207d75f",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-target-entry.png",
+            "sha256": "929f3b96f39a3b5d07485f985f7026bede192e1ae45403763878e8b5bf6afb47"
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "deep-reviewed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полноразмерный лист за 1889 год с записями № 53–56, включая имена детей, родителей и восприемников; фамилий исследуемого ряда нет. Проверены соседние строки и продолжение записи № 53; прежняя неопределённость снята новым читаемым сканом. Профили, связи, карта и миграция не создаются."
   },
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
-  }
+    "status": "complete-primary-scan-reviewed-no-match",
+    "literal": "Лист содержит продолжение записи № 53 и записи о рождении № 54–56 за 1889 год; в полностью просмотренных графах родителей и восприемников фамилия Ампилогов либо иной вариант исследуемого ряда отсутствует.",
+    "modernInterpretation": "Новый полноразмерный скан позволяет исключить фамильное совпадение на всей странице; это не Record фамильного ряда.",
+    "indexNote": "Индекс не содержал проверяемой точной строки и требовал нового снимка. Ручная проверка полного читаемого листа не выявила фамильный ряд."
+  },
+  "indexData": {
+    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
+    "fuzzyQuery": true
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Агреи Андрееві. Стречивцові имиена\nего ввденіх відристловаи - пови проск-\nсливиру\nв'ятенн, Клавері\nКапикит\nсокодеr Алкснор Ванков\nДіаконь Аоиноческ Ямпицогова\nкеве.\nСела. Кимняхо Пприбера вепеерьянии?\nЛарвичй веменові Попов'ім очнии его ввда\nнія.еДиниптова- оби православным\nвятент плаат\n3 Калиний\nДінконк Алехснив раОх\nmentabь",
+    "localOcrWithSurnameLexicon": "Агреи Андреві. Строчивцові имиена\nего вороних відристова - пови проско\nславиру\nвяженн, Клавері\n• Капикут\nДіаконь Аомноческ Ампицогова\nСела. Кимияо привера вереерьянии?\nМарвичи веленові Поповім очним его вода\nнія Диниптова - оби православним\nвятент пласт\n3. Калиний\nФінкони Алекснив ра х\nmentals",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0013-target-entry.jpg",
         "sha256": "12abe9cb6ce93855915bd7bb685ca494cc2734887401ba1444e21aff2e0729d9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 13,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0013-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0013-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9cc752e3aed80d5a32d3f306dafdb472304aa3faf638b562e839fb182e1938a8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0013-header.png",
+            "sha256": "cb97ee39396b2d4406772b1afae11ad399c5e1c86f5a281744e3cd6fac38a2c2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0013-target-entry.png",
+            "sha256": "f761862801662db204cebcb83dfedaa8a9cc937f655c111665506484b7d9d2b6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5237x4228",
+          "targetDimensions": "1582x936",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Лука Андреев Стрельцов и жена его Евдокия Кириллова, — оба православные.",
+    "fuzzyQuery": true
   }
 }

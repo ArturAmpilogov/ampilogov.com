@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Неаламинь Ливаиль бавума\nИ. д. псаломиика Ивань с\nСсла Зобова крестьянинь\nі Анфеевь Ампи\nлоготь, православный,\n18\nпервымче бракомь.\nв Дзеннит ВинродиияА.с",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,53 @@
         "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0187-target-entry.jpg",
         "sha256": "785542af0d72fed138782c26a7f1ad0916979612f0c5db883e6e03899350993c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "3bc4e547-d620-4b0a-b3a5-7d2d93db0a16",
+        "scanNumber": 187,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0187-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0187-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9886dcaa2c921b4d30ef45f028bb78dc850ec8b8eb57179a4c5c9450f531170a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0187-header.png",
+            "sha256": "80a85212a468e95ae0615e32c23fa81787aa7b47b9221ac67fd7294f2403f8ee",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/3bc4e547-d620-4b0a-b3a5-7d2d93db0a16/0187-target-entry.png",
+            "sha256": "0188255224cde64c813944a14bdea0c4bebe1161241da033457f234dbcaed77a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5370x4345",
+          "targetDimensions": "1200x770",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Жених, Василий Андреев Ампилогов, крестьянин, село Зобово, 18. Жених, Фома Лукианов Холопов, запасной рядовой, село Зобово, 27.",
+    "fuzzyQuery": true
   }
 }

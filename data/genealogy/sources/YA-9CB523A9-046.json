@@ -1,76 +1,13 @@
 {
-  "schemaVersion": 1,
-  "sourceId": "YA-9CB523A9-046",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": {
-    "catalogId": "9cb523a9-8dec-4d02-920b-785186e78054",
-    "scanNumber": 46,
-    "title": "Херсонские епархиальные ведомости, 1906, № 10",
-    "issueDate": "1906"
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/9cb523a9-8dec-4d02-920b-785186e78054/46"
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-9CB523A9-046-M1",
-      "role": "subject",
-      "personId": null,
-      "nameAsTranscribed": "Ѳома Ампилоговъ",
-      "displayName": "Фома Ампилогов",
-      "surnameSeries": true
-    }
-  ],
-  "evidence": {
-    "publicDisplay": false,
-    "captureStatus": "complete-with-local-copy",
-    "rightsNote": "Локальные копии полного листа и увеличенных фрагментов сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив.",
-    "captureType": "official-source-pdf-page-with-enlarged-fragments",
-    "captureSource": "Официальный PDF проекта «Духовенство Русской Православной Церкви в XX веке», указанный в карточке Яндекс Архива",
-    "captureSourceUrl": "https://pravoslavnoe-duhovenstvo.ru/media/priestdb/materialattachment/attachment/48/cc/48cc80ad-9a51-465c-9821-23f2263ebd85.pdf#page=46",
-    "localBackup": "data/genealogy/evidence-private/yandex/9cb523a9-8dec-4d02-920b-785186e78054/0046-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/9cb523a9-8dec-4d02-920b-785186e78054/0046-full-view.png",
-    "capturedAt": "2026-09-08",
-    "sha256": "0bac237fbe09feae91427804ff87ea3311fb521e3c30f32af0adb7861318c385",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/9cb523a9-8dec-4d02-920b-785186e78054/0046-header.png",
-        "sha256": "a099180a0eec22727d823649bd6ca37ae061e1feedd1c83dd177e4c68a33046d",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/9cb523a9-8dec-4d02-920b-785186e78054/0046-target-entry-document-ordination.png",
-        "sha256": "5fcd88eea42dbf6c8572082f58813da74a30a4900dff343a238b72c70d76debd",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
-      }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-08",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
-  },
-  "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "9 мая, вторникъ. Въ Каѳедральномъ Соборѣ Божественную литургію совершалъ Преосвященный Епископъ Димитрій. За литургіей рукоположенъ во діакона Ѳома Ампилоговъ, назначенный священникомъ къ Единовѣрческой церкви с. Плоскаго, Тираспольскаго уѣзда.",
-    "modernInterpretation": "9 мая 1906 года Фома Ампилогов рукоположен во диакона и назначен священником к единоверческой церкви села Плоского Тираспольского уезда.",
-    "indexNote": "Имя, чин рукоположения, назначение, село и уезд прочитаны на первичном листе; индекс Яндекса использовался только для навигации."
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Сопоставлено с YA-53418414-042: это последовательные отдельные события рукоположения во диакона 9 мая и во священника 15 мая."
-    ],
-    "correctionHistory": [
-      "2026-09-08: из официального PDF сохранены чистый полный лист 1167×1821, заголовок раздела и крупный фрагмент записи о рукоположении; комплект визуально проверен, SHA-256 записаны."
-    ]
-  }
+  "schemaVersion": 1, "sourceId": "YA-9CB523A9-046", "provider": "Яндекс Архив — первичный скан", "recordType": "ordination-notice",
+  "collection": {"catalogId": "9cb523a9-8dec-4d02-920b-785186e78054", "scanNumber": 46, "title": "Херсонские епархиальные ведомости, 1906, № 10", "issueDate": "1906"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/9cb523a9-8dec-4d02-920b-785186e78054/46"},
+  "event": {"type": "ordination-to-deacon", "date": {"date": "1906-05-09", "display": "9 мая 1906", "confidence": "high"}, "place": {"normalized": "кафедральный собор, Херсон"}},
+  "mentions": [{"mentionId": "YA-9CB523A9-046-M1", "role": "ordinand", "personId": "P102045", "nameAsTranscribed": "Ѳома Ампилоговъ", "displayName": "Фома Ампилогов", "surnameSeries": true}],
+  "evidence": {"catalogId": "9cb523a9-8dec-4d02-920b-785186e78054", "scanNumber": 46, "captureStatus": "complete-with-local-copy", "captureType": "clean-primary-page-and-full-width-context-crop", "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/9cb523a9-8dec-4d02-920b-785186e78054/0046-full-view.png", "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/9cb523a9-8dec-4d02-920b-785186e78054/0046-full-view.png", "capturedAt": "2026-09-11", "sha256": "f87c3e4edfc78a9e0dce98da4d22248dc57117fe016de25408e4d811ade4ae9e", "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/9cb523a9-8dec-4d02-920b-785186e78054/0046-target-entry.png", "sha256": "016d08528c23b644bdf76b2d56dd97fb5aa6623f90c72e6035a51e17a6a7ada8", "description": "Полноширинный нативный фрагмент полосы 274 с разделом «Известия и заметки» и сообщением 9 мая."}], "quality": {"originalImageDownloaded": true, "targetGeneratedFromOriginal": true, "fullDimensions": "876x1366", "targetDimensions": "876x800", "method": "manual-full-page-reading-and-native-width-recrop"}, "publicDisplay": false, "rightsNote": "Приватная копия; публичная ссылка ведёт только на Яндекс Архив."},
+  "transcription": {"status": "complete-primary-scan-manual-reading", "literal": "9 мая, вторникъ. Въ Каѳедральномъ Соборѣ Божественную литургію совершалъ Преосвященный Епископъ Димитрій. За литургіей рукоположенъ во діакона Ѳома Ампилоговъ, назначенный священникомъ къ Единовѣрческой церкви с. Плоскаго, Тираспольскаго уѣзда.", "modernInterpretation": "9 мая 1906 года в кафедральном соборе Фома Ампилогов был рукоположен во диакона; он был назначен священником единоверческой церкви села Плоского Тираспольского уезда.", "indexNote": "Имя, чин, дата и назначение прочитаны по печатному оригиналу; индекс использован только для навигации."},
+  "context": "Епархиальная хроника фиксирует отдельный этап служебной биографии Фомы: рукоположение во диакона предшествует сообщению о рукоположении во священника 15 мая. Назначение не трактуется как доказанный маршрут проживания.",
+  "indexData": {"fuzzyQuery": true, "discrepancy": "Существенного расхождения целевой строки с оригиналом нет."},
+  "isRecord": true, "cardKind": "named-primary-record", "publicCore": true,
+  "review": {"status": "deep-reviewed-primary-scan", "transcriptionConfidence": "high", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Вручную прочитана вся полоса 274 и соседние сообщения раздела; проверены дата 9 мая, рукоположение во диакона, форма Ѳома Ампилоговъ, назначение и топоним с. Плоскаго Тираспольского уезда. Связь с P102045 уже присутствовала. Нативный полноширинный crop 876×800 без UI."}
 }

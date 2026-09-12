@@ -1,21 +1,11 @@
 {
-  "schemaVersion": 1,
-  "sourceId": "YA-12683CB8-46",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
-  "collection": {"catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 46},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/46"},
-  "mentions": [],
-  "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя ряда, ни ложное совпадение; люди, карта и маршрут не создаются."
-  },
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0046-full-view.jpg",
-    "sha256": "518dadc377ccc434cd45d4fedd7be1a2ca61dd2a2739b38097b9b252f376b641",
-    "fragments": [{"path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0046-target-entry.jpg", "sha256": "490b45b8063c4b8058f8710aa2102c5f93d0172880603f792bf77c87881782dc", "description": "Нужна чистая полная копия и укрупнение строк."}]
-  },
-  "review": {"status": "needs-recapture-before-family-record", "transcriptionConfidence": "low"}
+  "schemaVersion": 1, "sourceId": "YA-12683CB8-46", "provider": "Яндекс Архив — первичный архивный скан", "recordType": "archival-mention",
+  "collection": { "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 46, "asRead": "Метрическая книга за 1892 год, часть третья, о умерших" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/46" },
+  "event": { "type": "burial-register-ministry", "date": { "display": "2–19 января 1892", "confidence": "high" }, "place": { "asRead": "приход Верхнего Гумбета", "normalized": "Верхний Гумбет" } },
+  "mentions": [{ "mentionId": "YA-12683CB8-46-M1", "role": "psalm-reader-at-burial", "personId": "P1543", "nameAsTranscribed": "Псаломщик Афиноген Ампилогов", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true }, { "mentionId": "YA-12683CB8-46-M2", "role": "priest", "personId": null, "nameAsTranscribed": "Священник Григорий Попов", "displayName": "Григорий Попов", "surnameSeries": false }, { "mentionId": "YA-12683CB8-46-M3", "role": "psalm-reader", "personId": null, "nameAsTranscribed": "Псаломщик Димитрий Орлов", "displayName": "Димитрий Орлов", "surnameSeries": false }],
+  "transcription": { "status": "complete-for-target-ministry", "literal": "1892 год, часть третья, о умерших. Январские смерти и погребения 2–19 января. При строках повторяются «Священник Григорий Попов», «Псаломщик Афиноген Ампилогов», «Псаломщик Димитрий Орлов».", "modernInterpretation": "В январе 1892 года Афиноген Ампилогов участвовал как псаломщик в погребальных записях прихода Верхнего Гумбета; он не является умершим.", "indexNote": "Индекс смешал служителя с именем «Григорий» и причинами смерти соседних строк. Ручное чтение устанавливает должность и диапазон дат.", "historicalContext": "Повторная формула причта подтверждает регулярную службу, а сведения об умерших других фамилий сохранены только как контекст листа." },
+  "evidence": { "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0046-full-view.png", "sha256": "3a46ce1c0363e506b275a5422f2084c2d15541d9f9a5327dd08b5cf1e4f987e7", "fragments": [{ "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0046-target-entry-deep.png", "sha256": "99061369d4e00eea7d857cf534b26f23a54aeaba1f3c4ef123a90bd90876f4a6", "description": "Полноширинный крупный фрагмент январских погребальных строк с причинами смерти и причтом." }], "quality": { "originalImageDownloaded": true, "fullDimensions": "5652x4414", "targetDimensions": "5400x3500", "method": "manual-reading-of-full-scan-and-full-width-recrop" }, "publicDisplay": false },
+  "review": { "status": "deep-reviewed", "transcriptionConfidence": "high-for-name-role-and-date-range", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Проверен полный январский разворот об умерших; Афиноген отделён от умерших и идентифицирован с P1543 по непрерывной формуле причта одной книги Верхнего Гумбета 1892 года." },
+  "indexData": { "querySnippet": "Псаломщик Афиноген Ампилогов; псаломщик Димитрий Орлов; от младенческой.", "fuzzyQuery": true }
 }

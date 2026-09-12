@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/6db5c553-b0a6-4675-a0a6-87faadd1383d/0148-target-entry.jpg",
         "sha256": "da8a715da574aedfddb4946e16e6fe1ac2ab1a3eb36c6c17a06d0285488bf96f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6db5c553-b0a6-4675-a0a6-87faadd1383d",
+        "scanNumber": 148,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6db5c553-b0a6-4675-a0a6-87faadd1383d/0148-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6db5c553-b0a6-4675-a0a6-87faadd1383d/0148-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "fbf848fcee70b54790f3b3f8a056c1e83376f35ab3df805e11ad9c7673c71fc2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6db5c553-b0a6-4675-a0a6-87faadd1383d/0148-header.png",
+            "sha256": "fb8a2bcee9e0006995a52b8f92aa188a8666ff48b727b9767f2250813f8149de",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6db5c553-b0a6-4675-a0a6-87faadd1383d/0148-target-entry.png",
+            "sha256": "c4d55e4bb86d9c4530b2a8ab1f255eef878e9bc3117e125215abc71c9661c1ef",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5739x4345",
+          "targetDimensions": "1366x801",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены при чтении сохранённых локальных полного разворота и целевого фрагмента.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Званіє, ЯмА, сітчЕстко й фамнліл\nвоспріéмникшви.\nпочотней Усерланичой волости\nКресльйнит М/\"Хні мак-\nси мобі Алпанівини Плазуновь",
+    "localOcrWithSurnameLexicon": "Званіє, мА, сітчЕстко й фаміліл\nвоспріємникшви.\nпочетной Усерланикой волости\nКресльянит М/\"Хні мак-\nви мобі Ампанини Плазуновь",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Города Орска мещанин Артемий Авдиев Ампилогов и Оказая мещанская жена Ксения Филиппова Поташкина. Псаломщик Алексей Стефанов.",
+    "fuzzyQuery": true
   }
 }

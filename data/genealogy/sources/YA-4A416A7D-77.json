@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ỷ мéPшихх.\nКто совершáль погребóніЕ, й гдє погребены.\nСьященника Млхсим\nАлпилоговь иг теа-\nлолучкат етимо-\nГоряйжовим\nОсем\nни\nотведен-\nнит клад-",
+    "localOcrWithSurnameLexicon": "Вто совершАль погребніЕ, й где погребены.\nСвященника Михним\nАмпилоговь ег тес-\nполучкат. Стимо-\nГоряйновим\nОсем\nни\nотведен-\nними клад-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0077-target-entry.jpg",
         "sha256": "df831e2c8c3b0ece3090d0b18ca2695661a6715fb83ae690178765d4da5fccda"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 77,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0077-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0077-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "218f4391917060a1482fdc63d69b65fa6fcf99940d3c63ab4aa66096dfdd7148",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0077-header.png",
+            "sha256": "65901a90a1b3f2d1ad11b331214491fd35fb5ff58af5f36357538c0f2c9a33f2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0077-target-entry.png",
+            "sha256": "a5eea69fe8f35f3183919ae6bf99aacfda3df4429df36cc8d3244d31a56f2659",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5337x4365",
+          "targetDimensions": "1228x3221",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Ампилогов с псаломщиком Тимофеем Горяйновым на отведенном кладбище. Отец умершего: Капитон Козьмин Федорякин, крестьянин, село Старая Богдановка.",
+    "fuzzyQuery": true
   }
 }

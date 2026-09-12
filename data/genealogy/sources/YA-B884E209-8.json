@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B884E209-8",
   "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "recordType": "technical-duplicate",
   "collection": {
     "catalogId": "b884e209-8fad-45d1-97a4-97ebdf26b8b2",
     "scanNumber": "8"
@@ -11,6 +11,10 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b884e209-8fad-45d1-97a4-97ebdf26b8b2/8"
   },
   "mentions": [],
+  "duplicateOf": "YA-B884E209-008",
+  "isRecord": false,
+  "cardKind": "technical-duplicate",
+  "publicCore": false,
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/b884e209-8fad-45d1-97a4-97ebdf26b8b2/0008-full-view.jpg",
@@ -23,13 +27,15 @@
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "deep-reviewed-technical-duplicate",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный скан № 8 просмотрен вручную. Установлено, что sourceId без ведущих нулей является техническим дублем YA-B884E209-008; повторная публичная запись, profiles, map и миграция не создавались."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "technical-duplicate-confirmed",
+    "literal": "Технический вариант идентификатора того же каталога и листа № 8; содержательная запись хранится в YA-B884E209-008.",
+    "modernInterpretation": "Карточка не создаёт второй публичный Record и не дублирует людей, связи или карту; см. полную расшифровку рождения Петра Фёдоровича Ампилогова в YA-B884E209-008.",
+    "indexNote": "Дубликат установлен по одинаковым catalogId, scanNumber и evidence."
   }
 }

@@ -14,7 +14,10 @@
   },
   "links": {
     "scan": "https://yandex.ru/archive/catalog/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/165",
-    "duplicateScanInCombinedBook": "https://yandex.ru/archive/catalog/b93b4735-9689-4cef-82e1-b5be05d9811d/406"
+    "duplicateScanInCombinedBook": "https://yandex.ru/archive/catalog/b93b4735-9689-4cef-82e1-b5be05d9811d/406",
+    "alternateDocumentUrls": [
+      "https://yandex.ru/archive/catalog/b93b4735-9689-4cef-82e1-b5be05d9811d/406"
+    ]
   },
   "primaryPersonId": "P7018",
   "event": {
@@ -73,19 +76,29 @@
   "transcription": {
     "status": "full-page-transcription-checked-in-two-digital-copies",
     "literal": "№ 87. Іюня 24, 25. Иркутской мѣщанской дѣвицы Маріи Ивановой Ампиловой дочь Анна, 8 мѣсяцевъ. Отъ поноса. ... на общемъ кладбищѣ.",
-    "modernInterpretation": "24 июня 1900 года умерла Анна, восьмимесячная дочь иркутской мещанской девицы Марии Ивановны Ампиловой. Причина смерти — понос; 25 июня ребёнка погребли на общем городском кладбище."
+    "modernInterpretation": "24 июня 1900 года умерла Анна, восьмимесячная дочь иркутской мещанской девицы Марии Ивановны Ампиловой. Причина смерти — понос; 25 июня ребёнка погребли на общем городском кладбище.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "historicalContext": {
     "text": "Повторение статуса Марии как иркутской мещанской девицы показывает, что к 1900 году её линия уже числилась в городском сословии. Запись не относится к новому переселению, но продолжает документированную биографию дочери ссыльнопоселенца Ивана Ампилова."
   },
   "review": {
-    "status": "primary-scan-verified-in-duplicate-book-copies",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "unresolved": [
-      "Найти документ о причислении Марии и её матери Акилины к иркутскому мещанскому обществу."
+      "Найти документ о причислении Марии и её матери Акилины к иркутскому мещанскому обществу.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    ],
+    "transcriptionConfidence": "medium-with-explicit-uncertainty"
   },
   "summary": {
     "status": "verified-primary-scan",
@@ -93,33 +106,76 @@
   },
   "isRecord": true,
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
     "localBackup": "data/genealogy/evidence-private/yandex/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/0165-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/0165-full-view.png",
-    "capturedAt": "2026-09-03",
+    "capturedAt": "2026-09-10",
     "sha256": "0184683f17216e6cb60fd93c0983d2d0c937e904dce9b460510464e8a0ef768c",
     "fragments": [
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/0165-header.png",
         "sha256": "f9cd517179913cd3196db3bd41b5edd834398a96cc607bf04539030cf1a83a02",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/0165-target-entry-document-anna-maria.png",
-        "sha256": "4df0fc2e575dd14f36ed078aa7405c2f77adc4c4af75777315da8102201e4b1c",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/4036e45f-0dcb-4cf4-9ff7-44d244bc77ec/0165-target-entry.png",
+        "sha256": "572b4b2680d9cbd7233aaca8b7ee72144b495e6c1bd713e585c6a4ab30eb1ef3",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "829x656",
+      "targetDimensions": "1464x608",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "catalogId": "b93b4735-9689-4cef-82e1-b5be05d9811d",
+        "scanNumber": 406,
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b93b4735-9689-4cef-82e1-b5be05d9811d/0406-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b93b4735-9689-4cef-82e1-b5be05d9811d/0406-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bbab0e17ce04e9027306dd7d9e73d60ad5beb8dedd58ac8fb98b92c76e44d8e7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b93b4735-9689-4cef-82e1-b5be05d9811d/0406-header.png",
+            "sha256": "df88b65fd4781e52766f836738b656c7b6d1ce59f01c88f315778ebc0b5375c4",
+            "description": "Верхняя часть исходного листа с заголовком или структурой граф."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b93b4735-9689-4cef-82e1-b5be05d9811d/0406-target-entry.png",
+            "sha256": "b9847f26767c8ffca70b0654115b40fae27cec1c686d3797d9d888e0403ac370",
+            "description": "Крупный фрагмент целевой строки с первичным контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-10",
+          "method": "manual-reading-of-downloaded-original",
+          "fullDimensions": "5712x4300"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ],
+    "catalogId": "4036e45f-0dcb-4cf4-9ff7-44d244bc77ec",
+    "scanNumber": 165,
+    "captureStatus": "complete-with-local-copy"
+  },
+  "indexData": {
+    "querySnippet": "В. И. д. псаломщика А. Мулевичъ Иркутской мѣщанской дѣвицы Маріи Ивановой Ампиловой дочь Анна. отъ поноса. 8 мцовъ.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e1e76b63-07cb-4d20-bd7b-721cdbcffede/0161-target-entry.jpg",
         "sha256": "3ad79824478755f9724dda09ce048b6af797b247591e5cb8ee17934834b76845"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e1e76b63-07cb-4d20-bd7b-721cdbcffede",
+        "scanNumber": 161,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e1e76b63-07cb-4d20-bd7b-721cdbcffede/0161-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e1e76b63-07cb-4d20-bd7b-721cdbcffede/0161-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d3143a949ec76e13983f085d3608e740cf65aad80c75c3f34238d8155b2b94bc",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e1e76b63-07cb-4d20-bd7b-721cdbcffede/0161-header.png",
+            "sha256": "d8db3c3c47acbc3de94fcc903c77588ad5a7b1a982a8cb8b40d86b35e5c77cab",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e1e76b63-07cb-4d20-bd7b-721cdbcffede/0161-target-entry.png",
+            "sha256": "2f8ce3113b0c3076559e72971da4b5bca2920f889bdd27eada5906d6e704b009",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4813x3902",
+          "targetDimensions": "1533x883",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "КТИПОГРА\nHD\n«ЛЬНОЙ\nВТРЙЧЕСКОЙ ВНИГИ НА 10292\nA-krà\nЗваніє, ймА, сотчЕство й фамиліА одмершигш.\nойнéршито.",
+    "localOcrWithSurnameLexicon": "КТИПОГРА\n«ЛЬНОЙ\nВТРЙЧЕСКОЙ КНИГИ НА 102 92\nA-krà\nЗваніє, ймА, сотчЕство й фамиліА одмершими.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Максим Кузьмин Ампилогов, крестьянин, село Георгиевка. Умерший: Емельян Бельчиков, крестьянин, село Георгиевка, 50.",
+    "fuzzyQuery": true
   }
 }

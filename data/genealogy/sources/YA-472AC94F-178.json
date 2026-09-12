@@ -1,45 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-178",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 178,
-    "asRead": "Метрическая книга на 1911 год, часть первая, о родившихся; проверены видимые строки разворота"
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Часть первая о родившихся; конец ноября — начало декабря"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/178"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "конец ноября — начало декабря 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-472AC94F-178-M1",
-      "role": "false-index-hit",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-472AC94F-178-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-for-surname-bearing-signatures-and-page-context",
+    "literal": "конец ноября — начало декабря 1911 года. Во всех видимых строках соответствующего раздела повторяется формула: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Диакон Афиноген Егорович Ампилогов исполнял служебную роль в актах Слоновского прихода (конец ноября — начало декабря 1911 года); семьи в строках — участники отдельных актов, родство с диаконом не следует.",
+    "indexNote": "Исправлено ложное отрицательное чтение: на полном листе многократно ясно читается подпись диакона Афиногена Ампилогова. Имя, сан, период и контекст проверены по всему первичному развороту."
+  },
+  "indexData": {
+    "fuzzyQuery": true,
+    "discrepancy": "Исправлено ложное отрицательное чтение: на полном листе многократно ясно читается подпись диакона Афиногена Ампилогова."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/178-full-view.jpg",
-    "sha256": "a5321228841293337a7befe2b37ce48d87072eac3bae73f2431dc5ca7f8da190",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 178,
+    "captureStatus": "complete-with-local-copy",
+    "uploadStatus": "verified-exact",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0178-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0178-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "a08189aad665e3411f19b0e51b6180c236bef785ec465eab003872e695b8653f",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/178-target-entry.jpg",
-        "sha256": "d3b403bf863c98401fd587f6f0bcc9761bf5b6760babc7fb50d22361cf91699a"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0178-target-context-deep.jpg",
+        "sha256": "ef00bb166405395a6021d5cafe63a84b5dabd34b7a7248ec792813643cc6969c",
+        "description": "Крупный полноширинный фрагмент всех видимых строк, дат, участников и повторных подписей причта."
       }
-    ]
+    ],
+    "quality": {
+      "fullDimensions": "5307x4194",
+      "targetDimensions": "4900x3650",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-spread-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова: конец ноября — начало декабря 1911 года.",
+    "identityNote": "P1543 подтверждён точным редким именем, саном, тем же каталогом и Слоновским приходом, неизменным священником Иоанном Поляковым и непрерывной серией соседних листов.",
+    "migrationNote": "Служебная подпись не сообщает родства с семьями актов и не доказывает переселение."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "Исправлено ложное отрицательное чтение: на полном листе многократно ясно читается подпись диакона Афиногена Ампилогова."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full primary spread scan 178; Часть первая о родившихся; конец ноября — начало декабря; all visible date/name/role columns and repeated clergy signatures checked; P1543 service-only identity by exact name, rank, catalog, parish, Ioann Polyakov and contiguous leaf series; no kinship or migration; 4900x3650 crop"
   }
 }

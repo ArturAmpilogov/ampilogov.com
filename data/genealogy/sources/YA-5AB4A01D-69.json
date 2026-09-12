@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "алижихи.\nвяпренв Лакк\nDinxoux Arexcaкd,0 men 2064\nДістиів Домлореів Амнилоговч\nДеренш всевни 1 гресьяниих Всшиміо\n15.\n1г0дa.\nП ипдноова Миво'ярсм срр стов ....\nвяжент винка?\nLiaкonr Auxennprsenhul\nДінкаіь Долочетв Хлигнорова.\nДінконь АлексакУрч тенловк\nСели Пимшяховишісти просрлянних Інієни-",
+    "localOcrWithSurnameLexicon": "алижихи .\nDinxoux Arexcaкd,0 men 2064\nДістаів Домореів Амнилоговч\nДерени всевни 1 пресіяниих Всеимо\n15.\n1 200a.\nряжент винка?\nLiaxonr Auxennprsenhul\nДіяннів Долотв Хлигнорова.\nінконь Алексакорч теклова\nСели Пишшяховишісти просрляних місни-",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0069-target-entry.jpg",
         "sha256": "d4b24b12bffdc40786426cd875db4c2aeb7a2cbb87fda3f80dcce69f6fd9ed16"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 69,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0069-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0069-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ad3de2cfa28ca3d3263bc7b59e7a47be011f959808417bdafcbced87d3fa8541",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0069-header.png",
+            "sha256": "e75bec37b7fd3e99bb64f59750b74335200e2ac7ef403bd3ef4bc3f26abe1fba",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0069-target-entry.png",
+            "sha256": "856f2e44c3d74aff6e5ab7cb4979b1dbbfe8483e0d80092bee86612dbdc1c6ad",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4924x3908",
+          "targetDimensions": "1507x770",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянина Кодрата Лазарева Стрельцова сын Андрей.",
+    "fuzzyQuery": true
   }
 }

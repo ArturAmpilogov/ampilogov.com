@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e3e296e1-056e-496d-a9d7-1d2f2ab0380c/0247-target-entry.jpg",
         "sha256": "968478fc9dacb89d0238ccbf7cf1867a79fd76bf757d517ae3ea72e294e07bcc"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e3e296e1-056e-496d-a9d7-1d2f2ab0380c",
+        "scanNumber": 247,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e3e296e1-056e-496d-a9d7-1d2f2ab0380c/0247-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e3e296e1-056e-496d-a9d7-1d2f2ab0380c/0247-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "98484fe9fcd90695e8e120fecfc6c24e977c725998c069ae0879e30375c1d56e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e3e296e1-056e-496d-a9d7-1d2f2ab0380c/0247-header.png",
+            "sha256": "babffea7007ba2404d5ee38d007fd8a46567aae5e392259f63aeb64b3b78b451",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e3e296e1-056e-496d-a9d7-1d2f2ab0380c/0247-target-entry.png",
+            "sha256": "53162375c6c199138898fc56d885b703f97a4afd457acd98b5abc59e1ed6b09a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5772x4672",
+          "targetDimensions": "1378x797",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОСКОВСКОЙ\nГОДА, ЧАСТЬ ПеРВАД, Ш",
+    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nГОДА, ЧАСТЬ ПеРВАД, Ш",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Хутора Воскресенского крестьянин Иван Павлов Ампилогов и крестьянская жена Анна Иосифова Поветнина. Успенский с Диаконом Евгением Беляевым.",
+    "fuzzyQuery": true
   }
 }

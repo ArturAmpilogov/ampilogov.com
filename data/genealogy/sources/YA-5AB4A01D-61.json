@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "миа Пишенях Душветта кряствянима\nДіослиди Веодитова Мешнвковсевий Тиможи 10 гл.\nСвояження, виаєднії\nКлаєдій Калитиннй\nДіконч Алексанв, и Тепловь\nДіякать, Домложсив Лмпиллогова\nДеревни виевни проерьяними Оеббора.\nПорислови Кріринасьнч Я нірей-\nвяженних Ликсуті рапикннині\nБіаконь Алексийд,и ПенловD1. L\nДілкаів Домолиив А меглоговч",
+    "localOcrWithSurnameLexicon": "ма Пишенях Душветта пряственима\nДіосиди Веодитова Маніковсевий Тиможи 10 сл.\nСвяження Клаєдні\nКлаєдій Калининий\nДі конч Алексанв, и Теп ловь\nДіякать, Доможив /мпиллогова\n5.\nДеревни всевни проерьяними Себора.\nПорисови Кріринасьнч Я норей-\nвяженних виксуті рамикнині\nБаконь Александ, Пенов 1. 1]\n• Ділкаів Домалив А меглоговч",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0061-target-entry.jpg",
         "sha256": "f53ce8f77a4f3f630df5b8d53cd6b39aa02134b30d7da591cff3b7b637cfa875"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ab4a01d-e382-4695-99c6-a6b49bca5432",
+        "scanNumber": 61,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0061-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0061-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "e0dd5c2f28cbab50c0bb440d1e44cbb8436052a6cb506d8a94a96deb4d36417b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0061-header.png",
+            "sha256": "15141f2d4a3ed0bdf406990cfb77e78d467c8fe255fc5c6a1b080055f1ef2cac",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ab4a01d-e382-4695-99c6-a6b49bca5432/0061-target-entry.png",
+            "sha256": "cfe167bff0918d2c70ef63f1464cefe77a372d1ca1a2dfdee396cef7d435d9f9",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4979x3884",
+          "targetDimensions": "1660x804",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянина Диомида Феодотова Малинькова сын Тимофей 10 л. Священник Клавдий Калинин.",
+    "fuzzyQuery": true
   }
 }

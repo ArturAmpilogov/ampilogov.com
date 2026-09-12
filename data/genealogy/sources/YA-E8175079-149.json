@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0149-target-entry.jpg",
         "sha256": "3b06f49f63e6a10d4d9ab758e4587d41b85363496297ea08cb4aea159fb8bf88"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
+        "scanNumber": 149,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0149-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0149-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9dc03ccd5e28cd9d068e1665e46686b3dd7fa0dcf09a780d9e24d39c71cd79ce",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0149-header.png",
+            "sha256": "e4b5fdda3725a957ebe98651742a51f35889599d868f323620f13d7084560c52",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e8175079-c811-4d2f-9829-1e83ae135db3/0149-target-entry.png",
+            "sha256": "562d27303a02c0da2f4ac0a914f9909b4ce9389c1a39a3c7b07a1101cbd4198b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5363x4170",
+          "targetDimensions": "1494x1212",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТНПОГРА\nТАЛЬНОМЕ\nTÓAA HÁCTH HÉPGAA UI\nKro cos\nЗБáнте, йлА, сбтчество й фамнліА\nБОСПОЇЄМННКШкХ.\nМоюне пассина мовзана\nфребаров\nРв",
+    "localOcrWithSurnameLexicon": "ТИПОГРА\nТАЛЬНОМ Е\nKro cos\nЗБанте, ймА, сбтчество й фамнліА\nБОСПОЄМНИКВА.\nМоне пассина мована\nфедоров\nРв",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же поселка казак Ефим Филиппов Ампилогов и казачья жена Надежда Ефимова Гарминова.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0098-target-entry.jpg",
         "sha256": "faf56c12b30b62015c0ffd006b7c09b64d5d3dd3bd23a41f031d907cccf99f50"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9cc19df-1d18-4d50-a6c6-b7a4be3700ce",
+        "scanNumber": 98,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0098-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0098-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "69eb69d5d6a447bb2b6ff03d7c88764dc556b1cf39118de4f34721b95d7d1da2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0098-header.png",
+            "sha256": "35524f8dfff7f38b7ec74d9427a370fe75e1c0c7d6010aa0fbba5fc8c9321d00",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0098-target-entry.png",
+            "sha256": "f6d1e8ab5dc483bf21576dd3b5db96e688ac7e90954ba4c6a07a0f772fb74567",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5602x4408",
+          "targetDimensions": "4531x2178",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "дs\nTÓДA, ЧÁCTH TPÉTĨA, Ủ 0Ý MẾPШHXZ\nC чErD о11px-\nКто йсповкдивалх й прїсовулх.\nКто совЕршАль погребсніє, й гдб погрЕбень.\nОт млнбеинскі\nЄвященним Гергій\nтОтвеникісичнкі\nМиигоинтарсви ог\nпоиск по архиза\nОтв мишентьок\nдіяцеальків Номоннот",
+    "localOcrWithSurnameLexicon": "TÓA, Ч TRÉTĨA, Ủ 0Ý MẾPHXZ\nC Erù о ipx-\nКто спов дивали й пріснуль.\nКто совЕршАль погребніє, й гає погрЕбень.\nОт минетскі\nЄвященним Гергій\n7 Отв еликісичкі\nМингоинтарский ог\nпоиск по архива\nдісцеальків Полонном",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Ампилоговым и псалом. 65. От чахотки. Производили обыск : Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

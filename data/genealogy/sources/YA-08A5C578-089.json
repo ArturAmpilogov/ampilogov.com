@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/08a5c578-79b1-404d-aa7f-0ea1b50777a5/0089-target-entry.jpg",
         "sha256": "77f3a862075ebdaab63d1a7c5b36d29d5ad9ac2d99040b39009f827e8753528a"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "08a5c578-79b1-404d-aa7f-0ea1b50777a5",
+        "scanNumber": 89,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/08a5c578-79b1-404d-aa7f-0ea1b50777a5/0089-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/08a5c578-79b1-404d-aa7f-0ea1b50777a5/0089-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "4db50eb090cb37195719c0f7e65f536ecc15718e8202f75dfb945585406d9be0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/08a5c578-79b1-404d-aa7f-0ea1b50777a5/0089-header.png",
+            "sha256": "01ae19e24fd51c384b34cb6cf8a54e76e7987a7579b5dcff21a89496bba6616a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/08a5c578-79b1-404d-aa7f-0ea1b50777a5/0089-target-entry.png",
+            "sha256": "11d87af327ced9be21e4e9d6e4f4b308061202e710aeca99b72bff3908ffbc03",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5364x4115",
+          "targetDimensions": "1342x694",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом развороте метрической книги за 1905 год, в разделе о родившихся, видны записи детей иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
     "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все названные родители, восприемники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "май тасильеть серновь и крестьян-\nская якейи Анастаяя Жасииьеви\nгероттина,\nТого же сели крестьмниич Ивашь\nНеихиптив Журблєвий Перастисник\nсная довиуа Марія Аленстева\nТирасова СТИ",
+    "localOcrWithSurnameLexicon": "май тасилье серновь и крестьян-\nскал якели Анастаяя Насильеви\nгроттина ,\nТого же сели крестьмнич Ивашь\nНижиптив Журблевий Перастиник\nсная довира Марія Аленстева\nТарасова. СТИ",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Псаломщик Феодот Балдин. Того же хутора крестьянин Тимофей Степанов Захаров Ампилогов и крестьянская жена Евдокия Ефимова Хвалева.",
+    "fuzzyQuery": true
   }
 }

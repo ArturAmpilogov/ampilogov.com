@@ -7,7 +7,8 @@
   "collection": {
     "catalogId": "c98c68d6-dea1-4c62-ade3-3430f1c6492e",
     "scanNumber": "16",
-    "title": "Алфавитный печатный список; заголовок издания на развороте отсутствует"
+    "title": "Алфавитный печатный список; заголовок издания на развороте отсутствует",
+    "publication": "ЦГА Москвы, КОМИССИЯ ПО ДЕЛАМ БЫВШИХ ДРУЖИННИКОВ 1905 Г., КРАСНОГВАРДЕЙЦЕВ И КРАСНЫХ ПАРТИЗАН ПРЕЗИДИУМА ИСПОЛНИТЕЛЬНОГО КОМИТЕТА БАУМАНСКОГО РАЙОННОГО СОВЕТА РАБОЧИХ, КРЕСТЬЯНСКИХ И КРАСНОАРМЕЙСКИХ ДЕПУТАТОВ Г. МОСКВЫ, Г. МОСКВА, 1917-1935, Опись №1"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c98c68d6-dea1-4c62-ade3-3430f1c6492e/16"
@@ -26,7 +27,14 @@
     "status": "primary-scan-transcription",
     "literal": "№ 58. АМПИЛОГОВ Алексей Артемьевич. В соседней графе: 24.XII.1931 г.; 22.X.1935 г.",
     "modernInterpretation": "Алексей Артемьевич Ампилогов напечатан под № 58; две даты сохранены буквально, без недоказанного толкования их назначения.",
-    "indexNote": "Заголовки граф на данном развороте не видны. Тождество с P101550 и P0590 не назначено."
+    "indexNote": "Заголовки граф на данном развороте не видны. Тождество с P101550 и P0590 не назначено.",
+    "localOcr": "АЛИМОВ--\nНур Магомея Нисманоз\nАЛИБУТОЕВ.",
+    "localOcrWithSurnameLexicon": "АЛИМОВ- -\nНур Магомея Нисманоз\n• .\nАЛИБУТОЕВ.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -34,8 +42,54 @@
     "status": "primary-scan-verified-with-context-uncertainty",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Название списка, география и назначение двух дат требуют соседних листов."
-    ]
+      "Название списка, география и назначение двух дат требуют соседних листов.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/yandex/YA-C98C68D6-016.json",
+        "event": {
+          "type": "archival-mention",
+          "date": {
+            "display": "1 января 1930 — 31 декабря 1935",
+            "confidence": "high-for-catalog-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-C98C68D6-016-M1",
+            "role": "surname-series-mention",
+            "displayName": "АМПИЛОГОВ",
+            "nameAsTranscribed": "АМПИЛОГОВ",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "АЛИМОВ--\nНур Магомея Нисманоз\nАЛИБУТОЕВ.",
+          "modernInterpretation": "АЛИМОВ-- Нур Магомея Нисманоз АЛИБУТОЕВ.",
+          "localOcr": "АЛИМОВ--\nНур Магомея Нисманоз\nАЛИБУТОЕВ.",
+          "localOcrWithSurnameLexicon": "АЛИМОВ- -\nНур Магомея Нисманоз\n• .\nАЛИБУТОЕВ.",
+          "collation": {
+            "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
   },
   "evidence": {
     "publicDisplay": false,
@@ -47,6 +101,18 @@
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/c98c68d6-dea1-4c62-ade3-3430f1c6492e/c98c-0016-target-entry.png",
         "sha256": "6a395facbbd4de687576c93e16f880aa47c206231e6a28dde5f988acc735034f"
+      },
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c98c68d6-dea1-4c62-ade3-3430f1c6492e/0016-header.png",
+        "sha256": "c02a57b959f44e5e75b537bb438a86a7b53455766c493eb6c4c016ca5e1fbc36",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c98c68d6-dea1-4c62-ade3-3430f1c6492e/0016-target-entry.png",
+        "sha256": "9ce9e5bea1f8de29875181c8ed2f8d992b42abcb74033ccd82f458d5ed571a6d",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -54,7 +120,34 @@
       "siteAndBrowserChromeExcluded": true,
       "blackDefectsExcluded": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11"
+      "confirmedAt": "2026-09-11",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4852x3545",
+      "targetDimensions": "1200x624",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "catalogId": "c98c68d6-dea1-4c62-ade3-3430f1c6492e",
+    "scanNumber": 16,
+    "captureStatus": "complete-with-local-copy",
+    "localBackup": "data/genealogy/evidence-private/yandex/c98c68d6-dea1-4c62-ade3-3430f1c6492e/0016-full-view.png",
+    "capturedAt": "2026-09-11",
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "event": {
+    "type": "archival-mention",
+    "date": {
+      "display": "1 января 1930 — 31 декабря 1935",
+      "confidence": "high-for-catalog-date"
+    },
+    "place": {
+      "normalized": "не установлено"
     }
-  }
+  },
+  "indexData": {
+    "querySnippet": "АМПИЛОГОВ Михаил Артемьевич. ... 12.X1935г. 58 |. АМПИЛОГОВ Михаил Артемьевич. 24, XИИ",
+    "fuzzyQuery": true
+  },
+  "publicCore": false
 }

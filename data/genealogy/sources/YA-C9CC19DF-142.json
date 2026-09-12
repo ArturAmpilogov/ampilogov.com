@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0142-target-entry.jpg",
         "sha256": "d286770b8664ddb66c36e1ae444335f5181e88efdb25c6870990b28c654743ed"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c9cc19df-1d18-4d50-a6c6-b7a4be3700ce",
+        "scanNumber": 142,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0142-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0142-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d9977504dc54479a9d02d85b7cfe336bdb8b482dfb5524d2305f192c7a313744",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0142-header.png",
+            "sha256": "617d7b5c3412511ef72cab0dddf06449a7521f39635b3fb25f4294e56e32ee64",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c9cc19df-1d18-4d50-a6c6-b7a4be3700ce/0142-target-entry.png",
+            "sha256": "c207c9a92337f78a074e40e785b53ddc793e8c18f7a2bd760bcab1d5bd5d6d9b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5571x4414",
+          "targetDimensions": "1588x1009",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПогра\nАЛЬКОР\nМЄТРИЧЕСКОЙ ВНИГН НА\n1000:\nЗьáніє, йма, сотчество й фамиліл родителей, й какóги\n(CA.\nв кронспов Кданіл.",
+    "localOcrWithSurnameLexicon": "ТИПогра\nАЛЬКОР\nМЕТРИЧЕСКОЙ ВНИГИ НА\n1000:\nЗваніє, йма, отчество й фомиліл родителей, й какги\n(СА.\nв кронспов (даніл.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Новотроицкого крестьянин Михаил Михайлов Степанников и жена его Ульяна Ананиева.",
+    "fuzzyQuery": true
   }
 }

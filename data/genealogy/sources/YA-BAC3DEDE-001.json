@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BAC3DEDE-001",
-  "provider": "Яндекс Архив — первичный скан периодического издания",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный газетный скан",
+  "recordType": "military-service-notice",
   "collection": {
     "catalogId": "bac3dede-ba81-49e6-8965-ffc56b100370",
     "scanNumber": 1,
-    "title": "Русский инвалид. 1813-1917, № 22",
+    "title": "№ 22",
+    "publication": "Национальная электронная библиотека, Русский инвалид. 1813-1917, 1841, № 22",
     "issueDate": "1841-01-26"
   },
   "links": {
@@ -23,17 +24,27 @@
     }
   ],
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "bac3dede-ba81-49e6-8965-ffc56b100370",
+    "scanNumber": 1,
     "captureStatus": "complete-with-local-copy",
-    "rightsNote": "Полный лист и увеличенные фрагменты сохранены в закрытом исследовательском хранилище; публичная ссылка ведёт на карточку Яндекс Архива.",
-    "captureType": "official-source-original-page-with-enlarged-fragments",
-    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
-    "captureSourceUrl": "https://viewer.rusneb.ru/ru/000199_000009_012244628",
-    "localBackup": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-full-view.jpg",
-    "path": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-full-view.jpg",
-    "capturedAt": "2026-09-11",
-    "sha256": "8efdeb251be67bd5e025012ff08353f9775e3a93c027cffc3bfecce92b67d8b5",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "9c0439e16f8a78dfdb311386fc36b9cb431811ed538e4d52d6fe4b249410e99f",
     "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-header.png",
+        "sha256": "3d1e587b1481e74694358946d75d10d65062f1fa3dce6285dc043802aecedb6a",
+        "description": "Фрагмент исходной полосы, фиксирующий заголовок или структуру листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-target-entry.png",
+        "sha256": "29eb68c23f67c4097e87cd7323751ee826ec1b3f0c6b474456ab0920ac7aaad0",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/bac3dede-ba81-49e6-8965-ffc56b100370/0001-header.jpg",
@@ -48,12 +59,21 @@
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1928x2783",
+      "targetDimensions": "1200x1067",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
       "documentOnlyVisuallyConfirmed": true,
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
+    "captureSourceUrl": "https://viewer.rusneb.ru/ru/000199_000009_012244628"
   },
   "transcription": {
     "status": "complete-relevant-item-primary-scan-transcription",
@@ -61,8 +81,13 @@
     "modernInterpretation": "…Того ж полка, из унтер - офицеров в Прапорщики Нагорничевский, в Волынский, и Анпилогов, в Минский пехотные полки.…",
     "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля."
   },
+  "indexData": {
+    "querySnippet": "Того ж полка, из унтер - офицеров в Прапорщики Нагорничевский, в Волынский, и Анпилогов, в Минский пехотные полки. Определяются в службу.",
+    "fuzzyQuery": true
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
     "status": "complete-relevant-item-primary-scan-transcription",
     "transcriptionConfidence": "medium",
@@ -71,6 +96,56 @@
     ],
     "correctionHistory": [
       "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
-    ]
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-BAC3DEDE-001.json",
+        "event": {
+          "type": "military-service-notice",
+          "date": {
+            "display": "26 января 1841",
+            "confidence": "high-for-publication-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-BAC3DEDE-001-M1",
+            "role": "surname-series-mention",
+            "displayName": "Анпилоговъ",
+            "nameAsTranscribed": "Анпилоговъ",
+            "surnameSeries": true,
+            "personId": null
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "По Касалеріи. Кирасирскаго Его Императорскаго Высочества Великаго Князя МИХАИЛА ПАВЛОВИЧА полка, изъ Эстандартъ-Юнкеровъ въ Корнеты Юденковъ, въ Гусарскій Его Императорскаго Высочества Великаго Князя МИХАИЛА ПАВЛОВИЧА полкъ. Чугуевскаго Уланскаго полка, изъ Юнкеровъ въ Корнеты Вороновъ, въ Гусарскій Его Величества Короля Виртембергскаго полкъ. Борисоглѣбскаго Уланскаго полка, въ Корнеты: изъ Юнкеровъ Норцовъ, въ Оренбургскій, и изъ унтеръофицеровъ: Муравьевъ, въ Бугскій; Золотаревъ и Угринскій, въ Одесскій, Уланскіе полки. Того жъ полка, изъ унтеръ - офицеровъ въ Прапорщики Нагорничевскій, въ Волынскій, и Анпилоговъ, въ Минскій пѣхотные полки.",
+          "modernInterpretation": "По Касалерии. Кирасирскаго Его Императорскаго Высочества Великаго Князя МИХАИЛА ПАВЛОВИЧА полка, изъ Эстандартъ-Юнкеровъ въ Корнеты Юденковъ, въ Гусарский Его Императорскаго Высочества Великаго Князя МИХАИЛА ПАВЛОВИЧА полкъ. Чугуевскаго Уланскаго полка, изъ Юнкеровъ въ Корнеты Вороновъ, въ Гусарский Его Величества Короля Виртембергскаго полкъ. Борисоглебскаго Уланскаго полка, въ Корнеты: изъ Юнкеровъ Норцовъ, въ Оренбургский, и изъ унтеръофицеровъ: Муравьевъ, въ Бугский; Золотаревъ и Угринский, въ Одесский, Уланские полки. Того жъ полка, изъ унтеръ - офицеровъ въ Прапорщики Нагорничевский, въ Волынский, и Анпилоговъ, въ Минский пехотные полки.",
+          "localOcr": "ПОЛУГОДОВАЯ ЦЗНА:\nВы С.-IL.-бурсь . • 5 р. 50 х. •.\nСв пер. въ города, 8 р. 50 к. о.\nЗа достажленіе вы хомы прхла-\nгается особо:\nВы годь по ? руб. 85 коп. вар.\nВы полгода 1 руб. 42 код. сер-\nзыходить\nвжодневно, ксключая праздиич-\nныхь дной.\nNº 22.\nВоскресенье, 26-го\nСОДЕРЖАНІЕ: ВысочАйший приказь.—Виутрелия известив: Высодайш\nжарь въ Новгородь.—Петербургскія происшествій.—Ивостравный взвастія: /\nИспанія.—Италіл.-Турція.-Разныя извастія.\nЕГО ИМПЕРАТОРСКОЕ ВЕЛИЧЕСТВО,\nПо 1\nвь присутствій СВОЕМЬ вт Санктиетер-\nручику\nбургь, Января 22-го дня 1841 года, соизво-\nлиль отдать слідующій приказь.\nПРОНЗВОДЯТСЯ, ЗА ВЫСЛУЖЕНІИ УЗАКОЛЕННЫХЬ\nЛаТЬ.\nПо Касалеріи. Кирасирскаго Его ИмПЕРАтОРСКАГО\nВЫСОЧЕСТВА ВЕЛИКАго КняЗя МИХАИЛА ПАВЛОВИЧА\nHAI\nполка,\nизь Эстанларть-Юикеровь вьъ Корнеты Юленковь.\nляндсі",
+          "localOcrWithSurnameLexicon": "ПОЛУГОДОВАЯ ЦЕНА:\nВы С.-IL.-бурсь . • 5 р. 50 х. •.\nСв пер. вь города, 8 р. 50 к. о.\nЗа доставленів вы хомы прала-\nгается особо:\nВы годь по 2 руб. 85 коп. вар.\nВы полгода 1 руб. 42 код. сер-\nзыходить\nвжедневно, исключая праздии-\nных? дной.\nNº 22.\nВоскресенье, 26-го\nСОДЕРЖАНЕ: ВысочАйший приказь.—Виутрелия известів: Высодайш\nжарь въ Новгородь. —Петербургскія происшествій.—И востравный взвастія: /\nИспанія.—Италіл. - Турція. -Разныя извастія.\nЕГО ИМПЕРАТОРСКОЕ ВЕЛИЧЕСТВО,\nПо 1\nвь присутствій СВОЕМЬ вт Санктпетер-\nручику\nбургь, Января 22-го дня 1841 года, соизво-\nлиль отдать слідующій приказь.\nПРОНЗВОДЯТСЯ, ЗА ВЫСЛУЖЕНИ УЗАКОЛЕННЫХЬ\nЛаТЬ.\nПо Касалеріи. Кирасирскаго Его ИмПЕРАтОРСКАГО\nВЫСОЧЕСТВА ВЕЛИКАго КняЗя МИХАИЛА ПАВЛОВИЧА\nHAI\nполка,\nизь Эстанларть-Юнкеровь вь Корнеты Юленковь.\nляносі",
+          "collation": {
+            "baseLocalOcr": "not-confirmed-by-local-ocr",
+            "assistedLocalOcr": "not-confirmed-by-local-ocr",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
+            "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
+          ],
+          "correctionHistory": [
+            "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "После объединения веток основным сделано чтение с более сильной ручной проверкой оригинала; прежняя версия сохранена как альтернативная."
   }
 }

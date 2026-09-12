@@ -1,44 +1,83 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C711DEDF-215",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
-    "scanNumber": "215"
+    "scanNumber": 215,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Рождественское, Бараково, Титовка, Кармалка за 1909 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c711dedf-0d13-49a7-8d93-e809898b76f3/215"
   },
+  "event": {
+    "type": "marriage",
+    "date": {
+      "display": "1909",
+      "confidence": "medium"
+    },
+    "place": {
+      "normalized": "село Кармалка"
+    }
+  },
   "mentions": [
     {
-      "mentionId": "YA-C711DEDF-215",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "mentionId": "YA-C711DEDF-215-M1",
+      "role": "bride",
+      "personId": "P102690",
+      "displayName": "Татьяна Михайловна Ампилова (брак 1909)",
+      "nameAsTranscribed": "крестьянская дочь дѣвица Татьяна Михайлова Ампилова",
+      "surnameSeries": true
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-full-view.jpg",
-    "sha256": "55074dbb3fe2acd6bd4cbfd9eba49d46344e198b0464466db45e3f82b3722924",
+    "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
+    "scanNumber": 215,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "87b2d76999c6517276acbdf508d2203a5d1e39de7c533c96f8c3574313248a5c",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-target-entry.jpg",
-        "sha256": "f0bfb21f88c36e7c044c8974517c78815c8f8e7d3a607d8f920b58b87de5b31b"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-header.png",
+        "sha256": "1350c45801599f826ff4b3200e4f323f0cc36193aafe4419b37c94d88642f1e5",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0215-target-entry.png",
+        "sha256": "e4989d64cd20af1c0e97810881d749517792413cec6ce485edf984dfb00b4e74",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5309x4152"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-with-uncertainties",
+    "literal": "Невеста того же села крестьянская дочь девица Татьяна Михайлова Ампилова, православная, первым браком, 19 лет 10 месяцев.",
+    "modernInterpretation": "Первичный скан подтверждает Татьяну Михайловну Ампилову как невесту; прежнее заключение о ложном совпадении исправлено. Без отдельного мостика она не объединена с одноимённым профилем рождения.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "medium",
+    "unresolved": [
+      "Имя жениха и точная дата находятся вне уверенно читаемой части целевого фрагмента."
+    ]
   }
 }

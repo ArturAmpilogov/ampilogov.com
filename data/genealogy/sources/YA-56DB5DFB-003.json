@@ -7,7 +7,8 @@
     "catalogId": "56db5dfb-55a3-483d-85be-838f86174fd9",
     "scanNumber": 3,
     "title": "Красная звезда, №2",
-    "issueDate": "1938-01-03"
+    "issueDate": "1938-01-03",
+    "publication": "РГБ, Красная звезда, 1938, №2"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/56db5dfb-55a3-483d-85be-838f86174fd9/3"
@@ -15,10 +16,9 @@
   "mentions": [
     {
       "mentionId": "YA-56DB5DFB-003-M1",
-      "role": "subject",
-      "personId": null,
-      "nameAsTranscribed": "Анпилогов",
-      "displayName": "Анпилогов",
+      "role": "surname-series-mention",
+      "displayName": "АНПИЛОГОВ",
+      "nameAsTranscribed": "АНПИЛОГОВ",
       "surnameSeries": true
     }
   ],
@@ -45,6 +45,18 @@
         "path": "data/genealogy/evidence-private/yandex/56db5dfb-55a3-483d-85be-838f86174fd9/0003-target-entry-close.jpg",
         "sha256": "6f3f2cbbcd15f2d25637af09737c27609eeff8c93b8876278641f439fabbd11f",
         "description": "Увеличенный фрагмент с фамилией Анпилогов и соседним контекстом."
+      },
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/56db5dfb-55a3-483d-85be-838f86174fd9/0003-header.png",
+        "sha256": "451c116361896719752b472de97bd505a4faf9dad1dff581541d467261256865",
+        "description": "Фрагмент исходной полосы, фиксирующий заголовок или структуру листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/56db5dfb-55a3-483d-85be-838f86174fd9/0003-target-entry.png",
+        "sha256": "bbc7acecdcb0d2fe8a807464bff6f208694c64e92e2b753bc03705d5f34ed717",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -52,25 +64,96 @@
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "method": "manual-contact-sheet-review-against-full-original-page",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4184x5864",
+      "targetDimensions": "1200x1246"
+    },
+    "catalogId": "56db5dfb-55a3-483d-85be-838f86174fd9",
+    "scanNumber": 3
   },
   "transcription": {
-    "status": "complete-relevant-item-primary-scan-transcription",
-    "literal": "…АНПИЛОГОВ.…",
-    "modernInterpretation": "…АНПИЛОГОВ.…",
-    "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля."
+    "status": "complete-primary-scan-dual-ocr-collation",
+    "literal": "В. АНПИЛОГОВ.",
+    "modernInterpretation": "В. АНПИЛОГОВ.",
+    "localOcr": "боты об'являет, что в подраз-\nстава\nкно по таким-то вопросам\nразу в\nеды, организовать коллектив-\nботала\nгазет, и на этом «собрания»\nОрг:\nлются.\nБыло\nтся партийное бюро и о том,\nзаняти\nмпровать партийный актив о\nпопали\nрешевиях партин, междуна-\nакадем\nнутреннего положевия.\nче ЭКС\nта, однаво, партийному бюро\nEст\nться за работу с активом и\nла, зан\nобразцовой постановки?\nдиры 1\nпрос о\nВ. АНПИЛОГОВ.\nTO OTГ\nГОТОВЕ\nно наг",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-relevant-item-primary-scan-transcription",
-    "transcriptionConfidence": "medium",
-    "unresolved": [
-      "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
+    "status": "complete-primary-scan-collation-with-local-evidence",
+    "transcriptionConfidence": "medium-high",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-56DB5DFB-003.json",
+        "event": {
+          "type": "newspaper-mention",
+          "date": {
+            "display": "3 января 1938",
+            "confidence": "high-for-publication-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-56DB5DFB-003-M1",
+            "role": "subject",
+            "personId": null,
+            "nameAsTranscribed": "Анпилогов",
+            "displayName": "Анпилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-relevant-item-primary-scan-transcription",
+          "literal": "…АНПИЛОГОВ.…",
+          "modernInterpretation": "…АНПИЛОГОВ.…",
+          "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля.",
+          "localOcr": "боты об'являет, что в подраз-\nстава\nкно по таким-то вопросам\nразу в\nеды, организовать коллектив-\nботала\nгазет, и на этом «собрания»\nОрг:\nлются.\nБыло\nтся партийное бюро и о том,\nзаняти\nмпровать партийный актив о\nпопали\nрешевиях партин, междуна-\nакадем\nнутреннего положевия.\nче ЭКС\nта, однаво, партийному бюро\nEст\nться за работу с активом и\nла, зан\nобразцовой постановки?\nдиры 1\nпрос о\nВ. АНПИЛОГОВ.\nTO OTГ\nГОТОВЕ\nно наг",
+          "collation": {
+            "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+            "assistedLocalOcr": "not-run-because-base-confirmed",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          }
+        },
+        "review": {
+          "status": "complete-relevant-item-primary-scan-transcription",
+          "transcriptionConfidence": "medium",
+          "unresolved": [
+            "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
+          ],
+          "correctionHistory": [
+            "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+          ]
+        }
+      }
     ],
-    "correctionHistory": [
-      "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
-    ]
-  }
+    "mergeNote": "После объединения веток основным сделано чтение с более сильной ручной проверкой оригинала; прежняя версия сохранена как альтернативная."
+  },
+  "event": {
+    "type": "newspaper-mention",
+    "date": {
+      "display": "3 января 1938",
+      "confidence": "high-for-publication-date"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
+  "indexData": {
+    "querySnippet": "В. АНПИЛОГОВ. ... В. АНПИЛОГОВ. ные в борьбе с врагами народа, до конца преданные делу большевистской партии, делу народа.",
+    "fuzzyQuery": true
+  },
+  "publicCore": true
 }

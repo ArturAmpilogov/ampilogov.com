@@ -23,9 +23,16 @@
   ],
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "literal": "Полный разворот содержит акты № 96, 100, 101 и 102 (25–28 сентября 1914 года); в родительских и восприемнических графах фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Индексные Надежда Григорьевна и Григорий Евфимович Ампилоговы на этом листе отсутствуют: записи относятся к другим семьям Зобова. Ложное fuzzy-попадание.",
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ieein\nMaf un Menf nuw\nДіаконь Алексанать Мураїо в.\nСела Зобова престілниць Васими\nвурі Остиновь Шетининь и законти\nжина его Іссеніз Раврішлова\n9 к\nола православнне.\nАвиуи н, макау\ns0i arи\nДітконь Алексанать Ми патовь.",
+    "localOcrWithSurnameLexicon": "ienein\nMaf un Menf nuw\nДіаконь Алексанать Мура о в.\nСела Зобова престілниць Васими\nвіри Остиновь Щетининь и законта\nжена его Іссеніз Равішлова\n9 к\nола православнне.\ns0 i ara\nДілконь Алексанать Ми патові.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/048-target-entry.jpg",
         "sha256": "6df192a15f8a696c64ae408a0fa55502235ef14b1592cebceb5450d29a7219bd"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "379130ba-2a5c-402d-a309-502bc7289d74",
+        "scanNumber": 48,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0048-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0048-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "96d0d202fdac6c50afd40ffd0421c6200e8e274d4e5bcc4073f8e4218732a59b",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0048-header.png",
+            "sha256": "89110a205d4cac40be12f446cf79cae3b694c2c39a297b9ccd96ebaa381851cf",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0048-target-entry.png",
+            "sha256": "ae2470d2f22b21d1a2976504b506a93cbc57802c0c4263e35300cb09aac36e27",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5171x4183",
+          "targetDimensions": "1435x766",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "вручную проверены полный разворот, даты и все видимые строки актов № 96, 100–102; индексные Ампилоговы не найдены; clean-контекст data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0048-target-context-deep.png sha256 7b63e730c2372a587288396fbbe3f767c088c0278872b889b36a901bb6746931; профиль, карта и миграция не создавались"
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Надежда Григорьева Ампилогова. ... Отец: Григорий Евфимов Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

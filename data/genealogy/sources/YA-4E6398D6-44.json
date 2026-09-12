@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Имимм\nкриствянин сМиха\nuus/rempuas Chrras\nправинивного выри\nисповиданія, первими\nбракомь.\nСвяпустиств Алстанів\nПаномидинь Сівок\nСла Гамантивки\nквествянни Ми-",
+    "localOcrWithSurnameLexicon": "криствянин Миха\nправиливного выри\nсповіданія, первими\nбракомь.\nСпустисть Анстані!\nПаномидинь Совок\nСела Гамантивки\nквествянни Ми-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0044-target-entry.jpg",
         "sha256": "aad18816fcb08a7164672c09ee3eac087f6da6b4373417aa6a5ab208a55b2eff"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e6398d6-2b49-4ef5-9d4f-f647049ae45c",
+        "scanNumber": 44,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0044-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0044-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "2c7ac9029867263f3d00b98e3e9144701aea507b59a0c5e37bef61f1f1188887",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0044-header.png",
+            "sha256": "8b9edc6f1ee7bffde807dfb078d22942a6fc1906646c3fbf3f70dd92b8767174",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0044-target-entry.png",
+            "sha256": "89b8b575f3e8c00a171c51a96e2a5a3e155ac76536a1f2733d1a02c2d90720b1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10199x8112",
+          "targetDimensions": "1789x1760",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Гамалеевки крестьянин Мирон Константинов Ампилогов, православного вероисповедания, первым браком.",
+    "fuzzyQuery": true
   }
 }

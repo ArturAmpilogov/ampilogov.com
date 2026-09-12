@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0223-target-entry.jpg",
         "sha256": "3e7cf13f56451de9b5488c6b032f28cc04058c44a2b3f4c6e2d24004e5fa826d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
+        "scanNumber": 223,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0223-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0223-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "58f6ae9203c9027e043d8b44142440c8ede287a75502ddfaa7ba26035725998a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0223-header.png",
+            "sha256": "959b295a40218013b623934fc759d8efbe6d664d8982be39b568d44f9ca06600",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0223-target-entry.png",
+            "sha256": "72cb7c6123b7750fd735173ade4bf662c29fe06bbb67f794d0d10eef81720711",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5295x4075",
+          "targetDimensions": "1444x657",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Діакань Сергій Побров'ь,\nСела Карасаки умершего креставяшна\nИвана Нитрова (свочкино доявА Килина\n\"\nДжекнтрані раднионий\nСвященник\nДімконь Сергой дообровь\nСемя Кароаики престьянскайорена бовдокія.\nФилигигова Юдина\n11\nБититии\nейдлщнскй\n1онних",
+    "localOcrWithSurnameLexicon": "Діакань Сергій Побровь,\nСела Карасики умершего креставятна\nИвана ветрова (свочкино дочвА Килина\n\"\nДженнтрані раднисний\nСвященник\nДінконь Сергій дообровь\nСеми Каросики престьянскай грена бовдокія.\nФилинова Юдина\n11",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Егор Иванов Ампилогов, крестьянин, село Кармалки. Отец умершего: Григорий Павлов Кожевников, запасной ефрейтор, село Ратчино.",
+    "fuzzyQuery": true
   }
 }

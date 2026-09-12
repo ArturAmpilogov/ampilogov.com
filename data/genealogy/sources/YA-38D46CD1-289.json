@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "нассьсаа\nдатская оена Дарія Селенова\nлвlагИв\nМанаева.\nской области\nСела Ново-Арохингельскаго\nКрестьянить павельмеантін\nМовоенцевый с. Карагалки солбаз-\nскаядогь, дльвица Висианса ввога-\nнова Косьякова,\nвгого-оресепа верестьйниньтаАрі-\nДололу",
+    "localOcrWithSurnameLexicon": "датская орена Дарія Селенова\nМанаева.\nской области\nСела Ново-Архингельского\nКрестьянить павельмантін\nМовоенцевый с. Карасалки солбаз-\nскаядоь, довица Василиса ввола-\nнова Косьякова,\nвого-оресена верестьянинтарі-\nДолоту,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0289-target-entry.jpg",
         "sha256": "69fdbefe57f3f571caa318e7c6c8caba919a021eef4c2f18cafd54de91980583"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
+        "scanNumber": 289,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0289-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0289-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "72d0abc4436db38c44ad52e043cd7b4e5b8b1a97b76b8332deb719cb22273b3a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0289-header.png",
+            "sha256": "e5f5abc8c36538f2160b7b275c9dd893fead0a95912a67f9ec80ca7ab1f955f9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0289-target-entry.png",
+            "sha256": "b03145eae01a4536a438abe1699be4dc020a03511c21d5defd2fd53ad10c2f6c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "2335x1950",
+          "targetDimensions": "1200x808",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Того-же села крестьянин Филипп Васильев Ампилогов и солдатская девица Екатерина Васильева Гостева. \"",
+    "fuzzyQuery": true
   }
 }

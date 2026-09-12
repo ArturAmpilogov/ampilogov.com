@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ра иванова.\nоба православные.\nClaangenna ntanol Macuaus\nDiarono Mulauns Pasymasa\nПсогомучкь Оловаль Вильи\nмій.\nСела Зобова крестьенинь Тимосей Проо-\nпість Щелушкинь и законная жена его івге-\nнія Иванова ; аба православные .\nДaяетитванn Масиол,",
+    "localOcrWithSurnameLexicon": "ра иванова.\n, оба православные .\nDiarono Mulaun Pasynata\nмій.\nСела Зобова крестьенинь Тимофей Прото-\nпість Щелушкинь и законная жена его івге-\nнія Иванова ; аба православные .\nДаяетиван Масиол,",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0130-target-entry.jpg",
         "sha256": "b0f85667189a0669d4dffd932ac24b548d4bed97f3e52233dbd416607d963a33"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 130,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0130-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0130-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c33494607b515bd89572852d7178d8583f393702729f1cf63846e4d511806e2d",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0130-header.png",
+            "sha256": "0e1069941a111357a12713f01e9acee7c19f340bdcd5c71433edaae991e030fc",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0130-target-entry.png",
+            "sha256": "e14843971ce996cf017fb9b4d16402f8a2c6fa65ffacf47853670d202cb7cde8",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5891x4646",
+          "targetDimensions": "1685x913",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Моисей Моисеев Ампилогов. ... Отец: Моисей Иванов Ампилогов, запасной рядовой, село Зобово.",
+    "fuzzyQuery": true
   }
 }

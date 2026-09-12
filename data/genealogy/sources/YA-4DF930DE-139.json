@@ -25,21 +25,58 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Сна Фадрьiваn\n-*1ж.\nРрins Мofaniвo Кogonоd -\nГоканний; оета ва с/\nBresuila, ada spalocialana\nMayguunno da2\n- Доровин Кіліаа) крити\nveont Mane cofun\n•de 2-2e\ncare adaase\nМатиа Я кон оо\n.te; - v",
+    "localOcrWithSurnameLexicon": "fins Metanto Rogoned -\nBrescila, ada spalancalana\n- Деревин Кіліна крити\n•le 2-2e",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0139-full-view.png",
-    "sha256": "177a1fead4b76105868a494a14d13e8f473a6aa6bd5403b47eb0ce5ab0f2ac96",
+    "sha256": "71f132f417013cbf449a45ad727e582df0a1846763d38d0a93f627e56d337d3d",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0139-header.png",
+        "sha256": "d92506f4c0be94878abe848d82e8eb349fa1a7616e9cb36607fd1c45e01afd2a",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0139-target-entry.png",
-        "sha256": "7c94f03f6f35f5e70d3deede0067fb7e14b7dea2077d81fd2945888faf2c57b0"
+        "sha256": "0d37976bb9cdcee6e2740b11d508345fca01686620b0a0e5ccdc0453f1f9803e",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "4df930de-a499-495f-820d-2eb4d8bb8d77",
+    "scanNumber": 139,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0139-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x688",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Варвара Ворфоломеева Ампилогова. ... Отец: Ворфоломей Феодоров Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

@@ -29,19 +29,69 @@
         "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0027-target-entry.jpg",
         "sha256": "0ebcd55a5c6df91f700f82e30dc38676e37b43bb87b971a0a05ae16a17165b6d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "0822f5a2-cac0-40d2-a2f7-8d00e8c02f34",
+        "scanNumber": 27,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0027-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0027-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6911d34458b7c2a90615cfb780fb1fa9b11ac5e6a0a689e1aa6ff02d757a8415",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0027-header.png",
+            "sha256": "0d254cc6d486562e9c6ecbd89803151933075d149ac1f7cbe991b1fbd226a868",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/0822f5a2-cac0-40d2-a2f7-8d00e8c02f34/0027-target-entry.png",
+            "sha256": "8662636cb8dfd5eac3b9260ac215803213215630c130ca45a35abeefb8edde40",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4734x3883",
+          "targetDimensions": "2650x660",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "transcription": {
     "status": "primary-scan-review",
     "literal": "На сохранённом развороте метрической книги за 1905 год, в разделе о родившихся, видны записи детей иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
     "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все названные родители, восприемники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "80K0\nУПОДЛЬНО\nАЛЬНО\"\nИСТРИЧЕСКОЙ КНИГИ NА1905\nгóдь, чАсть первад, й Р\nЗвÁніє, йма, отчєство й фамиліл родитєлєй, й какóги\nЗвáніє, ймл, отчество й фамиліл\nйвшиусА.\nв Кроисповжданіл.\nвоспріємникшвz.",
+    "localOcrWithSurnameLexicon": "80К0\nПОДАЛЬНО\nАЛЬНО\"\nМЕТРИЧЕСКОЙ КНИГИ NА1905\nгоди, чАсть первад, й Р\nЗвліє, йма, отчество й фамиліл родитєлєй, й какги\nЗвніє, імл, отчество й фамиліл\nв Кроиспов даніл.\nвоспріємникшв.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": false,
   "cardKind": "index-hit-review",
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
     "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "unresolved": [
+      "Неизвестно, на какую строку полного разворота ссылается внешний индекс.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Хутора Объедкова крестьянин Иоанн Павлов Ампилогов и законная его жена Марфа Прокопиева, оба православные.",
+    "fuzzyQuery": true
   }
 }

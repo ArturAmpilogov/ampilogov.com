@@ -50,7 +50,15 @@
   "transcription": {
     "status": "complete-with-month-reconstruction",
     "literal": "№16. 22 [июля]. Иван Григорьев Кобелев, 23 лет, первым браком; Прасковья Гаврилова, дочь Гавриила Иванова Ампилогова, 15 лет 9 месяцев. Поручители включают Григория, Степана и Феодора Ампилоговых без отчеств.",
-    "modernInterpretation": "Прасковья Гавриловна Ампилогова вышла замуж 22 июля 1863 года."
+    "modernInterpretation": "Прасковья Гавриловна Ампилогова вышла замуж 22 июля 1863 года.",
+    "localOcr": "Порсният: виа Пиртиновно\nsno ha\nаано\nбосу пратвоннкый вростввня Ону\nкоз\nфрт Ивановь Увилоновь и Венворь\nМослвневь Поритриль Не Невт\nЮлов.\nво скрд о\nт. Федавные вакраовоя осит\nпрно-\nТереніпієве Стірдепилиаь - се\nска.\nИвоель Корансково Мошинк.\nіро сич",
+    "localOcrWithSurnameLexicon": "Пореният: вена Пиртиновно\nчано\nког\nфрт Ивановь Увилоновь и Венторя\nМостивневь Позитриль Не Невто\nПлов.\nпрно-\nТереніпев Стоденилаь - се\nска.\nИволь Корансково Мошень.\nіро сич",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
     "sourceUrl": "https://yandex.ru/archive/catalog/88608aeb-0930-4cc2-aca9-9b51895f325b/309",
@@ -81,7 +89,43 @@
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-06",
       "method": "manual-comparison-with-source-transcription-and-document-context"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "88608aeb-0930-4cc2-aca9-9b51895f325b",
+        "scanNumber": 178,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0178-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0178-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "064e649b1c5a4440feb247f1afb9bd360744eed3d6305a3fa9d5c5fb470d914e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0178-header.png",
+            "sha256": "39d7e890072512f269382975ddfa2c3a486ea6a11db44837e688040e77dd3adf",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/88608aeb-0930-4cc2-aca9-9b51895f325b/0178-target-entry.png",
+            "sha256": "95838ac56bf36ed0fe10f4c6a1b607f1215c1ed1d1f18e859beb0af6fada4679",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5206x4149",
+          "targetDimensions": "1529x1115",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "citations": [
     {
@@ -97,7 +141,8 @@
     "status": "complete-with-identity-and-month-uncertainty",
     "transcriptionConfidence": "high-for-names-medium-for-month",
     "unresolved": [
-      "Месяц восстановлен по последовательности листов; поручители без отчеств не привязаны к профилям."
+      "Месяц восстановлен по последовательности листов; поручители без отчеств не привязаны к профилям.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
     ],
     "correctionHistory": [
       "2026-08-25: сохранены локально полный разворот, заголовок и увеличенная целевая строка; SHA-256 проверены.",
@@ -107,5 +152,9 @@
   "summary": {
     "status": "verified-summary",
     "text": "Брак Прасковьи Гавриловны Ампилоговой в 1863 году."
+  },
+  "indexData": {
+    "querySnippet": "Крестьяне: деревни Кармалки Стефан Ампилогов и Феодор Ампилогов. ... Поручитель: Феодор Ампилогов, государственный крестьянин, деревня Кармалка.",
+    "fuzzyQuery": true
   }
 }

@@ -1,39 +1,60 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-2F2DEFCA-007",
-  "provider": "Яндекс Архив — первичный скан периодического издания",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный газетный скан",
+  "recordType": "newspaper-mention",
   "collection": {
     "catalogId": "2f2defca-5b88-4eeb-841f-402d010e9dc3",
     "scanNumber": 7,
-    "title": "Известия, № 234",
+    "title": "№ 234",
+    "publication": "Национальная электронная библиотека, Известия, 1927, № 234",
     "issueDate": "1927-10-12"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/2f2defca-5b88-4eeb-841f-402d010e9dc3/7"
   },
+  "event": {
+    "type": "newspaper-mention",
+    "date": {
+      "display": "12 октября 1927",
+      "confidence": "high-for-publication-date"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-2F2DEFCA-007-M1",
-      "role": "subject",
-      "personId": null,
-      "nameAsTranscribed": "Анпилогов",
-      "displayName": "Анпилогов",
-      "surnameSeries": true
+      "role": "surname-series-mention",
+      "displayName": "Анпилогова",
+      "nameAsTranscribed": "Анпилогова",
+      "surnameSeries": true,
+      "personId": null
     }
   ],
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "2f2defca-5b88-4eeb-841f-402d010e9dc3",
+    "scanNumber": 7,
     "captureStatus": "complete-with-local-copy",
-    "rightsNote": "Полный лист и увеличенные фрагменты сохранены в закрытом исследовательском хранилище; публичная ссылка ведёт на карточку Яндекс Архива.",
-    "captureType": "official-source-original-page-with-enlarged-fragments",
-    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
-    "captureSourceUrl": "https://rusneb.ru/catalog/000199_000009_013383417",
-    "localBackup": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-full-view.jpg",
-    "path": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-full-view.jpg",
-    "capturedAt": "2026-09-11",
-    "sha256": "8b7ba8f479727d9508352b8262d0fce289446848a416ff50e79fb1a10c1f42bb",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "484df0cb360637c6c52801d9320ef245ffbd0c8171eee5fc283140d48afdf92c",
     "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-header.png",
+        "sha256": "8d48e693ab984103a535b37fe9547d933ab17ae9e92d838f8444842171e4ea44",
+        "description": "Фрагмент исходной полосы, фиксирующий заголовок или структуру листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-target-entry.png",
+        "sha256": "90f31ffef468f2370596b9f7446c7bc9f6d8a8f5b2bc8a74ad90e0baf940c325",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/2f2defca-5b88-4eeb-841f-402d010e9dc3/0007-header.jpg",
@@ -48,29 +69,82 @@
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "6105x7733",
+      "targetDimensions": "1200x1199",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
       "documentOnlyVisuallyConfirmed": true,
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
+    "captureSourceUrl": "https://rusneb.ru/catalog/000199_000009_013383417"
   },
   "transcription": {
-    "status": "complete-relevant-item-primary-scan-transcription",
-    "literal": "…Анпилогова.…",
-    "modernInterpretation": "…Анпилогова.…",
-    "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля."
+    "status": "complete-primary-scan-dual-ocr-collation",
+    "literal": "Иное у Анпилогова. Концерт его был как бы отчетным показом, в котором пианист сделал обзор ф.-пианной литературы от Баха до Листа и притом в весьма ответственных образцах (Токката Бах-Бузони, соната соч. 111 Бетховена и др.). Анпилогов, несомненно, серьезное дарование: он уже сейчас в своем толковании несколько отступает от «заветов старины»-стилизации под автора и т. п. Внутренние и внешние ресурсы его достаточно солидны, чтобы найти путь к вполне самостоятельной игре,-для этого ему надо преодолеть излишнюю сдержанность, которая еще тормозит его намерения.",
+    "modernInterpretation": "Иное у Анпилогова. Концерт его был как бы отчетным показом, в котором пианист сделал обзор ф.-пианной литературы от Баха до Листа и притом в весьма ответственных образцах (Токката Бах-Бузони, соната соч. 111 Бетховена и др.). Анпилогов, несомненно, серьезное дарование: он уже сейчас в своем толковании несколько отступает от «заветов старины»-стилизации под автора и т. п. Внутренние и внешние ресурсы его достаточно солидны, чтобы найти путь к вполне самостоятельной игре,-для этого ему надо преодолеть излишнюю сдержанность, которая еще тормозит его намерения.",
+    "localOcr": "Занда в это\nAPaeDOPa\nMT TOC\nугощает его частенько, кодалживает» ему\nтравленной\nНазв\nмелкие суммы (всего около 50 руб.).\nок спустя\nчем в\nРаз\n•связавшись\nо Сахаротрестом,\nCOOTBES\nприговорил\nКарабанов расширлет и умубляет свож\nсвое з\nсвободы со\nо ним деловые отнотения. Он получает\nкандил\n, а сестру\nряд повых захазов, сталкиваясь во время\nторых\nс навцаче»\nпереговоров с инженером из рафинадного\nв делс\nтого срока,\nбюро Сахаротреста С. Н. Федотовым- 11\nCooaa\nтт. Азеева,\nзаведующим одной нз секций отдела\nмин Н\nпрокуроре\nонабження А. И. Чушкиным. Караба-\nучреж\nр соответ-\nнов поддерживает и с ним «добрые отно-\nЛ ЗДЕД\nшия и оста-\nшедня». Од в два приема дает Федотову\n13 вас\nвзятку в 250 руб., на которых Федотов\nния А\nпередал 100 руб. Чуткину. Из указанных\nваседа:\nДурасовка,\n250 руб. 150 руб, были переданы Федо-\nлотиро\nле пр. года\nтову при посредстве сотрудника Сахаро-\nКаНдИт\nня ребенка\nтреста М. С. Фридмана, которы хоротто\nоднОГО\nх Пелагел\nбыл осведомлен о природе и назначении\nДанИЙ\nпоявленнем\nотих денег.\nланном\nннем . брата\nНадо отметить,\n4т0 подучение шопо-\n1 381\n1 работа в\nвым, Федотовым и Чушкиным взяток от\nJI eвO\n•рождення\nКарабанова реального ущерба интересам\nтем об\nним дома\nСахаротреста не напесло, оди выавали\nбаллот\nсе. Пелагея\nлишшь самые незначительные послабления\nпрятанный\n19, 1\nс их стороны в пользу Карабанова.\nСооза.\nой, хранив-\nДедо Карабанова и сотрудннков Сахаро-\nки влида\nнак MI\nтреста разбиралось в Московском губ-\nт момент в\nстранц\nсуде под председательством тов. Эрлиха\nснок тотчас\nмировс\n(обвинение поддерживал тов.\nФилип-\nтде н был\nсл оби",
+    "localOcrWithSurnameLexicon": "Занда в это\nугощает его частенько, кодалживает» ему\nтравленной\nНазв\nмелкие суммы (всего около 50 руб.).\nок спустя\nчем в\nРаз\n• связавшись\nо Сахаротрестом,\nCOOTBES\nприговорил\nКарабанов расширяет и умубляет свож\nсвое з\nсвободы со\nо ним деловые отнотения. Он получает\nкандил\n, а сестру\nряд повых заказов, сталкиваясь во время\nторых\nс навцаче»\nпереговоров с инженером из рафинадного\nв дейс\nтого срока,\nбюро Сахаротреста С. Н. Федотовым- 11\nCoroaa\nтт. Азеева,\nзаведующим одной на секций отдела\nпрокуроре\nснабжения А. И. Чушкиным. Караба-\nучреж\nр соответ-\nнов поддерживает и с ним «добрые отно-\nшия и оста-\nшедня». Од в два приема дает Федотову\n13 вас\nвзятку в 250 руб., на которых Федотов\nния А\nпередал 100 руб. Чуткину. Из указанных\nваседа:\nДурасовка,\n250 руб. 150 руб, были переданы Федо-\nлотиро\nле пр. года\nтову при посредстве сотрудника Сахаро-\nня ребенка\nтреста М. С. Фридмана, которы хоротто\nоднОГО\nх Пелагел\nбыл осведомлен о природе и назначении\nДанИЙ\nпоявленнем\nэтих денег.\nланном\nннем . брата\nНадо отметить,\n410 получение шопо-\n1: 381\n1 работа в\nвым, Федотовым и Чушкиным взяток от\n• рождення\nКарабанова реального ущерба интересам\nтем об\nним дома\nСахаротреста не напесло, оди вызвали\nбаллот\nсе. Пелагея\nлишь самые незначительные послабления\nпрятанный\n19, 1\nс их стороны в пользу Карабанова.\nСотоза.\nой, хранив-\nДедо Карабанова и сотрудников Сахаро-\nнак MI\nтреста разбиралось в Московском губ-\nт момент в\nстранц\nсуде под председательством тов. Эрлиха\nснок тотчас\nмировс\n(обвинение поддерживал тов.\nФилип-\nтде н был\nсл оби",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    },
+    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  },
+  "indexData": {
+    "querySnippet": "Анпилогов, несомненно, серьезное дарование: он уже сейчас в своем толковании несколько отступает от «заветов старины»-стилизации под автора и т. п...",
+    "fuzzyQuery": true
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-relevant-item-primary-scan-transcription",
-    "transcriptionConfidence": "medium",
+    "status": "complete-primary-scan-collation-with-local-evidence",
+    "transcriptionConfidence": "medium-high",
     "unresolved": [
       "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
     ],
     "correctionHistory": [
       "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
-    ]
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-2F2DEFCA-007.json",
+        "mentions": [
+          {
+            "mentionId": "YA-2F2DEFCA-007-M1",
+            "role": "subject",
+            "personId": null,
+            "nameAsTranscribed": "Анпилогов",
+            "displayName": "Анпилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-relevant-item-primary-scan-transcription",
+          "literal": "…Анпилогова.…",
+          "modernInterpretation": "…Анпилогова.…",
+          "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля."
+        },
+        "review": {
+          "status": "complete-relevant-item-primary-scan-transcription",
+          "transcriptionConfidence": "medium",
+          "unresolved": [
+            "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
+          ],
+          "correctionHistory": [
+            "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
   }
 }

@@ -2,19 +2,168 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-222",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-register-with-surname-clergy",
+  "recordType": "clergy-service-on-birth-register-page",
   "primaryPersonId": "P1543",
-  "collection": {"catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3", "scanNumber": "222", "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год"},
-  "links": {"documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/222"},
-  "event": {"type": "baptism-clergy-service", "recordNumber": 82, "date": {"display": "9–10 ноября 1916 года", "confidence": "high"}, "place": {"asWritten": "село Слоновка", "normalized": "село Слоновка, Оренбургский уезд", "placeId": "orenburg-uezd"}},
+  "collection": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 222,
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть первая, о родившихся"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/222"
+  },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "8–20 ноября 1916 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Слоновка",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high",
+      "placeId": "orenburg-uezd"
+    },
+    "recordNumber": 82
+  },
   "mentions": [
-    {"mentionId": "YA-48925CD3-222-M1", "role": "child", "personId": null, "nameAsTranscribed": "Матрона", "displayName": "Матрона Никифоровна Марченкова"},
-    {"mentionId": "YA-48925CD3-222-M2", "role": "father", "personId": null, "nameAsTranscribed": "крестьянинъ Никифоръ Кирилловъ Марченковъ", "displayName": "Никифор Кириллович Марченков"},
-    {"mentionId": "YA-48925CD3-222-M3", "role": "church-clergy", "personId": "P1543", "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true}
+    {
+      "mentionId": "YA-48925CD3-222-M1",
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-48925CD3-222-M2",
+      "role": "parent-of-baptized-child-context",
+      "personId": null,
+      "nameAsTranscribed": "Никифоръ Кирилловъ Марченковъ",
+      "displayName": "Никифор Кириллов Марченков",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-48925CD3-222-M3",
+      "role": "parent-of-baptized-child-context",
+      "personId": "P1543",
+      "nameAsTranscribed": "Марія Кирсонова",
+      "displayName": "Марія Кирсонова",
+      "surnameSeries": false
+    }
   ],
-  "transcription": {"status": "primary-scan-transcription", "literal": "1916 год. Ноябрь. № 82. 9 [родилась], 10 [крещена]. Матрона. Села Слоновки крестьянинъ Никифоръ Кирилловъ Марченковъ и законная жена его Марія Кирсонова, оба православные. Воспріемники: Василій Ивановъ Богородскій и Устинія Иларіонова Лихвинцева. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Его подпись повторяется в соседних записях № 75–77.", "modernInterpretation": "9 ноября 1916 года родилась Матрона Марченкова, крещена 10 ноября; Афиноген Егорович Ампилогов служил диаконом.", "indexNote": "На сохранённом заголовке ясно читается 1916 год; OCR-вариант 1914 и фамилии «Лапилонов/Лангилогов» отвергнуты по оригиналу."},
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть первая, о родившихся». В целевой строке/графе контекста читаются: Никифоръ Кирилловъ Марченковъ; Марія Кирсонова. При каждой видимой записи повторяется подпись причта: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон при крещениях детей других семей Слоновского прихода. Он не является членом перечисленных семей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с участниками соседних граф. Полный разворот разделяет роли."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова (8–20 ноября 1916 года).",
+    "relationshipBoundary": "Участники актов имеют другие фамилии и сохранены только как контекст без профилей; родство и миграция Афиногена не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Никифор Кириллов Марченков и законная жена его Мария Кирсонова оба православные.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье или поручителям акта."
+  },
+  "evidence": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 222,
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0222-full-view.png",
+    "sha256": "609e4aff1ca0f9a2f825522e5433936f53c5bbd4b607f8a62fdb24359910cbfa",
+    "fragments": [
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0222-target-context-deep.jpg",
+        "sha256": "303be12b3dc95bb4559dc44a5c4d69ae9894b543b471b841e5ccc9e714e2614a",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границ раздела и служебных подписей причта."
+      },
+      {
+        "kind": "target-entries",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0222-target-entry.png",
+        "sha256": "096b3a92fc60e56d99b914630a67c1e1139d368d0cbcd735b863213bc0c6c22c"
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "4455x3640",
+      "targetDimensions": "4200x3350",
+      "method": "manual-full-page-reading-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries"
+  },
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 222 и все видимые строки прочитаны вручную; проверены даты, участники, восприемники и крещения, месячные границы/итоги и повторная подпись причта. P1543 подтверждён только в служебной роли; полноширинный крупный фрагмент создан из full-view и сверен с оригиналом.",
+    "unresolved": [],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-48925CD3-222.json",
+        "event": {
+          "type": "baptism-clergy-service",
+          "recordNumber": 82,
+          "date": {
+            "display": "9–10 ноября 1916 года",
+            "confidence": "high"
+          },
+          "place": {
+            "asWritten": "село Слоновка",
+            "normalized": "село Слоновка, Оренбургский уезд",
+            "placeId": "orenburg-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-48925CD3-222-M1",
+            "role": "child",
+            "personId": null,
+            "nameAsTranscribed": "Матрона",
+            "displayName": "Матрона Никифоровна Марченкова"
+          },
+          {
+            "mentionId": "YA-48925CD3-222-M2",
+            "role": "father",
+            "personId": null,
+            "nameAsTranscribed": "крестьянинъ Никифоръ Кирилловъ Марченковъ",
+            "displayName": "Никифор Кириллович Марченков"
+          },
+          {
+            "mentionId": "YA-48925CD3-222-M3",
+            "role": "church-clergy",
+            "personId": "P1543",
+            "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+            "displayName": "Афиноген Егорович Ампилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "primary-scan-transcription",
+          "literal": "1916 год. Ноябрь. № 82. 9 [родилась], 10 [крещена]. Матрона. Села Слоновки крестьянинъ Никифоръ Кирилловъ Марченковъ и законная жена его Марія Кирсонова, оба православные. Воспріемники: Василій Ивановъ Богородскій и Устинія Иларіонова Лихвинцева. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Его подпись повторяется в соседних записях № 75–77.",
+          "modernInterpretation": "9 ноября 1916 года родилась Матрона Марченкова, крещена 10 ноября; Афиноген Егорович Ампилогов служил диаконом.",
+          "indexNote": "На сохранённом заголовке ясно читается 1916 год; OCR-вариант 1914 и фамилии «Лапилонов/Лангилогов» отвергнуты по оригиналу."
+        },
+        "review": {
+          "status": "primary-scan-verified",
+          "transcriptionConfidence": "high",
+          "unresolved": []
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {"status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": []},
-  "evidence": {"publicDisplay": false, "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0222-full-view.png", "sha256": "609e4aff1ca0f9a2f825522e5433936f53c5bbd4b607f8a62fdb24359910cbfa", "fragments": [{"kind": "target-entries", "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0222-target-entry.png", "sha256": "096b3a92fc60e56d99b914630a67c1e1139d368d0cbcd735b863213bc0c6c22c"}], "quality": {"documentOnlyVisuallyConfirmed": true, "siteAndBrowserChromeExcluded": true, "blackDefectsExcluded": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-11"}}
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

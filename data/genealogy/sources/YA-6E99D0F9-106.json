@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0106-target-entry.jpg",
         "sha256": "4c8112a70e121b81e5b15391a96f983eeffe9eca9c1af65b91de6df04a42ccd9"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "6e99d0f9-4444-4053-919d-0a113c6de07d",
+        "scanNumber": 106,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0106-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0106-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d56a7ac8015564260f5ab6b311d4bdbe471e0cb6a639c00b810eac8c4584c66e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0106-header.png",
+            "sha256": "66f4784f5d2de8f4b895531d64acf479d480c612a46a89a23b006299cc6cda31",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6e99d0f9-4444-4053-919d-0a113c6de07d/0106-target-entry.png",
+            "sha256": "9ae67efd38f387cc5f2232789f56ca0bad6699b86d24fe4dd9bd1ff8d2e66a92",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5444x4244",
+          "targetDimensions": "2142x1133",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены при чтении сохранённых локальных полного разворота и целевого фрагмента.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Священникь Сергій Илшоми\nпарски.\nивам\nДістотв Аомотев Ампилогівч\nДеревни Михай ловки креоть яний Ивать\nТі ой жедеревни крест\nШиколaев Таванов\nИвановь Фучковы и захоннаяена его\nвворросинія Романова- оба православньо)\nАлександра Александр\nСвягуенникь . Сериій Кемиоми-\n• нарсти\nДісптів Аамлосетв Алигилоговч-\nСема Слоновки крестьяти. Панзелеймона\nТоголиселакратья\nвваритов Глизевьидаконнау экена его\nАзонасья пивова",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьянин Яков Николаев Шабанов и крестьянка Александра Александрова Шабанова. Священник Сергий Иллюми Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true
   }
 }

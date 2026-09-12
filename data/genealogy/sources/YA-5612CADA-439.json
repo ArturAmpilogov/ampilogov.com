@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5612CADA-439",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "5612cada-2427-4888-9821-7d62b58d4776",
     "scanNumber": 439,
@@ -11,27 +11,87 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/5612cada-2427-4888-9821-7d62b58d4776/439"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-5612CADA-439-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий.",
-    "modernInterpretation": "Нельзя подтвердить ни носителя фамильного ряда, ни ложное совпадение; люди, карта и маршрут не создаются.",
-    "indexNote": "Индекс не заменяет чтение первичного документа."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "1899 год, часть первая о родившихся. На развороте проверены записи № 11–13 и годовая итоговая помета. Родители Марины в № 11 — инородец Тункинского рода Симон Иванов [фамилия неуверенна] и законная жена Пелагия Давыдова; исследуемого фамильного ряда нет.",
+    "modernInterpretation": "Ложное fuzzy/OCR-попадание: ни Ампилогов, ни документированный вариант фамильного ряда на листе не читается.",
+    "indexNote": "Индекс не содержит надёжного буквального совпадения и не подтверждается полным сканом."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0439-full-view.jpg",
-    "sha256": "f1a64d8870a41d9f5f058f99ed2d97314e580f808fe19ffa41787f144b4f2cb3",
+    "catalogId": "5612cada-2427-4888-9821-7d62b58d4776",
+    "scanNumber": 439,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5612cada-2427-4888-9821-7d62b58d4776/0439-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5612cada-2427-4888-9821-7d62b58d4776/0439-full-view.png",
+    "capturedAt": "2026-09-12",
+    "sha256": "9a01ead01f977a93fc9d0176fdb07502029374941cc31f04e6503b8cab6f94a2",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0439-target-entry.jpg",
-        "sha256": "5a605fdf0449c7dec4aabc74c8f47c44d0f5c38ebbda8e0e26fe91959a41dff2",
-        "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5612cada-2427-4888-9821-7d62b58d4776/0439-target-entry.png",
+        "sha256": "4a337d2686318b11f326ceca052d1e55b80d5e999380ca6b3c1042705b0f6324",
+        "description": "Крупный полноширинный фрагмент проверенной записи и окружающего контекста без интерфейса Яндекса."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5424x4361",
+      "targetDimensions": "5000x2500",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "publicDisplay": false,
+        "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0439-full-view.jpg",
+        "sha256": "f1a64d8870a41d9f5f058f99ed2d97314e580f808fe19ffa41787f144b4f2cb3",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/5612cada-2427-4888-9821-7d62b58d4776/0439-target-entry.jpg",
+            "sha256": "5a605fdf0449c7dec4aabc74c8f47c44d0f5c38ebbda8e0e26fe91959a41dff2",
+            "description": "Локальный фрагмент недостаточно резок; требуется качественный повторный захват строки."
+          }
+        ]
       }
     ]
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 5000x2500"
+  },
+  "indexData": {
+    "querySnippet": "Индекс не заменяет чтение первичного документа.",
+    "fuzzyQuery": true
+  },
+  "event": null,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное индексное совпадение.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Отдельный маршрут переселения по одной этой записи не создаётся.",
+    "pageContext": "Разворот книги о родившихся за 1899 год, записи № 11–13; проверены родители, восприемники и причт."
   }
 }

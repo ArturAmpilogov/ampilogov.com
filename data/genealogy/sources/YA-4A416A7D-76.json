@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Мвжеска.\nІЇл.\nМящренник Ми-\nДеревни Нова Пикольской кре\nстьянини вытрити Годрона\nС Скусовыи уочь Ажонтний\nв.\nДидожданір-\nликожа флтинокову\nваM\nхииль Ампилогови\nЖиланизика Мннооей боояйкови\nСела Старон- Догдановки\nКретьянини\nрова Миронова жена висна\nИинови\nахатки\nС вмуснок\nсь пссиатункым\nДвврентио Микани Фиипиичиву.\nМинотитучта винотой Гарвй на в.\nМинооеели\nСТоряй-\nТокскиго Хутори,\nИвиновской\nволости\nМіьщининь городи\nОренбурга Гавріиль Порори-\nМихани\nhieвr\nАриманов еННы\nновыми ни опгве-\nДвягреннио Микаллт Глтиокав\n38.\nОсолун,\nВ побр А42м н.\nМаламуна Тиной Горяннова\n- ih графт лнто гризри пр\nТокского хутора Ивиновской\nгри 5 исправления\nБолости Мнопанинь города\nОреавуги гиторрит Нипріїс.\nнові\ne unuural\n32\nСвященти Михолт: Влиніі\nтифа\nМалоличик\nМили",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0076-target-entry.jpg",
         "sha256": "3777dfa0b5f8a3921a04e7c558ad2f6b66f1140bd05f44aad26747f9ae3a3aee"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 76,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0076-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0076-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "554d0020babc535bec090bd681329d9aeeb30d5d86fc2fbef1f9296e0d075020",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0076-header.png",
+            "sha256": "a43de2ba1620262309991a1fac9f7b43e260bf246cf0872ee021a6fd8eba0a4a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0076-target-entry.png",
+            "sha256": "2fa36e0f72c526c62ae31d573580a39e34a7039e391cfc942e814b14adfe9227",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5337x4365",
+          "targetDimensions": "4140x2679",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горяйнов. ... М. А. А. Смирнов Псаломщик М. Гаряков. хаил Ампилогов с псаломщиком Тимофеем Горяйвым на отве.",
+    "fuzzyQuery": true
   }
 }

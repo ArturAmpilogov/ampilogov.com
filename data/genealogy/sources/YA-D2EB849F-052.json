@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/d2eb849f-3f91-4b5c-8c22-dd5750c81f0c/0052-target-entry.jpg",
         "sha256": "90d56af9948af9e6fafad3a1d4e84d669ac192269ce8c9458a8d1cd5fba2b1d8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d2eb849f-3f91-4b5c-8c22-dd5750c81f0c",
+        "scanNumber": 52,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d2eb849f-3f91-4b5c-8c22-dd5750c81f0c/0052-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d2eb849f-3f91-4b5c-8c22-dd5750c81f0c/0052-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9214b45947cd3a8c5cf6947c02f6bfe269899d3a47ee9393a8b89c9b42cac82e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d2eb849f-3f91-4b5c-8c22-dd5750c81f0c/0052-header.png",
+            "sha256": "3839261c7cdd7c7343e78bf465ee949564dd5c0aa0df10049747578657d67e4c",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d2eb849f-3f91-4b5c-8c22-dd5750c81f0c/0052-target-entry.png",
+            "sha256": "365554a239f7db2fc593a692bf8fddae659c84a8ae4d7db102b49276d1c025a6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4718x3785",
+          "targetDimensions": "1200x789",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "венный архив\nСТИ\nПо ориналь-крестьяне сели\nІсмалльевки: Іавриль Ага-\nфоновь Вялковч и Уоаннь Пва-\nзаровь з - 120 невізатів- крестья-",
+    "localOcrWithSurnameLexicon": "венный архив\nСТИ\nПо ориналь-крестьяне сели\nІсмаллевки: Гавриль Ага-\nфоновь Вялков и Уаннь Ава-\nзаровь з - 120 невізаті - крестья-",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе крестьянин села Гамалеевки: Григорий Иванов и Сергий Ампилогов; по невесте: Андрей Иванов и Понкратий Михайлов.",
+    "fuzzyQuery": true
   }
 }

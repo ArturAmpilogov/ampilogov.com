@@ -1,47 +1,44 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-38F5CF49-099",
-  "provider": "Яндекс Архив — локально сохранённый первичный скан",
-  "recordType": "death",
-  "collection": {
-    "catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72",
-    "scanNumber": "99"
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "death-and-burial",
+  "collection": {"catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72", "scanNumber": 99, "asRead": "Метрическая книга на 1912 год, часть третья, об умерших"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/38f5cf49-ff47-4ea6-a429-571daac47e72/99"},
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": "1",
+    "date": {"display": "умер 4 января, погребён 5 января 1912 года", "from": "1912-01-04", "to": "1912-01-05", "confidence": "high"},
+    "place": {"asWritten": "хутор Камая", "normalized": "хутор Камая, Оренбургская губерния"}
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/38f5cf49-ff47-4ea6-a429-571daac47e72/99"
-  },
+  "primaryPersonId": "P102885",
   "mentions": [
-    {
-      "mentionId": "YA-38F5CF49-099-M1",
-      "role": "family-member",
-      "personId": null,
-      "nameAsTranscribed": "Василий … Ампилогов (остальные элементы строки требуют контрольного чтения)",
-      "displayName": "Василий … Ампилогов",
-      "surnameSeries": true
-    }
+    {"mentionId": "YA-38F5CF49-099-M1", "role": "deceased-child", "personId": "P102885", "nameAsTranscribed": "сынъ Василій", "displayName": "Василий Тимофеевич Ампилогов", "surnameSeries": true},
+    {"mentionId": "YA-38F5CF49-099-M2", "role": "father-of-deceased", "personId": "P102170", "nameAsTranscribed": "Хутора Камая крестьянина Тимоѳея Захарова Ампилогова", "displayName": "Тимофей Захарович Ампилогов", "surnameSeries": true}
   ],
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Метрическая книга 1912 года, часть третья об умерших, январские записи. В увеличенном локальном фрагменте в целевой строке читается фамильная форма «Ампилогов» при имени Василий; прочие элементы не вносятся без контрольного чтения.",
-    "modernInterpretation": "Первичный скан подтверждает носителя фамильного ряда в записи об умерших. Полного имени, родства, возраста и места недостаточно для профиля.",
-    "indexNote": "Внешний индекс использовался только для нахождения листа; вывод основан на локальном первичном скане."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Метрической книги на 1912 год, часть третья, об умерших. Январь. Мужского пола № 1. 4 [умер], 5 [погребён]. Хутора Камая крестьянина Тимофея Захарова Ампилогова сын Василий, 5 дней. От слабости. Погребение совершил священник Иоанн Нечаев на отведённом месте приходского кладбища.",
+    "modernInterpretation": "Пятидневный Василий Тимофеевич Ампилогов, сын крестьянина Тимофея Захаровича с хутора Камая, умер 4 января 1912 года от слабости и был погребён 5 января.",
+    "indexNote": "Яндекс верно подсказал ребёнка, отца и возраст, но прежняя карточка оставляла имя и событие неразрешёнными. Номер, даты, место, причина смерти и родство заново прочитаны по полному оригиналу. Упомянутый индексом Фёдор Макарович Ампилогов на этом развороте отсутствует.",
+    "localOcr": "Локальное OCR исказило имя отца и фамилию; итоговое чтение выполнено вручную по полному скану и крупному фрагменту.",
+    "collation": {"baseLocalOcr": "insufficient-for-handwritten-entry", "yandexTextBlocksUsedForNavigationAndCollation": true, "primaryScanReadingOverridesIncompletePriorCard": true}
   },
   "evidence": {
+    "catalogId": "38f5cf49-ff47-4ea6-a429-571daac47e72", "scanNumber": 99,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/0099-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/0099-full-view.png", "capturedAt": "2026-09-11",
+    "sha256": "9bdbac143fef14cb68408a0c4cf6658f11a16e4c0edb615829136d7b3465ef58",
+    "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/0099-target-entry-deep.png", "sha256": "b149b19ec7f340a6f0519b92f860b7beb3b6b7b9cb2a9f08d59e6cd4fefcdff4", "description": "Крупный полноширинный фрагмент январских записей, включая запись № 1, отца, ребёнка, возраст, причину и погребение."}],
+    "quality": {"originalImageDownloaded": true, "fullDimensions": "4187x3483", "targetDimensions": "3900x1800", "method": "manual-reading-of-full-scan-and-full-width-recrop"},
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/099-full-view.jpg",
-    "sha256": "c8496b092143d808fd65464168b824fc26708decd892c04161bbeb3c0657d2c1",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/38f5cf49-ff47-4ea6-a429-571daac47e72/099-target-entry.jpg",
-        "sha256": "48640cb7beda31fe470bf088d299fc48630c7ee684c622a3ba4f6fdc9a465eec"
-      }
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "review": {
-    "status": "complete-with-partial-transcription",
-    "transcriptionConfidence": "medium",
-    "unresolved": [
-      "Нужен более резкий контрольный фрагмент для полного побуквенного чтения."
-    ]
-  }
+  "review": {"status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high", "deepReviewedAt": "2026-09-12", "deepReviewScope": "полный январский разворот смертей 1912 года и запись № 1; вручную проверены даты, место, отец, ребёнок, возраст, причина смерти и погребение; создан профиль ребёнка и двусторонняя связь с подтверждённым отцом P102170; индексный Фёдор Макарович на листе отсутствует", "unresolved": []},
+  "indexData": {"querySnippet": "Умерший: Василий Тимофеев Ампилогов, 5 дней. Умерший: Феодор Иванов Ботаев, 2 недели. Умерший: Феодор Макаров Ампилогов, 1 месяц.", "fuzzyQuery": true, "discrepancy": "Василий и его отец подтверждены; Фёдор Макарович Ампилогов на полном листе не найден."},
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "context": {"eventSummary": "Смерть пятидневного Василия Тимофеевича Ампилогова от слабости.", "identityNote": "Отец связан с P102170 по точному полному имени, редкому хутору Камая и соседнему документированному событию 1911 года.", "historicalContext": "Формула «от слабости» отражает принятую в метрических книгах обобщённую причину ранней младенческой смерти.", "migrationNote": "Нового переселения запись не доказывает."}
 }

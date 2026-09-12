@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Села воб ова запасной ря довай Ойепань де- сь\nфаноть торопишиии крестьянская дсена. Ма\nанадасiя дефаноdа кофсевникова",
+    "localOcrWithSurnameLexicon": "Села воб ова запасной рядовой Отепань де- сь\nфаноть торопиши и крестьянская дена. Ма\nанадасія дефранова кофеевникова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0139-target-entry.jpg",
         "sha256": "39de2531ccac5cdaac4ff1ef8d69087a4b86164e3d2308e2b8011f897ec2f0f0"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "625791de-465f-4fa2-b86f-22ff1641d194",
+        "scanNumber": 139,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0139-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0139-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "ab20c2648e6b5c59a0c61572c4e9e275367e12c12593519f850df67509cc50c9",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0139-header.png",
+            "sha256": "26e8f20315089410971d5e0fd03712f1c350a2b5099db0c9c20a093ee0c6783a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/625791de-465f-4fa2-b86f-22ff1641d194/0139-target-entry.png",
+            "sha256": "5e89d6087e60d8e287ef8328439d1b77c4f0c297619c0a7b6de1a4ab13484674",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5915x4697",
+          "targetDimensions": "1419x623",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Села Зобова крестьянин Стефан Евфимиев Ампилогов и солдатская жена Вера Евфимова Завьялова. Псаломщик Алексей Стефанов Маскаев с причтом.",
+    "fuzzyQuery": true
   }
 }

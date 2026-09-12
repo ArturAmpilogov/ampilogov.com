@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/098-target-entry.jpg",
         "sha256": "19fe0321235ec439710c8eda30c5c94a847e5a9c04255a94c23fab82d28ee26e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
+        "scanNumber": 98,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0098-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0098-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "44ed8f3e6db0265478306d35b238fc99fc969cde6afa335d34374aa5c2e163c0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0098-header.png",
+            "sha256": "1a2e64e32c4de3cd0b833e233453f8611e25a6a531dccdbe0cecb8c27e1e513b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0098-target-entry.png",
+            "sha256": "1b8b70a6caad9a5078cf92a0098cdd625934991cc74b9d495c3886dba259d246",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5884x4591",
+          "targetDimensions": "3076x901",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Аспломидись Алерей сгогодочнинь.\nй\nСала (Ксуомалки пратьянина\nСела Михайловексго хретчя-\nСергій(авловь Киртриинь ге\nпинь Шлоснил ИлиговьКалу-\nзаконная жена его сАнисья Дави\nжинь и сели кадмалн срівица\nсова; оба православные.\nВарвира Ливлова( Карпурини.\nЛинепи\nики\nшксоміж\nйб лов\nПсаломцинь Днярей Уголорочнинь.\nСела Кармалки хрестьянина\nНого-же сели ристьянинь Диу-\nМихаиль Пригорроевь Аліпилогови\nвій Ильгись В Яжин",
+    "localOcrWithSurnameLexicon": "Асиложидись Атерей сгогодочнинь.\nй\nСала Кармали пратьянина\nСела Михайловексо хритя-\nСергій (авлова Киртринь ге\nпинь Мослил Илиовь Колу-\nзаконная жена его сАнисья Дави\nжить и сели кармами срівица\nсова; оба православные.\nВарвира Ливлова! Карпушини.\nЛишени\nини\nшколиж\nПсаломщинь Днярей (голорочнинь.\nСела Кармалки крестьянина\nНого-же сели ристьянинь Диму-\nМихаиль Пригороевь Алітилогови\nвій Ильгить В вжин",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Иоанн Михайлов Ампилогов. Родившийся: Татиана Николаева Нелюбова. Родившийся: Георгий Ильин Карпушин.",
+    "fuzzyQuery": true
   }
 }

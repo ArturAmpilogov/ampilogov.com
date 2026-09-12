@@ -1,27 +1,67 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F4BFF9CA-21",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "parallel-full-sheet-container",
+  "parallelOf": "YA-F4BFF9CA-21-M40",
   "collection": {
     "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
-    "scanNumber": 21
+    "scanNumber": 21,
+    "asRead": "Метрическая книга на 1888 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f4bff9ca-06fb-44b8-887f-186c2a62df15/21"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-F4BFF9CA-21-M1",
+      "role": "godfather",
+      "personId": "P91091",
+      "displayName": "Лукьян Трифонович Ампилогов",
+      "nameAsTranscribed": "того же села крестьянинъ Лукианъ Трифоновъ Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Іюль. Мужского пола № 40. 1 родился, 3 крещён. Андрей. Села Гамалеевки крестьянинъ Кириллъ Григорьевъ Туровъ и жена его Пелагія Трифонова, православные. Восприемники: того же села крестьянинъ Лукианъ Трифоновъ Ампилоговъ и девица Агрипина Алексеева Павлова.",
+    "modernInterpretation": "Лукьян Трифонович Ампилогов был восприемником Андрея Турова 3 июля 1888 года. Полное событие уже представлено granular Record YA-F4BFF9CA-21-M40; root хранит весь лист и не дублирует публичное событие.",
+    "indexNote": "Индекс не заменял чтение: фамильная строка найдена повторным просмотром границ записи № 40."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0021-full-view.png",
-    "sha256": "6462a557e8146c34723800334ee50940165469ecb261b18c18cb9c178a4b25b1",
+    "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
+    "scanNumber": 21,
+    "captureType": "yandex-archive-original-image-download-with-full-width-context",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0021-full-view.png",
+    "sha256": "ff905bb61bbbef1c3153ab0f687517bf4625266f722dc551b36cbb6d0cf1c8ad",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0021-target-entry.png",
-        "sha256": "8651f47647b1fb62df43d29fd3ea857bbd5caad8c73d60d0c1beabc627e35fbd"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0021-deep-context.jpg",
+        "sha256": "e130d7452c44a57095924390d9614f1e866c9539a7266ae48a130501d3388473",
+        "description": "Полноширинный чистый фрагмент записей № 39–41 со всеми графами и строкой № 40."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5520x4396",
+      "contextDimensions": "5200x1700",
+      "method": "manual-reading-of-full-original-and-granular-record-boundary-collation",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-remote-list-timeout"
   },
-  "transcription": {"status": "needs-recapture-before-family-record", "literal": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.", "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.", "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."},
-  "review": {"status": "needs-recapture-before-family-record", "transcriptionConfidence": "low"}
+  "isRecord": true,
+  "cardKind": "parallel-full-sheet-container",
+  "publicCore": false,
+  "review": {
+    "status": "complete-primary-scan-parallel-container-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный лист прочитан вручную; после первичного обзорного пропуска повторно проверены границы строк № 39–41, фамильное упоминание в № 40 сопоставлено с granular Record YA-F4BFF9CA-21-M40; отдельное событие не создавалось."
+  }
 }

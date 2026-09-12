@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/46bda67c-d853-410f-915c-b0127503f89a/0042-target-entry.jpg",
         "sha256": "12e648e28982b5d80cdcf5ede28617e324b5fc524a47f1fe5159f8ef1ac250fa"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "46bda67c-d853-410f-915c-b0127503f89a",
+        "scanNumber": 42,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/46bda67c-d853-410f-915c-b0127503f89a/0042-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/46bda67c-d853-410f-915c-b0127503f89a/0042-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "16cf5b80584b8f443e949533527c60395993b3b3f0516d9d37e4c1f1dbe21223",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/46bda67c-d853-410f-915c-b0127503f89a/0042-header.png",
+            "sha256": "4d559d8e8c527148ea49765f79a4b98ccdb5e07df064a5bc1fe0e33f60a34bd9",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/46bda67c-d853-410f-915c-b0127503f89a/0042-target-entry.png",
+            "sha256": "8ed05e743f26711691c4f57a98301decc9dd1cf992a6115bc84110a10e1f8d1e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5041x3946",
+          "targetDimensions": "1242x1044",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "На проверенном сохранённом локальном фрагменте формы Ампилогов / Анпилогов / Анфилогов не обнаружены; видимые записи относятся к другим семьям.",
     "modernInterpretation": "Индексное совпадение не подтверждено. Посторонние участники не получают профили, карту, маршруты или миграционные записи.",
-    "indexNote": "Вывод основан на ручном чтении локального скана."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "басими ( трилиов (сосиловам Леин-\n2\nтій востинь М/раневскиач. о невиста:\nсела/іанстант\nвим крестілницн\nЛазаріб еогіеверстневr cematlo-\nАраанхитскагогореетьмне: Миханич\nга АнтинивиМурзинг и Тихаиа Андрасва\nМурчинг.\nПоручители по женихы: селаново-Ар-\nхангийского горестьмне: ( аврішич 9 мит\nрісв Киннова. 1 страМіргонові Староду-\nSов « Сmепанiі! ракритева Нелюбов. 11.\nh\nневасти: село/ ресораженки крестьмним\nавріильТетрові Т ередайський села",
+    "localOcrWithSurnameLexicon": "басими ( трилов косиловам Леин-\n2\nтій востинь М/раневскиач. о невиста:\nсела /інстант\nвим крестільниц\nЛазаріб соргіев ерстнев cematlo-\nАроанхитскагогорестьмне: Миханич\nга Антинив Мурзинг и Тихана Андрасва\nМурчинг.\nПоручители по женимы: селаново-Ар-\nхангийского перестомне: ( авріич 9 мит\nрів Кимнов. 1 стра Міронові Староду-\nбов « Степані! раритев Нелюбов. 11.\nh\nневысти: село/ ресораженки крестьмним\nавріль Петрові Передайський села",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Иван Алексеев Ампилогов, крестьянин, село Кармалка. Поручитель: Никита Иванов Савков, солдат, село Ново-Архангельское.",
+    "fuzzyQuery": true
   }
 }

@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/89cb51e6-aaae-492d-87d3-47061c611ea1/0060-target-entry.jpg",
         "sha256": "83108bccde931e6df9fb61ffdb6e373ede01f9eac363d14f7e36a1822a264fcf"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "89cb51e6-aaae-492d-87d3-47061c611ea1",
+        "scanNumber": 60,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/89cb51e6-aaae-492d-87d3-47061c611ea1/0060-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/89cb51e6-aaae-492d-87d3-47061c611ea1/0060-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "25e510a6a6feceb3fb4504980667a6a3988e63819a470153995422a454ff72ae",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/89cb51e6-aaae-492d-87d3-47061c611ea1/0060-header.png",
+            "sha256": "a04ce0c40cdde2e5c444c04a24bce97775c2d91296a94f855d09dbe84a8fcf01",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/89cb51e6-aaae-492d-87d3-47061c611ea1/0060-target-entry.png",
+            "sha256": "50240cac2dec8b08139402e8b68388b7ed2e348f2f3dbc8d3b2cf7727174337b",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5934x4672",
+          "targetDimensions": "1606x1315",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "тань Давиь Горгіевь Канчели Кан-\nчавели, 174 Роменского полкими-\nни Полковники Агрипина Димитрнева\nБарисови и С. Петербургания фрель\nОшариця вкитериниИватно (Околова\nФренбургеніймощаним Рвань\nАибресвь Ампилоговь и Благословен-\nиигопосеикикизавіячене рустикя.\nАндреєви Тирснже.\nМогоме поселпиказань корчі.\nАаонистевь Колесникови крестьяне-\nкняжени Мар ів (теранова Маркова",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Иван Андреев Ампилогов, мещанин, Оренбург. Крёстный отец: Георгий Афонасиев Колесников, казак, тот же поселок.",
+    "fuzzyQuery": true
   }
 }

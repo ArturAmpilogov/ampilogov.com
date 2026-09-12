@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/8215d4d2-02bf-40ff-a88f-78679596de78/0031-target-entry.jpg",
         "sha256": "85bf433b881bfd8821b362c5579c2938c14ba475de932ae4b0024e952c774ff1"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8215d4d2-02bf-40ff-a88f-78679596de78",
+        "scanNumber": 31,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8215d4d2-02bf-40ff-a88f-78679596de78/0031-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8215d4d2-02bf-40ff-a88f-78679596de78/0031-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "72e4280d79dd44b0b0671ba87861d24c8973b7973db33f99015b5a4758bba5d0",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8215d4d2-02bf-40ff-a88f-78679596de78/0031-header.png",
+            "sha256": "47933085bfd91d691b188f0c1a8f55cd9e46deec02f5dee225c36d710576eb0e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8215d4d2-02bf-40ff-a88f-78679596de78/0031-target-entry.png",
+            "sha256": "58ed4e38de8c0efb2c9542d3a0a6ccb14eb3def7e457b30903d2bca9ab209eb6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5017x4101",
+          "targetDimensions": "1399x1013",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "тила.\nСева Забова запаса арати\nвятовой Капель вгарарь вогда-\nновк и кресбянкая якена\nДароз Гаврійлова Даньтина.\nСева Забова предб'яттв\nСтефань Иваповь Ко-",
+    "localOcrWithSurnameLexicon": "тика.\nСева Забова запаса арати\nвятовой Капель вкарарь богда -\nнова и крес/банкая якена\nДароз Гаврійлова Даньтина.\nСела Забова предб'ятив\nСтефань Ивановь По-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Зобова крестьянин Евфим Яковлев Ампилогов и и крестьянская дочь девица Анисья Димитриева Попова.",
+    "fuzzyQuery": true
   }
 }

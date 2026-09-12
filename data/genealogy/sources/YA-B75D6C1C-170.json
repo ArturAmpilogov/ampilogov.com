@@ -29,16 +29,63 @@
         "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0170-target-entry.jpg",
         "sha256": "78d363245f5d78fe2d0047b994f0017a4419ab6af75b575dda4980cbcf8621d8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b75d6c1c-4ac0-41cf-855a-cd57e4e662e6",
+        "scanNumber": 170,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0170-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0170-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "24715ec7a9bb4e0286c547734ca6eae64b9e6a79160b3da83521509704d093c7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0170-header.png",
+            "sha256": "0c707ca6d5896e84ad08c51cbbe68574d55f13a08ccbf19b7166e536aee92fbb",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b75d6c1c-4ac0-41cf-855a-cd57e4e662e6/0170-target-entry.png",
+            "sha256": "a8cdb9049239d023b4d167123638011889ebfba841567b2a7a1f3969070c6c72",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5285x4086",
+          "targetDimensions": "1473x1011",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "кій\nи стнореть Иновем\nцевь. Мо невистиві преств'яне:\nВтовранови оснактв имокла-\nКрутинскиго Оеобарь Осодалова\nКубрявувы-\nЛо окоснйтв: скревно (мановки:\nкостиямий Навель Димит-\nрісвь Ммепилогово и Дебтаскай\nеттанній упонерь-одрицео\nмь.\nМизаиль Димитоовь Мовко-\nмутников.. Ноневьсть і фов\nинановки костіяно: стлекс",
+    "localOcrWithSurnameLexicon": "кій\nцевь. Що невистиві пресвʼяне:\nКрутинскиго Особорь Особалова\nКудрявцевы.\nНо окоснить : скревно (мановки:\nкостями) Навель Димит-\nрівь Ампилогово и Детаскай\nстанній упалеть -одице\nмь.\nМизаиль. Димитоовь Моко-\nмутников. Ноневьсть і жов\nнановки костяно: стлекс",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "По женихе : деревни Чумановки : крестьянин Павел Димитриев Ампилогов и запасный старший унтер-офицер Михаил Димитриев Подхомутников.",
+    "fuzzyQuery": true
   }
 }

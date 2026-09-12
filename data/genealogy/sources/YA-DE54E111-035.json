@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/de54e111-aa4e-4dcd-ad76-409cf2ca39e6/0035-target-entry.jpg",
         "sha256": "56f8f9ffa64fc5cd654b52c7654450a10d8d79670f85274c06be93c85e7d8313"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "de54e111-aa4e-4dcd-ad76-409cf2ca39e6",
+        "scanNumber": 35,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/de54e111-aa4e-4dcd-ad76-409cf2ca39e6/0035-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/de54e111-aa4e-4dcd-ad76-409cf2ca39e6/0035-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "67e9fa299ef196ad5244b3b544d947baa18ce8354a2357047cb10e5263371614",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/de54e111-aa4e-4dcd-ad76-409cf2ca39e6/0035-header.png",
+            "sha256": "ae311bbd351aa2f7538f7371f459100ca598362ce1489ca7b072f7978ad8276a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/de54e111-aa4e-4dcd-ad76-409cf2ca39e6/0035-target-entry.png",
+            "sha256": "81be65cafc37ccfa0ed2d62a990da100292070a11300d9fa6707b1ff8898ec8f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5213x4099",
+          "targetDimensions": "1251x1251",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ВТОРАА, Щ БРАКОСОЧеТАВШИ:\n%\nHó,\nКто выли порбчители.\nBÁI\nН,алчий ски сй ікстрі: сало\nДашкой разгинлеа \" Мпр мийхСи-\n(моров; ко неатера- село\nз -\nБахлашовки Кресряше: И лекетй\nHamubene Tiéain Remheis",
+    "localOcrWithSurnameLexicon": "ВТОРАА, ( БРАКОСОЧеТАВШИ:\n%\nHó,\nКто Были поречители.\nBÁI\n1, алчий ски со інстрі: сало\nморов; ко нектера- село\nз -\nвахлановки Кресряте: И лекстй\nHamubene Tiéain Remheis",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Поликарп Афанасиев Ампилогов, крестьянин, село Баклановка. Невеста: Анна Иванова Сотникова, 21 неделя и 9 месяцев.",
+    "fuzzyQuery": true
   }
 }

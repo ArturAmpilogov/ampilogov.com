@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-target-entry.jpg",
         "sha256": "660555a968e6a4a0689b310d83175c71d2d3eb0f71e580430b89279a3bff5484"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b92ffa5c-3bfc-404a-be4b-39c91964a63c",
+        "scanNumber": 43,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1108746d2cb8e8adbc530da4b0f4261b41ae96b95e56f876c69e790f77bb7141",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-header.png",
+            "sha256": "7a11039c1f82d33d6f6f729793e4676d039783f68400639b84f35be775ece567",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-target-entry.png",
+            "sha256": "2887816a321ead86af6fa713d5492e91cbca9ad8d98f34e9755ef2a6284e88ce",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5614x4552",
+          "targetDimensions": "1477x531",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "жеска.\nÉнiA.\nКристьянка\nселя, пиогородиий покравк\nОреквургитти суберння и грвода вав-",
+    "localOcrWithSurnameLexicon": "жеска.\nÉHiA.\nКристьянка\nселя, пногородий покравк\nОренбургитти суберня и гранда вав-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Александр Николаев Ампилогов, мещанин, город Оренбург. ... Умерший: Константин Александров Ампилогов, 6 месяцев.",
+    "fuzzyQuery": true
   }
 }

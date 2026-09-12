@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E8CC4D31-002",
-  "provider": "Яндекс Архив — первичный скан периодического издания",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный газетный скан",
+  "recordType": "employment-or-labour-notice",
   "collection": {
     "catalogId": "e8cc4d31-96b0-4cbd-9287-dab48503d38c",
     "scanNumber": 2,
-    "title": "Правда, № 41 (8087)",
+    "title": "№ 41 (8087)",
+    "publication": "Национальная электронная библиотека, Правда, 1940, № 41 (8087)",
     "issueDate": "1940-02-11"
   },
   "links": {
@@ -23,17 +24,27 @@
     }
   ],
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "e8cc4d31-96b0-4cbd-9287-dab48503d38c",
+    "scanNumber": 2,
     "captureStatus": "complete-with-local-copy",
-    "rightsNote": "Полный лист и увеличенные фрагменты сохранены в закрытом исследовательском хранилище; публичная ссылка ведёт на карточку Яндекс Архива.",
-    "captureType": "official-source-original-page-with-enlarged-fragments",
-    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
-    "captureSourceUrl": null,
-    "localBackup": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-full-view.jpg",
-    "path": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-full-view.jpg",
-    "capturedAt": "2026-09-11",
-    "sha256": "9ae4bda0b56559ddb7e3d3b47653c61402c6a2f0c60f010756ac682394f1c2fe",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "76621ec3114f4692f0aad74962953ef6b700d39b16f21957a77f552a60bd7468",
     "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-header.png",
+        "sha256": "baae17cf62d72a9b82a3d4190f02e787ffbdb0b9b3246aba85df6900d45efb03",
+        "description": "Фрагмент исходной полосы, фиксирующий заголовок или структуру листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-target-entry.png",
+        "sha256": "63eed050fcef561ac5bccebad9a9e022d2bcfa6dd0173f8af26b8562b00ab4b7",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/e8cc4d31-96b0-4cbd-9287-dab48503d38c/0002-header.jpg",
@@ -48,12 +59,21 @@
       }
     ],
     "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "5192x6896",
+      "targetDimensions": "1200x1300",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
       "documentOnlyVisuallyConfirmed": true,
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "confirmedAt": "2026-09-11"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "captureSource": "Оригинал листа, выдаваемый источником периодики через Яндекс Архив",
+    "captureSourceUrl": null
   },
   "transcription": {
     "status": "complete-relevant-item-primary-scan-transcription",
@@ -61,8 +81,13 @@
     "modernInterpretation": "…Анпилогов.…",
     "indexNote": "Яндекс/OCR использовались только для поиска области на листе. Фамилия и относящийся к ней контекст проверены визуально по сохранённому увеличенному фрагменту; сомнительные OCR-формы не использовались для создания отдельного профиля."
   },
+  "indexData": {
+    "querySnippet": "Работой инструкторов райкома недоволен и первый секретарь тов. Анпилогов. Он ругает их за гастролерство, за несерьезное отношение к делу.",
+    "fuzzyQuery": true
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
     "status": "complete-relevant-item-primary-scan-transcription",
     "transcriptionConfidence": "medium",
@@ -71,6 +96,56 @@
     ],
     "correctionHistory": [
       "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
-    ]
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-E8CC4D31-002.json",
+        "event": {
+          "type": "employment-or-labour-notice",
+          "date": {
+            "display": "11 февраля 1940",
+            "confidence": "high-for-publication-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-E8CC4D31-002-M1",
+            "role": "surname-series-mention",
+            "displayName": "Анпилогов",
+            "nameAsTranscribed": "Анпилогов",
+            "surnameSeries": true,
+            "personId": null
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "Работой инструкторов райкома недоволен и первый секретарь тов. Анпилогов. Он ругает их за гастролерство, за несерьезное отношение к делу. Слов нет—инструктора играют огромную роль в укреплении связи между райкомом и первичными парторганизациями. Но дело не только в инструкторах. Почему бы, скажем, секретарю райкома самому не побеседовать с руководителем первичной партийной организации, расспросить его о работе, дать полезный совет? Ведь беседует же тов. Анпилогов с председателями колхозов, сельсоветов и другими работниками. И только для секретарей партийных организаций у него нехватает времени.",
+          "modernInterpretation": "Работой инструкторов райкома недоволен и первый секретарь тов. Анпилогов. Он ругает их за гастролерство, за несерьезное отношение к делу. Слов нет—инструктора играют огромную роль в укреплении связи между райкомом и первичными парторганизациями. Но дело не только в инструкторах. Почему бы, скажем, секретарю райкома самому не побеседовать с руководителем первичной партийной организации, расспросить его о работе, дать полезный совет? Ведь беседует же тов. Анпилогов с председателями колхозов, сельсоветов и другими работниками. И только для секретарей партийных организаций у него нехватает времени.",
+          "localOcr": "11 ФЕВРАЛЯ 1940 г., Nº 41 (8087)\nА ЖИВОИ РАБОТЕ\nни тов.\nТеперь молодье коммунисты фабрики\nпийн ьХ\nвидят, что ие ценние предложения прово\nад». Он\nДятСя в ниень, что всяная полевная инн-\nбуви И\nциатива подхватывается. Это бодрит лю-.\nHO BHу-\nдей, вселяет уверенность в свои силы,\nгоя\nда-\nразвивает самотеятельность.\nВыполняя то или иное партийное пору»\nоди, ра-\nчение, товариши часто ставят новые во-\nмграши-\nпросы и выднигают их перед партийной\nо выра-\nорганизацией.\nых Ста-\nКандидат партии, адонозист тов. ЛІВ-\nен, обо-\nшиц по своей инициативе изучил шричи-\nБЗУЮТСЯ\nMAnTeternnimnrr\nMMАATНAИNИEА МАРТИИИANОТEТТT",
+          "localOcrWithSurnameLexicon": "11 ФЕВРАЛЯ 1940 г., Nº 41 (8087)\nА ЖИВОЙ РАБОТЕ\nни тов.\nТеперь молодые коммунисты фабрики\nпийн ьХ\nвидят, что ие ценные предложения прово\nод». Он\nДятСя в ниень, что всякая поленая инн-\nбуви И\nциатива подхватывается. Это бодрит лю-.\nHO BHY-\nдей, вселяет уверенность в свои силы,\nгая\nда-\nразвивает самодеятельность.\nВыполняя то или иное партийное пору\nоди, ра-\nчение, товарищи часто ставят новые во-\nиграши-\nпросы и выдвигают их перед партийной\n• выра-\nорганизацией.\nых Ста-\nКандидат партии, адономист тов. ЛІВ-\nен, обо-\nшиц по своей инициативе изучил причи-\nБЗУЮТСЯ",
+          "collation": {
+            "baseLocalOcr": "not-confirmed-by-local-ocr",
+            "assistedLocalOcr": "not-confirmed-by-local-ocr",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
+            "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
+          ],
+          "correctionHistory": [
+            "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "После объединения веток основным сделано чтение с более сильной ручной проверкой оригинала; прежняя версия сохранена как альтернативная."
   }
 }

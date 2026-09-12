@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "и лсика Густина Селенова\nКасиинви.\n„пееринь, Щипиавкан\nБольшан Змегнуи\nукнда, ала\nотставной солдать Якові, Сали-\nть кісяка Гами-",
+    "localOcrWithSurnameLexicon": "и месика Густина Селенова\nКраспинва.\nБольшан Змегнуи\nунда, ала\nотставной солдать Якові, Сали -\nть кі ска Гами -",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0022-target-entry.jpg",
         "sha256": "6f1acf4406355245ad5247d4fe470da2e01ff313b33742e6aec458ab4b038718"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e6398d6-2b49-4ef5-9d4f-f647049ae45c",
+        "scanNumber": 22,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0022-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0022-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "445b6c85d5b7f67f0c3a08622e8acdfd8c938446f960766425f768605f125741",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0022-header.png",
+            "sha256": "aeb9d5e3c4ad39ea47825d015fc4c9ac9abadc55eb6c5edae86ab2f86935bd72",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e6398d6-2b49-4ef5-9d4f-f647049ae45c/0022-target-entry.png",
+            "sha256": "e62fb09c388024f09f42a52421eb3b30428043f560b6e2f5fa75ae15b73c2b8a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "10085x8050",
+          "targetDimensions": "2539x1294",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Петр Степанов Ампилогов, крестьянин, то же село. Крёстный отец: Яков Самсонов Медведкин, отставной солдат, Курская губерния, Щигровский уезд...",
+    "fuzzyQuery": true
   }
 }

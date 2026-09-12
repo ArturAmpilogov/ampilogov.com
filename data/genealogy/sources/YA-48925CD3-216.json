@@ -1,45 +1,48 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-216",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-register-clergy-mention",
-  "primaryPersonId": "P1543",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
-    "scanNumber": "216",
-    "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год"
+    "scanNumber": 216,
+    "title": "Метрическая книга Николаевской церкви села Слоновки за 1916 год",
+    "asRead": "Часть первая о родившихся; июньские записи № 59–61 и соседние строки"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/216"
   },
   "event": {
-    "type": "clerical-service-at-baptisms",
-    "recordNumber": "60–61",
+    "type": "clergy-service",
     "date": {
-      "display": "14–20 сентября 1916 года",
+      "display": "12–20 июня 1916 года",
       "confidence": "high"
     },
     "place": {
-      "asWritten": "село Слоновка",
-      "normalized": "село Слоновка, Оренбургский уезд, Оренбургская губерния",
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high",
       "placeId": "orenburg-uezd"
-    }
+    },
+    "recordNumber": "60–61"
   },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-48925CD3-216-M1",
-      "role": "church-clergy",
+      "role": "deacon",
       "personId": "P1543",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Ампилогов, диакон",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
     },
     {
       "mentionId": "YA-48925CD3-216-M2",
-      "role": "baptized-child-record-61",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Сергій",
-      "displayName": "Сергей Фомич Щуров"
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
+      "surnameSeries": false
     },
     {
       "mentionId": "YA-48925CD3-216-M3",
@@ -50,26 +53,32 @@
     }
   ],
   "transcription": {
-    "status": "relevant-rows-read-from-primary-scan",
-    "literal": "Сентябрь. № 61. 18 [родился], 20 [крещён]. Сергій. Сынъ Слоновскаго крестьянина Ѳомы Петрова Щурова и законныя жены Матрены Ивановой, оба православные. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Та же подпись диакона стоит при соседней записи № 60.",
-    "modernInterpretation": "18 сентября 1916 года родился Сергей, сын Фомы Петровича Щурова и Матрёны Ивановны; крещён 20 сентября. При этом и соседнем крещении служил диакон Афиноген Ампилогов вместе со священником Иоанном Поляковым.",
-    "indexNote": "OCR использован только для поиска листа. Имя диакона проверено по повторным подписям оригинала и по другим листам той же книги."
+    "status": "complete-for-surname-bearing-signatures-and-page-context",
+    "literal": "12–20 июня 1916 года. Во всех видимых строках повторяется формула: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Диакон Афиноген Егорович Ампилогов исполнял служебную роль при записях о рождении в Слоновском приходе 12–20 июня 1916 года; семьи актов не показаны как его родственники.",
+    "indexNote": "Неопределённая индексная mention заменена точной служебной подписью диакона. Индекс/OCR использован только для навигации; весь первичный разворот проверен вручную."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {
-    "status": "primary-scan-verified",
-    "transcriptionConfidence": "high-for-surname-mention",
-    "unresolved": [
-      "Написание фамилии семьи ребёнка передано по наиболее вероятному чтению; оно не влияет на отождествление Афиногена Ампилогова."
-    ]
+  "indexData": {
+    "fuzzyQuery": true,
+    "discrepancy": "Неопределённая индексная mention заменена точной служебной подписью диакона."
   },
   "evidence": {
-    "publicDisplay": false,
-    "captureType": "source-image-with-clean-document-crop-and-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0216-full-view.jpg",
-    "sha256": "8c1b957d45f4ed6ea44deec6e976b1d794af335cf909c17f9cb7c9019883a65b",
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 216,
+    "captureStatus": "complete-with-local-copy",
+    "uploadStatus": "verified-exact",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0216-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0216-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "cf1d1a0f409024f1fc67ad35066c6ff836bfdb56be8dde79350995395c14e983",
     "fragments": [
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0216-target-context-deep.jpg",
+        "sha256": "37d0a593f81eaf60364b9d39e9c0b077cf937cad225804de5dc58f3fc1851bcc",
+        "description": "Крупный полноширинный clean crop всех видимых строк, дат, родителей, восприемников и повторных подписей причта."
+      },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0216-target-entry.jpg",
@@ -78,12 +87,93 @@
       }
     ],
     "quality": {
+      "fullDimensions": "4526x3686",
+      "targetDimensions": "4100x3200",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-spread-reading-and-full-width-recrop",
       "documentOnlyVisuallyConfirmed": true,
       "siteAndBrowserChromeExcluded": true,
       "blackDefectsExcluded": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11"
     },
-    "rightsNote": "Закрытая исследовательская копия; публичная ссылка ведёт на архивный сервис."
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова: 12–20 июня 1916 года.",
+    "identityNote": "P1543 подтверждён точным редким именем, саном, Николаевской церковью Слоновки, священником Иоанном Поляковым и непрерывной серией листов 1916 года.",
+    "migrationNote": "Служебная подпись не доказывает родство с семьями актов или переселение."
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Написание фамилии семьи ребёнка передано по наиболее вероятному чтению; оно не влияет на отождествление Афиногена Ампилогова."
+    ],
+    "correctionHistory": [
+      "Неопределённая индексная mention заменена точной служебной подписью диакона."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full primary spread scan 216; июньские записи № 59–61 и соседние строки; all visible date/name/role columns and repeated clergy signatures checked; P1543 service-only identity by exact name, rank, parish, Ioann Polyakov and contiguous series; no kinship or migration; clean 4100x3200 crop",
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/YA-48925CD3-216.json",
+        "event": {
+          "type": "clerical-service-at-baptisms",
+          "recordNumber": "60–61",
+          "date": {
+            "display": "14–20 сентября 1916 года",
+            "confidence": "high"
+          },
+          "place": {
+            "asWritten": "село Слоновка",
+            "normalized": "село Слоновка, Оренбургский уезд, Оренбургская губерния",
+            "placeId": "orenburg-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-48925CD3-216-M1",
+            "role": "church-clergy",
+            "personId": "P1543",
+            "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+            "displayName": "Афиноген Ампилогов, диакон",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-48925CD3-216-M2",
+            "role": "baptized-child-record-61",
+            "personId": null,
+            "nameAsTranscribed": "Сергій",
+            "displayName": "Сергей Фомич Щуров"
+          },
+          {
+            "mentionId": "YA-48925CD3-216-M3",
+            "role": "parents-record-61",
+            "personId": null,
+            "nameAsTranscribed": "Сынъ Слоновскаго крестьянина Ѳомы Петрова Щурова и законныя жены Матрены Ивановой",
+            "displayName": "Фома Петрович Щуров и Матрёна Ивановна"
+          }
+        ],
+        "transcription": {
+          "status": "relevant-rows-read-from-primary-scan",
+          "literal": "Сентябрь. № 61. 18 [родился], 20 [крещён]. Сергій. Сынъ Слоновскаго крестьянина Ѳомы Петрова Щурова и законныя жены Матрены Ивановой, оба православные. Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Та же подпись диакона стоит при соседней записи № 60.",
+          "modernInterpretation": "18 сентября 1916 года родился Сергей, сын Фомы Петровича Щурова и Матрёны Ивановны; крещён 20 сентября. При этом и соседнем крещении служил диакон Афиноген Ампилогов вместе со священником Иоанном Поляковым.",
+          "indexNote": "OCR использован только для поиска листа. Имя диакона проверено по повторным подписям оригинала и по другим листам той же книги."
+        },
+        "review": {
+          "status": "primary-scan-verified",
+          "transcriptionConfidence": "high-for-surname-mention",
+          "unresolved": [
+            "Написание фамилии семьи ребёнка передано по наиболее вероятному чтению; оно не влияет на отождествление Афиногена Ампилогова."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
   }
 }

@@ -1,44 +1,99 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-7869F375-012",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth",
   "collection": {
     "catalogId": "7869f375-f0e3-4bbc-8f40-05a7e14942cd",
-    "scanNumber": "12"
+    "scanNumber": 12,
+    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Баклановка, Большой Сурмет, Борискино за 1908 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/7869f375-f0e3-4bbc-8f40-05a7e14942cd/12"
   },
+  "event": {
+    "type": "birth",
+    "date": {
+      "display": "18 апреля 1908",
+      "confidence": "medium"
+    },
+    "place": {
+      "normalized": "село Баклановка"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-7869F375-012-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
+      "role": "child",
+      "personId": "P102677",
+      "displayName": "Анна Константиновна Ампилова",
+      "nameAsTranscribed": "Анна",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-7869F375-012-M2",
+      "role": "father",
+      "personId": "P102676",
+      "displayName": "Константин Ампилов (Баклановка)",
+      "nameAsTranscribed": "крестьянинъ Константинъ [отчество неуверенно] Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-7869F375-012-M3",
+      "role": "mother",
+      "personId": null,
+      "displayName": "законная жена его Устинья Петрова",
+      "nameAsTranscribed": "законная жена его Устинья Петрова",
+      "surnameSeries": false
     }
   ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-full-view.jpg",
-    "sha256": "f570717b0d8af7f3145844da720bc4423be5cde982626fa282be13c25bfa97ad",
+    "catalogId": "7869f375-f0e3-4bbc-8f40-05a7e14942cd",
+    "scanNumber": 12,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "1accb9e002af6a74e949f82e0d1706178a5c808d1743ffeeb344b891fbe079c8",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-target-entry.jpg",
-        "sha256": "6317c6526fa9a1979d6065760ca375d0913e53309dbefd50ceba057fee7236c5"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-header.png",
+        "sha256": "2c38ed21fc226518e70f3264d443a9418c8b591a9478b32513fc397bacef2c42",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/7869f375-f0e3-4bbc-8f40-05a7e14942cd/0012-target-entry.png",
+        "sha256": "482fefc4bc0afc0d6eec6612048ac550ae9765aee22d987d39bd0aa01ffa435e",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "4455x3766"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "На сохранённом локальном развороте фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
-    "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "status": "complete-with-uncertainties",
+    "literal": "Анна. Села Баклановки крестьянин Константин [отчество неуверенно] Ампилов и законная жена его Устинья Петрова; оба православные. Родилась 18, крещена 19 апреля 1908 года.",
+    "modernInterpretation": "Первичный скан подтверждает Анну, дочь Константина Ампилова; прежнее заключение о ложном совпадении исправлено.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
   },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "medium",
+    "unresolved": [
+      "Отчество отца Константина и имя одного восприемника на сгибе читаются неуверенно."
+    ]
   }
 }

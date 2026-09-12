@@ -1,44 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-091",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-clerical-service",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 91
+    "scanNumber": 91,
+    "title": "Метрическая книга за 1904 год",
+    "asRead": "Часть первая, о родившихся; февральские записи № 11–14"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/91"
   },
+  "event": {
+    "type": "clerical-service",
+    "date": {
+      "display": "6–8 февраля 1904",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход, название на листе не нормализовано",
+      "normalized": "Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-uezd"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-772ECBA6-091-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-772ECBA6-091-M2",
+      "role": "clergy-colleague",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Сергій Иллюминарскій",
+      "displayName": "священник Сергий Иллюминарский",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-signatures-and-visible-page-context",
+    "literal": "Февраль 1904 года, записи № 11–14: на развороте видны рождения и крещения Агафии, Тимофея, двух Гавриилов, Евдокии и следующего ребёнка; в каждой сохранившейся графе причта повторяется: «Священникъ Сергій Иллюминарскій. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Лист документирует служение Афиногена Егоровича Ампилогова диаконом при совершении таинств, 6–8 февраля 1904.",
+    "indexNote": "Индекс использован только для навигации; имя, сан, даты и контекст проверены по полному скану, искажённые индексом слова не перенесены."
+  },
+  "indexData": {
+    "querySnippet": "Поисковый индекс распознал диакона Афиногена Ампилогова с искажениями соседних слов.",
+    "fuzzyQuery": true
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.jpg",
-    "sha256": "cdf9e4ebb8a59bae6d7eccc321b6001ed263265f781ecec94ae89e55167ba860",
+    "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
+    "scanNumber": 91,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "352c558a99240f56bb221dc15380898a4ed2d4b16c592e8f205daedc7f15e95f",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-target-entry.jpg",
-        "sha256": "f397c7e04c4dc9ac7d573573f0381e86cb13a93567802be53b9701aa3b1fe741"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-target-entry.png",
+        "sha256": "8ef8591d34a28b2ac8cda1079fae6333713e0e1204ad8dd78ed3e4474a1d75e0",
+        "description": "Крупный полноширинный чистый фрагмент листа со всеми контекстными графами."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5821x4640",
+      "targetDimensions": "5600x4200",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок разворота и целевой фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P1543",
+  "context": {
+    "eventSummary": "Служение Афиногена Егоровича Ампилогова диаконом, 6–8 февраля 1904.",
+    "identityNote": "Редкое полное имя и сан согласуются с документированной церковной карьерой P1543.",
+    "migrationNote": "Только служебное участие; родство и маршрут переселения не выводятся."
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-year-dates-name-role-and-visible-page-context",
+    "unresolved": [
+      "Название прихода не нормализовано без титульного листа."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1904 birth-register spread scan 91; February records 11–14 and adjacent row, dates, children, parents, godparents, damaged right leaf and repeated clergy signatures checked; P1543 service-only backlink; no kinship or migration; 5600x4200 crop"
   }
 }

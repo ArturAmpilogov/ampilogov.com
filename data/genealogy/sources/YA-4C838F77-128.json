@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "",
+    "localOcrWithSurnameLexicon": "",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4c838f77-0555-4aba-9a23-a32568c4faae/0128-target-entry.jpg",
         "sha256": "b37830ef3cb21ad36cae93fa9ea4cf82e307fe41e3a65864c7b5743b2ebdc5b1"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4c838f77-0555-4aba-9a23-a32568c4faae",
+        "scanNumber": 128,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4c838f77-0555-4aba-9a23-a32568c4faae/0128-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4c838f77-0555-4aba-9a23-a32568c4faae/0128-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "8c8518c3e0dd5141f668847da1b5cbb77f5e47f47702ac65f832d7e632ebb6b1",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4c838f77-0555-4aba-9a23-a32568c4faae/0128-header.png",
+            "sha256": "0d2b9e98445e41b94e71d517ddbc782bde38ff4d0f898fd0f916793cd9bcc463",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4c838f77-0555-4aba-9a23-a32568c4faae/0128-target-entry.png",
+            "sha256": "de117be6bb11502e2eccd734679420800c0d915546f5cb7dfbc790c012b9b689",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4352x3264",
+          "targetDimensions": "1200x743",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "10. Симферопольскаго мѣщанина Ѳеодосія Ампилога, дочь Антонина. ... Симферопольского мещанина Феодосия Ампилога, дочь Антонина. Кладбище.",
+    "fuzzyQuery": true
   }
 }

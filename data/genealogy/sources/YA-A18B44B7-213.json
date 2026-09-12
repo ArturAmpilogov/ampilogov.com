@@ -1,35 +1,81 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-A18B44B7-213",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
-    "scanNumber": "213"
+    "scanNumber": 213,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Софийское, Старая Богдановка, Стрелецкое, Успенка за 1908 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/213"
   },
-  "mentions": [],
+  "event": {
+    "type": "baptism-clergy-multiple-entries",
+    "date": {
+      "display": "1908",
+      "confidence": "high-for-year"
+    },
+    "place": {
+      "normalized": "село Старая Богдановка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-A18B44B7-213-M1",
+      "role": "priest",
+      "personId": "P1653",
+      "displayName": "Священник Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-full-view.jpg",
-    "sha256": "62c9e635abd0116c7766589f66796988cfffa6a6eed901dbd0bb1d70d9644f89",
+    "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+    "scanNumber": 213,
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-full-view.png",
+    "capturedAt": "2026-09-10",
+    "sha256": "e6511c1be48d50ac49e88e371ffbe76bb91aab4908c44c55c6bc20ed8ace1ada",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-target-entry.jpg",
-        "sha256": "6bda5feb5eb3022d2cc151be541d520911713797d9d3d5819be200e8257fa6c2"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-header.png",
+        "sha256": "f3a8f1efaddea1bf6e01438175ba44a76bdfd3bd24fce9a9b2872586ddf90b1a",
+        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0213-target-entry.png",
+        "sha256": "7b89f4e88915731c5a5fe23cb87d5ee7184ccb84a63aead943ce20f76feb8c28",
+        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
       }
-    ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-10",
+      "method": "manual-reading-of-downloaded-original",
+      "fullDimensions": "5721x4666"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимоѳей Горяйновъ. [Подписи повторяются при нескольких крещениях на развороте.]",
+    "modernInterpretation": "По оригиналу Михаил Ампилов является священником, а не ребёнком; прежняя отметка о ложном совпадении исправлена.",
+    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

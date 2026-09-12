@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-81C0E748-131",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "technical-source-alias",
   "collection": {
     "catalogId": "81c0e748-0ddb-40e7-a3c2-85c43ffc9e84",
     "scanNumber": "131"
@@ -10,71 +10,67 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/131"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-81C0E748-131-M1",
-      "role": "groom",
-      "personId": "P99438",
-      "nameAsTranscribed": "Сергѣй Петровъ Ампилоговъ",
-      "displayName": "Сергей Петрович Ампилогов",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-81C0E748-131-M2",
-      "role": "marriage-witness",
-      "personId": null,
-      "nameAsTranscribed": "Ѳеодоръ Лаврентьевъ Ампилоговъ",
-      "displayName": "Федор Лаврентьевич Ампилогов",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-81C0E748-131-M3",
-      "role": "marriage-witness",
-      "personId": "P99440",
-      "nameAsTranscribed": "Павелъ Димитріевъ Ампилоговъ",
-      "displayName": "Павел Дмитриевич Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "81c0e748-0ddb-40e7-a3c2-85c43ffc9e84",
+    "scanNumber": 131,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.jpg",
-    "capturedAt": "2026-09-09",
-    "sha256": "92b282666e2b8aa07f994887e78ec2a4f241d04325a08f1eb26a8a48e5240ca3",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "4b132e8776c8368bb878aaf04e1d5c0348eb90743d2ba47d6b37954d1a441a77",
     "fragments": [
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-target-entry.jpg",
-        "sha256": "ef29149eeadefcf44df3a68ccc5866ea4daf61e833d99fa13f471efa1a1b8538",
-        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-header.png",
+        "sha256": "f07ddf87466b0e16482e999ff1c57dcd1010f2ab4c2f58f566cf107222200a92",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/81c0e748-0ddb-40e7-a3c2-85c43ffc9e84/0131-target-context-deep.jpg",
+        "sha256": "2623bb234bb9172f7a59cee9f96096e9972eef660726dbd89d7f038a695d1fab",
+        "description": "Крупный полноширинный clean crop без интерфейса; вручную проверены полный лист и соседние строки."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5058x4069",
-      "targetDimensions": "4698x3239"
-    }
+      "targetDimensions": "4700x2200",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "verified-exact"
   },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-and-scan",
     "unresolved": [],
-    "correctionHistory": [
-      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "полный разворот и брак №26 прочитаны вручную; содержание совпадает с YA-IAOO-16-6-984-131-SERGEY; сохранён полноширинный crop с SHA; personId/event и дублирующие backlinks не создаются; родство и миграция не выводятся"
   },
   "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "Женихъ Сергѣй Петровъ Ампилоговъ, 18 лѣтъ; невѣста Юлія Иванова Баркасъ. Поручители: Ѳеодоръ Лаврентьевъ и Павелъ Димитріевъ Ампилоговы.",
-    "modernInterpretation": "В 1911 году восемнадцатилетний Сергей Петрович Ампилогов вступил в брак с Юлией Ивановной Баркас; Федор Лаврентьевич и Павел Дмитриевич Ампилоговы названы поручителями.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "status": "complete-technical-duplicate-verified",
+    "literal": "24 января 1911 года. Брак № 26: Сергей Петрович Ампилогов, 18 лет, первым браком, и Юлия Ивановна Баркас, 18 лет, первым браком. По жениху поручители Фёдор Лаврентьевич и Павел Дмитриевич Ампилоговы; по невесте Георгий Филиппович и Георгий Иванович Слобидины.",
+    "modernInterpretation": "Вариант sourceId сохранён только как технический alias канонической карточки; отдельное событие и backlinks не создаются.",
+    "indexNote": "Индекс и первичный скан представлены канонической карточкой."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "technical-source-alias",
+  "indexData": {
+    "querySnippet": "Жених: Сергий Петров Ампилогов, крестьянин, деревня Чуманово, 18. Жених: Михаил Иоаннов Близняков, крестьянин, деревня Ик, 19.",
+    "fuzzyQuery": true
+  },
+  "parallelOf": "YA-IAOO-16-6-984-131-SERGEY",
+  "event": null,
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Технический вариант идентификатора того же скана.",
+    "identityNote": "Лица и связи представлены только канонической карточкой.",
+    "migrationNote": "Alias не создаёт точки или маршрута."
+  }
 }

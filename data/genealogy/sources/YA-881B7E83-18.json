@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/881b7e83-61d1-4dc5-b568-ba7696d48729/0018-target-entry.jpg",
         "sha256": "d541c22eb5a0ee527b6f54bc83d3894b9b38ecea20148285bc722829035bc3d7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "881b7e83-61d1-4dc5-b568-ba7696d48729",
+        "scanNumber": 18,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/881b7e83-61d1-4dc5-b568-ba7696d48729/0018-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/881b7e83-61d1-4dc5-b568-ba7696d48729/0018-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "10bd50e680188c89ea244cd94e2170ac0f4898a00f31d55e707d1f37be7f69f6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/881b7e83-61d1-4dc5-b568-ba7696d48729/0018-header.png",
+            "sha256": "d57eb93a1329006e6f1ac6bbe74254b52112ff61386c623eb7bce4da9f0bf918",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/881b7e83-61d1-4dc5-b568-ba7696d48729/0018-target-entry.png",
+            "sha256": "355184a0f63affaabad191f12f9c7642823be8e676746ce8bcad419fdda3f54c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5991x4672",
+          "targetDimensions": "1500x632",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "НОСКОКСКОЙ\nTATO\nАлЬнОИ\nГÓдZ, ЧÁСть ПеРкаД, й РОдИ\nЗвáніє, йма, сотчество й флмнліл\nKт",
+    "localOcrWithSurnameLexicon": "НОСКОКСКОЙ\nТАТО\nЗваніє, йма, сотчество й фамнліл",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Того же села крестьянин Максим Антониев Ампилогов и женка Евфимия Константинова Дудынева. Саспов с псаломщиком Пав. лом Русановым.",
+    "fuzzyQuery": true
   }
 }

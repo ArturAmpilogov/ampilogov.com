@@ -1,35 +1,121 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FE2FD626-149",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
-    "scanNumber": "149"
+    "scanNumber": 149,
+    "title": "Метрическая книга Старой Богдановки за 1909 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fe2fd626-6aeb-4401-807f-5290bf3a0d46/149"
   },
-  "mentions": [],
+  "event": {
+    "type": "clergy-service-attestation",
+    "date": {
+      "display": "20–24 июня 1909 года",
+      "from": "1909-06-20",
+      "to": "1909-06-24",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Старая-Богдановка",
+      "normalized": "село Старая Богдановка, Оренбургская губерния",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FE2FD626-149-M1",
+      "role": "parish-priest",
+      "personId": "P1653",
+      "displayName": "Михаил Ампилов",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-FE2FD626-149-M2",
+      "role": "psalm-reader",
+      "personId": null,
+      "displayName": "Тимофей Горяйнов",
+      "nameAsTranscribed": "Псаломщикъ Тимофей Горяйновъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FE2FD626-149-M3",
+      "role": "deacon",
+      "personId": null,
+      "displayName": "Вонифатий Шкатов",
+      "nameAsTranscribed": "Діаконъ Вонифатій Шкатовъ",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 годъ, часть первая, о родившихся. июньские записи с датами рождения и крещения 20–24 июня. В строках повторено: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ. Діаконъ Вонифатій Шкатовъ».",
+    "modernInterpretation": "Лист части о родившихся подтверждает служение Михаила Ампилова священником Старой Богдановки 20–24 июня 1909 года; псаломщик и диакон сохранены только в контексте источника.",
+    "indexNote": "Прежняя отметка no-match ошибочна: Яндекс оборвал титул и имя и нормализовал фамилию. На полном листе после каждой строки читается «Священникъ Михаилъ Ампиловъ» с причтом."
+  },
+  "indexData": {
+    "querySnippet": "Деревни Ново-Никольской крестьянин Петр Родионов Алехин... нин Михаил Ампилогов.",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full birth-register spread; июньские записи с датами рождения и крещения 20–24 июня; dates, repeated clergy signatures, literal surname, Yandex row mixing, and same-source image-copy check"
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-full-view.jpg",
-    "sha256": "8a08ed7c2f130e427529fc529ee8e34fba8224f4bf465de4d905c856dad32152",
+    "catalogId": "fe2fd626-6aeb-4401-807f-5290bf3a0d46",
+    "scanNumber": 149,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "4cd64b7ef10780f808527a6f22a5e836ad1a6ac9e58ab0e57092745fde598936",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-target-entry.jpg",
-        "sha256": "9bfb722e650dc323e6103e14380931468b2d2a39f9deadc84b2671d4d9446ebc"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-header.png",
+        "sha256": "cb8642c99ad1504ea9009028730354edc79475b90e0bcdfa6161736dd813a545",
+        "description": "Заголовок части о родившихся метрической книги за 1909 год."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-target-context.jpg",
+        "sha256": "f537853346d82fe1551c6816dc749646e4c36ce6adbd4b68389222d894bc042f",
+        "description": "Полноширинный крупный фрагмент: июньские записи с датами рождения и крещения 20–24 июня; повторные подписи причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5294x4281",
+      "targetDimensions": "5100x3500",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "captureType": "parallel-local-jpeg-copy-of-same-source-scan",
+        "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-full-view.jpg",
+        "sha256": "8a08ed7c2f130e427529fc529ee8e34fba8224f4bf465de4d905c856dad32152",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/fe2fd626-6aeb-4401-807f-5290bf3a0d46/0149-target-entry.jpg",
+            "sha256": "9bfb722e650dc323e6103e14380931468b2d2a39f9deadc84b2671d4d9446ebc"
+          }
+        ],
+        "sameEvent": true
       }
     ]
-  },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
   }
 }

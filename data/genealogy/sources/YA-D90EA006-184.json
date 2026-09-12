@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/d90ea006-3f70-442e-bc68-2938115cc067/0184-target-entry.jpg",
         "sha256": "64a9492bd410266f40e445957b3f87cc1202d89cb1129ca2ed68be700432d683"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d90ea006-3f70-442e-bc68-2938115cc067",
+        "scanNumber": 184,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d90ea006-3f70-442e-bc68-2938115cc067/0184-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d90ea006-3f70-442e-bc68-2938115cc067/0184-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "42d00ab7ad7205fb501d3cbc0ce349ca3e82ab0608063c687a39297b07a04b54",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d90ea006-3f70-442e-bc68-2938115cc067/0184-header.png",
+            "sha256": "26970bd82bcf0cdcabdaa31f635f357b50519dfadd5e02d8446659091336d874",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d90ea006-3f70-442e-bc68-2938115cc067/0184-target-entry.png",
+            "sha256": "377f3cd209aeab03ea996de8648b0262b1668bd0a17f0d9cba0ca5d774a715bd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5112x4050",
+          "targetDimensions": "1509x870",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "вадмний Рвасинвеві вирконок.\nи Ваканная орша Еса винна\nІвламігевні оба Правосмавни\nZauerl Pl\nКеnnt? бón.?\nистенй Дошийовний\nZіакaнз а\nкрем\nшь свстсяци робивлиикая до\nшь\nА абоно пола семпобуао",
+    "localOcrWithSurnameLexicon": "вадиний Рвасинвеві вирконок.\nи Ваканная орша Еса винна\nІв ламічевні оба Правомавни\nBauera Pl\nистанй Дошитовний\nДіананя с\nкрем\nшь светсяцы робивиникая до\nшв",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Марина Сергеева Ампилогова. ... Отец: Сергий Егоров Ампилогов, крестьянин, село Георгиевка.",
+    "fuzzyQuery": true
   }
 }

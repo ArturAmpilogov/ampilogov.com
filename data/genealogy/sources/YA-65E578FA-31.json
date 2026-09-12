@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ИПОI\nСИПОАДННО\nИСТРПИССКОЙ КННГИ НА",
+    "localOcrWithSurnameLexicon": "ИПОГ\nСУПО ДЛИНО\nИСТОПИССКОЙ КНИГИ НА",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0031-target-entry.jpg",
         "sha256": "952c32e73bfd5fe4f3d8065a5d8458f7cbd2613a8ec44e34a4762938de43a9f2"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 31,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0031-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0031-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "df8e53284216d35c81149a9f48834d987bb34b6f0e6c47110447905b438bef01",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0031-header.png",
+            "sha256": "88da1292bedb0db224d2c99e0acca8c9f9339a739e2c70dd00372a7caaa1531f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0031-target-entry.png",
+            "sha256": "8871d45afe7df0227cb6be73bb3ba115ae463b1e3b7d5b194348b0fde3ade165",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5393x4222",
+          "targetDimensions": "1695x709",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Священни Клавдий Калинин Диакон Александр Теплов Диакон Афиноген Ампилогов. Жених: Феодор Кириллов Гресев, крестьянин, деревня Баевка, 27.",
+    "fuzzyQuery": true
   }
 }

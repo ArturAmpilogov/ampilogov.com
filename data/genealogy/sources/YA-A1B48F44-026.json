@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/a1b48f44-266f-4764-9226-5e7b6987e7bc/0026-target-entry.jpg",
         "sha256": "f8cb5e7070ec84a6194c9699a28f4e4500317c4e2053f1c3ac1f56462c96183b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a1b48f44-266f-4764-9226-5e7b6987e7bc",
+        "scanNumber": 26,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a1b48f44-266f-4764-9226-5e7b6987e7bc/0026-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a1b48f44-266f-4764-9226-5e7b6987e7bc/0026-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "499b50da71f13a0d9e8becec60bfe3801a82345cf198d7d3afa77bd3fe5daca2",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a1b48f44-266f-4764-9226-5e7b6987e7bc/0026-header.png",
+            "sha256": "750dc7d31000055c9317bc4949ffea983e07c6def32cedc02af77b2e3def626d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a1b48f44-266f-4764-9226-5e7b6987e7bc/0026-target-entry.png",
+            "sha256": "feeb332ff7c1338184804b8088264fe5d686dbddd87657fde1ca7b5299e09bfd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "6085x4734",
+          "targetDimensions": "1479x671",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "того ще сема крт. / рапора Вилип-\nповго Я моровог\nг п естьямская дб-\nвска вважннія) вчіннно) водоватова.",
+    "localOcrWithSurnameLexicon": "того ще сема крт. / репора Вилин -\nповго Я мотово г\n2 пе естьянская дб-\nвска вважнія вінко) Кодоватова.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крн Григорий Флоров Ампилогов и крнская девица Варвара Павлова Мухина. ... Крёстный отец: Григорий Флоров Ампилогов, крестьянин, та же деревня.",
+    "fuzzyQuery": true
   }
 }

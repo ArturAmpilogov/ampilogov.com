@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "VIO4 АЛЬТО)\nгóди, часть первад, й р\nЗвáніє, йма, бтчество й фамиліл\nБоспріємникШвZ.\nНого мке славжствь яниня",
+    "localOcrWithSurnameLexicon": "VI 4 ЛЬНО)\nгоди, часть переад, й р\nЗвніє, йма, отчество й фамиліл\nБоспріємникШви.\nНого мне сла вость яниня",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0092-target-entry.jpg",
         "sha256": "ce5d25bff89a99803c545c80262dac2d9cf58edc494c5a7b85c3889f9411205b"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4e61d61c-8cbf-426b-86e5-d58af8421452",
+        "scanNumber": 92,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0092-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0092-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "35df2130bdfc01f3efcf8bcf2f06233b03a786bbc43dddf21cb08ba253b364e7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0092-header.png",
+            "sha256": "116ca51745207fffd2c8732493774f98729c7ee1f18b9aa71e58b2b086023a85",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4e61d61c-8cbf-426b-86e5-d58af8421452/0092-target-entry.png",
+            "sha256": "1816f6713d994582eb08d1c495bed35d42a7d7a9241d3ea36633104b8d911172",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4913x3893",
+          "targetDimensions": "1366x897",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Симеон Ананиев Ампилогов, крестьянин, то же село. Крёстный отец: Василий Сергеев Коннов, мещанин, город Бугуруслан.",
+    "fuzzyQuery": true
   }
 }

@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГРИЧЕСКОЙ КНИГИ НА 1902 \"\nЗБАніє, ймА, сôтчЕство й фамнАіл роднтЕлей, й какóги\nИКСА.\nвіронспов'єданіл.\nви.\nСелиПокровки перетвянийв велсйв Ансваьева\nЗиновььвь и лисшнего ввдотін Деніннови-\nови перивошивныю.\nСвященника Сегій Иллолишазр\nДілкийв Помиееив А\nмтилогов\n1саланициік Анотомій Илмюминарекій\nвели Похеровки пораств'янкйв Пейрч Кирисківа\nКереврянові и минсикасно Нарниосктава Сеембраківа -\nобипривосививя.\nСвицентись Сучий Имиолитар.\nДіссанть Помочейв Алтилоковч\n1еотонцива Анятолій Цилюминарскій\nДереани Аніроськи проствяннйв Галговч-\nРеофорові Солосико\nмиела его Перескева\nЛеакійсова- обаприкосисемтно.\nОвменнить Сучиі Млио миназр\nРістеаів Момнсів Анпикаові-\nПсамалиика А натолій Иллюминаребій\nis Сно вколовни пероссваннов Курьша Конгиро-\nновл Мастовьи мислсею Мантрсна Ло)\nна- одм пгривославивло.",
+    "localOcrWithSurnameLexicon": "ГРИЧЕСКОЙ КНИГИ НА 1902 г\nЗБАніє, ймА, сотЕство й фаміл родитЕлей, й какги\nвіронспов єданіл.\nви.\nСели Покровки перетвянийв велейв Ансаьева »\nВиновавь и лишнего в вдоти Денійнови -\nови перивошивные.\nСвященника Сергій Иллолишазр\nДілкиїв Полисів А\nмитилогов\n1 салонициік Анатомій Илломинарекій\nвели Похровки простіянків Потрч Кирисківа\nКереврянові и мисасно Наростава Селембра ківа -\nобипривосививля.\nСвицентись Сучий Илиолитар.\nДіссанть Помочейв Алтилоковч\n1етанцива Анятолій Цилюминарскій\nДерени Антреськи проствянийв Галовіч\nРеофорові Солосико\nмиела его Перескева\nЛеакісова - обаприкосисемоно.\nОвеннить Сучи! Клио минар\nРістеаів Помнів Ампикаові-\nПалалиика А наталій Иломинаребій\nis Сно Околови пороссванно Курьша Конгиро-\nна - обм гривославивло.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0173-target-entry.jpg",
         "sha256": "049c9d1796407a09e7709bbc4eefec56122ff627b54ed797168ef5f8c652fa0f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5ff34218-795d-4b30-9c76-24191f45b68d",
+        "scanNumber": 173,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0173-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0173-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "08c357279e14ba4279e7eb4cb2f79bd18d8d1d96aef07959949067e5426364bb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0173-header.png",
+            "sha256": "e70212fca5d7b2cfdfbe2273c79d022ccf29dfa2873d4212ec24db2f2d17342e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5ff34218-795d-4b30-9c76-24191f45b68d/0173-target-entry.png",
+            "sha256": "f1c7d30982ce0eb5c0b1926263ba4727504dd4b64011b49fcf2135ecd36b10f1",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5004x3921",
+          "targetDimensions": "1412x3039",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Сергий Иллюминар Диакон Афиноген Ампилогов Псаломщик Анатолий Иллюминарский.",
+    "fuzzyQuery": true
   }
 }

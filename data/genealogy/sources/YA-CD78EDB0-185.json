@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0185-target-entry.jpg",
         "sha256": "7127a8c403763077b48fc1a7d5b6694dd142d02854a7f46bb39123914b77567c"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cd78edb0-36cb-47ab-b390-6623066f7176",
+        "scanNumber": 185,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0185-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0185-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "f6718d5557c562f49837d68b5ba00e2a546a8d66470459c4d79f01e9f8ac6ee6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0185-header.png",
+            "sha256": "99ffd8a11ac971b401163f2f8cc92bd3b44014cf09c2958b07e03626a364d44a",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cd78edb0-36cb-47ab-b390-6623066f7176/0185-target-entry.png",
+            "sha256": "eb52ee01d0be610980cc7684c71cafc7fe959a60744ad6d639841ae8efcc858e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5659x4546",
+          "targetDimensions": "1445x775",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Ольга вибрива Мазаеллова\nсилоцтрить селенкй Асивровова.\nТого яе села( престь чиииь бачиль\nАндреето Вызновь пкрестьячка( Мера -\nAu\nОкета Динілова N6яілова\nНесмок-\nщинь свсепекй Всивровова.\nТого ял село крескьчити Косма",
+    "localOcrWithSurnameLexicon": "Ольга вибрива Мазаеллова\nсилострить селенни Асивровова.\nТого яа села престь чиниь бачиль\nАндресто Вызнать пкрестьячка Мера -\nAu\nСкета Динілова N6яілова\nщинь всепекй Вивровова.\nТого ял село пресквчити Косма",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Крёстный отец: Афиноген Георгиев Ампилогов, диакон, село Слоновка. Крёстный отец: Даниил Сергиев Михайлов, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

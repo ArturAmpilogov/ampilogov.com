@@ -2,63 +2,83 @@
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-150",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "clergy-service-on-birth-register-page",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
-    "scanNumber": "150"
+    "scanNumber": 150,
+    "title": "Метрическая книга Слоновского прихода",
+    "asRead": "Конец мартовского и начало апрельского участка части первой"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/150"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "мартовские строки 28/30, 29/30, 30/31; апрельский участок: 29 марта/3 апреля и 6/7 апреля; год не повторён",
+      "confidence": "high-for-written-days-year-unresolved-after-boundary"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-150-M1",
-      "role": "church-clergy",
+      "role": "church-clergy-deacon",
       "personId": "P1543",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Егорович Ампилогов, диакон",
-      "surnameSeries": true
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Мартъ: Марія — 28/30; Георгій — 29/30; Анисимъ — 30/31. Затем месячный итог. Апрѣль: Ирина — 29 [марта]/3 [апреля]; Георгій — 6/7. При строках повторено: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Лист содержит два отдельных диапазона: конец марта с итогом месяца и начало апреля. Афиноген Ампилогов участвовал только как диакон при чужих актах.",
+    "indexNote": "Индекс смешал подпись причта с чужими восприемниками и не передал границу месяцев."
+  },
+  "context": {
+    "eventSummary": "Служебные подписи в конце мартовского и начале апрельского участка.",
+    "relationshipBoundary": "Никаких семейных или миграционных выводов."
+  },
+  "indexData": {
+    "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов...",
+    "fuzzyQuery": true,
+    "discrepancy": "Оригинал разделяет мартовские строки, итог и апрельские строки; Афиноген — только диакон."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-full-view.jpg",
-    "capturedAt": "2026-09-09",
-    "sha256": "542f5586cd27cdded50cb0370c041d6fa1d3f92fd35d19112160d35f310d5c7d",
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 150,
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-full-view.png",
+    "sha256": "c0341cf0847c4148c1ea6cfd0b37b5522f642a789e2c56b1fa31e2fbf82663f8",
     "fragments": [
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-target-entry.jpg",
-        "sha256": "97888c4125fe0bde7a1cd9c400c7cea608eb00a824eb16bfaa54641cb1dfe8c8",
-        "description": "Крупный фрагмент строк с фамильным упоминанием, вырезанный из локальной копии оригинального разворота."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0150-target-context-deep.jpg",
+        "sha256": "d4941808e658e952e40f44507dacfc5db6504515ce5517afc8c1fdc15aed0d90",
+        "description": "Крупный полноширинный чистый фрагмент мартовского и апрельского участков."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
+      "originalImageDownloaded": true,
       "fullDimensions": "5291x4211",
-      "targetDimensions": "4931x3381"
-    }
+      "targetDimensions": "5000x3600",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
+    },
+    "publicDisplay": false
   },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
-    ]
-  },
-  "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "[В записях разворота:] Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ.",
-    "modernInterpretation": "Разворот метрической книги 1911 года содержит повторяющиеся служебные записи и подписи диакона Афиногена Егоровича Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high-for-written-structure",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный лист прочитан вручную; мартовские строки, месячный итог и апрельские строки разделены, проверены все подписи P1543; год после границы книги не домыслен."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

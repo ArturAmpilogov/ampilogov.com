@@ -1,44 +1,51 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-90",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — технический вариант идентификатора",
+  "recordType": "technical-source-alias",
+  "parallelOf": "YA-772ECBA6-090",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 90
+    "scanNumber": 90,
+    "title": "Метрическая книга за 1904 год",
+    "asRead": "Тот же физический лист, что и YA-772ECBA6-090"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/90"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-772ECBA6-90-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
-    }
-  ],
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0090-full-view.jpg",
-    "sha256": "b2e50274c1dc3e3d734b715d5300043c0681fcab98cd633f3914ec0acb6b2d2a",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0090-target-entry.jpg",
-        "sha256": "85a1d522dff5f6843a289d17a246f6e2b20397c09630b2a226cc6cc0b0dece3b"
-      }
-    ]
-  },
+  "mentions": [],
   "transcription": {
-    "status": "needs-recapture-before-family-record",
-    "literal": "Сохранённые локальные снимок разворота и целевой фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию.",
-    "modernInterpretation": "Без качественной пересъёмки нельзя ни подтвердить, ни исключить фамильный ряд. Профили, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи."
+    "status": "technical-alias-verified",
+    "literal": "Технический ID без ведущего нуля указывает на тот же catalogId и scanNumber, что YA-772ECBA6-090.",
+    "modernInterpretation": "Отдельного события нет; содержательная расшифровка хранится в каноническом Record YA-772ECBA6-090.",
+    "indexNote": "Совпадение установлено не по индексу, а по exact catalogId, scanNumber, evidence.path и SHA-256 полного скана."
+  },
+  "indexData": {
+    "fuzzyQuery": true,
+    "duplicateEvidence": "exact catalogId+scanNumber+path+SHA match YA-772ECBA6-090"
+  },
+  "evidence": {
+    "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
+    "scanNumber": 90,
+    "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0090-full-view.png",
+    "sha256": "bcd78b26dc33988324f3480adce8a908f75a20690926485366652a673be2bba2",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "event": null,
+  "isRecord": true,
+  "cardKind": "technical-source-alias",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Технический alias канонического Record YA-772ECBA6-090.",
+    "identityNote": "Носители фамильного ряда повторно не создаются и backlink не добавляется.",
+    "migrationNote": "Не картографируется."
   },
   "review": {
-    "status": "needs-recapture-before-family-record",
-    "transcriptionConfidence": "low"
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-scan-path-and-sha",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "technical alias audit; exact catalogId 772ecba6-e417-4fb7-9c2a-a863fd97838b, scanNumber 90, evidence path and SHA-256 match YA-772ECBA6-090; no duplicate event/profile/backlink"
   }
 }

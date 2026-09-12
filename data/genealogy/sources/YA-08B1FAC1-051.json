@@ -2,46 +2,169 @@
   "schemaVersion": 1,
   "sourceId": "YA-08B1FAC1-051",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
-    "scanNumber": "051"
+    "scanNumber": 51,
+    "asRead": "Метрическая книга 1913 года, часть первая о родившихся; май, строка Петра, мужского пола № 139"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/08b1fac1-1f47-471b-89cd-0092199073cf/51"
   },
+  "event": {
+    "type": "birth-godparents",
+    "date": {
+      "iso": "1913-05-18",
+      "display": "18 мая 1913 года (рождение); 19 мая 1913 года (крещение)",
+      "calendar": "source-calendar-unverified",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбургскій мѣщанинъ",
+      "normalized": "Оренбург",
+      "placeId": "orenburg-city"
+    }
+  },
+  "primaryPersonId": "P101934",
   "mentions": [
     {
       "mentionId": "YA-08B1FAC1-051-M1",
-      "role": "other",
+      "role": "child",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
-      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
+      "nameAsTranscribed": "Петръ",
+      "displayName": "Пётр Алексеевич [Скрябин?]",
+      "surnameSeries": false,
+      "uncertainties": ["Фамилия отца читается неуверенно; фамилия ребёнка дана только как осторожная реконструкция."]
+    },
+    {
+      "mentionId": "YA-08B1FAC1-051-M2",
+      "role": "father",
+      "personId": null,
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Алексѣй Григорьевъ [Скрябинъ?]",
+      "displayName": "Алексей Григорьевич [Скрябин?]",
+      "socialStatus": "оренбургский мещанин",
+      "surnameSeries": false,
+      "uncertainties": ["Фамилия читается неуверенно."]
+    },
+    {
+      "mentionId": "YA-08B1FAC1-051-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его [Лукия?] Петрова",
+      "displayName": "[Лукия?] Петровна",
+      "surnameSeries": false,
+      "uncertainties": ["Личное имя читается неуверенно."]
+    },
+    {
+      "mentionId": "YA-08B1FAC1-051-M4",
+      "role": "godfather",
+      "personId": "P101934",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Димитрій Степановъ Ампилоговъ",
+      "displayName": "Дмитрий Степанович Ампилогов",
+      "socialStatus": "оренбургский мещанин",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-08B1FAC1-051-M5",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "Таисія Петрова Орлова",
+      "displayName": "Таисия Петровна Орлова",
       "surnameSeries": false
     }
   ],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/051-full-view.jpg",
-    "sha256": "af23c4b19f52ff25b0d467611cfd17b3bdb6dcaa126fb57bef98f52cd5306bea",
+    "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-full-view.png",
+    "sha256": "697acdc3dec17f70eb8ce71f3e3a54aa3867f6d9eb102aff72fd08d26d6d729f",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/051-target-entry.jpg",
-        "sha256": "34fee593e99066210eede9d3dfaabe61156a7381200ceba9fb61b00bfb5fffb0"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-header.png",
+        "sha256": "15432f74e355830f6eb2bdb2f4b18becb14d72a72a509ae8b850be7ab326d07d",
+        "description": "Заголовок метрической книги 1913 года и названия граф части о родившихся."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-target-entry.png",
+        "sha256": "7117905c0cd6db516770aa9a19dd38153a50b993bf8c3194af9510fef07cb075",
+        "description": "Исправленный крупный фрагмент всей строки Петра: даты, ребёнок, родители, восприемники и причт."
+      }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
+        "scanNumber": 51,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "697acdc3dec17f70eb8ce71f3e3a54aa3867f6d9eb102aff72fd08d26d6d729f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-header.png",
+            "sha256": "15432f74e355830f6eb2bdb2f4b18becb14d72a72a509ae8b850be7ab326d07d",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0051-target-entry.png",
+            "sha256": "7117905c0cd6db516770aa9a19dd38153a50b993bf8c3194af9510fef07cb075",
+            "description": "Исправленный крупный фрагмент всей строки Петра с восприемником Дмитрием Степановичем Ампилоговым."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5532x4540",
+          "targetDimensions": "5080x850",
+          "method": "original-download-plus-manual-full-row-recrop-and-full-scan-reading"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
     ]
   },
   "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видны майские записи о крещении детей иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все названные родители, восприемники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "status": "complete-for-relevant-row-with-uncertainties",
+    "literal": "1913 год, часть первая, о родившихся. Май. Мужского пола № 139. 18 родился, 19 крещён. Петръ (помета: «пам. 18 мая»). Оренбургскій мѣщанинъ Алексѣй Григорьевъ [Скрябинъ?] и законная жена его [Лукия?] Петрова; оба православные. Восприемники: Оренбургскіе мѣщане Димитрій Степановъ Ампилоговъ и Таисія Петрова Орлова. Таинство совершил [Максимъ Поповъ?].",
+    "modernInterpretation": "18 мая 1913 года у оренбургского мещанина Алексея Григорьевича и его законной жены, имя которой читается неуверенно, родился сын Пётр; крещён 19 мая. Восприемниками были оренбургские мещане Дмитрий Степанович Ампилогов и Таисия Петровна Орлова.",
+    "indexNote": "Индекс Яндекса правильно указал Дмитрия Степановича Ампилогова как восприемника, но прежняя карточка ошибочно объявила совпадение неподтверждённым. Полная строка найдена на развороте и прочитана вручную; автоматически выбранный фрагмент заменён.",
+    "localOcr": "Панива и цесітьянсках ілвища Зликдія\nТеренть /а Памода.\nОренбурчсний мивщанинх СеДіпрь\nвасильнч приволилиь и эи іна\nксаломизяка Зинайа Петрова",
+    "localOcrWithSurnameLexicon": "Панови и цесіянсках івища Зликдія\nТеренть /а Камова.\nОренбурний лівщаних Сеніпра\nвасильня приволилиь и ди іна\nксаломизяна Зинайа Петрова",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Метрическая строка фиксирует рождение и крещение Петра; исследуемый Дмитрий Ампилогов назван восприемником.",
+    "scopeNote": "Помета о памяти/смерти ребёнка относится к Петру и не является событием Дмитрия Ампилогова; сведений о переселении нет."
+  },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "status": "manually-verified-from-full-scan-corrected-false-negative",
+    "transcriptionConfidence": "high-with-listed-uncertainties",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1913 spread, headings, May row of Petr no. 139, dates, child, parents, both godparents, marginal note and sacrament column; false negative corrected",
+    "unresolved": [
+      "Фамилия отца, имя матери и имя совершителя таинства читаются неуверенно и не нормализованы без оговорок.",
+      "Другие упоминания Дмитрия Степановича Ампилогова должны быть проверены до объединения в один профиль."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Оренбургские мещане: Дмитрий Степанов Ампилогов и Таисия Петрова Орлова. ... Крёстный отец: Дмитрий Степанов Ампилогов, оренбургский мещанин.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Оренбургский мещанин Дмитрий Степанович Ампилогов был восприемником Петра, родившегося 18 и крещённого 19 мая 1913 года."
   }
 }

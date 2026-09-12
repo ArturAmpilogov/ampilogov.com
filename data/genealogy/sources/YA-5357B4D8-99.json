@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "нелль Саслоагіно\nневлотть: Ивань Жкда-\nноаг, слиґсаніцою\nМаслость и Т'ямо-\nКудинось.\nДела Ново- беорчіселки оеріое:\nСфреть Корибецній, ОН\nмеонь Невпроечи Але-\nотопой Коровецнийі поне.\nваосснайлоста",
+    "localOcrWithSurnameLexicon": "селиь Маслоагі но\nневноть: Ивань Жда-\nного, слисаніцю\nМаслость и Т'ямо-\nО ей\nКудинось.\nДела Ново - беоргіселки періок:\nСфрень Корибецкій, ОН\nмень Невпровчи Але-\nпотой Коровецний поне.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0099-target-entry.jpg",
         "sha256": "ff53b07c44b50e5714e6c1e0fb033ea3a260ff4fceed30bf93cd694d86741ca7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "5357b4d8-10f9-47d5-be8d-46afb8441d70",
+        "scanNumber": 99,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0099-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0099-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "6628da75af3d867b83aa1539ff7994429691bc6a41b68e891f3ac4fa2aa126f8",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0099-header.png",
+            "sha256": "80d94137632c7dc3426211fe1f70b76619d33fb1fae9cba9eb37804f61ac3445",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/5357b4d8-10f9-47d5-be8d-46afb8441d70/0099-target-entry.png",
+            "sha256": "22bcce72153f30bce27616bc16250606b077d13a5751530e7a59625ca61172bb",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5004x3969",
+          "targetDimensions": "1382x1154",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Агафон Ампилогов. Поручитель: Ефрем Коробецкий, крестьянин, село Ново-Георгиевка.",
+    "fuzzyQuery": true
   }
 }

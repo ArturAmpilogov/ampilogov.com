@@ -1,45 +1,49 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-4A416A7D-14",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
     "scanNumber": 14,
-    "asRead": "Метрическая книга на 1911 год; проверены видимые строки разворота"
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Старая Богдановка, Софийское, Стрелецкое, Успенка, Федоровка за 1910 г.",
+    "asRead": "Метрическая книга на 1910 год, часть первая, о родившихся; конец марта и начало апреля"
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/4a416a7d-ba44-4979-b1c8-13d336292d38/14"
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/4a416a7d-ba44-4979-b1c8-13d336292d38/14"},
+  "event": {
+    "type": "clergy-service",
+    "date": {"display": "30 марта — 9 апреля 1910 года", "fromIso": "1910-03-30", "toIso": "1910-04-09", "confidence": "high"},
+    "place": {"asWritten": "село Старая Богдановка", "normalized": "Старая Богдановка, Оренбургский уезд", "confidence": "high"}
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4A416A7D-14-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [{"mentionId": "YA-4A416A7D-14-M1", "role": "church-clergy", "personId": "P1653", "displayName": "Михаил Афиногенович Ампилогов, священник", "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ", "surnameSeries": true, "identificationConfidence": "high"}],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Конец марта и начало апреля 1910 года. Видны записи: Мария (30/31 марта), Пётр (31/31 марта), Ирина (3/4 апреля) и Иоанн (8/9 апреля). После мартовских строк подведён итог: мужского пола восемь, женского шесть, обоего четырнадцать. Под актами повторяется: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ».",
+    "modernInterpretation": "Разворот завершает мартовскую и начинает апрельскую последовательность крещений Старобогдановского прихода, подтверждая служение Михаила Афиногеновича Ампилогова. Итоговая строка относится к месячной статистике и не является отдельным событием. Чужие семьи не превращаются в публичные профили; родство и переселение священника не выводятся.",
+    "indexNote": "Прежнее заключение о ложном попадании опровергнуто ручным чтением полного скана. Заголовок даёт 1910 год; индексное «Ампилогов» исправлено по оригиналу на «Ампиловъ». Даты, граница месяцев, имена детей и итог марта проверены непосредственно по листу."
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-full-view.jpg",
     "sha256": "cc1bdf1aab0bbd7843438a4046a16bea81052c31963726b0b3becbbd12ae6f52",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-target-entry.jpg",
-        "sha256": "623e2a50cf9a9d1e4d8a2e25896600e6d953c188674c26616e1d65e30068f907"
-      }
-    ]
+    "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-target-entry.jpg", "sha256": "623e2a50cf9a9d1e4d8a2e25896600e6d953c188674c26616e1d65e30068f907", "description": "Ранняя чистая локальная копия целевой области."}],
+    "parallelCopies": [{
+      "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38", "scanNumber": 14,
+      "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+      "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-full-view.png", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-full-view.png",
+      "capturedAt": "2026-09-11", "sha256": "416014c844c18c1de5f4e4333a3d0af5fa3a91d4a1b77cf4f781cb17530fdbe7",
+      "fragments": [
+        {"kind": "header", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-header.png", "sha256": "a735e37c1c1222abe3eff41383654fc1bb28f2ad135bb9f6f3f5041aae7a10ba", "description": "Заголовок чистого полного разворота части о родившихся за 1910 год."},
+        {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0014-target-entry.png", "sha256": "822a4efd0dae63567970ce39a658a73fd7f79b65f41419047b049a2acef9575a", "description": "Крупный чистый фрагмент записей, месячного итога и подписей причта; без интерфейса Яндекса."}
+      ],
+      "quality": {"originalImageDownloaded": true, "documentOnlyVisuallyConfirmed": true, "targetRowsVisuallyConfirmed": true, "allVisibleRowsChecked": true, "confirmedAt": "2026-09-12", "fullDimensions": "5538x4351", "targetDimensions": "3414x3184", "method": "manual-reading-of-downloaded-original-and-large-clean-fragment"},
+      "publicDisplay": false,
+      "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    }]
   },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  }
+  "indexData": {"querySnippet": "Священник Михаил Ампилогов с псаломщи. яся в Марте месяце было мужского пола восемь (8) женского пола шесть (6) обоего четырнадцать (14) что ствуем.", "fuzzyQuery": true, "discrepancy": "Индекс оборвал подпись и дал фамилию «Ампилогов»; оригинал уверенно читается «Ампиловъ»."},
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {"status": "complete-primary-scan-reading-and-identity-link", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-12", "deepReviewScope": "Полный чистый разворот и крупный фрагмент проверены вручную: переход марта к апрелю, четыре акта, месячный итог и повторные подписи причта; P1653 подтверждён только как священник."}
 }

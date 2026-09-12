@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0232-target-entry.jpg",
         "sha256": "90e92656a587c5a22e846a0f6268661d396d209c9187c018d1676dd8806b294f"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d2a2452c-310d-4063-8c24-f66ea4a2d7af",
+        "scanNumber": 232,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0232-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0232-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "c1acee21c85bb1c7f69709c167f8a40d0644763d5c9b0e5d6f44dc657510ad08",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0232-header.png",
+            "sha256": "d1b01f570dd236203d1816d44cc4cdf708ffe8b13142a2a1045e59dfe233fe1f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d2a2452c-310d-4063-8c24-f66ea4a2d7af/0232-target-entry.png",
+            "sha256": "759365db187af82d26a9701da1a7e1c913f69dad9e65318f03a7e0c49bf97cbd",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5915x4792",
+          "targetDimensions": "1616x715",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Проздыквеющьго ві семть ово Арехангеиоами\nКерестояными сли Преоброосенки Дмитрая\nПетров Алигилогова согь Марос\nСвященнин Мтро Тіризиньново.\nДгонанів Миханлів Прабилинь.\nвелак Ново Арокиноитьского верествямина",
+    "localOcrWithSurnameLexicon": "Продеквающего ві сенть ово Ареханами\nКрестояными сли Преоброонки Дмитря\nПетрова Алигилогова сого Марос.\nСвященний Моро Тризильнов.\nДонині Миханлів Прабилинь.\nвела Ново Прокинитьского верествямина",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Дмитрий Петров Ампилогов, крестьянин, сын крестьянина села Преображенка, село Ново-Архангельское.",
+    "fuzzyQuery": true
   }
 }

@@ -7,7 +7,8 @@
     "catalogId": "f6955a3a-111d-42cd-9c53-ecc5e2203d9b",
     "scanNumber": 1,
     "title": "Национальная электронная библиотека, На штурм, 1943, № 192",
-    "issueDate": "1943-08-17"
+    "issueDate": "1943-08-17",
+    "publication": "Национальная электронная библиотека, На штурм, 1943, № 192"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f6955a3a-111d-42cd-9c53-ecc5e2203d9b/1"
@@ -51,14 +52,28 @@
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "method": "manual-contact-sheet-review-against-full-original-page",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "3633x5158",
+      "targetDimensions": "1420x622"
+    },
+    "catalogId": "f6955a3a-111d-42cd-9c53-ecc5e2203d9b",
+    "scanNumber": 1
   },
   "transcription": {
     "status": "complete-relevant-item-primary-scan-transcription",
     "literal": "Коммунисты Зайцев и Галушенко из подразделения тов. Анпилогова приступили к самостоятельной работе над книгой вождя. Помогает им парторг Анпилогов.",
     "modernInterpretation": "Коммунисты Зайцев и Галушенко из подразделения тов. Анпилогова приступили к самостоятельной работе над книгой вождя. Помогает им парторг Анпилогов.",
-    "indexNote": "Текстовая выдача Яндекса использовалась только как навигационная подсказка. Фамилия и относящийся к ней контекст вручную проверены по сохраненному увеличенному фрагменту; замеченные ошибки OCR исправлены."
+    "indexNote": "Текстовая выдача Яндекса использовалась только как навигационная подсказка. Фамилия и относящийся к ней контекст вручную проверены по сохраненному увеличенному фрагменту; замеченные ошибки OCR исправлены.",
+    "localOcr": "-\n0.\nИ\n-1\nX",
+    "localOcrWithSurnameLexicon": "-\n0.\nИ\n-1\nХ",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -66,10 +81,71 @@
     "status": "complete-relevant-item-primary-scan-transcription-with-local-evidence",
     "transcriptionConfidence": "medium",
     "unresolved": [
-      "Не создавать и не связывать Person без независимого подтверждения тождества; однофамильцы и совпадающие инициалы в периодике неоднозначны."
+      "Не создавать и не связывать Person без независимого подтверждения тождества; однофамильцы и совпадающие инициалы в периодике неоднозначны.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
     ],
     "correctionHistory": [
       "2026-09-11: сохранены полный оригинальный лист, верхняя область и увеличенный целевой фрагмент; релевантный текст визуально сверён, SHA-256 записаны."
-    ]
-  }
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/yandex/YA-F6955A3A-001.json",
+        "event": {
+          "type": "newspaper-mention",
+          "date": {
+            "display": "17 августа 1943",
+            "confidence": "high-for-publication-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-F6955A3A-001-M1",
+            "role": "surname-series-mention",
+            "displayName": "Анпилогов",
+            "nameAsTranscribed": "Анпилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "Коммунисты Зайцев и Гапуленко из подразделения тов. Ульзутаева приступили к самостоятельной работе над книгой вождя. Помогает им парторг Анпилогов.",
+          "modernInterpretation": "Коммунисты Зайцев и Гапуленко из подразделения тов. Ульзутаева приступили к самостоятельной работе над книгой вождя. Помогает им парторг Анпилогов.",
+          "localOcr": "-\n0.\nИ\n-1\nX",
+          "localOcrWithSurnameLexicon": "-\n0.\nИ\n-1\nХ",
+          "collation": {
+            "baseLocalOcr": "not-confirmed-by-local-ocr",
+            "assistedLocalOcr": "not-confirmed-by-local-ocr",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
+  "event": {
+    "type": "newspaper-mention",
+    "date": {
+      "display": "17 августа 1943",
+      "confidence": "high-for-publication-date"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
+  "indexData": {
+    "querySnippet": "Коммунисты Зайцев и Гапуленко из подразделения тов. Ульзутаева приступили к самостоятельной работе над книгой вождя. Помогает им парторг Анпилогов.",
+    "fuzzyQuery": true
+  },
+  "publicCore": true
 }

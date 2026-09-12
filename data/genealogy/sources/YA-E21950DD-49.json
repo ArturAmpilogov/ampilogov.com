@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/e21950dd-e03e-415f-a12d-5b048866a502/0049-target-entry.jpg",
         "sha256": "b3ff388ab6afe8cc2712364e0ae17ca4a77948c8c3c4266fefe9bef5439edf8e"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "e21950dd-e03e-415f-a12d-5b048866a502",
+        "scanNumber": 49,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/e21950dd-e03e-415f-a12d-5b048866a502/0049-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/e21950dd-e03e-415f-a12d-5b048866a502/0049-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d717f02c9dc7f2b638295c1458c85774dd74320bf8dcb1b83d76463684c74466",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/e21950dd-e03e-415f-a12d-5b048866a502/0049-header.png",
+            "sha256": "7d31ddeb64e61945156fcfa5a826262e2dfb5d3320fe9c0610607796076c0f55",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/e21950dd-e03e-415f-a12d-5b048866a502/0049-target-entry.png",
+            "sha256": "f78e2ac45f1984d2b87781a66bc9925793564fc9b2dbec190ccbbb2ed780537d",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5109x4093",
+          "targetDimensions": "1338x1271",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПОГРА\nСТЬ КТОРÁД, Ш БРАКОСОЧСТАВШИ\n1%\nПодп\nRтò Блли порбчйтели.\nЗАПИ\nоженинь: Села До3р\nкрествят Смельянь Матвіні\nПересыпкинв, Епирибонь Семенов\n/lоnовo и Якоlь dlo gronach,\nЛо невністів: того яе с",
+    "localOcrWithSurnameLexicon": "ТИПОГРА\nСТЬ СТОРАД, Ш БРАКОСОЧЕТАВШИ\n1%\nПодп\nКто Бли порбчйтели.\nЗАПИ\nо женинь: Села Довр\nкрествят Смельянь Матвіні\nПересыпкинв, Спириботь Семенов\n/ опово и Яковь dlo gronach,\nМо невністів: того же с",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Поручитель: Иларион Михайлов Калинин, крестьянин, село Добринка. Поручитель: Иван Евфимиев Ампилогов, крестьянин, то же село.",
+    "fuzzyQuery": true
   }
 }

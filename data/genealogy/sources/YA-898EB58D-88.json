@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/898eb58d-b230-41a1-aa5b-da6e30b40ea0/0088-target-entry.jpg",
         "sha256": "9d84a59fdff3552a65f06fb7531c1e498ff5a75073f8ad86140e08307f7c0b31"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
+        "scanNumber": 88,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/898eb58d-b230-41a1-aa5b-da6e30b40ea0/0088-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/898eb58d-b230-41a1-aa5b-da6e30b40ea0/0088-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ce3caab597f1dd0b2c10ab8e3cb72c0738eb866c7d28c0f9cfaee6d6957c455f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/898eb58d-b230-41a1-aa5b-da6e30b40ea0/0088-header.png",
+            "sha256": "cb7aedeffbb10e46996a8ba0ee738244fa798431404d38fa582edc3f391201d2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/898eb58d-b230-41a1-aa5b-da6e30b40ea0/0088-target-entry.png",
+            "sha256": "5fca0ee9b54bb08754b4d710bc4f7b19c62820c5f7ec241a3e9e62a3b87e03e2",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5081x4083",
+          "targetDimensions": "2591x946",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "прест'янеау Іівлиза Даргі)\nюславин\nді вводо кіз Ниполаеіа; аба крав..\nцеттивенн Масна\nМихайлова Колевликова.\nДлажинь бититьй Вошиенькій\nBаM\nАсаломирись Влаимирч. Ильит.\nСега Зобыа коостьянить Иват\nла зойта крестьлнишь Даковы Иома-\nМалимыл Шаев и крестьяи.\nекад Яегвиуа ввдоки Има-\nтіява Кремнева.\nДіатпимитдло Вонеснаій",
+    "localOcrWithSurnameLexicon": "престʼянесу Півлиза Даргі)\nославин\nді вводо кіз Нилолаева; аба крав.\nМихайлова Колевликова.\nДожин битий Вошенькій\nВаМ\nАсаломирись Владимирч. Ильит.\nСега Зобна ноостьянить Иват\nла говна крестьянишь Даковы Има-\nМалимыл Шаев и крестьяи.\nскад девица ввдоки Има-\nтіява Кремнева.\nДіатопимитуло Вонескай",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Дария Димитриева Ампилогова. Родившийся: Евдокия Павлова Шломихина. ... Отец: Димитрий Андреев Ампилогов, крестьянин, село Зобово.",
+    "fuzzyQuery": true
   }
 }

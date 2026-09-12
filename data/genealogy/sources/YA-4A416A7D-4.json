@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "СИПОГРАФІН\nC VHO A\nАлЬНО\n», Ш РодИвШиХеЛ.\nто соверШÁлz тÁннство\nP8K\nкрегрéніл.\nТЕЛЕЙ\nчинг\nнчи-\nАвященным\nса\nRу-\nМлхсина\nкре-\nсвг. Ампилогова\nсвг\nуссна\nшна.\nог псшламщиком\nИВ\nниня\nпов. Сіимоагать\nСосія",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0004-target-entry.jpg",
         "sha256": "edcd16ab94f730a8f0785a025f910758a0437b6e20f654518d7aa6d011d5deb4"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 4,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0004-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0004-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "1c03f7e7d0fb8c5b0a5d1054e1d6183baed10892701dff5e43037b29c30af1ac",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0004-header.png",
+            "sha256": "487dd39fea9700ec8311ed38aae998dbb6606de86e8a5cd62be8eee9ebe5fb7e",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0004-target-entry.png",
+            "sha256": "d1d5c06571fc83287ce18557f4a68cc491bf5fc3ff39adb75029e1638deb5a5c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5419x4320",
+          "targetDimensions": "1200x3749",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым. Священник Михаил А. Шпилогов Псаломщик Тимофей Горяйнов.",
+    "fuzzyQuery": true
   }
 }

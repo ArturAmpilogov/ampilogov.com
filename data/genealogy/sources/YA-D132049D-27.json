@@ -20,16 +20,63 @@
         "path": "data/genealogy/evidence-private/yandex/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/0027-target-entry.jpg",
         "sha256": "189d35b5eef4410e522fad726796846e73ed515d54503716027a45b9054e02b7"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "d132049d-d622-4aa7-bcd1-dcd63e3f7a7c",
+        "scanNumber": 27,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/0027-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/0027-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "9d4cb01b01f2c3e5903ac7fdf49ef3d7ef41754875570a53f0f0e7f710b221e5",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/0027-header.png",
+            "sha256": "935348d638dc22a17a5f6fe6f83faa2067325609e07f7b2f9ceff743ca38c8f0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/0027-target-entry.png",
+            "sha256": "dc16204215d47653e641add5466bb95feeb0d387ac243bb04614d6ed3983e39c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5271x4187",
+          "targetDimensions": "1430x608",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Тойже дереени престьяне Филиты\nАфанасьеоь АмпильгивА, и днвнця\nЕвутая Алексанарива Кулинової",
+    "localOcrWithSurnameLexicon": "Той же деречни престьяне Филипы\nАфанасьеоь АмпилогивА, и днямо\nСвятая Алексанарива Кулиново",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Той же деревни крестьяне Филип Афанасьев Ампилогов и девица Евдокия Александрова Кудинова.",
+    "fuzzyQuery": true
   }
 }

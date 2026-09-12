@@ -7,7 +7,8 @@
     "catalogId": "40b31216-397b-4d1e-8811-228a7339d867",
     "scanNumber": 3,
     "title": "Библиотека им. Н.А. Некрасова, Красный флот, 1941, № 238 (892)",
-    "issueDate": "1941-10-09"
+    "issueDate": "1941-10-09",
+    "publication": "Библиотека им. Н.А. Некрасова, Красный флот, 1941, № 238 (892)"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/40b31216-397b-4d1e-8811-228a7339d867/3"
@@ -44,6 +45,18 @@
         "path": "data/genealogy/evidence-private/yandex/40b31216-397b-4d1e-8811-228a7339d867/0003-target-entry.jpg",
         "sha256": "f33b0760640bf2bdb2229d2127c8ba5856803ab9a37047c887a600b52b13dca4",
         "description": "Увеличенный фрагмент с фамилией Анпилогов и относящимся к ней контекстом."
+      },
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/40b31216-397b-4d1e-8811-228a7339d867/0003-header.png",
+        "sha256": "4347fa1ee5d2ef08a6c9f3f0704b9c2abf4a2465a613c090f0f68173ffbc6f1a",
+        "description": "Фрагмент исходной полосы, фиксирующий заголовок или структуру листа."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/40b31216-397b-4d1e-8811-228a7339d867/0003-target-entry.png",
+        "sha256": "80310cfde6198044a0c5beddebf5f89ae555b6db12d56fc1aa4be7ed803bb8f2",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -51,14 +64,28 @@
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-11",
-      "method": "manual-contact-sheet-review-against-full-original-page"
-    }
+      "method": "manual-contact-sheet-review-against-full-original-page",
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "4871x6779",
+      "targetDimensions": "1200x1088"
+    },
+    "catalogId": "40b31216-397b-4d1e-8811-228a7339d867",
+    "scanNumber": 3
   },
   "transcription": {
     "status": "complete-relevant-item-primary-scan-transcription",
     "literal": "Близится час разгрома лютого и кровожадного врага крестьянства — гитлеризма. Г. АНПИЛОГОВ.",
     "modernInterpretation": "Близится час разгрома лютого и кровожадного врага крестьянства — гитлеризма. Г. АНПИЛОГОВ.",
-    "indexNote": "Текстовая выдача Яндекса использовалась только как навигационная подсказка. Фамилия и относящийся к ней контекст вручную проверены по сохраненному увеличенному фрагменту; замеченные ошибки OCR исправлены."
+    "indexNote": "Текстовая выдача Яндекса использовалась только как навигационная подсказка. Фамилия и относящийся к ней контекст вручную проверены по сохраненному увеличенному фрагменту; замеченные ошибки OCR исправлены.",
+    "localOcr": "е нет»\nс наши себе могилу на\nнграду, других-очути-",
+    "localOcrWithSurnameLexicon": "е нет»\nс наши себе могилу на\nнграду, других-очути-",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
@@ -66,10 +93,71 @@
     "status": "complete-relevant-item-primary-scan-transcription-with-local-evidence",
     "transcriptionConfidence": "medium",
     "unresolved": [
-      "Не создавать и не связывать Person без независимого подтверждения тождества; однофамильцы и совпадающие инициалы в периодике неоднозначны."
+      "Не создавать и не связывать Person без независимого подтверждения тождества; однофамильцы и совпадающие инициалы в периодике неоднозначны.",
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
     ],
     "correctionHistory": [
       "2026-09-11: сохранены полный оригинальный лист, верхняя область и увеличенный целевой фрагмент; релевантный текст визуально сверён, SHA-256 записаны."
-    ]
-  }
+    ],
+    "mergeAlternateReadings": [
+      {
+        "sourcePath": "data/genealogy/sources/yandex/YA-40B31216-003.json",
+        "event": {
+          "type": "newspaper-mention",
+          "date": {
+            "display": "9 октября 1941",
+            "confidence": "high-for-publication-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-40B31216-003-M1",
+            "role": "surname-series-mention",
+            "displayName": "АНПИЛОГОВ",
+            "nameAsTranscribed": "АНПИЛОГОВ",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "Г. АНПИЛОГОВ.",
+          "modernInterpretation": "Г. АНПИЛОГОВ.",
+          "localOcr": "е нет»\nс наши себе могилу на\nнграду, других-очути-",
+          "localOcrWithSurnameLexicon": "е нет»\nс наши себе могилу на\nнграду, других-очути-",
+          "collation": {
+            "baseLocalOcr": "not-confirmed-by-local-ocr",
+            "assistedLocalOcr": "not-confirmed-by-local-ocr",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+          ]
+        }
+      }
+    ],
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  },
+  "event": {
+    "type": "newspaper-mention",
+    "date": {
+      "display": "9 октября 1941",
+      "confidence": "high-for-publication-date"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
+  "indexData": {
+    "querySnippet": "Г. АНПИЛОГОВ. ... Близится час разгрома лютого и кровожадного врага крестьянства-гитлеризма. Г. АНПИЛОГОВ.",
+    "fuzzyQuery": true
+  },
+  "publicCore": true
 }

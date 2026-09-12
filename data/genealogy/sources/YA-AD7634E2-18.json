@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/ad7634e2-b7eb-4191-bb63-b121a89ed00a/0018-target-entry.jpg",
         "sha256": "7d01187c50a46dac29f2050add54f7a00399bb651c6ffa2df20d42a628151baf"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ad7634e2-b7eb-4191-bb63-b121a89ed00a",
+        "scanNumber": 18,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ad7634e2-b7eb-4191-bb63-b121a89ed00a/0018-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ad7634e2-b7eb-4191-bb63-b121a89ed00a/0018-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "b95587c4d9754b1d888380888309c22d67aac585959e9ca0f3418659c9188a32",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ad7634e2-b7eb-4191-bb63-b121a89ed00a/0018-header.png",
+            "sha256": "1ccc15c29a6ef14294c68dfb820125dcc87854eefa6145685107c7c7b5a27b93",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ad7634e2-b7eb-4191-bb63-b121a89ed00a/0018-target-entry.png",
+            "sha256": "96314db3f11bbd5d68dc60f65bc3d9f4fbe038511f589a820986ff45f9a7b29f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5347x4238",
+          "targetDimensions": "1401x806",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "вороржланий аЕйборовь Апн\nПилочово, села Гоорневки кресдь\nаиним\nанки Варвара Нетреви\nГоряйнова.\nСиа Зекдлсвин Крествяшнвь\nДистти МуиисяАК Умырен\nновь, оребурчений споженном",
+    "localOcrWithSurnameLexicon": "ворожаний вЕторовь Апн\nПилогово, села Горновки преодь.\nанки Варвара Нетреви\nГерайнова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Села Георгиевки крестьянин Ворфоломей Феодоров Ампилогов, села Георгиевки крестьянка Варвара Петрова Горяйнова.",
+    "fuzzyQuery": true
   }
 }

@@ -51,12 +51,50 @@
       "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5652x4566",
       "targetDimensions": "5292x3736"
-    }
+    },
+    "parallelCopies": [
+      {
+        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+        "scanNumber": 210,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "69e62fbdf2fc9a2cd3c7c41631ce2a58708777b6f0015f41a80a0fd168b4eff4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-header.png",
+            "sha256": "02e3072c7ec94550099347be316308b094204051e3fd0101152b2c9e904c2bc6",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0210-target-entry.png",
+            "sha256": "385ad97d92ca15ffbc9c24d44baf37dda0aa1aced1d3e489416fd45a6ff8d7ab",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5652x4566",
+          "targetDimensions": "1385x1195",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "unresolved": [],
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ],
     "correctionHistory": [
       "2026-09-09: прежнее ложное исключение исправлено после повторного захвата и ручного чтения оригинала высокого разрешения."
     ]
@@ -65,8 +103,19 @@
     "status": "primary-scan-transcription",
     "literal": "В одной записи восприемникъ — села Кармалки крестьянинъ Стефанъ Филипповъ Ампилоговъ. В другой: Стефанъ Филипповъ Ампилоговъ и солдатская жена Гликерія Тимоѳеева Ампилогова.",
     "modernInterpretation": "Степан Филиппович Ампилогов дважды назван восприемником в майских записях 1911 года; во второй записи вместе с ним указана Гликерия Тимофеевна Ампилогова.",
-    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Фамилия, имена и роли прочитаны заново по сохранённой локальной копии оригинального скана; неоднозначные отождествления с одноимёнными профилями не выполнялись."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Крестьянская отьвищопситам(я\nМихаплова Хвалева.\n16гог0-оресолакрестияниньотте-\nфанча Фалинговло овгитисогивчо\nи солтатска, жека (ликенія\nінтитоаева склишлогова.\n,ранска тосе восять(а\nбоег\nніаконьвогій Собдовь.\nоолас\nдяй Во Злесшскій",
+    "localOcrWithSurnameLexicon": "Крестьянская отовищо пситамя\nМихайлова Хвалева.\nи солдатска, жена (ликенія\nінтимова склишлогова .\nбоег\nДіаконь соній Собдовь.\nоблас\nдей Во Знестский",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record"
+  "cardKind": "named-primary-record",
+  "indexData": {
+    "querySnippet": "Того же села Крестьянин Стефан Филиппов Ампилогов и крестьянская девица Наталия Михайлова Хвалева.",
+    "fuzzyQuery": true
+  }
 }

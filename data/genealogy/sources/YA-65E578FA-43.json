@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "о м\nАлакдів Колпнв.\nвящення\nDivKeur duescoso pr meskobo\nАмекчикі 1$\nФімконі Агоксаноріі техолавіь\nДіакцнь Помножень Алпгилоховіь\nени Пимнняго Кулибера перосьянииас\nвренвія Пирислови залитянного в.Анирошнв-\nввяжентя Класфі Кавичиня\nSixoper Anexenno fir snea hubr",
+    "localOcrWithSurnameLexicon": "о м\nАлаков Ковпана.\nсвящення\nDianour drescaso per mestolo\nАнексикі 1$\nФін коні Агоксанорі техоловів\nДілкинь Помножень Ампилововіь\nени Пилиняго Кулибера пересьянинас\nвренрія Пирислови залитянного в.Анирошнв-\nСвященти Класфі? Кавичин",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,50 @@
         "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0043-target-entry.jpg",
         "sha256": "398fb486a8cd67c1e21bf42bde77b7ae4cf3583d01eab7e54dd5dcde013f94c8"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "65e578fa-44e6-4cd9-8d6d-8eda78f181fd",
+        "scanNumber": 43,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0043-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0043-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "d2a4cae5822e6c3d3c6914f674cfdc3c6be7bd8d8605d2141a289a58bb67ab95",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0043-header.png",
+            "sha256": "c9e6203679ba7258939b1b5fde994d7806c8192517776963888deec3a45dcec2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/65e578fa-44e6-4cd9-8d6d-8eda78f181fd/0043-target-entry.png",
+            "sha256": "06231b7c6547fdcd03d9a2fb83765b443b491e861413d4869b549cd5644e447e",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5436x4247",
+          "targetDimensions": "1536x913",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета солдата Егора Максимова Ясакова сын Николай Священник Клавдий Калинин Диакон Александр Теплов.",
+    "fuzzyQuery": true
   }
 }

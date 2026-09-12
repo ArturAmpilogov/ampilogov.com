@@ -2,13 +2,92 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-224",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": { "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3", "scanNumber": "224" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/224" },
-  "mentions": [{ "mentionId": "YA-48925CD3-224-M1", "role": "church-clergy", "personId": "P1543", "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ", "displayName": "Афиноген Ампилогов, диакон", "surnameSeries": true }],
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/224-full-view.jpg", "sha256": "df31514efcb2b4c95c141290b8d7f4b381f0f4e0697683418a679538304e1e9a", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/224-target-entry.jpg", "sha256": "237f3f7bacc34bc491c2b3f3816c231140957a5474dfb65f9bfc41129e870b23" }] },
-  "transcription": { "status": "primary-scan-transcription", "literal": "Священникъ Іоаннъ Поляковъ; Діаконъ Аѳиногенъ Ампилоговъ. Подпись повторяется при записях о родившихся в селе Слоновке.", "modernInterpretation": "В 1916 году диакон Афиноген Ампилогов неоднократно участвовал в совершении крещений Николаевской церкви села Слоновки.", "indexNote": "Индекс использован только для поиска; имя и роль проверены по нескольким подписям оригинала." },
+  "recordType": "clergy-service-on-birth-register-page",
+  "primaryPersonId": "P1543",
+  "collection": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 224,
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть первая, о родившихся"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/224"
+  },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "8–25 декабря 1916 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Слоновка",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-48925CD3-224-M1",
+      "role": "church-clergy-deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-48925CD3-224-M2",
+      "role": "parent-of-baptized-child-context",
+      "personId": null,
+      "nameAsTranscribed": "Евдокія Феодорова Полтавцева",
+      "displayName": "Евдокія Феодорова Полтавцева",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть первая, о родившихся». В целевой строке/графе контекста читаются: Евдокія Феодорова Полтавцева. При каждой видимой записи повторяется подпись причта: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон при крещениях детей других семей Слоновского прихода. Он не является членом перечисленных семей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с участниками соседних граф. Полный разворот разделяет роли."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова (8–25 декабря 1916 года).",
+    "relationshipBoundary": "Участники актов имеют другие фамилии и сохранены только как контекст без профилей; родство и миграция Афиногена не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянская Евдокия Феодорова Полтавцева, православная Священник Иоанн Поляков Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье или поручителям акта."
+  },
+  "evidence": {
+    "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
+    "scanNumber": 224,
+    "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-full-view.png",
+    "sha256": "d9162b4cf585e6f70da43d055c458e5b27c0b749c4853ca52a7793fbf9e74a29",
+    "fragments": [
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-target-context-deep.jpg",
+        "sha256": "c37828bfd64bdd8cee820b1be0b0262feee8869f92c755290cd9818da9de884a",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границ раздела и служебных подписей причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "4455x3640",
+      "targetDimensions": "4200x3350",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 224 и все видимые строки прочитаны вручную; проверены даты, участники, восприемники и крещения, месячные границы/итоги и повторная подпись причта. P1543 подтверждён только в служебной роли; полноширинный крупный фрагмент создан из full-view и сверен с оригиналом."
+  },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": { "status": "primary-scan-verified", "transcriptionConfidence": "high", "unresolved": [] }
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

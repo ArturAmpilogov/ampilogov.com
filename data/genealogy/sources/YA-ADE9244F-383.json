@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/ade9244f-8942-4122-8661-f770ce4333df/0383-target-entry.jpg",
         "sha256": "3793715663bff2d429dcba10888e6701f1916c13a04dfef43ed6be9da0fe573d"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "ade9244f-8942-4122-8661-f770ce4333df",
+        "scanNumber": 383,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/ade9244f-8942-4122-8661-f770ce4333df/0383-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/ade9244f-8942-4122-8661-f770ce4333df/0383-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "eef0d49280278fdfa093c90745fc78965db018ba8c10f7073ae73a12c7f7f5c7",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/ade9244f-8942-4122-8661-f770ce4333df/0383-header.png",
+            "sha256": "8d8f23e372c854dd93ffc8ab703626079b88b8fcfb0c312d9d9067c1b6182060",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/ade9244f-8942-4122-8661-f770ce4333df/0383-target-entry.png",
+            "sha256": "d5cf8eede0859d19dfb3c7513c10a5b362c68b89dc9db9534ea30c8c42f3a2a6",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "3174x4211",
+          "targetDimensions": "1200x1058",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "єниуà.\nHEB'T\nй которымх бракому.\nНогоoчcе уповда,\nанв. к тересвит\n22\nюрспсі дочідньвма\nантепслтора\nианочиа.\nМнтурани",
+    "localOcrWithSurnameLexicon": "єника.\nHER'T\nй которыму бракому.\nНого оче уповда,\nанв. к тересвит\n22\nюрспі догіднама\nантенастора\nМинтрани",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Отец невесты: Георгий Ампилогов, крестьянин, тот же уезд, волость и поселок. Невеста: Александра Шаньгина Горчакова, крестьянская дочь, девица, тот же уезд...",
+    "fuzzyQuery": true
   }
 }

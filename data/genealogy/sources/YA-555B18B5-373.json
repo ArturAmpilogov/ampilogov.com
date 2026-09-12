@@ -25,7 +25,13 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "11211182006.\nДля\nhccn\nПожениаь крестьяне сеса Кармая\nКи: ЛукьяньАишилоговь, Анфрей Ан-\nпилоговыи Диспттрій Анегчино-\n2ово;\nпо невтьсгтить: плого-огеесенаперестть-\nяте: Васлій Миляєвь, Кампстраль\nВерейвинык Прохорв Павловь\nлед!\n1оженгеяь Крестьяне хитораВа-\nэлогшинского: Ловьянь Свонь,Андрей?\nМощань и Ивань Лильниувь;\n1о гневлосгить кресптвяне 122ого-ожсе ху-\n11гора: Лукьянь Сколь, Алдрей Моцзакь\nи Астафіяд Носттрахь.",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +42,50 @@
         "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0373-target-entry.jpg",
         "sha256": "e183e8b02a312562155076cd42040b2d55c319d7cdd839c5844299a98b1f5e88"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "555b18b5-0fe8-4819-b2b6-427537fbf34d",
+        "scanNumber": 373,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0373-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0373-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "66f904c3bdd4edf938391cf386c71872d1e9635957b65125eb35585a847d7b80",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0373-header.png",
+            "sha256": "0816396895c4bd660891146d4d22a0c0631013aacec7f15ba698478a6f5f1551",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/555b18b5-0fe8-4819-b2b6-427537fbf34d/0373-target-entry.png",
+            "sha256": "8b54ba590a96601161ad61e42e141a38c68b550de857d07d00f53eab1e506c2c",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4980x4226",
+          "targetDimensions": "1468x1778",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
+  },
+  "indexData": {
+    "querySnippet": "По женихе крестьяне села Кармалки: Лукьян Ампилогов, Андрей Ампилогов и Димитрий Ампилогов; По невесте: того-же села крестьяне: Василий Миляев...",
+    "fuzzyQuery": true
   }
 }

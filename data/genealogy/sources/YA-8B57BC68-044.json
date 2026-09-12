@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/044-target-entry.jpg",
         "sha256": "1c490f4bb728b0f937a8753b70c79a1d99c059dcd5d6feba09e7d810491536de"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8",
+        "scanNumber": 44,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0044-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0044-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "7b87f5c9879a2b43448a27f3645dc3f1bf7a3a3f3794b0ade56a75791974859a",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0044-header.png",
+            "sha256": "abe849367645e5761a3e2c4000d4c510926a8623e651124f21647cbc34e96377",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0044-target-entry.png",
+            "sha256": "3fff825f8f637d3f5867219f22840c1cfbb317910882a0b91027133717a856ff",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4999x4201",
+          "targetDimensions": "2919x995",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "МОД ДЛЦИ\nИСТРИЧЕСКОЙ НЙГИ NА/92*\nгóди, чáсть первад, щ\nЗвáніє, ПлА, бтчЕство й фамиаіл родитєлєй, й какóги\nЗвáніє, ймл, бтчество й фалиліл\nKT\nоднБШиусА.\nвбронсповвданїа.\nБОСПрЇЄМНИКШБZ.",
+    "localOcrWithSurnameLexicon": "ИСТРИЧЕСКОЙ НИГИ NА/92*\nгоди, часть первал, щ\nЗвАніє, ПлА, отчЕство й фаміл родителей, й какги\nЗваніє, ймл, отчество й фалиліл\nКТ\nодиБШиусА.\nв бронсповдана.\nБОСПрЇЄМНИКШЕ.",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Алексий Егоров Ампилогов. Крёстная мать: Агрипина Стефанова Стрельникова, крестьянка, то же село.",
+    "fuzzyQuery": true
   }
 }

@@ -25,21 +25,58 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ЙЧВОКОЙ КНИГИ НАХ9О\nBidI, ENA, ÓruTo i fueida posÁrRul, à cuico\ntngia\nAposoe fueta\nОиа Партівак Кристиает\nOrespaciss Mintaniall ls",
+    "localOcrWithSurnameLexicon": "ИЧВОКОЙ КНИГИ НА ХРО\nangia.\nApose funta\nВона Партіван Кристае",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0124-full-view.png",
-    "sha256": "7d99045d59a4333b212739b0280eee80a6465fcad632715c91143f08c659f15f",
+    "sha256": "1fd7303948f4cb3ec9bf8126aec344006549f7703398ecb7037b9927bccac738",
     "fragments": [
       {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0124-header.png",
+        "sha256": "922103e899dbbcad05571316f54721ea13064fca60d3115fb800fbbe6e2ecadb",
+        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0124-target-entry.png",
-        "sha256": "9b608c328e41cc6020991461654b415b74d17c672d5d57311ac0c6ca6358e5ef"
+        "sha256": "79217b49d7bb4a2218001a9b4a2c0387259ffe975605f4ac1e78542c1fc1a603",
+        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       }
-    ]
+    ],
+    "catalogId": "4df930de-a499-495f-820d-2eb4d8bb8d77",
+    "scanNumber": 124,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "localBackup": "data/genealogy/evidence-private/yandex/4df930de-a499-495f-820d-2eb4d8bb8d77/0124-full-view.png",
+    "capturedAt": "2026-09-10",
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedFromTextCoordinates": true,
+      "fullDimensions": "1238x986",
+      "targetDimensions": "1200x896",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+    },
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Петр Исаиев Ампилогов. ... Отец: Исаия Петров Ампилогов, крестьянин, село Георгиевка. Мать: Анисія Иоаннова Щетинина.",
+    "fuzzyQuery": true
   }
 }

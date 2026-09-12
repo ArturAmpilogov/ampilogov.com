@@ -25,7 +25,14 @@
     "status": "primary-scan-reviewed-no-match",
     "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
     "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ГИПогРаФ\nTHO\nАльНОМ\nй рОДИвШиХеЛ.\nКIтò соБЕршÁлZ тÁинство\nPУкоп\nкрецініл.\nТЕЛЄЙ\nсн-\nКрященникг\nва\neо\nвян\nПримита\ns-\nАлигилогав\nТин-\nег пскомуика\nЯРХИВ\nРгоргСмирнать.\nовал.\nТмип",
+    "localOcrWithSurnameLexicon": "ГИПогРаФ\nTHO\nАльНОМ\nй рОДИвШиХеЛ.\nРУкоп\nкрецініл.\nТЕЛЕЙ\nсн-\nКрященникг\nва\nео\nвян\nПримита\ns-\nАлигилогав\nТин-\nРор Смирнать.\nовал.\nТип",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
   "evidence": {
     "publicDisplay": false,
@@ -36,10 +43,53 @@
         "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0042-target-entry.jpg",
         "sha256": "e5eadbcd15037e511e598a7568d00b5342e535ae9b5300d7748acf544c723ffb"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+        "scanNumber": 42,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0042-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0042-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "e9ff2e7286dc21c312a0fece2b0c83373fa4e66fb7ff4a87d221997845e9bb7f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0042-header.png",
+            "sha256": "c49e3bcf91e16b35455b725face01d6ab1398b970866d2e1bfc2eb71828fb25b",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0042-target-entry.png",
+            "sha256": "a26eb2b8c10afd702fa2cf977e7bf37bd0fea4dea3ddbe13b611dacd566f1294",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5552x4408",
+          "targetDimensions": "1200x3752",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "19. Феодор. Священник Михаил Ампилогов с псаломщика ор Смирнов. Тимофеем Горяйковым. свидетельствовал Благочинный, Священник Ф.",
+    "fuzzyQuery": true
   }
 }

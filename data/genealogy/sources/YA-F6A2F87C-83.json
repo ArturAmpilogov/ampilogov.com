@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0083-target-entry.jpg",
         "sha256": "30a5cfee59c4378a594ddae849059977a453a05d0a5fbbb3f0b8906334584054"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 83,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0083-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0083-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "df9eb5aa481422dfada28121e04c04ef1e28981fad9cfbba9d041f02d227266f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0083-header.png",
+            "sha256": "fd2ef2de406a2b592f57922bd46d892ebba9cf7aa0b0f4afaa10b0ee26f089b0",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0083-target-entry.png",
+            "sha256": "07c64fb389ddc4a1035305bf0ee9d14c4930f3d8a434a1b4b2f461683c51f680",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "4664x3695",
+          "targetDimensions": "1307x917",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "Рена Мамайковки Коствянина- Овящен\nВасикій Захортевь Свиридовь\nмювей\nи Сондаткаr Натрона Рльнна\nКудиноса.\nРена (Никанловки кроствениня\nЕгорь МонаткевьсНемехавть\nСвяяуе\nи прествянка Мавка Жихайкка\nмодей",
+    "localOcrWithSurnameLexicon": "Рена Мамайковки Коствянина- Овящен\nВасикій Захортевь Свиридовь\nмовей\nи ондатка Натрона Ильина\nКудиноса.\nРена (Никановки кроствениня\nЕгорь Манатье вь Лемехавть\nи прествянка. Мавка Жихайнка\nмодей",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "той же деревни крестьянин Захарий Григориев Ампилогов и девица Параскева Евтихиева Дымова. Псаломщик Алексей Стефанов мофей Августов с.",
+    "fuzzyQuery": true
   }
 }

@@ -29,16 +29,66 @@
         "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0470-target-entry.jpg",
         "sha256": "ae6de13f04caa77c6ae565926a3d1f7bf83d4ced421796b6747f5100f2cf0065"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "cd0edfaf-e748-419a-8e5d-7cd0c26042b9",
+        "scanNumber": 470,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0470-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0470-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "bcd71398bcddffdcfbf83e6ecbfd0479ec75169148964006cda8cb410a273cdb",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0470-header.png",
+            "sha256": "041ce000e8d346b5cd8203a6f3560017ae3535b36c9529cbe811556ebdb9d0f2",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cd0edfaf-e748-419a-8e5d-7cd0c26042b9/0470-target-entry.png",
+            "sha256": "406de39067fe4ab80c41babfa61a1d5563900112ce4377871cc78f340a4b7f90",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5277x4148",
+          "targetDimensions": "1345x676",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
     "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "литоваКлопоы и крествитская охема пао\nНаріа -Свевлва Клапова\nДеревии Салтанма селдать Slempa\nЛоврентевь оипнологово и престван-\nскла дочь дневица Надеонда Дпилеонова\nДалтенкова.",
+    "localOcrWithSurnameLexicon": "литова Клопы и крествитская охема поо\nПарія Свавва Клопова\nДеревни Салтанма солдать Slempa\nНоврентевь иппологово и престван-\nскла дочь девица Надеода Опилеснова\nДалтенкова.",
+    "collation": {
+      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Деревни Салтаима солдат Петр Лаврентиев Ампилогов и крестьянская дочь девица Надежда Тихонова Болтенкова. Псаломщик Алексей Стефанов.",
+    "fuzzyQuery": true
   }
 }

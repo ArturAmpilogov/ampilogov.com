@@ -20,16 +20,66 @@
         "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0149-target-entry.jpg",
         "sha256": "e078a4661cf010869cc71affdea82147b9e3b6a6769a2788d278c0eafdb35f20"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "b799f230-f104-40e4-b260-fbb17506fe01",
+        "scanNumber": 149,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0149-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0149-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "4e5e2e226ce20cc435ae8278ca3e32bf3d1bf3d7ab97132536d4bdac09eab5d6",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0149-header.png",
+            "sha256": "37a18dd4eb2dc48d53ae53ae81db3328f35ed99a2e50e708a6ffc59652ae9f9f",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0149-target-entry.png",
+            "sha256": "3b79c9c955d624f04e1687b8fd855f755e9e45ba385e961009abcf921d00765a",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5946x4666",
+          "targetDimensions": "1725x612",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    ]
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "тишwи\nрабиллив. -\nСвяиренним Аметсі.\nОмишлочны\nНса ломиццюв Дмишазий\nгеросля-Чиблискаг\nсн аго поселко нрах Да-\nНиколай Лазаре\nнорг. вольвьєво изальмиу\nжепоселка жена",
+    "localOcrWithSurnameLexicon": "рабиллив. -\nСворенним Алексі.\nО мишлочны\nгероля - Чибискаг\nсн аго поселко нерах Да-\nНиколай Лазаре\nноро воловьєво нзальмиу\nжепоселка жена",
+    "collation": {
+      "baseLocalOcr": "not-confirmed-by-local-ocr",
+      "assistedLocalOcr": "not-confirmed-by-local-ocr",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Гражданин гор. Владикавказа Псаломщик Дмитрий Грабилин. Ампилогов. Январь.",
+    "fuzzyQuery": true
   }
 }

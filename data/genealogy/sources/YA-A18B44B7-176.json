@@ -20,16 +20,62 @@
         "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0176-target-entry.jpg",
         "sha256": "debb9a5fac3894875da6aa629891808576df64b03d25f3a618594caee50085ac"
       }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "a18b44b7-5e87-4665-ba1b-2c22ec1d1315",
+        "scanNumber": 176,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0176-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0176-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "314c6e49851c0de67e3d60d8acc1e46dd9cdc69a264b3b00b13808b35a9f28a4",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0176-header.png",
+            "sha256": "632f954efa008bf32ef9659e95335dd0239f731a774779f622910ad71caae517",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/a18b44b7-5e87-4665-ba1b-2c22ec1d1315/0176-target-entry.png",
+            "sha256": "102f5e6048f2b196a8992bb49ebbed2489030cdd10057dac76516ca8747cf61f",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5897x4697",
+          "targetDimensions": "1200x3912",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
+    "status": "complete-source-preserved-with-local-ocr-collation",
     "transcriptionConfidence": "high"
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "localOcr": "ТИПОГРАФ\n,, Ш РОДИВШИХСА.\nКтò совершáль. тáинство\nPSI\nкрецiéніА.\nTЕЛ\nКре-\nЛвящуенникь Милиим\nчинь\nАмпилоговь сч /гсилом-\nгунколь Тлошогем\nкня\nосія Горяйновиить и Дімко-\nномч Вонифатіяна\nШкитовнич.\nобосго- вствернабнать /\nСвященнши Милиноь\nАлигилоговь сч поа-\nчебнй-\nсомиднкамя сплино-\nочель Герціноваи",
+    "collation": {
+      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
+      "assistedLocalOcr": "not-run-because-base-confirmed",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Ампилогов с псаломщиком Тимофеем Горяйновым и Диаконом Вонифатием Шкатовым.",
+    "fuzzyQuery": true
   }
 }

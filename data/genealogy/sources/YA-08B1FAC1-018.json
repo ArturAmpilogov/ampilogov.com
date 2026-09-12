@@ -2,46 +2,170 @@
   "schemaVersion": 1,
   "sourceId": "YA-08B1FAC1-018",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
-    "scanNumber": "018"
+    "scanNumber": 18,
+    "asRead": "Метрическая книга 1913 года, часть первая о родившихся; февраль, строка Петра, мужского пола № 57"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/08b1fac1-1f47-471b-89cd-0092199073cf/18"
   },
+  "event": {
+    "type": "birth-godparents",
+    "date": {
+      "iso": "1913-02-25",
+      "display": "25 февраля 1913 года (рождение); 26 февраля 1913 года (крещение)",
+      "calendar": "source-calendar-unverified",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбургскій мѣщанинъ",
+      "normalized": "Оренбург",
+      "placeId": "orenburg-city"
+    }
+  },
+  "primaryPersonId": "P101933",
   "mentions": [
     {
       "mentionId": "YA-08B1FAC1-018-M1",
-      "role": "other",
+      "role": "child",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов — индексное совпадение не подтверждено сканом",
-      "displayName": "Внешний индекс: «Ампилогов»; на проверенном фрагменте не подтверждено",
+      "nameAsTranscribed": "Петръ",
+      "displayName": "Пётр Владимирович Анисимов",
+      "patronymicEvidence": {
+        "basis": "Имя отца Владимира прямо указано в той же строке.",
+        "confidence": "high"
+      },
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08B1FAC1-018-M2",
+      "role": "father",
+      "personId": null,
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Владимиръ Ивановъ Анисимовъ",
+      "displayName": "Владимир Иванович Анисимов",
+      "socialStatus": "оренбургский мещанин",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08B1FAC1-018-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Прасковья Андреева",
+      "displayName": "Прасковья Андреевна",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-08B1FAC1-018-M4",
+      "role": "godfather",
+      "personId": "P101933",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Тимоѳей Ивановъ Ампилоговъ",
+      "displayName": "Тимофей Иванович Ампилогов",
+      "socialStatus": "оренбургский мещанин",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-08B1FAC1-018-M5",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "Анна Ѳеодорова Чебачева",
+      "displayName": "Анна Фёдоровна Чебачева",
       "surnameSeries": false
     }
   ],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/018-full-view.jpg",
-    "sha256": "19a01f35cd305510eb53c40294211285182f11c65b9b95b4d34155e1ed75d0b5",
+    "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-full-view.png",
+    "sha256": "9a9fcb604966e37a6bb45e72be86bee34c1671259a18a82215f5dbda4054ec99",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/018-target-entry.jpg",
-        "sha256": "f65d88586ce5afc8ffb2fae59dcbf72be40be67e53ccbab16b12895757198230"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-header.png",
+        "sha256": "050b4f17e37395a1ca90cec809d0d1e1b83eac88341564918cce8827197861b7",
+        "description": "Заголовок метрической книги 1913 года и названия граф части о родившихся."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-target-entry.png",
+        "sha256": "ab5017d594c775b18ea322417bf75661432166403082779029f2c908e9367686",
+        "description": "Исправленный крупный фрагмент всей строки Петра: даты, ребёнок, родители, восприемники и причт."
+      }
+    ],
+    "parallelCopies": [
+      {
+        "catalogId": "08b1fac1-1f47-471b-89cd-0092199073cf",
+        "scanNumber": 18,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "9a9fcb604966e37a6bb45e72be86bee34c1671259a18a82215f5dbda4054ec99",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-header.png",
+            "sha256": "050b4f17e37395a1ca90cec809d0d1e1b83eac88341564918cce8827197861b7",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/08b1fac1-1f47-471b-89cd-0092199073cf/0018-target-entry.png",
+            "sha256": "ab5017d594c775b18ea322417bf75661432166403082779029f2c908e9367686",
+            "description": "Исправленный крупный фрагмент всей строки Петра с восприемником Тимофеем Ивановичем Ампилоговым."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5866x4478",
+          "targetDimensions": "5430x1100",
+          "method": "original-download-plus-manual-full-row-recrop-and-full-scan-reading"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
     ]
   },
   "transcription": {
-    "status": "primary-scan-review",
-    "literal": "На сохранённом фрагменте видны февральские записи о крещении детей иных фамилий; фамилия «Ампилогов» или документированный близкий вариант не читается.",
-    "modernInterpretation": "Проверенный фрагмент не относится к фамильному ряду. Все названные родители, восприемники и церковнослужители остаются контекстом первоисточника: для них не создаются Record, профили, переселения или точки на карте.",
-    "indexNote": "Яндекс Архив выдал лист по запросу «Ампилогов», но на доступном фрагменте нет этой фамилии и близкого варианта. Для повторной проверки нужен иной фрагмент либо полный разворот с позицией индекса."
+    "status": "complete-for-relevant-row-with-uncertainties",
+    "literal": "1913 год, часть первая, о родившихся. Февраль. Мужского пола № 57. 25 родился, 26 крещён. Петръ (помета: «пам. 24 марта»). Оренбургскій мѣщанинъ Владимиръ Ивановъ Анисимовъ и законная жена его Прасковья Андреева, оба православные. Восприемники: Оренбургскіе мѣщане Тимоѳей Ивановъ Ампилоговъ и Анна Ѳеодорова Чебачева. Таинство совершили священникъ Іоаннъ [Шкребскій?] с діакономъ Василіемъ Николаевичемъ [фамилия не разобрана].",
+    "modernInterpretation": "25 февраля 1913 года у оренбургского мещанина Владимира Ивановича Анисимова и его законной жены Прасковьи Андреевны родился сын Пётр; крещён 26 февраля. Восприемниками были оренбургские мещане Тимофей Иванович Ампилогов и Анна Фёдоровна Чебачева.",
+    "indexNote": "Индекс Яндекса ошибочно сделал Петра сыном Тимофея Ампилогова. Полная строка показывает, что отец ребёнка — Владимир Иванович Анисимов, а Тимофей Иванович Ампилогов — восприемник. Прежний вывод об отсутствии фамилии и автоматически выбранный фрагмент исправлены после ручного чтения всей страницы.",
+    "localOcr": "кал моьщанка яипа /латонова Смельиныи,\nповгаровный- Доль Сфрань Васильни пр-\nжена ого Храстина\nляшаь и даканная\nСмельянова, аба проаоеласные.\nвящен. Лаон. Шири\nДіакнн 19спт Ниплак\nОрибутки меелимо? В сагоро ль\nОрибуриснія мощане : Тиманей\nИьминь я мпилоговч Анна Оло\nего Пераскеа Айрава, иба правлслоя\nДарока Чебачева.\nнай ен Каон Ленкаб.",
+    "localOcrWithSurnameLexicon": "кал мощанка Анна Платонова Смельины.\nповаровный - Доль Сфрань Васильки пр-\nжена его Крастина\nняшаь и заканная\nСельянова, аба провоеласные .\nЛящен. Каон. Шири\nДіакон 19спт Наплан\nрибуриснія мощане: Тиманей?\nИвлинь я мнилоговч\" Анна Оло\nего Пераскеа Айрава, оба правлелоя\nДарова Чебачева.",
+    "collation": {
+      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
+      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+      "yandexTextBlocksUsedForNavigationAndCollation": true
+    }
   },
-  "isRecord": false,
-  "cardKind": "index-hit-review",
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Метрическая строка фиксирует рождение и крещение Петра Анисимова; исследуемый Тимофей Ампилогов назван восприемником.",
+    "scopeNote": "Помета «пам. 24 марта» относится к ребёнку и не является событием Тимофея Ампилогова; миграция в акте не указана."
+  },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high",
-    "unresolved": ["Неизвестно, на какую строку полного разворота ссылается внешний индекс."]
+    "status": "manually-verified-from-full-scan-corrected-false-negative",
+    "transcriptionConfidence": "high-with-listed-uncertainties",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1913 spread, headings, February row of Petr no. 57, dates, child, parents, both godparents, marginal note and clergy column; false negative corrected",
+    "unresolved": [
+      "Фамилии священника и диакона читаются неуверенно; они сохранены с оговорками и не получают профилей.",
+      "Не объединён с одноимёнными Тимофеями Ивановичами из села Людского и Кармалки: оренбургское мещанство и одна запись восприемника не доказывают тождества."
+    ]
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Петр Тимофеев Ампилогов. Родившийся: Алексей Иванов Ильин. ... Отец: Тимофей Иванов Ампилогов, оренбургский мещанин.",
+    "fuzzyQuery": true
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Оренбургский мещанин Тимофей Иванович Ампилогов был восприемником Петра Анисимова, родившегося 25 и крещённого 26 февраля 1913 года."
   }
 }

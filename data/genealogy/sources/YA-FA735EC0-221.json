@@ -1,19 +1,97 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-221",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
-  "collection": { "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591", "scanNumber": "221" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/221" },
-  "mentions": [{ "mentionId": "YA-FA735EC0-221-M1", "role": "parent-of-deceased", "personId": null, "nameAsTranscribed": "Тимофей Семеновъ Ампилоговъ, крестьянинъ, села Кармалки", "displayName": "Тимофей Семёнович Ампилогов, крестьянин", "surnameSeries": true }],
-  "evidence": { "publicDisplay": false, "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/221-full-view.jpg", "sha256": "5ae88831b9be783eeb7fde1a7d39b10d4459495201f4fc5adb64e041def28fc4", "fragments": [{ "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/221-target-entry.jpg", "sha256": "f13482a13d926f41d8747674957f33d6be11a98bf06f036671caac56616970aa" }] },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service-attestation",
+  "collection": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 221,
+    "title": "Метрическая книга села Кармалки за 1915 год, часть третья, об умерших"
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/221"
+  },
+  "event": {
+    "type": "clergy-service-attestation",
+    "date": {
+      "display": "19–26 января 1915 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "confidence": "high"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-FA735EC0-221-M1",
+      "role": "parish-priest",
+      "personId": null,
+      "displayName": "Михаил Анциферов",
+      "nameAsTranscribed": "Священникъ Михаилъ Анциферовъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FA735EC0-221-M2",
+      "role": "psalm-reader-and-deacon",
+      "personId": "P91076",
+      "displayName": "Дмитрий Ампилогов",
+      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
+      "surnameSeries": true
+    }
+  ],
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Отец умершего: Тимофей Семеновъ Ампилоговъ, крестьянинъ, села Кармалки, Михайловской волости, Оренбургской губернии и уезда.",
-    "modernInterpretation": "Тимофей Семёнович Ампилогов указан как крестьянин села Кармалки и отец умершего. Скан показывает апрельские записи об умерших; место подтверждает присутствие семьи в Кармалке в момент акта, а не направление или факт переселения.",
-    "indexNote": "Индексная строка использована как указатель к записи; фрагмент скана просмотрен, но имя умершего и возраст не внесены без полного построчного чтения."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Январь, записи 19–26 января. В каждой строке погребавших повторены священникъ Михаилъ Анциферовъ и «псаломщикъ, діаконъ Димитрій Ампилоговъ». Умершие на листе: Петръ [Григорьевъ?] и лица с фамилиями Ковалишниковъ, Анастасьевъ, Жилниковъ и Вороновъ; фамильной строки Тимофея или Ивана Ампилогова нет.",
+    "modernInterpretation": "Разворот подтверждает службу Дмитрия Ампилогова как псаломщика-диакона Кармалки в 19–26 января 1915 года; умершие имеют другие фамилии.",
+    "indexNote": "Индексные «Иван Иванов Ампилогов» и прежнее локальное «Тимофей Семенов Ампилогов» — смешение строк. Полный лист подтверждает только подпись Дмитрия."
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Иван Иванов Ампилогов, крестьянин, село Кармалки, Михайловская волость, Оренбургская губерния и уезд.",
+    "fuzzyQuery": true
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": { "status": "primary-scan-partially-verified", "transcriptionConfidence": "medium", "unresolved": ["Нужно дочитать все графы умершего, включая даты смерти и погребения."] }
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную прочитан январский разворот, все строки умерших и причт. Индексные Иван Иванов и Тимофей Семёнов отсутствуют; ложные профили и связи не создаются, фиксируется только служба P91076."
+  },
+  "evidence": {
+    "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
+    "scanNumber": 221,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0221-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0221-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "7b1ab1582b142fe0eaf08171922b31b4637b7ced06f308c07c55cc91c97d2587",
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0221-header.png",
+        "sha256": "3250a96f88f4e21f086faa8ececa60316a79c76b8b94f7f392b4f0b6035763cc",
+        "description": "Заголовок метрической книги 1915 года, часть об умерших."
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0221-target-context.jpg",
+        "sha256": "ba36c6b8c85c27865b7572feffb8341f3b5aa00010fe89ab51c763704e47ee09",
+        "description": "Полноширинный крупный фрагмент всех строк и повторных подписей причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5306x4175",
+      "targetDimensions": "5100x3700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  }
 }
