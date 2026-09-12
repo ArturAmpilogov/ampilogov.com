@@ -18,7 +18,7 @@ export default function Home() {
         <div className="cover-scan" aria-hidden="true">
           <img
             className="cover-document"
-            src="/archive/evidence/rgada/f181-op2-d120/0060.jpg"
+            src="/artwork/rgada-0060-hero.jpg"
             alt=""
           />
           <div className="cover-highlight">

@@ -32,8 +32,6 @@ export default async function PeoplePage({
         <p>Носители фамильного ряда и документированные варианты фамилии.</p>
         <dl aria-label="Состав архива">
           <div><dt>Людей</dt><dd>{directory.stats.people}</dd></div>
-          <div><dt>Источников</dt><dd>{directory.stats.sources}</dd></div>
-          <div><dt>Расшифровано</dt><dd>{directory.stats.transcribedSources}/{directory.stats.sources}</dd></div>
         </dl>
       </header>
       <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
