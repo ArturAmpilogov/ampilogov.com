@@ -19,12 +19,27 @@
     "placeId": "orenburg-city"
   },
   "sourceIds": [
-    "YA-6899C9C5-34"
+    "YA-6899C9C5-34",
+    "YA-OGAOO-173-17-77-143-TAISIYA",
+    "YA-OGAOO-173-16-1786-175-ELISAVETA",
+    "YA-OGAOO-173-16-1898-113-ELISAVETA-DEATH",
+    "YA-OGAOO-173-17-124-81-ELISAVETA-DEATH",
+    "YA-OGAOO-173-16-2025-320-IVAN-SURETY",
+    "YA-OGAOO-173-16-1550-84-KONSTANTIN-DEATH",
+    "YA-OGAOO-8381-1-420-4-IVAN-MARRIAGE-INDEX",
+    "YA-OGAOO-8381-1-17-141-IVAN-MARRIAGE"
+  ],
+  "children": [
+    "P101557",
+    "P101633",
+    "P101759"
   ],
   "status": "documented-from-yandex-archive-scan",
   "surname": {
     "normalized": "Ампилогов",
-    "formsAsWritten": []
+    "formsAsWritten": [
+      "Иванъ Лазаревъ Анпилоговъ"
+    ]
   },
   "places": [
     {
@@ -32,10 +47,29 @@
       "placeId": "orenburg-city",
       "asWritten": "город Оренбург, Покровская церковь",
       "confidence": "high"
+    },
+    {
+      "type": "marriage-surety",
+      "placeId": "orenburg-city",
+      "asWritten": "город Оренбург",
+      "date": "1913-06-07",
+      "confidence": "high"
+    },
+    {
+      "type": "marriage-registration-index",
+      "placeId": "orenburg-city",
+      "asWritten": "город Оренбург",
+      "date": "1919-07-28",
+      "confidence": "high"
     }
   ],
   "notes": [
-    "Родился и крещён 24 мая 1873 года в Оренбурге."
+    "Родился и крещён 24 мая 1873 года в Оренбурге.",
+    "9/15 октября 1900 года назван оренбургским мещанином и отцом Таисии; жена — Александра Павловна.",
+    "22 октября 1907 года родилась дочь Елисавета; крещена 25 октября. Она умерла 3 июня 1911 года; в акте возраст ошибочно или приблизительно указан как 2 года.",
+    "7 июня 1913 года был поручителем по невесте Ольге Михайловне Панкратовой при её браке в Оренбурге.",
+    "29 марта 1907 года умер его двухлетний сын Константин P101759. Мать ребёнка в акте о смерти не названа.",
+    "Алфавитный журнал фиксирует брачную запись № 1344 книги 3; найденный полный акт исправляет дату на 28 июля 1919 года. Иван назван вдовцом и столяром; личное имя невесты Яковлевны Батуриной читается неуверенно и не нормализовано."
   ],
   "relations": [
     {
@@ -54,6 +88,33 @@
         "YA-6899C9C5-34"
       ],
       "basis": "Прямая родственная формула в записи YA-6899C9C5-34",
+      "confidence": "high"
+    },
+    {
+      "type": "father-of",
+      "personId": "P101557",
+      "sourceIds": [
+        "YA-OGAOO-173-17-77-143-TAISIYA"
+      ],
+      "basis": "Прямая родственная формула в записи о рождении",
+      "confidence": "high"
+    },
+    {
+      "type": "father-of",
+      "personId": "P101633",
+      "sourceIds": [
+        "YA-OGAOO-173-16-1786-175-ELISAVETA"
+      ],
+      "basis": "Прямая родственная формула в записи о рождении",
+      "confidence": "high"
+    },
+    {
+      "type": "father-of",
+      "personId": "P101759",
+      "sourceIds": [
+        "YA-OGAOO-173-16-1550-84-KONSTANTIN-DEATH"
+      ],
+      "basis": "Прямая родственная формула в записи о смерти",
       "confidence": "high"
     }
   ]
