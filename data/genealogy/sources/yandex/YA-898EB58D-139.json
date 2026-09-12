@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-898EB58D-139",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 139,
@@ -12,25 +12,18 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/898eb58d-b230-41a1-aa5b-da6e30b40ea0/139"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
+  "mentions": [],
+  "transcription": {
+    "status": "complete-primary-scan-negative-review",
+    "literal": "Полный брачный разворот за январь 1909 года содержит записи № 1–4. В графах поручителей читаются, в частности: по записи № 1 Федор Федоров Сомов, Иван Георгиев Будаев, Илья Васильев Щупинин и Сергей Михайлов Будаев; по записи № 2 Тимофей Иванов Сомов, Емелиан Михайлов Колесников, Петр Николаев Соловьёв и Семён Павлов Горбунов. Емелиана Андреева Ампилогова на листе нет.",
+    "modernInterpretation": "Совпадение фамильного запроса ложное: индекс склеил имя Емелиана из строки Колесникова с посторонним контекстом; ни одного носителя фамильного ряда на полном листе не обнаружено.",
+    "indexNote": "Индексный фрагмент «Емелиан Андреев Ампилогов» опровергнут чтением всех видимых брачных строк и обеих пар поручителей."
   },
-  "mentions": [
-    {
-      "mentionId": "YA-898EB58D-139-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "indexData": {
+    "querySnippet": "По женихе : Села Зобова крестьяне : Емелиан Андреев Ампилогов и Алексей Петров Жердев. По невесте : Села Зобова крестьяне...",
+    "fuzzyQuery": true,
+    "discrepancy": "На скане нет Емелиана Андреевича Ампилогова; реально читается Емелиан Михайлович Колесников в поручителях одной из соседних записей."
+  },
   "evidence": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 139,
@@ -65,31 +58,21 @@
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОСКОВСКО\nНПОГРАФІИ\nC VHOДI\nАЛЬНОЙ\nВТОРАА, Щ БРАВОСОЧЕТАВШИ\nКто выли порбчитєли.\nПімимеао: Сага Зльбова коледвяю:",
-    "modernInterpretation": "ОСКОВСКО НПОГРАФІИ C VHOДI АЛЬНОЙ ВТОРАА, Щ БРАВОСОЧЕТАВШИ Кто выли порбчитєли. Пимимеао: Сага Зльбова коледвяю:",
-    "localOcr": "ОСКОВСКО\nНПОГРАФІИ\nC VHOДI\nАЛЬНОЙ\nВТОРАА, Щ БРАВОСОЧЕТАВШИ\nКто выли порбчитєли.\nПімимеао: Сага Зльбова коледвяю:",
-    "localOcrWithSurnameLexicon": "ОСКОВСКО\nПОГРАФІЙ\nАЛЬНОЙ\nВТОРАА, Щ БРАКОСОЧЕТАВШИ\nКто выли порочители.\nПі митері: Сага Зобова коледьяо:",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "По женихе : Села Зобова крестьяне : Емелиан Андреев Ампилогов и Алексей Петров Жердев. По невесте : Села Зобова крестьяне...",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-confirmed-false-positive-manually-verified",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный январский брачный разворот 1909 года: записи № 1–4, супруги, возраста и все видимые поручители. Ни фамилии Ампилогов, ни Емелиана Андреевича нет; индексный фрагмент опровергнут по оригиналу.",
+    "transcriptionConfidence": "high",
+    "unresolved": []
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Подтверждённый ложный fuzzy-hit.",
+    "relationshipBoundary": "Ни профили, ни backlinks, ни родство по этому листу не создаются.",
+    "scopeNote": "Все четыре брачные строки и графа поручителей просмотрены вручную."
   }
 }
