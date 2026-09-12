@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-AD80FFEB-044",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "confirmed-false-index-match",
   "collection": {
     "catalogId": "ad80ffeb-80fb-4e36-a56b-91b3098562e6",
     "scanNumber": 44,
@@ -12,25 +12,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/ad80ffeb-80fb-4e36-a56b-91b3098562e6/44"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "index-review",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "1912 год; декабрьские записи № 27–30",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Промысловка, Астраханская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-AD80FFEB-044-M1",
-      "role": "godmother",
-      "personId": "P102718",
-      "displayName": "Феодосия Васильевна Ампилова",
-      "nameAsTranscribed": "Ѳеодосія Васильева Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "ad80ffeb-80fb-4e36-a56b-91b3098562e6",
     "scanNumber": 44,
@@ -51,6 +42,12 @@
         "path": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-target-entry.png",
         "sha256": "17917db5e909453930a4b1e31d3fbaf90d2db16468679b3fdb24ce850e2013ca",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/ad80ffeb-80fb-4e36-a56b-91b3098562e6/0044-deep-context.png",
+        "sha256": "05ba4f3c2a4f3c8968785662b85c2797ec0e6e81a672082cd52cc8a5ca296c0d",
+        "description": "Чистый полноширинный контекст декабрьских записей № 27–30."
       }
     ],
     "quality": {
@@ -59,17 +56,18 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4268x3276",
       "targetDimensions": "1200x719",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-reading-and-clean-wide-context-recrop",
+      "contextDimensions": "4100x2500"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Промысловки Павел Алексеев Чернышев и Феодосия Васильева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Феодосия Васильевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-review-confirmed-false",
+    "literal": "Декабрьские записи о родившихся № 27–30. В строке № 27 — Димитрий, сын крестьян села Промысловки Матвея Иванова Ткачева и законной жены его Александры Павловой; в графе восприемников указаны жители Промысловки, но имени «Ѳеодосія Васильева Ампилова» нет. Остальные видимые строки № 28–30 также не содержат фамильного ряда.",
+    "modernInterpretation": "Полный лист не содержит Феодосии Ампиловой или другого носителя исследуемого фамильного ряда. Карточка является ложным поисковым совпадением.",
+    "indexNote": "Яндекс приписал строке восприемников Феодосию Васильевну Ампилову. На увеличенном оригинале это имя отсутствует; проверены границы всей строки и соседние записи.",
     "localOcr": "стина Павлова вернышево.\nВлауимировской грбетни, Гора-\nбосьвецкаг уВзда, дерьни Вын\nстпово вавурись расильяви\nНовоччилова и крестьянка\nС. Проншеловки Анна Вібларова",
     "localOcrWithSurnameLexicon": "стина Павлова вернышево.\nВладимировской губетни, Гора-\nВосьветкаг у Взда, дерьни Вын\nсоково вавурись расильяви\nНовотчилова и крестьянка\nС. Проншеловки Анна Вібларова",
     "collation": {
@@ -79,14 +77,14 @@
     }
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "cardKind": "research-only-negative-record",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-confirmed-false",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный лист, декабрьские записи № 27–30, обе стороны разворота и границы строк; индексное имя Феодосии Ампиловой уверенно отвергнуто."
   },
   "indexData": {
     "querySnippet": "Священник Михаил Авдеев Священник на вакансии псаломщика Иоанн Соколов. Крестьяне с. Промысловки Павел Алексеев Чернышев и Феодосия Васильева Ампилова.",
