@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C01A62EF-124",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "baptism-godparent",
+  "primaryPersonId": "P102981",
   "collection": {
     "catalogId": "c01a62ef-af77-4e9f-9d65-371595fa49c1",
     "scanNumber": 124,
@@ -13,21 +14,27 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c01a62ef-af77-4e9f-9d65-371595fa49c1/124"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "baptism-godparent",
+    "recordNumber": "24",
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "22–23 февраля 1915 года",
+      "from": "1915-02-22",
+      "to": "1915-02-23",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Преображенка",
+      "normalized": "село Преображенка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C01A62EF-124-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "godmother",
+      "personId": "P102981",
+      "displayName": "Татьяна Фёдоровна Ампилогова",
+      "nameAsTranscribed": "того же села крестьянская дѣвица Татьяна Феодорова Ампилогова",
       "surnameSeries": true
     }
   ],
@@ -52,6 +59,12 @@
         "path": "data/genealogy/evidence-private/yandex/c01a62ef-af77-4e9f-9d65-371595fa49c1/0124-target-entry.png",
         "sha256": "36319ee74dc2a259aad938945391dc5fabb88930992288705343e6ba7febd2ae",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c01a62ef-af77-4e9f-9d65-371595fa49c1/0124-deep-context.png",
+        "sha256": "759105ddbddf48f4f8240832bf087d838caae1b8d0ef98a6d4adb49fbfad72b6",
+        "description": "Чистый широкий фрагмент 5400×4000 с полным разворотом февральских крещений, родителями, восприемниками и причтом."
       }
     ],
     "quality": {
@@ -60,15 +73,16 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5652x4478",
       "targetDimensions": "1387x564",
+      "contextDimensions": "5400x4000",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Села Милоиловского крестіянинь Гоаннь\nНазарові блелбяновь и крестбянская жена\nЕвдькія аргтява Дубинина:",
-    "modernInterpretation": "Села Милоиловского крестиянинь Гоаннь Назарови блелбяновь и крестбянская жена Евдькия аргтява Дубинина:",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Февраль. Запись № 24: 22 родился, 23 крещён Нестор. Восприемники: того же села крестьянинъ Максимъ Моисеевъ Матвѣевъ и крестьянская дѣвица Татьяна Феодорова Ампилогова.",
+    "modernInterpretation": "При крещении Нестора в селе Преображенке 23 февраля 1915 года восприемницей была крестьянская девица Татьяна Фёдоровна Ампилогова. Родители ребёнка и второй восприемник сохранены как контекст, отдельные профили для них не создаются.",
     "localOcr": "Села Милоиловского крестіянинь Гоаннь\nНазарові блелбяновь и крестбянская жена\nЕвдькія аргтява Дубинина:",
     "localOcrWithSurnameLexicon": "Села Милосиловского крестіянинь Ганнь\nНазарові блелояновь и крествянская жена\nЕвдокія аргева Дубинина:",
     "collation": {
@@ -76,20 +90,25 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс использован только для навигации. Фамилия и роль Татьяны прочитаны вручную в графе восприемников полного оригинала; прежний узкий OCR-фрагмент попал на другую строку."
+  },
+  "context": {
+    "eventSummary": "Татьяна Фёдоровна Ампилогова была восприемницей при февральском крещении в Преображенке.",
+    "identityNote": "Создан отдельный профиль P102981 по полному имени, сословной характеристике и прямой роли в акте; родство с семьёй ребёнка не следует из документа.",
+    "migrationNote": "Формула «того же села» фиксирует присутствие в Преображенке, но не доказывает переселение."
   },
   "indexData": {
     "querySnippet": "Родившийся: Евдокия Семенова Кулакова. Крёстная мать: Татьяна Феодорова Ампилогова, крестьянская девица.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-surname-bearing-mention-and-role",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот прочитан вручную; установлены запись № 24, даты рождения и крещения, роль и полная именная форма Татьяны; создан clean crop 5400×4000."
   }
 }

@@ -1,24 +1,29 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C31F8E91-155",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "clergy-signature",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-clerical-service",
   "collection": {
     "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
     "scanNumber": 155,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Романовка, Покровка (Куюргаза), Слоновка, Ильинка, Нижний-Гумбет за 1912 г."
+    "title": "Метрическая книга жителей сёл Романовка, Покровка (Куюргаза), Слоновка, Ильинка и Нижний-Гумбет за 1912 г.",
+    "repository": "ОГА Оренбургской области (ОГАОО)"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c31f8e91-64b4-4928-809d-8457fa2ab002/155"
   },
   "event": {
-    "type": "clergy-signature",
+    "type": "clerical-service",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "4–18 августа 1912 года",
+      "from": "1912-08-04",
+      "to": "1912-08-18",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "Слоновский приход"
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
@@ -26,70 +31,76 @@
       "mentionId": "YA-C31F8E91-155-M1",
       "role": "deacon",
       "personId": "P1543",
-      "displayName": "Діакон Аѳиноген Ампилогов",
+      "sex": "male",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "modernName": "Афиноген Егорович Ампилогов",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C31F8E91-155-M2",
+      "role": "clergy",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "священник Иоанн Поляков",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Август 1912 года. При записях об умерших № 42–48, с датами смерти и погребения 4–18 августа, повторяется: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ». Умершие на листе принадлежат другим семьям.",
+    "modernInterpretation": "С 4 по 18 августа 1912 года Афиноген Егорович Ампилогов участвовал как диакон в погребениях Слоновского прихода рядом со священником Иоанном Поляковым.",
+    "indexNote": "Индекс и OCR Яндекса использованы только для навигации. Имя, фамилия, должность, даты и границы записей проверены по полному оригиналу и повторным подписям."
+  },
+  "context": {
+    "eventSummary": "Лист документирует службу диакона Афиногена Ампилогова в 4–18 августа 1912 года.",
+    "identityNote": "Отождествление с P1543 основано на редком имени, должности, одном приходе и устойчивой формуле рядом со священником Иоанном Поляковым.",
+    "familyScopeNote": "Участники актов сохранены как контекст листа; родство с Афиногеном не выводится.",
+    "migrationNote": "Повторная служебная подпись подтверждает работу в приходе, но не доказывает переселение."
+  },
   "evidence": {
     "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
     "scanNumber": 155,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-wide-manual-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "8c8f0331f16be0489fb425c4d733078539bc2cbbeaedb2add91eafb7d196b073",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-header.png",
-        "sha256": "05a23928ee038d8108d8e47cd9fee089e66a368e88c49dcdba5ea1ab7e0d60ac",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-target-entry.png",
-        "sha256": "9d1c67de6f16b8f156a1ab4da89cb1d1df4c1e9fea3aa8a33222a24501dd90eb",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0155-deep-context.png",
+        "sha256": "83bff9cae8c9f48b173d546ce2b806d3882ba7786e5d8457c332e53cd045d699",
+        "description": "Широкий clean crop 5400×4200 с заголовком, всеми видимыми актами и повторными служебными подписями."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
       "fullDimensions": "5796x4666",
-      "targetDimensions": "1543x1315",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "contextDimensions": "5400x4200",
+      "method": "manual-full-page-reading-and-wide-clean-recrop",
+      "confirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Священник Иоанн Поляков. Диакон Афиноген Ампилогов.",
-    "modernInterpretation": "Оригинал подтверждает подпись диакона Афиногена Ампилогова; индекс ошибочно назвал его Афанасием.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Фонннг Полякавь.\nСвяженнивсь\nДіанайв Домонів Алітлитіві.\nСена Ритківнипрестваннна Дненельяя\n(жовлева весова сринв Мявець-\nащенним доаинь Лолякові\nДійнень Двинантв Дитилаювіь\nСвия Риноваи прествянним Мелькь\nПетрова Пощавлидова свиль Веарілиь-\n-\nОяценнила фоянн. Лоляковь.\nДіапнів Домгожів Яителоговч.\nяка (ишновки перествиннив Реодорть\nТрофримові хгоронрій -\n30.\n•в Атеннить рваннь Поляковь.",
-    "localOcrWithSurnameLexicon": "Фонннг Поляковь.\nСвяжеттивсь\nДіанайв Домонів Алітлиців.\nСена Ринківнипрествання Дненея»\n(овлева весова свинь Мавець-\nваженним досинь Лолякові\nДійнень Двинанів Дитилава\nСвия Виновни перествянним Мелька\nПетрова Пощавидова свиль наріниь-\n-\nОятеннила доенн. Поляковь.\nДіапків Доможів Яителогова.\nяка (инновки перествиннив Деодорть\nТрофимові горонрій -\n30.\n•в Апеннить рваннь Поляковь.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+  "indexData": {
+    "provider": "Яндекс Архив",
+    "fuzzyQuery": true,
+    "warning": "Поисковые snippets склеивали подпись члена причта с чужими семьями. Проектная карточка основана на ручном чтении полного скана."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-clergy-service-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Феодор Трофимов Корецкий Священник Иоанн Поляков. 35.",
-    "fuzzyQuery": true
+    "identityResolution": "Подпись уверенно прочитана как «Діаконъ Аѳиногенъ Ампилоговъ» и отнесена к P1543 по непрерывной служебной серии Слоновского прихода.",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот 155, заголовок, все видимые строки и повторные подписи прочитаны вручную; чужие семьи оставлены контекстом, без родства и миграции; clean crop 5400×4200."
   }
 }

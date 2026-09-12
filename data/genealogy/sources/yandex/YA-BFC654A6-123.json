@@ -1,36 +1,57 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BFC654A6-123",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "scan-overview-with-granular-records",
   "collection": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
-    "scanNumber": 123
+    "scanNumber": 123,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Слоновка, Казанка, Белозерка за 1886 г."
   },
   "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/123"
+    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/123",
+    "granularSourceIds": ["YA-BFC654A6-123-R1", "YA-BFC654A6-123-R3"]
   },
   "mentions": [
     {
       "mentionId": "YA-BFC654A6-123-M1",
-      "role": "other",
+      "role": "bride-on-granular-record",
       "personId": null,
-      "nameAsTranscribed": "Носитель фамильного ряда: требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Параскева Кондратова Анпилогова",
+      "displayName": "Прасковья Кондратовна Анпилогова",
+      "surnameSeries": true,
+      "granularSourceId": "YA-BFC654A6-123-R1"
+    },
+    {
+      "mentionId": "YA-BFC654A6-123-M2",
+      "role": "groom-on-granular-record",
+      "personId": null,
+      "nameAsTranscribed": "Сергѣй Егоровъ Ампилоговъ",
+      "displayName": "Сергей Егорович Ампилогов",
+      "surnameSeries": true,
+      "granularSourceId": "YA-BFC654A6-123-R3"
+    },
+    {
+      "mentionId": "YA-BFC654A6-123-M3",
+      "role": "bride-on-granular-record",
+      "personId": null,
+      "nameAsTranscribed": "Агрипина Васильева Расходчикова",
+      "displayName": "Агриппина Васильевна Ампилогова, урождённая Расходчикова",
+      "surnameSeries": true,
+      "granularSourceId": "YA-BFC654A6-123-R3"
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
+    "status": "complete-overview-with-granular-transcriptions",
+    "literal": "Январь 1886 года. № 1: Параскева Кондратова Анпилогова вторым браком венчана с Прокопием Филимоновым Черневым. № 3: солдат Сергѣй Егоровъ Ампилоговъ первым браком венчан с Агрипиной Васильевой Расходчиковой.",
+    "modernInterpretation": "Лист содержит второй брак Прасковьи Кондратовны Анпилоговой 8 января и первый брак Сергея Егоровича Ампилогова с Агриппиной Васильевной Расходчиковой 13 января 1886 года; подробности сохранены в двух granular Records.",
     "localOcr": "Сиa br\nгьид. Кресу. Савва\nФор. Любекновки вір.\nЕкатфрини Капито\nГоженкови Саморадова\nнова Гончарова Пра\nправославный Порвыми\n20\nвосЛ. Пор. браношь\nоракошь.\nЛюбвин. Солдадь\nср. с\nФер. Ивановки Орес)\nСорчюй Еіорова Алепило\nпершшна Заснль\nОвь правоставный /Хс\nева росходенкова\nравыяь франоми\n23\nПравоел. Перв.оракаот 13.\nБед\nенный?\n3\nСии Спио. Криь Стс\nСела Ксранки Крнп\nПань Гернсимовь Новик-\nс кишинн Софранови\nОвь правосласний вто\nПравославная Пер.\nрыяь бракомь\n27\nвышь браколь\n16\nб\nвср. Людвиноски Кріс\n. Фер. Врика ММафра\nмиспепи митоново Ми\nФимитрова Паннов\nклилинь п,авославиі\nпавсал",
     "collation": {
       "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Обе фамильные записи, даты, супруги, возраст и порядок браков проверены по полному оригиналу; индекс использован только для навигации."
   },
   "evidence": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
@@ -53,6 +74,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0123-target-entry.png",
         "sha256": "c7f7f35a1d79de5ceb16c283ac58a1e8f11c1d52821e2f2afac7017ef83df3c1",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0123-target-context-deep.jpg",
+        "sha256": "e448425c1434616d34657b466ca0779957c702d83277a3db256a5487a8c464b2",
+        "description": "Широкий clean-фрагмент полного январского брачного разворота с записями № 1 и № 3."
       }
     ],
     "quality": {
@@ -60,8 +87,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5011x4006",
-      "targetDimensions": "1771x1615",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3700",
+      "method": "manual-full-spread-review-and-clean-wide-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -98,15 +125,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Расшифровать совпадение по скану.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-overview-linked-to-granular-records",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный январский брачный разворот, записи № 1 и № 3, обе даты, супруги, возраст и порядок браков; root указывает на два существующих granular Records без новых backlinks."
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verdict": "confirmed-in-granular-records-YA-BFC654A6-123-R1-and-R3"
+  },
+  "isRecord": true,
+  "cardKind": "scan-overview",
+  "publicCore": false,
+  "summary": { "status": "verified-summary", "text": "Лист содержит браки Прасковьи Кондратовны Анпилоговой и Сергея Егоровича Ампилогова; подробные записи — YA-BFC654A6-123-R1 и YA-BFC654A6-123-R3." }
 }

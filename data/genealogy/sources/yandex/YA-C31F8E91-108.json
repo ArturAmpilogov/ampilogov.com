@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C31F8E91-108",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "clergy-service",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "c31f8e91-64b4-4928-809d-8457fa2ab002",
     "scanNumber": 108,
@@ -13,22 +14,35 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c31f8e91-64b4-4928-809d-8457fa2ab002/108"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "clergy-service",
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "2–13 мая 1912 года",
+      "from": "1912-05-02",
+      "to": "1912-05-13",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Слоновка",
+      "normalized": "село Слоновка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C31F8E91-108-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "deacon",
+      "personId": "P1543",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Анпилоговъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C31F8E91-108-M2",
+      "role": "priest",
+      "personId": null,
+      "displayName": "Иоанн Поляков",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -52,6 +66,12 @@
         "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0108-target-entry.png",
         "sha256": "b066fc55ecdfe0d3b4be8a139c8c7e2b85b0ede49efc7e24e0ad65fa8b769f90",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c31f8e91-64b4-4928-809d-8457fa2ab002/0108-deep-context.png",
+        "sha256": "bb00998ac5eb7257db846f66fa59f6970c3685bb344b8f0cf2eefcb4cf8c61e7",
+        "description": "Чистый широкий фрагмент 5500×4200 с полным разворотом майских крещений и повторными подписями причта."
       }
     ],
     "quality": {
@@ -60,15 +80,16 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5790x4591",
       "targetDimensions": "1548x991",
+      "contextDimensions": "5500x4200",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "VNO4 MЛЬН®%\nИСТРиЧеСкой кнÚгИ на 1919°",
-    "modernInterpretation": "VNO4 MЛЬН®% ИСТРиЧеСкой кнÚгИ на 1919°",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Май. Записи о родившихся № 33–37, видимые даты 2/3, 2/3, 5/6, 12/13 и 13/13 мая 1912 года. При записях повторяются: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Анпилоговъ». Ампилоговых среди родителей, детей и восприемников на развороте нет.",
+    "modernInterpretation": "Диакон Афиноген Анпилогов участвовал в оформлении майских крещений в Слоновке вместе со священником Иоанном Поляковым. Это служебные подписи при актах чужих семей, а не указание на родство.",
     "localOcr": "VNO4 MЛЬН®%\nИСТРиЧеСкой кнÚгИ на 1919°",
     "localOcrWithSurnameLexicon": "ИСТРиЧеСкой книгИ на 1919°",
     "collation": {
@@ -76,20 +97,25 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс использован для навигации, но ошибочно склеил имя диакона с родителями одной из строк. Полный оригинал показывает повторную служебную подпись «Діаконъ Аѳиногенъ Анпилоговъ»."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Анпилогова при майских крещениях 1912 года в Слоновке.",
+    "identityNote": "P1543 подтверждён редким именем, саном, вариантом фамилии и документированной служебной цепочкой; семьи актов остаются контекстом.",
+    "migrationNote": "Служба в приходе не превращена в семейный маршрут переселения."
   },
   "indexData": {
     "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Никонор Семенов Новохацкий и законная жена его Фекла Яковлева, оба православные.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-clergy-name-role-place-and-date-range",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот, даты и повторные подписи причта прочитаны вручную; индексная склейка отвергнута; создан clean crop 5500×4200."
   }
 }
