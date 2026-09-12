@@ -37,6 +37,8 @@ const MULTIPART_THRESHOLD = 20 * 1024 * 1024;
 const MAX_ATTEMPTS = 4;
 const MANIFEST_PATH = path.join(root, ".cache", "evidence-blob-manifest.json");
 const MANIFEST_VERSION = 1;
+const ORPHAN_LIST_PATH = path.join(root, ".cache", "evidence-store-orphans.txt");
+const PROGRESS_INTERVAL = 2_000;
 // One list request costs ~1.2s regardless of size, so favour few wide shards.
 const LIST_CONCURRENCY = 16;
 const SHARD_TARGET_FOLDERS = 250;
@@ -85,6 +87,53 @@ function formatBytes(bytes) {
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
   if (bytes < 1024 * 1024 * 1024) return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
   return `${(bytes / 1024 / 1024 / 1024).toFixed(2)} GB`;
+}
+
+function formatDuration(milliseconds) {
+  const total = Math.round(milliseconds / 1000);
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const seconds = total % 60;
+  if (hours) return `${hours}h${String(minutes).padStart(2, "0")}m`;
+  if (minutes) return `${minutes}m${String(seconds).padStart(2, "0")}s`;
+  return `${seconds}s`;
+}
+
+// On a terminal the progress line is rewritten in place; when the output is
+// piped or logged it is appended instead, so nothing is lost to \r.
+const liveProgress = Boolean(process.stdout.isTTY);
+let progressPending = false;
+
+// Retries and failures print through console, which would land in the middle of
+// a rewritten progress line unless the line is wiped first.
+function clearProgressLine() {
+  if (!progressPending) return;
+  process.stdout.write("\r\u001B[2K");
+  progressPending = false;
+}
+
+function progressReporter(totalFiles, totalBytes) {
+  const startedAt = Date.now();
+  let lastPrintedAt = 0;
+  return (doneFiles, doneBytes, final = false) => {
+    const now = Date.now();
+    if (!final && now - lastPrintedAt < PROGRESS_INTERVAL) return;
+    lastPrintedAt = now;
+    const elapsed = now - startedAt;
+    const bytesPerSecond = doneBytes / Math.max(elapsed / 1000, 0.001);
+    const percent = totalBytes ? ((doneBytes / totalBytes) * 100).toFixed(1) : "100.0";
+    const left = bytesPerSecond > 0 ? formatDuration(((totalBytes - doneBytes) / bytesPerSecond) * 1000) : "?";
+    const line = `  ${doneFiles}/${totalFiles} files · ${formatBytes(doneBytes)}/${formatBytes(totalBytes)}`
+      + ` · ${percent}% · ${formatBytes(bytesPerSecond)}/s · ${formatDuration(elapsed)} elapsed`
+      + (final ? "" : ` · ~${left} left`);
+    if (liveProgress && !final) {
+      process.stdout.write(`\r\u001B[2K${line}`);
+      progressPending = true;
+    } else {
+      clearProgressLine();
+      console.log(line);
+    }
+  };
 }
 
 async function localFiles(directory) {
@@ -222,6 +271,7 @@ async function upload(file) {
     } catch (error) {
       if (attempt >= MAX_ATTEMPTS) throw error;
       const delay = 1_000 * 2 ** attempt;
+      clearProgressLine();
       console.warn(`  retry ${attempt}/${MAX_ATTEMPTS - 1} in ${delay / 1000}s: ${file.pathname} (${error.message})`);
       await sleep(delay);
     }
@@ -232,21 +282,44 @@ async function runPool(items, worker) {
   const queue = [...items];
   const failures = [];
   const uploaded = [];
+  const totalBytes = items.reduce((total, item) => total + item.size, 0);
+  const report = progressReporter(items.length, totalBytes);
   let done = 0;
+  let doneBytes = 0;
   await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, async () => {
     for (let item = queue.shift(); item; item = queue.shift()) {
       try {
         await worker(item);
         uploaded.push(item);
+        doneBytes += item.size;
       } catch (error) {
         failures.push({ item, error });
+        clearProgressLine();
         console.error(`  failed: ${item.pathname} (${error.message})`);
       }
       done += 1;
-      if (done % 250 === 0 || done === items.length) console.log(`  ${done}/${items.length}`);
+      report(done, doneBytes);
     }
   }));
+  report(done, doneBytes, true);
   return { failures, uploaded };
+}
+
+// Counting by the collection folder under each evidence root turns a 22k-line
+// dump into something readable; the full list still goes to disk.
+function orphanGroups(pathnames, sizes) {
+  const groups = new Map();
+  for (const pathname of pathnames) {
+    const evidenceRoot = EVIDENCE_ROOTS.find((value) => pathname.startsWith(`${value}/`));
+    const key = evidenceRoot
+      ? `${evidenceRoot}/${pathname.slice(evidenceRoot.length + 1).split("/")[0]}`
+      : path.posix.dirname(pathname);
+    const group = groups.get(key) ?? { files: 0, bytes: 0 };
+    group.files += 1;
+    group.bytes += sizes.get(pathname) ?? 0;
+    groups.set(key, group);
+  }
+  return [...groups].sort(([, left], [, right]) => right.bytes - left.bytes);
 }
 
 // Only files recorded as successfully in the store are remembered, so a failed
@@ -297,9 +370,16 @@ const source = listedStore ? `read from the store in ${scanSeconds}s` : "from th
 console.log(`Local files: ${local.length} (${formatBytes(local.reduce((total, file) => total + file.size, 0))}); in store: ${remote.size} (${source}).`);
 console.log(`To upload: ${pending.length} (${formatBytes(pendingBytes)}), of which changed: ${changed.length}; in store but not local: ${orphans.length}.`);
 if (orphans.length) {
-  console.log("Store-only files are left in place (delete them from the Vercel dashboard if they are stale):");
-  for (const pathname of orphans.slice(0, 20)) console.log(`  ${pathname}`);
-  if (orphans.length > 20) console.log(`  … and ${orphans.length - 20} more`);
+  const orphanBytes = orphans.reduce((total, pathname) => total + (remote.get(pathname) ?? 0), 0);
+  const groups = orphanGroups(orphans, remote);
+  const width = Math.max(...groups.map(([key]) => key.length));
+  console.log(`Store-only files (${formatBytes(orphanBytes)}) are left in place; delete them from the Vercel dashboard if they are stale:`);
+  for (const [key, group] of groups) {
+    console.log(`  ${key.padEnd(width)}  ${String(group.files).padStart(6)} files  ${formatBytes(group.bytes).padStart(9)}`);
+  }
+  await mkdir(path.dirname(ORPHAN_LIST_PATH), { recursive: true });
+  await writeFile(ORPHAN_LIST_PATH, `${orphans.map((pathname) => `${remote.get(pathname) ?? 0}\t${pathname}`).join("\n")}\n`);
+  console.log(`  full list: ${path.relative(root, ORPHAN_LIST_PATH)}`);
 }
 if (listedStore) await persistManifest();
 
@@ -316,12 +396,15 @@ if (!pending.length) {
   process.exit(0);
 }
 
-console.log(`Uploading with concurrency ${concurrency}…`);
+const largest = pending.reduce((total, file) => Math.max(total, file.size), 0);
+console.log(`Uploading ${pending.length} files (${formatBytes(pendingBytes)}, largest ${formatBytes(largest)}), ${concurrency} at a time (--concurrency=N to change):`);
 const startedAt = Date.now();
 const { failures, uploaded } = await runPool(pending, upload);
-const seconds = ((Date.now() - startedAt) / 1000).toFixed(0);
+const elapsed = Date.now() - startedAt;
 await persistManifest(uploaded);
-console.log(`Uploaded ${uploaded.length}/${pending.length} files in ${seconds}s.`);
+const uploadedBytes = uploaded.reduce((total, file) => total + file.size, 0);
+console.log(`Uploaded ${uploaded.length}/${pending.length} files (${formatBytes(uploadedBytes)}) in ${formatDuration(elapsed)}`
+  + ` at ${formatBytes(uploadedBytes / Math.max(elapsed / 1000, 0.001))}/s.`);
 if (failures.length) {
   console.error(`${failures.length} upload(s) failed; rerun the command to retry them.`);
   process.exit(1);
