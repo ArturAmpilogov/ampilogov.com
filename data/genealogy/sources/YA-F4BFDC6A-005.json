@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-F4BFDC6A-005",
   "provider": "Яндекс Архив — первичный газетный скан",
-  "recordType": "fuzzy-search-false-positive",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "f4bfdc6a-7fac-45a2-b27c-4872433193b6",
     "scanNumber": 5,
@@ -14,22 +14,24 @@
     "documentUrl": "https://yandex.ru/archive/catalog/f4bfdc6a-7fac-45a2-b27c-4872433193b6/5"
   },
   "event": {
-    "type": "research-review",
+    "type": "clergy-transfer",
     "date": {
-      "display": "1 января 1906 — 31 декабря 1906",
-      "confidence": "high-for-publication-date"
+      "display": "5 августа 1906",
+      "date": "1906-08-05",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "из села Колычева в село Старо-Богдановку, Оренбургский уезд",
+      "placeId": "kolychevo-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-F4BFDC6A-005-M1",
       "role": "subject",
-      "personId": null,
-      "nameAsTranscribed": "Анпилогов",
-      "displayName": "Анпилогов",
+      "personId": "P101595",
+      "nameAsTranscribed": "Михаилъ Анпилоговъ",
+      "displayName": "Михаил Анпилогов",
       "surnameSeries": true
     }
   ],
@@ -102,17 +104,16 @@
     "querySnippet": "...Маслаковецкого, Орского уезда, Петр Черняков в пос. Нежинский, Оренбургского уезда, - 4 августа; священник села Колычева, Оренбургского уезда, Михаил Анпилогов в с...",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-rejected-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
     "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": [
-      "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
-    ],
+    "transcriptionConfidence": "high",
+    "unresolved": [],
     "correctionHistory": [
-      "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+      "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны.",
+      "2026-09-12: по ручной буквальной расшифровке восстановлены имя Михаила Анпилогова, перевод 5 августа 1906 года и публичный статус Record."
     ],
     "mergeAlternateReadings": [
       {
@@ -146,6 +147,5 @@
       }
     ],
     "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
-  },
-  "rejectionReason": "place-name-not-person-surname"
+  }
 }

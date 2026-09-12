@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-A0A80B53-048",
   "provider": "Яндекс Архив — первичный газетный скан",
-  "recordType": "fuzzy-search-false-positive",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "a0a80b53-e60b-40af-994e-ce88185f864f",
     "scanNumber": 48,
@@ -14,22 +14,23 @@
     "documentUrl": "https://yandex.ru/archive/catalog/a0a80b53-e60b-40af-994e-ce88185f864f/48"
   },
   "event": {
-    "type": "research-review",
+    "type": "church-building-committee-membership",
     "date": {
       "display": "1 января 1892 — 31 декабря 1892",
       "confidence": "high-for-publication-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "станция Волочиск, Волынская губерния",
+      "placeId": "volochysk-volyn"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-A0A80B53-048-M1",
       "role": "subject",
-      "personId": null,
-      "nameAsTranscribed": "Анпилогов",
-      "displayName": "Анпилогов",
+      "personId": "P102904",
+      "nameAsTranscribed": "Иванъ Митрофановичъ Анпилоговъ",
+      "displayName": "Иван Митрофанович Анпилогов",
       "surnameSeries": true
     }
   ],
@@ -101,17 +102,16 @@
     "querySnippet": "...(а за выбытием последняго, нынешний Начальник станции Иван Митрофанович Анпилогов) и агент экспедитор дороги Егор Иванович Штиопуло",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-rejected-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
     "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": [
-      "Полное имя носителя фамилии не выводится автоматически, если на проверенном фрагменте оно отсутствует или неоднозначно."
-    ],
+    "transcriptionConfidence": "high",
+    "unresolved": [],
     "correctionHistory": [
-      "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны."
+      "2026-09-11: сохранены полный оригинальный лист, шапка и увеличенный целевой фрагмент; релевантная строка визуально сверена, SHA-256 записаны.",
+      "2026-09-12: по ручной буквальной расшифровке восстановлены полное имя Ивана Митрофановича Анпилогова, должность, место и публичный статус Record."
     ],
     "mergeAlternateReadings": [
       {
@@ -145,6 +145,5 @@
       }
     ],
     "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
-  },
-  "rejectionReason": "place-name-not-person-surname"
+  }
 }
