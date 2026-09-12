@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-A2856A52-097",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-index-hit",
   "collection": {
     "catalogId": "a2856a52-3ecb-4f58-9b02-896a481e7030",
     "scanNumber": 97,
@@ -12,25 +12,8 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/a2856a52-3ecb-4f58-9b02-896a481e7030/97"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1918 — 31 декабря 1918",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-A2856A52-097-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "event": null,
+  "mentions": [],
   "evidence": {
     "catalogId": "a2856a52-3ecb-4f58-9b02-896a481e7030",
     "scanNumber": 97,
@@ -76,20 +59,20 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Сниппет об Анне Трофимовне Ампилоговой отсутствует на сохранённом развороте и отвергнут после проверки всех видимых строк."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Анна Трофимова Ампилогова. ... Муж крестной матери: Анна Трофимова Ампилогова, гражданка, Воронежская губерния.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-note",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high-for-exclusion",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный разворот части о родившихся за август—сентябрь 1918 года, записи № 174–176 и обе колонки восприемников. Анны Трофимовны Ампилоговой и других носителей исследуемой фамилии на листе нет.",
+    "unresolved": []
   }
 }
