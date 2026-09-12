@@ -638,6 +638,19 @@ export type DirectoryPerson = {
   searchText: string;
 };
 
+export type FamilyTreePerson = Pick<DirectoryPerson,
+  "personId" | "displayName" | "sex" | "birthYear" | "life" | "needsReview"
+> & {
+  parentIds: string[];
+  /** Used only for vertical placement; it may be an event year when birth is unknown. */
+  timelineYear: number | null;
+};
+
+export type FamilyTreeDirectory = {
+  people: FamilyTreePerson[];
+  range: { minYear: number; maxYear: number };
+};
+
 export type PlacePrecision =
   | "settlement"
   | "city"
@@ -3244,6 +3257,57 @@ export function getPeopleDirectory() {
 
 export function getDirectoryPerson(personId: string) {
   return getPeopleDirectory().people.find((person) => person.personId === personId) ?? null;
+}
+
+let familyTreeCache: FamilyTreeDirectory | null = null;
+
+/** A deliberately small, public-only projection for the interactive tree. */
+export function getFamilyTreeDirectory(): FamilyTreeDirectory {
+  if (familyTreeCache) return familyTreeCache;
+  const directory = getPeopleDirectory().people;
+  const ids = new Set(directory.map((person) => person.personId));
+  const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
+  const parentsFromFamily = new Map<string, string[]>();
+  for (const family of families) {
+    const documentedParents = (family.spouses ?? []).filter((personId) => ids.has(personId));
+    if (!documentedParents.length) continue;
+    for (const childId of family.children ?? []) {
+      if (!ids.has(childId)) continue;
+      const existing = parentsFromFamily.get(childId) ?? [];
+      parentsFromFamily.set(childId, [...new Set([...existing, ...documentedParents])]);
+    }
+  }
+  const eventYear = (person: DirectoryPerson) => {
+    const values = [person.birthYear, person.life.birth, person.life.death, ...person.sources.map((source) => source.date)];
+    const years = values.flatMap((value) => String(value).match(/\b(?:14|15|16|17|18|19)\d{2}\b/g) ?? []).map(Number)
+      .filter((year) => year >= 1400 && year <= PUBLIC_RESEARCH_END_YEAR);
+    return years.length ? Math.min(...years) : null;
+  };
+  const people = directory.map((person) => ({
+    personId: person.personId,
+    displayName: person.displayName,
+    sex: person.sex,
+    birthYear: person.birthYear,
+    life: person.life,
+    needsReview: person.needsReview,
+    parentIds: [...new Set([
+      ...person.relations
+      .filter((relation) => relation.relation === "parent" && ids.has(relation.personId))
+      .map((relation) => relation.personId),
+      ...(parentsFromFamily.get(person.personId) ?? []),
+    ])],
+    timelineYear: eventYear(person),
+  }));
+  const years = people.map((person) => person.timelineYear)
+    .filter((year): year is number => typeof year === "number");
+  familyTreeCache = {
+    people,
+    range: {
+      minYear: years.length ? Math.min(...years) : 1500,
+      maxYear: years.length ? Math.min(PUBLIC_RESEARCH_END_YEAR, Math.max(...years)) : PUBLIC_RESEARCH_END_YEAR,
+    },
+  };
+  return familyTreeCache;
 }
 
 function sourceYear(source: SourceRecord) {
