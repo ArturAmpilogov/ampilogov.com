@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5B4E7076-13",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "5b4e7076-fddb-43b1-bb35-288c1cb7d15c",
     "scanNumber": 13
@@ -13,59 +13,47 @@
   "mentions": [
     {
       "mentionId": "YA-5B4E7076-13-M1",
-      "role": "unconfirmed-index-hit",
+      "role": "false-index-hit",
       "personId": null,
-      "nameAsTranscribed": "Индексное совпадение требует повторного чтения",
-      "displayName": "Требуется качественная копия",
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ЗвАніє, ймА, сотчество й фамнлта родúтелей, й какóги\nIXCA.\nвкронспов ЕдантА.\nДеревни Аброликиной крестьяниый\na",
-    "modernInterpretation": "ЗвАниє, ймА, сотчество й фамнлта родúтелей, й какóги IXCA. вкронспов ЕдантА. Деревни Аброликиной крестьяниый a",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый разворот и целевой фрагмент недостаточно чётки для надёжного чтения всех фамилий.",
-    "localOcr": "ЗвАніє, ймА, сотчество й фамнлта родúтелей, й какóги\nIXCA.\nвкронспов ЕдантА.\nДеревни Аброликиной крестьяниый\na",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "1889 год, часть о родившихся, записи № 26–41. Полностью просмотрены обе половины разворота, включая родителей и восприемников; фамилия исследуемого ряда не обнаружена.",
+    "modernInterpretation": "Ложное нечёткое совпадение: качественная локальная копия не содержит Ампилоговых, Ампиловых или документированного варианта фамилии.",
+    "indexNote": "Индекс не даёт проверяемого целевого имени; полный оригинал исключает фамильное совпадение."
   },
   "evidence": {
     "catalogId": "5b4e7076-fddb-43b1-bb35-288c1cb7d15c",
     "scanNumber": 13,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "fdc8b4ef3abae93893280fbaf916c1bdff6d9f91118e46a5c840b7348b0fd899",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-header.png",
-        "sha256": "d5ffdfa4f917ee7883a4010a787611f1ec66f8e0223f7fd67679148983d1d1a6",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-target-entry.png",
-        "sha256": "742b79b895bcdd0c65364127a162ad0de1597309010c4a2109492033e65c2a9a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/5b4e7076-fddb-43b1-bb35-288c1cb7d15c/0013-full-view.png",
+        "sha256": "fdc8b4ef3abae93893280fbaf916c1bdff6d9f91118e46a5c840b7348b0fd899",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены целевая запись и окружающий контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "6085x4804",
-      "targetDimensions": "1720x632",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "6085x4804",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "parallelCopies": [
       {
         "publicDisplay": false,
@@ -94,14 +82,21 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Индекс не заменяет чтение первичного документа.",
     "fuzzyQuery": true
-  }
+  },
+  "event": null,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false
 }

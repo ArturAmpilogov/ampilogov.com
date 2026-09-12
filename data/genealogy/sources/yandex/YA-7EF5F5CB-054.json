@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-7EF5F5CB-054",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "false-index-hit-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "7ef5f5cb-fbcc-4105-8c46-64310d8dcb25",
     "scanNumber": 54,
@@ -15,22 +15,13 @@
     "type": "false-index-hit-review",
     "date": {
       "display": "1910",
-      "confidence": "high"
+      "confidence": "high-for-source-year"
     },
     "place": {
       "normalized": "Инсарский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-7EF5F5CB-054-M1",
-      "role": "misread-by-index",
-      "personId": null,
-      "displayName": "діакон Егор Адонисов",
-      "nameAsTranscribed": "діаконъ Егоръ Адонисовъ",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "7ef5f5cb-fbcc-4105-8c46-64310d8dcb25",
     "scanNumber": 54,
@@ -47,10 +38,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/7ef5f5cb-fbcc-4105-8c46-64310d8dcb25/0054-target-entry.png",
-        "sha256": "9f31e151c0586e67701b27f7a2920782fc70d8c2022149bda8851e38ca103d62",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/7ef5f5cb-fbcc-4105-8c46-64310d8dcb25/0054-target-context-deep.jpg",
+        "sha256": "4b1ac99710b0017780c73b97aa5c8f80a07f5cb179cf77f963be99a0679340eb",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -58,39 +49,37 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "7605x6017",
-      "targetDimensions": "1655x955",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "6900x4300",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "captureStatus": "complete-with-local-copy",
+    "uploadStatus": "pending-remote-list-timeout"
   },
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "Петр Андреев Алёшин и деревни Оржовки Гавриила Андреева Балаева дочь девица Александра. Таинство совершал диакон Егор Адонисов.",
-    "modernInterpretation": "На оригинале ясно читается «Егор Адонисов», не «Ампилов». Карточки 690 и 693 — дубликаты одного ложного совпадения.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "АЛЬНО'\nгода, члсть первад, 0 Р\nЗвАніє, йМА, отЧЕстко й фАлнАЇА",
-    "localOcrWithSurnameLexicon": "АЛЬНО!\nгода, чАсть первал, 0 Р\nЗвАніє, йМА, отЧЕстко й фАнАА",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном листе видны записи № 21–23 и № 31–32 и итог за октябрь; Петра Андреева Алёшина, Александры Балаевой и диакона Егора Адонисова либо Ампилова на листе нет.",
+    "modernInterpretation": "Прежняя фраза об Алёшине, Балаевой и диаконе была перенесена индексом с другого листа. На скане 54 фамильный ряд не встречается.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и соседних строк имеет приоритет; индексная фамильная фраза на этом скане не подтверждается."
   },
-  "isRecord": true,
-  "cardKind": "research-review",
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Яндекс ошибочно распознал фамилию служившего диакона.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "вручную проверены полный лист, заголовок, вся индексно-релевантная строка и соседние записи; буквальное чтение отделено от ошибочного индекса; сохранён крупный полноширинный clean crop с SHA; исключены профиль, backlink, карта, родство и миграция"
   },
   "indexData": {
     "querySnippet": "Диакон Егор Ампилов Петр Андреев Алешин и деревни Оржовки Гавриила Андреева Балаева дочь девица Александра. с Диаконом Егором Адонисовым.",
     "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: фамильный ряд не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи нет."
   }
 }

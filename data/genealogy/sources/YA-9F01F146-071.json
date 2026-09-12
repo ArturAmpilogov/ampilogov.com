@@ -10,15 +10,19 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/9f01f146-77bc-48b4-a581-9ee41cd643d5/71"
   },
+  "event": {"type": "birth-register-page", "date": {"display": "февраль — март 1913", "confidence": "high"}, "place": {"normalized": "Богородский приход", "confidence": "high"}},
   "mentions": [],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/071-full-view.jpg",
-    "sha256": "c310e1a9fe22add37cef04b22f7edb949b70679141e2a6c6550fdc75bf065f89",
+    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-full-view.png",
+    "sha256": "fd1d60be48dcec9dcf85b137d0bd79cf11e08ec4fcbd8af9f0edefbc93aed746",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/071-target-entry.jpg",
-        "sha256": "de68b1702c4a6d5a25170485eb6624af9f888c8eb3d6ba28c1bff3869957f891"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-target-entry.png",
+        "sha256": "9a17605eb9b8624aa9bf839d64271077f4c1e77b1afdbdaf960eeca17db02c79",
+        "description": "Полноширинный крупный фрагмент всех видимых февральских и мартовских записей."
       }
     ],
     "parallelCopies": [
@@ -41,8 +45,8 @@
           {
             "kind": "target-entry",
             "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0071-target-entry.png",
-            "sha256": "143f764a95c347e989dd04fb63edf680a3042326e2659412440b3cecc355b170",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "sha256": "9a17605eb9b8624aa9bf839d64271077f4c1e77b1afdbdaf960eeca17db02c79",
+            "description": "Полноширинный крупный фрагмент всех видимых февральских и мартовских записей."
           }
         ],
         "quality": {
@@ -50,8 +54,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5072x3964",
-          "targetDimensions": "1303x610",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "4600x3150",
+          "method": "manual-full-scan-review-and-full-width-context-recrop-from-original"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,13 +63,13 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "deep-reviewed-primary-scan-no-match",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полный разворот за февраль–март 1913 года, включая записи № 8–11, родителей, восприемников и причт. Василия Тимофеевича и Тимофея Захаровича Ампилоговых на листе нет; индексное совпадение отвергнуто. Crop полноширинный; публичные сущности не создавались.",
+    "unresolved": []
   },
-  "transcription": {
+  "legacyTranscription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
@@ -78,8 +82,12 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "transcription": {"status": "primary-scan-reviewed-no-match", "literal": "Метрическая книга на 1913 год, часть первая, о родившихся. На полном листе видны февральские и мартовские записи № 8–11; среди детей, родителей, восприемников и причта фамильный ряд Ампилогов / Анпилогов не обнаружен.", "modernInterpretation": "Индексная пара «Василий Тимофеевич — отец Тимофей Захарович Ампилогов, хутор Камай» отсутствует на этом скане; это ложное fuzzy-совпадение.", "indexNote": "Индекс Яндекса использован только как поисковая подсказка и опровергнут чтением всех граф полного листа."},
   "indexData": {
     "querySnippet": "Родившийся: Василий Тимофеев Ампилогов. ... Отец: Тимофей Захаров Ампилогов, крестьянин, хутор Камай.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false
 }

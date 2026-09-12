@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-53130FC6-162",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "53130fc6-65ea-445e-926f-5f616bf4cd09",
     "scanNumber": 162,
@@ -12,84 +12,108 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/53130fc6-65ea-445e-926f-5f616bf4cd09/162"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
   "mentions": [
     {
       "mentionId": "YA-53130FC6-162-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "53130fc6-65ea-445e-926f-5f616bf4cd09",
     "scanNumber": 162,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-full-view.png",
-    "capturedAt": "2026-09-11",
+    "capturedAt": "2026-09-12",
     "sha256": "ede38d0694b650c656778fd16be490ca5902936a27527f7c91224f7566e0f88e",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-header.png",
-        "sha256": "e308e263f595911f7190c1f49b68e6fa6fe03041a0c7147401b7c2125f45f220",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-target-entry.png",
-        "sha256": "d99d17dfc649c46cd561ca43e0b10c796dd3eb62c57f8d464482dab4535f6642",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "d5f966af902c2fcf210bb632a811d6186cf5419e55c89c9cc90237e007ada277",
+        "description": "Крупный полноширинный фрагмент проверенной записи и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5602x4314",
-      "targetDimensions": "1488x656",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5300x2600",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
+    "parallelCopies": [
+      {
+        "catalogId": "53130fc6-65ea-445e-926f-5f616bf4cd09",
+        "scanNumber": 162,
+        "captureStatus": "complete-with-local-copy",
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-full-view.png",
+        "capturedAt": "2026-09-11",
+        "sha256": "ede38d0694b650c656778fd16be490ca5902936a27527f7c91224f7566e0f88e",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-header.png",
+            "sha256": "e308e263f595911f7190c1f49b68e6fa6fe03041a0c7147401b7c2125f45f220",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/53130fc6-65ea-445e-926f-5f616bf4cd09/0162-target-entry.png",
+            "sha256": "d99d17dfc649c46cd561ca43e0b10c796dd3eb62c57f8d464482dab4535f6642",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "5602x4314",
+          "targetDimensions": "1488x656",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    ]
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "БÉНЇA.\nмол.\nпив\n('вму. В. Кручть,\nDichaнe Puascin Sesrehen",
-    "modernInterpretation": "БÉНЇA. мол. пив ('вму. В. Кручть, Dichaнe Puascin Sesrehen",
-    "localOcr": "БÉНЇA.\nмол.\nпив\n('вму. В. Кручть,\nDichaнe Puascin Sesrehen",
-    "localOcrWithSurnameLexicon": "БЕНЇА.\nмоль.\nпив\n('вму. В. Крушить,\nDicane Prascin Sesten",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Следующий разворот части третьей метрической книги на 1917 год содержит записи об умерших № 12–16. Иван Павлович Ампилогов как отец умершего на листе отсутствует.",
+    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом; публичная карточка, профиль, карта и миграция не создаются.",
+    "indexNote": "Индексный сниппет не соответствует именам полного скана."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Иван Павлов Ампилогов, гражданин, хутор Воскресенский. Отец умершего: Филип Даниилов Шруненко, гражданин, Харьковская губерния...",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-name-role-date-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 5300x2600"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Оснований для карты или переселения нет.",
+    "pageContext": "Проверены обе страницы, заголовок и видимые июльско-августовские строки."
   }
 }

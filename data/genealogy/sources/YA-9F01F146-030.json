@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-9F01F146-030",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "baptism-godparent-record",
   "collection": {
     "catalogId": "9f01f146-77bc-48b4-a581-9ee41cd643d5",
     "scanNumber": "030"
@@ -10,15 +10,26 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/9f01f146-77bc-48b4-a581-9ee41cd643d5/30"
   },
-  "mentions": [],
+  "event": {
+    "type": "baptism-godparent-record",
+    "date": {"display": "16 октября 1913", "iso": "1913-10-16", "confidence": "high"},
+    "place": {"normalized": "село Богородское", "confidence": "high-for-parish"}
+  },
+  "mentions": [
+    {"mentionId": "YA-9F01F146-030-M1", "role": "godparent", "personId": "P102139", "displayName": "Стефан Тимофеевич Ампилогов", "nameAsTranscribed": "Села Кармалки крестьянинъ Стефанъ Тимофеевъ Ампилоговъ", "surnameSeries": true},
+    {"mentionId": "YA-9F01F146-030-M2", "role": "godparent", "displayName": "Анна Семёновна Гузина", "nameAsTranscribed": "крестьянская девица Анна Семенова Гузина", "surnameSeries": false}
+  ],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/030-full-view.jpg",
-    "sha256": "76fe6bc5b4afdd3d9224da4a0870bf6a40d62bab6c2f87d958338da087d44d20",
+    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0030-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0030-full-view.png",
+    "sha256": "e6c4fb47ea0f2ed074daaf80703307928e12e7a25ec39d6a7b86dbb2f1098cec",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/030-target-entry.jpg",
-        "sha256": "b5ba2b4202b5b5dfdc3f644193c4fbd42a1f797a9679b3b3c7abda7bc91da8b6"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0030-target-entry.png",
+        "sha256": "7cbf3658f3b3dfbc4b1362de79f60e0b1b17439e8643f3e88fc3c6cdc82bf404",
+        "description": "Полноширинный крупный фрагмент записи № 74 с датами, именем ребёнка, родителями, восприемниками и совершителем крещения."
       }
     ],
     "parallelCopies": [
@@ -41,8 +52,8 @@
           {
             "kind": "target-entry",
             "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0030-target-entry.png",
-            "sha256": "3b5043b32b54bac90bb1ca8e572862e6c024bf1c67c71eb739c7bb10684ca08b",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "sha256": "7cbf3658f3b3dfbc4b1362de79f60e0b1b17439e8643f3e88fc3c6cdc82bf404",
+            "description": "Полноширинный крупный фрагмент записи № 74 с датами, именем ребёнка, родителями, восприемниками и совершителем крещения."
           }
         ],
         "quality": {
@@ -50,8 +61,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "4973x3982",
-          "targetDimensions": "1278x679",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "4550x1300",
+          "method": "manual-full-scan-review-and-full-width-context-recrop-from-original"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +70,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "deep-reviewed-primary-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан полный разворот и вся строка № 74: сверены даты рождения/крещения, ребёнок, родители, оба восприемника и причт. Подтверждён P102139; исправлена фамилия Гузина и устранено ложное впечатление индекса о брачной паре. Полноширинный crop заменён; родство и миграция не выводились.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "1913 год, часть первая, о родившихся. Октябрь. № 74. 15 [родился], 16 [крещён]. Андрей. Родители: деревни Богословки крестьянинъ Іоаннъ Стефановъ Шкуровинъ и законная жена его Пелагія Семенова, оба православные. Воспріемники: села Кармалки крестьянинъ Стефанъ Тимофеевъ Ампилоговъ и крестьянская девица Анна Семенова Гузина. Священникъ Леонтій Аполлоновъ; псаломщикъ Петръ Цветковъ.",
+    "modernInterpretation": "16 октября 1913 года крестьянин села Кармалки Стефан Тимофеевич Ампилогов и девица Анна Семёновна Гузина были восприемниками Андрея, сына Ивана Стефановича Шкуровина и Пелагеи Семёновны.",
+    "indexNote": "Индекс Яндекса нашёл нужную строку, но ошибочно дал фамилию восприемницы как «Гузнина»; на полном скане читается «Гузина». Индекс не сообщает, что это восприемники записи № 74, а не брачная пара.",
     "localOcr": "Звáніє, йма, бтчество й фамиліл\nKrò c\nвоспріéмникшкZ.\nСела Быгоробскаго крестьянии\nСвя\nЯховь Гаврігловь Новірюхтш\nи крестьянская жена Анна",
     "localOcrWithSurnameLexicon": "Званіє, йма, отчество й фамиліл\nKro c\nБоспрімникшЕ.\nСела Богоровскаго крестьянии.\nСвя\nЯхово Гавріллов Новірюхиш\nи крестьянская жена Анна",
     "collation": {
@@ -81,5 +92,8 @@
   "indexData": {
     "querySnippet": "Села Кармалки крестьянин Стефан Тимофеев Ампилогов и крестьянская девица Анна Семенова Гузнина.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

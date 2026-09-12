@@ -1,128 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-091",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-clerical-service",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 91
+    "scanNumber": 91,
+    "title": "Метрическая книга за 1904 год",
+    "asRead": "Часть первая, о родившихся; февральские записи № 11–14"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/91"
   },
+  "event": {
+    "type": "clerical-service",
+    "date": {
+      "display": "6–8 февраля 1904",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход, название на листе не нормализовано",
+      "normalized": "Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-uezd"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-772ECBA6-091-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-772ECBA6-091-M2",
+      "role": "clergy-colleague",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Сергій Иллюминарскій",
+      "displayName": "священник Сергий Иллюминарский",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-signatures-and-visible-page-context",
+    "literal": "Февраль 1904 года, записи № 11–14: на развороте видны рождения и крещения Агафии, Тимофея, двух Гавриилов, Евдокии и следующего ребёнка; в каждой сохранившейся графе причта повторяется: «Священникъ Сергій Иллюминарскій. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Лист документирует служение Афиногена Егоровича Ампилогова диаконом при совершении таинств, 6–8 февраля 1904.",
+    "indexNote": "Индекс использован только для навигации; имя, сан, даты и контекст проверены по полному скану, искажённые индексом слова не перенесены."
+  },
+  "indexData": {
+    "querySnippet": "Поисковый индекс распознал диакона Афиногена Ампилогова с искажениями соседних слов.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
     "scanNumber": 91,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "352c558a99240f56bb221dc15380898a4ed2d4b16c592e8f205daedc7f15e95f",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-header.png",
-        "sha256": "f8e824eec05faaf73e555b62b1a54f7d1c1e8cb10d75d6b567e8b9354de515c6",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-target-entry.png",
-        "sha256": "784590ebdfb59436f5b3f9c19f92329123bd0dbd71205c61df75f80aceb17abb",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "8ef8591d34a28b2ac8cda1079fae6333713e0e1204ad8dd78ed3e4474a1d75e0",
+        "description": "Крупный полноширинный чистый фрагмент листа со всеми контекстными графами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5821x4640",
-      "targetDimensions": "3642x3607",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5600x4200",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.jpg",
-        "sha256": "cdf9e4ebb8a59bae6d7eccc321b6001ed263265f781ecec94ae89e55167ba860",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-target-entry.jpg",
-            "sha256": "f397c7e04c4dc9ac7d573573f0381e86cb13a93567802be53b9701aa3b1fe741"
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-            "scanNumber": 91,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "352c558a99240f56bb221dc15380898a4ed2d4b16c592e8f205daedc7f15e95f",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-header.png",
-                "sha256": "f8e824eec05faaf73e555b62b1a54f7d1c1e8cb10d75d6b567e8b9354de515c6",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0091-target-entry.png",
-                "sha256": "784590ebdfb59436f5b3f9c19f92329123bd0dbd71205c61df75f80aceb17abb",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5821x4640",
-              "targetDimensions": "3642x3607",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-primary-scan-local-ocr-collation",
-    "literal": "ЯМАЛЛНО\nтРической внúги на 1904 °\nóда, часть первад, й родисшихел.\nЗааніє, йма, бтчЕство й фамнліА родúтелей, й какóгш\nЗваніє, ймя, бтчЕство й фамнлія\nКто совершалу тáннство\nP\nквронспов єданіл.\nВОспрібмнИкШВХ.\nIрЕцIній.\nT\nДоревни Ажіреовки перествянийь Можні\nIr.\n(ті сме верквомпересивоя шиів Алідрей\n(жовлевьотливновь и закиннео лисииего\nНизайміві Доловийв м перасівникм\nВервара ситова- обспревосильные\nШтила Алшмова Масова.\nСвоященник,\nвыщенникь Сеий\nй Ииоми\nиитаерских\nРіакнів Поможів Ампилоговь\nСлиФлсновпиперестлянийв Мрофиль\nвмнсне дерханипростлйнив Пенрь\nовилиткові горбетшховь изаконниюлин\nсіекuчевьМироносов'ь и перестванка\nСфаій\nего ввдохія Мирайнова-обиаривоскавнксе.\nсн. втенаніва Китуарина\nСвященнить Ері\" Илиїомих\nмарекли\nДіскеіь Помлючів Питиноговч\n• Сели РлоновхитроствЯнийв Мива 13 а-\nсливові (оалориів изалинних мисшистю\nіноваипероствентив Пеирч\nИмилатинаревий\nВарвари Фригорвева- овилгравоставноо\nлмівь волоровлові илроствеими\nии Амспикева Момеваніви-\nСвященникь Орчій Имполитор\nДіарань Аомлоритв Ампилосовь\nштрсни\nОли Рлсновкипроствянийь vеоpriйhoн\n6\nфристовь корослявчи затанним мисист\nАгрифена Нельльва,-обитереносиелень\n20 стл ссла проствянитв Реленч\nкорові Аристинаові м пересйлвчими\nУкинаномч\nСвященнит Согій Илаломи\nДіякайв Аамочейв Алтилокові\nна Пейрова-\nКорсцкова?\n2 Сиивллоновхитеростіяниив\nИвсиль\nАледиміровь Домкентовьиза \"- „ниман льена\nДомиженомч\nПя всоавнвя.",
-    "modernInterpretation": "ЯМАЛЛНО тРической внúги на 1904 ° óда, часть первад, й родисшихел. Зааниє, йма, бтчЕство й фамнлиА родúтелей, й какóгш Званиє, ймя, бтчЕство й фамнлия Кто совершалу тáннство P квронспов єданил. ВОсприбмнИкШВХ. IрЕцIний. T Доревни Ажиреовки перествянийь Можни Ir. (ти сме верквомпересивоя шиив Алидрей (жовлевьотливновь и закиннео лисииего Низаймиви Доловийв м перасивникм Вервара ситова- обспревосильные Штила Алшмова Масова. Своященник, выщенникь Сеий й Ииоми иитаерских Риакнив Поможив Ампилоговь СлиФлсновпиперестлянийв Мрофиль вмнсне дерханипростлйнив Пенрь овилиткови горбетшховь изаконниюлин сиекuчевьМироносов'ь и перестванка Сфаий его ввдохия Мирайнова-обиаривоскавнксе. сн. втенанива Китуарина Священнить Ери\" Илиїомих марекли Дискеиь Помлючив Питиноговч • Сели РлоновхитроствЯнийв Мива 13 а- сливови (оалориив изалинних мисшистю иноваипероствентив Пеирч Имилатинаревий Варвари Фригорвева- овилгравоставноо лмивь волоровлови илроствеими ии Амспикева Момеваниви- Священникь Орчий Имполитор Диарань Аомлоритв Ампилосовь штрсни Оли Рлсновкипроствянийь vеоpriйhoн 6 фристовь корослявчи затанним мисист Агрифена Нельльва,-обитереносиелень 20 стл ссла проствянитв Реленч корови Аристинаови м пересйлвчими Укинаномч Священнит Согий Илаломи Диякайв Аамочейв Алтилокови на Пейрова- Корсцкова? 2 Сиивллоновхитеростияниив Ивсиль Аледимировь Домкентовьиза \"- „ниман льена Домиженомч Пя всоавнвя.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ЯМАЛЛНО\nтРической внúги на 1904 °\nóда, часть первад, й родисшихел.\nЗааніє, йма, бтчЕство й фамнліА родúтелей, й какóгш\nЗваніє, ймя, бтчЕство й фамнлія\nКто совершалу тáннство\nP\nквронспов єданіл.\nВОспрібмнИкШВХ.\nIрЕцIній.\nT\nДоревни Ажіреовки перествянийь Можні\nIr.\n(ті сме верквомпересивоя шиів Алідрей\n(жовлевьотливновь и закиннео лисииего\nНизайміві Доловийв м перасівникм\nВервара ситова- обспревосильные\nШтила Алшмова Масова.\nСвоященник,\nвыщенникь Сеий\nй Ииоми\nиитаерских\nРіакнів Поможів Ампилоговь\nСлиФлсновпиперестлянийв Мрофиль\nвмнсне дерханипростлйнив Пенрь\nовилиткові горбетшховь изаконниюлин\nсіекuчевьМироносов'ь и перестванка\nСфаій\nего ввдохія Мирайнова-обиаривоскавнксе.\nсн. втенаніва Китуарина\nСвященнить Ері\" Илиїомих\nмарекли\nДіскеіь Помлючів Питиноговч\n• Сели РлоновхитроствЯнийв Мива 13 а-\nсливові (оалориів изалинних мисшистю\nіноваипероствентив Пеирч\nИмилатинаревий\nВарвари Фригорвева- овилгравоставноо\nлмівь волоровлові илроствеими\nии Амспикева Момеваніви-\nСвященникь Орчій Имполитор\nДіарань Аомлоритв Ампилосовь\nштрсни\nОли Рлсновкипроствянийь vеоpriйhoн\n6\nфристовь корослявчи затанним мисист\nАгрифена Нельльва,-обитереносиелень\n20 стл ссла проствянитв Реленч\nкорові Аристинаові м пересйлвчими\nУкинаномч\nСвященнит Согій Илаломи\nДіякайв Аамочейв Алтилокові\nна Пейрова-\nКорсцкова?\n2 Сиивллоновхитеростіяниив\nИвсиль\nАледиміровь Домкентовьиза \"- „ниман льена\nДомиженомч\nПя всоавнвя.",
-    "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и целевой фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P1543",
+  "context": {
+    "eventSummary": "Служение Афиногена Егоровича Ампилогова диаконом, 6–8 февраля 1904.",
+    "identityNote": "Редкое полное имя и сан согласуются с документированной церковной карьерой P1543.",
+    "migrationNote": "Только служебное участие; родство и маршрут переселения не выводятся."
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Псаломщик Алексей Стефанов Диакон Афиноген Ампилогов. го же села крестьянин Семен хоров Христинков и крестьянка на Петрова Корецкова.",
-    "fuzzyQuery": true
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-year-dates-name-role-and-visible-page-context",
+    "unresolved": [
+      "Название прихода не нормализовано без титульного листа."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1904 birth-register spread scan 91; February records 11–14 and adjacent row, dates, children, parents, godparents, damaged right leaf and repeated clergy signatures checked; P1543 service-only backlink; no kinship or migration; 5600x4200 crop"
   }
 }

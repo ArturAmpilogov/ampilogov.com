@@ -2,92 +2,92 @@
   "schemaVersion": 1,
   "sourceId": "YA-48925CD3-224",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "clergy-signatures-multiple-entries",
+  "recordType": "clergy-service-on-birth-register-page",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
     "scanNumber": 224,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Парадеево, Покровка (Каюргаз) (Покровская церковь), Разномойка (Казанско-Богородицкая церковь), Романовка (Михаило-Архангельская церковь), Слоновка (Николаевская церковь) за 1916 г."
+    "title": "Метрическая книга Слоновского прихода за 1916 год",
+    "asRead": "Часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/48925cd3-861e-4d30-a1b4-812ffe2097e3/224"
   },
   "event": {
-    "type": "clergy-signatures-multiple-entries",
+    "type": "clergy-service",
     "date": {
-      "display": "1916",
-      "confidence": "high-for-year"
+      "display": "8–25 декабря 1916 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Слоновка, Оренбургская губерния"
+      "asWritten": "село Слоновка",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-48925CD3-224-M1",
-      "role": "deacon",
+      "role": "church-clergy-deacon",
       "personId": "P1543",
-      "displayName": "діакон Аѳиноген Ампилогов",
-      "nameAsTranscribed": "діаконъ Аѳиногенъ Ампилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-48925CD3-224-M2",
+      "role": "parent-of-baptized-child-context",
+      "personId": null,
+      "nameAsTranscribed": "Евдокія Феодорова Полтавцева",
+      "displayName": "Евдокія Феодорова Полтавцева",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Метрической книги на 1916 годъ, часть первая, о родившихся». В целевой строке/графе контекста читаются: Евдокія Феодорова Полтавцева. При каждой видимой записи повторяется подпись причта: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Афиноген Ампилогов указан как диакон при крещениях детей других семей Слоновского прихода. Он не является членом перечисленных семей.",
+    "indexNote": "Индекс Яндекса склеивает служебную подпись диакона с участниками соседних граф. Полный разворот разделяет роли."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова (8–25 декабря 1916 года).",
+    "relationshipBoundary": "Участники актов имеют другие фамилии и сохранены только как контекст без профилей; родство и миграция Афиногена не следуют."
+  },
+  "indexData": {
+    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянская Евдокия Феодорова Полтавцева, православная Священник Иоанн Поляков Диакон Афиноген Ампилогов.",
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание относится к диакону причта, а не к семье или поручителям акта."
+  },
   "evidence": {
     "catalogId": "48925cd3-861e-4d30-a1b4-812ffe2097e3",
     "scanNumber": 224,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-full-view.png",
-    "capturedAt": "2026-09-11",
     "sha256": "d9162b4cf585e6f70da43d055c458e5b27c0b749c4853ca52a7793fbf9e74a29",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-header.png",
-        "sha256": "f16c33efc1b112072700a3a0bd572a411d52a4033a79a2a5285a723bd8482736",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-target-entry.png",
-        "sha256": "918021d45cde0f899465a6aff4afa4ab6bbf3ec70c4266b2aea1582195761768",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/48925cd3-861e-4d30-a1b4-812ffe2097e3/0224-target-context-deep.jpg",
+        "sha256": "c37828bfd64bdd8cee820b1be0b0262feee8869f92c755290cd9818da9de884a",
+        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границ раздела и служебных подписей причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4455x3640",
-      "targetDimensions": "2877x2791",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4200x3350",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "В нескольких записях о родившихся служебная подпись: диакон Афиноген Ампилогов; на листе также встречается форма подписи «Ампилов».",
-    "modernInterpretation": "Лист многократно подтверждает служение диакона Афиногена Ампилогова и документальный вариант фамилии «Ампилов».",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ИСТРИЧЄСКОЙ КМИГИ НА 1416\"\nГОДА, чАСТЬ пеРвАД, й РОДИвШИХеА.\nЗвáніє, йма, бтчество й фамиліл родитєлєй, й какóгш\nвшиусл.\nЗвАніє, ймл, бтчЕство й фамиліл\nКітò совєршÁла тАинство\nP8ко\nв'вронспов'Еданіл.\nвосПрЇємникшвг.\nKрeiéNiA.\nТЕЛЕЙ\nап'ьваРисттовки перотівяниів лмтрть\n* Свутара вайаувинскихо вероствяннич\nпрапод двиимісві пербль и зарешитии лима\nДаснаей Мваіві вмйратовь лі\nСвященнякг\nправда о вволомонн(а Тимофіова ов а град\nКремтвяленьх лиса Анна Мийвсь\nЛивньле.\nяви Голівлєва.\nСвящетичва Фоанть Полянокв.\nДіакбив Помночив Ампинозівів\nМогом онаперсливанть Осодорть\nель\nСона Снановтипераствяний Проруіь\nбоаннч\nалганням сеени\nілекланоріві Малкровьм проосттв\nекли мисли Мари Швеигва сЛаріен\nавсе ягравослов-\nіготва.\n\"Demeкива\nфоанні Полякові\nДіскии Пом\nможеив Алитинофат\nТого мне яси пролив Ятяь Іви\nаснлвиСниковмирграсттвянний Пілникій\nПолякові\n2 p leammils (\nур1вяя гиэаканних сиен\nкита Кирмннь Вмасів'ь и сієвица\nего ввдокі профорова оби пгравосиль\nПенагій Степсинва шсхва.\nemmnbo foaeant Sensonae\nрственный арх\nДіанаів Пошокків Алпилохіва\nола\n* Того слояеи просттвятимич\nТя винланківаи пресв яниь Нихол ин\nдісланоил\n1вайв Оеодоріві Монлярівь м\nМні. Висиививь супаттаь и запиничам\nмм шибваоба\nПрествянских миса Мекірени\nробди мсаео Оооуссі Колей\nМешівльєва Помавиняом\nPummatos fasuar Trsl e vita\nвм1о21ом)",
-    "localOcrWithSurnameLexicon": "МСТРИЧЕСКОЙ КНИГИ НА 1416\"\nГОДА, чАСТЬ пеРЕАД, й РОДИвШИХеА.\nЗваніє, йма, отчество й фамілід родителєй, й какги\nвшиусл.\nЗвАніє, ймА, бтчЕство й фамиліл\nКіт совЕршла тАннство\nP8ко\nв Бронспов даніл.\nБосПОіємникшв.\nKpeiéNiA.\nТЕЛЕР\nапо в Ритовки перетівяннів Астрть\n* Сутара вайаувинскихо веростваннич\nпрапо вимісі пербль и зарешити лима\nДанай Мвсіві вмиратовь лі\nСвященняка\nправда о воломон(а Тимофіова ова град\nКрествалених лиса Анна Мийвсь\nЛивное .\nсви Головиєва.\nСвященичи Фоснть Полянокв.\nДіакбив Помночив Ампилогівів\nМого ми онаперсливанть Осодорть\nель\nСона Сановниперастваний Проруіь\nбоаннч\nлекторіві Малова м простів\nекли мисли Мари Швегва с Ларіен\nавсе егравослов-\nігова .\nфанні Полякові\nДілки Пол\nТого ми ясни пролив Ятяь Ни\nастиСниковми прествянни Пілникі\nПолякові\nн 2 p leammils (\nкита Кирмни Власів и дієвица\nего овдоні профорова оби правосиль\nПеналій Стелсиква шкова.\n2 emnbo foaueant Sensonae\nротвенный арх\nДіанів Пошоків Ампилогова\nола\n* Того слоями простветимич\nТи вин ланківни пресв яниь Никол сн\nділаноил\n1 вай Сеодоріві Манлярівь м\nМні. Висивавь упастав и запиничем\nмм шитва оба\nПресвянских мита Менірени\nроди мас Осуссі Колей\nМенівлєва Помаваном\nPummats fasuar trsl e vita",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полный разворот 224 и все видимые строки прочитаны вручную; проверены даты, участники, восприемники и крещения, месячные границы/итоги и повторная подпись причта. P1543 подтверждён только в служебной роли; полноширинный крупный фрагмент создан из full-view и сверен с оригиналом."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянская Евдокия Феодорова Полтавцева, православная Священник Иоанн Поляков Диакон Афиноген Ампилогов.",
-    "fuzzyQuery": true
-  }
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-1D814802-162",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "1d814802-4673-4165-a268-394204ce60ff",
     "scanNumber": 162,
@@ -13,45 +13,50 @@
     "documentUrl": "https://yandex.ru/archive/catalog/1d814802-4673-4165-a268-394204ce60ff/162"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-godparents",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "23 июля 1916 года",
+      "from": "1916-07-23",
+      "to": "1916-07-23",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "станица Нижне-Озёрная"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-1D814802-162-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "godfather",
+      "personId": "P91136",
+      "displayName": "почтальон Тимофей Филиппович Ампилогов",
+      "nameAsTranscribed": "почталіонъ, крестьянинъ Оренбургской губерніи и уѣзда села Кармалки Тимоѳей Филипповъ Ампилоговъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-1D814802-162-M2",
+      "role": "godmother",
+      "personId": null,
+      "displayName": "жена казака Анисия Никитова Жохова",
+      "nameAsTranscribed": "жена казака Анисія Никитова Жохова",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "1d814802-4673-4165-a268-394204ce60ff",
     "scanNumber": 162,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/1d814802-4673-4165-a268-394204ce60ff/0162-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/1d814802-4673-4165-a268-394204ce60ff/0162-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "8bf4f3bab386f62a99f7064011febaef1e7052f7200322fcd56f0a5678aaedb2",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/1d814802-4673-4165-a268-394204ce60ff/0162-header.png",
-        "sha256": "3e5c91e80d2a90c9e650ea7e7f12c482ba2be1f1b81efbb7b7ea4b6f57686293",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/1d814802-4673-4165-a268-394204ce60ff/0162-target-entry.png",
-        "sha256": "a74b5dc4728da2d6d816eb4ffa1990baf0b50c75a811fdb3f421267b346096ce",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/1d814802-4673-4165-a268-394204ce60ff/0162-full-view.png",
+        "sha256": "8bf4f3bab386f62a99f7064011febaef1e7052f7200322fcd56f0a5678aaedb2",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены целевая запись и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +64,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5376x4339",
-      "targetDimensions": "1315x1069",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5376x4339",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "на двайнцт Марія Аоана\nСьева /Чувнецова\nbЙ арх\nКОСИьЕ\n1B\nй области\nМой же станизм ззараіє\nВаниі",
-    "modernInterpretation": "на двайнцт Мария Аоана Сьева /Чувнецова bЙ арх КОСИьЕ 1B й области Мой же станизм ззараиє Вании",
-    "localOcr": "на двайнцт Марія Аоана\nСьева /Чувнецова\nbЙ арх\nКОСИьЕ\n1B\nй области\nМой же станизм ззараіє\nВаниі",
-    "localOcrWithSurnameLexicon": "на дванця Марія Авана\nСьева / Чувнецова\nыЙ арх\n1В\nи области\nМой же станим зараіє\nВанні",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "23 июля родился, 24 июля крещён Василий. Восприемники: той же станицы почтальон, крестьянин Оренбургской губернии и уезда села Кармалки Тимофей Филиппов Ампилогов и жена казака Анисия Никитова Жохова.",
+    "modernInterpretation": "Почтальон Тимофей Филиппович Ампилогов, уроженец или приписной крестьянин села Кармалки, был восприемником при крещении Василия в Нижне-Озёрной 24 июля 1916 года. Формула подтверждает происхождение/приписку и место службы, но сама по себе не задаёт маршрут переселения.",
+    "indexNote": "Полная строка восприемников и даты прочитаны по скану; индекс использован только как указатель."
   },
   "indexData": {
     "querySnippet": "Той же станицы почталион крестьянин Оренбургской губернии и уезда села Кармалки Тимофей Филиппов Ампилогов и жена казака Анисия Никитова Жохова.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

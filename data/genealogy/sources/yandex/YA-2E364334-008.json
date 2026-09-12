@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2E364334-008",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "2e364334-12bd-4cdb-8463-cf4f7d3854da",
     "scanNumber": 8,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/2e364334-12bd-4cdb-8463-cf4f7d3854da/8"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "index-discrepancy",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "апрель 1917",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Абрамовка, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-2E364334-008-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "2e364334-12bd-4cdb-8463-cf4f7d3854da",
     "scanNumber": 8,
@@ -49,9 +41,9 @@
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/2e364334-12bd-4cdb-8463-cf4f7d3854da/0008-target-entry.png",
-        "sha256": "738515054902ba5422c41703fc51f08cbfec85c721c2938b733b2d5c99ec840a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/2e364334-12bd-4cdb-8463-cf4f7d3854da/0008-target-entry-deep.png",
+        "sha256": "3f0dab01b21d731b03c59589005340510cae7fd38c9995ed25877a7eec1fd4db",
+        "description": "Крупный полноширинный фрагмент всех четырёх апрельских записей без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +51,31 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5407x4213",
-      "targetDimensions": "3019x1077",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5100x3400",
+      "method": "manual-reading-of-full-scan-and-full-width-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "мбра\nОела Міраися Кресетня sыкт\nТого яке сила престаяти\nЗоша Muкnoвн Селвист\nтвля.\nлексті\nбавица Мараа Вадиамово\nУкпьздниь М\nMenyna, dio fa Miйnes\n7\nТого ли село кресткяний\nin -\nCn kiaf Кереатв\nЛепргаа Сарплычниь..",
-    "modernInterpretation": "мбра Оела Мираися Кресетня sыкт Того яке сила престаяти Зоша Muкnoвн Селвист твля. лексти бавица Мараа Вадиамово Укпьздниь М Menyna, dio fa Miйnes 7 Того ли село кресткяний in - Cn kiaf Кереатв Лепргаа Сарплычниь..",
-    "localOcr": "мбра\nОела Міраися Кресетня sыкт\nТого яке сила престаяти\nЗоша Muкnoвн Селвист\nтвля.\nлексті\nбавица Мараа Вадиамово\nУкпьздниь М\nMenyna, dio fa Miйnes\n7\nТого ли село кресткяний\nin -\nCn kiaf Кереатв\nЛепргаа Сарплычниь..",
-    "localOcrWithSurnameLexicon": "сбра\nОла Мірася Крести к\nТого яке сила престаяти\nполя.\nлексті\nТавица Марак Вадиалово\n7\nТого ли село крестаяний\nin -\nЛепргаа Сарплычниь..",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "full-spread-manually-verified-no-surname-series",
+    "literal": "Часть первая, о родившихся, апрель 1917 года. На развороте полностью видны записи № 7–10: Александра, Василий, Пелагея и Степан, их родители, восприемники и совершители крещения. Феодора Васильева Ампилогова и фамилии исследуемого ряда на листе нет.",
+    "modernInterpretation": "Поисковое совпадение ложное: Яндекс составил имя из несвязанных фрагментов рукописных строк.",
+    "indexNote": "Полный разворот и все четыре записи прочитаны вручную; индексный фрагмент опровергнут.",
+    "historicalContext": "Посторонние участники остаются только в буквальном описании листа; отдельные профили, связи и точки карты не создаются."
   },
   "indexData": {
     "querySnippet": "Села Абрамовки крестьянин Феодор Васильев Ампилогов и законная жена его Екатерина Михаилова, оба православные.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "false-positive-search-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрены весь разворот за апрель 1917 года, записи № 7–10, родители, восприемники и подписи. Феодора Васильевича Ампилогова и фамильного ряда нет; public/profile/map исключены.",
+    "unresolved": []
   }
 }

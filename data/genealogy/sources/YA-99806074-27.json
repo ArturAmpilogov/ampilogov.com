@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-99806074-27",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "99806074-8325-4f68-8f4f-b6c14cc0e44e",
     "scanNumber": 27
@@ -30,8 +30,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0027-target-entry.png",
-        "sha256": "1471528f030b18319d8e002461c5ca532c126a80029f73a57b6f484c2c0a4bfa",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "982623057ca3efaed71247b9e9ea761e8c72b53e8b8ead201c4a6c7d68950b6f",
+        "description": "Полноширинный крупный фрагмент записей № 53–56 без интерфейса Яндекса; позволяет проверить весь лист."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4973x3969",
-      "targetDimensions": "1359x616",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4650x3000",
+      "method": "original-download-plus-full-width-manual-review"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -59,27 +59,22 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полноразмерный лист за 1889 год с записями № 53–56, включая имена детей, родителей и восприемников; фамилий исследуемого ряда нет. Проверены соседние строки и продолжение записи № 53; прежняя неопределённость снята новым читаемым сканом. Профили, связи, карта и миграция не создаются."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Зкáнте, йма, сбтчетко й фаміліА\nКто\nБоспріємникБ2.\nтой осе среревии кресптями Никит\nвеодеров. Ильниг и жоени криятя-\nЛиталия Вссинива ацевслеви\nnar",
-    "modernInterpretation": "Зкáнте, йма, сбтчетко й фамилиА Кто БосприємникБ2. той осе среревии кресптями Никит веодеров. Ильниг и жоени криятя- Литалия Вссинива ацевслеви nar",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "Зкáнте, йма, сбтчетко й фаміліА\nКто\nБоспріємникБ2.\nтой осе среревии кресптями Никит\nвеодеров. Ильниг и жоени криятя-\nЛиталия Вссинива ацевслеви\nnar",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reviewed-no-match",
+    "literal": "Лист содержит продолжение записи № 53 и записи о рождении № 54–56 за 1889 год; в полностью просмотренных графах родителей и восприемников фамилия Ампилогов либо иной вариант исследуемого ряда отсутствует.",
+    "modernInterpretation": "Новый полноразмерный скан позволяет исключить фамильное совпадение на всей странице; это не Record фамильного ряда.",
+    "indexNote": "Индекс не содержал проверяемой точной строки и требовал нового снимка. Ручная проверка полного читаемого листа не выявила фамильный ряд."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false
 }

@@ -25,9 +25,10 @@
   "mentions": [
     {
       "mentionId": "YA-9E3C7609-007-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "priest",
+      "personId": "P102089",
+      "displayName": "Священник Дмитрий Ампилогов (Карасай, 1918)",
+      "nameAsTranscribed": "Священникъ Димитрій Ампилоговъ",
       "surnameSeries": true
     }
   ],
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/9e3c7609-6c01-4850-b6b8-7ed79f4846eb/0007-target-entry.png",
-        "sha256": "162632991fcee752e8999ec914d03ddb202e650984f26542ebc37f5eece9455f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "9fa994ebfa8f51ce687494bb6c8b72cadbd06717dda94e6852ac9688d8c4f48e",
+        "description": "Полноширинный крупный фрагмент строк метрической книги с повторяющимися подписями священника Дмитрия Ампилогова; интерфейс Яндекса исключён."
       }
     ],
     "quality": {
@@ -59,16 +60,16 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5177x3995",
-      "targetDimensions": "1200x2539",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5020x3220",
+      "method": "manual-full-scan-review-and-full-width-context-recrop-from-original"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Свящвнним\nДимітрів\nАлпиатва\nа\nфва /2/ Oreгоnо\nСвягивиниии\nДимизей",
-    "modernInterpretation": "Свящвнним Димитрив Алпиатва а фва /2/ Oreгоnо Свягивиниии Димизей",
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Метрической книги на 1918-й год, часть первая, о родившихся. В графе «Кто совершал таинство крещения» у каждой видимой записи июня, июля и августа повторена подпись: «Священникъ Димитрій Ампилоговъ».",
+    "modernInterpretation": "В 1918 году священник Дмитрий Ампилогов совершал крещения в Карасайском приходе; лист продолжает последовательность соседних сканов той же книги.",
     "localOcr": "Свящвнним\nДимітрів\nАлпиатва\nа\nфва /2/ Oreгоnо\nСвягивиниии\nДимизей",
     "localOcrWithSurnameLexicon": "Свянвиник\nДимітрів\nАлпатова\nа\nдва / 2/ Drera по\nСвягивиники\nДимирей",
     "collation": {
@@ -76,20 +77,20 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс Яндекса ошибочно склеил имена диакона и псаломщика из соседних граф с именем священника. По оригиналу фамильное упоминание относится именно к повторяющейся подписи «Священникъ Димитрій Ампилоговъ»."
   },
   "indexData": {
     "querySnippet": "Диакон Владимир Петров Димитрий Ампилогов. ... Псаломщик Алексей Стефанов Димитрий Ампилогов.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полный разворот: проверены заголовок 1918 года, все видимые строки, роль и повторяющаяся формула подписи. Подтверждено служение P102089; индексная склейка с диаконом и псаломщиком отвергнута. Полноширинный фрагмент заново вырезан из локального оригинала; миграция и родство не выводились.",
+    "unresolved": []
   }
 }

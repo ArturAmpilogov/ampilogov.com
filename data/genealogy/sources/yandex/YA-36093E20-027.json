@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-36093E20-027",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "36093e20-3b76-44ce-9278-0106c25efb33",
     "scanNumber": 27,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/36093e20-3b76-44ce-9278-0106c25efb33/27"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-register-page",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "июль 1917 года",
+      "confidence": "high-for-visible-month"
     },
     "place": {
       "normalized": "не установлено"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-36093E20-027-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "36093e20-3b76-44ce-9278-0106c25efb33",
     "scanNumber": 27,
@@ -42,54 +34,48 @@
     "sha256": "d9fbc206eaeadaa42bf479bf9f46d15e115c472d7c956217c099d7a945f48fe7",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0027-header.png",
-        "sha256": "329da90f0d2bcc88d139ef662d34f489e89dd783d76cd1ff209b65e0e1e53dac",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0027-target-entry.png",
-        "sha256": "40a29c5e92ae436df7088850e4934dec11a508d7dfdb312def96839428744446",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "full-page-context",
+        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0027-target-entry-deep.png",
+        "sha256": "b11c43d19ccd62754a33cd194204d900b98760bddc8f415e25bd148b214c90a1",
+        "description": "Почти полный разворот с июльскими записями о смертях № 7–14, вручную проверенный на отсутствие индексной семьи Ампилоговых."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5527x4166",
-      "targetDimensions": "1364x563",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5250x3300",
+      "method": "manual-full-page-negative-verification-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Свягенник Васими Колотйнов\nперевии ново. Ивашовки кресшьями\nникита Алекстнка Лаптаниа\nцегь Марфа\nшин зи 7оно мтсіна лирискал\nили свиулийель стівует",
-    "modernInterpretation": "Свягенник Васими Колотйнов перевии ново. Ивашовки кресшьями никита Алекстнка Лаптаниа цегь Марфа шин зи 7оно мтсина лирискал или свиулийель стивует",
-    "localOcr": "Свягенник Васими Колотйнов\nперевии ново. Ивашовки кресшьями\nникита Алекстнка Лаптаниа\nцегь Марфа\nшин зи 7оно мтсіна лирискал\nили свиулийель стівует",
-    "localOcrWithSurnameLexicon": "Священники Васими Колотилов\nперевии ново. Ивановки кресьями\nникита Алекстека Лаптана\nцель Марфа-\nшин зи Іоно мтіна мирискал\nшли свитиль слівцем",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-full-scan-negative-verification",
+    "literal": "На полном развороте находятся июльские записи о смертях № 7–14. Имена умерших, их родители и сословные сведения прочитаны по всем строкам; Марии Григорьевны Ампилоговой и Григория Ивановича Ампилогова на листе нет.",
+    "modernInterpretation": "Полный лист не содержит индексной семьи Ампилоговых и является ложным результатом нечёткого поиска.",
+    "indexNote": "Сниппет Яндекса приписал листу умершую Марию Григорьевну и её отца Григория Ивановича Ампилогова; ручное чтение строк № 7–14 это опровергает."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Григорий Иванов Ампилогов, крестьянин, село Гавриловка. ... Умерший: Мария Григорьева Ампилогова, 3 месяца. Умерший: Татиана Иванова Полетаева, 1 1/2.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Указанные индексом Мария и Григорий Ампилоговы отсутствуют на полном скане № 27."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "false-positive-search-hit",
   "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного листа метрической книги о смертях.",
+    "identityNote": "Профили и связи не создавались: фамильного упоминания на листе нет.",
+    "migrationNote": "Не применимо."
+  },
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-visible-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный разворот и июльские записи о смертях № 7–14; вручную проверены умершие и родители; индексная семья Ампилоговых отсутствует; сохранён полноширинный фрагмент 5250x3300; profiles, links, map и migration исключены"
   }
 }

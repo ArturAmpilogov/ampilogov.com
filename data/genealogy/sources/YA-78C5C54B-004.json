@@ -1,122 +1,94 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-78C5C54B-004",
-  "provider": "Яндекс Архив — первичный скan",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный печатный лист",
+  "recordType": "clergy-appointment",
   "collection": {
     "catalogId": "78c5c54b-058f-4cf2-aefb-c8afe299f9c1",
     "scanNumber": 4,
     "title": "Оренбургские епархиальные ведомости, 1914, № 12/13",
-    "issueDate": "1914"
+    "issueDate": "1914",
+    "asRead": "стр. 126, раздел «Опредѣленія»"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/4"
   },
+  "event": {
+    "type": "clergy-appointment",
+    "date": {
+      "display": "резолюции 14 и 17 марта 1914",
+      "from": "1914-03-14",
+      "to": "1914-03-17",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "въ село Кармалку, Оренбургскаго уѣзда",
+      "normalized": "село Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-78C5C54B-004-M1",
-      "role": "subject",
+      "role": "appointed-psalmist",
+      "personId": "P91076",
       "nameAsTranscribed": "бывшій псаломщикъ Оренбургской епархіи Димитрій Ампилоговъ",
-      "displayName": "Бывший псаломщик Дмитрий Ампилогов",
+      "displayName": "Дмитрий Егорович Ампилогов",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-print-reading",
+    "literal": "Опредѣленія. Резолюціями Его Преосвященства, Преосвященнѣйшаго Ѳеодосія, Епископа Оренбургскаго и Тургайскаго, послѣдовавшими 14 и 17 марта сего года — бывшій псаломщикъ Оренбургской епархіи Димитрій Ампилоговъ опредѣленъ на псаломщическое мѣсто въ село Кармалку, Оренбургскаго уѣзда.",
+    "modernInterpretation": "Резолюциями от 14 и 17 марта 1914 года бывший псаломщик Оренбургской епархии Дмитрий Ампилогов назначен псаломщиком в село Кармалку Оренбургского уезда.",
+    "indexNote": "Имя, прежний статус, две даты резолюций, должность и место назначения прочитаны непосредственно на печатном листе."
+  },
+  "indexData": {
+    "querySnippet": "Имя, фамилия, статус, даты резолюций, назначение, село и уезд прочитаны на первичном листе.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "78c5c54b-058f-4cf2-aefb-c8afe299f9c1",
     "scanNumber": 4,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-clean-context-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "2ef40908a6fbab9da9de7038f292dac1fe99e763482718a1fb64543f3f2e7077",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-header.png",
-        "sha256": "36ccde68e2cf8423fcbc62fa84b1e92b313e58f5a45b196bd81b25d43a19f3cc",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-target-entry.png",
-        "sha256": "f25f6986f79be06de866a9e64b4e2ba6be3a3a8c66f431efe2813ff99c03d040",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "85eb1e9f1854ce0ddf499cafbe6f966b18dab3bf92ffe385f783c2d72eb42dd7",
+        "description": "Чистый крупный контекстный фрагмент без интерфейса, сохраняющий целевую строку и соседний текст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "1240x1755",
-      "targetDimensions": "1200x689",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "1000x1450",
+      "method": "manual-full-page-reading-and-clean-context-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "captureStatus": "complete-with-local-copy",
-        "rightsNote": "Локальные копии полного листа и увеличенных фрагментов сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив.",
-        "captureType": "official-source-pdf-page-with-enlarged-fragments",
-        "captureSource": "Официальный PDF проекта «Духовенство Русской Православной Церкви в XX веке», указанный в карточке Яндекс Архива",
-        "captureSourceUrl": "https://pravoslavnoe-duhovenstvo.ru/media/priestdb/materialattachment/attachment/b2/34/b2344998-5ed9-4618-8fa3-916a614beeeb.pdf#page=4",
-        "localBackup": "data/genealogy/evidence-private/yandex/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-full-view.png",
-        "capturedAt": "2026-09-08",
-        "sha256": "85370652a6fefc961a3f64bd35914bace474a7e30121c8e73cd41a1ada3565f8",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-header.png",
-            "sha256": "54042e82aeca0e78f3df6eb6182b1a00bb78b32ffda55a2ec076412cf5f49333",
-            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/78c5c54b-058f-4cf2-aefb-c8afe299f9c1/0004-target-entry.png",
-            "sha256": "1235a434f66cb7b230420f714069dc4ed4e42d2819a85e15a99aee5997c4f64e",
-            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
-          }
-        ],
-        "quality": {
-          "documentOnlyVisuallyConfirmed": true,
-          "headerVisuallyConfirmed": true,
-          "targetRowsVisuallyConfirmed": true,
-          "confirmedAt": "2026-09-08",
-          "method": "manual-comparison-with-source-transcription-and-document-context"
-        }
-      }
-    ]
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Резолюціями … послѣдовавшими 14 и 17 марта сего года — бывшій псаломщикъ Оренбургской епархіи Димитрій Ампилоговъ опредѣленъ на псаломщическое мѣсто въ село Кармалку, Оренбургскаго уѣзда; …",
-    "modernInterpretation": "Резолюциями от 14 и 17 марта 1914 года бывший псаломщик Оренбургской епархии Дмитрий Ампилогов определён на псаломщическое место в село Кармалку Оренбургского уезда.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "— 126 —\nНазину; Дмитріевской церкви поселка Шавловсваго, Верхне-\nуральскаго уВада Исааку Николаеву, Дмитріевской церки по-\nселка Кульмекаго, Орскаго увзда, Александру Храмкову за\nусердно полезную службу въ должностяхь старость въ теце-\nніи трехь лть; урядникамь поселка Смолинскаго Михаилу\nСмолину, Александру Лахомову и Челябинскому мщанину\nИльв Фотисову, за усердные ихк труды на пользу храмовь\nБожіихь, —и безь грамоты--священнику поселка Половников-\nскаго, Кустанайскаго увада, о. Харламову за его труды по\nвразумленію сектантовь; 18 марта сего года преподано Архи-\nпастырекое благословеніе сь грамотою церковному староств\nпоселка Боровскаго Іоанну Бочкареву и вдовв Ирині Оболо-\nсовой за ихь пожертвованія вь церковь поселка Боровскаго\n—первымь изь нихь бвлаго облаченія для священника и діа-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Нужно отдельно доказать тождество с прежними записями Дмитрия Ампилогова до создания Person или карты.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ],
-    "correctionHistory": [
-      "2026-09-08: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+  "publicCore": true,
+  "primaryPersonId": "P91076",
+  "context": {
+    "eventSummary": "Назначение Дмитрия Ампилогова псаломщиком в Кармалку в марте 1914 года.",
+    "identityNote": "Связь с P91076 подтверждается именем, духовным статусом, Кармалкой и непрерывной документированной служебной цепочкой 1909–1917 годов.",
+    "migrationNote": "Назначение сохранено как служебное событие, а не как самостоятельное доказательство семейного переселения."
   },
-  "indexData": {
-    "querySnippet": "Имя, фамилия, статус, даты резолюций, назначение, село и уезд прочитаны на первичном листе. Последующее рукоположение того же имени в Кармалке создаёт документальную последовательность, но Person и карта до отдельной сверки не создаются.",
-    "fuzzyQuery": true
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-dates-name-status-appointment-and-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full printed page 126 of 1914 issue 12/13; headings, adjacent ordination notices and complete appointment paragraph, both resolution dates, prior status, role and Karmalka place checked; P91076 service backlink; no kinship or inferred migration; 1000x1450 clean page crop"
   }
 }

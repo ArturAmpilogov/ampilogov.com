@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-247AFC2B-029",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-false-positive",
   "collection": {
     "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
     "scanNumber": 29,
@@ -12,46 +12,32 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/247afc2b-94a1-4d8f-9d66-80d175fe5857/29"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
+  "event": null,
   "mentions": [
     {
       "mentionId": "YA-247AFC2B-029-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном развороте не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
     "scanNumber": 29,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0029-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0029-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "8223424375c93ea96cab130e65bbe39e057e782bc565ddb4574e7aca8bb1fc06",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0029-header.png",
-        "sha256": "d1e1f3b449d40426b4e7e89d358375403399b5ed07f3071ac8f59c668254dba8",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0029-target-entry.png",
-        "sha256": "30a8b3afdc5c0c1e8d86435a205619b3726008f9c28ba4e0e1a042a5e06ae08f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0029-full-view.png",
+        "sha256": "8223424375c93ea96cab130e65bbe39e057e782bc565ddb4574e7aca8bb1fc06",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +45,37 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5872x4584",
-      "targetDimensions": "1370x848",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5872x4584",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "іскоВ\nГÓДА, ЧАСТЬ ПЕРЕАД, Ш РО\nRTò\nЗвАН'є, ЙМА, бТЧЕсТво й фАЛИЛіА\nвоспріємникшвк.",
-    "modernInterpretation": "искоВ ГÓДА, ЧАСТЬ ПЕРЕАД, Ш РО RTò ЗвАН'є, ЙМА, бТЧЕсТво й фАЛИЛиА восприємникшвк.",
-    "localOcr": "іскоВ\nГÓДА, ЧАСТЬ ПЕРЕАД, Ш РО\nRTò\nЗвАН'є, ЙМА, бТЧЕсТво й фАЛИЛіА\nвоспріємникшвк.",
-    "localOcrWithSurnameLexicon": "скоВ\nГОДА, ЧАСТЬ ПЕРЕАД, Ш РО\nRTò\nЗвАНʼє, ЙМА, бТЧЕсТво й фАЛЛіА\nвоспріємникшви.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Полный разворот метрической книги прочитан строка за строкой. Формы Ампилогов / Анпилогов / Анфилогов и названный индексом человек на этом листе отсутствуют; видимые записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Это ложное или смещённое попадание индекса Яндекса. Карточка сохраняется как исследовательская проверка, но не создаёт профиль, связь, точку карты или маршрут.",
+    "indexNote": "Индекс отвергнут после ручного чтения полного скана."
   },
   "indexData": {
     "querySnippet": "Села Кармалки крестьянин Алексей Захаров Анпилогов и девица Анастасия Григорьева Глухова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Заявленное индексом упоминание отсутствует на полном скане; вероятно, текст привязан к соседнему листу или смешан с другой строкой."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

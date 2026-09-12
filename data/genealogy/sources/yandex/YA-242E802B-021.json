@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-242E802B-021",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 21,
@@ -13,21 +13,24 @@
     "documentUrl": "https://yandex.ru/archive/catalog/242e802b-eab0-46f1-aa5d-d78fab77a6c8/21"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-godparents",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "1 августа 1916 года (рождение и крещение)",
+      "from": "1916-08-01",
+      "to": "1916-08-01",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Зобово, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-242E802B-021-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "села Зобова крестьянинъ Василій Андреевъ Ампилоговъ",
+      "displayName": "Василий Андреевич Ампилогов",
       "surnameSeries": true
     }
   ],
@@ -35,23 +38,17 @@
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 21,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0021-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0021-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "b24ae5dbd52b590a93d767f1bacb9b354a53757edd253313be6df44abc306e66",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0021-header.png",
-        "sha256": "c546c3f52d7a6cd948c00bfa08a6df8a71aaa6e1c430b76cb9548b6453bb8080",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0021-target-entry.png",
-        "sha256": "4027dbe84ef3e914c4247802f88a7855ec75b6ae09b5e67756a7875d54f1b998",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0021-full-view.png",
+        "sha256": "b24ae5dbd52b590a93d767f1bacb9b354a53757edd253313be6df44abc306e66",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +56,38 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5182x4308",
-      "targetDimensions": "2349x816",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5182x4308",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "лйни ооунти ском\"\nуджи его жини Диділи вгенединіумамяки Обунки\nаік правнеливнски.\nКрижеукивам\nЦіанон Аарни Мпр мт\n1 епланертВв в алалинура в кнепить\nрпивинидьм в шломи\n(edmfmmpau Maamou",
-    "modernInterpretation": "лйни ооунти ском\" уджи его жини Дидили вгенединиумамяки Обунки аик правнеливнски. Крижеукивам Цианон Аарни Мпр мт 1 епланертВв в алалинура в кнепить рпивинидьм в шломи (edmfmmpau Maamou",
-    "localOcr": "лйни ооунти ском\"\nуджи его жини Диділи вгенединіумамяки Обунки\nаік правнеливнски.\nКрижеукивам\nЦіанон Аарни Мпр мт\n1 епланертВв в алалинура в кнепить\nрпивинидьм в шломи\n(edmfmmpau Maamou",
-    "localOcrWithSurnameLexicon": "ди его жени виділи генадиніумамики Обухн\nмін привнеливнки.\nЦіано Марни Мар ми\n1 апланриВв в алаликура в клепить\n(eidmfmmpau Maamou",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 40. Феодор, родился и крещён 1 августа 1916 года. Восприемники: села Зобова крестьянин Василий Андреев Ампилогов и крестьянская жена Феврония Димитриева Ускова.",
+    "modernInterpretation": "Василий Андреевич Ампилогов назван восприемником Феодора. В проекте есть несколько одноимённых жителей Зобова, поэтому personId без дополнительного различителя не назначен.",
+    "indexNote": "Имя, роль, дата и место проверены по полному скану; индекс использован только для навигации."
   },
   "indexData": {
     "querySnippet": "села Зобова крестьянин Василий Андреев Ампилогов крестьянская жена Феврония Димитриева Ускова. Священник Иаков Маскаев Диакон Михаил Тихомиров.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Тождество с P1237, P1803 или P8213 не установлено: совпадают имя, отчество и село, но запись не даёт возраста или семейного различителя."
+    ],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

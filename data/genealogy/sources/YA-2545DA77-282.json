@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2545DA77-282",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
     "scanNumber": 282
@@ -13,18 +13,34 @@
   "mentions": [
     {
       "mentionId": "YA-2545DA77-282-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+      "role": "deceased-child",
+      "personId": "P102201",
+      "nameAsTranscribed": "Наума Ильина Ампилогова сынъ Матѳей",
+      "displayName": "Матвей Наумович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-2545DA77-282-M2",
+      "role": "father-of-deceased",
+      "personId": "P91148",
+      "nameAsTranscribed": "Крестьянина села Кармалки ... Наума Ильина Ампилогова",
+      "displayName": "Наум Ильич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-2545DA77-282-M3",
+      "role": "psalm-reader-and-deacon",
+      "personId": "P91076",
+      "nameAsTranscribed": "Псаломщикъ, Діаконъ Димитрій Ампилоговъ",
+      "displayName": "Дмитрий Егорович Ампилогов",
+      "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Метрическая книга: записи о бракосочетании; фамильного ряда Ампилогов/Анпилогов и документированных вариантов нет.",
-    "modernInterpretation": "Первичный скан читается достаточно для исключения индексного совпадения; профиль, карта и маршрут не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Метрической книги на 1912 год, часть третья, об умерших. Февраль. Мужского пола № 3. 6 [умер], 8 [погребён]. Крестьянина села Кармалки, Михайловской волости, Оренбургской губернии и уезда Наума Ильина Ампилогова сын Матфей, 6 месяцев. Причина смерти — от скарлатины. Погребение совершили священник Михаил Анциферов и псаломщик, диакон Димитрий Ампилогов на отведённом месте приходского кладбища.",
+    "modernInterpretation": "Шестимесячный Матвей Наумович Ампилогов умер 6 февраля 1912 года от скарлатины и был погребён 8 февраля в Кармалке. Отец прямо назван Наумом Ильичом Ампилоговым; Дмитрий Ампилогов указан отдельно как служитель причта.",
+    "indexNote": "Яндекс верно нашёл отца, но не передал имя, возраст, даты, причину смерти ребёнка и отдельную служебную роль Дмитрия Ампилогова. Год 1912 прочитан по внутреннему заголовку скана.",
     "localOcr": "ТИПОГРАФІЕ\nКЛОА ЛЛЬО\nМЕТРИЧЕСКОЙ КНИГИ НА\n19\nЗвáніє, йма, отчество й фамиліл сдмéршагш.\nnỷ HÉ\nБÉНіA.\nМ8жеска.\nВб.\nфрестыанина сова Кариани\n3.\n2 вни вовати",
     "localOcrWithSurnameLexicon": "ТИПОГРАФІ\nМЕТРИЧЕСКОЙ КНИГИ НА\n19\nЗваніє, йма, отчество й фамилія одмршаги.\nБеНіА.\nМ8жеска.\nВб.\nКрестычнина сова Кариати\n3.",
     "collation": {
@@ -35,13 +51,13 @@
   },
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/282-full-view.jpg",
-    "sha256": "7d00410835c0f65fd593eeb4639f3747e294f030b3581b7716bbe6ff90707fd8",
+    "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0282-full-view.png",
+    "sha256": "57b69684eb3c5dfd583a905da6c0bbc40c813c684bb1cd96797b2f5f5a056460",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/282-target-entry.jpg",
-        "sha256": "3152c4e6dce100958b9389ea5ad6af65cc11227d8e03f0d354ea79ef9f36810c",
-        "description": "Читаемый фрагмент метрической записи."
+        "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0282-target-entry.png",
+        "sha256": "dee4cf128b5d5ffc19df7df00b7d28bc7523624c6b75297119b99a51eb14f11e",
+        "description": "Крупный фрагмент записи о смерти Матвея и имени его отца."
       }
     ],
     "parallelCopies": [
@@ -82,14 +98,20 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный разворот смертей 1912 года, февральская запись № 3, даты, имя ребёнка, отец, возраст, причина смерти, место погребения и подписи причта",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Отец умершего: Наум Ильин Ампилогов, крестьянин, село Кармалка, Михайловская волость, Оренбургская губерния, Оренбургский уезд.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Сниппет передаёт только отца; оригинал относится к смерти его шестимесячного сына Матвея и датирован внутренним заголовком 1912 годом."
+  },
+  "event": {"type":"death-and-burial","date":{"display":"умер 6 февраля, погребён 8 февраля 1912 года","from":"1912-02-06","to":"1912-02-08","confidence":"high"},"place":{"asWritten":"село Кармалка; приходское кладбище","normalized":"село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния","placeId":"karmalka-orenburg"}},
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "context": {"eventSummary":"Смерть шестимесячного Матвея Наумовича Ампилогова от скарлатины.","identityNote":"Отец P91148 подтверждён прямой формулой, местом и совместимой хронологией; ребёнку создан отдельный профиль.","historicalContext":"Скарлатина была указанной причиною младенческой смерти; запись фиксирует погребение на приходском кладбище.","migrationNote":"Нового переселения не доказывает."}
 }

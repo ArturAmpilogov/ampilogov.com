@@ -1,95 +1,80 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-4A416A7D-10",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
     "scanNumber": 10,
-    "asRead": "Метрическая книга; проверены видимые строки разворота"
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Старая Богдановка, Софийское, Стрелецкое, Успенка, Федоровка за 1910 г.",
+    "asRead": "Метрическая книга на 1910 год, часть первая, о родившихся; февраль, записи № 14–17"
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/4a416a7d-ba44-4979-b1c8-13d336292d38/10"
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/4a416a7d-ba44-4979-b1c8-13d336292d38/10"},
+  "event": {
+    "type": "clergy-service",
+    "date": {"display": "14–28 февраля 1910 года", "fromIso": "1910-02-14", "toIso": "1910-02-28", "confidence": "high"},
+    "place": {"asWritten": "село Старая Богдановка", "normalized": "Старая Богдановка, Оренбургский уезд", "confidence": "high"}
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4A416A7D-10-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [{
+    "mentionId": "YA-4A416A7D-10-M1",
+    "role": "church-clergy",
+    "personId": "P1653",
+    "displayName": "Михаил Афиногенович Ампилогов, священник",
+    "nameAsTranscribed": "Священникъ Михаилъ Ампиловъ",
+    "surnameSeries": true,
+    "identificationConfidence": "high"
+  }],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "пдосяним Ивини Стіптови\nСпоков и запонный онсыи его\nзахоннос оненмего\nПариняки Льинова; я8 на іза\nвиславные\nовтинти я іен ка о в еил\nбеайантрит биитани Годбинн.\nCaine Стадай Вогдолювни пра\nстьянинь Осодорь Акттовь Су\nботинь их зикожния драмиопо\nМатрони\n•вчорови! ова",
-    "localOcrWithSurnameLexicon": "посяним Ивина СПитови\nСпоков и запонный онси его\nзаконнос онем его\nПариняки Лоинова; об на іза\nвиславные\nстьянинь Осодорь Актнов Су\nботинь их зикожния драми опо\nМатрони\n•вгорови! о ова",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Февраль 1910 года, записи о родившихся № 14–17: Евдоким (родился 14-го, крещён 20-го), Иоанн (20/21), Евдокия (25/26) и следующая запись, начатая 27/28 февраля. Под записями повторяется: «Священникъ Михаилъ Ампиловъ. Псаломщикъ Тимофей Горяйновъ».",
+    "modernInterpretation": "Полный разворот подтверждает служение Михаила Афиногеновича Ампилогова при февральских крещениях Старобогдановского прихода. Родители и восприемники принадлежат другим семьям и не получают отдельные публичные профили; служебные подписи не доказывают родство или переселение.",
+    "indexNote": "Прежнее заключение о ложном попадании опровергнуто чтением полного скана. Индекс Яндекса использован только для навигации: на оригинале многократно читается «Священникъ Михаилъ Ампиловъ», а не индексное «Ампилогов»; даты, номера и роль установлены непосредственно по листу."
   },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.jpg",
     "sha256": "25d8f183e8a16aa67ab891af1d9e921dcabb650eeb775c2dec697e796e7cd6c0",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.jpg",
-        "sha256": "11d5375c0e8000d6419b45e4d4d33cdd58df74ec1ae16e792dc730eaf1ed0ae0"
-      }
-    ],
-    "parallelCopies": [
-      {
-        "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
-        "scanNumber": 10,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "12f6cc3e70f7beb54f2bb660b4f1038283acb12882618981e547d3adf8f95953",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-header.png",
-            "sha256": "1caed5657043ae12c3426b284a4d45bc8f5d0c167b500480e6d86db86e0c7bf2",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.png",
-            "sha256": "9ada3c8c9a0a5278402fd80727993ae992d53c4b3d827528032e446dbb9c0fc4",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5464x4351",
-          "targetDimensions": "1521x1062",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.jpg", "sha256": "11d5375c0e8000d6419b45e4d4d33cdd58df74ec1ae16e792dc730eaf1ed0ae0", "description": "Ранняя чистая локальная копия целевой области."}],
+    "parallelCopies": [{
+      "catalogId": "4a416a7d-ba44-4979-b1c8-13d336292d38",
+      "scanNumber": 10,
+      "captureStatus": "complete-with-local-copy",
+      "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+      "localBackup": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
+      "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-full-view.png",
+      "capturedAt": "2026-09-11",
+      "sha256": "12f6cc3e70f7beb54f2bb660b4f1038283acb12882618981e547d3adf8f95953",
+      "fragments": [
+        {"kind": "header", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-header.png", "sha256": "1caed5657043ae12c3426b284a4d45bc8f5d0c167b500480e6d86db86e0c7bf2", "description": "Заголовок чистого полного разворота части о родившихся за 1910 год."},
+        {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/4a416a7d-ba44-4979-b1c8-13d336292d38/0010-target-entry.png", "sha256": "9ada3c8c9a0a5278402fd80727993ae992d53c4b3d827528032e446dbb9c0fc4", "description": "Чистый фрагмент целевой записи и подписи причта; без интерфейса Яндекса."}
+      ],
+      "quality": {
+        "originalImageDownloaded": true,
+        "documentOnlyVisuallyConfirmed": true,
+        "targetRowsVisuallyConfirmed": true,
+        "allVisibleRowsChecked": true,
+        "confirmedAt": "2026-09-12",
+        "fullDimensions": "5464x4351",
+        "targetDimensions": "1521x1062",
+        "method": "manual-reading-of-downloaded-original-and-clean-fragment"
+      },
+      "publicDisplay": false,
+      "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    }]
   },
   "indexData": {
     "querySnippet": "Священник Михаил Ампилогов Псаломщик Тимофей Горчаков. Того же села солдат Ермолай Павлов Сдвижков и солдатская девица Евдокия Филиппова Попова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс исказил фамилию священника как «Ампилогов» и фамилию псаломщика как «Горчаков»; оригинал даёт «Ампиловъ» и «Горяйновъ»."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный чистый февральский разворот проверен вручную: записи № 14–17, даты 14–28 февраля и повторные подписи причта; P1653 подтверждён только как священник."
   }
 }

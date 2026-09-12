@@ -2,44 +2,98 @@
   "schemaVersion": 1,
   "sourceId": "YA-3720D2D5-46",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
     "scanNumber": 46,
-    "asRead": "Метрическая книга на 1897 год, часть третья, об умерших; проверены видимые строки разворота"
+    "title": "Метрическая книга Нижнегумбетского прихода за 1897 год, часть третья об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/46"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "1–15 января 1897 года",
+      "fromIso": "1897-01-01",
+      "toIso": "1897-01-15",
+      "confidence": "medium"
+    },
+    "place": {
+      "asWritten": "село Нижний Гумбет",
+      "normalized": "Нижний Гумбет, Оренбургский уезд"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-3720D2D5-46-M1",
-      "role": "false-index-hit",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-3720D2D5-46-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Священникъ Клавдій Калининъ",
+      "displayName": "Клавдий Калинин",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-3720D2D5-46-M3",
+      "role": "deacon",
+      "personId": null,
+      "nameAsTranscribed": "Діаконъ Александръ Тепловъ",
+      "displayName": "Александр Теплов",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "complete-primary-scan-reading-with-resolution-limit",
+    "literal": "На полном развороте часть третья об умерших за 1–15 января 1897 года при погребении людей других фамилий повторяется состав причта: «Священникъ Клавдій Калининъ. Діаконъ Александръ Тепловъ. Діаконъ Аѳиногенъ Ампилоговъ». Лист открывает январские записи об умерших.",
+    "modernInterpretation": "Афиноген Ампилогов служил диаконом Нижнегумбетского прихода при погребении людей других фамилий; это служебное участие, не родство.",
+    "indexNote": "Внешний индекс не принят на веру; прежний false negative исправлен по последовательной формуле причта, но локальная копия этого листа имеет пониженное разрешение."
+  },
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова при погребении людей других фамилий за 1–15 января 1897 года.",
+    "documentContext": "Лист открывает январские записи об умерших.",
+    "identityNote": "Связь с P1543 подтверждается последовательностью той же книги, редким именем, должностью и повторяющимся составом причта Калинин–Теплов–Ампилогов; сама сохранившаяся локальная графика пониженного разрешения не выдаётся за самостоятельное идеальное чтение.",
+    "migrationNote": "Запись не сообщает родства с участниками актов и не доказывает переселение."
   },
   "evidence": {
-    "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0046-full-view.jpg",
     "sha256": "0054fbc9104030711e8855564bc5d365ac05bb5adafc9d94469117106512de54",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0046-target-entry.jpg",
-        "sha256": "b50890ce893b9b4e2c2a3ca3bed1e72cc48d4857cb20f10b1bc54b0e64c5e39a"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0046-target-entry-deep.jpg",
+        "sha256": "c6e3533d5a978c747740f17e7e574eca6c0a18495e5d0325f58bec59884407ec",
+        "description": "Чистый фрагмент всего документа без интерфейса; единственная сохранённая локальная копия пониженного разрешения."
       }
-    ]
+    ],
+    "quality": {
+      "fullDimensions": "1648x986",
+      "targetDimensions": "810x660",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-page-reading-from-surviving-low-resolution-copy-and-clean-ui-crop",
+      "resolutionLimitation": "Сохранилась только копия 1648×986 с интерфейсным полем; создан чистый документный crop, чтение подписи подтверждено серией соседних листов."
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "medium-with-explicit-resolution-limit",
+    "unresolved": [
+      "Высококачественный оригинал этого листа отсутствует локально; роль подтверждена последовательной серией и повторной формулой причта."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь разворот: часть третья об умерших, 1–15 января 1897 года; проверены раздел, даты и состав причта; подтверждена только служебная связь P1543, без родства и миграции. Учтён предел разрешения единственной локальной копии."
   }
 }

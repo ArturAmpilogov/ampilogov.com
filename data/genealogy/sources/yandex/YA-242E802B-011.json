@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-242E802B-011",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 11,
@@ -13,45 +13,58 @@
     "documentUrl": "https://yandex.ru/archive/catalog/242e802b-eab0-46f1-aa5d-d78fab77a6c8/11"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 10 февраля, крещён 11 февраля 1916 года",
+      "from": "1916-02-10",
+      "to": "1916-02-11",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Зобово, Оренбургская губерния"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-242E802B-011-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "mentionId": "YA-242E802B-011-M0",
+      "role": "child",
+      "personId": "P102137",
+      "nameAsTranscribed": "Димитрій",
+      "displayName": "Дмитрий Демидович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-242E802B-011-M1",
+      "role": "father",
+      "personId": "P102136",
+      "nameAsTranscribed": "села Зобова крестьянинъ Демидъ Поликарповъ Ампилоговъ",
+      "displayName": "Демид Поликарпович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-242E802B-011-M2",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная его жена Марія Козмина",
+      "displayName": "Мария Кузьминична",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 11,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0011-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0011-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "8a3d516e190e8656316be3a58255db89a5a328ca2ace45511ea6f8cf3875241f",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0011-header.png",
-        "sha256": "871dc15f164867552c25f24e8942c6590ca5f364b0535d83fbb944635d78a0a8",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0011-target-entry.png",
-        "sha256": "f47d4c3387d3ae6c44bc8b8ee387285bcfa99d64a25e1d463fa5442cdd810374",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0011-full-view.png",
+        "sha256": "8a3d516e190e8656316be3a58255db89a5a328ca2ace45511ea6f8cf3875241f",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +72,37 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5195x4345",
-      "targetDimensions": "1322x947",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5195x4345",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Пани Мир ни Шир ои\nвсмомирть дисикилов Насиииь\nМрдевини Сптровивовчки прствивании\nХиго\nПраваиив вназранків іаквона\nсті. А Фрапаикам ога жени А (айрама\nвавнова не правлатиння.\nlurriemmtany lacuos\neianu Mufaru Muganz\nпошиостуривь вВийаимцрв Ввтить\nСема Опава нвоенвняннь Фі",
-    "modernInterpretation": "Пани Мир ни Шир ои всмомирть дисикилов Насиииь Мрдевини Сптровивовчки прствивании Хиго Праваиив вназранкив иаквона сти. А Фрапаикам ога жени А (айрама вавнова не правлатиння. lurriemmtany lacuos eianu Mufaru Muganz пошиостуривь вВийаимцрв Ввтить Сема Опава нвоенвняннь Фи",
-    "localOcr": "Пани Мир ни Шир ои\nвсмомирть дисикилов Насиииь\nМрдевини Сптровивовчки прствивании\nХиго\nПраваиив вназранків іаквона\nсті. А Фрапаикам ога жени А (айрама\nвавнова не правлатиння.\nlurriemmtany lacuos\neianu Mufaru Muganz\nпошиостуривь вВийаимцрв Ввтить\nСема Опава нвоенвняннь Фі",
-    "localOcrWithSurnameLexicon": "Пани Мир ни Мир ои\nМиго\nраватив віагрантів і аквона.\nсті. А Фатаинам ого жени А (айрама\nвавнова не правлатиння.\nvianu Auf au Mag aus\nСела Опови ранняниь Фені",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 17. Димитрий, родился 10 февраля, крещён 11 февраля 1916 года. Родители: села Зобова крестьянин Демид Поликарпов Ампилогов и законная его жена Мария Козмина; оба православные.",
+    "modernInterpretation": "На скане записан Дмитрий Демидович Ампилогов, сын Демида Поликарповича. Яндекс ошибочно назвал ребёнка Татианой.",
+    "indexNote": "Полный скан и окружающие строки прочитаны вручную; имя ребёнка в индексе Яндекса отвергнуто."
   },
   "indexData": {
     "querySnippet": "Родившийся: Татиана Демидова Ампилогова. ... Отец: Демид Поликарпов Ампилогов, крестьянин, село Зобово.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс называет ребёнка Татианой, но в графе имени на скане ясно написано «Димитрий»."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

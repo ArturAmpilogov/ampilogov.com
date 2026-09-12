@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-247AFC2B-043",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-false-positive",
   "collection": {
     "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
     "scanNumber": 43,
@@ -12,46 +12,32 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/247afc2b-94a1-4d8f-9d66-80d175fe5857/43"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
+  "event": null,
   "mentions": [
     {
       "mentionId": "YA-247AFC2B-043-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном развороте не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
     "scanNumber": 43,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0043-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0043-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "e41ef39e0ecde8fa34955cc7522d06282f0891c2d0f9d5181a7d37c1047323d0",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0043-header.png",
-        "sha256": "9b8f937db505c9bc3aff79638b24d2a912144325f5cff94f7c66c730ef91f1d0",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0043-target-entry.png",
-        "sha256": "8a5f7984480ed79f8107949fd2a44a33bd7551d9c7739ab0ace87f80bc4b9497",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0043-full-view.png",
+        "sha256": "e41ef39e0ecde8fa34955cc7522d06282f0891c2d0f9d5181a7d37c1047323d0",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +45,37 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5714x4584",
-      "targetDimensions": "1366x794",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5714x4584",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "NbM\nГÓдК, ЧÁСТЬ ПеРВаД, й РОД\nRтo c\nЗвАНіє, ПМА, бтЧЕстБо й фАміЛіА\nВОСПрЇЄМКИКШВ/\nMow - aue села\nкрястьянинг Свя",
-    "modernInterpretation": "NbM ГÓдК, ЧÁСТЬ ПеРВаД, й РОД Rтo c ЗвАНиє, ПМА, бтЧЕстБо й фАмиЛиА ВОСПрЇЄМКИКШВ/ Mow - aue села крястьянинг Свя",
-    "localOcr": "NbM\nГÓдК, ЧÁСТЬ ПеРВаД, й РОД\nRтo c\nЗвАНіє, ПМА, бтЧЕстБо й фАміЛіА\nВОСПрЇЄМКИКШВ/\nMow - aue села\nкрястьянинг Свя",
-    "localOcrWithSurnameLexicon": "NbM\nГОдА, ЧАСТЬ ПеРВаД, й РОД\nЗвАНіє, МА, отЧЕстБо й фАміЛія\nВОСПріЄМНИКШЕ\nMow - aue села\nкрастьянинг Свя",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Полный разворот метрической книги прочитан строка за строкой. Формы Ампилогов / Анпилогов / Анфилогов и названный индексом человек на этом листе отсутствуют; видимые записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Это ложное или смещённое попадание индекса Яндекса. Карточка сохраняется как исследовательская проверка, но не создаёт профиль, связь, точку карты или маршрут.",
+    "indexNote": "Индекс отвергнут после ручного чтения полного скана."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Евфимия Иванова Ампилогова. Отец: Александр Филиппов Костин, крестьянин, село Михайловское.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Заявленное индексом упоминание отсутствует на полном скане; вероятно, текст привязан к соседнему листу или смешан с другой строкой."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

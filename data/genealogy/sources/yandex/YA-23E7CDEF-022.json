@@ -14,8 +14,10 @@
   "event": {
     "type": "birth-godparents",
     "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
+      "display": "18 июня 1910 года (рождение); 19 июня 1910 года (крещение)",
+      "from": "1910-06-18",
+      "to": "1910-06-19",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Бахтемир, Астраханская губерния"
@@ -34,23 +36,17 @@
   "evidence": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 22,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "ae37242493f9dae81753f16a03f0ce8da664508ec37255ed8ace0715da289d54",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-header.png",
-        "sha256": "1d042f3155ef07f0ed88d4c91624829bb091260020ab110c11de60e38c6a52f6",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-target-entry.png",
-        "sha256": "6c8579019d9cb3e5b641d7c1c5f1098918f427b6a09f992d1d6b910f775fd249",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0022-full-view.png",
+        "sha256": "ae37242493f9dae81753f16a03f0ce8da664508ec37255ed8ace0715da289d54",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -58,18 +54,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4484x2964",
-      "targetDimensions": "1200x731",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4484x2964",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Иван Михайлов Улзев и Зиновия Михайлова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Зиновия Михайловна Ампилова вновь названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 40. Олимпиада, родилась 18 июня, крещена 19 июня 1910 года. Родители: Стефан Михайлов Ульев и Мария Петрова. Восприемники: Иван Михайлов Ульев и Зиновия Михайлова Ампилова.",
+    "modernInterpretation": "Зиновия Михайловна Ампилова названа восприемницей Олимпиады; родство с ребёнком или вторым восприемником запись не устанавливает.",
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно.",
     "localOcr": "воспрієлникшвг.\nКрестіяне смо баута\nменаю владшлир\n9/ванив Ширинк и Мари)\nМиранлова Коломицвена",
     "localOcrWithSurnameLexicon": "воспріємникшва.\nКрестяне село барта\nменаю владимир\n9/ вани Ширинк и Мари)\nМиранлов. Коломиц вена",
     "collation": {
@@ -82,11 +81,14 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемирскаго Иванъ Михаиловъ Улзевъ и Зиновія Михаилова Ампилова.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-31E20DC5-77",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "31e20dc5-264c-4042-bc92-6f95d1aaa027",
     "scanNumber": "77"
@@ -21,10 +21,10 @@
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Метрическая книга: записи о родившихся; фамильного ряда Ампилогов/Анпилогов и документированных вариантов нет.",
-    "modernInterpretation": "Первичный скан читается достаточно для исключения индексного совпадения; профиль, карта и маршрут не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-full-scan-negative-verification",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном сохранённом развороте вручную проверены декабрьские записи № 143–145: имена детей, родители и восприемники. Оренбургский мещанин Иван Николаевич Ампилогов и Анисья Степановна Дронова отсутствуют; фамильного ряда Ампилогов / Анпилогов и документированных вариантов на листе нет.",
+    "modernInterpretation": "Первичный полный скан исключает индексное совпадение. Профиль, связь, карта и переселение не создаются.",
+    "indexNote": "Яндекс приписал листу супружескую пару Ивана Николаевича Ампилогова и Анисью Степановну Дронову; в видимых записях № 143–145 фигурируют другие семьи. Сниппет не принят как источник факта.",
     "localOcr": "topocceee\nмові\nкалоковичийого войска\nПетрь вкорвемось Чули\nкобь и фосьгенероких.\nсна;\nна МСихашока Наливайно\nилв\nОренвургикіймінщании\nтрі\nни",
     "localOcrWithSurnameLexicon": "мові\nкалокавичийого войска\nПетре вкорвимось Чули\nковь и фосьгенероких.\nсна;\nна Михашока Наливайно.\n-Оренвургикій міщании\nтрі\nни",
     "collation": {
@@ -35,13 +35,14 @@
   },
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-full-view.jpg",
-    "sha256": "400b12c54a65e214ef204dacde9752ac4ffe3c0b7b63d66a354ee0ecaef1597c",
+    "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-full-view.png",
+    "sha256": "10da1ed96a0c911b704cf76046a328058411be06d748acbcd112aca2374cb0a0",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-target-entry.jpg",
-        "sha256": "de8051453d6662fb6712bd8842d0e96dcd107e2d551573cd6f929cdeca3a736c",
-        "description": "Читаемый фрагмент метрической записи."
+        "kind": "full-page-context",
+        "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-target-context-deep.png",
+        "sha256": "cc2d36068e3413b43cb6547f689ce21183f43717d58ad9d6278e666af01b6bac",
+        "description": "Максимально крупный фрагмент исходного разворота с записями № 143–145, родителями и восприемниками."
       }
     ],
     "parallelCopies": [
@@ -62,10 +63,10 @@
             "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
           },
           {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-target-entry.png",
-            "sha256": "441c5e87e3673ab098c253ddc8c1933a1c42f315cc96ecf8f00783202c4a9c64",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "kind": "full-page-context",
+            "path": "data/genealogy/evidence-private/yandex/31e20dc5-264c-4042-bc92-6f95d1aaa027/0077-target-context-deep.png",
+            "sha256": "cc2d36068e3413b43cb6547f689ce21183f43717d58ad9d6278e666af01b6bac",
+            "description": "Максимально крупный контекст всех проверенных строк полного доступного оригинала."
           }
         ],
         "quality": {
@@ -73,8 +74,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "2432x1947",
-          "targetDimensions": "1200x702",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "2250x1650",
+          "method": "manual-full-page-negative-verification-and-maximal-source-resolution-recrop"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -82,14 +83,21 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-saved-page",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Доступный оригинал имеет размер 2432×1947; вывод об отсутствии относится ко всему сохранённому развороту."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный сохранённый разворот рождений, записи № 143–145; вручную проверены дети, родители и восприемники; индексная пара отсутствует; сохранён максимально крупный фрагмент 2250×1650"
   },
   "indexData": {
     "querySnippet": "Оренбургский мещанин Иван Николаев Ампилогов и Оренбургская мещанка Анисья Степанова Дронова.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Иван Николаевич Ампилогов и Анисья Степановна Дронова отсутствуют на полном локальном скане № 77."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false,
+  "context": {"eventSummary": "Отрицательная проверка полного разворота метрической книги.", "identityNote": "Профиль не создавался: индексные лица на скане отсутствуют.", "migrationNote": "Не применимо."}
 }

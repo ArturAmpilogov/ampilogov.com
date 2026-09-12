@@ -1,85 +1,75 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F4BFF9CA-64",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "parallel-full-sheet-container",
+  "parallelOf": "YA-F4BFF9CA-64-F29",
   "collection": {
     "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
-    "scanNumber": 64
+    "scanNumber": 64,
+    "asRead": "Метрическая книга на 1888 год, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f4bff9ca-06fb-44b8-887f-186c2a62df15/64"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-F4BFF9CA-64-M1",
+      "role": "deceased",
+      "personId": "P91152",
+      "displayName": "Матрёна Гавриловна Ампилогова",
+      "nameAsTranscribed": "запасного солдата Гавріила Трифонова Ампилогова дочь Матрена",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-F4BFF9CA-64-M2",
+      "role": "father",
+      "personId": "P6024",
+      "displayName": "Гавриил Трифонович Ампилогов",
+      "nameAsTranscribed": "запаснаго солдата Гавріила Трифонова Ампилогова",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Ноябрь. Женского пола № 29. 10 умерла, 12 погребена. Села Гамалеевки запаснаго солдата Гавріила Трифонова Ампилогова дочь Матрена, 3 недель, от неизвестной болезни.",
+    "modernInterpretation": "Трёхнедельная Матрёна Гавриловна Ампилогова умерла 10 ноября 1888 года. Событие уже представлено YA-F4BFF9CA-64-F29.",
+    "indexNote": "Родство, возраст и границы строки установлены прямым чтением полного листа."
+  },
   "evidence": {
     "catalogId": "f4bff9ca-06fb-44b8-887f-186c2a62df15",
     "scanNumber": 64,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-full-view.png",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-full-view.png",
-    "capturedAt": "2026-09-11",
     "sha256": "dd43197e44788f2eef10cde1c80d7adf357eb1cdeeef23fe0e9f07b6d304c351",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-header.png",
-        "sha256": "b417271d04819ec327b7b306eaa75a14f0c8150f7e916b540b57000e592c79bd",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-target-entry.png",
-        "sha256": "a9fb6711cf3c38ddc614f2cc0eee40f260a42915fee7afb9e0cb02d0739c12fb",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-deep-context.jpg",
+        "sha256": "2ad4f4a5e1d939aaff42f93f795e4fb08e5ec1cd1fefbd8389de4372f7bde12b",
+        "description": "Полноширинный чистый фрагмент женской записи № 29 со всеми графами."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5520x4396",
-      "targetDimensions": "1469x615",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "contextDimensions": "5200x1700",
+      "method": "manual-reading-of-full-original-and-granular-record-boundary-collation",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-full-view.png",
-        "sha256": "be289fd487ef9704e170b6bdefad3724e5a7567050c402caa1f783ea91fa65d0",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/f4bff9ca-06fb-44b8-887f-186c2a62df15/0064-target-entry.png",
-            "sha256": "454416bb0077d2ca0386afa39f987b45181ecda16cd19b27e7b1b16a90754cb6"
-          }
-        ]
-      }
-    ]
+    "uploadStatus": "pending-remote-list-timeout"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "кнйги на 1988 г\nЄТРИЧЕСКОЙ\nЗвáніє, ймА, отчество й фаміля одмєршигш.\n0ỷ11\nИSж",
-    "modernInterpretation": "кнйги на 1988 г ЄТРИЧЕСКОЙ Звáниє, ймА, отчество й фамиля одмєршигш. 0ỷ11 ИSж",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "кнйги на 1988 г\nЄТРИЧЕСКОЙ\nЗвáніє, ймА, отчество й фаміля одмєршигш.\n0ỷ11\nИSж",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
+  "isRecord": true,
+  "cardKind": "parallel-full-sheet-container",
+  "publicCore": false,
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
+    "status": "complete-primary-scan-parallel-container-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный лист прочитан вручную; после обзорной проверки границы женской записи № 29 сопоставлены с YA-F4BFF9CA-64-F29; отдельное публичное событие не создавалось."
   }
 }

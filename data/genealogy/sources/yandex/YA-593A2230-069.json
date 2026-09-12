@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-593A2230-069",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "593a2230-e48f-45c3-bf60-d71ca1b1769d",
     "scanNumber": 69,
@@ -12,84 +12,67 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/593a2230-e48f-45c3-bf60-d71ca1b1769d/69"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
+  "event": null,
   "mentions": [
     {
       "mentionId": "YA-593A2230-069-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "593a2230-e48f-45c3-bf60-d71ca1b1769d",
     "scanNumber": 69,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/593a2230-e48f-45c3-bf60-d71ca1b1769d/0069-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/593a2230-e48f-45c3-bf60-d71ca1b1769d/0069-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "28ebbe0e4c18a4227934786a8395e4f1fd42f99c8ce5de1fd16c5ed4d8cd1639",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/593a2230-e48f-45c3-bf60-d71ca1b1769d/0069-header.png",
-        "sha256": "35c3f0aa8ef030cfe371cda1b18ad4c84835a7aca1368ad78b71b06c4b69afff",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/593a2230-e48f-45c3-bf60-d71ca1b1769d/0069-target-entry.png",
-        "sha256": "4566fdc25793494a83b1d871325f690b47329a7032aa29d998206903c9ba01dc",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/593a2230-e48f-45c3-bf60-d71ca1b1769d/0069-full-view.png",
+        "sha256": "28ebbe0e4c18a4227934786a8395e4f1fd42f99c8ce5de1fd16c5ed4d8cd1639",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены целевая запись и окружающий контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "2571x3836",
-      "targetDimensions": "1200x570",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "2571x3836",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "177\nА. Д .\n88\nге. П.\n143",
-    "modernInterpretation": "177 А. Д . 88 ге. П. 143",
-    "localOcr": "177\nА. Д .\n88\nге. П.\n143",
-    "localOcrWithSurnameLexicon": "177\nА. Д .\n88\nге. Пс .\n143",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Алфавитный указатель к метрической книге за 1910 год, раздел о браках. Полностью проверена страница с рукописными фамилиями и ссылочными номерами; фамилии Ампилогова или иной формы исследуемого ряда на листе нет.",
+    "modernInterpretation": "Ложное индексное совпадение: отдельный сниппет «Ампилогова» не подтверждается изображением страницы.",
+    "indexNote": "Яндекс приписал странице фамилию «Ампилогова», которой на оригинале нет."
   },
   "indexData": {
     "querySnippet": "Ампилогова.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

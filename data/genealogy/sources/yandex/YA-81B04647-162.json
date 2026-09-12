@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-81B04647-162",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "81b04647-156a-4cf0-8b24-dd7d45cbaa94",
     "scanNumber": 162,
@@ -13,22 +13,29 @@
     "documentUrl": "https://yandex.ru/archive/catalog/81b04647-156a-4cf0-8b24-dd7d45cbaa94/162"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "1916",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "хутор при приходе Рождественки, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-81B04647-162-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
-      "surnameSeries": true
+      "role": "godfather",
+      "displayName": "Евфимий Амфилогович Антоненко",
+      "nameAsTranscribed": "Евфимій Амфилоговичъ Антоненко",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-81B04647-162-M2",
+      "role": "godmother",
+      "displayName": "Наталия Даниловна Череда",
+      "nameAsTranscribed": "Наталія Данилова Череда",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -48,10 +55,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/81b04647-156a-4cf0-8b24-dd7d45cbaa94/0162-target-entry.png",
-        "sha256": "00117ec03d70dc18dd3cf2f8c470287c31bed1c32687d65e4e950e8ef984ea98",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/81b04647-156a-4cf0-8b24-dd7d45cbaa94/0162-target-context-deep.jpg",
+        "sha256": "c0e291a0441f15426251ddf312c54c08b4ff67656a966c31f6ae2767f99b69cc",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +66,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5608x4390",
-      "targetDimensions": "1297x742",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5000x1600",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-remote-list-timeout"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "арственный архи\nой области",
-    "modernInterpretation": "арственный архи ой области",
-    "localOcr": "арственный архи\nой области",
-    "localOcrWithSurnameLexicon": "арственный архи\nой области",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "№ 47. Декабря 28 родилась, 29 крещена Анна. В строке восприемников: «Того же хутора крестьянин Евфимий Амфилогович Антоненко и крестьянская жена Наталия Данилова Череда».",
+    "modernInterpretation": "Восприемник — Евфимий Антоненко; «Амфилогович» является его отчеством, а не фамилией. Эта запись не относится к фамильному ряду Ампилоговых.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и соседних строк имеет приоритет; индексная фамильная фраза на этом скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Евфимий Амфилогов Антоненко, крестьянин, тот же хутор.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "вручную проверены полный лист, заголовок, вся индексно-релевантная строка и соседние записи; буквальное чтение отделено от ошибочного индекса; сохранён крупный полноширинный clean crop с SHA; исключены профиль, backlink, карта, родство и миграция"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "«Амфилогович» грамматически и графически стоит в позиции отчества; фамилия лица — Антоненко. Профиль фамильного ряда и ссылка исключены.",
+    "migrationNote": "Оснований для географической или миграционной записи нет."
   }
 }

@@ -42,8 +42,11 @@
     "quality": {
       "documentOnlyVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy"
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-original-resolution-local-copy",
+      "originalImageDownloaded": true,
+      "fullDimensions": "5348x4179",
+      "targetDimensions": "3348x3244"
     },
     "parallelCopies": [
       {
@@ -98,9 +101,11 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
     "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный разворот февраля 1911 года и крупный чистый фрагмент проверены вручную: записи рождений № 11–13, даты 2–6 февраля и четыре повторные подписи причта; P1543 подтверждён только в роли диакона, без родства или миграционного вывода.",
     "correctionHistory": [
       "2026-09-09: создана карточка по независимо прочитанному оригиналу; сохранены полный разворот и крупный фрагмент."
     ]
@@ -108,5 +113,20 @@
   "indexData": {
     "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов. Того же села крестьянин Кузьма Капитонов Ласьков и крестьянская жена Анастасия Никитина Скрынникова.",
     "fuzzyQuery": true
-  }
+  },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "2–6 февраля 1911 года",
+      "fromIso": "1911-02-02",
+      "toIso": "1911-02-06",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
+  "publicCore": true
 }

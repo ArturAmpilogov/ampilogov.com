@@ -1,114 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-179",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 179,
-    "asRead": "Метрическая книга 1911 года, часть первая, о родившихся; декабрь"
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Часть первая о родившихся; декабрьские записи и итоговая строка"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/179"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "декабрь 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Слоновский приход",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "confidence": "high"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-472AC94F-179-M1",
-      "role": "church-clergy",
+      "role": "deacon",
       "personId": "P1543",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Егорович Ампилогов, диакон",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-472AC94F-179-M2",
+      "role": "priest",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-signatures-and-page-context",
+    "literal": "декабрь 1911 года. Во всех видимых строках соответствующего раздела повторяется формула: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Диакон Афиноген Егорович Ампилогов исполнял служебную роль в актах Слоновского прихода (декабрь 1911 года); семьи в строках — участники отдельных актов, родство с диаконом не следует.",
+    "indexNote": "Подтверждена повторная служебная подпись диакона; индекс отделён от семей актов. Имя, сан, период и контекст проверены по всему первичному развороту."
+  },
+  "indexData": {
+    "fuzzyQuery": true,
+    "discrepancy": "Подтверждена повторная служебная подпись диакона; индекс отделён от семей актов."
+  },
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+    "scanNumber": 179,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.jpg",
-    "capturedAt": "2026-09-09",
-    "sha256": "6e475225051f7dd176fc4a388323b155c23483521430c32b64f4ecef7bfe0686",
+    "uploadStatus": "verified-exact",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-fragment",
+    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "808e3b0ca3802715d1934c5fabd12ad4d878a00bf7431d4be7ebe420346089d5",
     "fragments": [
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-target-entry.jpg",
-        "sha256": "ff25cff3e9c00af1e23b465aca799931b64d254ff737e3b92a96cab00fe723af",
-        "description": "Крупный фрагмент декабрьских записей и подписей диакона."
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-target-context-deep.jpg",
+        "sha256": "f426973b5f1f252380616e43c39689171f3155f8edf8a89d1d47cc3a79150a53",
+        "description": "Крупный полноширинный фрагмент всех видимых строк, дат, участников и повторных подписей причта."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
       "fullDimensions": "5326x4184",
-      "targetDimensions": "4900x1450"
+      "targetDimensions": "4900x3650",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-spread-reading-and-full-width-recrop"
     },
-    "parallelCopies": [
-      {
-        "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
-        "scanNumber": 179,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "808e3b0ca3802715d1934c5fabd12ad4d878a00bf7431d4be7ebe420346089d5",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-header.png",
-            "sha256": "8cf1c2299f8ebe8db1ec420394b920665f0b083b8210b54d394b04853239e5f6",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0179-target-entry.png",
-            "sha256": "d410a0cd45e3e614a8a94ac3d565ba061ff8e56881926ee524831837538f181b",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5326x4184",
-          "targetDimensions": "3441x3083",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "Декабрь. В записях № 100, 101, 106 и 107 при священнике Іоанне Полякове повторяется подпись: Діаконъ Аѳиногенъ Ампилоговъ. В итоговом удостоверении: Священникъ Іоаннъ Поляковъ съ Діакономъ Аѳиногеномъ Ампилоговымъ.",
-    "modernInterpretation": "Декабрьский лист 1911 года подтверждает служение диакона Афиногена Егоровича Ампилогова в Слоновском приходе.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "КОМОДАЛЫ\nАЄТРЙЧЕСКОЙ ВНÚГИ НА 1211\"\nГОДЕ, ЧАСТЬ ПеРВАЛ,\nШ РОДИВШИХЕЛ.\nЗвáніє, ймА, бтчЕство й фамиліл родителей, й какóги\nЗвАніе, ПмА, бтчЕсТво й фАмИЛіА\nиєні родившихсл.\nКто совершáлг тáннство\nPL\nввроиспов''даніл.\nБОСПрЇÉМНИКШЕ2»\nкрєцієнія.\nTE\nпастиейs\nДерхеваги Мирейловаги перяствянииЬ\n•Мой мле\nереаннпероствянтив 1 Чурвита\nНижити! Вишлвевы Порошівь м заплалися\nСеодоровь Кос\nоперовьилерествячекие\nЖенеето Парі Леантверее Ввлларивосиеь-\nСвященник\nонени ваерю Вишявови Малоцейи\n1а.\n11629@baщeн.utos goanns Noadheold\nбохивам\nДілиів Лошгожив Аетимоііь\nЛосийів\nМого сля скурори пересйвянийв Да\nАлистя Кутори Ново-1Зислилевскиго Лересивмя.\nНейв Картав Васливево Можлчи и загин-\nміанвверисимовь (\nнем онени оговворими Степанова обо\nрвиçо Янслеймс\" аеиbави а Мoain-\nгривославнва.\nв япеннм/сь дохинь Лоляковь\nПол янов'ь.\nВ?іожитів Наиночйв Дельеитаовь.\nПеmр'.\nДереви Мйрлявхи перествяннив Оихонон\nМой ми Деревни пересттвянийв Хлірой\nПетлевль Лоливченло м Э илычинах мисла са\nСавслвовь Повилевіь маььицивле\nСегена Хивчивева обсеэрривосщавные\nна Пешрова Паивілснчю.\nСвященнись фоаннь Полявсова\nіаткнйв Пашачеав Дмеіилоговь- С\nарственный арх\nДіитономв\nтофаsів.\nСлавиновхипересттвяннів Лвнив Лек\nд Шого си донипероствйнитв Мирейив\nжлевь бривловь и запанним лисиееяо М1и\nАларлантвь Шелкеибави переелівсялечня,\nріn Петрова обапгривдсииснвя\nОни Днна Стесрангіва Листавая.\nХомочиосив\nPвameninales кролото Лоллявова\nДіапийв Домлонив Алитильковть.\nЛепилотовый!.",
-    "localOcrWithSurnameLexicon": "АСТРИЧЕСКОЙ КНИГИ НА 1211\"\nГОДЕ, ЧАСТЬ ПеРВАЛ,\nШ РОДИВШИХЕЛ.\nЗваніє, ймА, отчЕство й фаміліл родителей, й какги\nЗвАніе, мА, бтчЕсТво й фАмИЛіА\nєні родившихся.\nКто совершаль тлинство\nPL\nв вроисповʼданіл.\nБОСПрЇÉМНИКШЕ2»\nпрецієнія.\nTE\nпастиейх\nПереваи Мирейловат перествянии\n•Мой мле\nереанипероствянтив 1 Чурвита\nНижити Вишивовы Порошовь м запалися\nФеодоров. Кос\nоперовилерествечекие\nЖенето Парі Леантвере Вбиларивосись -\nСвященник\nолени варю Висявови Малодей\n1а.\nсохивам\nДілиів Ломожив Аетимоіь\nРосилів\nМого сля скупори перессвянийв Да\nАлистя Кутори Ново- 1 ислиловскиго Пересивля.\nНейв Картав Васивево Можичи и загин-\nсланв вересимов (\nнем онени оговворими Степанова обо\nгривославива.\nв япеннм/сь дохинь Лоляковь\nПол янов'ь.\nВ ожитів Намночив Денита вь.\nПетр'.\nДеревни Мерлявки перествяннив ихоном\nМой ми Деревни перествянийв Хлірой\nСавслвовь Повилевіь маницивле\nСечена Хивчивева обсерривоставные\nна Перова Пливісню.\nСвященнись фаннь Полякова.\nінтиів Пошачав Дмеіилоговь- С\nарственный арх\nДітоном в\nтофинів.\nСлавиновниперестівяннів Манив Лек\nжевь Привновь и запанним лисие о Ми\nАларланть Шелетави переелі всячення,\nрін Петрова обаприадсиснве\nОна Днна Стефанова Листава.\nПомочиосив\nPameninals колото Погля вова\nДіанийв Домонив Алитильковт.\nЛепилотовый!.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ],
-    "correctionHistory": [
-      "2026-09-09: ложное отрицательное чтение исправлено по оригиналу высокого разрешения."
-    ]
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова: декабрь 1911 года.",
+    "identityNote": "P1543 подтверждён точным редким именем, саном, тем же каталогом и Слоновским приходом, неизменным священником Иоанном Поляковым и непрерывной серией соседних листов.",
+    "migrationNote": "Служебная подпись не сообщает родства с семьями актов и не доказывает переселение."
   },
-  "indexData": {
-    "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов. Той же деревни крестьянин Андрей Савельев Ковалев и девица Елена Петрова Кальченко.",
-    "fuzzyQuery": true
+  "review": {
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "Подтверждена повторная служебная подпись диакона; индекс отделён от семей актов."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full primary spread scan 179; Часть первая о родившихся; декабрьские записи и итоговая строка; all visible date/name/role columns and repeated clergy signatures checked; P1543 service-only identity by exact name, rank, catalog, parish, Ioann Polyakov and contiguous leaf series; no kinship or migration; 4900x3650 crop"
   }
 }

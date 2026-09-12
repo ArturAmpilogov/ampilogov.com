@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2545DA77-274",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
     "scanNumber": 274,
@@ -13,21 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/2545da77-ac4d-4a24-ae1e-705a17081f09/274"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage-register",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "февраль — 26 мая 1914",
+      "fromIso": "1914-02-01",
+      "toIso": "1914-05-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-2545DA77-274-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилоговым",
-      "nameAsTranscribed": "Ампилоговым",
+      "role": "clergy-assistant",
+      "personId": "P91076",
+      "displayName": "Дмитрий Егорович Ампилогов",
+      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
       "surnameSeries": true
     }
   ],
@@ -66,30 +71,23 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "годи, чАсть\nКто совершáль\nтаинство.\nпять д б,\nЗьящанива\nПеакому\nОвяионникы.\nМолканва\nАнулферова\nсь псаком.\nчупвомь\nОиайтріаль\nсвитиного-ск\nобла\nгу\nвочлвій",
-    "modernInterpretation": "годи, чАсть Кто совершáль таинство. пять д б, Зьящанива Пеакому Овяионникы. Молканва Анулферова сь псаком. чупвомь Оиайтриаль свитиного-ск обла гу вочлвий",
-    "localOcr": "годи, чАсть\nКто совершáль\nтаинство.\nпять д б,\nЗьящанива\nПеакому\nОвяионникы.\nМолканва\nАнулферова\nсь псаком.\nчупвомь\nОиайтріаль\nсвитиного-ск\nобла\nгу\nвочлвій",
-    "localOcrWithSurnameLexicon": "годи, чАсть\nКто совершл%\nтаинство.\nпять д б,\nСвящаника\nПоакому\nСвященнико.\nМолканва\nАнулферова\nсь псаком.\nчупкомь\nЗнайтріаль\nсвистиного-ск\nобла\nгу\nвосивій",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-for-surname-relevant-content-after-manual-full-leaf-reading",
+    "literal": "В брачных записях от февраля до 26 мая формула служителей повторяется: «Священникъ Михаилъ Анциферовъ съ псаломщикомъ, діакономъ Димитріемъ Ампилоговымъ» (в отдельных строках: «Псаломщикъ, діаконъ Димитрій Ампилоговъ»).",
+    "modernInterpretation": "Лист метрической книги Покровской церкви села Кармалки за 1914 год подтверждает участие Дмитрия Ампилогова как псаломщика-диакона в брачных записях от февраля до 26 мая. Другие лица на листе относятся к семьям соответствующих актов и не превращены в отдельные профили. Повторная служебная подпись подтверждает работу в приходе, но сама по себе не доказывает родства или переселения.",
+    "indexNote": "Поисковый фрагмент Яндекса использован только для навигации. Имя, сан, приход и диапазон строк проверены вручную по сохранённому полному скану и крупному фрагменту."
   },
   "indexData": {
     "querySnippet": "Священник Михаил Анциферов с псаломщиком Димитрием Ампилоговым. По женихе: Села Кармалки, Михайловской волости, Оренбургской губернии и уезда, Крестьяне...",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-role-parish-and-visible-date-range",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный лист и крупный фрагмент: проверены брачных записях от февраля до 26 мая, повторяющаяся служебная формула, сан и написание фамилии; яндекс-OCR заменён проектной расшифровкой."
   }
 }

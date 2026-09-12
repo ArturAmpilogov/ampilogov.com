@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-379130BA-044",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "379130ba-2a5c-402d-a309-502bc7289d74",
     "scanNumber": 44,
@@ -13,22 +13,41 @@
     "documentUrl": "https://yandex.ru/archive/catalog/379130ba-2a5c-402d-a309-502bc7289d74/44"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "23–24 августа 1914 года",
+      "birth": "1914-08-23",
+      "baptism": "1914-08-24",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Зобово, Оренбургский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-379130BA-044-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "child",
+      "personId": "P102217",
+      "displayName": "Александр Андреевич Анпилогов",
+      "nameAsTranscribed": "Александръ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-379130BA-044-M2",
+      "role": "father",
+      "personId": "P8215",
+      "displayName": "Андрей Васильевич Анпилогов",
+      "nameAsTranscribed": "крестьянинъ Андрей Васильевъ Анпилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-379130BA-044-M3",
+      "role": "mother",
+      "personId": null,
+      "displayName": "Параскева Андреевна",
+      "nameAsTranscribed": "законная жена его Параскева Андреева",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -67,8 +86,8 @@
   },
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "тммио\nи лай босиооть слоноо\nлинь и Данід Фригорвоска\nной законнад жена его Содай) /а-\nГиозотина\nста\nвлова оба православние.\nОвіжуттри пуама\nаохивам\nДіанонь Аликсанать Меизаатова\nтого-яе села крествлні\nалаЗобова посствяний. Алепси\nся\nДеаоть Ивановь Аорамовь\nвятой впмолаевь Поповь и законнаи\nгс Дира врамосгавьа Плги-\n26 вжена его Марія Иванова оба\nшика\nправославные\nmnurfaug luarsag\nDfang flukan Mintains\ni c.",
-    "modernInterpretation": "тммио и лай босиооть слоноо линь и Данид Фригорвоска ной законнад жена его Содай) /а- Гиозотина ста влова оба православние. Овижуттри пуама аохивам Дианонь Аликсанать Меизаатова того-яе села крествлни алаЗобова посствяний. Алепси ся Деаоть Ивановь Аорамовь вятой впмолаевь Поповь и законнаи гс Дира врамосгавьа Плги- 26 вжена его Мария Иванова оба шика православные mnurfaug luarsag Dfang flukan Mintains i c.",
+    "literal": "№ 86. Августа 23 [родился], 24 [крещён]. Александръ. Села Зобова крестьянинъ Андрей Васильевъ Анпилоговъ и законная жена его Параскева Андреева; оба православные.",
+    "modernInterpretation": "Александр Андреевич Анпилогов родился 23 и крещён 24 августа 1914 года. Отец Андрей Васильевич уверенно сопоставлен с P8215 по редкому полному имени, селу Зобову и совместимому возрасту; P101911 исключён, поскольку тот Александр — сын Андрея Моисеевича.",
     "localOcr": "тммио\nи лай босиооть слоноо\nлинь и Данід Фригорвоска\nной законнад жена его Содай) /а-\nГиозотина\nста\nвлова оба православние.\nОвіжуттри пуама\nаохивам\nДіанонь Аликсанать Меизаатова\nтого-яе села крествлні\nалаЗобова посствяний. Алепси\nся\nДеаоть Ивановь Аорамовь\nвятой впмолаевь Поповь и законнаи\nгс Дира врамосгавьа Плги-\n26 вжена его Марія Иванова оба\nшика\nправославные\nmnurfaug luarsag\nDfang flukan Mintains\ni c.",
     "localOcrWithSurnameLexicon": "и лай боскооть слоного\nлинь и Данід Григорвска\nной законная жена его Содой) /а-\nГлохотина\nста\nвлова оба православные.\nСвітутри пана\nархивам\nДіанонь Алексанать Мераато ва\nтого -яе села крествлні\nалаЗобова посствяний. Алекси\nся\nДелають Ивановь Морамовь\nвятой вымолаевь Поповь и законная\nге Дира врамостава Плги-\n26 жена его Марія Иванова оба\nника\nправославные\nmnurfaug luarsag\nDfang flukan Mintains\ni c.",
     "collation": {
@@ -82,14 +101,14 @@
     "querySnippet": "Отец: Андрей Васильев Ампилогов, крестьянин, село Зобово. Отец: Василий Моисеев Проскура, крестьянин, хутор Рыбатинский.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
     "status": "complete-but-reading-uncertain",
     "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "вручную прочитан полный разворот и акт № 86: имя ребёнка, 23/24 августа 1914, родители и Зобово; индекс исправлен по оригиналу; добавлен clean-контекст data/genealogy/evidence-private/yandex/379130ba-2a5c-402d-a309-502bc7289d74/0044-target-context-deep.png sha256 b0ed7d14cb54fed7d7761bbf5aee823aa4f317315e019a0a150f58258304514f; P8215 связан как strong-supported, P101911 явно исключён; миграция не создавалась"
   }
 }

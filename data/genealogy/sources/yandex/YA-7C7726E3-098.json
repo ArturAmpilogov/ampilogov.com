@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-7C7726E3-098",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "7c7726e3-28bf-452a-ae14-750906223e83",
     "scanNumber": 98,
@@ -13,22 +13,29 @@
     "documentUrl": "https://yandex.ru/archive/catalog/7c7726e3-28bf-452a-ae14-750906223e83/98"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "1909",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Севастополь"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-7C7726E3-098-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
+      "role": "godparent",
+      "displayName": "Иван Максимович Никонов",
+      "nameAsTranscribed": "Іоаннъ Максимовъ Никоновъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-7C7726E3-098-M2",
+      "role": "godparent",
+      "displayName": "Варвара Гавриловна Дергачёва",
+      "nameAsTranscribed": "Варвара Гаврилова Дергачева",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -48,10 +55,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/7c7726e3-28bf-452a-ae14-750906223e83/0098-target-entry.png",
-        "sha256": "edb1376ce7cec04d294c327175a9c4702b46ecc11f261609b421900f3a451a02",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/7c7726e3-28bf-452a-ae14-750906223e83/0098-target-context-deep.jpg",
+        "sha256": "de0d29c10d945382654491b0f30a0fb3d35d31f930366a5c8ff13ab92ee43261",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +66,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4352x3264",
-      "targetDimensions": "1200x634",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3400x1050",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-remote-list-timeout"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "/аоллемнни.\nДевадрповьскій мтощанине Виновий кля-\nкеандров. Шидловикйй и якена Совасчопови-!\nскао мінашна Евфрашнія Мерадіоно-\nасильнюти\nви орликови .\nХИБаМ\nКрестьминия Курской губ. Фаттенскаго",
-    "modernInterpretation": "/аоллемнни. Девадрповьский мтощанине Виновий кля- кеандров. Шидловикйй и якена Совасчопови-! скао минашна Евфрашния Мерадионо- асильнюти ви орликови . ХИБаМ Крестьминия Курской губ. Фаттенскаго",
-    "localOcr": "/аоллемнни.\nДевадрповьскій мтощанине Виновий кля-\nкеандров. Шидловикйй и якена Совасчопови-!\nскао мінашна Евфрашнія Мерадіоно-\nасильнюти\nви орликови .\nХИБаМ\nКрестьминия Курской губ. Фаттенскаго",
-    "localOcrWithSurnameLexicon": "Девад польскій мощанине Виловий кля-\nкеандров. Шиловский и лена Севастополи - !\nскао мінанна Евфрашнія Мерадіоно-\nисилькоти\nви орликови .\nХИВаМ\nКрестьмения Курской губ. Фатенскаго",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот 1909 года, записи № 62–64. В нижней строке восприемников читаются: «Крестьянин Курской губ. Дмитровского у. Семенской вол. Иоанн Максимов Никонов и жена крестьянина Воронежской губ. Острогожского у. и волости Варвара Гаврилова Дергачёва». Тихона Стефанова Анпилогова на листе нет.",
+    "modernInterpretation": "Индексная фраза о Тихоне Степановиче Анпилогове перенесена с другого листа; видимая строка называет Ивана Максимовича Никонова и Варвару Гавриловну Дергачёву.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и соседних строк имеет приоритет; индексная фамильная фраза на этом скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Тихон Стефанов Анпилогов и жена турецкоподданного Софья Ильина Александрида. Священник Митрофан Васильковский Псаломщик Адриан Уасиль.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "вручную проверены полный лист, заголовок, вся индексно-релевантная строка и соседние записи; буквальное чтение отделено от ошибочного индекса; сохранён крупный полноширинный clean crop с SHA; исключены профиль, backlink, карта, родство и миграция"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: фамильный ряд не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи нет."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-23E7CDEF-026",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 26,
@@ -13,45 +13,58 @@
     "documentUrl": "https://yandex.ru/archive/catalog/23e7cdef-0289-4054-a95d-1c29678efce0/26"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 14 августа, крещён 16 августа 1910 года",
+      "from": "1910-08-14",
+      "to": "1910-08-16",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Бахтемир, Астраханская губерния"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-23E7CDEF-026-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилов",
-      "nameAsTranscribed": "Ампилов",
+      "mentionId": "YA-23E7CDEF-026-M0",
+      "role": "child",
+      "personId": "P102131",
+      "nameAsTranscribed": "Александр",
+      "displayName": "Александр Александрович Ампилов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-23E7CDEF-026-M1",
+      "role": "father",
+      "personId": "P101590",
+      "displayName": "Александр Ипатьевич Ампилов",
+      "nameAsTranscribed": "матрос запаса флота, крестьянинъ села Бахтемирскаго Александръ Ипатовъ Ампиловъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-23E7CDEF-026-M2",
+      "role": "mother",
+      "personId": null,
+      "displayName": "Любовь Васильевна",
+      "nameAsTranscribed": "законная его жена Любовь Васильева",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 26,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0026-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0026-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "9f3adc5de60243452ca2c75bda16e8b6415e4e1cbb50d47f314ea98cac014ca0",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0026-header.png",
-        "sha256": "8482f06ab84ccbad492f29d4dddea9a7acb0a39f51f9e279620d1b91320b8fcd",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0026-target-entry.png",
-        "sha256": "941387c684c77fb1eb8e9796a6b23f5c54cffa46d1cb423583b85cb45fc47882",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0026-full-view.png",
+        "sha256": "9f3adc5de60243452ca2c75bda16e8b6415e4e1cbb50d47f314ea98cac014ca0",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,16 +72,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4500x2996",
-      "targetDimensions": "1200x805",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4500x2996",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "і ліюлякинь ароара\nОедорова Кивина\nКрествяне сславарне\nширекою Qeglapes 2hgo\nкимов Кнешев „Соломя\nЕгарства вяжна\nнев.",
-    "modernInterpretation": "и лиюлякинь ароара Оедорова Кивина Крествяне сславарне ширекою Qeglapes 2hgo кимов Кнешев „Соломя Егарства вяжна нев.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 33. Александр, родился 14 августа, крещён 16 августа 1910 года. Родители: матрос запаса флота, крестьянин села Бахтемирского Александр Ипатов Ампилов и законная его жена Любовь Васильева; оба православные.",
+    "modernInterpretation": "Рождение Александра Александровича Ампилова прямо подтверждает отцовство Александра Ипатьевича. Яндекс ошибочно подставил сюда восприемницу Екатерину Ипатову Кожевникову из другой записи.",
     "localOcr": "і ліюлякинь ароара\nОедорова Кивина\nКрествяне сславарне\nширекою Qeglapes 2hgo\nкимов Кнешев „Соломя\nЕгарства вяжна\nнев.",
     "localOcrWithSurnameLexicon": "2 люлякини ароара\nФедорова Кивина\nКрестване ославарне\nширекою Gegapes 2hgo\nкимов Клешев „Соломя\nЕгорова вяжна\nнев.",
     "collation": {
@@ -76,20 +92,24 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно."
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемирского Александр Ипатов Ампилов и Екатерина Ипатова Кожевникова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал эту родительскую строку с восприемниками другой записи: на скане жена — Любовь Васильева, а не Екатерина Ипатова Кожевникова."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

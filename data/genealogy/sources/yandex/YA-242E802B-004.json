@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-242E802B-004",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 4,
@@ -13,45 +13,58 @@
     "documentUrl": "https://yandex.ru/archive/catalog/242e802b-eab0-46f1-aa5d-d78fab77a6c8/4"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 1 января, крещён 2 января 1916 года",
+      "from": "1916-01-01",
+      "to": "1916-01-02",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Зобово, Оренбургская губерния"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-242E802B-004-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "mentionId": "YA-242E802B-004-M0",
+      "role": "child",
+      "personId": "P102132",
+      "nameAsTranscribed": "Иннокентий",
+      "displayName": "Иннокентий Тимофеевич Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-242E802B-004-M1",
+      "role": "father",
+      "personId": "P102035",
+      "displayName": "Тимофей Алексеевич Ампилогов",
+      "nameAsTranscribed": "села Зобова крестьянинъ Тимоѳей Алексѣевъ Ампилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-242E802B-004-M2",
+      "role": "mother",
+      "personId": null,
+      "displayName": "Ольга Кузьминична",
+      "nameAsTranscribed": "законная его жена Ольга Космина",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 4,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0004-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0004-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "8756ea720c3807c1b77cc36190357f85e90c1cc4ef7a0880011c848272f9f888",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0004-header.png",
-        "sha256": "ff400c4b6b8b4bf056eb82c63758b6e0ea82b85efed3d09314bed21eebfced4b",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0004-target-entry.png",
-        "sha256": "73fbc9cce7fb49665d5f5ebed9f235be806264cae5b4ca2251585d984c66852f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0004-full-view.png",
+        "sha256": "8756ea720c3807c1b77cc36190357f85e90c1cc4ef7a0880011c848272f9f888",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,16 +72,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5195x4302",
-      "targetDimensions": "1358x972",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5195x4302",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "еттн миснани\nстисия ниМнуелі\nНесмошніривь Віивитуєв Рашиквв.\nОсли вибови Вреетвяатив ві жеткви\nаеtисива в амто гев qu\nварінего жаски Олевеа А гослина мва-\nпривмолавним.\nввіттиван) Мискarв\nНикон МарштгМ с\nМошомнуттв ВВисашицрв І мнимів",
-    "modernInterpretation": "еттн миснани стисия ниМнуели Несмошниривь Виивитуєв Рашиквв. Осли вибови Вреетвяатив ви жеткви аеtисива в амто гев qu варинего жаски Олевеа А гослина мва- привмолавним. ввиттиван) Мискarв Никон МарштгМ с Мошомнуттв ВВисашицрв І мнимив",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 7. Иннокентий, родился 1 января, крещён 2 января 1916 года. Родители: села Зобова крестьянин Тимофей Алексеев Ампилогов и законная его жена Ольга Космина; оба православные.",
+    "modernInterpretation": "Рождение Иннокентия Тимофеевича Ампилогова прямо подтверждает семью Тимофея Алексеевича. Чтение «Зобово» и «Космина» сделано по скану; вариант индекса «Лобова» в других выдачах не используется.",
     "localOcr": "еттн миснани\nстисия ниМнуелі\nНесмошніривь Віивитуєв Рашиквв.\nОсли вибови Вреетвяатив ві жеткви\nаеtисива в амто гев qu\nварінего жаски Олевеа А гослина мва-\nпривмолавним.\nввіттиван) Мискarв\nНикон МарштгМ с\nМошомнуттв ВВисашицрв І мнимів",
     "localOcrWithSurnameLexicon": "стися ниМнуалі\nНеслошіривь Вивинув Валиків.\nОсли вибови Врествятив ві генки\nвараного жасти Олевеа А гостина міа-\nпривмоливним.\nвітиваня Мискан\nМошомутів Висамирь І мнимів",
     "collation": {
@@ -76,20 +92,23 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно."
   },
   "indexData": {
     "querySnippet": "села Зобова крестьянин Тимофей Алексеев Ампилогов и законная его жена Ольга Космина оба православные. Священник Иаков Маслов Диакон Михаил Никольский.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

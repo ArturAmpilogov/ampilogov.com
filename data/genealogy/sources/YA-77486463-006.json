@@ -1,123 +1,93 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-77486463-006",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — первичный печатный лист",
+  "recordType": "clergy-obituary-notice",
   "collection": {
     "catalogId": "77486463-79f7-47c6-866d-2e8a08d11d25",
     "scanNumber": 6,
     "title": "Херсонские епархиальные ведомости, 1916, № 3",
-    "issueDate": "1916"
+    "issueDate": "1916",
+    "asRead": "стр. 64, раздел «Свѣдѣнія объ умершихъ»"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/77486463-79f7-47c6-866d-2e8a08d11d25/6"
   },
+  "event": {
+    "type": "death-notice",
+    "date": {
+      "display": "до публикации № 3 за 1916 год; точная дата не названа",
+      "confidence": "medium"
+    },
+    "place": {
+      "asWritten": "Казанская церковь села Плоскаго, Тираспольскаго уѣзда",
+      "normalized": "село Плоское, Тираспольский уезд, Херсонская губерния"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-77486463-006-M1",
-      "role": "subject",
-      "personId": null,
+      "role": "deceased-priest",
+      "personId": "P102045",
       "nameAsTranscribed": "священникъ Казанской ц. с. Плоскаго, Тираспольскаго у., Ѳома Ампилоговъ",
       "displayName": "Фома Ампилогов",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-print-reading",
+    "literal": "Свѣдѣнія объ умершихъ. Волею Божіею, скончались: священникъ Св. Стефановской церкви, что при городской тюрьмѣ гор. Николаева, Александръ Щукинъ, священникъ Казанской ц. с. Плоскаго, Тираспольскаго у., Ѳома Ампилоговъ и настоятель Успенскаго собора г. Александріи протоіерей Алексій Александровичъ.",
+    "modernInterpretation": "В епархиальном известии 1916 года среди умерших назван священник Казанской церкви села Плоского Тираспольского уезда Фома Ампилогов. Точная дата смерти не приведена.",
+    "indexNote": "Имя, сан, приход и отсутствие даты смерти установлены непосредственно по печатному листу; индекс не подменяет текст."
+  },
+  "indexData": {
+    "querySnippet": "Смерть, сан и место служения прочитаны на первичном листе; дата смерти не названа.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "77486463-79f7-47c6-866d-2e8a08d11d25",
     "scanNumber": 6,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-clean-context-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-followup-2026-09-11/77486463-79f7-47c6-866d-2e8a08d11d25/0006-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/77486463-79f7-47c6-866d-2e8a08d11d25/0006-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "4ee1fb8b16f458f97750d2fdb93e90a4e94fb53a204ab917249cb232c8ee6627",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/77486463-79f7-47c6-866d-2e8a08d11d25/0006-header.png",
-        "sha256": "5106d943c64c7ab2c74156f862d3cecaf63b770369dfd0f5ed856b6b9895043c",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/77486463-79f7-47c6-866d-2e8a08d11d25/0006-target-entry.png",
-        "sha256": "a7ae83cf75492d5a46e9639a9bbff705036f6335e820fcbb3c5ec6c515f98854",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "4cb3b8735d891863e688f0c86e7ae9f716c17518c4cc73ab8bab070c0e9772fe",
+        "description": "Чистый крупный контекстный фрагмент без интерфейса, сохраняющий целевую строку и соседний текст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "831x1362",
-      "targetDimensions": "1200x602",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "790x620",
+      "method": "manual-full-page-reading-and-clean-context-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "captureStatus": "complete-with-local-copy",
-        "rightsNote": "Локальные копии полного листа и увеличенных фрагментов сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив.",
-        "captureType": "official-source-pdf-page-with-enlarged-fragments",
-        "captureSource": "Официальный PDF проекта «Духовенство Русской Православной Церкви в XX веке», указанный в карточке Яндекс Архива",
-        "captureSourceUrl": "https://pravoslavnoe-duhovenstvo.ru/media/priestdb/materialattachment/attachment/88/a7/88a770ca-a89e-435e-add9-04d007824c21.pdf#page=6",
-        "localBackup": "data/genealogy/evidence-private/yandex/77486463-79f7-47c6-866d-2e8a08d11d25/0006-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/77486463-79f7-47c6-866d-2e8a08d11d25/0006-full-view.png",
-        "capturedAt": "2026-09-09",
-        "sha256": "b25f891640119d13ec478c1612008163807a9e544eb4afb93b51f34fd455dfcb",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/77486463-79f7-47c6-866d-2e8a08d11d25/0006-header.png",
-            "sha256": "a2dc38fae38cffda18236e03aa486bb456e11e0efa4e8627ece5c8e0242cc314",
-            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/77486463-79f7-47c6-866d-2e8a08d11d25/0006-target-entry.png",
-            "sha256": "b80d98344c47698da56cfd5bfa3dc78c62c760210e7902b37fa59c4be18e33ac",
-            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
-          }
-        ],
-        "quality": {
-          "documentOnlyVisuallyConfirmed": true,
-          "headerVisuallyConfirmed": true,
-          "targetRowsVisuallyConfirmed": true,
-          "confirmedAt": "2026-09-09",
-          "method": "manual-comparison-with-source-transcription-and-document-context"
-        }
-      }
-    ]
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Свѣдѣнія объ умершихъ. Волею Божіею, скончались: … священникъ Казанской ц. с. Плоскаго, Тираспольскаго у., Ѳома Ампилоговъ; …",
-    "modernInterpretation": "В разделе сведений об умерших указан священник Казанской церкви села Плоского Тираспольского уезда Фома Ампилогов.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Въ с. Вершино-Каменкгь, Александрійскаго убзда, при Нико-\nлаевской ц., 1-е мвсто, съ 18 сентября.\nВъ с. Лазарополь, Александрійскаго уБзда, при Покровской\nцеркви, съ 10 октября.\nВъ г. Одессть, при Александро-Невской тюремной ц., съ.\n16 октября.\nВъ с. Ивановк, Херсонскаго убада, при Іоанно-Пред-\nтеченской церкви, 2-е мьсто, съ 24 октября.\nВъ г. Николаевл, при Рождество- Богородичномь соборь,\n2-е мьсто, сь 9 ноября 1915 года.\nВъ с. Коробчин, Елисаветградскаго увзда, при Успенской\nцеркви, 1-е мьсто, съ 9 ноября.\nВъ с. Максимовкт, Елисаветградскаго у Бзда, при Св. Арсеніев-\nской церкви, съ 18 ноября.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Person и карта не создаются до проверки тождества.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ],
-    "correctionHistory": [
-      "2026-09-09: из официального PDF сохранён чистый полный лист без интерфейса сайта; отдельно сохранены увеличенные заголовок и целевая строка; SHA-256 проверены."
-    ]
+  "publicCore": true,
+  "primaryPersonId": "P102045",
+  "context": {
+    "eventSummary": "Посмертное епархиальное известие о священнике Фоме Ампилогове.",
+    "identityNote": "Имя, священнический сан и Казанская церковь села Плоского совпадают с документированной служебной биографией P102045.",
+    "migrationNote": "Место служения не превращено в маршрут переселения; точная дата смерти не вычислялась."
   },
-  "indexData": {
-    "querySnippet": "Смерть, сан и место служения прочитаны на первичном листе; дата смерти не названа.",
-    "fuzzyQuery": true
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-role-place-and-publication-context",
+    "unresolved": [
+      "Точная дата смерти в заметке отсутствует."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full printed page 64 of 1916 issue no.3; obituary heading, all named deceased clergy, exact name/rank/church/parish of Foma Ampilogov and vacancy context checked; P102045 backlink; no inferred date or migration; 790x620 clean crop"
   }
 }

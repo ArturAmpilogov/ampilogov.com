@@ -25,10 +25,11 @@
   "mentions": [
     {
       "mentionId": "YA-9B315457-018-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -50,8 +51,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/9b315457-3f36-4835-97bd-5611daeb7bb9/0018-target-entry.png",
-        "sha256": "c982f0dd2a3f8b8c9ddb152265d56548311d44570d5f069a8f904196054160bd",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "0cf5ea820fbadba98976fabb13e128da514809c3c012a3a0b7e2544d7ca26ecb",
+        "description": "Полноширинный крупный фрагмент всего разворота с мартовско-майскими записями № 22–25 без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +60,29 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5489x4357",
-      "targetDimensions": "1262x719",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x3300",
+      "method": "original-download-plus-full-width-manual-review"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Звáніє, йма, отчество й фамиліл\nвоспріємникшеz.\nІутораМихайловокего\nпрествянина Васиній\nИвиновчЩеобахои и к/ас-\nствяненая вльвища всо-",
-    "modernInterpretation": "Звáниє, йма, отчество й фамилил восприємникшеz. ІутораМихайловокего прествянина Васиний ИвиновчЩеобахои и к/ас- ствяненая вльвища всо-",
-    "localOcr": "Звáніє, йма, отчество й фамиліл\nвоспріємникшеz.\nІутораМихайловокего\nпрествянина Васиній\nИвиновчЩеобахои и к/ас-\nствяненая вльвища всо-",
-    "localOcrWithSurnameLexicon": "ЗвАніє, йма, отчество й фамиліл\nвоспріємникшеz.\nКутоваМихайловокого\nпрествянина Васиній\nИвиновч Щербаком и к/ас-\nствяненая вловища в со-",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reviewed-no-match",
+    "literal": "Мартовско-майские записи о рождении № 22–25 за 1910 год прочитаны по всему развороту; в графах родителей и восприемников Марфа Прокопиева Ампилогова и другие носители исследуемого фамильного ряда не названы.",
+    "modernInterpretation": "Полный читаемый лист исключает заявленное индексом фамильное совпадение; это не Record фамильного ряда.",
+    "indexNote": "Индекс Яндекса приписал листу крёстную мать Марфу Прокопиеву Ампилогову. Ручная проверка оригинала, всех записей и соседних строк это не подтвердила."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Марфа Прокопиева Ампилогова, крестьянская жена. Крёстная мать: Александра Феодорова Саликова.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-false-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полноразмерный разворот метрической книги, записи № 22–25, обе стороны таблицы и соседние строки. Фамильный ряд отсутствует; индексное имя Марфы Ампилоговой противоречит скану. Профили, связи, карта и миграция не создаются."
   }
 }

@@ -2,40 +2,70 @@
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-227",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "death-and-burial",
+  "recordType": "clergy-service-attestation",
   "collection": {
     "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
     "scanNumber": 227,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка, Михайловка (Михайловская церковь); Ново-Архангельское (Михаило-Архангельская церковь) за 1915 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка, Михайловка (Михайловская церковь); Ново-Архангельское (Михаило-Архангельская церковь) за 1915 г."
+    "title": "Метрическая книга села Кармалки за 1915 год, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/227"
   },
   "event": {
-    "type": "death-and-burial",
+    "type": "clergy-service-attestation",
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "27 февраля — 2 марта 1915 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-FA735EC0-227-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилоговым",
-      "nameAsTranscribed": "Ампилоговым",
+      "role": "parish-priest",
+      "personId": null,
+      "displayName": "Михаил Анциферов",
+      "nameAsTranscribed": "Священникъ Михаилъ Анциферовъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-FA735EC0-227-M2",
+      "role": "psalm-reader-and-deacon",
+      "personId": "P91076",
+      "displayName": "Дмитрий Ампилогов",
+      "nameAsTranscribed": "Псаломщикъ, діаконъ Димитрій Ампилоговъ",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Февраль, записи 27–28 февраля и месячный итог; затем Мартъ, записи 1–2 марта. В графе погребавших повторены «Священникъ Михаилъ Анциферовъ» и «Псаломщикъ, діаконъ Димитрій Ампилоговъ». Умершие имеют другие фамилии.",
+    "modernInterpretation": "Разворот подтверждает службу Дмитрия Ампилогова как псаломщика-диакона Кармалки в 27 февраля — 2 марта 1915 года; умершие имеют другие фамилии.",
+    "indexNote": "Индекс верно распознал служебную формулу. Полный лист показывает, что это подпись причта, а не смерть или родство Дмитрия."
+  },
+  "indexData": {
+    "querySnippet": "Священник Михаил Анциферов, с Псаломщиком, диаконом Димитрием Ампилоговым На отведенном Мирском общественном Кладбище.",
+    "fuzzyQuery": true
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь переходный разворот: февральские строки, месячный итог, первые мартовские строки, причины и причт. Носитель ряда только P91076 в служебной роли."
+  },
   "evidence": {
     "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
     "scanNumber": 227,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0227-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0227-full-view.png",
     "capturedAt": "2026-09-11",
@@ -45,51 +75,23 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0227-header.png",
         "sha256": "a20d948ab615e5007a36e358b2a3bef93c90e7a74cb3994026d14d1faa2a9a52",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок метрической книги 1915 года, часть об умерших."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0227-target-entry.png",
-        "sha256": "99b6fd338551e2d63eca183103692728e48b56697312f77f7a76f7f18e198064",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0227-target-context.jpg",
+        "sha256": "4cec38c2ebfe62c5d0c16b24bcea0eac93841e9eff84cba8ff13f07a06faad0e",
+        "description": "Полноширинный крупный фрагмент всех строк и повторных подписей причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
       "fullDimensions": "5322x4149",
-      "targetDimensions": "1291x2828",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5100x3700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "о омéршихк.\n%.\nКето сокЕршалх погрЕкеніе, й гаЕ погрЕБены.\nванзанщинь Миханнь\nенугіреровь, сь Поаками\nкомь, існь Авитвоовосии\nНа отводоннонх Мире\nкомь о беростванносич\nваизаний кг. Аахатвь\nовициферовь, ок. Псакониун\nкомь, віаконошь о\nмитрість Аситкоговочені.\nНасотводдннось Мирсконь\nобществонномь Крадітуть\nРевать 1.З 1,а лкенека\n6 у19\n. вы ченнь присть\nровд\nLB\nовтдопрева с вкавана\nкомь,\nколь, всиконунн повн\nНа отведеннюмь мирокон\nотуоственноть Клаэтинувь\nСвяуатувь Мг\nовиуту\nБерівь, сь Палому",
-    "modernInterpretation": "о омéршихк. %. Кето сокЕршалх погрЕкение, й гаЕ погрЕБены. ванзанщинь Миханнь енугиреровь, сь Поаками комь, иснь Авитвоовосии На отводоннонх Мире комь о беростванносич ваизаний кг. Аахатвь овициферовь, ок. Псакониун комь, виаконошь о митристь Аситкоговочени. Насотводдннось Мирсконь обществонномь Крадитуть Ревать 1.З 1,а лкенека 6 у19 . вы ченнь присть ровд LB овтдопрева с вкавана комь, коль, всиконунн повн На отведеннюмь мирокон отуоственноть Клаэтинувь Свяуатувь Мг овиуту Беривь, сь Палому",
-    "localOcr": "о омéршихк.\n%.\nКето сокЕршалх погрЕкеніе, й гаЕ погрЕБены.\nванзанщинь Миханнь\nенугіреровь, сь Поаками\nкомь, існь Авитвоовосии\nНа отводоннонх Мире\nкомь о беростванносич\nваизаний кг. Аахатвь\nовициферовь, ок. Псакониун\nкомь, віаконошь о\nмитрість Аситкоговочені.\nНасотводдннось Мирсконь\nобществонномь Крадітуть\nРевать 1.З 1,а лкенека\n6 у19\n. вы ченнь присть\nровд\nLB\nовтдопрева с вкавана\nкомь,\nколь, всиконунн повн\nНа отведеннюмь мирокон\nотуоственноть Клаэтинувь\nСвяуатувь Мг\nовиуту\nБерівь, сь Палому",
-    "localOcrWithSurnameLexicon": "%.\nКето соВЕрша погрЕкеніе, й гаЕ погрЕБены.\nванзанниь Миханнь\nснупреровь, сь Почками\nкомь, існь витвоговол\nНа отводенонт Мире\nкомь о берестванносич\nвицифоровь, ок. Псакониум\nкомь, віаконошь з\nмитрість Аситкоговочені.\nНаотводеннось Мирскон\nобществанномь Крадітуть\nРевать 1.2 1, а окнека\n. вы ченнь присть\nро вд\nLB\nкомь,\nНа отведенномь мироко\nоткоственноть Кладбинуть.\nСвязатувь Мг\nиани\nовнуту\nБеровь, сь Палому",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Священник Михаил Анциферов, с Псаломщиком, диаконом Димитрием Ампилоговым На отведенном Мирском общественном Кладбище.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   }
 }

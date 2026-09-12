@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-1ED44FAF-124",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "1ed44faf-206c-43ca-9aa5-05b63ac7a2e9",
     "scanNumber": 124
@@ -10,41 +10,37 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/124"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-1ED44FAF-124-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ддотЕча.\nEНĩA.\nСеля Возовиженского Кресьянина Ларіона\nИванова\nДоучаева сыня степань\n2\nPo",
-    "modernInterpretation": "ддотЕча. EНĩA. Селя Возовиженского Кресьянина Лариона Иванова Доучаева сыня степань 2 Po",
-    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
-    "localOcr": "ддотЕча.\nEНĩA.\nСеля Возовиженского Кресьянина Ларіона\nИванова\nДоучаева сыня степань\n2\nPo",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Часть об умерших: январские и февральские записи № 3–9. Умершие и состав причта просмотрены полностью. Формы Ампилогов, Ампилов или документированного варианта фамильного ряда на странице нет.",
+    "modernInterpretation": "Ложное нечёткое совпадение: индексное фамильное упоминание не подтверждается оригиналом.",
+    "indexNote": "Сниппет Яндекса противоречит полному изображению страницы и отклонён."
   },
   "evidence": {
     "catalogId": "1ed44faf-206c-43ca-9aa5-05b63ac7a2e9",
     "scanNumber": 124,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0124-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0124-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "cd6269d24e4f0979ad1ccd819b006dcf171d52da984449eab7d02dbd962e33a9",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0124-header.png",
-        "sha256": "55a96d5293dfa56670bd19595aeef6d9dd51b0b2d8867820de9370723f16635b",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0124-target-entry.png",
-        "sha256": "cc81e2e22022a7c09484e86c0fb5bf13b5f8fbd40dd30ccafc2cccd121c5d1e0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0124-full-view.png",
+        "sha256": "cd6269d24e4f0979ad1ccd819b006dcf171d52da984449eab7d02dbd962e33a9",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены все строки и окружающий контекст."
       }
     ],
     "quality": {
@@ -52,11 +48,14 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5068x4144",
-      "targetDimensions": "1408x555",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5068x4144",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "parallelCopies": [
       {
         "publicDisplay": false,
@@ -85,14 +84,21 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
     "fuzzyQuery": true
-  }
+  },
+  "event": null,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false
 }

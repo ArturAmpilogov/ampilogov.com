@@ -1,122 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-166",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-clerical-service",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 166
+    "scanNumber": 166,
+    "title": "Метрическая книга за 1904 год",
+    "asRead": "Часть третья, об умерших; декабрьские записи № 105 и № 118 и годовой итог"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/166"
   },
-  "mentions": [],
+  "event": {
+    "type": "clerical-service",
+    "date": {
+      "display": "29–31 декабря 1904",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход, название на листе не нормализовано",
+      "normalized": "Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-uezd"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-772ECBA6-166-M1",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-772ECBA6-166-M2",
+      "role": "clergy-colleague",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Сергій Иллюминарскій",
+      "displayName": "священник Сергий Иллюминарский",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-signatures-and-visible-page-context",
+    "literal": "Декабрь 1904 года. № 105: 29 умер, 30 погребён Иван, сын крестьянина села Слоновки Алексея Тимофеева; № 118: 30 умерла, 31 погребена Евдокия, дочь крестьянина села Слоновки Филиппа Михайлова Кривцова. При обеих записях: «Священникъ Сергій Иллюминарскій. Діаконъ Аѳиногенъ Ампилоговъ». Ниже приведён годовой итог умерших.",
+    "modernInterpretation": "Лист документирует служение Афиногена Егоровича Ампилогова диаконом при совершении таинств, 29–31 декабря 1904.",
+    "indexNote": "Индекс использован только для навигации; имя, сан, даты и контекст проверены по полному скану, искажённые индексом слова не перенесены."
+  },
+  "indexData": {
+    "querySnippet": "Поисковый индекс распознал диакона Афиногена Ампилогова с искажениями соседних слов.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
     "scanNumber": 166,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "5f4d928426194695a7eb427eed72f2af8e7cb3781ecbc7c99775cfd7ed62c7c5",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-header.png",
-        "sha256": "b1c4f3f5ae15091eda1b504c4e6028ebac732ab9c425fa96c16c50cc6ba4e028",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-target-entry.png",
-        "sha256": "f397d9d89fb3623834316aec8e74be527bce869429185dd12c6d385d94d8eb81",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "7528e7dd52f37b79da952ca96be7209d19569fcf6a16b6975a09633096e14d8a",
+        "description": "Крупный полноширинный чистый фрагмент листа со всеми контекстными графами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "2998x4734",
-      "targetDimensions": "1573x1249",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "2850x4300",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-full-view.jpg",
-        "sha256": "d25a356818dcd39790815d889ea0889f411ae0536930adb9c35eb5a9bbb230c8",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-target-entry.jpg",
-            "sha256": "de1f067a0a138a8ba9554746f92821de4274575e0d6cc0d26362fd32dd66daa2"
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-            "scanNumber": 166,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "5f4d928426194695a7eb427eed72f2af8e7cb3781ecbc7c99775cfd7ed62c7c5",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-header.png",
-                "sha256": "b1c4f3f5ae15091eda1b504c4e6028ebac732ab9c425fa96c16c50cc6ba4e028",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0166-target-entry.png",
-                "sha256": "f397d9d89fb3623834316aec8e74be527bce869429185dd12c6d385d94d8eb81",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "2998x4734",
-              "targetDimensions": "1573x1249",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P1543",
+  "context": {
+    "eventSummary": "Служение Афиногена Егоровича Ампилогова диаконом, 29–31 декабря 1904.",
+    "identityNote": "Редкое полное имя и сан согласуются с документированной церковной карьерой P1543.",
+    "migrationNote": "Только служебное участие; родство и маршрут переселения не выводятся."
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-year-dates-name-role-and-visible-page-context",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "свлженникь учиі Имполиторении.\nлгосударственный архив\nгргской области\n3дня . leuqnne ento Rubae? lolacod\nСьяумит Диитрів Унвнукків",
-    "modernInterpretation": "свлженникь учии Имполиторении. лгосударственный архив гргской области 3дня . leuqnne ento Rubae? lolacod Сьяумит Диитрив Унвнуккив",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "свлженникь учиі Имполиторении.\nлгосударственный архив\nгргской области\n3дня . leuqnne ento Rubae? lolacod\nСьяумит Диитрів Унвнукків",
-    "localOcrWithSurnameLexicon": "своженникь учи Имполиторени.\nгосударственный архив\n/ргской области\nСвятумит Дмитрів Укому ків",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
-  },
-  "indexData": {
-    "querySnippet": "30. 31. Села Слоновки крестьянина Филиппа Михайлова Кривцова дочь Евдокия Священник Сергий Иллюминарский Диакон Афиноген Ампилогов.",
-    "fuzzyQuery": true
+      "Название прихода не нормализовано без титульного листа."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1904 death-register leaf scan 166; December records 105 and 118, death/burial dates, deceased persons, age columns, clergy signatures and annual total checked; P1543 service-only backlink; no kinship or migration; 2850x4300 crop"
   }
 }

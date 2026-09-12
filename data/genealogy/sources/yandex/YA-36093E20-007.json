@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-36093E20-007",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "36093e20-3b76-44ce-9278-0106c25efb33",
     "scanNumber": 7,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/36093e20-3b76-44ce-9278-0106c25efb33/7"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-register-page",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "1917 год",
+      "confidence": "high-for-visible-register"
     },
     "place": {
       "normalized": "не установлено"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-36093E20-007-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "36093e20-3b76-44ce-9278-0106c25efb33",
     "scanNumber": 7,
@@ -42,54 +34,48 @@
     "sha256": "c73eb0b1b22e3f433f2c7d1c4dcf5cb90f0bf8d61061e8f30ccf6703531afc5d",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0007-header.png",
-        "sha256": "ebfeb08dacc681b35948b48004db7279271f81ac51f7ced0dae92e183f89f692",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0007-target-entry.png",
-        "sha256": "300d9e36e6fb6a584ea0142cf344fc7e094516502245e274bb3a6ce23359db0f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "full-page-context",
+        "path": "data/genealogy/evidence-private/yandex/36093e20-3b76-44ce-9278-0106c25efb33/0007-target-entry-deep.png",
+        "sha256": "d85f38ab311b3f50721b5a8df83bf9d20fa8ebbd6979ea6a7feb0741f47fd3b9",
+        "description": "Почти полный разворот с записями о рождениях № 12–15, вручную проверенный на отсутствие индексной семьи Ампилоговых."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5595x4376",
-      "targetDimensions": "1366x761",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5300x3400",
+      "method": "manual-full-page-negative-verification-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "57\nVIOA AIMОN\nотрической кмиги на VI.\nВгіне блл. отчЕство й фАЖНЛЇА родИтелей, й какóгш",
-    "modernInterpretation": "57 VIOA AIMОN отрической кмиги на VI. Вгине блл. отчЕство й фАЖНЛЇА родИтелей, й какóгш",
-    "localOcr": "57\nVIOA AIMОN\nотрической кмиги на VI.\nВгіне блл. отчЕство й фАЖНЛЇА родИтелей, й какóгш",
-    "localOcrWithSurnameLexicon": "57\nстрической книги на VI.\nВіне блА отчЕство й фАмНАЇ родИтелей, й какогш",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-full-scan-negative-verification",
+    "literal": "На полном развороте видны записи о рождениях № 12–15: среди детей и их родителей указаны Кирилл, Алексей, Евфимий и две Марии; Марии Григорьевны Ампилоговой и Григория Ивановича Ампилогова на листе нет.",
+    "modernInterpretation": "Полный лист не содержит индексной семьи Ампилоговых и является ложным результатом нечёткого поиска.",
+    "indexNote": "Сниппет Яндекса приписал листу Марию Григорьевну и её отца Григория Ивановича Ампилогова; ручное чтение всех видимых строк № 12–15 это опровергает."
   },
   "indexData": {
     "querySnippet": "Родившийся: Мария Григорьева Ампилогова. ... Отец: Григорий Иванов Ампилогов, крестьянин, село Гавриловка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Указанные индексом лица отсутствуют на полном скане № 7."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "false-positive-search-hit",
   "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного листа метрической книги о рождениях.",
+    "identityNote": "Профили и связи не создавались: фамильного упоминания на листе нет.",
+    "migrationNote": "Не применимо."
+  },
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-visible-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный разворот и записи о рождениях № 12–15; вручную проверены дети и родители; индексная семья Ампилоговых отсутствует; сохранён полноширинный фрагмент 5300x3400; profiles, links, map и migration исключены"
   }
 }

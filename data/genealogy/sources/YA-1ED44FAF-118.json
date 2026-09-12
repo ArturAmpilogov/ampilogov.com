@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-1ED44FAF-118",
   "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "1ed44faf-206c-43ca-9aa5-05b63ac7a2e9",
     "scanNumber": 118
@@ -10,41 +10,37 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/118"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-1ED44FAF-118-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
+    }
+  ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "пристоянь сорь тспалово\nІниамеравь Шиєр Ворониной Никироріо\nгровь-\nпившивея Лиць в євиоптельствовами\nБоаннь,\nЧопова\nикь .\nпиотазіові Ариловч\n-с боур ершянскиий",
-    "modernInterpretation": "пристоянь сорь тспалово Іниамеравь Шиєр Ворониной Никирорио гровь- пившивея Лиць в євиоптельствовами Боаннь, Чопова икь . пиотазиови Ариловч -с боур ершянскиий",
-    "preRecaptureResearchNote": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
-    "localOcr": "пристоянь сорь тспалово\nІниамеравь Шиєр Ворониной Никироріо\nгровь-\nпившивея Лиць в євиоптельствовами\nБоаннь,\nЧопова\nикь .\nпиотазіові Ариловч\n-с боур ершянскиий",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Часть о бракосочетавшихся: сентябрьские и октябрьские записи № 26–29. Брачующиеся и поручители просмотрены полностью. Формы Ампилогов, Ампилов или документированного варианта фамильного ряда на странице нет.",
+    "modernInterpretation": "Ложное нечёткое совпадение: индексное фамильное упоминание не подтверждается оригиналом.",
+    "indexNote": "Сниппет Яндекса противоречит полному изображению страницы и отклонён."
   },
   "evidence": {
     "catalogId": "1ed44faf-206c-43ca-9aa5-05b63ac7a2e9",
     "scanNumber": 118,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0118-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0118-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "5bd18c91457cf665045c082421278274ba9000d43c3e2a574375beb92586df17",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0118-header.png",
-        "sha256": "9aac52652646d307c049d4993cd8c6c9bf5f88836ea30e31df40caf98cf52fc7",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0118-target-entry.png",
-        "sha256": "cd9bc64e686530a3c38292bb707a39a4ae81cf3231f8399328589784a762d93f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1ed44faf-206c-43ca-9aa5-05b63ac7a2e9/0118-full-view.png",
+        "sha256": "5bd18c91457cf665045c082421278274ba9000d43c3e2a574375beb92586df17",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены все строки и окружающий контекст."
       }
     ],
     "quality": {
@@ -52,11 +48,14 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5206x4094",
-      "targetDimensions": "1302x786",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5206x4094",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "parallelCopies": [
       {
         "publicDisplay": false,
@@ -85,14 +84,21 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Сохранённый локальный разворот недостаточно резок для побуквенного чтения фамилий.",
     "fuzzyQuery": true
-  }
+  },
+  "event": null,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false
 }

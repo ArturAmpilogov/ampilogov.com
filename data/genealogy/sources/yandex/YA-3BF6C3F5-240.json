@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-3BF6C3F5-240",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "3bf6c3f5-615c-4259-8976-19af9f87f255",
     "scanNumber": 240,
@@ -13,22 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/3bf6c3f5-615c-4259-8976-19af9f87f255/240"
   },
   "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
+    "type": "birth-and-baptism",
+    "date": { "display": "17–18 сентября 1910 года", "confidence": "high" },
+    "place": { "asWritten": "село Зобово", "normalized": "село Зобово, Оренбургская губерния", "placeId": "zobovo-orenburg" }
   },
   "mentions": [
     {
       "mentionId": "YA-3BF6C3F5-240-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "godmother",
+      "personId": "P8241",
+      "displayName": "Параскева Семёновна Ампилогова (Морозова)",
+      "nameAsTranscribed": "крестьянка Параскева Семенова Ампилогова",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-3BF6C3F5-240-M2",
+      "role": "godfather",
+      "personId": null,
+      "displayName": "Иоанн Егорович Зайцев",
+      "nameAsTranscribed": "Иоаннъ Егоровъ Зайцевъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -66,30 +70,23 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "/\nзвенный архІ\nB\nДеефжапснти поатани,\nКолатантинч Дсодотова\nгоградонири вестьянна\nмапіч мараиніва\nМалинова,",
-    "modernInterpretation": "/ звенный архІ B Деефжапснти поатани, Колатантинч Дсодотова гоградонири вестьянна мапич мараинива Малинова,",
-    "localOcr": "/\nзвенный архІ\nB\nДеефжапснти поатани,\nКолатантинч Дсодотова\nгоградонири вестьянна\nмапіч мараиніва\nМалинова,",
-    "localOcrWithSurnameLexicon": "/\n-венный архІ\nВ\nмапіч маринова\n- Малинова,",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Сентябрь. № 91. Родилась 17, крещена 18. Надежда. Воспріемники: Иоаннъ Егоровъ Зайцевъ и крестьянка Параскева Семенова Ампилогова.",
+    "modernInterpretation": "17 сентября 1910 года родилась Надежда из посторонней семьи, крещена 18 сентября. Параскева Семёновна Ампилогова была восприемницей; это служебная роль и не доказывает родство с ребёнком.",
+    "indexNote": "Индекс ошибочно выдал Иоанна Егорова Зайцева за ребёнка. Полный скан показывает, что ребёнок — Надежда, а Зайцев и Параскева Семёновна Ампилогова перечислены в графе восприемников."
   },
   "indexData": {
     "querySnippet": "Родившийся: Иоанн Егоров Зайцев. Крёстная мать: Параскева Семионов Ампилогова, крестьянка.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": ["Имена родителей Надежды не включены: карточка фиксирует проверенное фамильное упоминание восприемницы."],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан полный сентябрьский разворот и строка № 91 со всеми ролями. Исправлена ошибочная роль из индекса: Иоанн Зайцев — восприемник, не ребёнок; Параскева Семёновна Ампилогова подтверждена как восприемница. Связь с P8241 основана на точном имени и отчестве, Зобове и совместимой хронологии после брака 1895 года; родство и миграция не выводились."
   }
 }

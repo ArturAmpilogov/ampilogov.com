@@ -1,95 +1,71 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-194",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "death-and-burial",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 194,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Казанка, Романовка, Слоновка, Нижний-Гумбет, Ильинка, Успенка, Покровка (Куюргаза) за 1911 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Казанка, Романовка, Слоновка, Нижний-Гумбет, Ильинка, Успенка, Покровка (Куюргаза) за 1911 г."
+    "title": "Метрическая книга Слоновского прихода за 1911 год",
+    "asRead": "Начальный лист части третьей, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/194"
   },
-  "event": {
-    "type": "death-and-burial",
-    "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-194-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилоговым",
-      "nameAsTranscribed": "Ампилоговым",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на листе отсутствует",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "«Годъ, часть третія, о умершихъ». На листе видны печатные заголовки граф, служебные отношения/резолюции и подпись священника Полякова; фамилия Ампилогов (либо вариант ряда) не читается.",
+    "modernInterpretation": "Это начальный служебный лист части об умерших. Он не содержит документированного носителя фамильного ряда.",
+    "indexNote": "Сниппет Яндекса «Диаконом Автоном Ампилоговым» не подтверждается полным оригиналом: это ошибочная OCR-сборка из слабой рукописи и соседних служебных слов."
+  },
+  "context": {
+    "eventSummary": "Служебное оформление начала части III метрической книги.",
+    "relationshipBoundary": "Нет носителя фамильного ряда; профиль, родство, карта и миграция не создаются."
+  },
+  "indexData": {
+    "querySnippet": "Священник Иоанн Поляков с Диаконом Автоном Ампилоговым на мирском кладбище. Надписанному скоропостижно и верить.",
+    "fuzzyQuery": true,
+    "discrepancy": "Полный лист не подтверждает ни имя Автоном, ни фамилию Ампилогов."
+  },
   "evidence": {
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 194,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0194-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0194-full-view.png",
-    "capturedAt": "2026-09-11",
     "sha256": "1f760ca36d2a8e7aa24489f2d72f19d83d7c3c34d0f035e19b2f8b162cc9e562",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0194-header.png",
-        "sha256": "cdf23fd39b32be9ee2b8c7698d53865e7f847841c2d92b203ffa368c6fab2149",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0194-target-entry.png",
-        "sha256": "dd852724c22a393bf3f53dfa5b8d19a1db332e74125e14b12ccb8271f901d310",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0194-target-context-deep.jpg",
+        "sha256": "db5b6f64c1c9736f158c27cc426010dc6d97415b81ca0a9f5298fb9ac6a4b79f",
+        "description": "Крупный чистый фрагмент полного сохранившегося листа с заголовком и всеми видимыми рукописными пометами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "2663x4174",
-      "targetDimensions": "1200x5455",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "2400x3600",
+      "method": "manual-full-page-reading-and-clean-wide-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "СИПОГРА\nУМершихА.\nКто сокершАли погреБеніе, й\nmикkа\ncагo\nнаго\nraкtrea\nизрь.\nДінтоллошть\n•оть\nсдви\nлва\n12ue\nes\nмірсколч\nтвенн\nПолятов\naCT\n11 e\nҐомннь\nелилотововалів",
-    "modernInterpretation": "СИПОГРА УМершихА. Кто сокершАли погреБение, й mикkа cагo наго raкtrea изрь. Динтоллошть •оть сдви лва 12ue es мирсколч твенн Полятов aCT 11 e Ґомннь елилотововалив",
-    "localOcr": "СИПОГРА\nУМершихА.\nКто сокершАли погреБеніе, й\nmикkа\ncагo\nнаго\nraкtrea\nизрь.\nДінтоллошть\n•оть\nсдви\nлва\n12ue\nes\nмірсколч\nтвенн\nПолятов\naCT\n11 e\nҐомннь\nелилотововалів",
-    "localOcrWithSurnameLexicon": "СИПОГРА\nУМершихА.\nКто сокершАли погреБеніє, й\nсаго\nнаго\nraatrea\nПістоллошть\n• оть\nсдви\nseu e\nes\nмірсколич\nтвенн\nПонятов,\naCT\n11 ee\nҐомннь\nспилотововалів",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Священник Иоанн Поляков с Диаконом Автоном Ампилоговым на мирском кладбище. Надписанному скоропостижно и верить.",
-    "fuzzyQuery": true
+  "review": {
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Весь сохранившийся лист 194 прочитан вручную; проверены печатный заголовок, все видимые резолюции и подписи. Индексное имя и фамилия не подтверждены оригиналом."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
-  }
+  "cardKind": "research-material-confirmed-false-fuzzy-hit",
+  "publicCore": false
 }

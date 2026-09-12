@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-23E7CDEF-024",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 24,
@@ -12,16 +12,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/23e7cdef-0289-4054-a95d-1c29678efce0/24"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
+      "display": "родилась 1 августа, крещена 1 августа 1910 года",
+      "from": "1910-08-01",
+      "to": "1910-08-01",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Бахтемир, Астраханская губерния"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-23E7CDEF-024-M0",
+      "role": "child",
+      "personId": "P102130",
+      "nameAsTranscribed": "Евдокия",
+      "displayName": "Евдокия Ефимовна Ампилова",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-23E7CDEF-024-M1",
       "role": "father",
@@ -42,23 +52,17 @@
   "evidence": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 24,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "e9764f05f38270875c58fb4b3cfce9cd15b86fcfec672feae102c993d9247afd",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-header.png",
-        "sha256": "19ea8385db0801d162fe1d980cf834a193947428b3887575fc3d490d13fddd07",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-target-entry.png",
-        "sha256": "dd7b30c425efc2c9393e16a1e068ff9c062e6537e868033a779d5cc19688c996",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0024-full-view.png",
+        "sha256": "e9764f05f38270875c58fb4b3cfce9cd15b86fcfec672feae102c993d9247afd",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -66,18 +70,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4484x2948",
-      "targetDimensions": "1902x778",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4484x2948",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьянин села Бахтемирского Ефим Ипатов Ампилов и законная его жена Мария Степанова; оба православные.",
-    "modernInterpretation": "Ефим Ипатьевич Ампилов записан отцом ребёнка; имя ребёнка находится вне целевого фрагмента.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 42. Евдокия, родилась и крещена 1 августа 1910 года. Родители: крестьянин села Бахтемирского Ефим Ипатов Ампилов и законная его жена Мария Степанова; оба православные.",
+    "modernInterpretation": "Рождение Евдокии Ефимовны Ампиловой прямо подтверждает отцовство Ефима Ипатьевича; Мария Степановна сохранена внутри записи без отдельного фамильного профиля.",
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно.",
     "localOcr": "Маним- Яаресни о а\nКриивяне сма ворути\nя\nКрествання сма Бирт\nарурикаю ДІваньПа.. рок\nирекаю Гавритив Ліордир\nннников „Лелагія\nАну рлава Мавснтова\ndо Sена Hamaniя. Aфа\nЕма,очствекало зо гда, в оихун-\nля\nчкайвоканни сееа Сонрмень\nтовенкрествянинг і\nи семе Сokруповки кред\nная Грена яо Наrпаліr\nянка детвища Анастам)",
     "localOcrWithSurnameLexicon": "Кривяне сма ворути\nя\nКрествання сма Барте\nскрипалю ДІвань Па.. рок\nкрекао Гавритив Лорди\nниников \" Пелагія\nАну рлава Мавеннова\nего ена Hamani. Aoa\nля\nчкай вокатни ссеа Сокрумень\n-овен крествянинг і\nи семе Сокруповки кред\nная Грена яо Напаліч\nянка детвища Анастаси",
     "collation": {
@@ -90,11 +97,14 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Крестьянин села Бахтемирского Ефим Ипатов Ампилов и законная его жена Мария Степанова оба православные Священник Михаил Юштин Диакон Харлампий Баселанов.",

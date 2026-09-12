@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5443CE73-122",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "church-record",
+  "recordType": "birth",
   "collection": {
     "catalogId": "5443ce73-5e61-4ce5-be2f-355c9dbc961e",
     "scanNumber": 122,
@@ -13,83 +13,100 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5443ce73-5e61-4ce5-be2f-355c9dbc961e/122"
   },
   "event": {
-    "type": "church-record",
+    "type": "birth",
     "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
+      "display": "22 августа 1910 года",
+      "from": "1910-08-22",
+      "to": "1910-08-22",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "Иннокентьевская церковь г. Иркутска",
+      "normalized": "Иркутск, Иркутская губерния, Российская империя"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-5443CE73-122-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
+      "role": "father",
+      "personId": "P102051",
+      "nameAsTranscribed": "Антонъ Феодоровъ Анпилоговъ",
+      "displayName": "Антон Фёдорович Анпилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-5443CE73-122-M2",
+      "role": "child",
+      "personId": "P102052",
+      "nameAsTranscribed": "Леонидъ",
+      "displayName": "Леонид Антонович Анпилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-5443CE73-122-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "Дарія Евфиміева",
+      "displayName": "Дарья Евфимьевна",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "5443ce73-5e61-4ce5-be2f-355c9dbc961e",
     "scanNumber": 122,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0122-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0122-full-view.png",
-    "capturedAt": "2026-09-11",
+    "capturedAt": "2026-09-12",
     "sha256": "2f01ef53c3357cc2c07f38aae8eec73552fa2122ea019e9f18bbd0934fec6a91",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0122-header.png",
-        "sha256": "831f16c3d0a9c84a53cfbc1b15a24114cc5ed447ed35c3d3947120547e84578d",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0122-target-entry.png",
-        "sha256": "8af1640141e9bb5aa727537c33d46b64b64db8c9dab429b337af743cbabe72ad",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "84f5b14dffe9f625b83c3137ef9d4fe32b6229348d73e4a9af8351a04caddd4a",
+        "description": "Крупный полноширинный фрагмент проверенной записи и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5991x4385",
-      "targetDimensions": "1359x986",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5600x2500",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "муeосннй\nРомуальдові Шестаковскт\nпишско. Кататческого вірот-\nповроданія и законная ялена\nего Дарія Засилвева, правп\nнавного второнсповоданід.\nСвященнит, Киноранрин Поновг.\nЖаномиуик Васнтй\nче\nКрастбятнь Воронжкти\nгуб. Павловского ульода,\nВерне-Моггонской выл. и",
-    "modernInterpretation": "муeосннй Ромуальдови Шестаковскт пишско. Кататческого вирот- повродания и законная ялена его Дария Засилвева, правп навного второнсповоданид. Священнит, Киноранрин Поновг. Жаномиуик Васнтй че Крастбятнь Воронжкти губ. Павловского ульода, Верне-Моггонской выл. и",
-    "localOcr": "муeосннй\nРомуальдові Шестаковскт\nпишско. Кататческого вірот-\nповроданія и законная ялена\nего Дарія Засилвева, правп\nнавного второнсповоданід.\nСвященнит, Киноранрин Поновг.\nЖаномиуик Васнтй\nче\nКрастбятнь Воронжкти\nгуб. Павловского ульода,\nВерне-Моггонской выл. и",
-    "localOcrWithSurnameLexicon": "мужской\nРомуальдові Шестаковст\nписко. Кататческого вірот-\nповодання и законна ясена\nего Дарія Засилвева, права\nнавного второнсповодані.\nСвященнит, Киноранрин Поново.\nЖаномуик Васнт\nче\nКрастбятить Воронжкти\nгуб. Павловского увода,\nВерне - Могонской выл. и",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-for-surname-bearing-role-and-page-context",
+    "literal": "Август. № 175. 22 родился, 26 крещён. Леонид. Крестьянин Воронежской губернии, Павловского уезда, Верхне-Мамонской волости и села Антон Феодоров Анпилогов и законная жена его Дария Евфимиева; оба православные.",
+    "modernInterpretation": "22 августа 1910 года в Иркутске родился Леонид Антонович Анпилогов; крещён 26 августа. Отец — крестьянин Антон Фёдорович Анпилогов, происходивший из Павловского уезда Воронежской губернии; мать Дарья Евфимьевна.",
+    "indexNote": "Яндекс верно нашёл фамилию, но ошибочно представил Антона Фёдоровича только как «отца» без полного события; дата, ребёнок и исходное место восстановлены по скану."
   },
   "indexData": {
     "querySnippet": "Отец: Антон Феодоров Анпилогов, крестьянин, Воронежская губерния, Павловский уезд, Верхне-Мошонская волость, село Антон.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-visible-name-role-date-and-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 5600x2500"
+  },
+  "context": {
+    "eventSummary": "22 августа 1910 года в Иркутске родился Леонид Антонович Анпилогов; крещён 26 августа. Отец — крестьянин Антон Фёдорович Анпилогов, происходивший из Павловского уезда Воронежской губернии; мать Дарья Евфимьевна.",
+    "identityNote": "Идентификация ограничена буквальными именами, ролью, местом и датой этой записи.",
+    "migrationNote": "Отдельный маршрут переселения по одной этой записи не создаётся.",
+    "pageContext": "Запись № 175 части о родившихся Иннокентьевской церкви Иркутска; строка ребёнка, родители, восприемники и причт прочитаны в контексте разворота."
   }
 }

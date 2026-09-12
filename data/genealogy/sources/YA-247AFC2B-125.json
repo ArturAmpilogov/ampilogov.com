@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-247AFC2B-125",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "index-false-positive",
   "collection": {
     "catalogId": "247afc2b-94a1-4d8f-9d66-80d175fe5857",
     "scanNumber": 125,
@@ -14,36 +14,37 @@
   "mentions": [
     {
       "mentionId": "YA-247AFC2B-125-M1",
-      "role": "groom-witness",
-      "personId": "P91148",
-      "nameAsTranscribed": "Наумъ Ильинъ Ампилоговъ",
-      "displayName": "Наум Ильич Ампилогов",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном развороте не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "publicDisplay": false,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-manual-grid-stitch-clean-document-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-full-view.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-full-view.jpg",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
+    "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-full-view.png",
     "capturedAt": "2026-09-09",
-    "sha256": "606da908ce1cea2335747ccb20d7770b85c05598a0cf967bd321d11fecca0edf",
+    "sha256": "73502ab2c55d44767e494d065c174affbbb0d79b35a1c7612ae4369a227d7326",
     "fragments": [
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-target-entry.jpg",
-        "sha256": "2d02c2cbeee9bcb94fb7b62314aea2e9786a859f3f9b869c28864344270f43ca",
-        "description": "Крупный фрагмент ноябрьской брачной записи и поручителей."
+        "path": "data/genealogy/evidence-private/yandex/247afc2b-94a1-4d8f-9d66-80d175fe5857/0125-full-view.png",
+        "sha256": "73502ab2c55d44767e494d065c174affbbb0d79b35a1c7612ae4369a227d7326",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
+      "fullDimensions": "6079x4841",
+      "originalImageDownloaded": true,
+      "targetDimensions": "6079x4841",
+      "method": "manual-full-page-reading-of-downloaded-original",
       "documentOnlyVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-original-resolution-local-copy",
-      "fullDimensions": "6079x4841",
-      "targetDimensions": "5500x1800"
+      "confirmedAt": "2026-09-12"
     },
     "parallelCopies": [
       {
@@ -83,32 +84,28 @@
     ]
   },
   "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "Ноябрь. Женихъ: села Михайловскаго крестьянинъ Стефанъ Андреевъ Бѣльковъ; невеста: того же села дочь крестьянина дѣвица Агафія Ѳеоктистова Мячина. По женихѣ: села Михайловскаго крестьяне Наумъ Ильинъ Ампилоговъ и Арсентій Петровъ Масютинъ.",
-    "modernInterpretation": "В ноябре 1911 года Наум Ильич Ампилогов выступил поручителем жениха при венчании в Михайловском приходе.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "EU\nЯО%\nТИПОГРАФІ\nУПОЛАЛЬО\nСTЬ КТОРАД, Ủ БРИКОСОЧЕТÁ\nПод\nКто были порбчители.\nзáп\nть\nПолсинсы: Флампрайновсваго",
-    "localOcrWithSurnameLexicon": "EU\nЯО%\nТИПОГРАФІ\nСТЬ СТОРАД, Ủ БРАКОСОЧЕТА\nПод\nКто были поручители.\nзап\nть\nПосинсы: Делампрайновского",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Полный разворот метрической книги прочитан строка за строкой. Формы Ампилогов / Анпилогов / Анфилогов и названный индексом человек на этом листе отсутствуют; видимые записи относятся к другим семьям прихода.",
+    "modernInterpretation": "Это ложное или смещённое попадание индекса Яндекса. Карточка сохраняется как исследовательская проверка, но не создаёт профиль, связь, точку карты или маршрут.",
+    "indexNote": "Индекс отвергнут после ручного чтения полного скана."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
+  "isRecord": false,
+  "cardKind": "rejected-index-hit",
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ],
+    "unresolved": [],
     "correctionHistory": [
-      "2026-09-09: ложное отрицательное чтение исправлено; упоминание связано с P91148."
-    ]
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Поручитель: Наум Ильин Ампилогов, крестьянин, село Михайловское. Поручитель: Феодор Алексеев Дегтярев, крестьянин, то же село.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Заявленное индексом упоминание отсутствует на полном скане; вероятно, текст привязан к соседнему листу или смешан с другой строкой."
+  },
+  "event": null,
+  "publicCore": false
 }

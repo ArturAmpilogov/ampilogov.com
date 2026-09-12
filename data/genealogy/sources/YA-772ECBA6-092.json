@@ -1,131 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-092",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-clerical-service",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-    "scanNumber": 92
+    "scanNumber": 92,
+    "title": "Метрическая книга за 1904 год",
+    "asRead": "Часть первая, о родившихся; окончание января, итоговая строка и начало февраля"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/92"
   },
+  "event": {
+    "type": "clerical-service",
+    "date": {
+      "display": "28 января — 5 февраля 1904",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход, название на листе не нормализовано",
+      "normalized": "Оренбургская губерния, Российская империя",
+      "placeId": "orenburg-uezd"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-772ECBA6-092-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-772ECBA6-092-M2",
+      "role": "clergy-colleague",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Сергій Иллюминарскій",
+      "displayName": "священник Сергий Иллюминарский",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-signatures-and-visible-page-context",
+    "literal": "Окончание января и начало февраля 1904 года. На развороте видны записи о Василии и Анне, итог за январь, затем февральские записи об Анне, Агафии и следующем ребёнке. В графе причта повторяется: «Священникъ Сергій Иллюминарскій. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "Лист документирует служение Афиногена Егоровича Ампилогова диаконом при совершении таинств, 28 января — 5 февраля 1904.",
+    "indexNote": "Индекс использован только для навигации; имя, сан, даты и контекст проверены по полному скану, искажённые индексом слова не перенесены."
+  },
+  "indexData": {
+    "querySnippet": "Поисковый индекс распознал диакона Афиногена Ампилогова с искажениями соседних слов.",
+    "fuzzyQuery": true
+  },
   "evidence": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
     "scanNumber": 92,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "b2990c97ff0ecbce1e925622f32720d845adf5ea5f4b3ab8ae29d02039a25be8",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-header.png",
-        "sha256": "bdcaab2b245abb30f8034fb6765170ff73a930de6997ac5d569ce23ec69d54ff",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-target-entry.png",
-        "sha256": "faa5e72dc53a85928a4b24be049b4261e2b12a0d5bf8b82e7d8da10a140183ae",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "e668f1f8dff1a8af9c463c072bddeee86a70fadb8303340c0ff22280ffb21e6f",
+        "description": "Крупный полноширинный чистый фрагмент листа со всеми контекстными графами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5821x4640",
-      "targetDimensions": "3659x3287",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5600x4200",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-full-view.jpg",
-        "sha256": "9b7397e838a67ac29c2cadcc5205f83173734b8c1c89f418a488c0c56038d14e",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-target-entry.jpg",
-            "sha256": "222485d312cb51263ab78e536d3a7df1dfb2a5c2e8f03a18e3e01286c2927ff7"
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
-            "scanNumber": 92,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "b2990c97ff0ecbce1e925622f32720d845adf5ea5f4b3ab8ae29d02039a25be8",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-header.png",
-                "sha256": "bdcaab2b245abb30f8034fb6765170ff73a930de6997ac5d569ce23ec69d54ff",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0092-target-entry.png",
-                "sha256": "faa5e72dc53a85928a4b24be049b4261e2b12a0d5bf8b82e7d8da10a140183ae",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5821x4640",
-              "targetDimensions": "3659x3287",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ЕТРИЧЕСКОЙ КНИТИ ВА\nAD4\"\nГоди, чáсть первид, щ родившихел.\nЗваніє, ймя, отчєство й фамнліл роднтелей, й какóги\nЗвáніє, НмА, отчЕство й фамиліА\nКтò совєршáль тáннство\nPSKo\nA.\nв'кронспов'Аданія.\nвоспріємникшвz.\nКрЕцєнія.\nТЕЛЕЙ\nМой мне деревжиперествяннів теоргій\nСела Сионовки проствятнов Аника\nТовь вльмиховь и перествяики Анни\nПоронастовь Пивіварівьм?аканни\nТетрови Рой.\nРвященникк\nсел Майена Анірлева-обапривослцвтвя\nрарский.\nОвлщенникь Чрий\nМмионь\nМанать 2\nПонножив Сининькв\nМогомто сени переситвянийв Василій\nФасливовськоо Пунторапросівяний Ива\nМивайлові Раєвтовь мпераситнямком\nСергій\nПавловь воонохревь изслиннам мисли\nDeogocis Оримитnова Смолева\nХивяна Мивнова- обатравомасні\nСвященникь аргий Икль\nчареній\nДіапайв сокносетв Дмммльк в\nТого мо сенаперествяний в воврим\nИмпгашитарсва\nГригорревьвиадевым проствянки\nподляширс муни.мола век.\nОвдоні, Годранова Дуполова.\nСии Рицнівлипрес- вянинв Карнии\nловь Миляровіє и зетінлень мяни\nст11.\nТитіси Киринова- цбапроблено С\nТоо мечема перествянийв Алдрей 1В\nі Имш\nСвященнику вріі\nеех1вь.\nПовлові Швинов'ч ипрествЛики\nДісканіь Локонів Яілінк\nВисни Пекбреттова Рывинкина\nРела Похрівхи перествятись вК ола срр'ь.\nдімеинолів\nновъ Мелышевым дапашнни мигла с\nнарски?\nАлимині Пивриліва-оба.праврстння\nМого ли емаперествянить 2имий\n.йвМити",
-    "modernInterpretation": "ЕТРИЧЕСКОЙ КНИТИ ВА AD4\" Годи, чáсть первид, щ родившихел. Званиє, ймя, отчєство й фамнлил роднтелей, й какóги Звáниє, НмА, отчЕство й фамилиА Ктò совєршáль тáннство PSKo A. в'кронспов'Адания. восприємникшвz. КрЕцєния. ТЕЛЕЙ Мой мне деревжиперествяннив теоргий Села Сионовки проствятнов Аника Товь вльмиховь и перествяики Анни Поронастовь Пививаривьм?аканни Тетрови Рой. Рвященникк сел Майена Анирлева-обапривослцвтвя рарский. Овлщенникь Чрий Ммионь Манать 2 Понножив Сининькв Могомто сени переситвянийв Василий Фасливовськоо Пунторапросивяний Ива Мивайлови Раєвтовь мпераситнямком Сергий Павловь воонохревь изслиннам мисли Deogocis Оримитnова Смолева Хивяна Мивнова- обатравомасни Священникь аргий Икль чарений Диапайв сокносетв Дмммльк в Того мо сенаперествяний в воврим Импгашитарсва Григорревьвиадевым проствянки подляширс муни.мола век. Овдони, Годранова Дуполова. Сии Рицнивлипрес- вянинв Карнии ловь Миляровиє и зетинлень мяни ст11. Титиси Киринова- цбапроблено С Тоо мечема перествянийв Алдрей 1В и Имш Священнику врии еех1вь. Повлови Швинов'ч ипрествЛики Дисканиь Локонив Яилинк Висни Пекбреттова Рывинкина Рела Похривхи перествятись вК ола срр'ь. димеинолив новъ Мелышевым дапашнни мигла с нарски? Алимини Пиврилива-оба.праврстння Мого ли емаперествянить 2имий .йвМити",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ЕТРИЧЕСКОЙ КНИТИ ВА\nAD4\"\nГоди, чáсть первид, щ родившихел.\nЗваніє, ймя, отчєство й фамнліл роднтелей, й какóги\nЗвáніє, НмА, отчЕство й фамиліА\nКтò совєршáль тáннство\nPSKo\nA.\nв'кронспов'Аданія.\nвоспріємникшвz.\nКрЕцєнія.\nТЕЛЕЙ\nМой мне деревжиперествяннів теоргій\nСела Сионовки проствятнов Аника\nТовь вльмиховь и перествяики Анни\nПоронастовь Пивіварівьм?аканни\nТетрови Рой.\nРвященникк\nсел Майена Анірлева-обапривослцвтвя\nрарский.\nОвлщенникь Чрий\nМмионь\nМанать 2\nПонножив Сининькв\nМогомто сени переситвянийв Василій\nФасливовськоо Пунторапросівяний Ива\nМивайлові Раєвтовь мпераситнямком\nСергій\nПавловь воонохревь изслиннам мисли\nDeogocis Оримитnова Смолева\nХивяна Мивнова- обатравомасні\nСвященникь аргий Икль\nчареній\nДіапайв сокносетв Дмммльк в\nТого мо сенаперествяний в воврим\nИмпгашитарсва\nГригорревьвиадевым проствянки\nподляширс муни.мола век.\nОвдоні, Годранова Дуполова.\nСии Рицнівлипрес- вянинв Карнии\nловь Миляровіє и зетінлень мяни\nст11.\nТитіси Киринова- цбапроблено С\nТоо мечема перествянийв Алдрей 1В\nі Имш\nСвященнику вріі\nеех1вь.\nПовлові Швинов'ч ипрествЛики\nДісканіь Локонів Яілінк\nВисни Пекбреттова Рывинкина\nРела Похрівхи перествятись вК ола срр'ь.\nдімеинолів\nновъ Мелышевым дапашнни мигла с\nнарски?\nАлимині Пивриліва-оба.праврстння\nМого ли емаперествянить 2имий\n.йвМити",
-    "localOcrWithSurnameLexicon": "ЕТРИЧЕСКОЙ КНИГИ ВА\nГоди, чАсть первид, с родившихел.\nЗваніє, йма, отчество й фамліл родителей, й какги\nЗваніє, ймА, отчЕство й фамиліА\nКто ковершАль тАннство\nPSKo\nA.\nвʼкронсповАданія.\nвоспріємникшвz.\nКрЕцЕнія.\nТЕЛЕЙ\nМой мне деревжиперестляннів теоргій\nСела Синовки проствятно в Аника\nТовь вльмиховь и перествяки Анни\nПоронастовь Пивоварівьи? аканни\nМетрова Рой.\nСвященник к\nсе Майтена Антрева- оба привосливава\nрарский.\nОвлщенникь Чрий\nМанать с\nПомножив Свининька\nМогомо сене перествянийв Василій\nФасливовскоо Пентори просвяний Ива\nМивайлові Ростовь м проситнямки\nСергій\nПавловь ооохревь изалинным лисли\nDeococis Оримитнова Смолева\nРивяна Пивова - обатравомасн\nСвященникь аргий Икл\nцареній\nДіапайв сонносейв Динмльк в\nТого мо сенаперествяний в воверим\nГригоровь владевым проствянки\nподляшира муни. мола век.\nОвдоні, боданова Дуполова.\nСли Ринівли перес. вянино Карнии\nлові Малярівʼє и зелінлень мени\nТитіси Кирова фа проблен С\nТо ме чема перествянийв Андрей 1 В\nі Имш\nСвященнику вірі\nПовнові ШвиновʼчипроствЛики\nДісканіь Локонів Діленк\nВисни Пекбреттова Равилкина\nвела Похрівки перествятись в ола срʼь.\nдіалинолів\nновь Мелышевым дипашни мига с\nнарски?\nАлимині Пивриліва- оба. правдатиня\nМого ли смаперествянить Риминй\nой в Мити",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и целевой фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P1543",
+  "context": {
+    "eventSummary": "Служение Афиногена Егоровича Ампилогова диаконом, 28 января — 5 февраля 1904.",
+    "identityNote": "Редкое полное имя и сан согласуются с документированной церковной карьерой P1543.",
+    "migrationNote": "Только служебное участие; родство и маршрут переселения не выводятся."
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-year-dates-name-role-and-visible-page-context",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Диакон Афиноген Ампилогов Села Покровки крестьянин Назар нов Малышев и законная жена его Акилина Гаврилова, оба православн.",
-    "fuzzyQuery": true
+      "Название прихода не нормализовано без титульного листа."
+    ],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "full 1904 birth-register spread scan 92; final January rows, monthly total, first February rows, dates, children, parents, godparents and repeated clergy signatures checked; P1543 service-only backlink; no kinship or migration; 5600x4200 crop"
   }
 }

@@ -14,8 +14,10 @@
   "event": {
     "type": "birth-godparents",
     "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
+      "display": "16 мая 1910 года (рождение); 17 мая 1910 года (крещение)",
+      "from": "1910-05-16",
+      "to": "1910-05-17",
+      "confidence": "medium-high"
     },
     "place": {
       "normalized": "село Бахтемир, Астраханская губерния"
@@ -34,23 +36,17 @@
   "evidence": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 16,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0016-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0016-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "3754420970c5769ca0b1582c21e5bc1cf1603b5f8448380c6f259e4a67831dba",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0016-header.png",
-        "sha256": "e1c7eaa400512444ebbe24da24422c488be73bfdf318159de6b97e1b636e42ef",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0016-target-entry.png",
-        "sha256": "176b8571b3544989dbe38b45a38921e4ec6eef69850c4e1e3c7c31844bbbfd98",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0016-full-view.png",
+        "sha256": "3754420970c5769ca0b1582c21e5bc1cf1603b5f8448380c6f259e4a67831dba",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -58,18 +54,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4468x2932",
-      "targetDimensions": "1200x813",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4468x2932",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Федор Димитриев Мокеев и Евдокия Исаева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 19. Василий, родился 16 мая, крещён 17 мая 1910 года. В строке восприемников, частично повреждённой у нижнего края листа: крестьяне села Бахтемирского Федор Димитриев Мокеев и Евдокия Исаева Ампилова.",
+    "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей Василия; край записи повреждён, поэтому буквенное чтение фамилии проверено также по повторным записям этой женщины.",
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно.",
     "localOcr": "г. А страрани Анае-\nнасія Кантолениинов.\n5ьмесв..\nКрествяне смовав\nнемирскою L/вань\nНипитинз Сафранов",
     "localOcrWithSurnameLexicon": "2. А страрани Анас-\nнасія Кантолениинів.\n5ь месв..\nКрестване смовав\nтемирскою L/в ань\nНикитинг Сафранов",
     "collation": {
@@ -82,11 +81,16 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "medium-high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Нижняя часть строки восприемников повреждена; имя и роль уверенно восстанавливаются по видимым буквам и повторным метрическим записям, но буквальное начертание фамилии сохранилось не полностью."
+    ],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемирскаго Ѳедоръ Димитріевъ Мокѣевъ и Евдокія Исаева Ампилова.",

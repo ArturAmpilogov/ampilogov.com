@@ -1,95 +1,83 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-FA735EC0-041",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
-    "scanNumber": 41,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка, Михайловка (Михайловская церковь); Ново-Архангельское (Михаило-Архангельская церковь) за 1915 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кармалка, Михайловка (Михайловская церковь); Ново-Архангельское (Михаило-Архангельская церковь) за 1915 г."
+    "scanNumber": "041"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/41"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-FA735EC0-041-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
   "evidence": {
     "catalogId": "fa735ec0-42f5-4f08-b1e7-2f6f284d1591",
     "scanNumber": 41,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0041-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0041-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "4638ed6ef8a98b05afd9ddc57a8c25358dfc761e9f85da91d793053eddd9fc52",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0041-header.png",
-        "sha256": "668a72452bd8f4546eae4b8d02d71c0b897ad731ea60a64deeab457b75ca047d",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0041-target-entry.png",
-        "sha256": "3ae27a04ad20ac1f0633ace549a0d959ec3c265bba33d62570cf7aa5f95f746b",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context",
+        "path": "data/genealogy/evidence-private/yandex/fa735ec0-42f5-4f08-b1e7-2f6f284d1591/0041-target-context.jpg",
+        "sha256": "8560bbac3fc327a9c6bdb3a9cce99cfc745f320a49248b8f84d3dd600576debe",
+        "description": "Полноширинный крупный контекстный фрагмент всего листа, без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5340x4189",
-      "targetDimensions": "1228x653",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3700",
+      "method": "manual-full-leaf-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Копия хранится приватно для проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "mentions": [
+    {
+      "mentionId": "YA-FA735EC0-041-M1",
+      "role": "godmother",
+      "personId": "P102156",
+      "nameAsTranscribed": "крестьянская дѣвица Евфимія Иванова Ампилогова",
+      "displayName": "Евфимия Ивановна Ампилогова",
+      "surnameSeries": true
+    }
+  ],
+  "event": {
+    "type": "godparent-at-baptism",
+    "date": {
+      "display": "20 июня 1915",
+      "iso": "1915-06-20",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Михайловское",
+      "normalized": "село Михайловское, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "mikhailovskoye-sharlyk"
+    }
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Крестоясниь ззимской губезний\nв илибей\nіскаго унуда Арьжесвскні\nвищети тоселки Раськи Кики-\nта Яновлевч Свиридовьи\nкретанкяаП",
-    "modernInterpretation": "Крестоясниь ззимской губезний в илибей искаго унуда Арьжесвскни вищети тоселки Раськи Кики- та Яновлевч Свиридовьи кретанкяаП",
-    "localOcr": "Крестоясниь ззимской губезний\nв илибей\nіскаго унуда Арьжесвскні\nвищети тоселки Раськи Кики-\nта Яновлевч Свиридовьи\nкретанкяаП",
-    "localOcrWithSurnameLexicon": "Крестьяниь заримской губерний\nв илибей\nскаго укуда Аржевскні\nвишети поселки Раськи Кики-\nта Яновлевч Свиридовьи",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-for-surname-relevant-content-after-full-leaf-reading",
+    "literal": "Іюнь. № 102. 19 родилась, 20 крещена. Елена. Села Михайловскаго крестьянинъ Яковъ Антоновъ Шеинъ и законная жена его Марфа Семенова, оба православные. Восприемники: того же села крестьянинъ Петръ Николаевъ Шеинъ и крестьянская дѣвица Евфимія Иванова Ампилогова.",
+    "modernInterpretation": "20 июня 1915 года Евфимия Ивановна Ампилогова, незамужняя крестьянка села Михайловского, была восприемницей Елены из семьи Шеиных. Родство с ребёнком и переселение не названы.",
+    "indexNote": "Индексное упоминание Евфимии подтверждено ручным чтением строки № 102; существующая P0216 умерла в 1895 году и исключена."
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-surname-name-date-role-and-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь лист и полностью строка № 102; проверены дата, ребёнок, родители, восприемники, статус девицы и место."
   },
   "indexData": {
-    "querySnippet": "Того же села крестьяне: Петръ Николаевъ Шеинъ и Ефимья Иванова Ампилогова. Священ. Константинъ Павловъ Псаломщикъ Димитрій Новосельцевъ.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "fuzzyQuery": true,
+    "querySnippet": "Петр Николаев Шеин и Ефимья Иванова Ампилогова",
+    "indexWarning": "Данные приняты после проверки полного акта; прежний бессвязный OCR отброшен."
   }
 }

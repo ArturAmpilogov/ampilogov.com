@@ -2,90 +2,95 @@
   "schemaVersion": 1,
   "sourceId": "YA-3720D2D5-4",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
     "scanNumber": 4,
-    "asRead": "Метрическая книга на 1897 год, часть первая, о родившихся; проверены видимые строки разворота"
+    "title": "Метрическая книга Нижнегумбетского прихода за 1897 год, часть первая о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/4"
   },
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "26 апреля — 5 мая 1897 года",
+      "fromIso": "1897-04-26",
+      "toIso": "1897-05-05",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Нижний Гумбет",
+      "normalized": "Нижний Гумбет, Оренбургский уезд"
+    }
+  },
+  "primaryPersonId": "P1543",
   "mentions": [
     {
       "mentionId": "YA-3720D2D5-4-M1",
-      "role": "false-index-hit",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-3720D2D5-4-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Священникъ Клавдій Калининъ",
+      "displayName": "Клавдий Калинин",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-3720D2D5-4-M3",
+      "role": "deacon",
+      "personId": null,
+      "nameAsTranscribed": "Діаконъ Александръ Тепловъ",
+      "displayName": "Александр Теплов",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "-ТИПОГРАФІН\nTHO LA HD\nМЄТРÚЧЕСКОЙ КНÁГИ На 189%\"\nЗаАніє, ймя, сбтчество й фамиліл родитєлей, й какóги\nXEA.\nв вронспов'єданіл.\n1.\nГела Ниминяго Фумвста кростьянийь\nНиколей вмельянівь Димитрівьи мленя\nего Анстаніра Лимикрієви- ови,привостанива.\nвященни Киакдні\nі Лакнанто\nДіа кожь Алексонтзк тм Lов\nДіалиів Доможив Ампилогівч.\nели Нишицяо пмвста ррествяниця\nтрьсмешива ончаничимисли ех\nЛаріх Никперфрова- Овипривосиалися.\nЛакижими\nвмусти, Какук\nДілконь Мuксанорк nrankala\nСіакатв Поклочейв Ямпиложвч\nела Пишного кейбети прествяннів\nИвань Тимоерієвь Аплаковіьм мениего\nІгапі, Ойторова-обиправожавня.",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading",
+    "literal": "На полном развороте часть первая о родившихся за 26 апреля — 5 мая 1897 года при крещении детей из семей других фамилий повторяется состав причта: «Священникъ Клавдій Калининъ. Діаконъ Александръ Тепловъ. Діаконъ Аѳиногенъ Ампилоговъ». Лист завершает апрельские записи и начинает майский раздел.",
+    "modernInterpretation": "Афиноген Ампилогов служил диаконом Нижнегумбетского прихода при крещении детей из семей других фамилий; это служебное участие, не родство.",
+    "indexNote": "Индекс смешал фамилию служившего диакона с контекстом семьи ребёнка; роль и даты исправлены по оригиналу."
+  },
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова при крещении детей из семей других фамилий за 26 апреля — 5 мая 1897 года.",
+    "documentContext": "Лист завершает апрельские записи и начинает майский раздел.",
+    "identityNote": "Отождествление с P1543 основано на редком имени, той же должности и приходе и неизменном составе причта Калинин–Теплов–Ампилогов.",
+    "migrationNote": "Запись не сообщает родства с участниками актов и не доказывает переселение."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.jpg",
-    "sha256": "39cfd1973308e573a633689e740880c06803d1b48081a86345dba55ef5132ffa",
+    "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.png",
+    "sha256": "f646e8dac8b5c7f7f114d8ef86b806da0cc2a7f72396a9949a3f8ad96a712fae",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-target-entry.jpg",
-        "sha256": "616fda0ff6e382474396e5f840674f189ee379ae677f6859068a2a69fd47e500"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-target-entry-deep.png",
+        "sha256": "510e774db654efce2ced68e9b6016807e8733c10247bcca2cceaa7be6bc52397",
+        "description": "Крупный полноширинный фрагмент без интерфейса: все графы, контекст чужих актов и подписи причта."
       }
     ],
-    "parallelCopies": [
-      {
-        "catalogId": "3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7",
-        "scanNumber": 4,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-full-view.png",
-        "capturedAt": "2026-09-10",
-        "sha256": "f646e8dac8b5c7f7f114d8ef86b806da0cc2a7f72396a9949a3f8ad96a712fae",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-header.png",
-            "sha256": "279b3d693bb8d1d68b6741ad15168ee2cfc94042eb2372e2701f47018e0400c5",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/3720d2d5-a6ce-4a94-92e3-45a13c2b2eb7/0004-target-entry.png",
-            "sha256": "15099e0a9dba933d2ed5c5a646654b3a8d180e7f8c9bd645d8fc2d292bea80a3",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "4837x3933",
-          "targetDimensions": "1373x2185",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
+    "quality": {
+      "fullDimensions": "4837x3933",
+      "targetDimensions": "4500x3600",
+      "fullPageVisuallyReviewed": true,
+      "method": "manual-full-page-reading-and-full-width-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "high"
-  },
-  "indexData": {
-    "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбета крестьянин Иван Тимофиев Ушаков и жена его Агапия Федорова — оба православные.",
-    "fuzzyQuery": true
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь разворот: часть первая о родившихся, 26 апреля — 5 мая 1897 года; проверены раздел, даты и состав причта; подтверждена только служебная связь P1543, без родства и миграции."
   }
 }

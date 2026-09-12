@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2545DA77-272",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "primary-scan-review",
   "collection": {
     "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
     "scanNumber": 272,
@@ -13,24 +13,20 @@
     "documentUrl": "https://yandex.ru/archive/catalog/2545da77-ac4d-4a24-ae1e-705a17081f09/272"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage-register-page",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "20 января — 7 февраля 1914",
+      "fromIso": "1914-01-20",
+      "toIso": "1914-02-07",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-2545DA77-272-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
     "scanNumber": 272,
@@ -48,48 +44,42 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
+        "kind": "target-context",
         "path": "data/genealogy/evidence-private/yandex/2545da77-ac4d-4a24-ae1e-705a17081f09/0272-target-entry.png",
-        "sha256": "619aebc6deadba79fe5def82702227c9ccd9d9437fb1d796eb50610e2ad2a088",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "00f23bf5c49bb3a729cb14b1dbedc0a4c55740408b5be244afeaca438ef5c592",
+        "description": "Полноширинный крупный контекстный фрагмент всего разворота с брачными строками и обеими колонками поручителей, без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedFromTextCoordinates": false,
       "fullDimensions": "5345x4197",
-      "targetDimensions": "1347x2687",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4400x3400",
+      "method": "original-download-plus-manual-full-leaf-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "1%\nВого выли порбчйтели.\nПоясенихоі Сьва КармаКри,\nивог\nа Михатловорый возвати,\nгранбурчской губоржін\nун Да. Кроств'яно. Павени\nСтопановь, Насиви втопакова\nИватРяховекикь\"\nнекп\nПоневлютть: СекаКуроминновки,\nсен\nМикютковской доввати, Оран-\nбургкой губержи и\nКрестыччпе: Косикий Монтивогова\nТа чого награматного и зсеобя\nкосинеткя Надуканого вб\nутяков\n14 У, а орачившнняск.\n03 Магеханло Авкунбреро\nнирь Йлексанорв 13)знямлі\nПо яконихи: веда Картавки.\nМихайловской вокости, ор\nбіргерти гуваржтнутра,\nровь,",
-    "modernInterpretation": "1% Вого выли порбчйтели. Поясенихои Сьва КармаКри, ивог а Михатловорый возвати, гранбурчской губоржин ун Да. Кроств'яно. Павени Стопановь, Насиви втопакова ИватРяховекикь\" некп Поневлютть: СекаКуроминновки, сен Микютковской доввати, Оран- бургкой губержи и Крестыччпе: Косикий Монтивогова Та чого награматного и зсеобя косинеткя Надуканого вб утяков 14 У, а орачившнняск. 03 Магеханло Авкунбреро нирь Йлексанорв 13)знямли По яконихи: веда Картавки. Михайловской вокости, ор биргерти гуваржтнутра, ровь,",
-    "localOcr": "1%\nВого выли порбчйтели.\nПоясенихоі Сьва КармаКри,\nивог\nа Михатловорый возвати,\nгранбурчской губоржін\nун Да. Кроств'яно. Павени\nСтопановь, Насиви втопакова\nИватРяховекикь\"\nнекп\nПоневлютть: СекаКуроминновки,\nсен\nМикютковской доввати, Оран-\nбургкой губержи и\nКрестыччпе: Косикий Монтивогова\nТа чого награматного и зсеобя\nкосинеткя Надуканого вб\nутяков\n14 У, а орачившнняск.\n03 Магеханло Авкунбреро\nнирь Йлексанорв 13)знямлі\nПо яконихи: веда Картавки.\nМихайловской вокости, ор\nбіргерти гуваржтнутра,\nровь,",
-    "localOcrWithSurnameLexicon": "1%\nВито выли порбчители.\nПо ясених: Сова КармаКри,\nивог\nа Михайловорый вызвати,\nгрантурской куборжін\nун Да. Краств'яно. Павени\nСтопановь, Насини втопакова,\nИват Ряховеникь\"\nнект\nПоневлютсь: Сока Курочиновки,\nсен\nМикатковской дорвати, Оран-\nбургкой губержи и\nКрестычне: Косикий Мотивогова\nТа ного неграматного и зеобя\n14 У, а брачивняск .\n03 Магеханно Явкунтреро\nнирь Алексанорв 13)знямлі\nПо яконики: веда Картавки.\nМихайловской волости, ор\nбургерти гувернтнутра\nровь,",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-manual-review-no-surname-series-on-page",
+    "literal": "Брачные записи № 4–6 за 20 января — 7 февраля 1914 года. В графах поручителей перечислены крестьяне Кармалки, Курносовки и других селений; фамилии Ампилогов, Анпилогов и формы исследуемого ряда на развороте нет.",
+    "modernInterpretation": "Полный разворот проверен от заголовка до обеих колонок поручителей. Индексный «Василий Ампилогов» отсутствует: Яндекс исказил фамилию одного из поручителей из села Курносовки. Карточка остаётся исследовательским отрицательным результатом, без профиля, карты и связей.",
+    "indexNote": "Сниппет Яндекса «Василий Ампилогов» не подтверждается оригиналом; он не использован как источник."
   },
   "indexData": {
     "querySnippet": "Свидетель, Василий Ампилогов, крестьянин, село Кузьминовка, Михайловская волость, Оренбургская губерния и уезд.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexWarning": "Ложное fuzzy-совпадение: фамильного ряда на полном развороте нет."
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-false-fuzzy-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-false-fuzzy-hit",
+    "transcriptionConfidence": "high-for-absence-of-surname-series-on-full-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены все три брачные строки, обе колонки поручителей и подписи служителей; индексный Василий Ампилогов не найден. Создан полноширинный фрагмент 4400×3400."
   }
 }

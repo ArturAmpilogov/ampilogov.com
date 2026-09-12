@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-3BF6C3F5-269",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "marriage-witness",
   "collection": {
     "catalogId": "3bf6c3f5-615c-4259-8976-19af9f87f255",
     "scanNumber": 269,
@@ -13,21 +13,17 @@
     "documentUrl": "https://yandex.ru/archive/catalog/3bf6c3f5-615c-4259-8976-19af9f87f255/269"
   },
   "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
+    "type": "marriage-witness",
+    "date": { "display": "24 октября 1910 года", "iso": "1910-10-24", "confidence": "high" },
+    "place": { "asWritten": "село Зобово", "normalized": "село Зобово, Оренбургская губерния", "placeId": "zobovo-orenburg" }
   },
   "mentions": [
     {
       "mentionId": "YA-3BF6C3F5-269-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогор",
-      "nameAsTranscribed": "Ампилогор",
+      "role": "witness-for-groom",
+      "personId": "P91072",
+      "displayName": "Степан Васильевич Ампилогов",
+      "nameAsTranscribed": "села Зобова крестьянинъ Степанъ Васильевъ Ампилоговъ",
       "surnameSeries": true
     }
   ],
@@ -66,30 +62,23 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Д Па атtепида, ава вобіва,\nхур Дсатьями Квань Касковр\nВоківчиоветов егорівь\nКатасоновч,\nбаневікатіь. Тиганкя\nСhа Жеми СОтирен и,х\nч. Хаов Васитьекчвсж\nниніч,",
-    "modernInterpretation": "Д Па атtепида, ава вобива, хур Дсатьями Квань Касковр Вокивчиоветов егоривь Катасоновч, баневикатиь. Тиганкя Сhа Жеми СОтирен и,х ч. Хаов Васитьекчвсж нинич,",
-    "localOcr": "Д Па атtепида, ава вобіва,\nхур Дсатьями Квань Касковр\nВоківчиоветов егорівь\nКатасоновч,\nбаневікатіь. Тиганкя\nСhа Жеми СОтирен и,х\nч. Хаов Васитьекчвсж\nниніч,",
-    "localOcrWithSurnameLexicon": "2 На атепид, ава вобова\nхур Рсатьями Квань Касковр\nБоків чисветов горівь\n1 Катасонови,\nбаневатіь. Виганкя\nч. Хаов Васильки всж\nниніч,",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Октябрь. № 29. 24. Поручители по женихѣ: села Зобова крестьяне Степанъ Васильевъ Ампилоговъ и Андрей Егоровъ Будаевъ.",
+    "modernInterpretation": "24 октября 1910 года крестьянин села Зобова Степан Васильевич Ампилогов был поручителем жениха при чужом браке. Служебная подпись не означает родства с брачующимися.",
+    "indexNote": "Ручное чтение исправляет индексную OCR-форму «Ампилогор» на ясно написанное «Ампилоговъ» и подтверждает дату, номер и роль."
   },
   "indexData": {
     "querySnippet": "Священникъ Іаковъ. По женихѣ: села Зобова Крестьяне Степанъ Васильевъ Ампилогор и Андрей Егоровъ Будаевъ.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную проверены весь брачный разворот и запись № 29: дата, раздел поручителей, место, полное имя и соседний поручитель. P91072 подтверждён точным ФИО, Зобовом и совместимым возрастом; родство и миграция не создавались."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-23E7CDEF-004",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 4,
@@ -12,16 +12,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/23e7cdef-0289-4054-a95d-1c29678efce0/4"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
+      "display": "родилась 15 января, крещена 16 января 1910 года",
+      "from": "1910-01-15",
+      "to": "1910-01-16",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Бахтемир, Астраханская губерния"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-23E7CDEF-004-M0",
+      "role": "child",
+      "personId": "P102129",
+      "nameAsTranscribed": "Анна",
+      "displayName": "Анна Стефановна Ампилова",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-23E7CDEF-004-M1",
       "role": "father",
@@ -42,23 +52,17 @@
   "evidence": {
     "catalogId": "23e7cdef-0289-4054-a95d-1c29678efce0",
     "scanNumber": 4,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "344e508e6efba03861c5a30ea3457ed6fda131d7e7370aebab932ecbf1ecf408",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-header.png",
-        "sha256": "f26cd5125cda96374bb412bf33fca72d043764c8f9e92ead31544e25f9a1a706",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-target-entry.png",
-        "sha256": "5c628215b11e8cff3650bb145422737452235408e5c4dc84edbc536fa7ed418a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/23e7cdef-0289-4054-a95d-1c29678efce0/0004-full-view.png",
+        "sha256": "344e508e6efba03861c5a30ea3457ed6fda131d7e7370aebab932ecbf1ecf408",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -66,18 +70,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4472x2932",
-      "targetDimensions": "1200x1477",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4472x2932",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьянин села Бахтемирского Стефан Димитриев Ампилов и законная жена его Евдокия Сергиева; оба православные.",
-    "modernInterpretation": "Стефан Дмитриевич и Евдокия Сергеевна Ампиловы записаны родителями ребёнка.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 1. Анна, родилась 15 января, крещена 16 января 1910 года. Родители: крестьянин села Бахтемирского Стефан Димитриев Ампилов и законная жена его Евдокия Сергиева; оба православные.",
+    "modernInterpretation": "Рождение Анны Стефановны Ампиловой прямо связывает её со Стефаном Дмитриевичем и Евдокией Сергеевной Ампиловыми.",
+    "indexNote": "Полный скан, дата, строка и окружающий контекст прочитаны вручную; Яндекс использован только для навигации, расхождения отмечены отдельно.",
     "localOcr": "d_\nКрествянинь anе bаfme\nширькою С,нефань Дмит\nвісh Ампилов „закан-\nraя Jeнa eго 2 вoaxія\nсва: обо правосавння\n- Сояженникь Двихансь. Юиетина\n1 акаfe) Яарнашний вармму\nСпаурата, уберани, бунні\nволантие чома в Катрій Сто.\nкрествянина Але\nпанов Шииканов. •Закон\nOGVA\nCТ\nная го брона Поланя\nиколаєвсі аба\nввященника Пегравошивнка\nпосаеть Пчити\nДіакабу Харлаший\nваранй\nДі аканг",
     "collation": {
       "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
@@ -89,9 +96,14 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": []
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Крестьянин села Бахтемирского Стефан Дмитриев Ампилов и законная жена его Евдокия Сергиева...",

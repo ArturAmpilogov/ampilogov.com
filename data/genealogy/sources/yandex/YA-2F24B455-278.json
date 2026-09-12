@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2F24B455-278",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "2f24b455-efcc-47c5-af90-f7c5de2cee93",
     "scanNumber": 278,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/2f24b455-efcc-47c5-af90-f7c5de2cee93/278"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "index-discrepancy",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "август; книга за 1914–1916 годы",
+      "confidence": "high-for-month-and-book-range"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Тисульский приход"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-2F24B455-278-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "2f24b455-efcc-47c5-af90-f7c5de2cee93",
     "scanNumber": 278,
@@ -49,9 +41,9 @@
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/2f24b455-efcc-47c5-af90-f7c5de2cee93/0278-target-entry.png",
-        "sha256": "8f7e9ec1530a05bb76ffc01efa535849de6965c8b751fe00c0d69a57d03fee33",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/2f24b455-efcc-47c5-af90-f7c5de2cee93/0278-target-entry-deep.png",
+        "sha256": "78eb72646b2bb311d69ac8a6f8237b0f1442fc1b9678673ab82aebaac652fd17",
+        "description": "Крупный полноширинный фрагмент записей № 97–103 и соседней записи без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +51,31 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4330x4200",
-      "targetDimensions": "1200x843",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4100x3400",
+      "method": "manual-reading-of-full-scan-and-full-width-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "нечела проестаенит\nІмельянив Левтнскій\nгкуи\nЛянская жена сАнто.\nяма\nСменова Кресто-Сото-\nе.\nIrMcо\n1 о.\n•Мыи же духевни праемлвяних\nкра\n(ковлеві Антонова и\nпох\nиная жена Параскева\nseя:",
-    "modernInterpretation": "нечела проестаенит Імельянив Левтнский гкуи Лянская жена сАнто. яма Сменова Кресто-Сото- е. IrMcо 1 о. •Мыи же духевни праемлвяних кра (ковлеви Антонова и пох иная жена Параскева seя:",
-    "localOcr": "нечела проестаенит\nІмельянив Левтнскій\nгкуи\nЛянская жена сАнто.\nяма\nСменова Кресто-Сото-\nе.\nIrMcо\n1 о.\n•Мыи же духевни праемлвяних\nкра\n(ковлеві Антонова и\nпох\nиная жена Параскева\nseя:",
-    "localOcrWithSurnameLexicon": "нечела проектанит\nІмелянив Левінскій\nЛянская жена сАнто.\nяма\nСеменова Кресто-Сото-\nе.\n1 0.\nМы же духевни проемсяник\nкра\nСковлеві Антонова и\nпох\nиная жена Параскева",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "full-spread-manually-verified-no-surname-series",
+    "literal": "Часть первая, о родившихся. На развороте идут августовские записи № 97–103 и начало следующей записи: имена детей, родители и восприемники прочитаны по полному листу. В строке № 99 среди восприемников указан крестьянин Яков, однако фамилии «Амфилогов» в его именовании нет; всего сочетания «Яков … Амфилогов» на развороте нет.",
+    "modernInterpretation": "Поисковое совпадение ложное: Яндекс ошибочно распознал фамилию восприемника в строке № 99.",
+    "indexNote": "Полный разворот, строки № 97–103, родители, восприемники и подписи проверены вручную; индексная фамилия опровергнута.",
+    "historicalContext": "Носителя фамильного ряда нет; профили, родственные связи, карта и переселение не создаются."
   },
   "indexData": {
     "querySnippet": "яни закон еева. села крестьянин Яков киев Амфилогов и янская девица Надежда ева Крюкова. Священник Петр Хвалын. 99.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "false-positive-search-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрены полный разворот части о родившихся, все записи № 97–103, родители, восприемники и подписи. Якова Амфилогова и других носителей фамильного ряда нет; public/profile/map исключены.",
+    "unresolved": []
   }
 }

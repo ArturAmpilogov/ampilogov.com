@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-99806074-26",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "99806074-8325-4f68-8f4f-b6c14cc0e44e",
     "scanNumber": 26
@@ -30,8 +30,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/99806074-8325-4f68-8f4f-b6c14cc0e44e/0026-target-entry.png",
-        "sha256": "b2463d986d9539171d1f17e981b8d2bacb82ac132a29bca5ce1afe1ab83c1294",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "21320a7a4cc8abfdc0d9cde688f1d619d39574d4331cf0c6352c63f06ac55dcb",
+        "description": "Полноширинный крупный фрагмент записей № 50–53 без интерфейса Яндекса; позволяет проверить строки родителей и восприемников."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4973x3969",
-      "targetDimensions": "1266x594",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4650x3000",
+      "method": "original-download-plus-full-width-manual-review"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -82,28 +82,22 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полноразмерный лист за 1889 год с записями № 50–53, включая обе колонки родителей и восприемников; фамилии исследуемого ряда и формулы «Иванов Ампилогов» на листе нет. Проверены соседние строки и структура таблицы; индекс Яндекса признан ложным fuzzy-совпадением. Профили, связи, карта и миграция не создаются."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "того элое села крестоянить иетиной\nДемитріяви Певмічаловь потвици\nТатьпастикайговавоrи\nпыреваs\ncaa Resennирaтаи Итити -\nИвеновь Соколовь ижсени кратлятти\nМарера Петрови Своsрева",
-    "modernInterpretation": "того элое села крестоянить иетиной Демитрияви Певмичаловь потвици Татьпастикайговавоrи пыреваs caa Resennирaтаи Итити - Ивеновь Соколовь ижсени кратлятти Марера Петрови Своsрева",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "того элое села крестоянить иетиной\nДемитріяви Певмічаловь потвици\nТатьпастикайговавоrи\nпыреваs\ncaa Resennирaтаи Итити -\nИвеновь Соколовь ижсени кратлятти\nМарера Петрови Своsрева",
-    "localOcrWithSurnameLexicon": "oong in\nve se sidt tease tpiemsdeeT\nBewmpiet Laseaitnde\nAV\nmthus к Ma\nass Rebaun\nUisuabs Conene\nM-Te- Nunuesu denpt",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
+    "status": "complete-primary-scan-reviewed-no-match",
+    "literal": "Лист содержит записи о рождении № 50–53 за 1889 год (в том числе Варвара, Мария и Стефанида); в полностью просмотренных графах родителей и восприемников фамилия Ампилогов либо иной вариант исследуемого ряда отсутствует.",
+    "modernInterpretation": "На полном читаемом листе искомого человека нет. Утверждение индекса о «муже крестной матери: Иванов Ампилогов» не подтверждается оригиналом.",
+    "indexNote": "Индекс Яндекса использован только как указатель. Ручное чтение полного скана и соседних строк показало ложное fuzzy-совпадение."
   },
   "indexData": {
     "querySnippet": "Муж крестной матери: Иванов Ампилогов, крестьянин, то же село. Отец: Тит Иоаннов Слободин, крестьянин, село Георгиевка.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false
 }

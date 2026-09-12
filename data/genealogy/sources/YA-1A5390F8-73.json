@@ -1,129 +1,92 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-1A5390F8-73",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "archival-mention",
   "collection": {
     "catalogId": "1a5390f8-1a14-4b9b-86b6-9977c0251f94",
-    "scanNumber": 73
+    "scanNumber": 73,
+    "asRead": "Метрическая книга прихода Нижнего Гумбета за 1898 год, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/1a5390f8-1a14-4b9b-86b6-9977c0251f94/73"
   },
+  "event": {
+    "type": "burial-register-ministry",
+    "date": {
+      "display": "26 ноября — 22 декабря 1898",
+      "confidence": "high"
+    },
+    "place": {
+      "asRead": "приход Нижнего Гумбета",
+      "normalized": "Нижний Гумбет"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-1A5390F8-73-M1",
-      "role": "unconfirmed-index-hit",
+      "role": "deacon-at-burial",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-1A5390F8-73-M2",
+      "role": "deacon",
       "personId": null,
-      "nameAsTranscribed": "Индексное совпадение требует чтения скана",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "Діаконъ Александръ Тепловъ",
+      "displayName": "Александр Теплов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-1A5390F8-73-M3",
+      "role": "priest",
+      "personId": null,
+      "nameAsTranscribed": "Священникъ Клавдій Калининъ",
+      "displayName": "Клавдий Калинин",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-1A5390F8-73-M4",
+      "role": "deceased",
+      "personId": null,
+      "nameAsTranscribed": "Евгенія Семенова Малинькова",
+      "displayName": "Евгения Семёновна Малинькова",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "АЛЬНОЙ\nМЕТРИЧЕСКОЙ КНÚГН НА\n184\nЗвáніє, ймя, сбтчестко й фамиліл одмершагш.\nóý Mépu\nтєніл.\nМбжеска.\nРли КилинЯло Уг/ мілита пероствЯника\nВасилі Яорамова Риства евмів ОИваив\nвящен Лиладії Лавитон.\nУ іаконь Алейсннбра Тапилв\n11 лкнтв Такнокссв Я шигилоков.\nи смечсяций ами ушерктова скни пову вайркур,",
-    "modernInterpretation": "АЛЬНОЙ МЕТРИЧЕСКОЙ КНÚГН НА 184 Звáниє, ймя, сбтчестко й фамилил одмершагш. óý Mépu тєнил. Мбжеска. Рли КилинЯло Уг/ милита пероствЯника Васили Яорамова Риства евмив ОИваив вящен Лиладиї Лавитон. У иаконь Алейсннбра Тапилв 11 лкнтв Такнокссв Я шигилоков. и смечсяций ами ушерктова скни пову вайркур,",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "АЛЬНОЙ\nМЕТРИЧЕСКОЙ КНÚГН НА\n184\nЗвáніє, ймя, сбтчестко й фамиліл одмершагш.\nóý Mépu\nтєніл.\nМбжеска.\nРли КилинЯло Уг/ мілита пероствЯника\nВасилі Яорамова Риства евмів ОИваив\nвящен Лиладії Лавитон.\nУ іаконь Алейсннбра Тапилв\n11 лкнтв Такнокссв Я шигилоков.\nи смечсяций ами ушерктова скни пову вайркур,",
-    "localOcrWithSurnameLexicon": "АЛЬНОЙ\nМЕТРИЧЕСКОЙ КНГИ НА\n184\nЗваніє, йма, сотчестко й фамиліл одмершаш.\nієніл.\nвли Пилинко Ул/ місита перествЯника\nВасилі Абрамова Риства евмів ЛИвсив\nвящен Лиладії Лавин.\nУ каконь Алексинйра Татил6",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Локальные full-view и target-entry копии (Метрическая книга за 1898 год, часть третья, об умерших) недостаточно крупные для надёжного чтения фамилии в целевой строке."
+    "status": "complete-for-target-ministry",
+    "literal": "Конец ноября — декабрь 1898 года, часть третья, об умерших. В записях с 26 ноября по 22 декабря повторяется служебная подпись «Діаконъ Аѳиногенъ Ампилоговъ» рядом с диаконом Александром Тепловым и священником Клавдием Калининым. Евгения Семёнова Малинькова названа отдельно среди умерших.",
+    "modernInterpretation": "Афиноген Ампилогов служил диаконом при чужих погребениях; Евгения Малинькова — умершая, не родственница.",
+    "indexNote": "Индекс склеил служебную подпись Афиногена с умершей Евгенией Малиньковой и исказил фамилии других членов причта. Оригинал показывает разные роли.",
+    "historicalContext": "Служебные подписи фиксируют работу приходского причта при чужих погребениях; семьи умерших сохранены как контекст, но не образуют родственных связей Афиногена."
   },
   "evidence": {
-    "catalogId": "1a5390f8-1a14-4b9b-86b6-9977c0251f94",
-    "scanNumber": 73,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-full-view.png",
-    "capturedAt": "2026-09-11",
     "sha256": "e04df3498e752f610928ec88664912cce8965700d7a3d650a7d804cf3ff01c4c",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-header.png",
-        "sha256": "fc5c895f218fcbb07415f267159162c62d8ebd90da80ccd972b867ecdd6c9f14",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-target-entry.png",
-        "sha256": "403ae035cf02bcc54a0cba756bef33fa29609faac08589a511f0ac8e8ce2bde9",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-target-entry-deep.png",
+        "sha256": "22b5bd4d626a87d45c7545ee5caebb71f4f2c48d732bfac44e73df3ca4c18f5b",
+        "description": "Полноширинный крупный контекстный фрагмент листа с датами, актовыми строками и повторяющимися подписями причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5004x4081",
-      "targetDimensions": "1398x1822",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4804x3430",
+      "method": "manual-reading-of-full-scan-and-full-width-recrop"
     },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-full-view.jpg",
-        "sha256": "e022247ff5e1f4fff80744895374172558d192394899811eebe2755985d2ecb1",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-target-entry.jpg",
-            "sha256": "2d249f9e7f9ef4612713e4fc4f95444eebb52bac5e7fdf95722c1efe722121dd",
-            "description": "Существующий фрагмент записи; недостаточен для чтения фамилии."
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "1a5390f8-1a14-4b9b-86b6-9977c0251f94",
-            "scanNumber": 73,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "e04df3498e752f610928ec88664912cce8965700d7a3d650a7d804cf3ff01c4c",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-header.png",
-                "sha256": "fc5c895f218fcbb07415f267159162c62d8ebd90da80ccd972b867ecdd6c9f14",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/1a5390f8-1a14-4b9b-86b6-9977c0251f94/0073-target-entry.png",
-                "sha256": "403ae035cf02bcc54a0cba756bef33fa29609faac08589a511f0ac8e8ce2bde9",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5004x4081",
-              "targetDimensions": "1398x1822",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "publicDisplay": false
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high-for-target-name-role-and-date-range",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный разворот смертей за 26 ноября — 22 декабря 1898; проверены подписи, даты и структура граф, исключены родство и миграция."
   },
   "indexData": {
     "querySnippet": "Диакон Афиноген Ампилогов Села Нижняго Гумбера крестьянка Евгения Семенова Малинькова Священн Клавдий Коликинский Диакон Александр Тихов. 38.",

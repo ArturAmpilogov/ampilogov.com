@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5A928444-015",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "5a928444-5f45-4565-a233-7d389f3c918b",
     "scanNumber": 15,
@@ -11,82 +11,64 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/5a928444-5f45-4565-a233-7d389f3c918b/15"
   },
-  "event": {
-    "type": "birth-godparents",
-    "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Тримихайловка"
-    }
-  },
+  "event": null,
   "mentions": [
     {
       "mentionId": "YA-5A928444-015-M1",
-      "role": "godmother",
-      "personId": "P101582",
-      "displayName": "крестьянская жена Марѳа Іоанникіева Ампилова",
-      "nameAsTranscribed": "крестьянская жена Марѳа Іоанникіева Ампилова",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "5a928444-5f45-4565-a233-7d389f3c918b",
     "scanNumber": 15,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "0dc04ad55065646356854f5067cf41a2681e0a6dd8cacf571357e275d9b565dd",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-header.png",
-        "sha256": "565540ea16a2c320b08364e4334d487c948497e5aa98df9944fe1c68d18a77d9",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-target-entry.png",
-        "sha256": "9e4a828fd3b668b026b34f620a8f8b3a7b2604f67fb4d6d41506f540059b2c67",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/5a928444-5f45-4565-a233-7d389f3c918b/0015-full-view.png",
+        "sha256": "0dc04ad55065646356854f5067cf41a2681e0a6dd8cacf571357e275d9b565dd",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены целевая запись и окружающий контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5217x4270",
-      "targetDimensions": "1348x791",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5217x4270",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Деревни Яковлевки крестьянин Антоний Димитриев Овинов и крестьянская жена села Тримихайловки Марфа Иоанникиева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Марфа Иоанникиевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Krò coB\nЗвáніє, йма, бтчество й фамилід\nвоспріємникш к%.\nдеревни яковиевки крестьянинь\nНатвіей Ланнов'в Шипило в'о и крестьян-\nския жена Мароабаннова Шипи-\nлова.\nДеревни свидреввки престьянинь Алек-",
-    "localOcrWithSurnameLexicon": "Kirò coB\nЗваніє, йма, бтчество й фамилід\nвоспріємникш к%.\nдеревни яковлевки крестьянинь\nНатвіей Ланновів Шипило во и крестьян-\nския жена МарсаЛаннова Шипи-\nлова.\nДеревни свидревки престьянинь Алек-",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "1910 год, часть о родившихся, записи № 31–35. В записи № 31 восприемники: деревни Яковлевки крестьянин Матвей Иоаннов Шипилов и крестьянская жена Марфа Иоаннова Шипилова. Марфа Иоанникиева Ампилова на странице не записана.",
+    "modernInterpretation": "Ложное индексное совпадение: Яндекс неверно распознал имена и фамилию восприемников.",
+    "indexNote": "Сниппет об Антонии Димитриевиче Овинове и Марфе Иоанникиевне Ампиловой противоречит оригиналу."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-rejected-index-hit",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   },
   "indexData": {
     "querySnippet": "Деревни Яковлевки крестьянинъ Антоній Димитріевъ Овиновъ и крестьянская жена села Тримихайловки Марѳа Іоанникіева Ампилова.",

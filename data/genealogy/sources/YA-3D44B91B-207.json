@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-3D44B91B-207",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "clergy-service-on-death-register-page",
   "collection": {
     "catalogId": "3d44b91b-6111-4e37-a63f-f15e7b1142c8",
     "scanNumber": 207,
@@ -14,18 +14,18 @@
   "mentions": [
     {
       "mentionId": "YA-3D44B91B-207-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Ложное индексное совпадение",
-      "surnameSeries": false
+      "role": "burial-officiant",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ съ діакономъ Василіемъ Яковлевымъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "В проверенных строках книги об умерших фамильный ряд не читается.",
-    "modernInterpretation": "Скан не подтверждает совпадение; отдельных людей или маршрутов не создаётся.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "1909 год, часть третья, об умерших. На развороте записи № 11–15 и следующая строка, от 17 июля до 15 сентября. В графе погребения повторяется: Священникъ Михаилъ Ампилоговъ съ діакономъ Василіемъ Яковлевымъ, на отведенномъ сельскомъ кладбищѣ.",
+    "modernInterpretation": "Михаил Ампилогов совершал погребения прихожан других фамилий летом и в начале осени 1909 года. Умершие и родственники остаются контекстом; служба не означает родства.",
+    "indexNote": "Индекс передал обрывок формулы погребения. Полный лист подтверждает имя и фамилию священника, его роль, пару причта и диапазон строк.",
     "localOcr": "ГИПОГРАФІИ.\nИеРШИХХ.\nКто соВЕршÁль погребéне, й гдЕ погреБЕны.\nши\nasro\nчи\nжевидтельствуемче",
     "localOcrWithSurnameLexicon": "ТИПОГРАФІИ.\nКто соВЕршАль погребене, й гдЕ погреБЕны.\narro\nчи\nневидительству емче",
     "collation": {
@@ -36,13 +36,13 @@
   },
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0207-full-view.jpg",
-    "sha256": "37afe3b9177a71348dfbac5c36e018bd46cde7fc4c489ac1aa9435006a517921",
+    "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0207-full-view.png",
+    "sha256": "33748b33399ca52474e2921c8f1d206b2e52712d48482eb7e3cfbc89f089f7ec",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0207-target-entry.jpg",
-        "sha256": "f754b0b7fa6220d127d0188ebf6fc6e96af7b93e3daa689616b4adee1f975de7",
-        "description": "Локальный крупный фрагмент проверенной страницы."
+        "path": "data/genealogy/evidence-private/yandex/3d44b91b-6111-4e37-a63f-f15e7b1142c8/0207-header.png",
+        "sha256": "6325899ad6227e4a3d95e01252cb9b6861cdcd760daaecb89c965e516d8ea7d7",
+        "description": "Полноширинный контекст погребальных записей и подписей причта."
       }
     ],
     "parallelCopies": [
@@ -83,13 +83,16 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": ["Нижняя строка частично уходит за край листа; фамильная служебная подпись и крайние даты читаются уверенно."],
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Полностью просмотрен погребальный разворот, разграничены записи № 11–15 и следующая строка, проверены даты, причины смерти и графы совершавшего погребение. Михаил Ампилогов подтверждён как священник рядом с диаконом Василием Яковлевым; P1653 strong-supported по одной книге и непрерывной паре причта, без приписывания отчества, родства или миграции."
   },
+  "event": { "type": "clergy-service-on-death-register-page", "date": { "display": "17 июля — 15 сентября 1909 года", "fromIso": "1909-07-17", "toIso": "1909-09-15", "confidence": "high" }, "place": { "asWritten": "сельское кладбище Успенского прихода", "normalized": "Успенский приход, Оренбургская губерния", "confidence": "high" } },
   "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "indexData": {
     "querySnippet": "твуем своим подписом Священник Михаил Ампилогов с диаконом Василием Яковлевым на отведенным сельским кладбище м.",
     "fuzzyQuery": true

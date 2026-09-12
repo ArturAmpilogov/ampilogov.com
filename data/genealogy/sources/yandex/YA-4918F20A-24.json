@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-4918F20A-24",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "4918f20a-7796-41d7-900a-2bac9a7289fe",
-    "scanNumber": 24
+    "scanNumber": 24,
+    "title": "Метрическая книга на 1888 год, часть первая, о родившихся",
+    "asRead": "Июнь 1888 года; записи о родившихся и месячный итог"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4918f20a-7796-41d7-900a-2bac9a7289fe/24"
@@ -13,24 +15,25 @@
   "mentions": [
     {
       "mentionId": "YA-4918F20A-24-M1",
-      "role": "other",
+      "role": "false-index-hit",
       "personId": null,
-      "nameAsTranscribed": "Носитель фамильного ряда: требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
-      "surnameSeries": true
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном развороте не обнаружена",
+      "displayName": "Ложное fuzzy-совпадение",
+      "surnameSeries": false,
+      "identificationConfidence": "high"
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "Июнь 1888 года, часть первая, о родившихся. Полный разворот с пятью видимыми записями и итогом месяца проверен построчно; формы Ампилогов / Анпилогов / Анфилогов и документированные варианты фамильного ряда не обнаружены. Родители, восприемники и священнослужитель имеют другие фамилии.",
+    "modernInterpretation": "Это ложное fuzzy/OCR-попадание. Разворот сохраняется как доказательство проверки, но не создаёт Record публичного ядра, профиль, связь, карту или маршрут.",
     "localOcr": "тчтго ми села дапаст\nдата Семеть Яховинаь Nо\nинпартив и дпвиуа вісснія\nКисева.\nМигрокреннся\nРягаткий губупим . Дяли-\nеена толетвер\nскаго уеда сплянии фи-",
     "collation": {
       "baseLocalOcr": "not-confirmed-by-local-ocr",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Индекс Яндекса использован только для навигации и не подтверждён оригиналом. Нечёткий локальный OCR также не принят как чтение фамилии."
   },
   "evidence": {
     "catalogId": "4918f20a-7796-41d7-900a-2bac9a7289fe",
@@ -43,16 +46,10 @@
     "sha256": "38ec414c2cb5418c281140f15670aba24e3554b60ce2eebbccd0553deca2a306",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/4918f20a-7796-41d7-900a-2bac9a7289fe/0024-header.png",
-        "sha256": "c38790df86998a3ff58147a3a26767cec8babcf12ca123fca783634093771de5",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/4918f20a-7796-41d7-900a-2bac9a7289fe/0024-target-entry.png",
-        "sha256": "10f0b78f6135e7b89c67508751a1489217640b72e7ce4a2a9aa8e04745fc1c8f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "reviewed-page-body",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/4918f20a-7796-41d7-900a-2bac9a7289fe/0024-target-context-deep.jpg",
+        "sha256": "020f558eccc1e380897b1c034969170fb59e93df5562bbc2809d82969a44d894",
+        "description": "Крупный полноширинный чистый фрагмент всех проверенных строк разворота; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -60,8 +57,12 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5022x4025",
-      "targetDimensions": "1300x623",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4600x3400",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-large-clean-fragment"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -80,12 +81,11 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Расшифровать совпадение по скану.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reviewed-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный июньский разворот 1888 года и новый крупный полноширинный фрагмент проверены вручную, включая пять видимых актов и итог месяца; фамильный ряд отсутствует, fuzzy-совпадение подтверждено как ложное."
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",

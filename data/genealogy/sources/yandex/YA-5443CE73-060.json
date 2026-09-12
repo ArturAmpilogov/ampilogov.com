@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5443CE73-060",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "5443ce73-5e61-4ce5-be2f-355c9dbc961e",
     "scanNumber": 60,
@@ -12,84 +12,73 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/5443ce73-5e61-4ce5-be2f-355c9dbc961e/60"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
+  "event": null,
   "mentions": [
     {
       "mentionId": "YA-5443CE73-060-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамилия исследуемого ряда на полном скане не обнаружена",
+      "displayName": "Ложное индексное попадание",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "5443ce73-5e61-4ce5-be2f-355c9dbc961e",
     "scanNumber": 60,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0060-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0060-full-view.png",
-    "capturedAt": "2026-09-11",
+    "capturedAt": "2026-09-12",
     "sha256": "dc922c85259b92add772629e7f473c1a0bfd22cf0620e38d5755292ececcac26",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0060-header.png",
-        "sha256": "f356911eeb604f9989424694f49f7f29210268ce3f71a13ab5b1a1fa5532c596",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/5443ce73-5e61-4ce5-be2f-355c9dbc961e/0060-target-entry.png",
-        "sha256": "030cab5e7f92c57260d9e2e3a5d255a215501ab44f84d6a907fdc1bad4d41aca",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "022524e940c1998fc43c2a4a880a6de0e3acbe3f11ad79641b5284c303c92a82",
+        "description": "Крупный полноширинный фрагмент проверенной записи и окружающего контекста без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
       "fullDimensions": "5567x4355",
-      "targetDimensions": "1297x1099",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5200x2400",
+      "method": "manual-full-page-reading-and-full-width-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Мигуати ?. Лавизы\nНюландсной губ., Алекичи\nТеоргіев Нюболіч и предб-л\nЯжская яена Томской\nгуб, Зырянской вол Анто-\nиина Василвева\nХстьлевская.\nВологиевно.\nКрес н. )",
-    "modernInterpretation": "Мигуати ?. Лавизы Нюландсной губ., Алекичи Теоргиев Нюболич и предб-л Яжская яена Томской губ, Зырянской вол Анто- иина Василвева Хстьлевская. Вологиевно. Крес н. )",
-    "localOcr": "Мигуати ?. Лавизы\nНюландсной губ., Алекичи\nТеоргіев Нюболіч и предб-л\nЯжская яена Томской\nгуб, Зырянской вол Анто-\nиина Василвева\nХстьлевская.\nВологиевно.\nКрес н. )",
-    "localOcrWithSurnameLexicon": "Мигуати г. Лавизы\nНюландсной губ., Алекичи\nТеоргіев. Нюболч и предб-с\nЯгская яена Томской\nгуб, Зырянской вол. Анто-\nчина Василвева\nХстьлевская.\nВологиевно.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-reviewed-no-match",
+    "literal": "1910 год, часть первая о родившихся. На развороте полностью проверены записи № 79–81. В записи № 80 (Евгений) родители и восприемники носят другие фамилии; Анна Трофимовна Ампилогова и иная форма исследуемого ряда на листе отсутствуют.",
+    "modernInterpretation": "Ложное индексное совпадение: приписанная Яндексом Анна Трофимовна Ампилогова не читается ни в целевой записи, ни в соседних строках.",
+    "indexNote": "Сниппет об Анне Трофимовой Ампилоговой противоречит оригиналу; фамилия, имя и роль индексом добавлены ошибочно."
   },
   "indexData": {
     "querySnippet": "Анна Трофимова Ампилогова. ... Крёстная мать: Анна Трофимова Ампилогова, крестьянская жена, Воронежская губерния, Верхне-Мамонская волость.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-rejected-index-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-no-match-classification",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, evidence 5200x2400"
+  },
+  "context": {
+    "eventSummary": "Ложное индексное совпадение.",
+    "identityNote": "Носитель исследуемой фамилии на листе отсутствует.",
+    "migrationNote": "Отдельный маршрут переселения по одной этой записи не создаётся.",
+    "pageContext": "Разворот метрической книги Иннокентьевской церкви Иркутска за 1910 год, записи о рождении № 79–81; проверены родители, восприемники и причт."
   }
 }

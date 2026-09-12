@@ -10,15 +10,19 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/9f01f146-77bc-48b4-a581-9ee41cd643d5/96"
   },
+  "event": {"type": "death-register-page", "date": {"display": "август 1913", "confidence": "high"}, "place": {"normalized": "Богородский приход", "confidence": "high"}},
   "mentions": [],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/096-full-view.jpg",
-    "sha256": "4dafc0fdd6a569c7b6e3b415098f3c1823246fedf8c0c2ec018653445e736f03",
+    "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0096-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0096-full-view.png",
+    "sha256": "3ce63b61a69bc6caa78bb36cb3d758c3265cf293ac0ac925fd965b128006b86f",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/096-target-entry.jpg",
-        "sha256": "38be8ae57b041b893f49047254daeec6fce323c09a13977358e7429682d2e87c"
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0096-target-entry.png",
+        "sha256": "feb59c07a60db5df3d94fef6108d79cea142ce7a5e8916ae501cc83414c41fdb",
+        "description": "Полноширинный крупный фрагмент всех видимых августовских записей об умерших."
       }
     ],
     "parallelCopies": [
@@ -41,8 +45,8 @@
           {
             "kind": "target-entry",
             "path": "data/genealogy/evidence-private/yandex/9f01f146-77bc-48b4-a581-9ee41cd643d5/0096-target-entry.png",
-            "sha256": "1d29298728c559f00113442a088f87e577403275fb6269177ea08fb75a08865f",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "sha256": "feb59c07a60db5df3d94fef6108d79cea142ce7a5e8916ae501cc83414c41fdb",
+            "description": "Полноширинный крупный фрагмент всех видимых августовских записей об умерших."
           }
         ],
         "quality": {
@@ -50,8 +54,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5004x3975",
-          "targetDimensions": "1286x594",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "4500x3000",
+          "method": "manual-full-scan-review-and-full-width-context-recrop-from-original"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,13 +63,13 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "deep-reviewed-primary-scan-no-match",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "deepReviewedAt": "2026-09-11",
+    "deepReviewScope": "Вручную прочитан весь полный разворот августовских записей об умерших № 14–19: умершие, возраст, причины смерти, причт и место погребения. Владимира Семёновича Ампилогова и соответствующего ребёнка на листе нет; индексная склейка отвергнута. Crop полноширинный; публичные сущности не создавались.",
+    "unresolved": []
   },
-  "transcription": {
+  "legacyTranscription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
     "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
@@ -78,8 +82,12 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "transcription": {"status": "primary-scan-reviewed-no-match", "literal": "Метрическая книга на 1913 год, часть третья, об умерших. На полном листе видны августовские записи № 14–19; среди умерших, их родителей и причта фамильный ряд Ампилогов / Анпилогов не обнаружен.", "modernInterpretation": "Индексное упоминание Владимира Семёновича Ампилогова, крестьянина хутора Камай, отсутствует на этом скане; это ложное fuzzy-совпадение, вероятно склейка с иной строкой выдачи.", "indexNote": "Индекс Яндекса использован только как поисковая подсказка и опровергнут чтением всех граф полного листа."},
   "indexData": {
     "querySnippet": "Отец умершего: Владимир Семенов Ампилогов, крестьянин, хутор Камай. Отец умершего: Георгий Тимофеев Пауков, крестьянин, село Парадеево.",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false
 }

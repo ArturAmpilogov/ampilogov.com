@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-35D390A5-090",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "35d390a5-9363-4845-ad70-298823273cba",
     "scanNumber": 90,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/35d390a5-9363-4845-ad70-298823273cba/90"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "index-discrepancy",
     "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
+      "display": "октябрь 1911",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Парадеевский приход, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-35D390A5-090-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "35d390a5-9363-4845-ad70-298823273cba",
     "scanNumber": 90,
@@ -49,9 +41,9 @@
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/35d390a5-9363-4845-ad70-298823273cba/0090-target-entry.png",
-        "sha256": "6869d5489e7cdd58dbb641d05bcb34aea85673875d2705d45233183da38a7fbc",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/35d390a5-9363-4845-ad70-298823273cba/0090-target-entry-deep.png",
+        "sha256": "f3836b7e2dc788dfa736b10e66fdb559cfa655f1dbc05daaa8422e6812b52de1",
+        "description": "Крупный полноширинный фрагмент записей № 29–31 и всех восприемников без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -59,37 +51,31 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4622x3696",
-      "targetDimensions": "1200x698",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4400x2900",
+      "method": "manual-reading-of-full-scan-and-full-width-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОЕКОВСКОЙ\nИОАДЛЬНОЙ\nГОДИ, ЧАСТЬ ПЕРВЛА, Й РО\nЗвáніє, йма, бтчество й фамиліл\nKrò\nвоспріéмникшва.",
-    "modernInterpretation": "ОЕКОВСКОЙ ИОАДЛЬНОЙ ГОДИ, ЧАСТЬ ПЕРВЛА, Й РО Звáниє, йма, бтчество й фамилил Krò восприéмникшва.",
-    "localOcr": "ОЕКОВСКОЙ\nИОАДЛЬНОЙ\nГОДИ, ЧАСТЬ ПЕРВЛА, Й РО\nЗвáніє, йма, бтчество й фамиліл\nKrò\nвоспріéмникшва.",
-    "localOcrWithSurnameLexicon": "ОСКОВСКОЙ\nГОДИ, ЧАСТЬ ПЕРЕЛА, Й РО\nЗваніє, йма, бтчество й фамиліл\nKrò\nвоспрімникшЕ%.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "full-spread-manually-verified-no-surname-series",
+    "literal": "Часть первая, о родившихся, 1911 год. На развороте полностью видны октябрьские записи № 29–31, их родители, восприемники и причт. Ирины Владимировны Ампилоговой и других носителей фамильного ряда на этом листе нет; нужная запись № 34 находится на следующем развороте, scan 91.",
+    "modernInterpretation": "Поисковое совпадение перенесено Яндексом с соседнего листа; текущая карточка является ложным попаданием.",
+    "indexNote": "Полный разворот и все строки № 29–31 проверены вручную; индексная крестная Ирина Ампилогова здесь отсутствует.",
+    "historicalContext": "Событие Ирины учтено только в YA-35D390A5-091; эта карточка не создаёт дубль Record, профиль, карту или переселение."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Ирина Владимирова Ампилогова, крестьянская девица. Отец: Максим Иларионов Горин, крестьянин, село Парадеево.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "false-positive-search-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрен полный разворот 1911 года и записи № 29–31. Индексная Ирина Владимировна Ампилогова находится на следующем листе в записи № 34, а здесь фамильного ряда нет; дубль события, public/profile/map исключены.",
+    "unresolved": []
   }
 }

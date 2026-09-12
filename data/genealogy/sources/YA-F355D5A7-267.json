@@ -1,94 +1,37 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F355D5A7-267",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
-  "collection": {
-    "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
-    "scanNumber": "267"
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/267"
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
+  "primaryPersonId": "P102294",
+  "collection": {"catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac", "scanNumber": 267, "title": "Метрическая книга прихода села Кармалки за 1913 год"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/267"},
+  "event": {"type": "birth-and-baptism", "recordNumber": 24, "date": {"display": "родился 25 июля, крещён 27 июля 1913 года", "birthIso": "1913-07-25", "baptismIso": "1913-07-27", "confidence": "high"}, "place": {"asWritten": "село Кармалка", "placeId": "karmalka-orenburg"}},
   "mentions": [
-    {
-      "mentionId": "YA-F355D5A7-267",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
-    }
+    {"role": "child", "personId": "P102294", "displayName": "Пётр Григорьевич Ампилогов", "nameAsTranscribed": "Петръ, сынъ Григорія Михайлова Ампилогова", "surnameSeries": true},
+    {"role": "father", "personId": "P91054", "displayName": "Григорий Михайлович Ампилогов", "nameAsTranscribed": "Григорій Михайловъ Ампилоговъ", "surnameSeries": true},
+    {"role": "mother", "displayName": "Мария Ивановна", "nameAsTranscribed": "Марія Иванова", "surnameSeries": false},
+    {"role": "godfather", "personId": "P91003", "displayName": "Василий Филиппович Ампилогов", "nameAsTranscribed": "запасный солдатъ Василій Филипповъ Ампилоговъ", "surnameSeries": true, "identityConfidence": "high"},
+    {"role": "godmother", "displayName": "Елена Ильинична [Харина?]", "nameAsTranscribed": "крестьянская дѣвица Елена Ильина [Харина?]", "surnameSeries": false, "transcriptionConfidence": "low"}
   ],
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/267-full-view.jpg",
-    "sha256": "02997f5dd5533da06453a5089cbc4417fb5e27bc4856eeafb5827ba335d340df",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/267-target-entry.jpg",
-        "sha256": "ed535473a8f46dab18aeb26a357c4a1970be175f2b1d5de119f2c499275d88e2"
-      }
-    ],
-    "parallelCopies": [
-      {
-        "catalogId": "f355d5a7-c3b6-4939-a211-8b3b9d0333ac",
-        "scanNumber": 267,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "ec8bf1e70db3853b89567007c4a40e4a246b46fd1c8403e4e4e57145c7d9f8e7",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-header.png",
-            "sha256": "ac8c1ab43b143c358023ad3d8b138d30377655b92ce3e5b1dc7fedfaf5dc5680",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-target-entry.png",
-            "sha256": "cd20e8b5be1f5fc2ce5ca2a52150392ed5e64e46cb7843f6d3cef1cd375ae03d",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5803x4634",
-          "targetDimensions": "2881x816",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Объединенный гос\nдарственный архи\nй области\nОренбург",
-    "localOcrWithSurnameLexicon": "Объединенный гос\nдарственный архи\nй области\nОренбург",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Іюля. Мужского пола № 24. 25 родился, 27 крещён. Петръ. Села Кармалки крестьянинъ Григорій Михайловъ Ампилоговъ и законная жена его Марія Иванова; оба православные. Того-же села запасный солдатъ Василій Филипповъ Ампилоговъ и крестьянская дѣвица Елена Ильина [Харина?].",
+    "modernInterpretation": "25 июля 1913 года в Кармалке родился Пётр, сын Григория Михайловича Ампилогова и Марии Ивановны; крещён 27 июля. Восприемники — запасный солдат Василий Филиппович Ампилогов и крестьянская девица Елена Ильинична, фамилия которой читается неуверенно как «Харина». Всю правую часть строки проверили отдельно.",
+    "indexNote": "Индекс верно подсказал ребёнка и отца, но прежняя карточка ошибочно отрицала фамильную строку и не отражала второго носителя фамилии — восприемника Василия Филипповича."
   },
-  "indexData": {
-    "querySnippet": "Родившийся: Петр Григорьев Ампилогов. ... Отец: Григорий Михайлов Ампилогов, крестьянин, село Кармалки.",
-    "fuzzyQuery": true
-  }
+  "indexData": {"querySnippet": "Родившийся: Петр Григорьев Ампилогов. Отец: Григорий Михайлов Ампилогов.", "fuzzyQuery": true, "discrepancy": "Прежний false-hit опровергнут полным листом."},
+  "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-full-view.png",
+    "sha256": "ec8bf1e70db3853b89567007c4a40e4a246b46fd1c8403e4e4e57145c7d9f8e7",
+    "fragments": [{"kind": "full-width-entry-context", "path": "data/genealogy/evidence-private/yandex/f355d5a7-c3b6-4939-a211-8b3b9d0333ac/0267-deep-context.jpg", "sha256": "8f4c1728e145bd93c59106ab8d46634ef0d09a4adb3095755ecc29a1f36e8910", "description": "Единственная запись листа, целиком."}],
+    "quality": {"originalImageDownloaded": true, "fullDimensions": "5803x4634", "targetDimensions": "5400x1900", "method": "manual-full-page-reading-and-wide-recrop"},
+    "publicDisplay": false,
+    "uploadStatus": "pending-remote-list-timeout"
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {"eventSummary": "Рождение Петра Григорьевича Ампилогова.", "identityNote": "Отец P91054 подтверждён точным ФИО и Кармалкой; ребёнок не тёзки из Уралки и Шарлыка с другими отцами. Восприемник P91003 определён strongly-supported: полное имя, Кармалка, возраст 25 лет и статус запасного солдата согласуются; одноимённые P50014 и P91036 умерли до 1913 года.", "migrationNote": "Миграция не засвидетельствована."},
+  "review": {"status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high", "unresolved": ["Фамилия восприемницы Елены Ильиничны читается неуверенно как «Харина»."], "deepReviewedAt": "2026-09-11", "deepReviewScope": "полный почти пустой лист и вся строка записи №24, включая правую графу восприемников; даты, родители и Василий Филиппович; неуверенная фамилия Елены сохранена с вопросом; false-hit исправлен; crop 5400x1900; Blob timeout"}
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-242E802B-014",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-godparents",
   "collection": {
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 14,
@@ -13,21 +13,24 @@
     "documentUrl": "https://yandex.ru/archive/catalog/242e802b-eab0-46f1-aa5d-d78fab77a6c8/14"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-godparents",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "20 февраля 1916 года (рождение); 21 февраля 1916 года (крещение)",
+      "from": "1916-02-20",
+      "to": "1916-02-21",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Зобово, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-242E802B-014-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "godfather",
+      "personId": "P102138",
+      "nameAsTranscribed": "села Зобова крестьянинъ Гавріилъ Стефановъ Ампилоговъ",
+      "displayName": "Гавриил Стефанович Ампилогов",
       "surnameSeries": true
     }
   ],
@@ -35,23 +38,17 @@
     "catalogId": "242e802b-eab0-46f1-aa5d-d78fab77a6c8",
     "scanNumber": 14,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-full-page-manually-reviewed",
     "localBackup": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0014-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0014-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "ce32ae431349c83515616dcb95cc9168ae85b31cabea299ec83f17ebd7c9b669",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0014-header.png",
-        "sha256": "fa85fe7a451deaef0a06b5281a11fbe3195c91931d90a83e3692f8e79285f4ab",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0014-target-entry.png",
-        "sha256": "5877b53b71b205473f76b3da6c0fc1eac8473dd7ff120c8364858af3a73e9ff4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/242e802b-eab0-46f1-aa5d-d78fab77a6c8/0014-full-view.png",
+        "sha256": "ce32ae431349c83515616dcb95cc9168ae85b31cabea299ec83f17ebd7c9b669",
+        "description": "Полный крупный скан страницы без интерфейса Яндекса; проверены заголовок, целевая строка и окружающий контекст."
       }
     ],
     "quality": {
@@ -59,37 +56,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5195x4326",
-      "targetDimensions": "1275x811",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5195x4326",
+      "method": "manual-full-page-reading-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "АД ЛНIО\nГóда, чАсть первад, й роДІ\nЗВАНіЕ, ЙМА, бТЧЕсТво й фАмиліл\nKтò coB\nHÓTW\nвоспріємникшкz.\nпзомтавнний Филитні\nОши Забови",
-    "modernInterpretation": "АД ЛНIО Гóда, чАсть первад, й роДІ ЗВАНиЕ, ЙМА, бТЧЕсТво й фАмилил Kтò coB HÓTW восприємникшкz. пзомтавнний Филитни Оши Забови",
-    "localOcr": "АД ЛНIО\nГóда, чАсть первад, й роДІ\nЗВАНіЕ, ЙМА, бТЧЕсТво й фАмиліл\nKтò coB\nHÓTW\nвоспріємникшкz.\nпзомтавнний Филитні\nОши Забови",
-    "localOcrWithSurnameLexicon": "VIO\nГда, чАсть переад, й роДІ\nЗВАНіЕ, ЙМА, оТЧЕсТво й фАмиліл\nHOTW\nвоспрімникшА.\nкомавний вилитні",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Запись № 20. Михаил, родился 20 февраля, крещён 21 февраля 1916 года. Восприемники: села Зобова крестьянин Гавриил Стефанов Ампилогов и крестьянская жена Акилина Ильина Богданова.",
+    "modernInterpretation": "Гавриил Стефанович Ампилогов назван восприемником Михаила; совместная роль с Акилиной Богдановой родства не доказывает.",
+    "indexNote": "Имя, роль, даты и место проверены по полному скану; индекс использован только для навигации."
   },
   "indexData": {
     "querySnippet": "села Зобова крестьянин Гавриил Стефанов Ампилогов и крестьянская жена Акилина Ильина Богданова. Священник Иаков Маслаев с причтом.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: карточка полностью перепроверена по сохранённому оригиналу; индексные данные не приняты на веру."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full scan, heading and surrounding rows, independent surname/name/role/date/place/context reading, profile/map/migration eligibility, Yandex/OCR discrepancy, full-page evidence"
   }
 }

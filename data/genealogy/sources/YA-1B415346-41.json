@@ -1,95 +1,87 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-1B415346-41",
-  "provider": "Яндекс Архив — локальный первичный скан",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "1b415346-eee3-4ade-a431-88fa27a6c622",
-    "scanNumber": 41
+    "scanNumber": 41,
+    "asRead": "Метрическая книга Александро-Невской церкви Владикавказа за 1911 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/1b415346-eee3-4ade-a431-88fa27a6c622/41"
   },
+  "event": {
+    "type": "index-discrepancy",
+    "date": {
+      "display": "19/26 ноября 1911",
+      "confidence": "high"
+    },
+    "place": {
+      "asRead": "Александро-Невская церковь, Владикавказ",
+      "normalized": "Владикавказ"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-1B415346-41-M1",
-      "role": "false-index-hit",
+      "role": "newborn",
       "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках не обнаружена",
-      "displayName": "Ложное индексное попадание",
+      "nameAsTranscribed": "Клавдія",
+      "displayName": "Клавдия",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-1B415346-41-M2",
+      "role": "father",
+      "personId": null,
+      "nameAsTranscribed": "Адрианъ Григорьевъ Шердяевъ [чтение имени и отчества требует осторожности]",
+      "displayName": "Адриан Григорьевич Шердяев (чтение частично неуверенное)",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-1B415346-41-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Ѳеодосія Алексѣевна",
+      "displayName": "Феодосия Алексеевна",
       "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Метрическая книга за 1911 год, часть первая о родившихся; в доступных строках нет подтверждённой формы фамильного ряда.",
-    "modernInterpretation": "Индексная выдача не подтверждена локальным первичным сканом. Участники иных семей и священнослужители не получают отдельных Records, профилей, картографических точек или маршрутов.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "АЛЬНОW\nческой виúги на 19/ го;\nЗваніє, йм, бтчество й фамилід родічтелей, й како\nввронспов'іданіл.",
-    "localOcrWithSurnameLexicon": "ческой вилги на 19/ го;\nЗваніє, йм, отчество й фамілід родичтелей, й како\nверонспов іданіл.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-false-fuzzy",
+    "literal": "Метрическая книга за 1911 год, часть первая, о родившихся. В записи № 58 указана Клавдия, родившаяся 19 и крещённая 26 ноября. Фамилия отца на крупном оригинале читается как «Шердяевъ» (имя и отчество менее уверены), мать — «законная жена его Феодосія Алексѣевна»; форм Ампилогов / Анпилогов на развороте нет.",
+    "modernInterpretation": "Это запись о рождении Клавдии в семье Шердяевых, не Ампилоговых. Индекс ошибочно заменил фамилию и имя матери.",
+    "indexNote": "Яндекс дал «Иоанн Яковлевич Ампилогов» и «Ната Архиповна». Оригинал показывает иную фамилию отца — Шердяев — и мать Феодосию Алексеевну; существенное индексное расхождение подтверждено вручную.",
+    "historicalContext": "Ложное индексное совпадение сохранено как исследовательская проверка; публичный профиль, семейные связи и карта не создаются."
   },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-full-view.jpg",
-    "sha256": "e3d122c992764a23b5717bf65bdb7fb6a615323229869b42ec4a6a92695fc409",
+    "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-full-view.png",
+    "sha256": "c0798f79d89863dc165b1af8b8380f826c48660294398faf2cca4668288919da",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-target-entry.jpg",
-        "sha256": "ef2c0dcb2d97403d1de40b3a15a4a00e507b73d6242ab94c40bf86117555f12d",
-        "description": "Проверенный увеличенный фрагмент."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-target-entry-deep.png",
+        "sha256": "776705d097e764c0d17f32ffe86a9df9203c92c3f57270a71138bd470d419b1a",
+        "description": "Полноширинный крупный контекстный фрагмент всего листа с заголовком, датами и целевой областью."
       }
     ],
-    "parallelCopies": [
-      {
-        "catalogId": "1b415346-eee3-4ade-a431-88fa27a6c622",
-        "scanNumber": 41,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "c0798f79d89863dc165b1af8b8380f826c48660294398faf2cca4668288919da",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-header.png",
-            "sha256": "ccf5617bc19e6869f655b7c0b824d4245463865b3b97be857db2c4283a75eafc",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/1b415346-eee3-4ade-a431-88fa27a6c622/0041-target-entry.png",
-            "sha256": "f7bab82bfbbae4d622e2ded3d2ed49b1a678e5341609bd4de93d9cd923d44bd2",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5999x3948",
-          "targetDimensions": "1271x968",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "5999x3948",
+      "targetDimensions": "5200x3500",
+      "method": "manual-reading-of-full-scan-and-full-width-recrop"
+    },
+    "publicDisplay": false
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверен весь разворот рождений 1911 года и крупно прочитана запись № 58; индексные Ампилогов и Ната Архиповна отсутствуют, установлены иная фамилия отца и мать Феодосия Алексеевна."
   },
   "indexData": {
-    "querySnippet": "Мало-Архангельского уезда Ивановской волости Иоанн Яковлевич Ампилогов и законная жена его Ната Ахиповна; оба православн.",
+    "querySnippet": "Яндекс дал «Иоанн Яковлевич Ампилогов» и «Ната Архиповна». Оригинал показывает иную фамилию отца — Шердяев — и мать Феодосию Алексеевну; существенное индексное расхождение подтверждено вручную.",
     "fuzzyQuery": true
   }
 }
