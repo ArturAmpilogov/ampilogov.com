@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C50D1C84-073",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-and-baptism",
+  "primaryPersonId": "P102990",
   "collection": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 73,
@@ -12,16 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c50d1c84-0930-43db-af1c-c2572f3c77cc/73"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-and-baptism",
+    "recordNumber": 174,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "родился 19 ноября, крещён 20 ноября 1913 года",
+      "date": "1913-11-19",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Киселёвка"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-C50D1C84-073-M0",
+      "role": "child",
+      "personId": "P102990",
+      "displayName": "Иван Давыдович Ампилов",
+      "nameAsTranscribed": "Іоаннъ",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-C50D1C84-073-M1",
       "role": "father",
@@ -59,6 +70,12 @@
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0073-target-entry.png",
         "sha256": "4a69c5f436dd5c5c23e728b20146e69560373966b430e53b29643b194e7da452",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0073-deep-context.png",
+        "sha256": "cef3759d25f9ef616acf5fe370a1ee33f81e2506e2601b3d1d855e5d4a98d4ff",
+        "description": "Чистый широкий фрагмент 4200×1400 со строками № 173–174, датами, детьми, родителями и восприемниками."
       }
     ],
     "quality": {
@@ -67,6 +84,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4496x3832",
       "targetDimensions": "1203x643",
+      "contextDimensions": "4200x1400",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
@@ -74,10 +92,10 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Киселёвки крестьянин Давид Матфеев Ампилов и законная жена его Анна Васильева; оба православные.",
-    "modernInterpretation": "Давид Матвеевич и Анна Васильевна Ампиловы названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 174. Ноября 19 [родился], 20 [крещён]. Іоаннъ. Села Киселёвки крестьянинъ Давидъ Матѳеевъ Ампиловъ и законная жена его Анна Васильева; оба православные.",
+    "modernInterpretation": "19 ноября 1913 года у крестьян Киселёвки Давыда Матвеевича и Анны Васильевны Ампиловых родился сын Иван; 20 ноября его крестили.",
+    "indexNote": "Индекс использован только для навигации и ошибочно назвал ребёнка Екатериной. Оригинал строки № 174 ясно даёт имя Иоанн; даты и родители проверены вручную.",
     "localOcr": "Селакиселснки пристьянть\nЧихо\nОнлиптч Ш окорог Рьдіонов\nбо.\nи/ахонноягинасо Катрона\nчафо.\nDрoheва: а Прососновны\"\nPerytmuцs Ancat aunulals\nЖоламонхв Ахтрей Ланлова\nт\n101\nунавиенки пресилятись\nком\nавиоьМатьерьАмпилові\nоября роконномжена сгояннаВа",
     "collation": {
       "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
@@ -85,13 +103,21 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Рождение и крещение Ивана Давыдовича Ампилова 19–20 ноября 1913 года в Киселёвке.",
+    "identityNote": "P102990 создан по прямому указанию родителей в строке № 174; индексное имя Екатерина отвергнуто.",
+    "relationshipNote": "Связи с обоими родителями внесены только по прямой метрической формуле.",
+    "migrationNote": "Место события не превращено в маршрут переселения."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-child-dates-parents-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Строки № 173–174 прочитаны вручную; ошибка индекса по имени ребёнка отвергнута; создан clean crop 4200×1400."
   },
   "indexData": {
     "querySnippet": "Родившийся: Екатерина Давидова Ампилова. ... Мать: Матрона Андреева Родионова. Мать: Анна Васильева Ампилова.",

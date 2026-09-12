@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C50D1C84-126",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
+  "recordType": "death-and-burial-of-child",
+  "primaryPersonId": "P102991",
   "collection": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 126,
@@ -12,10 +13,12 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c50d1c84-0930-43db-af1c-c2572f3c77cc/126"
   },
   "event": {
-    "type": "death-of-child",
+    "type": "death-and-burial",
+    "recordNumber": 87,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "умер 21 ноября, погребён 22 ноября 1913 года",
+      "date": "1913-11-21",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Киселёвка"
@@ -33,10 +36,10 @@
     {
       "mentionId": "YA-C50D1C84-126-M2",
       "role": "deceased-child",
-      "personId": null,
+      "personId": "P102991",
       "displayName": "сын Іоанн",
       "nameAsTranscribed": "сынъ Іоаннъ",
-      "surnameSeries": false
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -59,6 +62,12 @@
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-target-entry.png",
         "sha256": "4bd54b9dc95ea90078353f729436640c52dafc5389c99ca5c733b8ca718f3ecc",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0126-deep-context.png",
+        "sha256": "8e21f49abc47dd8e3e294dbc2ae1860440e90a6ba42a1fa5341368d279d1ee4f",
+        "description": "Чистый широкий фрагмент 4200×1400 со строками № 86–87, датами, возрастом, причиной смерти и погребением."
       }
     ],
     "quality": {
@@ -67,6 +76,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4602x3832",
       "targetDimensions": "1350x556",
+      "contextDimensions": "4200x1400",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
@@ -74,10 +84,10 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Киселёвки крестьянина Сергия Симеонова Ампилова сын Иоанн, 1 1/2 года [в записи об умерших].",
-    "modernInterpretation": "У Сергея Семёновича Ампилова умер полуторагодовалый сын Иван.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 87. Ноября 21 [умер], 22 [погребён]. Села Киселёвки крестьянина Сергія Сѵмеонова Ампилова сынъ Іоаннъ, 6 месяцев. Отъ родимца.",
+    "modernInterpretation": "21 ноября 1913 года умер шестимесячный Иван Сергеевич Ампилов, сын крестьянина села Киселёвки Сергея Семёновича; 22 ноября ребёнка погребли. Причина смерти записана как «родимец» (младенческие судороги).",
+    "indexNote": "Индекс использован только для навигации. Возраст 1½ года относится к соседней строке № 86; в строке № 87 у Иоанна ясно указано 6 месяцев.",
     "localOcr": "перенниека\nПоспора захоріела /черзн\n12г.\nсниь Стлрчи -\nОмуртицу КнийтащіпЛентиву\nЕаломик\"Анорий Манховг\nспакистсхи крестямено. зинає\nваннова (Сенкнихова Шена Пера\nскна миввила\n1,",
     "localOcrWithSurnameLexicon": "Поспора захоріела /черзн\n12г.\nамурнику КнийтатпЛентиву\nСаломик\"Анорий Манховг\nспакистехи крестямино. зинає\nваннова (Секлихова Шена Пера\nсина ливвила\n1,",
     "collation": {
@@ -86,15 +96,21 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Смерть 21 ноября и погребение 22 ноября 1913 года шестимесячного Ивана Сергеевича Ампилова в Киселёвке.",
+    "identityNote": "P102991 создан как ребёнок с производной фамилией по прямой формуле «сын Сергия Симеонова Ампилова».",
+    "relationshipNote": "Связь отец—сын внесена по прямому тексту акта; возраст отделён от соседней строки.",
+    "migrationNote": "Место смерти не превращено в маршрут переселения."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-child-dates-age-father-cause",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Строки № 86–87 прочитаны вручную; ошибочно перенесённый из соседней строки возраст исправлен на 6 месяцев; создан clean crop 4200×1400."
   },
   "indexData": {
     "querySnippet": "Псаломщикъ Андрей Манковъ Села Киселевки крестьянина Сергія Сѵмеонова Ампилова сынъ Іоаннъ Священникъ Константинъ Летиновъ.",

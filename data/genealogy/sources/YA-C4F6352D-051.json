@@ -38,10 +38,10 @@
     }
   ],
   "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "№ 24. Іюля 9. В графе поручителей по женихе назван крестьянин села Ново-Георгиевки Никита Петров Ампилогов.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 24. Іюля 9. В графе «Кто были поручители», по женихе: крестьяне села Ново-Георгіевки [первый поручитель] и Никита Петровъ Ампилоговъ.",
     "modernInterpretation": "9 июля 1917 года крестьянин Ново-Георгиевки Никита Петрович Ампилогов был поручителем со стороны жениха при венчании.",
-    "indexNote": "Роль, полное имя и место проверены по оригиналу; остальные имена строки не использованы для идентификации Никиты.",
+    "indexNote": "Индекс использован только для навигации. Роль, полное имя, дата и место Никиты проверены по оригиналу; ошибочно предложенный индексом Косма Чудин в целевой паре поручителей не читается.",
     "localOcr": "Пóдпи\nКто выли порбчйтели.\nзіпнс\nАлексанвнв ракимиві Даш катавь",
     "localOcrWithSurnameLexicon": "Кто выли порвийтели.\nзіпис\nАлексанв в ранимиві Даш катавь",
     "collation": {
@@ -53,11 +53,10 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-verified",
-    "transcriptionConfidence": "high",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-role-date-place",
     "unresolved": [
-      "Возраст и родственные связи Никиты в акте не указаны; с тёзками не объединён.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+      "Возраст и родственные связи Никиты в акте не указаны."
     ],
     "mergeAlternateReadings": [
       {
@@ -103,7 +102,9 @@
         }
       }
     ],
-    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное OCR-чтение сохранено в review.mergeAlternateReadings.",
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Весь акт № 24 и графа поручителей прочитаны вручную по оригиналу; создан clean crop 4600×1900."
   },
   "evidence": {
     "publicDisplay": false,
@@ -122,6 +123,12 @@
         "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0051-header.png",
         "sha256": "c9a45b19676d9c2e5c4653b00b8b99245379d51cd33d432b25ae471bd0798651",
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0051-deep-context.png",
+        "sha256": "b07ada565e5516cfcfc3caf1c1e37b944daba20d223a2c9ca8952fe40b3b02a5",
+        "description": "Чистый широкий фрагмент 4600×1900 с актом № 24, датой, брачующимися и полной графой поручителей."
       }
     ],
     "quality": {
@@ -135,6 +142,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5053x4364",
       "targetDimensions": "1328x1110",
+      "contextDimensions": "4600x1900",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "catalogId": "c4f6352d-5557-4197-a17b-cdb68403cf69",
@@ -148,5 +156,11 @@
     "querySnippet": "По женихе: крестьяне села Ново-Георгиевки Никита Петров Ампилогов и Косма Георгиев Чудин.",
     "fuzzyQuery": true
   },
-  "publicCore": false
+  "context": {
+    "eventSummary": "Никита Петрович Ампилогов выступил поручителем со стороны жениха при венчании 9 июля 1917 года.",
+    "identityNote": "P101912 подтверждён полным именем, крестьянским статусом, Ново-Георгиевкой и точной ролью в акте.",
+    "relationshipNote": "Поручительство при чужом браке не доказывает родство с брачующимися.",
+    "migrationNote": "Участие в венчании не превращено в маршрут переселения."
+  },
+  "publicCore": true
 }

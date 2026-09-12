@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C50D1C84-022",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-and-baptism",
+  "primaryPersonId": "P102987",
   "collection": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 22,
@@ -12,16 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c50d1c84-0930-43db-af1c-c2572f3c77cc/22"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-and-baptism",
+    "recordNumber": 43,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "родился 25 ноября, крещён 26 ноября 1913 года",
+      "date": "1913-11-25",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Киселёвка"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-C50D1C84-022-M0",
+      "role": "child",
+      "personId": "P102987",
+      "displayName": "Павел Евфимиевич Ампилов",
+      "nameAsTranscribed": "Павелъ",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-C50D1C84-022-M1",
       "role": "father",
@@ -59,6 +70,12 @@
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0022-target-entry.png",
         "sha256": "77f5fbbd66e59569d3d20a1d3db93f3f08e2ac378aa2f531c17a4aabf9641627",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0022-deep-context.png",
+        "sha256": "335ea72e668c8f4ae28e9950c0641a3b2e323cc0f6966a3e6de42748c4a9b2b2",
+        "description": "Чистый широкий фрагмент 4400×1600 со строками № 42–43, датами, детьми, родителями и восприемниками."
       }
     ],
     "quality": {
@@ -67,6 +84,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4865x3812",
       "targetDimensions": "2694x655",
+      "contextDimensions": "4400x1600",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
@@ -74,10 +92,10 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Киселёвки крестьянин Евфимий Матвеев Ампилов и законная жена его Анна Григориева; оба православные.",
-    "modernInterpretation": "Евфимий Матвеевич Ампилов и Анна Григорьевна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 43. Ноября 25 [родился], 26 [крещён]. Павелъ. Села Киселёвки крестьянинъ Евфимій Матвеевъ Ампиловъ и законная жена его Анна Григоріева; оба православные.",
+    "modernInterpretation": "25 ноября 1913 года у крестьянина села Киселёвки Евфимия Матвеевича Ампилова и его законной жены Анны Григорьевны родился сын Павел; 26 ноября его крестили.",
+    "indexNote": "Индекс использован только для навигации и ошибочно назвал ребёнка Марией. По оригиналу в строке № 43 ясно читается Павел; даты и родители проверены вручную.",
     "localOcr": "Ісалосицикь.Цніні Искову\nргнже (дерекнікраителини,\nв Сторськи рколад. ориткрстияний\nНавель ритилавч Шатишни\nшло\n2 ОибрейсМтералнов Гратимнич\nпкрестянкаятиоАсадся\n- изаханкая жимолю Оскнаягдоо\nАлежсісваПоловиткика,.\nn\nпсско, пка зааканамио\nОчуhuнт Ктстайтим Метэмиов\nІсаломирихх.Джорані\nогоже Селапрестянинз\"\n2\nСедо(Киямсіки Крестямих\nписонь ригпревькутепанч\nодобиой\nСоаиміймайьчень, Ялпилові",
     "localOcrWithSurnameLexicon": "(солоницикь Ініі Іскову\nреже (деренікрителини,\nв Сторськи рколад. ориткратяний\nНавель ритилавч Матични\nшло\n- изаханкая жимоло Оскна ядоо\nАлехіва Половитика, .\nn\nсаломирих Джорані\nого же Села престянинз\"\n2\nСеро Киянки Крестямих\nодобиой\nСаамійматьке, Ялплові",
     "collation": {
@@ -86,15 +104,21 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Рождение и крещение Павла Евфимиевича Ампилова 25–26 ноября 1913 года в Киселёвке.",
+    "identityNote": "Ребёнок создан отдельным профилем P102987 по прямой родительской формуле акта; мать без фамилии оставлена контекстом.",
+    "relationshipNote": "Связь отец—сын внесена только по прямому тексту метрической записи.",
+    "migrationNote": "Место события не превращено в маршрут переселения."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-child-dates-parents-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Строки № 42–43 прочитаны вручную по оригиналу; ошибка индекса по имени ребёнка отвергнута; создан clean crop 4400×1600."
   },
   "indexData": {
     "querySnippet": "Родившийся: Мария Евфимиева Ампилова. ... Крёстная мать: Параскева Давидова Ампилова, крестьянская девица.",

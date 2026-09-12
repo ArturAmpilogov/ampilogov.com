@@ -1,103 +1,79 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C50D1C84-127",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 127,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей села Киселёвка за 1913 г."
+    "title": "Метрическая книга села Киселёвка за 1913 г.",
+    "repository": "ОГА Оренбургской области (ОГАОО)"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c50d1c84-0930-43db-af1c-c2572f3c77cc/127"
   },
   "event": {
-    "type": "death-of-child",
+    "type": "full-page-negative-review",
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "ноябрь—декабрь 1913 года",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Киселёвка"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-C50D1C84-127-M1",
-      "role": "father",
-      "personId": "P102721",
-      "displayName": "крестьянин Евфим Матвѣев Ампилов",
-      "nameAsTranscribed": "крестьянинъ Евфимъ Матвѣевъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-C50D1C84-127-M2",
-      "role": "deceased-child",
-      "personId": null,
-      "displayName": "дочь Анна",
-      "nameAsTranscribed": "дочь Анна",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
+  "transcription": {
+    "status": "complete-manual-primary-scan-negative-review",
+    "literal": "Лист 126. Ноябрьские записи об умерших № 89–91 и начало декабрьского раздела, записи № 90 и 92. На полном видимом развороте перечислены умершие других фамилий; Евфим Матвеев Ампилов, его дочь Анна и иные носители исследуемого фамильного ряда отсутствуют.",
+    "modernInterpretation": "Поисковый результат об умершей шестилетней Анне, дочери Евфима Матвеевича Ампилова, не относится к скану 127. Карточка исключена из публичного ядра; профиль и событие по этому листу не создаются.",
+    "indexNote": "Сниппет Яндекса ошибочно приписал листу Анну Евфимовну Ампилову. Проверены полный разворот, номера, даты и все видимые строки."
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного листа метрической книги.",
+    "identityNote": "YA-C50D1C84-127 не является доказательством для P102721; сам профиль сохраняется по независимому YA-C50D1C84-022.",
+    "migrationNote": "Карта и переселение не создаются."
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Анна Евфимова Ампилова, 6 лет.",
+    "fuzzyQuery": true,
+    "verdict": "false-positive"
+  },
   "evidence": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 127,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-wide-manual-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0127-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0127-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "ac957905394003cabdd2e0170395f4ccd98d7ce398e06bf3ac0f878eb84a4f96",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0127-header.png",
-        "sha256": "685dc26346af1fe62fe63a48c9317cdbdaf07d9e273f8002711fd0bd58fd264c",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0127-target-entry.png",
-        "sha256": "7bca735a1d0cd487fac74ca3863d1424fb0f24ed5173596337fa428f63196f09",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0127-deep-context.png",
+        "sha256": "fcf73a516da90c381756666b229552a4d8c33ce7835f14b841edca9f513de4c3",
+        "description": "Широкий clean crop 4400×3500 с заголовком, всеми видимыми строками и соседним контекстом."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "allVisibleRowsChecked": true,
       "fullDimensions": "4602x3832",
-      "targetDimensions": "1315x537",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "contextDimensions": "4400x3500",
+      "method": "manual-full-page-negative-verification-and-wide-recrop",
+      "confirmedAt": "2026-09-13"
     },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "publicDisplay": false
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Киселёвки крестьянина Евфима Матвеева Ампилова дочь Анна, 6 лет [в записи об умерших].",
-    "modernInterpretation": "У Евфимия Матвеевича Ампилова умерла шестилетняя дочь Анна.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Свмопьтельсткумик.\nмидиинкв Владжнтрви\nнив КеншталториЛетои Оир\nХ1ашонр Кнінинть",
-    "localOcrWithSurnameLexicon": "Свифтельсткумик.\nХамонр Кінинь 1",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-review-false-positive",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Умерший: Анна Евфимова Ампилова, 6 лет. Умерший: Иоанн Михайлов Чурсин, 8 лет. Умерший: Николай Иоаннов Толмачев, 8 месяцев.",
-    "fuzzyQuery": true
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-visible-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот 127, номера и все видимые строки прочитаны вручную; индексная семья отсутствует; clean crop 4400×3500."
   }
 }
