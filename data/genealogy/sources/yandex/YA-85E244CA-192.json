@@ -2,94 +2,80 @@
   "schemaVersion": 1,
   "sourceId": "YA-85E244CA-192",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "85e244ca-d136-4469-994f-16a414af3949",
     "scanNumber": 192,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сел: Кузьминовка (Космодамиановская церковь), Ново-Архангельское (Михаило-Архангельская церковь), Ново-Георгиевка (Казанско-Богородицкая церковь), Михайловское (Михаило-Архангельская церковь) за 1916 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сел: Кузьминовка (Космодамиановская церковь), Ново-Архангельское (Михаило-Архангельская церковь), Ново-Георгиевка (Казанско-Богородицкая церковь), Михайловское (Михаило-Архангельская церковь) за 1916 г."
+    "title": "Метрическая книга приходов Кузьминовки, Ново-Архангельского, Ново-Георгиевки и Михайловского за 1916 год",
+    "asRead": "Часть первая о родившихся; записи № 28 и № 31–33"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/85e244ca-d136-4469-994f-16a414af3949/192"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "page-observation",
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "1916 год",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Ново-Архангельское, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-85E244CA-192-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
+  "transcription": {
+    "status": "complete-full-scan-confirmed-false-hit",
+    "literal": "На полном развороте части первой видны запись № 28, итоговая строка и записи № 31–33 с родителями, восприемниками и причтом. Имени Михаила Ампилогова и других носителей исследуемого фамильного ряда на листе нет.",
+    "modernInterpretation": "Полный первичный лист не содержит носителей исследуемого фамильного ряда; поисковое совпадение подтверждено как ложное.",
+    "indexNote": "Индекс соединил фрагменты причта и ошибочно получил Михаила Ампилогова; полная строка такой фамилии не содержит."
+  },
   "evidence": {
     "catalogId": "85e244ca-d136-4469-994f-16a414af3949",
     "scanNumber": 192,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "downloaded-original-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/85e244ca-d136-4469-994f-16a414af3949/0192-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/85e244ca-d136-4469-994f-16a414af3949/0192-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "5cbc7d0edda40a6f24c80a773b1260587eeac34e24f01659905d78aef53853f6",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/85e244ca-d136-4469-994f-16a414af3949/0192-header.png",
-        "sha256": "97f62af06fb7b618d5c13f02de8ccfa6cc42fc5377a8af69e676ab6e954b65ed",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/85e244ca-d136-4469-994f-16a414af3949/0192-target-entry.png",
-        "sha256": "a8c31cf6304179dee9347bf9ee7d43587a888e6747322de2d225dbec68f3f5ec",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/85e244ca-d136-4469-994f-16a414af3949/0192-target-context-deep.png",
+        "sha256": "74d787106073259c88a47ce05084923fb8848f01a5c9b99bcd7490ef68ceab21",
+        "description": "Крупный полноширинный чистый фрагмент со всеми проверенными строками и соседним контекстом, без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5361x4480",
-      "targetDimensions": "1200x1221",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5000x3000",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия хранится для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Миааномв рабипинымь-\nenvr\nСвощенни/ч",
-    "modernInterpretation": "Миааномв рабипинымь- envr Свощенни/ч",
-    "localOcr": "Миааномв рабипинымь-\nenvr\nСвощенни/ч",
-    "localOcrWithSurnameLexicon": "Михаломв рабилиныть-\nenvr\nСвященни /ч",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  "isRecord": true,
+  "cardKind": "rejected-index-hit",
+  "publicCore": false,
+  "primaryPersonId": null,
+  "context": {
+    "historical": "Лист сохранён как отрицательный результат проверки поискового индекса; посторонние участники не выделялись в профили.",
+    "genealogicalSignificance": "Предотвращает ложное включение индексного совпадения в фамильное дерево, публичный каталог и карту.",
+    "migrationAssessment": "Фамильного события нет; миграция и картографическая точка не создавались."
+  },
+  "review": {
+    "status": "manually-verified-index-false-positive",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный разворот, все видимые строки № 28 и № 31–33, итоговая строка, восприемники и причт. Михаил Ампилогов не найден; OCR/index отвергнут."
   },
   "indexData": {
     "querySnippet": "Псаломщик Алексей Стефанов. Михаил Ампилогов с. Свящ.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс соединил фрагменты причта и ошибочно получил Михаила Ампилогова; полная строка такой фамилии не содержит."
   }
 }
