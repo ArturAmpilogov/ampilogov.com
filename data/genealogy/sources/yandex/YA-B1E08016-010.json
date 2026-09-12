@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B1E08016-010",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b1e08016-964d-4465-91eb-67de584d63b4",
     "scanNumber": 10,
@@ -13,22 +13,31 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b1e08016-964d-4465-91eb-67de584d63b4/10"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration",
     "date": {
-      "display": "1 января 1941 — 31 декабря 1941",
+      "display": "1941 год; в списке обоим указан 1923 год",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Кагановичский районный военкомат, Чкаловская область"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B1E08016-010-M1",
-      "role": "surname-series-mention",
-      "displayName": "АМИТЛОГОВ",
-      "nameAsTranscribed": "АМИТЛОГОВ",
-      "surnameSeries": true
+      "role": "military-registration-list-entry-136",
+      "displayName": "Иван Семёнович Ампилогов",
+      "nameAsTranscribed": "АМПИЛОГОВ Иван Семенович",
+      "surnameSeries": true,
+      "personId": "P102963"
+    },
+    {
+      "mentionId": "YA-B1E08016-010-M2",
+      "role": "military-registration-list-entry-145",
+      "displayName": "Егор Гаврилович Ампилогов",
+      "nameAsTranscribed": "АМПИЛОГОВ Егор Гаврилович",
+      "surnameSeries": true,
+      "personId": "P102964"
     }
   ],
   "evidence": {
@@ -52,6 +61,12 @@
         "path": "data/genealogy/evidence-private/yandex/b1e08016-964d-4465-91eb-67de584d63b4/0010-target-entry.png",
         "sha256": "7da9d0cf534dcd706dedad19a1b77c145e7b1a3ef830f718412973afa3d0615f",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-context",
+        "path": "data/genealogy/evidence-private/yandex/b1e08016-964d-4465-91eb-67de584d63b4/0010-wide-deep-review.png",
+        "sha256": "58418583c43f7ddfca308d015e175be4737643baa7bd5b267f5264afd5a49726",
+        "description": "Широкий чистый фрагмент всего листа именного списка со строками № 136 и № 145 и графами года."
       }
     ],
     "quality": {
@@ -59,16 +74,20 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "2681x3504",
-      "targetDimensions": "1200x3309",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "2500x3300",
+      "method": "original-download-plus-wide-manual-review-crop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Вал итов Маруван\nTyфа т\nАюпов 3а\nLOMC\nЛутфуллов из\nМаняпов Мансур\nХар кпов ид\nГоле в\n• Митр оран\nМак си но вич\nКудинов Дедор\nКуз ьми тт\n75/2971714\nАМИТЛОГОВ\nErop\nТавриловиц гЄНОу\nСляткий Семен\nПегрович\nХвале в Алексей\nС тепа гов шг\nДенейкия Детр\nВасильевич\nЯнов ле в Георгий\nАле ксе эвич\nАверья нов Георгий\nи/ва нови ч\nСеде х Стопан\nИва но ви и",
-    "modernInterpretation": "Вал итов Маруван Tyфа т Аюпов 3а LOMC Лутфуллов из Маняпов Мансур Хар кпов ид Голе в • Митр оран Мак си но вич Кудинов Дедор Куз ьми тт 75/2971714 АМИТЛОГОВ Erop Тавриловиц гЄНОу Сляткий Семен Пегрович Хвале в Алексей С тепа гов шг Денейкия Детр Васильевич Янов ле в Георгий Але ксе эвич Аверья нов Георгий и/ва нови ч Седе х Стопан Ива но ви и",
+    "status": "primary-scan-transcription",
+    "literal": "№ 136. АМПИЛОГОВ Иван Семенович. 1923. [В следующих графах — знак повтора.] № 145. АМПИЛОГОВ Егор Гаврилович. 1923. [В следующих графах — знак повтора.]",
+    "modernInterpretation": "На одном листе именного списка военнообязанных Кагановичского РВК значатся Иван Семёнович Ампилогов под № 136 и Егор Гаврилович Ампилогов под № 145; у обоих в отдельной графе напечатан 1923 год.",
     "localOcr": "Вал итов Маруван\nTyфа т\nАюпов 3а\nLOMC\nЛутфуллов из\nМаняпов Мансур\nХар кпов ид\nГоле в\n• Митр оран\nМак си но вич\nКудинов Дедор\nКуз ьми тт\n75/2971714\nАМИТЛОГОВ\nErop\nТавриловиц гЄНОу\nСляткий Семен\nПегрович\nХвале в Алексей\nС тепа гов шг\nДенейкия Детр\nВасильевич\nЯнов ле в Георгий\nАле ксе эвич\nАверья нов Георгий\nи/ва нови ч\nСеде х Стопан\nИва но ви и",
     "localOcrWithSurnameLexicon": "Вал итов Маруван\nLOMO\nЛутфуллов из\nМаняпов Мансур\nХар «пов ид\nГоле в\n• Ми тр оран\nМак си но вич\nКудинов Федор\nКуз ь ми тт\n7572971714\nАМИТЛОГОВ\nErop\nГаврилови геНОу\nСпяткий Семен\nПетрович\nХвале в Алексей\nС те па гов ш\nДенейкия Детр\nВасильеви ч\nЯнов ле в Георгий\nАле ксе эвич\nАверья нов Георгий\nива нови ч\nСедь х Стопан\nИ ва но ви и",
     "collation": {
@@ -76,7 +95,7 @@
       "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс подсказал строки, но OCR исказил фамилию как «Амитлогов» и пропустил Ивана Семёновича. Оба имени и 1923 год прочитаны по полному оригиналу; год не превращён в точную дату рождения."
   },
   "indexData": {
     "querySnippet": "Ампилогов Егор Гаврилович. ... Шарлыкским. 136. Ампилогов Иван Семенович. 1923 \" \". 137.",
@@ -87,7 +106,11 @@
   "publicCore": true,
   "review": {
     "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
+    "transcriptionConfidence": "high",
+    "unresolved": [
+      "Значение повторительных знаков в последующих графах не раскрывается без заголовка предшествующего листа."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитан весь лист именного списка и все строки № 135–151. Подтверждены два носителя фамилии: Иван Семёнович № 136 и Егор Гаврилович № 145, у обоих указан 1923 год. Исправлены OCR-фамилия и пропуск первой строки; профили ограничены контекстом воинского учёта, без родства, рождения или миграции."
   }
 }

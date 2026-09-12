@@ -87,6 +87,12 @@
         "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0152-target-entry.png",
         "sha256": "75d0541fc49d822464fcda1538591a0a08748277d2da8e1c39c9db4cadb6cbe8",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0152-target-context-deep.jpg",
+        "sha256": "bda69f8c5c00662189c84ec6d858c42be29c30fe494c3aaa90fb4ce5f26c425b",
+        "description": "Широкий чистый фрагмент полного брачного листа № 23–27: заголовок 1916 года, стороны, возрасты и поручители."
       }
     ],
     "quality": {
@@ -94,13 +100,14 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4222x3630",
-      "targetDimensions": "2880x1982",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "targetDimensions": "4100x3100",
+      "method": "manual-reading-of-downloaded-original-and-wide-clean-recrop",
       "documentOnlyVisuallyConfirmed": true,
       "siteAndBrowserChromeExcluded": true,
       "blackDefectsExcluded": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11"
+      "allVisibleRowsChecked": true,
+      "confirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -113,18 +120,26 @@
   },
   "indexData": {
     "querySnippet": "Отец невесты: Илья Ампилогов, крестьянин, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс свёл лист к одному отцу невесты и пропустил пять видимых носителей фамильного ряда; год и роли установлены по оригиналу."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "context": {
+    "eventSummary": "Брачный лист Кармалки за 13 ноября 1916 года: подтверждён брак Василия Ильича и Елены Александровны Ампилоговых; в другой строке названы Александра Евлампиевна и поручители Николай и Пётр Ампилоговы.",
+    "identityNote": "P100015/P101854 подтверждены полной строкой №24 и взаимной супружеской связью. P101855 названа невестой на том же листе; Николай и Пётр без отчеств оставлены mentions.",
+    "migrationNote": "Все роли относятся к Кармалке; отдельный маршрут переселения не выводится."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "primary-scan-verified",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
     "unresolved": [
       "Имя и полный возраст жениха Александры Евлампиевны требуют отдельного увеличения соседней части строки.",
       "Николай и Пётр Ампилоговы не связаны с профилями без отчеств."
     ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитан полный брачный лист №23–27, включая заголовок 1916 года, даты, стороны, возрасты, порядок брака, резолюцию и поручителей; подтверждены P100015/P101854/P101855, два однофамильца без отчеств оставлены mentions; сохранён clean crop 4100x3100; индексные пропуски описаны.",
     "mergeAlternateReadings": [
       {
         "sourcePath": "data/genealogy/sources/YA-B1A1ABE2-152.json",
