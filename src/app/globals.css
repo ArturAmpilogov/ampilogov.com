@@ -6358,6 +6358,10 @@ a {
   padding-top: 0;
 }
 
+.records-masthead.directory-masthead dl {
+  grid-template-columns: repeat(2, auto);
+}
+
 .directory-masthead dl div {
   display: grid;
   gap: 3px;
@@ -10062,6 +10066,10 @@ a {
   .directory-masthead dl {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .records-masthead.directory-masthead dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .directory-masthead dt {
