@@ -1,95 +1,31 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-69DA7A2A-090",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
-  "collection": {
-    "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
-    "scanNumber": 90,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кирсановка, Гамалеевка за 1915 г."
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "search-index-false-positive",
+  "collection": {"catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2", "scanNumber": 90, "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл Кирсановка и Гамалеевка за 1915 год"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/90"},
+  "event": {"type": "index-false-positive", "date": {"display": "13–16 февраля 1915 года", "confidence": "high-from-visible-rows"}, "place": {"normalized": "село Гамалеевка, Бузулукский уезд", "confidence": "high-for-book-context"}},
+  "mentions": [],
+  "transcription": {
+    "status": "complete-negative-full-page-reading",
+    "literal": "Февраль 1915 года. Полный разворот содержит записи о родившихся за 13–16 февраля. В записи № 13 в графе восприемников названы Николай Митрофанов Клюев и девица Евдокия Максимова Антипова. Фамилия читается Антипова, через «т», а не Ампилова. На всём видимом развороте фамильного ряда нет.",
+    "modernInterpretation": "Евдокия Максимовна в записи № 13 — Антипова, не Ампилова; карточка не относится к исследуемому роду.",
+    "indexNote": "Яндекс ошибочно сблизил Антипову с Ампиловой. Ложная связь с P102729 снята по ручному чтению первичного скана.",
+    "collation": {"primaryScanReadManually": true, "allVisibleRowsChecked": true, "yandexIndexUsedOnlyForNavigation": true}
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/90"
-  },
-  "event": {
-    "type": "birth-godparents",
-    "date": {
-      "display": "1915",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-69DA7A2A-090-M1",
-      "role": "godmother",
-      "personId": "P102729",
-      "displayName": "дѣвица Евдокія Максимова Ампилова",
-      "nameAsTranscribed": "дѣвица Евдокія Максимова Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "indexData": {"querySnippet": "Крёстная мать: Евдокия Максимова Ампилова, девица.", "fuzzyQuery": true, "warning": "Оригинал уверенно даёт Антипова; индексное Ампилова ошибочно."},
   "evidence": {
-    "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
-    "scanNumber": 90,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2", "scanNumber": 90,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-large-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0090-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0090-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "b12e388a6b1ac7b0524b4dafe9da125ff19c2d2e904715777f2f625429eebac1",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0090-header.png",
-        "sha256": "af2c57fffc2584c17dfb2aded9beaec84f7397788b7acd87025b078836f3c01a",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0090-target-entry.png",
-        "sha256": "503cc52dc8e9d7a5d25bba53a1a4e1b68cfac83c4d25037182fc1b09f4d9edd5",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4288x3488",
-      "targetDimensions": "1200x654",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "capturedAt": "2026-09-11", "sha256": "b12e388a6b1ac7b0524b4dafe9da125ff19c2d2e904715777f2f625429eebac1",
+    "fragments": [{"kind": "target-context-deep", "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0090-target-context-deep.jpg", "sha256": "ae5ee274655f8b3700354b12fdf2d3026090c88bb38722e7e0b8e3e0d30e7975", "description": "Clean крупный почти полноширинный разворот, включая запись № 13 и чтение Антипова."}],
+    "quality": {"originalImageDownloaded": true, "fullDimensions": "4288x3488", "targetDimensions": "4000x3200", "method": "manual-full-spread-review-plus-large-clean-context-crop"},
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.", "uploadStatus": "pending-local-evidence-upload"
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Николай Митрофанов Клюев и девица Евдокия Максимова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "іто яеста трето\nНинемай Митрофановь Киюсьв\n„ влена Ґаннова рувина.\nГорач. Оренбургамиь- е\nАленвантков",
-    "localOcrWithSurnameLexicon": "то поста прест\nНинамай Митрофановь Киюсьв\n„ влена Ґаннова рувина.\nГорал. Оренбурга ми - 2\nАлемантков",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Крёстная мать: Евдокия Максимова Ампилова, девица. Крёстная мать: Екатерина Антонова Михайлова. Крёстная мать: Пелагия Николаева Федоровская.",
-    "fuzzyQuery": true
-  }
+  "isRecord": true, "cardKind": "confirmed-false-fuzzy-hit", "publicCore": false,
+  "review": {"status": "verified-primary-scan-negative", "transcriptionConfidence": "high", "deepReviewedAt": "2026-09-12", "deepReviewScope": "Вручную проверен полный разворот рождений 13–16 февраля 1915 года, все видимые строки и восприемники. В записи № 13 прочитано Антипова, не Ампилова; ложный backlink YA-69DA7A2A-090 снят из P102729. Создан clean crop 4000×3200.", "unresolved": []},
+  "context": {"summary": "Подтверждённая индексная ошибка Антипова → Ампилова.", "indexDiscrepancy": "Оригинал содержит отчётливую согласную «т» и не содержит фамилии Ампилова.", "genealogicalConclusion": "Фамильное событие, профиль, карта и миграция не создаются."}
 }
