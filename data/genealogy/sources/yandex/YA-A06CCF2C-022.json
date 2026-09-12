@@ -12,41 +12,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/22"
   },
   "event": {
-    "type": "birth",
+    "type": "archive-page-review-false-index-hit",
     "date": {
-      "display": "10 июня 1909",
+      "display": "1909",
       "confidence": "high-for-year"
     },
     "place": {
       "normalized": "село Бахтемир, Астраханская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-A06CCF2C-022-M1",
-      "role": "child",
-      "personId": "P102681",
-      "displayName": "Антонина Михайловна Ампилова",
-      "nameAsTranscribed": "Антонина",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-A06CCF2C-022-M2",
-      "role": "father",
-      "personId": "P102472",
-      "displayName": "крестьянин Михаил Алексіев Ампилов",
-      "nameAsTranscribed": "крестьянинъ Михаилъ Алексіевъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-A06CCF2C-022-M3",
-      "role": "mother",
-      "personId": "P102521",
-      "displayName": "законная его жена Евдокія Исаева",
-      "nameAsTranscribed": "законная его жена Евдокія Исаева",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "a06ccf2c-5e94-4659-bc87-e67ca5a3382d",
     "scanNumber": 22,
@@ -63,10 +38,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0022-target-entry.png",
-        "sha256": "3a76dd1b56bd2046d7598d73c8e0558bf539435c79badd3e38e2497b2267cb19",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "full-width-reviewed-context",
+        "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0022-target-entry-deep.png",
+        "sha256": "6e25710e933cb7a28f4372a9a02ed028e0ed5efc346c23ff38dcb439e5bddbc1",
+        "description": "Крупный полноширинный контекст проверенного разворота без интерфейса; фиксирует отрицательное чтение индексного попадания."
       }
     ],
     "quality": {
@@ -74,38 +49,39 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3792x3040",
-      "targetDimensions": "1200x854",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3300x2200",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "fullPageManuallyReviewed": true,
+      "reviewedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Антонина. Крестьянин села Бахтемирского Михаил Алексиев Ампилов и законная его жена Евдокия Исаева; оба православные. Родилась 10, крещена 12 июня 1909 года.",
-    "modernInterpretation": "10 июня 1909 года у Михаила Алексеевича и Евдокии Исаевны Ампиловых родилась Антонина.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "УКОКСКО\nГРИЧЕСКОЙ КНИГИ NА\nЗвáніє, ймл, отчество й фамиліл родителей, й какóги\n\"XCA.\nввроиспов'данїм.",
-    "localOcrWithSurnameLexicon": "УКОКСКО\nГРИЧЕСКОЙ КНИГИ НА\nЗвАніє, йма, отчество й фамиліл родителей, й какоги\n\"ХСА.\nв вроиспов данім.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-full-page-negative-reading",
+    "literal": "Июнь. Запись № 31: 10-го родилась, 11-го крещена Антонина. Родители в строке — астраханский мещанин Михаил Иванов [фамилия читается как Фролов] и законная его жена Мария Ефремова; фамилии Ампилов в родительской формуле нет. Восприемники также других фамилий.",
+    "modernInterpretation": "Ложное индексное попадание: Антонина из записи № 31 не является дочерью Михаила Алексеевича и Евдокии Исаевны Ампиловых; индекс склеил данные иной записи.",
+    "indexNote": "Индексные Михаил Алексеев Ампилов и Евдокия Исаева не соответствуют строке № 31 на оригинале; дата крещения на листе — 11 июня, а не 12 июня."
   },
-  "isRecord": true,
+  "isRecord": false,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-index-hit",
+    "transcriptionConfidence": "high-for-negative-identification",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный июньский разворот, номера 29–32, даты, имена детей, родители и восприемники; строка № 31 не содержит фамильного ряда. Ошибочные personId удалены, публичный Record/карта/миграция исключены.",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Крестьянин села Бахтемирского Михаил Алексиев Ампилов и законная его жена Евдокия Исаева оба православные Священник Михаил Юштин Диакон Харлампий Богданов.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индексные Михаил Алексеев Ампилов и Евдокия Исаева не соответствуют строке № 31 на оригинале; дата крещения на листе — 11 июня, а не 12 июня."
+  },
+  "primaryPersonId": null,
+  "summary": {
+    "status": "verified-negative",
+    "text": "Ложное индексное попадание: Антонина из записи № 31 не является дочерью Михаила Алексеевича и Евдокии Исаевны Ампиловых; индекс склеил данные иной записи."
   }
 }

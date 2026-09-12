@@ -2,22 +2,23 @@
   "schemaVersion": 1,
   "sourceId": "YA-E8175079-165",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "marriage-surety",
   "collection": {
     "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
-    "scanNumber": 165
+    "scanNumber": 165,
+    "title": "Метрическая книга Изяк-Никитинского прихода, 1891 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e8175079-c811-4d2f-9829-1e83ae135db3/165"
   },
   "mentions": [
     {
-      "mentionId": "YA-E8175079-165",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
+      "mentionId": "YA-E8175079-165-M1",
+      "role": "bride-surety",
+      "personId": "P91005",
+      "nameAsTranscribed": "по невесте казаки: ... и Ефимъ Филипповъ Ампилоговъ",
+      "displayName": "Ефим Филиппович Ампилогов",
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -41,6 +42,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0165-target-entry.png",
         "sha256": "ecdaeec542948a638d32b371b8124ba9ad5ec737aa921f6df1cb302d7e24efb9",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0165-target-context-deep.png",
+        "sha256": "024e488cbe6356ce0502d5d7b89b4f843d3d5d073005825e212576143277c003",
+        "description": "Почти полный разворот с заголовком и записями № 1–4; строка № 3 видна по всей ширине.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +57,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5608x4339",
       "targetDimensions": "1368x977",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5200x3500"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +113,47 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Несколько фамилий посторонних поручителей палеографически неуверенны и оставлены без нормализации."
+    ],
+    "correctionHistory": [
+      "2026-09-12: полный разворот и запись №3 прочитаны вручную; прежняя OCR-неуверенность снята."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 5608x4339 marriage spread, 1891 heading, record №3 and row boundaries, date, surety columns and side of surety role; P91005 identity basis; no kinship/migration; clean 5200x3500 context crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Казачі Михемате (Шо)-\nлевг Мисиат, и Ачекеп\nеритоач Мареванценк\nпгоновлятть Каіаниїс\nшать мноровя lеснокaah\nит а симии\nи давримах\nЧеенонаал\nМорусинам, мошенацн\nнаВали: Васнийй Нванайа-\nпаков\nвр имічить и свлежі\nsonelneen\nПемвловь,\nал\nВани Яредатть Осиnoвr",
-    "modernInterpretation": "Казачи Михемате (Шо)- левг Мисиат, и Ачекеп еритоач Мареванценк пгоновлятть Каианиїс шать мноровя lеснокaah ит а симии и давримах Чеенонаал Морусинам, мошенацн наВали: Васнийй Нванайа- паков вр имичить и свлежи sonelneen Пемвловь, ал Вани Яредатть Осиnoвr",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Казачі Михемате (Шо)-\nлевг Мисиат, и Ачекеп\nеритоач Мареванценк\nпгоновлятть Каіаниїс\nшать мноровя lеснокaah\nит а симии\nи давримах\nЧеенонаал\nМорусинам, мошенацн\nнаВали: Васнийй Нванайа-\nпаков\nвр имічить и свлежі\nsonelneen\nПемвловь,\nал\nВани Яредатть Осиnoвr",
-    "localOcrWithSurnameLexicon": "Поручители по на скалік\nКавани: МиХелят я l/ков\nХереноая. Морд в ам зе 24.\nпоновляти навами: Гаврі\nшать мнорсовл весконьак\nвасилій Ревримах\nЧеснокав\nПорухинам, потиснауні\nнаВами: Узасний зевалове\nМамаить и Евчетіл\nПанвлав, махов остих\nспаг\nКавани Фредопть О сиповч\nВ Сл\n10 скила\nВороб вовто в г",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "№ 3. Февраль, 15. В графе поручителей: «Поручители по женихе казаки: Василій [фамилия неуверенно] и Андрей [фамилия неуверенно]; по невесте казаки: Григорій [фамилия неуверенно] и Ефимъ Филипповъ Ампилоговъ».",
+    "modernInterpretation": "15 февраля 1891 года казак Ефим Филиппович Ампилогов выступил одним из поручителей невесты в брачной записи № 3.",
+    "indexNote": "Индекс использован как указатель. Имя, отчество, фамилия, сторона поручительства, номер и дата акта проверены по полному развороту; нечёткие фамилии посторонних участников не угадываются."
   },
   "indexData": {
     "querySnippet": "Поручитель: Ефим Филиппов Ампилогов, казак. Поручитель: Автоном Афанасьев Пушкин, казак.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильное упоминание подтверждено, но индекс не передаёт сторону поручительства и контекст полного акта."
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "marriage",
+    "recordNumber": "№ 3",
+    "date": {
+      "display": "15 февраля 1891 года",
+      "iso": "1891-02-15",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский приход",
+      "normalized": "Изяк-Никитино, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Ефим Филиппович Ампилогов — поручитель невесты при браке 15 февраля 1891 года.",
+    "identityNote": "P91005 подтверждён точным полным именем, казачьим статусом, тем же приходом и непрерывной серией актов; поручительство не означает родство.",
+    "migrationNote": "Место обряда не образует маршрут переселения."
+  },
+  "publicCore": true
 }

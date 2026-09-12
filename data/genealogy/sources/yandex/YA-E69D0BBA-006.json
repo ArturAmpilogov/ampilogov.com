@@ -2,35 +2,24 @@
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-006",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
     "scanNumber": 6,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Зобово, Ивановка, Ново-Георгиевское за 1911 г.",
+    "title": "Метрическая книга Зобовского прихода; оригинальный лист части о родившихся за 1912 год",
     "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Зобово, Ивановка, Ново-Георгиевское за 1911 г."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/6"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "source-review",
     "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
+      "display": "1912 год",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E69D0BBA-006-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
     "scanNumber": 6,
@@ -52,6 +41,13 @@
         "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0006-target-entry.png",
         "sha256": "be2e37006303f53d20c6f4a639cfea4c94026359bf522beaa149ed0d601397e0",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0006-target-context-deep.png",
+        "sha256": "ac62c5fefdcb6c27e680d85aff218d3e26ad902560facce902cc323951cbe93c",
+        "description": "Крупный полноширинный чистый фрагмент с заголовком и всеми видимыми строками для отрицательной проверки.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -60,36 +56,40 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "6116x4734",
       "targetDimensions": "1598x693",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5800x4300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вроисповвданія.\nпа Доб ова Доеній Дибрей Лурсєчник\nмимоввоотая\nОугдевь и Досканн. лк\nАмантва, абк Похваставном,\nhufenn auiy lacnaя",
-    "modernInterpretation": "вроисповвдания. па Доб ова Доений Дибрей Лурсєчник мимоввоотая Оугдевь и Досканн. лк Амантва, абк Похваставном, hufenn auiy lacnaя",
-    "localOcr": "вроисповвданія.\nпа Доб ова Доеній Дибрей Лурсєчник\nмимоввоотая\nОугдевь и Досканн. лк\nАмантва, абк Похваставном,\nhufenn auiy lacnaя",
-    "localOcrWithSurnameLexicon": "вроиспов данія.\nна Доб ва Деній Дитрей Лупамни\nми мосвостая\nБугдевь и Досканн. лк\nАманова, або Похваставном,",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "«Метрической книги на 1912 год, часть первая, о родившихся». Полный разворот содержит записи № 22 и последующие; в прежнем target-фрагменте родители читаются как «села Зобова крестьянинъ Андрей Лукьяновъ [фамилия неуверенно] и законная жена его Екатерина Яковлева; оба православные». Гавриила Осипова Анпилогова на листе нет.",
+    "modernInterpretation": "Полный сохранённый лист вручную прочитан: носителей исследуемого фамильного ряда на нём нет. Индексное совпадение подтверждено как ложное.",
+    "indexNote": "Confirmed false positive and catalog-year discrepancy: оригинальный заголовок даёт 1912 год, тогда как карточка/индекс относили лист к делу 1911 года; Гавриил Осипов Анпилогов на полном развороте не обнаружен."
   },
   "indexData": {
     "querySnippet": "Гавриил Осипов Анпилогов и Законн. жена его Мария Димитриева оба православные. Священник Иаков Маслов Диакон Димитрий Вознесенский.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive and catalog-year discrepancy: оригинальный заголовок даёт 1912 год, тогда как карточка/индекс относили лист к делу 1911 года; Гавриил Осипов Анпилогов на полном развороте не обнаружен."
   },
   "isRecord": false,
   "cardKind": "research-material-unconfirmed-fuzzy-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-confirmed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: полный лист, заголовок, все видимые строки и границы табличных записей проверены вручную; индексная фамильная цель не найдена."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 6116x4734 spread, explicit 1912 heading, all visible birth rows №22 onward across child/parent/godparent/clergy columns and row boundaries, old target crop; confirmed false index hit and year correction; no profile/public event/map; clean 5800x4300 crop"
+  },
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Негативная проверка индексного фамильного совпадения по полному первичному изображению.",
+    "identityNote": "Профили и backlinks не создаются: фамильная цель на листе отсутствует.",
+    "migrationNote": "Карта и миграция неприменимы."
   }
 }

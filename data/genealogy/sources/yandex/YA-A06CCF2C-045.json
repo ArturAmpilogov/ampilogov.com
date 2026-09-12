@@ -12,21 +12,39 @@
     "documentUrl": "https://yandex.ru/archive/catalog/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/45"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-and-baptism-godparent",
+    "recordNumber": "69",
     "date": {
-      "display": "1909",
-      "confidence": "high-for-year"
+      "display": "20/21 июля 1909 года",
+      "from": "1909-07-20",
+      "to": "1909-07-21",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемирское",
+      "normalized": "село Бахтемир, Астраханский уезд, Астраханская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-A06CCF2C-045-M1",
+      "role": "child",
+      "displayName": "Михаил Привалов",
+      "nameAsTranscribed": "Михаилъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-A06CCF2C-045-M2",
+      "role": "godfather",
+      "displayName": "Трофим Павлович Привалов",
+      "nameAsTranscribed": "Н.-Ломовскаго уѣзда села Скворечнаго крестьянинъ Трофимъ Павловъ Приваловъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-A06CCF2C-045-M3",
       "role": "godmother",
       "personId": "P102521",
-      "displayName": "крестьянка села Бахтемирскаго Евдокія Исаева Ампилова",
+      "displayName": "Евдокия Исаевна Ампилова",
       "nameAsTranscribed": "крестьянка села Бахтемирскаго Евдокія Исаева Ампилова",
       "surnameSeries": true
     }
@@ -47,10 +65,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-target-entry.png",
-        "sha256": "6c2806a826502b251abcf6a63a50170c719dee0d4a3319e57aeb767bda8882a2",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-entry-full-width-context",
+        "path": "data/genealogy/evidence-private/yandex/a06ccf2c-5e94-4659-bc87-e67ca5a3382d/0045-target-entry-deep.png",
+        "sha256": "071bace352654ded766aa53a1e4d19755c09b117cdd26e7db47ee3e3a43d3acb",
+        "description": "Полноширинный крупный фрагмент записи № 69: даты, ребёнок, родители, оба восприемника и причт."
       }
     ],
     "quality": {
@@ -58,36 +76,38 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3792x3040",
-      "targetDimensions": "1200x902",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3400x1400",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "fullPageManuallyReviewed": true,
+      "reviewedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Нижнеломовского уезда села Скворечного крестьянин Трофим Павлов Привалов и крестьянка села Бахтемирского Евдокия Исаева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей; происхождение Нижнеломовского уезда относится к другому участнику.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "санбра Васшлвова Кака-М.\nрова\n20\n1яда се\nСтоловасаю ун\nТекориик Павнов При- де.\nвонов нкрестічинна Я\nCfIl\nасть Барі-темирском.\nКОИ\nОБ\n• Кракия Дсасвс Алпилова",
-    "localOcrWithSurnameLexicon": "санбра Василвова Кака-М.\nрова\n20\nТенориик Павлов При- де.\nволов н крестічинна Я\nCAIl\nаста Барі-немирском.\nКОИ\nОБ\n• Крания Дас вс Ампилова",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-target-entry-manually-read-from-full-page",
+    "literal": "№ 69. Іюля 20 [родился], 21 [крещён]. Михаилъ. Родители — выходцы из Пензенской губернии, Нижнеломовского уезда, села Скворечного; отец Павел Петров Привалов, мать Агафия Стефанова, оба православные. Восприемники: «Н.-Ломовскаго уѣзда села Скворечнаго крестьянинъ Трофимъ Павловъ Приваловъ и крестьянка села Бахтемирскаго Евдокія Исаева Ампилова». Крещение совершили священник Михаил Юштин и диакон Харлампий Бабашев.",
+    "modernInterpretation": "20 июля 1909 года родился Михаил Привалов, 21 июля крещён в Бахтемире. Евдокия Исаевна Ампилова названа восприемницей; Нижнеломовский уезд относится к семье ребёнка и второму восприемнику, а не к ней.",
+    "indexNote": "Яндекс помог найти строку, но дата, номер, ребёнок, родители, восприемники и географическое распределение ролей заново прочитаны по полному листу."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high-for-record-number-dates-child-godparents-and-clergy; medium-high-for-parental-patronymics",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь июльский разворот, запись № 69 и соседняя строка: сверены номер, даты 20/21 июля, ребёнок, родители, оба восприемника и причт. Подтверждена только Евдокия Исаевна Ампилова как восприемница; чужие лица оставлены mentions, родство и миграция не выводились."
   },
   "indexData": {
     "querySnippet": "Н. Ломовскаго уѣзда села Скворешнаго крестьяни Трофимъ Павловъ Приваловъ и крестьянка села Бахтемирскаго Евдокія Исаева Ампилова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Сниппет передавал только восприемников и мог ошибочно отнести Нижнеломовский уезд к Евдокии; полный лист отделяет её как крестьянку села Бахтемирского."
+  },
+  "primaryPersonId": "P102521",
+  "summary": {
+    "status": "verified-summary",
+    "text": "Евдокия Исаевна Ампилова была восприемницей Михаила Привалова при крещении 21 июля 1909 года в Бахтемире."
   }
 }

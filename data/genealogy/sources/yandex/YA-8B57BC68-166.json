@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8B57BC68-166",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8",
     "scanNumber": 166,
@@ -13,22 +13,22 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/166"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "1912",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "приход села Михайловского, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-8B57BC68-166-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "father-of-deceased",
+      "displayName": "Михаил Павлович Антипов",
+      "nameAsTranscribed": "Михаила Павлова Антипова",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -48,10 +48,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0166-target-entry.png",
-        "sha256": "f2fcdac1b8bec7e53c681e2331b99931c8c2d7e73ff91dfa02e726d23e143169",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0166-target-context-deep.jpg",
+        "sha256": "7aa3d03a69777c38e80dcf2b7ef51f3ed068c93cf50880ade152b20af5a2b3cc",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +59,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5458x4264",
-      "targetDimensions": "1389x570",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x1200",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вмуеннит Приповені Іширидр.\nDianour Reanniй Zonolofan\nСела Михашловского переств\nянина Онистла арх. ипова\nСіарова. синь петрев.\nУмі\nРаніянтики Ниповай Арияид.\nвістьшрсллн",
-    "modernInterpretation": "вмуеннит Приповени Іширидр. Dianour Reanniй Zonolofan Села Михашловского переств янина Онистла арх. ипова Сиарова. синь петрев. Уми Раниянтики Ниповай Арияид. вистьшрсллн",
-    "localOcr": "вмуеннит Приповені Іширидр.\nDianour Reanniй Zonolofan\nСела Михашловского переств\nянина Онистла арх. ипова\nСіарова. синь петрев.\nУмі\nРаніянтики Ниповай Арияид.\nвістьшрсллн",
-    "localOcrWithSurnameLexicon": "вменним Приповені І ширифр.\nDianour Rennin Gonololan\nСела Михайловского перестив\nянина Ониста арх. якова\nСтарова. синь петрев.\nУмі\nаніяники Нитовай Аритид.\nвськр існ",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Сентябрь 1912 года, запись № 162: «Деревни Кармалки крестьянина Михаила Павлова Антипова сын Григорий». В оригинале фамилия отца читается «Антипова», а не «Ампилогова».",
+    "modernInterpretation": "В записи о смерти сына Григория назван крестьянин деревни Кармалки Михаил Павлович Антипов. Поисковый индекс ошибочно заменил фамилию Антипов на Ампилогов.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всей релевантной строки имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Отецумершего: Михаил Павлов Ампилогов, крестьянин, деревня Кармалка. Отец умершего: Михаил Евфимов Манаев, крестьянин, деревня Кармалки.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, запись №162 и соседние строки; фамилия Михаила Павлова прочитана как Антипов, а индексное Ампилогов отвергнуто; сохранён clean crop 4800×1200 с SHA; публичный фамильный профиль и карта исключены"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

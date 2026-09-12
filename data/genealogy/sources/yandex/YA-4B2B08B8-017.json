@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4B2B08B8-017",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 17,
@@ -12,25 +12,18 @@
     "documentUrl": "https://yandex.ru/archive/catalog/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/17"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-register-page",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "февраль 1912 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемир",
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4B2B08B8-017-M1",
-      "role": "godfather",
-      "personId": "P102641",
-      "displayName": "крестьянин Ефим Ипатов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Ефимъ Ипатовъ Ампиловъ",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 17,
@@ -66,30 +59,32 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Ефим Ипатов Ампилов и Мария Иванова Бухарцева [в строке восприемников].",
-    "modernInterpretation": "Ефим Ипатович Ампилов назван восприемником.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Буд Кастта ун при-\n10\nCenla\nятим Пeтрs Aлereiяв\nБорикюв Кремивяти\nсим Gapinemiparao /0a\nМ\nленлина Вергаево\nбрвеніина",
-    "localOcrWithSurnameLexicon": "10\nCella\nятим Петр Acreie\nБориков Кремивати\nМ\nбрвенина",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-negative-review",
+    "literal": "Метрической книги на 1912 год, часть первая, о родившихся. На полном развороте читаются февральские записи № 28–31; среди читаемых детей Александр, Антонина, Александр и Пётр, а в проверенном фрагменте восприемниками названы Пётр Алексеев Борисов и Мария Сергеева Буренина. Фамилии Ампилов/Ампилогов/Анпилогов и имя «Ефим Ипатов Ампилов» на листе отсутствуют.",
+    "modernInterpretation": "Полный лист не содержит заявленного индексом упоминания «Ефим Ипатов Ампилов»; совпадение выдачи подтверждено как ложное.",
+    "indexNote": "Сниппет Яндекса относится к иной строке или листу и не подтверждается сохранённым оригиналом. Он не использован для события, профиля или связи."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрены полный разворот, заголовок части о родившихся, все видимые строки и существующий крупный фрагмент; проверены даты, имена, родители, восприемники и границы строк. «Ефим Ипатов Ампилов» и исследуемый фамильный ряд отсутствуют.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемирского Ефим Ипатов Ампилов и Мария Иванова Бухарцева.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Заявленное индексом упоминание «Ефим Ипатов Ампилов» отсутствует на полном развороте.",
+      "На оригинале прочитаны февральские записи № 28–31; среди читаемых детей Александр, Антонина, Александр и Пётр, а в проверенном фрагменте восприемниками названы Пётр Алексеев Борисов и Мария Сергеева Буренина."
+    ]
+  },
+  "context": {
+    "eventSummary": "Негативная проверка февраль 1912 года: исследуемый фамильный ряд на полном развороте не обнаружен.",
+    "relationshipBoundary": "Видимые участники других фамилий не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Результат сохраняется, чтобы ошибочный fuzzy-hit не был повторно принят за первичную запись."
   }
 }

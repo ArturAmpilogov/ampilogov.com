@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-29",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 29
@@ -14,8 +14,8 @@
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 29,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0029-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0029-full-view.png",
     "capturedAt": "2026-09-11",
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0029-target-entry.png",
-        "sha256": "8fd62aeeb02ca57ca8de7c31276279eb6304870418a5fbd7d843c5d08b0540de",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0029-target-context-deep.jpg",
+        "sha256": "dfee47dae54bad98820a5d64c941f270393516e9ac47fb27aeb6c48ebb8c5b20",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5207x4339",
-      "targetDimensions": "1410x682",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,30 +69,49 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 29: заголовок части о родившихся, апрельские даты и все видимые строки актов. Предполагаемая фамильная строка на оригинале отсутствует; прежняя неуверенная OCR-расшифровка отвергнута. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "миханлись мичиню и гананной\nпчена его Аншія Мванова; поа\nправиславние.\nВивизенника Миmaaвй edвugamd\n• Мирошь вого\nімучаніяии противітема При-,\nтасій Аленсневк Налрчсинх и 3а-\nнавная пжена чго Анастася Рро-",
-    "modernInterpretation": "миханлись мичиню и гананной пчена его Аншия Мванова; поа правиславние. Вивизенника Миmaaвй edвugamd • Мирошь вого имучанияии противитема При-, тасий Аленсневк Налрчсинх и 3а- навная пжена чго Анастася Рро-",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "миханлись мичиню и гананной\nпчена его Аншія Мванова; поа\nправиславние.\nВивизенника Миmaaвй edвugamd\n• Мирошь вого\nімучаніяии противітема При-,\nтасій Аленсневк Налрчсинх и 3а-\nнавная пжена чго Анастася Рро-",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном апрельском листе просмотрены все видимые строки актов; фамилии Ампилогов и документированных вариантов фамильного ряда нет.",
+    "modernInterpretation": "Полный лист рождений за апрель 1889 года проверен построчно. Поисковое совпадение не относится к исследуемому фамильному ряду.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

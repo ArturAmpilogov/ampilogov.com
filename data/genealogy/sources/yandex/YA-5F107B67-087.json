@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5F107B67-087",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "clergy-service",
   "collection": {
     "catalogId": "5f107b67-1507-4ed2-b70c-43dff79ceb5b",
     "scanNumber": 87,
@@ -13,22 +13,27 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5f107b67-1507-4ed2-b70c-43dff79ceb5b/87"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "clergy-service",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "23–30 января 1917 года; записи № 7–9",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-5F107B67-087-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "priest",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "evidence": {
@@ -66,30 +71,30 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Поокепиха: вока Карманки\nМихайсловской вовости, Ороногр\nвой пуберти нукуби, Керотваня\nАнтрей Овсянки\nуировь и Димитвій Обитивоовь\n•. Попевлютт: вна Карианки,\nМичайловскойвивати, Орандурсконі\nусерниуала Крлеттчния\nостевь Селонь 0оинь,\nи Васкрій Овсянниковр.",
-    "modernInterpretation": "Поокепиха: вока Карманки Михайсловской вовости, Ороногр вой пуберти нукуби, Керотваня Антрей Овсянки уировь и Димитвий Обитивоовь •. Попевлютт: вна Карианки, Мичайловскойвивати, Орандурскони усерниуала Крлеттчния остевь Селонь 0оинь, и Васкрий Овсянниковр.",
-    "localOcr": "Поокепиха: вока Карманки\nМихайсловской вовости, Ороногр\nвой пуберти нукуби, Керотваня\nАнтрей Овсянки\nуировь и Димитвій Обитивоовь\n•. Попевлютт: вна Карианки,\nМичайловскойвивати, Орандурсконі\nусерниуала Крлеттчния\nостевь Селонь 0оинь,\nи Васкрій Овсянниковр.",
-    "localOcrWithSurnameLexicon": "Поскепиха: вока Карманки\nМихайстовской ворости, Ороногр\nАнтрей Овсянки\nциковь и Димитрій Обитивоовь\n6. Попевлета: вна Карианки,\nМихайловськой вивати, Орандурсон\nостевь Семонь Поинь,\nи Васкрій Овеяникова.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Январь. № 7 — 23 января; № 8 и № 9 — 30 января. Женихи, невесты и поручители носят иные фамилии. Повторяется: Священникъ Михаилъ Ампилоговъ; и. д. псаломщика Николай Саввинъ.",
+    "modernInterpretation": "На развороте находятся браки чужих семей и повторная служебная подпись священника Михаила Ампилогова.",
+    "indexNote": "Индексный поручитель Николай Ампилогов на полном листе отсутствует; реальное фамильное попадание — подпись священника."
   },
   "indexData": {
     "querySnippet": "Поручитель: Николай Ампилогов, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индексный поручитель Николай Ампилогов на полном листе отсутствует; реальное фамильное попадание — подпись священника."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный брачный разворот прочитан вручную во всех видимых строках: проверены номера, даты, супруги, возрасты, брачные состояния, поручители и причт; индексная фамильная атрибуция сверена с оригиналом."
+  },
+  "primaryPersonId": "P1653",
+  "context": {
+    "eventSummary": "Служебная подпись священника Михаила Ампилогова при венчаниях чужих семей Кармалкинского прихода.",
+    "identityNote": "Тождество с P1653 подтверждается именем, саном, приходом и непрерывной серией подписей в книге 1917 года.",
+    "migrationNote": "Служебная подпись не доказывает родство или миграцию."
   }
 }

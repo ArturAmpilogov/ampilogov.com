@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-34",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 34
@@ -14,8 +14,8 @@
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 34,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0034-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0034-full-view.png",
     "capturedAt": "2026-09-11",
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0034-target-entry.png",
-        "sha256": "d87f89cfeb75130f254d1ffca0a1cabf5fc52639d48931429a88c29e5bc250d0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0034-target-context-deep.jpg",
+        "sha256": "9c00f560da15a99d1dde8cdf8bce690182a444525a6a198b76fef2a0f48e2833",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5324x4333",
-      "targetDimensions": "2554x1376",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,28 +69,49 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 34: майские даты, номера и все видимые строки актов. OCR-гипотеза «Илья Павлов Ампилов» не подтверждается буквами оригинала и снята как ложная. Создан широкий контрольный фрагмент 4700×3000.",
     "unresolved": []
   },
   "transcription": {
-    "status": "complete-primary-scan-local-ocr-collation",
-    "literal": "Ил'я Навловч Ампиловь и ганин.\nСергій свлвлоо овілть и крн.\nствянская мена, Марфа\nная мено 2го, Нелалія Гричирісла)\nНаварова Манаева.\nна православные.\nрагустннов, Павеля Килани~\nлтпразна-\nеренни-\nінкки: нвминики крестлянин\nДеревни Нурминавки крсстhS H\nНиколом Феофилантовь солованово\nнинь, Даміань Оергіево Панини\nи зананная жена іго, Анна Cео\nи крествянская мена у2асн рк\nГооова; на правиславне.\nчиса бетаріва ігатова. ви\nГаягуспниль Павив Кили.\nЛиирочон\nінкаихоиловки пратванинь- гри-\nТоо ме села крестлянин\nгурій Павлав Памитнивь и Закан-\nЛетрь Ивланиво МантуриьСК\nния мена іго, Анна Оліхоховік\nн оо ствянка Марія\nм\nоарсы\nова правиславные.\nШанока Шилова.\nСвямінники Тилинама Аведспитвк",
-    "modernInterpretation": "Ил'я Навловч Ампиловь и ганин. Сергий свлвлоо овилть и крн. ствянская мена, Марфа ная мено 2го, Нелалия Гричирисла) Наварова Манаева. на православные. рагустннов, Павеля Килани~ лтпразна- еренни- инкки: нвминики крестлянин Деревни Нурминавки крсстhS H Николом Феофилантовь солованово нинь, Дамиань Оергиево Панини и зананная жена иго, Анна Cео и крествянская мена у2асн рк Гооова; на правиславне. чиса бетарива игатова. ви Гаягуспниль Павив Кили. Лиирочон инкаихоиловки пратванинь- гри- Тоо ме села крестлянин гурий Павлав Памитнивь и Закан- Летрь Ивланиво МантуриьСК ния мена иго, Анна Олихоховик н оо ствянка Мария м оарсы ова правиславные. Шанока Шилова. Свяминники Тилинама Аведспитвк",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "Ил'я Навловч Ампиловь и ганин.\nСергій свлвлоо овілть и крн.\nствянская мена, Марфа\nная мено 2го, Нелалія Гричирісла)\nНаварова Манаева.\nна православные.\nрагустннов, Павеля Килани~\nлтпразна-\nеренни-\nінкки: нвминики крестлянин\nДеревни Нурминавки крсстhS H\nНиколом Феофилантовь солованово\nнинь, Даміань Оергіево Панини\nи зананная жена іго, Анна Cео\nи крествянская мена у2асн рк\nГооова; на правиславне.\nчиса бетаріва ігатова. ви\nГаягуспниль Павив Кили.\nЛиирочон\nінкаихоиловки пратванинь- гри-\nТоо ме села крестлянин\nгурій Павлав Памитнивь и Закан-\nЛетрь Ивланиво МантуриьСК\nния мена іго, Анна Оліхоховік\nн оо ствянка Марія\nм\nоарсы\nова правиславные.\nШанока Шилова.\nСвямінники Тилинама Аведспитвк",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном майском листе просмотрены все видимые строки актов № 93–95 и соседние записи; «Илья Павлов Ампилов» в оригинале не читается, фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Полный майский лист рождений 1889 года проверен построчно. Фраза «Илья Павлов Ампилов» была ошибкой машинного чтения, а не записью источника.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

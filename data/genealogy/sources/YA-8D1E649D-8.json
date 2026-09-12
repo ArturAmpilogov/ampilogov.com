@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-8",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 8
@@ -14,8 +14,8 @@
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 8,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0008-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0008-full-view.png",
     "capturedAt": "2026-09-11",
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0008-target-entry.png",
-        "sha256": "904a6cd5c7924e6a1ad86b20188cbe8a0c18f1e71d20bfa4cb5668f0a3a5f220",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0008-target-context-deep.jpg",
+        "sha256": "d9a0636eac655707544b44c9bc9463a7547da8bfb6a04503868cb6e9c54ee10f",
+        "description": "Широкий крупный фрагмент полного рабочего поля без интерфейса Яндекса; использован для ручной построчной проверки."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5164x4124",
-      "targetDimensions": "1394x833",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,30 +69,48 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 8: январские даты, все видимые строки родителей и восприемников и итог месяца. Фамилия исследуемого ряда отсутствует; прежнее OCR-подобие отвергнуто. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Стефань Янивлевсь Дегршнк и канам.\nная мена его, Дарія Кирильива;\nДва прависнавнне. Дриани\nаниви.\nСввизелнная Тлишкей\nкуннілихай га\nЧераи,\nбоствянин,\nсисиф Летровь Постинь и нанин-\nная мена 2го, Свідоня бо анимова;,\nаза православныы",
-    "modernInterpretation": "Стефань Янивлевсь Дегршнк и канам. ная мена его, Дария Кирильива; Два прависнавнне. Дриани аниви. Сввизелнная Тлишкей куннилихай га Чераи, боствянин, сисиф Летровь Постинь и нанин- ная мена 2го, Свидоня бо анимова;, аза православныы",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "Стефань Янивлевсь Дегршнк и канам.\nная мена его, Дарія Кирильива;\nДва прависнавнне. Дриани\nаниви.\nСввизелнная Тлишкей\nкуннілихай га\nЧераи,\nбоствянин,\nсисиф Летровь Постинь и нанин-\nная мена 2го, Свідоня бо анимова;,\nаза православныы",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга 1889 года, часть первая, о родившихся. На полном январском листе просмотрены все видимые строки актов и итог месяца; фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Полный первичный лист проверен построчно; поисковое или OCR-совпадение не относится к исследуемому фамильному ряду.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный лист проверен как отрицательный результат: носителей исследуемого фамильного ряда нет.",
+    "genealogicalConclusion": "Человек, публичное событие, родство, карта и миграция не создаются.",
+    "indexDiscrepancy": "Внешнее fuzzy/OCR-совпадение опровергнуто ручным чтением оригинала."
   }
 }

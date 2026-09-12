@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4B2B08B8-029",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 29,
@@ -12,33 +12,18 @@
     "documentUrl": "https://yandex.ru/archive/catalog/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/29"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-register-page",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "сентябрь 1912 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемир, Астраханская губерния",
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4B2B08B8-029-M1",
-      "role": "godfather",
-      "personId": "P102472",
-      "displayName": "крестьянин Михаил Алексіев Ампилов",
-      "nameAsTranscribed": "крестьянинъ Михаилъ Алексіевъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-4B2B08B8-029-M2",
-      "role": "godmother",
-      "personId": "P102714",
-      "displayName": "Параскева Дмитриевна Ампилова (Бахтемир)",
-      "nameAsTranscribed": "Параскева Дмитріева Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 29,
@@ -74,30 +59,32 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Михаил Алексиев Ампилов и Параскева Дмитриева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Оригинал подтверждает двух восприемников фамильного ряда; индекс исказил фамилию Михаила как «Ампин».",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ОБСКО\nАльнома\nГОди, ЧАСТЬ ПеРВИА, й РОд\nКтò cоБE\nЗвáніє, йлд, бтчество й фаміліл\nвоспріéмникшк%.",
-    "localOcrWithSurnameLexicon": "Альнома\nГОди, ЧАСТЬ ПеРВИЛ, й РОд\nЗваніє, йла, отчество й фаміліл\nвоспрімникшЕ%.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-negative-review",
+    "literal": "На полном развороте читаются сентябрьские записи № 50 и последующие: Сергей, Надежда, Мстислав и Зинаида; в графах родителей и восприемников записаны семьи Ковальчуков, Курдюковых, Лобачёвых, Мурзиных и другие лица. Фамильное упоминание «Михаил Алексеев Ампилов и Параскева Дмитриева Ампилова», заявленное индексом, на листе отсутствует.",
+    "modernInterpretation": "Сохранённый оригинал не содержит «Михаил Алексеев Ампилов и Параскева Дмитриева Ампилова» и не документирует носителя исследуемого фамильного ряда; совпадение выдачи подтверждено как ложное.",
+    "indexNote": "Сниппет Яндекса относится к иной строке или иному листу и расходится со всеми видимыми строками оригинала. Индекс не использован для создания события, профиля, связи или карты."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитаны полный разворот, заголовок раздела, все видимые строки и существующий крупный фрагмент; сверены даты, имена, роли и границы строк. «Михаил Алексеев Ампилов и Параскева Дмитриева Ампилова» и исследуемый фамильный ряд на листе отсутствуют.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемира Михаилъ Алексіевъ Ампинъ и Параскева Дмитріева Ампилова. Метрической книги на 1912 год, часть первая, ѡ родившихся.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Заявленное индексом упоминание «Михаил Алексеев Ампилов и Параскева Дмитриева Ампилова» отсутствует на полном развороте.",
+      "На оригинале фактически прочитаны сентябрьские записи № 50 и последующие: Сергей, Надежда, Мстислав и Зинаида; в графах родителей и восприемников записаны семьи Ковальчуков, Курдюковых, Лобачёвых, Мурзиных и другие лица."
+    ]
+  },
+  "context": {
+    "eventSummary": "Негативная проверка: сентябрьские записи № 50 и последующие: Сергей, Надежда, Мстислав и Зинаида; в графах родителей и восприемников записаны семьи Ковальчуков, Курдюковых, Лобачёвых, Мурзиных и другие лица.",
+    "relationshipBoundary": "Все реально видимые участники имеют другие фамилии и не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Карточка сохраняет доказанный результат отклонения ошибочного fuzzy-hit."
   }
 }

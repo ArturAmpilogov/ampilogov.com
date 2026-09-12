@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-100",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 100
@@ -28,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0100-target-entry.png",
-        "sha256": "ac76b63376d101096e9caf8f7ca592c6c44aa312ac073ea938f85d8fbdb4d3a2",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0100-target-context-deep.jpg",
+        "sha256": "bf6b321d02a2898c80c1ed3d1233e06b4b13de9ca41afbaf3ecc76d766eb5637",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5299x4210",
-      "targetDimensions": "1322x956",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4750x2700",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,30 +69,42 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, апрельские браки №24–26, обе стороны брачующихся и все поручители; фамильный ряд отсутствует, год не выдуман при незаполненном заголовке; сохранён clean crop 4750×2700 с SHA; профили, backlinks, карта, родство и миграция исключены"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "кеин термшленнн\nнинк, Нетрь Агріанова Шорин\nмаь и мічизанинь тиго мсе гирича\n4мОнисаич. Петровь Агофинивы. 122\nневооти: преотіяне черевни кувми-\nновки Карть Антресіч Иманнвчь и\nЧеревни Нарша иси ,боаннч Стефа\nнавч Споаховч.\nТи По ґениамь: прествяне зо-\nнвании вілсмая-",
-    "modernInterpretation": "кеин термшленнн нинк, Нетрь Агрианова Шорин маь и мичизанинь тиго мсе гирича 4мОнисаич. Петровь Агофинивы. 122 невооти: преотияне черевни кувми- новки Карть Антресич Иманнвчь и Черевни Нарша иси ,боаннч Стефа навч Споаховч. Ти По ґениамь: прествяне зо- нвании вилсмая-",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "кеин термшленнн\nнинк, Нетрь Агріанова Шорин\nмаь и мічизанинь тиго мсе гирича\n4мОнисаич. Петровь Агофинивы. 122\nневооти: преотіяне черевни кувми-\nновки Карть Антресіч Иманнвчь и\nЧеревни Нарша иси ,боаннч Стефа\nнавч Споаховч.\nТи По ґениамь: прествяне зо-\nнвании вілсмая-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги, часть вторая, о бракосочетавшихся: апрельские записи № 24–26 (16 и 30 апреля). Проверены все видимые строки женихов, невест и поручителей; фамилии Ампилогов/Анпилогов и подтверждаемого варианта фамильного ряда на листе нет.",
+    "modernInterpretation": "Скан 100 содержит три апрельские брачные записи. Фамильный поисковый результат на этом листе не подтверждён; год в видимой части заголовка не заполнен и не восстанавливается предположительно.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "год не установлен по видимому заголовку",
+      "confidence": "unresolved"
+    },
+    "place": {
+      "normalized": "Михайловский приход и соседние селения, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

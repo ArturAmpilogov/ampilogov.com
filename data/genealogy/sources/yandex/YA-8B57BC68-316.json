@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8B57BC68-316",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8",
     "scanNumber": 316,
@@ -13,22 +13,29 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/316"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "1912",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "сёла Георгиевка и Колычево, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-8B57BC68-316-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
+      "role": "surety-for-bride",
+      "displayName": "Василий Тихонович Антипов",
+      "nameAsTranscribed": "Василий Тихонов Антипов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-8B57BC68-316-M2",
+      "role": "surety-for-bride",
+      "displayName": "Дмитрий Васильевич Антипов",
+      "nameAsTranscribed": "Дмитрий Васильев Антипов",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -48,10 +55,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0316-target-entry.png",
-        "sha256": "5932c6dede13c0033edf3e387b3627b30d1ea0f944e7c01c99c718a44a59744c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0316-target-context-deep.jpg",
+        "sha256": "1678378d1f44035023c87983babf3d2b3ede40968d84be6aef8293780aa19bc4",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +66,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5212x4244",
-      "targetDimensions": "1541x1036",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x2200",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "WÁNG\nПодпись св\nКто были пор8чйтєлн.\n50.\nЗáпCH пo\n1\nОть соклавии кроотьять перети\nижи—\nвперион аснивевь Доутьи\nнебє, нетран\nранерворо скла\nексіерцнст.\nХольчова кастьяті. (івань Дєнновь\nКвиофарвє ивиьОстнов\nПезик/фревь.",
-    "modernInterpretation": "WÁNG Подпись св Кто были пор8чйтєлн. 50. ЗáпCH пo 1 Оть соклавии кроотьять перети ижи— вперион аснивевь Доутьи небє, нетран ранерворо скла ексиерцнст. Хольчова кастьяти. (ивань Дєнновь Квиофарвє ивиьОстнов Пезик/фревь.",
-    "localOcr": "WÁNG\nПодпись св\nКто были пор8чйтєлн.\n50.\nЗáпCH пo\n1\nОть соклавии кроотьять перети\nижи—\nвперион аснивевь Доутьи\nнебє, нетран\nранерворо скла\nексіерцнст.\nХольчова кастьяті. (івань Дєнновь\nКвиофарвє ивиьОстнов\nПезик/фревь.",
-    "localOcrWithSurnameLexicon": "MÁNG\nПодпись св\nВто были порвийтелн.\n50.\n1\nОть со клавии коростоять перести\nини—\nнебк, нетран\nекстернит.\nГольчова постьяті. іван Денновь\nКвита вє винОснитв",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Июль 1912 года, брачная запись № 9 от 27 числа. В строке поручителей по невесте читаются крестьяне села Колычева «Василий Тихонов Антипов, Дмитрий Васильев Антипов». Форма «Дмитрий Васильев Анпилогов» на оригинале не подтверждается.",
+    "modernInterpretation": "Дмитрий Васильевич и Василий Тихонович имеют фамилию Антипов и выступают поручителями по невесте. Яндекс ошибочно прочитал фамилию Дмитрия как Анпилогов.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всей релевантной строки имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Поручитель: Дмитрий Васильев Анпилогов, крестьянин, село Георгиевка. Невеста: Евдокия Егорова Дуракова (Позлыхирева), крестьянская дочь, девица, село Колычево...",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, брачная запись №9 от 27 июля и вся строка поручителей; оба поручителя по невесте прочитаны как Антиповы, индексное Анпилогов отвергнуто; сохранён clean crop 4900×2200 с SHA; профили фамильного ряда, backlinks, карта, родство и миграция исключены"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-EC6BB282-7",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "confirmed-false-positive",
   "collection": {
     "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
     "scanNumber": 7
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ec6bb282-af78-43f3-a21e-1af041a2aa1a/7"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-EC6BB282-7",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
     "scanNumber": 7,
@@ -41,6 +32,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0007-target-entry.png",
         "sha256": "8faefcf12a1e74b033f37928998b08964a8a29cedf214887257d7d535d60368d",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0007-target-context-deep.png",
+        "sha256": "50820c0992944a9094d8272f7eb07baa2676dd72265be53c29c98ed309b076ff",
+        "description": "Чистый полноширинный контекстный фрагмент полного разворота со всеми проверенными графами."
       }
     ],
     "quality": {
@@ -49,7 +46,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4180x3156",
       "targetDimensions": "1200x928",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "3900x2700"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -68,27 +68,31 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный брачный разворот 1896 года, записи №4–6, обе половины строк и поручители; сверка узкого фрагмента со всей строкой; fuzzy/OCR отвергнут; clean crop 3900x2700"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Вакилін\n„Аій—\nпоми\nоль.\n5.\nЖенгіяь Нимегородскогув.\nАрЗлаличекагя унчб?я, 2евачи-\nСансной валостасала ВаВ6\nяне преспвянин. Ивинчь\nВисилвавч Каматниковче,\n24л..",
-    "modernInterpretation": "Вакилин „Аий— поми оль. 5. Женгияь Нимегородскогув. АрЗлаличекагя унчб?я, 2евачи- Сансной валостасала ВаВ6 яне преспвянин. Ивинчь Висилвавч Каматниковче, 24л..",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "localOcr": "Вакилін\n„Аій—\nпоми\nоль.\n5.\nЖенгіяь Нимегородскогув.\nАрЗлаличекагя унчб?я, 2евачи-\nСансной валостасала ВаВ6\nяне преспвянин. Ивинчь\nВисилвавч Каматниковче,\n24л..",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "1896 год, часть вторая, о бракосочетавшихся. На полном развороте проверены записи № 4–6 с женихами, невестами и поручителями. Прежний узкий фрагмент относится к строке невесты записи №5 из Нижегородской губернии, Арзамасского уезда; её фамилия не относится к ряду Ампилоговых. На листе исследуемой фамилии нет.",
+    "modernInterpretation": "Разворот содержит три чужие брачные записи 1896 года. Fuzzy-совпадение не подтверждено ни среди брачующихся, ни среди поручителей.",
+    "indexNote": "Полный скан и все графы записей №4–6 проверены; прежний OCR искажал строку чужой невесты, фамилии Ампилогов/Анпилогов нет."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Полный скан и все графы записей №4–6 проверены; прежний OCR искажал строку чужой невесты, фамилии Ампилогов/Анпилогов нет."
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "isRecord": true,
+  "cardKind": "confirmed-false-positive",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное fuzzy-совпадение на брачном развороте 1896 года.",
+    "identityNote": "Носителя исследуемого фамильного ряда на полном листе нет; профиль и связи не создаются.",
+    "migrationNote": "Карта и миграция не создаются."
   }
 }

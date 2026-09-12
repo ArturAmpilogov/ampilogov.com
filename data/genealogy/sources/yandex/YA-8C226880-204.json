@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8C226880-204",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8c226880-6126-4896-851b-2f301b131018",
     "scanNumber": 204,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8c226880-6126-4896-851b-2f301b131018/204"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
+      "display": "1910",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Изяк-Никитинский и соседние посёлки, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8C226880-204-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8c226880-6126-4896-851b-2f301b131018",
     "scanNumber": 204,
@@ -48,10 +40,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8c226880-6126-4896-851b-2f301b131018/0204-target-entry.png",
-        "sha256": "daf20a86ca94ecdb410fa2b9373796ac5b6dba59c0f74d0f844e115c8e1938a0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8c226880-6126-4896-851b-2f301b131018/0204-target-context-deep.jpg",
+        "sha256": "6cb230d62db625fdc036f3742a4132287d532a68043e6a026f50c1ccabbcb119",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +51,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5275x4390",
-      "targetDimensions": "1418x927",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ікг. По жених. Изякь. Никлиин-\nаласкаго поселка Казаки: Діонисий\nгламеойдієві Иванові и Софроній\nИгнайьевч свнисимовь. Поне\nЗена\nвечениь. Казаки: Алексий део-\n(акдоровь описимювьи софранім\nь. Игнатьевч внисимово.\n, ский",
-    "modernInterpretation": "икг. По жених. Изякь. Никлиин- аласкаго поселка Казаки: Дионисий гламеойдиєви Иванови и Софроний Игнайьевч свнисимовь. Поне Зена вечениь. Казаки: Алексий део- (акдоровь описимювьи софраним ь. Игнатьевч внисимово. , ский",
-    "localOcr": "ікг. По жених. Изякь. Никлиин-\nаласкаго поселка Казаки: Діонисий\nгламеойдієві Иванові и Софроній\nИгнайьевч свнисимовь. Поне\nЗена\nвечениь. Казаки: Алексий део-\n(акдоровь описимювьи софранім\nь. Игнатьевч внисимово.\n, ский",
-    "localOcrWithSurnameLexicon": "ікг. По жених. Изякь. Никлиин-\nаласкаго поселка Казаки: Діонисий\nглансойдієві Иванові и Софроній\nИгнашьевч внисимовь. По не\nЗена\nвелениь. Казаки: Алексий део-\nандоровь описимюти софранім\n6. Игнатьево внисимов.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги за 1910 год, часть вторая, о бракосочетавшихся: записи № 10–12 конца октября и ноября. Проверены все строки брачующихся и поручителей; Ефима Филиппова Анпилогова на листе нет.",
+    "modernInterpretation": "Индексная строка о поручителе Ефиме Филипповиче Анпилогове привязана не к этому скану. Видимые брачные записи №10–12 называют других поручителей.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "По женихе: Изяк-Никитинского поселка казаки: Петр Алексеев Устимов и Ефим Филиппов Анпилогов. По невесте: Того же поселка казаки...",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, записи №10–12 и вся колонка поручителей; Ефим Филиппов Анпилогов отсутствует; сохранён clean crop 4800×3000 с SHA; профиль, backlink, карта, родство и миграция исключены"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

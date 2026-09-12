@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-EC2C643A-187",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "confirmed-false-positive",
   "collection": {
     "catalogId": "ec2c643a-efea-4f9e-b5c6-c711df7204d6",
     "scanNumber": 187,
@@ -12,25 +12,8 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ec2c643a-efea-4f9e-b5c6-c711df7204d6/187"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-EC2C643A-187-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "event": null,
+  "mentions": [],
   "evidence": {
     "catalogId": "ec2c643a-efea-4f9e-b5c6-c711df7204d6",
     "scanNumber": 187,
@@ -52,6 +35,12 @@
         "path": "data/genealogy/evidence-private/yandex/ec2c643a-efea-4f9e-b5c6-c711df7204d6/0187-target-entry.png",
         "sha256": "fa18f90449b45f0047cc52b0612971e14805da30219163fc5d0fd5d52a4e3d91",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/ec2c643a-efea-4f9e-b5c6-c711df7204d6/0187-target-context-deep.png",
+        "sha256": "f2b0bfa7d0a5ec0d2e5d8c3db362a0420ef28f69b7ab0da637742aea3fbaf396",
+        "description": "Чистый полноширинный контекстный фрагмент полного разворота со всеми проверенными графами."
       }
     ],
     "quality": {
@@ -60,36 +49,41 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5293x4247",
       "targetDimensions": "1346x637",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "5000x1800"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Десниттісь Пашплй,\n• дегь пацата\nканща спаросматван намд-\nХавс.\nпоственный аюхит\nХИВ\nланрестантем казать Навелх\nИижитісва Везминова lдon пayanа\nКикідів Натолияв і Мудовама.",
-    "modernInterpretation": "Десниттись Пашплй, • дегь пацата канща спаросматван намд- Хавс. поственный аюхит ХИВ ланрестантем казать Навелх Иижитисва Везминова lдon пayanа Кикидив Натолияв и Мудовама.",
-    "localOcr": "Десниттісь Пашплй,\n• дегь пацата\nканща спаросматван намд-\nХавс.\nпоственный аюхит\nХИВ\nланрестантем казать Навелх\nИижитісва Везминова lдon пayanа\nКикідів Натолияв і Мудовама.",
-    "localOcrWithSurnameLexicon": "Деснитісь Пашпий,\nХава.\nпоственный аэхит\nХИВ\nнапрестантем казать Навелх\nУжити сва Везенов и док пуста\nКикідів Натолияв і Пудовала.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "1914 год, часть первая, о родившихся. Запись № 82: 27 родился, 30 крещён. Михаил. Татищевской станицы казакъ Николай [отчество неуверенно] Бондарчукъ и законная жена его Агафія Иванова; оба православные. Восприемники: той же станицы казакъ Георгій Николаевъ Бондарчукъ и дочь казака [фамилия неразборчива] Евдокія Григорьева [фамилия неразборчива]. Фамилии Ампилогов в строке нет.",
+    "modernInterpretation": "Запись №82 относится к крещению Михаила, сына казака Николая Бондарчука. Крестный отец — Георгий Николаевич Бондарчук; имя крестной матери — Евдокия Григорьевна, её фамилия не угадывается. Носителя исследуемого ряда нет.",
+    "indexNote": "Индекс смешал строки и роли: на оригинале казак Георгий Николаев Бондарчук; «Евгении Ампилоговой Сироткиной» и «Татьяны Иларионовой Зайцевой» в записи №82 нет."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Евгения Ампилогова Сироткина, дочь казака, девица, Татищевская станица. Крёстная мать: Татьяна Иларионова Зайцева.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал строки и роли: на оригинале казак Георгий Николаев Бондарчук; «Евгении Ампилоговой Сироткиной» и «Татьяны Иларионовой Зайцевой» в записи №82 нет."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "isRecord": true,
+  "cardKind": "confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "transcriptionConfidence": "high-for-index-rejection; medium-for-unrelated-godmother-surname",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Фамилия крестной матери Евдокии неразборчива и не влияет на отсутствие исследуемой фамилии."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный разворот рождений 1914 года, запись №82 и соседние строки; обе графы; увеличенная повторная проверка Георгия Николаева Бондарчука; индексное смешение отвергнуто; фамилия Евдокии не угадана; clean crop 5000x1800"
+  },
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Ложное индексное совпадение в записи №82 за 1914 год.",
+    "identityNote": "Увеличенная правая графа подтверждает Георгия Николаева Бондарчука, не Ампилогова; предварительно разрешённый P102890 не создан.",
+    "migrationNote": "Карта и миграция не создаются."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-E70C3EC2-15",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
     "scanNumber": 15
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e70c3ec2-4ead-4043-8334-b6446ef8667b/15"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E70C3EC2-15",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
     "scanNumber": 15,
@@ -41,6 +32,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-target-entry.png",
         "sha256": "80cf360f364746f5adf3004e9e5860b033ce76e4aa8e1e73eb8e3b34dc834158",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e70c3ec2-4ead-4043-8334-b6446ef8667b/0015-target-context-deep.png",
+        "sha256": "aad8769f890507674027271cca26d58179a650f8ca789fc79c5c1f03a799e2bd",
+        "description": "Крупный полноширинный чистый фрагмент с заголовком и всеми видимыми строками для отрицательной проверки.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +47,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "6022x4798",
       "targetDimensions": "1699x918",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5700x4300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +103,38 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-confirmed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: полный лист, заголовок, все видимые строки и границы табличных записей проверены вручную; индексная фамильная цель не найдена."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 6022x4798 spread, explicit 1891 heading, July records №26–29 across child/parent/godparent/clergy columns and row boundaries, exact target crop; confirmed false index hit; no profile/public event/map; clean 5700x4300 crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "осньк.\nСвящанника Сланив Рнитрів\nДітпона Лсея Лала „Февий\nСела Гаргіовки Крестьянт\nВасилій Васинієвь Дадуто\nнванонная зеска его Дарбч\nПихатова; оба правосла\nвноч.\nСященних Soamud Puumpiele",
-    "modernInterpretation": "осньк. Свящанника Сланив Рнитрив Дитпона Лсея Лала „Февий Села Гаргиовки Крестьянт Василий Васиниєвь Дадуто нванонная зеска его Дарбч Пихатова; оба правосла вноч. Сященних Soamud Puumpiele",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "осньк.\nСвящанника Сланив Рнитрів\nДітпона Лсея Лала „Февий\nСела Гаргіовки Крестьянт\nВасилій Васинієвь Дадуто\nнванонная зеска его Дарбч\nПихатова; оба правосла\nвноч.\nСященних Soamud Puumpiele",
-    "localOcrWithSurnameLexicon": "вославная.\nСвященнико ваша Динарті\nСела Гаргівки Кристьянив\nв.\nанній Васиів Драдуни\nивинанная заска его Дарви\nРинатова; оба правосла\nв ноче.\n@la genes Cand Bu compete\nDía nonz Pala NonuS Sieeen",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "«Метрической книги на 1891 год, часть первая, о родившихся». Полный разворот содержит июльские записи № 26–29; в сохранённой индексом области родители читаются как семья иных фамилий. Параскевы Филипповой Ампилоговой и Филиппа Феодорова Ампилогова на листе нет.",
+    "modernInterpretation": "Полный сохранённый лист вручную прочитан: носителей исследуемого фамильного ряда на нём нет. Индексное совпадение подтверждено как ложное.",
+    "indexNote": "Confirmed false positive: индексные Параскева Филиппова и Филипп Феодоров Ампилоговы не найдены ни в target-строке, ни в остальных видимых июльских записях; оригинал прямо датирован 1891 годом."
   },
   "indexData": {
     "querySnippet": "Родившийся: Пераскева Филиппова Ампилогова. ... Отец: Филипп Феодоров Ампилогов, крестьянин, село Георгиевка.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive: индексные Параскева Филиппова и Филипп Феодоров Ампилоговы не найдены ни в target-строке, ни в остальных видимых июльских записях; оригинал прямо датирован 1891 годом."
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "source-review",
+    "date": {
+      "display": "1891 год",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Негативная проверка индексного фамильного совпадения по полному первичному изображению.",
+    "identityNote": "Профили и backlinks не создаются: фамильная цель на листе отсутствует.",
+    "migrationNote": "Карта и миграция неприменимы."
+  },
+  "publicCore": false
 }
