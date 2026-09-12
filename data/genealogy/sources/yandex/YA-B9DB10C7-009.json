@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-009",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 9,
@@ -13,22 +13,25 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/9"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-009-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102909",
+      "displayName": "Иван Иванович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Ив. Ив.",
+      "surnameSeries": true,
+      "yearAsWritten": "1903"
     }
   ],
   "evidence": {
@@ -52,44 +55,55 @@
         "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0009-target-entry.png",
         "sha256": "fc7d50d1ef5ee4c5c97f3d04e0993ae646c8b70f5c668628238b1bf37c22e28e",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/009-target-context-deep.jpg",
+        "sha256": "165fb0e167687c23b914fa51173f2a4d4c7a66ea0a042ecd34e47a97cf4fd9be",
+        "description": "Крупный полноширинный clean crop roster-листа 009, сохраняющий фамильные строки и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6462x9068",
-      "targetDimensions": "2491x470",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "67 Пнищенко /икал. чив.",
-    "modernInterpretation": "67 Пнищенко /икал. чив.",
-    "localOcr": "67 Пнищенко /икал. чив.",
-    "localOcrWithSurnameLexicon": "67 Пнищенко / икал. чив.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "155. Ампилогов Ив. Ив. | 1903 | 1",
+    "modernInterpretation": "Иван Иванович Ампилогов; в графе года рождения — 1903, в следующей цифровой графе — 1.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; имена, сокращения и годы перепроверены по всему листу.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "155. Ампилогов Ив.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "military-registration-list",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен военно-учётный лист, строка № 155, все видимые строки и графы. Фамильные строки независимо прочитаны по оригиналу; сокращения и исправления сохранены буквально. Создан clean crop 5800×7800. Место списка не трактуется как место рождения, родство или миграция.",
+    "unresolved": []
+  },
+  "context": {
+    "summary": "Алфавитный военно-учётный лист документирует перечисленных носителей фамилии Ампилогов и значения, записанные в соседних графах.",
+    "historicalContext": "Дело относится к учёту военнообязанных, призванных по мобилизации. Цифровые и буквенные коды не раскрываются без легенды книги.",
+    "genealogicalConclusion": "Имена и годы сохранены как написано. Место ведения списка не объявляется местом рождения, родством или маршрутом переселения.",
+    "indexDiscrepancy": "Индекс Яндекса и OCR использованы только для навигации; фамилии, инициалы, годы и исправления прочитаны по полному оригиналу."
   }
 }

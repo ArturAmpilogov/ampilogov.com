@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-008",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 8,
@@ -13,22 +13,25 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/8"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-008-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амтилогов",
-      "nameAsTranscribed": "Амтилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102907",
+      "displayName": "Дмитрий Егорович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Дмитр. Егор.",
+      "surnameSeries": true,
+      "yearAsWritten": "1905"
     }
   ],
   "evidence": {
@@ -48,48 +51,53 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0008-target-entry.png",
-        "sha256": "6a6f186d9d673dfd0362eba8b3c9697fa4526fa26ff7e21d19986f5a415802ef",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0008-target-context-deep.jpg",
+        "sha256": "6c0ae13b3af44f1d15e62de696b2cf3c3a1d0497c837c755581f3ccab5dbae89",
+        "description": "Крупный clean crop почти полного roster-листа, сохраняющий строки фамильного ряда и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6624x9068",
-      "targetDimensions": "2494x581",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-roster-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Трофим\nВносов\nГригор",
-    "modernInterpretation": "Трофим Вносов Григор",
-    "localOcr": "Трофим\nВносов\nГригор",
-    "localOcrWithSurnameLexicon": "Трофим\nВносов\nГригор",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "141. Ампилогов Дмитр. Егор. | 1905 | 114 | РН",
+    "modernInterpretation": "В строке № 141 военного реестра указан Дмитрий Егорович Ампилогов, год в графе — 1905; далее стоят код 114 и сокращение «РН», значение которых без легенды не раскрывается.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; ФИО, сокращения и годы перепроверены по полному листу и крупному clean crop.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Амтилогов Дмитр. ... 11. 141. Амтилогов Дмитр. Егор.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "military-registration-list",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен roster-лист scan 8 и строка № 141. Уверенно прочитаны Дмитрий Егорович Ампилогов, 1905 год, код 114 и «РН». Он не объединён с P91043/P91076: их рождения 1887/1888 хронологически несовместимы. Родство и миграция не выводятся.",
+    "unresolved": []
+  },
+  "context": {
+    "summary": "Именной военно-учётный список документирует перечисленных носителей фамилии Ампилогов и записанные рядом годы.",
+    "historicalContext": "Период дела 1941–1945 относится к военному учёту. Коды и служебные сокращения не раскрыты без легенды.",
+    "genealogicalConclusion": "Карточка подтверждает имена и годы как написано; место списка не считается местом рождения или доказательством переселения. Родство документом не установлено.",
+    "indexDiscrepancy": "Яндекс/OCR искажал фамилии, имена и годы; карточка нормализована по рукописному оригиналу."
   }
 }

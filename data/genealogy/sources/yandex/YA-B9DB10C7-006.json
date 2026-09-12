@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-006",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 6,
@@ -13,22 +13,43 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/6"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-006-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анолов",
-      "nameAsTranscribed": "Анолов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102153",
+      "displayName": "Гавриил Моисеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Гавр. Моис.",
+      "surnameSeries": true,
+      "yearAsWritten": "1899"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-006-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102900",
+      "displayName": "Яков «Ил.» Ампилогов",
+      "nameAsTranscribed": "Ампилогов Яков Ил.",
+      "surnameSeries": true,
+      "yearAsWritten": "1895"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-006-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102901",
+      "displayName": "Егор «Вар.» Ампилогов",
+      "nameAsTranscribed": "Ампилогов Егор Вар.",
+      "surnameSeries": true,
+      "yearAsWritten": "1903"
     }
   ],
   "evidence": {
@@ -48,46 +69,53 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0006-target-entry.png",
-        "sha256": "05313c30e1f723ac3b32bf2853cc3a7d2ac34065bb99b0a88d2e5e5d30f5e2cf",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0006-target-context-deep.jpg",
+        "sha256": "a76baa0665e3bea007721a820deeca91d1c3327ec860be1ab760e71f59564218",
+        "description": "Крупный clean crop почти полного roster-листа, сохраняющий строки фамильного ряда и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6512x9332",
-      "targetDimensions": "2452x2710",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-roster-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "9\nАлиш логов Ягия.\nКачей 190р-1\nВмішлогов Равр. Можа\n1901\nВзнйт Анолов Лунтор-\nМ.1901\nи\nВисчлямов Кав. М/9а\n2\n3 Аисклямов Вслин Ш.1903,1\n4 Влматов А Рдумла\nКисм 1901\nАмерханюв Анайа\nКам 1902\n6\nАпиийов Рілад. Сіейам-\n1900\n7Аочаи велея иви",
-    "modernInterpretation": "9 Алиш логов Ягия. Качей 190р-1 Вмишлогов Равр. Можа 1901 Взнйт Анолов Лунтор- М.1901 и Висчлямов Кав. М/9а 2 3 Аисклямов Вслин Ш.1903,1 4 Влматов А Рдумла Кисм 1901 Амерханюв Анайа Кам 1902 6 Апиийов Рилад. Сиейам- 1900 7Аочаи велея иви",
-    "localOcr": "9\nАлиш логов Ягия.\nКачей 190р-1\nВмішлогов Равр. Можа\n1901\nВзнйт Анолов Лунтор-\nМ.1901\nи\nВисчлямов Кав. М/9а\n2\n3 Аисклямов Вслин Ш.1903,1\n4 Влматов А Рдумла\nКисм 1901\nАмерханюв Анайа\nКам 1902\n6\nАпиийов Рілад. Сіейам-\n1900\n7Аочаи велея иви",
-    "localOcrWithSurnameLexicon": "9\nАлиш логов Яния.\nКачей 190р-11\nВмішлогов Равр. Може\n1901\nМ. 1901\nи\nВисчлямов Кав. М 19а\n2\n3 Вислямов Вслан Ш. 1903,1\n4 Алматов А думла\nКисм 1901\nАмерханов Анана,\nКам 1902\n6\nАнтиков Рілад. Стейам\n1900",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Ампилогов Гавр. Моис. | 1899 | 1\nАмпилогов Яков Ил. | 1895\nАмпилогов Егор Вар. | 1903",
+    "modernInterpretation": "На листе военного учёта перечислены Гавриил Моисеевич Ампилогов (год 1899), Яков Ампилогов с сокращённым отчеством «Ил.» (1895) и Егор Ампилогов с сокращённым отчеством «Вар.» (1903).",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; ФИО, сокращения и годы перепроверены по полному листу и крупному clean crop.",
     "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "синский. 94. Ампилогов Егор Вар. 1903. ... Ампилогов Гавр. Моис 1901. Пустяги.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "military-registration-list",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high-with-one-identity-link-at-medium",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен roster-лист scan 6, включая строки Гавр. Моис., Яков Ил. и Егор Вар. Ампилоговых. Гавриил связан с P102153 только strongly-supported/medium: редкое точное имя и общий тип регионального списка, но годы расходятся 1899/1901; оба значения сохранены. Сокращённые отчества Якова и Егора не раскрыты. Родство и миграция не выводятся.",
     "unresolved": []
+  },
+  "context": {
+    "summary": "Именной военно-учётный список документирует перечисленных носителей фамилии Ампилогов и записанные рядом годы.",
+    "historicalContext": "Период дела 1941–1945 относится к военному учёту. Коды и служебные сокращения не раскрыты без легенды.",
+    "genealogicalConclusion": "Карточка подтверждает имена и годы как написано; место списка не считается местом рождения или доказательством переселения. Родство документом не установлено.",
+    "indexDiscrepancy": "Яндекс/OCR искажал фамилии, имена и годы; карточка нормализована по рукописному оригиналу."
   }
 }

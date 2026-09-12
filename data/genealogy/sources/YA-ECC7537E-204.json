@@ -1,81 +1,145 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-204",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-    "scanNumber": "204"
+    "scanNumber": 204,
+    "title": "Метрическая книга за 1911 год, часть первая, о родившихся",
+    "asRead": "Март, строка Григория, рождённого 4 и крещённого 5 марта"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/204"
   },
-  "mentions": [],
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {
+      "display": "родился 4 марта, крещён 5 марта 1911 года",
+      "from": "1911-03-04",
+      "to": "1911-03-05",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-ECC7537E-204-M1",
+      "role": "child",
+      "personId": "P102259",
+      "nameAsTranscribed": "Григорій",
+      "displayName": "Григорий Николаевич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high",
+      "identityBasis": "Имя ребёнка, полное имя отца, Кармалка и смерть в двухлетнем возрасте 4 октября 1913 года образуют непротиворечивую хронологию."
+    },
+    {
+      "mentionId": "YA-ECC7537E-204-M2",
+      "role": "father",
+      "personId": "P91009",
+      "nameAsTranscribed": "села Кармалки крестьянинъ Николай Ефремовъ Ампилоговъ",
+      "displayName": "Николай Ефремович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high",
+      "identityBasis": "Полное имя, сословие, Кармалка и подтверждённая семейная цепочка."
+    },
+    {
+      "mentionId": "YA-ECC7537E-204-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Агриппина Андреева",
+      "displayName": "Агриппина Андреевна",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-ECC7537E-204-M4",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "того же села крестьянинъ Филиппъ Евсеевъ Куликовъ",
+      "displayName": "Филипп Евсеевич Куликов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-ECC7537E-204-M5",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "крестьянская дѣвица Феодора Иванова Кашкова",
+      "displayName": "Феодора Ивановна Кашкова",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-full-view.jpg",
-    "sha256": "50c7566473b07f7745b1906d042be9fd5f4d6ecbcffd8ee9cae231a9f90be3ab",
+    "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+    "scanNumber": 204,
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "yandex-archive-original-image-download-with-full-width-manual-review-crop",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "0c2bee7d7866a4f3f51647823ec28f7b11293ccc7746d396fe9062131d936927",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-target-entry.jpg",
-        "sha256": "f88b9c523407d70852c06a309810b3f066e34be337304987a189f43736aa862c"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-header.png",
+        "sha256": "3eb6470a3a64fc6b745c668c421b5a183920d2de56dd6fd83b1b6059b081ef5c",
+        "description": "Заголовок и структура полного архивного разворота."
+      },
+      {
+        "kind": "indexed-coordinate",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-target-entry.png",
+        "sha256": "f74b6b96c6adfaf7973a9fa4d347f501141d83939ac45248e679a5110ec9d9cd",
+        "description": "Ранний координатный фрагмент; использован только совместно с полным листом."
+      },
+      {
+        "kind": "full-width-target-context",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-target-context-deep.jpg",
+        "sha256": "517c56a7007eb0f918e7857ff06d3b2a63878d8aef119eb35cfad9b174d83ca2",
+        "description": "Чистый полноширинный фрагмент с целевой строкой и всеми её колонками.",
+        "dimensions": "5300x3400"
       }
     ],
-    "parallelCopies": [
-      {
-        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-        "scanNumber": 204,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "0c2bee7d7866a4f3f51647823ec28f7b11293ccc7746d396fe9062131d936927",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-header.png",
-            "sha256": "3eb6470a3a64fc6b745c668c421b5a183920d2de56dd6fd83b1b6059b081ef5c",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0204-target-entry.png",
-            "sha256": "f74b6b96c6adfaf7973a9fa4d347f501141d83939ac45248e679a5110ec9d9cd",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5652x4566",
-          "targetDimensions": "2933x2548",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "high"
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "allVisibleRowsManuallyRead": true,
+      "fullDimensions": "5652x4566",
+      "method": "manual-full-page-reading-with-full-width-clean-recrop",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-centralized-upload",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "XCA.\nWUMHIL\naseriain\nTrmnnaia\nв'ьроиспов'Кданіл.\nвоспріÉмникWEZ.\nСели Караалкт Кррестьйнинь Нико-\n•\n1іогд-осесела креатвяниь прилииу\n\" офремові А/мпилоговвизаконнам\nрій совсевіевчонуликовь Клествян-\n11.\nденаео Агришчина Анореева; о багтваво-\nскачорена веодора Иванова Кіликова,\nСлавісне\nСвященникг\nДимитуті. (одіниками\nДісконь Сергій о обровь-\nТого.оеселазапасньй рятової (риго-\nела варашики Крестьянино Когсстан-\nріхвотгікоЗороознповоннсна\nтинь огоровь Коновалово п законная\nжена Мкншина сгорова козлова.\nженаего параскова наколаева: обаітраби-\nСвященникг Ргиттирій (судпинаки\nиіого оекела, крестьянинь Васиій\nіаконо Снй во0ртв%\nСела Кармалки Крестьянимь Алекстог?\nІітереніісвьатлоговом кресівян-\nИвановг повловчи закончлая женаего Пара-\nскалдіовиця Аннавіиаоасева Хва-\n(Кеваптерентіва обатравослансья\nлеви\nвитрии (рузничист:\nСслаМихайловского Крестьянина\n• Села Карманки Крастьянинь Иларіонь\nАдонасій Лаврентієвь Харааловк\nНавловьднмовьизаконназженаего па-\nрсяла Кариамот Кресзьянская ьвица\nраскева Плекстьева; оба правосланне\nЄвдокія Навиив Димова..\nРвощентина Д аистрій ридниисній\nДіаконь Серив6об\nСела Карсчапти Кресптьянинь Иванбва-\nНбого-ое сели крестьяниньовао-\nновв алилоговьчзаконная уеенасти\nнасій ВасильевьАлигилоговьи сол-\nмавра сихапловаосаітравослатине.\nДатеказорсене, Анна Пстрове сАбба-\nСвищанняха Димитрій (судняжанй\n1кУслова.\nlaldo1l\nОсоіт ви бооено",
-    "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-transcription",
+    "literal": "Март. 4/5. Григорій. Села Кармалки крестьянинъ Николай Ефремовъ Ампилоговъ и законная жена его Агриппина Андреева; оба православные. Воспріемники: того же села крестьянинъ Филиппъ Евсеевъ Куликовъ и крестьянская дѣвица Феодора Иванова Кашкова.",
+    "modernInterpretation": "Григорий Николаевич Ампилогов родился 4 и был крещён 5 марта 1911 года в Кармалке; родители — Николай Ефремович Ампилогов и Агриппина Андреевна. Восприемниками были Филипп Евсеевич Куликов и Феодора Ивановна Кашкова.",
+    "indexNote": "Фамильная строка индекса подтверждена, но индекс не передал имя ребёнка и точные даты; они прочитаны с полного листа."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P102259",
+  "context": {
+    "eventSummary": "Рождение и крещение Григория Николаевича Ампилогова в Кармалке в марте 1911 года.",
+    "identityNote": "Запись рождения уточняет прежнюю возрастную оценку P102259 и связывает ребёнка с P91009 прямой формулой.",
+    "migrationNote": "Местное рождение не доказывает переселение."
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-child-dates-parents-surname-status-and-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный оригинал 5652×4566 и clean crop 5300×3400; вручную прочитаны мартовская строка, даты 4/5, ребёнок, родители, место и границы соседних записей; индекс дополнен по скану; существующие P91009/P102259 связаны без новых недоказанных участников; полностью прочитана колонка восприемников, участники других фамилий оставлены mentions"
   },
   "indexData": {
     "querySnippet": "Села Кармалки Крестьянин Николай Ефремов Ампилогов и законная жена его Агриппина Андреева; оба православные.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexDiscrepancy": "Индекс опустил имя ребёнка Григория и даты 4/5 марта."
   }
 }

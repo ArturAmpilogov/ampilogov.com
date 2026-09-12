@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-012",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 12,
@@ -13,22 +13,52 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/12"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-012-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102915",
+      "displayName": "Николай Яковлевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Никол. Як.",
+      "surnameSeries": true,
+      "yearAsWritten": "1917"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-012-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102870",
+      "displayName": "Тимофей Иванович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Тимоф. Ив.",
+      "surnameSeries": true,
+      "yearAsWritten": "1899"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-012-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102916",
+      "displayName": "Андрей Матвеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Андрей Матв.",
+      "surnameSeries": true,
+      "yearAsWritten": "1895"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-012-M4",
+      "role": "military-register-listed-person",
+      "personId": "P102917",
+      "displayName": "Алексей Владимирович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Ал-й Влад.",
+      "surnameSeries": true,
+      "yearAsWritten": "1898"
     }
   ],
   "evidence": {
@@ -52,41 +82,55 @@
         "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0012-target-entry.png",
         "sha256": "3a69a9e2782e3d604550ce108c19e68a5dc5dbdd01843fc4b043f2f6df1276bf",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/012-target-context-deep.jpg",
+        "sha256": "8105e1048d9d6d9c7b07d9c59fe39f553977d1af9516eeee6411393381e753c0",
+        "description": "Крупный полноширинный clean crop roster-листа 012, сохраняющий фамильные строки и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6500x9068",
-      "targetDimensions": "3966x5176",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "220. Амерханов Хам3Я Мрт. 1911 26\n15/01\n991. Антиниці Семен Иванов 1913 „\n292 Аритамонов Проф. 6т 1963\n\"\n293 Ампилогов Дикол. Як. 1907\n294. Алелвеков Галей Гит.\n1918\n1,\n925 Аенков Грагор. вім.\n1906\n\"\n9.26. Ао бясов Ахметгал. Дав.1911 \"\nГерас. 197\n294. Афонся /уз6\n298 Абаракимів Тиманй\n19194\n299 Амерханов Хайнулла 1Ф\"\n250 Племин Иван. Малтв .1899 •)\n231. Алехин. Иван Сейей 19,9.48\n239 Флнильгов Тимоф. 48.1899120\n11\n23. Пнксов Киклий Федар1903133\n4\n1,\n233 Олйнн Вас Ситей 1912 „\nPC",
-    "modernInterpretation": "220. Амерханов Хам3Я Мрт. 1911 26 15/01 991. Антиници Семен Иванов 1913 „ 292 Аритамонов Проф. 6т 1963 \" 293 Ампилогов Дикол. Як. 1907 294. Алелвеков Галей Гит. 1918 1, 925 Аенков Грагор. вим. 1906 \" 9.26. Ао бясов Ахметгал. Дав.1911 \" Герас. 197 294. Афонся /уз6 298 Абаракимив Тиманй 19194 299 Амерханов Хайнулла 1Ф\" 250 Племин Иван. Малтв .1899 •) 231. Алехин. Иван Сейей 19,9.48 239 Флнильгов Тимоф. 48.1899120 11 23. Пнксов Киклий Федар1903133 4 1, 233 Олйнн Вас Ситей 1912 „ PC",
-    "localOcr": "220. Амерханов Хам3Я Мрт. 1911 26\n15/01\n991. Антиниці Семен Иванов 1913 „\n292 Аритамонов Проф. 6т 1963\n\"\n293 Ампилогов Дикол. Як. 1907\n294. Алелвеков Галей Гит.\n1918\n1,\n925 Аенков Грагор. вім.\n1906\n\"\n9.26. Ао бясов Ахметгал. Дав.1911 \"\nГерас. 197\n294. Афонся /уз6\n298 Абаракимів Тиманй\n19194\n299 Амерханов Хайнулла 1Ф\"\n250 Племин Иван. Малтв .1899 •)\n231. Алехин. Иван Сейей 19,9.48\n239 Флнильгов Тимоф. 48.1899120\n11\n23. Пнксов Киклий Федар1903133\n4\n1,\n233 Олйнн Вас Ситей 1912 „\nPC",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "223. Ампилогов Никол. Як. | 1917\n232. Ампилогов Тимоф. Ив. | 1899 | 120\n237. Ампилогов Андрей Матв. | 1895 | 1\n238. Ампилогов Ал-й Влад. | 1898 | 123\n233. Аносов Василий Федор. | 1903 | 133",
+    "modernInterpretation": "Николай Яковлевич (1917), Тимофей Иванович (1899), Андрей Матвеевич (1895) и Алексей Владимирович (1898) Ампилоговы. Строка № 233 относится к Василию Фёдоровичу Аносову, а не к Ампилоговым.",
+    "indexNote": "Яндекс ошибочно передал строку № 233 как «Ампилогов Вас. Степ.». На оригинале уверенно: «Аносов Василий Федор. | 1903 | 133»; профиль фамильного ряда для неё не создавался.",
     "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "223 Ампилогов Никол. Як. ... Николаеве \". 233. Ампилогов Вас. Степ.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "military-registration-list",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен военно-учётный лист, строки № 220–240, все видимые строки и графы. Фамильные строки независимо прочитаны по оригиналу; сокращения и исправления сохранены буквально. Создан clean crop 5800×7800. Место списка не трактуется как место рождения, родство или миграция.",
     "unresolved": []
+  },
+  "context": {
+    "summary": "Алфавитный военно-учётный лист документирует перечисленных носителей фамилии Ампилогов и значения, записанные в соседних графах.",
+    "historicalContext": "Дело относится к учёту военнообязанных, призванных по мобилизации. Цифровые и буквенные коды не раскрываются без легенды книги.",
+    "genealogicalConclusion": "Имена и годы сохранены как написано. Место ведения списка не объявляется местом рождения, родством или маршрутом переселения.",
+    "indexDiscrepancy": "Индекс Яндекса и OCR использованы только для навигации; фамилии, инициалы, годы и исправления прочитаны по полному оригиналу."
   }
 }

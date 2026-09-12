@@ -1,85 +1,145 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-206",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-    "scanNumber": "206"
+    "scanNumber": 206,
+    "title": "Метрическая книга за 1911 год, часть первая, о родившихся",
+    "asRead": "Июль, строка Ирины, рождённой 4 и крещённой 8 июля"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/206"
   },
-  "mentions": [],
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {
+      "display": "родилась 4 июля, крещена 8 июля 1911 года",
+      "from": "1911-07-04",
+      "to": "1911-07-08",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-ECC7537E-206-M1",
+      "role": "child",
+      "personId": "P102922",
+      "nameAsTranscribed": "Ирина",
+      "displayName": "Ирина Наумовна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ECC7537E-206-M2",
+      "role": "father",
+      "personId": "P91148",
+      "nameAsTranscribed": "села Кармалки крестьянинъ Наумъ Ильинъ Ампилоговъ",
+      "displayName": "Наум Ильич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high",
+      "identityBasis": "Полное имя, Кармалка, взрослая семейная роль и непрерывная хронология 1909–1913 годов совпадают с P91148."
+    },
+    {
+      "mentionId": "YA-ECC7537E-206-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Феодосія Прокопіева",
+      "displayName": "Феодосия Прокопьевна",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-ECC7537E-206-M4",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "того же села крестьянинъ Парфирій Павловъ Степановъ",
+      "displayName": "Парфирий Павлович Степанов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-ECC7537E-206-M5",
+      "role": "godmother",
+      "personId": "P102923",
+      "nameAsTranscribed": "крестьянская дѣвица Вѣра Семенова Ампилогова",
+      "displayName": "Вера Семёновна Ампилогова",
+      "surnameSeries": true,
+      "identityConfidence": "high",
+      "identityBasis": "Полное имя, девичий статус и роль прямо прочитаны в строке; exact-дубль в проекте отсутствует."
+    }
+  ],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-full-view.jpg",
-    "sha256": "98f1fd4cdf427e6a8404c049a22a22af0cc76d1be852be0e8439891fb76dcddc",
+    "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+    "scanNumber": 206,
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "yandex-archive-original-image-download-with-full-width-manual-review-crop",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "0778b209a9fbe7e08724f317e523adbb44f15fff25870bd1af232304bef99063",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-target-entry.jpg",
-        "sha256": "28e4caacec3c6c95573767485a0cfdeba8d1b8efc83a98bd6823396fbf93766e"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-header.png",
+        "sha256": "8c0bddb4f2e6641a937d794ba4f06ca8fb764462fe63f369fbd2731370dae805",
+        "description": "Заголовок и структура полного архивного разворота."
+      },
+      {
+        "kind": "indexed-coordinate",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-target-entry.png",
+        "sha256": "1a849efabeec1f8a3091ba376ee2829e83ea1be13c7a9a20e79683f186e37779",
+        "description": "Ранний фрагмент области записи; проверен совместно с полным листом."
+      },
+      {
+        "kind": "full-width-target-context",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-target-context-deep.jpg",
+        "sha256": "43e57543cb4263f4a4166eb167eade2d78256378ab91c53cb4d11b6a483758f9",
+        "description": "Чистый полноширинный фрагмент всех колонок целевой строки и соседнего контекста.",
+        "dimensions": "5300x3400"
       }
     ],
-    "parallelCopies": [
-      {
-        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-        "scanNumber": 206,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "0778b209a9fbe7e08724f317e523adbb44f15fff25870bd1af232304bef99063",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-header.png",
-            "sha256": "8c0bddb4f2e6641a937d794ba4f06ca8fb764462fe63f369fbd2731370dae805",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0206-target-entry.png",
-            "sha256": "1a849efabeec1f8a3091ba376ee2829e83ea1be13c7a9a20e79683f186e37779",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5652x4566",
-          "targetDimensions": "2965x3419",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "allVisibleRowsManuallyRead": true,
+      "fullDimensions": "5652x4566",
+      "method": "manual-full-page-reading-with-full-width-clean-recrop",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-centralized-upload",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "МОДАЛЬНО\nТРЙЧеСКОЙ КНИГИ на /9/1?\nГОДА, ЧАСТЬ ПеРЕИД,\nЗвÁніє, йма, бтчЕство й фамиліл родитєлєй, й какóги\nшихсл.\nЗвÁніє, йма, бтчество й фамиліА\nв'роиспов'вданіл.\nвоспріÉмКикW5½.\nСела Ібармнит Крестьанинь Даніиль\nпіого-оресенакрествяникс Сергльг\nЧлаштові пасьяновіигаконнаяжрена\nНихагловиамлоговим кресльян-\n2о всобода(льика, обасравславные\nскаДасена ((рина (сокольева санаев\nииничрй афінциски\nПишать Серии пурлірока-\n111ог6-оесела Крестьянинго Парфирігі\nСела Карлиссяк. Креатьяниий Мачись\nПаволовьо Стспановно и крестьян-\nИльгинь сняипилогосьизаконная эренаего\nскаядловица Вибра Селеновали-\nвеобосія проконієва; обатравослаєи це\nологова.\nПіленич іі мжрао\nлубничном\nЛто г0 - о/е села запасни\" рядови?\n(еча пармаліт крествянинь Васьим\nИвановь веракинии заклина) жепаего\nCеpivon\n„ ДустиновоНерзмивинь\nиеониласннннокова\nі о бастровословине.\nр. крестьянськая уловлча, Варва-\nСвищенняг\nДжинтіції (сиднинанй\nра Госперова Ведечкикс\nСhіакоnь\nдобсовь.\nХела Карпссаст Кресувянинь Них\n1атого.гресенав,\nрестсвчннна\nфоро ильгньсальниковопзакопная\nиваньпрокопьевгояркисти\nженаего Раилисиснихай л оне; оба\nXU)\nсолбатекаяорена янка ильина\nПравославиья\naлimunoroвe\nСвящаниин Димитрлі (ауднинения\nФіакиь Дній вобдиві.",
-    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nТРИЧеСКОЙ КНИГИ на /9/1?\nГОДА, ЧАСТЬ ПеРЕАД,\nЗвАніє, йма, отчЕство й фамиліл родителєй, й какоги\nшихса.\nЗвіє, йма, бтчество й фамиліА\nв ронспов даніл.\nвоспрімКикШЕ/.\nСела /бармит Крестьянинь Дантиль\nпіого-жесеникрестьяник Серпно\nФантові пасьянові законнаворена\nсо особода вовика, обаграславные\nскаДаена ((рина сокольева санаев\nмингри афінциски\nПишати Сели прока-\n111026-фесела Кресть янино Парфирігі\nСела Карлиссяк. Крестьяний Начись\nПаволов Стскановно и крестьян-\nИльгинь святилогосвизаконная эренаего\nскаядловица Вибра Семеновали-\nвеобосія проконієва; обатравослави це\nслогова .\nПілони і прас\nлубкичном\n10 го - /е села запасни\" рядови?\nЛена пармаліт крествяниь Васим\nИвановь веракинии заклина) женаего\nCepivon\nнеонила снинокова\nі о бастровословине.\nр крестьянская уловла, Варва-\nСвищеннят\nДжентції (суднинай\nра Госперова Ведейкикс\nСіаконь\nХела Карассаст Кресувянинь Них\nрестльчнина\nфоро ильченьсальниково законная\nиванопрокопьев пояркост\nженаего Раилисиснихай и оне; оба\nTU)\nколбатекая арена янка ильина\nПравославия\nСвящении Димитрі (суднинени\nФіаки ній в обдиві .",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-transcription",
+    "literal": "Іюль. 4/8. Ирина. Села Кармалки крестьянинъ Наумъ Ильинъ Ампилоговъ и законная жена его Феодосія Прокопіева; оба православные. Воспріемники: того же села крестьянинъ Парфирій Павловъ Степановъ и крестьянская дѣвица Вѣра Семенова Ампилогова.",
+    "modernInterpretation": "Ирина Наумовна Ампилогова, дочь Наума Ильича Ампилогова и Феодосии Прокопьевны, родилась 4 и была крещена 8 июля 1911 года в Кармалке. Восприемниками были Парфирий Павлович Степанов и Вера Семёновна Ампилогова.",
+    "indexNote": "Индексную форму имени отца «Наум Ильин Ампилогов» подтвердил полный скан; имя ребёнка и даты установлены ручным чтением всей строки."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P102922",
+  "context": {
+    "eventSummary": "Рождение и крещение Ирины Наумовны Ампилоговой в Кармалке в июле 1911 года.",
+    "identityNote": "P91148 подтверждён полным именем, местом и согласованной семейной хронологией; P102922 создан по прямой дочерней формуле. Вера Семёновна P102923 выделена как самостоятельная документированная носительница фамилии; восприемничество не трактуется как родство.",
+    "migrationNote": "Запись фиксирует семейное событие в Кармалке, но не маршрут переселения."
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-child-dates-parents-surname-status-and-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный оригинал 5652×4566 и полноширинный crop 5300×3400; вручную прочитаны июль, даты 4/8, ребёнок, родители, место, вероисповедание и соседние границы; father/daughter оформлена только по прямой формуле, мать сохранена mention, миграция не выводится; отдельно прочитана вся колонка восприемников и подтверждена Вера Семёновна Ампилогова"
   },
   "indexData": {
     "querySnippet": "Села Кармалки Крестьянин Наум Ильин Ампилогов и законная жена его Феодосия Прокопиева; оба православные.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexDiscrepancy": "Индекс не передал ребёнка Ирину и даты рождения/крещения."
   }
 }

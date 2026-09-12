@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-004",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 4,
@@ -13,22 +13,79 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/4"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-004-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102895",
+      "displayName": "Михаил Алексеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Мих. Алекс.",
+      "surnameSeries": true,
+      "yearAsWritten": "1915"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102896",
+      "displayName": "В. И. Ампилогов",
+      "nameAsTranscribed": "Ампилогов В. И.",
+      "surnameSeries": true,
+      "yearAsWritten": "1914"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102073",
+      "displayName": "Дмитрий Семёнович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Дмитр. Сем.",
+      "surnameSeries": true,
+      "yearAsWritten": "1910"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M4",
+      "role": "military-register-listed-person",
+      "personId": "P102066",
+      "displayName": "Тимофей Матвеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Тимоф. Мат.",
+      "surnameSeries": true,
+      "yearAsWritten": "1906"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M5",
+      "role": "military-register-listed-person",
+      "personId": "P102897",
+      "displayName": "Прокофий «Ефан.» Ампилогов",
+      "nameAsTranscribed": "Ампилогов Прокоф. Ефан.",
+      "surnameSeries": true,
+      "yearAsWritten": "1921"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M6",
+      "role": "military-register-listed-person",
+      "personId": "P102898",
+      "displayName": "Андрей Нефедович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Андр. Нефед.",
+      "surnameSeries": true,
+      "yearAsWritten": "1913"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-004-M7",
+      "role": "military-register-listed-person",
+      "personId": "P102899",
+      "displayName": "Андрей Владимирович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Андр. Влад.",
+      "surnameSeries": true,
+      "yearAsWritten": "1917"
     }
   ],
   "evidence": {
@@ -48,45 +105,53 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0004-target-entry.png",
-        "sha256": "15738860815f41bb8730d3a5b1df695d5c05d208a54b63a56e8c7afda8dd4a59",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0004-target-context-deep.jpg",
+        "sha256": "e4ea1f5bb5abd387362e4cd497f3dc51740b6c8fcd95d3e6d6791f71effebc19",
+        "description": "Крупный clean crop почти полного roster-листа, сохраняющий строки фамильного ряда и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6512x9332",
-      "targetDimensions": "3526x5237",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-roster-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Алленван Никол\nВас\n1998.\n88 р-с\nАстаков Иван Оергевих\n1914\n123\n2/ v P-c\nАмпилогов Мах. Аленс. 1915\nАлпиночов -\nВ\nИ.\n1914\n16\n- к-\n23\nАмпилоов Диитр. Сем 1910\n- N-\n1913\n128\nАбрамав Гаври Андр.\nЕвесеви\n100\nАбрашов Федок\n1906. 1\n( Амтилагов Мимоф. Шат.\n- Амтилогов Про сод Ефана 1929 т.4-\n-1=\n3. Алехин Егод Степан.\n1999\n-1--10\n1948 no\nЯ. Альшов Иванмих.\nЮ. Aife\nгАкo\nЛето Никлас 1199 - к\nАмтилогов Algр. Пєdeт.93, v K -\nАснанов Lаврик Ники, 191 к - к\n19AS1\n1 Жарив Федир Петр.",
-    "modernInterpretation": "Алленван Никол Вас 1998. 88 р-с Астаков Иван Оергевих 1914 123 2/ v P-c Ампилогов Мах. Аленс. 1915 Алпиночов - В И. 1914 16 - к- 23 Ампилоов Диитр. Сем 1910 - N- 1913 128 Абрамав Гаври Андр. Евесеви 100 Абрашов Федок 1906. 1 ( Амтилагов Мимоф. Шат. - Амтилогов Про сод Ефана 1929 т.4- -1= 3. Алехин Егод Степан. 1999 -1--10 1948 no Я. Альшов Иванмих. Ю. Aife гАкo Лето Никлас 1199 - к Амтилогов Algр. Пєdeт.93, v K - Аснанов Lаврик Ники, 191 к - к 19AS1 1 Жарив Федир Петр.",
-    "localOcr": "Алленван Никол\nВас\n1998.\n88 р-с\nАстаков Иван Оергевих\n1914\n123\n2/ v P-c\nАмпилогов Мах. Аленс. 1915\nАлпиночов -\nВ\nИ.\n1914\n16\n- к-\n23\nАмпилоов Диитр. Сем 1910\n- N-\n1913\n128\nАбрамав Гаври Андр.\nЕвесеви\n100\nАбрашов Федок\n1906. 1\n( Амтилагов Мимоф. Шат.\n- Амтилогов Про сод Ефана 1929 т.4-\n-1=\n3. Алехин Егод Степан.\n1999\n-1--10\n1948 no\nЯ. Альшов Иванмих.\nЮ. Aife\nгАкo\nЛето Никлас 1199 - к\nАмтилогов Algр. Пєdeт.93, v K -\nАснанов Lаврик Ники, 191 к - к\n19AS1\n1 Жарив Федир Петр.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Ампилогов Мих. Алекс. | 1915 | 21 | Р-С\nАмпилогов В. И. | 1914 | 16\nАмпилогов Дмитр. Сем. | 1910 | 23\nАмпилогов Тимоф. Мат. | 1906 | 1\nАмпилогов Прокоф. Ефан. | 1921\nАмпилогов Андр. Нефед. | 1913\nАмпилогов Андр. Влад. | 1917",
+    "modernInterpretation": "На листе военного учёта перечислены Михаил Алексеевич (1915), В. И. (1914), Дмитрий Семёнович (1910), Тимофей Матвеевич (1906), Прокофий с сокращённым отчеством «Ефан.» (1921), Андрей Нефедович (1913) и Андрей Владимирович (1917) Ампилоговы. Дополнительные цифровые и буквенные графы сохранены буквально там, где читаются; их значение без легенды не домыслено.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; ФИО, сокращения и годы перепроверены по полному листу и крупному clean crop.",
     "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Ампилогов Дмитр. Сем. ... Ф. Анищенко Петр Никиф. 1909. Ампилогов Андр. Конст.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "military-registration-list",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен roster-лист scan 4, все строки и графы. Установлены семь носителей фамилии; исправлены искажённые OCR имена и годы. Дмитрий Семёнович связан с P102073, Тимофей Матвеевич — с P102066 по точным ФИО и году; остальные получили отдельные профили. Военно-учётный лист не трактуется как место рождения, родство или миграция.",
     "unresolved": []
+  },
+  "context": {
+    "summary": "Именной военно-учётный список документирует перечисленных носителей фамилии Ампилогов и записанные рядом годы.",
+    "historicalContext": "Период дела 1941–1945 относится к военному учёту. Коды и служебные сокращения не раскрыты без легенды.",
+    "genealogicalConclusion": "Карточка подтверждает имена и годы как написано; место списка не считается местом рождения или доказательством переселения. Родство документом не установлено.",
+    "indexDiscrepancy": "Яндекс/OCR искажал фамилии, имена и годы; карточка нормализована по рукописному оригиналу."
   }
 }

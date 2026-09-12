@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B92FFA5C-43",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "b92ffa5c-3bfc-404a-be4b-39c91964a63c",
@@ -13,12 +13,14 @@
   "mentions": [],
   "evidence": {
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-full-view.jpg",
-    "sha256": "1adb49d27d4006fd7cc256b6096952de17b0232ecaf6915d105a34f1dcb6b2fc",
+    "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-full-view.png",
+    "sha256": "1108746d2cb8e8adbc530da4b0f4261b41ae96b95e56f876c69e790f77bb7141",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-target-entry.jpg",
-        "sha256": "660555a968e6a4a0689b310d83175c71d2d3eb0f71e580430b89279a3bff5484"
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b92ffa5c-3bfc-404a-be4b-39c91964a63c/0043-target-context-deep.jpg",
+        "sha256": "d0f993314b0a768e2a79cb250fa6fdce06e0c3fef5d8e4736ff72b9c65b879b3",
+        "description": "Крупный clean crop полного доступного поля без интерфейса Яндекса для отрицательной проверки."
       }
     ],
     "parallelCopies": [
@@ -56,30 +58,55 @@
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "headerAndTargetGeneratedFromOriginal": true,
+      "targetCropLocatedByManualFullLeafReview": true,
+      "fullDimensions": "5614x4552",
+      "targetDimensions": "5200x3500",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
+    },
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high-for-no-match",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен лист смертей scan 43 за ноябрь–декабрь 1911 года, акты № 21–26, умершие, возраст, причины и погребальные отметки. Индексная пара Константин/Александр Ампилоговы отсутствует. Создан clean crop 5200×3500.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "жеска.\nÉнiA.\nКристьянка\nселя, пиогородиий покравк\nОреквургитти суберння и грвода вав-",
-    "localOcrWithSurnameLexicon": "жеска.\nÉHiA.\nКристьянка\nселя, пногородий покравк\nОренбургитти суберня и гранда вав-",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга 1911 года, часть третья, об умерших. На полном листе просмотрены ноябрьские акты № 21–26 и все видимые строки; Константин Александрович и Александр Николаевич Ампилоговы на листе не названы.",
+    "modernInterpretation": "Полный доступный скан проверен вручную; совпадение фамильного ряда не подтверждено.",
+    "indexNote": "Индекс Яндекса использован только для навигации и опровергнут чтением оригинала.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Отец умершего: Александр Николаев Ампилогов, мещанин, город Оренбург. ... Умерший: Константин Александров Ампилогов, 6 месяцев.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1911",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Индексное совпадение не подтверждено полным первичным сканом.",
+    "genealogicalConclusion": "Профиль, событие публичного ядра, родство, карта и миграция не создаются.",
+    "indexDiscrepancy": "Яндекс приписал листу отсутствующую фамильную строку."
   }
 }
