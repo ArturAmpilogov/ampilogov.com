@@ -17,21 +17,40 @@
   "event": {
     "type": "marriage-witness",
     "date": {
-      "display": "1909",
-      "confidence": "high-for-year"
+      "display": "6 сентября 1909 года",
+      "from": "1909-09-06",
+      "to": "1909-09-06",
+      "confidence": "high"
     },
     "place": {
+      "asWritten": "село Гамалеевка",
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C7016A16-049-M1",
-      "role": "surety",
+      "role": "surety-for-groom",
       "personId": "P102654",
-      "displayName": "крестьянин Максим Антонов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Максимъ Антоновъ Ампиловъ",
+      "displayName": "Максим Антонович Ампилов",
+      "nameAsTranscribed": "села Гамалеевки крестьянинъ Максимъ Антоновъ Ампиловъ",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C7016A16-049-M2",
+      "role": "groom",
+      "personId": null,
+      "displayName": "Николай Евфимович Сухарев",
+      "nameAsTranscribed": "села Гамалеевки крестьянинъ Николай Евфимовъ Сухаревъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-C7016A16-049-M3",
+      "role": "bride",
+      "personId": null,
+      "displayName": "Дарья Семёновна Шубина",
+      "nameAsTranscribed": "села Надеждина крестьянка Дарья Семенова Шубина",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -54,6 +73,12 @@
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-target-entry.png",
         "sha256": "6a753c153d6a95cdb3a4811bba7491817bce05745c3463f5892dc7cef0b8bf35",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0049-target-context-deep.png",
+        "sha256": "46c706440baf5a77ebaedcfc6221eaafa9c4091b558b3acb926695df6620db0a",
+        "description": "Широкий clean-фрагмент записи № 31 со всеми графами брака и обеими группами поручителей."
       }
     ],
     "quality": {
@@ -61,18 +86,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "10953x8879",
-      "targetDimensions": "2572x1852",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "10000x2300",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "По женихе: села Гамалеевки крестьяне Максим Антонов Ампилов и Николай Михайлов Михайлов; по невесте — Харитон Петров Самков и Степан Яковлев Хомяков.",
-    "modernInterpretation": "Максим Антонович Ампилов назван поручителем; карточки 640 и 641 ведут к одному скану.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-manual-transcription",
+    "literal": "Сентябрь. № 31. 6. Села Гамалеевки крестьянинъ Николай Евфимовъ Сухаревъ, православный, вторымъ бракомъ, 32 года; села Надеждина крестьянка Дарья Семенова Шубина, православная, вторымъ бракомъ, 21 годъ. По женихѣ: села Гамалеевки крестьяне Максимъ Антоновъ Ампиловъ и Михаилъ Михайловъ Михайловъ; по невѣстѣ Харитонъ Петровъ Самковъ и Степанъ Яковлевъ Хомяковъ.",
+    "modernInterpretation": "6 сентября 1909 года Максим Антонович Ампилов выступил поручителем жениха Николая Евфимовича Сухарева при его браке с Дарьей Семёновной Шубиной.",
+    "indexNote": "Фамилия и роль Максима Антоновича подтверждены ручным чтением всей записи № 31; индекс использован только для навигации.",
     "localOcr": "НПОГРАФІЙ\nСИПОАДЛЬНО!\nРАД, С БРАКОСОЧЕТАВШИХ\nПс\nКго выіли порбчйтели.\n3",
     "localOcrWithSurnameLexicon": "ПОГРАФІЙ\nРАД, С БРАКОСОЧЕТАВШИХ\nПс\nВго вили порочители.\n3",
     "collation": {
@@ -85,14 +113,21 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-manual-reading",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены запись № 31, дата, супруги, возраст и брачный статус, обе группы поручителей и причт; существующий backlink P102654 уже был корректен."
   },
   "indexData": {
     "querySnippet": "Поручитель: Максим Антонов Ампилов, крестьянин, село Гамалеевка. Поручитель: Степан Яковлев Хомяков.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-marriage-surety-after-full-scan-review"
+  },
+  "primaryPersonId": "P102654",
+  "context": {
+    "eventSummary": "Поручительство Максима Антоновича Ампилова при браке чужой семьи в Гамалеевке.",
+    "identityNote": "P102654 подтверждён полным именем, сословием и местом; супруги и другие поручители остаются контекстом.",
+    "migrationNote": "Поручительство в приходе не доказывает переселение."
   }
 }
