@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-050E0BCF-009",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "death",
   "collection": {
     "catalogId": "050e0bcf-573a-418a-a88b-ab1f9b5b8ecb",
     "scanNumber": 9,
@@ -12,18 +12,34 @@
     "documentUrl": "https://yandex.ru/archive/catalog/050e0bcf-573a-418a-a88b-ab1f9b5b8ecb/9"
   },
   "event": {
-    "type": "index-hit-review",
-    "date": {"display": "1916", "confidence": "high-for-catalog-year"},
-    "place": {"normalized": "село Бахтемир, Астраханская губерния"}
+    "type": "death",
+    "date": {
+      "display": "20 мая 1916",
+      "from": "1916-05-20",
+      "to": "1916-05-20",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "placeId": "bakhtemir-astrakhan"
+    }
   },
   "mentions": [
     {
       "mentionId": "YA-050E0BCF-009-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "displayName": "Ложное индексное попадание",
-      "nameAsTranscribed": "На полном листе Евфим Ампилов и дочь Антонина отсутствуют",
-      "surnameSeries": false
+      "role": "deceased",
+      "personId": "P102900",
+      "displayName": "Антонина Ефимовна Ампилова",
+      "nameAsTranscribed": "дочь Антонина",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-050E0BCF-009-M2",
+      "role": "father",
+      "personId": "P102641",
+      "displayName": "крестьянин Евфим Ипатьев Ампилов",
+      "nameAsTranscribed": "крестьянина Евфима Ипатьева Ампилова",
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -44,8 +60,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/050e0bcf-573a-418a-a88b-ab1f9b5b8ecb/0009-target-entry.png",
-        "sha256": "18d9d72d4287def5f3fe5170cb1ea66057627c67d3700fc89528c92b7e9b648a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "6a80124ab1268cccfa0a11d242b0a80b6ff005c9cfa19f53e7b9ef1bffb661e6",
+        "description": "Крупный фрагмент полной строки № 13 за 20 мая: имя умершей, отец, возраст, причина смерти и контекст погребения; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -53,18 +69,23 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3952x2784",
-      "targetDimensions": "1259x662",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3700x750",
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "confirmedAt": "2026-09-12",
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-manually-reviewed-no-match",
-    "literal": "1916 год, часть третья, о умерших. На полном развороте скана 9 проверены все видимые записи за апрель и май, графы умерших, возрастов, причин смерти и погребения. Евфим Ипатьев Ампилов и дочь Антонина на листе отсутствуют; сохранённый «целевой» фрагмент содержит только заголовок книги.",
-    "modernInterpretation": "Индексное описание относится не к сохранённому листу 9 либо возникло из ошибочной привязки текстового блока. Этот источник не доказывает смерть Антонины и не связывается с профилем Евфима Ипатовича Ампилова.",
-    "indexNote": "Текст Яндекса отвергнут после построчного просмотра полного листа. Прежняя буквальная строка была индексным текстом, а не расшифровкой видимого оригинала.",
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "20. 20. Кр-на села Бахтемирскаго крестьянина Евфима Ипатьева Ампилова дочь Антонина. 10 мѣс. Отъ поноса.",
+    "modernInterpretation": "20 мая 1916 года умерла и была погребена десятимесячная Антонина, дочь крестьянина села Бахтемира Евфима Ипатьевича Ампилова; причина смерти — понос.",
+    "indexNote": "Индекс Яндекса использован только как поисковая подсказка. Имя, родство, даты, возраст и причина смерти независимо прочитаны по сохранённому полному скану и увеличенной строке.",
     "localOcr": "СИПОААЛЬНОЙ\nМЕТРИЧЕСКОЙ КНИГИ НА\n1 916 ж\nAtrà\nЗвáніє, ймл, отчестко й фамиліл одмершаги.\nНь\nвỷмершагw.",
     "localOcrWithSurnameLexicon": "МЕТРИЧЕСКОЙ КНИГИ НА\n1 916 ж\ndErà\nЗваніє, йма, отчество й фамилія одмершаги.\nНь",
     "collation": {
@@ -73,19 +94,22 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
-  "isRecord": false,
-  "cardKind": "index-correction",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-manually-reviewed-no-match",
+    "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "high",
-    "deepReviewedAt": "2026-09-11",
-    "deepReviewScope": "full-page, death-register header, every visible April and May row, ages, causes and burial columns, plus alleged target crop",
-    "unresolved": ["Индексная строка может относиться к соседнему скану; без соответствующего изображения она не считается источником."]
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный лист и увеличенная строка № 13; независимо проверены дата смерти и погребения, имя, родительская формула, возраст, причина смерти и контекст погребения",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "10 мцевъ. Крна села Бахтеміровскаго Евфима Ипатьева Ампилова дочь Антонина. Священникъ Михаилъ Юштинъ Діаконъ Мих.",
     "fuzzyQuery": true
   },
-  "summary": {"status": "verified-negative-summary", "text": "На полном скане 9 Евфим Ампилов и Антонина отсутствуют; прежняя карточка была основана на неверно привязанном индексе Яндекса."}
+  "summary": {
+    "status": "verified-primary-record-summary",
+    "text": "20 мая 1916 года в Бахтемире умерла десятимесячная Антонина, дочь Евфима Ипатьевича Ампилова; причиной смерти указан понос."
+  }
 }

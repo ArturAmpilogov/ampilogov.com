@@ -181,6 +181,12 @@ a {
 .tree-tools > div { display: flex; gap: 4px; pointer-events: auto; }
 .tree-tools__left { position: relative; align-items: center; gap: 14px !important; }
 .tree-tools__zoom { align-items: center; }
+.tree-singletons-button { margin-right: 8px; }
+.tree-tools__left > small {
+  color: rgba(98, 94, 86, .72);
+  font-size: .61rem;
+  letter-spacing: .075em;
+}
 .tree-tools button {
   min-width: 30px;
   height: 30px;
@@ -239,6 +245,7 @@ a {
 
 .tree-viewport { position: absolute; inset: 0; overflow: hidden; touch-action: none; cursor: grab; }
 .tree-viewport:active { cursor: grabbing; }
+.tree-viewport:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .tree-canvas { position: absolute; transform-origin: 0 0; will-change: transform; }
 .tree-century {
   position: absolute;
@@ -261,9 +268,55 @@ a {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+.tree-century-ruler {
+  position: absolute;
+  z-index: 4;
+  inset: 0 auto 0 0;
+  width: 72px;
+  pointer-events: none;
+}
+.tree-century-ruler span {
+  position: absolute;
+  left: 12px;
+  padding: 3px 5px;
+  color: rgba(53, 47, 38, .58);
+  background: rgba(243, 240, 232, .78);
+  font: 700 .58rem var(--sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
+.tree-hint {
+  position: absolute;
+  z-index: 4;
+  right: 18px;
+  bottom: 13px;
+  color: rgba(98, 94, 86, .76);
+  font: .6rem var(--sans);
+  letter-spacing: .055em;
+  pointer-events: none;
+}
 .tree-links { position: absolute; z-index: 1; overflow: visible; }
 .tree-links path { fill: none; stroke: rgba(70, 60, 43, .31); stroke-width: 1.35; transition: stroke .18s ease, stroke-width .18s ease; }
 .tree-links path.is-uncertain { stroke-dasharray: 4 4; }
+.tree-singletons-heading {
+  position: absolute;
+  z-index: 2;
+  width: 760px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(29, 28, 25, .18);
+  color: var(--muted);
+  font: 700 .72rem var(--sans);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.tree-singletons-heading small {
+  margin-left: 12px;
+  color: rgba(98, 94, 86, .72);
+  font: .68rem var(--serif);
+  letter-spacing: 0;
+  text-transform: none;
+}
 .tree-links path.is-active { stroke: var(--accent); stroke-width: 2.2; }
 .tree-person {
   position: absolute;
@@ -281,16 +334,13 @@ a {
   transition: opacity .18s ease, transform .18s ease, box-shadow .18s ease;
 }
 .tree-person.is-female { border-left-color: #6c7162; }
+.tree-person.is-isolated { border-left-color: rgba(98, 94, 86, .55); background: rgba(248, 245, 238, .75); }
 .tree-person strong { overflow: hidden; font: 600 .77rem/1.15 var(--sans); text-overflow: ellipsis; white-space: nowrap; }
 .tree-person small { margin-top: 4px; color: var(--muted); font: .62rem/1 var(--sans); }
 .tree-person i { position: absolute; top: 8px; right: 8px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
 .tree-person:hover, .tree-person.is-active { z-index: 4; box-shadow: 0 8px 18px rgba(42, 34, 23, .15); transform: translateY(-2px); }
 .tree-person.is-muted { opacity: .33; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .tree-canvas { animation: tree-arrive .8s cubic-bezier(.22, 1, .36, 1) both; }
-  @keyframes tree-arrive { from { opacity: 0; } to { opacity: 1; } }
-}
 
 .cover {
   position: relative;

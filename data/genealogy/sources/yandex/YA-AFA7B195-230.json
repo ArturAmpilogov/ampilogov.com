@@ -43,14 +43,16 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/afa7b195-43a9-4411-8f05-9fe37e68f9f3/0230-header.png",
-        "sha256": "bebfdcd6e632c58f7eb48eb949b5bca170501748bec9b49b624c1d96818dd7a4",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "sha256": "28026d7c0ee54eb2e8fc9a5556a6e31041723bddb94fe8905d947a125ba4fde7",
+        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
+        "dimensions": "3984x997"
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/afa7b195-43a9-4411-8f05-9fe37e68f9f3/0230-target-entry.png",
         "sha256": "3acd5c948f32c93148b9c6e095693bba1515bfdeb3352daaa5168fcd3ae879a3",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Контрольный фрагмент области поискового совпадения: фамильная форма по оригиналу не подтверждена уверенно; без интерфейса сайта и браузера.",
+        "dimensions": "1200x712"
       }
     ],
     "quality": {
@@ -59,7 +61,15 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3984x3692",
       "targetDimensions": "1200x712",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-visual-review-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": false,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "confirmedAt": "2026-09-12",
+      "headerDimensions": "3984x997",
+      "blackDigitalDefectsExcluded": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,7 +79,7 @@
     "status": "complete-with-uncertainties",
     "literal": "Деревни Усть[я] крестьянинъ Иванъ [отчество неразборчиво] Кукушкинъ.",
     "modernInterpretation": "Индекс Яндекса вставляет «Ампилов» в квадратных скобках, однако сохранённый оригинал не позволяет подтвердить это чтение. Запись сохранена как сомнительное совпадение без профиля и карты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "indexNote": "Индекс Яндекса сохранён как поисковая гипотеза. Ручной просмотр оригинала показывает Ивана Кукушкина, но не подтверждает вставленную индексом форму «Ампилов»; профиль, Record публичного ядра и точка карты не создаются.",
     "localOcr": "бал\nни впивв ИВ\nщл области\nспраевии Престьяне-",
     "localOcrWithSurnameLexicon": "бал\nил области\nс превии Престьяне-",
     "collation": {
@@ -78,15 +88,14 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
-  "isRecord": true,
-  "cardKind": "research-only-uncertain-record",
+  "isRecord": false,
+  "cardKind": "research-material-unconfirmed-fuzzy-hit",
   "publicCore": false,
   "review": {
     "status": "complete-primary-scan-reading-with-local-evidence",
     "transcriptionConfidence": "low",
     "unresolved": [
-      "Форма «Ампилов» не подтверждена оригиналом; отчество Ивана Кукушкина остаётся неразобранным.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+      "Форма «Ампилов» не подтверждена оригиналом; отчество Ивана Кукушкина остаётся неразобранным."
     ]
   },
   "indexData": {
