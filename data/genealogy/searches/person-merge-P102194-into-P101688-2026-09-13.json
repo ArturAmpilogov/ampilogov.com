@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "auditId": "person-merge-P102194-into-P101688-2026-09-13",
+  "auditedAt": "2026-09-13",
+  "status": "merged-high-confidence",
+  "personMerge": {
+    "canonicalPersonId": "P101688",
+    "retiredPersonId": "P102194",
+    "basis": [
+      "Оба профиля ссылаются на один URL Яндекс Архива, catalog fa08894e-531a-43b4-9db4-100a48c99ec7, scan 131.",
+      "Оба описывают мужскую запись № 62: Николай, родился 5 мая и крещён 6 мая 1912 года в Зобове.",
+      "Совпадает отец Фёдор Дмитриевич; различие Анпилогов/Ампилогов относится к конкурирующим чтениям того же почерка, а не к разным людям."
+    ],
+    "confidence": "high"
+  },
+  "necessaryParentMerge": {
+    "canonicalPersonId": "P8151",
+    "retiredPersonId": "P102039",
+    "basis": [
+      "Один и тот же отец в единой записи № 62 после объединения ребёнка.",
+      "Редкое полное имя, крестьянство и село Зобово совпадают.",
+      "P8151 родился в 1893 году; отцовство в 1912 и 1913 годах хронологически совместимо.",
+      "Запись № 117 1913 года фиксирует ту же мать Дарью Евфимовну и второго сына Михаила P102862."
+    ],
+    "confidence": "high"
+  },
+  "sourceMerge": {
+    "canonicalSourceId": "YA-OGAOO-173-16-1990-131-NIKOLAY",
+    "retiredSourceId": "YA-FA08894E-131",
+    "sameRecord": true,
+    "retainedEvidencePaths": [
+      "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0131-original.jpg",
+      "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0131-full-view.jpg",
+      "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0131-nikolay-birth-clean.jpg",
+      "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/0131-deep-context.jpg",
+      "data/genealogy/evidence-private/yandex/fa08894e-531a-43b4-9db4-100a48c99ec7/131-target-entry.jpg"
+    ]
+  },
+  "primaryScanReading": {
+    "recordNumber": "62",
+    "birthDate": "1912-05-05",
+    "baptismDate": "1912-05-06",
+    "place": "село Зобово",
+    "child": "Николай",
+    "father": "Ѳеодоръ Димитріевъ Анпилоговъ",
+    "mother": "Дарія Евфимова",
+    "correction": "Прежнее чтение матери «Дарія Евдокимова» исправлено по увеличенному оригиналу."
+  },
+  "updatedTrackers": [
+    "data/genealogy/searches/yandex-owned-content-review-2026-09-11.json",
+    "data/genealogy/searches/yandex-archive-ampilogov-global-fuzzy-from-1912-2026-09-11.json",
+    "data/genealogy/searches/yandex-archive-anpilogov-after1899-2026-09-12-pages-037-054.json",
+    "data/genealogy/searches/yandex-archive-ampilogov-global-fuzzy-from-1909-2026-09-11.json",
+    "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-book1640-year-correction.json",
+    "data/genealogy/searches/yandex-archive-anpilogov-from-1899-2026-09-12-pages-001-073.json",
+    "data/genealogy/searches/yandex-archive-ampilologov-1911-1915-2026-09-07.json"
+  ],
+  "retiredFiles": [
+    "data/genealogy/people/P102194-nikolay-fedorovich-ampilogov-zobovo-1912.json",
+    "data/genealogy/people/P102039-fedor-dmitrievich-ampilogov-zobovo-1913.json",
+    "data/genealogy/sources/YA-FA08894E-131.json"
+  ],
+  "validation": {
+    "genealogyAudit": {
+      "errors": 0,
+      "warnings": 6,
+      "note": "Шесть прежних предупреждений относятся к YA-F4BFF9CA; новых предупреждений от консолидации нет."
+    },
+    "diffCheck": "pass",
+    "activeStructuredReferencesToRetiredIds": 0,
+    "retiredFilesAbsent": true,
+    "updatedJsonParsed": true,
+    "note": "Производные indexes не редактировались вручную; они обновляются штатным генератором перед публикацией."
+  }
+}
