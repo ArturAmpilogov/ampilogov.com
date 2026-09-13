@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-702125E0-134",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "702125e0-5dc6-41aa-bcc0-b332ef49f746",
     "scanNumber": 134,
@@ -13,24 +13,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/702125e0-5dc6-41aa-bcc0-b332ef49f746/134"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage",
     "date": {
-      "display": "1 января 1881 — 31 декабря 1881",
-      "confidence": "high-for-catalog-date"
+      "display": "1881-01-21",
+      "calendar": "julian",
+      "date": "1881-01-21"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "село Преображенка"
+    },
+    "recordNumber": 5
   },
   "mentions": [
     {
-      "mentionId": "YA-702125E0-134-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
-      "surnameSeries": true
+      "nameAsTranscribed": "Петръ Амфилоговъ",
+      "personId": "P108613",
+      "role": "surety-bride",
+      "surnameSeries": true,
+      "mentionId": "YA-702125E0-134-M1"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 5. Января 21. «по женихѣ Села Преобр. крестьяне Иаковъ Дьяковъ и Трифонъ Шульдяковъ; по невѣстѣ Петръ Амфилоговъ и Стефанъ Пеньковъ».",
+    "modernInterpretation": "Пётр Амфилогов из Преображенки — поручитель по невесте 21 января 1881 года.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Пётр Амфилогов из Преображенки — поручитель по невесте 21 января 1881 года."
+  },
+  "notes": [
+    "Рабочая связь с Петром Стефановичем основана на имени, селе и близкой серии 1878–1881 годов. Отчество здесь не написано; уверенность средняя, родства с брачующимися не утверждает."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "по женихе Села Пренбр. крестьяне Иаков Дьяков и Трифон Шульдяков по невесте Петр [Амфилогов] и Стефан Пеньков.",
+    "previousLocalOcr": "на сеніят в Аинії. віресттякс\nмигрань Моляктві и бавейь Дуенки\nнінельсння сфрмик Сиаіцранта\nВатлій вимеманині.\nкмриви Сора Триперашения вле-\nстаяяне кометна вублттва и гетана",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "702125e0-5dc6-41aa-bcc0-b332ef49f746",
     "scanNumber": 134,
@@ -42,55 +66,35 @@
     "sha256": "16296f3a507709a253dc6d36877cd76bdf04391211173568b1dd008c3bc2fd96",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/702125e0-5dc6-41aa-bcc0-b332ef49f746/0134-header.png",
-        "sha256": "dedba3ba5c25166a59296ad010ce740742bb19bfefb7a452661dc75609c1d5e7",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/702125e0-5dc6-41aa-bcc0-b332ef49f746/0134-amfilogov-tail-target.jpg",
+        "sha256": "26b17d5d140d3ee63de71b2bee5a5a5e7c52f0bc1c52c695ba4aa8d3478f6997",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/702125e0-5dc6-41aa-bcc0-b332ef49f746/0134-target-entry.png",
-        "sha256": "e1e156312d9db22a2c9d11f7cfaabb9578526caa06dcbf809a404f7bf902b10f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          240,
+          2719,
+          4435,
+          3151
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5350x4197",
-      "targetDimensions": "1407x843",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "на сеніят в Аинії. віресттякс\nмигрань Моляктві и бавейь Дуенки\nнінельсння сфрмик Сиаіцранта\nВатлій вимеманині.\nкмриви Сора Триперашения вле-\nстаяяне кометна вублттва и гетана",
-    "modernInterpretation": "на сеният в Аиниї. виресттякс мигрань Моляктви и бавейь Дуенки нинельсння сфрмик Сиаицранта Ватлий вимеманини. кмриви Сора Триперашения вле- стаяяне кометна вублттва и гетана",
-    "localOcr": "на сеніят в Аинії. віресттякс\nмигрань Моляктві и бавейь Дуенки\nнінельсння сфрмик Сиаіцранта\nВатлій вимеманині.\nкмриви Сора Триперашения вле-\nстаяяне кометна вублттва и гетана",
-    "localOcrWithSurnameLexicon": "на меніят в Винії. віресттякс\nмирань Молятов и бавейь Оценки\nнінельсння сорми. Симетранта\nВатлій вимитанні.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "по женихе Села Пренбр. крестьяне Иаков Дьяков и Трифон Шульдяков по невесте Петр Амфилогов и Стефан Пеньков.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108613"
 }

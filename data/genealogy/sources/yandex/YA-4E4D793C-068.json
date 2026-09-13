@@ -1,96 +1,105 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-4E4D793C-068",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "birth",
   "collection": {
     "catalogId": "4e4d793c-dcdd-4ccb-b33c-859356100b10",
     "scanNumber": 68,
     "title": "Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3",
-    "publication": "ЦГА Московской области (ЦГАМО), Отдел записей актов гражданского состояния Рузского района Московской области, Опись №1 дел постоянного срока хранения, Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3"
+    "publication": "ЦГА Московской области (ЦГАМО), Отдел записей актов гражданского состояния Рузского района Московской области, Опись №1 дел постоянного срока хранения, Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3",
+    "digitalScanNumber": 68
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4e4d793c-dcdd-4ccb-b33c-859356100b10/68"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
+    "recordNumber": "14 (муж.)",
     "date": {
-      "display": "1 января 1891 — 31 декабря 1908",
-      "confidence": "high-for-catalog-date"
+      "iso": "1895-06-15",
+      "from": "1895-06-15",
+      "to": "1895-06-16",
+      "display": "1895-06-15 / 1895-06-16 (рождение / крещение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "birthIso": "1895-06-15",
+      "baptismIso": "1895-06-16"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "деревня Константинова, Московская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-4E4D793C-068-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108315",
+      "displayName": "Пётр Матвеевич Амфилогов",
+      "nameAsTranscribed": "Петр",
+      "role": "child",
+      "sex": "male",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-4E4D793C-068-M2",
+      "personId": "P108602",
+      "displayName": "Матвей Дмитриевич Амфилогов",
+      "nameAsTranscribed": "Матфий Амфилогов",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Июнь. 14. 15 / 16. Петр. Деревни Константиновой крестьянин Матфий Амфилогов и жена его Екатерина Иванова, оба православные. Восприемники той же деревни: Василий Сергов и девица Александра [отчество не указано].",
+    "modernInterpretation": "Пётр родился 15 июня и крещён 16 июня 1895; родители — крестьянин Константиновой Матфей (Матвей) Амфилогов и Екатерина Ивановна.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Отец: Павел Александрович Сокольский, 2-й Гренадерской Артиллерийской бригады 2-й батареи командир, подполковник. Отец: Матфий \u0007[Амфилогов\u0007], крестьянин...",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "4e4d793c-dcdd-4ccb-b33c-859356100b10",
     "scanNumber": 68,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-full-view.png",
     "sha256": "80fc664c2d371638896839c4ac687e90e33a3978f8ca58ece5e5b4a8e76b5aa9",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-header.png",
-        "sha256": "c382d8c39c17c13e1f9243a5a306ae6588d64a7ae17b29aef9b7f528c6fbe4bb",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-target-entry.png",
-        "sha256": "ea923d5fab075e97976fbd63e9a7ece8e36efb768fbe01ef9d7cbf8d04f1427f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0068-amfilogov-target-20260913.jpg",
+        "sha256": "09263750facb752e393746f194d858d19e0468f94be540533fa4b81771d61691",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "3930x3160",
-      "targetDimensions": "1306x802",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ГИПОГРАФ\nКО1АЛЬН)\n18%5-\nРИЧССКОЙ КНÚГИ НЛ\nЗбаніє, ймА, отчЕстБо й фамнліА родитЕлЕй, й какоги\nдиБШнКсА.\nквронспов•кданіА.\n9. Новой Крісь Сгьрп Аіжсий лова\nsmo\nн/тл\nвwenu erі прта Мвтнова\nCrur\nобапривелавная .\nОвти\nMl. Cansuoвs",
-    "modernInterpretation": "ГИПОГРАФ КО1АЛЬН) 18%5- РИЧССКОЙ КНÚГИ НЛ Збаниє, ймА, отчЕстБо й фамнлиА родитЕлЕй, й какоги диБШнКсА. квронспов•кданиА. 9. Новой Крись Сгьрп Аижсий лова smo н/тл вwenu erи прта Мвтнова Crur обапривелавная . Овти Ml. Cansuoвs",
-    "localOcr": "ГИПОГРАФ\nКО1АЛЬН)\n18%5-\nРИЧССКОЙ КНÚГИ НЛ\nЗбаніє, ймА, отчЕстБо й фамнліА родитЕлЕй, й какоги\nдиБШнКсА.\nквронспов•кданіА.\n9. Новой Крісь Сгьрп Аіжсий лова\nsmo\nн/тл\nвwenu erі прта Мвтнова\nCrur\nобапривелавная .\nОвти\nMl. Cansuoвs",
-    "localOcrWithSurnameLexicon": "ГИПОГРАФ\nРИЧЕСКОЙ КНИГИ НА\nЗбаніє, ймА, отчЕстБо й фамиліА родитЕлЕй, й какоги\nдиБШиКсА.\nкАронспов кдантА.\n9. Новой Крить Спари Лікий лова\nsmo\nн/тл\nSenu чі при Маткова\nChur\nят.\nобапривелавная .\nАвти\nMa Consuors",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Отец: Павел Александрович Сокольский, 2-й Гренадерской Артиллерийской бригады 2-й батареи командир, подполковник. Отец: Матфий Амфилогов, крестьянин...",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Отчество отца здесь отсутствует; связь с P108602 опирается на деревню, имя, фамилию и ту же жену Екатерину Ивановну в рождении Пелагеи 1900. Год 1895 читается в заголовке, не 1891 начала каталожного диапазона."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Пётр родился 15 июня и крещён 16 июня 1895; родители — крестьянин Константиновой Матфей (Матвей) Амфилогов и Екатерина Ивановна."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108315"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-0F28F482-218",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "fuzzy-search-false-positive",
+  "recordType": "birth",
   "collection": {
     "catalogId": "0f28f482-5525-49ad-9af1-e4711fd528dd",
     "scanNumber": 218,
@@ -13,16 +13,55 @@
     "documentUrl": "https://yandex.ru/archive/catalog/0f28f482-5525-49ad-9af1-e4711fd528dd/218"
   },
   "event": {
-    "type": "research-review",
+    "type": "birth",
     "date": {
-      "display": "1 января 1878 — 31 декабря 1878",
-      "confidence": "high-for-catalog-date"
+      "display": "1878-05-22",
+      "calendar": "julian",
+      "date": "1878-05-22"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Оренбург; родители из деревни Кармалки"
+    },
+    "recordNumber": 48
+  },
+  "mentions": [
+    {
+      "nameAsTranscribed": "Константинъ",
+      "personId": "P108615",
+      "role": "child",
+      "surnameSeries": true,
+      "mentionId": "YA-0F28F482-218-M1"
+    },
+    {
+      "nameAsTranscribed": "Степанъ Гавриловъ Амфилоговъ",
+      "personId": "P1067",
+      "role": "father",
+      "surnameSeries": true,
+      "mentionId": "YA-0F28F482-218-M2"
+    }
+  ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 48. Константинъ. Май 22 [рождение], 25 [крещение]. «Оренбургской губерніи и уѣзда, деревни Кармалки крестьянинъ Степанъ Гавриловъ Амфилоговъ и законная жена его Наталія Леонтіева, оба православные».",
+    "modernInterpretation": "Константин, сын Степана Гавриловича Амфилогова и Натальи Леонтьевны из Кармалки, родился 22 мая, крещён 25 мая 1878 года в Оренбурге.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
     }
   },
-  "mentions": [],
+  "summary": {
+    "status": "verified-summary",
+    "text": "Константин, сын Степана Гавриловича Амфилогова и Натальи Леонтьевны из Кармалки, родился 22 мая, крещён 25 мая 1878 года в Оренбурге."
+  },
+  "notes": [
+    "Связь с P1067 подтверждается полным именем отца, Кармалкой и супругой Натальей Леонтьевной. Сам акт находится в городской метрической книге; не утверждается переселение семьи в Оренбург."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "",
+    "previousLocalOcr": "его (кamе\nфле\nоба правословные.\ntue\nСвященнии\nбонн\nДіолинь\nMỏu\n-Владимірской губерніл\nна\nПокровскаю упіда Болдии дер\nст\nской волости,деревни Жо-\nспe\nхова, крествянинч Павель\nжен\nСтепанова. Кокушкинкь\nHeo\nизаконная жена его\nАлежсаніра Шанова; аба па\nков\nпровословики",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "0f28f482-5525-49ad-9af1-e4711fd528dd",
     "scanNumber": 218,
@@ -34,56 +73,35 @@
     "sha256": "545dbeac4c33479a63031c5f35acd37cf280f2c1da508c01dbc9b6955e29d996",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/0f28f482-5525-49ad-9af1-e4711fd528dd/0218-header.png",
-        "sha256": "ebfac18b3d938a54f981afbcf3d04e89691e4effe03647b42011f4aa06830926",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/0f28f482-5525-49ad-9af1-e4711fd528dd/0218-amfilogov-tail-target.jpg",
+        "sha256": "b442fe65cbe1f7202e4f9b443d90037cc0cba39bc841b1665a3aa9b7e83015f7",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/0f28f482-5525-49ad-9af1-e4711fd528dd/0218-target-entry.png",
-        "sha256": "b3133ee49d283000b48b7cba9d7a515d4433dc2ee3b2d73010cf9773c5522ad4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          263,
+          1227,
+          2815,
+          1803
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5866x4722",
-      "targetDimensions": "1200x1074",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "его (кamе\nфле\nоба правословные.\ntue\nСвященнии\nбонн\nДіолинь\nMỏu\n-Владимірской губерніл\nна\nПокровскаю упіда Болдии дер\nст\nской волости,деревни Жо-\nспe\nхова, крествянинч Павель\nжен\nСтепанова. Кокушкинкь\nHeo\nизаконная жена его\nАлежсаніра Шанова; аба па\nков\nпровословики",
-    "modernInterpretation": "его (кamе фле оба правословные. tue Священнии бонн Диолинь Mỏu -Владимирской губернил на Покровскаю упида Болдии дер ст ской волости,деревни Жо- спe хова, крествянинч Павель жен Степанова. Кокушкинкь Heo изаконная жена его Алежсанира Шанова; аба па ков провословики",
-    "localOcr": "его (кamе\nфле\nоба правословные.\ntue\nСвященнии\nбонн\nДіолинь\nMỏu\n-Владимірской губерніл\nна\nПокровскаю упіда Болдии дер\nст\nской волости,деревни Жо-\nспe\nхова, крествянинч Павель\nжен\nСтепанова. Кокушкинкь\nHeo\nизаконная жена его\nАлежсаніра Шанова; аба па\nков\nпровословики",
-    "localOcrWithSurnameLexicon": "фле\nоба православные.\ntue\nСвященнии\nДіолинь\nMou\n-Влазимірский губерніл\nна\nПокровскаю упіда Болдии, дер\nств\nской волости, деревни Жо-\nспил\nхова, крествянинч Павель\nжен\nСтепанова. Кокушкинк\nHeo\nи законная жена его\nАлежаніра Шанова; аба па\nков\nпровословики",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-rejected-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
   },
-  "rejectionReason": "place-name-not-person-surname"
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108615"
 }

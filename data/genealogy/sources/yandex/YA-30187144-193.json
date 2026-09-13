@@ -1,96 +1,105 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-30187144-193",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "death",
   "collection": {
     "catalogId": "30187144-b6ce-4975-acac-1c753e8a6c2d",
     "scanNumber": 193,
     "title": "Метрическая книга записей о рождении, браке и смерти Тисульской церкви",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 1, Метрическая книга записей о рождении, браке и смерти Тисульской церкви"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 1, Метрическая книга записей о рождении, браке и смерти Тисульской церкви",
+    "digitalScanNumber": 193
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/30187144-b6ce-4975-acac-1c753e8a6c2d/193"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death",
+    "recordNumber": "13 (муж.)",
     "date": {
-      "display": "1 января 1892 — 31 декабря 1896",
-      "confidence": "high-for-catalog-date"
+      "iso": "1893-01-31",
+      "from": "1893-01-31",
+      "to": "1893-02-01",
+      "display": "1893-01-31 / 1893-02-01 (смерть / погребение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "deathIso": "1893-01-31",
+      "burialIso": "1893-02-01"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-30187144-193-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108318",
+      "displayName": "Василий Дмитриевич Амфилогов",
+      "nameAsTranscribed": "Василий",
+      "role": "deceased",
+      "sex": "male",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-30187144-193-M2",
+      "personId": "P102309",
+      "displayName": "Дмитрий Михайлович Амфилогов",
+      "nameAsTranscribed": "Димитрий Михайлов Амфилогов",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "13. Января 31 / февраля 1. Села Тисульского крестьянина Димитрия Михайлова Амфилогова сын Василий. 1 день. От слабого рождения.",
+    "modernInterpretation": "Однодневный Василий, сын Дмитрия Михайловича Амфилогова из Тисульского, умер 31 января 1893 года и погребён 1 февраля; причина — «от слабого рождения».",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Умерший: Филипп Алексеев Сушков, 2. Умерший: Василий Димитриев \u0007[Амфилогов\u0007], 1 день. Умерший: Анна Григорьева Рыжкова, 23.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "30187144-b6ce-4975-acac-1c753e8a6c2d",
     "scanNumber": 193,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-full-view.png",
     "sha256": "b7c3bf12ad79ea8fc78e7f64cbde2b6ed4c1ddce4891e3c37ba94c98c923787b",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-header.png",
-        "sha256": "b15a20762c5f9902dcf4e4e221649cd1b1a811f5918d575a1c8bdc1c9776f2c7",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-target-entry.png",
-        "sha256": "532263dbf1d5b1a151f72878ae87ae2f8ff9533d1851afca3c0889457d1deee5",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0193-amfilogov-target-20260913.jpg",
+        "sha256": "98b00c461e42bbddb11da512460b92bd55e3669fb8962cac9c3092a8736f839e",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5130x4209",
-      "targetDimensions": "1570x747",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ЛАTА\nоýмЕршАгШ.\nЗкініє, йма, оучество й фамнлта одмершаги.\nбжеска\nЖенска.\nСела Тосоилкого утермого жревтьяннна Сазоа\nMebomoca dore hapaenela\nВлаРо исиба Но ееи вани Ха.\nСвяженнихь.",
-    "modernInterpretation": "ЛАTА оýмЕршАгШ. Зкиниє, йма, оучество й фамнлта одмершаги. бжеска Женска. Села Тосоилкого утермого жревтьяннна Сазоа Mebomoca dore hapaenela ВлаРо исиба Но ееи вани Ха. Свяженнихь.",
-    "localOcr": "ЛАTА\nоýмЕршАгШ.\nЗкініє, йма, оучество й фамнлта одмершаги.\nбжеска\nЖенска.\nСела Тосоилкого утермого жревтьяннна Сазоа\nMebomoca dore hapaenela\nВлаРо исиба Но ееи вани Ха.\nСвяженнихь.",
-    "localOcrWithSurnameLexicon": "ЛАтА\nобмЕршАгШ.\nЗаініє, йма, бучество й фамнла обмершаги.\nбжеска\nЖенска.\nСела Тосоилкого утершаго кревтьянина Сазоа\nMelomoca dore Mapaenela\nВлаР иси ба Но еси вани Ха.\nСвященникь.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Умерший: Филипп Алексеев Сушков, 2. Умерший: Василий Димитриев Амфилогов, 1 день. Умерший: Анна Григорьева Рыжкова, 23.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Прямое совпадение с рождением Василия 30 января 1893 (YA-176F1157-142): тот же отец, село, возраст один день."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Однодневный Василий, сын Дмитрия Михайловича Амфилогова из Тисульского, умер 31 января 1893 года и погребён 1 февраля; причина — «от слабого рождения»."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108318"
 }

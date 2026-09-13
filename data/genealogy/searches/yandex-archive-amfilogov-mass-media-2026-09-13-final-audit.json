@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "query": "Амфилогов",
+  "index": "mass_media",
+  "reviewedAt": "2026-09-13",
+  "status": "passed",
+  "coverage": {
+    "expected": 8,
+    "processed": 8,
+    "missingOrdinals": []
+  },
+  "totals": {
+    "positions": 8,
+    "uniqueCanonicalUrls": 8,
+    "uniqueSources": 8,
+    "newSources": 7,
+    "reusedUpgradedSources": 1,
+    "publicSources": 1,
+    "researchOnlySources": 7,
+    "newProfiles": 0,
+    "linkedExistingProfiles": 1,
+    "privateEvidenceFiles": 28
+  },
+  "checks": {
+    "canonicalUrlsVerified": 8,
+    "primaryTargetCropsIndependentlyRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "publicationTitlesIndependentlyRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "privateEvidenceFilesSha256Verified": 28,
+    "missingBacklinks": [],
+    "publicScopeViolations": [],
+    "post1950PublicEvents": 0,
+    "tusievPublicProfilesCreated": 0,
+    "newProfilesCreated": 0
+  },
+  "identityReviews": [
+    {
+      "personId": "P102339",
+      "status": "linked-with-explicit-medium-confidence",
+      "sourceIds": [
+        "YA-15F55581-005",
+        "YA-79798C8D-005",
+        "YA-B9D7689C-003"
+      ],
+      "independentOriginalsRead": true,
+      "confirmedFacts": [
+        "В раннем акте напечатано Андрей Аѳанасьевъ Амфилоговъ; Мѣловое Карачевского уезда; утверждение в должности церковного старосты 24 декабря.",
+        "Титул выпуска: 20 января 1902, поэтому год декабрьского решения восстановлен как 1901.",
+        "В оригиналах 1911 и 1914: крестьянин Андрей Ампелогов, та же церковь Мелового Карачевского уезда и та же должность."
+      ],
+      "limitations": [
+        "Отчество отсутствует в обоих поздних актах; непрерывность службы отдельным документом не подтверждена.",
+        "Привязка поддержана совокупностью редкого фамильного ряда, имени, точного прихода и устойчивой должности. Уверенность средняя, буквальные варианты не подменены."
+      ],
+      "profileBacklinkConfirmed": true,
+      "newProfileCreated": false
+    }
+  ],
+  "scopeDecisions": [
+    {
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "decision": "research-only",
+      "reason": "Собственная фамилия Тусиев в XIX веке; личное имя Амфилог не превращено в исследуемую фамилию и не подпадает строго под допосемейное исключение."
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "decision": "research-only",
+      "reason": "Амфилог. — сокращение адресата в библиографической ссылке на древнее сочинение, а не фамилия."
+    },
+    {
+      "ordinals": [
+        8
+      ],
+      "decision": "public-record-existing-profile",
+      "reason": "Исследуемый фамильный ряд, событие 1901 года, оригинал и должностная цепочка проверены."
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "type": "identity-confidence-limited",
+      "personId": "P102339",
+      "detail": "Привязка 1901 → 1911/1914 средней уверенности; отчество дано только ранней публикацией."
+    },
+    {
+      "type": "unresolved-tusiev-identity",
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "detail": "Князья не слиты в одну личность и не получили публичных профилей."
+    }
+  ],
+  "evidenceUploadPerformed": true,
+  "indexRegenerationPerformed": true,
+  "repositoryChecks": {
+    "genealogyAuditErrors": 0,
+    "genealogyAuditWarningsOutsideScope": 6,
+    "warningSourceIds": [
+      "YA-F4BFF9CA-21",
+      "YA-F4BFF9CA-23",
+      "YA-F4BFF9CA-26",
+      "YA-F4BFF9CA-64"
+    ],
+    "diffCheck": "passed",
+    "typescript": "passed",
+    "browserSmoke": {
+      "status": "passed",
+      "checks": [
+        "P102339 показывает три источника и раннее отчество",
+        "YA-15F55581-005 публично открывается и ссылается на P102339",
+        "research-only YA-66A969B9-004-AMFILOGOV-MEDIA не публикуется и возвращает 404"
+      ]
+    }
+  },
+  "evidenceUploadVerification": {
+    "uploadedFiles": 28,
+    "uploadedBytes": "15.8 MB",
+    "remainingFiles": 0,
+    "changedFiles": 0
+  }
+}

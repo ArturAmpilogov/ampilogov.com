@@ -1,96 +1,105 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-30187144-176",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "birth",
   "collection": {
     "catalogId": "30187144-b6ce-4975-acac-1c753e8a6c2d",
     "scanNumber": 176,
     "title": "Метрическая книга записей о рождении, браке и смерти Тисульской церкви",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 1, Метрическая книга записей о рождении, браке и смерти Тисульской церкви"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 1, Метрическая книга записей о рождении, браке и смерти Тисульской церкви",
+    "digitalScanNumber": 176
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/30187144-b6ce-4975-acac-1c753e8a6c2d/176"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
+    "recordNumber": "175 (муж.)",
     "date": {
-      "display": "1 января 1892 — 31 декабря 1896",
-      "confidence": "high-for-catalog-date"
+      "iso": "1893-12-23",
+      "from": "1893-12-23",
+      "to": "1893-12-23",
+      "display": "1893-12-23 / 1893-12-23 (рождение / крещение); старый стиль",
+      "confidence": "medium-year-from-book-or-section; target-day-and-month-manually-read",
+      "birthIso": "1893-12-23",
+      "baptismIso": "1893-12-23"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-30187144-176-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108319",
+      "displayName": "Николай Дмитриевич Амфилогов",
+      "nameAsTranscribed": "Николай",
+      "role": "child",
+      "sex": "male",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-30187144-176-M2",
+      "personId": "P102309",
+      "displayName": "Дмитрий Михайлович Амфилогов",
+      "nameAsTranscribed": "Димитрий Михайлов Амфилогов",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Декабрь. 23 / 23. Николай. Села Тисульского крестьянин Димитрий Михайлов Амфилогов и законная жена его Анастасия Макарова, оба православные.",
+    "modernInterpretation": "Николай родился и крещён 23 декабря 1893 года в Тисульском; родители — Дмитрий Михайлович Амфилогов и Анастасия Макаровна.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Псаломщик Дмитрий Села Тюсюльского крестьянин Димитрий Ми \u0007[Амфилогов\u0007] и законная жена его Анастасия Макарова, оба православные.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "30187144-b6ce-4975-acac-1c753e8a6c2d",
     "scanNumber": 176,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-full-view.png",
     "sha256": "60202246896e7d9912f2a646d56fe0fc6b26ec2e3c162a2bfd9cb5acae891f2c",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-header.png",
-        "sha256": "f15f8e199a4c70163d22bed9b04560319cd9370397aa97c44098f5b2da32fd04",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-target-entry.png",
-        "sha256": "05db692076a115c3b80883215e280cdf2aef6ad64d47f334f9a7546c0a9cb93c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/30187144-b6ce-4975-acac-1c753e8a6c2d/0176-amfilogov-target-20260913.jpg",
+        "sha256": "e67d868cddb945f322cc1301dc031f2422b26efc88fe811a22ecb11eacaaee76",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5092x4209",
-      "targetDimensions": "1730x839",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": false
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "доровеи Трежблго вой хррчальша алрем, ат пуо в р\nвь и. лкопиац лили\nЕвите потрр Масевнит\",\nСвяженникі\nПеиволещія\nеотЧиет? Стееранов\nДаоринатвай мрса мнаное\nего оафия атакова, обапдае.\nBseнванивle,\nСрешенник'ь\nWees\nla loneneus @hercuntflnedamntot\nсествячник\n• ел\nнова и Важосмацласив\nпостина дагуневь, обапривым\nnetanmtntuoh Chr",
-    "modernInterpretation": "доровеи Трежблго вой хррчальша алрем, ат пуо в р вь и. лкопиац лили Евите потрр Масевнит\", Свяженники Пеиволещия еотЧиет? Стееранов Даоринатвай мрса мнаное его оафия атакова, обапдае. Bseнванивle, Срешенник'ь Wees la loneneus @hercuntflnedamntot сествячник • ел нова и Важосмацласив постина дагуневь, обапривым netanmtntuoh Chr",
-    "localOcr": "доровеи Трежблго вой хррчальша алрем, ат пуо в р\nвь и. лкопиац лили\nЕвите потрр Масевнит\",\nСвяженникі\nПеиволещія\nеотЧиет? Стееранов\nДаоринатвай мрса мнаное\nего оафия атакова, обапдае.\nBseнванивle,\nСрешенник'ь\nWees\nla loneneus @hercuntflnedamntot\nсествячник\n• ел\nнова и Важосмацласив\nпостина дагуневь, обапривым\nnetanmtntuoh Chr",
-    "localOcrWithSurnameLexicon": "вь и. мнопиац лили\nСвященникі\nПеиволенія\nлонЧиет? Стеранов\nего мафия атакова, обапдае.\nСвешенник'ь\nWines\nчестьячник\n• еля\nнова и Важоммацласив\nпостина загонова, обапривым",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Псаломщик Дмитрий Села Тюсюльского крестьянин Димитрий Ми Амфилогов и законная жена его Анастасия Макарова, оба православные.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Два параллельных экземпляра одного акта: YA-176F1157-194 и YA-30187144-176. Номер 175 ясно виден во втором. Год определён по разделу 1893 года; на целевом развороте заголовка с годом нет."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Николай родился и крещён 23 декабря 1893 года в Тисульском; родители — Дмитрий Михайлович Амфилогов и Анастасия Макаровна."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108319"
 }

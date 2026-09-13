@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "query": "Амфилогов",
+  "index": "books",
+  "auditedAt": "2026-09-13",
+  "status": "passed",
+  "masterPath": "data/genealogy/searches/yandex-archive-amfilogov-books-2026-09-13.json",
+  "coverage": {
+    "expectedResults": 2,
+    "expectedPages": 1,
+    "capturedCards": 2,
+    "uniqueCanonicalUrls": 2,
+    "cardsWithSourceBinding": 2,
+    "uniqueSources": 2,
+    "newSources": 1,
+    "reusedExistingSources": 1,
+    "publicRecordSources": 1,
+    "researchOnlySources": 1,
+    "linkedPersonProfiles": 1,
+    "newProfiles": 1,
+    "after1950Sources": 0,
+    "uniqueEvidenceFiles": 8,
+    "verifiedEvidenceFiles": 8,
+    "relatedCorrectionsOutsideQuery": 1,
+    "relatedNewProfiles": 1,
+    "allAuditedEvidenceFiles": 11
+  },
+  "checks": {
+    "exactTwoCanonicalUrls": true,
+    "noDuplicateCanonicalSources": true,
+    "originalReadingEvidence": true,
+    "profilesAndBacklinks": true,
+    "publicScope": true,
+    "currentEvidencePathsAndSha256": true,
+    "previousBookSearchesCompared": true
+  },
+  "independentReadings": [
+    {
+      "ordinal": 1,
+      "reading": "Попенковъ, Игнатій Амфи-/логовъ 169 М. 91 26745",
+      "printedPage": "2124",
+      "decision": "Подтверждены фамилия Попенков и патронимическая позиция Амфилогов. Старое Попеленков ошибочно. Тождества с Игнатиями Ивановичами фамильной линии нет: иная фамилия и патроним, без общих места/родства. Отдельный onomastic P108020 обоснован.",
+      "confidence": "high"
+    },
+    {
+      "ordinal": 2,
+      "reading": "Волковъ, Амфилог. Пав.",
+      "printedColumn": "2680",
+      "decision": "Подтверждено: сокращённое личное имя сотрудника компании «Надежда», не фамилия Амфилогов. Имя в полной форме не раскрывается; достаточно сохранять research-only без профиля. Список имеет заголовок Служащ.; должность агента не приписана. Титул на1898 год с выходным годом1897 прочитан независимо.",
+      "confidence": "high-for-abbreviation-role-and-dates-full-given-name-unresolved"
+    }
+  ],
+  "crossSearchDeduplication": [
+    {
+      "ordinal": 1,
+      "type": "exact-url-existing-source",
+      "previousTracker": "data/genealogy/searches/yandex-archive-ampilogov-books-fuzzy-2026-09-10.json",
+      "sourceId": "YA-CCE7B705-546",
+      "decision": "Переиспользован, ошибочная фамилия и прежний отказ по патрониму исправлены; вторая карточка источника не создавалась."
+    },
+    {
+      "ordinal": 2,
+      "type": "same-book-different-scans",
+      "relatedSourceIds": [
+        "YA-3AC32BE3-888",
+        "YA-3AC32BE3-1311"
+      ],
+      "decision": "Это другие сканы адресной книги, не дубликаты /820; точного URL в предыдущих книжных трекерах не найдено."
+    }
+  ],
+  "relatedCorrections": [
+    {
+      "sourceId": "YA-CCE7B705-130-ANFILOGOV-BOOKS",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/130",
+      "excludedFromQueryTotals": true,
+      "status": "corrected-and-upgraded-public-onomastic",
+      "personId": "P108620",
+      "reading": "Корюковъ, Анфилогъ Мак-/симовъ 169 М. 91 23182",
+      "printedPage": "1293",
+      "decision": "Полное личное имя Анфилог подтверждено независимо; создан отдельный профиль предмета ономастического исследования. Титул исправлен на томII К–П, СПб.1893. Прежние метаданные и scope сохранены в indexData. Не устанавливаются родство, место, конкретное преступление или раскрытие кода М."
+    }
+  ],
+  "issues": [],
+  "evidenceManifest": [
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0546-original.jpg",
+      "sha256": "e4f0d75eeef61c91fde37b0d14874864c7c28bb9cebb5be0a68c849c17286c66",
+      "bytes": 994228
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0546-amfilogov-books-target.jpg",
+      "sha256": "15e1f18a13ccad110b4e2b59e82b758af764c81543c5e203f84e4c679e121973",
+      "bytes": 86741
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0001-original.jpg",
+      "sha256": "caf9f8d246daf9ef00e0a8384e6f6e928275e561c1d8e6b145b47fc87c8df256",
+      "bytes": 487198
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0002-original.jpg",
+      "sha256": "c236bf1a47ff0d6d129ade08d33325d6da81dce85138cb6c7434db28d68b9470",
+      "bytes": 593165
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/3ac32be3-c25c-4893-ac1e-301a732dcf25/0820-amfilogov-books-original.jpg",
+      "sha256": "e42f31dc0696a4bf9eac152f025c3cd0da74582f4bc67e4ae147b3e0c79741e7",
+      "bytes": 752282
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/3ac32be3-c25c-4893-ac1e-301a732dcf25/0820-amfilogov-books-target.jpg",
+      "sha256": "e012d32314d30c49ca5c659ae6db5c2a5e940594f9de7590c8f13e861fbf217f",
+      "bytes": 227678
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/3ac32be3-c25c-4893-ac1e-301a732dcf25/0820-amfilogov-books-heading.jpg",
+      "sha256": "69463910df218836ebb291d8022f9144baf6e05b95c4dd7d1e4031613623f9ce",
+      "bytes": 69634
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/3ac32be3-c25c-4893-ac1e-301a732dcf25/0001-amfilogov-books-title.jpg",
+      "sha256": "f57fe602c9eea9a195776cf9eb4e380418cb70a833da82fb1f57a893f67f77e6",
+      "bytes": 778080
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0130-original.jpg",
+      "sha256": "2ee3336caab852f8ed1324827cd71b1722bc539b0cec61968d9a4405a29ed9d2",
+      "bytes": 984142
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0130-books-page2-target.jpg",
+      "sha256": "5bde7914115eeda57f1e96af2b630aac5f072e3d0f85f8b172613070d3661433",
+      "bytes": 27994
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/0001-books-audit-volume-title.jpg",
+      "sha256": "caf9f8d246daf9ef00e0a8384e6f6e928275e561c1d8e6b145b47fc87c8df256",
+      "bytes": 487198
+    }
+  ],
+  "notes": [
+    "Проверены текущие evidence и fragments источников; старые отсутствующие PNG в reviewHistory не заявляются текущим доказательством.",
+    "Санкт-Петербург указан как место печати/компании, а не доказанный адрес Игнатия или Анфилога.",
+    "Upload и регенерация индексов этим агентом не запускались."
+  ],
+  "projectChecks": {
+    "typescript": "passed",
+    "genealogyAudit": {
+      "errors": 0,
+      "warnings": 6,
+      "warningScope": "Прежние missing-source-backlink в YA-F4BFF9CA вне этого прохода."
+    },
+    "gitDiffCheck": "passed",
+    "directoryIndex": {
+      "status": "passed",
+      "records": 7839,
+      "people": 5114,
+      "sourcePaths": 13041,
+      "personPaths": 5616,
+      "mapPlaces": 250
+    },
+    "evidenceStore": {
+      "status": "passed",
+      "uploadedFiles": 9,
+      "uploadedBytes": "4.3 MB",
+      "verifiedRemainingFiles": 0,
+      "note": "Восемь файлов текущей выдачи и три файла связанной правки проверены; два уже находились в хранилище, девять загружены."
+    },
+    "browserSmoke": {
+      "status": "passed",
+      "checks": [
+        "P108020 открывается без внутренней служебной терминологии",
+        "P108620 открывается как ономастический профиль",
+        "YA-CCE7B705-130-ANFILOGOV-BOOKS открывается и ссылается на P108620"
+      ]
+    }
+  }
+}

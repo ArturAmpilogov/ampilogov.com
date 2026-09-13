@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "query": "Амфилогов",
+  "index": "books",
+  "searchUrl": "https://yandex.ru/archive/search?text=%D0%90%D0%BC%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&index=books&updateDate=0&excludeSeen=0&rankMode=by_date&sortOrder=ascending",
+  "capturedAt": "2026-09-13",
+  "reviewedAt": "2026-09-13",
+  "status": "complete-independently-audited",
+  "totals": {
+    "expectedResults": 2,
+    "expectedPages": 1,
+    "capturedCards": 2,
+    "uniqueCanonicalUrls": 2,
+    "cardsWithSourceBinding": 2,
+    "uniqueSources": 2,
+    "newSources": 1,
+    "reusedExistingSources": 1,
+    "publicRecordSources": 1,
+    "researchOnlySources": 1,
+    "linkedPersonProfiles": 1,
+    "newProfiles": 1,
+    "after1950Sources": 0,
+    "uniqueEvidenceFiles": 8,
+    "verifiedEvidenceFiles": 8,
+    "relatedCorrectionsOutsideQuery": 1,
+    "relatedNewProfiles": 1,
+    "allAuditedEvidenceFiles": 11
+  },
+  "inputFiles": [
+    "data/genealogy/searches/yandex-archive-amfilogov-books-2026-09-13-batch-early-1.json",
+    "data/genealogy/searches/yandex-archive-amfilogov-books-2026-09-13-batch-names-2.json"
+  ],
+  "cards": [
+    {
+      "ordinal": 1,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/546",
+      "sourceId": "YA-CCE7B705-546",
+      "sourcePath": "data/genealogy/sources/yandex/YA-CCE7B705-546.json",
+      "status": "processed-public-onomastic-record",
+      "reused": true,
+      "publicCore": true,
+      "isRecord": true,
+      "personIds": [
+        "P108020"
+      ],
+      "originalReadingConfirmed": true,
+      "findings": "В алфавитном указателе под фамилией Попенков назван Игнатий Амфилогов. По заголовкам колонок «ст. / годъ / нум.» строка содержит ссылку: статья «169 М.», год «91» (1891), номер «26745». Указатель напечатан в Санкт-Петербурге в 1893 году, том второй К–П; целевая строка на с.2124. Место, возраст, родственные связи и точная дата дела не приведены. Число 26745 является номером в ссылочном аппарате указателя, а не доказанным номером архивного дела. Буквенное сокращение М. сохранено без раскрытия: на просмотренных страницах отдельной легенды нет. Состав деяния, суд и содержание приговора по этой строке не восстанавливаются."
+    },
+    {
+      "ordinal": 2,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/3ac32be3-c25c-4893-ac1e-301a732dcf25/820",
+      "sourceId": "YA-3AC32BE3-820-AMFILOGOV-BOOKS",
+      "sourcePath": "data/genealogy/sources/yandex/YA-3AC32BE3-820-AMFILOGOV-BOOKS.json",
+      "status": "processed-research-only",
+      "reused": false,
+      "publicCore": false,
+      "isRecord": false,
+      "personIds": [],
+      "originalReadingConfirmed": true,
+      "findings": "В адресной книге на 1898 год, в разделе страховых обществ, среди служащих петербургской компании «Надежда» назван Волков, Амфилог. Пав. Сокращение Амфилог. занимает место личного имени после фамилии и перед сокращённым отчеством Пав.; полная форма имени не раскрыта."
+    }
+  ],
+  "crossSearchDeduplication": [
+    {
+      "ordinal": 1,
+      "type": "exact-url-existing-source",
+      "previousTracker": "data/genealogy/searches/yandex-archive-ampilogov-books-fuzzy-2026-09-10.json",
+      "sourceId": "YA-CCE7B705-546",
+      "decision": "Переиспользован, ошибочная фамилия и прежний отказ по патрониму исправлены; вторая карточка источника не создавалась."
+    },
+    {
+      "ordinal": 2,
+      "type": "same-book-different-scans",
+      "relatedSourceIds": [
+        "YA-3AC32BE3-888",
+        "YA-3AC32BE3-1311"
+      ],
+      "decision": "Это другие сканы адресной книги, не дубликаты /820; точного URL в предыдущих книжных трекерах не найдено."
+    }
+  ],
+  "relatedCorrections": [
+    {
+      "sourceId": "YA-CCE7B705-130-ANFILOGOV-BOOKS",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/cce7b705-d4c8-441c-9ec8-04e0f9fcfd02/130",
+      "excludedFromQueryTotals": true,
+      "status": "corrected-and-upgraded-public-onomastic",
+      "personId": "P108620",
+      "reading": "Корюковъ, Анфилогъ Мак-/симовъ 169 М. 91 23182",
+      "printedPage": "1293",
+      "decision": "Полное личное имя Анфилог подтверждено независимо; создан отдельный профиль предмета ономастического исследования. Титул исправлен на томII К–П, СПб.1893. Прежние метаданные и scope сохранены в indexData. Не устанавливаются родство, место, конкретное преступление или раскрытие кода М."
+    }
+  ],
+  "validation": {
+    "ordinalRangeComplete": true,
+    "canonicalUrlsUnique": true,
+    "allBacklinksPresent": true,
+    "allCurrentEvidenceSha256Valid": true,
+    "independentOriginalReadings": [
+      {
+        "ordinal": 1,
+        "reading": "Попенковъ, Игнатій Амфи-/логовъ 169 М. 91 26745",
+        "printedPage": "2124",
+        "decision": "Подтверждены фамилия Попенков и патронимическая позиция Амфилогов. Старое Попеленков ошибочно. Тождества с Игнатиями Ивановичами фамильной линии нет: иная фамилия и патроним, без общих места/родства. Отдельный onomastic P108020 обоснован.",
+        "confidence": "high"
+      },
+      {
+        "ordinal": 2,
+        "reading": "Волковъ, Амфилог. Пав.",
+        "printedColumn": "2680",
+        "decision": "Подтверждено: сокращённое личное имя сотрудника компании «Надежда», не фамилия Амфилогов. Имя в полной форме не раскрывается; достаточно сохранять research-only без профиля. Список имеет заголовок Служащ.; должность агента не приписана. Титул на1898 год с выходным годом1897 прочитан независимо.",
+        "confidence": "high-for-abbreviation-role-and-dates-full-given-name-unresolved"
+      }
+    ],
+    "issues": []
+  },
+  "publicScope": {
+    "lastPublicYear": 1950,
+    "onomasticExceptionApplied": true,
+    "surnameFamilyConnectionsInferred": false,
+    "unresolvedAbbreviationsExcluded": true,
+    "noPersonalMapLocationInferred": true
+  },
+  "finalAuditPath": "data/genealogy/searches/yandex-archive-amfilogov-books-2026-09-13-final-audit.json"
+}

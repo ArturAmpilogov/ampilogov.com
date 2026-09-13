@@ -1,93 +1,104 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-4E4D793C-223",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "baptism",
   "collection": {
     "catalogId": "4e4d793c-dcdd-4ccb-b33c-859356100b10",
     "scanNumber": 223,
     "title": "Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3",
-    "publication": "ЦГА Московской области (ЦГАМО), Отдел записей актов гражданского состояния Рузского района Московской области, Опись №1 дел постоянного срока хранения, Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3"
+    "publication": "ЦГА Московской области (ЦГАМО), Отдел записей актов гражданского состояния Рузского района Московской области, Опись №1 дел постоянного срока хранения, Метрическая книга записи рождения, брака, смерти в Воскресенской церкви села Воскресенское, том 3",
+    "digitalScanNumber": 223
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4e4d793c-dcdd-4ccb-b33c-859356100b10/223"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "baptism",
+    "recordNumber": "9 (муж.)",
     "date": {
-      "display": "1 января 1891 — 31 декабря 1908",
-      "confidence": "high-for-catalog-date"
+      "iso": "1905-04-13",
+      "from": "1905-04-13",
+      "to": "1905-04-14",
+      "display": "1905-04-13 / 1905-04-14 (рождение / крещение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "birthIso": "1905-04-13",
+      "baptismIso": "1905-04-14"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "деревня Константинова, Московская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-4E4D793C-223-M1",
-      "role": "surname-series-mention",
-      "displayName": "нилов",
-      "nameAsTranscribed": "нилов",
+      "personId": "P108602",
+      "displayName": "Матвей Дмитриевич Амфилогов",
+      "nameAsTranscribed": "Матвей Амфилогов",
+      "role": "godfather",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "13 / 14. Гавриил. Восприемники: той же деревни крестьянин Матвей Амфилогов и Евдокия Сергеева.",
+    "modernInterpretation": "14 апреля 1905 года крестьянин деревни Константиновой Матвей Амфилогов был восприемником Гавриила, родившегося 13 апреля.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Крёстный отец: Матвей \u0007[Амфилогов\u0007], крестьянин, та же деревня.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "4e4d793c-dcdd-4ccb-b33c-859356100b10",
     "scanNumber": 223,
+    "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-amfilogov-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-amfilogov-original.jpg",
+    "sha256": "20b7a628708eac75504c143a074676d8959eb0b053914ce0ad58ce24c7866dc4",
+    "capturedAt": "2026-09-13",
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "572c81c58d942de8f3a6efa74af223ea6ce71f89b9073f40e38623b04a354604",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-header.png",
-        "sha256": "3de39a2ff0e90a5610331649307f9909b24019c6e0401eacfba928f90295aa9a",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-amfilogov-target-20260913.jpg",
+        "sha256": "c22b870fe9b503d5416a02588e126bfe3f95a3f9e2db6accb80b0fa7faaa8fee",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0223-target-entry.png",
-        "sha256": "286d5015ce54401c0b1ee89e23d035cb93552fc589907db31d89a7be51604317",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "year-header",
+        "path": "data/genealogy/evidence-private/yandex/4e4d793c-dcdd-4ccb-b33c-859356100b10/0222-amfilogov-confirmed-year-context.jpg",
+        "sha256": "867437850885a092d6655e3392da018428d21606f32b7ec10f8e70724997fe0b",
+        "description": "Соседний разворот: 1905 год и переход к апрелю; месяц продолжается на целевой странице.",
+        "sourceUrl": "https://yandex.ru/archive/catalog/4e4d793c-dcdd-4ccb-b33c-859356100b10/222",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4049x3081",
-      "targetDimensions": "1200x751",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "oun Chins toTte\nучинимо\n28а скслова „ 1і лров сГ)\nнелтавиє\n• В8\nКесй нилов Крествянская онна\nсл.\nДарня Aeтрuвa\nобласти\nдоревли вонарої крій вияумі 13а\nСплвеві",
-    "modernInterpretation": "oun Chins toTte учинимо 28а скслова „ 1и лров сГ) нелтавиє • В8 Кесй нилов Крествянская онна сл. Дарня Aeтрuвa области доревли вонарої крий вияуми 13а Сплвеви",
-    "localOcr": "oun Chins toTte\nучинимо\n28а скслова „ 1і лров сГ)\nнелтавиє\n• В8\nКесй нилов Крествянская онна\nсл.\nДарня Aeтрuвa\nобласти\nдоревли вонарої крій вияумі 13а\nСплвеві",
-    "localOcrWithSurnameLexicon": "іть\nучинимо\n28а сестова « 10 лов ст)\nпектинає\n• 18\nРени налов Крествянская онна\nсл.\nобласти\nдеревни вонара крій визумі 13а\nСплвеві",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Крёстный отец: Матвей Амфилогов, крестьянин, та же деревня.",
-    "fuzzyQuery": true
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
-  }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Отчество в этой записи отсутствует. Контекстная привязка к P108602: то же имя, редкая фамилия и Константинова; родство с крещаемым не утверждается. Год 1905 прочитан в заголовке, а не 1891 из начала каталожного диапазона."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "14 апреля 1905 года крестьянин деревни Константиновой Матвей Амфилогов был восприемником Гавриила, родившегося 13 апреля."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108602"
 }

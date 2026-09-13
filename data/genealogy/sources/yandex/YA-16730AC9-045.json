@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-16730AC9-045",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "baptism",
   "collection": {
     "catalogId": "16730ac9-ba8a-4e36-b8b5-e177b95d7bbf",
     "scanNumber": 45,
@@ -13,24 +13,49 @@
     "documentUrl": "https://yandex.ru/archive/catalog/16730ac9-ba8a-4e36-b8b5-e177b95d7bbf/45"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "baptism",
     "date": {
-      "display": "1 января 1883 — 31 декабря 1883",
-      "confidence": "high-for-catalog-date"
+      "display": "1883-05-14",
+      "calendar": "julian",
+      "date": "1883-05-14"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "Оренбург, Воскресенская церковь"
+    },
+    "recordNumber": 146
   },
   "mentions": [
     {
-      "mentionId": "YA-16730AC9-045-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Михаилъ Васильевъ Амфилоговъ",
+      "personId": "P1480",
+      "role": "godparent",
+      "surnameSeries": true,
+      "mentionId": "YA-16730AC9-045-M1"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 146. Константинъ. Мая 10 [рождение], 14 [крещение]. «Оренбургскій мѣщанинъ Михаилъ Васильевъ Амфилоговъ и Оренбургская мѣщанка Наталья Діонисіева Верхооменская».",
+    "modernInterpretation": "Оренбургский мещанин Михаил Васильевич Амфилогов — восприемник Константина 14 мая 1883 года.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Оренбургский мещанин Михаил Васильевич Амфилогов — восприемник Константина 14 мая 1883 года."
+  },
+  "notes": [
+    "Рабочее сопоставление с P1480 основано на полном имени, городе и сословном обозначении. В проекте также имеется P5859 с тем же полным именем в Оренбурге; окончательное объединение этих профилей требует отдельной проверки, здесь оно не проводится.",
+    "Наталья Верхооменская — вторая восприемница; акт не называет её супругой Михаила."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Оренбургский мещанин Михаил Васильев [Амфилогов] и Оренбургская мещанка Наталья Дионисиева Верхоменская.",
+    "previousLocalOcr": "ОВЕКOR\nСТНПОГРА\nППОДАЛЬНО\nгодд чАсть пеРвал. й\nЗкáніє, ймА, ОтчЕсТво й фамнлА\nКто к\nвоспріємникивх .\nдснтурхкії мвиининь Никифор Ал-\nполявь смельянявь и салдатемі\nялени Клавдія Игназьева Иетпинкина).",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "16730ac9-ba8a-4e36-b8b5-e177b95d7bbf",
     "scanNumber": 45,
@@ -42,55 +67,35 @@
     "sha256": "765a666018b20a3635d8ea4625e0059948a5871c843485467dc5d82042c3ee36",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/16730ac9-ba8a-4e36-b8b5-e177b95d7bbf/0045-header.png",
-        "sha256": "75294e66963bb56817712fedf5a4452f9ff02a6676bc3d23b29cd9e5c95f8353",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/16730ac9-ba8a-4e36-b8b5-e177b95d7bbf/0045-amfilogov-tail-target.jpg",
+        "sha256": "650bb843bb08db6765f81610c740524d72cdc2fc83ecacb6a9d2aa09f9ed8a3a",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/16730ac9-ba8a-4e36-b8b5-e177b95d7bbf/0045-target-entry.png",
-        "sha256": "4ef30b62140747b93f4f7f9e2a4971a0e5860d49f45e25a3393a4b9b9cb8e5a2",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          227,
+          3134,
+          3892,
+          3563
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5048x4082",
-      "targetDimensions": "1463x857",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОВЕКOR\nСТНПОГРА\nППОДАЛЬНО\nгодд чАсть пеРвал. й\nЗкáніє, ймА, ОтчЕсТво й фамнлА\nКто к\nвоспріємникивх .\nдснтурхкії мвиининь Никифор Ал-\nполявь смельянявь и салдатемі\nялени Клавдія Игназьева Иетпинкина).",
-    "modernInterpretation": "ОВЕКOR СТНПОГРА ППОДАЛЬНО годд чАсть пеРвал. й Зкáниє, ймА, ОтчЕсТво й фамнлА Кто к восприємникивх . дснтурхкиї мвиининь Никифор Ал- полявь смельянявь и салдатеми ялени Клавдия Игназьева Иетпинкина).",
-    "localOcr": "ОВЕКOR\nСТНПОГРА\nППОДАЛЬНО\nгодд чАсть пеРвал. й\nЗкáніє, ймА, ОтчЕсТво й фамнлА\nКто к\nвоспріємникивх .\nдснтурхкії мвиининь Никифор Ал-\nполявь смельянявь и салдатемі\nялени Клавдія Игназьева Иетпинкина).",
-    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nгодд чАсть пеРвал. й\nЗкАніє, ймА, ОтчЕсТво й фамнАА\nКто к\nво спріємникиех .\nдентурхнії мінанинь Никифор Але-\nполяво стельянь и сандате\nолени Клавдія Игназьева Щетинкина) .",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Оренбургский мещанин Михаил Васильев Амфилогов и Оренбургская мещанка Наталья Дионисиева Верхоменская.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P1480"
 }

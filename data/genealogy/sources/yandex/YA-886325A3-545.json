@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-886325A3-545",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "death-and-burial",
+  "recordType": "research-note",
   "collection": {
     "catalogId": "886325a3-01b8-4c24-b111-01c7c3bb407f",
     "scanNumber": 545,
@@ -13,24 +13,39 @@
     "documentUrl": "https://yandex.ru/archive/catalog/886325a3-01b8-4c24-b111-01c7c3bb407f/545"
   },
   "event": {
-    "type": "death-and-burial",
+    "type": "research-note",
     "date": {
-      "display": "1 января 1884 — 31 декабря 1884",
-      "confidence": "high-for-catalog-date"
+      "display": "1884",
+      "calendar": "julian"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Москва, духовная консистория"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-886325A3-545-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+  "mentions": [],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "«Итого въ сей книгѣ нумерованныхъ десять листовъ (10). Членъ Консисторіи Архимандритъ Амфилохій».",
+    "modernInterpretation": "Заверительная подпись архимандрита Амфилохия; фамилия Амфилогов не подтверждается.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
     }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Заверительная подпись архимандрита Амфилохия; фамилия Амфилогов не подтверждается."
+  },
+  "notes": [
+    "Монашеское имя Амфилохий не относится к перечисленному в правилах исключению для личных имён Анфилог / Анфилоф / Анфилофий. Профиль и карта не создаются.",
+    "Правый лист — титул следующей метрической книги, а не запись о смерти."
   ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "4. Итого в сей книге нумерованных десять листов (10). Член Консистории Архимакуров [Амфилогов].",
+    "previousLocalOcr": "М.О.Столоначальн\nШnomn",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "886325a3-01b8-4c24-b111-01c7c3bb407f",
     "scanNumber": 545,
@@ -42,55 +57,34 @@
     "sha256": "564fb443cd6f21795063a06a175a793f2470690df7dfd776b25c7fdaed9f5830",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/886325a3-01b8-4c24-b111-01c7c3bb407f/0545-header.png",
-        "sha256": "7c70a449b5c1e9db7253331edf24d9c2029386ef51ad6400f2513c0b5ed5c30f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/886325a3-01b8-4c24-b111-01c7c3bb407f/0545-amfilogov-tail-target.jpg",
+        "sha256": "a1e43df5b1bc7f147c7e15167bc5f192b8a969dd6fd03df7f0537427ebe7cf72",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/886325a3-01b8-4c24-b111-01c7c3bb407f/0545-target-entry.png",
-        "sha256": "bdc99dbe6624571703a779ee334f020a0ce81bb3575854c3c7d80fce4aafbc31",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          179,
+          466,
+          2516,
+          932
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5136x4440",
-      "targetDimensions": "2611x893",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "М.О.Столоначальн\nШnomn",
-    "modernInterpretation": "М.О.Столоначальн Шnomn",
-    "localOcr": "М.О.Столоначальн\nШnomn",
-    "localOcrWithSurnameLexicon": "М.А. Столоначальн",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "4. Итого в сей книге нумерованных десять листов (10). Член Консистории Архимакуров Амфилогов. 551. №19.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": false,
+  "isRecord": false
 }

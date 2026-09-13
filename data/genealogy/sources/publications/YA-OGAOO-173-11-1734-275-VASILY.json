@@ -44,37 +44,28 @@
     "warning": "Причина смерти в OCR не связана со строкой уверенно."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-full-view.png",
-    "capturedAt": "2026-09-05",
-    "sha256": "4a54f3f72a583e1124501307177939bb394e5017c711eb60c0fdb5b134e62e7b",
+    "captureType": "yandex-original-raster",
+    "sourceUrl": "https://yandex.ru/archive/catalog/60745ac7-4693-48f7-83c3-5b76a9196448/275",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-full-view.png",
+    "rightsNote": "Оригинал и фрагменты сохранены в приватном исследовательском хранилище; право публичного показа не установлено.",
+    "capturedAt": "2026-09-13",
+    "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-original.jpg",
+    "sha256": "dc343caf3cd717d5341b0fea9e2d68f5aed57629e44c4e9b049601b2caef3acc",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-header.png",
-        "sha256": "1a979b7c92371837d9bc04071e20fa617e2f0ce65de994a28e7d1bc8d95cabe9",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-target-entry.png",
-        "sha256": "e592af3608c1d411674534fd49b9018ff79c448b6c6535879c7721e9351c90c4",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-identity-review-target.jpg",
+        "sha256": "4160078e9950a8c7575967f556abe5ae8e9c775082bbd459f28aab37568de703",
+        "description": "Повторное визуальное чтение для различения двух Василиев Даниловичей"
       }
     ],
     "quality": {
       "documentOnlyVisuallyConfirmed": true,
       "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-05",
-      "method": "manual-comparison-with-source-transcription-and-document-context",
-      "fullDimensions": "2570x2100",
-      "targetDimensions": "1280x720",
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true
+      "confirmedAt": "2026-09-13",
+      "method": "manual-reading-of-downloaded-original-and-adjacent-header"
     }
   },
   "review": {
@@ -91,5 +82,45 @@
     "status": "verified-summary",
     "text": "10 июля 1848 года умер 37-летний Василий Данилович Анпилогов; погребён 11 июля."
   },
-  "isRecord": true
+  "isRecord": true,
+  "correctionHistory": [
+    {
+      "date": "2026-09-13",
+      "reason": "Оригинал высокого разрешения повторно проверен для различения двух Василиев Даниловичей.",
+      "previousEvidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-full-view.png",
+        "capturedAt": "2026-09-05",
+        "sha256": "4a54f3f72a583e1124501307177939bb394e5017c711eb60c0fdb5b134e62e7b",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-header.png",
+            "sha256": "1a979b7c92371837d9bc04071e20fa617e2f0ce65de994a28e7d1bc8d95cabe9",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0275-target-entry.png",
+            "sha256": "e592af3608c1d411674534fd49b9018ff79c448b6c6535879c7721e9351c90c4",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-05",
+          "method": "manual-comparison-with-source-transcription-and-document-context",
+          "fullDimensions": "2570x2100",
+          "targetDimensions": "1280x720",
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true
+        }
+      }
+    }
+  ]
 }

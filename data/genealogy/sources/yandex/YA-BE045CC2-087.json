@@ -1,96 +1,105 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BE045CC2-087",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "birth",
   "collection": {
     "catalogId": "be045cc2-3b9b-4c66-9dbe-f9cda29f562e",
     "scanNumber": 87,
     "title": "Метрическая книга записей о рождении, бракосочетании и смерти города Оренбург церквей Михайло-Архангельской, Дмитриевской, Николаевской за 1890 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти города Оренбург церквей Михайло-Архангельской, Дмитриевской, Николаевской за 1890 г."
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти города Оренбург церквей Михайло-Архангельской, Дмитриевской, Николаевской за 1890 г.",
+    "digitalScanNumber": 87
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/87"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
+    "recordNumber": "142 (жен.)",
     "date": {
-      "display": "1 января 1890 — 31 декабря 1890",
-      "confidence": "high-for-catalog-date"
+      "iso": "1890-09-06",
+      "from": "1890-09-06",
+      "to": "1890-09-08",
+      "display": "1890-09-06 / 1890-09-08 (рождение / крещение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "birthIso": "1890-09-06",
+      "baptismIso": "1890-09-08"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "деревня Кармалка, Оренбургский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-BE045CC2-087-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108311",
+      "displayName": "Наталия Ивановна Амфилогова",
+      "nameAsTranscribed": "Наталия",
+      "role": "child",
+      "sex": "female",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-BE045CC2-087-M2",
+      "personId": "P6012",
+      "displayName": "Иван Фёдорович Анпилогов",
+      "nameAsTranscribed": "Иван Федоров Амфилогов",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Сентябрь. 142. 6 / 8. Наталия. Оренбургского уезда деревни Кармалки Иван Федоров Амфилогов и законная жена его Марфа Иванова, оба православные.",
+    "modernInterpretation": "Наталия родилась 6 сентября и крещена 8 сентября 1890 года; родители — Иван Фёдорович Амфилогов из Кармалки Оренбургского уезда и Марфа Ивановна.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Отец: Иван Федоров \u0007[Амфилогов\u0007], Оренбургский уезд, деревня Каргалка. Отец: Андрей Петров Куценко, оренбургский мещанин.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "be045cc2-3b9b-4c66-9dbe-f9cda29f562e",
     "scanNumber": 87,
+    "path": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-amfilogov-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-amfilogov-original.jpg",
+    "sha256": "ebd16db991ab34a36d31ef167b6b904654a133bc162506bd30278b6cd4c9f7e7",
+    "capturedAt": "2026-09-13",
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "6d879a0c68e150904ba742a4da17d8fac3b748b4db8f862d51c03b1a8a6c2fae",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-header.png",
-        "sha256": "8c01e2689dbdad8e134845af2e68e5845119a74ef67cba173ca9171ee8e6663e",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-target-entry.png",
-        "sha256": "16b3d17c0c1798cfad7dadd2622486c16b8312931b7a4edbf52da7f14d7c57ef",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/be045cc2-3b9b-4c66-9dbe-f9cda29f562e/0087-amfilogov-target-20260913.jpg",
+        "sha256": "c7c10f49f43becb1c2329e622a8574a181943a82d18b1be27f72820f1654f257",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5665x4691",
-      "targetDimensions": "1771x1483",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "рендннійпьщаннні\nжарей веттровь ву -\nгранно изакожная женоего\n2tronszed rtlgzanoles, aba,\nзриво сларн\nСвятунито в Пртоа\niaran GрattGafE\nпринбурстій мисгуонинй\nглскити Шоаховтлво\nпоторуг захожнад жене\nег0\nПляна Дажалова",
-    "modernInterpretation": "рендннийпьщаннни жарей веттровь ву - гранно изакожная женоего 2tronszed rtlgzanoles, aba, зриво сларн Святунито в Пртоа iaran GрattGafE принбурстий мисгуонинй глскити Шоаховтлво поторуг захожнад жене ег0 Пляна Дажалова",
-    "localOcr": "рендннійпьщаннні\nжарей веттровь ву -\nгранно изакожная женоего\n2tronszed rtlgzanoles, aba,\nзриво сларн\nСвятунито в Пртоа\niaran GрattGafE\nпринбурстій мисгуонинй\nглскити Шоаховтлво\nпоторуг захожнад жене\nег0\nПляна Дажалова",
-    "localOcrWithSurnameLexicon": "рененнійсьманнні\nгранно и закожая жено его\n2t ronszed rtlgzanoles, aba,\niaran GRatt uafE\nприбурстій мигонині\nроторуг захожнад жене\nего\nГляна Важалова",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Отец: Иван Федоров Амфилогов, Оренбургский уезд, деревня Каргалка. Отец: Андрей Петров Куценко, оренбургский мещанин.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Идентификация отца по полному имени, деревне и супруге Марфе Ивановне; эта пара прямо представлена в акте рождения Матфея 15 ноября 1891 года у P6012. Индексный вариант места Каргалка не принят автоматически."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Наталия родилась 6 сентября и крещена 8 сентября 1890 года; родители — Иван Фёдорович Амфилогов из Кармалки Оренбургского уезда и Марфа Ивановна."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108311"
 }
