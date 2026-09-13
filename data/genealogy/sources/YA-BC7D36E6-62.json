@@ -1,47 +1,50 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BC7D36E6-62",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-transcription",
+  "provider": "Яндекс Архив — технический вариант идентификатора",
+  "recordType": "technical-source-alias",
+  "parallelOf": "YA-BC7D36E6-062",
   "collection": {
     "catalogId": "bc7d36e6-1936-4cd0-9caf-5757a01894c5",
-    "scanNumber": "62"
+    "scanNumber": 62,
+    "title": "Метрическая книга за 1911 год, часть первая, о родившихся",
+    "asRead": "Тот же физический лист и запись № 129, что у канонического YA-BC7D36E6-062"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/bc7d36e6-1936-4cd0-9caf-5757a01894c5/62"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-BC7D36E6-62-M1",
-      "role": "godparent",
-      "personId": "P99906",
-      "nameAsTranscribed": "Анна Ивановна Анпилеева",
-      "displayName": "Анна Ивановна Анпилеева",
-      "surnameSeries": true
-    }
-  ],
+  "event": null,
+  "mentions": [],
+  "transcription": {
+    "status": "technical-alias-verified",
+    "literal": "Технический sourceId без ведущего нуля указывает на тот же catalogId bc7d36e6-1936-4cd0-9caf-5757a01894c5 и scanNumber 62, что канонический YA-BC7D36E6-062.",
+    "modernInterpretation": "Отдельного события нет; полная ручная расшифровка записи № 129 хранится в YA-BC7D36E6-062.",
+    "indexNote": "Совпадение установлено по exact catalogId, scanNumber, URL и визуальному тождеству сохранённых копий одного физического листа; разрешение и формат локальных копий различались."
+  },
+  "indexData": {
+    "fuzzyQuery": true,
+    "duplicateEvidence": "same catalogId+scanNumber+document URL and same physical register spread as canonical YA-BC7D36E6-062; old JPG 1246×984 is a lower-resolution copy of canonical PNG 2359×1962"
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/bc7d36e6-1936-4cd0-9caf-5757a01894c5/0062-full-view.jpg",
-    "sha256": "143e96bdd52dd09aa9b7c274f220e098a049796a76f5e9eda85e7f52e23063cb",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/bc7d36e6-1936-4cd0-9caf-5757a01894c5/0062-target-entry.jpg",
-        "sha256": "40428ad7578a60bff0d38f8e5498191218c8e9ed96a18ba8a072e7b56adbf771"
-      }
-    ]
+    "catalogId": "bc7d36e6-1936-4cd0-9caf-5757a01894c5",
+    "scanNumber": 62,
+    "path": "data/genealogy/evidence-private/yandex/bc7d36e6-1936-4cd0-9caf-5757a01894c5/0062-full-view.png",
+    "sha256": "df75a44957d84f873f54d3194415e2be314f18b21deedc54798b3b81ae9c0220",
+    "publicDisplay": false
+  },
+  "isRecord": false,
+  "cardKind": "technical-source-alias",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Технический alias канонического Record YA-BC7D36E6-062.",
+    "identityNote": "P99906 повторно не привязывается; backlink остаётся только у canonical sourceId.",
+    "migrationNote": "Не картографируется."
   },
   "review": {
-    "status": "primary-scan-verified",
+    "status": "complete-technical-duplicate-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Скан не даёт прямого документального основания для отдельного места жительства или переселения восприемницы Анны Ивановны Анпилеевой; название волости в графе родителей требует отдельного чтения, если оно понадобится для их контекста."
-    ]
-  },
-  "transcription": {
-    "status": "primary-scan-transcription",
-    "literal": "Метрическая книга 1911 года, часть первая о родившихся; запись № 129: 25/28 июня, Евфросиния. В графе родителей указан крестьянин Оренбургского уезда Дмитрий Сергеевич Кобанов и его законная жена София Ивановна. Среди восприемников ясно читается девица Анна Ивановна Анпилеева.",
-    "modernInterpretation": "Скан уверенно документирует форму фамильного ряда «Анпилеева» у восприемницы Анны Ивановны; по этому подтверждённому чтению создан минимальный профиль P99906. Упоминание Оренбургского уезда в данной записи относится к отцу ребёнка; оно не подтверждает отдельное место жительства, переселение или маршрут самой восприемницы. Поэтому место, карта, переселение и маршрут для P99906 не добавлены.",
-    "indexNote": "Внешний индекс был только поисковой подсказкой; имя, отчество и фамилия восприемницы прочитаны непосредственно на сохранённом локальном развороте."
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Padded/unpadded sourceId проверены по exact catalogId, scanNumber, URL и визуальному тождеству полного разворота; canonical выбран YA-BC7D36E6-062 с более качественным PNG и wide crop; второе событие, mention и backlink не создаются."
   }
 }
