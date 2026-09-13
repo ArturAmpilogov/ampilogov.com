@@ -12,12 +12,24 @@ const genealogyDataGlobs = [
     .map((entry) => `./data/genealogy/${entry.name}/**/*`),
 ];
 
+// The directory page and the JSON APIs behind it read these generated indexes
+// with readFileSync at request time. The path is built from process.cwd(), so
+// the tracer cannot see it and the file is left out of the deployed function,
+// which then answers every request with an ENOENT 500. Naming each index here
+// is what puts it in the bundle. Statically rendered readers such as /records
+// and /map read the same files during the build and need no entry.
+const peopleDirectoryIndex = ["./data/genealogy/indexes/people-directory.json"];
+const recordsDirectoryIndex = ["./data/genealogy/indexes/records-directory.json"];
+
 const nextConfig: NextConfig = {
   agentRules: false,
   outputFileTracingIncludes: {
     "/records/*/backup": genealogyDataGlobs,
     "/records/*/backup/assets/*": genealogyDataGlobs,
     "/people/*/backup": genealogyDataGlobs,
+    "/people": peopleDirectoryIndex,
+    "/api/people": peopleDirectoryIndex,
+    "/api/records": recordsDirectoryIndex,
   },
   outputFileTracingExcludes: {
     "/records/*": [
