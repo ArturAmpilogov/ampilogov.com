@@ -1,95 +1,106 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-841BEE21-164",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "birth",
   "collection": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 164,
     "title": "Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
+    "digitalScanNumber": 164
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/164"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
+    "recordNumber": "52 (муж.)",
     "date": {
-      "display": "1 января 1898 — 31 декабря 1900",
-      "confidence": "high-for-catalog-date"
+      "from": "1899-01-01",
+      "to": "1900-12-31",
+      "display": "1 / 4 апреля, год 1899–1900 не разрешён; старый стиль",
+      "confidence": "uncertain-year-from-conflicting-section-title",
+      "dayMonthAsWritten": {
+        "birth": "1 апреля",
+        "baptism": "4 апреля"
+      }
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-841BEE21-164-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108325",
+      "displayName": "Георгий Амфилогов",
+      "nameAsTranscribed": "Георгий",
+      "role": "child",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "target-transcribed-date-partly-unresolved",
+    "literal": "Апрель. 52. 1 / 4. Георгий. Села Тисульского крестьянин [личное имя закрыто сгибом] Михайлов Амфилогов и законная [его жена] Анастасия Макарова, оба православные.",
+    "modernInterpretation": "Георгий родился 1 апреля и крещён 4 апреля в Тисульском, предположительно в 1899 году; год не разрешён окончательно (1899–1900). Отец — [имя скрыто] Михайлов Амфилогов, мать — Анастасия Макарова.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Села Тюлольского крестьянин Михайлов \u0007[Амфилогов\u0007] и законная Анастасия Макарова, оба правосл.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 164,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-full-view.png",
     "sha256": "1e35ecc19dca45dfa093c2c4490fab1e215edd030a15dec645752fb804d6cba3",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-header.png",
-        "sha256": "a15d53c0be5d0d87d903abba9de4dc307a60eee4c223968ea51720c9d5fa0cbb",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-amfilogov-target-20260913.jpg",
+        "sha256": "5686835798d21647c5eb275990c17fcbc9e163a535c60dd892ec2c7759f650a8",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0164-target-entry.png",
-        "sha256": "698ba9cc55917c0aa3c4dc00042ad34c5dcf132fe412be2121672f92dcbcc0c0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "year-title-conflict",
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0137-year-title.png",
+        "sha256": "6a47d1fe10ade48c817dafdbf37a42b96b1f3ca16eae9ff5cf49a38089b98093",
+        "sourceUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/137",
+        "description": "Титул: крупное 1900 над прежним 1899; две видимые даты не разрешают автоматически год каждого акта раздела.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5359x4305",
-      "targetDimensions": "1200x650",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": false
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вишишнніСвкерва\nкичкив Лимеандрь Мали\nиу мастsонсуnна Nhns Afgausenthis\nихсл\nсиуипескогю пова была десттiв\nСвяуриниюо Всй мд Повйа",
-    "modernInterpretation": "вишишнниСвкерва кичкив Лимеандрь Мали иу мастsонсуnна Nhns Afgausenthis ихсл сиуипескогю пова была десттiв Свяуриниюо Всй мд Повйа",
-    "localOcr": "вишишнніСвкерва\nкичкив Лимеандрь Мали\nиу мастsонсуnна Nhns Afgausenthis\nихсл\nсиуипескогю пова была десттiв\nСвяуриниюо Всй мд Повйа",
-    "localOcrWithSurnameLexicon": "випишині верва\nникив Лимеандрь Мали\nскинеского пова была деств",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Села Тюлольского крестьянин Михайлов Амфилогов и законная Анастасия Макарова, оба правосл.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    "status": "primary-scan-read-date-partly-unresolved",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Титул раздела, скан 137: крупное 1900 над более ранним 1899; год на целевом развороте не заполнен. При отнесении к 1900 возникает противоречие с двумя копиями рождения Павла Дмитриевича 8 августа 1900 у Дмитрия Михайловича и Анастасии Макаровны.",
+      "P102309 — сильный кандидат в отцы по отчеству, фамилии, селу и супруге; личное имя отца скрыто сгибом. Из-за сочетания скрытого имени и годового конфликта формальная семейная связь пока не установлена. Точная дата рождения в профиле не задана."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Георгий родился 1 апреля и крещён 4 апреля в Тисульском, предположительно в 1899 году; год не разрешён окончательно (1899–1900). Отец — [имя скрыто] Михайлов Амфилогов, мать — Анастасия Макарова."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108325"
 }

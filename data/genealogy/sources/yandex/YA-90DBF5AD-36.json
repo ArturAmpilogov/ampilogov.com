@@ -19,16 +19,16 @@
   "event": {
     "type": "birth-and-baptism",
     "date": {
-      "display": "родился 15 июля, крещён 20 июля 1867",
-      "birthIso": "1867-07-15",
-      "baptismIso": "1867-07-20",
+      "iso": "1867-07-15",
+      "display": "1867-07-15",
       "confidence": "high"
     },
     "place": {
       "asWritten": "деревня Кармалка",
       "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния, Российская империя",
       "placeId": "karmalka-orenburg"
-    }
+    },
+    "baptismDate": "1867-07-20"
   },
   "mentions": [
     {
@@ -55,8 +55,8 @@
       "personId": "P1051",
       "sex": "female",
       "nameAsTranscribed": "жена Христинья Трифонова",
-      "modernName": "Христина Тимофеевна Ампилогова",
-      "displayName": "Христина Тимофеевна Ампилогова",
+      "modernName": "Христина Трифоновна Ампилогова",
+      "displayName": "Христина Трифоновна Ампилогова",
       "alternateNames": [
         "Христинья Трифонова"
       ]
@@ -84,64 +84,92 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-source-discrepancies",
+    "status": "project-visual-reading",
     "literal": "Июль. № 59. 15 [родился], 20 [крещён]. Илья. Деревни Кармалки государственный крестьянин Павел Григорьев Ампилогов и жена Христинья Трифонова, оба православные. Восприемники: той же деревни государственный крестьянин Афонасий Петров Асипилогов и крестьянская жена ямщика Вера Макарова Дымова. Священник Капитон Белявский с дьячком Покровским.",
-    "modernInterpretation": "15 июля 1867 года у Павла Григорьевича и Христины Тимофеевны Ампилоговых родился сын Илья; крещён 20 июля. Восприемником был Афанасий Петрович Ампилогов."
+    "modernInterpretation": "15 июля 1867 родился, 20 июля крещён Илья, сын Павла Григорьевича Анпилогова и Христиньи Трифоновны."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "sourceUrl": "https://yandex.ru/archive/catalog/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/36",
+    "path": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-antilogov-pavel-review-original.jpg",
+    "sha256": "cb5ee8116d69f111d63fb030bf2efa1553f985cb208d6bf7783946b19a43f86a",
     "publicDisplay": false,
-    "localBackup": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-full-view.png",
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "path": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-full-view.png",
-    "capturedAt": "2026-09-06",
-    "sha256": "1b64a99b97edf17e4b6932f60bf8baab983fb1ee1ba28b27942c125100e4c9aa",
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "sourceUrl": "https://yandex.ru/archive/catalog/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/36",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-header.png",
-        "sha256": "391a325b9f9e0c5edf03c33b818332429265773cfc97454bbce876b92a9a399c",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-target-entry.png",
-        "sha256": "8effe5e9e7c8e8f7b5774116829d2fb6b717d0475fdc77576599407647e06de1",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/90dbf5ad-b0d6-4e56-ae39-2e9be31fda9f/0036-antilogov-pavel-review-detail0.jpg",
+        "sha256": "fe7060d8839b1e28c71f2bbf10eba4f18e028faa0c59c2c40b342771b71ad789",
+        "publicDisplay": false,
+        "kind": "detail0"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-06",
-      "method": "manual-comparison-with-source-transcription-and-document-context",
-      "fullDimensions": "5138x4421",
-      "targetDimensions": "5138x1700",
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "transcriptionConfidence": "high-for-event-medium-for-two-written-forms",
-    "unresolved": [
-      "Отчество матери в этой строке читается «Трифонова», тогда как другие записи устойчиво называют её Тимофеевной; разночтение сохранено.",
-      "Фамилия восприемника передана как «Асипилогов»; он сопоставлен с Афанасием Петровичем Ампилоговым по имени, отчеству, месту и многочисленным записям."
-    ],
-    "identityResolution": {
-      "personId": "P0893",
-      "basis": "Полное имя, Кармалка и повторяющаяся роль восприемника.",
-      "confidence": "high"
-    },
-    "correctionHistory": [
-      "2026-08-25: сохранены локально полный разворот, заголовок и увеличенная целевая строка; SHA-256 проверены.",
-      "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Повторно визуально прочитаны родители и восприемники; мать Христинья Трифонова. Единство взрослой семьи подтверждают редкая пара и повторяющиеся восприемники Афанасий Петрович и Вера Макарова. Год 1867 по серии; последняя цифра текущего печатного заголовка не заполнена."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Рождение Ильи Павловича Ампилогова 15 июля 1867 года в Кармалке."
-  }
+    "text": "15 июля 1867 родился, 20 июля крещён Илья, сын Павла Григорьевича Анпилогова и Христиньи Трифоновны."
+  },
+  "indexData": {
+    "previousProjectReading": {
+      "transcription": {
+        "status": "project-visual-reading",
+        "literal": "Июль. № 59. 15 [родился], 20 [крещён]. Илья. Деревни Кармалки государственный крестьянин Павел Григорьев Ампилогов и жена Христинья Трифонова, оба православные. Восприемники: той же деревни государственный крестьянин Афонасий Петров Асипилогов и крестьянская жена ямщика Вера Макарова Дымова. Священник Капитон Белявский с дьячком Покровским.",
+        "modernInterpretation": "15 июля 1867 родился, 20 июля крещён Илья, сын Павла Григорьевича Анпилогова и Христиньи Трифоновны."
+      },
+      "event": {
+        "type": "birth-and-baptism",
+        "date": {
+          "iso": "1867-07-15",
+          "display": "1867-07-15",
+          "confidence": "high"
+        },
+        "place": {
+          "asWritten": "деревня Кармалка",
+          "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния, Российская империя",
+          "placeId": "karmalka-orenburg"
+        },
+        "baptismDate": "1867-07-20"
+      },
+      "review": {
+        "status": "complete-with-uncertainties",
+        "transcriptionConfidence": "high-for-event-medium-for-two-written-forms",
+        "unresolved": [
+          "Отчество матери в этой строке читается «Трифонова», тогда как другие записи устойчиво называют её Тимофеевной; разночтение сохранено.",
+          "Фамилия восприемника передана как «Асипилогов»; он сопоставлен с Афанасием Петровичем Ампилоговым по имени, отчеству, месту и многочисленным записям."
+        ],
+        "identityResolution": {
+          "personId": "P0893",
+          "basis": "Полное имя, Кармалка и повторяющаяся роль восприемника.",
+          "confidence": "high"
+        },
+        "correctionHistory": [
+          "2026-08-25: сохранены локально полный разворот, заголовок и увеличенная целевая строка; SHA-256 проверены.",
+          "2026-09-06: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "summary": {
+        "status": "verified-summary",
+        "text": "Рождение Ильи Павловича Ампилогова 15 июля 1867 года в Кармалке."
+      }
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "personIds": [
+    "P1220",
+    "P1050",
+    "P1051",
+    "P0893"
+  ]
 }

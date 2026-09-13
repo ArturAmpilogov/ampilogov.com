@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-E1DF294C-019",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "e1df294c-fba5-4013-a804-bfa274fb360f",
     "scanNumber": 19,
@@ -12,16 +12,27 @@
     "documentUrl": "https://yandex.ru/archive/catalog/e1df294c-fba5-4013-a804-bfa274fb360f/19"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1915",
-      "confidence": "high-for-year"
+      "display": "родилась 25 июля, крещена 26 июля 1915 года",
+      "from": "1915-07-25",
+      "to": "1915-07-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "placeId": "bakhtemir-astrakhan"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-E1DF294C-019-M0",
+      "role": "child",
+      "personId": "P102900",
+      "displayName": "Антонина Ефимовна Ампилова",
+      "nameAsTranscribed": "Антонина",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-E1DF294C-019-M1",
       "role": "father",
@@ -57,8 +68,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/e1df294c-fba5-4013-a804-bfa274fb360f/0019-target-entry.png",
-        "sha256": "3fe60f219a034879aa5d57946d46349f8f93d85dad6508fd392a78db32670d6a",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "sha256": "a2b0592e6f4554d55eb36b0d26dd7d6002765ee55bf32240f179e043970ede5a",
+        "description": "Крупный фрагмент полной записи № 29 об Антонине: даты, имя, родители, восприемники и служебный контекст; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -67,15 +78,16 @@
       "targetRowsVisuallyConfirmed": true,
       "confirmedAt": "2026-09-10",
       "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "3856x2832"
+      "fullDimensions": "3856x2832",
+      "targetDimensions": "3550x850"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
     "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Бахтемирского крестьянин Евфим Ипатиев Ампилов и законная жена его Мария Степанова; оба православные.",
-    "modernInterpretation": "Ефим Ипатьевич и Мария Степановна Ампиловы названы родителями.",
+    "literal": "№ 29. 25. 26. Антонина. Села Бахтемировскаго крестьянинъ Евфимъ Ипатіевъ Ампиловъ и законная жена его Марія Степанова; оба православные.",
+    "modernInterpretation": "Антонина, дочь Евфима Ипатьевича Ампилова и Марии Степановны, родилась 25 и была крещена 26 июля 1915 года в селе Бахтемире.",
     "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
   },
   "isRecord": true,

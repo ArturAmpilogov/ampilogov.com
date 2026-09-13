@@ -1,21 +1,144 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-173-16-2279-97-ANNA",
-  "provider": "ОГА Оренбургской области — цифровой скан Яндекс Архива",
-  "recordType": "primary-scan-transcription",
-  "collection": {"title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей города Оренбурга (Ново-Никольская церковь) за 1917 год", "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 2279, скан 97"},
-  "repository": {"name": "Объединённый государственный архив Оренбургской области", "location": "Оренбург", "url": "https://yandex.ru/archive/catalog/6c9af979-9471-484e-bdcf-a77443f34aeb/97"},
-  "links": {"scan": "https://yandex.ru/archive/catalog/6c9af979-9471-484e-bdcf-a77443f34aeb/97"},
-  "primaryPersonId": null,
-  "event": {"type": "birth", "recordNumber": "221", "date": {"display": "8/10, 1917 год (даты рождения и крещения; месяц на видимом фрагменте не указан)"}, "place": {"asWritten": "Оренбург", "normalized": "Оренбург, Оренбургская губерния", "placeId": "orenburg-city"}},
-  "transcription": {"status": "checked-against-primary-scan", "literal": "Запись № 221. Анна. Оренбургский мещанин Павел Лазарев Анпилогов и законная жена его Мария Феодорова, оба православные.", "modernInterpretation": "В Оренбурге в 1917 году зарегистрированы рождение и крещение Анны, дочери мещанина Павла Лазаревича Анпилогова и Марии Феодоровны."},
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
+  "collection": {
+    "title": "ogaoo_orenburg/173-16-2279-0097.jpg",
+    "archiveCitation": "ogaoo_orenburg/173-16-2279-0097.jpg; скан 97; акт №221",
+    "catalogId": "6c9af979-9471-484e-bdcf-a77443f34aeb",
+    "scanNumber": 97
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/6c9af979-9471-484e-bdcf-a77443f34aeb/97"
+  },
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {
+      "display": "1917-08-08",
+      "date": "1917-08-08",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
+    },
+    "place": {
+      "normalized": "Оренбург"
+    }
+  },
   "mentions": [
-    {"name": "Анна", "role": "child", "place": "Оренбург"},
-    {"name": "Павел Лазарев Анпилогов", "role": "father", "place": "Оренбург"},
-    {"name": "Мария Феодорова", "role": "mother", "place": "Оренбург"}
+    {
+      "mentionId": "YA-OGAOO-173-16-2279-97-ANNA-M1",
+      "nameAsTranscribed": "Анна",
+      "displayName": "Анна",
+      "role": "child",
+      "surnameSeries": true,
+      "personId": "P101468"
+    },
+    {
+      "mentionId": "YA-OGAOO-173-16-2279-97-ANNA-M2",
+      "nameAsTranscribed": "Павелъ Лазаревъ Антилоговъ",
+      "displayName": "Павел Лазарев Антилогов",
+      "role": "father",
+      "surnameSeries": true,
+      "personId": "P101467"
+    }
   ],
-  "evidence": {"captureType": "yandex-original-document-image-with-enlarged-fragment", "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-original.jpg", "capturedAt": "2026-09-10", "sha256": "77d0debf489e79d33bc587c0a2aa1151948e1dc58171ff44896877c6949fefb3", "publicDisplay": false, "rightsNote": "Оригинал и увеличенный фрагмент сохранены приватно для независимой проверки.", "localBackup": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-original.jpg", "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-fragment-pavel-lazarev.jpg", "sha256": "8334498ac9c12e991e133889d19079429afe1cdbbde2ca4ac39d18667bbe4e3e", "description": "Чистый увеличенный фрагмент записи № 221; без интерфейса сайта и полей скана."}], "quality": {"documentOnlyVisuallyConfirmed": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-10", "method": "manual-reading-of-downloaded-original-scan"}},
-  "review": {"status": "complete-with-archive-lead", "unresolved": ["Уточнить название месяца по соседним листам или полному развороту при семейной привязке."]},
-  "summary": {"status": "verified-summary", "text": "Первичный лист подтверждает рождение Анны у Павла Лазаревича Анпилогова и Марии Феодоровны в Оренбурге в 1917 году."},
-  "isRecord": true
+  "transcription": {
+    "status": "manually-reviewed-primary-scan",
+    "literal": "Августъ.№221.8 /10. Анна. Оренбургскій мещанинъ Павелъ Лазаревъ Антилоговъ и законная жена его Марія Феодорова, оба православные. Восприемники: оренбургскіе мещане Александръ Феодоровъ Колесовъ и Пелагія Феодорова Комарова.",
+    "modernInterpretation": "Анна Павловна родилась8и крещена10августа1917, отец Павел Лазаревич, мать Мария Фёдоровна.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
+  },
+  "notes": [
+    "День и месяц дополнены по оригиналу. Та же полная супружеская пара подтверждает существующую связь P101467."
+  ],
+  "indexData": {
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "Оренбургский мещанин Павел Лазарев [Антилогов] и законная жена его ; Мария Феодорова, оба православные. Протоиерей И. Гумилевский.",
+    "catalogDateFrom": "01-01-1917",
+    "catalogDateTo": "31-12-1917",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
+  },
+  "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-antilogov-original.jpg",
+    "sha256": "77d0debf489e79d33bc587c0a2aa1151948e1dc58171ff44896877c6949fefb3",
+    "catalogId": "6c9af979-9471-484e-bdcf-a77443f34aeb",
+    "scanNumber": 97,
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
+    "fragments": [
+      {
+        "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-antilogov-target.jpg",
+        "sha256": "07062acffa910e3e4b72f3f3f3e75c4bf203750e190c5c3f79b04506071edf8a",
+        "kind": "target-entry",
+        "cropBox": [
+          488,
+          2318,
+          3670,
+          2950
+        ]
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-antilogov-header.jpg",
+        "sha256": "d5b7e256fd83f6e73f0502c3a4cc2fc9dab94f6a0862e81f87821261b8eb8cc4",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          5091,
+          1038
+        ]
+      }
+    ]
+  },
+  "isRecord": true,
+  "publicCore": true,
+  "review": {
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "checked-against-primary-scan",
+        "literal": "Запись № 221. Анна. Оренбургский мещанин Павел Лазарев Анпилогов и законная жена его Мария Феодорова, оба православные.",
+        "modernInterpretation": "В Оренбурге в 1917 году зарегистрированы рождение и крещение Анны, дочери мещанина Павла Лазаревича Анпилогова и Марии Феодоровны."
+      },
+      "previousEvidence": {
+        "captureType": "yandex-original-document-image-with-enlarged-fragment",
+        "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-original.jpg",
+        "capturedAt": "2026-09-10",
+        "sha256": "77d0debf489e79d33bc587c0a2aa1151948e1dc58171ff44896877c6949fefb3",
+        "publicDisplay": false,
+        "rightsNote": "Оригинал и увеличенный фрагмент сохранены приватно для независимой проверки.",
+        "localBackup": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-original.jpg",
+        "fragments": [
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/6c9af979-9471-484e-bdcf-a77443f34aeb/0097-fragment-pavel-lazarev.jpg",
+            "sha256": "8334498ac9c12e991e133889d19079429afe1cdbbde2ca4ac39d18667bbe4e3e",
+            "description": "Чистый увеличенный фрагмент записи № 221; без интерфейса сайта и полей скана."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-10",
+          "method": "manual-reading-of-downloaded-original-scan"
+        }
+      }
+    }
+  ],
+  "primaryPersonId": "P101468"
 }

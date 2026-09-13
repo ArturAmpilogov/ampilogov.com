@@ -1,96 +1,106 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E70C3EC2-162",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "death",
   "collection": {
     "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
     "scanNumber": 162,
     "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Георгиевка, Преображенка, Ново-Архангельское, Константиновка, Парадьево за 1891 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти сёл Георгиевка, Преображенка, Ново-Архангельское, Константиновка, Парадьево за 1891 г."
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти сёл Георгиевка, Преображенка, Ново-Архангельское, Константиновка, Парадьево за 1891 г.",
+    "digitalScanNumber": 162
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e70c3ec2-4ead-4043-8334-b6446ef8667b/162"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death",
+    "recordNumber": "52 (жен.)",
     "date": {
-      "display": "1 января 1891 — 31 декабря 1891",
-      "confidence": "high-for-catalog-date"
+      "iso": "1891-12-20",
+      "from": "1891-12-20",
+      "to": "1891-12-21",
+      "display": "1891-12-20 / 1891-12-21 (смерть / погребение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "deathIso": "1891-12-20",
+      "burialIso": "1891-12-21"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Преображенка"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E70C3EC2-162-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108314",
+      "displayName": "Евфимия Никитична Амфилогова",
+      "nameAsTranscribed": "Евфимия",
+      "role": "deceased",
+      "sex": "female",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-E70C3EC2-162-M2",
+      "personId": "P108304",
+      "displayName": "Никита Петрович Амфилогов",
+      "nameAsTranscribed": "Никита Амфилогов",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Декабрь. 51. 4 / 6. Села Преображенки у крестьянина Никиты Амфилогова жена Марья Васильева. 25. От горячки.\n52. 20 / 21. Села Преображенки у крестьянина Никиты Амфилогова дочь Евфимия. 5 недель. От младенческой.",
+    "modernInterpretation": "В Преображенке у крестьянина Никиты Амфилогова 4 декабря 1891 года умерла 25-летняя жена Марья Васильевна (погребена 6 декабря, от горячки), а 20 декабря умерла пятинедельная дочь Евфимия (погребена 21 декабря).",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Муж умершего: Никита \u0007[Амфилогов\u0007], крестьянин, село Преображенка.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "e70c3ec2-4ead-4043-8334-b6446ef8667b",
     "scanNumber": 162,
+    "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-amfilogov-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-amfilogov-original.jpg",
+    "sha256": "d44caace039f8be6c20a5740a416fc64233bdd9ef1debe3585434c3ef92b9b7f",
+    "capturedAt": "2026-09-13",
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "88935d084ba242e0187988255fae0bdfa3c42d86e739560321b27df552ec901b",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-header.png",
-        "sha256": "172f0f4b23592ad3e6347eb75334de2946120a46d6219847f3077c2ca648d394",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-target-entry.png",
-        "sha256": "b2b7cac863975a9c92bcb39c23b11cdae6315c9acff379818c0af90e4c918464",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/e70c3ec2-4ead-4043-8334-b6446ef8667b/0162-amfilogov-target-20260913.jpg",
+        "sha256": "cf8c1a5e5789964df0c1abc32fd1895f27a574c5814b95b20ea23c48580bb0a6",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "6079x4898",
-      "targetDimensions": "1714x775",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Ріна Прибраманни Рретат тРечянва\nгритрьв саврашлива\n„Ященника сАжанк /Дпнински\nВасици\nнваить солногоревт пида\nлла Прийраменниа Діреонвянина А!/ осраса\nіГрпмивоя Неільтива місна б анлерія Осйе приваа\nряженнит сифони вопненсих\nРіакан Насиий\nПаламизись Маись хол\n1 Птивраманки 2) Реяорованю Мифосива",
-    "modernInterpretation": "Рина Прибраманни Рретат тРечянва гритрьв саврашлива „Ященника сАжанк /Дпнински Васици нваить солногоревт пида лла Прийраменниа Диреонвянина А!/ осраса иГрпмивоя Неильтива мисна б анлерия Осйе приваа ряженнит сифони вопненсих Риакан Насиий Паламизись Маись хол 1 Птивраманки 2) Реяорованю Мифосива",
-    "localOcr": "Ріна Прибраманни Рретат тРечянва\nгритрьв саврашлива\n„Ященника сАжанк /Дпнински\nВасици\nнваить солногоревт пида\nлла Прийраменниа Діреонвянина А!/ осраса\nіГрпмивоя Неільтива місна б анлерія Осйе приваа\nряженнит сифони вопненсих\nРіакан Насиий\nПаламизись Маись хол\n1 Птивраманки 2) Реяорованю Мифосива",
-    "localOcrWithSurnameLexicon": "Ріна Прибраманти врет ат Речанва\nгритрьев соврашлива\nла Прибраменна Дереніянина АМ/ ограна\nіГрамивая Нельтива місна і атлерія Осто прива\nДіакан Насит\nТаламизить Маись хол\n/ Птивраманки 2) Реоровано Мифотива",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Муж умершего: Никита Амфилогов, крестьянин, село Преображенка.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Две самостоятельные строки одного разворота; имя Евфимия подтверждено независимой второй читкой. Отчество Никиты на этом листе не дано; привязка к P108304 подтверждается женой Марьей Васильевной и Преображенкой, как в рождениях 1886 и 1889.",
+      "Мать Евфимии в её смертной записи не названа; связь с Марьей Васильевной вероятна по семейному контексту, но не оформлена как отдельно доказанное материнство."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "В Преображенке у крестьянина Никиты Амфилогова 4 декабря 1891 года умерла 25-летняя жена Марья Васильевна (погребена 6 декабря, от горячки), а 20 декабря умерла пятинедельная дочь Евфимия (погребена 21 декабря)."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108314"
 }

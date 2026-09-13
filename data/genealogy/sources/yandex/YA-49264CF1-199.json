@@ -1,93 +1,105 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-49264CF1-199",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "49264cf1-ecc7-4b43-bd95-945274876d8c",
     "scanNumber": 199,
     "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Ново-Спасское, Александровка, Ново-Михайловка, Гавриловка за 1886 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти сёл Ново-Спасское, Александровка, Ново-Михайловка, Гавриловка за 1886 г."
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти сёл Ново-Спасское, Александровка, Ново-Михайловка, Гавриловка за 1886 г.",
+    "digitalScanNumber": 199
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/49264cf1-ecc7-4b43-bd95-945274876d8c/199"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": "женский №55",
     "date": {
-      "display": "1 января 1886 — 31 декабря 1886",
-      "confidence": "high-for-catalog-date"
+      "iso": "1886-11-04",
+      "from": "1886-11-04",
+      "to": "1886-11-06",
+      "display": "1886-11-04 / 1886-11-06 (рождение / крещение); старый стиль",
+      "confidence": "high-for-manually-read-target",
+      "birthIso": "1886-11-04",
+      "baptismIso": "1886-11-06"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Гавриловка, Оренбургский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-49264CF1-199-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ммфилоговь",
-      "nameAsTranscribed": "Ммфилоговь",
+      "personId": "P108307",
+      "displayName": "Александра Фёдоровна Ампилогова",
+      "nameAsTranscribed": "Александра",
+      "role": "child",
+      "sex": "female",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-49264CF1-199-M2",
+      "personId": "P108306",
+      "displayName": "Фёдор Михайлович Ампилогов, муж Марии Матвеевны",
+      "nameAsTranscribed": "Феодоръ Михайловъ Амфилоговъ",
+      "role": "father",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Ноябрь. №55. 4 [рождение], 6 [крещение]. Александра. Села Гавриловки государственный крестьянин Феодор Михайлов Амфилогов и законная жена его Мария Матфиева, оба православные. Восприемники села сего: крестьянин Димитрий Васильев Торобкин и крестьянка Дария Георгиева Келешева. Священник Алексей Касаткин.",
+    "modernInterpretation": "4 ноября 1886 года в Гавриловке родилась Александра, крещена 6 ноября; родители — Фёдор Михайлович Ампилогов и Мария Матвеевна.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Села Гавриловки Государ. кр҃н Феодор Михайлов \u0007[Амфилогов\u0007] и закон: жена его Мария Матфиева; оба православные. Священ: Мл.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "49264cf1-ecc7-4b43-bd95-945274876d8c",
     "scanNumber": 199,
+    "path": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-amfilogov-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-amfilogov-original.jpg",
+    "sha256": "f31025078998f844530018b0348fa11de11f6f4de27aaad358036ec4746c5e5d",
+    "capturedAt": "2026-09-13",
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "1f12447a40c65c1e14129f6472fb294271f891afe36c33be12ac634b89a085f4",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-header.png",
-        "sha256": "09680c80432da7d6a969bfe5686c7bfcee036cb78bdbe22f908993d2300154aa",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-target-entry.png",
-        "sha256": "f94d1d62978367a3fb91c456b37a57d4331eabba599feb979ca139ea3c72476a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/49264cf1-ecc7-4b43-bd95-945274876d8c/0199-amfilogov-target-20260913.jpg",
+        "sha256": "1b9e37d431cc4f9bdf79b671ec1cbea33d16674cff34a9e69d85fd1bdfaaf780",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5809x4566",
-      "targetDimensions": "1771x956",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
   },
-  "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "івященнивв с/л. пасаткинь.\nСела ФсієриловКu Госуqср. Кріінь Фсофорь Ми\nЯсілеювь Ммфилоговь праком ренаі иго Мері.\nМатолева; оба православные.\nСвнцен: М\nл. Касатвинь.\n4 cl.\nОрновской Поарни, МолоарфангльоВаго укуда, а-\nна Мрароба, вімстный, Гтуфар Керїл2. Петрі\nПотапієеь СФвищевь и fudion: мена иго Оліисилі-\nОда Нроинзва; оба поовиенБЙ Г",
-    "modernInterpretation": "ивященнивв с/л. пасаткинь. Села ФсиєриловКu Госуqср. Криинь Фсофорь Ми Ясилеювь Ммфилоговь праком ренаи иго Мери. Матолева; оба православные. Свнцен: М л. Касатвинь. 4 cl. Орновской Поарни, МолоарфангльоВаго укуда, а- на Мрароба, вимстный, Гтуфар Керїл2. Петри Потапиєеь СФвищевь и fudion: мена иго Олиисили- Ода Нроинзва; оба поовиенБЙ Г",
-    "localOcr": "івященнивв с/л. пасаткинь.\nСела ФсієриловКu Госуqср. Кріінь Фсофорь Ми\nЯсілеювь Ммфилоговь праком ренаі иго Мері.\nМатолева; оба православные.\nСвнцен: М\nл. Касатвинь.\n4 cl.\nОрновской Поарни, МолоарфангльоВаго укуда, а-\nна Мрароба, вімстный, Гтуфар Керїл2. Петрі\nПотапієеь СФвищевь и fudion: мена иго Оліисилі-\nОда Нроинзва; оба поовиенБЙ Г",
-    "localOcrWithSurnameLexicon": "і вященнив с/л. пасаткинь.\nСела УсієриливКи Госуфср. Крінь Ософорь. Ми\nЯслаюві Мафилоговь праком рена ого Мері\nМатолева; оба православные.\nСвицен: М.\nл. Касатвинь.\n4 cl.\nОрловской Поарни, Молоар/ангельского укуда, а-\nна Мароба, віметний, Гуар Керї на. Петрі\nПотапісеь Свищевь и fon: мена ого Оліислі-",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Села Гавриловки Государ. кр҃н Феодор Михайлов Амфилогов и закон: жена его Мария Матфиева; оба православные. Священ: Мл.",
-    "fuzzyQuery": true
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
-  }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "У существующего P90017 супруга Ольга Матвеевна. Свидетельские P1566/P101577 не содержат здесь семейного различителя; объединение не выполнено."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "4 ноября 1886 года в Гавриловке родилась Александра, крещена 6 ноября; родители — Фёдор Михайлович Ампилогов и Мария Матвеевна."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108307"
 }

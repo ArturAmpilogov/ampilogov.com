@@ -16,12 +16,14 @@
     "type": "death-registration",
     "recordNumber": "185",
     "date": {
-      "display": "умер 28 декабря, запись составлена 31 декабря 1923 года",
-      "date": "1923-12-28"
+      "display": "умер28октября,запись31октября1923",
+      "date": "1923-10-28",
+      "calendar": "gregorian",
+      "confidence": "high-independent-second-reading"
     },
     "place": {
-      "normalized": "Анжеро-Судженск",
-      "confidence": "medium"
+      "normalized": "Судженские копи,шахта№7,барак310",
+      "confidence": "high-for-shared-address"
     }
   },
   "mentions": [
@@ -29,57 +31,106 @@
       "role": "deceased",
       "personId": "P101810",
       "nameAsTranscribed": "Анпилогов Константин",
-      "displayName": "Константин Дмитриевич Анпилогов",
-      "age": "5 месяцев",
+      "displayName": "Константин Петрович Анпилогов",
+      "age": "3месяца",
       "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "complete-for-core-identity-and-dates",
-    "literal": "Общий № 185, мужского счёта № 96. Запись 31/XII-23. Мужской. Анпилогов Константин. Возраст 5 месяцев. Умер 28/XII-23. Причина смерти и точный адрес на обороте читаются неуверенно.",
-    "modernInterpretation": "28 декабря 1923 года умер пятимесячный Константин Анпилогов; акт составлен 31 декабря. По имени, возрасту, месту и сроку это ребёнок, рождение которого записано 19 июля 1923 года."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "№[165/185,цифра неуверенна]. Запись31/X23. Мужской. Анпилогов Константин.3месяца.28/X23. Судж.копи,шах.7,б.310. [Оборот:] от катара кишечника [последняя часть средней уверенности];заявитель отец ребёнка;Судж.копи.",
+    "modernInterpretation": "Константин Петрович умер28октября1923 в возрасте3месяцев;зарегистрирован31октября. Совпадение имени,возраста и точного адреса подтверждает тождество с рождением19июля. Причина читается как катар кишечника."
   },
   "indexData": {
     "warning": "Индекс передаёт только имя и возраст. Причина смерти не домыслена по слабому обороту; тождество с записью рождения обосновано отдельным сопоставлением."
   },
   "evidence": {
-    "captureType": "downloaded-originals-plus-document-only-full-views-and-enlarged-front-and-back-fragments",
-    "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-original.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-full-view-clean.jpg",
-    "capturedAt": "2026-09-11",
+    "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-antilogov-corrected-original.jpg",
     "sha256": "29b1741b25a8bcc9d82b4b2859ebd4dad90dc50ddd6bb71e1dbee2d432760f75",
+    "kind": "original",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
     "publicDisplay": false,
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "manual-reading-and-independent-second-reading"
+    },
     "fragments": [
       {
-        "kind": "front-of-act",
-        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-target-front.jpg",
-        "sha256": "a5de21450240ed9b3a3f85242e8f616f16ac43fd207728cda5cfdf0f07c3bd75"
+        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-antilogov-corrected-target.jpg",
+        "sha256": "89fc4dae537545759e87170e4ef4f587fe9e7cc3d9ad126d4bb78e50a9d8cd6d",
+        "kind": "target-entry"
       },
       {
-        "kind": "following-full-view",
-        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-full-view-clean.jpg",
-        "sha256": "74da2c42bdc45058bf6a66072a19e43510f7fdd0c2daa6022ed2c35fce554768"
+        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-antilogov-corrected-original.jpg",
+        "sha256": "e1c76a6f8ba1edd5c57ea5e8582662f4d0b939ec5da2f5a588c0ed0e4e38544d",
+        "kind": "original"
       },
       {
-        "kind": "back-of-act",
-        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-target-back.jpg",
-        "sha256": "2ff3b456c01d8a3f11c60461e27f6918833f5cd31e88dd319b3c16596ad8a771"
+        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-antilogov-corrected-target.jpg",
+        "sha256": "48115af6fb65d4107a568ebeeb34dfd7afb0836cb7efc7ce08ab42884ca64d74",
+        "kind": "target-entry"
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-reading-of-two-downloaded-original-scans"
-    }
+    ]
   },
   "review": {
     "status": "complete",
-    "identityResolution": "Объединено с P101810: точное имя, возраст пять месяцев, тот же регистрационный район и интервал 19 июля — 28 декабря 1923 года."
+    "identityResolution": "Высокая уверенность:один адресшахта7барак310,имяКонстантин,рождение19июля и смерть28октября в3месяца."
   },
   "summary": {
     "status": "verified-summary",
-    "text": "28 декабря 1923 года в Анжеро-Судженске умер пятимесячный Константин Дмитриевич Анпилогов."
+    "text": "28октября1923 умер трёхмесячный Константин Петрович Анпилогов."
   },
-  "isRecord": true
+  "isRecord": true,
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-for-core-identity-and-dates",
+        "literal": "Общий № 185, мужского счёта № 96. Запись 31/XII-23. Мужской. Анпилогов Константин. Возраст 5 месяцев. Умер 28/XII-23. Причина смерти и точный адрес на обороте читаются неуверенно.",
+        "modernInterpretation": "28 декабря 1923 года умер пятимесячный Константин Анпилогов; акт составлен 31 декабря. По имени, возрасту, месту и сроку это ребёнок, рождение которого записано 19 июля 1923 года."
+      },
+      "previousEvidence": {
+        "captureType": "downloaded-originals-plus-document-only-full-views-and-enlarged-front-and-back-fragments",
+        "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-original.jpg",
+        "localBackup": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-full-view-clean.jpg",
+        "capturedAt": "2026-09-11",
+        "sha256": "29b1741b25a8bcc9d82b4b2859ebd4dad90dc50ddd6bb71e1dbee2d432760f75",
+        "publicDisplay": false,
+        "fragments": [
+          {
+            "kind": "front-of-act",
+            "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0331-target-front.jpg",
+            "sha256": "a5de21450240ed9b3a3f85242e8f616f16ac43fd207728cda5cfdf0f07c3bd75"
+          },
+          {
+            "kind": "following-full-view",
+            "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-full-view-clean.jpg",
+            "sha256": "74da2c42bdc45058bf6a66072a19e43510f7fdd0c2daa6022ed2c35fce554768"
+          },
+          {
+            "kind": "back-of-act",
+            "path": "data/genealogy/evidence-private/yandex/b907a8a4-91cb-4844-9081-a9ca3d0990f4/0332-target-back.jpg",
+            "sha256": "2ff3b456c01d8a3f11c60461e27f6918833f5cd31e88dd319b3c16596ad8a771"
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-11",
+          "method": "manual-reading-of-two-downloaded-original-scans"
+        }
+      },
+      "correction": "Декабрь и5месяцев ошибочны;первичный акт показывает28/X,31/X,3месяца."
+    }
+  ],
+  "publicCore": true,
+  "notes": [
+    "Старые Дмитрий/Клавдия,отчествоДмитриевич и декабрьская смерть исправлены по оригиналам;полное прежнее состояние сохранено в трекере.",
+    "Номер акта читается менее уверенно, чем имя/даты/возраст. Последняя часть причины смерти средней уверенности."
+  ],
+  "relatedSourceIds": [
+    "YA-GAK-R1239-1-343-593-594-KONSTANTIN-BIRTH"
+  ]
 }

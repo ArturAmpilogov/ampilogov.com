@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "merges": {
+    "P102848": "P101655",
+    "P102847": "P101654"
+  },
+  "remainingLiveStructuredReferences": [],
+  "snapshots": [
+    {
+      "path": "data/genealogy/people/P102847-stefan-vasilievich-anpilogov-georgievka-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P102847",
+        "displayName": "Стефан Васильевич Анпилогов",
+        "sex": "male",
+        "nameVariants": [
+          "Стефанъ"
+        ],
+        "birth": {
+          "date": "1910-06-24",
+          "placeId": "orenburg-uezd"
+        },
+        "baptism": {
+          "date": "1910-06-26",
+          "placeId": "orenburg-uezd"
+        },
+        "parents": [
+          "P102011"
+        ],
+        "sourceIds": [
+          "YA-122572AE-302"
+        ],
+        "status": "documented-from-yandex-archive-scan",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Анпилоговъ"
+          ]
+        },
+        "places": [
+          {
+            "type": "birth-and-baptism",
+            "placeId": "orenburg-uezd",
+            "asWritten": "село Георгиевка",
+            "confidence": "high"
+          }
+        ],
+        "notes": [
+          "Родился 24 июня и крещён 26 июня 1910 года; сын крестьянина Василия Фёдоровича Анпилогова и Наталии Егоровны, чья собственная фамилия в записи не названа.",
+          "Не объединён с P91002, Стефаном Васильевичем 1885 года рождения: даты рождения различаются на 25 лет."
+        ],
+        "relations": [
+          {
+            "type": "son-of",
+            "personId": "P102011",
+            "sourceIds": [
+              "YA-122572AE-302"
+            ],
+            "basis": "Прямая родственная формула в записи о рождении YA-122572AE-302",
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-122572AE-302.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-122572AE-302",
+        "provider": "Яндекс Архив — первичный архивный скан",
+        "recordType": "birth-and-baptism",
+        "cardKind": "record",
+        "isRecord": true,
+        "publicCore": true,
+        "collection": {
+          "catalogId": "122572ae-2d45-4375-87ef-3c313cd68716",
+          "scanNumber": 302,
+          "title": "Метрическая книга за 1910 год, часть первая, о родившихся"
+        },
+        "links": {
+          "documentUrl": "https://yandex.ru/archive/catalog/122572ae-2d45-4375-87ef-3c313cd68716/302"
+        },
+        "event": {
+          "type": "birth-and-baptism",
+          "date": {
+            "birth": "1910-06-24",
+            "baptism": "1910-06-26",
+            "confidence": "high"
+          },
+          "place": {
+            "asRead": "село Георгиевка",
+            "normalized": "Георгиевка"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-122572AE-302-M1",
+            "role": "child",
+            "personId": "P102847",
+            "nameAsTranscribed": "Стефан",
+            "displayName": "Стефан Васильевич Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-122572AE-302-M2",
+            "role": "father",
+            "personId": "P102848",
+            "nameAsTranscribed": "крестьянин Василий Феодоров Анпилогов",
+            "displayName": "Василий Фёдорович Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-122572AE-302-M3",
+            "role": "mother",
+            "personId": null,
+            "nameAsTranscribed": "законная жена его Наталия Егорова",
+            "displayName": "Наталия Егоровна",
+            "surnameSeries": false
+          }
+        ],
+        "transcription": {
+          "status": "complete-for-target-entry",
+          "literal": "№25. Июня 24, крещён 26. Стефан. Села Георгиевка крестьянин Василий Феодоров Анпилогов и законная жена его Наталия Егорова, оба православные.",
+          "modernInterpretation": "24 июня 1910 года у крестьянина села Георгиевка Василия Фёдоровича Анпилогова и Наталии Егоровны родился сын Стефан; крещён 26 июня.",
+          "indexNote": "Индекс верно назвал ребёнка и отца, но только полный разворот устанавливает номер строки и отдельные даты рождения и крещения; фамильная форма на скане читается как «Анпилогов».",
+          "historicalContext": "Запись непосредственно документирует родительскую пару и рождение сына в Георгиевке; дальнейшее родство или переселение из неё не выводилось."
+        },
+        "evidence": {
+          "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-full-view.png",
+          "sha256": "ff86637cf1d68ee34243e13f7e93168a6b9f1ae838e9c318f2ca31c7e571ec44",
+          "fragments": [
+            {
+              "kind": "target-entry",
+              "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-target-entry-deep.png",
+              "sha256": "fca06d48aa620dfa41113ea517e1199fc8f48d2815c5ab2d1a37fa50a7f5e901",
+              "description": "Полноширинный крупный фрагмент нижней строки №25 с датами, ребёнком, родителями и восприемниками."
+            }
+          ],
+          "quality": {
+            "originalImageDownloaded": true,
+            "fullDimensions": "4866x4104",
+            "targetDimensions": "4700x1300",
+            "method": "manual-reading-of-full-scan-and-full-width-recrop"
+          },
+          "publicDisplay": false
+        },
+        "review": {
+          "status": "deep-reviewed",
+          "transcriptionConfidence": "high-for-target-entry",
+          "deepReviewedAt": "2026-09-11",
+          "deepReviewScope": "Вручную проверены весь разворот и строка №25; установлены даты рождения и крещения, имя ребёнка, оба родителя, сословие и селение; индексная фамилия сверена с оригиналом."
+        },
+        "indexData": {
+          "querySnippet": "Родившийся Стефан Васильев Анпилогов; отец Василий Феодоров Анпилогов, крестьянин, село Георгиевка.",
+          "fuzzyQuery": true
+        }
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-OGAOO-173-16-1870-302-STEFAN.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-OGAOO-173-16-1870-302-STEFAN",
+        "provider": "Объединённый государственный архив Оренбургской области — цифровой скан Яндекс Архива",
+        "recordType": "primary-scan-transcription",
+        "primaryPersonId": "P101654",
+        "collection": {
+          "title": "Метрическая книга Георгиевского прихода за 1910 год; родившиеся",
+          "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 1870, скан 302, мужская запись № 25"
+        },
+        "links": {
+          "scan": "https://yandex.ru/archive/catalog/122572ae-2d45-4375-87ef-3c313cd68716/302"
+        },
+        "event": {
+          "type": "birth-and-baptism",
+          "recordNumber": "25",
+          "date": {
+            "display": "родился 24 апреля, крещён 26 апреля 1910 года",
+            "date": "1910-04-24"
+          },
+          "place": {
+            "asWritten": "село Георгиевка",
+            "normalized": "село Георгиевка, Оренбургская губерния"
+          }
+        },
+        "mentions": [
+          {
+            "role": "child",
+            "personId": "P101654",
+            "nameAsTranscribed": "Стефанъ",
+            "displayName": "Степан Васильевич Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "role": "father",
+            "personId": "P101655",
+            "nameAsTranscribed": "села Георгіевки крестьянинъ Василій Ѳеодоровъ Анпилоговъ",
+            "displayName": "Василий Фёдорович Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "role": "mother",
+            "nameAsTranscribed": "законная жена его Наталія Егорова",
+            "displayName": "Наталья Егоровна Анпилогова",
+            "surnameSeries": false
+          },
+          {
+            "role": "godfather",
+            "nameAsTranscribed": "села Георгіевки крестьянинъ Ѳеодоръ Мартиновъ Воробьевъ",
+            "displayName": "Фёдор Мартынович Воробьёв",
+            "surnameSeries": false
+          },
+          {
+            "role": "godmother",
+            "nameAsTranscribed": "Марія Ѳеодорова Кофанова",
+            "displayName": "Мария Фёдоровна Кофанова",
+            "surnameSeries": false
+          }
+        ],
+        "transcription": {
+          "status": "complete-checked-against-primary-scan",
+          "literal": "Апрѣль. Мужескаго счёта № 25. 24 родился, 26 крещён. Стефанъ. Села Георгіевки крестьянинъ Василій Ѳеодоровъ Анпилоговъ, законная жена его Наталія Егорова; оба православные. Восприемники: села Георгіевки крестьянинъ Ѳеодоръ Мартиновъ Воробьевъ и Марія Ѳеодорова Кофанова.",
+          "modernInterpretation": "24 апреля 1910 года в Георгиевке родился Степан, сын Василия Фёдоровича Анпилогова и Натальи Егоровны; 26 апреля его крестили."
+        },
+        "indexData": {
+          "warning": "Имя ребёнка, даты и роли родителей прочитаны по оригинальной строке, а не по поисковому фрагменту."
+        },
+        "evidence": {
+          "captureType": "yandex-original-document-image-with-document-only-copy-and-enlarged-fragment",
+          "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-original.jpg",
+          "localBackup": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-full-view.jpg",
+          "capturedAt": "2026-09-10",
+          "sha256": "e81d9cb43599fef08baebec8fb8c1ad49cbdfa26e6c9edd341ede83a7addf7e0",
+          "publicDisplay": false,
+          "fragments": [
+            {
+              "kind": "target-entry",
+              "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-stefan-birth-clean.jpg",
+              "sha256": "cfb48a3d04b8b391070e992495301bb8e1767c21996dad15c88098bd302a9923"
+            }
+          ],
+          "quality": {
+            "documentOnlyVisuallyConfirmed": true,
+            "targetRowsVisuallyConfirmed": true,
+            "confirmedAt": "2026-09-10",
+            "method": "manual-reading-of-downloaded-original-scan"
+          }
+        },
+        "review": {
+          "status": "complete",
+          "identityResolution": "Созданы отдельные профили отца и ребёнка; одноимённые Василии других приходов не объединены."
+        },
+        "summary": {
+          "status": "verified-summary",
+          "text": "24/26 апреля 1910 года в Георгиевке родился и был крещён Степан Васильевич Анпилогов."
+        },
+        "isRecord": true
+      }
+    },
+    {
+      "path": "data/genealogy/people/P102848-vasiliy-fedorovich-anpilogov-georgievka-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P102848",
+        "displayName": "Василий Фёдорович Анпилогов",
+        "sex": "male",
+        "nameVariants": [
+          "Василій Феодоровъ Анпилоговъ"
+        ],
+        "children": [
+          "P102847"
+        ],
+        "sourceIds": [
+          "YA-122572AE-302"
+        ],
+        "status": "documented-from-yandex-archive-scan",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Анпилоговъ"
+          ]
+        },
+        "places": [
+          {
+            "type": "residence-and-parenthood",
+            "placeId": "orenburg-uezd",
+            "asWritten": "село Георгиевка",
+            "confidence": "high"
+          }
+        ],
+        "notes": [
+          "Крестьянин села Георгиевка; отец Стефана, родившегося 24 июня 1910 года. Законная жена названа Наталией Егоровной без собственной фамилии, поэтому отдельный профиль ей не создавался."
+        ],
+        "relations": [
+          {
+            "type": "father-of",
+            "personId": "P102847",
+            "sourceIds": [
+              "YA-122572AE-302"
+            ],
+            "basis": "Прямая родственная формула в записи о рождении YA-122572AE-302",
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/genealogy/people/P101655-vasiliy-fedorovich-anpilogov-georgievka-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P101655",
+        "displayName": "Василий Фёдорович Анпилогов",
+        "sex": "male",
+        "nameVariants": [
+          "Василій Ѳеодоровъ Анпилоговъ"
+        ],
+        "children": [
+          "P101654",
+          "P101695",
+          "P109044"
+        ],
+        "sourceIds": [
+          "YA-OGAOO-173-16-1572-202-VASILIY-GODFATHER",
+          "YA-OGAOO-173-16-1870-302-STEFAN",
+          "YA-OGAOO-173-16-1981-296-MARIA",
+          "YA-4BD632F5-271-ANTILOGOV-REVIEW",
+          "YA-A5C333B7-204"
+        ],
+        "status": "documented-from-primary-scan",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Анпилоговъ"
+          ]
+        },
+        "places": [
+          {
+            "type": "residence-and-parenthood",
+            "asWritten": "село Георгиевка",
+            "normalized": "село Георгиевка, Оренбургская губерния",
+            "date": "1910-04-24",
+            "confidence": "high"
+          },
+          {
+            "type": "residence-and-parenthood",
+            "asWritten": "село Георгиевка",
+            "normalized": "село Георгиевка, Оренбургская губерния",
+            "date": "1912-06-29",
+            "confidence": "high"
+          }
+        ],
+        "notes": [
+          "В январе 1905 года был восприемником Василия Семёновича Бредихина в Георгиевке; ребёнок родился 30 декабря 1904 года, а число крещения на листе не указано.",
+          "Крестьянин села Георгиевки; супруг Натальи Егоровны и отец Степана, родившегося 24 апреля 1910 года.",
+          "Не объединён с одноимёнными Василиями из Гавриловки, Кармалки и Владикавказа без независимого доказательства.",
+          "29 июня 1912 года у него и Наталии Егоровны родилась дочь Мария P101695; крещена 30 июня.",
+          "YA-A5C333B7-204: Иван — сын Василия Фёдоровича и Наталии Егоровны. Точная супружеская пара, имя и Георгиевка подтверждают P101655. Выявлены дубли P102848/P101655 и P102847/P101654 по одному акту1910; проверены отдельно и объединены с сохранением обоих sourceIds."
+        ],
+        "relations": [
+          {
+            "type": "father-of",
+            "personId": "P109044",
+            "sourceIds": [
+              "YA-A5C333B7-204"
+            ],
+            "confidence": "high",
+            "basis": "Прямая родительская формула."
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/genealogy/people/P102847-stefan-vasilievich-anpilogov-georgievka-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P102847",
+        "displayName": "Стефан Васильевич Анпилогов",
+        "sex": "male",
+        "nameVariants": [
+          "Стефанъ"
+        ],
+        "birth": {
+          "date": "1910-04-24",
+          "placeId": "orenburg-uezd"
+        },
+        "baptism": {
+          "date": "1910-04-26",
+          "placeId": "orenburg-uezd"
+        },
+        "parents": [
+          "P101655"
+        ],
+        "sourceIds": [
+          "YA-122572AE-302"
+        ],
+        "status": "documented-from-yandex-archive-scan",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Анпилоговъ"
+          ]
+        },
+        "places": [
+          {
+            "type": "birth-and-baptism",
+            "placeId": "orenburg-uezd",
+            "asWritten": "село Георгиевка",
+            "confidence": "high"
+          }
+        ],
+        "notes": [
+          "Родился 24 апреля и крещён 26 апреля 1910 года; сын крестьянина Василия Фёдоровича Анпилогова и Наталии Егоровны, чья собственная фамилия в записи не названа.",
+          "Не объединён с P91002, Стефаном Васильевичем 1885 года рождения: даты рождения различаются на 25 лет."
+        ],
+        "relations": [
+          {
+            "type": "son-of",
+            "personId": "P101655",
+            "sourceIds": [
+              "YA-122572AE-302"
+            ],
+            "basis": "Прямая родственная формула в записи о рождении YA-122572AE-302",
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/genealogy/people/P101654-stepan-vasilievich-anpilogov-georgievka-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P101654",
+        "displayName": "Степан Васильевич Анпилогов",
+        "sex": "male",
+        "nameVariants": [
+          "Стефанъ Васильевъ Анпилоговъ"
+        ],
+        "birth": {
+          "display": "24 апреля 1910 года; крещён 26 апреля",
+          "date": "1910-04-24",
+          "confidence": "high"
+        },
+        "parents": [
+          "P101655"
+        ],
+        "sourceIds": [
+          "YA-OGAOO-173-16-1870-302-STEFAN"
+        ],
+        "status": "documented-from-primary-scan",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Анпилоговъ"
+          ]
+        },
+        "places": [
+          {
+            "type": "birth-and-baptism",
+            "asWritten": "село Георгиевка",
+            "normalized": "село Георгиевка, Оренбургская губерния",
+            "date": "1910-04-24",
+            "confidence": "high"
+          }
+        ],
+        "notes": [
+          "Сын крестьянина Василия Фёдоровича Анпилогова и Натальи Егоровны."
+        ]
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-122572AE-302.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-122572AE-302",
+        "provider": "Яндекс Архив — первичный архивный скан",
+        "recordType": "birth-and-baptism",
+        "cardKind": "record",
+        "isRecord": true,
+        "publicCore": true,
+        "collection": {
+          "catalogId": "122572ae-2d45-4375-87ef-3c313cd68716",
+          "scanNumber": 302,
+          "title": "Метрическая книга за 1910 год, часть первая, о родившихся"
+        },
+        "links": {
+          "documentUrl": "https://yandex.ru/archive/catalog/122572ae-2d45-4375-87ef-3c313cd68716/302"
+        },
+        "event": {
+          "type": "birth-and-baptism",
+          "date": {
+            "display": "24 апреля1910 родился,26 апреля крещён",
+            "birth": "1910-04-24",
+            "baptism": "1910-04-26",
+            "confidence": "high"
+          },
+          "place": {
+            "asRead": "село Георгиевка",
+            "normalized": "Георгиевка"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-122572AE-302-M1",
+            "role": "child",
+            "personId": "P102847",
+            "nameAsTranscribed": "Стефан",
+            "displayName": "Стефан Васильевич Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-122572AE-302-M2",
+            "role": "father",
+            "personId": "P102848",
+            "nameAsTranscribed": "крестьянин Василий Феодоров Анпилогов",
+            "displayName": "Василий Фёдорович Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "mentionId": "YA-122572AE-302-M3",
+            "role": "mother",
+            "personId": null,
+            "nameAsTranscribed": "законная жена его Наталия Егорова",
+            "displayName": "Наталия Егоровна",
+            "surnameSeries": false
+          }
+        ],
+        "transcription": {
+          "status": "complete-for-target-entry",
+          "literal": "Апрѣль. Мужескаго счёта №25.24 родился,26 крещён. Стефанъ. Села Георгіевки крестьянинъ Василій Феодоровъ Анпилоговъ, законная жена его Наталія Егорова; оба православные. Восприемники: села Георгіевки крестьянинъ Феодоръ Мартиновъ Воробьевъ и Марія Феодорова Корешева.",
+          "modernInterpretation": "24 апреля1910 родился Степан, сын Василия Фёдоровича и Наталии Егоровны; крещён26 апреля.",
+          "indexNote": "Индекс верно назвал ребёнка и отца, но только полный разворот устанавливает номер строки и отдельные даты рождения и крещения; фамильная форма на скане читается как «Анпилогов».",
+          "historicalContext": "Запись непосредственно документирует родительскую пару и рождение сына в Георгиевке; дальнейшее родство или переселение из неё не выводилось."
+        },
+        "evidence": {
+          "kind": "original",
+          "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-original.jpg",
+          "sha256": "e81d9cb43599fef08baebec8fb8c1ad49cbdfa26e6c9edd341ede83a7addf7e0",
+          "publicDisplay": false,
+          "fragments": [
+            {
+              "kind": "target",
+              "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-antilogov-stefan-target.jpg",
+              "sha256": "49683b9dbc5a779d6f6871919704cf30981faed24aa78128be8c9ac2a90a21cd",
+              "publicDisplay": false
+            },
+            {
+              "kind": "month",
+              "path": "data/genealogy/evidence-private/yandex/122572ae-2d45-4375-87ef-3c313cd68716/0302-antilogov-stefan-month.jpg",
+              "sha256": "52c8bd989935ce61081f1fe791a59a780f4d3a74974c0d60cb348b9a14bea2e9",
+              "publicDisplay": false
+            }
+          ],
+          "capturedAt": "2026-09-13",
+          "sourceUrl": "https://yandex.ru/archive/catalog/122572ae-2d45-4375-87ef-3c313cd68716/302"
+        },
+        "review": {
+          "status": "deep-reviewed",
+          "transcriptionConfidence": "high-for-target-entry",
+          "deepReviewedAt": "2026-09-11",
+          "deepReviewScope": "Вручную проверены весь разворот и строка №25; установлены даты рождения и крещения, имя ребёнка, оба родителя, сословие и селение; индексная фамилия сверена с оригиналом.",
+          "sameRecordSourceIds": [
+            "YA-122572AE-302",
+            "YA-OGAOO-173-16-1870-302-STEFAN"
+          ]
+        },
+        "indexData": {
+          "querySnippet": "Родившийся Стефан Васильев Анпилогов; отец Василий Феодоров Анпилогов, крестьянин, село Георгиевка.",
+          "fuzzyQuery": true,
+          "correctionHistory": "Прежнее чтение июня в YA-122572AE-302 ошибочно: свежий оригинал и независимая читка подтверждают апрель. Старый существовавший target показывал соседнюю Александру Соловьёву, а заявленные original/deep отсутствовали. Evidence восстановлено по полному свежему оригиналу, нижней строке25 и заголовку месяца."
+        },
+        "researchOnly": false
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-A8DC0163-163.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-A8DC0163-163",
+        "provider": "Яндекс Архив — первичный скан",
+        "recordType": "marriage",
+        "collection": {
+          "title": "ogaoo_orenburg/173-16-1395-00000163.JPG",
+          "catalogId": "a8dc0163-373d-40f2-a9dc-ac3052ea6fe9",
+          "scanNumber": 163
+        },
+        "links": {
+          "documentUrl": "https://yandex.ru/archive/catalog/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/163"
+        },
+        "event": {
+          "type": "marriage",
+          "date": {
+            "display": "21 января1901",
+            "iso": "1901-01-21",
+            "confidence": "medium-high"
+          },
+          "place": {
+            "asWritten": "город Оренбург",
+            "normalized": "город Оренбург"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-A8DC0163-163-M1",
+            "role": "groom-surety",
+            "personId": null,
+            "nameAsTranscribed": "Іоаннъ Лазаревъ Анпилоговъ",
+            "displayName": "Іоаннъ Лазаревъ Анпилоговъ",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "project-transcription-from-original-with-explicit-uncertainties",
+          "literal": "21. Январь21. Оренбургскій мѣщанинъ Симеонъ Ивановъ Шаховъ, православный, первымъ бракомъ,23. [...] Анна Корнеева Муравьева,19. По женихѣ: Оренбургскіе мѣщане Іоаннъ Лазаревъ Анпилоговъ и Евфимій Акинфовъ Заболотниковъ. По невѣстѣ: Михаилъ Никитинъ Соловыхъ и Николай Андреевъ Большаковъ.",
+          "modernInterpretation": "Иван Лазаревич — поручитель по жениху Семёну Шахову."
+        },
+        "indexData": {
+          "query": "Антилогов",
+          "querySnippet": "Оренбургские мещане: Иоанн Лазарев \u0007[Антилогов\u0007] и Евфим Акинфов Заболотников; по невесте: Оренбургские мещане: Михаил Никитин Соловых и Николай Андреев Большаков.",
+          "warning": "Индекс только подсказка; даты и роли прочитаны по оригиналу."
+        },
+        "evidence": {
+          "kind": "original",
+          "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0163-antilogov-original.jpg",
+          "sha256": "bae1f01464dc20468c39cc7b9b68444589a2cfcc2ed2030f55c2f7bacc9a1efd",
+          "publicDisplay": false,
+          "description": "Полный оригинал для проектного чтения.",
+          "sourceUrl": "https://yandex.ru/archive/catalog/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/163",
+          "capturedAt": "2026-09-13",
+          "fragments": [
+            {
+              "kind": "target",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0163-antilogov-target.jpg",
+              "sha256": "8e26a31b88c77896e7b3153b7841410608d8b4e1dce8f46249184b03ff8b18fe",
+              "publicDisplay": false,
+              "description": "Крупный фрагмент целевого упоминания."
+            },
+            {
+              "kind": "detail",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0163-antilogov-detail.jpg",
+              "sha256": "c9223114642989db97fda3f21a2044bf562f5be17fe63ce2d3e37dea69500d85",
+              "publicDisplay": false,
+              "description": "Крупный фрагмент целевого упоминания."
+            }
+          ]
+        },
+        "review": {
+          "status": "complete",
+          "transcriptionConfidence": "medium-high",
+          "notes": [
+            "Как в соседнем акте22 того же дня (№447), возраст и жена Ивана не названы. P1374/P101808 остаются кандидатами без personId. Год установлен структурой книги, соседние листы158–160 сохранены с №447."
+          ]
+        },
+        "publicCore": true,
+        "isRecord": true,
+        "researchOnly": false
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-A8DC0163-164.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-A8DC0163-164",
+        "provider": "Яндекс Архив — первичный скан",
+        "recordType": "marriage",
+        "collection": {
+          "title": "ogaoo_orenburg/173-16-1395-00000164.JPG",
+          "catalogId": "a8dc0163-373d-40f2-a9dc-ac3052ea6fe9",
+          "scanNumber": 164
+        },
+        "links": {
+          "documentUrl": "https://yandex.ru/archive/catalog/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/164"
+        },
+        "event": {
+          "type": "marriage",
+          "date": {
+            "display": "21 января 1901",
+            "iso": "1901-01-21",
+            "confidence": "medium-high"
+          },
+          "place": {
+            "asWritten": "город Оренбург",
+            "normalized": "город Оренбург"
+          }
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-A8DC0163-164-M1",
+            "role": "bride-surety",
+            "personId": null,
+            "nameAsTranscribed": "Іоаннъ Лазаревъ Анпилоговъ",
+            "displayName": "Іоаннъ Лазаревъ Анпилоговъ",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "project-transcription-from-original-with-explicit-uncertainties",
+          "literal": "22. Январь 21. Оренбургскій мѣщанинъ Антонъ Софроновъ Елкинъ, православный, вторымъ бракомъ, 44. Вдова запаснаго рядового Андрея Андреева Филипова Анна, православная, вторымъ бракомъ, 31. Оренбургскіе мѣщане: Михаилъ Никитинъ Соловыхъ и Іоаннъ Никитинъ Ивановъ; по невѣстѣ: Оренбургскіе мѣщане Іоаннъ Лазаревъ Анпилоговъ и Николай Андреевъ Большаковъ.",
+          "modernInterpretation": "Иван Лазаревич — поручитель по невесте Анне."
+        },
+        "indexData": {
+          "query": "Антилогов",
+          "querySnippet": "Оренбургские мещане : Михаил Никитин Соловых и Иоанн Никитин Иванов : по невесте : Оренбургские мещане : Иоанн Лазарев \u0007[Антилогов\u0007] и Никилай Андреев Большаков.",
+          "warning": "Индекс только поисковая подсказка; роли и даты установлены по оригиналу."
+        },
+        "evidence": {
+          "kind": "original",
+          "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0164-antilogov-original.jpg",
+          "sha256": "24d04303b0235b71cd8c50638b06fa00c64511445643bea59d4af578893990af",
+          "publicDisplay": false,
+          "description": "Полный оригинал для проектного чтения.",
+          "sourceUrl": "https://yandex.ru/archive/catalog/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/164",
+          "capturedAt": "2026-09-13",
+          "fragments": [
+            {
+              "kind": "target",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0164-antilogov-target.jpg",
+              "sha256": "976b4983b9ee7ae0efeecea3459359add60e0a24f62d6729eb952eb027254d19",
+              "publicDisplay": false,
+              "description": "Крупный фрагмент целевого упоминания."
+            },
+            {
+              "kind": "detail",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0164-antilogov-detail.jpg",
+              "sha256": "7f9a6edc696abf219a51295df7734182a6856d38e92d2bf8d671a189f389884c",
+              "publicDisplay": false,
+              "description": "Крупный фрагмент целевого упоминания."
+            },
+            {
+              "kind": "original",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0158-antilogov-original.jpg",
+              "sha256": "aba3b0fdf36807c8d6d0eb6897f255c0ece0d3c0a2c0f83e2a785f6022a648d2",
+              "publicDisplay": false,
+              "description": "Полный оригинал для проектного чтения."
+            },
+            {
+              "kind": "original",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0159-antilogov-original.jpg",
+              "sha256": "2ebcc330f4fbc37b76bce5c766fbf1c268d952220829187a2ac4ef63475479f8",
+              "publicDisplay": false,
+              "description": "Полный оригинал для проектного чтения."
+            },
+            {
+              "kind": "original",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0160-antilogov-original.jpg",
+              "sha256": "cc763e83dbf1bfd11226fabd8b6f9b428ccbea0ff157b402605f5a3bb5a1b514",
+              "publicDisplay": false,
+              "description": "Полный оригинал для проектного чтения."
+            },
+            {
+              "kind": "original",
+              "path": "data/genealogy/evidence-private/yandex/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/0163-antilogov-original.jpg",
+              "sha256": "bae1f01464dc20468c39cc7b9b68444589a2cfcc2ed2030f55c2f7bacc9a1efd",
+              "publicDisplay": false,
+              "description": "Полный оригинал для проектного чтения."
+            }
+          ]
+        },
+        "review": {
+          "status": "complete",
+          "transcriptionConfidence": "medium-high",
+          "notes": [
+            "P1374 и P101808 остаются кандидатами: возраст и жена свидетеля не названы. Соседний /163, акт 21 от того же дня, также даёт Ивана Лазарева поручителем по жениху. На /164 год пуст; /158–159 закрывают рождения 1901, /160 открывает браки той же книги; год раздела соответствует структуре и дате каталога."
+          ]
+        },
+        "publicCore": true,
+        "isRecord": true,
+        "researchOnly": false
+      }
+    }
+  ],
+  "notes": [
+    "P102847 ошибочно ссылался на Василия Ефимовича P102011; исправлен на документированного Василия Фёдоровича P101655.",
+    "Оба1910sourceIds — один акт, не независимые подтверждения."
+  ]
+}

@@ -23,8 +23,9 @@
     "publicSourcesWithLiteralAndModernInterpretation": 222,
     "publicSourcesWithValidMentions": 222,
     "publicSourcesWithCompleteMatchingEvidencePaths": 222,
-    "publicPersonProfileLinks": 0,
-    "externalProfileFamilyMapLinks": 0,
+    "publicPersonProfileLinks": 19,
+    "uniqueLinkedProfiles": 13,
+    "publicSourceIdsPresentOnMap": 15,
     "excludedRowsWithSourceJson": 0,
     "unresolvedIssues": 0
   },
@@ -112,6 +113,27 @@
       "YA-7766FE90-003": "literal and modernInterpretation contain «Остапенко» and do not contain «Останенко»",
       "YA-E5971BA1-003": "literal begins with «Вся наша часть знает младшего лейтенанта Анпилогова» and explicitly marks the clipped continuation"
     }
+  },
+  "evidenceRefresh": {
+    "reviewedAt": "2026-09-12",
+    "sourceIds": [
+      "YA-22C9A3B6-003",
+      "YA-2C588F43-003",
+      "YA-2D6753D5-002",
+      "YA-40B31216-003",
+      "YA-514A7D48-003",
+      "YA-7766FE90-003",
+      "YA-91AF0D0F-003",
+      "YA-E5971BA1-003",
+      "YA-FA6AA3BC-004",
+      "YA-FB84CE9B-004"
+    ],
+    "refreshedAssets": 13,
+    "nativeResolutionVisualInspection": "pass",
+    "siteOrBrowserUi": "absent",
+    "blackDigitalDefects": "absent",
+    "surnameInEveryTargetCrop": "confirmed",
+    "sourceMetadataHashesAndDimensions": "synchronized"
   },
   "manualSemanticSample": [
     {
@@ -676,6 +698,8 @@
     "Machine assertions cover every canonical public Source JSON in scope; the manual sample spans the chronology, both shards, and pre-existing sources.",
     "Profile/map safety is checked both inside mentions (personId) and by reverse search through people, families and places JSON.",
     "False-hit and post-1950 IDs are derived from catalogId/scanNumber and checked for absence from data/genealogy/sources.",
-    "No source, profile, family, place, map or shard tracker was modified; upload was not run."
+    "Финальная повторная проверка 2026-09-12 восстановила пять публичных карточек после конфликтного merge, добавила 7 недостающих профилей, 19 проверенных source-to-person связей и 15 подтверждённых sourceId на карте.",
+    "Три супруги из московских объявлений о разводе сохранены как самостоятельные носительницы исследуемой фамилии; связь супругов основана только на буквальном тексте объявлений.",
+    "Точки Кромского уезда и Россошанского округа имеют районную точность; они не выдаются за точные адреса людей."
   ]
 }

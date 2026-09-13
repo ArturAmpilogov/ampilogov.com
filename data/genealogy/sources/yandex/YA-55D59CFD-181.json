@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-55D59CFD-181",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "military-service-record",
+  "recordType": "baptism",
   "collection": {
     "catalogId": "55d59cfd-c748-4cb1-9c99-8be6a3f105f9",
     "scanNumber": 181,
@@ -13,24 +13,49 @@
     "documentUrl": "https://yandex.ru/archive/catalog/55d59cfd-c748-4cb1-9c99-8be6a3f105f9/181"
   },
   "event": {
-    "type": "military-service-record",
+    "type": "baptism",
     "date": {
-      "display": "1 января 1882 — 31 декабря 1882",
-      "confidence": "high-for-catalog-date"
+      "display": "1882-11-04",
+      "calendar": "julian",
+      "date": "1882-11-04"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "Оренбург, Воскресенская церковь"
+    },
+    "recordNumber": 397
   },
   "mentions": [
     {
-      "mentionId": "YA-55D59CFD-181-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Степанъ Семеновъ Амфилоговъ",
+      "personId": "P1096",
+      "role": "godparent",
+      "surnameSeries": true,
+      "mentionId": "YA-55D59CFD-181-M1"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 397. Михаилъ. Ноября 2 [рождение], 4 [крещение]. «Отставной солдатъ Степанъ Семеновъ Амфилоговъ и солдатка Матрона Егорова Лоскутова».",
+    "modernInterpretation": "Отставной солдат Степан Семёнович Амфилогов — восприемник Михаила 4 ноября 1882 года в Воскресенской церкви Оренбурга.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Отставной солдат Степан Семёнович Амфилогов — восприемник Михаила 4 ноября 1882 года в Воскресенской церкви Оренбурга."
+  },
+  "notes": [
+    "Рабочая идентификация с P1096 основана на редком полном имени и военном статусе в Оренбурге, подтверждённом в других записях. Возраста и прямого указания Кармалки здесь нет; уверенность средняя.",
+    "Матрёна Лоскутова — отдельная восприемница, а не доказанная жена Степана. Индекс ошибочно трактовал документ как военную службу."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Отставной солдат Степан Семенов [Амфилогов] и солдатка Матрона Егорова Лоскутова. Иаков Вицинский. Священник Иак.",
+    "previousLocalOcr": "пленфитра сендайлова вараново.\nареитурганий легуанин Парфеней\nСавлинь плитули - в\nЯковлева вапшина.\nна свдрмии\nой области\nОтМавный\n, салдать Сверими Чева-",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "55d59cfd-c748-4cb1-9c99-8be6a3f105f9",
     "scanNumber": 181,
@@ -42,55 +67,35 @@
     "sha256": "0ab623a5cd4c623649cefb0a856709ee231a0f0169a5a5c7a41cb444b33e5c72",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/55d59cfd-c748-4cb1-9c99-8be6a3f105f9/0181-header.png",
-        "sha256": "bc0692d4d89f09281231ab3ecf3fa201746ba35af3ed8ab7a2c8842eccee89e8",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/55d59cfd-c748-4cb1-9c99-8be6a3f105f9/0181-amfilogov-tail-target.jpg",
+        "sha256": "1757b78d56941a08ee9f94d4198a88358289b3f279d24a41e2f9d8c8d60e08fe",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/55d59cfd-c748-4cb1-9c99-8be6a3f105f9/0181-target-entry.png",
-        "sha256": "5d3d3264414e279cf1089ef058f1ff9fe4c1125fc05e91a457a2e3a1f03c5c54",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          258,
+          1001,
+          3711,
+          1794
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4962x4006",
-      "targetDimensions": "1393x789",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "пленфитра сендайлова вараново.\nареитурганий легуанин Парфеней\nСавлинь плитули - в\nЯковлева вапшина.\nна свдрмии\nой области\nОтМавный\n, салдать Сверими Чева-",
-    "modernInterpretation": "пленфитра сендайлова вараново. ареитурганий легуанин Парфеней Савлинь плитули - в Яковлева вапшина. на свдрмии ой области ОтМавный , салдать Сверими Чева-",
-    "localOcr": "пленфитра сендайлова вараново.\nареитурганий легуанин Парфеней\nСавлинь плитули - в\nЯковлева вапшина.\nна свдрмии\nой области\nОтМавный\n, салдать Сверими Чева-",
-    "localOcrWithSurnameLexicon": "пленитра сендайлова вараново.\nаректурганий летуанин Парфеней\nСавлинь плитули - вА\nЯковлева Лапшина.\nна сворми\nВ\nой области\nОтКавный\n, сандать Сверими Чева-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Отставной солдат Степан Семенов Амфилогов и солдатка Матрона Егорова Лоскутова. Иаков Вицинский. Священник Иак.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P1096"
 }

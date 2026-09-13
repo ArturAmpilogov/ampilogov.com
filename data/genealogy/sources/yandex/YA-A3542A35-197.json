@@ -25,9 +25,9 @@
   "mentions": [
     {
       "mentionId": "YA-A3542A35-197-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилов",
-      "nameAsTranscribed": "Ампилов",
+      "role": "psalm-reader",
+      "displayName": "псаломщик Алексей Ампилов",
+      "nameAsTranscribed": "Псаломщикъ Алексѣй Ампиловъ",
       "surnameSeries": true
     }
   ],
@@ -44,14 +44,16 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/a3542a35-6ccf-45fa-b846-7220da193197/0197-header.png",
-        "sha256": "ca401b17d4b77247a4646220afab3ba947f222d5a0ecb4348707946c337640c7",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "sha256": "a0ffdfc7ceab40d83c596ab10d039b65b4d4adca5e2c2305747b5a7ed775394f",
+        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
+        "dimensions": "3710x745"
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/a3542a35-6ccf-45fa-b846-7220da193197/0197-target-entry.png",
-        "sha256": "62416757d799e17c54b824308056614536f2f738f4a1deeb3b7494964cc53bd0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "1c021813b918cc989a24c6713d61ca36276e1f3918fb73206742b000f3350278",
+        "description": "Крупный фрагмент вручную подтверждённой фамильной строки с необходимым контекстом; без интерфейса сайта и браузера.",
+        "dimensions": "1004x842"
       }
     ],
     "quality": {
@@ -59,16 +61,24 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3876x3046",
-      "targetDimensions": "1200x1058",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "1004x842",
+      "method": "manual-visual-review-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "confirmedAt": "2026-09-12",
+      "headerDimensions": "3710x745",
+      "blackDigitalDefectsExcluded": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "и.\nГомомирртьс пхсл.\n/\nСвященний\n-фeatn Кo\nвд.\nИшц\nна Дкапо. Кракаріль\nмно\nт свлех\nМежогос\nквг\n/%\nа обое\n4 6, менька гнестів,",
-    "modernInterpretation": "и. Гомомирртьс пхсл. / Священний -фeatn Кo вд. Ишц на Дкапо. Кракариль мно т свлех Межогос квг /% а обое 4 6, менька гнестив,",
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Ѳеодоръ Копьевъ; діаконъ Иринархъ Богоявленскій; псаломщикъ Алексѣй Ампиловъ.",
+    "modernInterpretation": "Алексей Ампилов назван псаломщиком среди служителей, совершавших крещения.",
     "localOcr": "и.\nГомомирртьс пхсл.\n/\nСвященний\n-фeatn Кo\nвд.\nИшц\nна Дкапо. Кракаріль\nмно\nт свлех\nМежогос\nквг\n/%\nа обое\n4 6, менька гнестів,",
     "localOcrWithSurnameLexicon": "и.\nи я-\n/\nСвященни\nвд.\nИшц\nна Днапо Кранаріль\nмно\n/e \"\nМежогос\n...L\nа обое\n4 6, менска гнесті в,",
     "collation": {
@@ -76,20 +86,18 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Текстовые блоки Яндекса использованы только для локализации; имена и должности прочитаны вручную по сохранённому оригиналу."
   },
   "indexData": {
     "querySnippet": "Священник Феодор Копьев Диакон Иринарх Богоявленский Псаломщик Алексей Ампилов. жеска пола было пять 5, женского шесть 6, а обоего удостоверяем...",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

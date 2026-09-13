@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5431A288-068",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "legal-record",
+  "recordType": "birth",
   "collection": {
     "catalogId": "5431a288-db97-4d8b-b9a6-c99a5a6c2941",
     "scanNumber": 68,
@@ -13,24 +13,55 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5431a288-db97-4d8b-b9a6-c99a5a6c2941/68"
   },
   "event": {
-    "type": "legal-record",
+    "type": "birth",
     "date": {
-      "display": "1 января 1882 — 31 декабря 1882",
-      "confidence": "high-for-catalog-date"
+      "display": "1882-03-03",
+      "calendar": "julian",
+      "date": "1882-03-03"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "хутор Полынов, приход Рождественки; происхождение отца — Малоархангельский уезд, Орловская губерния"
+    },
+    "recordNumber": 11
   },
   "mentions": [
     {
-      "mentionId": "YA-5431A288-068-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Евдокія",
+      "personId": "P108618",
+      "role": "child",
+      "surnameSeries": true,
+      "mentionId": "YA-5431A288-068-M1"
+    },
+    {
+      "nameAsTranscribed": "Феодоръ Михайловъ Амфилоговъ",
+      "personId": "P108617",
+      "role": "father",
+      "surnameSeries": true,
+      "mentionId": "YA-5431A288-068-M2"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 11. Евдокія. Марта 3 [рождение], 6 [крещение]. «Орловской Губерніи, Малоархангельскаго уѣзда выходецъ на хуторѣ Полыновъ Государственный крестьянинъ Феодоръ Михайловъ Амфилоговъ и законная жена его Пелагія Никитина, православные».",
+    "modernInterpretation": "Евдокия, дочь Фёдора Михайловича Амфилогова и Пелагии Никитичны, родилась 3 марта и крещена 6 марта 1882 года. Отец прямо назван выходцем из Малоархангельского уезда Орловской губернии.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Евдокия, дочь Фёдора Михайловича Амфилогова и Пелагии Никитичны, родилась 3 марта и крещена 6 марта 1882 года. Отец прямо назван выходцем из Малоархангельского уезда Орловской губернии."
+  },
+  "notes": [
+    "Документ подтверждает происхождение отца и проживание на хуторе Полынов, но не дату переезда и не связь с другими орловскими семьями. С Фёдором Михайловичем из Гавриловки не объединяется."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Отец: Феодор Михайлов [Амфилогов], государственный крестьянин, Орловская губерния, Малоархангельский уезд, хутор Полынов.",
+    "previousLocalOcr": "Ангерала-Оеадорова, Провосланне.\nПоснощ: Насір. Гбнусннивь\nV.Д. Асаломщика\nИуого в Фвралпліць родившихся. Младеццевобнло\n1 мь\nДеревни //шуськич\n/си/дарсувенным кресувянив",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "5431a288-db97-4d8b-b9a6-c99a5a6c2941",
     "scanNumber": 68,
@@ -42,55 +73,35 @@
     "sha256": "2b009be13b7e906959c404c089b95fa1dbff72adae4948fd71259159cd5feaa7",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/5431a288-db97-4d8b-b9a6-c99a5a6c2941/0068-header.png",
-        "sha256": "6e86598abdda1d3149ea361211ab692494be4257f941900fbd1a7457fb2bebd5",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/5431a288-db97-4d8b-b9a6-c99a5a6c2941/0068-amfilogov-tail-target.jpg",
+        "sha256": "e205fe8fc3e630dfe8d7e5ddcb5cdb5c6e15be61de69f9e14eec0bfb3af90daf",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/5431a288-db97-4d8b-b9a6-c99a5a6c2941/0068-target-entry.png",
-        "sha256": "1ff350ae987ab28491c72e09e45a79bb08c2ee5f9e5f3a85005f593e62529a99",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          198,
+          2194,
+          3739,
+          2713
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4973x3939",
-      "targetDimensions": "1515x929",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Ангерала-Оеадорова, Провосланне.\nПоснощ: Насір. Гбнусннивь\nV.Д. Асаломщика\nИуого в Фвралпліць родившихся. Младеццевобнло\n1 мь\nДеревни //шуськич\n/си/дарсувенным кресувянив",
-    "modernInterpretation": "Ангерала-Оеадорова, Провосланне. Поснощ: Насир. Гбнусннивь V.Д. Асаломщика Иуого в Фвралплиць родившихся. Младеццевобнло 1 мь Деревни //шуськич /си/дарсувенным кресувянив",
-    "localOcr": "Ангерала-Оеадорова, Провосланне.\nПоснощ: Насір. Гбнусннивь\nV.Д. Асаломщика\nИуого в Фвралпліць родившихся. Младеццевобнло\n1 мь\nДеревни //шуськич\n/си/дарсувенным кресувянив",
-    "localOcrWithSurnameLexicon": "Ангерала-Оеадорова, Провослание.\nПоспощ: Наср. Ганисннивв\nV. Д. Псаломщика\nИого в Фральць родивших». Кладецевобыло\n1 мь\nДеревня /шуськи ч\n/си/дарсвенным кресувянив",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Отец: Феодор Михайлов Амфилогов, государственный крестьянин, Орловская губерния, Малоархангельский уезд, хутор Полынов.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108618"
 }

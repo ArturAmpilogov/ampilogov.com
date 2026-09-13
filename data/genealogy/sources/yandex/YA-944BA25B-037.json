@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-944BA25B-037",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "944ba25b-b76c-45d1-b548-46d43927c9f9",
     "scanNumber": 37,
@@ -13,24 +13,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/944ba25b-b76c-45d1-b548-46d43927c9f9/37"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "marriage",
     "date": {
-      "display": "1 января 1884 — 31 декабря 1884",
-      "confidence": "high-for-catalog-date"
+      "display": "1884-02-08",
+      "calendar": "julian",
+      "date": "1884-02-08"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "деревня Новоникольская"
+    },
+    "recordNumber": 13
   },
   "mentions": [
     {
-      "mentionId": "YA-944BA25B-037-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Владимиръ Яковлевъ Амфилоговъ",
+      "personId": "P1545",
+      "role": "surety-groom",
+      "surnameSeries": true,
+      "mentionId": "YA-944BA25B-037-M1"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 13. Февраля 8. «По женихѣ: Владимиръ Яковлевъ Амфилоговъ и Никифоръ Михайловъ Елагинъ; по невѣстѣ: Николай Ивановъ Золотухинъ ... Антонъ Феодотіевъ Сергеевъ».",
+    "modernInterpretation": "Владимир Яковлевич Амфилогов — поручитель по жениху 8 февраля 1884 года при браке из Новоникольской.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Владимир Яковлевич Амфилогов — поручитель по жениху 8 февраля 1884 года при браке из Новоникольской."
+  },
+  "notes": [
+    "Полное имя и новоникольский контекст согласуются с P1545. Супруга Владимира и его родство с женихом не названы."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "По женихе: Владимир Яковлев [Амфилогов] и Никифор Михайлов Елагин; по невесте: Николай Иванов Золотухин; по невесте: Антон Феодотиев Сергеев.",
+    "previousLocalOcr": "Подт\nКто вили порбчнтелн.\nзаПИс\nНо систров: Дип\nубоМани\nСиmиттвan -и\nпонікнірі\nИвло; понессатк. Нат\nМкрайлок развитни в\nZal Mmnn Кinаs.",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "944ba25b-b76c-45d1-b548-46d43927c9f9",
     "scanNumber": 37,
@@ -42,55 +66,35 @@
     "sha256": "0d92951aa22600db354978b984476cef2d992ec62d9bba644c0ddc7f0fffbb5c",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/944ba25b-b76c-45d1-b548-46d43927c9f9/0037-header.png",
-        "sha256": "27a09421988fefed2ad7e0455f6d65fcde2247e9d9bc5277e522ddb8b11161b0",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/944ba25b-b76c-45d1-b548-46d43927c9f9/0037-amfilogov-tail-target.jpg",
+        "sha256": "5fb3e552dc725137f3864a60eb9a047b16340bae5526ea804959a091422fdb53",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/944ba25b-b76c-45d1-b548-46d43927c9f9/0037-target-entry.png",
-        "sha256": "39cedf3120626ea1a9f8094397d83a624e1a30927374e15dc9dd5bc65e13b439",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          210,
+          2554,
+          4186,
+          3354
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5124x4251",
-      "targetDimensions": "1444x1175",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Подт\nКто вили порбчнтелн.\nзаПИс\nНо систров: Дип\nубоМани\nСиmиттвan -и\nпонікнірі\nИвло; понессатк. Нат\nМкрайлок развитни в\nZal Mmnn Кinаs.",
-    "modernInterpretation": "Подт Кто вили порбчнтелн. заПИс Но систров: Дип убоМани Сиmиттвan -и поникнири Ивло; понессатк. Нат Мкрайлок развитни в Zal Mmnn Кinаs.",
-    "localOcr": "Подт\nКто вили порбчнтелн.\nзаПИс\nНо систров: Дип\nубоМани\nСиmиттвan -и\nпонікнірі\nИвло; понессатк. Нат\nМкрайлок развитни в\nZal Mmnn Кinаs.",
-    "localOcrWithSurnameLexicon": "Подт\nКто вили порвинтелн.\nзаПИс\nНо матров: Ден\nубо Мани\nполінірі\nМкрайлок развитии в",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "По женихе: Владимир Яковлев Амфилогов и Никифор Михайлов Елагин; по невесте: Николай Иванов Золотухин; по невесте: Антон Феодотиев Сергеев.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P1545"
 }

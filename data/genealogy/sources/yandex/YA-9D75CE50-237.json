@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-9D75CE50-237",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "9d75ce50-905f-438f-bff3-dd54f24e2723",
     "scanNumber": 237,
@@ -13,24 +13,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/9d75ce50-905f-438f-bff3-dd54f24e2723/237"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "marriage",
     "date": {
-      "display": "1 января 1880 — 31 декабря 1880",
-      "confidence": "high-for-catalog-date"
+      "display": "1880-10-27",
+      "calendar": "julian",
+      "date": "1880-10-27"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "деревня Дракина"
+    },
+    "recordNumber": 18
   },
   "mentions": [
     {
-      "mentionId": "YA-9D75CE50-237-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Гавріилъ Павловъ Амфилоговъ",
+      "personId": "P91159",
+      "role": "marriage-witness",
+      "surnameSeries": true,
+      "mentionId": "YA-9D75CE50-237-M1"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 18. Октября 27. «По женихѣ и невѣстѣ деревни Дракина г. крестьяне: ... Гавріилъ Павловъ Амфилоговъ ...».",
+    "modernInterpretation": "Гавриил Павлович Амфилогов из Дракиной — один из общих поручителей при браке 27 октября 1880 года.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Гавриил Павлович Амфилогов из Дракиной — один из общих поручителей при браке 27 октября 1880 года."
+  },
+  "notes": [
+    "Писец объединяет поручителей по жениху и невесте в одном списке; индивидуальная сторона Гавриила не установлена."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "По женихе и невесте деревни Дракина г. крестьяне: Емельян Спиридонов Саксонов, Гавриил Петров Борзеев, Гавриил Павлов [Амфилогов], Прокопий Дорофеев Бузаев...",
+    "previousLocalOcr": "Те мненилл к невлястею села Каметлы 2. лерини-\nРсодорк\nснітамк мн, Акшити Аложаннск Хирошкава, свебо Иваков,\nХискрось, Катаій Перекопісн Стапобубцай.\nОкраскли Виловнсыя Мартомнока, Алексай Аалыка -\nсічоs Поёолоскёй и Серий Волинк, виуела.\nсоборо. Ме олежшет нневлостих села Камснах 2 крить -\nиттаць яле-Мохопій Салнові Силалтна, Нетра\n- пкснь Калтаник",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "9d75ce50-905f-438f-bff3-dd54f24e2723",
     "scanNumber": 237,
@@ -42,55 +66,35 @@
     "sha256": "f56f39ebbada8b9afe04f567014c3cc4b5abd4f3b0fd11e7e00a393d6ae21397",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/9d75ce50-905f-438f-bff3-dd54f24e2723/0237-header.png",
-        "sha256": "d811f86d8709e30c198f8c9574a7e8d09139f1f5578aac2b98d622c60e5c1522",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/9d75ce50-905f-438f-bff3-dd54f24e2723/0237-amfilogov-tail-target.jpg",
+        "sha256": "bcbd93b942e14cc90ef0e958bb027148a9170ddb7a6a2c591fd9d9d62c11a597",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/9d75ce50-905f-438f-bff3-dd54f24e2723/0237-target-entry.png",
-        "sha256": "011c3c1d063601df9ddb16d25080155fab115cadccf02b615aa85a3bd79f2d7d",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          220,
+          1143,
+          4874,
+          1874
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5803x4484",
-      "targetDimensions": "1531x1151",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Те мненилл к невлястею села Каметлы 2. лерини-\nРсодорк\nснітамк мн, Акшити Аложаннск Хирошкава, свебо Иваков,\nХискрось, Катаій Перекопісн Стапобубцай.\nОкраскли Виловнсыя Мартомнока, Алексай Аалыка -\nсічоs Поёолоскёй и Серий Волинк, виуела.\nсоборо. Ме олежшет нневлостих села Камснах 2 крить -\nиттаць яле-Мохопій Салнові Силалтна, Нетра\n- пкснь Калтаник",
-    "modernInterpretation": "Те мненилл к невлястею села Каметлы 2. лерини- Рсодорк снитамк мн, Акшити Аложаннск Хирошкава, свебо Иваков, Хискрось, Катаий Перекописн Стапобубцай. Окраскли Виловнсыя Мартомнока, Алексай Аалыка - сичоs Поёолоскёй и Серий Волинк, виуела. соборо. Ме олежшет нневлостих села Камснах 2 крить - иттаць яле-Мохопий Салнови Силалтна, Нетра - пкснь Калтаник",
-    "localOcr": "Те мненилл к невлястею села Каметлы 2. лерини-\nРсодорк\nснітамк мн, Акшити Аложаннск Хирошкава, свебо Иваков,\nХискрось, Катаій Перекопісн Стапобубцай.\nОкраскли Виловнсыя Мартомнока, Алексай Аалыка -\nсічоs Поёолоскёй и Серий Волинк, виуела.\nсоборо. Ме олежшет нневлостих села Камснах 2 крить -\nиттаць яле-Мохопій Салнові Силалтна, Нетра\n- пкснь Калтаник",
-    "localOcrWithSurnameLexicon": "Те менил к невлястею села Камены в перинн-\nРсодорк\nспітами ян, Акшити Аложаннск Хорошкав, свето Швиков,\nХистрось, Катай Перекопісн Старобубуай\nОкраскли Виновны Мартанока, Алексай Аалька -\nсічо Поголоскій и Серий Волинк, видело.\nсоборо. Ме слежшет нневлостих села Каменах 2 крить -\nштам як - Мохопій Салнові Силантна, Нетра",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "По женихе и невесте деревни Дракина г. крестьяне: Емельян Спиридонов Саксонов, Гавриил Петров Борзеев, Гавриил Павлов Амфилогов, Прокопий Дорофеев Бузаев...",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P91159"
 }

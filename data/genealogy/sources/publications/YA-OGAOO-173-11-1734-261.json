@@ -4,8 +4,14 @@
   "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
   "recordType": "primary-scan-transcription",
   "collection": {
-    "title": "Метрическая книга Оренбургской епархии",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1734, скан 261"
+    "title": "Метрические книги церквей Оренбургского уезда селений: Ратчины, Никольского (Илькульган), Рождественского, Михайловки за 1848 г.",
+    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1734, скан 261",
+    "catalogId": "60745ac7-4693-48f7-83c3-5b76a9196448",
+    "scanNumber": 261,
+    "repository": "ОГА Оренбургской области (ОГАОО)",
+    "fond": "173",
+    "inventory": "11",
+    "file": "1734"
   },
   "repository": {
     "name": "Объединённый государственный архив Оренбургской области",
@@ -19,101 +25,137 @@
   "event": {
     "type": "marriage",
     "date": {
-      "display": "8 октября 1848 года",
       "iso": "1848-10-08",
-      "calendar": "julian"
+      "display": "1848-10-08",
+      "confidence": "high"
     },
     "place": {
-      "asWritten": "Михайло-Архангельская церковь села Михайловки; жених — деревни Кармалки",
-      "normalized": "приход села Михайловки, Оренбургский уезд",
-      "placeId": "karmalka-sarmanayeva"
+      "asWritten": "Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-OGAOO-173-11-1734-261-M1",
+      "nameAsTranscribed": "Гавріилъ Ивановъ Анпилоговъ",
       "role": "groom",
-      "personId": "P90001",
-      "displayName": "Гавриил Иванович Анпилогов",
-      "modernName": "Гавриил Иванович Анпилогов"
+      "personId": "P90001"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1734-261-M2",
-      "role": "bride",
-      "personId": null,
-      "nameAsTranscribed": "Изъ Переселенцевъ Орловской Губерніи вдова Ирина Иванова",
-      "displayName": "Ирина Ивановна",
-      "modernName": "Ирина Ивановна",
-      "age": 35,
-      "places": [
-        {
-          "relation": "origin",
-          "asWritten": "из переселенцев Орловской губернии",
-          "normalized": "Орловская губерния",
-          "placeId": "orel-governorate",
-          "confidence": "high"
-        }
-      ]
+      "nameAsTranscribed": "Ирина Иванова",
+      "role": "bride"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1734-261-M3",
+      "nameAsTranscribed": "Григорій Петровъ Анпилоговъ",
       "role": "surety",
-      "personId": "P90008",
-      "nameAsTranscribed": "Григорій Петровъ Антилоговъ",
-      "displayName": "Григорий Петрович Анпилогов",
-      "modernName": "Григорий Петрович Анпилогов"
+      "personId": "P90008"
+    },
+    {
+      "nameAsTranscribed": "Акимъ Ивановъ Пашковъ; Данила Гавриловъ Павловъ; Кирилъ Борисовъ",
+      "role": "other-sureties"
     }
   ],
   "transcription": {
-    "status": "checked-against-visible-primary-scan",
-    "literal": "Октября 8. Деревни Кармалки Государств. Крестьянинъ Гавріилъ Ивановъ Анпилоговъ, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 32. Изъ Переселенцевъ Орловской Губерніи вдова Ирина Иванова, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 35.",
-    "modernInterpretation": "8 октября 1848 года 32-летний государственный крестьянин деревни Кармалки Гавриил Иванович Анпилогов венчался вторым браком с 35-летней вдовой Ириной Ивановной, прямо названной переселенкой из Орловской губернии. Это контекст брака, а не документированное переселение самого Гавриила; отдельная карточка и маршрут Ирины не создаются, поскольку её фамилия в акте не названа."
+    "status": "project-visual-reading",
+    "literal": "№58. Октября8. Деревни Кармалки государственный крестьянинъ Гавріилъ Ивановъ Анпилоговъ […] вторымъ бракомъ,32. Изъ переселенцевъ Орловской губерніи вдова Ирина Иванова […] вторымъ бракомъ,35. Поручители: государственные крестьяне Григорій Петровъ Анпилоговъ, Акимъ Ивановъ Пашковъ, Данила Гавриловъ Павловъ и Кирилъ Борисовъ.",
+    "modernInterpretation": "8 октября1848 Гавриил Иванович Анпилогов,32лет, вторым браком женился на35-летней вдове Ирине Ивановне, переселенке из Орловской губернии. Поручитель Григорий Петрович Анпилогов.",
+    "layoutNote": "Буквальная выписка существенных полей; квадратные скобки и многоточия обозначают уточнение или пропуск."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-full-view.png",
-    "capturedAt": "2026-09-05",
-    "sha256": "c9e9d65a126bac1b9c383e81c561b5c91f6a587d50211bdaed2b31dd8a88a19c",
+    "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-antilogov-early-original.jpg",
+    "sha256": "d63a37a545663e9288b61916171448d64392bc70ccc2b0e7dda9e7e1cc3eda5c",
+    "publicDisplay": false,
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "sourceUrl": "https://yandex.ru/archive/catalog/60745ac7-4693-48f7-83c3-5b76a9196448/261",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-header.png",
-        "sha256": "df1ac09a55552bc6e7094701e828d07532603e7a7df7305b9d38fa16b1ee45cc",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-target-entry.png",
-        "sha256": "fa17264d15676052da93adfe3884af6e1c7b32b01934d998a757bb1d3368cf6f",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-antilogov-early-entry.jpg",
+        "sha256": "a2d3e21a77d77098e63dbb90d3f033850ea95b0ce501f49236f74cd6b7f54445",
+        "publicDisplay": false,
+        "kind": "entry"
       }
     ],
-    "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/60745ac7-4693-48f7-83c3-5b76a9196448/0261-full-view.png",
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-05",
-      "method": "manual-comparison-with-source-transcription-and-document-context",
-      "fullDimensions": "2570x2100",
-      "targetDimensions": "1280x720",
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13"
     }
   },
   "review": {
-    "status": "complete",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-08-25: сохранены локально полный разворот, заголовок и увеличенная целевая строка; SHA-256 проверены.",
-      "2026-09-05: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Существующая запись переиспользована. Орловское происхождение относится к невесте, не к Гавриилу; отдельный маршрут ей не создаётся. P90001 остаётся отдельно от P0772 до разрешения разных жён."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Первичный скан брака 1848 года прямо называет Ирину Ивановну, вторую жену Гавриила Ивановича Анпилогова, переселенкой из Орловской губернии."
+    "text": "8 октября1848 Гавриил Иванович Анпилогов,32лет, вторым браком женился на35-летней вдове Ирине Ивановне, переселенке из Орловской губернии. Поручитель Григорий Петрович Анпилогов."
   },
-  "isRecord": true
+  "isRecord": true,
+  "indexData": {
+    "previousTranscription": {
+      "status": "checked-against-visible-primary-scan",
+      "literal": "Октября 8. Деревни Кармалки Государств. Крестьянинъ Гавріилъ Ивановъ Анпилоговъ, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 32. Изъ Переселенцевъ Орловской Губерніи вдова Ирина Иванова, Грекороссійскаго вѣроисповѣданія, вторымъ бракомъ, 35.",
+      "modernInterpretation": "8 октября 1848 года 32-летний государственный крестьянин деревни Кармалки Гавриил Иванович Анпилогов венчался вторым браком с 35-летней вдовой Ириной Ивановной, прямо названной переселенкой из Орловской губернии. Это контекст брака, а не документированное переселение самого Гавриила; отдельная карточка и маршрут Ирины не создаются, поскольку её фамилия в акте не названа."
+    },
+    "antilogovSearchCard": {
+      "id": "0846ab49-3eba-4f8a-ae9c-088aeed81d30",
+      "parentId": "60745ac7-4693-48f7-83c3-5b76a9196448",
+      "originalImageSize": {
+        "width": 5394,
+        "height": 4307
+      },
+      "name": "0261 л.257об,258.JPG",
+      "longName": "0261 л.257об,258.JPG",
+      "annotation": null,
+      "shortAnnotation": null,
+      "code": null,
+      "type": "Sheet",
+      "dateFrom": "01-01-1848",
+      "dateTo": "31-12-1848",
+      "thumb": {
+        "path": "/archive/api/image?id=0846ab49-3eba-4f8a-ae9c-088aeed81d30&type=thumb",
+        "width": 184,
+        "height": 147
+      },
+      "tags": [],
+      "counters": {
+        "files": 0,
+        "images": 1,
+        "funds": 0,
+        "digitized": 0,
+        "issues": 0,
+        "books": 0
+      },
+      "sheetPageNumber": 261,
+      "metaFullName": null,
+      "metaShortName": null,
+      "namepath": "ogaoo_orenburg/173-11-1734-0261 л.257об,258.JPG",
+      "favoriteTags": [],
+      "order": null,
+      "headerBackgroundImage": null,
+      "sourceUrl": null,
+      "sourceType": "default",
+      "contentUpdatedAt": null,
+      "contentUpdateDescriptionUrl": null,
+      "isNew": null,
+      "viewed": null,
+      "serviceTags": null,
+      "visibilityLevel": 100000,
+      "humanMarkup": null,
+      "mlMarkup": null,
+      "originalImagePath": null,
+      "snippet": "Государственные Крестьяне: Григорий Петров \u0007[Антилогов\u0007], Аким Иванов Пашков, Данила Гаврилов Павлов и Кирил Борисов.",
+      "joinedTextBlocks": null,
+      "attributionMd": null
+    }
+  },
+  "publicCore": true,
+  "personIds": [
+    "P90001",
+    "P90008"
+  ]
 }

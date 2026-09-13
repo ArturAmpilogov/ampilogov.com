@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-7CB8DF40-646",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth",
   "collection": {
     "catalogId": "7cb8df40-45c6-414c-847e-9bea014af4d5",
     "scanNumber": 646,
@@ -13,24 +13,55 @@
     "documentUrl": "https://yandex.ru/archive/catalog/7cb8df40-45c6-414c-847e-9bea014af4d5/646"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
     "date": {
-      "display": "1 января 1877 — 31 декабря 1877",
-      "confidence": "high-for-catalog-date"
+      "display": "1877-05-25",
+      "calendar": "julian",
+      "date": "1877-05-25"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "деревня Дракина"
+    },
+    "recordNumber": 26
   },
   "mentions": [
     {
-      "mentionId": "YA-7CB8DF40-646-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Іоаннъ",
+      "personId": "P108612",
+      "role": "child",
+      "surnameSeries": true,
+      "mentionId": "YA-7CB8DF40-646-M1"
+    },
+    {
+      "nameAsTranscribed": "Гавріилъ Павловъ Амфилоговъ",
+      "personId": "P91159",
+      "role": "father",
+      "surnameSeries": true,
+      "mentionId": "YA-7CB8DF40-646-M2"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 26. Іоаннъ. Мая 25 [рождение], 29 [крещение]. «Деревни Дракина г. крестьянинъ Гавріилъ Павловъ Амфилоговъ и законная его жена Марія Михайлова, оба православнаго вѣроисповѣданія».",
+    "modernInterpretation": "Иван, сын Гавриила Павловича Амфилогова и Марии Михайловны из Дракиной, родился 25 мая, крещён 29 мая 1877 года.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Иван, сын Гавриила Павловича Амфилогова и Марии Михайловны из Дракиной, родился 25 мая, крещён 29 мая 1877 года."
+  },
+  "notes": [
+    "Отец сопоставлен с P91159 по полному имени, деревне и супруге Марии Михайловне. Индексная Ирина Семёнова относится к соседней записи, не к этой семье."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Отец: Гавриил Павлов [Амфилогов], крестьянин, деревня Дракино. Мать: Ирина Семенова Андреева. Мать: Мария Михайлова Амфилоева.",
+    "previousLocalOcr": "в'кдиніл.\nОеревни падкочии\nmnh\n1. Крестяетиа Алоквію\nетn Вастввч Ах м\nарбевым закиннах гир\nякена его принатя\nСтетова, оба права. Т\nсхавнаю влуаоне\nвгаданія Смu\nсин ш\nДіаконr. Ллярий\nДоячеКг Мат",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "7cb8df40-45c6-414c-847e-9bea014af4d5",
     "scanNumber": 646,
@@ -42,55 +73,35 @@
     "sha256": "a1d56b7ba9cc51a72034cea26f9bca960217c208cf0ea9471c7be3b41c3f9d7c",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/7cb8df40-45c6-414c-847e-9bea014af4d5/0646-header.png",
-        "sha256": "6842d2c91aff97e9718b35a5b1fedddb8886bf198fa0bb9eacae3983c57c75db",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/7cb8df40-45c6-414c-847e-9bea014af4d5/0646-amfilogov-tail-target.jpg",
+        "sha256": "83229f57263713b4e54df35b9f3dbee7de473f79330378369ff0e6863413926a",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/7cb8df40-45c6-414c-847e-9bea014af4d5/0646-target-entry.png",
-        "sha256": "757eb9306b4d82e45d0862eec062abaf80a014788945d3ff2b4ac42897b2d36a",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          280,
+          2212,
+          2688,
+          3037
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5602x4339",
-      "targetDimensions": "1200x1453",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "в'кдиніл.\nОеревни падкочии\nmnh\n1. Крестяетиа Алоквію\nетn Вастввч Ах м\nарбевым закиннах гир\nякена его принатя\nСтетова, оба права. Т\nсхавнаю влуаоне\nвгаданія Смu\nсин ш\nДіаконr. Ллярий\nДоячеКг Мат",
-    "modernInterpretation": "в'кдинил. Оеревни падкочии mnh 1. Крестяетиа Алоквию етn Вастввч Ах м арбевым закиннах гир якена его принатя Стетова, оба права. Т схавнаю влуаоне вгадания Смu син ш Диаконr. Ллярий ДоячеКг Мат",
-    "localOcr": "в'кдиніл.\nОеревни падкочии\nmnh\n1. Крестяетиа Алоквію\nетn Вастввч Ах м\nарбевым закиннах гир\nякена его принатя\nСтетова, оба права. Т\nсхавнаю влуаоне\nвгаданія Смu\nсин ш\nДіаконr. Ллярий\nДоячеКг Мат",
-    "localOcrWithSurnameLexicon": "віданіл.\nunh\n1. Крестчетия Алек вію\nст\" Вастивч Ах м\nарбевым закинна гир\nякена его принаня\nСтова, оба права. Т\nвгаданім Сом\nсин ш\nДіаконч. Ллярий\nДояче Кг Мат",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Деревни Дракина г. Крестьянин Гавриил Павлов Амфилогов и законная его жена Мария Михаилова, оба православного вероисповедания.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108612"
 }

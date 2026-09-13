@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-A3542A35-196",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "church-record",
   "collection": {
     "catalogId": "a3542a35-6ccf-45fa-b846-7220da193197",
     "scanNumber": 196,
@@ -13,7 +13,7 @@
     "documentUrl": "https://yandex.ru/archive/catalog/a3542a35-6ccf-45fa-b846-7220da193197/196"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "church-record",
     "date": {
       "display": "1 января 1896 — 31 декабря 1904",
       "confidence": "high-for-catalog-date"
@@ -25,9 +25,9 @@
   "mentions": [
     {
       "mentionId": "YA-A3542A35-196-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилов",
-      "nameAsTranscribed": "Ампилов",
+      "role": "psalm-reader",
+      "displayName": "псаломщик Алексей Ампилов",
+      "nameAsTranscribed": "Псаломщикъ Алексѣй Ампиловъ",
       "surnameSeries": true
     }
   ],
@@ -44,14 +44,16 @@
       {
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex/a3542a35-6ccf-45fa-b846-7220da193197/0196-header.png",
-        "sha256": "1363c7349543fb68c0886529d5a06e538654bd152f9b4b68be4c3c2e9e2cc40f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "sha256": "8029e92111feccb83c54faf88022f96ceeead91cb5f4aaa1ee7f10fb1d95c092",
+        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
+        "dimensions": "3713x746"
       },
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/a3542a35-6ccf-45fa-b846-7220da193197/0196-target-entry.png",
-        "sha256": "f4adbeef11f92a6ea3103277ef12714bbd06b0b9f6945a0b0baf36331d69e0c6",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "caac1b67e59940478ecbb6d5cab67b79ff0f3b268ef6942ec0a46e42fb303106",
+        "description": "Крупный фрагмент вручную подтверждённой фамильной строки с необходимым контекстом; без интерфейса сайта и браузера.",
+        "dimensions": "1095x844"
       }
     ],
     "quality": {
@@ -59,16 +61,24 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3876x3046",
-      "targetDimensions": "1200x856",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "1095x844",
+      "method": "manual-visual-review-of-downloaded-original",
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "blackDefectsExcluded": true,
+      "confirmedAt": "2026-09-12",
+      "headerDimensions": "3713x746",
+      "blackDigitalDefectsExcluded": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "тЕлЕй зАписи по ЖЕлАніЮ.\nкрешенія.\nжной\nреященни\nAeasnn Kouudno\nФiаконь Цмнарог\nurer.\nberоebuerckiй\nава\nul,вь.\nсмям с\nnья-",
-    "modernInterpretation": "тЕлЕй зАписи по ЖЕлАниЮ. крешения. жной реященни Aeasnn Kouudno Фiаконь Цмнарог urer. berоebuerckiй ава ul,вь. смям с nья-",
+    "status": "complete-primary-scan-transcription-with-local-evidence",
+    "literal": "Священникъ Ѳеодоръ Копьевъ; діаконъ Иринархъ Богоявленскій; псаломщикъ Алексѣй Ампиловъ.",
+    "modernInterpretation": "Алексей Ампилов назван псаломщиком среди служителей, совершавших крещения.",
     "localOcr": "тЕлЕй зАписи по ЖЕлАніЮ.\nкрешенія.\nжной\nреященни\nAeasnn Kouudno\nФiаконь Цмнарог\nurer.\nberоebuerckiй\nава\nul,вь.\nсмям с\nnья-",
     "localOcrWithSurnameLexicon": "тЕлЕй зАписи по ЖЕлАніЮ.\nкрашенія.\nжней\nреященни\nGradin Kandan\nurer.\nава\nпья-",
     "collation": {
@@ -76,20 +86,18 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Текстовые блоки Яндекса использованы только для локализации; имена и должности прочитаны вручную по сохранённому оригиналу."
   },
   "indexData": {
     "querySnippet": "Священник Феодор Копьев Диакон Иринарх Богоявленский Псаломщик Алексей Ампилов.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-with-local-evidence",
+    "transcriptionConfidence": "high",
+    "unresolved": []
   }
 }

@@ -1,11 +1,92 @@
 {
-  "schemaVersion": 1, "sourceId": "YA-12683CB8-49", "provider": "Яндекс Архив — первичный архивный скан", "recordType": "archival-mention",
-  "collection": { "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e", "scanNumber": 49, "asRead": "Метрическая книга за 1892 год, часть третья, о умерших" },
-  "links": { "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/49" },
-  "event": { "type": "burial-register-ministry", "date": { "display": "7–26 марта 1892", "confidence": "high" }, "place": { "asRead": "приход Верхнего Гумбета", "normalized": "Верхний Гумбет" } },
-  "mentions": [{ "mentionId": "YA-12683CB8-49-M1", "role": "psalm-reader-at-burial", "personId": "P1543", "nameAsTranscribed": "Псаломщик Афиноген Ампилогов", "displayName": "Афиноген Егорович Ампилогов", "surnameSeries": true }, { "mentionId": "YA-12683CB8-49-M2", "role": "priest", "personId": null, "nameAsTranscribed": "Священник Григорий Попов", "displayName": "Григорий Попов", "surnameSeries": false }, { "mentionId": "YA-12683CB8-49-M3", "role": "psalm-reader", "personId": null, "nameAsTranscribed": "Псаломщик Димитрий Орлов", "displayName": "Димитрий Орлов", "surnameSeries": false }],
-  "transcription": { "status": "complete-for-target-ministry", "literal": "Март 1892 года, записи об умерших с датами смерти и погребения 7–26 марта. При строках повторяется: «Священник Григорий Попов», «Псаломщик Афиноген Ампилогов», «Псаломщик Димитрий Орлов».", "modernInterpretation": "В марте 1892 года Афиноген Ампилогов участвовал как псаломщик в погребениях прихода Верхнего Гумбета.", "indexNote": "Индекс не дал целевого чтения. Имя, фамилия, должность и даты установлены непосредственно по полному развороту.", "historicalContext": "Серия мартовских строк подтверждает непрерывность церковной службы; умершие других фамилий не получают профилей или карты." },
-  "evidence": { "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0049-full-view.png", "sha256": "75e84089c55d0db3dbd5056d7aaf633f9414f756b37d7bf568f96746f5dffe5e", "fragments": [{ "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/12683cb8-d0fe-4106-8f0c-40810e8f486e/0049-target-entry-deep.png", "sha256": "4c4805c5144bbaec73d669a3081b54a655d373626f6f5b2bcff390300c64ba09", "description": "Полноширинный крупный фрагмент мартовских погребальных записей с причтом." }], "quality": { "originalImageDownloaded": true, "fullDimensions": "5652x4490", "targetDimensions": "5400x3500", "method": "manual-reading-of-full-scan-and-full-width-recrop" }, "publicDisplay": false },
-  "review": { "status": "deep-reviewed", "transcriptionConfidence": "high-for-name-role-and-date-range", "deepReviewedAt": "2026-09-11", "deepReviewScope": "Полностью проверен мартовский лист; неинформативный индекс заменён ручным чтением повторных подписей, Афиноген связан с P1543 по одной книге, приходу, году и должности." },
-  "indexData": { "querySnippet": "Индекс не заменяет чтение первичного документа.", "fuzzyQuery": true }
+  "schemaVersion": 1,
+  "sourceId": "YA-12683CB8-49",
+  "provider": "Яндекс Архив",
+  "recordType": "clergy-service",
+  "collection": {
+    "title": "Метрическая книга: село Верхний Гумбет; 1892",
+    "archiveCitation": "ogaoo_orenburg/173-16-812-0049 .jpg",
+    "digitalScanNumber": 49
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/12683cb8-d0fe-4106-8f0c-40810e8f486e/49"
+  },
+  "event": {
+    "type": "clergy-service",
+    "recordNumber": "14 (жен.)",
+    "date": {
+      "iso": "1892-03-08",
+      "from": "1892-03-08",
+      "to": "1892-03-08",
+      "display": "1892-03-08; старый стиль",
+      "confidence": "high-for-manually-read-target"
+    },
+    "place": {
+      "normalized": "село Верхний Гумбет"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-12683CB8-49-M1",
+      "personId": "P1543",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "nameAsTranscribed": "Псаломщик Афиноген Ампилогов",
+      "role": "psalm-reader",
+      "sex": "male",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Март. 14. 7 / 8. [Запись смерти Димны.] Священник Григорий Попов. Псаломщик Афиноген Ампилогов. Псаломщик Димитрий Орлов.",
+    "modernInterpretation": "Псаломщик Афиноген Ампилогов подписал запись погребения 8 марта 1892 года в Верхнем Гумбете.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Помощник \u0007[Амфилогов\u0007]. 17.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
+  "evidence": {
+    "catalogId": "12683cb8-d0fe-4106-8f0c-40810e8f486e",
+    "scanNumber": 49,
+    "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0049-amfilogov-original.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0049-amfilogov-original.jpg",
+    "sha256": "0fddfb6b423dcfcbbba98c70c2491e5e226289daaa65bdc85a1ecfc98be3dc8c",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "fragments": [
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/12683cb8-d0fe-4106-8f0c-40810e8f486e/0049-amfilogov-target-20260913.jpg",
+        "sha256": "49000b982064ae5c3e961806044b2cddde14f21f34d9fb882e0ad7cf06eaffce",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true
+    }
+  },
+  "review": {
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Тот же приход и служебный ряд P1543; отчество в этой подписи не указано."
+    ]
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Псаломщик Афиноген Ампилогов подписал запись погребения 8 марта 1892 года в Верхнем Гумбете."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P1543"
 }

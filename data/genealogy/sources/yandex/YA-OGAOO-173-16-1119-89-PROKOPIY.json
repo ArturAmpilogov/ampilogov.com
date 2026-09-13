@@ -1,70 +1,97 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-173-16-1119-89-PROKOPIY",
-  "provider": "Объединённый государственный архив Оренбургской области — цифровой скан Яндекс Архива",
-  "recordType": "primary-scan-transcription",
-  "primaryPersonId": "P101564",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "birth",
   "collection": {
-    "title": "Метрическая книга сёл Михайловка, Ново-Никольское и Георгиевка; раздел о родившихся за 1894 год",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 1119, скан 89, женская запись № 190"
+    "title": "ogaoo_orenburg/173-16-1119-0089.jpg",
+    "catalogId": "13c848b4-e8a6-4346-b7ac-0b66e390a383",
+    "scanNumber": 89
   },
   "links": {
-    "scan": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/89"
+    "documentUrl": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/89"
   },
   "event": {
-    "type": "baptism-godparent",
-    "recordNumber": "190",
+    "type": "birth",
     "date": {
-      "display": "родилась 14 октября, крещена 15 октября 1894 года",
-      "date": "1894-10-14"
+      "display": "14 / 15 октября1899",
+      "iso": "1899-10-14",
+      "confidence": "high"
     },
     "place": {
       "asWritten": "деревня Кармалка",
-      "normalized": "деревня Кармалка, Оренбургский уезд, Оренбургская губерния",
-      "placeId": "karmalka-orenburg"
+      "normalized": "деревня Кармалка"
     }
   },
   "mentions": [
-    {"role": "child", "nameAsTranscribed": "Анна", "displayName": "Анна Агафоновна Антилогова", "surnameSeries": true},
-    {"role": "father", "nameAsTranscribed": "крестьянинъ деревни Кармалки Агаѳонъ Іоанновъ Антилоговъ", "displayName": "Агафон Иванович Антилогов", "surnameSeries": true},
-    {"role": "mother", "nameAsTranscribed": "законная жена его Параскева Петрова", "displayName": "Параскева Петровна Антилогова", "surnameSeries": true},
-    {"role": "godfather", "personId": "P101564", "nameAsTranscribed": "крестьянинъ той же деревни Прокопій Іоанновъ Анпилоговъ", "displayName": "Прокопий Иванович Анпилогов", "surnameSeries": true},
-    {"role": "godmother", "nameAsTranscribed": "Марѳа Филиппова Куликова", "displayName": "Марфа Филипповна Куликова", "surnameSeries": false}
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-89-PROKOPIY-M1",
+      "role": "child",
+      "personId": "P109028",
+      "nameAsTranscribed": "Анна",
+      "displayName": "Анна Агафоновна Анпилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-89-PROKOPIY-M2",
+      "role": "father",
+      "personId": "P9001",
+      "nameAsTranscribed": "Агафонъ Іоанновъ Анпилоговъ",
+      "displayName": "Агафон Иванович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-89-PROKOPIY-M3",
+      "role": "godfather",
+      "personId": "P101564",
+      "nameAsTranscribed": "Прокопій Іоанновъ Анпилоговъ",
+      "displayName": "Прокопий Иванович Анпилогов",
+      "surnameSeries": true
+    }
   ],
   "transcription": {
-    "status": "complete-checked-against-visible-primary-scan",
-    "literal": "Октябрь. Женская запись № 190. 14 родилась, 15 крещена. Анна. Крестьянинъ деревни Кармалки Агаѳонъ Іоанновъ Антилоговъ и законная жена его Параскева Петрова, оба православные. Крестьяне той же деревни Прокопій Іоанновъ Анпилоговъ и Марѳа Филиппова Куликова.",
-    "modernInterpretation": "14 октября 1894 года у крестьянина деревни Кармалки Агафона Ивановича Антилогова и Параскевы Петровны родилась дочь Анна; 15 октября её крестили. Восприемниками были Прокопий Иванович Анпилогов и Марфа Филипповна Куликова."
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "190. Октябрь14 / 15. Анна. Крестьянинъ деревни Кармалки Агафонъ Іоанновъ Анпилоговъ и законная жена его Параскева Петрова, оба православные. Крестьяне той же деревни Прокопій Іоанновъ Анпилоговъ и Марфа Филиппова Куликова.",
+    "modernInterpretation": "Анна — дочь Агафона и Параскевы; Прокопий её восприемник."
   },
   "indexData": {
-    "provider": "Яндекс Архив",
-    "warning": "Индекс использован только для нахождения листа. Дата, родительская фамилия Антилогов и состав восприемников прочитаны непосредственно по оригиналу."
+    "query": "Антилогов",
+    "querySnippet": "Отец: Агафон Иоаннов \u0007[Антилогов\u0007], крестьянин, деревня Кармалки. ... Крёстный отец: Прокопий Иоаннов \u0007[Антилогов\u0007], крестьянин, та же деревня.",
+    "warning": "Индекс только поисковая подсказка; роли, даты и родство прочитаны по оригиналу."
   },
   "evidence": {
-    "captureType": "yandex-original-document-image-with-document-only-full-view-and-enlarged-fragment",
-    "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-original.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-full-view.jpg",
-    "capturedAt": "2026-09-11",
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-antilogov-original.jpg",
     "sha256": "a0a77d4f9788802bf852bc49a8079a5b0301c0752e6bf241d61cfd423268a0bf",
     "publicDisplay": false,
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/89",
+    "capturedAt": "2026-09-13",
     "fragments": [
-      {"kind": "full-view", "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-full-view.jpg", "sha256": "f5583232ebb0bd7bf459207c8dd119ba7f0b3f21bd42d63b0875064db91362ba"},
-      {"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-fragment-anna-baptism-clean.jpg", "sha256": "26bb93328197e991525aa94ee3d20853a57861a10fd07a1adf8fe32a2fd29981"}
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-reading-of-downloaded-original-scan"
-    }
+      {
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-antilogov-target.jpg",
+        "sha256": "37f570350836055fd500bac69d106a41b484a97fd2064fd0ec2d7e282923085d",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      },
+      {
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0089-antilogov-detail.jpg",
+        "sha256": "d66fd9a5a93645467b8bbdab0403651e961bec27abf0bb5986cb3d2648cbca2e",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      }
+    ]
   },
   "review": {
     "status": "complete",
-    "identityResolution": "Прокопий связан с P101564 по полному имени и деревне Кармалке; разница в 11 лет между актами не противоречит тождеству. Агафон и его семья оставлены упоминаниями без новых профилей до отдельного сопоставления формы Антилогов с фамильным рядом."
+    "transcriptionConfidence": "medium-high",
+    "notes": [
+      "Год в оригинале1899. Прежнее1894 в source и P101564 — ошибка чтения последней цифры. Семья отца P9001 доказана повторением Параскевы Петровны, Кармалкой и полным именем. Прокопий P101564 не объединён с P105120/P102225 без супруги или возраста."
+    ]
   },
-  "summary": {
-    "status": "verified-summary",
-    "text": "15 октября 1894 года Прокопий Иванович Анпилогов был восприемником Анны Агафоновны Антилоговой в Кармалке."
-  },
-  "isRecord": true
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false
 }

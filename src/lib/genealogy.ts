@@ -49,6 +49,7 @@ type PersonRecord = {
   familyIds?: string[];
   sourceIds?: string[];
   researchSubject?: boolean;
+  publicCore?: boolean;
   status?: string;
   notes?: string[];
   researchLeads?: Array<{
@@ -91,6 +92,7 @@ type FamilyRecord = {
 };
 
 type SourceMention = {
+  surnameSeries?: boolean;
   personId?: string;
   possiblePersonId?: string;
   role?: string;
@@ -122,6 +124,7 @@ type SourceMention = {
     recordNumber?: number | string;
     date?: {
       display?: string;
+      date?: string;
       iso?: string;
       birthIso?: string;
       baptismIso?: string;
@@ -154,6 +157,7 @@ type SourceRecord = {
   provider?: string;
   recordType?: string;
   isRecord?: boolean;
+  publicCore?: boolean;
   researchScope?: "family-origin-context";
   primaryPersonId?: string;
   collection?: {
@@ -198,6 +202,7 @@ type SourceRecord = {
     typeAsRussian?: string;
     date?: {
       display?: string;
+      date?: string;
       iso?: string;
       birthIso?: string;
       baptismIso?: string;
@@ -638,6 +643,19 @@ export type DirectoryPerson = {
   searchText: string;
 };
 
+export type FamilyTreePerson = Pick<DirectoryPerson,
+  "personId" | "displayName" | "sex" | "birthYear" | "life" | "needsReview"
+> & {
+  parentIds: string[];
+  /** Used only for vertical placement; it may be an event year when birth is unknown. */
+  timelineYear: number | null;
+};
+
+export type FamilyTreeDirectory = {
+  people: FamilyTreePerson[];
+  range: { minYear: number; maxYear: number };
+};
+
 export type PlacePrecision =
   | "settlement"
   | "city"
@@ -864,6 +882,15 @@ const roleLabels: Record<string, string> = {
   "spouse-of-godmother": "супруг восприемницы",
   witness: "свидетель",
   surety: "поручитель",
+  "godfather-son": "восприемник, сын названного отца",
+  "godmother-daughter": "восприемница, дочь названного отца",
+  "house-owner": "владелец дома",
+  "surety-groom": "поручитель по жениху",
+  "surety-groom-signatory": "поручитель по жениху, подписавший запись",
+  signatory: "подписавший документ",
+  resident: "житель",
+  parishioner: "прихожанин",
+  "registered-family-member": "член семьи в учётной записи",
   declarant: "заявитель",
   official: "должностное лицо",
   clerk: "писец",
@@ -1778,8 +1805,10 @@ function sourcePeople(
     ].filter((item) => item.trim());
 
     return {
-      personId: profile && personHasAmpilogovSurname(profile) ? mention.personId ?? null : null,
-      possiblePersonId: possibleProfile && personHasAmpilogovSurname(possibleProfile)
+      personId: profile && personBelongsToResearchScope(profile) &&
+        mentionBelongsToResearchScope(mention, peopleById) ? mention.personId ?? null : null,
+      possiblePersonId: possibleProfile && personHasAmpilogovSurname(possibleProfile) &&
+        (mention.surnameSeries !== false || possibleProfile.researchSubject)
         ? mention.possiblePersonId ?? null
         : null,
       possiblePersonName: possibleProfile?.displayName ?? null,
@@ -1842,19 +1871,19 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
-const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
 const PUBLIC_RESEARCH_END_YEAR = 1950;
 
 function isAmpilogovVariantName(value?: string | null) {
-  return Boolean(value && ampilogovSurnameVariantPattern.test(value));
+  return Boolean(value && ampilogovSurnameVariantPattern.test(value.replace(/ѳ/gi, "ф")));
 }
 
 function finalNameToken(value?: string | null) {
-  return value?.normalize("NFKC").trim().split(/\s+/).at(-1)?.replace(/[^a-zа-яё-]/gi, "") ?? "";
+  return value?.normalize("NFKC").replace(/ѳ/gi, "ф").trim().split(/\s+/).at(-1)?.replace(/[^a-zа-яё-]/gi, "") ?? "";
 }
 
 function personBelongsToResearchScope(person?: PersonRecord) {
-  if (!person) return false;
+  if (!person || person.publicCore === false) return false;
   if (person.researchSubject) return true;
   if (person.surname?.normalized?.trim()) {
     return isAmpilogovVariantName(person.surname.normalized);
@@ -1867,9 +1896,11 @@ function personBelongsToResearchScope(person?: PersonRecord) {
 const personHasAmpilogovSurname = personBelongsToResearchScope;
 
 function mentionHasAmpilogovSurname(mention: SourceMention, peopleById?: Map<string, PersonRecord>) {
+  if (mention.surnameSeries === false) return false;
   if (mention.personId) {
     const linkedPerson = peopleById?.get(mention.personId);
     if (linkedPerson) {
+      if (linkedPerson.publicCore === false) return false;
       const normalizedSurname = linkedPerson.surname?.normalized?.trim();
       if (normalizedSurname) return isAmpilogovVariantName(normalizedSurname);
       // Rare personal-name subjects belong in profiles and Records, but the
@@ -1878,14 +1909,33 @@ function mentionHasAmpilogovSurname(mention: SourceMention, peopleById?: Map<str
       return isAmpilogovVariantName(finalNameToken(linkedPerson.displayName));
     }
   }
-  return [
-    mention.displayName,
-    mention.modernName,
-    mention.nameAsIndexed,
-    mention.nameAsTranscribed,
-    mention.nameAsWritten,
+  // A patronymic in the middle of a full name is not a family surname.
+  // Once the original has been read, an obsolete index cannot override it.
+  const originalNames = [mention.nameAsTranscribed, mention.nameAsWritten]
+    .filter((name): name is string => Boolean(name?.trim()));
+  const names = originalNames.length ? originalNames : [
+    mention.modernName, mention.displayName, mention.nameAsIndexed,
     ...(mention.alternateNames ?? []),
-  ].map(finalNameToken).some(isAmpilogovVariantName);
+  ];
+  // Reviewed surname-first registers and names followed by a role/age retain
+  // their explicit classification; unclassified names use the final token.
+  if (mention.surnameSeries === true) return names.some(isAmpilogovVariantName);
+  return names.map(finalNameToken).some(isAmpilogovVariantName);
+}
+
+function mentionBelongsToResearchScope(mention: SourceMention, peopleById?: Map<string, PersonRecord>) {
+  const linkedPerson = mention.personId ? peopleById?.get(mention.personId) : undefined;
+  // `surnameSeries: false` correctly describes a personal name, while the
+  // separately reviewed onomastic exception still admits its Record/profile.
+  if (linkedPerson?.researchSubject) return personBelongsToResearchScope(linkedPerson);
+  if (linkedPerson && !personBelongsToResearchScope(linkedPerson)) {
+    if (linkedPerson.publicCore === false || mention.surnameSeries === false) return false;
+    // A reviewed original may use a supported spelling absent from the profile.
+    // Preserve that Record without linking an out-of-scope profile or admitting
+    // a middle patronymic such as «Дмитрий Ампилов Баев».
+    return mentionHasAmpilogovSurname({ ...mention, personId: undefined, surnameSeries: undefined });
+  }
+  return mentionHasAmpilogovSurname(mention, peopleById);
 }
 
 const nonEventMapRolePattern = /(?:^|[-_])(?:comparative|comparison|candidate|parallel|contextual|hypothesis|memorial|later)(?:$|[-_])/i;
@@ -1900,6 +1950,8 @@ function sourceIsWithinPublicResearchPeriod(source: SourceRecord) {
 }
 
 function personIsWithinPublicResearchPeriod(person: PersonRecord, linkedSources: SourceRecord[]) {
+  const publicSources = linkedSources.filter((source) => source.publicCore !== false);
+  if (linkedSources.length && !publicSources.length) return false;
   const profileYears = [
     recordDataValue(person.birth?.date),
     recordDataValue(person.birthEstimate?.year),
@@ -1908,7 +1960,7 @@ function personIsWithinPublicResearchPeriod(person: PersonRecord, linkedSources:
     recordDataValue(person.dates?.birth?.display),
     recordDataValue(person.dates?.birth?.iso),
   ].flatMap((value) => value.match(/\b(?:14|15|16|17|18|19|20)\d{2}\b/g) ?? []).map(Number);
-  const sourceYears = linkedSources.map(sourceYear).filter((year) => year > 0);
+  const sourceYears = publicSources.map(sourceYear).filter((year) => year > 0);
   const knownYears = [...profileYears, ...sourceYears];
   return !knownYears.length || Math.min(...knownYears) <= PUBLIC_RESEARCH_END_YEAR;
 }
@@ -2017,23 +2069,7 @@ function sourceHasAmpilogovVariant(
   source: SourceRecord,
   peopleById?: Map<string, PersonRecord>,
 ) {
-  const hasFamilySurnameMention = (source.mentions ?? []).some((mention) =>
-    (mention.personId && personBelongsToResearchScope(peopleById?.get(mention.personId))) ||
-    [
-      mention.displayName,
-      mention.modernName,
-      mention.nameAsIndexed,
-      mention.nameAsTranscribed,
-      mention.nameAsWritten,
-      ...(mention.alternateNames ?? []),
-      mention.personId ? peopleById?.get(mention.personId)?.displayName : undefined,
-      mention.personId ? peopleById?.get(mention.personId)?.surname?.normalized : undefined,
-      ...(mention.personId ? peopleById?.get(mention.personId)?.nameVariants ?? [] : []),
-      ...(mention.personId ? peopleById?.get(mention.personId)?.surname?.formsAsWritten ?? [] : []),
-    ].some(isAmpilogovVariantName)
-  );
-
-  return hasFamilySurnameMention;
+  return (source.mentions ?? []).some((mention) => mentionBelongsToResearchScope(mention, peopleById));
 }
 
 function isGenealogyRecordSource(
@@ -2047,7 +2083,7 @@ function isGenealogyRecordSource(
   const isExplicitFamilyOriginContext = source.isRecord === true &&
     source.researchScope === "family-origin-context";
 
-  return !rejectedAsEvidence &&
+  return source.publicCore !== false && !rejectedAsEvidence &&
     !source.recordType?.startsWith("finding-aid") &&
     source.event?.type !== "negative-finding" &&
     (sourceHasAmpilogovVariant(source, peopleById) || isExplicitFamilyOriginContext);
@@ -3072,6 +3108,12 @@ export function getPeopleDirectory() {
         return !mention || mentionIsDirectMapObservation(mention);
       });
     const personSources = linkedSources
+      .sort((left, right) => {
+        const leftMention = left.mentions?.find((entry) => entry.personId === person.personId);
+        const rightMention = right.mentions?.find((entry) => entry.personId === person.personId);
+        return sourceChronologyKey(left, leftMention).localeCompare(sourceChronologyKey(right, rightMention)) ||
+          left.sourceId.localeCompare(right.sourceId);
+      })
       .map((source): DirectorySource => {
         const mention = source.mentions?.find((entry) => entry.personId === person.personId);
         const displayMention = mention ?? (
@@ -3106,8 +3148,7 @@ export function getPeopleDirectory() {
           evidenceUrl: evidenceUrl(source),
           imageReference: position,
         };
-      })
-      .sort((left, right) => left.date.localeCompare(right.date, "ru"));
+      });
 
     const nameAnalysis = linkedSources
       .flatMap((source) => source.mentions ?? [])
@@ -3246,11 +3287,76 @@ export function getDirectoryPerson(personId: string) {
   return getPeopleDirectory().people.find((person) => person.personId === personId) ?? null;
 }
 
+let familyTreeCache: FamilyTreeDirectory | null = null;
+
+/** A deliberately small, public-only projection for the interactive tree. */
+export function getFamilyTreeDirectory(): FamilyTreeDirectory {
+  if (familyTreeCache) return familyTreeCache;
+  const directory = getPeopleDirectory().people;
+  const ids = new Set(directory.map((person) => person.personId));
+  const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
+  const parentsFromFamily = new Map<string, string[]>();
+  for (const family of families) {
+    const documentedParents = (family.spouses ?? []).filter((personId) => ids.has(personId));
+    if (!documentedParents.length) continue;
+    for (const childId of family.children ?? []) {
+      if (!ids.has(childId)) continue;
+      const existing = parentsFromFamily.get(childId) ?? [];
+      parentsFromFamily.set(childId, [...new Set([...existing, ...documentedParents])]);
+    }
+  }
+  const eventYear = (person: DirectoryPerson) => {
+    const values = [person.birthYear, person.life.birth, person.life.death, ...person.sources.map((source) => source.date)];
+    const years = values.flatMap((value) => String(value).match(/\b(?:14|15|16|17|18|19)\d{2}\b/g) ?? []).map(Number)
+      .filter((year) => year >= 1400 && year <= PUBLIC_RESEARCH_END_YEAR);
+    return years.length ? Math.min(...years) : null;
+  };
+  const people = directory.map((person) => ({
+    personId: person.personId,
+    displayName: person.displayName,
+    sex: person.sex,
+    birthYear: person.birthYear,
+    life: person.life,
+    needsReview: person.needsReview,
+    parentIds: [...new Set([
+      ...person.relations
+      .filter((relation) => relation.relation === "parent" && ids.has(relation.personId))
+      .map((relation) => relation.personId),
+      ...(parentsFromFamily.get(person.personId) ?? []),
+    ])],
+    timelineYear: eventYear(person),
+  }));
+  const years = people.map((person) => person.timelineYear)
+    .filter((year): year is number => typeof year === "number");
+  familyTreeCache = {
+    people,
+    range: {
+      minYear: years.length ? Math.min(...years) : 1500,
+      maxYear: years.length ? Math.min(PUBLIC_RESEARCH_END_YEAR, Math.max(...years)) : PUBLIC_RESEARCH_END_YEAR,
+    },
+  };
+  return familyTreeCache;
+}
+
 function sourceYear(source: SourceRecord) {
   const date = source.event?.date;
   if (Number.isFinite(date?.yearFrom)) return date!.yearFrom!;
-  const value = date?.iso ?? date?.birthIso ?? date?.baptismIso ?? date?.display ?? "";
+  const value = date?.iso ?? date?.date ?? date?.birthIso ?? date?.baptismIso ??
+    date?.deathIso ?? date?.burialIso ?? date?.marriageIso ?? date?.display ?? "";
   return Number(value.match(/\b(?:14|15|16|17|18|19|20)\d{2}\b/)?.[0] ?? 0);
+}
+
+function sourceChronologyKey(source: SourceRecord, mention?: SourceMention) {
+  const date = mention?.event?.date ?? source.event?.date;
+  const candidates = [date?.iso, date?.birthIso, date?.baptismIso,
+    date?.deathIso, date?.burialIso, date?.marriageIso, date?.date];
+  const exact = candidates.map(lifeDateFromIso).find((candidate) => candidate?.exactDay) ??
+    lifeDateFromDisplay(date?.display);
+  const year = sourceYear({ ...source, event: { ...source.event, date } }) || sourceYear(source);
+  // Partial dates/ranges sort at their first documented year; their displayed
+  // uncertainty remains unchanged. No calendar conversion is implied here.
+  return exact?.exactDay ? exact.from.toISOString().slice(0, 10) :
+    `${String(year || 9999).padStart(4, "0")}-00-00`;
 }
 
 export function getFamilyMapDirectory(): FamilyMapDirectory {

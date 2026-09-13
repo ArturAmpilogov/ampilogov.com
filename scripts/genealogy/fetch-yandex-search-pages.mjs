@@ -13,6 +13,7 @@ for (let index = 2; index < process.argv.length; index += 2) {
 const url = values.get("--url");
 const outputPrefix = values.get("--output-prefix");
 const pageCount = Number(values.get("--pages"));
+const pageFrom = Number(values.get("--page-from") ?? 1);
 const expectedDocs = Number(values.get("--expected-docs"));
 const expectedPages = Number(values.get("--expected-pages") ?? pageCount);
 const attempts = Number(values.get("--attempts") ?? 30);
@@ -46,7 +47,7 @@ const stable = async (file, page) => {
 const delay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0 Safari/537.36";
 
-for (let page = 1; page <= pageCount; page++) {
+for (let page = pageFrom; page <= pageCount; page++) {
   const output = `${outputPrefix}${page}.html`;
   if (await stable(output, page)) {
     console.log(`${page}/${pageCount} уже стабильно`);

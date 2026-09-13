@@ -162,9 +162,9 @@ for (const [position, row] of rows.entries()) {
       if (matched.length) {
         box = {
           left: Math.min(...matched.map((item) => item.left)) - 90,
-          top: image.height - Math.max(...matched.map((item) => item.bottom)) - 140,
+          top: Math.min(...matched.map((item) => item.top)) - 140,
           right: Math.max(...matched.map((item) => item.right)) + 90,
-          bottom: image.height - Math.min(...matched.map((item) => item.top)) + 140,
+          bottom: Math.max(...matched.map((item) => item.bottom)) + 140,
         };
       } else {
         box = { left: image.width * 0.08, top: image.height * 0.12, right: image.width * 0.92, bottom: image.height * 0.88 };

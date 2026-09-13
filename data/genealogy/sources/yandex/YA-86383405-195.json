@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-86383405-195",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth",
   "collection": {
     "catalogId": "86383405-fe9f-44d7-80c8-5595b9caa9b7",
     "scanNumber": 195,
@@ -13,24 +13,55 @@
     "documentUrl": "https://yandex.ru/archive/catalog/86383405-fe9f-44d7-80c8-5595b9caa9b7/195"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
     "date": {
-      "display": "1 января 1879 — 31 декабря 1879",
-      "confidence": "high-for-catalog-date"
+      "display": "1879-10-24",
+      "calendar": "julian",
+      "date": "1879-10-24"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "село Преображенка"
+    },
+    "recordNumber": 94
   },
   "mentions": [
     {
-      "mentionId": "YA-86383405-195-M1",
-      "role": "surname-series-mention",
-      "displayName": "Антиповъ",
-      "nameAsTranscribed": "Антиповъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Анастасія",
+      "personId": "P108614",
+      "role": "child",
+      "surnameSeries": true,
+      "mentionId": "YA-86383405-195-M1"
+    },
+    {
+      "nameAsTranscribed": "Петръ Стефановъ Амфилоговъ",
+      "personId": "P108613",
+      "role": "father",
+      "surnameSeries": true,
+      "mentionId": "YA-86383405-195-M2"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 94. Анастасія. Октября 24 [рождение], 26 [крещение]. «Села Преображенки государственный крестьянинъ Петръ Стефановъ Амфилоговъ и жена его Надежда Феодорова, оба исповѣданія православнаго».",
+    "modernInterpretation": "Анастасия, дочь Петра Стефановича Амфилогова и Надежды Феодоровны, родилась 24 октября, крещена 26 октября 1879 года.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Анастасия, дочь Петра Стефановича Амфилогова и Надежды Феодоровны, родилась 24 октября, крещена 26 октября 1879 года."
+  },
+  "notes": [
+    "Индекс ошибочно называет Анну Ильину Кандаурову; оригинал целевой строки ясно называет Надежду Феодорову."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Отец: Петр Стефанов [Амфилогов], государственный крестьянин, село Преображенка. Мать: Анна Ильина Кандаурова.",
+    "previousLocalOcr": "ОСКОRСКОЇ\nTHORRA\nБТРЙЧЬСКОЙ КНИГИНА\nЗваніє, йма, отчество й фамиліА\nЗбаніє,\nй роднь.\nродителей, й какóгш втронспо-\nIнХЕл.\nв'ЕдАНіА.",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "86383405-fe9f-44d7-80c8-5595b9caa9b7",
     "scanNumber": 195,
@@ -42,55 +73,35 @@
     "sha256": "b03e11fa8706564eea92297459238b3e54dc54bed8c09cef292efa1e1949aa4c",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0195-header.png",
-        "sha256": "2559cad73660ac0cf98d024344c6cf27d6edc0018238fcf494162916bf32c56f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0195-amfilogov-tail-target.jpg",
+        "sha256": "12bb6776911b61f3963ef1dc483b578d94c786bd81d855c6e27e7a27d8258203",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/86383405-fe9f-44d7-80c8-5595b9caa9b7/0195-target-entry.png",
-        "sha256": "d375da7fbef868d9be76637ca0c30341ea0c98ce2af41c555ab6964353936f52",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          182,
+          3422,
+          2475,
+          4080
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5212x4189",
-      "targetDimensions": "1200x1124",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОСКОRСКОЇ\nTHORRA\nБТРЙЧЬСКОЙ КНИГИНА\nЗваніє, йма, отчество й фамиліА\nЗбаніє,\nй роднь.\nродителей, й какóгш втронспо-\nIнХЕл.\nв'ЕдАНіА.",
-    "modernInterpretation": "ОСКОRСКОЇ THORRA БТРЙЧЬСКОЙ КНИГИНА Званиє, йма, отчество й фамилиА Збаниє, й роднь. родителей, й какóгш втронспо- IнХЕл. в'ЕдАНиА.",
-    "localOcr": "ОСКОRСКОЇ\nTHORRA\nБТРЙЧЬСКОЙ КНИГИНА\nЗваніє, йма, отчество й фамиліА\nЗбаніє,\nй роднь.\nродителей, й какóгш втронспо-\nIнХЕл.\nв'ЕдАНіА.",
-    "localOcrWithSurnameLexicon": "ОСКОВСКОЇ\nTHOTRA\nВТРИЧЕСКОЙ КНИГИНА\nЗваніє, йма, отчество й фаміліА\nЗбаніє,\nа родны.\nродителей, й какги втронспо-\nвʼЕдАНіА.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Отец: Петр Стефанов Амфилогов, государственный крестьянин, село Преображенка. Мать: Анна Ильина Кандаурова.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108614"
 }

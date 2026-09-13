@@ -1,87 +1,136 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-472AC94F-170",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "clergy-service-on-birth-register-page",
-  "primaryPersonId": "P1543",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "clergy-signature",
   "collection": {
+    "title": "ogaoo_orenburg/173-16-1927-0170.JPG",
+    "archiveCitation": "ogaoo_orenburg/173-16-1927-0170.JPG; скан 170",
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
-    "scanNumber": 170,
-    "title": "Метрическая книга Слоновского прихода за 1911 год",
-    "asRead": "Октябрьские записи о родившихся"
+    "scanNumber": 170
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/170"
   },
   "event": {
-    "type": "clergy-service",
+    "type": "clergy-signature",
     "date": {
-      "display": "1–10 октября 1911 года",
-      "fromIso": "1911-10-01",
-      "toIso": "1911-10-10",
-      "confidence": "high"
+      "display": "1911-09",
+      "date": "1911-09",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "asWritten": "Слоновский приход",
-      "normalized": "Слоновка, Оренбургский уезд",
-      "confidence": "high"
+      "normalized": "не установлено"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-472AC94F-170-M1",
-      "role": "church-clergy-deacon",
-      "personId": "P1543",
-      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
-      "displayName": "Афиноген Егорович Ампилогов",
-      "surnameSeries": true,
-      "identityConfidence": "high"
+      "nameAsTranscribed": "Аѳиногенъ Анисимовъ",
+      "displayName": "Аѳиноген Анисимов",
+      "role": "deacon",
+      "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "complete-primary-scan-manually-verified",
-    "literal": "Октябрь: Матѳей — 1/2; Пелагія — 3/3; Пелагія — 7/8; Пелагія — 7/8; Александръ — 9/10. При каждой строке: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
-    "modernInterpretation": "Афиноген Ампилогов участвовал только как диакон при крещениях детей чужих семей; родства и переселения лист не сообщает.",
-    "indexNote": "Сниппет Яндекса смешал повторную служебную подпись причта с родителями или восприемниками соседней строки; роли разделены по полному оригиналу."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "Діаконъ Аѳиногенъ Анисимовъ.",
+    "modernInterpretation": "В повторяющихся подписях диакон Афиноген Анисимов; ложное поисковое совпадение.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
   },
-  "context": {
-    "eventSummary": "Последовательные служебные подписи диакона Афиногена в Слоновском приходе.",
-    "relationshipBoundary": "Все семьи и восприемники имеют другие фамилии; родство и миграция не выводятся."
-  },
+  "notes": [],
   "indexData": {
-    "querySnippet": "Диакон Афиноген Ампилогов Хутора Ново-Васильевского крестьянин Михаил Михайлов Самуськов и законная жена его Мария Васильева, оба православные.",
-    "fuzzyQuery": true,
-    "discrepancy": "Фамильное присутствие ограничено служебной подписью диакона."
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "Псаломщик Иоанн Поляков. 1. Диакон Афиноген [Антилогов]. 81.",
+    "catalogDateFrom": "01-01-1911",
+    "catalogDateTo": "31-12-1911",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-antilogov-original.jpg",
+    "sha256": "7a909722a42f010939727cfe21dd7621e95c552f810afc036e56ea3f4fc48cd3",
     "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
     "scanNumber": 170,
-    "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-full-view.png",
-    "sha256": "9b71bd25db0f556aa8fdb0b5dcbbc863b5a1bf7e086217dbdb4b02dd16e70f8d",
-    "fragments": [
-      {
-        "kind": "deep-context",
-        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-target-context-deep.jpg",
-        "sha256": "d33e1aa2d38b464a07328ba85dc6bec3756913634e7718a7b65495e40f76f50c",
-        "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границы месяца и подписей причта."
-      }
-    ],
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "quality": {
       "originalImageDownloaded": true,
-      "fullDimensions": "5272x4198",
-      "targetDimensions": "5000x3600",
-      "method": "manual-full-page-reading-and-clean-wide-recrop"
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
     },
-    "publicDisplay": false,
-    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+    "fragments": [
+      {
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-antilogov-target.jpg",
+        "sha256": "adbdb0cd169134b2a667d4e502560d814e6af9beb67e9e2b31d33db38729610e",
+        "kind": "target-entry",
+        "cropBox": [
+          1370,
+          1364,
+          2636,
+          4093
+        ]
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-antilogov-header.jpg",
+        "sha256": "42f26103d8768f0d4aca11c699e02623369af1e13f485531d79ad3fa82ae14f4",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          5272,
+          1007
+        ]
+      }
+    ]
   },
+  "isRecord": false,
+  "publicCore": false,
   "review": {
-    "status": "deep-reviewed",
-    "transcriptionConfidence": "high",
-    "deepReviewedAt": "2026-09-11",
-    "deepReviewScope": "Полный разворот 170 и все видимые строки прочитаны вручную; проверены даты, дети, родители, восприемники, границы месяцев/итоги и повторные подписи причта; P1543 подтверждён только в служебной роли."
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
   },
-  "isRecord": true,
-  "cardKind": "documented-surname-series-record",
-  "publicCore": true
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-primary-scan-manually-verified",
+        "literal": "Октябрь: Матѳей — 1/2; Пелагія — 3/3; Пелагія — 7/8; Пелагія — 7/8; Александръ — 9/10. При каждой строке: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+        "modernInterpretation": "Афиноген Ампилогов участвовал только как диакон при крещениях детей чужих семей; родства и переселения лист не сообщает.",
+        "indexNote": "Сниппет Яндекса смешал повторную служебную подпись причта с родителями или восприемниками соседней строки; роли разделены по полному оригиналу."
+      },
+      "previousEvidence": {
+        "catalogId": "472ac94f-cca4-4d38-a557-72143c0e380c",
+        "scanNumber": 170,
+        "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-full-view.png",
+        "sha256": "9b71bd25db0f556aa8fdb0b5dcbbc863b5a1bf7e086217dbdb4b02dd16e70f8d",
+        "fragments": [
+          {
+            "kind": "deep-context",
+            "path": "data/genealogy/evidence-private/yandex/472ac94f-cca4-4d38-a557-72143c0e380c/0170-target-context-deep.jpg",
+            "sha256": "d33e1aa2d38b464a07328ba85dc6bec3756913634e7718a7b65495e40f76f50c",
+            "description": "Крупный полноширинный чистый фрагмент всех видимых строк, границы месяца и подписей причта."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "fullDimensions": "5272x4198",
+          "targetDimensions": "5000x3600",
+          "method": "manual-full-page-reading-and-clean-wide-recrop"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    }
+  ],
+  "relatedSourceIds": [
+    "YA-472AC94F-177",
+    "YA-ABE035F8-157"
+  ]
 }

@@ -4,11 +4,13 @@
   "provider": "FamilySearch",
   "collection": {
     "id": "4450389",
-    "title": "Россия, Томская губерния, церковные книги, 1752–1918"
+    "title": "Россия, Томская губерния, церковные книги, 1752–1918",
+    "parallelCopyArchiveCitation": "ГА Кузбасса, фонд №60, опись №1, дело №774, скан №70"
   },
   "links": {
     "imageArk": "https://www.familysearch.org/ark:/61903/3:1:3QS7-99Z6-X9Y8",
-    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:65C9-GW3W"
+    "indexedRecordArk": "https://www.familysearch.org/ark:/61903/1:1:65C9-GW3W",
+    "yandexParallelCopy": "https://yandex.ru/archive/catalog/8c840767-583e-4830-9ad9-7404abd6a155/70"
   },
   "event": {
     "type": "death",
@@ -19,9 +21,13 @@
     },
     "place": {
       "placeId": "tomsk-governorate",
-      "asTranscribed": "Томская губерния",
-      "normalized": "Томская губерния, Российская империя",
+      "asTranscribed": "Семилужной волости деревни Кожли",
+      "normalized": "деревня Кожли, Семилужная волость, Томская губерния",
       "modernCountry": "Россия"
+    },
+    "burialDate": {
+      "date": "1897-03-27",
+      "calendar": "julian"
     }
   },
   "indexData": {
@@ -38,13 +44,17 @@
       "nameAsTranscribed": "Косьма",
       "modernName": "Козьма Ильич Ампилогов",
       "displayName": "Козьма Ильич Ампилогов",
-      "alternateNames": []
+      "alternateNames": [],
+      "age": {
+        "months": 3,
+        "display": "3 месяца"
+      }
     },
     {
       "mentionId": "FS-3QS7-99Z6-X9Y8-M2",
       "role": "father",
       "personId": "P0646",
-      "nameAsTranscribed": "Илья Трофимов Анфилогов",
+      "nameAsTranscribed": "Ильи Трофимова Анфилогова",
       "modernName": "Илья Трифонович Ампилогов",
       "displayName": "Илья Трифонович Ампилогов",
       "alternateNames": [
@@ -53,19 +63,9 @@
     }
   ],
   "transcription": {
-    "status": "index-supported-with-partial-original",
-    "literal": "На сохранённом обзорном кадре видны даты 25 и 27 марта и начало целевой строки, но имя умершего и родственная формула обрезаны нижней границей. Индекс: Косьма; отец Илья Трофимов Анфилогов.",
-    "modernInterpretation": "По индексу Козьма Ильич Ампилогов умер 25 марта 1897 года. Отец в индексе назван Ильёй Трофимовым Анфилоговым; в семейной серии его основное современное имя — Илья Трифонович Ампилогов.",
-    "fields": {
-      "eventDate": "умер 25 марта 1897 года",
-      "subject": "Козьма Ильич Ампилогов",
-      "age": "0 лет",
-      "relatedPeople": [
-        "Илья Трифонович Ампилогов"
-      ],
-      "secondaryColumns": "[не читаются уверенно]",
-      "birthYearEstimated": "1896–1897"
-    }
+    "status": "checked-against-complete-primary-parallel-copy",
+    "literal": "11. Мартъ. 25. 27. Семилужной волости деревни Кожли крестьянина Ильи Трофимова Анфилогова сынъ Косьма. 3 мѣсяц. Отъ младенчества.",
+    "modernInterpretation": "Косьма, трёхмесячный сын крестьянина Ильи Трофимова Анфилогова из деревни Кожли Семилужной волости, умер 25 марта и погребён 27 марта 1897 года. Причина смерти в документе — «от младенчества». Мать не названа. Форма Трофимов подтверждена оригиналом; основное Трифонович в семейной серии требует отдельного сопоставления."
   },
   "sourceRelations": [
     {
@@ -75,6 +75,47 @@
     }
   ],
   "evidence": {
+    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "path": "data/genealogy/evidence-private/yandex/8c840767-583e-4830-9ad9-7404abd6a155/0070-full-view.png",
+    "sha256": "ac9eacab53c3cc053b3fe3a6877e75f78ef7762f207edd0dbc976a04e6ba1eac",
+    "originalPath": "data/genealogy/evidence-private/yandex/8c840767-583e-4830-9ad9-7404abd6a155/0070-original.jpg",
+    "capturedAt": "2026-09-13",
+    "publicDisplay": false,
+    "fragments": [
+      {
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/8c840767-583e-4830-9ad9-7404abd6a155/0070-header.png",
+        "sha256": "c3be323704c04ab197341279e10670d56113634bbbf730269142ad2394d009a8"
+      },
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/8c840767-583e-4830-9ad9-7404abd6a155/0070-target-entry.png",
+        "sha256": "a8ec0e9f1ce0053861a04e4fbbec43aebd0dc799a8ecd509d86ba4ed3903706f"
+      }
+    ],
+    "quality": {
+      "documentOnlyVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13",
+      "method": "manual-reading-of-original-and-neighboring-rows"
+    }
+  },
+  "review": {
+    "status": "complete-primary-copy-verified",
+    "transcriptionConfidence": "Высокая",
+    "identityResolution": "Дата, имя, имя отца и событие совпадают с ранее индексированной записью FS; новый оригинал показывает полную строку. Не создаётся второй Record.",
+    "unresolved": [
+      "Сопоставить вариант Трофимов с пятью актами семьи, где принято Трифонов."
+    ],
+    "transcriptionConfidenceCode": "high"
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Косьма, трёхмесячный сын крестьянина Ильи Трофимова Анфилогова из деревни Кожли Семилужной волости, умер 25 марта и погребён 27 марта 1897 года. Причина смерти в документе — «от младенчества». Мать не названа. Форма Трофимов подтверждена оригиналом; основное Трифонович в семейной серии требует отдельного сопоставления."
+  },
+  "primaryPersonId": "P0685",
+  "previousEvidence": {
     "captureType": "viewer-screenshot",
     "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-99Z6-X9Y8/03-target-fullscreen.png",
     "capturedAt": "2026-08-23",
@@ -105,18 +146,5 @@
         "sha256": "64f194edf64236f961fae8e58119e6a7a5b5630193464de9edcf6c24bc37d750"
       }
     ]
-  },
-  "review": {
-    "status": "needs-complete-target-image",
-    "identityResolution": "Индекс 65C9-GW3W связывает запись с P0685 и называет отца Ильёй Трофимовым Анфилоговым; пять других актов той же семьи дают форму Трифонов, принятую основной. Полная строка на локальном кадре отсутствует.",
-    "transcriptionConfidence": "high-for-visible-dates; index-only-for-deceased-and-father; low-for-small-secondary-columns",
-    "unresolved": [
-      "Сохранить новый кадр, полностью включающий целевую строку, и перечитать имя умершего, отца и вторичные графы."
-    ]
-  },
-  "summary": {
-    "status": "index-supported-summary",
-    "text": "По индексу Козьма Ильич Ампилогов умер 25 марта 1897 года; даты видны на локальном кадре, но нижняя часть целевой строки обрезана."
-  },
-  "primaryPersonId": "P0685"
+  }
 }

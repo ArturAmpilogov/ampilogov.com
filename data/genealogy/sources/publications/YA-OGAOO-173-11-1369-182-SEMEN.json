@@ -4,8 +4,14 @@
   "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
   "recordType": "primary-scan-transcription",
   "collection": {
-    "title": "Метрические книги церквей Оренбургского уезда за 1838 год",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1369, скан 182"
+    "title": "Метрические книги церквей Оренбургского уезда селений: Софийского, Зобова, Воздвиженского, Ратчины, Михайловки, Булановки, Ташлы, Никольского, Слоновки, Рождественского за 1838 г.",
+    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1369, скан 182",
+    "catalogId": "251ae823-7ff5-4759-ab91-cb39f8d47020",
+    "scanNumber": 182,
+    "repository": "ОГА Оренбургской области (ОГАОО)",
+    "fond": "173",
+    "inventory": "11",
+    "file": "1369"
   },
   "repository": {
     "name": "Объединённый государственный архив Оренбургской области",
@@ -15,110 +21,160 @@
   "links": {
     "scan": "https://yandex.ru/archive/catalog/251ae823-7ff5-4759-ab91-cb39f8d47020/182"
   },
-  "primaryPersonId": "P2010",
+  "primaryPersonId": "P2036",
   "event": {
-    "type": "baptism-godparent",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "26 января 1838 года"
+      "iso": "1838-01-26",
+      "display": "1838-01-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "деревня Кармалка, Оренбургский уезд",
-      "placeId": "karmalka-sarmanayeva"
-    }
+      "asWritten": "Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
+    },
+    "baptismDate": "1838-01-29"
   },
   "mentions": [
     {
-      "mentionId": "YA-OGAOO-173-11-1369-182-SEMEN-M1",
-      "role": "father",
-      "personId": "P90003",
-      "nameAsTranscribed": "однодворецъ Агафонъ Антилоговъ",
-      "displayName": "Агафон Данилович Анпилогов"
-    },
-    {
-      "mentionId": "YA-OGAOO-173-11-1369-182-SEMEN-M2",
-      "role": "mother",
-      "nameAsTranscribed": "жена его Васса",
-      "displayName": "Васса"
-    },
-    {
-      "mentionId": "YA-OGAOO-173-11-1369-182-SEMEN-M3",
-      "role": "baptized-child",
-      "nameAsTranscribed": "дочь Анна",
-      "displayName": "Анна Агафоновна Анпилогова",
+      "nameAsTranscribed": "Анна",
+      "role": "child",
       "personId": "P4222"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1369-182-SEMEN-M4",
-      "role": "godfather",
-      "personId": "P2010",
-      "nameAsTranscribed": "Семенъ Анпилоговъ",
-      "displayName": "Семён Анпилогов"
+      "nameAsTranscribed": "Агафонъ Анпилоговъ",
+      "role": "father",
+      "personId": "P90003"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1369-182-SEMEN-M5",
-      "role": "godmother",
-      "nameAsTranscribed": "[Семёна?] Маслова жена Марья Назарова",
-      "displayName": "Марья Назаровна Маслова"
+      "nameAsTranscribed": "Васса",
+      "role": "mother"
+    },
+    {
+      "nameAsTranscribed": "Семенъ Анпилоговъ",
+      "role": "godfather",
+      "personId": "P2036"
+    },
+    {
+      "nameAsTranscribed": "Ильи Маслова жена Марья Назарова",
+      "role": "godmother"
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "Въ генварѣ. Дватцать шестаго числа деревни Кармалы у однодворца Агафона Антилогова и жены его Вассы родилась дочь Анна. Воспріемники были той же деревни Семенъ Анпилоговъ и [Семёна?] Маслова жена Марья Назарова.",
-    "modernInterpretation": "26 января 1838 года Семён Анпилогов был восприемником Анны, дочери Агафона Анпилогова и Вассы."
+    "status": "project-visual-reading",
+    "literal": "№10. Дватцать шестаго числа деревни Кармалы у однодворца Агафона Анпилогова и жены его Вассы родилась дочь Анна. [Крещение:]29. Воспріемники были той же деревни Семенъ Анпилоговъ и Ильи Маслова жена Марья Назарова.",
+    "modernInterpretation": "26 января родилась, 29 января 1838 года крещена Анна, дочь Агафона Анпилогова и Вассы. Восприемник — Семён Анпилогов; восприемница — Марья Назарова, жена Ильи Маслова.",
+    "layoutNote": "Буквальная выписка существенных полей; квадратные скобки и многоточия обозначают неуверенность или пропуск."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "OCR искажает Кармалку как «Карлай» и фамилию отца как «Антилогов»; форма сохранена отдельно."
+    "warning": "OCR искажает Кармалку как «Карлай» и фамилию отца как «Антилогов»; форма сохранена отдельно.",
+    "previousTranscription": {
+      "status": "complete-with-uncertainties",
+      "literal": "Въ генварѣ. Дватцать шестаго числа деревни Кармалы у однодворца Агафона Антилогова и жены его Вассы родилась дочь Анна. Воспріемники были той же деревни Семенъ Анпилоговъ и [Семёна?] Маслова жена Марья Назарова.",
+      "modernInterpretation": "26 января 1838 года Семён Анпилогов был восприемником Анны, дочери Агафона Анпилогова и Вассы."
+    },
+    "antilogovSearchCard": {
+      "id": "c0e25b24-948c-4833-89b8-e6ba9d805a47",
+      "parentId": "251ae823-7ff5-4759-ab91-cb39f8d47020",
+      "originalImageSize": {
+        "width": 5806,
+        "height": 4616
+      },
+      "name": "0182 л.171об. л.172.jpg",
+      "longName": "0182 л.171об. л.172.jpg",
+      "annotation": null,
+      "shortAnnotation": null,
+      "code": null,
+      "type": "Sheet",
+      "dateFrom": "01-01-1838",
+      "dateTo": "31-12-1838",
+      "thumb": {
+        "path": "/archive/api/image?id=c0e25b24-948c-4833-89b8-e6ba9d805a47&type=thumb",
+        "width": 184,
+        "height": 146
+      },
+      "tags": [],
+      "counters": {
+        "files": 0,
+        "images": 1,
+        "funds": 0,
+        "digitized": 0,
+        "issues": 0,
+        "books": 0
+      },
+      "sheetPageNumber": 182,
+      "metaFullName": null,
+      "metaShortName": null,
+      "namepath": "ogaoo_orenburg/173-11-1369-0182 л.171об. л.172.jpg",
+      "favoriteTags": [],
+      "order": null,
+      "headerBackgroundImage": null,
+      "sourceUrl": null,
+      "sourceType": "default",
+      "contentUpdatedAt": null,
+      "contentUpdateDescriptionUrl": null,
+      "isNew": null,
+      "viewed": null,
+      "serviceTags": null,
+      "visibilityLevel": 100000,
+      "humanMarkup": null,
+      "mlMarkup": null,
+      "originalImagePath": null,
+      "snippet": "Отец, Агафон \u0007[Антилогов\u0007], однодворец, деревня Карлай. Отец, Даниил Мерьшкин, однодворец, село Михайловка. Мать, Марфа Егорова.",
+      "joinedTextBlocks": null,
+      "attributionMd": null
+    }
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-full-view.png",
-    "capturedAt": "2026-09-03",
-    "sha256": "2bd2a67cf4e8cf675544aa082b27391dcdfbc272e4a076a13a747c92aad44c36",
+    "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-antilogov-early-original.jpg",
+    "sha256": "ab9d91698e544bfe2992e8641404a87f436c8e7c5d9fa608b4aa314082b408f2",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-full-view.png",
+    "kind": "original",
+    "description": "Полный оригинал, прочитан визуально.",
+    "captureType": "downloaded-original",
+    "capturedAt": "2026-09-13",
+    "sourceUrl": "https://yandex.ru/archive/catalog/251ae823-7ff5-4759-ab91-cb39f8d47020/182",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-header.png",
-        "sha256": "773d8e96a4b2ad36ced8f3447aa34a186671f479e8de0892849f36b386d77caf",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-target-entry-document-lower.png",
-        "sha256": "f16b5235eca5b64dacd826196e485d12bde395d7a12b8793792721992245501a",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-target-entry-document-upper.png",
-        "sha256": "b9908278ea9761d8e4e5143bb4fd46bcc007509384a8ae5b330de32f484b68a7",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-antilogov-early-entry.jpg",
+        "sha256": "aeabe5075209296671b49d86ec31abbc4753337b4c6d506abc45512bc59e8618",
+        "publicDisplay": false,
+        "kind": "entry",
+        "description": "Целевая запись."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
+      "originalImageDownloaded": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "confirmedAt": "2026-09-13"
     }
   },
   "review": {
-    "status": "complete-with-uncertainties",
+    "status": "visually-reviewed",
     "unresolved": [
       "Имя мужа Марьи Назаровны перед словом «Маслова» читается неуверенно."
     ],
     "correctionHistory": [
       "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
-      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+      "2026-09-13: полное изображение и увеличенный фрагмент перечитаны; приоритет проектной расшифровки над индексом."
+    ],
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Крещение29 отдельно от рождения26. Параллель2FC416B3/5 уточняет мать: Васса Егорова. Две прежние карточки одного листа переиспользуются без нового источника."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "26 января 1838 года Семён Анпилогов был восприемником Анны, дочери Агафона Анпилогова и Вассы."
+    "text": "26 января родилась, 29 января 1838 года крещена Анна, дочь Агафона Анпилогова и Вассы. Восприемник — Семён Анпилогов; восприемница — Марья Назарова, жена Ильи Маслова."
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "personIds": [
+    "P4222",
+    "P90003",
+    "P2036"
+  ]
 }

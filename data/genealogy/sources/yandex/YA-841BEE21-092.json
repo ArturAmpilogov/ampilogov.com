@@ -1,95 +1,94 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-841BEE21-092",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 92,
     "title": "Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
+    "digitalScanNumber": 92
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/92"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage",
+    "recordNumber": "20",
     "date": {
-      "display": "1 января 1898 — 31 декабря 1900",
-      "confidence": "high-for-catalog-date"
+      "iso": "1898-05-11",
+      "from": "1898-05-11",
+      "to": "1898-05-11",
+      "display": "1898-05-11; старый стиль",
+      "confidence": "medium-year-from-book-or-section; target-day-and-month-manually-read"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-841BEE21-092-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P102309",
+      "displayName": "Дмитрий Михайлович Амфилогов",
+      "nameAsTranscribed": "Димитрий Михайлов Амфилогов",
+      "role": "marriage-witness",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Май. 20. 11. По женихе: села Тисульского крестьяне Димитрий Михайлов Амфилогов и Симеон Игнатьев Пасеев.",
+    "modernInterpretation": "11 мая 1898 года тисульский крестьянин Дмитрий Михайлович Амфилогов был поручителем по жениху в браке №20.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "по женихе: Села Тюловского крестьяне: Семеон Игнатьев Палеев и Дмитрий Михайлов \u0007[Амфилогов\u0007]; по невесте: села Тюловского крестьяне...",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 92,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-full-view.png",
     "sha256": "af17d220553f13d6a6fc5789dee99cd7383d5e08c76ed51542e1fc94a34d68a4",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-header.png",
-        "sha256": "d2de5f1bd436f192f3b1e27161adf4bd88a2dd684c01b588259e4b8f2ff9c82e",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-target-entry.png",
-        "sha256": "a51f09ae337466e650a3b8f4e87aacc86b260461e75e7e243bf1b506233df10c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0092-amfilogov-target-20260913.jpg",
+        "sha256": "b73931cda1629e32b073edb352df39b8d4eb342a16e695a95592b0b3a6e8a498",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5280x4359",
-      "targetDimensions": "1356x930",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": false
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Вса по оксмарп: вена этоссовчинокредь\nеже! СемекАть ИгнаутваПаслевь\nиловь сксифи\na-\nи Д синтрий сирий\n.,/ mocih",
-    "modernInterpretation": "Вса по оксмарп: вена этоссовчинокредь еже! СемекАть ИгнаутваПаслевь иловь сксифи a- и Д синтрий сирий .,/ mocih",
-    "localOcr": "Вса по оксмарп: вена этоссовчинокредь\nеже! СемекАть ИгнаутваПаслевь\nиловь сксифи\na-\nи Д синтрий сирий\n.,/ mocih",
-    "localOcrWithSurnameLexicon": "Вса по окслар п вена этоссовчинокред\nуже! СеменАть Игнатва Паслевь\nиловь сксифи\na -\nи Д синтрий сирий\n., / macin",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "по женихе: Села Тюловского крестьяне: Семеон Игнатьев Палеев и Дмитрий Михайлов Амфилогов; по невесте: села Тюловского крестьяне...",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Год первого раздела книги установлен по последовательности и параллельным актам 1898; в заголовке целевого разворота год не заполнен."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "11 мая 1898 года тисульский крестьянин Дмитрий Михайлович Амфилогов был поручителем по жениху в браке №20."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P102309"
 }

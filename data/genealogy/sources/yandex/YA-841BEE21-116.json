@@ -1,95 +1,96 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-841BEE21-116",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив",
+  "recordType": "death",
   "collection": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 116,
     "title": "Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
+    "digitalScanNumber": 116
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/116"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death",
+    "recordNumber": "47 (муж.)",
     "date": {
-      "display": "1 января 1898 — 31 декабря 1900",
-      "confidence": "high-for-catalog-date"
+      "iso": "1898-04-01",
+      "from": "1898-04-01",
+      "to": "1898-04-02",
+      "display": "1898-04-01 / 1898-04-02 (смерть / погребение); старый стиль",
+      "confidence": "medium-year-from-book-or-section; target-day-and-month-manually-read",
+      "deathIso": "1898-04-01",
+      "burialIso": "1898-04-02"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-841BEE21-116-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P108324",
+      "displayName": "Иван Михайлович Амфилогов",
+      "nameAsTranscribed": "Иван Михайлов Амфилогов",
+      "role": "deceased",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "Апрель. 47. 1 / 2. Села Тисульского крестьянин Иван Михайлов Амфилогов. [Возраст и причина частично закрыты сгибом.]",
+    "modernInterpretation": "Иван Михайлович Амфилогов, крестьянин Тисульского, умер 1 апреля и погребён 2 апреля 1898 года, 25 лет, от чахотки. Две параллельные копии одного акта.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "Умерший: Иван Михайлов \u0007[Амфилогов\u0007], крестьянин, село Тюлольское. Умерший: Михаил Прохоров Соснин, крестьянин из ссыльных, село Тюкольское.",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 116,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-full-view.png",
     "sha256": "eae5157af0d5f23bc3de35e57aacc2f2a4e2e987cb17a8a701397b76e192a40f",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-header.png",
-        "sha256": "aec6b10ecc33b8881a342c51861a52a85f0be1bc75a2c0b6ab2c09da49ff1158",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-target-entry.png",
-        "sha256": "c28ab4b74b30c8a9fc56c878a793c595abec8683d5bc9cf7f55a76e449002a8e",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0116-amfilogov-target-20260913.jpg",
+        "sha256": "47a4a4a2920ed9633531d79affb8fddf4ff3b4016614cfd8e6164f7c3d8034f3",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5280x4371",
-      "targetDimensions": "1383x784",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": false
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "•имa.\nоященнихв ловдиск р Но ее Ронл)\n11. д. 12 епно и гу стоа 1вій Ирасносинс вій\nаермми впичикусьский пресуавни\nсвеичити ивалтвь сХсильпиня\nоящчининь и\nВлаїнсні, В\nИ дохносиимин",
-    "modernInterpretation": "•имa. оященнихв ловдиск р Но ее Ронл) 11. д. 12 епно и гу стоа 1вий Ирасносинс вий аермми впичикусьский пресуавни свеичити ивалтвь сХсильпиня оящчининь и Влаїнсни, В И дохносиимин",
-    "localOcr": "•имa.\nоященнихв ловдиск р Но ее Ронл)\n11. д. 12 епно и гу стоа 1вій Ирасносинс вій\nаермми впичикусьский пресуавни\nсвеичити ивалтвь сХсильпиня\nоящчининь и\nВлаїнсні, В\nИ дохносиимин",
-    "localOcrWithSurnameLexicon": "11. 9.12 пно гу ста вій Прасночас вій\nарми омичикусьский пресульни\nсвеи чити ивантвь сксильшиня\nдоящеининь и\nВлаїнсні, В",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Умерший: Иван Михайлов Амфилогов, крестьянин, село Тюлольское. Умерший: Михаил Прохоров Соснин, крестьянин из ссыльных, село Тюкольское.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Возраст и причина уверенно прочитаны в экземпляре 60-1-882, скан 126. Родство с Дмитрием и Михаилом Михайловичами по одному отчеству не установлено."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Иван Михайлович Амфилогов, крестьянин Тисульского, умер 1 апреля и погребён 2 апреля 1898 года, 25 лет, от чахотки. Две параллельные копии одного акта."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108324"
 }

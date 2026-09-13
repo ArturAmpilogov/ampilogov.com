@@ -14,8 +14,9 @@
   "event": {
     "type": "birth-registration",
     "date": {
-      "display": "март 1920 года",
-      "date": "1920-03"
+      "display": "16 марта1920; акт внесён30 марта1920",
+      "iso": "1920-03-16",
+      "confidence": "high"
     },
     "place": {
       "normalized": "Оренбург",
@@ -32,7 +33,7 @@
     },
     {
       "role": "father",
-      "personId": "P8189",
+      "personId": "P5310",
       "nameAsTranscribed": "гр. г. Оренбурга Степан Григорьевич Анпилогов, слесарь",
       "displayName": "Степан Григорьевич Анпилогов",
       "surnameSeries": true
@@ -40,51 +41,55 @@
     {
       "role": "mother",
       "nameAsTranscribed": "жена его Евдокия Вонифатьевна",
-      "displayName": "Евдокия Вонифатьевна Анпилогова",
-      "surnameSeries": true
+      "displayName": "Евдокия Вонифатьевна",
+      "surnameSeries": false
     }
   ],
   "transcription": {
-    "status": "complete-for-identities-date-day-uncertain",
-    "literal": "Март 1920 г. Оренбург. М. Александр. гр. г. Оренбурга Степан Григорьевич Анпилогов, слесарь, и жена его Евдокия Вонифатьевна; 42 [возраст отца]. Девятый.",
-    "modernInterpretation": "В марте 1920 года в Оренбурге у слесаря Степана Григорьевича Анпилогова и Евдокии Вонифатьевны родился сын Александр, девятый ребёнок родителей."
+    "status": "project-transcription-from-original",
+    "literal": "16 Марта1920г. г.Оренб. М. Александръ Анпилоговъ. Гр.г.Оренбурга Степанъ Григорьевичъ Анпилоговъ, слесарь [...] мастерскихъ, и жена его Евдокія Вонифатьевна, домашн.трудъ. 5-я Мещанская ул., д.№59. Возраст родителей:58 [отец],42 [мать]. Девятый. Акт внесен30 Марта1920г.",
+    "modernInterpretation": "Александр родился16марта1920, девятый ребёнок Степана Григорьевича58лет и Евдокии Вонифатьевны42лет; отец слесарь."
   },
   "indexData": {
-    "warning": "Имена и родство прочитаны по скану. Точное число рождения на обрезанном краю строки не фиксируется без дополнительной копии."
+    "warning": "Прежние42лет отца — перенос числа из строки матери. Оригинал явно58 у отца и42 у матери. Возраст58 расходится с рождением Степана31.07.1867 (на дату акта52); фактическое рождение не пересчитывается."
   },
   "evidence": {
-    "captureType": "downloaded-original-plus-document-only-full-view-and-enlarged-target-fragment",
-    "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-original.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-full-view-clean.jpg",
-    "capturedAt": "2026-09-11",
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-antilogov-original.jpg",
     "sha256": "9f99ae90d418e960825e43d50a8a7295c60ba705b3e2988d1c89db20bcb7703f",
     "publicDisplay": false,
+    "description": "Акт1920: возраст отца58, матери42; исправление прежнего переноса42 к отцу.",
+    "capturedAt": "2026-09-13",
+    "sourceUrl": "https://yandex.ru/archive/catalog/a17992be-e97d-424b-8878-8d71e40d2f42/426",
     "fragments": [
       {
-        "kind": "full-view",
-        "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-full-view-clean.jpg",
-        "sha256": "2c2b12f10e9088733e94112fe359f42427930455113fef2ea11229a981c538d8"
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-antilogov-target.jpg",
+        "sha256": "28e6de40f47d79dd8ee98214c05ab0f345284c20924b868e825faf1ca3c03679",
+        "publicDisplay": false,
+        "description": "Акт1920: возраст отца58, матери42; исправление прежнего переноса42 к отцу."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-aleksandr-birth-clean.jpg",
-        "sha256": "48d9254c1f932dbf15c30b970b734744c1b4da159ab7a15f91edf0c6bd93f963"
+        "kind": "ages",
+        "path": "data/genealogy/evidence-private/yandex/a17992be-e97d-424b-8878-8d71e40d2f42/0426-antilogov-ages.jpg",
+        "sha256": "59d782c033ac4af828e1dd7766a71af4ee39ce4d825ece201afe972badf3aca0",
+        "publicDisplay": false,
+        "description": "Акт1920: возраст отца58, матери42; исправление прежнего переноса42 к отцу."
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-reading-of-downloaded-original-scan"
-    }
+    ]
   },
   "review": {
-    "status": "complete-with-date-day-uncertain",
-    "identityResolution": "Отец связан с P8189 по полному имени, профессии и известной супруге Евдокии Вонифатьевне."
+    "status": "complete",
+    "transcriptionConfidence": "high-for-dates-names-ages",
+    "notes": [
+      "Точная редкая супружеская пара и девятый ребёнок связывают с P5310; реальный возрастный конфликт58 против расчётных52 сохранён. Часть названия мастерских неуверенна, не нормализована."
+    ]
   },
   "summary": {
-    "status": "verified-summary",
-    "text": "В марте 1920 года в Оренбурге у Степана Григорьевича Анпилогова родился сын Александр."
+    "text": "Александр, девятый ребёнок Степана и Евдокии, родился16марта1920 вОренбурге.",
+    "status": "verified-summary"
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "researchOnly": false
 }

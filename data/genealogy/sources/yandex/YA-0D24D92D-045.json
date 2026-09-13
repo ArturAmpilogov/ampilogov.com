@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-0D24D92D-045",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "church-record",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477",
     "scanNumber": 45,
@@ -13,83 +13,186 @@
     "documentUrl": "https://yandex.ru/archive/catalog/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/45"
   },
   "event": {
-    "type": "church-record",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1863 — 31 декабря 1863",
-      "confidence": "high-for-catalog-date"
+      "display": "3/4 октября 1863",
+      "calendar": "julian",
+      "confidence": "medium",
+      "year": 1863
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "деревня Людвиновка"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-0D24D92D-045-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амѳилоговъ",
-      "surnameSeries": true
+      "role": "child",
+      "displayName": "Сергий Егоров Амфилогов",
+      "nameAsTranscribed": "Сергий Егоров Амфилогов",
+      "surnameSeries": true,
+      "personId": "P108006"
+    },
+    {
+      "mentionId": "YA-0D24D92D-045-M2",
+      "role": "father",
+      "displayName": "Егор Ефимов Амфилогов",
+      "nameAsTranscribed": "Егор Ефимов Амфилогов",
+      "surnameSeries": true,
+      "personId": "P1205"
     }
   ],
   "evidence": {
     "catalogId": "0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477",
     "scanNumber": 45,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "df73f98e7e4876a85e0bbed2d8592bd8aefeee50e89bd7b3ae925b03a5dae978",
+    "captureType": "original-download-and-visual-reading",
+    "capturedAt": "2026-09-13",
+    "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-amfilogov-review-original.jpg",
+    "sha256": "d8bfc7b280c3b6d009ade1b923f2292a06389239797fe447f8a9af04e44c9ce7",
     "fragments": [
       {
         "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-header.png",
-        "sha256": "38d4bd14bed5c5d82732d74872994e9210b79da094a0750b753bf614da0df66b",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-amfilogov-review-header.jpg",
+        "sha256": "6eb3d57249fca8e4fc0a6c2e37e099bec8c9e80296829c4eec8592cfc744ab0f",
+        "description": "Заголовок и структура сохранённого разворота."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-target-entry.png",
-        "sha256": "446e0748e4a03bd51a5d4c6d563da1f9e16d6f433bf8dfcaae030d8038479ed3",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-amfilogov-review-target.jpg",
+        "sha256": "0366b17173c080024129ed3117f8d05bcaf10ed2ae4310ddc081961319b292de",
+        "description": "Целевая запись, визуально прочитанная по оригиналу."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5197x4478",
-      "targetDimensions": "4367x3404",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "visuallyReviewed": true,
+      "fullDimensions": "5197x4478"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Приватная исследовательская копия; внешний доступ к оригиналу через Яндекс Архив."
   },
   "transcription": {
     "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Деревни Людвиновки гос. крестьянинъ Егоръ Ефимовъ Амѳилоговъ и зак. жена Агафья Максимова, оба православные. Священникъ Iоаннъ Унгвицкiй",
-    "modernInterpretation": "Деревни Людвиновки гос. крестьянинъ Егоръ Ефимовъ Амфилоговъ и зак. жена Агафья Максимова, оба православные. Священникъ Iоаннъ Унгвицкiй",
-    "localOcr": "гь ро-\nМвсяць\nпихся\nи день.\nИмена\nЗваніе, имя, отчество и фамилія\nЗваніе, имя, отчество и фамилія\nРукоприкладство свидітелей записи\nродив-\nродителей, и какого вброиспо-\nКго совершалт таинство крещенія.\nAИXCHT\nвіданія.\nво спріемниковь.\nпо желанію.\nтяфр\nКошан\nГенла впл.слерних сол. орепні\nФере вио воовни\n» Aisaorlar Fagni lagzan. xe\nествяятте? Дас\nSCeMuai? u dacn.enonoveodiй PdenrasnaB NsAa\nMhanoao,\nсenявnewsirк.\npaluchalame\nBumoniaHвumвate\nемиуетійт Lannin Yruа\ne5gва\nЛ ішконь Арег отой Клуи\nлиниіск)\nа2хИвам\nиьВашми Ану\nогонотарь ивань А но акранов\nФоревни Лйтвальан\nнойдеревим\nmoncindo @u sasiener\na gabr Mananenal\nперазь пувн-\naBas lampona\nякена Виший ст),\nономьо\nИ6анн А нцафеерь. вч.\nвд 3\nв Реенагія\nсла втео зоржанп-\nmhlun\nПарам\nи молі нии з в\nдарственный архив\nоренотрг\nей сбласти\nвлитит Дканив Чтапр\n4, інпань Арeнeтaй Нoсyемy инв\nт нанернвня Ааміафервв\nенеклавки\nerbuut nsanie\nбляд\" село\nтосья\nСергієва, ав\naIn Ruya Guakir G\naho\ncacla Mamuna\nCagennne gunin taanyges",
-    "localOcrWithSurnameLexicon": "сь ро-\nМАсяць\nпится\nи день.\nИмена\nЗваніе, имя, отчество и фамилія\nЗваніе, имя, отчество и фамилія\nРукоприкладство свидітелей записи\nродив-\nродителей, и какого вброиспо-\nКго совершалт таинство крещенія.\nвіданія.\nво спріемниковь.\nпо желанію.\nплер\nСена впл. слерні пол. ореті\nествятте? Рас\nManian,\npaluchalame\nBumonia Manna te\nамуетінт Lannin Yrua\nЛінконь Арег стой Клуи\nмини ск)\nпь Вашми Ану\nФоревни Латвильан\nнайдеревим\na gaba Manananal\nякна Виший ст),\nвд. 3\n1 Реалія\nсла втоо зоржани-\nПарам\nти малі на зі ва\nдарственный архив\nкренотрг\nей сбласти\nвлитит Оканив Чтопр\n4, іннань Аренетй Носему ан\nто нанерння А ісфервА\nebuit nsanie\nвна.\nтосья\nСергієва, ав\naho",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "literal": "№57. Сергий, родился 3, крещён 4 октября. Деревни Людвиновки государственный крестьянин Егор Ефимов Амфилогов и законная жена Агафья Михайлова, оба православные.",
+    "modernInterpretation": "№57. Сергий, родился 3, крещён 4 октября. Деревни Людвиновки государственный крестьянин Егор Ефимов Амфилогов и законная жена Агафья Михайлова, оба православные.",
+    "method": "Визуальное чтение сохранённого оригинала; сокращения и орфография частично раскрыты, неуверенные формы отмечены квадратными скобками.",
+    "indexNote": "Проектное чтение имеет приоритет над OCR и индексом; прежнее чтение сохранено в reviewHistory."
   },
   "indexData": {
     "querySnippet": "Родившийся: Сергий Егоров Амфилогов. ... Отец: Егор Ефимов Амфилогов, государственный крестьянин, деревня Людвиновка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "amfilogovExactQuery": {
+      "ordinal": 40,
+      "querySnippet": "Родившийся: Сергий Егоров [Амфилогов]. ... Отец: Егор Ефимов [Амфилогов], государственный крестьянин, деревня Людвиновка.",
+      "indexDates": [
+        "01-01-1863",
+        "31-12-1863"
+      ],
+      "usedAs": "Поисковая подсказка, не основание проектного чтения."
+    }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-visual-review-with-explicit-uncertainties",
+    "reviewedAt": "2026-09-13",
+    "transcriptionConfidence": "medium",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+      "P7934 Сергей Егорович из Людвиновки — кандидат: возраст 23 в январе 1886 отличается от рождения в октябре 1863; пока не объединён."
+    ],
+    "notes": []
+  },
+  "reviewHistory": [
+    {
+      "date": "2026-09-13",
+      "reason": "Новая проектная расшифровка сохранённого оригинала; внешний OCR сохраняется как прежнее чтение.",
+      "previous": {
+        "transcription": {
+          "status": "complete-with-explicit-reading-uncertainty",
+          "literal": "Деревни Людвиновки гос. крестьянинъ Егоръ Ефимовъ Амѳилоговъ и зак. жена Агафья Максимова, оба православные. Священникъ Iоаннъ Унгвицкiй",
+          "modernInterpretation": "Деревни Людвиновки гос. крестьянинъ Егоръ Ефимовъ Амфилоговъ и зак. жена Агафья Максимова, оба православные. Священникъ Iоаннъ Унгвицкiй",
+          "localOcr": "гь ро-\nМвсяць\nпихся\nи день.\nИмена\nЗваніе, имя, отчество и фамилія\nЗваніе, имя, отчество и фамилія\nРукоприкладство свидітелей записи\nродив-\nродителей, и какого вброиспо-\nКго совершалт таинство крещенія.\nAИXCHT\nвіданія.\nво спріемниковь.\nпо желанію.\nтяфр\nКошан\nГенла впл.слерних сол. орепні\nФере вио воовни\n» Aisaorlar Fagni lagzan. xe\nествяятте? Дас\nSCeMuai? u dacn.enonoveodiй PdenrasnaB NsAa\nMhanoao,\nсenявnewsirк.\npaluchalame\nBumoniaHвumвate\nемиуетійт Lannin Yruа\ne5gва\nЛ ішконь Арег отой Клуи\nлиниіск)\nа2хИвам\nиьВашми Ану\nогонотарь ивань А но акранов\nФоревни Лйтвальан\nнойдеревим\nmoncindo @u sasiener\na gabr Mananenal\nперазь пувн-\naBas lampona\nякена Виший ст),\nономьо\nИ6анн А нцафеерь. вч.\nвд 3\nв Реенагія\nсла втео зоржанп-\nmhlun\nПарам\nи молі нии з в\nдарственный архив\nоренотрг\nей сбласти\nвлитит Дканив Чтапр\n4, інпань Арeнeтaй Нoсyемy инв\nт нанернвня Ааміафервв\nенеклавки\nerbuut nsanie\nбляд\" село\nтосья\nСергієва, ав\naIn Ruya Guakir G\naho\ncacla Mamuna\nCagennne gunin taanyges",
+          "localOcrWithSurnameLexicon": "сь ро-\nМАсяць\nпится\nи день.\nИмена\nЗваніе, имя, отчество и фамилія\nЗваніе, имя, отчество и фамилія\nРукоприкладство свидітелей записи\nродив-\nродителей, и какого вброиспо-\nКго совершалт таинство крещенія.\nвіданія.\nво спріемниковь.\nпо желанію.\nплер\nСена впл. слерні пол. ореті\nествятте? Рас\nManian,\npaluchalame\nBumonia Manna te\nамуетінт Lannin Yrua\nЛінконь Арег стой Клуи\nмини ск)\nпь Вашми Ану\nФоревни Латвильан\nнайдеревим\na gaba Manananal\nякна Виший ст),\nвд. 3\n1 Реалія\nсла втоо зоржани-\nПарам\nти малі на зі ва\nдарственный архив\nкренотрг\nей сбласти\nвлитит Оканив Чтопр\n4, іннань Аренетй Носему ан\nто нанерння А ісфервА\nebuit nsanie\nвна.\nтосья\nСергієва, ав\naho",
+          "collation": {
+            "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
+            "yandexTextBlocksUsedForNavigationAndCollation": true
+          },
+          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+        },
+        "event": {
+          "type": "church-record",
+          "date": {
+            "display": "1 января 1863 — 31 декабря 1863",
+            "confidence": "high-for-catalog-date"
+          },
+          "place": {
+            "normalized": "не установлено"
+          }
+        },
+        "review": {
+          "status": "complete-but-reading-uncertain",
+          "transcriptionConfidence": "medium-with-explicit-uncertainty",
+          "unresolved": [
+            "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+          ]
+        },
+        "mentions": [
+          {
+            "mentionId": "YA-0D24D92D-045-M1",
+            "role": "surname-series-mention",
+            "displayName": "Амфилоговъ",
+            "nameAsTranscribed": "Амѳилоговъ",
+            "surnameSeries": true
+          }
+        ],
+        "publicCore": true,
+        "isRecord": true,
+        "recordType": "church-record",
+        "evidence": {
+          "catalogId": "0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477",
+          "scanNumber": 45,
+          "captureStatus": "complete-with-local-copy",
+          "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+          "localBackup": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-full-view.png",
+          "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-full-view.png",
+          "capturedAt": "2026-09-10",
+          "sha256": "df73f98e7e4876a85e0bbed2d8592bd8aefeee50e89bd7b3ae925b03a5dae978",
+          "fragments": [
+            {
+              "kind": "header",
+              "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-header.png",
+              "sha256": "38d4bd14bed5c5d82732d74872994e9210b79da094a0750b753bf614da0df66b",
+              "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+            },
+            {
+              "kind": "target-entry",
+              "path": "data/genealogy/evidence-private/yandex/0d24d92d-6f06-4ca8-a5ba-0e7aad3f4477/0045-target-entry.png",
+              "sha256": "446e0748e4a03bd51a5d4c6d563da1f9e16d6f433bf8dfcaae030d8038479ed3",
+              "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            }
+          ],
+          "quality": {
+            "originalImageDownloaded": true,
+            "headerAndTargetGeneratedFromOriginal": true,
+            "targetCropLocatedFromTextCoordinates": true,
+            "fullDimensions": "5197x4478",
+            "targetDimensions": "4367x3404",
+            "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          },
+          "publicDisplay": false,
+          "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+        },
+        "rejectionReason": null
+      }
+    }
+  ],
+  "personIds": [
+    "P108006",
+    "P1205"
+  ],
+  "primaryPersonId": "P108006"
 }

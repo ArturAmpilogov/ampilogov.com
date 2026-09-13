@@ -68,38 +68,34 @@
     "fuzzyQuery": true
   },
   "evidence": {
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "af0ac3b53c125851e80be3c25aadd6ac334b36f47c438b6470a48515c98fa61a",
+    "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-antilogov-final-related-original.jpg",
+    "sha256": "a63119336f6c7890f4493fece68db45fc44dcaa813be6ac49a6d7e9a9deb99c2",
+    "kind": "original",
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "localBackup": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-full-view.png",
+    "catalogId": "28ad9379-ae01-40ee-80fe-cf0139b0056d",
+    "scanNumber": 287,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-with-manually-verified-target",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-header.png",
-        "sha256": "70916df2255abfbcf0f7e56442be971a21c75981332989b00dfcc9da74196dab",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-antilogov-final-related-target.jpg",
+        "sha256": "4c16ab33945990f42ffc52b1f850bd37244a74ab5a2ff9604207a1a590f03ef2",
+        "kind": "target",
+        "publicDisplay": false
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-target-entry.png",
-        "sha256": "b9e2585ac578a9caf8d283be4e15c25ac19771a7599c694db955648edee62929",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-antilogov-final-related-header.jpg",
+        "sha256": "d06f4d0d74e3ad0a75fb5bbcbcd51443eea857e5d0536c5f956cc485e80cf2da",
+        "kind": "header",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "1248x643",
-      "targetDimensions": "1200x572",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "catalogId": "28ad9379-ae01-40ee-80fe-cf0139b0056d",
-    "scanNumber": 287,
-    "captureStatus": "complete-with-local-copy"
+      "targetRowsVisuallyConfirmed": true,
+      "method": "manual-comparison-with-preserved-transcription"
+    }
   },
   "review": {
     "status": "complete",
@@ -115,5 +111,45 @@
     "status": "verified-summary",
     "text": "Емельян Никитич Анпилогов — свидетель брака в деревне Зириклы 30 октября 1836 года."
   },
-  "isRecord": true
+  "isRecord": true,
+  "reviewHistory": [
+    {
+      "date": "2026-09-13",
+      "action": "Restored missing evidence from fresh original download; no new identity inference.",
+      "previousEvidence": {
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "af0ac3b53c125851e80be3c25aadd6ac334b36f47c438b6470a48515c98fa61a",
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+        "localBackup": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-header.png",
+            "sha256": "70916df2255abfbcf0f7e56442be971a21c75981332989b00dfcc9da74196dab",
+            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/28ad9379-ae01-40ee-80fe-cf0139b0056d/0287-target-entry.png",
+            "sha256": "b9e2585ac578a9caf8d283be4e15c25ac19771a7599c694db955648edee62929",
+            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetCropLocatedFromTextCoordinates": true,
+          "fullDimensions": "1248x643",
+          "targetDimensions": "1200x572",
+          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+        },
+        "catalogId": "28ad9379-ae01-40ee-80fe-cf0139b0056d",
+        "scanNumber": 287,
+        "captureStatus": "complete-with-local-copy"
+      }
+    }
+  ]
 }

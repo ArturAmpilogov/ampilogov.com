@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2F673576-250",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth",
   "collection": {
     "catalogId": "2f673576-27c1-49c8-8664-6814620ce316",
     "scanNumber": 250,
@@ -13,24 +13,56 @@
     "documentUrl": "https://yandex.ru/archive/catalog/2f673576-27c1-49c8-8664-6814620ce316/250"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth",
     "date": {
-      "display": "1 января 1864 — 31 декабря 1882",
-      "confidence": "high-for-catalog-date"
+      "display": "1878-04-15",
+      "calendar": "julian",
+      "date": "1878-04-15"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "normalized": "село Верхний Гумбет, Михайло-Архангельская церковь"
+    },
+    "recordNumber": 12
   },
   "mentions": [
     {
-      "mentionId": "YA-2F673576-250-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилоговъ",
-      "nameAsTranscribed": "Амфилоговъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Иннокентій",
+      "personId": "P108001",
+      "role": "child",
+      "surnameSeries": true,
+      "mentionId": "YA-2F673576-250-M1"
+    },
+    {
+      "nameAsTranscribed": "Аѳиногенъ Егоровъ Амфилоговъ",
+      "personId": "P1543",
+      "role": "father",
+      "surnameSeries": true,
+      "mentionId": "YA-2F673576-250-M2"
     }
   ],
+  "transcription": {
+    "status": "checked-relevant-entry",
+    "literal": "№ 12. Иннокентій. Апрѣля 15 [рождение], 18 [крещение]. «Учитель сельской школы ... Аѳиногенъ Егоровъ Амфилоговъ и законная жена его Евдокія [Михеева?] оба православнаго вѣроисповѣданія».",
+    "modernInterpretation": "Иннокентий Афиногенович Амфилогов родился 15 апреля, крещён 18 апреля 1878 года; отец — сельский учитель Афиноген Егорович.",
+    "scope": "Целевая запись; многоточием обозначены непрочитанные или не относящиеся к задаче части.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Иннокентий Афиногенович Амфилогов родился 15 апреля, крещён 18 апреля 1878 года; отец — сельский учитель Афиноген Егорович."
+  },
+  "notes": [
+    "Параллельная копия YA-3F5E6492-008-AMFILOGOV-REVIEW: совпадают номер, даты, родители, должность отца и восприемники. Новый профиль ребёнка не создаётся.",
+    "Отчество матери в обеих копиях неоднозначно; вариант Михеева сохранён с вопросом, не подменён уверенностью индекса."
+  ],
+  "indexData": {
+    "query": "Амфилогов",
+    "raw": "Учитель сельской школы Афиноген Егоров [Амфилогов] и законная жена его Евдокия Михеева оба православного вероисповедания.",
+    "previousLocalOcr": "/Саламунь за\nTrumecs СeubeКoT 2121-\n11 Поринтинь Сгоров\nАноргимоговлизикол\nи Свя\nная опепаего (Р9 0х 12)\nel(c\nа ипунчева оба прави\nMar\nжлавняш видонтова\n1емя\ncысns\nдалія. -\n116то\nИва\nввідинтя волад :\nsu оe\nПеарамре",
+    "warning": "Прежняя OCR-оценка заменена ручным чтением сохранённого оригинала."
+  },
   "evidence": {
     "catalogId": "2f673576-27c1-49c8-8664-6814620ce316",
     "scanNumber": 250,
@@ -42,55 +74,38 @@
     "sha256": "fec665c565fd9b56fdc98d5fa3e8f83964c5924fd141bd6a73a6cbccc9967280",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/2f673576-27c1-49c8-8664-6814620ce316/0250-header.png",
-        "sha256": "c4412f00cbfe66d1f65af4bac66bcf498843c1765070a3ac38d52cf975f953b3",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
+        "path": "data/genealogy/evidence-private/yandex/2f673576-27c1-49c8-8664-6814620ce316/0250-amfilogov-tail-target.jpg",
+        "sha256": "c661daba931d1d8f7c78b2988499528408c081594e587c15decf6bc731b0876a",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/2f673576-27c1-49c8-8664-6814620ce316/0250-target-entry.png",
-        "sha256": "d5f4559f83276a73f8b28d72e28b6dc6cc20ded1d77c5e4859f6f41c7e26094d",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Целевой акт и необходимый контекст; вручную прочитан полный оригинал.",
+        "cropBox": [
+          313,
+          1775,
+          2736,
+          2742
+        ]
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5702x4496",
-      "targetDimensions": "1200x1223",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "originalScanReadManually": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "reviewedAt": "2026-09-13"
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "/Саламунь за\nTrumecs СeubeКoT 2121-\n11 Поринтинь Сгоров\nАноргимоговлизикол\nи Свя\nная опепаего (Р9 0х 12)\nel(c\nа ипунчева оба прави\nMar\nжлавняш видонтова\n1емя\ncысns\nдалія. -\n116то\nИва\nввідинтя волад :\nsu оe\nПеарамре",
-    "modernInterpretation": "/Саламунь за Trumecs СeubeКoT 2121- 11 Поринтинь Сгоров Аноргимоговлизикол и Свя ная опепаего (Р9 0х 12) el(c а ипунчева оба прави Mar жлавняш видонтова 1емя cысns далия. - 116то Ива ввидинтя волад : su оe Пеарамре",
-    "localOcr": "/Саламунь за\nTrumecs СeubeКoT 2121-\n11 Поринтинь Сгоров\nАноргимоговлизикол\nи Свя\nная опепаего (Р9 0х 12)\nel(c\nа ипунчева оба прави\nMar\nжлавняш видонтова\n1емя\ncысns\nдалія. -\n116то\nИва\nввідинтя волад :\nsu оe\nПеарамре",
-    "localOcrWithSurnameLexicon": "11 Поринтинь Сгоров\nи Свя\nная опопа его (69 0х 12)\nа ипотева оба прави\nMar\nглавнаш видонтова\nchns\nдалія. -\n11601\nИва\nввідно волад:\nПерамие",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Учитель сельской школы Афиноген Егоров Амфилогов и законная жена его Евдокия Михеева оба православного вероисповедания.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  }
+    "status": "complete-primary-scan-reviewed",
+    "transcriptionConfidence": {
+      "display": "Высокая для приведённого чтения; отдельные сомнения названы в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P108001",
+  "relatedSourceIds": [
+    "YA-3F5E6492-008-AMFILOGOV-REVIEW"
+  ]
 }

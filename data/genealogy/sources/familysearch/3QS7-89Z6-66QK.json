@@ -17,22 +17,21 @@
   "event": {
     "type": "death",
     "date": {
-      "display": "умерла 17 марта 1904 года",
+      "display": "17/19 марта 1904",
       "iso": "1904-03-17",
-      "calendar": "source-calendar-unverified"
+      "confidence": "high"
     },
     "place": {
-      "placeId": "tomsk-governorate",
-      "asTranscribed": "Томская губерния",
-      "normalized": "Томская губерния, Российская империя",
-      "modernCountry": "Россия"
+      "asWritten": "деревня Кожли",
+      "normalized": "деревня Кожли, Семилужная волость, Томская губерния"
     }
   },
   "indexData": {
     "recordId": "6R8C-9HGL",
     "subject": "Екатерина",
     "eventDate": "1904-03-17",
-    "indexWarning": "Индексная форма имени и отчества сохранена; основная карточка дана в современном русском написании и сопоставлена с оригиналом."
+    "indexWarning": "Индексная форма имени и отчества сохранена; основная карточка дана в современном русском написании и сопоставлена с оригиналом.",
+    "correctionNote": "Индексное 0 лет раскрыто по оригиналу: 3 месяца; место Кожли и дата погребения восстановлены. Для Ильи буквальная форма Трофимов не заменяется Трифонов."
   },
   "mentions": [
     {
@@ -44,7 +43,8 @@
       "nameAsIndexed": "Екатерина",
       "modernName": "Екатерина Максимовна Анпилогова",
       "displayName": "Екатерина Максимовна Анпилогова",
-      "alternateNames": []
+      "alternateNames": [],
+      "ageAsWritten": "3 месяца"
     },
     {
       "mentionId": "FS-3QS7-89Z6-66QK-M2",
@@ -60,16 +60,9 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "умерла 17 марта 1904 года. Екатерина; отец Максим Трифонович Анпилогов; возраст младенец, индексный возраст 0 лет. Рукописные вторичные графы (восприемники, причт, причина смерти или место погребения — по типу акта): [частично неразборчивы на сохранённом кадре].",
-    "modernInterpretation": "Екатерина Максимовна Анпилогова: умерла 17 марта 1904 года; отец Максим Трифонович Анпилогов; возраст младенец, индексный возраст 0 лет.",
-    "fields": {
-      "eventDate": "умерла 17 марта 1904 года",
-      "subject": "Екатерина Максимовна Анпилогова",
-      "father": "Максим Трифонович Анпилогов",
-      "age": "младенец, индексный возраст 0 лет",
-      "birthYearEstimated": "1903–1904"
-    }
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "13. Март 17/19. Деревни Кожли крестьянина Максима Трифонова Антилогова дочь Екатерина. 3 мѣсяца. Отъ синей болѣзни. [...] на кладбищѣ деревни Кожли.",
+    "modernInterpretation": "Екатерина, дочь Максима Трифоновича, умерла 17 марта."
   },
   "sourceRelations": [
     {
@@ -79,49 +72,43 @@
     }
   ],
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-66QK/03-target-fullscreen.png",
-    "capturedAt": "2026-08-23",
-    "sha256": "75cf8c2e8d34b9e0acf03144ea15d7c8e4b2e7fbb7556b90578f8d41f2f34aff",
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0120-antilogov-original.jpg",
+    "sha256": "bfd3998872c8bafbc03d54e3b62919c4424af3c362522a7a1b6068dfed8d914f",
     "publicDisplay": false,
-    "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
-    "quality": {
-      "status": "approved-with-secondary-fields-uncertain",
-      "viewerFullscreen": true,
-      "panelsClosed": true,
-      "filmstripHidden": true,
-      "viewport": "1680x1050",
-      "limitation": "Основные имена, родство, тип события и индексная дата читаются; неразборчивые вторичные графы не восстановлены догадкой."
-    },
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/4fa82a03-ce4e-46e6-a568-a52b0fded31f/120",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "part": "familysearch-index",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-66QK/01-index-fullscreen.png",
-        "sha256": "ae2be9559aa267ce60ef09099441576c7bdc46fb8d1a472148f4a4c2ebff231d"
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0120-antilogov-target.jpg",
+        "sha256": "575e9ed87638ff51ba57319048ac464785868cf11f002d45ac93c48effd32868",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
       },
       {
-        "part": "fullscreen-overview",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-66QK/02-scan-fullscreen.png",
-        "sha256": "477b44ed91854682d2b31896d16001af97f97681d705544c69c9100d021ac1c8"
-      },
-      {
-        "part": "zoomed-target",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QS7-89Z6-66QK/03-target-fullscreen.png",
-        "sha256": "75cf8c2e8d34b9e0acf03144ea15d7c8e4b2e7fbb7556b90578f8d41f2f34aff"
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0120-antilogov-detail.jpg",
+        "sha256": "fe1866ee72382ab4acc2ac0e76dc5f039dea888279a9394810a3a0011b5dac13",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
       }
-    ]
+    ],
+    "restorationNote": "Прежние локальные FS-контрольные снимки отсутствуют; проверка поддержана полной независимой цифровой копией того же акта в Яндекс Архиве. FS sourceId и исходная ссылка сохраняются."
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "record-6R8C-9HGL-linked-to-P0666",
-    "indexCorrections": [],
-    "unresolved": [
-      "Повторно проверить бледные вторичные графы по более контрастной копии."
+    "status": "complete-rechecked-with-independent-original",
+    "notes": [
+      "P0666/P0664 high по той же дате/отцу/месту, что прежний FS-3QS7-89Z6-66QK. Записанные 3 месяца расходятся с примерно 4 месяцами от рождения 13.11.1903; сохранены оба значения. Яндекс склеил имя Иоанна Ачиновича из верхней записи с отцом Екатерины; эта ошибка исправлена."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "Екатерина Максимовна Анпилогова: умерла 17 марта 1904 года."
   },
-  "primaryPersonId": "P0666"
+  "primaryPersonId": "P0666",
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false
 }

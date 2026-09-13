@@ -1,17 +1,101 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-173-16-1119-44-IVAN",
-  "provider": "ОГА Оренбургской области — цифровой скан в Яндекс Архиве",
-  "recordType": "primary-scan-transcription",
-  "primaryPersonId": "P0299",
-  "collection": {"title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Михайловка, Ново-Никольское, Георгиевка за 1899 год", "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 1119, скан 44, мужской счёт № 116"},
-  "links": {"scan": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/44"},
-  "event": {"type": "birth-and-baptism", "recordNumber": "116", "date": {"display": "11 / 13 июня 1899 года", "date": "1899-06-11"}, "place": {"asWritten": "деревня Кармалка", "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния", "placeId": "karmalka-orenburg"}},
-  "mentions": [{"mentionId": "YA-OGAOO-173-16-1119-44-M1", "role": "godfather", "personId": "P0299", "nameAsTranscribed": "той же деревни крестьянинъ Иванъ Алексѣевъ Анпилоговъ", "displayName": "Иван Алексеевич Анпилогов", "surnameSeries": true}, {"mentionId": "YA-OGAOO-173-16-1119-44-M2", "role": "godmother", "personId": "P101498", "nameAsTranscribed": "дѣвица Ирина Михайлова Анпилогова", "displayName": "Ирина Михайловна Анпилогова", "surnameSeries": true}, {"mentionId": "YA-OGAOO-173-16-1119-44-M3", "role": "child", "nameAsTranscribed": "Петръ", "displayName": "Пётр Иванович Фомин", "surnameSeries": false}, {"mentionId": "YA-OGAOO-173-16-1119-44-M4", "role": "father", "nameAsTranscribed": "деревни Кармалки крестьянинъ Иванъ Ивановъ Ѳоминъ", "displayName": "Иван Иванович Фомин", "surnameSeries": false}],
-  "transcription": {"status": "complete-for-target-entry", "literal": "Іюнь. Мужской счёт № 116. 11 родился, 13 крещён. Петръ. Деревни Кармалки крестьянинъ Иванъ Ивановъ Ѳоминъ и законная жена его Агрипина Григоріева, оба православные. Восприемники: той же деревни крестьянинъ Иванъ Алексѣевъ Анпилоговъ и дѣвица Ирина Михайлова Анпилогова.", "modernInterpretation": "11 июня 1899 года в Кармалке родился Пётр, сын Ивана Ивановича Фомина и Агрипины Григорьевны; 13 июня его крестили. Восприемниками были Иван Алексеевич и Ирина Михайловна Анпилоговы."},
-  "indexData": {"provider": "Яндекс Архив", "warning": "Выдача использована только для нахождения листа; имена, роли, даты и контекст прочитаны по исходному скану."},
-  "evidence": {"captureType": "local-original-and-clean-enlarged-target-fragment", "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-original.jpg", "localBackup": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-original.jpg", "capturedAt": "2026-09-10", "sha256": "0308e221bd959dd0e4c57f56c3661d10f6e83f610cd1d99a11433f9cbc71b328", "publicDisplay": false, "fragments": [{"kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-fragment-ivan-entry-clean.jpg", "sha256": "f6a061c821846161d2bf0b95761da987589759d39dde694067e3e6ccb8ae81e0"}], "quality": {"documentOnlyVisuallyConfirmed": true, "targetRowsVisuallyConfirmed": true, "confirmedAt": "2026-09-10", "method": "manual-reading-of-downloaded-original-scan-and-contextual-comparison"}},
-  "review": {"status": "complete", "identityResolution": "Иван Алексеевич уверенно привязан к P0299 по полному имени, фамилии, статусу и Кармалке. Ирина впервые создаётся по полному именованию и участию в акте."},
-  "summary": {"status": "verified-summary", "text": "13 июня 1899 года Иван Алексеевич и Ирина Михайловна Анпилоговы были восприемниками при крещении Петра Фомина в Кармалке."},
-  "isRecord": true
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "baptism",
+  "collection": {
+    "title": "ogaoo_orenburg/173-16-1119-0044.jpg",
+    "catalogId": "13c848b4-e8a6-4346-b7ac-0b66e390a383",
+    "scanNumber": 44
+  },
+  "links": {
+    "documentUrl": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/44"
+  },
+  "event": {
+    "type": "baptism",
+    "date": {
+      "display": "13 июня 1899",
+      "iso": "1899-06-13",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кармалка",
+      "normalized": "деревня Кармалка"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-44-IVAN-M1",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "Иванъ Алексѣевъ Анпилоговъ",
+      "displayName": "Иванъ Алексѣевъ Анпилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-44-IVAN-M2",
+      "role": "godmother",
+      "personId": "P101498",
+      "nameAsTranscribed": "Ирина Михайлова Анпилогова",
+      "displayName": "Ирина Михайловна Анпилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-OGAOO-173-16-1119-44-IVAN-M3",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "Иванъ Терентіевъ Анпилоговъ",
+      "displayName": "Иванъ Терентіевъ Анпилоговъ",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "116. Іюнь 11 / 13. Петръ. Деревни Кармалки крестьянинъ Иванъ Ивановъ Фоминъ и законная жена его Агрипина Григоріева. Той же деревни крестьянинъ Иванъ Алексѣевъ Анпилоговъ и дѣвица Ирина Михайлова Анпилогова. 118. 11 / 13. Петръ. Деревни Кармалки крестьянинъ Терентій Евфимовъ Манаевъ и законная жена его Татіана Васильева. Той же деревни крестьяне: Иванъ Терентіевъ Анпилоговъ и Параскева Яковлева Степанова.",
+    "modernInterpretation": "В двух записях о Петрах названы три восприемника исследуемого ряда."
+  },
+  "indexData": {
+    "query": "Антилогов",
+    "querySnippet": "Той же деревни крестьяне: Иван Терентиев \u0007[Антилогов\u0007] и Параскева Яковлева Степанова. Генерозов Священник Павел.",
+    "warning": "Индекс только поисковая подсказка; роли, даты и родство прочитаны по оригиналу."
+  },
+  "evidence": {
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-antilogov-original.jpg",
+    "sha256": "0308e221bd959dd0e4c57f56c3661d10f6e83f610cd1d99a11433f9cbc71b328",
+    "publicDisplay": false,
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/13c848b4-e8a6-4346-b7ac-0b66e390a383/44",
+    "capturedAt": "2026-09-13",
+    "fragments": [
+      {
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-antilogov-target.jpg",
+        "sha256": "d38f61961a911e899866e21a9a8074e4696f290fc527dd0987a0baa5a516aea4",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      },
+      {
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/13c848b4-e8a6-4346-b7ac-0b66e390a383/0044-antilogov-detail.jpg",
+        "sha256": "4aebe6e4a5c06b1714737de4ac8998184bf2dde527a16279795a24f32c5f1275",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      }
+    ]
+  },
+  "review": {
+    "status": "complete",
+    "transcriptionConfidence": "medium-high",
+    "notes": [
+      "Прежний машинный набор заменён проектным чтением. Прежнее тождество Ивана Алексеевича с P0299 снято: одинакового имени и Кармалки недостаточно при кандидатах P0298/P0299; P91032 в июне 1899 ещё 12-летний и не выбран. Иван Терентьевич также без personId: P1334/P1583/P91190/P102197/P101497 не различимы без возраста, супруги или военного статуса.",
+      "Технически объединён дубликат YA-13C848B4-044 того же canonical URL; прежний ID и полный before сохранены в names-final-canonical-dedup."
+    ]
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false,
+  "relatedSourceIds": [
+    "YA-OGAOO-173-16-1119-44-IVAN"
+  ]
 }

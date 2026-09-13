@@ -16,7 +16,7 @@ if (!manifestArgument) throw new Error("Нужен --manifest path/to/search.jso
 const manifest = JSON.parse(await readFile(path.resolve(root, manifestArgument), "utf8"));
 const only = new Set(String(args.get("--only") ?? "").split(",").filter(Boolean));
 let allRows = [...new Map(
-  manifest.batches.flatMap((batch) => batch.results)
+  (manifest.batches?.flatMap((batch) => batch.results) ?? manifest.results ?? [])
     .filter((row) => row.capture !== false || only.has(`${row.catalogId}/${row.scanNumber}`))
     .map((row) => [`${row.catalogId}/${row.scanNumber}`, row]),
 ).values()];
@@ -75,16 +75,16 @@ for (const [index, row] of rows.entries()) {
   }).sort((left, right) => right.overlap - left.overlap);
   const matches = candidates.length ? [candidates[0].box] : [];
   const sourceBox = matches.length ? {
-    left: Math.min(...matches.map((box) => box.left)) - 140,
-    top: Math.min(...matches.map((box) => box.top)) - 260,
-    right: Math.max(...matches.map((box) => box.right)) + 140,
-    bottom: Math.max(...matches.map((box) => box.bottom)) + 260,
+    left: Math.min(...matches.map((box) => box.left)) - 300,
+    top: Math.min(...matches.map((box) => box.top)) - 500,
+    right: Math.max(...matches.map((box) => box.right)) + 300,
+    bottom: Math.max(...matches.map((box) => box.bottom)) + 500,
   } : { left: expected.width * 0.08, top: expected.height * 0.12, right: expected.width * 0.92, bottom: expected.height * 0.88 };
   const box = {
     left: Math.max(0, Math.floor(sourceBox.left * scaleX)),
-    top: Math.max(0, Math.floor((expected.height - sourceBox.bottom) * scaleY)),
+    top: Math.max(0, Math.floor(sourceBox.top * scaleY)),
     right: Math.min(actual.width, Math.ceil(sourceBox.right * scaleX)),
-    bottom: Math.min(actual.height, Math.ceil((expected.height - sourceBox.top) * scaleY)),
+    bottom: Math.min(actual.height, Math.ceil(sourceBox.bottom * scaleY)),
   };
   const width = Math.max(1, box.right - box.left);
   const height = Math.max(1, box.bottom - box.top);

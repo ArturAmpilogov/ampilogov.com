@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-045",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 45,
@@ -12,7 +12,7 @@
     "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/45"
   },
   "event": {
-    "type": "birth-family",
+    "type": "source-verification",
     "date": {
       "display": "1913",
       "confidence": "high-for-year"
@@ -21,24 +21,7 @@
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-D04CCD92-045-M1",
-      "role": "father",
-      "personId": "P102646",
-      "displayName": "крестьянин Мирон Константинов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Миронъ Константиновъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-D04CCD92-045-M2",
-      "role": "mother",
-      "personId": null,
-      "displayName": "жена его Марѳа Ипатова",
-      "nameAsTranscribed": "жена его Марѳа Ипатова",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 45,
@@ -57,8 +40,8 @@
       {
         "kind": "target-entry",
         "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-target-entry.png",
-        "sha256": "6fc1e30c4d466304ecb61f032a3c7c19f34ea7a71ed0626cae56951d2fa4188b",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "sha256": "f2d0d21469db358895590cfaafbb36b042c87b2f1a452cd01e0ef4d11d498ace",
+        "description": "Широкий фрагмент всех сохранившихся записей № 103–107; вручную подтверждено отсутствие фамильного ряда Ампиловых."
       }
     ],
     "quality": {
@@ -66,18 +49,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5305x4370",
-      "targetDimensions": "2541x837",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3600",
+      "method": "manual-full-page-negative-verification",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Мирон Константинов Ампилов и жена его Марфа Ипатова; православные.",
-    "modernInterpretation": "Мирон Константинович Ампилов и Марфа Ипатовна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-full-scan-negative-verification",
+    "literal": "На полном листе с записями № 103–107 фамильная форма «Ампилов» отсутствует. Индексное чтение о Мироне Константинове Ампилове сканом не подтверждается.",
+    "modernInterpretation": "Поисковое попадание является ложным: носитель фамильного ряда на доступном листе не найден.",
+    "indexNote": "Решение принято по ручному просмотру полного оригинала и всех строк широкого доказательного фрагмента; значение индекса не перенесено в чтение скана.",
     "localOcr": "«ОДАЛЫ\nNO\nИСТРичеСкой книги NА/9/3\nгÓдZ, чÁсть ПерваА, й РОдИ",
     "localOcrWithSurnameLexicon": "«ПОДАЛЬН\nNO\nИСТРичеСкой книги нА /9/3",
     "collation": {
@@ -86,18 +72,19 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-false-index-hit",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-visible-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный лист и все сохранившиеся строки № 103–107; фамильный ряд отсутствует"
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Евдокия Максимова Ампилова. ... Мать: Марфа Иоаннова Ампилова. Крёстный отец: Иоанн Евфимов Медведкин, крестьянин, то же село.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индексное фамильное чтение не подтверждается ни одной строкой полного листа."
   }
 }

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-09-13",
+  "auditor": "cross-batch-data-and-source-review-agent",
+  "status": "passed",
+  "master": "data/genealogy/searches/yandex-archive-amfilogov-2026-09-13.json",
+  "method": "Независимая структурная сверка исходных capture и итоговых batch с фактическими source/profile файлами; SHA каждого текущего evidence проверен. Факт визуальной обработки каждой карточки проверен по явной записи выполнившего чтение агента; независимое повторное чтение спорных фрагментов описывается отдельно.",
+  "coverage": {
+    "expectedPositions": 212,
+    "capturedPositions": 212,
+    "processedPositions": 212,
+    "pendingPositions": 0,
+    "uniqueCanonicalUrls": 209,
+    "duplicateUrlPositions": 3,
+    "uniqueSourceFiles": 209,
+    "newSources": 47,
+    "reusedSources": 162,
+    "publicSources": 190,
+    "researchOnlySources": 19,
+    "linkedProfiles": 103,
+    "newProfiles": 61,
+    "patronymicExceptionProfiles": 3,
+    "evidenceFiles": 485,
+    "evidenceSha256Matches": 485,
+    "visualReviewAttestations": 209,
+    "blockingIssues": 0
+  },
+  "pendingOrdinals": [],
+  "scope": {
+    "after1950PublicSources": [],
+    "publicSourcesWithoutExplicitYear": [],
+    "researchOnlySourcesWithProfileLinks": [],
+    "reverseProfileLinksToResearchOnlySources": [],
+    "patronymicExceptions": [
+      {
+        "personId": "P108003",
+        "explanationPresent": true,
+        "sourceIds": [
+          "YA-B4A5E034-593"
+        ]
+      },
+      {
+        "personId": "P108004",
+        "explanationPresent": true,
+        "sourceIds": [
+          "YA-0B9DC053-094-AMFILOGOV-REVIEW"
+        ]
+      },
+      {
+        "personId": "P108611",
+        "explanationPresent": true,
+        "sourceIds": [
+          "YA-81B04647-162"
+        ]
+      }
+    ]
+  },
+  "identity": {
+    "profiles": 103,
+    "missingBacklinks": [],
+    "unresolvedCandidatesRetained": true,
+    "crossBatchCandidates": [
+      {
+        "personIds": [
+          "P6977",
+          "P102416"
+        ],
+        "ordinals": [
+          80,
+          139
+        ],
+        "status": "strong-candidate-not-merged",
+        "reason": "Полное имя Никанор Иванович и Ново-Троицкая Бузулукского уезда совпадают; упоминание Дурасова в названии P6977 не исключает тождества. Восприемническая запись №139 не сообщает возраста или жены, поэтому окончательное объединение не произведено."
+      }
+    ]
+  },
+  "evidence": {
+    "uniqueFiles": 485,
+    "existingFiles": 485,
+    "sha256Matches": 485,
+    "issues": []
+  },
+  "crossBatch": {
+    "duplicateCanonicalUrls": [
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/81ce785b-450f-4d0a-b952-c25abb307470/129",
+        "ordinals": [
+          109,
+          111
+        ],
+        "sourceIds": [
+          "YA-81CE785B-129"
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/30187144-b6ce-4975-acac-1c753e8a6c2d/193",
+        "ordinals": [
+          140,
+          141
+        ],
+        "sourceIds": [
+          "YA-30187144-193"
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/d30c10ef-4a2d-4c61-bea0-a1d8bbdd6f15/130",
+        "ordinals": [
+          200,
+          201
+        ],
+        "sourceIds": [
+          "YA-D30C10EF-130"
+        ]
+      }
+    ],
+    "canonicalSourceOverlaps": [],
+    "conflictingBatchEntries": []
+  },
+  "missingVisualReviewAttestations": [],
+  "issues": [],
+  "independentVisualSpotChecks": {
+    "spotChecks": [
+      {
+        "ordinal": 172,
+        "result": "Целевая фамилия и роль восприемника подтверждены; отчество скрыто сгибом, привязка к P102309 вероятная и явно оговорена."
+      },
+      {
+        "ordinal": 184,
+        "result": "Матвей Амфилогиев и Федосей Захар… — два восприемника. Форма Амфилогиев подтверждена повторной сверкой увеличенного оригинала руководителем исследования; роль этой формы как фамилии либо патронимического именования неоднозначна. Трёхчастное именование Матвея не доказано. Research-only без профиля сохранено."
+      },
+      {
+        "ordinal": 196,
+        "result": "Фамилия Горбан подтверждена; публичное исключение корректно."
+      },
+      {
+        "ordinal": 203,
+        "result": "Павел, сын Дмитрия Михайлова, 12/13 января; отсутствие доступного возраста оправдывает отдельный профиль от Павла 1900."
+      },
+      {
+        "ordinal": 217,
+        "result": "Близнецы Тимофей и Геннадий; отец Дмитрий Михайлов, мать Анастасия Макарова; восприемница Евдокия Михайлова Амфилова подтверждены."
+      },
+      {
+        "ordinal": 223,
+        "result": "Василий Михайлов Амфилогов — восприемник, не отец ребёнка; другая восприемница — жена дворянина, без профиля."
+      },
+      {
+        "ordinal": 233,
+        "result": "Ссыльнополитический Всеволод Николаев Амфилогов — восприемник, не отец ребёнка; статус и отчество подтверждены."
+      },
+      {
+        "ordinal": 237,
+        "result": "Евфимий Амфилогиев Антоненко; патроним и фамилия различены правильно, профиль researchSubject с оговоркой."
+      },
+      {
+        "ordinal": 242,
+        "result": "Полный лист и целевой фрагмент просмотрены; слабая читаемость и отсутствие точного года явно оговорены. Форма Александр Петр... сохранена с ограничением."
+      }
+    ],
+    "reverseProfileLinksToResearchOnlySources": [],
+    "note": "Это выборочная независимая повторная сверка. Визуальная обработка остальных подтверждается исходными протоколами агентов, а не заявляется повторным независимым чтением каждого листа."
+  },
+  "projectChecks": {
+    "genealogyAudit": {
+      "command": "npm run genealogy:audit",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 6,
+      "warningScope": "Прежние missing-source-backlink YA-F4BFF9CA-21/23/26/64 вне этой выдачи."
+    },
+    "gitDiffCheck": {
+      "command": "git diff --check",
+      "exitCode": 0
+    },
+    "typescript": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0
+    },
+    "directoryIndex": {
+      "command": "node scripts/genealogy/build-directory-indexes.mjs",
+      "exitCode": 0,
+      "records": 7837,
+      "people": 5112,
+      "sourcePaths": 13033,
+      "personPaths": 5614,
+      "mapPlaces": 250
+    },
+    "evidenceStore": {
+      "command": "pnpm genealogy:evidence:upload; pnpm genealogy:evidence:upload --verify",
+      "exitCode": 0,
+      "uploadedFilesAcrossWorktree": 654,
+      "uploadedBytesAcrossWorktree": "836.6 MB",
+      "verificationRemainingFiles": 0,
+      "verificationChangedFiles": 0,
+      "note": "Синхронизация охватывает все новые и изменённые evidence текущего рабочего дерева; отдельно 485 файлов этой выдачи сверены по локальным SHA256."
+    },
+    "browserSmoke": {
+      "status": "passed",
+      "checks": [
+        "P108619 публично открывается с Record-ссылкой",
+        "YA-8E327868-126 публично открывается и ведёт обратно на P108619",
+        "research-only YA-2142597D-167-AMFILOGOV-REVIEW возвращает 404 в публичном маршруте"
+      ]
+    }
+  }
+}

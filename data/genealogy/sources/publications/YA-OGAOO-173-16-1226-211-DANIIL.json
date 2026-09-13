@@ -15,28 +15,32 @@
   "links": {
     "scan": "https://yandex.ru/archive/catalog/cb84b107-c877-441d-9d7e-bd3a0ba7e586/211"
   },
-  "primaryPersonId": "P6986",
+  "primaryPersonId": "P1281",
   "event": {
     "type": "death-burial",
     "date": {
-      "display": "9 октября 1883 года; погребение 10 октября"
+      "iso": "1883-10-09",
+      "display": "9 октября1883",
+      "confidence": "high"
     },
     "place": {
       "normalized": "Новопокровский приход, Оренбургская губерния"
-    }
+    },
+    "burialDate": "1883-10-10",
+    "recordNumber": 46
   },
   "mentions": [
     {
       "mentionId": "YA-OGAOO-173-16-1226-211-DANIIL-M1",
       "role": "deceased-child",
-      "personId": "P6986",
+      "personId": "P1281",
       "nameAsTranscribed": "Даніилъ, 14 лет",
       "displayName": "Даниил Семёнович Анпилогов"
     },
     {
       "mentionId": "YA-OGAOO-173-16-1226-211-DANIIL-M2",
       "role": "father",
-      "personId": "P5778",
+      "personId": "P1188",
       "nameAsTranscribed": "Орскаго мѣщанина Семена Евфимова Анпилогова",
       "displayName": "Семён Ефимович Анпилогов"
     },
@@ -48,54 +52,93 @@
     }
   ],
   "transcription": {
-    "status": "complete",
+    "status": "project-visual-reading",
     "literal": "Октября 9 / 10. Мужской счёт № 46. Орскаго мѣщанина Семена Евфимова Анпилогова сынъ Даніилъ, 14 лет, умеръ отъ простуды. Погребение совершали священникъ Александръ Ястребовъ и и. д. псаломщика Петръ Покровскій.",
     "modernInterpretation": "9 октября 1883 года от простуды умер 14-летний Даниил, сын орского мещанина Семёна Ефимовича Анпилогова; погребён 10 октября."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Поисковый сниппет объединяет отцов умерших из двух соседних строк. Целевая запись — смерть Даниила, сына Семёна Ефимовича Анпилогова, мужской счёт № 46."
+    "warning": "Поисковый сниппет объединяет отцов умерших из двух соседних строк. Целевая запись — смерть Даниила, сына Семёна Ефимовича Анпилогова, мужской счёт № 46.",
+    "beforeVisualReview20260913": {
+      "transcription": {
+        "status": "project-visual-reading",
+        "literal": "Октября 9 / 10. Мужской счёт № 46. Орскаго мѣщанина Семена Евфимова Анпилогова сынъ Даніилъ, 14 лет, умеръ отъ простуды. Погребение совершали священникъ Александръ Ястребовъ и и. д. псаломщика Петръ Покровскій.",
+        "modernInterpretation": "9 октября 1883 года от простуды умер 14-летний Даниил, сын орского мещанина Семёна Ефимовича Анпилогова; погребён 10 октября."
+      },
+      "review": {
+        "status": "complete",
+        "unresolved": [],
+        "correctionHistory": [
+          "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "evidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-full-view.png",
+        "capturedAt": "2026-09-07",
+        "sha256": "494bc7e172088dd7d6823115617d6474580d30becc289b845655814149d34d57",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-header.png",
+            "sha256": "c7019a8f76eb87e759863b4927027195a3e692dcd42b3e89f375f04f023f52e9",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-target-entry.png",
+            "sha256": "f7e299598d26b2c59d318de3c6bb72f4b4ef09aac5970ddec6e0e0d591b120fc",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-07",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      }
+    }
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-full-view.png",
-    "capturedAt": "2026-09-07",
-    "sha256": "494bc7e172088dd7d6823115617d6474580d30becc289b845655814149d34d57",
+    "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-antilogov-early-semen-original.jpg",
+    "sha256": "a6fd2068cb8a528dbdafd1d89e119a2fbad7093593ecb3f9a5987cc9ddfcbf3d",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-full-view.png",
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "capturedAt": "2026-09-13",
+    "sourceUrl": "https://yandex.ru/archive/catalog/cb84b107-c877-441d-9d7e-bd3a0ba7e586/211",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-header.png",
-        "sha256": "c7019a8f76eb87e759863b4927027195a3e692dcd42b3e89f375f04f023f52e9",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-target-entry.png",
-        "sha256": "f7e299598d26b2c59d318de3c6bb72f4b4ef09aac5970ddec6e0e0d591b120fc",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/cb84b107-c877-441d-9d7e-bd3a0ba7e586/0211-antilogov-early-semen-crop.jpg",
+        "sha256": "a8360bf246e0cf3afe75c9f62230abf4cf83a57af8a2a50f1ab1f3891845cbf4",
+        "publicDisplay": false,
+        "kind": "target-entry"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-07",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
-    "status": "complete",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "notes": [
+      "Оригинал подтверждает9/10октября1883,14лет,отпростуды. P6986→P1281: уникальный отец/семья,рождение10декабря1869 и округлённый возраст14лет согласуются. Мать известна по рождению,не по смерти."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "9 октября 1883 года умер 14-летний Даниил, сын орского мещанина Семёна Ефимовича Анпилогова."
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "personIds": [
+    "P1281",
+    "P1188"
+  ]
 }

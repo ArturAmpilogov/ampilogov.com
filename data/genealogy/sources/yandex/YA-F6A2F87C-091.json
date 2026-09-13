@@ -1,80 +1,157 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-F6A2F87C-091",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "marriage-witness",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "marriage",
   "collection": {
+    "title": "ogaoo_orenburg/173-16-787-0091 .jpg",
+    "archiveCitation": "ogaoo_orenburg/173-16-787-0091 .jpg; скан 91; акт №16",
     "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
-    "scanNumber": 91,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Михайловка, Ратчино, Николаевка за 1891 г."
+    "scanNumber": 91
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/91"
   },
   "event": {
-    "type": "marriage-witness",
+    "type": "marriage",
     "date": {
-      "display": "1891",
-      "confidence": "high-for-year"
+      "display": "1891-02-03",
+      "date": "1891-02-03",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "normalized": "деревня Кармалка, Оренбургская губерния"
+      "normalized": "деревня Кармалка"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-F6A2F87C-091-M1",
-      "role": "witness",
-      "personId": "P102331",
-      "nameAsTranscribed": "крестьянинъ Терентій Сергіевъ Ампелоговъ",
-      "displayName": "Терентий Сергеевич Ампелогов",
-      "surnameSeries": true
+      "nameAsTranscribed": "Михаилъ Тимофеевъ Антилоговъ",
+      "displayName": "Михаил Тимофеев Антилогов",
+      "role": "groom",
+      "surnameSeries": true,
+      "personId": "P5622"
+    },
+    {
+      "mentionId": "YA-F6A2F87C-091-M2",
+      "nameAsTranscribed": "Терентій Сергіевъ Антилоговъ",
+      "displayName": "Терентій Сергіев Антилогов",
+      "role": "surety-groom",
+      "surnameSeries": true,
+      "personId": "P102331"
     }
   ],
+  "transcription": {
+    "status": "manually-reviewed-primary-scan",
+    "literal": "№15. Февраль3. По женихѣ: деревни Кармалки крестьяне [другие], Терентій Сергіевъ Антилоговъ. №16.3. Деревни Кармалки крестьянинъ Михаилъ Тимофеевъ Антилоговъ, православный, первымъ бракомъ,20. Той же деревни крестьянская дочь дѣвица Іуліанія Прокопіева [Гуева?], православная, первымъ бракомъ,17.",
+    "modernInterpretation": "Михаил Тимофеевич,20лет, женился3февраля1891 на17-летней Иулиании Прокопьевне. В соседнем акте того же дня Терентий Сергеевич — поручитель по жениху.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
+  },
+  "notes": [
+    "P5622 high: рождение3ноября1870 точно соответствует20лет; полная пара и Кармалка продолжены детьми1894и позднее.",
+    "Старое упоминание Терентия сохранено и повторно прочитано; буквальная фамилия выглядит Антилоговъ, прежнее Ампелогов сохранено в истории. Он поручитель в акте15, не в браке Михаила16.",
+    "Фамилия невесты Гуева читается не вполне уверенно; отчество Прокопиева и имя устойчивы."
+  ],
+  "indexData": {
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "Деревни Кармалки крестьянин Михаил Тимофеев \u0007[Антилогов\u0007] ; Православный Первым браком.",
+    "catalogDateFrom": "01-01-1891",
+    "catalogDateTo": "31-12-1891",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
+  },
   "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-antilogov-original.jpg",
+    "sha256": "998107482553a78f705e2484d05b28c8a92b67b52d175d0957a62e3c201954c1",
     "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
     "scanNumber": 91,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-full-view.png",
-    "capturedAt": "2026-09-09",
-    "sha256": "60293aaff3cbe57ee8457aefe7b7297c0c10253148a30e27cb6b308416fb962f",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-header.png",
-        "sha256": "2719319bfda49cfcd66e40b5e404eb21b3f091504891dbe1c1b3ef241011fc24",
-        "description": "Область заголовка, структуры или верхней части исходного листа."
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-antilogov-target.jpg",
+        "sha256": "077f7ca8697b9414f343ee4f334f0be92ba70a8f7579e9fc4d3082c1a24ca10a",
+        "kind": "target-entry",
+        "cropBox": [
+          263,
+          793,
+          4508,
+          2177
+        ]
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-target-entry.png",
-        "sha256": "9dd74f3fdb15fd1c3136bf2e878b6b290b493b8d083a86ec07aeef8625d38a3b",
-        "description": "Крупный фрагмент целевой строки с соседним первичным контекстом."
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-antilogov-header.jpg",
+        "sha256": "4dc93827ff49aad847f9c73b05cdaa31528867d09547771dec4db6dbbfb912e3",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          4796,
+          885
+        ]
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-09",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "4796x3690"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия оригинального листа и фрагменты сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "- По женихѣ : деревни Кармалки Крестьяне : Алексѣй Ивановъ Студенининъ Терентій Сергіевъ Ампелоговъ Іаковъ Евфиміевъ Баловневъ, по невѣстѣ : той же деревни крестьяне : Павелъ Евсѣвіевъ Дымовъ, Ѳеодоръ Прокопіевъ Гуевъ, Кассіанъ Степановъ Степановъ и Петръ Стрѣльниковъ.",
-    "modernInterpretation": "Первичный лист подтверждает упоминание Терентий Сергеевич Ампелогов.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение сверено вручную по сохранённому оригинальному изображению."
+    ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
-  }
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-primary-scan-transcription-with-local-evidence",
+        "literal": "- По женихѣ : деревни Кармалки Крестьяне : Алексѣй Ивановъ Студенининъ Терентій Сергіевъ Ампелоговъ Іаковъ Евфиміевъ Баловневъ, по невѣстѣ : той же деревни крестьяне : Павелъ Евсѣвіевъ Дымовъ, Ѳеодоръ Прокопіевъ Гуевъ, Кассіанъ Степановъ Степановъ и Петръ Стрѣльниковъ.",
+        "modernInterpretation": "Первичный лист подтверждает упоминание Терентий Сергеевич Ампелогов.",
+        "indexNote": "Индекс Яндекса использован только для навигации; чтение сверено вручную по сохранённому оригинальному изображению."
+      },
+      "previousEvidence": {
+        "catalogId": "f6a2f87c-90e0-441d-a5d7-3f3dc53009ae",
+        "scanNumber": 91,
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-full-view.png",
+        "capturedAt": "2026-09-09",
+        "sha256": "60293aaff3cbe57ee8457aefe7b7297c0c10253148a30e27cb6b308416fb962f",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-header.png",
+            "sha256": "2719319bfda49cfcd66e40b5e404eb21b3f091504891dbe1c1b3ef241011fc24",
+            "description": "Область заголовка, структуры или верхней части исходного листа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/f6a2f87c-90e0-441d-a5d7-3f3dc53009ae/0091-target-entry.png",
+            "sha256": "9dd74f3fdb15fd1c3136bf2e878b6b290b493b8d083a86ec07aeef8625d38a3b",
+            "description": "Крупный фрагмент целевой строки с соседним первичным контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-09",
+          "method": "manual-reading-of-downloaded-original",
+          "fullDimensions": "4796x3690"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия оригинального листа и фрагменты сохранены только для исследовательской проверки; публичная ссылка ведёт исключительно на Яндекс Архив."
+      }
+    }
+  ],
+  "primaryPersonId": "P5622"
 }

@@ -1,95 +1,110 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-841BEE21-233",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "provider": "Яндекс Архив",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 233,
     "title": "Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
-    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского"
+    "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 3, Метрические книги записей о рождении, браке и смерти церкви села Тисульского",
+    "digitalScanNumber": 233
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/233"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "marriage",
+    "recordNumber": null,
     "date": {
-      "display": "1 января 1898 — 31 декабря 1900",
-      "confidence": "high-for-catalog-date"
+      "from": "1899-01-01",
+      "to": "1900-12-31",
+      "display": "1899–1900; точная дата брака не установлена",
+      "confidence": "uncertain-year-from-conflicting-section-title"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Тисульское"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-841BEE21-233-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амфилогов",
-      "nameAsTranscribed": "Амфилогов",
+      "personId": "P102309",
+      "displayName": "Дмитрий Михайлович Амфилогов",
+      "nameAsTranscribed": "Димитрий Михайлов Амфилогов",
+      "role": "marriage-witness",
+      "sex": "male",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "target-transcribed-date-partly-unresolved",
+    "literal": "По невесте: села Тисульского крестьяне Димитрий Михайлов Амфилогов и Прокопий Кириллов Крюков.",
+    "modernInterpretation": "Тисульский крестьянин Дмитрий Михайлович Амфилогов был поручителем по невесте. Дата брака не восстановлена: лист поручителей не состыкован с левой половиной; раздел ориентировочно 1899–1900 годов.",
+    "scope": "Целевая запись и необходимый контекст; переносы и дореформенная орфография нормализованы, сомнения указаны явно.",
+    "collation": {
+      "originalScanReadManually": true
+    }
+  },
+  "indexData": {
+    "rawSearchSnippet": "по женихе: Села Больше-Барандатского крестьяне: Петр Кирилов Казенных и Никита Иванов Кузин; по невесте: села Тюсюльского крестьяне: Дмитрий Михайлов \u0007[Амфилогов\u0007] и...",
+    "warning": "Поисковый индекс использован только для навигации; приоритет у прочитанного оригинала."
+  },
   "evidence": {
     "catalogId": "841bee21-d739-4dfa-b269-7156c8b230a2",
     "scanNumber": 233,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-full-view.png",
-    "capturedAt": "2026-09-10",
+    "localBackup": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-full-view.png",
     "sha256": "dafbe4c60d9a9b2338ac15da4fc376a694d6a374d583c540f575c65cb2855c69",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-with-manually-confirmed-target-crop",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-header.png",
-        "sha256": "90eda26280096483ee66aa45f8f60763c4bda1f3df79dc454af288cbd5f0f46c",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-amfilogov-target-20260913.jpg",
+        "sha256": "0c184d23c658e630a17fc12d5c667bad035d2dd5e6699ee892ca14cfb0fa044e",
+        "description": "Полная целевая строка или подтверждающая подпись, вырезанная из оригинала и проверенная вручную.",
+        "publicDisplay": false
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0233-target-entry.png",
-        "sha256": "e024c0072c4f873ea5bc706323b83afe2a96486cfe70b53ddeec2abee5b4e761",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "context",
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0234-amfilogov-context-20260913.jpg",
+        "sha256": "f616a11274d8e1e526ca1e2da2f2982e7c6d6c3422bb3cb620f8cb1dd0bdc7de",
+        "sourceUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/234",
+        "description": "Проверенный соседний разворот для локализации записи или календарного контекста.",
+        "publicDisplay": false
+      },
+      {
+        "kind": "year-title-conflict",
+        "path": "data/genealogy/evidence-private/yandex/841bee21-d739-4dfa-b269-7156c8b230a2/0137-year-title.png",
+        "sha256": "6a47d1fe10ade48c817dafdbf37a42b96b1f3ca16eae9ff5cf49a38089b98093",
+        "sourceUrl": "https://yandex.ru/archive/catalog/841bee21-d739-4dfa-b269-7156c8b230a2/137",
+        "description": "Титул: крупное 1900 над прежним 1899; две видимые даты не разрешают автоматически год каждого акта раздела.",
+        "publicDisplay": false
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5396x4238",
-      "targetDimensions": "1352x977",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "headerVisuallyConfirmed": false
+    }
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ТИПОГРАФІН\nКОКСКО!\nСИПОААННО\nВТОРÍЙ, Щ БРАКОСОЧЕТАВШИ\nlh\nПодп\nКто выли порвчйтели.\nЗÁпнс\nроосенивть! Сесла Миманьснено креств",
-    "modernInterpretation": "ТИПОГРАФІН КОКСКО! СИПОААННО ВТОРÍЙ, Щ БРАКОСОЧЕТАВШИ lh Подп Кто выли порвчйтели. ЗÁпнс роосенивть! Сесла Миманьснено креств",
-    "localOcr": "ТИПОГРАФІН\nКОКСКО!\nСИПОААННО\nВТОРÍЙ, Щ БРАКОСОЧЕТАВШИ\nlh\nПодп\nКто выли порвчйтели.\nЗÁпнс\nроосенивть! Сесла Миманьснено креств",
-    "localOcrWithSurnameLexicon": "ТИПОГРАФІН\nКОКСКО!\nСУПОДАННО\nВТОРАМ, Щ БРАКОСОЧЕТАВШИ\nПодп\nКто вили порвуйтели.\nромениять! Сесла Миальснего кресть",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "по женихе: Села Больше-Барандатского крестьяне: Петр Кирилов Казенных и Никита Иванов Кузин; по невесте: села Тюсюльского крестьяне: Дмитрий Михайлов Амфилогов и...",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    "status": "primary-scan-read-date-partly-unresolved",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "На левой половине скана декабрьские рождения, на правой первые три брачных поручительских графы. Скан 232 также содержит рождения; скан 234 начинается браками №4–6 января. Точный номер и день целевого брака не заявлены.",
+      "Титул раздела /137 содержит 1900 над 1899. Год не перенесён автоматически из метаданных; диапазон сохранён явно."
     ]
-  }
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Тисульский крестьянин Дмитрий Михайлович Амфилогов был поручителем по невесте. Дата брака не восстановлена: лист поручителей не состыкован с левой половиной; раздел ориентировочно 1899–1900 годов."
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "primaryPersonId": "P102309"
 }
