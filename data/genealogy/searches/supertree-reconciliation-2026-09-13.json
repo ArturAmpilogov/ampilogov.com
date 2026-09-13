@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "auditId": "supertree-reconciliation-2026-09-13",
+  "createdAt": "2026-09-13",
+  "scope": [
+    "data/genealogy/people/**",
+    "data/genealogy/families/**"
+  ],
+  "summary": {
+    "people": 5989,
+    "families": 571,
+    "brokenPersonReferences": 0,
+    "oneWayConvenienceArrays": 1940,
+    "exactFamilyDuplicateGroups": 0,
+    "unfinishedProfileStatuses": 91
+  },
+  "applied": [
+    {
+      "kind": "family-merge",
+      "canonicalFamilyId": "F3200",
+      "mergedFamilyIds": [
+        "F4415"
+      ],
+      "basis": "Совпадают оба супруга и полный документированный состав восьми детей; источники объединены."
+    },
+    {
+      "kind": "family-merge",
+      "canonicalFamilyId": "F4607",
+      "mergedFamilyIds": [
+        "F6112",
+        "F6114"
+      ],
+      "basis": "Совпадают оба супруга и полный документированный состав пяти детей; карточки описывают одну семью в разные годы и местах."
+    }
+  ],
+  "identityDecisions": [
+    {
+      "personIds": [
+        "P0926",
+        "P5917"
+      ],
+      "decision": "proven-duplicate-requires-cross-source-remap",
+      "basis": "Точное имя, дата рождения 1852-12-27, родители Иван Назарович и Матрёна Ильинична, оренбургское мещанство и одна опубликованная выписка/первичный акт. Родители также образуют доказанный кластер P0924=P90007 и P0925=P2095.",
+      "risk": "Удаление любой карточки требует одновременного изменения primaryPersonId/mentions в sources, что не входило в разрешённый scope этого прохода."
+    },
+    {
+      "personIds": [
+        "P1363",
+        "P1364"
+      ],
+      "decision": "keep-separate",
+      "basis": "Один лист содержит две разные записи №63 и №65 о двух Гликериях, родившихся в один день у разных родителей."
+    },
+    {
+      "personIds": [
+        "P1512",
+        "P1525"
+      ],
+      "decision": "keep-separate",
+      "basis": "P1525 умер младенцем в июле 1879; P1512 родился у того же отца в ноябре 1879. Повторное имя после смерти ребёнка подтверждается хронологией."
+    },
+    {
+      "personIds": [
+        "P1481",
+        "P91171"
+      ],
+      "decision": "keep-separate",
+      "basis": "P1481 родилась в 1877 и умерла в 1878; P91171 родилась в 1890 у тех же родителей."
+    },
+    {
+      "personIds": [
+        "P1143",
+        "P1389"
+      ],
+      "decision": "keep-separate",
+      "basis": "P1143 вступил в брак в 1862 и родился около 1844–1845; P1389 родился около 1856–1857 и впервые женился в 1874."
+    }
+  ],
+  "structuralNotes": {
+    "brokenReferences": [],
+    "oneWayConvenienceArrays": {
+      "count": 1940,
+      "note": "Массовый исторический слой хранит доказанную связь преимущественно на стороне ребёнка или в relations/family. Автоматически дополнять 1940 массивов без построчной проверки не выполнялось; дерево может выводить ребро из parents и family.",
+      "sample": [
+        {
+          "from": "P0004",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0004",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0005",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0005",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0006",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0006",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0007",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0007",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0008",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0008",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0009",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0009",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0010",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0010",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0011",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0011",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0012",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0012",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0013",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0013",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0014",
+          "type": "parent",
+          "to": "P0002"
+        },
+        {
+          "from": "P0014",
+          "type": "parent",
+          "to": "P0003"
+        },
+        {
+          "from": "P0019",
+          "type": "parent",
+          "to": "P0018"
+        },
+        {
+          "from": "P0020",
+          "type": "parent",
+          "to": "P0021"
+        },
+        {
+          "from": "P0020",
+          "type": "parent",
+          "to": "P0022"
+        },
+        {
+          "from": "P0021",
+          "type": "parent",
+          "to": "P0028"
+        },
+        {
+          "from": "P0021",
+          "type": "parent",
+          "to": "P0029"
+        },
+        {
+          "from": "P0025",
+          "type": "parent",
+          "to": "P0018"
+        },
+        {
+          "from": "P0031",
+          "type": "parent",
+          "to": "P0032"
+        },
+        {
+          "from": "P0031",
+          "type": "parent",
+          "to": "P0033"
+        },
+        {
+          "from": "P0053",
+          "type": "parent",
+          "to": "P0052"
+        },
+        {
+          "from": "P0054",
+          "type": "parent",
+          "to": "P0052"
+        },
+        {
+          "from": "P0083",
+          "type": "parent",
+          "to": "P0082"
+        },
+        {
+          "from": "P0084",
+          "type": "parent",
+          "to": "P0082"
+        },
+        {
+          "from": "P0097",
+          "type": "parent",
+          "to": "P0095"
+        },
+        {
+          "from": "P0097",
+          "type": "parent",
+          "to": "P0096"
+        },
+        {
+          "from": "P0098",
+          "type": "parent",
+          "to": "P0095"
+        },
+        {
+          "from": "P0098",
+          "type": "parent",
+          "to": "P0096"
+        },
+        {
+          "from": "P0099",
+          "type": "parent",
+          "to": "P0095"
+        },
+        {
+          "from": "P0099",
+          "type": "parent",
+          "to": "P0096"
+        },
+        {
+          "from": "P0100",
+          "type": "parent",
+          "to": "P6013"
+        },
+        {
+          "from": "P0100",
+          "type": "parent",
+          "to": "P6014"
+        },
+        {
+          "from": "P0102",
+          "type": "parent",
+          "to": "P0100"
+        },
+        {
+          "from": "P0102",
+          "type": "parent",
+          "to": "P0101"
+        },
+        {
+          "from": "P0103",
+          "type": "parent",
+          "to": "P0100"
+        },
+        {
+          "from": "P0103",
+          "type": "parent",
+          "to": "P0101"
+        },
+        {
+          "from": "P0106",
+          "type": "parent",
+          "to": "P0104"
+        },
+        {
+          "from": "P0106",
+          "type": "parent",
+          "to": "P0105"
+        },
+        {
+          "from": "P0109",
+          "type": "parent",
+          "to": "P0107"
+        },
+        {
+          "from": "P0110",
+          "type": "parent",
+          "to": "P0107"
+        }
+      ]
+    },
+    "unfinishedProfiles": {
+      "count": 91,
+      "note": "Большинство пометок означает отсутствие первичного листа для ранних архивных индексов; они не дают основания соединять людей.",
+      "profiles": [
+        {
+          "personId": "P8238",
+          "displayName": "Ефрем Анпилогов",
+          "status": "documented-from-primary-scan-with-incomplete-name"
+        },
+        {
+          "personId": "P9679",
+          "displayName": "Ананья Анпилогов",
+          "status": "documented-in-four-published-archive-indexes-original-personal-tale-pending"
+        },
+        {
+          "personId": "P9680",
+          "displayName": "Неустрой Русинов сын Ампилов",
+          "status": "documented-in-official-refusal-book-inventory-original-act-pending"
+        },
+        {
+          "personId": "P9686",
+          "displayName": "Иван Анпилогов",
+          "status": "documented-from-academic-regest-primary-scan-pending"
+        },
+        {
+          "personId": "P9698",
+          "displayName": "Василий Анпилогов, курский однодворец",
+          "status": "documented-from-official-inventory-primary-case-pending"
+        },
+        {
+          "personId": "P9737",
+          "displayName": "Фёдор Анпилогов",
+          "status": "documented-from-open-secondary-index-primary-scan-pending"
+        },
+        {
+          "personId": "P99200",
+          "displayName": "Самойла Гурьевич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99201",
+          "displayName": "Игнат Гурьевич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99202",
+          "displayName": "Иван Фомич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99203",
+          "displayName": "Аникей Никифорович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99204",
+          "displayName": "Сафрон Ефимович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99205",
+          "displayName": "Степан Сергеевич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99206",
+          "displayName": "Терентий Гурьевич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99207",
+          "displayName": "Дмитрий Денисович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99208",
+          "displayName": "Данила Степанович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99209",
+          "displayName": "Кондрат Иванович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99210",
+          "displayName": "Михаил Алфимович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99211",
+          "displayName": "Иван Антонович Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99212",
+          "displayName": "Афанасий Григорьевич Анпилогов",
+          "status": "documented-in-open-derivative-index-scan-pending"
+        },
+        {
+          "personId": "P99213",
+          "displayName": "Иван Гурьевич Анпилогов",
+          "status": "documented-in-two-leaf-level-derivative-extracts-scan-pending"
+        },
+        {
+          "personId": "P99214",
+          "displayName": "Давыд Игнатьевич Анпилогов",
+          "status": "documented-in-leaf-level-derivative-extract-scan-pending"
+        },
+        {
+          "personId": "P99215",
+          "displayName": "Гурий Анпилогов",
+          "status": "name-reconstructed-from-patronymics-possible-1700-owner-entry-scan-pending"
+        },
+        {
+          "personId": "P99216",
+          "displayName": "Платон Иванович Анпилогов",
+          "status": "documented-in-leaf-level-derivative-extract-scan-pending"
+        },
+        {
+          "personId": "P99217",
+          "displayName": "Евстафий Иванович Анпилогов",
+          "status": "documented-in-leaf-level-derivative-extract-scan-pending"
+        },
+        {
+          "personId": "P99218",
+          "displayName": "Карп Иванович Анпилогов",
+          "status": "documented-in-leaf-level-derivative-extract-scan-pending"
+        },
+        {
+          "personId": "P99219",
+          "displayName": "Агей Иванович Анпилогов",
+          "status": "documented-in-archive-alphabet-title-original-pending"
+        },
+        {
+          "personId": "P99220",
+          "displayName": "Иван Иванович Анпилогов",
+          "status": "documented-in-two-derivative-index-extracts-originals-pending"
+        },
+        {
+          "personId": "P99300",
+          "displayName": "Карп Анпилов",
+          "status": "documented-from-open-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99301",
+          "displayName": "Наум Анпилов",
+          "status": "documented-from-open-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99302",
+          "displayName": "Першка Анпилов — первая запись",
+          "status": "provisional-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99303",
+          "displayName": "Першка Анпилов — вторая запись",
+          "status": "provisional-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99304",
+          "displayName": "Василий Анпилогов — первая запись",
+          "status": "provisional-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99305",
+          "displayName": "Василий Анпилогов — вторая запись",
+          "status": "provisional-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99306",
+          "displayName": "Исай Анпилогов",
+          "status": "documented-from-open-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99307",
+          "displayName": "Никола Анпилогов",
+          "status": "documented-from-open-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99308",
+          "displayName": "Федотка Анпилогов",
+          "status": "documented-from-open-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99309",
+          "displayName": "Никифор Анпилого",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99310",
+          "displayName": "Агей Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99311",
+          "displayName": "Василий Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99312",
+          "displayName": "Гаврила Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99313",
+          "displayName": "Дементий Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99314",
+          "displayName": "Денис Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99315",
+          "displayName": "Иван Анпилогов — первая запись 1686/87 года",
+          "status": "separate-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99316",
+          "displayName": "Иван Анпилогов — вторая запись 1686/87 года",
+          "status": "separate-index-occurrence-original-leaf-pending"
+        },
+        {
+          "personId": "P99317",
+          "displayName": "Кузьма Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99318",
+          "displayName": "Меркул Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99319",
+          "displayName": "Сергей Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99320",
+          "displayName": "Филимон Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99321",
+          "displayName": "Фома Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99322",
+          "displayName": "Харлампий Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99323",
+          "displayName": "Василий Анпилогов, Ливны, 1700",
+          "status": "documented-in-open-index-scan-pending"
+        },
+        {
+          "personId": "P99324",
+          "displayName": "Никита Ефимович Анпилогов",
+          "status": "documented-from-scholarly-publication-primary-leaf-pending"
+        },
+        {
+          "personId": "P99325",
+          "displayName": "Зиновий Никифорович Анпилогов",
+          "status": "documented-in-two-published-indexes-primary-cases-pending"
+        },
+        {
+          "personId": "P99326",
+          "displayName": "Филимон Онфилогов, Орёл, 1689",
+          "status": "documented-in-open-index-scan-pending"
+        },
+        {
+          "personId": "P99418",
+          "displayName": "Никита Анпилович Всеволодцкий",
+          "status": "documented-from-official-catalog-original-leaves-pending"
+        },
+        {
+          "personId": "P99420",
+          "displayName": "Кузьма Анфилов",
+          "status": "documented-from-official-catalog-original-document-pending"
+        },
+        {
+          "personId": "P99424",
+          "displayName": "Денис Никифорович Анпилогов",
+          "status": "documented-in-published-historical-inventory-primary-case-pending"
+        },
+        {
+          "personId": "P99425",
+          "displayName": "Еремей Никифорович Анпилогов",
+          "status": "documented-in-published-historical-inventory-primary-case-pending"
+        },
+        {
+          "personId": "P99426",
+          "displayName": "Пётр Анпилогович Озеров",
+          "status": "documented-patronymic-in-published-historical-inventory-primary-case-pending"
+        },
+        {
+          "personId": "P99427",
+          "displayName": "Анпил Третьякович Воейков",
+          "status": "documented-in-official-rgada-catalog-original-leaves-pending"
+        },
+        {
+          "personId": "P99447",
+          "displayName": "Гаврила Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99448",
+          "displayName": "Карп Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99449",
+          "displayName": "Максим Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99450",
+          "displayName": "Сазон Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99451",
+          "displayName": "Степан Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99452",
+          "displayName": "Максим Андреевич Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99453",
+          "displayName": "Василий Дмитриевич Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99454",
+          "displayName": "Карп Деевич Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99455",
+          "displayName": "Илья Деевич Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99456",
+          "displayName": "Захар Нефедович Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99457",
+          "displayName": "Аверкий Григорьевич Анпилогов",
+          "status": "documented-direct-migration-lead-original-leaf-pending"
+        },
+        {
+          "personId": "P99458",
+          "displayName": "Алексей Иванович Анпилогов",
+          "status": "documented-direct-migration-lead-original-leaf-pending"
+        },
+        {
+          "personId": "P99459",
+          "displayName": "Савин Деевич Анпилогов",
+          "status": "documented-deceased-in-published-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99460",
+          "displayName": "Дей Иванович Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99461",
+          "displayName": "Дмитрий Денисович Анпилогов",
+          "status": "documented-in-published-full-name-extract-original-leaf-pending"
+        },
+        {
+          "personId": "P99462",
+          "displayName": "Аверкий Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99500",
+          "displayName": "Никифор Анпилогов",
+          "status": "documented-in-published-historical-inventory-primary-case-pending"
+        },
+        {
+          "personId": "P99501",
+          "displayName": "Иван Михайлович Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99502",
+          "displayName": "Денис Иванович Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99506",
+          "displayName": "Анфил Порфенович Вендин",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99507",
+          "displayName": "Степан Герасимович Анпилов",
+          "status": "documented-from-complete-published-transcriptions-primary-scans-pending"
+        },
+        {
+          "personId": "P99508",
+          "displayName": "Иев Михайлович Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99509",
+          "displayName": "Григорий Михайлович Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99510",
+          "displayName": "Герасим Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99511",
+          "displayName": "Василий Анпилов",
+          "status": "documented-from-complete-published-transcription-primary-scan-pending"
+        },
+        {
+          "personId": "P99568",
+          "displayName": "[Имя не установлено] Ампилогов",
+          "status": "documented-from-published-historical-synthesis-name-incomplete"
+        },
+        {
+          "personId": "P99572",
+          "displayName": "[Имя не раскрыто] А. Ампилогова",
+          "status": "documented-from-official-archive-catalog-name-incomplete-original-file-unread"
+        },
+        {
+          "personId": "P99577",
+          "displayName": "[Имя не раскрыто] Г. П. Ампилогов",
+          "status": "documented-from-official-archive-person-index-name-incomplete-original-file-unread"
+        },
+        {
+          "personId": "P99688",
+          "displayName": "Анфилофий Новик Иванов сын",
+          "status": "documented-from-official-archive-inventory-primary-act-pending"
+        },
+        {
+          "personId": "P99693",
+          "displayName": "Алексей Анпилогов",
+          "status": "documented-in-open-name-index-original-leaf-pending"
+        },
+        {
+          "personId": "P99735",
+          "displayName": "Тит Зиновьевич Анпилов",
+          "status": "documented-in-published-index-primary-case-pending"
+        }
+      ]
+    }
+  }
+}

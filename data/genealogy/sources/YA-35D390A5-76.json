@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-35D390A5-76",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "false-positive-search-hit",
+  "recordType": "technical-source-alias",
   "duplicateOf": "YA-35D390A5-076",
   "collection": {
     "catalogId": "35d390a5-9363-4845-ad70-298823273cba",
@@ -12,21 +12,12 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/35d390a5-9363-4845-ad70-298823273cba/76"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-35D390A5-76-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия фамильного ряда в проверенных строках разворота не обнаружена",
-      "displayName": "Ложное индексное попадание",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Формы Ампилогов / Анпилогов / Анфилогов в видимых строках разворота не обнаружены; записи относятся к другим семьям прихода.",
-    "modernInterpretation": "Индекс Яндекса дал ложное совпадение. Иные участники не становятся карточками проекта и не создают профиль, переселение, карту или маршрут.",
-    "indexNote": "Индекс был поисковой подсказкой; чтение проверено на локальном развороте с заголовком и целевыми строками."
+    "status": "technical-alias-verified",
+    "literal": "Технический ID указывает на тот же физический лист и результат проверки, что YA-35D390A5-076.",
+    "modernInterpretation": "Отдельного события нет; содержательная расшифровка хранится в каноническом Record YA-35D390A5-076.",
+    "indexNote": "Совпадают catalog/scan и итог ручной проверки; при наличии разных сохранённых файлов они являются версиями одного физического листа, а не отдельными событиями."
   },
   "evidence": {
     "publicDisplay": false,
@@ -42,9 +33,14 @@
     ]
   },
   "review": {
-    "status": "deep-reviewed-false-positive",
-    "transcriptionConfidence": "high-for-absence-of-surname-series",
-    "deepReviewedAt": "2026-09-12",
-    "deepReviewScope": "Вручную просмотрен полный разворот части о родившихся 1911 года и все январско-мартовские записи. Носителей фамильного ряда нет; это технический дубль канонической карточки YA-35D390A5-076, public/profile/map исключены."
-  }
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-scan-and-review-identity",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Совпадают catalog/scan и итог ручной проверки; при наличии разных сохранённых файлов они являются версиями одного физического листа, а не отдельными событиями."
+  },
+  "parallelOf": "YA-35D390A5-076",
+  "isRecord": false,
+  "publicCore": false,
+  "cardKind": "technical-alias"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-772ECBA6-97",
   "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "recordType": "technical-source-alias",
   "collection": {
     "catalogId": "772ecba6-e417-4fb7-9c2a-a863fd97838b",
     "scanNumber": 97
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/772ecba6-e417-4fb7-9c2a-a863fd97838b/97"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-772ECBA6-97-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов — требует чтения",
-      "displayName": "Ампилогов (требует чтения)",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/772ecba6-e417-4fb7-9c2a-a863fd97838b/0097-full-view.jpg",
@@ -32,13 +23,20 @@
     ]
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "На сохранённом локальном развороте метрической книги за 1904 год фамильный ряд Ампилогов/Анпилогов и документированные варианты не подтверждаются.",
-    "modernInterpretation": "Совпадение внешнего индекса оказалось ложным; отдельные люди, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по локальному скану."
+    "status": "technical-alias-verified",
+    "literal": "Технический ID указывает на тот же физический лист и результат проверки, что YA-772ECBA6-097.",
+    "modernInterpretation": "Отдельного события нет; содержательная расшифровка хранится в каноническом Record YA-772ECBA6-097.",
+    "indexNote": "Совпадение подтверждено exact catalogId, scanNumber, evidence.path и SHA-256 полного скана."
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "low"
-  }
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-scan-path-and-sha",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Совпадение подтверждено exact catalogId, scanNumber, evidence.path и SHA-256 полного скана."
+  },
+  "parallelOf": "YA-772ECBA6-097",
+  "isRecord": false,
+  "publicCore": false,
+  "cardKind": "technical-alias"
 }
