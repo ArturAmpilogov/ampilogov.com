@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "names-independent-cross-audit",
+  "scope": "early ordinals1–230",
+  "status": "passed-after-independent-reading-corrections-and-act-canonicalization",
+  "masterPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-complete-1-230.json",
+  "capturePath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-master-capture-1-936.json",
+  "counts": {
+    "positions": 230,
+    "processedPositions": 230,
+    "primarySourceRecords": 227,
+    "allPrimaryAndSupplementarySources": 237,
+    "uniqueEvidenceFilesChecked": 660,
+    "evidenceReferencesChecked": 688,
+    "classifiedOriginalPrimaryUrlGroups": 17,
+    "sameActDuplicatesRemoved": 19,
+    "preservedDistinctActBindings": 27,
+    "remainingSharedPrimaryUrlGroups": 10,
+    "unclassifiedCanonicalOverlaps": 0,
+    "staleDeletedSourceReferences": 0,
+    "missingBacklinks": 0,
+    "evidenceHashErrors": 0
+  },
+  "errors": [],
+  "inheritedPrivateFlags": [],
+  "notes": [
+    "Проверка master early↔23 processed batches↔полного capture:230/230 ordinal и canonical URL; основной общий master936 обновляется координатором после данного отчёта.",
+    "17 первоначальных групп PRIMARY URL классифицированы независимо names/page2. Удалены19 same-act дублей;27 актовых bindings сохранены. Оставшиеся10 общих URL — разные акты, две исследовательские сводки и один отключённый raw OCR duplicate, а не неразрешённые дубли событий.",
+    "В смешанных группах /124,/131,/102 буквальная расшифровка и mentions разделены по актам; даты соседних событий не приписываются чужим участникам.",
+    "Before/correctionHistory/formerSourceIds намеренно сохраняют прежние значения. Живые source/person/family refs на19 удалённых sources отсутствуют. Evidence paths/SHA и профильные backlinks проверены.",
+    "Генеалогический аудит завершился успешно; глобальные исследовательские предупреждения не скрыты и не объявлены ошибками данного диапазона."
+  ],
+  "canonicalUrlGroups": [
+    {
+      "group": 1,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/25",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1365-25-EGOR",
+        "YA-OGAOO-173-11-1365-25-SEMEN"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1365-25-SEMEN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1365-25-EGOR",
+            "YA-OGAOO-173-11-1365-25-SEMEN"
+          ],
+          "event": "Брак №4, 23 января 1838; Макар Пахомов Овсяников и Надежда Терентьева; Семён и Егор — поручители одного акта."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/0025-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/0025-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1365-25-SEMEN"
+      ]
+    },
+    {
+      "group": 2,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/374d6679-a832-41ea-a90e-59df264a03dc/289",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1479-289-ALEKSANDR",
+        "YA-OGAOO-173-11-1479-289-EMELYAN"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1479-289-EMELYAN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1479-289-ALEKSANDR",
+            "YA-OGAOO-173-11-1479-289-EMELYAN"
+          ],
+          "event": "Брак №4, 19 января 1841; Емельян Никитин и Гликерия Васильева; Александр Назаров — поручитель."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/374d6679-a832-41ea-a90e-59df264a03dc/0289-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/374d6679-a832-41ea-a90e-59df264a03dc/0289-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1479-289-EMELYAN"
+      ]
+    },
+    {
+      "group": 3,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/251ae823-7ff5-4759-ab91-cb39f8d47020/182",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1369-182-AGAFON",
+        "YA-OGAOO-173-11-1369-182-SEMEN"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1369-182-AGAFON",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1369-182-AGAFON",
+            "YA-OGAOO-173-11-1369-182-SEMEN"
+          ],
+          "event": "Рождение Анны №10, 26/29 января 1838; отец Агафон, восприемник Семён."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/251ae823-7ff5-4759-ab91-cb39f8d47020/0182-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1369-182-AGAFON"
+      ]
+    },
+    {
+      "group": 4,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/195",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-18-13-195-AVDEY",
+        "YA-OGAOO-173-18-13-195-ULYAN"
+      ],
+      "classification": "distinct-acts-same-scan",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-13-195-AVDEY",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-13-195-AVDEY"
+          ],
+          "event": "Брак №15, 9 января 1881: Кузьмин и Пашкова; Авдей — поручитель."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-13-195-ULYAN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-13-195-ULYAN"
+          ],
+          "event": "Брак №17, 11 января 1881: Архипов и Иванова; Ульян — поручитель."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/61059979-e22a-48d3-a764-35c8fb371140/0195-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/61059979-e22a-48d3-a764-35c8fb371140/0195-antilogov-early-target.jpg"
+      ],
+      "recommendation": "No canonical merge: these are distinct acts sharing one scan. Keep act-specific dates, participants and evidence.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-18-13-195-AVDEY",
+        "YA-OGAOO-173-18-13-195-ULYAN"
+      ]
+    },
+    {
+      "group": 5,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/65",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1680-65-DARIA",
+        "YA-OGAOO-173-11-1680-65-GAVRIIL",
+        "YA-OGAOO-173-11-1680-65-IVAN"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1680-65-DARIA",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1680-65-DARIA",
+            "YA-OGAOO-173-11-1680-65-GAVRIIL",
+            "YA-OGAOO-173-11-1680-65-IVAN"
+          ],
+          "event": "Рождение Дарьи №30, 1/3 марта 1846; отец Иван Назаров, восприемник Гавриил Иванов."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0065-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0065-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1680-65-DARIA"
+      ]
+    },
+    {
+      "group": 6,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
+      "sourceIdsAtAudit": [
+        "YA-0302EEDC-174-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN",
+        "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN"
+      ],
+      "classification": "aggregate-plus-distinct-acts",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN"
+          ],
+          "event": "Брак №43, 6 февраля 1881: Василий Игнатьев Мисюрин 19, Ольга Алексеева Ибряева 20."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN"
+          ],
+          "event": "Брак №44, 6 февраля 1881: Николай Иванов Чурсин 58, Параскева Семенова Некрасова 58."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-antilogov-early-target.jpg"
+      ],
+      "aggregatePolicy": "Keep the broad source as research-only aggregate with relatedSourceIds for both act-specific Records; remove its profile backlinks. Do not collapse two acts into one event.",
+      "readingCorrection": {
+        "recordNumbers": [
+          43,
+          44
+        ],
+        "agesAct43": {
+          "groom": 19,
+          "bride": 20
+        },
+        "agesAct44": {
+          "groom": 58,
+          "bride": 58
+        },
+        "confidence": "high",
+        "parallel": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/202",
+        "crop": "/private/tmp/p2-174-couple43.jpg",
+        "editingOwner": "names"
+      },
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
+        "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN"
+      ]
+    },
+    {
+      "group": 7,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/126",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1575-126-SERGEY",
+        "YA-OGAOO-173-11-1575-126-STEPANIDA",
+        "YA-OGAOO-173-11-1575-126-TIMOFEY",
+        "YA-OGAOO-173-11-1575-126-VARVARA"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1575-126-VARVARA",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1575-126-SERGEY",
+            "YA-OGAOO-173-11-1575-126-STEPANIDA",
+            "YA-OGAOO-173-11-1575-126-TIMOFEY",
+            "YA-OGAOO-173-11-1575-126-VARVARA"
+          ],
+          "event": "Рождение Варвары №74, 26/27 ноября 1843; Сергей Иванов — отец, Тимофей и Степанида — восприемники."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1575-126-VARVARA"
+      ]
+    },
+    {
+      "group": 8,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/124",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV",
+        "YA-OGAOO-173-11-1575-124-MAKSIM",
+        "YA-OGAOO-173-11-1575-124-STEPANIDA",
+        "YA-OGAOO-173-11-1575-124-TIMOFEY"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1575-124-STEPANIDA",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1575-124-STEPANIDA",
+            "YA-OGAOO-173-11-1575-124-MAKSIM",
+            "YA-OGAOO-173-11-1575-124-TIMOFEY"
+          ],
+          "event": "Рождение Степаниды №67, 7/8 ноября 1843; Тимофей — отец, Максим — восприемник."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV",
+            "YA-OGAOO-173-11-1575-124-TIMOFEY"
+          ],
+          "event": "Рождение Екатерины №69, 10/12 ноября 1843; Яков — отец, Тимофей — восприемник."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0124-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0124-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1575-124-STEPANIDA",
+        "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV"
+      ]
+    },
+    {
+      "group": 9,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/26",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1365-26-AGAFON",
+        "YA-OGAOO-173-11-1365-26-ALEKSANDR",
+        "YA-OGAOO-173-11-1365-26-NIKITA",
+        "YA-OGAOO-173-11-1365-26-YAKOV"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1365-26-YAKOV",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1365-26-AGAFON",
+            "YA-OGAOO-173-11-1365-26-ALEKSANDR",
+            "YA-OGAOO-173-11-1365-26-NIKITA",
+            "YA-OGAOO-173-11-1365-26-YAKOV"
+          ],
+          "event": "Брак №13, 30 января 1838; Яков Егоров и Ксения Дмитриева; остальные — поручители одного акта."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/0026-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/0026-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1365-26-YAKOV"
+      ]
+    },
+    {
+      "group": 10,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/202",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN"
+      ],
+      "classification": "distinct-acts-same-scan",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN"
+          ],
+          "event": "Брак №43, 6 февраля 1881; параллель 0302eedc/174 №43."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN"
+          ],
+          "event": "Брак №44, 6 февраля 1881; параллель 0302eedc/174 №44."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN"
+          ],
+          "event": "Брак №45, 6 февраля 1881; Дмитрий Лукьянов Сорокин и Ирина Евстафьева Васильева."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/61059979-e22a-48d3-a764-35c8fb371140/0202-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/61059979-e22a-48d3-a764-35c8fb371140/0202-antilogov-early-target.jpg"
+      ],
+      "recommendation": "No canonical merge: these are distinct acts sharing one scan. Keep act-specific dates, participants and evidence.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN"
+      ]
+    },
+    {
+      "group": 11,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/131",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1680-131-AFANASIY",
+        "YA-OGAOO-173-11-1680-131-IRINA",
+        "YA-OGAOO-173-11-1680-131-IVAN",
+        "YA-OGAOO-173-11-1680-131-KIRILL"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1680-131-KIRILL",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1680-131-AFANASIY",
+            "YA-OGAOO-173-11-1680-131-KIRILL"
+          ],
+          "event": "Смерть Кирилла №61 муж., 18/19 ноября 1846, 5 месяцев; отец Афанасий Петров."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1680-131-IRINA",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1680-131-IRINA",
+            "YA-OGAOO-173-11-1680-131-IVAN"
+          ],
+          "event": "Смерть Ирины Филипповой №41 жен., 17/19 ноября 1846, 48 лет; жена Ивана Данилова."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0131-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0131-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1680-131-KIRILL",
+        "YA-OGAOO-173-11-1680-131-IRINA"
+      ]
+    },
+    {
+      "group": 12,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/4b658afe-8981-4b46-9e08-f32465fc3e01/119",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-12-621-119-MATRENA-OLDER",
+        "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER"
+      ],
+      "classification": "distinct-acts-same-scan",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER",
+          "memberSourceIds": [
+            "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER"
+          ],
+          "event": "Смерть Матрёны №30, 8/11 августа 1866, 1½ года."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-12-621-119-MATRENA-OLDER",
+          "memberSourceIds": [
+            "YA-OGAOO-173-12-621-119-MATRENA-OLDER"
+          ],
+          "event": "Смерть Матрёны №32, 12/15 августа 1866, 14½ лет. Обе дочери Фёдора Тимофеева, но две даты и два возраста; не сливать детей."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/4b658afe-8981-4b46-9e08-f32465fc3e01/0119-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/4b658afe-8981-4b46-9e08-f32465fc3e01/0119-antilogov-early-crop.jpg"
+      ],
+      "recommendation": "No canonical merge: these are distinct acts sharing one scan. Keep act-specific dates, participants and evidence.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER",
+        "YA-OGAOO-173-12-621-119-MATRENA-OLDER"
+      ]
+    },
+    {
+      "group": 13,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/102",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1680-102-EMELYAN",
+        "YA-OGAOO-173-11-1680-102-NIKOLAY",
+        "YA-OGAOO-173-11-1680-102-SERGEY",
+        "YA-OGAOO-173-11-1680-102-STEPANIDA"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1680-102-NIKOLAY",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1680-102-EMELYAN",
+            "YA-OGAOO-173-11-1680-102-NIKOLAY",
+            "YA-OGAOO-173-11-1680-102-SERGEY"
+          ],
+          "event": "Рождение Николая №130 муж., 1/1 декабря 1846; Сергей — отец, Емельян — восприемник."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1680-102-STEPANIDA",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1680-102-STEPANIDA"
+          ],
+          "event": "Рождение Анны Нелюбовой №100 жен., 7/8 декабря 1846; Степанида Сидорова — восприемница отдельного акта."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0102-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/7237112d-ed8d-4194-8a5a-de57cbffdc00/0102-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1680-102-NIKOLAY",
+        "YA-OGAOO-173-11-1680-102-STEPANIDA"
+      ]
+    },
+    {
+      "group": 14,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/133",
+      "sourceIdsAtAudit": [
+        "YA-OGAOO-173-11-1575-133-ALEKSANDR",
+        "YA-OGAOO-173-11-1575-133-GRIGORY",
+        "YA-OGAOO-173-11-1575-133-NIKITA"
+      ],
+      "classification": "same-act-duplicates",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-11-1575-133-GRIGORY",
+          "memberSourceIds": [
+            "YA-OGAOO-173-11-1575-133-ALEKSANDR",
+            "YA-OGAOO-173-11-1575-133-GRIGORY",
+            "YA-OGAOO-173-11-1575-133-NIKITA"
+          ],
+          "event": "Брак №6, 24 января 1843; Григорий Петров и Дарья Данилова, Никита и Александр — поручители."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0133-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0133-antilogov-early-entry.jpg"
+      ],
+      "recommendation": "Canonicalize within each listed act only, transferring evidence, aliases and backlinks. For member sources covering two acts, distribute their participant links by role to both canonical Records before removing duplicates.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-11-1575-133-GRIGORY"
+      ]
+    },
+    {
+      "group": 15,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/127",
+      "sourceIdsAtAudit": [
+        "YA-B5EE33B3-127-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-16-1213-127-GEORGIY"
+      ],
+      "classification": "distinct-acts-same-scan",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-16-1213-127-GEORGIY",
+          "memberSourceIds": [
+            "YA-OGAOO-173-16-1213-127-GEORGIY"
+          ],
+          "event": "Брак №52, 11 февраля 1881: Евдоким Григорьев Матыцын и Ирина Степанова Щербакова; Георгий Иулианов — поручитель."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-B5EE33B3-127-ANTILOGOV-REVIEW",
+          "memberSourceIds": [
+            "YA-B5EE33B3-127-ANTILOGOV-REVIEW"
+          ],
+          "event": "Брак №54, 11 февраля 1881: Василий Ефимов Антилогов и Пелагея Прокопьева Вырыпаева."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/0127-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/0127-antilogov-early-target.jpg"
+      ],
+      "recommendation": "No canonical merge: these are distinct acts sharing one scan. Keep act-specific dates, participants and evidence.",
+      "readingCorrection": {
+        "recordNumber": 52,
+        "groomAgeLiteral": "16 л. 7 мѣс.",
+        "brideAge": 17,
+        "confidence": "medium-high",
+        "crop": "/private/tmp/p2-127-age52.jpg",
+        "note": "Earlier modern reading 17 months is wrong. Public genealogy participant Georgiy is a surety, not this groom.",
+        "status": "applied"
+      },
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-16-1213-127-GEORGIY",
+        "YA-B5EE33B3-127-ANTILOGOV-REVIEW"
+      ]
+    },
+    {
+      "group": 16,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/8b496dd7-169a-4af4-9a3a-806bb6aafe75/71",
+      "sourceIdsAtAudit": [
+        "YA-8B496DD7-71",
+        "YA-OGAOO-173-16-82-71-FILIPP",
+        "YA-OGAOO-173-16-82-71-PARFEN"
+      ],
+      "classification": "aggregate-plus-distinct-acts",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-16-82-71-FILIPP",
+          "memberSourceIds": [
+            "YA-OGAOO-173-16-82-71-FILIPP"
+          ],
+          "event": "Брак №36, 4 апреля 1871: Филипп Афанасьев и Матрёна Алексеева Калужина."
+        },
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-16-82-71-PARFEN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-16-82-71-PARFEN"
+          ],
+          "event": "Брак №37, 4 апреля 1871: Филипп Никифоров Баловнев и Марина Иванова Сотникова; Парфен — поручитель."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-antilogov-early-crop.jpg"
+      ],
+      "aggregatePolicy": "Keep the broad source as research-only aggregate with relatedSourceIds for both act-specific Records; remove its profile backlinks. Do not collapse two acts into one event.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-16-82-71-FILIPP",
+        "YA-OGAOO-173-16-82-71-PARFEN"
+      ]
+    },
+    {
+      "group": 17,
+      "canonicalUrl": "https://yandex.ru/archive/catalog/bd240d38-9def-4c97-a532-0904fe5d6b5d/112",
+      "sourceIdsAtAudit": [
+        "YA-BD240D38-112",
+        "YA-OGAOO-173-18-23-112-IVAN"
+      ],
+      "classification": "raw-ocr-duplicate",
+      "acts": [
+        {
+          "recommendedCanonicalSourceId": "YA-OGAOO-173-18-23-112-IVAN",
+          "memberSourceIds": [
+            "YA-OGAOO-173-18-23-112-IVAN"
+          ],
+          "event": "Брак №75, 27 августа 1886: Иван Ульянов и Фёкла Степанова. Краткий YA-BD240D38-112 — старый поисковый OCR того же скана, не самостоятельный акт."
+        }
+      ],
+      "visualCheck": "Saved original or target crop inspected independently; act boundaries, numbers and principal participants compared with current literals.",
+      "evidencePathsInspected": [
+        "data/genealogy/evidence-private/yandex/bd240d38-9def-4c97-a532-0904fe5d6b5d/0112-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/bd240d38-9def-4c97-a532-0904fe5d6b5d/0112-antilogov-early-target.jpg"
+      ],
+      "recommendation": "Use rich IVAN as canonical; raw source publicCore:false, duplicateOf=rich; remove duplicate active profile backlinks if present.",
+      "integrationStatus": "applied-with-distinct-acts-preserved",
+      "currentActSourceIds": [
+        "YA-OGAOO-173-18-23-112-IVAN"
+      ]
+    }
+  ],
+  "visualChecks": [
+    {
+      "scope": "P1627/P1625/P1626, YA-FA562F96-63",
+      "status": "correction-supported-with-name-reading-caution",
+      "reading": "Заголовок1881; Октябрь8/9; близнецы Яков и Пелагея; отец с отчеством Афонасьев, жена Евдокия Давидова. В узком фрагменте видна Кармалка, Кузьминовка относится к верхнему соседу.",
+      "caution": "Имя Иван частично пересечено подписью причта; в этой независимой читке оно не имеет такой же графической ясности, как отчество. Существующая оговорка в P1627 сохранена. Замена ошибочного самостоятельного имени Афанасий обоснована положением Афонасьев перед фамилией.",
+      "evidencePaths": [
+        "data/genealogy/evidence-private/yandex/fa562f96-f617-4488-872e-c5fd7b941185/0063-antilogov-early-original.jpg",
+        "data/genealogy/evidence-private/yandex/fa562f96-f617-4488-872e-c5fd7b941185/0063-antilogov-early-target.jpg",
+        "data/genealogy/evidence-private/yandex/fa562f96-f617-4488-872e-c5fd7b941185/0063-antilogov-early-place-detail.jpg"
+      ]
+    },
+    {
+      "scope": "P6930 versus P108738",
+      "status": "split-supported",
+      "reading": "Две копии рождения дают9/17декабря1882, Пётр, Павел Тимофеев и Мария Иосифова. Обе смертные копии дают11/13мая1887 и1год, не4года.",
+      "conclusion": "Рождение1882 не соединяется автоматически со смертью1887; разделение сохраняет буквальный возраст без выдуманной писцовой поправки. Мать младшего в смертном акте не названа, поэтому P108738 верно вне F4422. F4422 сохраняет P6930 и исправленное9декабря."
+    },
+    {
+      "scope": "33c2b2ad/159 legacy contradiction",
+      "status": "corrected-with-parent-authorization",
+      "reading": "1880, Июнь, акт253, Александр2/6; Никита Васильев, Агафья Фёдорова.",
+      "correctionFile": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-cross-early-nikita-correction.json",
+      "canonicalSourceId": "YA-OGAOO-173-16-352-159-NIKOLAY",
+      "retiredSourceId": "YA-33C2B2AD-159-ANTILOGOV-REVIEW",
+      "childPersonId": "P108729",
+      "fatherPersonId": "P108728",
+      "separateAdultPersonId": "P6927"
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
+      "result": "Два брака№43/44 от6 февраля1881. В№43 Василий19,Ольга20;в№44 НиколайЧурсин иПараскеваНекрасова58/58. ЕгорУльянов поручительжениха43;АвдейУльянов поручительневесты43 ижениха44, орскиймещанинвобоих. Исправленыошибки73/74,49,Туренин/Пелагея;полныйоригинал+соседниестрочки ивтораячиткаpage2.",
+      "status": "corrected-with-before-and-private-evidence"
+    }
+  ],
+  "permittedSharedCanonicalGroups": [
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/195",
+      "sourceIds": [
+        "YA-OGAOO-173-18-13-195-AVDEY",
+        "YA-OGAOO-173-18-13-195-ULYAN"
+      ],
+      "classification": "distinct-acts-same-scan"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
+      "sourceIds": [
+        "YA-0302EEDC-174-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN",
+        "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN"
+      ],
+      "classification": "aggregate-plus-distinct-acts"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/202",
+      "sourceIds": [
+        "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN",
+        "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN"
+      ],
+      "classification": "distinct-acts-same-scan"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/4b658afe-8981-4b46-9e08-f32465fc3e01/119",
+      "sourceIds": [
+        "YA-OGAOO-173-12-621-119-MATRENA-OLDER",
+        "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER"
+      ],
+      "classification": "distinct-acts-same-scan"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/131",
+      "sourceIds": [
+        "YA-OGAOO-173-11-1680-131-IRINA",
+        "YA-OGAOO-173-11-1680-131-KIRILL"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/127",
+      "sourceIds": [
+        "YA-B5EE33B3-127-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-16-1213-127-GEORGIY"
+      ],
+      "classification": "distinct-acts-same-scan"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/124",
+      "sourceIds": [
+        "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV",
+        "YA-OGAOO-173-11-1575-124-STEPANIDA"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/8b496dd7-169a-4af4-9a3a-806bb6aafe75/71",
+      "sourceIds": [
+        "YA-8B496DD7-71",
+        "YA-OGAOO-173-16-82-71-FILIPP",
+        "YA-OGAOO-173-16-82-71-PARFEN"
+      ],
+      "classification": "aggregate-plus-distinct-acts"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/102",
+      "sourceIds": [
+        "YA-OGAOO-173-11-1680-102-NIKOLAY",
+        "YA-OGAOO-173-11-1680-102-STEPANIDA"
+      ],
+      "classification": "mixed-duplicates-and-distinct-acts"
+    },
+    {
+      "type": "canonical-overlap",
+      "canonicalUrl": "https://yandex.ru/archive/catalog/bd240d38-9def-4c97-a532-0904fe5d6b5d/112",
+      "sourceIds": [
+        "YA-BD240D38-112",
+        "YA-OGAOO-173-18-23-112-IVAN"
+      ],
+      "classification": "raw-ocr-duplicate"
+    }
+  ],
+  "correctionArtifacts": [
+    "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-cross-early-nikita-correction.json",
+    "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-cross-174-correction.json",
+    "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-canonical-groups-17-correction.json",
+    "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-page2-related-127-age-correction.json"
+  ]
+}

@@ -33,7 +33,8 @@
       "asWritten": "село Государев-Байрак",
       "historicalRegion": "Государев-Байрак, Бахмутский уезд, Екатеринославская губерния, Российская империя",
       "modernName": "район Горловки, Донецкая область, Украина",
-      "modernCountry": "Украина"
+      "modernCountry": "Украина",
+      "placeId": "gosudarev-bayrak-horlivka"
     }
   },
   "indexData": {
@@ -48,7 +49,7 @@
     {
       "mentionId": "FS-3QS7-99JJ-Q7KF-M1",
       "role": "child",
-      "personId": null,
+      "personId": "P109741",
       "sex": "female",
       "nameAsTranscribed": "Александра",
       "nameAsIndexed": "Александра Анпилогов",
@@ -61,7 +62,7 @@
     {
       "mentionId": "FS-3QS7-99JJ-Q7KF-M2",
       "role": "father",
-      "personId": null,
+      "personId": "P109740",
       "sex": "male",
       "nameAsTranscribed": "Орловской губернии, Кромского уезда, Муравской волости, села Старых Туров крестьянин Константин Александров Антилогов",
       "nameAsIndexed": "Константин Александров Анпилогов",
@@ -152,7 +153,11 @@
   },
   "review": {
     "status": "complete-with-uncertainties",
-    "identityResolution": "Совпадение обоих родителей, исходного села и прихода надёжно связывает запись с браком 1900 года и рождениями детей 1910 и 1912 годов. Ребёнка 1904 года нельзя автоматически объединять с одноимённой дочерью 1910 года.",
+    "identityResolution": {
+      "status": "resolved-2026-09-13",
+      "confidence": "high",
+      "basis": "Связь установлена по полному имени родителей, редкой фамилии, Государеву Байраку и последовательности брака, рождений и смерти; справочники 1910–1912 годов независимо подтверждают К. А. Антилогова в том же месте."
+    },
     "transcriptionConfidence": "high-for-dates-child-parents-kromy-muravskaya-starye-tury-status-and-religion; medium-for-record-number; unavailable-for-godparents-and-clergy",
     "unresolved": [
       "Найти смерть Александры, родившейся в 1904 году, до появления одноимённой дочери в 1910 году.",
@@ -162,5 +167,22 @@
   "summary": {
     "status": "verified-oryol-to-donbas-migration",
     "text": "1 ноября 1904 года в Государевом-Байраке родилась Александра Константиновна Антилогова, крещена 2 ноября. Оригинал точно называет исходное место отца: село Старые Туры Муравской волости Кромского уезда Орловской губернии."
-  }
+  },
+  "primaryPersonId": "P109741",
+  "migrationObservations": [
+    {
+      "personId": "P109740",
+      "personName": "Константин Александрович Антилогов",
+      "from": {
+        "placeId": "kromy-uezd",
+        "asWritten": "село Старые Туры, Муравская волость, Кромской уезд"
+      },
+      "to": {
+        "placeId": "gosudarev-bayrak-horlivka",
+        "asWritten": "село Государев Байрак"
+      },
+      "basis": "Запись рождения дочери прямо называет приписку отца к Старым Турам; брак в Государевом Байраке 23 апреля 1900 года доказывает прибытие не позднее этой даты.",
+      "confidence": "high"
+    }
+  ]
 }

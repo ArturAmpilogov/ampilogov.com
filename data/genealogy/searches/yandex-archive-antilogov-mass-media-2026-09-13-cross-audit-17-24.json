@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "auditId": "yandex-archive-antilogov-mass-media-2026-09-13-cross-audit-17-24",
+  "auditedAt": "2026-09-13",
+  "auditorScope": {
+    "query": "Антилогов",
+    "index": "mass_media",
+    "positions": "17–24",
+    "sourceCount": 8
+  },
+  "status": "complete",
+  "checks": {
+    "primaryScansVisuallyRead": 8,
+    "targetFragmentsVisuallyRead": 8,
+    "collectionMetadataComparedWithInventory": 8,
+    "evidenceFilesChecked": 24,
+    "sha256Matches": 24,
+    "personBacklinksChecked": true,
+    "familySearchBacklinksForP109702Checked": 11,
+    "publicCutoffChecked": true,
+    "genealogyAuditErrorsAfterReview": 0,
+    "gitDiffCheck": "passed"
+  },
+  "results": [
+    {
+      "position": 17,
+      "sourceId": "YA-MM-8A9E63FD-002-ANTILOGOV",
+      "personId": "P109700",
+      "verdict": "confirmed",
+      "finding": "Оригинал подтверждает Діонисія Антилогова, псаломщика села Григорова на Югу, и взаимное перемещение с Алексеем Лебедевым 29 июня 1910 года.",
+      "identityDecision": "Отдельный профиль обоснован; данных для слияния с другими однофамильцами нет."
+    },
+    {
+      "position": 18,
+      "sourceId": "YA-MM-F2745488-004-ANTILOGOV",
+      "personId": "P109701",
+      "verdict": "confirmed",
+      "finding": "Оригинал подтверждает Константина Антилогова, исполнявшего обязанности первого псаломщика в Новогеоргиевске и переведённого 16 сентября 1910 года в Тирасполь.",
+      "identityDecision": "Отделение от P99398 обязательно: Константин Игнатьевич 1906 года рождения не мог служить псаломщиком в 1910 году."
+    },
+    {
+      "position": 19,
+      "sourceId": "YA-MM-6D00AEC3-005-ANTILOGOV",
+      "personId": "P109702",
+      "verdict": "confirmed-after-note-correction",
+      "finding": "Оригинал точно читает «Антилоговъ, Николай Федоровичъ, въ Керчи» в списке недоставленных телеграмм за 25 января 1913 года.",
+      "identityDecision": "Связь с 11 записями FamilySearch подтверждена: рождение 1872 года, брак 1895 года и записи семьи 1896–1914 годов дают редкие полные ФИО и Керчь. Во всех 11 источниках mention с Николаем имеет personId P109702, а профиль содержит обратные sourceIds.",
+      "correction": "Предупреждение Record уточнено: оно теперь явно описывает доказанную метрическую связку и отдельно сохраняет гипотетический характер связи телеграммы со смертью сына Аркадия."
+    },
+    {
+      "position": 20,
+      "sourceId": "YA-MM-2E9C610B-002-ANTILOGOV",
+      "personId": "P109703",
+      "verdict": "confirmed",
+      "finding": "«Пионерская правда» точно называет пионера Серёжу Антилогова из Ишимбая, выигравшего автомобиль М-1."
+    },
+    {
+      "position": 21,
+      "sourceId": "YA-MM-24A4F54D-002-ANTILOGOV",
+      "personId": "P109703",
+      "verdict": "confirmed",
+      "finding": "«Ленинские искры» почти дословно повторяют сообщение позиции 20: совпадают имя, Ишимбай, лотерея и автомобиль М-1.",
+      "identityDecision": "Объединение позиций 20 и 21 в P109703 доказано; это две публикации одного сюжета. Формальная нормализация Серёжа → Сергей отмечена как нормализация, отчество и возраст не выводятся."
+    },
+    {
+      "position": 22,
+      "sourceId": "YA-MM-BD88AB95-003-ANTILOGOV",
+      "personId": "P109704",
+      "verdict": "confirmed-with-incomplete-name",
+      "finding": "Подпись к фотографии точно даёт только «капитан-орденоносец Антилогов»; имя, инициалы, часть и место отсутствуют.",
+      "identityDecision": "Ограниченный отдельный профиль допустим для документированного носителя фамилии; с другими военными Антилоговыми не объединяется."
+    },
+    {
+      "position": 23,
+      "sourceId": "YA-MM-9D900358-001-ANTILOGOV",
+      "personId": "P109705",
+      "verdict": "confirmed-with-incomplete-name",
+      "finding": "Оригинал подтверждает миномётчика М. Антилогова; инициал не раскрыт, часть и участок фронта не названы.",
+      "identityDecision": "Ограниченный отдельный профиль допустим; оснований раскрывать инициал или сливать с однофамильцами нет."
+    },
+    {
+      "position": 24,
+      "sourceId": "YA-MM-B001F465-001-ANTILOGOV",
+      "personId": null,
+      "verdict": "confirmed-research-only",
+      "finding": "Оригинал подтверждает комбайнёра Н. Антилогова совхоза «Красновка» в публикации 1 августа 1970 года.",
+      "cutoffDecision": "Дата позже 1950 года: isRecord=false, publicCore=false, профиль и картографическая связь отсутствуют. Исходная расшифровка сохранена только как исследовательский материал."
+    }
+  ],
+  "remainingUncertainties": [
+    "Переход в семейных записях P109702 от Евдокии Трофимовны к Антонине Трофимовне требует отдельного исследования и не влияет на идентификацию Николая по полным ФИО и Керчи.",
+    "Личные имена P109704 и P109705 восстановить по этим публикациям нельзя."
+  ]
+}
