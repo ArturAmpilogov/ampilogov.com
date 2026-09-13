@@ -1,22 +1,40 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-19",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "19"
+    "scanNumber": 19,
+    "asRead": "Метрическая книга за 1911 год; оригинальный разворот прочитан вручную"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/19"
   },
   "mentions": [
     {
-      "mentionId": "YA-E69D0BBA-19",
-      "role": "false-index-hit",
+      "mentionId": "YA-E69D0BBA-19-M1",
+      "role": "child",
+      "personId": "P103076",
+      "nameAsTranscribed": "Алексѣй",
+      "displayName": "Алексей Степанович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-E69D0BBA-19-M2",
+      "role": "father",
+      "personId": "P103077",
+      "nameAsTranscribed": "села Зобова крестьянинъ Степанъ Іосифовъ Ампилоговъ",
+      "displayName": "Степан Иосифович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-E69D0BBA-19-M3",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "законная жена его Стефанида Степанова",
+      "displayName": "Стефанида Степановна",
       "surnameSeries": false
     }
   ],
@@ -52,6 +70,12 @@
             "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0019-target-entry.png",
             "sha256": "4f921f662c375561a9dc73bdc31a00bb87f8381c1af84b05b0fb096bbe689a00",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0019-target-entry-deep.png",
+            "sha256": "3ba4be778d31046cfd7a888f7294927894fc15abc9cace48c4a2cf296897228b",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -59,8 +83,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "6028x4685",
-          "targetDimensions": "2771x1119",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5600x1400",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -68,27 +94,46 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-new-identities",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный разворот, строка № 42, даты, ребёнок, родители, восприемники/причт и соседние мартовские записи. Одноимённый P91075 исключён как умерший младенцем в 1887 году. Wide clean crop 5600×1400."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "190%\nГИПОГРАЧ\nАЛЬМОЙ\n1/1942-\nРИЧЕСКОЙ КНИГИ NА\nГода, чАсть первад, W\nЗвáніє, ймл, бтчество й флмиліл родитєлєй, й какóги\nЗванія, йма, бтчество й фамиліа\nXCA.\nвЕронспов'даніА.\nВОсПрієМнИКШЕ2.",
-    "localOcrWithSurnameLexicon": "190%\nГИПОГРАЧ\nАЛЬМОЙ\n1 1942-\nРОЧЕСКОЙ КНИГИ N\nГода, чАсть переад, W\nЗвАніє, йма, отчество й фамилід родитєлей, й какоги\nЗванія, йма, бтчество й фамиліа\nХСА.\nвЕронсповіданія.\nВОсПрієМнИКШЕ».",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Март. Мужского пола № 42. 18 родился, 20 крещен. Алексѣй. Села Зобова крестьянинъ Степанъ Іосифовъ Ампилоговъ и законная жена его Стефанида Степанова, оба православные.",
+    "modernInterpretation": "18 марта 1911 года у крестьянина села Зобова Степана Иосифовича Ампилогова и Стефаниды Степановны родился сын Алексей; крещён 20 марта.",
+    "indexNote": "Оригинал подтверждает ребёнка, отца, мать и даты; индекс не раскрыл полную родительскую формулу."
   },
   "indexData": {
     "querySnippet": "Родившийся: Алексей Степанов Ампилогов. Крёстная мать: Евдокия Евфимова Капишева, крестьянка, деревня Кутуевка.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "assessment": "confirmed-and-expanded-from-primary-scan",
+    "discrepancy": "Добавлены полное имя отца, имя матери, номер и обе даты."
+  },
+  "primaryPersonId": "P103076",
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 42,
+    "date": {
+      "birth": "1911-03-18",
+      "baptism": "1911-03-20",
+      "display": "18–20 марта 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "zobovo-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение Алексея Степановича Ампилогова.",
+    "identityNote": "Ребёнок и отец созданы по прямой родительской формуле; P91075 исключён, мать остаётся mention.",
+    "migrationNote": "Запись не доказывает переселение."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }
