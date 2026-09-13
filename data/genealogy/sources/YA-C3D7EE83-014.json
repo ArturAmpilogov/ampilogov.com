@@ -5,12 +5,47 @@
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "c3d7ee83-7ae0-4aee-8483-41fe911db00b",
-    "scanNumber": "014"
+    "scanNumber": "014",
+    "title": "Метрическая книга сёл Колычево, Илькульган и Рождественское за 1912 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c3d7ee83-7ae0-4aee-8483-41fe911db00b/14"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-C3D7EE83-014-M1",
+      "role": "child",
+      "personId": "P103062",
+      "nameAsTranscribed": "Александра",
+      "displayName": "Александра Семёновна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C3D7EE83-014-M2",
+      "role": "child",
+      "personId": "P103063",
+      "nameAsTranscribed": "Христина, близнецы",
+      "displayName": "Христина Семёновна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C3D7EE83-014-M3",
+      "role": "father",
+      "personId": "P102595",
+      "nameAsTranscribed": "села Георгіевки солдатъ Семенъ Исаевъ Ампилоговъ",
+      "displayName": "Семён Исаевич Ампилогов (Ампилонов)",
+      "surnameSeries": true,
+      "confidence": "high"
+    },
+    {
+      "mentionId": "YA-C3D7EE83-014-M4",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Елизавета Алексеева",
+      "displayName": "Елизавета Алексеевна",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/014-full-view.jpg",
@@ -43,6 +78,12 @@
             "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0014-target-entry.png",
             "sha256": "53e8193d7f2209ab79074d6259a673fb4a7aa487e4208d4881f8c9f5cc4a2843",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0014-target-entry-deep.png",
+            "sha256": "c4a6d19bc777692bb00e993fabe627d2c9cf17e103739a767e1778b6b1ae06a7",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой, соседними записями и заголовками; интерфейс Яндекса отсутствует."
           }
         ],
         "quality": {
@@ -50,8 +91,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5162x4295",
-          "targetDimensions": "1474x928",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "4900x4000",
+          "method": "manual-full-spread-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +102,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Имена всех восприемников сохранены в широком crop; их полная нормализация не требуется для идентификации семейного ряда."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны заголовок, две строки № 33–34, помета «близнецы», даты, родители, обе строки восприемников и соседние майские записи; индексная потеря Христины исправлена. Wide crop 4900×4000."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Май. Женского пола № 33 и № 34. 14 родились, 15 крещены. Александра и Христина, близнецы. Села Георгіевки солдатъ Семенъ Исаевъ Ампилоговъ и законная жена его Елизавета Алексеева, оба православные. Восприемники каждой близняшки записаны отдельными строками в правой части разворота.",
+    "modernInterpretation": "14 мая 1912 года у солдата Семёна Исаевича Ампилогова и Елизаветы Алексеевны в селе Георгиевке родились близнецы Александра и Христина; обе крещены 15 мая.",
+    "indexNote": "Оригинал содержит две отдельные женские номера и помету «близнецы»; индекс упоминал только Александру и потому неполон.",
     "localOcr": "ела Лолічева пресуиний Анаре\n1ль\nИтатгевь Рыбаковь и законав\nорнась Огафіз Мапартива;\nоба привомавине\nкине\n,однренит\"\nПсолиничикв ратт мириов\nОсла Кольква престови /Ниниофпру-\n* сакат вурптрия и во обо\nправосавнне",
     "localOcrWithSurnameLexicon": "ела Полічева престиний Анаре\n1 ль\nИтатгевь Рыбаковь и законам\nорнась агафіз Магартива;\nоба приволавине\nкине\nОсла Кольква престави /инифру-\nправославнне",
     "collation": {
@@ -80,6 +125,33 @@
   },
   "indexData": {
     "querySnippet": "Родившийся: Александра Семенова Ампилогова. ... Отец: Семен Исаев Ампилогов, солдат, село Георгиевка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-but-incomplete-index",
+    "discrepancy": "Индекс пропустил вторую близняшку Христину; обе строки и помета о близнецах прочитаны по оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "event": {
+    "type": "twin-birth-and-baptism",
+    "recordNumbers": [
+      33,
+      34
+    ],
+    "date": {
+      "birth": "1912-05-14",
+      "baptism": "1912-05-15",
+      "display": "14–15 мая 1912 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Георгіевка",
+      "normalized": "село Георгиевка"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение близнецов Александры и Христины Семёновен Ампилоговых.",
+    "identityNote": "Отец отнесён к P102595 по редкому полному имени, Георгиевке и варианту «Ампилонов»; P102074 не объединяется.",
+    "migrationNote": "Запись не используется как самостоятельное доказательство миграции."
   }
 }
