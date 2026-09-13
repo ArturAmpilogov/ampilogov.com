@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CAA98E03-018",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "caa98e03-3ad1-4d86-8c53-0a111552f489",
     "scanNumber": 18,
@@ -13,22 +13,57 @@
     "documentUrl": "https://yandex.ru/archive/catalog/caa98e03-3ad1-4d86-8c53-0a111552f489/18"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": 36,
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 13 марта, крещён 26 марта 1912 года",
+      "birthIso": "1912-03-13",
+      "baptismIso": "1912-03-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "Севастополь",
+      "normalized": "Севастополь",
+      "placeId": "sevastopol"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-CAA98E03-018-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "mentionId": "YA-CAA98E03-018-R36-M1",
+      "role": "godmother",
+      "personId": "P102998",
+      "displayName": "Людмила Феодосиевна Ампилогова",
+      "nameAsTranscribed": "дочь Севастопольскаго мещанина Людмила Ѳеодосіева Ампилогова",
+      "surnameSeries": true,
+      "identityConfidence": "high-for-current-name-medium-high-for-father-identity"
+    },
+    {
+      "mentionId": "YA-CAA98E03-018-R36-M2",
+      "role": "baptized-child",
+      "displayName": "Александр Моисеевич Иванов",
+      "nameAsTranscribed": "Александръ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CAA98E03-018-R36-M3",
+      "role": "father",
+      "displayName": "Моисей Фёдорович Иванов",
+      "nameAsTranscribed": "мещанинъ г. Балаклавы Моисей Ѳеодоровъ Ивановъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CAA98E03-018-R36-M4",
+      "role": "mother",
+      "displayName": "Феодосия Стефановна Иванова",
+      "nameAsTranscribed": "законная жена его Ѳеодосія Стефанова",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CAA98E03-018-R36-M5",
+      "role": "godfather",
+      "displayName": "Симеон Симеонович Железняков",
+      "nameAsTranscribed": "дворянинъ Симеонъ Симеоновъ Железняковъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -42,51 +77,46 @@
     "sha256": "4bbdcdad51f050df7c2fbcf2b9ed805ad3a74e4e0a9371941dd45a8de74dc53d",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/caa98e03-3ad1-4d86-8c53-0a111552f489/0018-header.png",
-        "sha256": "7e2bb3de94b62a7d9db40ac52b85de5b1956aa4b501b3c0753c121423fb37251",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/caa98e03-3ad1-4d86-8c53-0a111552f489/0018-target-entry.png",
-        "sha256": "e46361d63676a2304439561a70bd0b26d3f716501b54e1c38f22508e8fb09bef",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/caa98e03-3ad1-4d86-8c53-0a111552f489/0018-target-context-deep.jpg",
+        "sha256": "686c226daf94d7fa1bdde3225395627e3292ced151a6681d2180866eec9a1603",
+        "description": "Широкий чистый фрагмент полного разворота с целевой строкой и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4352x3264",
-      "targetDimensions": "1200x744",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "targetDimensions": "4100x1050",
+      "method": "manual-full-spread-review-plus-full-width-clean-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Ампилогова\nВасилакіати\nМ'нщинина 1.\nОресан Симеона Литриди\nновь Захарова и крестаянка М\nакрическых\nгуб. Днівпровског уазда Лакровскайвилости\nДория Доаннова Сокоренко\nДа олиліаати\nсипщанинга Севастаниня Лавель",
-    "modernInterpretation": "Ампилогова Василакиати М'нщинина 1. Оресан Симеона Литриди новь Захарова и крестаянка М акрическых губ. Днивпровског уазда Лакровскайвилости Дория Доаннова Сокоренко Да олилиаати сипщанинга Севастаниня Лавель",
-    "localOcr": "Ампилогова\nВасилакіати\nМ'нщинина 1.\nОресан Симеона Литриди\nновь Захарова и крестаянка М\nакрическых\nгуб. Днівпровског уазда Лакровскайвилости\nДория Доаннова Сокоренко\nДа олиліаати\nсипщанинга Севастаниня Лавель",
-    "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-row-manually-verified",
+    "literal": "№ 36. Марта 13 [родился], 26 [крещён]. Александръ. Мещанинъ г. Балаклавы Моисей Ѳеодоровъ Ивановъ и законная жена его Ѳеодосія Стефанова, оба православные. Воспріемники: дворянинъ Симеонъ Симеоновъ Железняковъ и дочь Севастопольскаго мещанина Людмила Ѳеодосіева Ампилогова.",
+    "modernInterpretation": "13 марта 1912 года родился и 26 марта был крещён Александр, сын Моисея Фёдоровича и Феодосии Стефановны Ивановых. Восприемницей была Людмила Феодосиевна Ампилогова, дочь севастопольского мещанина.",
+    "indexNote": "Индекс указал верное имя восприемницы, но прежний локальный фрагмент был смещён на соседнюю запись. Номер, даты, ребёнок, родители и оба восприемника установлены ручным чтением оригинала."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Людмила Феодосиева Ампилогова, дочь мещанина. ... Отец крестной матери: Феодосий Ампилогова, мещанин, Севастополь.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "primary-register-entry",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот, запись №36, даты, ребёнок, родители и восприемники; исправлена локализация строки; сохранён clean crop 4100×1050 с SHA."
+  },
+  "context": {
+    "eventSummary": "Людмила Феодосиевна Ампилогова документирована восприемницей при крещении № 36 в Севастополе.",
+    "identityNote": "Связь её неназванного по отчеству отца с P8240 strongly-supported: совпадают редкое имя Феодосий, точный сословный статус и Севастополь; текущий лист не сообщает отчество отца, поэтому это корпусная идентификация, а не буквальная полноименная формула.",
+    "migrationNote": "Восприемничество и корпусное тождество отца не доказывают отдельного переселения."
   }
 }
