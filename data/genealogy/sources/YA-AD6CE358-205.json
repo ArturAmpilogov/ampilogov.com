@@ -1,25 +1,85 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-AD6CE358-205",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
-    "catalogId": "AD6CE358",
-    "scanNumber": "205"
+    "catalogId": "ad6ce358-a855-4902-97a2-75df7fe50167",
+    "scanNumber": "205",
+    "title": "Духовные росписи и исповедные ведомости Покрово-Богородицкой церкви селения Ермолаевка Оренбургского уезда за 1915–1918 гг."
   },
   "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/AD6CE358/205"
+    "documentUrl": "https://yandex.ru/archive/catalog/ad6ce358-a855-4902-97a2-75df7fe50167/205"
   },
   "mentions": [
     {
       "mentionId": "YA-AD6CE358-205-M1",
-      "role": "false-index-hit",
+      "role": "household-head",
+      "personId": "P1617",
+      "nameAsTranscribed": "Ампилоговъ Феодоръ Ивановъ, вдовецъ",
+      "displayName": "Фёдор Иванович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AD6CE358-205-M2",
+      "role": "son",
+      "personId": "P101102",
+      "nameAsTranscribed": "сынъ его Григорій, солд.",
+      "displayName": "Григорий Фёдорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AD6CE358-205-M3",
+      "role": "sons-wife",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "жена его Меланія Алексеева",
+      "displayName": "Мелания Алексеевна",
       "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-AD6CE358-205-M4",
+      "role": "grandson",
+      "personId": "P101000",
+      "nameAsTranscribed": "дѣти ихъ: Петръ",
+      "displayName": "Пётр Григорьевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AD6CE358-205-M5",
+      "role": "grandson",
+      "personId": "P101001",
+      "nameAsTranscribed": "Николай",
+      "displayName": "Николай Григорьевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AD6CE358-205-M6",
+      "role": "grandson",
+      "personId": "P102088",
+      "nameAsTranscribed": "Михаилъ",
+      "displayName": "Михаил Григорьевич Ампилогов",
+      "surnameSeries": true
     }
   ],
+  "event": {
+    "type": "confession-household-list",
+    "date": {
+      "display": "1915–1918 годы",
+      "fromIso": "1915-01-01",
+      "toIso": "1918-12-31",
+      "confidence": "collection-range"
+    },
+    "place": {
+      "asWritten": "Деревни Уралки",
+      "normalized": "деревня Уралка, Оренбургский уезд"
+    }
+  },
+  "context": {
+    "eventSummary": "Домохозяйство № 352 деревни Уралки: вдовец Фёдор Иванович, его сын-солдат Григорий, жена сына Мелания и трое детей.",
+    "identityNote": "Редкое полное имя главы, прямая формула «сын его», состав семьи и последовательные возраста точно продолжают ранее прочитанные ведомости того же домохозяйства.",
+    "familyContext": "Мелания сохранена как упоминание без отдельного профиля: её отчество расходится в соседних ведомостях.",
+    "migrationNote": "Наличие семьи в ведомости Уралки подтверждает проживание на момент учёта, но само по себе не доказывает переселение."
+  },
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/AD6CE358/205-full-view.jpg",
@@ -52,6 +112,12 @@
             "path": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-target-entry.png",
             "sha256": "41d64511b51d3c3ebe10c766a8f6a61944581c39a399cf348ca5dfa2143820d3",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/ad6ce358-a855-4902-97a2-75df7fe50167/0205-target-entry-deep.png",
+            "sha256": "5752d92afc7d30a5bfe876a1e0162d7a6d2ebe6f03f2548a680f3c78766c5be7",
+            "description": "Широкий крупный фрагмент целевой строки и соседнего контекста, вырезанный из оригинала без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -59,36 +125,34 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "2551x3908",
-          "targetDimensions": "1200x890",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "2200x1700",
+          "method": "original-download-plus-wide-manual-recrop-and-human-reading"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
     ]
   },
+  "transcription": {
+    "status": "primary-scan-transcription",
+    "literal": "Деревни Уралки. № 352. 1401. Ампилоговъ Феодоръ Ивановъ, вдовецъ — 61. 1402. сынъ его Григорій, солд. — 28 [на исповеди не был]. 1403. жена его Меланія Алексеева — 25. Дѣти ихъ: 1404. Петръ — 9; Николай — 6; 1405. Михаилъ — 2.",
+    "modernInterpretation": "В домохозяйстве № 352 деревни Уралки записаны вдовец Фёдор Иванович Ампилогов, его 28-летний сын-солдат Григорий, жена Григория Мелания Алексеевна и их дети Пётр, Николай и Михаил.",
+    "indexNote": "Индекс Яндекса верно навёл на семью, но состав, родственные формулы, возраста и отсутствие Григория на исповеди прочитаны непосредственно по оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-links",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "МОСКОКСКОЙ\nТИПОГРАФІИ\nСІРОА АЛЬКО\nДеревни Фрилки кріс п чаг\npom\nсемейные\nПОЛА.\nІвжеска пóла.\nЕНСКА",
-    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nТИПОГРАФІИ\nСПРОА АЛЬКО\nДеревни Фрилки кріс п чаг\npom\nсемейные\nПОЛА.\nвжеска пла.\nЕНСКА",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+      "Точный год внутри диапазона дела 1915–1918 на листе не напечатан; публично сохраняется диапазон каталога."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны заголовок деревни Уралки, домохозяйства № 350–352, номера лиц 1401–1405, возрастные графы и отметка отсутствия Григория; identity сверена с последовательными ведомостями того же состава. Широкий clean crop 2200×1700."
   },
   "indexData": {
     "querySnippet": "1404. 1405. Ампилогов Феодор Иванов, вд. мещ. сын его Григорий солд. жена его Мелания Алексеева дети их: Петр Николай Михаил.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexAssessment": "confirmed-with-primary-scan-corrections"
   }
 }
