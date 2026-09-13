@@ -64,6 +64,11 @@ for (const item of owned.values()) {
   const transcriptionStatus = source.transcription?.status ?? "";
   const deepReviewedInOwnedCampaign = Boolean(source.review?.deepReviewedAt && source.review?.deepReviewScope);
   const automatedStatus = /(?:local-ocr|ocr-uncertainty|primary-scan-collation|reading-uncertain)/i.test(`${reviewStatus} ${transcriptionStatus}`);
+  const inventoryStatus = deepReviewedInOwnedCampaign
+    ? "owned-deep-reviewed"
+    : automatedStatus
+      ? "owned-automated-reading-needs-deep-review"
+      : "owned-existing-reading-preserved";
   items.push({
     ...item,
     sourceFile: path.relative(root, file).split(path.sep).join("/"),
@@ -78,7 +83,7 @@ for (const item of owned.values()) {
     hasEventPlace: Boolean(source.event?.place?.normalized && source.event.place.normalized !== "не установлено"),
     hasLinkedPerson: Boolean(source.mentions?.some((mention) => mention.personId)),
     deepReviewedInOwnedCampaign,
-    inventoryStatus: automatedStatus ? "owned-automated-reading-needs-deep-review" : "owned-existing-reading-preserved",
+    inventoryStatus,
   });
 }
 

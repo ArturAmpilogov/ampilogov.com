@@ -10,7 +10,15 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/b1dd87ec-6af1-42cb-b730-dd28b6b02821/36"
   },
+  "event": {
+    "type": "confirmed-false-fuzzy-hit",
+    "date": {"display": "февраль 1891 года", "year": 1891, "confidence": "high-from-page-heading"},
+    "place": {"normalized": "не применяется к фамильному ряду"}
+  },
   "mentions": [],
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-hit",
+  "publicCore": false,
   "evidence": {
     "catalogId": "b1dd87ec-6af1-42cb-b730-dd28b6b02821",
     "scanNumber": 36,
@@ -32,6 +40,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-target-entry.png",
         "sha256": "eb7762d458be78d33258c096fb6ca19f1b24ecc2187eadaf75bf95fcb4a19dbc",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/b1dd87ec-6af1-42cb-b730-dd28b6b02821/0036-wide-deep-review.png",
+        "sha256": "e44502978dbf78f9960bedfbb64c92572610ef2e4f584553c0783faf4db09c7e",
+        "description": "Широкий чистый фрагмент полного брачного разворота 1891 года со строками женихов, невест и поручителей."
       }
     ],
     "quality": {
@@ -40,7 +54,11 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "9896x7976",
       "targetDimensions": "2527x1055",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-wide-manual-review-crop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -95,17 +113,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "confirmed-false-fuzzy-hit",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "На полном развороте фамилия Ампилогов/Анпилогов отсутствует."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверен весь брачный разворот за февраль 1891 года, включая все пары и поручителей. Заявленный индексом Гавриил Гавриилов Ампилогов на листе отсутствует; карточка сохранена как confirmed false fuzzy hit без профиля, события фамильного ряда, карты или миграции."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "По меешха - севи Вригокими сковнір\nСщо Зопиед Мос(овай и Кріг\nТеті Єчцаз Семен)веб. По невВери -\nдежевин верезовки Віле : СеменЯСщих\nOoloh a ИвantПomanи)) Рaлka).\nПо женнра - севі Принтрит-Крін Савішль\nИтпнь Чемеез и д. Мнно- винкиной совдар",
-    "modernInterpretation": "По меешха - севи Вригокими сковнир Сщо Зопиед Мос(овай и Криг Тети Єчцаз Семен)веб. По невВери - дежевин верезовки Виле : СеменЯСщих Ooloh a ИвantПomanи)) Рaлka). По женнра - севи Принтрит-Крин Савишль Итпнь Чемеез и д. Мнно- винкиной совдар",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "primary-scan-negative-transcription",
+    "literal": "Метрической книги на 1891 год, часть вторая, о бракосочетавшихся. На развороте видны февральские браки № 20–25 и их поручители; фамилия Ампилоговъ или Анпилоговъ ни в одной строке не встречается.",
+    "modernInterpretation": "Полный брачный разворот 1891 года содержит несколько чужих браков и списки поручителей. Заявленный Яндексом Гавриил Гавриилович Ампилогов на странице отсутствует.",
+    "indexNote": "Индексная строка о Гаврииле Гавриилове Ампилогове — склейка или ложное распознавание; приоритет отдан ручной проверке полного листа.",
     "localOcr": "По меешха - севи Вригокими сковнір\nСщо Зопиед Мос(овай и Кріг\nТеті Єчцаз Семен)веб. По невВери -\nдежевин верезовки Віле : СеменЯСщих\nOoloh a ИвantПomanи)) Рaлka).\nПо женнра - севі Принтрит-Крін Савішль\nИтпнь Чемеез и д. Мнно- винкиной совдар",
     "localOcrWithSurnameLexicon": "По мешен - севи Прогокими совнар\nОщі Зіграв Мос овай и Крів\nТеті виз Сементве. По невтори -\nдеревии березьки Віле: СесисаСщи\nDoloh a Uant Homans Daukas.\nо менира - сель Принтрит- Крік Савіль\nИтана Чемее и д. Мино- викиной сова ать",
     "collation": {

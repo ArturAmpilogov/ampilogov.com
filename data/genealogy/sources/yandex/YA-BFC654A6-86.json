@@ -1,36 +1,39 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BFC654A6-86",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "parallel-primary-copy",
   "collection": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
-    "scanNumber": 86
+    "scanNumber": 86,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Слоновка, Казанка, Белозерка за 1886 г."
   },
   "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/86"
+    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/86",
+    "granularSourceIds": ["YA-BFC654A6-86-M22"]
   },
   "mentions": [
     {
       "mentionId": "YA-BFC654A6-86-M1",
-      "role": "other",
+      "role": "godfather-on-granular-record",
       "personId": null,
-      "nameAsTranscribed": "Носитель фамильного ряда: требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
+      "nameAsTranscribed": "той же деревни солдатъ Сергѣй Егоровъ Ампилоговъ",
+      "displayName": "Сергей Егорович Ампилогов",
+      "granularSourceId": "YA-BFC654A6-86-M22",
       "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
+    "status": "complete-overview-with-granular-transcription",
+    "literal": "Март. Мужского пола № 22. 1 родился, 2 крещён Василій, сын крестьянина Феодора Аггеева Жданова и Акилины Стефановой. Восприемник: той же деревни солдатъ Сергѣй Егоровъ Ампилоговъ.",
+    "modernInterpretation": "2 марта 1886 года солдат Сергей Егорович Ампилогов был восприемником Василия Фёдоровича Жданова в Людвиновке; полная карточка — YA-BFC654A6-86-M22.",
     "localOcr": "тепека гоптарова\nт, Дор. Кросу.\nmegeaus ella\nхаиловь Калинать и Женка\nЛарія Михашлока Малови\n7/\nМВенний іохів",
     "collation": {
       "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Запись № 22, даты, ребёнок, родители и восприемники проверены по оригиналу; индекс использован только для навигации."
   },
   "evidence": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
@@ -53,6 +56,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0086-target-entry.png",
         "sha256": "93c65d098dc179f3fc3d2712b13f52f29dd33f5198f77f36a23fb8ba4cce1077",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0086-target-context-deep.jpg",
+        "sha256": "9a8c6c2060f1294d1372eb8f5be504173367e0128a5ea1d64f92f478231746b8",
+        "description": "Широкий clean-фрагмент полного мартовского разворота с записью № 22 и соседними строками."
       }
     ],
     "quality": {
@@ -60,8 +69,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5156x4013",
-      "targetDimensions": "1444x618",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4900x3700",
+      "method": "manual-full-spread-review-and-clean-wide-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -98,15 +107,20 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Расшифровать совпадение по скану.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-overview-linked-to-granular-record",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены мартовский разворот, запись № 22 и правая графа восприемников; root связан с YA-BFC654A6-86-M22 без нового backlink."
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verdict": "confirmed-in-granular-record-YA-BFC654A6-86-M22"
+  },
+  "isRecord": true,
+  "cardKind": "parallel-primary-copy",
+  "publicCore": false,
+  "parallelOf": "YA-BFC654A6-86-M22",
+  "summary": { "status": "verified-summary", "text": "Сергей Егорович Ампилогов был восприемником 2 марта 1886 года; подробная запись — YA-BFC654A6-86-M22." }
 }

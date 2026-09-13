@@ -1,36 +1,56 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-BFC654A6-114",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "parallel-primary-copy",
   "collection": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
-    "scanNumber": 114
+    "scanNumber": 114,
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти сёл Слоновка, Казанка, Белозерка за 1886 г."
   },
   "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/114"
+    "documentUrl": "https://yandex.ru/archive/catalog/bfc654a6-ac79-43e6-9f3f-347d425e148f/114",
+    "granularSourceIds": ["YA-BFC654A6-114-R118"]
   },
   "mentions": [
     {
       "mentionId": "YA-BFC654A6-114-M1",
-      "role": "other",
+      "role": "child-on-granular-record",
       "personId": null,
-      "nameAsTranscribed": "Ампилогов/Ампилогова — требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
+      "nameAsTranscribed": "Михаилъ",
+      "displayName": "Михаил Сергеевич Ампилогов",
+      "surnameSeries": true,
+      "granularSourceId": "YA-BFC654A6-114-R118"
+    },
+    {
+      "mentionId": "YA-BFC654A6-114-M2",
+      "role": "father-on-granular-record",
+      "personId": null,
+      "nameAsTranscribed": "Сергѣй Егоровъ Ампилоговъ",
+      "displayName": "Сергей Егорович Ампилогов",
+      "surnameSeries": true,
+      "granularSourceId": "YA-BFC654A6-114-R118"
+    },
+    {
+      "mentionId": "YA-BFC654A6-114-M3",
+      "role": "mother-on-granular-record",
+      "personId": null,
+      "nameAsTranscribed": "Агрипина Васильева",
+      "displayName": "Агриппина Васильевна Ампилогова",
       "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
+    "status": "complete-overview-with-granular-transcription",
+    "literal": "Ноябрь. Мужского пола № 118. 4 родился, 5 крещён. Михаилъ. Деревни Ивановки крестьянин, солдат Сергѣй Егоровъ Ампилоговъ и законная жена его Агрипина Васильева, оба православные.",
+    "modernInterpretation": "4 ноября 1886 года у Сергея Егоровича и Агриппины Васильевны Ампилоговых родился сын Михаил; полная карточка события — YA-BFC654A6-114-R118.",
     "localOcr": "гани-арова аренбурги рочбовий\nзасилй Амврисісвлкусь\nковл и законнемео\nмиена\n-гафии Єрмовaева, обі прав",
     "collation": {
       "baseLocalOcr": "not-confirmed-by-local-ocr",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Год, номер, даты, ребёнок и родители проверены по полному оригиналу; индекс использован только для навигации."
   },
   "evidence": {
     "catalogId": "bfc654a6-ac79-43e6-9f3f-347d425e148f",
@@ -53,6 +73,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0114-target-entry.png",
         "sha256": "283ad524cf13b313ea389dcbebd8af4eedb58ba6b05404938c943d9244888982",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/bfc654a6-ac79-43e6-9f3f-347d425e148f/0114-target-context-deep.jpg",
+        "sha256": "7a5c9dcf061abb47593c7705419bbbbd356a9b6a5bec30ae2c8fd03ba8d407e8",
+        "description": "Широкий clean-фрагмент полного ноябрьского разворота с записью № 118 и соседними строками."
       }
     ],
     "quality": {
@@ -60,8 +86,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5024x3969",
-      "targetDimensions": "1530x864",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3700",
+      "method": "manual-full-spread-review-and-clean-wide-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -98,15 +124,20 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Расшифровать совпадение по скану.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-overview-linked-to-granular-record",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный ноябрьский разворот и запись № 118; корневая карточка связана с канонической YA-BFC654A6-114-R118 без дублирования людей и backlinks."
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verdict": "confirmed-in-granular-record-YA-BFC654A6-114-R118"
+  },
+  "isRecord": true,
+  "cardKind": "parallel-primary-copy",
+  "publicCore": false,
+  "parallelOf": "YA-BFC654A6-114-R118",
+  "summary": { "status": "verified-summary", "text": "Лист содержит рождение Михаила Сергеевича Ампилогова 4 ноября 1886 года; подробная запись — YA-BFC654A6-114-R118." }
 }

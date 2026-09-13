@@ -2,23 +2,26 @@
   "schemaVersion": 1,
   "sourceId": "YA-ABE035F8-099",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "baptism-clergy-multiple-entries",
+  "recordType": "baptism-register-clergy-page",
   "collection": {
     "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
     "scanNumber": 99,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Романовка, Покровка, (Куюргуза), Слоновка, Нижний Гумбет, Ильинка, Успенка за 1910 г."
+    "title": "Метрическая книга Слоновского прихода за 1910 год, часть о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/abe035f8-731b-4197-9975-ff1b64a512cd/99"
   },
   "event": {
-    "type": "baptism-clergy-multiple-entries",
+    "type": "baptism-clergy-service",
     "date": {
-      "display": "1910",
-      "confidence": "high-for-year"
+      "display": "30 января — 4 февраля 1910 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "Слоновский приход"
+      "asWritten": "Слоновский приход",
+      "normalized": "село Слоновка, Оренбургский уезд",
+      "placeId": "orenburg-uezd",
+      "confidence": "high"
     }
   },
   "mentions": [
@@ -26,78 +29,77 @@
       "mentionId": "YA-ABE035F8-099-M1",
       "role": "deacon",
       "personId": "P1543",
-      "displayName": "Діакон Аѳиноген Ампилогов",
       "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ABE035F8-099-M2",
+      "role": "priest",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
+      "surnameSeries": false
     }
   ],
+  "transcription": {
+    "status": "complete-clergy-reading-across-visible-entries",
+    "literal": "Записи о родившихся и крещённых 30–31 января, 31 января — 1 февраля, 3 февраля и 3–4 февраля 1910 года. При видимых актах повторяется: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ». Остальные названные лица — дети, родители и восприемники отдельных актов.",
+    "modernInterpretation": "С 30 января по 4 февраля 1910 года Афиноген Ампилогов документирован как диакон при крещениях Слоновского прихода вместе со священником Иоанном Поляковым."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи Афиногена Ампилогова при крещениях.",
+    "identityNote": "P1543 подтверждён полным именем, саном, приходом и постоянной связкой со священником Иоанном Поляковым.",
+    "scopeNote": "Чужие семьи сохранены только как контекст листа без профилей и родственных связей.",
+    "migrationNote": "Служебная подпись не доказывает переселение."
+  },
+  "indexData": {
+    "querySnippet": "Индексное попадание по подписи диакона Афиногена Ампилогова.",
+    "fuzzyQuery": true,
+    "assessment": "clergy-signature-confirmed; adjacent-family-conflation-rejected"
+  },
   "evidence": {
     "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
     "scanNumber": 99,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-full-view.png",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "downloaded-original-plus-manual-wide-recrop",
     "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "6a8d12353e2cc91b76d70b526abc33d4c9b86bc699df7818ad73c0d9da03f288",
+    "publicDisplay": false,
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-header.png",
-        "sha256": "1c5dd610ef25018e3be0ac3266592b39780e4ab2081e14337b59f590c8f62c13",
-        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
-        "dimensions": "5407x1166"
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-target-entry.png",
-        "sha256": "388806c88e0385768017336e70f7725b55892d16f1e4d3f8d1360d2c048c49b0",
-        "description": "Крупный фрагмент вручную подтверждённой фамильной строки с необходимым контекстом; без интерфейса сайта и браузера.",
-        "dimensions": "1837x701"
+        "kind": "full-page-context",
+        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-target-context-deep.png",
+        "sha256": "9f9c948fb085afc4b7d24e61b3c12b7dcf76f290945fb1c784043affe4c817d0",
+        "description": "Почти полный широкий лист, включая переход январь–февраль и повторные строки причта; без интерфейса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5407x4320",
-      "targetDimensions": "1837x701",
-      "method": "manual-visual-review-of-downloaded-original",
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "siteAndBrowserChromeExcluded": true,
-      "blackDefectsExcluded": true,
-      "confirmedAt": "2026-09-12",
-      "headerDimensions": "5407x1166",
-      "blackDigitalDefectsExcluded": true
+      "targetDimensions": "5200x4050",
+      "method": "manual-reading-of-entire-page"
     },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "rightsNote": "Закрытая исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Священник Иоанн Поляков с диаконом Афиногеном Ампилоговым; формула повторяется при крещениях на развороте.",
-    "modernInterpretation": "Оригинал подтверждает Афиногена Ампилогова; индекс сократил фамилию до формы «Ампилов».",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "НОД АЛЬН\nО ПОЛАЛЬО\nИЄТРИЧЕСКОЙ КНИГИ НА 19/0\n-Годи, часть первад, й родившихел.\nЗканїє, йма, бтчество й фамиліл родúтєлей, й какóгш\nЗкАніє, ймА, бтчЕсТво й фАмНЛЇА\nКтò совершáла тÁннство\nP8ко\nIнуса.\nвроиспов Еданіл.\nБоспріємникWвZ.\nкрецéніл.\nТТЕЛЕЙ\nела (моловхихлествянинь 11ванль\nС//0ч0 ме оемаперествянийолосит\nСеменовр ЛЛасыовь и загонная мкеетего\nЛвивонівч Ласттіаь м перествячений\nСвященняич\nолена Лванова, оберегрлевосласнве\nІнела Маріц Яосівсєва Мосповлина.\nСвятенникь дланнь 1 оляковвв.\nархивам\nДіалинів Понножів Алигилоров'в.\nГоминт\nквипиремули. полавесиь СХ) якш поси.\nМохосиеоснаперествянийвЛихей\nОни. Клсповлипроствянийв водорв\nСтофантвь Митжелеви м д станиая\nвакловь Порецній иперет „Янския\nПоляновть\nЯеилего В3 арвари озорова Оба огра\nснени ввоокіх вгоріва Привлтва.\nвоспавлвне.\nосавонниви фвання Полалова\nДіаланів Помглонтїв Амлеинаів\nОнкисніваи перествянийв Сте-\nТого мис кенаперествянийь Стя-\nфетть Мельшів Аасьтівьм\nзалеонноо\nорегів Дорооріевь орщоннсві мир\nИВ\nоненаето Ажилина Пивлова оби лара\nствянский мисни вита Рислв-\nЦіаполосиь\nава Деаритьина-\nвоснавлво.\nменил\nАання\nNodolko",
-    "localOcrWithSurnameLexicon": "НОД ИЛЬН\nО ПОДАЛЬО\nАСТРИЧЕСКОЙ КНИГИ НА 19/0\nГоди, часть первал, й родившихел.\nЗванїє, йма, отчество й фамиліл родителей, й какгш\nЗвАніє, ймА, отчЕсТво й фАмИЛА\nКто совершАла тАннство\nP8ко\nвіроиспов данія.\nБоспріємникWвZ.\nкреденія.\nГЕЛЕЙ\nела (моловкихлествянинь 11вань\n0// 020 ме делаперествянийолост\nСеменовр Ласыовь и загонная мксетего\nМиронів Ластаь м перествячений\nСвященникч\nолена Ланова, обереглевосласные\nІнела Марін Ясівсева Мосповлена.\nСвятенниь враннь в олякова.\nархивам\nДіаленів Помножів Алигилоровів.\nГоминь\nквипирмули полавесь СХ) яки посли.\nМохосе оснаперествянийвЛитей\nОни. Клоповникроствяний водорв\nСтефановь Метелево и д станися\nваловь Пореній и перет \"Янския\nПоляновь\nЯнинего Варвари озорова Оба огра\nсени воріх вгорів а Привитва.\nвоспавлвне .\nДіалонів Помглонтів Аменнаів\nОн висноваи перествяниів Сте -\nТого ми кенаперествяний Ста-\nфенть Мельшів Ластівім\nзалеонно\nоригів Дороорівь орионні мир\nИВ\nонемеето Ажилина Павлова оби пара\nсвянский лисни вита Рислв-\nДіалолосиь\nава Реаритьина-\nвоспавиво.\nменил\nАлання\nNo dallo",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+  "review": {
+    "status": "deep-reviewed-primary-scan-and-linked",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный разворот, даты 30 января — 4 февраля 1910 года, родители и восприемники, а также все повторные подписи причта; P1543 отделён от чужих семей; создан широкий clean crop без UI."
+  },
+  "summary": {
+    "status": "verified-summary",
+    "text": "Афиноген Ампилогов служил диаконом при крещениях Слоновского прихода 30 января — 4 февраля 1910 года."
   },
   "isRecord": true,
+  "primaryPersonId": "P1543",
   "cardKind": "named-primary-record",
   "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Того же села крестьянин Иван Тихонов Лаевков и крестьянская жена Мария Яковлева Московкина. Священник Иоанн Поляков Диакон Афиноген Ампилогов.",
-    "fuzzyQuery": true
+  "canonicalization": {
+    "canonicalSourceId": "YA-ABE035F8-099",
+    "mergedAliasId": "YA-ABE035F8-99",
+    "basis": "Один catalogId и scanNumber 99; совпадают временной диапазон, приход, причт и целевой фрагмент SHA-256. Разные полные SHA относятся к двум сохранённым версиям изображения одного листа."
   }
 }

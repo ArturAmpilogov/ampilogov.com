@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-C7016A16-040",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
     "scanNumber": 40,
@@ -13,24 +13,17 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c7016a16-4822-4f55-86a7-bc5c550d59bd/40"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage-register-page",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "январь 1909 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Гамалеевка",
+      "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-C7016A16-040-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
     "scanNumber": 40,
@@ -52,6 +45,12 @@
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0040-target-entry.png",
         "sha256": "ab9c72132d621abe0cbed0c62f74c2c8f97d3226e4db98cb5ff721fe2a101f0b",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0040-target-context-deep.png",
+        "sha256": "9e4fa0cfa65b91e3a21f21168f39b4979896be6a5d9aaf3f49988a6778a1a6e7",
+        "description": "Широкий clean-фрагмент полного январского брачного разворота с записями № 1–3 и графами поручителей."
       }
     ],
     "quality": {
@@ -59,16 +58,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "11052x8730",
-      "targetDimensions": "2677x1849",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "10000x7600",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": false
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Василй Николасьь\nпо невтьст\nСовонось и Ермолой Содоноєв.\nвИ аОХИВ\nСТИ\nПо Кеи биь крестымые сема. На\nмаліьськи Сергій Алекстьевь г4-\nпеловь и бригырии Отепановь",
-    "modernInterpretation": "Василй Николасьь по невтьст Совонось и Ермолой Содоноєв. вИ аОХИВ СТИ По Кеи биь крестымые сема. На малиьськи Сергий Алекстьевь г4- пеловь и бригырии Отепановь",
+    "status": "complete-primary-scan-manually-verified-false-positive",
+    "literal": "«Метрической книги на 1909 годъ, часть вторая, о бракосочетавшихся». Январский разворот, записи № 1–3. Вручную прочитаны женихи, невесты и обе группы поручителей; индексных Николая Алексеева Сороколетова и Максима Антонова Ампилогова на листе нет.",
+    "modernInterpretation": "Полный январский брачный разворот не содержит заявленного индексом Максима Антоновича Ампилогова; совпадение относится к другому листу или смешанному текстовому блоку.",
     "localOcr": "Василй Николасьь\nпо невтьст\nСовонось и Ермолой Содоноєв.\nвИ аОХИВ\nСТИ\nПо Кеи биь крестымые сема. На\nмаліьськи Сергій Алекстьевь г4-\nпеловь и бригырии Отепановь",
     "localOcrWithSurnameLexicon": "Васили Николасьь\nпо невтьст\nСовонось и Ермолой Содоноєв.\nСТИ\nПо Ки бить крестымые сема. На\nмаліьськи Сергій Алексевь 24-\nпеловь и бригории Отепановь",
     "collation": {
@@ -76,20 +78,26 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Поисковый индекс использован только для навигации и опровергнут ручным чтением всего сохранённого разворота."
   },
   "indexData": {
     "querySnippet": "Жених: Николай Алексеев Сороколетов, псаломщик, село Гамалеевка, 19. Поручитель: Максим Антонов Ампилогов, крестьянин, село Гамалеевка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-false-positive-after-full-scan-review"
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот, записи № 1–3, даты, женихи, невесты, поручители и подписи причта; фамильное упоминание отсутствует."
+  },
+  "context": {
+    "eventSummary": "Полный январский брачный разворот не содержит заявленного индексом Максима Антоновича Ампилогова; совпадение относится к другому листу или смешанному текстовому блоку.",
+    "identityNote": "Профиль и связи не создаются: носителя исследуемого фамильного ряда на листе нет.",
+    "migrationNote": "Не применимо."
   }
 }

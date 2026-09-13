@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B1A1ABE2-202",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "church-record",
   "collection": {
     "catalogId": "b1a1abe2-cf06-4ed6-b459-5de850dbba79",
     "scanNumber": 202,
@@ -13,22 +13,35 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b1a1abe2-cf06-4ed6-b459-5de850dbba79/202"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-and-burial",
+    "recordNumber": 13,
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "24 / 26 июня 1916 года",
+      "date": "1916-06-24",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Георгиевка",
+      "normalized": "село Георгиевка, Оренбургский уезд",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B1A1ABE2-202-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "deceased",
+      "displayName": "Тимофей Михайлович Ампилогов",
+      "nameAsTranscribed": "села Георгіевки крестьянина Михаила Васильева Ампилогова сынъ Тимоѳей",
+      "surnameSeries": true,
+      "personId": "P101847"
+    },
+    {
+      "mentionId": "YA-B1A1ABE2-202-M2",
+      "role": "father",
+      "displayName": "Михаил Васильевич Ампилогов",
+      "nameAsTranscribed": "крестьянина Михаила Васильева Ампилогова",
+      "surnameSeries": true,
+      "personId": "P101848"
     }
   ],
   "evidence": {
@@ -52,6 +65,12 @@
         "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0202-target-entry.png",
         "sha256": "1d3bceb3bf25285e08bd93207c830da7dc77c9a349b9b4535b532ca6babccfab",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-context",
+        "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0202-wide-deep-review.png",
+        "sha256": "6f4dacbbd91103dc35a830b76fb5c54450d01a74bb0c4ef147a98f609fb2120c",
+        "description": "Широкий чистый фрагмент полного июньского разворота смертей 1916 года с актом № 13 и соседними строками."
       }
     ],
     "quality": {
@@ -59,16 +78,20 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4177x3615",
-      "targetDimensions": "1224x669",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4000x3300",
+      "method": "original-download-plus-wide-manual-review-crop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Асавомищийв Сранта ію Дрод дов.\nCeha Nalorreba N\nнинів (вепірь\nПстообь МилийкаВо\nвсялач\nСьящениия Гоол.\nДаму\nПсаКолицтів Свинтаіь\n000\n3066\nРава Паколчева /восПячнина\nДанійка\nТимьодисевеа віребєва, долі Ааріаетина,",
-    "modernInterpretation": "Асавомищийв Сранта ию Дрод дов. Ceha Nalorreba N нинив (вепирь Пстообь МилийкаВо всялач Сьящениия Гоол. Даму ПсаКолицтив Свинтаиь 000 3066 Рава Паколчева /восПячнина Данийка Тимьодисевеа виребєва, доли Аариаетина,",
+    "status": "primary-scan-transcription",
+    "literal": "Іюнь. Мужескаго счёта № 13. 24 [умер], 26 [погребён]. Села Георгіевки крестьянина Михаила Васильева Ампилогова сынъ Тимоѳей. 1/2 года. Отъ поноса. Священникъ Іоаннъ Бѣловъ, псаломщикъ Викторъ Дроздовъ. Погребёнъ на приходскомъ кладбищѣ.",
+    "modernInterpretation": "24 июня 1916 года в селе Георгиевке умер полугодовалый Тимофей, сын крестьянина Михаила Васильевича Ампилогова; 26 июня погребён на приходском кладбище. Причина смерти — понос.",
     "localOcr": "Асавомищийв Сранта ію Дрод дов.\nCeha Nalorreba N\nнинів (вепірь\nПстообь МилийкаВо\nвсялач\nСьящениия Гоол.\nДаму\nПсаКолицтів Свинтаіь\n000\n3066\nРава Паколчева /восПячнина\nДанійка\nТимьодисевеа віребєва, долі Ааріаетина,",
     "localOcrWithSurnameLexicon": "Агавомищийв Санта ію Дроз дов.\nCeha Malorreba N\nнинів /вепірь\nСвященния Госл.\nДому\nПсаКолитів Свинтарь\n000\n3066\nРава Какалива /восПячнина\nДанійка\nТимоди сева віребова, далі Аріатина ,",
     "collation": {
@@ -76,20 +99,20 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Яндекс ошибочно назвал умершего Тимофеем Васильевичем и дал возраст 2 года. Оригинал прямо называет его сыном Михаила Васильева Ампилогова и показывает возраст 1/2 года; принят приоритет скана."
   },
   "indexData": {
     "querySnippet": "Умерший: Тимофей Васильев Ампилогов, крестьянин, село Георгиевка, 2 года. Умерший: Назар Миронов Познахарев, 1 1/2.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "primary-scan-verified-and-linked",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитан полный июньский разворот и акт № 13; проверены даты 24/26 июня 1916, отец Михаил Васильевич, имя Тимофей, возраст 1/2 года, причина смерти, причт и кладбище. Исправлены ошибочные отчество и возраст индекса; тождество с P101847/P101848 подтверждено записью рождения января 1916 года."
   }
 }

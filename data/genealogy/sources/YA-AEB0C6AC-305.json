@@ -10,7 +10,16 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/305"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-AEB0C6AC-305-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Петръ Іосифовъ Антиповъ",
+      "displayName": "Пётр Иосифович Антипов",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-full-view.jpg",
@@ -43,6 +52,12 @@
             "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-target-entry.png",
             "sha256": "b4d4766aaf6819be026a25902ffbcccef789e3512732bb12ed44bc7adfc24e56",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/aeb0c6ac-3daa-467b-89b0-2f45f8f4c871/0305-target-entry-deep.png",
+            "sha256": "bf4dfd8c136c8dee21c38eb2496b74844a5f18bdd2c8831eb015159a06d02268",
+            "description": "Широкий крупный фрагмент целевой строки и соседнего контекста, вырезанный из оригинала без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +65,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5344x4383",
-          "targetDimensions": "1377x1233",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5000x3800",
+          "method": "original-download-plus-wide-manual-recrop-and-human-reading"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +74,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-confirmed-false-by-primary-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную просмотрены весь разворот, июльские записи № 1–3 и обе колонки поручителей; целевая фамилия сопоставлена по буквам с соседними фамилиями. Широкий clean crop 5000×3800."
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "literal": "Іюль. В поручителях по невѣстѣ: села Колычева крестьяне Петръ Іосифовъ Антиповъ, Филиппъ Андреевъ Сорокинъ.",
+    "modernInterpretation": "В просмотренной брачной строке назван Пётр Иосифович Антипов; носителей фамильного ряда Ампилоговых нет.",
+    "indexNote": "Яндекс ошибочно передал фамилию «Антипов» как «Ампилогов»; решение принято по рукописному оригиналу и соседним буквам.",
     "localOcr": "Готорій взасливевк Оликова,\nРослорь Оржлито ве Олиго всд\nПоневлитвсмна Мреобрабрслна\nпротавникв Ивайь А\nмковевь\nметанивовь, кема (сорйовая\nпритівниь Летирь Дмитрівч\nКофтовч.\nМорониу?\nСела/вольчева престбівний\nВасний Реодород Іраавиунич,",
     "localOcrWithSurnameLexicon": "Поторій взасивав Ольнова,\nРослорь Орилито ве Олиго всд\nПоневлитвемна Мреобрабран\nпротавник! Ивань А\nметаниковь, кема (сорйовая\nпритівни Летирь Дмитрівч\nКофтовы.\nСела /вольнева престбівний\nЗасний Реодоро Гравиупич,",
     "collation": {
@@ -80,6 +95,23 @@
   },
   "indexData": {
     "querySnippet": "Села Колычева крестьяне Василій Ѳеодоровъ Рукавицынъ Григорій Георгіевъ Курочкинъ, по невѣстѣ: села Колычева крестьяне Петръ Іосифовъ Ампилогов Филиппъ...",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "indexAssessment": "confirmed-false"
+  },
+  "event": {
+    "type": "marriage-index-review",
+    "date": {
+      "display": "1910 год",
+      "fromIso": "1910-01-01",
+      "toIso": "1910-12-31",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Просмотрены три июльские брачные строки; фамильный ряд отсутствует.",
+    "identityNote": "Буквы фамилии поручителя читаются как «Антиповъ», а не предложенное индексом «Ампилогов».",
+    "migrationNote": "Ложное совпадение не создаёт карту или миграцию."
+  },
+  "isRecord": true,
+  "cardKind": "confirmed-false-index-hit"
 }

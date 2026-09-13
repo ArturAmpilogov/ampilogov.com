@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4ACC0D7F-232",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "technical-parallel",
   "collection": {
     "catalogId": "4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9",
     "scanNumber": 232,
@@ -12,25 +12,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9/232"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-4ACC0D7F-232-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9",
     "scanNumber": 232,
@@ -66,30 +48,28 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "гóди, ЧАСТЬ ПеРВАЙ, Ш\nЗвАніє, ймА, отчество й фамиліл\nвоспріємникш5%.\nКурской гберній, Путив льскесю\nдути, Крупеукої ваности псена",
-    "modernInterpretation": "гóди, ЧАСТЬ ПеРВАЙ, Ш ЗвАниє, ймА, отчество й фамилил восприємникш5%. Курской гберний, Путив льскесю дути, Крупеукої ваности псена",
-    "localOcr": "гóди, ЧАСТЬ ПеРВАЙ, Ш\nЗвАніє, ймА, отчество й фамиліл\nвоспріємникш5%.\nКурской гберній, Путив льскесю\nдути, Крупеукої ваности псена",
-    "localOcrWithSurnameLexicon": "годи, ЧАСТЬ ПеРВАЙ, Ш\nЗвАніє, ймА, отчество й фамиліл\nвоспріємникш5%.\nКурской губерній, Путив льске\nдути, Крупекої виности поена",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "delegated-to-canonical-record",
+    "literal": "Корневая поисковая карточка относится к мужской записи № 175: Иоанн Борисович Дронин родился 12 и крещён 14 ноября 1914 года; оренбургский мещанин Иоанн Николаев Анпилогов назван восприемником.",
+    "modernInterpretation": "Это не отдельное событие. Полная проверенная запись находится в YA-OGAOO-173-16-1844-232-IOANN.",
+    "indexNote": "Индекс использован только для навигации; root сверен с полным оригиналом и каноническим Record того же листа и строки."
   },
   "indexData": {
     "querySnippet": "Оренбургский мещанин Иоанн Николаев Анпилогов и Оренбургской губернии и уезда Новотроицкой волости...",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "technical-parallel",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-technical-parallel-resolved",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь разворот 1914 года и мужская строка № 175: даты 12/14 ноября, ребёнок, родители из Каменки Новотроицкой волости, оба восприемника и границы соседних строк; техническая ссылка сверена с каноническим Record.",
+    "transcriptionConfidence": "high",
+    "unresolved": []
+  },
+  "parallelOf": "YA-OGAOO-173-16-1844-232-IOANN",
+  "context": {
+    "eventSummary": "Корневая поисковая карточка относится к мужской записи № 175: Иоанн Борисович Дронин родился 12 и крещён 14 ноября 1914 года; оренбургский мещанин Иоанн Николаев Анпилогов назван восприемником.",
+    "scopeNote": "Полное событие хранится в YA-OGAOO-173-16-1844-232-IOANN. Внутренний заголовок разворота указывает 1914 год вопреки каталожному 1910; корень не повторяет участников и backlink."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-AEBF11DE-027",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "technical-parallel",
   "collection": {
     "catalogId": "aebf11de-69ba-4eed-acc8-750ca3b27af5",
     "scanNumber": 27,
@@ -13,22 +13,42 @@
     "documentUrl": "https://yandex.ru/archive/catalog/aebf11de-69ba-4eed-acc8-750ca3b27af5/27"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
+      "display": "родилась 13 июня, крещена 16 июня 1911 года",
+      "date": "1911-06-13",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "город Оренбург",
+      "normalized": "Оренбург, Оренбургская губерния",
+      "placeId": "orenburg-city"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-AEBF11DE-027-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилоговчи",
-      "nameAsTranscribed": "Анпилоговчи",
+      "role": "child",
+      "personId": "P101676",
+      "displayName": "Мария Александровна Анпилогова",
+      "nameAsTranscribed": "Марія",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AEBF11DE-027-M2",
+      "role": "father",
+      "personId": "P6973",
+      "displayName": "Александр Гордеевич Анпилогов",
+      "nameAsTranscribed": "Оренбургскій мѣщанинъ Александръ Гордѣевъ Анпилоговъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-AEBF11DE-027-M3",
+      "role": "mother",
+      "personId": null,
+      "displayName": "Елена Александровна Анпилогова",
+      "nameAsTranscribed": "законная жена его Елена Александрова",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -52,6 +72,12 @@
         "path": "data/genealogy/evidence-private/yandex/aebf11de-69ba-4eed-acc8-750ca3b27af5/0027-target-entry.png",
         "sha256": "85750bbb9d758652e83a131dd01e5e96e48b5c5b0e2adf4ebd4ee50b797edde3",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/aebf11de-69ba-4eed-acc8-750ca3b27af5/0027-deep-context.png",
+        "sha256": "41ccd9b6f516670aebbff71cbe5efb256abfc6ddb42a79c4ee400005d07a27da",
+        "description": "Чистый полноширинный контекст июньских записей, включая строку Марии № 58."
       }
     ],
     "quality": {
@@ -60,33 +86,43 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "2353x1966",
       "targetDimensions": "1200x859",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-parallel-review-and-clean-wide-recrop",
+      "contextDimensions": "2200x1750"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Д Витmони 1 02\nПретиісий А.\nгенеелітр\nПсоложщит Вдеимій Шавченко\nsis\nФретбуржніи Мписниті Алек-\nсандрьгордлев Анпилоговчи зи\nКопоеляенсег Еленс Аленси\nидрова оби привосливния.\nПротиігрив П.\n/ Внотонит.\nиенооібри\nПеилотуида Висилій Шевченко\nмила. Оренбурчской?, берни и гррзда, волости\nСентовскиго-Посида, Які, бчима Мельни-\nис Крестиянин Летрг/ладили ровч\nгатиловгизаканнат тнаего Іраа-\nнія Трофимова; або Поавославния.",
-    "modernInterpretation": "Д Витmони 1 02 Претиисий А. генеелитр Псоложщит Вдеимий Шавченко sis Фретбуржнии Мписнити Алек- сандрьгордлев Анпилоговчи зи Копоеляенсег Еленс Аленси идрова оби привосливния. Протиигрив П. / Внотонит. иенооибри Пеилотуида Висилий Шевченко мила. Оренбурчской?, берни и гррзда, волости Сентовскиго-Посида, Яки, бчима Мельни- ис Крестиянин Летрг/ладили ровч гатиловгизаканнат тнаего Іраа- ния Трофимова; або Поавославния.",
+    "status": "complete-manual-primary-scan-review-parallel",
+    "literal": "Іюнь. Женскаго счёта № 58. 13 родилась, 16 крещена. Марія. Оренбургскій мѣщанинъ Александръ Гордѣевъ Анпилоговъ и законная жена его Елена Александрова, оба православные. [Восприемники и причт сохранены полностью в канонической карточке YA-OGAOO-173-16-1900-27-MARIA.]",
+    "modernInterpretation": "13 июня 1911 года в Оренбурге родилась Мария, дочь Александра Гордеевича Анпилогова и Елены Александровны; крещена 16 июня. Корневой лист является техническим контейнером канонической granular-карточки и не создаёт второе событие.",
     "localOcr": "Д Витmони 1 02\nПретиісий А.\nгенеелітр\nПсоложщит Вдеимій Шавченко\nsis\nФретбуржніи Мписниті Алек-\nсандрьгордлев Анпилоговчи зи\nКопоеляенсег Еленс Аленси\nидрова оби привосливния.\nПротиігрив П.\n/ Внотонит.\nиенооібри\nПеилотуида Висилій Шевченко\nмила. Оренбурчской?, берни и гррзда, волости\nСентовскиго-Посида, Які, бчима Мельни-\nис Крестиянин Летрг/ладили ровч\nгатиловгизаканнат тнаего Іраа-\nнія Трофимова; або Поавославния.",
     "collation": {
       "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Искажённое OCR «Анпилоговчи» исправлено по строке полного скана на «Анпилоговъ». Даты, ребёнок и родители сверены с канонической granular-карточкой того же листа."
   },
   "indexData": {
     "querySnippet": "Оренбургский Мещанин Александр Гордеев Анпилогов и законная жена его Елена Александрова; оба православные.",
     "fuzzyQuery": true
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-technical-parallel",
+  "publicCore": false,
+  "parallelOf": "YA-OGAOO-173-16-1900-27-MARIA",
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Технический контейнер полного листа с записью № 58; событие опубликовано только в granular Record.",
+    "identityNote": "P101676 и P6973 указаны для сверки содержания, без root-backlinks.",
+    "migrationNote": "Рождение в Оренбурге не создаёт маршрута переселения."
+  },
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
+    "status": "deep-reviewed-technical-parallel",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный разворот, строка женского счёта № 58, даты 13/16 июня, родители, восприемники и границы строк; root сопоставлен с YA-OGAOO-173-16-1900-27-MARIA без дубля события/backlinks."
   }
 }

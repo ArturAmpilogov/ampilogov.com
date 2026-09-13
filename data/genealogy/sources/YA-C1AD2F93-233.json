@@ -1,25 +1,28 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-C1AD2F93-233",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive-index-hit",
   "collection": {
     "catalogId": "c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6",
-    "scanNumber": 233
+    "scanNumber": 233,
+    "title": "Метрическая книга хутора Бакинский, посёлков Губерлинский и Колпакский, сёл Ивановка, Казанское и Крым за 1898 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/233"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-C1AD2F93-233",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
+  "event": {
+    "type": "source-review",
+    "date": {
+      "display": "5–15 ноября 1898 года",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "приход коллекции не установлен по одному развороту",
+      "confidence": "low"
     }
-  ],
+  },
+  "mentions": [],
   "evidence": {
     "catalogId": "c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6",
     "scanNumber": 233,
@@ -41,6 +44,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0233-target-entry.png",
         "sha256": "a77c8d25a7fb424187ec57ab8eba36c01a24f61962c0a51bbcd97e703f7fe4de",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/c1ad2f93-8b63-4b6a-99c2-2b8c9bcdebd6/0233-deep-context.png",
+        "sha256": "2540d9fea77813ccb1d6bab06ed9dc01ffb35e3384dd161a6b512da6cf94af0a",
+        "description": "Чистый широкий фрагмент 5200×3700 с полным разворотом ноябрьских записей № 61–65 и всеми графами."
       }
     ],
     "quality": {
@@ -49,6 +58,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5480x4116",
       "targetDimensions": "1343x617",
+      "contextDimensions": "5200x3700",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
@@ -104,17 +114,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-of-indexed-people",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Приход внутри многоприходной коллекции не нормализован по одному развороту."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот с записями № 61–65 прочитан вручную; индексные Иван Павлов Ампилогов и Мария Осипова Объедкова отсутствуют; создан clean crop 5200×3700."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "пиолие куткла престьянинь\nІбасилії Шановь Матл.\nцынь и креенянекай дтви\nЦа Каенія Акиова Куки-\nна.\nЧетянакні-",
-    "modernInterpretation": "пиолие куткла престьянинь Ібасилиї Шановь Матл. цынь и креенянекай дтви Ца Каения Акиова Куки- на. Четянакни-",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "literal": "Ноябрь. На развороте находятся записи о родившихся № 61–65. В строке восприемников записи № 64: «Того же хутора крестьянинъ Василій Ивановъ Маслицынъ и крестьянская дѣвица Ксенія Акимова Куркина». Иван Павлов Ампилогов и Мария Осипова Объедкова на листе не записаны.",
+    "modernInterpretation": "Полный оригинал содержит ноябрьские крещения пяти чужих семей. Предложенная индексом пара отсутствует, поэтому карточка сохранена как проверенный ложный поисковый результат без профиля и публичного Record.",
+    "indexNote": "Индекс Яндекса ошибочно подставил «Иван Павлов Ампилогов» и «Мария Осипова Объедкова». Полный лист и целевая строка называют других людей.",
     "localOcr": "пиолие куткла престьянинь\nІбасилії Шановь Матл.\nцынь и креенянекай дтви\nЦа Каенія Акиова Куки-\nна.\nЧетянакні-",
     "localOcrWithSurnameLexicon": "пиалие кутила крестьянинь\nбасилії Шановь Матл.\nцинь и кренинекая дтви\nЦа Каенія Акиова Куки-\nна.\nЧетенанні-",
     "collation": {
@@ -122,10 +134,19 @@
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "preRecaptureResearchNote": "Прежняя OCR-неопределённость снята ручной проверкой полного листа."
   },
   "indexData": {
     "querySnippet": "Того же хутора крестьянин Иван Павлов Ампилогов и крестьянская девица Мария Осипова Объедкова.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Индексные Иван Павлов Ампилогов и Мария Осипова Объедкова отсутствуют на оригинале."
+  },
+  "context": {
+    "eventSummary": "Проверка ложного нечёткого совпадения на ноябрьском развороте 1898 года.",
+    "identityNote": "Профиль не создаётся: носитель фамильного ряда на оригинале отсутствует.",
+    "migrationNote": "Маршрут не создаётся."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-verified-false-positive",
+  "publicCore": false
 }

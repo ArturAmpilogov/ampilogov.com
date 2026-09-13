@@ -1,103 +1,68 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B58FB18B-044",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive",
   "collection": {
     "catalogId": "b58fb18b-9a48-407b-80bd-b741f0dee06f",
     "scanNumber": 44,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл Гамалеевка, Кирсановка за 1911 г."
+    "title": "Метрическая книга Гамалеевского прихода за 1911 год, часть первая"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/b58fb18b-9a48-407b-80bd-b741f0dee06f/44"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-register-page",
     "date": {
-      "display": "1911",
-      "confidence": "high-for-year"
+      "display": "декабрь 1911 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
+      "asWritten": "село Гамалеевка"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-B58FB18B-044-M1",
-      "role": "godmother",
-      "personId": "P102686",
-      "displayName": "дѣвица Анисія Максимова Ампилова",
-      "nameAsTranscribed": "дѣвица Анисія Максимова Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
+  "transcription": {
+    "status": "complete-negative-check-manually-verified",
+    "literal": "Декабрь 1911 года. В строкѣ Анны, 3 [родилась], 4 [крещена], воспріемники: того же села крестьянинъ Василій Іоанновъ Сашковъ и дѣвица Анна Никитина Михайлова.",
+    "modernInterpretation": "В целевой строке восприемниками названы Василий Иванович Сашков и Анна Никитична Михайлова. Анисии Максимовны Ампиловой и других носителей ряда на полном листе нет.",
+    "indexNote": "Яндекс смешал имена соседних строк и создал несуществующее фамильное упоминание."
+  },
+  "indexData": {
+    "querySnippet": "Сергий Иоаннов Закамандин и девица Анисия Максимова Ампилова",
+    "fuzzyQuery": true,
+    "discrepancy": "confirmed false positive"
+  },
   "evidence": {
     "catalogId": "b58fb18b-9a48-407b-80bd-b741f0dee06f",
     "scanNumber": 44,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-full-view.png",
-    "capturedAt": "2026-09-11",
+    "localBackup": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-full-view.png",
     "sha256": "3611541f4e71fa2c26d95c3a50bf4a2d185632be85f9b21231e70fd7bd18f17b",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-header.png",
-        "sha256": "f75f89f02a48f04e347b774df770b73a61b24323b5dab67dda435c880a081f82",
-        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
-        "dimensions": "5333x1136"
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-target-entry.png",
-        "sha256": "e75467250655de24282e6e3d18d0f682886f04e6d3a136d7be31a37a82e0fde2",
-        "description": "Крупный фрагмент вручную подтверждённой фамильной строки с необходимым контекстом; без интерфейса сайта и браузера.",
-        "dimensions": "1683x941"
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0044-deep-context.png",
+        "sha256": "45f958f077e4858c31df76bb91316364ce9d760d6d77150bcee611cfa3488a7e",
+        "description": "Полный clean-разворот 5100×3900."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5333x4209",
-      "targetDimensions": "1683x941",
-      "method": "manual-visual-review-of-downloaded-original",
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "siteAndBrowserChromeExcluded": true,
-      "blackDefectsExcluded": true,
-      "confirmedAt": "2026-09-12",
-      "headerDimensions": "5333x1136",
-      "blackDigitalDefectsExcluded": true
+      "contextDimensions": "5100x3900",
+      "method": "manual-full-spread-reading-and-wide-recrop"
     },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "publicDisplay": false
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Сергий Иоаннов Закамандин и девица Анисия Максимова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Анисия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Ргова Иванова\nархивам\nТого ж сеа крестьянинь\nВасший Іоаннові, вашкавь\nтднмус Аина Ниатим",
-    "localOcrWithSurnameLexicon": "Рова Иванова\nархивам\nТого ж села крестьянинь\nВастий Іваннові, Сашковь",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-hit",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "false-hit-complete-primary-scan",
     "transcriptionConfidence": "high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Того же села крестьянинъ Сергій Іоанновъ Закамандинъ и дѣвица Анисія Максимова Ампилова. ... Крёстная мать: Анисья Максимова Ампилова, девица.",
-    "fuzzyQuery": true
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный декабрьский разворот и границы всех видимых строк прочитаны вручную; индексная Анисия Ампилова не обнаружена; clean crop 5100×3900."
   }
 }

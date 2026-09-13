@@ -1,35 +1,68 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ABE035F8-99",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "technical-source-alias",
   "collection": {
     "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
-    "scanNumber": "99"
+    "scanNumber": 99,
+    "asRead": "Метрическая книга Слоновского прихода за 1910 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/abe035f8-731b-4197-9975-ff1b64a512cd/99"
   },
   "mentions": [],
+  "transcription": {
+    "status": "technical-alias-verified",
+    "literal": "Технический ID указывает на тот же физический лист и результат проверки, что YA-ABE035F8-099.",
+    "modernInterpretation": "Отдельного события нет; содержательная расшифровка хранится в каноническом Record YA-ABE035F8-099.",
+    "indexNote": "Один catalogId и scanNumber 99; совпадают даты, приход, повторная подпись Афиногена Ампилогова и SHA-256 целевого фрагмента. Различный SHA полного файла объясняется PNG/JPG версиями одного листа."
+  },
+  "context": {
+    "eventSummary": "Повторные служебные подписи Афиногена Ампилогова при крещениях.",
+    "identityNote": "P1543 подтверждён полным именем, саном, приходом и постоянной связкой со священником Иоанном Поляковым.",
+    "scopeNote": "Чужие семьи сохранены только как контекст листа без профилей и родственных связей.",
+    "migrationNote": "Служебная подпись не доказывает переселение."
+  },
+  "indexData": {
+    "querySnippet": "Индексное попадание по подписи диакона Афиногена Ампилогова.",
+    "fuzzyQuery": true,
+    "assessment": "clergy-signature-confirmed; adjacent-family-conflation-rejected"
+  },
+  "isRecord": false,
+  "cardKind": "technical-alias",
+  "publicCore": false,
+  "review": {
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "same-event-by-catalog-scan-content-and-target-fragment-sha",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Один catalogId и scanNumber 99; совпадают даты, приход, повторная подпись Афиногена Ампилогова и SHA-256 целевого фрагмента. Различный SHA полного файла объясняется PNG/JPG версиями одного листа."
+  },
   "evidence": {
-    "publicDisplay": false,
+    "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
+    "scanNumber": 99,
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-wide-clean-context-crop",
     "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-full-view.jpg",
+    "localBackup": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-full-view.jpg",
     "sha256": "cb12cceffbd1f6efd296f3a659f9b21ff2eae6ef36e68a9ae3da231076d20f04",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-target-entry.jpg",
-        "sha256": "bbef103432efc33d63c7970ada7806bc77cf57bb976a2bbe6198935cfd36dd20"
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0099-target-context-deep.png",
+        "sha256": "9f9c948fb085afc4b7d24e61b3c12b7dcf76f290945fb1c784043affe4c817d0",
+        "description": "Широкий чистый разворот с полными строками и повторными подписями причта."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "fullDimensions": "1246x990",
+      "targetDimensions": "5200x4050",
+      "method": "manual-full-spread-review-with-existing-high-resolution-clean-context"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
-  }
+  "parallelOf": "YA-ABE035F8-099"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-898EB58D-103",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparents",
   "collection": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 103,
@@ -12,25 +12,74 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/898eb58d-b230-41a1-aa5b-da6e30b40ea0/103"
   },
+  "primaryPersonId": "P1115",
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism-godparents",
+    "recordNumber": 68,
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "родилась 1 июня, крещена 2 июня 1909 года",
+      "birthIso": "1909-06-01",
+      "baptismIso": "1909-06-02",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Зобово",
+      "normalized": "Зобово, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "placeId": "zobovo-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-898EB58D-103-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "child",
+      "personId": null,
+      "sex": "female",
+      "nameAsTranscribed": "Елена",
+      "modernName": "Елена Яковлевна Молодцова",
+      "displayName": "Елена Яковлевна Молодцова",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-103-M2",
+      "role": "parents",
+      "personId": null,
+      "nameAsTranscribed": "Села Зобова крестьянинъ Яковъ Владимировъ Молодцовъ и законная его жена Марія Андреева, оба православные",
+      "modernName": "Яков Владимирович Молодцов и Мария Андреевна",
+      "displayName": "Яков и Мария Молодцовы",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-103-M3",
+      "role": "godfather",
+      "personId": "P1115",
+      "sex": "male",
+      "nameAsTranscribed": "Села Зобова крестьянинъ Андрей Тимофеевъ Ампилоговъ",
+      "modernName": "Андрей Тимофеевич Ампилогов",
+      "displayName": "Андрей Тимофеевич Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-898EB58D-103-M4",
+      "role": "godmother",
+      "personId": "P50012",
+      "sex": "female",
+      "nameAsTranscribed": "крестьянская жена Наталія Гордѣева Ампилогова",
+      "modernName": "Наталья Гордеевна Ампилогова",
+      "displayName": "Наталья Гордеевна Ампилогова",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Июнь. Женского пола № 68. 1 родилась, 2 крещена. Елена. Села Зобова крестьянинъ Яковъ Владимировъ Молодцовъ и законная его жена Марія Андреева, оба православные. Восприемники: села Зобова крестьянинъ Андрей Тимофеевъ Ампилоговъ и крестьянская жена Наталія Гордѣева Ампилогова. Священник; диакон Димитрий Вознесенский; псаломщик Владимир Ильин.",
+    "modernInterpretation": "2 июня 1909 года Андрей Тимофеевич и Наталья Гордеевна Ампилоговы были восприемниками Елены Яковлевны Молодцовой в селе Зобове.",
+    "indexNote": "Индекс Яндекса ошибочно называет новорождённую Агриппиной Васильевной Трушиной и смешивает соседние строки. Полный лист показывает запись № 68 об Елене и двух восприемниках Ампилоговых."
+  },
+  "indexData": {
+    "querySnippet": "Новорождённый, Агрипина Васильева Трушина. Крёстная мать, Наталия Гордеева Ампилогова, крестьянская жена.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индексная Агриппина Васильевна Трушина к целевой строке № 68 не относится; вручную прочитана Елена Яковлевна Молодцова."
+  },
   "evidence": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 103,
@@ -65,31 +114,21 @@
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "лепикова.\naCT\nСіла Зовова запасной доель деида\nплефать Василісва Том-\nKupr u\nКолеть мгелая мена\nв в до кі) Олодорова Трувиена",
-    "modernInterpretation": "лепикова. aCT Сила Зовова запасной доель деида плефать Василисва Том- Kupr u Колеть мгелая мена в в до ки) Олодорова Трувиена",
-    "localOcr": "лепикова.\naCT\nСіла Зовова запасной доель деида\nплефать Василісва Том-\nKupr u\nКолеть мгелая мена\nв в до кі) Олодорова Трувиена",
-    "localOcrWithSurnameLexicon": "оленикова.\naCT\nСіла Зовова запасной дель денда\nплефать Василівні Том-\nKups u\nКолеть метая мена\nв в до Від Олодорова Трувиена",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Восприемничество Андрея Тимофеевича и Натальи Гордеевны Ампилоговых при крещении чужого ребёнка.",
+    "identityNote": "P1115 и P50012 связаны strongly-supported/high: редкие полные имена, сословие и приходный контекст согласуются; P1286 из Кармалки не связан. Роль восприемников не означает родства.",
+    "migrationNote": "Маршрут переселения не создаётся: лист фиксирует только их принадлежность к селу Зобову в 1909 году."
   },
-  "indexData": {
-    "querySnippet": "Новорождённый, Агрипина Васильева Трушина. Крёстная мать, Наталия Гордеева Ампилогова, крестьянская жена.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Фамилия отца ребёнка читается как «Молодцов»; участники другой фамилии сохранены только в mentions."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную прочитан разворот с июньскими записями № 68–70, проверены границы целевой строки № 68, даты, родители, оба восприемника и причт; индексная склейка с Агриппиной Трушиной отвергнута. P1115/P50012 назначены только после duplicate search и санкции."
   }
 }

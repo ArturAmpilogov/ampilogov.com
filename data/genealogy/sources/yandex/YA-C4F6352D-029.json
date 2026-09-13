@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C4F6352D-029",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
+  "primaryPersonId": "P101931",
   "collection": {
     "catalogId": "c4f6352d-5557-4197-a17b-cdb68403cf69",
     "scanNumber": 29,
@@ -13,21 +14,27 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c4f6352d-5557-4197-a17b-cdb68403cf69/29"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "godparent-at-baptism",
+    "recordNumber": 36,
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 19 июня, крещён 20 июня 1917 года",
+      "date": "1917-06-19",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Ново-Георгиевка",
+      "normalized": "село Ново-Георгиевка, Оренбургская губерния",
+      "placeId": "orenburg-uezd",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C4F6352D-029-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "godmother",
+      "personId": "P101931",
+      "displayName": "Евдокия Никитична Ампилогова",
+      "nameAsTranscribed": "крестьянская дѣвица Евдокія Никитина Ампилогова",
       "surnameSeries": true
     }
   ],
@@ -52,6 +59,12 @@
         "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0029-target-entry.png",
         "sha256": "3e171adf6701354d4a2eca065848a66580a88ed6631edb67831cb80a5718aa92",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0029-deep-context.png",
+        "sha256": "ab09e89657429c9c9f5d73d7e6f4edc5cf021d78bc2948135174fdefe670cc7f",
+        "description": "Чистый широкий фрагмент 5100×1400 с записями № 35–36, датами, родителями и восприемниками."
       }
     ],
     "quality": {
@@ -60,15 +73,16 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5631x4426",
       "targetDimensions": "1290x789",
+      "contextDimensions": "5100x1400",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Пет ва нта то и де оеля моив)\nДовиуа Сиснайій сюмипарацирика\nи Нечьев\nжолам\nПип\nПресміьяштй того же сема Тикиніа\ntоамтовв Лагалев, ик\nреслісянка гиди-",
-    "modernInterpretation": "Пет ва нта то и де оеля моив) Довиуа Сиснайий сюмипарацирика и Нечьев жолам Пип Пресмиьяштй того же сема Тикиниа tоамтовв Лагалев, ик реслисянка гиди-",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 36. Іюня 19 [родился], 20 [крещён]. Іоаннъ. Села Ново-Георгіевки крестьянинъ Георгій Димитріевъ Никифоровъ и законная жена его Анна Никитина; оба православные. Среди восприемников: крестьянская дѣвица Евдокія Никитина Ампилогова.",
+    "modernInterpretation": "19 июня 1917 года в семье Георгия Дмитриевича Никифорова и Анны Никитичны родился Иван; 20 июня его крестили. Крёстной матерью стала крестьянская девица Евдокия Никитична Ампилогова.",
     "localOcr": "Пет ва нта то и де оеля моив)\nДовиуа Сиснайій сюмипарацирика\nи Нечьев\nжолам\nПип\nПресміьяштй того же сема Тикиніа\ntоамтовв Лагалев, ик\nреслісянка гиди-",
     "localOcrWithSurnameLexicon": "Довида Висайй сюмипарацирика\nи Нечье?\nполам.\nПип\nПресміьяши того же села Тикина\nреслісянка гиди-",
     "collation": {
@@ -76,20 +90,26 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс использован только для навигации. Имя, роль, даты и место прочитаны вручную по строке № 36; соседняя Надежда Тимина относится к другой записи."
+  },
+  "context": {
+    "eventSummary": "Евдокия Никитична Ампилогова была восприемницей Иоанна Никифорова при крещении 20 июня 1917 года в Ново-Георгиевке.",
+    "identityNote": "P101931 связан по редкому полному имени, девичьему статусу, селу и близкой дате; написание «Ампилогова» сохранено как документный вариант к форме «Анпилогова» в её брачном акте.",
+    "relationshipNote": "Восприемничество не трактуется как кровное родство; семья ребёнка остаётся контекстом.",
+    "migrationNote": "Участие в крещении не превращено в маршрут переселения."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Евдокия Никитина Ампилогова, крестьянская девица. Крёстная мать: Надежда Захариева Тимина, крестьянка.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-role-date-place",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Строка № 36 и соседняя строка прочитаны вручную по оригиналу; индексная склейка разделена; создан clean crop 5100×1400."
   }
 }

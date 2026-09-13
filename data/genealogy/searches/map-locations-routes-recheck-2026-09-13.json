@@ -1,0 +1,1411 @@
+{
+  "schemaVersion": 1,
+  "auditId": "MAP-RECHECK-2026-09-13",
+  "date": "2026-09-13",
+  "scope": "Полный повторный аудит мест, событий и маршрутов после объединения PR 36; исходные карточки не менялись.",
+  "publicRules": {
+    "endYearInclusive": 1950,
+    "mapPeople": "только документированные носители исследуемого фамильного ряда"
+  },
+  "summary": {
+    "canonicalPlacesAfterCleanup": 310,
+    "recognizedPlaceIdsIncludingLegacy": 337,
+    "structuredPlaceReferences": 10003,
+    "unknownPlaceReferences": 0,
+    "generatedMapBeforeRegeneration": {
+      "indexedPlaces": 315,
+      "mappedPlaces": 253,
+      "approximatePlaces": 103,
+      "records": 3779,
+      "migrations": 259
+    },
+    "generatedRangeBeforeRegeneration": {
+      "minYear": 1536,
+      "maxYear": 1950
+    },
+    "post1950GeneratedEvents": 0,
+    "exactExistingPlaceCandidatesInUnmappedSources": 698,
+    "migrationCountBeforeRegeneration": 259,
+    "estimatedMigrationCountAfterPlaceConsolidation": 231,
+    "samePlaceRoutesRemovedByConsolidation": 26
+  },
+  "resolvedPlaceDuplicates": [
+    {
+      "retiredId": "karmalka-sarmanayeva",
+      "canonicalId": "karmalka-orenburg",
+      "reason": "одно историческое селение; раздвоение создавало фиктивные маршруты туда-обратно"
+    },
+    {
+      "retiredId": "oryol-governorate",
+      "canonicalId": "orel-governorate",
+      "reason": "две записи одной Орловской губернии"
+    },
+    {
+      "retiredId": "smorodino-grayvoron",
+      "canonicalId": "smorodino-graivoron",
+      "reason": "одно современное и историческое село Смородино"
+    },
+    {
+      "retiredId": "berdyansk",
+      "canonicalId": "berdiansk",
+      "reason": "неиспользуемый орфографический дубль Бердянска"
+    },
+    {
+      "retiredId": "sasykoli-astrakhan",
+      "canonicalId": "sasykoli-enotaevsky",
+      "reason": "неиспользуемый дубль села Сасыколи"
+    }
+  ],
+  "unknownPlaceReferences": [],
+  "samePlaceMigrationIdsRemoved": [
+    "karmalka-sarmanayeva:karmalka-orenburg:1835",
+    "karmalka-orenburg:karmalka-sarmanayeva:1835",
+    "karmalka-sarmanayeva:karmalka-orenburg:1836",
+    "karmalka-orenburg:karmalka-sarmanayeva:1836",
+    "karmalka-sarmanayeva:karmalka-orenburg:1837",
+    "karmalka-orenburg:karmalka-sarmanayeva:1837",
+    "karmalka-sarmanayeva:karmalka-orenburg:1838",
+    "karmalka-orenburg:karmalka-sarmanayeva:1838",
+    "karmalka-sarmanayeva:karmalka-orenburg:1839",
+    "karmalka-orenburg:karmalka-sarmanayeva:1839",
+    "karmalka-orenburg:karmalka-sarmanayeva:1840",
+    "karmalka-sarmanayeva:karmalka-orenburg:1841",
+    "karmalka-orenburg:karmalka-sarmanayeva:1841",
+    "karmalka-sarmanayeva:karmalka-orenburg:1842",
+    "karmalka-orenburg:karmalka-sarmanayeva:1842",
+    "karmalka-sarmanayeva:karmalka-orenburg:1843",
+    "karmalka-orenburg:karmalka-sarmanayeva:1844",
+    "karmalka-sarmanayeva:karmalka-orenburg:1846",
+    "karmalka-sarmanayeva:karmalka-orenburg:1848",
+    "karmalka-sarmanayeva:karmalka-orenburg:1850",
+    "karmalka-orenburg:karmalka-sarmanayeva:1863",
+    "karmalka-sarmanayeva:karmalka-orenburg:1870",
+    "karmalka-orenburg:karmalka-sarmanayeva:1870",
+    "karmalka-sarmanayeva:karmalka-orenburg:1872",
+    "karmalka-sarmanayeva:karmalka-orenburg:1888",
+    "karmalka-sarmanayeva:karmalka-orenburg:1899"
+  ],
+  "remainingDuplicateCandidatesRequiringSourceDecision": [
+    {
+      "ids": [
+        "brekhova-fatezh",
+        "brekhova-fatezh-kursk"
+      ],
+      "reason": "вероятное тождество Брехова/Брахова; второй источник сам сохраняет оговорку и требует проверки оригинала"
+    },
+    {
+      "ids": [
+        "anpilogova-fatezh-uezd",
+        "anpilogova-kursk-uezd"
+      ],
+      "reason": "точки в 0,75 км; административное отнесение к Фатежскому или Курскому уезду противоречиво, объединять без сверки нельзя"
+    }
+  ],
+  "unmappedSourcesWithExactPlaceAlias": [
+    {
+      "placeId": "orenburg-city",
+      "count": 194,
+      "sourceIds": [
+        "YA-03BF7A3D-177-ANTILOGOV-REVIEW",
+        "YA-03C1EB04-142-ANTILOGOV-REVIEW",
+        "YA-03C1EB04-193-STEFAN-CHILD-DEATH",
+        "YA-091E98A8-378",
+        "YA-0C14E70D-534-ANTILOGOV-REVIEW",
+        "YA-0E0E4345-069-ANTILOGOV-REVIEW",
+        "YA-0FDFD32A-036-ANTILOGOV-REVIEW",
+        "YA-0FDFD32A-174-ANTILOGOV-REVIEW",
+        "YA-1023DD84-043-ANTILOGOV-REVIEW",
+        "YA-1023DD84-061-ANTILOGOV-REVIEW",
+        "YA-15E9A58F-197-ANFILOGOV-REVIEW",
+        "YA-16730AC9-183-ANTILOGOV-REVIEW",
+        "YA-1B73289C-148-ANTILOGOV-REVIEW",
+        "YA-1CA4F1AD-210-ANTILOGOV-REVIEW",
+        "YA-254E6A41-151-ANTILOGOV-REVIEW",
+        "YA-298D8ED8-027",
+        "YA-298D8ED8-044",
+        "YA-2BDECE9E-182",
+        "YA-2BFE81F2-313",
+        "YA-359D8310-060",
+        "YA-37EBE192-091-ANTILOGOV-REVIEW",
+        "YA-3A9C67D5-207-ANTILOGOV-REVIEW",
+        "YA-3B15E0FE-249",
+        "YA-3B52BD5D-127-ANTILOGOV-REVIEW",
+        "YA-3DFA5D12-194-ANTILOGOV-REVIEW",
+        "YA-408C025E-069",
+        "YA-4203B1B1-118-ANTILOGOV-REVIEW",
+        "YA-483AEAC7-008",
+        "YA-48826D96-149",
+        "YA-4B5A83F3-022",
+        "YA-4B5A83F3-237",
+        "YA-50A75A9B-054",
+        "YA-5132634E-069-ANTILOGOV-REVIEW",
+        "YA-555B18B5-215",
+        "YA-568A2971-110",
+        "YA-573FADB7-146-ANTILOGOV-REVIEW",
+        "YA-573FADB7-182-ANTILOGOV-REVIEW",
+        "YA-61189EE9-028-ANTILOGOV-REVIEW",
+        "YA-6158F811-029",
+        "YA-6158F811-038",
+        "YA-6158F811-281",
+        "YA-6420F60E-042-ANTILOGOV-REVIEW",
+        "YA-6593FF9E-152-ANTILOGOV-REVIEW",
+        "YA-6896A52F-133-ANTILOGOV-REVIEW",
+        "YA-70D54EDC-021",
+        "YA-71143378-161-ANTILOGOV-REVIEW",
+        "YA-71143378-228-ANTILOGOV-REVIEW",
+        "YA-71143378-230-ANTILOGOV-REVIEW",
+        "YA-7374A3A6-172-ANTILOGOV-REVIEW",
+        "YA-78FF1E34-201-AMFILOGOV-REVIEW",
+        "YA-7E87273C-259",
+        "YA-8431854D-236-ANTILOGOV-REVIEW",
+        "YA-88537E1C-090",
+        "YA-88537E1C-111",
+        "YA-88537E1C-183",
+        "YA-88B1733B-096",
+        "YA-95ACBF28-053",
+        "YA-9A70323F-119",
+        "YA-9A70323F-187",
+        "YA-9A70323F-210",
+        "YA-9A70323F-229",
+        "YA-9EDD7FF6-039-ANTILOGOV-REVIEW",
+        "YA-A04D9489-125-ANTILOGOV-REVIEW",
+        "YA-A6AA6A65-031",
+        "YA-A8DC0163-021",
+        "YA-A8DC0163-163",
+        "YA-A8DC0163-164",
+        "YA-A8DC0163-175",
+        "YA-A8DC0163-205",
+        "YA-A8E0A0C2-116",
+        "YA-ABA70496-063",
+        "YA-AMF-D2111CF2-033",
+        "YA-B1E2B812-132",
+        "YA-B884E209-004",
+        "YA-B884E209-008",
+        "YA-BCA00EE7-158",
+        "YA-BDCDAF6F-188",
+        "YA-C5323096-090-ANTILOGOV-REVIEW",
+        "YA-C6FDF2EF-164",
+        "YA-C73F3F58-139",
+        "YA-C73F3F58-213",
+        "YA-D0E199DE-087-ANTILOGOV-REVIEW",
+        "YA-D0F45859-323-ANTILOGOV-REVIEW",
+        "YA-D8001272-018",
+        "YA-E13FCCED-048",
+        "YA-E1DEB7B4-115-ANTILOGOV-REVIEW",
+        "YA-E4AFF40B-021",
+        "YA-EF16AF99-145",
+        "YA-EF16AF99-169",
+        "YA-F0ED3F9C-081-ANTILOGOV-REVIEW",
+        "YA-F22A8C59-119-ANTILOGOV-REVIEW",
+        "YA-F2FD81C4-167-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-11-1552-113-VASILIY",
+        "YA-OGAOO-173-11-1552-188-VASILIY",
+        "YA-OGAOO-173-11-1608-62-VASILIY",
+        "YA-OGAOO-173-11-1669-152-EKATERINA",
+        "YA-OGAOO-173-11-1669-152-LARION",
+        "YA-OGAOO-173-11-1672-222-GORDIY",
+        "YA-OGAOO-173-11-1824-89-NESTOR",
+        "YA-OGAOO-173-11-1826-77-EGOR",
+        "YA-OGAOO-173-11-1849-110-VASILY",
+        "YA-OGAOO-173-11-1920-102-PETR",
+        "YA-OGAOO-173-11-1920-92-VERA",
+        "YA-OGAOO-173-11-1921-97-PETR",
+        "YA-OGAOO-173-11-2082-160-YAKOV",
+        "YA-OGAOO-173-12-380-165-YAKOV",
+        "YA-OGAOO-173-12-380-333-YAKOV",
+        "YA-OGAOO-173-12-500-72-YAKOV",
+        "YA-OGAOO-173-12-650-254-YAKOV",
+        "YA-OGAOO-173-12-650-83-YAKOV",
+        "YA-OGAOO-173-12-760-100-LAZAR",
+        "YA-OGAOO-173-12-760-21-LAZAR",
+        "YA-OGAOO-173-12-760-68-LAZAR",
+        "YA-OGAOO-173-12-831-69-GORDEY",
+        "YA-OGAOO-173-12-839-6-GORDEY",
+        "YA-OGAOO-173-12-847-25-GORDEY",
+        "YA-OGAOO-173-16-1011-126-ANNA",
+        "YA-OGAOO-173-16-1011-134-NATALIYA",
+        "YA-OGAOO-173-16-1051-175-ALEKSEY",
+        "YA-OGAOO-173-16-1051-222-NATALIYA-DEATH",
+        "YA-OGAOO-173-16-1056-148-ANTONINA-DEATH",
+        "YA-OGAOO-173-16-1056-22-ANTONINA",
+        "YA-OGAOO-173-16-1056-253-STEPAN",
+        "YA-OGAOO-173-16-1732-39-ALEKSANDRA-MARRIAGE",
+        "YA-OGAOO-173-16-1735-157-DMITRIY-SURETY",
+        "YA-OGAOO-173-16-1960-248-PAVEL-PARALLEL",
+        "YA-OGAOO-173-16-2020-108-MARIA",
+        "YA-OGAOO-173-16-2020-112-PETR-DEATH",
+        "YA-OGAOO-173-16-2021-216-PETR",
+        "YA-OGAOO-173-16-2021-260-ALEKSANDR",
+        "YA-OGAOO-173-16-2022-161-PETR-CORRECTION",
+        "YA-OGAOO-173-16-2022-23-PETR",
+        "YA-OGAOO-173-16-2022-50-ALEKSANDR-MARRIAGE",
+        "YA-OGAOO-173-16-2024-45-PELAGIYA",
+        "YA-OGAOO-173-16-2024-46-ALEKSANDR",
+        "YA-OGAOO-173-16-2025-112-ROMAN-SURETY",
+        "YA-OGAOO-173-16-2025-160-PETR",
+        "YA-OGAOO-173-16-2025-320-IVAN-SURETY",
+        "YA-OGAOO-173-16-2096-163-EVGENIYA",
+        "YA-OGAOO-173-16-2096-424-PELAGIYA-DEATH",
+        "YA-OGAOO-173-16-216-9-GORDEY",
+        "YA-OGAOO-173-16-2279-97-ANNA",
+        "YA-OGAOO-173-16-240-211-NIKOLAY",
+        "YA-OGAOO-173-16-242-15-GORDEY",
+        "YA-OGAOO-173-16-243-52-MIKHAIL",
+        "YA-OGAOO-173-16-279-36-GORDEY",
+        "YA-OGAOO-173-16-281-231-GORDEY",
+        "YA-OGAOO-173-16-352-159-NIKOLAY",
+        "YA-OGAOO-173-16-364-320-GORDEY",
+        "YA-OGAOO-173-16-42-35-LAZAR",
+        "YA-OGAOO-173-16-423-96-MIKHAIL",
+        "YA-OGAOO-173-16-461-159-MIKHAIL",
+        "YA-OGAOO-173-16-495-246-ALEKSANDR",
+        "YA-OGAOO-173-16-497-109-TIMOFEY",
+        "YA-OGAOO-173-16-526-541-ANPILOGOV-MIKHAIL",
+        "YA-OGAOO-173-16-528-166-FEODOR",
+        "YA-OGAOO-173-16-606-103-TIMOFEY",
+        "YA-OGAOO-173-16-612-139-GORDEY",
+        "YA-OGAOO-173-16-612-140-MIKHAIL",
+        "YA-OGAOO-173-16-68-96-GRIGORY",
+        "YA-OGAOO-173-16-731-142-FEDOR",
+        "YA-OGAOO-173-16-731-47-GORDEY",
+        "YA-OGAOO-173-16-768-173-GORDEY",
+        "YA-OGAOO-173-16-769-81-MATFEY",
+        "YA-OGAOO-173-16-769-91-STEFAN",
+        "YA-OGAOO-173-16-769-92-STEFAN",
+        "YA-OGAOO-173-16-800-235-IVAN",
+        "YA-OGAOO-173-16-800-79-VASILY",
+        "YA-OGAOO-173-16-801-153-VASILY",
+        "YA-OGAOO-173-16-838-233-GORDEY",
+        "YA-OGAOO-173-16-838-241-ROMAN",
+        "YA-OGAOO-173-16-838-246-PETR",
+        "YA-OGAOO-173-16-838-390-STEFAN",
+        "YA-OGAOO-173-16-839-184-MIKHAIL",
+        "YA-OGAOO-173-16-839-190-VASILY-LIDIA",
+        "YA-OGAOO-173-16-877-131-GORDEY",
+        "YA-OGAOO-173-16-927-150-PETR",
+        "YA-OGAOO-173-16-930-164-IVAN-1896-CORRECTION",
+        "YA-OGAOO-173-16-930-57-VASILY",
+        "YA-OGAOO-173-16-967-168-IVAN",
+        "YA-OGAOO-173-16-967-192-FEODOSIY",
+        "YA-OGAOO-173-16-967-193-KONSTANTIN",
+        "YA-OGAOO-173-16-967-229-MIKHAIL",
+        "YA-OGAOO-173-16-967-90-PETR-UNRESOLVED",
+        "YA-OGAOO-173-17-129-64-PAVEL",
+        "YA-OGAOO-173-17-135-52-ALEKSANDR-PARALLEL",
+        "YA-OGAOO-173-17-135-7-PETR",
+        "YA-OGAOO-173-17-147-27-KLAVDIYA",
+        "YA-OGAOO-173-17-216-17-GORDEY",
+        "YA-OGAOO-368-1-515-875-AZAR",
+        "YA-OGAOO-368-1-524-465-IVAN",
+        "YA-OGAOO-368-1-527-37-BORIS",
+        "YA-OGAOO-8381-1-122-415-IVAN-INFANT-DEATH",
+        "YA-OGAOO-8381-1-17-141-IVAN-MARRIAGE"
+      ]
+    },
+    {
+      "placeId": "moscow",
+      "count": 78,
+      "sourceIds": [
+        "YA-0FD8C96F-248-EVGENIY-SURETY",
+        "YA-10077A1A-128",
+        "YA-12129A9E-003-ANFILOGOV-MEDIA",
+        "YA-173261C8-011",
+        "YA-2123F287-029",
+        "YA-2160E589-003-ANFILOGOV-MEDIA",
+        "YA-29029511-003",
+        "YA-2A7E0758-003",
+        "YA-2FD6B8BF-003",
+        "YA-3A9D1F3A-003",
+        "YA-41D607FD-005-ANFILOGOV-MEDIA",
+        "YA-440DC75D-156",
+        "YA-44F051D8-005",
+        "YA-6339757C-003",
+        "YA-636C5DD8-004",
+        "YA-63ED0252-004",
+        "YA-6513F834-005",
+        "YA-6513F834-047",
+        "YA-6B14880C-004",
+        "YA-6F6FFFE4-004-ANFILOGOV-MEDIA",
+        "YA-737D6E5F-003",
+        "YA-857452A6-317",
+        "YA-85A82317-004",
+        "YA-9654F602-001-ANFILOGOV-MEDIA",
+        "YA-9AA0064A-004",
+        "YA-9C7106B8-001",
+        "YA-AF2EC2CB-003",
+        "YA-B5856BA6-003",
+        "YA-B8E99D7F-003",
+        "YA-B9C2E48C-006-ANFILOGOV-MEDIA",
+        "YA-BB65D23D-003",
+        "YA-BK-04168CA6-116-ANFILOGOV",
+        "YA-BK-04168CA6-300-ANFILOGOV",
+        "YA-BK-0CD34954-143-ANFILOGOV",
+        "YA-BK-0CD34954-198-ANFILOGOV",
+        "YA-BK-0D892D16-151-ANFILOGOV",
+        "YA-BK-0EC4AD67-048-ANFILOGOV",
+        "YA-BK-172F4919-144-ANFILOGOV",
+        "YA-BK-1BAF6CAF-283-ANFILOGOV",
+        "YA-BK-20B632A2-052-ANFILOGOV",
+        "YA-BK-22AB064C-055-ANFILOGOV",
+        "YA-BK-30B9751A-052-ANFILOGOV",
+        "YA-BK-32EF958A-258-ANFILOGOV",
+        "YA-BK-394C53C1-180-ANFILOGOV",
+        "YA-BK-3A7D2F06-242-ANFILOGOV",
+        "YA-BK-3CAA65DE-257-ANFILOGOV",
+        "YA-BK-5A145476-302-ANFILOGOV",
+        "YA-BK-64BFDDFE-120-ANFILOGOV",
+        "YA-BK-64BFDDFE-308-ANFILOGOV",
+        "YA-BK-692B7B99-052-ANFILOGOV",
+        "YA-BK-6AB418D8-114-ANFILOGOV",
+        "YA-BK-6AB418D8-298-ANFILOGOV",
+        "YA-BK-799E7328-270-ANFILOGOV",
+        "YA-BK-7CCC001D-055-ANFILOGOV",
+        "YA-BK-99DC34FD-118-ANFILOGOV",
+        "YA-BK-99DC34FD-306-ANFILOGOV",
+        "YA-BK-AB8BC71B-055-ANFILOGOV",
+        "YA-BK-C8631285-055-ANFILOGOV",
+        "YA-BK-C88039CF-271-ANFILOGOV",
+        "YA-BK-CB454109-055-ANFILOGOV",
+        "YA-BK-CE011C5F-203-ANFILOGOV",
+        "YA-BK-D9E2B226-298-ANFILOGOV",
+        "YA-BK-E34AA484-274-ANFILOGOV",
+        "YA-BK-E5D2BAB2-172-ANFILOGOV",
+        "YA-BK-E5D2BAB2-283-ANFILOGOV",
+        "YA-BK-E5D2BAB2-286-ANFILOGOV",
+        "YA-BK-E62CBD88-136-ANFILOGOV",
+        "YA-BK-E7CD0D0D-110-ANFILOGOV",
+        "YA-BK-E7CD0D0D-290-ANFILOGOV",
+        "YA-BK-FDC3078D-157-ANFILOGOV",
+        "YA-C2F44501-293",
+        "YA-CGAM-R1808-4-1-TIMOFEY-VASILIEVICH",
+        "YA-D5092894-002-ANFILOGOV-MEDIA",
+        "YA-DE7A2615-002",
+        "YA-DE9761A4-005-ANFILOGOV-MEDIA",
+        "YA-FBC5C44A-003",
+        "YA-FD0301CD-002-ANFILOGOV-MEDIA",
+        "YA-FEB9F968-004"
+      ]
+    },
+    {
+      "placeId": "zobovo-orenburg",
+      "count": 72,
+      "sourceIds": [
+        "YA-0FD43D2B-191",
+        "YA-242E802B-040-ANTILOGOV-REVIEW",
+        "YA-242E802B-057-ANTILOGOV-REVIEW",
+        "YA-31DC3BC1-162",
+        "YA-31DC3BC1-201",
+        "YA-31DC3BC1-212",
+        "YA-379130BA-044",
+        "YA-3BF6C3F5-212",
+        "YA-BD375784-102-ANTILOGOV-REVIEW",
+        "YA-BDF88592-024",
+        "YA-CB36F7F0-076",
+        "YA-E0E9716C-025",
+        "YA-E0E9716C-121",
+        "YA-FA08894E-138-ANTILOGOV-REVIEW",
+        "YA-FA08894E-169-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-11-1643-106-VASSA",
+        "YA-OGAOO-173-11-1643-106-YAKOV",
+        "YA-OGAOO-173-11-1704-114-ALEKSANDR",
+        "YA-OGAOO-173-11-1704-94-EUGENIA",
+        "YA-OGAOO-173-11-1704-94-YAKOV",
+        "YA-OGAOO-173-11-1732-140-YAKOV",
+        "YA-OGAOO-173-11-1735-113-EVFIMIY",
+        "YA-OGAOO-173-11-1735-113-YAKOV",
+        "YA-OGAOO-173-11-1765-122-ALEKSANDR",
+        "YA-OGAOO-173-11-1836-297-YAKOV",
+        "YA-OGAOO-173-11-1836-54-YAKOV",
+        "YA-OGAOO-173-11-1836-8-PROKOPIY",
+        "YA-OGAOO-173-11-1931-101-MARFA",
+        "YA-OGAOO-173-11-1931-91-YAKOV",
+        "YA-OGAOO-173-11-1931-98-YAKOV",
+        "YA-OGAOO-173-11-2035-70-YAKOV",
+        "YA-OGAOO-173-11-2037-246-YAKOV",
+        "YA-OGAOO-173-11-2037-313-EVFIMIY",
+        "YA-OGAOO-173-11-2061-18-YAKOV",
+        "YA-OGAOO-173-12-398-109-IVAN",
+        "YA-OGAOO-173-12-398-112-EVFIMIY",
+        "YA-OGAOO-173-12-509-17-ANDREY",
+        "YA-OGAOO-173-12-509-57-ANDREY",
+        "YA-OGAOO-173-12-509-59-YAKOV",
+        "YA-OGAOO-173-12-509-73-ANDREY",
+        "YA-OGAOO-173-12-572-24-IVAN",
+        "YA-OGAOO-173-12-572-32-YAKOV",
+        "YA-OGAOO-173-16-268-140-IVAN",
+        "YA-OGAOO-173-16-268-160-YAKOV",
+        "YA-OGAOO-173-16-268-168-ALEXEY",
+        "YA-OGAOO-173-16-268-174-ANDREY",
+        "YA-OGAOO-173-16-453-190-STEPAN",
+        "YA-OGAOO-173-16-55-143-ANDREY",
+        "YA-OGAOO-173-16-702-41-DMITRY",
+        "YA-OGAOO-173-16-702-41-VASILY",
+        "YA-OGAOO-173-16-783-49-DMITRY",
+        "YA-OGAOO-173-16-783-50-KONSTANTIN",
+        "YA-OGAOO-173-16-828-173-GEORGIY",
+        "YA-OGAOO-173-16-828-238-TIKHON",
+        "YA-OGAOO-173-16-846-266-DMITRY",
+        "YA-OGAOO-173-16-846-274-NIKITA",
+        "YA-OGAOO-173-16-846-324-DMITRY",
+        "YA-OGAOO-173-16-846-332-PELAGEYA",
+        "YA-OGAOO-173-16-87-279-IVAN",
+        "YA-OGAOO-173-16-87-281-IVAN-PROKOPIY",
+        "YA-OGAOO-173-16-912-150-EFIM",
+        "YA-OGAOO-173-16-912-169-EFIM",
+        "YA-OGAOO-173-16-912-213-PROKOPIY",
+        "YA-OGAOO-173-16-912-219-ALEKSEY",
+        "YA-OGAOO-173-16-943-21-STEPAN",
+        "YA-OGAOO-173-16-943-34-VASILY",
+        "YA-OGAOO-173-16-943-45-DMITRY",
+        "YA-OGAOO-173-16-982-106-PARASKEVA",
+        "YA-OGAOO-173-16-982-119-EMELYAN",
+        "YA-OGAOO-173-16-982-128-NIKITA",
+        "YA-OGAOO-173-16-982-65-NIKITA",
+        "YA-OGAOO-173-16-982-83-STEPAN"
+      ]
+    },
+    {
+      "placeId": "karmalka-orenburg",
+      "count": 58,
+      "sourceIds": [
+        "YA-122572AE-414",
+        "YA-13C848B4-043",
+        "YA-13C848B4-063",
+        "YA-13C848B4-090",
+        "YA-13C848B4-135",
+        "YA-22D4DA1E-197",
+        "YA-2C691C62-008",
+        "YA-2C691C62-036",
+        "YA-2C691C62-081",
+        "YA-2C691C62-086",
+        "YA-2C691C62-112",
+        "YA-2C691C62-121",
+        "YA-401283D9-026",
+        "YA-401283D9-039",
+        "YA-401283D9-076",
+        "YA-401283D9-096",
+        "YA-401283D9-122",
+        "YA-401283D9-133",
+        "YA-4CE8E38D-178",
+        "YA-4EB4DF62-005",
+        "YA-5A017DD6-48",
+        "YA-C966E477-156",
+        "YA-C966E477-157",
+        "YA-D0F7E172-77",
+        "YA-D101731B-138-ANTILOGOV-REVIEW",
+        "YA-D101731B-163",
+        "YA-D101731B-283-ANTILOGOV-REVIEW",
+        "YA-D132049D-032",
+        "YA-D132049D-036",
+        "YA-D132049D-061",
+        "YA-D132049D-078",
+        "YA-D132049D-085",
+        "YA-D132049D-103",
+        "YA-D132049D-108",
+        "YA-DE258F34-15",
+        "YA-DE258F34-84",
+        "YA-DE258F34-85",
+        "YA-DE258F34-90",
+        "YA-F6A2F87C-013-ANTILOGOV-REVIEW",
+        "YA-F6A2F87C-078-ANTILOGOV-REVIEW",
+        "YA-F6A2F87C-091",
+        "YA-F6A2F87C-110",
+        "YA-F6A2F87C-164-ANTILOGOV-REVIEW",
+        "YA-F96C64FA-090-ANTILOGOV-REVIEW",
+        "YA-FA562F96-102",
+        "YA-OGAOO-173-16-1074-10-EVDOKIA",
+        "YA-OGAOO-173-16-1074-86-EFREM-VLADIMIR",
+        "YA-OGAOO-173-16-1119-114-SERGEY",
+        "YA-OGAOO-173-16-1119-33-GEORGII",
+        "YA-OGAOO-173-16-1119-44-IVAN",
+        "YA-OGAOO-173-16-1119-66-VASILIY",
+        "YA-OGAOO-173-16-1119-89-PROKOPIY",
+        "YA-OGAOO-173-16-261-92-DAVID",
+        "YA-OGAOO-173-16-859-134-STEPAN",
+        "YA-OGAOO-173-16-859-21-VASILY",
+        "YA-OGAOO-173-16-903-110-MIKHAIL",
+        "YA-OGAOO-173-16-958-243-ALEKSANDR",
+        "YA-OGAOO-173-16-958-277-FEODOR-DEATH"
+      ]
+    },
+    {
+      "placeId": "orsk-city",
+      "count": 49,
+      "sourceIds": [
+        "YA-2C8CCB96-154",
+        "YA-2C8CCB96-155",
+        "YA-35239CE1-006-ANTILOGOV-REVIEW",
+        "YA-5394CED5-165",
+        "YA-58143681-028",
+        "YA-58143681-102",
+        "YA-6E0FDD2F-090-ANTILOGOV-REVIEW",
+        "YA-74E83B86-200-ANTILOGOV-REVIEW",
+        "YA-7710F7E7-092",
+        "YA-7CC484A2-029",
+        "YA-7D36BED5-055-ANTILOGOV-REVIEW",
+        "YA-81E10A51-052-ANTILOGOV-REVIEW",
+        "YA-8CA48807-005-ANTILOGOV-REVIEW",
+        "YA-8CA48807-072-ANTILOGOV-REVIEW",
+        "YA-8CA48807-133",
+        "YA-955732E7-031",
+        "YA-A5DC57EB-100-ANTILOGOV-REVIEW",
+        "YA-AC6F09E3-115-ANTILOGOV-REVIEW",
+        "YA-D9F4F8DE-185-ANTILOGOV-REVIEW",
+        "YA-DE5264C7-004",
+        "YA-DE5264C7-119-ANTILOGOV-REVIEW",
+        "YA-F85F42A9-151-ANTILOGOV-REVIEW",
+        "YA-FD71A3BF-348-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-12-914-69-AVDIY",
+        "YA-OGAOO-173-16-1235-29-GEORGIY",
+        "YA-OGAOO-173-16-1246-5-IVAN",
+        "YA-OGAOO-173-16-1722-189-GEORGIY-MARRIAGE",
+        "YA-OGAOO-173-16-1722-202-AVDEY-MARRIAGE",
+        "YA-OGAOO-173-16-1722-221-SOLOMONIYA",
+        "YA-OGAOO-173-16-1772-214-ULYAN",
+        "YA-OGAOO-173-16-178-76-AVDIY",
+        "YA-OGAOO-173-16-1884-381-AGAPIYA-MARRIAGE",
+        "YA-OGAOO-173-18-2-128-VASILY",
+        "YA-OGAOO-173-18-2-139-ULYAN",
+        "YA-OGAOO-173-18-26-143-PAVEL",
+        "YA-OGAOO-173-18-48-116-SOLOMONIYA",
+        "YA-OGAOO-173-18-48-88-ARTEMIY",
+        "YA-OGAOO-173-18-48-99-AVDEY-MARRIAGE",
+        "YA-OGAOO-173-18-49-101-ULYAN",
+        "YA-OGAOO-173-18-49-41-GEORGIY",
+        "YA-OGAOO-173-18-57-46-ARTEMIY",
+        "YA-OGAOO-173-18-59-28-NIKOLAY",
+        "YA-OGAOO-173-18-6-50-BORIS",
+        "YA-OGAOO-173-18-6-74-AVDIY",
+        "YA-OGAOO-173-18-6-99-MIRON",
+        "YA-OGAOO-173-18-60-2-NIKOLAY-INDEX",
+        "YA-OGAOO-173-18-65-125-NIKOLAY-DEATH",
+        "YA-OGAOO-173-18-7-213-AVERYAN",
+        "YA-OGAOO-173-18-7-52-SEMEN"
+      ]
+    },
+    {
+      "placeId": "pryvilne-kherson",
+      "count": 21,
+      "sourceIds": [
+        "FS-3Q9M-CS9J-39GP-N",
+        "FS-3Q9M-CS9J-3KT7",
+        "FS-3Q9M-CS9J-48GJ",
+        "FS-3Q9M-CS9J-H7FD-R",
+        "FS-3Q9M-CS9N-X3XS-7",
+        "FS-3QHK-9Q97-239N",
+        "FS-3QHK-9Q97-292L",
+        "FS-3QHK-9Q97-2SNJ",
+        "FS-3QHK-9Q97-L3M3",
+        "FS-3QHK-9Q97-LS11",
+        "FS-3QHK-9Q97-LTT3",
+        "FS-3QHK-9Q97-LTT8",
+        "FS-3QHK-9Q97-RRT8",
+        "FS-3QHK-MQ97-2SND",
+        "FS-3QHK-MQ97-LSGC",
+        "FS-3QHK-SQ97-59DQ-V",
+        "FS-3QHK-SQ97-R4V9",
+        "FS-3QHV-GQ97-29K8",
+        "FS-3QHV-GQ97-29V9",
+        "FS-3QHV-GQ97-29VG",
+        "FS-3QHV-GQ97-LS5N"
+      ]
+    },
+    {
+      "placeId": "kursk",
+      "count": 19,
+      "sourceIds": [
+        "PUB-RGADA-210-4-215-KURSK-SEMEN-ONPILOGOV-1636",
+        "PUB-RGADA-210-9-1099-KURSK-SEMEN-ONPILOGOV-1655",
+        "YA-0199B698-017",
+        "YA-0FA4903C-012",
+        "YA-1065BD3C-005",
+        "YA-25142BDB-025",
+        "YA-3669473E-010",
+        "YA-3C80F3C0-015",
+        "YA-96747344-009",
+        "YA-A1CC2C92-040",
+        "YA-B807F818-006",
+        "YA-BD429143-044",
+        "YA-CC173C36-004",
+        "YA-EC551236-021",
+        "YA-F929B555-004",
+        "YA-F929B555-005",
+        "YA-MM-7FCB547F-085-ANFILOGOV",
+        "YA-MM-9C79A24E-005-ANFILOGOV",
+        "YA-MM-A77A6AAD-045-ANFILOGOV"
+      ]
+    },
+    {
+      "placeId": "irkutsk-city",
+      "count": 18,
+      "sourceIds": [
+        "YA-0804B95C-127-BORIS",
+        "YA-1E2AA547-380",
+        "YA-4186097B-078",
+        "YA-48784080-165",
+        "YA-61AB9906-188-ALEKSEY-SURETY",
+        "YA-81BF765F-074",
+        "YA-89860976-140",
+        "YA-A04D9A32-042",
+        "YA-A04D9A32-103",
+        "YA-A04D9A32-156",
+        "YA-A1408D7F-113",
+        "YA-B0E81EEE-190",
+        "YA-C23200C8-202",
+        "YA-E4C843AA-025",
+        "YA-EB5F4C8F-090",
+        "YA-GAIO-50-9-1864-136-ALEKSEY",
+        "YA-GAIO-50-9-901-204-ALEKSEY-MARRIAGE",
+        "YA-GAIO-50-9-933-192-ALEKSEY-SURETY"
+      ]
+    },
+    {
+      "placeId": "izyak-nikitino-orenburg",
+      "count": 16,
+      "sourceIds": [
+        "YA-1F82E4F4-106",
+        "YA-1F82E4F4-112",
+        "YA-22CBDC59-185",
+        "YA-5031E754-016-ANTILOGOV-REVIEW",
+        "YA-5031E754-017-ANTILOGOV-REVIEW",
+        "YA-5031E754-018-ANTILOGOV-REVIEW",
+        "YA-5031E754-026-ANTILOGOV-REVIEW",
+        "YA-5735F66A-320",
+        "YA-9E0E2775-172",
+        "YA-A280D5BD-008-ANTILOGOV-REVIEW",
+        "YA-A280D5BD-032-ANTILOGOV-REVIEW",
+        "YA-C38CA73D-159",
+        "YA-C38CA73D-161",
+        "YA-E51A202F-072-ANTILOGOV-REVIEW",
+        "YA-OGAOO-173-16-1936-27-ANTONINA-MARRIAGE",
+        "YA-OGAOO-173-16-2334-52-NATALIA-NIKIFOR"
+      ]
+    },
+    {
+      "placeId": "sevastopol",
+      "count": 16,
+      "sourceIds": [
+        "YA-005563E0-108",
+        "YA-005563E0-264",
+        "YA-04DCCFD9-102",
+        "YA-121E395C-042-ANTILOGOV-REVIEW",
+        "YA-21924166-140",
+        "YA-3106B9DE-050",
+        "YA-9FB6D6C2-073",
+        "YA-A01A2853-077",
+        "YA-SEVASTOPOL-30-1-118-14-TIKHON",
+        "YA-SEVASTOPOL-30-1-16-265-KONSTANTIN",
+        "YA-SEVASTOPOL-30-1-16-41-FEODOSIY",
+        "YA-SEVASTOPOL-30-1-33-195-FEODOSIY",
+        "YA-SEVASTOPOL-30-1-86-249-FEODOSIY",
+        "YA-SEVASTOPOL-30-1-88-35-MARIA-CHRISMATION",
+        "YA-SEVASTOPOL-30-1-91-6-PETR",
+        "YA-SEVASTOPOL-30-1-93-98-TIKHON"
+      ]
+    },
+    {
+      "placeId": "omsk-governorate",
+      "count": 15,
+      "sourceIds": [
+        "YA-226FCF32-313-ANTILOGOV-REVIEW",
+        "YA-38B092F4-282-ANTILOGOV-REVIEW",
+        "YA-39F61D1E-033",
+        "YA-39F61D1E-034",
+        "YA-39F61D1E-035",
+        "YA-39F61D1E-036",
+        "YA-39F61D1E-037",
+        "YA-5475B99C-476",
+        "YA-71384A1A-133",
+        "YA-71384A1A-134",
+        "YA-71384A1A-135",
+        "YA-71384A1A-136",
+        "YA-893F276F-041-ANTILOGOV-REVIEW",
+        "YA-A176B60D-846",
+        "YA-F2F60690-130"
+      ]
+    },
+    {
+      "placeId": "orel",
+      "count": 14,
+      "sourceIds": [
+        "YA-06A93843-031",
+        "YA-0F0C9BB2-030",
+        "YA-59825086-006",
+        "YA-67D7099D-028",
+        "YA-98385EBE-011",
+        "YA-9910F08B-019",
+        "YA-A1D8104A-010",
+        "YA-AC2F0C47-034",
+        "YA-B4AAC5AF-015",
+        "YA-B557AE98-009",
+        "YA-CB0C6403-038",
+        "YA-D242AF8C-008",
+        "YA-D46B57B1-040",
+        "YA-DD33D1D7-030"
+      ]
+    },
+    {
+      "placeId": "berdiansk",
+      "count": 12,
+      "sourceIds": [
+        "FS-3Q9M-CS9B-W3NQ-B",
+        "FS-3Q9M-CS9B-WQS3-6",
+        "FS-3Q9M-CS9T-5X2W",
+        "FS-3Q9M-CS9T-LSN6-Z",
+        "FS-3Q9M-CS9T-LSND-C",
+        "FS-3Q9M-CS9T-P969-Y",
+        "FS-3Q9M-CS9T-P96C-7",
+        "FS-3Q9M-CS9T-P96Y-6",
+        "FS-3Q9M-CS9T-P9FM-L",
+        "FS-3Q9M-CS9T-P9NH-T",
+        "FS-3Q9M-CS9T-YQZP",
+        "FS-3Q9M-CS9T-YSBD"
+      ]
+    },
+    {
+      "placeId": "orenburg-uezd",
+      "count": 12,
+      "sourceIds": [
+        "YA-D7361706-116",
+        "YA-D80785EC-095",
+        "YA-EB7435AA-002",
+        "YA-OGAOO-173-11-1284-143-AGAFYA",
+        "YA-OGAOO-173-11-1284-143-SEMEN",
+        "YA-OGAOO-173-11-1613-10-FEDOR",
+        "YA-OGAOO-173-11-1734-223-IVAN",
+        "YA-OGAOO-173-11-1734-223-MATRENA",
+        "YA-OGAOO-173-11-1734-223-PARASKEVA",
+        "YA-OGAOO-173-11-1734-251-TROFIM",
+        "YA-OGAOO-173-11-1734-264-TIMOFEY",
+        "YA-OGAOO-173-11-1734-269-NAZAR"
+      ]
+    },
+    {
+      "placeId": "kolychevo-orenburg",
+      "count": 8,
+      "sourceIds": [
+        "YA-B9DAA6A6-028",
+        "YA-CC7AA759-161",
+        "YA-CC7AA759-162",
+        "YA-CC7AA759-164",
+        "YA-CC7AA759-166",
+        "YA-CC7AA759-178",
+        "YA-CC7AA759-184",
+        "YA-OGAOO-173-16-1031-119-SERGEY"
+      ]
+    },
+    {
+      "placeId": "tymoshivka",
+      "count": 8,
+      "sourceIds": [
+        "FS-3Q9M-CSSK-C49W",
+        "FS-3Q9M-CSSK-CW88",
+        "FS-3Q9M-CSSV-1BZ7",
+        "FS-3Q9M-CSSV-1YFK",
+        "FS-3Q9M-CSSV-1YL5",
+        "FS-3Q9M-CSSW-N34Q-5",
+        "FS-3Q9M-CSSW-N3D3-R",
+        "FS-3Q9M-CSSW-QSB2-5"
+      ]
+    },
+    {
+      "placeId": "soldatskaya-kobyrdak",
+      "count": 6,
+      "sourceIds": [
+        "YA-210A0246-629",
+        "YA-3AEC8A18-290",
+        "YA-3AEC8A18-315",
+        "YA-78ABFF3E-102",
+        "YA-78ABFF3E-176",
+        "YA-A7E63935-664"
+      ]
+    },
+    {
+      "placeId": "novogeorgievka-sharlyk-orenburg",
+      "count": 5,
+      "sourceIds": [
+        "YA-5484E407-130",
+        "YA-E1621897-062",
+        "YA-E1621897-068-ANTILOGOV-REVIEW",
+        "YA-E1621897-82",
+        "YA-OGAOO-173-16-231-21-ALEKSANDR"
+      ]
+    },
+    {
+      "placeId": "astrakhan-governorate",
+      "count": 4,
+      "sourceIds": [
+        "YA-05D165A5-002",
+        "YA-083EF4A5-010",
+        "YA-33ECCAB2-009",
+        "YA-C1FB8FA3-036"
+      ]
+    },
+    {
+      "placeId": "kursk-governorate",
+      "count": 4,
+      "sourceIds": [
+        "RGIA-F1343-O51-D593-GP-AMPILOGOV-INDEX",
+        "YA-AA1CC997-004-ANFILOGOV-MEDIA",
+        "YA-MM-2AC43835-002-ANTILOGOV",
+        "YA-MM-A9349B0C-002-ANTILOGOV"
+      ]
+    },
+    {
+      "placeId": "orel-governorate",
+      "count": 4,
+      "sourceIds": [
+        "RGIA-F1284-O202-D461-SEMYON-FAMILY-1847-1849",
+        "YA-1551366C-515",
+        "YA-2EB4243A-003",
+        "YA-8F9FE49C-007"
+      ]
+    },
+    {
+      "placeId": "simferopol",
+      "count": 4,
+      "sourceIds": [
+        "FS-3Q9M-CS9F-G9FX-7",
+        "FS-3Q9M-CS9F-LSYP-W",
+        "FS-3Q9M-CS9F-PW6Z-2",
+        "YA-67832C36-194-ANTILOGOV-REVIEW"
+      ]
+    },
+    {
+      "placeId": "zerklo-orenburg",
+      "count": 4,
+      "sourceIds": [
+        "YA-4EB4DF62-213",
+        "YA-4EB4DF62-221",
+        "YA-547E2D58-048",
+        "YA-8BD1F854-136"
+      ]
+    },
+    {
+      "placeId": "alexandrovsky-distillery-irkutsk",
+      "count": 3,
+      "sourceIds": [
+        "YA-0A5CDE07-068",
+        "YA-0A5CDE07-102",
+        "YA-D59D76AD-173"
+      ]
+    },
+    {
+      "placeId": "buzuluk-uezd",
+      "count": 3,
+      "sourceIds": [
+        "YA-72E66E59-106",
+        "YA-769D6DBF-102",
+        "YA-E4197964-039"
+      ]
+    },
+    {
+      "placeId": "fatezh-uezd",
+      "count": 3,
+      "sourceIds": [
+        "PUB-GAKO-33-2-D1974-M-ANPILOGOV-1831",
+        "PUB-GAKO-33-2-D2211-D-A-ANFILOGOV-1834",
+        "YA-MM-65DB9AD5-002-ANTILOGOV"
+      ]
+    },
+    {
+      "placeId": "gamaleyevka-buzuluk",
+      "count": 3,
+      "sourceIds": [
+        "YA-1536BFC7-097",
+        "YA-B58FB18B-004",
+        "YA-E04C51E5-040"
+      ]
+    },
+    {
+      "placeId": "gosudarev-bayrak-horlivka",
+      "count": 3,
+      "sourceIds": [
+        "FS-3QS7-99JG-X3L3",
+        "FS-3QS7-99JN-T428",
+        "FS-3QS7-99JN-TWPQ"
+      ]
+    },
+    {
+      "placeId": "bakhmut-donetsk",
+      "count": 2,
+      "sourceIds": [
+        "FS-3QS7-89JR-56GY",
+        "FS-3QS7-L9JY-XJC3"
+      ]
+    },
+    {
+      "placeId": "bakhtemir-astrakhan",
+      "count": 2,
+      "sourceIds": [
+        "YA-A06CCF2C-045",
+        "YA-C50DAE78-006"
+      ]
+    },
+    {
+      "placeId": "irkutsk-governorate",
+      "count": 2,
+      "sourceIds": [
+        "YA-F5C92F55-035",
+        "YA-F5C92F55-151"
+      ]
+    },
+    {
+      "placeId": "kherson-governorate",
+      "count": 2,
+      "sourceIds": [
+        "FS-3QHV-GQ97-29K9",
+        "FS-MIKHAIL-DARYA-ANTILOGOV-SOUTHERN-COHORT-1806-1816"
+      ]
+    },
+    {
+      "placeId": "mikhailovskoye-sharlyk",
+      "count": 2,
+      "sourceIds": [
+        "YA-18B12123-167",
+        "YA-CEA3D65F-074"
+      ]
+    },
+    {
+      "placeId": "sargatskoye-omsk",
+      "count": 2,
+      "sourceIds": [
+        "YA-72B171BD-072-ANTILOGOV-REVIEW",
+        "YA-8E642F09-139-ANTILOGOV-REVIEW"
+      ]
+    },
+    {
+      "placeId": "sasykoli-enotaevsky",
+      "count": 2,
+      "sourceIds": [
+        "YA-GAAO-643-1-149-SASYKOLI-DARIA-ANPILOVA-1835",
+        "YA-GAAO-687-2-1365-SASYKOLI-ANPILOV-HOUSEHOLD-1835"
+      ]
+    },
+    {
+      "placeId": "shchigry-uezd",
+      "count": 2,
+      "sourceIds": [
+        "PUB-GAKO-33-2-D1318-YA-F-ANFILOGOV-1826",
+        "PUB-GAKO-33-2-D1899-V-F-ANFILOGOV-1830"
+      ]
+    },
+    {
+      "placeId": "simbirsk-governorate",
+      "count": 2,
+      "sourceIds": [
+        "YA-5FF7911E-852",
+        "YA-F7947A17-761"
+      ]
+    },
+    {
+      "placeId": "vozsiyatske",
+      "count": 2,
+      "sourceIds": [
+        "FS-3Q9M-CS9L-3SD8-9",
+        "FS-3Q9M-CS9L-M5MD"
+      ]
+    },
+    {
+      "placeId": "anpilogova-fatezh-uezd",
+      "count": 1,
+      "sourceIds": [
+        "PUB-GAKO-184-2-380-ANPILOGOVO-1816"
+      ]
+    },
+    {
+      "placeId": "bakhmut-uezd",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-L9JT-6DWS"
+      ]
+    },
+    {
+      "placeId": "berdiansk-district",
+      "count": 1,
+      "sourceIds": [
+        "FS-3Q9M-CS9B-W3GH-7"
+      ]
+    },
+    {
+      "placeId": "don-host-oblast",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-99JN-D6RQ"
+      ]
+    },
+    {
+      "placeId": "gavriilo-arkhangelskoe-yashkino",
+      "count": 1,
+      "sourceIds": [
+        "YA-2029770B-152-ANTILOGOV-REVIEW"
+      ]
+    },
+    {
+      "placeId": "gornyaya-stary-oskol",
+      "count": 1,
+      "sourceIds": [
+        "PUB-RGADA-350-1-384-GORNAYA-ANISIM-ANPILOV-1718"
+      ]
+    },
+    {
+      "placeId": "horlivka",
+      "count": 1,
+      "sourceIds": [
+        "FS-3Q9M-CSJ1-G9CX-3"
+      ]
+    },
+    {
+      "placeId": "kerch-taurida",
+      "count": 1,
+      "sourceIds": [
+        "YA-MM-6D00AEC3-005-ANTILOGOV"
+      ]
+    },
+    {
+      "placeId": "kherson",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QHV-GQ94-MS9Z"
+      ]
+    },
+    {
+      "placeId": "kozhli-osinovka-tomsk",
+      "count": 1,
+      "sourceIds": [
+        "YA-8C9C8C55-003"
+      ]
+    },
+    {
+      "placeId": "kuban-oblast",
+      "count": 1,
+      "sourceIds": [
+        "YA-6E7C8F0E-217"
+      ]
+    },
+    {
+      "placeId": "kuzminovka-buzuluk-orenburg",
+      "count": 1,
+      "sourceIds": [
+        "YA-C96102D3-010-ANTILOGOV-REVIEW"
+      ]
+    },
+    {
+      "placeId": "kyiv",
+      "count": 1,
+      "sourceIds": [
+        "FS-3Q9M-CS9T-G1FX"
+      ]
+    },
+    {
+      "placeId": "makiivka",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-L9JT-X331"
+      ]
+    },
+    {
+      "placeId": "mariupol",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-L9JG-63NV"
+      ]
+    },
+    {
+      "placeId": "melitopol",
+      "count": 1,
+      "sourceIds": [
+        "FS-3Q9M-CSSK-291M-J"
+      ]
+    },
+    {
+      "placeId": "novohryhorivka-haichur",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-99J5-TWZK"
+      ]
+    },
+    {
+      "placeId": "novotroitskaya-buzuluk",
+      "count": 1,
+      "sourceIds": [
+        "YA-AFFFA843-132"
+      ]
+    },
+    {
+      "placeId": "stavropol-governorate",
+      "count": 1,
+      "sourceIds": [
+        "YA-7619FBE8-026"
+      ]
+    },
+    {
+      "placeId": "talbakul-tara",
+      "count": 1,
+      "sourceIds": [
+        "YA-EEDA2630-365"
+      ]
+    },
+    {
+      "placeId": "tim-uezd-kursk",
+      "count": 1,
+      "sourceIds": [
+        "PUB-GAKO-33-2-D1482-L-N-ANFILOV-1827"
+      ]
+    },
+    {
+      "placeId": "yelanets",
+      "count": 1,
+      "sourceIds": [
+        "FS-3QS7-893Q-F96S-5"
+      ]
+    }
+  ],
+  "unfinishedStatusCountsWithinExactPlaceCandidates": {
+    "complete-with-uncertainties": 62,
+    "complete-with-unresolved": 39,
+    "complete-visual-review-with-explicit-uncertainties": 12,
+    "official-inventory-verified-original-case-needed": 5,
+    "complete-with-stated-uncertainty": 3,
+    "complete-with-stated-uncertainties": 3,
+    "reviewed-with-explicit-uncertainties": 2,
+    "complete-with-godparents-unresolved": 2,
+    "primary-scan-verified-male-side-complete-female-side-pending": 1,
+    "strong-two-document-identity-primary-scan-pending": 1,
+    "complete-with-unresolved-identity": 1,
+    "complete-with-unresolved-nonessential-ocr": 1,
+    "official-catalog-verified-scans-needed": 1,
+    "official-index-verified-scans-needed": 1,
+    "primary-name-reading-confirmed-lineage-unresolved": 1,
+    "complete-but-reading-uncertain": 1,
+    "complete-with-minor-uncertainty": 1,
+    "complete-with-minor-godparent-grammar-uncertainty": 1,
+    "complete-with-minor-uncertainties": 1,
+    "complete-with-minor-godparent-uncertainty": 1
+  },
+  "mapScopeCorrectionsRecommended": [
+    {
+      "personIds": [
+        "P1068"
+      ],
+      "sourceIds": [
+        "YA-OGAOO-173-16-47-156-STEPAN"
+      ],
+      "reason": "Наталья Баканова показана как отдельный картографический участник через искусственно нормализованную брачную фамилию"
+    },
+    {
+      "personIds": [
+        "P0250"
+      ],
+      "sourceIds": [
+        "FS-3QS7-L93Q-N3L7"
+      ],
+      "reason": "Ксения Коротеева — невеста другой фамилии"
+    },
+    {
+      "personIds": [
+        "P99671"
+      ],
+      "sourceIds": [
+        "FS-3Q9M-CS9J-39P6-Z"
+      ],
+      "reason": "Мария Поддубная — невеста другой фамилии"
+    },
+    {
+      "personIds": [
+        "P90021"
+      ],
+      "sourceIds": [
+        "YA-OGAOO-173-16-665-30-VARFOLOMEY"
+      ],
+      "reason": "Параскева Сперкова — невеста другой фамилии"
+    },
+    {
+      "personIds": [
+        "P0981"
+      ],
+      "sourceIds": [
+        "YA-4D8400B3-127"
+      ],
+      "reason": "Анастасия Покачалова — невеста другой фамилии"
+    },
+    {
+      "personIds": [
+        "P91189"
+      ],
+      "sourceIds": [
+        "YA-8952BFFE-94"
+      ],
+      "reason": "Раиса Кудимова — невеста другой фамилии"
+    },
+    {
+      "personIds": [
+        "P1422"
+      ],
+      "sourceIds": [
+        "YA-OGAOO-173-12-614-36-ANDREY",
+        "YA-OGAOO-173-12-614-36-YAKOV",
+        "YA-OGAOO-173-12-807-126-ANDREY",
+        "YA-OGAOO-173-16-116-687-ANDREY"
+      ],
+      "reason": "Васса Конторова показана как отдельный участник фамильной карты"
+    },
+    {
+      "personIds": [
+        "P5901",
+        "P5907",
+        "P5909"
+      ],
+      "sourceIds": [
+        "PUB-GADO-RYAZH-ANPILOGOV-HOUSEHOLDS-1768-1775",
+        "PUB-GADO-104-1-7-RYAZH-ANPILOGOV-HOUSEHOLDS-1776"
+      ],
+      "reason": "жена и потомки по женской линии без документированной фамилии ряда получили отдельные точки"
+    },
+    {
+      "personIds": [
+        "P90226",
+        "P90231",
+        "P90238",
+        "P90242"
+      ],
+      "sourceIds": [
+        "GARO-F232-O1-D792-ANPILOV-PONOMAREVSKOYE-1901"
+      ],
+      "reason": "жёны домохозяев без фамилии ряда показаны как отдельные люди на двух точках события/происхождения"
+    }
+  ],
+  "remainingMigrationReviewPriority": [
+    {
+      "personId": "P99106",
+      "year": 1700,
+      "reason": "документированный Боздырево→Большие Щигры и автоматически выведенный Ливны→Большие Щигры в один год"
+    },
+    {
+      "personId": "P2004",
+      "year": 1835,
+      "reason": "документированный Бабка→Сасыколи и автоматически выведенный Енотаевский уезд→Сасыколи"
+    },
+    {
+      "personId": "P90050",
+      "year": 1836,
+      "reason": "два разных уровня происхождения: Воронежская губерния и Северный Кавказ"
+    },
+    {
+      "personId": "P0862",
+      "year": 1869,
+      "reason": "две автоматические ступени Кармалка→Каликино→Оренбургский уезд в один год"
+    },
+    {
+      "personId": "P1457",
+      "year": 1888,
+      "reason": "Кармалка→Оренбургский уезд→Кармалка в один год"
+    },
+    {
+      "personId": "P90026",
+      "year": 1890,
+      "reason": "документированный Фатежский уезд→Томская губерния соседствует с автоматическим Томская губерния→Курск"
+    },
+    {
+      "personId": "P0568",
+      "year": 1898,
+      "reason": "документированный Орловская губерния→Кожли и автоматический Томская губерния→Кожли"
+    },
+    {
+      "personId": "P109000",
+      "years": [
+        1899,
+        1900
+      ],
+      "reason": "ежегодные автоматические колебания Омск↔Тюкалинский уезд"
+    },
+    {
+      "personId": "P1653",
+      "year": 1916,
+      "reason": "автоматическое Михайловское↔Оренбургский уезд в один год"
+    }
+  ],
+  "conclusion": "После регенерации карта должна сохранить границу 1950 года и убрать 26 маршрутов внутри одного места. Рекомендации по mentions/people/sources требуют отдельной правки вне разрешённого этому агенту охвата.",
+  "mapScopeCorrectionsApplied": {
+    "personIds": [
+      "P1068",
+      "P0250",
+      "P99671",
+      "P90021",
+      "P0981",
+      "P91189",
+      "P1422",
+      "P5901",
+      "P5907",
+      "P5909",
+      "P90226",
+      "P90231",
+      "P90238",
+      "P90242"
+    ],
+    "personFiles": [
+      "data/genealogy/people/P1068-natalia-leontievna-ampilogova-karmalka.json",
+      "data/genealogy/people/P0250-ksenia-kasianovna-anpilogova.json",
+      "data/genealogy/people/P99671-maria-daniilovna-ampilogova-pryvilne.json",
+      "data/genealogy/people/P90021-параскева-ивановна-ампилогова.json",
+      "data/genealogy/people/P0981-anastasiya-lukyanovna-ampilogova-karmalka.json",
+      "data/genealogy/people/P91189-raisa-petrovna-ampilogova-karmalka.json",
+      "data/genealogy/people/P1422-vassa-grigorievna-ampilogova-zobovo.json",
+      "data/genealogy/people/P5901-praskovya-nikitichna-wife-anpilogov.json",
+      "data/genealogy/people/P5907-evdokim-semenovich-son-anna-anpilogova.json",
+      "data/genealogy/people/P5909-foma-evdokimovich-ryazh.json",
+      "data/genealogy/people/P90226-nadezhda-semyonovna-wife-fedor-anpilov-1901.json",
+      "data/genealogy/people/P90231-elena-alekseevna-wife-grigory-anpilov-1901.json",
+      "data/genealogy/people/P90238-maria-nikiforovna-wife-ivan-anpilov-1901.json",
+      "data/genealogy/people/P90242-anna-kuzminichna-wife-aleksey-anpilov-1901.json"
+    ],
+    "sourceFiles": [
+      "data/genealogy/sources/familysearch/3Q9M-CS9J-39GP-N.json",
+      "data/genealogy/sources/familysearch/3Q9M-CS9J-39P6-Z.json",
+      "data/genealogy/sources/familysearch/3Q9M-CS9J-H7PW-3.json",
+      "data/genealogy/sources/familysearch/3Q9M-CS9N-J3NL-F.json",
+      "data/genealogy/sources/familysearch/3QS7-L93Q-J4R.json",
+      "data/genealogy/sources/familysearch/3QS7-L93Q-N3L7.json",
+      "data/genealogy/sources/publications/GARO-F232-O1-D792-ANPILOV-PONOMAREVSKOYE-1901.json",
+      "data/genealogy/sources/publications/PUB-GADO-104-1-7-RYAZH-ANPILOGOV-HOUSEHOLDS-1776.json",
+      "data/genealogy/sources/publications/PUB-GADO-RYAZH-ANPILOGOV-HOUSEHOLDS-1768-1775.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-11-2004-80-STEPAN.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-614-36-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-614-36-YAKOV.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-673-28-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-673-89-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-779-146-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-12-807-126-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-116-687-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-1426-136.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-402-170-ANDREY.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-47-156-STEPAN.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-654-85-PELAGEYA.json",
+      "data/genealogy/sources/publications/YA-OGAOO-173-16-665-30-VARFOLOMEY.json",
+      "data/genealogy/sources/yandex/YA-06F85FC8-156.json",
+      "data/genealogy/sources/yandex/YA-10EABD60-7.json",
+      "data/genealogy/sources/yandex/YA-1116946A-142.json",
+      "data/genealogy/sources/yandex/YA-1D34F51D-43.json",
+      "data/genealogy/sources/yandex/YA-3E3AA3FC-43.json",
+      "data/genealogy/sources/yandex/YA-3EC5204F-715.json",
+      "data/genealogy/sources/yandex/YA-42DFA604-15-M30.json",
+      "data/genealogy/sources/yandex/YA-4615B0D3-24.json",
+      "data/genealogy/sources/yandex/YA-4615B0D3-37.json",
+      "data/genealogy/sources/yandex/YA-4D8400B3-116.json",
+      "data/genealogy/sources/yandex/YA-4D8400B3-127.json",
+      "data/genealogy/sources/yandex/YA-88608AEB-228.json",
+      "data/genealogy/sources/yandex/YA-88608AEB-77.json",
+      "data/genealogy/sources/yandex/YA-8952BFFE-94.json",
+      "data/genealogy/sources/yandex/YA-8B496DD7-48.json",
+      "data/genealogy/sources/yandex/YA-90A24183-025-ANTILOGOV-REVIEW.json",
+      "data/genealogy/sources/yandex/YA-A31DE8DA-4-F18.json",
+      "data/genealogy/sources/yandex/YA-AE9789B2-44.json",
+      "data/genealogy/sources/yandex/YA-DFA0810B-3.json",
+      "data/genealogy/sources/yandex/YA-E7B0366D-29.json",
+      "data/genealogy/sources/yandex/YA-F6A2F87C-013-ANTILOGOV-REVIEW.json",
+      "data/genealogy/sources/yandex/YA-F7AD87CF-161-M118.json"
+    ],
+    "mentionCount": 51,
+    "policy": "Context participants of other surnames remain in literal transcriptions and family data but are excluded from public profiles and their own map observations via publicCore:false and surnameSeries:false."
+  }
+}

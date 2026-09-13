@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-C711DEDF-194",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
     "scanNumber": 194,
@@ -13,24 +13,17 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c711dedf-0d13-49a7-8d93-e809898b76f3/194"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-register-page",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "19 января — 10 февраля 1909 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Оренбургский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-C711DEDF-194-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "c711dedf-0d13-49a7-8d93-e809898b76f3",
     "scanNumber": 194,
@@ -52,6 +45,12 @@
         "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0194-target-entry.png",
         "sha256": "6e5fbb38e4206129f86abb696d8e4ae19d572a870935629892db960da61eac17",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c711dedf-0d13-49a7-8d93-e809898b76f3/0194-target-context-deep.png",
+        "sha256": "61cd3a909e776242d0bd82f27e89ce50d675ea022dba8f4740444b42c11109e3",
+        "description": "Широкий clean-фрагмент полного разворота с январско-февральскими записями, родителями, восприемниками и причтом."
       }
     ],
     "quality": {
@@ -59,16 +58,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5175x4131",
-      "targetDimensions": "1322x656",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4800x3400",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": false
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вгото-ореєвио врествйнина Егоры\nогоровь патасонова и соофетская\nжена /епивяна Прокопітва Ката-\nсонсова.",
-    "modernInterpretation": "вгото-ореєвио врествйнина Егоры огоровь патасонова и соофетская жена /епивяна Прокопитва Ката- сонсова.",
+    "status": "complete-primary-scan-manually-verified-false-positive",
+    "literal": "«Метрической книги на 1909 годъ, часть первая, о родившихся». На развороте видны записи № 1–9 за 19 января — 10 февраля. Вручную прочитаны родители, восприемники и причт; индексной Дарьи Парфениевой Ампилоговой на листе нет.",
+    "modernInterpretation": "Полная проверка крещальных записей и восприемников не подтверждает Дарью Парфениевну Ампилогову; индекс перенёс имя с другого листа либо смешал соседние блоки.",
     "localOcr": "вгото-ореєвио врествйнина Егоры\nогоровь патасонова и соофетская\nжена /епивяна Прокопітва Ката-\nсонсова.",
     "localOcrWithSurnameLexicon": "11060\nвгото орестио крестванина Егоры\nогоровь катасонова и софитская\nжена / спивяна Прокопітва Ката-\nсонова .",
     "collation": {
@@ -76,20 +78,26 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Поисковый индекс использован только для навигации и опровергнут ручным чтением всего сохранённого разворота."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Дарья Парфениева Ампилогова, крестьянская жена. Крёстная мать: Фиона Емельянова Пашкова, крестьянская девица, село Кармалка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-false-positive-after-full-scan-review"
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный разворот, видимые записи № 1–9, родители, восприемники и причт; фамильное упоминание отсутствует."
+  },
+  "context": {
+    "eventSummary": "Полная проверка крещальных записей и восприемников не подтверждает Дарью Парфениевну Ампилогову; индекс перенёс имя с другого листа либо смешал соседние блоки.",
+    "identityNote": "Профиль и связи не создаются: носителя исследуемого фамильного ряда на листе нет.",
+    "migrationNote": "Не применимо."
   }
 }

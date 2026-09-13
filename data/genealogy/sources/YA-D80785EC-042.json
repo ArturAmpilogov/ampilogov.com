@@ -10,7 +10,16 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d80785ec-5ad4-49c6-8de9-6ff073942fdc/42"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D80785EC-042",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "displayName": "Фамильный ряд не подтверждён",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/042-full-view.jpg",
@@ -43,6 +52,12 @@
             "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0042-target-entry.png",
             "sha256": "85d179fd928c42673cefb0822a6e24bf353790d92457ad7d125a93ba0a50375a",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0042-target-entry-deep.png",
+            "sha256": "7762bb6a85cafec22cef1f2fdcfabe293fb3121fafc2ec7df3153f319b76ac29",
+            "description": "Широкий clean crop оригинального листа с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +65,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5275x4170",
-          "targetDimensions": "1346x672",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5000x3900",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +76,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified-false-hit",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный разворот, заголовок, целевые и соседние строки, родители/супруги, восприемники/поручители и причт; Индексные Василий Арсеньев и Татиана Иванова Ампилоговы на развороте отсутствуют. Wide clean crop 5000x3900."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-full-page-negative-review",
+    "literal": "На оригинале прочитаны июльские рождения 1913 года № 114–119; родители и восприемники прочитаны по всем строкам. Фамильный ряд Ампилогов / Анпилогов и документированные варианты не обнаружены.",
+    "modernInterpretation": "Нечёткое индексное совпадение не подтверждено первичным сканом; профиль, связь и картографическое событие не создаются.",
+    "indexNote": "Индекс использован только для навигации и отвергнут после ручного чтения полного оригинала.",
     "localOcr": "ОСКОВСКО'\nСНЛОГ\nС ИПОА ИЛЬТОЙ\nГОДА, ЧАСТЬ ПЕРВАА, Ш РО\nЗвАніє, ймА, отчество й фамиліл\nKTò cc\nвоспріємникшвz.",
     "localOcrWithSurnameLexicon": "ОСКОВСКО'\nГОДА, ЧАСТЬ ПЕРЕЛА, Й РО\nЗвАніє, ймА, отчество й фамиліл\nKTò co\nвоспріємникив%.",
     "collation": {
@@ -80,6 +97,23 @@
   },
   "indexData": {
     "querySnippet": "Села Кармалки крестьянин Василий Арсеньев Ампилогов и крестьянская девица Татиана Иванова Ампилогова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-false-after-manual-primary-scan-reading",
+    "discrepancy": "Индексные Василий Арсеньев и Татиана Иванова Ампилоговы на развороте отсутствуют."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false,
+  "event": {
+    "type": "negative-index-review",
+    "date": {
+      "display": "1913 год",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного архивного листа.",
+    "identityNote": "Индексные Василий Арсеньев и Татиана Иванова Ампилоговы на развороте отсутствуют.",
+    "migrationNote": "Оснований для миграции или карты нет."
   }
 }

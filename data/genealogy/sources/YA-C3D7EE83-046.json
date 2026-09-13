@@ -10,7 +10,16 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c3d7ee83-7ae0-4aee-8483-41fe911db00b/46"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-C3D7EE83-046",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "displayName": "Фамильный ряд не подтверждён",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/046-full-view.jpg",
@@ -43,6 +52,12 @@
             "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0046-target-entry.png",
             "sha256": "1b041a9d97816e32a5d25e6bad597734b42ffeee439b503f40be9081646de45d",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0046-target-entry-deep.png",
+            "sha256": "02868ef9e07d7d142d1fad6ca386ed43b4abad33e68fcbebae1d1b8a90903f89",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой, соседними записями и заголовками; интерфейс Яндекса отсутствует."
           }
         ],
         "quality": {
@@ -50,8 +65,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5407x4201",
-          "targetDimensions": "1460x749",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5100x3900",
+          "method": "manual-full-spread-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +76,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified-false-hit",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полностью вручную прочитаны заголовок части III, январские строки умерших и графы возраста, причины смерти, исповеди и погребения; «Антипова» проверено по целой строке и соседям. Wide crop 5100×3900."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-full-page-negative-review",
+    "literal": "Метрической книги на 1912 год, часть третья, об умерших. Январские строки: «села Колычева крестьянина Петра Іосифова Антипова сынъ Василій», 17 лет; рядом записаны Марк Паньков и умершие других семей. Фамилия в целевой строке — Антипов, не Ампилогов.",
+    "modernInterpretation": "В январской записи умершего Василия Петровича индекс ошибочно распознал фамилию Антипов как Ампилогов; носителя исследуемого ряда на развороте нет.",
+    "indexNote": "Индекс Яндекса использован только для навигации и отвергнут после ручного чтения оригинального разворота.",
     "localOcr": "Звáніє, йма, бтчество й флмилід одмéршигш.\nỎỷMÉPu\nМЗжеска.\nІіл.\nCenа/uuaneba conôjaтa\nМираила Титарсва\n2л.\nЯквличнах синь Гостль-\nРе/лвр\nСвемреснинг Ресм",
     "localOcrWithSurnameLexicon": "ЗвАніє, йма, отчество й фімилід одмершиги.\nỎỷ MÉPH\nИЗжеска.\nпіл.\nCena /vuaneba conôjama\nМиранла Титарсва\n2л.\nЯквлична синь Гость-\nРе/ловр",
     "collation": {
@@ -80,6 +97,27 @@
   },
   "indexData": {
     "querySnippet": "Отец умершего: Петр Иосифов Ампилогов, крестьянин, село Колычево. ... Умерший: Марк Понтелеймонов Паньков, 3 месяца. Умерший: Василий Петров Ампилогов, 17.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-false-after-manual-primary-scan-reading",
+    "discrepancy": "Яндекс склеил соседние строки и заменил ясно читаемую фамилию Антипов на Ампилогов."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false,
+  "event": {
+    "type": "negative-index-review",
+    "date": {
+      "display": "январь 1912 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Колычево",
+      "normalized": "село Колычево, Оренбургская губерния"
+    }
+  },
+  "context": {
+    "eventSummary": "В январской записи умершего Василия Петровича индекс ошибочно распознал фамилию Антипов как Ампилогов; носителя исследуемого ряда на развороте нет.",
+    "identityNote": "Яндекс склеил соседние строки и заменил ясно читаемую фамилию Антипов на Ампилогов.",
+    "migrationNote": "Оснований для профиля, карты или миграции нет."
   }
 }
