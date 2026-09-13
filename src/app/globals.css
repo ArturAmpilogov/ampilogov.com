@@ -8571,6 +8571,33 @@ a {
   letter-spacing: 0.04em;
 }
 
+.settlement-proximity-cluster > span { border-width: 2px; background: #fcfaf5; box-shadow: 0 2px 7px #1d1c1920; }
+.settlement-proximity-cluster > span::before, .settlement-proximity-cluster > span > i { display: none; }
+.settlement-proximity-cluster b { font: 700 20px/1 var(--sans); }
+.settlement-proximity-cluster small { font-size: 11px; }
+.settlement-map-marker { margin: 0; background: #a6412f; box-shadow: 0 1px 4px #1d1c1933; }
+.settlement-map-marker > b { font: 700 16px/1 var(--sans); }
+.settlement-map-marker.is-approximate { box-shadow: 0 0 0 1px var(--accent); }
+.settlement-map-navigation { padding-block: 0 18px; }
+.settlement-map-modes { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
+.settlement-map-modes button, .settlement-place-routes { min-height: 42px; padding: 9px 15px; border: 1px solid var(--line); border-radius: 2px; background: var(--paper-light); color: var(--ink); font: 600 14px/1.35 var(--sans); cursor: pointer; }
+.settlement-map-modes button[aria-pressed="true"] { background: var(--accent); color: white; border-color: var(--accent); }
+.settlement-map-modes .settlement-map-overview { margin-left: auto; }
+.settlement-map-navigation :is(button, select):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.settlement-map-guidance, .settlement-route-picker p { margin: 0; color: var(--muted); font: 14px/1.5 var(--sans); }
+.settlement-route-picker { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(0, 3fr); gap: 12px; }
+.settlement-route-picker label { display: grid; gap: 6px; color: var(--muted); font: 500 14px/1.4 var(--sans); }
+.settlement-route-picker select { width: 100%; min-width: 0; height: 44px; padding: 8px; border: 1px solid var(--line); border-radius: 2px; background: var(--paper-light); color: var(--ink); font: 16px/1.4 var(--sans); }
+.settlement-route-picker p { grid-column: 1 / -1; }
+.settlement-place-routes { display: block; margin: 16px 20px; text-align: left; color: var(--accent); }
+.settlement-map-stage > .settlement-migration-panel { position: relative; inset: auto; width: 100%; max-height: 420px; margin-top: 16px; box-shadow: none; }
+.settlement-route-endpoint { font-size: 14px !important; max-width: 230px; }
+@media (max-width: 640px) {
+  .settlement-route-picker { grid-template-columns: minmax(0, 1fr); }
+  .settlement-map-modes { gap: 5px; }
+  .settlement-map-modes button { padding-inline: 10px; }
+}
+
 .settlement-map-tooltip {
   width: max-content;
   max-width: min(280px, calc(100vw - 48px));
