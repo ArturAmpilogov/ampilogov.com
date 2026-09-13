@@ -10,7 +10,16 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/b77ffee5-da49-4e08-9b01-e88b4ddf640e/117"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-B77FFEE5-117-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "displayName": "Фамильный ряд не подтверждён",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/117-full-view.jpg",
@@ -43,6 +52,12 @@
             "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-target-entry.png",
             "sha256": "bda2b628cf2bd54fba1665dc1c63cbc7d83585b89a44e78fb13c2e896d9991b8",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0117-target-entry-deep.png",
+            "sha256": "4de343379352901f1f50f39e158f28888884c322483a738a1cf49c148c6c015e",
+            "description": "Широкий clean crop содержательного поля полного разворота без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +65,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5946x4685",
-          "targetDimensions": "1585x929",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5300x4000",
+          "method": "original-download-plus-wide-manual-recrop-and-human-reading"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +74,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-confirmed-false-by-primary-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны декабрьские строки № 51–54, обе страницы и все графы участников. Широкий clean crop 5300x4000."
   },
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "literal": "Метрической книги на 1912 год, часть первая, о родившихся. Декабрьские записи № 51–54 содержат семьи Федосеевых/Климовых, Антиповых и Аввакумовых. Иоанна Тимофеевича Ампилогова и отца Тимофея Ивановича Ампилогова на листе нет.",
+    "modernInterpretation": "Индексный текст не относится к сохранённому развороту. Профили и связи не создаются.",
+    "indexNote": "Индекс использован только как поисковая подсказка; решение основано на полном ручном чтении оригинала.",
     "localOcr": "осалолиуи\nго. Села Карпалки крастьнним\nТипооей Хванові Амігилоговіг\nраконная женнего Дарія Деофа-\nнова; оба правосливные.\nсвнуми-Свитив сцакная\nУкаломуикь Дл Дрей Поладочким.\nвели Карманки зипасний соіду",
     "localOcrWithSurnameLexicon": "го Села Кармалки крастенним\nТиповей Хванові Амігилоговіг\nзаконная женнего Дарія Феофа-\nнова; оба правосливные.\nУкалолуинь Дл Дрей Колодочким.\nвели Карманки зипасний сайду",
     "collation": {
@@ -80,6 +95,24 @@
   },
   "indexData": {
     "querySnippet": "Родившийся: Иоанн Тимофеев Ампилогова. ... Отец: Тимофей Иванов Ампилогов, крестьянин, село Кармалка.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "indexAssessment": "confirmed-false"
+  },
+  "event": {
+    "type": "birth-index-review",
+    "date": {
+      "display": "декабрь 1912 года",
+      "fromIso": "1912-12-01",
+      "toIso": "1912-12-18",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Полный разворот проверен как индексное совпадение; фамильный ряд отсутствует.",
+    "identityNote": "Индексный текст не относится к сохранённому развороту.",
+    "familyContext": "Люди других фамилий сохранены только в буквальной расшифровке и контексте.",
+    "migrationNote": "Ложное совпадение не создаёт картографического события или миграции."
+  },
+  "isRecord": true,
+  "cardKind": "confirmed-false-index-hit"
 }
