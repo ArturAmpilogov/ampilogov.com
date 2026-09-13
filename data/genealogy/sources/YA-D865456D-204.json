@@ -5,7 +5,8 @@
   "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "d865456d-8c89-4e9b-9f07-564e2d67a630",
-    "scanNumber": "204"
+    "scanNumber": "204",
+    "title": "Духовная роспись Покрово-Богородицкой церкви селения Ермолаевка за 1910–1912 годы"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d865456d-8c89-4e9b-9f07-564e2d67a630/204"
@@ -60,6 +61,12 @@
             "path": "data/genealogy/evidence-private/yandex/d865456d-8c89-4e9b-9f07-564e2d67a630/0204-target-entry.png",
             "sha256": "560b90c1f6247ff9984ddda9f2310833a43201827914eba93d584c205a24060d",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/d865456d-8c89-4e9b-9f07-564e2d67a630/0204-target-entry-deep.png",
+            "sha256": "909140c23e2a48cf1de9b528cb269be63f3d9ecaabd34d30d72b52487b5ec30a",
+            "description": "Широкий clean crop оригинального листа с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -67,8 +74,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "2569x3902",
-          "targetDimensions": "1200x581",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "2400x3600",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -76,10 +85,10 @@
     ]
   },
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Ампилоговъ Феодоръ Ивановъ, вд. мещ.; сынъ его Григорій. Жена Гр. Меланія Алексеева.",
-    "modernInterpretation": "В поимённом разделе мещан записан Фёдор Иванович Ампилогов; при нём указан сын Григорий и Мелания Алексеева, обозначенная как жена Григория. Лист фиксирует состав домохозяйства и сословный статус, но не сообщает о переселении.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Семейство № 363, душа мужского пола № 1287. Ампилоговъ Феодоръ Ивановъ, вдовый мещанин, 56 лет; сынъ его Григорій, 23 лет. Следующей строкой: жена Григория Меланія Алексеева, 20 лет.",
+    "modernInterpretation": "В духовной росписи записано домохозяйство вдового мещанина Фёдора Ивановича Ампилогова, 56 лет: его сын Григорий, 23 лет, и жена Григория Мелания Алексеевна, 20 лет.",
+    "indexNote": "Индекс назвал только Фёдора. Номера, возраст, сын и положение Мелании внутри семейства прочитаны по оригиналу.",
     "localOcr": "Оітиея: Варовломей\n34\nОодорч.\n31\n-\nИлья солі.\n1269 чена Вра. свескія Мидати\nлічти тяч: Мелспея\n270",
     "localOcrWithSurnameLexicon": "Опти ся: Варовломей\n34\n31\n-\nШлья солі.\n2 8\n1269 чена Вра свескія Мийсти\nліти мяч: Мелепел\n270",
     "collation": {
@@ -91,16 +100,35 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium",
+    "status": "complete-primary-scan-reading-existing-identities-confirmed",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Нужно уточнить полное название раздела и номера семей по полному развороту.",
-      "Нужно подтвердить, что Мелания указана как жена Григория, а не Фёдора.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Точный год внутри дела 1910–1912 на самом листе не указан."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны весь лист духовной росписи, семейство № 363, душа № 1287, Фёдор, сын Григорий, возрастные графы, строка жены Мелании и соседние семьи; существующие IDs сохранены. Wide clean crop 2400×3600."
   },
   "indexData": {
     "querySnippet": "363. 1287. Ампилогов Феодор Иванов вд. мещ.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-and-expanded-from-primary-scan",
+    "discrepancy": "Индекс пропустил сына Григория, его возраст и жену Меланию."
+  },
+  "publicCore": true,
+  "event": {
+    "type": "confessional-household-listing",
+    "date": {
+      "display": "1910–1912 годы",
+      "confidence": "medium-for-range"
+    },
+    "place": {
+      "asWritten": "селение Ермолаевка",
+      "normalized": "Ермолаевка, Оренбургский уезд"
+    }
+  },
+  "context": {
+    "eventSummary": "Домохозяйство мещанина Фёдора Ивановича Ампилогова в духовной росписи.",
+    "identityNote": "Существующие P1617 и P101102 подтверждены прямой формулой «сын его Григорий»; Мелания остаётся mention/context.",
+    "migrationNote": "Присутствие в ведомости не объявляется доказательством переселения."
   }
 }

@@ -12,11 +12,28 @@
   },
   "mentions": [
     {
-      "mentionId": "YA-D80785EC-252",
-      "role": "false-index-hit",
+      "mentionId": "YA-D80785EC-252-M1",
+      "role": "child",
+      "personId": "P103073",
+      "nameAsTranscribed": "Гавріилъ",
+      "displayName": "Гавриил Варфоломеевич Анпилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D80785EC-252-M2",
+      "role": "father",
+      "personId": "P101519",
+      "nameAsTranscribed": "села Георгіевки крестьянинъ Варѳоломей Ѳеодоровъ Анпилоговъ",
+      "displayName": "Варфоломей Феодорович Анпилогов",
+      "surnameSeries": true,
+      "confidence": "high"
+    },
+    {
+      "mentionId": "YA-D80785EC-252-M3",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "законная жена его Параскева Иванова",
+      "displayName": "Параскева Ивановна",
       "surnameSeries": false
     }
   ],
@@ -52,6 +69,12 @@
             "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-target-entry.png",
             "sha256": "e13764e2e31ab29f4fe0d46ae29e24acd99ca7d709217710c8ffd0156388103b",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0252-target-entry-deep.png",
+            "sha256": "efe4ea2474211416ed25feb5e4160a97754d87a4e8b9fac805bc5d5b12c49768",
+            "description": "Широкий clean crop оригинального листа с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -59,8 +82,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5306x4150",
-          "targetDimensions": "1417x831",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5000x3900",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -68,17 +93,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны заголовок 1913 года, строка № 22, даты, ребёнок, родители, восприемники, причт и годовой итог; P101519 подтверждён независимо. Wide clean crop 5000×3900."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Март. Мужского пола № 22. 26 родился, 27 крещён. Гавріилъ. Села Георгіевки крестьянинъ Варѳоломей Ѳеодоровъ Анпилоговъ и законная жена его Параскева Иванова, оба православные. Восприемники: Илья Васильев Пахомов и Евдокия Иванова Антипова.",
+    "modernInterpretation": "26 марта 1913 года у Варфоломея Феодоровича Анпилогова и Параскевы Ивановны в Георгиевке родился сын Гавриил; крещён 27 марта.",
+    "indexNote": "Имя ребёнка, форма фамилии Анпилогов, родители и даты прочитаны по оригиналу.",
     "localOcr": "нова хоаправосаныя.\nCвamnnuns Voarnet Ginumpicth\nоъединенный го\nlena Seoprielкa Криоsнин Пemра\nбанновь Писаревь и Вининния окока\nСвящитнюч Хoaниz Длитріва",
     "localOcrWithSurnameLexicon": "нова направосаных.\nChannun Voarne Dinumpica\nбъединенный го\nlena Scopriera Криони Петра\nДанновь Писаревь и Ванинния окка\nСвящитнюк Хони Длитріва",
     "collation": {
@@ -89,6 +114,30 @@
   },
   "indexData": {
     "querySnippet": "Родившийся: Гавриил Ворфоломеев Ампилогов. ... Отец: Ворфоломей Феодоров Ампилогов, крестьянин, село Георгиевка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-and-normalized-from-primary-scan",
+    "discrepancy": "Индексная форма Ампилогов уточнена по оригиналу как Анпилогов."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 22,
+    "date": {
+      "birth": "1913-03-26",
+      "baptism": "1913-03-27",
+      "display": "26–27 марта 1913 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Георгіевка",
+      "normalized": "Георгиевка, Оренбургская губерния"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение Гавриила Варфоломеевича Анпилогова.",
+    "identityNote": "P101519 подтверждён точным именем, той же женой Параскевой Ивановной, Георгиевкой и ранее известным сыном 1903 года.",
+    "migrationNote": "Запись не доказывает переселение."
   }
 }
