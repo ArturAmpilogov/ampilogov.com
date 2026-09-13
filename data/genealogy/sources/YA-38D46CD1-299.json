@@ -1,81 +1,158 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-38D46CD1-299",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "marriage-witness",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "marriage-sureties",
   "collection": {
+    "title": "ogaoo_orenburg/173-16-1756-0299.jpg",
+    "archiveCitation": "ogaoo_orenburg/173-16-1756-0299.jpg; скан 299",
     "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
-    "scanNumber": 299,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Илькульган, Рождественское, Бараково, Титовка, Кармалка за 1908 г."
+    "scanNumber": 299
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/299"
   },
   "event": {
-    "type": "marriage-witness",
+    "type": "marriage-sureties",
     "date": {
       "display": "1908",
-      "confidence": "high-for-year"
+      "date": "1908",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "normalized": "село Кармалка"
+      "normalized": "село Кармалка, Оренбургская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-38D46CD1-299-M1",
-      "role": "surety",
-      "personId": "P101352",
-      "displayName": "крестьянин села Кармалки Владимир Спиридонов Ампилов",
-      "nameAsTranscribed": "крестьянинъ села Кармалки Владимиръ Спиридоновъ Ампиловъ",
-      "surnameSeries": true
+      "nameAsTranscribed": "Владимиръ Спиридоновъ Ампилоговъ",
+      "displayName": "Владимир Спиридонов Ампилогов",
+      "role": "surety-groom",
+      "surnameSeries": true,
+      "personId": "P101352"
+    },
+    {
+      "mentionId": "YA-38D46CD1-299-M2",
+      "nameAsTranscribed": "Симеонъ Ампилоговъ",
+      "displayName": "Симеон Ампилогов",
+      "role": "surety-bride",
+      "surnameSeries": true,
+      "personId": "P109304"
     }
   ],
+  "transcription": {
+    "status": "manually-reviewed-primary-scan",
+    "literal": "[12октября,акт№10,по невѣстѣ:] того-же села запасный рядовой Борисъ Евсеевъ Дымовъ, крѣ Владимиръ Филипповъ [Малаевъ?] и Симеонъ Ампилоговъ. [Акт№11,по женихѣ:] с.Кармалки крѣ Владимиръ Спиридоновъ Ампилоговъ, Андрей Давыдовъ Ампилоговъ и Иванъ Ампилоговъ. [19октября,акт№12,по невѣстѣ:] того-же села крѣ Семенъ Павловъ Ампилоговъ, Феодоръ Григорьевъ Миляевъ и Феодоръ Ампилоговъ. [Акт№13,по женихѣ:] […] запасный рядовой Филиппъ Ампилоговъ […]; по невѣстѣ: с.Кармалки крѣ Михаилъ Павловъ Ампилоговъ, Наумъ Ампилоговъ […].",
+    "modernInterpretation": "На листе браков12и19октября1908 несколько Ампилоговых. Целевое индексное «Симеон Антилогов» относится к поручителю по невесте первого акта, без отчества. Прежний source содержал только Владимира и ошибочно присоединял к нему Терентия Хвалева из графы по невесте.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
+  },
+  "notes": [
+    "Сохранена прежняя привязка Владимира Спиридоновича к P101352; уточнена сторона поручительства. Терентий Феодоров Хвалев относится к стороне невесты, не является вторым поручителем по жениху рядом с Владимиром.",
+    "В первом акте имя Симеон без отчества. Семён Павлович в третьем акте не объявлен тем же человеком. Другие полные и неполные именования сохранены внутри расшифровки, без неподтверждённых слияний.",
+    "На листе также женихи Михаил Спиридонов и Ефим Михайлов Ампилоговы. Полная семейная обработка этих нецелевых актов требует отдельной сверки; они не скрываются вследствие узкой индексной подсказки."
+  ],
+  "indexData": {
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "Поручитель: Борис Евсеев Дымов, того же села запасный рядовой, то же село. Поручитель: Симеон [Антилогов].",
+    "catalogDateFrom": "01-01-1908",
+    "catalogDateTo": "31-12-1908",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
+  },
   "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-antilogov-original.jpg",
+    "sha256": "1c56c354d3b9a63575ef36f651b6dd1372dcf4c34d6fb7544001b7043a79cfbf",
     "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
     "scanNumber": 299,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "755c090d09b11034474c33dea5d61fbd98e89700490afec0fad1b06e2eb57f35",
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-header.png",
-        "sha256": "35bfae7e860ec1121d0df64bf74f621ba8ccabc374566dce21bbef9e311a7e98",
-        "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-antilogov-target.jpg",
+        "sha256": "681e6d718203dac7739fbe7ce192d17d1b61b3907e1f38443c7b1946dbe999e3",
+        "kind": "target-entry",
+        "cropBox": [
+          1398,
+          452,
+          1958,
+          1825
+        ]
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-target-entry.png",
-        "sha256": "573d021a8f404710f34de4ca8e59aeec5c7a403875e68bd489900a96641f3875",
-        "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-antilogov-header.jpg",
+        "sha256": "26ac7e0af66e0e3d990c6e1686aec20849acd59d92a723223a0a2dfe3c9e4021",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          0,
+          2304,
+          468
+        ]
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-10",
-      "method": "manual-reading-of-downloaded-original",
-      "fullDimensions": "2304x1950"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "По женихѣ: села Кармалки крестьяне Владимиръ Спиридоновъ Ампиловъ и Терентий Ѳеодоровъ Хвалевъ.",
-    "modernInterpretation": "Владимир Спиридонович Ампилов назван поручителем; новый полный скан устраняет прежнюю отметку о недостаточном качестве.",
-    "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+    ]
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
-  }
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-primary-scan-transcription-with-local-evidence",
+        "literal": "По женихѣ: села Кармалки крестьяне Владимиръ Спиридоновъ Ампиловъ и Терентий Ѳеодоровъ Хвалевъ.",
+        "modernInterpretation": "Владимир Спиридонович Ампилов назван поручителем; новый полный скан устраняет прежнюю отметку о недостаточном качестве.",
+        "indexNote": "Индекс Яндекса использован только для навигации; чтение выполнено по сохранённому оригиналу."
+      },
+      "previousEvidence": {
+        "catalogId": "38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55",
+        "scanNumber": 299,
+        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+        "localBackup": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-full-view.png",
+        "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-full-view.png",
+        "capturedAt": "2026-09-10",
+        "sha256": "755c090d09b11034474c33dea5d61fbd98e89700490afec0fad1b06e2eb57f35",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-header.png",
+            "sha256": "35bfae7e860ec1121d0df64bf74f621ba8ccabc374566dce21bbef9e311a7e98",
+            "description": "Фрагмент исходного листа, фиксирующий структуру и год документа."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/38d46cd1-3ddb-4f80-bb41-96ef5f0d6f55/0299-target-entry.png",
+            "sha256": "573d021a8f404710f34de4ca8e59aeec5c7a403875e68bd489900a96641f3875",
+            "description": "Крупный фрагмент целевой записи без интерфейса Яндекса."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-10",
+          "method": "manual-reading-of-downloaded-original",
+          "fullDimensions": "2304x1950"
+        },
+        "publicDisplay": false,
+        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      }
+    }
+  ],
+  "primaryPersonId": "P101352"
 }
