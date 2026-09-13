@@ -24,7 +24,6 @@ export default function RecordsPage() {
         <dl aria-label="Состав каталога">
           <div><dt>Записей</dt><dd>{directory.stats.records}</dd></div>
           <div><dt>Расшифровано</dt><dd>{directory.stats.complete}</dd></div>
-          <div><dt>Копии сохранены</dt><dd>{directory.stats.withImages}</dd></div>
         </dl>
       </header>
       <Suspense fallback={<div className="section-shell directory-loading">Загрузка фильтров…</div>}>
