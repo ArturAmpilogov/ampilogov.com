@@ -644,7 +644,7 @@ export type DirectoryPerson = {
 };
 
 export type FamilyTreePerson = Pick<DirectoryPerson,
-  "personId" | "displayName" | "sex" | "birthYear" | "life" | "needsReview"
+  "personId" | "displayName" | "sex" | "birthYear" | "life" | "needsReview" | "places"
 > & {
   parentIds: string[];
   /** Used only for vertical placement; it may be an event year when birth is unknown. */
@@ -3315,6 +3315,7 @@ export function getFamilyTreeDirectory(): FamilyTreeDirectory {
     personId: person.personId,
     displayName: person.displayName,
     sex: person.sex,
+    places: person.places,
     birthYear: person.birthYear,
     life: person.life,
     needsReview: person.needsReview,

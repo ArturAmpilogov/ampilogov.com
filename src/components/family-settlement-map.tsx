@@ -33,10 +33,7 @@ type PlaceSummary = {
   activeEvents: FamilyMapIndexPlace["events"];
 };
 
-type CountedMarker = import("leaflet").Marker & {
-  familyCount?: number;
-  generationCount?: number;
-};
+type CountedMarker = import("leaflet").Marker & { familyCount?: number; generationCount?: number };
 
 type MigrationRecordLink = {
   sourceId: string;
@@ -70,19 +67,7 @@ function boundedYear(value: string | null, fallback: number, minYear: number, ma
 }
 
 function markerHtml(summary: PlaceSummary, selected: boolean) {
-  const size = Math.min(68, 22 + Math.sqrt(summary.familyCount) * 8);
-  const rings = Math.min(6, summary.generationCount);
-  const ringMarkup = Array.from({ length: rings }, (_, index) => (
-    `<i style="--ring:${index + 1}" aria-hidden="true"></i>`
-  )).join("");
-  const approximate = summary.place.approximate;
-
-  return `
-    <span class="settlement-map-marker${selected ? " is-selected" : ""}${approximate ? " is-approximate" : ""}" style="--marker-size:${size}px">
-      ${ringMarkup}
-      <b>${summary.familyCount}</b>
-    </span>
-  `;
+  return `<span class="settlement-map-marker${selected ? " is-selected" : ""}${summary.place.approximate ? " is-approximate" : ""}" style="--marker-size:${Math.min(68, 30 + Math.sqrt(summary.familyCount) * 6)}px"><b>${summary.familyCount}</b></span>`;
 }
 
 function migrationArrowHtml(bearing: number, documented: boolean) {
@@ -169,7 +154,8 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
   const [ready, setReady] = useState(false);
   const [yearRange, setYearRange] = useState(stateFromUrl.yearRange);
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(stateFromUrl.placeId);
-  const [hoveredMigrationId, setHoveredMigrationId] = useState<string | null>(null);
+  const [routesOpen, setRoutesOpen] = useState(false);
+  const [routePlaceId, setRoutePlaceId] = useState("");
   const [selectedMigrationId, setSelectedMigrationId] = useState<string | null>(stateFromUrl.migrationId);
   const [expandedCluster, setExpandedCluster] = useState(false);
   const [placeDetailsById, setPlaceDetailsById] = useState(() => new Map<string, FamilyMapPlaceDetails>());
@@ -226,9 +212,16 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     migration.year >= yearRange.startYear && migration.year <= yearRange.endYear &&
     summariesById.has(migration.fromPlaceId) && summariesById.has(migration.toPlaceId)
   ), [migrations, summariesById, yearRange]);
+  const browsingRoutes = routesOpen || Boolean(selectedMigrationId);
+  const routePlaces = useMemo(() => new Set(activeMigrations.flatMap((route) => [route.fromPlaceId, route.toPlaceId])), [activeMigrations]);
+  const effectiveRoutePlaceId = routePlaces.has(routePlaceId) ? routePlaceId : "";
+  const availableRoutes = useMemo(() => activeMigrations.filter((migration) =>
+    !effectiveRoutePlaceId || migration.fromPlaceId === effectiveRoutePlaceId || migration.toPlaceId === effectiveRoutePlaceId
+  ).sort((a, b) => a.year - b.year || a.migrationId.localeCompare(b.migrationId)), [activeMigrations, effectiveRoutePlaceId]);
+  const connectedRoutes = selectedPlaceId ? activeMigrations.filter((migration) => migration.fromPlaceId === selectedPlaceId || migration.toPlaceId === selectedPlaceId) : [];
   const displayedMigration = useMemo(() => {
     if (selectedPlaceId) return null;
-    const migrationId = selectedMigrationId ?? hoveredMigrationId;
+    const migrationId = selectedMigrationId;
     if (!migrationId) return null;
     const migration = activeMigrations.find((candidate) => candidate.migrationId === migrationId);
     if (!migration) return null;
@@ -258,7 +251,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       to: summariesById.get(migration.toPlaceId)!,
       records,
     };
-  }, [activeMigrations, hoveredMigrationId, selectedMigrationId, selectedPlaceId, summaries, summariesById]);
+  }, [activeMigrations, selectedMigrationId, selectedPlaceId, summaries, summariesById]);
   const totalFamilies = useMemo(() => new Set(
     summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.familyIds)),
   ).size, [summaries]);
@@ -323,6 +316,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
   }, [stateFromUrl, urlState]);
 
   useEffect(() => {
+    if (!directory) return;
     const timeout = window.setTimeout(() => {
       const params = new URLSearchParams(urlState);
 
@@ -354,9 +348,10 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     }, 180);
 
     return () => window.clearTimeout(timeout);
-  }, [pathname, range.maxYear, range.minYear, selectedMigrationId, selectedPlaceId, urlState, yearRange]);
+  }, [directory, pathname, range.maxYear, range.minYear, selectedMigrationId, selectedPlaceId, urlState, yearRange]);
 
   useEffect(() => {
+    if (!directory) return;
     const timeout = window.setTimeout(() => {
       if (selectedPlaceId && !summariesById.has(selectedPlaceId)) setSelectedPlaceId(null);
       if (selectedMigrationId && !activeMigrations.some((migration) => migration.migrationId === selectedMigrationId)) {
@@ -365,7 +360,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     }, 0);
 
     return () => window.clearTimeout(timeout);
-  }, [activeMigrations, selectedMigrationId, selectedPlaceId, summariesById]);
+  }, [activeMigrations, directory, selectedMigrationId, selectedPlaceId, summariesById]);
 
   useEffect(() => {
     let active = true;
@@ -413,12 +408,12 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
         animateAddingMarkers: false,
         iconCreateFunction(cluster) {
           const markers = cluster.getAllChildMarkers() as CountedMarker[];
-          const familyCount = markers.reduce((sum, marker) => sum + (marker.familyCount ?? 0), 0);
-          const generationCount = Math.max(1, ...markers.map((marker) => marker.generationCount ?? 1));
-          const size = Math.min(72, 30 + Math.sqrt(familyCount) * 7);
+          const count = markers.reduce((sum, marker) => sum + (marker.familyCount ?? 0), 0);
+          const generations = Math.max(1, ...markers.map((marker) => marker.generationCount ?? 1));
+          const size = Math.min(76, 42 + Math.sqrt(count) * 3);
           return L.divIcon({
             className: "settlement-proximity-cluster",
-            html: `<span style="--cluster-size:${size}px"><i></i><b>${familyCount}</b><small>${generationCount} пок.</small></span>`,
+            html: `<span style="--cluster-size:${size}px" aria-label="${count} ${plural(count, "семья", "семьи", "семей")}. Нажмите, чтобы приблизить"><b>${count}</b><small>${generations} пок.</small></span>`,
             iconSize: [size, size],
             iconAnchor: [size / 2, size / 2],
           });
@@ -432,7 +427,9 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
         expandedClusterRef.current = null;
         setExpandedCluster(false);
       });
-      routeRendererRef.current = L.svg({ padding: 1 });
+      map.createPane("migrationRoutes").style.zIndex = "450";
+      map.getPane("migrationRoutes")!.style.pointerEvents = "none";
+      routeRendererRef.current = L.svg({ padding: 1, pane: "migrationRoutes" });
       routeLayerRef.current = L.layerGroup().addTo(map);
       clusterRef.current.addTo(map);
 
@@ -480,7 +477,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     markersByPlaceRef.current.clear();
 
     for (const summary of summaries) {
-      const size = Math.min(68, 22 + Math.sqrt(summary.familyCount) * 8);
+      const size = Math.min(68, 30 + Math.sqrt(summary.familyCount) * 6);
       const marker = L.marker([summary.place.geo.latitude, summary.place.geo.longitude], {
         icon: L.divIcon({
           className: "settlement-map-marker-wrap",
@@ -491,6 +488,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
         }),
         keyboard: true,
         title: summary.place.name,
+        alt: summary.place.name,
         riseOnHover: true,
       }) as CountedMarker;
       marker.familyCount = summary.familyCount;
@@ -501,12 +499,12 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       );
       marker.on("click", () => {
         shouldFocusSelectionRef.current = false;
-        setHoveredMigrationId(null);
         setSelectedMigrationId(null);
         setSelectedPlaceId(summary.place.placeId);
       });
       markersByPlaceRef.current.set(summary.place.placeId, marker);
       clusters.addLayer(marker);
+      marker.getElement()?.setAttribute("aria-label", `${summary.place.name}: ${summary.familyCount} ${plural(summary.familyCount, "семья", "семьи", "семей")}`);
     }
   }, [ready, summaries]);
 
@@ -545,7 +543,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     map.fitBounds([
       [from.place.geo.latitude, from.place.geo.longitude],
       [to.place.geo.latitude, to.place.geo.longitude],
-    ], { padding: [84, 84], maxZoom: 7, animate: true, duration: 0.45 });
+    ], { padding: [84, 84], maxZoom: 10, animate: true, duration: 0.45 });
   }, [activeMigrations, ready, selectedMigrationId, summariesById]);
 
   useEffect(() => {
@@ -557,79 +555,53 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
 
     routeLayer.clearLayers();
 
+    // All lines and arrowheads share a pane below the opaque place circles.
+    const directionLayer = L.layerGroup().addTo(routeLayer);
+    const directions: { from: import("leaflet").LatLng; to: import("leaflet").LatLng; documented: boolean; selected: boolean }[] = [];
     for (const migration of activeMigrations) {
       const from = summariesById.get(migration.fromPlaceId)!;
       const to = summariesById.get(migration.toPlaceId)!;
-      const related = !selectedPlaceId || migration.fromPlaceId === selectedPlaceId || migration.toPlaceId === selectedPlaceId;
       const documented = migration.migrationId.startsWith("documented:");
-      const routeSelected = migration.migrationId === selectedMigrationId;
+      const selected = migration.migrationId === selectedMigrationId && !selectedPlaceId;
       const fromLatLng = L.latLng(from.place.geo.latitude, from.place.geo.longitude);
       const toLatLng = L.latLng(to.place.geo.latitude, to.place.geo.longitude);
-      const baseWeight = (documented ? 1.35 : .9) + Math.min(1.1, Math.sqrt(migration.personIds.length) * .22);
-      const baseOpacity = related ? .28 : .05;
-      const route = L.polyline([fromLatLng, toLatLng], {
-        className: `settlement-migration-route${documented ? " is-documented" : " is-derived"}${related ? " is-related" : " is-muted"}${routeSelected ? " is-selected" : ""}`,
-        color: "#a6412f",
-        weight: baseWeight + (routeSelected ? 2.6 : 0),
-        opacity: routeSelected ? .96 : baseOpacity,
-        dashArray: documented ? undefined : "5 8",
-        interactive: false,
-        renderer: routeRenderer,
-      }).addTo(routeLayer);
-      const routeHit = L.polyline([fromLatLng, toLatLng], {
-        className: "settlement-migration-hit",
-        color: "#a6412f",
-        weight: 20,
-        opacity: 0,
-        interactive: related,
-        bubblingMouseEvents: false,
-        renderer: routeRenderer,
-      }).addTo(routeLayer);
-      routeHit.bindTooltip(
-        `${from.place.name} → ${to.place.name} · ${migration.sourceIds.length} ${plural(migration.sourceIds.length, "запись", "записи", "записей")}`,
-        { sticky: true, className: "settlement-map-tooltip settlement-migration-tooltip" },
-      );
-      routeHit.on("mouseover", () => {
-        setHoveredMigrationId(migration.migrationId);
-        route.setStyle({ weight: baseWeight + 2.4, opacity: .96 });
-        route.bringToFront();
-      });
-      routeHit.on("mouseout", () => {
-        setHoveredMigrationId((current) => current === migration.migrationId ? null : current);
-        route.setStyle({
-          weight: baseWeight + (routeSelected ? 2.6 : 0),
-          opacity: routeSelected ? .96 : baseOpacity,
-        });
-      });
-      routeHit.on("click", (event) => {
-        L.DomEvent.stopPropagation(event.originalEvent);
-        map.closePopup();
-        shouldFocusSelectionRef.current = false;
+      L.polyline([fromLatLng, toLatLng], {
+        className: `settlement-migration-route${selected ? " is-selected" : ""}${documented ? " is-documented" : " is-derived"}`,
+        color: "#a6412f", weight: selected ? 3 : 1.5, opacity: selected ? .95 : .35,
+        dashArray: documented ? undefined : "7 9",
+        interactive: true, bubblingMouseEvents: false, renderer: routeRenderer,
+      }).on("click", () => {
+        shouldFocusSelectionRef.current = true;
         setSelectedPlaceId(null);
         setSelectedMigrationId(migration.migrationId);
-      });
-
-      const fromPoint = map.latLngToLayerPoint(fromLatLng);
-      const toPoint = map.latLngToLayerPoint(toLatLng);
-      const routeVector = toPoint.subtract(fromPoint);
-      const bearing = Math.atan2(routeVector.y, routeVector.x) * 180 / Math.PI;
-      const arrowPositions = [0.58];
-      for (const progress of arrowPositions) {
-        const arrowPoint = fromPoint.add(routeVector.multiplyBy(progress));
-        L.marker(map.layerPointToLatLng(arrowPoint), {
-          icon: L.divIcon({
-            className: "settlement-migration-direction",
-            html: migrationArrowHtml(bearing, documented),
-            iconSize: [22, 22],
-            iconAnchor: [11, 11],
-          }),
-          interactive: false,
-          keyboard: false,
-          opacity: routeSelected ? 0.94 : related ? 0.46 : 0.05,
-          zIndexOffset: 240,
-        }).addTo(routeLayer);
+      }).addTo(routeLayer);
+      directions.push({ from: fromLatLng, to: toLatLng, documented, selected });
+      if (selected) {
+        for (const [position, summary, label] of [[fromLatLng, from, "Откуда"], [toLatLng, to, "Куда"]] as const) {
+          const text = document.createElement("span");
+          text.textContent = `${label}: ${summary.place.name}`;
+          L.circleMarker(position, { radius: 7, color: "#a6412f", fillColor: "#fcfaf5", fillOpacity: 1, weight: 3, interactive: false, renderer: routeRenderer })
+            .bindTooltip(text, { permanent: true, direction: label === "Откуда" ? "top" : "bottom", offset: [0, label === "Откуда" ? -42 : 42], className: "settlement-map-tooltip settlement-route-endpoint" }).addTo(routeLayer);
+        }
       }
     }
+    const updateDirection = () => {
+      directionLayer.clearLayers();
+      for (const { from, to, documented, selected } of directions) {
+        const fromPoint = map.latLngToLayerPoint(from);
+        const vector = map.latLngToLayerPoint(to).subtract(fromPoint);
+        if (vector.distanceTo(L.point(0, 0)) < 40) continue;
+        const bearing = Math.atan2(vector.y, vector.x) * 180 / Math.PI;
+        L.marker(map.layerPointToLatLng(fromPoint.add(vector.multiplyBy(.55))), {
+          pane: "migrationRoutes", opacity: selected ? 1 : .6,
+          icon: L.divIcon({ className: "settlement-migration-direction", html: migrationArrowHtml(bearing, documented), iconSize: [26, 26], iconAnchor: [13, 13] }),
+          interactive: false, keyboard: false,
+        }).addTo(directionLayer);
+      }
+    };
+    updateDirection();
+    map.on("zoomend", updateDirection);
+    return () => { map.off("zoomend", updateDirection); routeLayer.clearLayers(); };
   }, [activeMigrations, ready, selectedMigrationId, selectedPlaceId, summariesById]);
 
   function resetMapFocus() {
@@ -638,7 +610,6 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     shouldFocusSelectionRef.current = false;
     setSelectedPlaceId(null);
     setSelectedMigrationId(null);
-    setHoveredMigrationId(null);
   }
 
   return (
@@ -685,6 +656,32 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
         </div>
       </div>
 
+      <div className="settlement-map-navigation section-shell">
+        <div className="settlement-map-modes" aria-label="Режим карты">
+          <button type="button" aria-pressed={!browsingRoutes} onClick={() => { setRoutesOpen(false); resetMapFocus(); }}>Обзор</button>
+          <button type="button" aria-pressed={browsingRoutes} onClick={() => { setRoutesOpen(true); setRoutePlaceId(selectedPlaceId ?? ""); resetMapFocus(); }}>Переселения</button>
+          <button type="button" className="settlement-map-overview" onClick={() => {
+            resetMapFocus();
+            if (summaries.length) mapRef.current?.fitBounds(summaries.map(({ place }) => [place.geo.latitude, place.geo.longitude] as [number, number]), { padding: [52, 52], maxZoom: 5 });
+          }}>Вся карта</button>
+        </div>
+        {browsingRoutes ? <div className="settlement-route-picker">
+          <label>Место<select aria-label="Место для поиска переселений" value={effectiveRoutePlaceId} onChange={(event) => { setRoutePlaceId(event.target.value); resetMapFocus(); }}>
+            <option value="">Все места</option>
+            {summaries.filter(({ place }) => routePlaces.has(place.placeId)).sort((a, b) => a.place.name.localeCompare(b.place.name, "ru")).map(({ place }) => <option key={place.placeId} value={place.placeId}>{place.label}</option>)}
+          </select></label>
+          <label>Переселение<select aria-label="Переселение" value={selectedMigrationId ?? ""} onChange={(event) => {
+            shouldFocusSelectionRef.current = true;
+            setSelectedPlaceId(null);
+            setSelectedMigrationId(event.target.value || null);
+          }}>
+            <option value="">{availableRoutes.length ? `Выберите маршрут · ${availableRoutes.length}` : "Нет переселений за этот период"}</option>
+            {availableRoutes.map((route) => <option key={route.migrationId} value={route.migrationId}>{route.year} · {summariesById.get(route.fromPlaceId)!.place.name} → {summariesById.get(route.toPlaceId)!.place.name} · {route.personNames[0]}{route.personNames.length > 1 ? ` и ещё ${route.personNames.length - 1}` : ""}</option>)}
+          </select></label>
+          <p>{selectedMigrationId ? "Выбранное переселение выделено. Люди и документы — под картой." : "Выберите переселение, чтобы выделить его и увидеть людей и документы."}</p>
+        </div> : <p className="settlement-map-guidance">Числа — семьи в месте или группе мест, «пок.» — поколения. Стрелки показывают направления переселений. Нажмите на круг, чтобы приблизить или увидеть людей и документы.</p>}
+      </div>
+
       <div className="settlement-map-stage section-shell">
         <div
           className="settlement-map-canvas"
@@ -729,6 +726,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 );
               })}
             </ul>
+            <p className="settlement-migration-panel__kind">{displayedMigration.migration.migrationId.startsWith("documented:") ? "Происхождение прямо указано в записи" : "Смена места между документами человека; путь не установлен"}</p>
             <p className="settlement-migration-panel__basis">{conciseMapText(displayedMigration.migration.basis, 180)}</p>
             <nav aria-label="Записи, связанные с направлением">
               {displayedMigration.records.map((record) => (
@@ -791,6 +789,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 event.currentTarget.scrollBy({ top, behavior: "smooth" });
               }}
             >
+              {connectedRoutes.length ? <button className="settlement-place-routes" type="button" onClick={() => { setRoutePlaceId(selectedPlaceId!); setRoutesOpen(true); resetMapFocus(); }}>Переселения, связанные с этим местом · {connectedRoutes.length}</button> : null}
               {placeDetailsState === "loading" ? (
                 <p className="settlement-place-panel__loading" role="status">Загрузка карточек…</p>
               ) : null}
@@ -864,11 +863,9 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       </div>
 
       <footer className="settlement-map-legend section-shell">
-        <span><i className="is-family" /> размер — семейные группы</span>
-        <span><i className="is-generation" /> кольца — документированные поколения</span>
-        <span><i className="is-approximate" /> пунктир — приблизительное место</span>
-        <span><i className="is-route is-documented" /> сплошная — происхождение прямо указано в записи</span>
-        <span><i className="is-route is-derived" /> пунктир — смена места между документами человека</span>
+        <span><i className="is-family" /> число — семьи</span>
+        <span><i className="is-approximate" /> пунктирный край — приблизительное место</span>
+        <><span><i className="is-route is-documented" /> сплошная — происхождение указано в записи</span><span><i className="is-route is-derived" /> пунктир — смена места между документами, путь неизвестен</span></>
       </footer>
     </section>
   );
