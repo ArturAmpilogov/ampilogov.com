@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8ACE6304-93",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death-burial",
   "collection": {
     "catalogId": "8ace6304-d7d2-41c8-8001-1d54aa4e1737",
     "scanNumber": 93
@@ -10,7 +10,46 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8ace6304-d7d2-41c8-8001-1d54aa4e1737/93"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-8ACE6304-93-M1",
+      "role": "deceased-child",
+      "personId": "P102942",
+      "nameAsTranscribed": "Карпа Ампилогова дочь Марія",
+      "displayName": "Мария Карповна Ампилогова",
+      "surnameSeries": true,
+      "confidence": "high"
+    },
+    {
+      "mentionId": "YA-8ACE6304-93-M2",
+      "role": "father",
+      "personId": "P102009",
+      "nameAsTranscribed": "Карпъ Ампилоговъ",
+      "displayName": "Карп Владимирович Ампилогов",
+      "surnameSeries": true,
+      "confidence": "strongly-supported"
+    }
+  ],
+  "event": {
+    "type": "death-and-burial",
+    "date": {
+      "death": "1892-06-29",
+      "burial": "1892-06-30",
+      "display": "29 июня 1892 — смерть; 30 июня 1892 — погребение",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Севастополь, Таврическая губерния",
+      "placeId": "sevastopol",
+      "confidence": "high"
+    },
+    "subject": "Мария Карповна Ампилогова",
+    "age": "1 месяц",
+    "cause": "корь",
+    "context": "Запись о смерти месячной дочери Карпа Ампилогова; тождество с Марией из записи № 59 подтверждается отцом, местом, возрастом и последовательной хронологией."
+  },
+  "primaryPersonId": "P102942",
+  "publicCore": true,
   "evidence": {
     "catalogId": "8ace6304-d7d2-41c8-8001-1d54aa4e1737",
     "scanNumber": 93,
@@ -59,17 +98,17 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный лист раздела об умерших за июнь 1892 года и нижняя строка целевой записи; сверены даты смерти и погребения, возраст и причина смерти. Запись сопоставлена с рождением YA-8ACE6304-29 по отцу, месту и возрасту.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "СУПОА АЛЬНОМ\nИВТРИЧОСКОЙ КНЙГИНА\n1892\nДіНЬ\nЗВАнТЕ, ЙМА, СОТЧЕСТВО Я ФАМНАТА ОйМЕрШАГШ.",
-    "modernInterpretation": "СУПОА АЛЬНОМ ИВТРИЧОСКОЙ КНЙГИНА 1892 ДиНЬ ЗВАнТЕ, ЙМА, СОТЧЕСТВО Я ФАМНАТА ОйМЕрШАГШ.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan",
+    "literal": "Июнь. Умерла 29, погребена 30. Крестьянки Орловской губ. и уѣзда Карпа Ампилогова дочь Марія. 1 месяцъ. Отъ кори. Священникъ Андрей Самарскій.",
+    "modernInterpretation": "Мария, месячная дочь крестьянина Карпа Ампилогова из Орловской губернии и уезда, умерла 29 июня 1892 года от кори и была погребена 30 июня. Запись совершил священник Андрей Самарский.",
+    "indexNote": "Вместо безымянного сомнительного OCR вручную прочитана нижняя строка полного листа; фамилия и роль отца видны непосредственно в оригинале.",
     "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
     "localOcr": "СУПОА АЛЬНОМ\nИВТРИЧОСКОЙ КНЙГИНА\n1892\nДіНЬ\nЗВАнТЕ, ЙМА, СОТЧЕСТВО Я ФАМНАТА ОйМЕрШАГШ.",
     "collation": {

@@ -1,131 +1,50 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-EC6BB282-8",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "marriage-register",
+  "primaryPersonId": "P102888",
   "collection": {
     "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
-    "scanNumber": 8
+    "scanNumber": 8,
+    "title": "Метрическая книга за 1896 год, часть вторая, о бракосочетавшихся"
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/ec6bb282-af78-43f3-a21e-1af041a2aa1a/8"
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/ec6bb282-af78-43f3-a21e-1af041a2aa1a/8"},
+  "event": {
+    "type": "marriage",
+    "recordNumber": "4",
+    "date": {"display": "30 июня 1896 года", "date": "1896-06-30", "confidence": "high"},
+    "place": {"asWritten": "в строке акта не названо", "normalized": "место венчания не установлено", "confidence": "unknown"}
   },
   "mentions": [
-    {
-      "mentionId": "YA-EC6BB282-8",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
+    {"mentionId": "YA-EC6BB282-8-M1", "role": "groom", "personId": "P102888", "nameAsTranscribed": "Стрелокъ 3-го Финляндскаго стрѣлковаго полка Михаилъ Алексѣевъ Ампилоговъ", "displayName": "Михаил Алексеевич Ампилогов", "surnameSeries": true},
+    {"mentionId": "YA-EC6BB282-8-M2", "role": "bride", "personId": null, "nameAsTranscribed": "крестьянская дѣвица Евдокія Иванова Сорокова", "displayName": "Евдокия Ивановна Сорокова", "surnameSeries": false},
+    {"mentionId": "YA-EC6BB282-8-M3", "role": "officiant", "personId": null, "nameAsTranscribed": "Священникъ Димитрій [фамилия читается неуверенно]", "displayName": "священник Дмитрий", "surnameSeries": false}
   ],
+  "transcription": {
+    "status": "complete-for-full-marriage-row-manually-verified",
+    "literal": "№ 4. Іюнь, 30. Стрелокъ 3-го Финляндскаго стрѣлковаго полка Михаилъ Алексѣевъ Ампилоговъ, православнаго вѣроисповѣданія, первымъ бракомъ, 25 лѣтъ. Невѣста — крестьянская дѣвица Евдокія Иванова Сорокова, православнаго вѣроисповѣданія, первымъ бракомъ, 17 лѣтъ 10 мѣсяцевъ. Священникъ Димитрій [фамилия неуверенно]. Поручители перечислены в правой графе; их неуверенно читаемые фамилии не нормализованы.",
+    "modernInterpretation": "30 июня 1896 года 25-летний стрелок 3-го Финляндского стрелкового полка Михаил Алексеевич Ампилогов вступил в первый брак с 17-летней Евдокией Ивановной Сороковой. Оба названы православными; место рождения и маршрут переселения акт не сообщает.",
+    "indexNote": "Индекс Яндекса оказался полезен только для навигации. ФИО, воинская часть, возраст, дата и брачный статус прочитаны непосредственно по полному развороту; прежний узкий crop показывал только невесту."
+  },
+  "indexData": {"querySnippet": "Стрелок 3 Финляндского стрелкового полка Михаил Алексеев Ампилогов православного вероисповедания, первым браком.", "fuzzyQuery": true, "discrepancy": "Целевое фамильное упоминание подтверждено, но географические выводы из индексного сниппета не делались."},
+  "context": {"eventSummary": "Первый брак Михаила Алексеевича Ампилогова, стрелка 3-го Финляндского стрелкового полка.", "identityNote": "Создан отдельный профиль P102888; одноимённые P102020 и P102078 исключены по несовместимой хронологии.", "migrationNote": "Военная часть фиксирует службу, а не переселение; маршрут не создавался."},
   "evidence": {
     "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
     "scanNumber": 8,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureType": "yandex-archive-original-image-download-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "074a98452bb6597e6818c5688722c8f56678ed84534eb639bcde450979da68a0",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-header.png",
-        "sha256": "90428a24209594674ef9878d0dccaad878510980c322cbc4e616afee3a324060",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-entry.png",
-        "sha256": "bbd7d8bc99bc20df12a8cf8545ada2cd7fdc5e05c8e73a9bfd03cba60d0603dc",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4184x3156",
-      "targetDimensions": "1200x930",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
+    "fragments": [{"kind": "target-context", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-context-deep.png", "sha256": "bfe5ab855fada66514368184671eee343ae72300275af20526f9465b359fc18b", "description": "Полноширинный фрагмент всей строки № 4: дата, жених, невеста, возраст, совершитель и поручители; без интерфейса Яндекса."}],
+    "quality": {"originalImageDownloaded": true, "documentOnlyVisuallyConfirmed": true, "targetRowsVisuallyConfirmed": true, "fullDimensions": "4184x3156", "targetDimensions": "4000x1500", "method": "manual-full-spread-reading-and-full-width-recrop"},
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.jpg",
-        "sha256": "b9ea42169ba1b3523b45a507b2a3e59c450b2f8fc8e0295102b8e4dab7ff6c5a",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-entry.jpg",
-            "sha256": "5155a6cab018e9891a007d0d3bef25d8c79e436177281eff25a725de9d849f26"
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "ec6bb282-af78-43f3-a21e-1af041a2aa1a",
-            "scanNumber": 8,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "074a98452bb6597e6818c5688722c8f56678ed84534eb639bcde450979da68a0",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-header.png",
-                "sha256": "90428a24209594674ef9878d0dccaad878510980c322cbc4e616afee3a324060",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/ec6bb282-af78-43f3-a21e-1af041a2aa1a/0008-target-entry.png",
-                "sha256": "9b536ea241c64bca4401f1f3631a03cb1580594bc5dd641f7e11118acb08a54f",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "4184x3156",
-              "targetDimensions": "1200x1171",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Вакилін\nколи\nоль.\n5.\nЖенгіль Нимегородекогв.\nАгроммячекаго усаотя, чева и\nКирской валонисьма аВь-\nяня приспвянин иевеньь\nВисхлвавч Камажниковчо,\n24л..",
-    "modernInterpretation": "Вакилин коли оль. 5. Женгиль Нимегородекогв. Агроммячекаго усаотя, чева и Кирской валонисьма аВь- яня приспвянин иевеньь Висхлвавч Камажниковчо, 24л..",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Вакилін\nколи\nоль.\n5.\nЖенгіль Нимегородекогв.\nАгроммячекаго усаотя, чева и\nКирской валонисьма аВь-\nяня приспвянин иевеньь\nВисхлвавч Камажниковчо,\n24л..",
-    "localOcrWithSurnameLexicon": "Статьи обракосочставинеся,\n- Вакичій\nкон\nб.\nЖения Нимегоровекогут.\nКарской волост семя 13..36\nяна крепляник. ивинь\nВискллєв Камашниковче,\n24л. 5 mi\nправославняго оторопетовые-\nЦенія, первних віракомч.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
-  },
-  "indexData": {
-    "querySnippet": "Стрелок 3 Финляндского стрелкового полка Михаил Алексеев Ампилогов православного вероисповедания, первым браком.",
-    "fuzzyQuery": true
-  }
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {"status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high-for-groom-date-age-rank-regiment-confession-and-marriage-number", "unresolved": ["Фамилия священника и часть фамилий поручителей не нормализованы из-за почерка."], "deepReviewedAt": "2026-09-12", "deepReviewScope": "Вручную прочитан полный разворот 1896 года и вся строка брака № 4: дата, ФИО жениха, 3-й Финляндский стрелковый полк, возраст, вероисповедание, первый брак, невеста, совершитель и поручители; создан новый профиль без миграционного вывода."}
 }

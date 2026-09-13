@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-AE70152B-35",
   "provider": "Яндекс Архив",
-  "recordType": "other",
+  "recordType": "confirmed-false-index-match",
   "collection": {
     "catalogId": "ae70152b-5510-447d-b437-0aa9bd815303",
     "scanNumber": 35
@@ -10,16 +10,17 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ae70152b-5510-447d-b437-0aa9bd815303/35"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-AE70152B-35-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов/Ампилогова — требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
-      "surnameSeries": true
+  "event": {
+    "type": "index-review",
+    "date": {
+      "display": "апрель 1886 года",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Оренбургский уезд"
     }
-  ],
+  },
+  "mentions": [],
   "evidence": {
     "catalogId": "ae70152b-5510-447d-b437-0aa9bd815303",
     "scanNumber": 35,
@@ -41,6 +42,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/ae70152b-5510-447d-b437-0aa9bd815303/0035-target-entry.png",
         "sha256": "1e3401daa5df9e814593df06ebc3626ce589bc71f4eff1f0fb26e26f10f7ec6f",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/ae70152b-5510-447d-b437-0aa9bd815303/0035-deep-context.png",
+        "sha256": "dd14e645c88f4fa62bc82e2117ee9bc222ac8e0ebe9dd52d02a8efeff01de642",
+        "description": "Чистый полноширинный апрельский разворот части III с записями № 11–17."
       }
     ],
     "quality": {
@@ -49,7 +56,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4572x3620",
       "targetDimensions": "1258x442",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-reading-and-clean-wide-context-recrop",
+      "contextDimensions": "4400x3300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -86,26 +94,29 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный разворот части III за апрель 1886 года, все видимые записи № 11–17 и границы строк; фамильное совпадение отсутствует."
   },
   "transcription": {
-    "literal": "С ввеииниквСанн\nСаагинивь сини ванице\nНосаотинка Микопей Ольтанских\nСочле Леоргіськи крестойнита Денори-\nМнисодоневекволпноогова дочь Дарго\nСаящуантина Сост вотипрлівні\nпссаоинцикаНиколаи Олимански\nапн тіевки престнянини Конера",
-    "modernInterpretation": "С ввеииниквСанн Саагинивь сини ванице Носаотинка Микопей Ольтанских Сочле Леоргиськи крестойнита Денори- Мнисодоневекволпноогова дочь Дарго Саящуантина Сост вотипрливни пссаоинцикаНиколаи Олимански апн тиевки престнянини Конера",
+    "literal": "Метрическая книга на 1886 год, часть третья, об умерших. Апрельские записи № 11–17: младенцы Николай, Пётр, Василий, Родион, Александр и Пётр; в графах умерших, родителей, причин смерти и причта фамильная форма Ампилогов/Анпилогов отсутствует.",
+    "modernInterpretation": "Полный апрельский лист записей об умерших не содержит носителей исследуемого фамильного ряда.",
     "localOcr": "С ввеииниквСанн\nСаагинивь сини ванице\nНосаотинка Микопей Ольтанских\nСочле Леоргіськи крестойнита Денори-\nМнисодоневекволпноогова дочь Дарго\nСаящуантина Сост вотипрлівні\nпссаоинцикаНиколаи Олимански\nапн тіевки престнянини Конера",
-    "status": "complete-with-explicit-reading-uncertainty",
+    "status": "complete-manual-primary-scan-review-confirmed-false",
     "collation": {
       "baseLocalOcr": "not-confirmed-by-local-ocr",
       "assistedLocalOcr": "not-run-because-base-confirmed",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "indexNote": "Неуверенная ранняя OCR-гипотеза об Ампилогове отвергнута после чтения полного разворота и всех видимых строк."
   },
   "indexData": {
     "querySnippet": "",
     "fuzzyQuery": true
-  }
+  },
+  "isRecord": true,
+  "cardKind": "research-only-negative-record",
+  "publicCore": false
 }

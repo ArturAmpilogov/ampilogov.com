@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B0606A59-018",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "b0606a59-e04e-42dd-a431-665e3b049070",
     "scanNumber": 18,
@@ -12,12 +12,14 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b0606a59-e04e-42dd-a431-665e3b049070/18"
   },
   "event": {
-    "type": "death-of-child",
+    "type": "death-and-burial",
+    "recordNumber": 27,
     "date": {
-      "display": "1917",
-      "confidence": "high-for-year"
+      "display": "умерла 11-го, погребена 12-го числа 1917 года; месяц на листе не указан",
+      "confidence": "high-for-days-and-year"
     },
     "place": {
+      "asWritten": "село Бахтемирское",
       "normalized": "село Бахтемир, Астраханская губерния"
     }
   },
@@ -33,10 +35,11 @@
     {
       "mentionId": "YA-B0606A59-018-M2",
       "role": "deceased-child",
-      "personId": null,
-      "displayName": "дочь Тамара",
+      "personId": "P102948",
+      "displayName": "Тамара Михайловна Ампилова",
       "nameAsTranscribed": "дочь Тамара",
-      "surnameSeries": false
+      "age": "5 месяцев",
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -59,6 +62,12 @@
         "path": "data/genealogy/evidence-private/yandex/b0606a59-e04e-42dd-a431-665e3b049070/0018-target-entry.png",
         "sha256": "35b65cc0679b4943423e662cdf8308945beb4731dc1f7c47f69fe9237fc427d6",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/b0606a59-e04e-42dd-a431-665e3b049070/0018-deep-context.png",
+        "sha256": "cf8e3d8254cf627d188df7f7a79a1bf348829461879e643009f49ef92c6cebba",
+        "description": "Чистый полноширинный контекст записей об умерших № 27–30."
       }
     ],
     "quality": {
@@ -67,17 +76,18 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4096x2832",
       "targetDimensions": "1200x696",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-reading-and-clean-wide-context-recrop",
+      "contextDimensions": "3900x2400"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Гражданина села Бахтемирского Михаила Алексеева Ампилова дочь Тамара, 5 месяцев; от младенческой.",
-    "modernInterpretation": "У Михаила Алексеевича Ампилова умерла пятимесячная дочь Тамара.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-review",
+    "literal": "Женскаго пола № 27. 11 [умерла], 12 [погребена]. Гражданина села Бахтемировскаго Михаила Алексѣева Ампилова дочь Тамара, 5 мѣсяцевъ. Отъ младенческой [болѣзни]. Священникъ Михаилъ Юштинъ; діаконъ Михаилъ Ширшаевъ; діаконъ Даніилъ Тимофеевъ.",
+    "modernInterpretation": "В 1917 году 11-го числа умерла, а 12-го была погребена пятимесячная Тамара Михайловна Ампилова, дочь гражданина села Бахтемирского Михаила Алексеевича Ампилова. Месяц на этом продолжении книги не напечатан и не угадывается.",
+    "indexNote": "Яндекс верно указал отца и ребёнка, но не даёт надёжной полной даты. Числа, возраст, причина и роли прочитаны по оригиналу; месяц оставлен unresolved.",
     "localOcr": "Флаконь ронійл Тимофеевь\nаражданинеела велитряного\nдру гурнт а т еиера ват-\nвяпреннить Млоссино КОнтинв.\nАлакийт Мидиуемасв\nДіаконч ранішлі Тимофевві\n10.\nграэнданивосела Бартсміровска.",
     "localOcrWithSurnameLexicon": "Флаконь фонійл Тимофеевь\nаражданинеела велитряного\nв япреннить Млассио КОнтинв.\nДіаконь ранішлі Тимофевві\n10.\nгранданивосела Бартеміровска.",
     "collation": {
@@ -87,14 +97,17 @@
     }
   },
   "isRecord": true,
+  "primaryPersonId": "P102948",
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-primary-scan",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "На листе-продолжении отсутствует название месяца; подтверждены только числа 11/12 и год книги 1917."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный лист части III, строка женского счёта № 27, границы записи, возраст, причина смерти и причт; создан профиль ребёнка P102948 и прямая связь с отцом P102472; месяц не экстраполирован."
   },
   "indexData": {
     "querySnippet": "Гражданина села Бартемировского Михаила Алексеева Ампилова дочь Тамара Священник Михаил Юштин Диакон Мих Ширшаев Диакон Даниил Тимофеев.",

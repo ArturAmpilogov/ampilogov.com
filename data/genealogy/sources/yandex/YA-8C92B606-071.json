@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8C92B606-071",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "marriage-surety",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8c92b606-99ae-48b8-8887-99f15bfe409e",
     "scanNumber": 71,
@@ -12,25 +12,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8c92b606-99ae-48b8-8887-99f15bfe409e/71"
   },
   "event": {
-    "type": "marriage-surety",
+    "type": "false-index-hit-review",
     "date": {
       "display": "1912",
-      "confidence": "high-for-year"
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "село Киселёвка"
+      "normalized": "село Кодяковка и соседние селения, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8C92B606-071-M1",
-      "role": "surety",
-      "personId": "P102710",
-      "displayName": "Павел Степанович Ампилов (Киселёвка)",
-      "nameAsTranscribed": "крестьянинъ Павелъ Степановъ Ампиловъ",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8c92b606-99ae-48b8-8887-99f15bfe409e",
     "scanNumber": 71,
@@ -47,10 +38,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8c92b606-99ae-48b8-8887-99f15bfe409e/0071-target-entry.png",
-        "sha256": "e1587da194dcc288708a5736903c851d11904611e1ea5510672b3ea5c96a4a1b",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8c92b606-99ae-48b8-8887-99f15bfe409e/0071-target-context-deep.jpg",
+        "sha256": "7f907daccb22b9347d4109ba4c8b537798baeefb673851efcc5b449910b5ad21",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -58,38 +49,37 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5325x4503",
-      "targetDimensions": "1379x1172",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x2600",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "captureStatus": "complete-with-local-copy",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "По женихе: села Кодяковки крестьяне Михаил Васильев Киндинов и села Киселёвки крестьянин Павел Степанов Ампилов; по невесте [далее другие поручители].",
-    "modernInterpretation": "Павел Степанович Ампилов из Киселёвки назван поручителем по женихе.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Пóд\nКто были порбчители.\n3án\nПофесниін: сем во\nав Крестьяне Аригорій Сіненом\nГольцове „Иімя Вастісв ММак\nсимові, по невнсти: Деревн\nоше\nИапаховки кристьяне Ссодор2\nПаслов Долговь и Андрей феп-\nсинювь Знновілі.",
-    "localOcrWithSurnameLexicon": "Кто были порбчители.\n3án\nПофантін: сем вою\nав. Крестьяне Аригорій Сіненам\n3 Гольцове „Имя Вастісв Мак\nсимові, по невнети: Деревн\nоше\nИапаховки кристьяне Ссодор2\nПаслов Долговы и Андрей фон-\nсинові Зиновілі.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Ноябрь 1912 года, брачные записи № 5 от 4 ноября и № 6 от 5 ноября. В записи №5 по женихе названы крестьяне села Кодяковки Григорий Семенов Гольцов и Иван Васильев Максимов; по невесте — Феодор Павлов Долгов и Андрей Феоктистов Зиновьев. Павла Степанова Ампилова на полном листе нет.",
+    "modernInterpretation": "Ручное чтение обеих брачных строк опровергает индексную привязку Павла Степановича Ампилова к скану 71. Ранее созданная по ошибочному индексу профильная связь удалена по санкции координатора.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, браки №5–6 и все поручители; Павел Степанов Ампилов отсутствует, прежняя профильная связь опровергнута и удалена по санкции координатора; сохранён clean crop 4700×2600 с SHA; карта, родство и миграция исключены"
   },
   "indexData": {
     "querySnippet": "Поручитель: Филипп Иванов Гольцов, крестьянин, село Кодяковка. Поручитель: Павел Степанов Ампилов, крестьянин, село Киселевка.",
     "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

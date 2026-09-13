@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B799F230-164",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "recordType": "clerical-service-register",
   "collection": {
     "catalogId": "b799f230-f104-40e4-b260-fbb17506fe01",
     "scanNumber": 164,
@@ -13,21 +13,23 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b799f230-f104-40e4-b260-fbb17506fe01/164"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "archival-mention",
     "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
+      "display": "25 января 1910",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Нижне-Чебенский посёлок, Оренбургский уезд",
+      "confidence": "high-for-parish-context"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B799F230-164-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амтилогов",
-      "nameAsTranscribed": "Амтилогов",
+      "role": "psalmist",
+      "personId": "P91076",
+      "displayName": "Дмитрий Ампилогов",
+      "nameAsTranscribed": "Псаломщикомъ Димитріемъ Ампилоговымъ",
       "surnameSeries": true
     }
   ],
@@ -52,44 +54,55 @@
         "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0164-target-entry.png",
         "sha256": "81050401e6c86d77e541b40a7ee60bed105134d4f387f64f4a60f36b681b59de",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b799f230-f104-40e4-b260-fbb17506fe01/0164-target-context-deep.jpg",
+        "sha256": "004c823f9df912554ad13f16d745a9304c5e73746e42e8e6695381f4f90a5880",
+        "description": "Крупный clean crop полного брачного разворота с записью № 1 и служебной подписью причта."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5991x4666",
-      "targetDimensions": "2159x1693",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5600x4300",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "переымь ракомь\nмколі\nСвященникь плетий грабиличи-\nИсслолицитвАлищрй Я лишогов6\nовсяувь бракосочетавимася быломиць вна\nельствуемі! Священникг плетий\nбилисо. -.\nПсалосицик Олиики А минловки\nагопосолкае\nнь тира-\nКижне-вобенсколіь Среп-\nИ\nрабимиьстися\nиг, прово-\nо4тскаго сильщаника\nиліьбза-\nхима оитенька Де-\n20.\nмлоська-Параскева\nахилива Демиоська,\nАлепил\n20.\nпервимь брехолів",
-    "modernInterpretation": "переымь ракомь мколи Священникь плетий грабиличи- ИсслолицитвАлищрй Я лишогов6 овсяувь бракосочетавимася быломиць вна ельствуеми! Священникг плетий билисо. -. Псалосицик Олиики А минловки агопосолкае нь тира- Кижне-вобенсколиь Среп- И рабимиьстися иг, прово- о4тскаго сильщаника илиьбза- хима оитенька Де- 20. млоська-Параскева ахилива Демиоська, Алепил 20. первимь брехолив",
-    "localOcr": "переымь ракомь\nмколі\nСвященникь плетий грабиличи-\nИсслолицитвАлищрй Я лишогов6\nовсяувь бракосочетавимася быломиць вна\nельствуемі! Священникг плетий\nбилисо. -.\nПсалосицик Олиики А минловки\nагопосолкае\nнь тира-\nКижне-вобенсколіь Среп-\nИ\nрабимиьстися\nиг, прово-\nо4тскаго сильщаника\nиліьбза-\nхима оитенька Де-\n20.\nмлоська-Параскева\nахилива Демиоська,\nАлепил\n20.\nпервимь брехолів",
-    "localOcrWithSurnameLexicon": "школі\nСвященникь плетий грабиличи.-\nпосмувь бракосочетавимася быломиць вка\nельству! Священника плетий\nвились. -.\nагопосолка\nнь стира -\nЧижне-вобесколь Срен-\nИ\nрабимиьстися\nиг, прово-\nвитскаго сильщаника\nшлівбза -\nхима зитенька Де -\n20.\nмилоська -Параскева\nахилива Демиоська,\n20.\nпершимь брехолів",
+    "status": "complete-for-target-ministry-manually-verified",
+    "literal": "1910 год, часть вторая, о бракосочетавшихся. Январь, брак № 1: 25. После записи о женихе и невесте: «Священникъ Алексѣй Грабилинъ. Псаломщикомъ Димитріемъ Ампилоговымъ».",
+    "modernInterpretation": "25 января 1910 года при венчании № 1 в Нижне-Чебенском приходе служебная строка называет священника Алексея Грабилина и псаломщика Дмитрия Ампилогова. Это подтверждение службы Дмитрия, а не его родства с участниками брака.",
+    "indexNote": "Яндекс смешал и исказил фамилии в строках акта. По оригиналу фамильное упоминание находится в служебной формуле «Псаломщикомъ Димитріемъ Ампилоговымъ»; чтение «Амтилогов» отвергнуто.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Псаломщик Дмитрий Амтилогов. ломщиком Дмитрием Ампильновым. Поручители по женихе: ВерхнеЧебенского поселка казаки Константин Ферулев...",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный брачный разворот 1910 года, заголовок, дата 25 января, номер 1 и служебная строка. Установлено точное «Псаломщикомъ Димитріемъ Ампилоговымъ», связанное с P91076 по имени, сану, приходу и непрерывной серии соседних листов. Создан clean crop 5600×4300; родство и миграция не выводились."
+  },
+  "context": {
+    "summary": "Служебная подпись причта при венчании № 1.",
+    "historicalContext": "Метрическая книга Нижне-Чебенского прихода за 1910 год.",
+    "genealogicalConclusion": "Точное имя, сан, приход и соседние листы 165/168/169/170 связывают служебную строку с P91076; родство и переселение не выводятся.",
+    "indexDiscrepancy": "Индексное «Амтилогов» и склейки с участниками брака исправлены по оригиналу."
   }
 }

@@ -2,35 +2,53 @@
   "schemaVersion": 1,
   "sourceId": "YA-BFFBB295-174",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism",
+  "primaryPersonId": "P102984",
   "collection": {
     "catalogId": "bffbb295-9623-4bce-95a9-2cbfadb74750",
     "scanNumber": 174,
     "title": "Метрическая книга записей о рождении, браке, смерти церкви села Тюменево за 1915-1919 гг.",
     "publication": "ГА Кузбасса, Коллекция метрических книг, Опись № 6, Метрическая книга записей о рождении, браке, смерти церкви села Тюменево за 1915-1919 гг."
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/bffbb295-9623-4bce-95a9-2cbfadb74750/174"
-  },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/bffbb295-9623-4bce-95a9-2cbfadb74750/174" },
   "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1915 — 31 декабря 1919",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
+    "type": "birth-and-baptism",
+    "recordNumber": "мужской счёт №10",
+    "date": { "display": "родился 10 февраля, крещён 11 февраля 1915 года", "birthIso": "1915-02-10", "baptismIso": "1915-02-11", "confidence": "high" },
+    "place": { "asWritten": "деревни Николаевки", "normalized": "деревня Николаевка, Тюменевская волость, Мариинский уезд, Томская губерния", "confidence": "high" }
   },
   "mentions": [
-    {
-      "mentionId": "YA-BFFBB295-174-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
+    { "mentionId": "YA-BFFBB295-174-M1", "role": "child", "personId": "P102984", "displayName": "Дмитрий Иванович Ампилогов", "nameAsTranscribed": "Дмитрій", "sex": "male", "surnameSeries": true },
+    { "mentionId": "YA-BFFBB295-174-M2", "role": "father", "personId": "P102985", "displayName": "Иван Иванович Ампилогов", "nameAsTranscribed": "деревни Николаевки крестьянинъ Иванъ Ивановъ Ампилоговъ", "sex": "male", "surnameSeries": true },
+    { "mentionId": "YA-BFFBB295-174-M3", "role": "mother", "personId": null, "displayName": "Надежда Тимофеевна", "nameAsTranscribed": "жена его Надежда Тимофеева", "sex": "female", "surnameSeries": false },
+    { "mentionId": "YA-BFFBB295-174-M4", "role": "godparents", "personId": null, "displayName": "Восприемники (имена читаются неуверенно)", "nameAsTranscribed": "[имена восприемников неразборчивы на доступной копии]", "surnameSeries": false }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified-with-explicit-godparent-uncertainty",
+    "literal": "Февраль. Мужского пола № 10. 10 родился, 11 крещён. Дмитрій. Деревни Николаевки крестьянинъ Иванъ Ивановъ Ампилоговъ и жена его Надежда Тимофеева, оба православные. [Имена восприемников на доступной копии читаются неуверенно.]",
+    "modernInterpretation": "10 февраля 1915 года в деревне Николаевке у крестьянина Ивана Ивановича Ампилогова и Надежды Тимофеевны родился сын Дмитрий; 11 февраля его крестили.",
+    "indexNote": "Номер, месяц, обе даты, ребёнок и родители заново прочитаны по полному развороту. Индекс использован только как указатель; дополнительные индексные Мария Акимова и Евфросиния Степаносова относятся к другим строкам и не включены в этот акт."
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Дмитрий Иванов Ампилогов. Родившийся: Мария Акимова. Родившийся: Евфросиния Степаносова.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал людей из соседних строк; к записи № 10 относятся Дмитрий и его родители Иван Иванович Ампилогов и Надежда Тимофеевна."
+  },
+  "context": {
+    "eventSummary": "Запись № 10 документирует рождение и крещение Дмитрия Ивановича Ампилогова в феврале 1915 года.",
+    "identityNote": "Созданы отдельные P102984 и P102985: в корпусе не найдено совпадения по полному имени отца и Николаевке.",
+    "scopeNote": "Мать и неуверенно читаемые восприемники остаются контекстом; переселение не выводится."
+  },
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "review": {
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high-for-event-child-and-parents-low-for-godparents",
+    "unresolved": ["Имена восприемников требуют более контрастной копии."],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный февральский разворот, запись № 10, даты 10/11 февраля, ребёнок и оба родителя; смешанные индексом соседние лица исключены, неразборчивые восприемники не угаданы."
+  },
   "evidence": {
     "catalogId": "bffbb295-9623-4bce-95a9-2cbfadb74750",
     "scanNumber": 174,
@@ -41,55 +59,13 @@
     "capturedAt": "2026-09-11",
     "sha256": "9edf4c23732dce810ab33ade7817bbe918a5ec129d1fdd19a4f54e67a3ce3651",
     "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0174-header.png",
-        "sha256": "0ae622fcb3b0b483929714f6126cce6b70df566b99cc7d4ccf22dc4bf40a2539",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0174-target-entry.png",
-        "sha256": "b3fd9bfe11753bb0b23f80cb1891019e682ea55ecb64734deb00c4bf20158de6",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
+      { "kind": "header", "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0174-header.png", "sha256": "0ae622fcb3b0b483929714f6126cce6b70df566b99cc7d4ccf22dc4bf40a2539", "description": "Фрагмент заголовка части I и февральского раздела." },
+      { "kind": "target-entry", "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0174-target-entry.png", "sha256": "b3fd9bfe11753bb0b23f80cb1891019e682ea55ecb64734deb00c4bf20158de6", "description": "Крупный фрагмент целевой строки № 10." },
+      { "kind": "full-width-entry-context", "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0174-target-context-deep.jpg", "sha256": "da16dea2964ef060649d287034af90d84f156b4c05ba4ec4482d9d465a147f03", "description": "Широкий clean-фрагмент полного февральского разворота с записью № 10 и соседними строками." }
     ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "3970x3940",
-      "targetDimensions": "1855x799",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
+    "quality": { "originalImageDownloaded": true, "fullDimensions": "3970x3940", "targetDimensions": "3800x3700", "method": "manual-full-spread-review-and-clean-wide-recrop" },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "OWMUW\nноти, ком праославны\nенорь ва\n1ед0ог\nпрнтикові\n34- Денявни Пятравнн а\nгричорьег понь\nнифоова ионне.\nжеми овнгсти\nкАнни. на пракославня\nеперь\nдеревни 3о. Цванч-\nнавен.\nмесешии и яна-\nепевни николаяьки гр\nполоневакиткооя\nаколок сконяшннт нх\n• шекатут\nии сена",
-    "modernInterpretation": "OWMUW ноти, ком праославны енорь ва 1ед0ог прнтикови 34- Денявни Пятравнн а гричорьег понь нифоова ионне. жеми овнгсти кАнни. на пракославня еперь деревни 3о. Цванч- навен. месешии и яна- епевни николаяьки гр полоневакиткооя аколок сконяшннт нх • шекатут ии сена",
-    "localOcr": "OWMUW\nноти, ком праославны\nенорь ва\n1ед0ог\nпрнтикові\n34- Денявни Пятравнн а\nгричорьег понь\nнифоова ионне.\nжеми овнгсти\nкАнни. на пракославня\nеперь\nдеревни 3о. Цванч-\nнавен.\nмесешии и яна-\nепевни николаяьки гр\nполоневакиткооя\nаколок сконяшннт нх\n• шекатут\nии сена",
-    "localOcrWithSurnameLexicon": "ноти, ком праславны\nпортикові\n314- Денявни Петровни а\nгригорье прон\nнидова ионне .\n• жени снасти\nкАни. на прабославня\nсперь\nдеревни 30. Цванч-\nмесении и яна-\nспевни николаяь ки гр\nполонева каткооя\n• текитут",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Родившийся: Дмитрий Иванов Ампилогов. Родившийся: Мария Акимова. Родившийся: Евфросиния Степаносова.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
-  }
+  "summary": { "status": "verified-summary", "text": "10 февраля 1915 года в Николаевке у Ивана Ивановича Ампилогова и Надежды Тимофеевны родился Дмитрий; крещён 11 февраля." }
 }

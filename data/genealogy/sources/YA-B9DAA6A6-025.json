@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DAA6A6-025",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "b9daa6a6-0612-417d-9123-553f1cc97f34",
     "scanNumber": "25"
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/b9daa6a6-0612-417d-9123-553f1cc97f34/0025-target-entry.png",
-        "sha256": "147ec1f8b9e7b5052fff37de1e9acf06947383897676a1fa49f7a2d417a147d1",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/b9daa6a6-0612-417d-9123-553f1cc97f34/0025-target-context-deep.jpg",
+        "sha256": "c77169c00c71e07b176be76d316a30c0dc17c42d32a8db44c58a006c6bc3e7e8",
+        "description": "Крупный clean crop полного доступного поля без интерфейса Яндекса для отрицательной проверки."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5108x3989",
-      "targetDimensions": "1200x3357",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3200",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -92,31 +92,47 @@
           }
         ]
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high-for-no-match",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверен весь повреждённый лист scan 25, включая подклейки, сохранившиеся строки и просвет оборота. Индексная фраза о Михаиле Ампилогове отсутствует; повреждение не превращено в положительное чтение. Создан clean crop 4700×3200.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вмгу",
-    "modernInterpretation": "вмгу",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "вмгу",
-    "localOcrWithSurnameLexicon": "вмгу",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Повреждённый и подклеенный лист части о браках. На полном сохранившемся поле и оборотных просвечивающих строках фамилия Ампилогов не читается; индексная фраза о Михаиле Ампилогове и Кузьме Лукьянчикове этим сканом не подтверждается.",
+    "modernInterpretation": "Полный доступный скан проверен вручную; совпадение фамильного ряда не подтверждено.",
+    "indexNote": "Индекс Яндекса использован только для навигации и опровергнут чтением оригинала.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный разворот содержит повреждённый лист; предполагаемая запись и фамилии в уцелевшем фрагменте не читаются надёжно."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Богар. Михаил. Ампилогов. рестьянин орисов Рукавии крестьянка Мария Николаева Брыгина. Жених: Кузьма Лукьянчиков, крестьянин, деревня Просецкая.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "не установлено",
+      "confidence": "low"
+    },
+    "place": {
+      "normalized": "не установлено"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Индексное совпадение не подтверждено полным первичным сканом.",
+    "genealogicalConclusion": "Профиль, событие публичного ядра, родство, карта и миграция не создаются.",
+    "indexDiscrepancy": "Яндекс приписал листу отсутствующую фамильную строку."
   }
 }

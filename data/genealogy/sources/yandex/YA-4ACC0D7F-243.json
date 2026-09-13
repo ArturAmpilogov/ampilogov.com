@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4ACC0D7F-243",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "technical-parallel",
   "collection": {
     "catalogId": "4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9",
     "scanNumber": 243,
@@ -12,25 +12,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9/243"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-4ACC0D7F-243-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9",
     "scanNumber": 243,
@@ -66,28 +48,28 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Орибурсний липиренння ватра\nсрі\nГордлєва. Анплелоговя икол\nЛерискоо секретирі вдова\nАечистин) Соргіява Маленкови -\nоринбурній сиплусниня Стменич Иларіонова\ntoarr? « Mewresdem aetnnai",
-    "modernInterpretation": "Орибурсний липиренння ватра сри Гордлєва. Анплелоговя икол Лерискоо секретири вдова Аечистин) Соргиява Маленкови - оринбурний сиплусниня Стменич Иларионова toarr? « Mewresdem aetnnai",
-    "localOcr": "Орибурсний липиренння ватра\nсрі\nГордлєва. Анплелоговя икол\nЛерискоо секретирі вдова\nАечистин) Соргіява Маленкови -\nоринбурній сиплусниня Стменич Иларіонова\ntoarr? « Mewresdem aetnnai",
-    "localOcrWithSurnameLexicon": "срі\nГордаєва. Анплелогов икол\nДерискою секретирі в дова\nАнчестин/ оргіява Маленкови -\nАрибурній спустина Суменич Нларіонова\ntarr? « Mewrerseom aetnnai",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "delegated-to-canonical-record",
+    "literal": "Корневая поисковая карточка относится к мужской записи № 194: Николай родился 6 и крещён 8 декабря 1910 года; оренбургский мещанин Пётр Гордеев Анпилогов назван восприемником вместе с вдовой Анастасией Георгиевой Маленковой.",
+    "modernInterpretation": "Это не отдельное событие. Полная проверенная запись находится в YA-OGAOO-173-16-1844-243-PETR.",
+    "indexNote": "Индекс использован только для навигации; root сверен с полным оригиналом и каноническим Record того же листа и строки."
   },
   "indexData": {
     "querySnippet": "Оренбургский мещанин Петр Гордиев Анпилогов и коллежского секретаря вдова Анастасия Георгиева Маленкова. Михайловым. гинский с.",
     "fuzzyQuery": true
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "technical-parallel",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "complete-technical-parallel-resolved",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь декабрьский разворот и мужская строка № 194: даты 6/8 декабря, Николай, родительская графа, оба восприемника и границы строк № 193–195; root сопоставлен с каноническим Record без дубля.",
+    "transcriptionConfidence": "high",
     "unresolved": []
+  },
+  "parallelOf": "YA-OGAOO-173-16-1844-243-PETR",
+  "context": {
+    "eventSummary": "Корневая поисковая карточка относится к мужской записи № 194: Николай родился 6 и крещён 8 декабря 1910 года; оренбургский мещанин Пётр Гордеев Анпилогов назван восприемником вместе с вдовой Анастасией Георгиевой Маленковой.",
+    "scopeNote": "Полное событие хранится в YA-OGAOO-173-16-1844-243-PETR. Фамильное упоминание относится к восприемнику, не к отцу ребёнка; корень не создаёт повторных mentions/backlinks."
   }
 }

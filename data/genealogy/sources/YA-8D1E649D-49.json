@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-49",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 49
@@ -10,21 +10,12 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8d1e649d-8580-45ea-b86d-310a58330845/49"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8D1E649D-49-M1",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 49,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0049-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0049-full-view.png",
     "capturedAt": "2026-09-11",
@@ -37,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0049-target-entry.png",
-        "sha256": "5cc343ff73973a3f1c9d33b121b455cbbdbdaf1bac28e15118fd256ec24551b4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0049-target-context-deep.jpg",
+        "sha256": "08d29388e3b427af5968c7dbd53f530adaa0fbf33c071500baec98cc54980295",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5195x4339",
-      "targetDimensions": "1381x1196",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -88,31 +79,49 @@
         },
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 49: декабрьские даты, номера и все видимые строки актов. Заявленная индексом строка о Евфреме Афанасьевиче Ампилогове на листе отсутствует; неопределённый mention удалён. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Стерлиташанькій мичлуанинь,\nиваню Имаріанивг Киантевь и\nОринвский грерти, Малиао-\nХанченисьат грічіа селал\nкрестняньная мена, вейисч\nНикитина Легистаева.\nСела Миханшики простянинь\nЕворимий Шлановк Качанива июря-\nствянская мена, Матрана\nКанстантинива Мелихика.\nДеревни Кирмалки порествянини\nИфорамь Афаналяво Альнино-\nговы и сийчатская мена, бума-\nня с иморова Стефажика\"",
-    "modernInterpretation": "Стерлиташанький мичлуанинь, иваню Имарианивг Киантевь и Оринвский грерти, Малиао- Ханченисьат гричиа селал крестняньная мена, вейисч Никитина Легистаева. Села Миханшики простянинь Еворимий Шлановк Качанива июря- ствянская мена, Матрана Канстантинива Мелихика. Деревни Кирмалки порествянини Ифорамь Афаналяво Альнино- говы и сийчатская мена, бума- ня с иморова Стефажика\"",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Стерлиташанькій мичлуанинь,\nиваню Имаріанивг Киантевь и\nОринвский грерти, Малиао-\nХанченисьат грічіа селал\nкрестняньная мена, вейисч\nНикитина Легистаева.\nСела Миханшики простянинь\nЕворимий Шлановк Качанива июря-\nствянская мена, Матрана\nКанстантинива Мелихика.\nДеревни Кирмалки порествянини\nИфорамь Афаналяво Альнино-\nговы и сийчатская мена, бума-\nня с иморова Стефажика\"",
-    "localOcrWithSurnameLexicon": ", Матрено\nнетентинла ilimla.\nУосаннось Кленне\nnel ornano metassa:\n\"77",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном декабрьском листе просмотрены все видимые строки актов около № 132–138. Индексная фраза «деревни Кормалки крестьянин Евфрем Афанасиев Ампилогов…» на этом листе отсутствует.",
+    "modernInterpretation": "Полный декабрьский лист рождений 1889 года проверен построчно. Приписанное индексом упоминание Евфрема Афанасьевича Ампилогова относится к иной строке или является склейкой и не подтверждается данным сканом.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Деревни Кормалки крестьянин Евфрем Афанасиев Ампилогов и солдатская жена, Иулиания Иосифова Стефанова.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

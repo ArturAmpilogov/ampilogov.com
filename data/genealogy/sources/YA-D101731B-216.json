@@ -1,94 +1,31 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-D101731B-216",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
-  "collection": {
-    "catalogId": "d101731b-1613-48e1-a844-243286b65e4e",
-    "scanNumber": 216
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/d101731b-1613-48e1-a844-243286b65e4e/216"
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-D101731B-216",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive-index-hit",
+  "primaryPersonId": null,
+  "collection": { "catalogId": "d101731b-1613-48e1-a844-243286b65e4e", "scanNumber": 216, "title": "Метрическая книга за 1895 год, часть первая, о родившихся" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/d101731b-1613-48e1-a844-243286b65e4e/216" },
+  "event": { "type": "birth-register-page-context", "date": { "display": "27–29 января 1895 года", "from": "1895-01-27", "to": "1895-01-29", "confidence": "high" }, "place": { "normalized": "не установлено" } },
+  "mentions": [],
   "evidence": {
-    "catalogId": "d101731b-1613-48e1-a844-243286b65e4e",
-    "scanNumber": 216,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "catalogId": "d101731b-1613-48e1-a844-243286b65e4e", "scanNumber": 216,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-wide-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0216-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0216-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "9b7f8c1ada1929268d32f681375eb5864956a9e0b444a1b2fadf5d2ec96e6a15",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0216-header.png",
-        "sha256": "c7d4d8ea15dab7a9b0181e08ffabf07964ab25e55c99a53653829509377b7791",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0216-target-entry.png",
-        "sha256": "5dd1626d730b7d1208f2f0027aed2fb4e444fd422df2d3f95f9e7fa787a030c0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5325x4276",
-      "targetDimensions": "1366x695",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0216-full-view.jpg",
-        "sha256": "8c7653f6228c0e0867174fc1662e12ddc8ba28ee55238ccd8ac59c7b197192b5",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/d101731b-1613-48e1-a844-243286b65e4e/0216-target-entry.jpg",
-            "sha256": "3e6f82ffc6032842b672fa6f551bd987d2acc4e14e671114685fa27d81edc3ba"
-          }
-        ]
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "capturedAt": "2026-09-11", "sha256": "9b7f8c1ada1929268d32f681375eb5864956a9e0b444a1b2fadf5d2ec96e6a15",
+    "fragments": [{ "kind": "deep-context", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0216-target-context-deep.png", "sha256": "b38de0c29378ef8f3d7e126ced0c4de9d56052069cf5b4c71820770e18fc4a5d", "description": "Чистый широкий фрагмент 5050×4000 с январскими рождениями № 183–187 и всеми колонками." }],
+    "quality": { "originalImageDownloaded": true, "fullDimensions": "5325x4276", "contextDimensions": "5050x4000", "method": "manual-reading-of-downloaded-original-scan-and-wide-clean-crop" },
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вица влизавета Хари- 3\nтисива Одатта.\nсела Сиоріськи Зобавскоо волоськ\nпресвяшина Маторкой Кор-\nишита\nкрестили чя жиий віми",
-    "modernInterpretation": "вица влизавета Хари- 3 тисива Одатта. села Сиориськи Зобавскоо волоськ пресвяшина Маторкой Кор- ишита крестили чя жиий вими",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "localOcr": "вица влизавета Хари- 3\nтисива Одатта.\nсела Сиоріськи Зобавскоо волоськ\nпресвяшина Маторкой Кор-\nишита\nкрестили чя жиий віми",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "1895 год, часть первая, январь. Записи № 183–187 относятся к Анастасии и Георгиям, родившимся и крещённым 27–29 января; родители и восприемники — чужие семьи Михайловского прихода. Фамилии исследуемого ряда на развороте нет.",
+    "modernInterpretation": "Полный читаемый скан показывает страницу январских рождений и не содержит предполагаемого индексного совпадения Ампилоговых.",
+    "indexNote": "Confirmed false: прежняя карточка ошибочно оставляла вопрос открытым, хотя полный оригинал читаем и фамильного совпадения не содержит."
   },
-  "indexData": {
-    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
-  }
+  "context": { "eventSummary": "Проверка ложного индексного совпадения на странице рождений № 183–187.", "identityNote": "Носитель исследуемого фамильного ряда не обнаружен.", "relationshipNote": "Профили и связи не создаются.", "migrationNote": "Картографическое событие фамильного ряда не создаётся." },
+  "indexData": { "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.", "fuzzyQuery": true, "discrepancy": "Полный оригинал уже сохранён и читаем; фамильного ряда на странице нет." },
+  "isRecord": true, "cardKind": "research-only-record", "publicCore": false,
+  "review": { "status": "confirmed-false-positive-after-manual-scan-review", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-13", "deepReviewScope": "Весь разворот и записи № 183–187 прочитаны вручную; фамильное совпадение отсутствует; создан clean crop 5050×4000." }
 }

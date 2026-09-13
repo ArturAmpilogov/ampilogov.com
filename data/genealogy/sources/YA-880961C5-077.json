@@ -1,35 +1,36 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-880961C5-077",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "register-witness",
-  "primaryPersonId": "P102021",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "detached-register-participant-fragment",
   "collection": {
     "catalogId": "880961c5-afae-418f-a4be-a68eaa1eac85",
-    "scanNumber": "77",
-    "title": "Актовая книга за 1913 год; лист с записями № 33–35",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей города Оренбурга (Иоанно-Богословская церковь – рождение, смерть; Казанский кафедральный Собор – рождение, смерть; Марие-Магдалинская церковь при благотворительном учреждении С. и М. Ивановых – рождение; Михаило-Архангельская церковь – рождение) за 1918 г."
+    "scanNumber": 77,
+    "title": "Метрическая книга за 1918 год; повреждённый смешанный лист",
+    "asRead": "Слева часть об умерших, справа неполный отделённый фрагмент другого акта"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/880961c5-afae-418f-a4be-a68eaa1eac85/77"
   },
+  "primaryPersonId": "P102021",
   "event": {
-    "type": "register-witness",
+    "type": "detached-register-participant-fragment",
     "date": {
-      "display": "1913 год",
-      "date": "1913",
-      "confidence": "medium"
+      "display": "1918 год (контекст книги; дата исходного акта на фрагменте утрачена)",
+      "year": 1918,
+      "confidence": "high-for-book-year; exact-date-unknown"
     },
     "place": {
-      "asWritten": "Оренбургский мещанин",
+      "asWritten": "Оренбургскій мѣщанинъ",
       "normalized": "Оренбург",
-      "placeId": "orenburg-uezd"
+      "placeId": "orenburg-uezd",
+      "confidence": "high-for-status-wording"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-880961C5-077-M1",
-      "role": "witness",
+      "role": "paired-participant-on-detached-fragment",
       "personId": "P102021",
       "nameAsTranscribed": "Оренбургскій мѣщанинъ Михаилъ Ивановъ Ампилоговъ",
       "displayName": "Михаил Иванович Ампилогов",
@@ -37,7 +38,7 @@
     },
     {
       "mentionId": "YA-880961C5-077-M2",
-      "role": "co-witness",
+      "role": "paired-participant-on-detached-fragment",
       "personId": null,
       "nameAsTranscribed": "Анастасія Константинова",
       "displayName": "Анастасия Константиновна",
@@ -45,116 +46,64 @@
     }
   ],
   "transcription": {
-    "status": "primary-scan-transcription-with-date-range",
+    "status": "complete-for-surviving-detached-fragment-manually-verified",
     "literal": "Оренбургскій мѣщанинъ Михаилъ Ивановъ Ампилоговъ и Анастасія Константинова.",
-    "modernInterpretation": "В актовой книге 1913 года Михаил Иванович Ампилогов назван оренбургским мещанином и указан рядом с Анастасией Константиновной в графе участников/свидетелей.",
-    "indexNote": "Сословие, имя и фамилия прочитаны по оригиналу. Соседство имён не превращено в недоказанный брак или родство.",
-    "localOcr": "",
-    "localOcrWithSurnameLexicon": "",
+    "modernInterpretation": "На отделённом неполном фрагменте в книге 1918 года рядом названы оренбургский мещанин Михаил Иванович Ампилогов и Анастасия Константиновна. Заголовок графы, роль участников и точная дата исходного акта утрачены, поэтому брак, восприемничество, свидетельство или родство не утверждаются.",
+    "indexNote": "Старое описание приписывало фрагменту 1913 год и роль свидетеля. Полный лист показывает контекст книги 1918 года, но не сохраняет заголовок роли или дату отдельного акта.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "review": {
-    "status": "primary-scan-verified-with-limited-context",
-    "transcriptionConfidence": "high-for-name-medium-for-role",
-    "unresolved": [
-      "Точный тип акта и календарная дата на сохранённой области не читаются полностью.",
-      "Не объединён с тёзками из Новотроицкого и иных мест без независимой связки.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ],
-    "mergeAlternateReadings": [
-      {
-        "sourcePath": "data/genealogy/sources/yandex/YA-880961C5-077.json",
-        "event": {
-          "type": "archival-mention",
-          "date": {
-            "display": "1 января 1918 — 31 декабря 1918",
-            "confidence": "high-for-catalog-date"
-          },
-          "place": {
-            "normalized": "не установлено"
-          }
-        },
-        "mentions": [
-          {
-            "mentionId": "YA-880961C5-077-M1",
-            "role": "surname-series-mention",
-            "displayName": "Ампилоговъ",
-            "nameAsTranscribed": "Ампилоговъ",
-            "surnameSeries": true
-          }
-        ],
-        "transcription": {
-          "status": "complete-with-explicit-reading-uncertainty",
-          "literal": "Оренбургскій мѣщанинъ Михаилъ Ивановъ Ампилоговъ и Анастасія Константинова",
-          "modernInterpretation": "Оренбургский мещанинъ Михаилъ Ивановъ Ампилоговъ и Анастасия Константинова",
-          "localOcr": "",
-          "localOcrWithSurnameLexicon": "",
-          "collation": {
-            "baseLocalOcr": "not-confirmed-by-local-ocr",
-            "assistedLocalOcr": "not-confirmed-by-local-ocr",
-            "yandexTextBlocksUsedForNavigationAndCollation": true
-          },
-          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-        },
-        "review": {
-          "status": "complete-but-reading-uncertain",
-          "transcriptionConfidence": "medium-with-explicit-uncertainty",
-          "unresolved": [
-            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-          ]
-        }
-      }
-    ],
-    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+  "indexData": {
+    "fuzzyQuery": true,
+    "discrepancy": "Недоказанные дата 1913 и конкретная роль удалены; оригинал подтверждает только текст уцелевшего фрагмента и книжный контекст 1918 года."
   },
   "evidence": {
-    "publicDisplay": false,
-    "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-full-view.png",
-    "sha256": "a901407479d2c9c06a90771bff90d65dbf55397e430ffee990b9421e68f19cd1",
-    "fragments": [
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-target-entry.png",
-        "sha256": "3005b30ad62752e56d43683d76e34f591303bd0d51623a1cbe9b658fece9f0eb",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      },
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-header.png",
-        "sha256": "04c4f95f8cde6a8f8363a9517a58e1aad93394abd2351a17aab52f781951d5d8",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "siteAndBrowserChromeExcluded": true,
-      "blackDefectsExcluded": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4764x3472",
-      "targetDimensions": "1763x661",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
     "catalogId": "880961c5-afae-418f-a4be-a68eaa1eac85",
     "scanNumber": 77,
     "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-large-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-full-view.png",
     "capturedAt": "2026-09-11",
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "sha256": "10d0d29b5dc546f02498b98c7a8008744f0b64772858ae1cb0d4dd08637d0c4f",
+    "fragments": [
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/880961c5-afae-418f-a4be-a68eaa1eac85/0077-target-context-deep.jpg",
+        "sha256": "6f7a7f5a967caf7ae0cc34c426e7a43a2cf9bca686dec21a756baf11490e341a",
+        "description": "Clean крупный фрагмент с уцелевшей строкой Михаила Ампилогова и Анастасии Константиновны и физическими границами отделённого фрагмента."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "fullDimensions": "4764x3472",
+      "targetDimensions": "4500x2300",
+      "method": "manual-full-page-and-detached-fragment-reading-plus-large-clean-context-crop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
-  "indexData": {
-    "querySnippet": "1918 г. Причта. Оренбургский мещанин Михаил Иванов Ампилогов и Анастасия Константинова. 10. Священник Василий Поляков с диаконом Иоанном Семеновым.",
-    "fuzzyQuery": true
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Сохранившееся парное именование на отделённом фрагменте актовой книги 1918 года.",
+    "identityNote": "P102021 подтверждён точным полным именем и оренбургским мещанским статусом. Тип исходного акта и роль не восстанавливаются из обрезанного фрагмента.",
+    "migrationNote": "Оренбургский статус не доказывает маршрут переселения; соседство имён не доказывает брак или родство."
   },
-  "publicCore": false
+  "review": {
+    "status": "complete-surviving-fragment-reading-manually-verified",
+    "transcriptionConfidence": "high-for-surviving-text; low-for-lost-role-and-exact-date",
+    "unresolved": [
+      "Заголовок роли и точная дата исходного акта физически утрачены."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверен весь повреждённый лист книги 1918 года: слева записи об умерших № 33–35, справа границы и вся уцелевшая строка отделённого фрагмента. Сохранены только буквальные имена и оренбургский статус; недоказанные 1913 год и роль свидетеля удалены, родство/брак/миграция не выводятся; создан clean crop 4500×2300."
+  }
 }

@@ -2,7 +2,11 @@
   "schemaVersion": 1,
   "sourceId": "YA-C50D1C84-053",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-of-twins",
+  "recordType": "birth-and-baptism-of-twins",
+  "primaryPersonIds": [
+    "P102988",
+    "P102989"
+  ],
   "collection": {
     "catalogId": "c50d1c84-0930-43db-af1c-c2572f3c77cc",
     "scanNumber": 53,
@@ -12,16 +16,34 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c50d1c84-0930-43db-af1c-c2572f3c77cc/53"
   },
   "event": {
-    "type": "birth-of-twins",
+    "type": "birth-and-baptism-of-twins",
+    "recordNumber": "120–121",
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "родились и крещены 30 декабря 1913 года",
+      "date": "1913-12-30",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Киселёвка"
     }
   },
   "mentions": [
+    {
+      "mentionId": "YA-C50D1C84-053-M0A",
+      "role": "child-twin",
+      "personId": "P102988",
+      "displayName": "Тарасий Тарасович Ампилов",
+      "nameAsTranscribed": "Тарасій",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C50D1C84-053-M0B",
+      "role": "child-twin",
+      "personId": "P102989",
+      "displayName": "Пётр Тарасович Ампилов",
+      "nameAsTranscribed": "Петръ",
+      "surnameSeries": true
+    },
     {
       "mentionId": "YA-C50D1C84-053-M1",
       "role": "deceased-father",
@@ -91,6 +113,12 @@
         "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-target-entry.png",
         "sha256": "9da6dba34f0939a458db4f26ddba0a9df1d3c6a778a9129c40d33f2a6636d71b",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c50d1c84-0930-43db-af1c-c2572f3c77cc/0053-deep-context.png",
+        "sha256": "e0063aec6dd07e9e6b13a5e08ab47d9cd3282fa5e69722e1f2b93fe86e543e77",
+        "description": "Чистый широкий фрагмент 4400×1800 со строками № 119–121 и итогом декабрьского раздела."
       }
     ],
     "quality": {
@@ -99,6 +127,7 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4774x3878",
       "targetDimensions": "2346x832",
+      "contextDimensions": "4400x1800",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
@@ -106,10 +135,10 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Близнецы Тарасий и Пётр. Села Киселёвки крестьянина, ныне умершего Тарасия Стефанова Ампилова, и законной жены его Марии Александровой. Восприемники: Давид Матвеев Ампилов и девица Мария Феодорова Ампилова; Илия Даниилов Анпилов и Фекла Павлова Ампилова.",
-    "modernInterpretation": "После смерти Тараса Степановича Ампилова у Марии Александровны родились близнецы Тарасий и Пётр; четыре восприемника принадлежат фамильному ряду.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "№ 120–121. Декабря 30 [родились], 30 [крещены]. Близнецы Тарасій и Петръ. Села Киселёвки крестьянина, ныне умершаго Тарасія Стефанова Ампилова, и законной жены его Маріи Александровой; оба православные. Восприемники Тарасія: того же села крестьянинъ Давидъ Матвѣевъ Ампиловъ и крестьянская дѣвица Марія Ѳеодорова Ампилова. Восприемники Петра: того же села крестьянинъ Илія Даніиловъ Анпиловъ и крестьянка Ѳекла Павлова Ампилова.",
+    "modernInterpretation": "30 декабря 1913 года, уже после смерти отца Тарасия Степановича Ампилова, у Марии Александровны родились и были крещены близнецы Тарасий и Пётр. У каждого ребёнка указана своя пара восприемников из фамильного ряда.",
+    "indexNote": "Индекс использован только для навигации. Имена близнецов, единая дата, формула об умершем отце и распределение восприемников по двум строкам проверены вручную по оригиналу.",
     "localOcr": "новь и вконнах месла\nшмітріска Родіонованкрих\nвенії\nсго Матрола Васильска:\nкона Пороскоювавкишово\nчав. оРа Пракаснаанье\nаохивам\n'ути Китсирии Металив\nКаледантина Мет\nКаномизикь Антрей Манкон\nто (ЕлаКислькикриплини\nрок\nпамив/авловч. Мопинь и\nаконлац Желаого Аернатти\n-иоака: Ава Проненалные\nТинолві Павивкаї",
     "localOcrWithSurnameLexicon": "новь и оконная меска\nмінріска Родіонованкрих\nвенії\nсго Матрона Васильска:\nтав. о Ра Прокоснаанье\nархивам\nКаледантина Мет\nКаномизика Антрей Манкон\nто (Ела Кисельки криплини\nрока\nпалив /авловч. Шопить и\nаконлац Жела ого Пернати\nТиколові Павива",
     "collation": {
@@ -118,15 +147,21 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Рождение и крещение близнецов Тарасия и Петра Тарасовичей Ампиловых 30 декабря 1913 года в Киселёвке.",
+    "identityNote": "P102988 и P102989 разделены как два ребёнка одной записи; P102989 не объединён с P102649, умершим в 1907 году старшим одноимённым сыном.",
+    "relationshipNote": "Отец—сыновья связаны по прямой формуле акта; восприемничество не трактуется как кровное родство.",
+    "migrationNote": "Место события не превращено в маршрут переселения."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-children-date-parents-godparents",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Обе строки близнецов и соседняя строка прочитаны вручную; пары восприемников разделены по строкам; создан clean crop 4400×1800."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Марія Феодорова Ампилова, крестьянская девица, то же село. ... Мать: Марія Александрова Ампилова.",

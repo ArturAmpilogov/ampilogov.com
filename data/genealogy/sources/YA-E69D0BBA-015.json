@@ -1,16 +1,26 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-015",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "15"
+    "scanNumber": 15,
+    "asRead": "Метрическая книга за 1911 год; оригинальный разворот прочитан вручную"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/15"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-E69D0BBA-015",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "displayName": "Фамильный ряд не подтверждён",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-full-view.jpg",
@@ -43,6 +53,12 @@
             "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-target-entry.png",
             "sha256": "a81bdde98ea65c972ffd05179f50a9f14ffcedcda3f30ef109eb789b38dfa594",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0015-target-entry-deep.png",
+            "sha256": "ae7ffb8f27aa0caeeed714c9ce03839c72166ee749d138685239be4352fcc7ef",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +66,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "6061x4734",
-          "targetDimensions": "1709x987",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5600x3900",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,27 +77,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified-false-hit",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный разворот, заголовок 1911 года, апрельские записи № 29–32, родители, восприемники и причт; фамильный ряд отсутствует. Wide clean crop 5600×3900."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "wurwur\nоннх папи\nГлкань ктттоно донесеноки\nПсалолииюь Алексанфра Жургатов\nЛо Дехевии Статркови. Rрeстї. Мhаwь\nвавидтв Рябишичи 2ататлапите\nМатоких Локочнова нбатрасосвавно\nСпентии, Малидвірменькей.",
-    "localOcrWithSurnameLexicon": "- 0\nПсалолиень Александра Муратов\nМо Дедевни Статрков. Reet\". Мань\nМатоких Лукьянова натасовавно\nСенти Мали вірменки.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-full-page-negative-review",
+    "literal": "На оригинальном развороте прочитаны апрельские записи о рождении № 29–32: имена детей, родители, восприемники и причт. Емельян Андреев Ампилогов и Параскева Гордиева в видимых строках отсутствуют; фамильный ряд не обнаружен.",
+    "modernInterpretation": "Индексная строка не относится к этому развороту; профиль, связь и картографическое событие не создаются.",
+    "indexNote": "Индекс использован только для навигации и отвергнут после ручного чтения всего листа."
   },
   "indexData": {
     "querySnippet": "Емельян Андреев Ампилогов и Законн. жена его Параскева Гордиева, оба православные Священник Маслов Диакон Димитрий Вознесенский Псаломщик Александр Туркин.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "assessment": "confirmed-false-after-manual-primary-scan-reading",
+    "discrepancy": "Индексные Емельян Андреев и Параскева Гордиева отсутствуют в записях № 29–32."
+  },
+  "event": {
+    "type": "negative-index-review",
+    "date": {
+      "display": "апрель 1911 года",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного архивного листа.",
+    "identityNote": "Индексная семья на листе отсутствует.",
+    "migrationNote": "Оснований для карты или миграции нет."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false
 }

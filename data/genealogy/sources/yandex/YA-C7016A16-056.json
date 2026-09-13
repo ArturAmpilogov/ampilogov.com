@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-C7016A16-056",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
     "scanNumber": 56,
@@ -12,12 +12,15 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c7016a16-4822-4f55-86a7-bc5c550d59bd/56"
   },
   "event": {
-    "type": "death",
+    "type": "death-and-burial",
     "date": {
-      "display": "26 февраля 1909",
-      "confidence": "high-for-year"
+      "display": "умер 26 февраля, погребён 27 февраля 1909 года",
+      "from": "1909-02-26",
+      "to": "1909-02-27",
+      "confidence": "high"
     },
     "place": {
+      "asWritten": "село Гамалеевка",
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
@@ -26,8 +29,8 @@
       "mentionId": "YA-C7016A16-056-M1",
       "role": "deceased",
       "personId": "P4302",
-      "displayName": "крестьянин Стефан Трифонов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Стефанъ Трифоновъ Ампиловъ",
+      "displayName": "Стефан Трифонович Ампилов",
+      "nameAsTranscribed": "Села Гамалеевки крестьянинъ Стефанъ Трифоновъ Ампиловъ",
       "surnameSeries": true
     }
   ],
@@ -51,6 +54,12 @@
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0056-target-entry.png",
         "sha256": "bce8ee2ddcc06b8d30f947a86379de74ea6459078deebcb1905e5d8bc95084e1",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0056-target-context-deep.png",
+        "sha256": "7620b85a40478538f70fc13b06c5f847c7b8835d3666bf30d15cc48183fb169b",
+        "description": "Широкий clean-фрагмент записи № 10 со всеми графами смерти, причины, исповеди и погребения."
       }
     ],
     "quality": {
@@ -58,18 +67,21 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "10864x8780",
-      "targetDimensions": "3087x4926",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "10000x1900",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянин Стефан Трифонов Ампилов. Умер 26, погребён 27 февраля 1909 года; 75 лет; от старости.",
-    "modernInterpretation": "26 февраля 1909 года в возрасте 75 лет от старости умер Стефан Трифонович Ампилов; имя, место и возраст связывают запись с ранее документированным Стефаном Трифоновичем Анпилоговым.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-manual-transcription",
+    "literal": "Февраль. Мужескаго пола № 10. 26 [умеръ], 27 [погребёнъ]. Села Гамалеевки крестьянинъ Стефанъ Трифоновъ Ампиловъ. 75 лѣтъ. Отъ старости. Исповедалъ и приобщалъ священникъ Владимир Киселевскій; погребёнъ на кладбищѣ.",
+    "modernInterpretation": "Стефан Трифонович Ампилов умер 26 февраля 1909 года в селе Гамалеевке в возрасте 75 лет от старости и был погребён 27 февраля.",
+    "indexNote": "Полное имя, даты смерти и погребения, возраст и причина смерти прочитаны вручную по оригиналу; индекс использован только для навигации.",
     "localOcr": "МбжЕска\nЄБЕНЇА\n1в.\nСела вашантевки печстьмить\n75\n(тефань Монфонівь Асипиловч\nmафrinp Rtue debessm\nСилазатальсткикрестьяита\nНивита Стеаранова Приданнитсва\n2л.\nвилденниккв 1ісопченір Ки\nСела аманьевки юрествяить Свож\n28.\n49\nсмій Миханлевь Медоеднть т\nсвралч лильсмит умерии спусикс\nмиренни\nBaxe/ran tmade\nСма Гаманчевки пеествяти л Сане\nліано Марасова Лаврентьєва\nсвииь Павеич\nмидентаг /З лахриа\nгвннот\nСела Рамантевки прествяттв) Гост\nна Васил, яа Шахавцева дигАнфжса-",
     "localOcrWithSurnameLexicon": "ЄБЕНЇА\n1в.\nСела вашанневки печетьмить\n75\n(тефань Монфоновь Аситилов\"\nmadrinp Rtue debessm\nСила затальски крестита\nНивита Стеаранова Приданнитсва\n2л.\nвеленникв 1 сопетір Ки\nСела станьевки юрествять Свож\n28.\n49\nмій Михайлов Медоеднь т\nмиренни\nBaxe/ran tmade\nСта Раманчевки пествяти а Сане\nліано Марасова Лаврентієва\nсвиль Павеи\nСела Рамаллевки прествятта) Гост\nна Васил, яс Шаховцева дигАнфиса-",
     "collation": {
@@ -82,14 +94,21 @@
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-manual-reading",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверена запись мужского счёта № 10: даты смерти и погребения, полное имя, сословие, место, возраст, причина, священник и место погребения; существующий backlink P4302 уже был корректен."
   },
   "indexData": {
     "querySnippet": "Умерший: Стефан Трифонов Ампилов, крестьянин, село Гамалеевка, 75. Умерший: Феодор Никитин Приданников, 2 месяца.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-death-and-burial-after-full-scan-review"
+  },
+  "primaryPersonId": "P4302",
+  "context": {
+    "eventSummary": "Смерть и погребение Стефана Трифоновича Ампилова в Гамалеевке в феврале 1909 года.",
+    "identityNote": "P4302 подтверждён полным именем, Гамалеевкой и возрастом, совместимым с более ранними документами.",
+    "migrationNote": "Запись смерти в Гамалеевке не создаёт отдельного маршрута."
   }
 }

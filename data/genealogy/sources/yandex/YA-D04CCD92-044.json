@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-044",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-baptism",
   "collection": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 44,
@@ -12,30 +12,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/44"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-baptism",
+    "recordNumber": 100,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "крещение 22.11.1913",
+      "iso": "1913-11-22",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "рождение 20.11.1913",
+      "iso": "1913-11-20",
+      "calendar": "julian",
+      "confidence": "high"
     },
     "place": {
+      "asWritten": "село Гамалеевка",
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-D04CCD92-044-M1",
-      "role": "father",
-      "personId": "P102696",
-      "displayName": "крестьянин Сѵмеон Миронов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Сѵмеонъ Мироновъ Ампиловъ",
+      "role": "child",
+      "personId": "P103006",
+      "nameAsTranscribed": "Николай",
+      "displayName": "Николай Симеонович Ампилов",
       "surnameSeries": true
     },
     {
       "mentionId": "YA-D04CCD92-044-M2",
+      "role": "father",
+      "personId": "P102696",
+      "nameAsTranscribed": "Симеонъ Мироновъ Ампиловъ",
+      "displayName": "Симеон Миронович Ампилов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-044-M3",
       "role": "mother",
       "personId": null,
-      "displayName": "жена его Дарія Алексіева",
-      "nameAsTranscribed": "жена его Дарія Алексіева",
+      "nameAsTranscribed": "Дарія Алексіева",
+      "displayName": "Дария Алексеевна",
       "surnameSeries": false
     }
   ],
@@ -59,6 +77,12 @@
         "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0044-target-entry.png",
         "sha256": "782b20fab5544842c103d8b621bb0f2187b6493e5affa021fefb96b1ecf9169b",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0044-target-context-deep.jpg",
+        "sha256": "8a0474be93b85a77747c5b0c23eb09931f7bf3e8b2d2591a4e0fabbad9a8f32b",
+        "description": "Широкий крупный фрагмент целевой записи с датами, именами, родителями и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -67,37 +91,46 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5305x4370",
       "targetDimensions": "1389x746",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5200x1150",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянин Симеон Миронов Ампилов и жена его Дария Алексиева; православные.",
-    "modernInterpretation": "Семён Миронович Ампилов и Дарья Алексеевна названы родителями после их брака того же года.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "норь Петрієь партоєки жросма его Пелачіз\nСіємонова,\nправослаєння\nCL\nДіакинь /саннь Спакова\nогааномизяти Чиім Соваива.\nСема Алекенявки крестьянинь Артальні\nай Тимосив. Лапаень и жена его\nсиусани клозана кроооиаение",
-    "localOcrWithSurnameLexicon": "норь Петрись парковки грома его Пелачі,\nСіємонова,\nправослаєння\nCL\nобрі.\nДіакинь /саннь пакова\nвесномизити Чиім Совалва.\nСена Алекснявки крестьянинь Артальні\nай Тимосив. Лапаень и жена его",
+    "status": "complete-manual-reading-of-original",
+    "literal": "№ 100. 20. 22. Николай, мученика 20 ноября. Села Гамалеевки крестьянинъ Симеонъ Мироновъ Ампиловъ и жена его Дарія Алексіева, православные.",
+    "modernInterpretation": "В акте № 100 записано рождение Николай Симеонович Ампилов: 20.11.1913 и крещение 22.11.1913. Родители — Симеон Миронович Ампилов и Дария Алексеевна; мать сохранена как участница акта без отдельного профиля, поскольку её собственная фамилия не указана.",
+    "indexNote": "Индекс перечисляет участников других строк листа. Имя ребёнка, даты и родители акта № 100 прочитаны непосредственно по оригиналу.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryBasis": "manual-reading-of-saved-original",
+      "externalIndex": "navigation-only"
     }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-against-original-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот и вся строка акта № 100 во всех графах: номер, даты рождения и крещения, имя ребёнка, календарное наречение, родители, сословие, место и восприемники. Связь отец—сын основана на прямой формуле акта; собственная фамилия матери, дополнительное родство и миграция не выводятся.",
+    "correctionHistory": [
+      "2026-09-13: акт № 100 вручную перечитан по широкому фрагменту оригинала; восстановлены ребёнок, точные даты, родители."
     ]
   },
   "indexData": {
     "querySnippet": "Отец: Иоанн Иоаннов Ефремов, крестьянин, село Гамалеевка. Мать: Дария Алексеева Ампилова. Мать: Пелагия Иоаннова Михайлова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verification": "corrected-and-expanded-from-original",
+    "warning": "Индекс перечисляет участников других строк листа. Имя ребёнка, даты и родители акта № 100 прочитаны непосредственно по оригиналу."
+  },
+  "primaryPersonId": "P103006",
+  "historicalContext": {
+    "text": "Метрическая запись фиксирует семейное событие в приходе села Гамалеевки в 1913 году. Формула «крестьянин села Гамалеевки» описывает документированный статус и место семьи на дату акта; отдельный вывод о переселении не делается."
   }
 }

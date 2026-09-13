@@ -1,103 +1,31 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-045",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
-  "collection": {
-    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
-    "scanNumber": 45,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Гамалеевка, Кирсановка за 1913 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/45"
-  },
-  "event": {
-    "type": "birth-family",
-    "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-D04CCD92-045-M1",
-      "role": "father",
-      "personId": "P102646",
-      "displayName": "крестьянин Мирон Константинов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Миронъ Константиновъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-D04CCD92-045-M2",
-      "role": "mother",
-      "personId": null,
-      "displayName": "жена его Марѳа Ипатова",
-      "nameAsTranscribed": "жена его Марѳа Ипатова",
-      "surnameSeries": false
-    }
-  ],
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "false-positive-index-hit",
+  "primaryPersonId": null,
+  "collection": { "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3", "scanNumber": 45, "title": "Метрическая книга села Гамалеевки за 1913 год" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/45" },
+  "event": { "type": "birth-register-page-context", "recordNumber": "103–107", "date": { "display": "29 ноября — 7 декабря 1913 года", "from": "1913-11-29", "to": "1913-12-07", "confidence": "high" }, "place": { "normalized": "село Гамалеевка, Бузулукский уезд", "confidence": "high-for-collection" } },
+  "mentions": [],
   "evidence": {
-    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
-    "scanNumber": 45,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3", "scanNumber": 45,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-wide-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "ba81b067fb51191186c78331f48c734deb67281459da82003c09981ddaea869e",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-header.png",
-        "sha256": "6e2a8b0cecad49a02e515d7d10390ac8fa0bbdfa1fd8b37e956802f9cd472bea",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-target-entry.png",
-        "sha256": "6fc1e30c4d466304ecb61f032a3c7c19f34ea7a71ed0626cae56951d2fa4188b",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5305x4370",
-      "targetDimensions": "2541x837",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "capturedAt": "2026-09-11", "sha256": "ba81b067fb51191186c78331f48c734deb67281459da82003c09981ddaea869e",
+    "fragments": [{ "kind": "deep-context", "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0045-target-context-deep.png", "sha256": "506ac9afcebab35edd495e894bb794d87bee8b4e0a39017a3593daa09a63e01e", "description": "Чистый широкий фрагмент 5050×4000 с декабрьскими рождениями № 103–107 и всеми колонками." }],
+    "quality": { "originalImageDownloaded": true, "fullDimensions": "5305x4370", "contextDimensions": "5050x4000", "method": "manual-reading-of-downloaded-original-scan-and-wide-clean-crop" },
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Мирон Константинов Ампилов и жена его Марфа Ипатова; православные.",
-    "modernInterpretation": "Мирон Константинович Ампилов и Марфа Ипатовна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "«ОДАЛЫ\nNO\nИСТРичеСкой книги NА/9/3\nгÓдZ, чÁсть ПерваА, й РОдИ",
-    "localOcrWithSurnameLexicon": "«ПОДАЛЬН\nNO\nИСТРичеСкой книги нА /9/3",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Конец ноября и декабрь 1913 года, записи о рождениях № 103–107: Николай, Анна, Александр, Анна и Варвара. Полные колонки родителей и восприемников просмотрены; Мирона Константинова Ампилова, Марфы Иоанновой Ампиловой и Евдокии Максимовой Ампиловой на развороте нет.",
+    "modernInterpretation": "Разворот содержит рождения детей чужих семей села Гамалеевки и не подтверждает ни одну из индексных персон фамильного ряда.",
+    "indexNote": "Confirmed false: Яндекс связал с этим сканом текст другой страницы. Прежняя привязка к P102646 удалена."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Крёстная мать: Евдокия Максимова Ампилова. ... Мать: Марфа Иоаннова Ампилова. Крёстный отец: Иоанн Евфимов Медведкин, крестьянин, то же село.",
-    "fuzzyQuery": true
-  }
+  "context": { "eventSummary": "Проверка ложного индексного совпадения на странице рождений № 103–107.", "identityNote": "Носитель фамильного ряда на оригинале не обнаружен.", "relationshipNote": "Профили и родственные связи не создаются.", "migrationNote": "Картографическое событие фамильного ряда не создаётся." },
+  "indexData": { "querySnippet": "Крёстная мать: Евдокия Максимова Ампилова. ... Мать: Марфа Иоаннова Ампилова. Крёстный отец: Иоанн Евфимов Медведкин, крестьянин, то же село.", "fuzzyQuery": true, "discrepancy": "Заявленные лица и фамилия отсутствуют на полном развороте." },
+  "isRecord": true, "cardKind": "research-only-record", "publicCore": false,
+  "review": { "status": "confirmed-false-positive-after-manual-scan-review", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-13", "deepReviewScope": "Весь разворот и все видимые записи № 103–107 прочитаны вручную; прежняя ошибочная связь удалена; создан clean crop 5050×4000." }
 }

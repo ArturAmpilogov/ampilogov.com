@@ -1,36 +1,33 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-61A1DB7E-120",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "61a1db7e-6631-4e49-918a-680c554f541c",
     "scanNumber": 120,
-    "asRead": "Сохранённый фрагмент метрической книги; недостаточно резок для чтения фамилий"
+    "title": "Метрическая книга за 1894 год, часть первая, о родившихся",
+    "asRead": "Май–июнь, видимые записи № 24–28"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/61a1db7e-6631-4e49-918a-680c554f541c/120"
   },
-  "mentions": [],
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "вжнина\nооласти\nМой снл дчи вчисти мнинти нено\nКонасьі\nоывица Пелогия Венильсьо",
-    "modernInterpretation": "вжнина ооласти Мой снл дчи вчисти мнинти нено Конасьи оывица Пелогия Венильсьо",
-    "localOcr": "вжнина\nооласти\nМой снл дчи вчисти мнинти нено\nКонасьі\nоывица Пелогия Венильсьо",
-    "localOcrWithSurnameLexicon": "совь ввосічининь и престімнений\nопвиної (ворими Ліччинька Свво\nобласти\nМой оне дерени пристіянин сучий\nКонаный словчов и крествяненая\nровица Нелогія Василька,",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
-  },
+  "event": null,
+  "mentions": [
+    {
+      "mentionId": "YA-61A1DB7E-120-M1",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Фамильный ряд на полном листе не обнаружен",
+      "displayName": "Ложное индексное совпадение",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "catalogId": "61a1db7e-6631-4e49-918a-680c554f541c",
     "scanNumber": 120,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "yandex-archive-original-image-download-with-full-width-manual-review-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
     "capturedAt": "2026-09-11",
@@ -40,85 +37,59 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/61a1db7e-6631-4e49-918a-680c554f541c/0120-header.png",
         "sha256": "e8f8bd3d6978a420a12fa0c3e9525fa6c775fd73c1555199025b2a17fe399839",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок и структура полного архивного разворота."
       },
       {
-        "kind": "target-entry",
+        "kind": "indexed-coordinate",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/61a1db7e-6631-4e49-918a-680c554f541c/0120-target-entry.png",
         "sha256": "801c5d338f7f82923cb6a893e39037cb7f5f06b8b3d0945556eab6bbc29a9ff4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "description": "Ранний координатный фрагмент; проверен только совместно с полным листом."
+      },
+      {
+        "kind": "full-width-target-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/61a1db7e-6631-4e49-918a-680c554f541c/0120-target-context-deep.jpg",
+        "sha256": "3ee1eafeb7e635affc2da5be5854417e1916d9bc2e0fea45df66044f5f007508",
+        "description": "Чистый полноширинный фрагмент всех видимых строк и границ колонок.",
+        "dimensions": "5600x3800"
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsManuallyRead": true,
       "fullDimensions": "5915x4691",
-      "targetDimensions": "1450x604",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-with-full-width-clean-recrop",
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.jpg",
-        "sha256": "51cfcba57055f709d3f104d67d29e9665b2b267736e397d7fbf8e2f8677a965f",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-target-entry.jpg",
-            "sha256": "6fa3e4a3e1ac4436ff1890f966b0b5d2d697846cb657d42001cee209cc6fb16d",
-            "description": "Локальный фрагмент, требующий качественного повторного захвата."
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "61a1db7e-6631-4e49-918a-680c554f541c",
-            "scanNumber": 120,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "48834f5efb129074143aed8a9f8977de07078037fc05ead1ce93f5fa656ee58a",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-header.png",
-                "sha256": "e8f8bd3d6978a420a12fa0c3e9525fa6c775fd73c1555199025b2a17fe399839",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/61a1db7e-6631-4e49-918a-680c554f541c/0120-target-entry.png",
-                "sha256": "f185b0c9d40c31ee1ff2e52fc069731fddd098abba31654f877a8e0e0677ff03",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5915x4691",
-              "targetDimensions": "1550x844",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "uploadStatus": "pending-centralized-upload",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "transcription": {
+    "status": "complete-primary-scan-reviewed-confirmed-false",
+    "literal": "Метрическая книга 1894 года, часть первая, о родившихся; на полном развороте видны записи № 24–28 и их восприемники. Гавриил Гавриилов Ампилогов и варианты фамильного ряда ни в одной строке не читаются.",
+    "modernInterpretation": "Полный первичный лист не содержит заявленного индексом носителя исследуемого фамильного ряда; профиль, карта, родство и миграция не создаются.",
+    "indexNote": "Индекс смешал восприемников соседних строк и сформировал отсутствующего Гавриила Ампилогова; координатный фрагмент содержит Сергея Родкова и Анастасию Васильеву, а не фамильный ряд."
+  },
+  "isRecord": true,
+  "cardKind": "false-positive-record",
+  "publicCore": false,
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Отрицательная проверка поискового совпадения по полному первичному листу.",
+    "identityNote": "Индексная фамильная гипотеза отвергнута ручным чтением оригинала и границ всех видимых строк.",
+    "migrationNote": "Фамильного события нет; миграция не выводится."
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-absence-of-indexed-surname-person-on-full-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный локальный оригинал, заголовок, все видимые строки и границы колонок; clean full-width crop; буквальная сверка индексной фразы; совпадение отвергнуто; профили, links, карта и миграция не создавались"
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Гавриил Гавриилов Ампилогов, крестьянин, та же деревня. Крёстный отец: Петр Дометиев Вашуркин, крестьянин, то же село.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexDiscrepancy": "Индекс смешал восприемников соседних строк и сформировал отсутствующего Гавриила Ампилогова; координатный фрагмент содержит Сергея Родкова и Анастасию Васильеву, а не фамильный ряд."
   }
 }

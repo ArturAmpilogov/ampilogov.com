@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-007",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 7,
@@ -13,22 +13,61 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/7"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-007-M1",
-      "role": "surname-series-mention",
-      "displayName": "Амилогов",
-      "nameAsTranscribed": "Амілогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102902",
+      "displayName": "Семён Прокопьевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Семен Прокоп.",
+      "surnameSeries": true,
+      "yearAsWritten": "1912"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-007-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102903",
+      "displayName": "Тимофей Фёдорович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Тимофей Федор.",
+      "surnameSeries": true,
+      "yearAsWritten": "1900"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-007-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102904",
+      "displayName": "Иван Егорович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Иван Егорович",
+      "surnameSeries": true,
+      "yearAsWritten": "1914"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-007-M4",
+      "role": "military-register-listed-person",
+      "personId": "P102905",
+      "displayName": "Владимир «Варф.» Ампилогов",
+      "nameAsTranscribed": "Ампилогов Владимир Варф.",
+      "surnameSeries": true,
+      "yearAsWritten": "1911"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-007-M5",
+      "role": "military-register-listed-person",
+      "personId": "P102906",
+      "displayName": "Николай Захарович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Никол. Зах.",
+      "surnameSeries": true,
+      "yearAsWritten": "1905"
     }
   ],
   "evidence": {
@@ -48,46 +87,53 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0007-target-entry.png",
-        "sha256": "53e74465dc4388aa28b38be6280614c5eaa8d22091591fc007356288e64f314d",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0007-target-context-deep.jpg",
+        "sha256": "89920ff0b02a3b73dd7ae885a05cdbb910ba2508c56ac63b1e8eb5e12b1a7887",
+        "description": "Крупный clean crop почти полного roster-листа, сохраняющий строки фамильного ряда и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6486x9018",
-      "targetDimensions": "3960x6935",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-roster-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "Семилрч,ики в арчество\n1з Алишосов самен Прекон\n1912\n114. Авдеев Нийолай Длеттр.\n1916\n133\n115 Пленсев Семев\nВасил.\n1902\n116 Амілогов Тилофей Федор-\n1900\n123\n117 Алилогов Иван вторович\n1914\n1\n118 Ачкасов Егор Михайлович\n1903\n19 A0\nдумлов Куряамий Фус.\n1900\n120 Платурав Петір Семен.\n191\n48\n21.А врамов Иван Аіндроевіч\n1916\n133\n122 Вминов Хусань Влий.\n1901\n1\n123. Помиилогов Роладимир Варод/9М\n124 Фінтоненяо Тимофві\n1907\n133\n125 Амішлогов Кикал. Зал\n1905\n126 Анненгов Вас. Ал.\n1916\n127 Всаср Пямей Лайьог\n1915\n133-a\n128. Абдюков Камимулла\nригм\n1900 133\n129 Аламов ригергий Сий.\n1905\n133°",
-    "modernInterpretation": "Семилрч,ики в арчество 1з Алишосов самен Прекон 1912 114. Авдеев Нийолай Длеттр. 1916 133 115 Пленсев Семев Васил. 1902 116 Амилогов Тилофей Федор- 1900 123 117 Алилогов Иван вторович 1914 1 118 Ачкасов Егор Михайлович 1903 19 A0 думлов Куряамий Фус. 1900 120 Платурав Петир Семен. 191 48 21.А врамов Иван Аиндроевич 1916 133 122 Вминов Хусань Влий. 1901 1 123. Помиилогов Роладимир Варод/9М 124 Финтоненяо Тимофви 1907 133 125 Амишлогов Кикал. Зал 1905 126 Анненгов Вас. Ал. 1916 127 Всаср Пямей Лайьог 1915 133-a 128. Абдюков Камимулла ригм 1900 133 129 Аламов ригергий Сий. 1905 133°",
-    "localOcr": "Семилрч,ики в арчество\n1з Алишосов самен Прекон\n1912\n114. Авдеев Нийолай Длеттр.\n1916\n133\n115 Пленсев Семев\nВасил.\n1902\n116 Амілогов Тилофей Федор-\n1900\n123\n117 Алилогов Иван вторович\n1914\n1\n118 Ачкасов Егор Михайлович\n1903\n19 A0\nдумлов Куряамий Фус.\n1900\n120 Платурав Петір Семен.\n191\n48\n21.А врамов Иван Аіндроевіч\n1916\n133\n122 Вминов Хусань Влий.\n1901\n1\n123. Помиилогов Роладимир Варод/9М\n124 Фінтоненяо Тимофві\n1907\n133\n125 Амішлогов Кикал. Зал\n1905\n126 Анненгов Вас. Ал.\n1916\n127 Всаср Пямей Лайьог\n1915\n133-a\n128. Абдюков Камимулла\nригм\n1900 133\n129 Аламов ригергий Сий.\n1905\n133°",
-    "localOcrWithSurnameLexicon": "Семитом,нии в арчество\nиз Алишосов самен Прекон\n1912\n114. Авдеев Николай Длитр.\n1916\n133\n115 Пленеев Селев.\nВасил.\n1902\n116 Ампилогов Тилофей Федор-\n1900\n123\n117 Амилогов Иван вторович\n1914\n1\n118 Ачкасов Егор Михайлович\n1903\n19 А0\nдумов Курманий Фус.\n1900\n120 Платурав Петр Семен.\n1911\n48\n21. Аврамов Иван Андросвіч\n1916\n133\n122 Вминов Хусань Влит.\n1901\n1\n123. Помпилогов Роладимир Варод /9М\n124 Фінтоненяо Тимофві\n1907\n133\n125 Алішлогов Викал. Зал\n1905\n7\n126 Анненков Вас. Ал.\n1916\n127 Всаср Пямей Лайког\n1915\n133-а\n128. Абдоков Камимулла\n1900 133\n129 Аламов Григоргий Сий.\n1905\n133°",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "113. Ампилогов Семен Прокоп. | 1912 | 1\n116. Ампилогов Тимофей Федор. | 1900 | 123\n117. Ампилогов Иван Егорович | 1914 | 1\n123. Ампилогов Владимир Варф. | 1911\n125. Ампилогов Никол. Зах. | 1905 | 7",
+    "modernInterpretation": "В строках № 113, 116, 117, 123 и 125 перечислены Семён Прокопьевич, Тимофей Фёдорович, Иван Егорович, Владимир с сокращённым отчеством «Варф.» и Николай Захарович Ампилоговы; годы в графе — 1912, 1900, 1914, 1911 и 1905.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; ФИО, сокращения и годы перепроверены по полному листу и крупному clean crop.",
     "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "113 Ампилогов Семен Прокоп 1912 114. Авдеев Николай Дмитр.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "military-registration-list",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен roster-лист scan 7 и строки № 113–129. Пять фамильных строк прочитаны независимо от OCR; сокращение «Варф.» не раскрыто. Одноимённые старые профили с несовместимыми годами не объединены. Военно-учётный контекст не превращён в родство или миграцию.",
     "unresolved": []
+  },
+  "context": {
+    "summary": "Именной военно-учётный список документирует перечисленных носителей фамилии Ампилогов и записанные рядом годы.",
+    "historicalContext": "Период дела 1941–1945 относится к военному учёту. Коды и служебные сокращения не раскрыты без легенды.",
+    "genealogicalConclusion": "Карточка подтверждает имена и годы как написано; место списка не считается местом рождения или доказательством переселения. Родство документом не установлено.",
+    "indexDiscrepancy": "Яндекс/OCR искажал фамилии, имена и годы; карточка нормализована по рукописному оригиналу."
   }
 }

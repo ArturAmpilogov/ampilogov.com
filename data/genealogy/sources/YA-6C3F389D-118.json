@@ -2,28 +2,21 @@
   "schemaVersion": 1,
   "sourceId": "YA-6C3F389D-118",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "6c3f389d-ec33-4b0a-baad-1453fbbe0b90",
-    "scanNumber": 118
+    "scanNumber": 118,
+    "asRead": "Метрическая книга за 1893 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/6c3f389d-ec33-4b0a-baad-1453fbbe0b90/118"
   },
   "mentions": [],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "aPe\nротВеннни на марамі\n/uгобнe писеми\nгорі Висливея неро\ngrunsas u nafurtos sne\n2ка Зроур Квявиака.\nМогокиепаенни Каа",
-    "modernInterpretation": "aPe ротВеннни на марами /uгобнe писеми гори Висливея неро grunsas u nafurtos sne 2ка Зроур Квявиака. Могокиепаенни Каа",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "aPe\nротВеннни на марамі\n/uгобнe писеми\nгорі Висливея неро\ngrunsas u nafurtos sne\n2ка Зроур Квявиака.\nМогокиепаенни Каа",
-    "localOcrWithSurnameLexicon": "и nolarb eradaya\nВаживсва Ши роежнова\nдарственныи архид\n1Н иго тие посенна пора.\nдлинная и паричтоя жке\nнем Дарбя Каевлина\n•Петрова.\nМогонипнення КаРа\nrin enonnos Чершиг",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Локальные снимок и целевой фрагмент слишком размыты для надёжного чтения фамилии в целевой строке."
+    "status": "complete-primary-scan-negative-review",
+    "literal": "На полном ноябрьском развороте части о родившихся видны записи №51–55: Ксения, Дионисий, Михаил, Феодор и Матрона. В проверенной графе восприемников читаются казаки и казачьи девицы иных фамилий. Индексные Фёдор Филиппов Ампилогов и Ульяна Петрова Ампилогова на листе отсутствуют.",
+    "modernInterpretation": "Фёдор Филиппов Ампилогов и Ульяна Петрова Ампилогова отсутствуют; индекс склеил или перенёс текст с другого листа.",
+    "indexNote": "Индекс использован только для навигации и опровергнут ручным чтением полного сохранённого разворота."
   },
   "evidence": {
     "catalogId": "6c3f389d-ec33-4b0a-baad-1453fbbe0b90",
@@ -109,14 +102,38 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный разворот (1–11 ноября 1893 года, записи №51–55), заголовок, все видимые строки и существующий крупный фрагмент; проверены границы строк, имена, роли и фамилии. Исследуемый фамильный ряд не обнаружен.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Того же поселка казак Федор Филиппов Ампилогов и казачья девица Ульяна Петрова Ампилогова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Фёдор Филиппов Ампилогов и Ульяна Петрова Ампилогова отсутствуют; индекс склеил или перенёс текст с другого листа."
+    ]
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "birth-register-page",
+    "date": {
+      "display": "1–11 ноября 1893 года, записи №51–55",
+      "confidence": "high-for-visible-range"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский приход и соседние поселения",
+      "normalized": "Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Фёдор Филиппов Ампилогов и Ульяна Петрова Ампилогова отсутствуют; индекс склеил или перенёс текст с другого листа.",
+    "relationshipBoundary": "Участники иных фамилий не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Отрицательный результат сохраняется против повторного принятия fuzzy-hit."
   }
 }

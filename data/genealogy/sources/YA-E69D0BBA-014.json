@@ -1,16 +1,43 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-014",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "14"
+    "scanNumber": 14,
+    "asRead": "Метрическая книга за 1911 год; оригинальный разворот прочитан вручную"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/14"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-E69D0BBA-014-M1",
+      "role": "godmother",
+      "personId": "P103075",
+      "nameAsTranscribed": "крестьянка Марія Евфиміева Ампилогова",
+      "displayName": "Мария Евфимиевна Ампилогова",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-E69D0BBA-014-M2",
+      "role": "child",
+      "personId": null,
+      "nameAsTranscribed": "Марія",
+      "displayName": "Мария",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E69D0BBA-014-M3",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "той же села крестьянинъ Гавріилъ Ивановъ Петушниковъ",
+      "displayName": "Гавриил Иванович Петушников",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-full-view.jpg",
@@ -43,6 +70,12 @@
             "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry.png",
             "sha256": "fa5845f401d712093219e559899a624634ed57e552bab3689cd3d145a40271b6",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry-deep.png",
+            "sha256": "dbba91c1064acbccd645d6baabeda180fb87dfedafb8a9016fdf7e9dfc5c65b0",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +83,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "6073x4734",
-          "targetDimensions": "1428x666",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5600x1500",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,27 +94,45 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны весь разворот, мартовская строка женского пола № 28, даты, родители, восприемники, причт и соседние строки; индексная склейка разделена. Wide clean crop 5600×1500."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "пии усадинчивесий санна\nНаанова Достонкіка,\nный аох\nарственный",
-    "localOcrWithSurnameLexicon": "пии усадинчивений санна\nНапова Достонкона,\nный арх\nарственный",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Март. Женского пола № 28. 13 родилась, 14 крещена. Марія. Восприемники: той же села крестьянинъ Гавріилъ Ивановъ Петушниковъ и крестьянка Марія Евфиміева Ампилогова.",
+    "modernInterpretation": "13 марта 1911 года родилась Мария из другой семьи; крещена 14 марта. Восприемницей была крестьянка Мария Евфимиевна Ампилогова.",
+    "indexNote": "Индекс верно подсказал Марию Евфимиевну, но приписанный ему Евфим Алексеевич относится к иной строке и в эту запись не включён."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Мария Евфимова Ампилогова. ... Крёстный отец: Евфим Алексеев Ампилогов, крестьянин, село Зобово.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "assessment": "partly-confirmed-with-index-line-conflation",
+    "discrepancy": "Мария Евфимиевна подтверждена; Евфим Алексеевич не участник этой строки."
+  },
+  "event": {
+    "type": "baptism-godparent",
+    "recordNumber": 28,
+    "date": {
+      "birth": "1911-03-13",
+      "baptism": "1911-03-14",
+      "display": "13–14 марта 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "zobovo-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Мария Евфимиевна Ампилогова названа восприемницей при крещении.",
+    "identityNote": "Создан отдельный godmother-only профиль; с младенцем-тёзкой 1913 года и людьми из других мест не объединён.",
+    "migrationNote": "Присутствие при крещении не доказывает переселение."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

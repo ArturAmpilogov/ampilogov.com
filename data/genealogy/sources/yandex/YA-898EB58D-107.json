@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-898EB58D-107",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 107,
@@ -12,25 +12,74 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/898eb58d-b230-41a1-aa5b-da6e30b40ea0/107"
   },
+  "primaryPersonId": "P102938",
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism-godparent",
+    "recordNumber": 93,
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 28 июня, крещён 29 июня 1909 года",
+      "birthIso": "1909-06-28",
+      "baptismIso": "1909-06-29",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Зобово",
+      "normalized": "Зобово, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "placeId": "zobovo-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-898EB58D-107-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "child",
+      "personId": null,
+      "sex": "male",
+      "nameAsTranscribed": "Петръ",
+      "modernName": "Пётр Петрович Колесников",
+      "displayName": "Пётр Петрович Колесников",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-107-M2",
+      "role": "parents",
+      "personId": null,
+      "nameAsTranscribed": "Села Зобова крестьянинъ Петръ Феодоровъ Колесниковъ и законная его жена Акилина Андреева, оба православные",
+      "modernName": "Пётр Фёдорович Колесников и Акилина Андреевна",
+      "displayName": "Пётр и Акилина Колесниковы",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-107-M3",
+      "role": "godfather",
+      "personId": null,
+      "sex": "male",
+      "nameAsTranscribed": "Села Зобова крестьянинъ Сергий Ивановъ Колесниковъ",
+      "modernName": "Сергей Иванович Колесников",
+      "displayName": "Сергей Иванович Колесников",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-107-M4",
+      "role": "godmother",
+      "personId": "P102938",
+      "sex": "female",
+      "nameAsTranscribed": "крестьянская жена Марія Спиридонова Ампилогова",
+      "modernName": "Мария Спиридоновна Ампилогова",
+      "displayName": "Мария Спиридоновна Ампилогова",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Июнь. Мужского пола № 93. 28 родился, 29 крещён. Петръ. Села Зобова крестьянинъ Петръ Феодоровъ Колесниковъ и законная его жена Акилина Андреева, оба православные. Восприемники: села Зобова крестьянинъ Сергий Ивановъ Колесниковъ и крестьянская жена Марія Спиридонова Ампилогова. Священник Алексий Маслов; диакон Димитрий Вознесенский; псаломщик Владимир Ильин.",
+    "modernInterpretation": "29 июня 1909 года Мария Спиридоновна Ампилогова была восприемницей Петра Петровича Колесникова в селе Зобове.",
+    "indexNote": "Индекс верно подсказал имя восприемницы, но добавил отца Стефана Васильевича Трифонова из другой строки; границы записи № 93 установлены по полному листу."
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Мария Спиридонова Ампилогова, крестьянская жена. Отец: Стефан Василіевъ Трифоновъ, крестьянин, деревня Стрелково.",
+    "fuzzyQuery": true,
+    "discrepancy": "Стефан Васильевич Трифонов и деревня Стрелково относятся к соседней записи, не к крещению Петра № 93."
+  },
   "evidence": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 107,
@@ -65,31 +114,21 @@
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОСКОКСКОЙ\nC VHOA\nгÓди, чАстЬ пеРваД, й\nЗвАніє, йма, отчЕство й фамиліА",
-    "modernInterpretation": "ОСКОКСКОЙ C VHOA гÓди, чАстЬ пеРваД, й ЗвАниє, йма, отчЕство й фамилиА",
-    "localOcr": "ОСКОКСКОЙ\nC VHOA\nгÓди, чАстЬ пеРваД, й\nЗвАніє, йма, отчЕство й фамиліА",
-    "localOcrWithSurnameLexicon": "ПОСКОКСКОЙ\nIC VHOA\nгОди, чАстЬ пеРваД, й\nЗвАніє, йма, отчЕство й фамиліА",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Восприемничество Марии Спиридоновны Ампилоговой при крещении чужого ребёнка.",
+    "identityNote": "Для Марии создан отдельный профиль фамильного ряда после отсутствия точного дубля; восприемничество не трактуется как родство.",
+    "migrationNote": "Миграция не выводится."
   },
-  "indexData": {
-    "querySnippet": "Крёстная мать: Мария Спиридонова Ампилогова, крестьянская жена. Отец: Стефан Василіевъ Трифоновъ, крестьянин, деревня Стрелково.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Собственная фамилия матери ребёнка в строке не названа; отдельный профиль не создавался."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверен весь июньский разворот, целевая запись мужского пола № 93, даты 28/29 июня, родители, оба восприемника и причт; индексная примесь соседнего Стефана Трифонова отделена."
   }
 }

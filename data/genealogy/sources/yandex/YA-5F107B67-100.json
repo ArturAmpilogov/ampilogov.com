@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5F107B67-100",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "military-service-record",
+  "recordType": "clergy-service-on-death-register-page",
   "collection": {
     "catalogId": "5f107b67-1507-4ed2-b70c-43dff79ceb5b",
     "scanNumber": 100,
@@ -13,22 +13,28 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5f107b67-1507-4ed2-b70c-43dff79ceb5b/100"
   },
   "event": {
-    "type": "military-service-record",
+    "type": "clergy-service-on-death-record",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "30–31 мая 1917 года",
+      "deathIso": "1917-05-30",
+      "burialIso": "1917-05-31",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-5F107B67-100-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "clergy",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "evidence": {
@@ -66,30 +72,32 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Прейурскай губірти и\nМихай лівект вписти\nрзца\nела Кармалки солдать\nУвант |Василіев Совсянни-",
-    "modernInterpretation": "Прейурскай губирти и Михай ливект вписти рзца ела Кармалки солдать Увант |Василиев Совсянни-",
-    "localOcr": "Прейурскай губірти и\nМихай лівект вписти\nрзца\nела Кармалки солдать\nУвант |Василіев Совсянни-",
-    "localOcrWithSurnameLexicon": "Принурскай губерни с\nМихай лівект вписти\nруда\nела Кармалки солдать\nУвант Василієв Совсянни-",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-for-target-row-and-clergy",
+    "literal": "1917 год, часть третья, об умерших. Май. Мужского пола № 17. 30 умер, 31 погребён. Оренбургской губернии и уезда, Михайловской волости, села Кармалки солдата Ивана Васильева [фамилия читается неуверенно; не Ампилогов], 37 лет. Умер от простуды. Погребение совершил священник Михаил Ампилогов; место погребения — кладбище.",
+    "modernInterpretation": "30 мая 1917 года умер 37-летний житель Кармалки иной фамилии, 31 мая его похоронили. Реальное упоминание ряда — служебная запись священника Михаила Ампилогова.",
+    "indexNote": "Индексный «Степан Филиппов Ампилогов, сын Иаков, 3 месяца» на данном листе отсутствует. Фамилия попала из другой строки; по оригиналу подтверждён только священник Михаил Ампилогов."
   },
   "indexData": {
     "querySnippet": "Солдата села Кармалки, Михайловской волости, Оренбургской губерніи и уѣзда, Степана Филиппова Ампилогова, сынъ Iаковъ. 3 мцевъ.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "confirmed-wrong-deceased-person; real match is clergy"
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-dates-age-cause-and-clergy; medium-for-unrelated-deceased-surname",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Фамилия чужого умершего читается неуверенно и не нормализована."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный разворот 100, майская строка №17, даты смерти/погребения, возраст, причина и графа совершителя. Индексный младенец Ампилогов отсутствует; карточка нормализована вокруг реальной служебной подписи P1653, без профиля умершего, родства или миграции."
+  },
+  "primaryPersonId": "P1653",
+  "context": {
+    "eventSummary": "Михаил Ампилогов совершил погребение чужого 37-летнего жителя Кармалки 31 мая 1917 года.",
+    "identityNote": "P1653 подтверждён именем, саном, Кармалкой и непрерывной серией подписей 1917 года.",
+    "migrationNote": "Служебная подпись не означает родство или переселение."
   }
 }

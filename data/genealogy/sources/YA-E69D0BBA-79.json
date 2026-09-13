@@ -1,35 +1,65 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-79",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — технический вариант идентификатора",
+  "recordType": "technical-source-alias",
+  "parallelOf": "YA-E69D0BBA-079",
+  "primaryPersonId": null,
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "79"
+    "scanNumber": 79,
+    "asRead": "Тот же физический разворот, что и YA-E69D0BBA-079"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/79"
   },
+  "event": null,
   "mentions": [],
+  "transcription": {
+    "status": "technical-alias-verified",
+    "literal": "Технический ID без ведущего нуля указывает на те же catalogId, scanNumber 79, URL и восстановленный оригинал, что каноническая карточка YA-E69D0BBA-079.",
+    "modernInterpretation": "Отдельного события и второго Record нет; полная проверка хранится в YA-E69D0BBA-079.",
+    "indexNote": "Дублет доказан совпадением catalogId, scanNumber, documentUrl и локального оригинала."
+  },
+  "indexData": {
+    "assessment": "technical duplicate of canonical YA-E69D0BBA-079",
+    "duplicateEvidence": "same catalogId e69d0bba-db0b-40a0-9632-5f9c017d0352, scanNumber 79, document URL and restored original SHA 623b3845fdf53ffdc4e3b259b9027cc8c08eeeec87615f4ca7c239ecf7b6f1e8",
+    "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Технический alias канонической карточки YA-E69D0BBA-079.",
+    "identityNote": "Участники, профили и backlinks повторно не создаются.",
+    "migrationNote": "Не картографируется."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-full-view.jpg",
-    "sha256": "995495a46e11531870af61db78def4a8c64fee1f8d3c2c8b25ded5b71d0f94ac",
+    "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-full-view.png",
+    "sha256": "623b3845fdf53ffdc4e3b259b9027cc8c08eeeec87615f4ca7c239ecf7b6f1e8",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-target-entry.jpg",
-        "sha256": "78eff880fff72b226d7004e5add695d99e1bc3014c971a8cf8db4d5c4c9a47db"
+        "kind": "target-entry-deep",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-target-entry-deep.png",
+        "sha256": "316a74db6854d78453b67a60930ef9eaf3cc1cb74c222c13b3e14fd8b1e3632e",
+        "description": "Общий широкий clean crop канонической карточки."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "5934x4734",
+      "targetDimensions": "5500x4000",
+      "method": "exact-duplicate-collation-and-shared-wide-clean-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "isRecord": false,
+  "cardKind": "technical-source-alias",
+  "publicCore": false,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-scan-url-and-restored-sha",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Сопоставлены оба sourceId, catalogId, scanNumber 79, URL и единый восстановленный оригинал; подтверждено отсутствие второго Record, профиля и backlink. Общий clean crop 5500x4000."
   }
 }

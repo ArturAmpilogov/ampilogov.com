@@ -2,15 +2,42 @@
   "schemaVersion": 1,
   "sourceId": "YA-D37AA13A-80",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "birth-and-baptism",
   "collection": {
     "catalogId": "d37aa13a-c421-4c57-9c50-baaa35bd8a7a",
-    "scanNumber": 80
+    "scanNumber": 80,
+    "title": "Метрическая книга сёл Воздвиженка, Зобово и Софийское за 1896 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/80"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D37AA13A-80-M1",
+      "role": "child",
+      "personId": "P103011",
+      "nameAsTranscribed": "Симеонъ",
+      "displayName": "Симеон Евфимович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D37AA13A-80-M2",
+      "role": "father",
+      "personId": "P1620",
+      "nameAsTranscribed": "села Зобова крестьянинъ Евфимъ Яковлевъ Ампилоговъ",
+      "displayName": "Ефим Яковлевич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-D37AA13A-80-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Анна Гаврилова",
+      "displayName": "Анна Гавриловна",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "catalogId": "d37aa13a-c421-4c57-9c50-baaa35bd8a7a",
     "scanNumber": 80,
@@ -32,6 +59,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0080-target-entry.png",
         "sha256": "38c513cb6ee888b277bb82ef5eb818e662d55b442f57656a61e79c96f9669e9e",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0080-target-context-deep.jpg",
+        "sha256": "c11b4026fa4c6675a3edfa381a03622247e31824101caced0de79ec79dabc9ab",
+        "description": "Широкий чистый фрагмент целевой записи со всеми значимыми графами и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -40,7 +73,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5139x4062",
       "targetDimensions": "1396x933",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5000x1500",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -59,27 +95,54 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "deep-reviewed-against-original-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот 1896 года и вся запись № 41 во всех графах: номер, даты, имя ребёнка, родительская формула, мать, восприемники и причт. P1620 выбран по согласованному семейному корпусу; P1740 не сливался.",
+    "correctionHistory": [
+      "2026-09-13: запись № 41 вручную восстановлена по оригиналу; ошибочный OCR соседней строки отброшен."
     ]
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "на\nДеревни Хутятиной Запаса\nармін рядовой Алексвй Пон-\nКратовч Моминь и Вакожная\nего енена Марія Стопанова;\nоба православным.\nоба православняй.\n(вященнийч Роаннь Лоповь.\nДіиконь Лнясиль СКолосова.\nДіалонь. Іоаннь Прешлева.\nДіаканч, Аристарові Орнові.\nровавекасо лутода Крествянинг\nриилова\nКомлая его оисна Марія 13а ск -\nісва: оба православнае.",
-    "modernInterpretation": "на Деревни Хутятиной Запаса армин рядовой Алексвй Пон- Кратовч Моминь и Вакожная его енена Мария Стопанова; оба православным. оба православняй. (вященнийч Роаннь Лоповь. Дииконь Лнясиль СКолосова. Диалонь. Іоаннь Прешлева. Диаканч, Аристарови Орнови. ровавекасо лутода Крествянинг риилова Комлая его оисна Мария 13а ск - исва: оба православнае.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "на\nДеревни Хутятиной Запаса\nармін рядовой Алексвй Пон-\nКратовч Моминь и Вакожная\nего енена Марія Стопанова;\nоба православным.\nоба православняй.\n(вященнийч Роаннь Лоповь.\nДіиконь Лнясиль СКолосова.\nДіалонь. Іоаннь Прешлева.\nДіаканч, Аристарові Орнові.\nровавекасо лутода Крествянинг\nриилова\nКомлая его оисна Марія 13а ск -\nісва: оба православнае.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-reading-of-original",
+    "literal": "Август. Мужского пола № 41. 11 родился, 14 крещён. Симеонъ. Села Зобова крестьянинъ Евфимъ Яковлевъ Ампилоговъ и законная жена его Анна Гаврилова, оба православные.",
+    "modernInterpretation": "11 августа 1896 года родился Симеон, сын крестьянина села Зобова Ефима Яковлевича Ампилогова и Анны Гавриловны; крещён 14 августа.",
+    "indexNote": "Прежний OCR захватывал соседние строки. Номер, даты, имя ребёнка и прямое отцовство прочитаны по полному оригиналу; P1620 выбран strongly-supported/high по точному имени, Зобову и документированной супруге Анне Гавриловне. P1740 оставлен кандидатом-дублем без merge."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verification": "corrected-from-original",
+    "warning": "Прежняя OCR-выборка относилась к соседней строке."
+  },
+  "primaryPersonId": "P103011",
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 41,
+    "date": {
+      "display": "крещён 14 августа 1896 года",
+      "iso": "1896-08-14",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "родился 11 августа 1896 года",
+      "iso": "1896-08-11",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд",
+      "placeId": "orenburg-uezd"
+    }
+  },
+  "historicalContext": {
+    "text": "Запись документирует семейное событие крестьянина села Зобова Ефима Яковлевича Ампилогова. Она расширяет известный корпус его детей, но не служит основанием для отдельного маршрута переселения.",
+    "identityBoundary": "Связь с P1620 strongly-supported/high; P1740 не объединён и не изменён."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

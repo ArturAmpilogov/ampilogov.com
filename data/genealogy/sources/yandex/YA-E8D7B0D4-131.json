@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-E8D7B0D4-131",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "marriage-godparent-mention",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db",
     "scanNumber": 131,
@@ -12,23 +12,40 @@
     "documentUrl": "https://yandex.ru/archive/catalog/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/131"
   },
   "event": {
-    "type": "marriage-godparent-mention",
+    "type": "source-review",
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "1916 год",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "деревня Половинская, Иркутская губерния"
+      "asWritten": "Бархатовская Ивано-Прокопьевская церковь",
+      "normalized": "Бархатово, Иркутская губерния"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E8D7B0D4-131-M1",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "Рязанской губ., Егорьевскаго уѣзда, Дербеновской волости, деревни Новоселки крестьянинъ Иванъ Спиридоновъ Минеевъ",
+      "displayName": "Иван Спиридонович Минеев",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E8D7B0D4-131-M2",
       "role": "godmother",
-      "personId": "P102728",
-      "displayName": "Анастасия Николаевна Ампалова (Половинская)",
-      "nameAsTranscribed": "крестьянская жена Анастасія Николаева Ампалова",
-      "surnameSeries": true
+      "personId": null,
+      "nameAsTranscribed": "Касьяновской волости и того же села крестьянская жена Акилина Павлова Дмитріева",
+      "displayName": "Акилина Павловна Дмитриева",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E8D7B0D4-131-M3",
+      "role": "child",
+      "personId": null,
+      "nameAsTranscribed": "Валентинъ",
+      "displayName": "Валентин",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -51,6 +68,13 @@
         "path": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-target-entry.png",
         "sha256": "d7db862b8052fea5b5831b12b9cb58041a02e4eefac1b4aac6d790a5eb314337",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/e8d7b0d4-d7c8-4413-87ec-d7d993b8c7db/0131-target-context-deep.png",
+        "sha256": "528e8e034e2564e95bff5e149ba918c83c8ffbfb78299bb7ec9a501ba136bf6c",
+        "description": "Полноширинный фрагмент заголовка и целевой строки, доказывающий чтение восприемников иных фамилий.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -59,37 +83,42 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5192x3824",
       "targetDimensions": "1293x842",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "4900x2000"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Мальтинской волости, Половинской деревни крестьянин Александр Александров Васильев и той же деревни крестьянская жена Анастасия Николаева Ампалова [в строке восприемников].",
-    "modernInterpretation": "Анастасия Николаевна Ампалова из деревни Половинской названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "воспріємникива.\nязанской губ„ сгорьевскаго\nбда, Дерусновскый волостю,\nдоровни Новоселовки престб-\nянина Ивань ринирвова\nМинесва и Кистивтолсной н\nволости и тоомле села пре-\nствянская жена Акилина\nПавлєва Димнтрева.",
-    "localOcrWithSurnameLexicon": "воспріємникива.\nязанской губ, егорьевскаго\nода, Дерусновской волостю,\nдоровни Новоселовки престо-\nянина Ивань ринарвова\nМинеста и Кисливтоленой н\nволости и тооме села пре-\nствянская жена Акилина\nПавлова Димитрева.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "Запись о рождении Валентина. Воспріемники: «Рязанской губ., Егорьевскаго уѣзда, Дербеновской волости, деревни Новоселки крестьянинъ Иванъ Спиридоновъ Минеевъ и Касьяновской волости и того же села крестьянская жена Акилина Павлова Дмитріева».",
+    "modernInterpretation": "Восприемники ребёнка — Иван Спиридонович Минеев и Акилина Павловна Дмитриева. Анастасии Николаевны Ампиловой/Ампаловой на строке и на полном видимом развороте нет.",
+    "indexNote": "Индекс Яндекса ошибочно приписал листу Анастасию Николаеву Ампилову и Александру Панчину. Полный скан и все видимые строки прочитаны вручную; сохранённый target-фрагмент прямо показывает Минеева и Дмитриеву."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
-  "publicCore": true,
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "complete-primary-scan-confirmed-false-index-hit",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: вручную проверены полный разворот, заголовок 1916 года, целевая строка и соседние строки; ложная профильная ссылка снята.",
+      "2026-09-12: осиротевший профиль удалён после глобальной проверки отсутствия независимых ссылок."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 5192x3824 birth spread, 1916 heading, complete visible target row across parent/godparent/clergy columns and adjacent row boundary; independent literal reading; confirmed false Yandex hit; removal of sole false-derived profile after global reference check; no public event/profile/map; clean 4900x2000 crop"
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Анастасия Николаева Ампилова, крестьянская жена, та же деревня. Крёстная мать: Александра Григорьева Панчина, крестьянская девица, Касьяновская деревня.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive: вместо индексной Анастасии Николаевой Ампиловой на оригинале Иван Спиридонович Минеев и Акилина Павловна Дмитриева."
+  },
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Негативная проверка индексного фамильного совпадения в метрической книге 1916 года.",
+    "identityNote": "Ложная профильная связь удалена: профиль был построен исключительно на ошибочном индексе и не подтверждается первичным изображением.",
+    "migrationNote": "Носителя фамильного ряда нет; карта и миграция неприменимы."
   }
 }

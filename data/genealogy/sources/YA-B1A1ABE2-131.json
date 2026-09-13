@@ -76,6 +76,12 @@
             "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0131-target-entry.png",
             "sha256": "60ed55be4074aa1e878f8fa73a3bdc1f3094b3f9d02612e7df6d576585af21b4",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0131-target-entry-deep.png",
+            "sha256": "bfc94e7be209e751812315a93e73e5c6b04dd9d7dc089a1d37b5df86bb59d99e",
+            "description": "Широкий крупный фрагмент целевой строки и соседнего контекста, вырезанный из оригинала без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -83,8 +89,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "4253x3600",
-          "targetDimensions": "3335x2431",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "3900x3000",
+          "method": "original-download-plus-wide-manual-recrop-and-human-reading"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -107,15 +113,36 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-links",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Отчество Дмитрия в подписи этого листа не указано; связь с Дмитрием Егоровичем основана на устойчивой службе того же диакона в Кармалке.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Отчество Дмитрия в подписи этого листа не указано; связь с Дмитрием Егоровичем основана на устойчивой службе того же диакона в Кармалке."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны июньская строка № 19, даты рождения и крещения, родители, восприемники и подпись причта; соседние строки отделены. Широкий clean crop 3900×3000."
   },
   "indexData": {
     "querySnippet": "Отец: Сергей Михайлов Ампилогов, унтер-офицер, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {
+      "display": "21–24 июня 1912 года",
+      "fromIso": "1912-06-21",
+      "toIso": "1912-06-24",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение Иоанна у Сергея Михайловича Ампилогова и Надежды Григорьевны; Павел Михайлович — восприемник, Дмитрий Ампилогов — клирик.",
+    "identityNote": "Связи установлены по прямым родственным или служебным формулам оригинала; внешняя индексация использована только для навигации.",
+    "familyContext": "Участники других фамилий сохранены как mentions; по совпадению отчества дополнительное родство не выводится.",
+    "migrationNote": "Запись события или службы в Кармалке не доказывает переселение."
   }
 }

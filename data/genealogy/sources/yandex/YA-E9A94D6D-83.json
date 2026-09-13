@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E9A94D6D-83",
-  "provider": "Яндекс Архив",
-  "recordType": "other",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "confirmed-false-positive",
   "collection": {
     "catalogId": "e9a94d6d-20db-446b-bb4a-c6bac7da1ff3",
     "scanNumber": 83
@@ -10,27 +10,12 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e9a94d6d-20db-446b-bb4a-c6bac7da1ff3/83"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E9A94D6D-83-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Носитель фамильного ряда: требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
-    "localOcr": "правосллавнай віх\n8.\n18\nрансповхавенія\nолилевски\nксстціч сп\ninerieовe\nТно жеполелкахи\nвика Анся Jaxовeiсвя\nПопови дочь, філвнзи\nССекоии, правохлавний\nвтрасповженя",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "1885 год, часть вторая, о бракосочетавшихся. На полном развороте проверены февральские записи № 1–4. В предполагаемой целевой строке невеста названа: «Того же поселка девка Агафія Яковлева Попова дочь, 17 лѣтъ, православнаго вѣроисповѣданія, первымъ бракомъ». Фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Брачный разворот содержит записи №1–4; предполагаемая строка относится к Агафии Яковлевне Поповой. Носителей фамильного ряда нет.",
+    "indexNote": "Предварительная карточка не содержала имени; полный скан подтверждает ложное fuzzy-совпадение и фамилию Попова."
   },
   "evidence": {
     "catalogId": "e9a94d6d-20db-446b-bb4a-c6bac7da1ff3",
@@ -53,6 +38,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/e9a94d6d-20db-446b-bb4a-c6bac7da1ff3/0083-target-entry.png",
         "sha256": "cc010a8f61f521a1b59b9c059fcadba22745bc56af4aff812563dfae51c944d9",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/e9a94d6d-20db-446b-bb4a-c6bac7da1ff3/0083-target-context-deep.png",
+        "sha256": "7fe745f841f41d9d4ca105c808319b75a10e1873113615137dff5586ce4af6d8",
+        "description": "Чистый полноширинный контекстный фрагмент полного разворота со всеми проверенными графами."
       }
     ],
     "quality": {
@@ -61,7 +52,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5016x4075",
       "targetDimensions": "1200x1063",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "4700x3300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -93,15 +87,25 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Расшифровать совпадение по скану.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный брачный разворот 1885 года, февральские записи №1–4, обе половины строк и поручители; ручное чтение Поповой; clean crop 4700x3300"
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён для чтения.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Предварительная карточка не содержала имени; полный скан подтверждает ложное fuzzy-совпадение и фамилию Попова."
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "isRecord": true,
+  "cardKind": "confirmed-false-positive",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное fuzzy-совпадение на брачном развороте 1885 года.",
+    "identityNote": "Носителя исследуемого фамильного ряда на полном листе нет; профиль и связи не создаются.",
+    "migrationNote": "Карта и миграция не создаются."
   }
 }

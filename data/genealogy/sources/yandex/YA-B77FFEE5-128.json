@@ -2,94 +2,79 @@
   "schemaVersion": 1,
   "sourceId": "YA-B77FFEE5-128",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
     "scanNumber": 128,
-    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Бараково, Титовка, Кармалка, Борки, Троицкое, за 1912 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Бараково, Титовка, Кармалка, Борки, Троицкое, за 1912 г."
+    "title": "Метрическая книга записей о рождении, бракосочетании и смерти жителей сёл Бараково, Титовка, Кармалка, Борки, Троицкое, за 1912 г."
   },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/b77ffee5-da49-4e08-9b01-e88b4ddf640e/128"
-  },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/b77ffee5-da49-4e08-9b01-e88b4ddf640e/128" },
   "event": {
-    "type": "archival-mention",
+    "type": "death-and-burial",
+    "recordNumber": "женский счёт №3",
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "умерла 18 января, погребена 20 января 1912 года",
+      "deathIso": "1912-01-18",
+      "burialIso": "1912-01-20",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "Села Кармалки",
+      "normalized": "село Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-B77FFEE5-128-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [{
+    "mentionId": "YA-B77FFEE5-128-M1",
+    "role": "deceased",
+    "personId": "P102971",
+    "displayName": "Ксения Гавриловна Ампилогова",
+    "nameAsTranscribed": "Села Кармалки крестьянская жена Ксенія Гавріилова Ампилогова",
+    "sex": "female",
+    "surnameSeries": true
+  }],
+  "primaryPersonId": "P102971",
+  "transcription": {
+    "status": "complete-primary-scan-manually-verified",
+    "literal": "1912 год, часть третья, о умерших. Январь. Женского пола №3. 18 умерла, 20 погребена. Села Кармалки крестьянская жена Ксенія Гавріилова Ампилогова. 60 летъ. Отъ чахотки.",
+    "modernInterpretation": "18 января 1912 года в Кармалке умерла шестидесятилетняя крестьянская жена Ксения Гавриловна Ампилогова; 20 января её погребли. Причина смерти — чахотка.",
+    "indexNote": "Имя, статус, обе даты, возраст и причина смерти заново прочитаны по полному развороту; индекс использован только для поиска."
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Ксения Гавриилова Ампилогова, крестьянская жена, село Кармалки, 60.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс не давал надёжной полной расшифровки; даты и причина смерти установлены по оригиналу."
+  },
+  "context": {
+    "eventSummary": "Акт о смерти и погребении Ксении Гавриловны Ампилоговой в январе 1912 года.",
+    "identityNote": "Создан отдельный P102971: акт не называет супруга, поэтому совпадения с тёзками P1197, P1467, P1561 и P6016 недостаточно.",
+    "migrationNote": "Акт фиксирует место смерти; переселение не выводится."
+  },
+  "isRecord": true,
+  "cardKind": "verified-primary-source-record",
+  "publicCore": true,
+  "review": {
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны весь разворот, заголовок части III, январская строка №3, обе даты, имя, статус, возраст и причина смерти; тёзки не сливались."
+  },
   "evidence": {
     "catalogId": "b77ffee5-da49-4e08-9b01-e88b4ddf640e",
     "scanNumber": 128,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-full-view.png",
-    "capturedAt": "2026-09-11",
+    "localBackup": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-full-view.png",
     "sha256": "73c27fdd20a8d080f9b673e3c6212db991a436ef9d0d52c34c718015337365ac",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-header.png",
-        "sha256": "5d719cb2f82c30cfa8e8cc35008612ba145c221eb358d9222dce47771975c963",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-target-entry.png",
-        "sha256": "099d84fee0325ba16e0787c4b3208c14eee73f7f08d19c3bc6cdea6afedf4bf1",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5928x4679",
-      "targetDimensions": "1633x749",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "-осломуинь Анкрн сголовочнить.\nСела скармами одуставного\nсойита Михаими Филиттова\nПотихни сочь кнрос. .\nлиники стиконибыА ниспивнов.\n(Псалолицина АрДрей СКолохочнить-\nСеласкавтин храя",
-    "modernInterpretation": "-осломуинь Анкрн сголовочнить. Села скармами одуставного сойита Михаими Филиттова Потихни сочь кнрос. . линики стиконибыА ниспивнов. (Псалолицина АрДрей СКолохочнить- Селаскавтин храя",
-    "localOcr": "-осломуинь Анкрн сголовочнить.\nСела скармами одуставного\nсойита Михаими Филиттова\nПотихни сочь кнрос. .\nлиники стиконибыА ниспивнов.\n(Псалолицина АрДрей СКолохочнить-\nСеласкавтин храя",
-    "localOcrWithSurnameLexicon": "-осломуить Анкн (головочнить.\nСела скармами одеставного\nсойита Михаили Филиттова\nПотихни дочь рос. .\n(самолицина А Дрей СКолохочить-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-  },
-  "indexData": {
-    "querySnippet": "Умерший: Ксения Гавриилова Ампилогова, крестьянская жена, село Кармалки, 60. Умерший: Яков Никитин Баловнев, 5 месяцев.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "capturedAt": "2026-09-11",
+    "fragments": [{
+      "kind": "full-width-entry-context",
+      "path": "data/genealogy/evidence-private/yandex/b77ffee5-da49-4e08-9b01-e88b4ddf640e/0128-target-context-deep.jpg",
+      "sha256": "0a5c4b20090f5d50caa99cb24e16abb95507618fa5f19af7d768d13b40e0014f",
+      "description": "Широкий clean-фрагмент полного январского разворота с записью Ксении Ампилоговой и соседними строками."
+    }],
+    "quality": { "originalImageDownloaded": true, "fullDimensions": "5928x4679", "targetDimensions": "5700x4400", "method": "manual-full-spread-review-and-clean-wide-recrop" },
+    "publicDisplay": false
   }
 }

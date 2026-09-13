@@ -3,6 +3,7 @@
   "sourceId": "YA-D865456D-327",
   "provider": "Яндекс Архив — первичный скан",
   "recordType": "confession-register-household",
+  "primaryPersonId": "P1617",
   "collection": {
     "catalogId": "d865456d-8c89-4e9b-9f07-564e2d67a630",
     "scanNumber": "327",
@@ -10,6 +11,18 @@
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d865456d-8c89-4e9b-9f07-564e2d67a630/327"
+  },
+  "event": {
+    "type": "documented-household",
+    "date": {
+      "display": "1912 год",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Уралка",
+      "normalized": "деревня Уралка, приход Покрово-Богородицкой церкви селения Ермолаевка",
+      "confidence": "high"
+    }
   },
   "mentions": [
     {
@@ -89,8 +102,8 @@
           {
             "kind": "target-entry",
             "path": "data/genealogy/evidence-private/yandex/d865456d-8c89-4e9b-9f07-564e2d67a630/0327-target-entry.png",
-            "sha256": "bc0a4dbd4cf2f942dbda57a6f4cedccf732aa02a143871a26c3378060df5c25e",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "sha256": "f60e30746a7dfa8494bc72b1abaea0b88c965cb9b5fbd57b664d7c6adda51700",
+            "description": "Широкий чистый фрагмент правильной строки домохозяйства Фёдора Иванова Ампилогова со всеми членами семьи и возрастными графами."
           }
         ],
         "quality": {
@@ -98,8 +111,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "2520x3896",
-          "targetDimensions": "1200x606",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "2100x1500",
+          "method": "manual-full-spread-reading-and-coordinate-recrop-from-original"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -107,10 +120,10 @@
     ]
   },
   "transcription": {
-    "status": "primary-scan-transcription",
+    "status": "complete-primary-scan-reading-manually-verified",
     "literal": "Ампилоговъ Феодоръ Ивановъ, вд. мѣщан., 57; сынъ его Григорій, 24; жена Григ. Меланія Александрова, 21; дѣти ихъ Петръ, 5, Николай, 2.",
     "modernInterpretation": "В исповедной ведомости деревни Уралки записан 57-летний вдовый мещанин Фёдор Иванович Ампилогов. С ним живут 24-летний сын Григорий, жена Григория Мелания Александровна и их сыновья Пётр пяти лет и Николай двух лет.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Имена, родственные формулы и возраста самостоятельно прочитаны в правильной строке оригинала; прежний узкий фрагмент показывал соседнюю строку и заменён.",
     "localOcr": "осодди\nНимовай\nпмави . ввертія Дихарова\n269.\nАікаресва Раріз Василься в\nпримся Расмва власое-\n/бр. Марфа\ngere es vm",
     "localOcrWithSurnameLexicon": "осодди\nНемовай\nплавни ввертія Дихарова\n269.\nварева Дарія Василься в\nприм ся Расша власое -\n/бр. Марфа\ngere es vi",
     "collation": {
@@ -119,21 +132,31 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Исповедная ведомость фиксирует совместное домохозяйство вдового Фёдора Ивановича, его сына Григория, невестки Мелании и внуков Петра и Николая.",
+    "identityNote": "Лист 327 не является дублем листа 81: это самостоятельное наблюдение 1912 года, согласованное по именам и приросту возрастов с ведомостью 1910 года.",
+    "familyContext": "Отчество Мелании здесь читается как Александрова, тогда как на листе 81 — Алексеева; расхождение сохранено и отдельный профиль не создан.",
+    "migrationNote": "Повторное наблюдение одного домохозяйства в Уралке не интерпретируется как переселение."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
     "correctionHistory": [
       "2026-09-09: ложное отрицательное чтение заменено расшифровкой оригинала высокого разрешения."
     ],
     "unresolved": [
       "Отчество Мелании расходится с чтением на листе 81: Александровна здесь и Алексеева там; профиль не создаётся до дополнительной сверки.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Отчество Мелании требует независимой сверки по дополнительным актам."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный разворот исповедной ведомости, заголовок деревни Уралки, номера строк, вся правильная строка домохозяйства и возрастные графы; выявлен и заменён неверно смещённый прежний crop, а лист сопоставлен с отдельной ведомостью 1910 года без объявления дублем."
   },
   "indexData": {
     "querySnippet": "363. 1315. Ампилогов Феодор Иванов вд. мещан.",
+    "assessment": "confirmed from the original; household and ages independently read",
     "fuzzyQuery": true
-  }
+  },
+  "publicCore": true
 }

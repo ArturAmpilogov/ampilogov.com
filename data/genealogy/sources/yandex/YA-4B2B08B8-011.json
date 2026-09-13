@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4B2B08B8-011",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 11,
@@ -12,25 +12,18 @@
     "documentUrl": "https://yandex.ru/archive/catalog/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/11"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-register-page",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "апрель 1912 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемир",
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4B2B08B8-011-M1",
-      "role": "godmother",
-      "personId": "P102521",
-      "displayName": "Евдокія Исаева Ампилова",
-      "nameAsTranscribed": "Евдокія Исаева Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 11,
@@ -66,30 +59,32 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Иоанн Павлов Курдюков и Евдокия Исаева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Исаевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "KTò c\nЗваніє, йлл, отчество й фамиліл\nБоспріЁмникшк%.\nКрествяния сги бар.\nнемічскаю Варвара\nTes pricke Сафранова",
-    "localOcrWithSurnameLexicon": "KTò c\nЗваніє, ілл, отчество й фаміліл\nБоспрімникшЕ%.\nКрествяния сеги бар.\nнемічскаю Варвара\nTes pricke Сафронова",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-negative-review",
+    "literal": "Метрической книги на 1912 год, часть первая, о родившихся. На полном развороте читаются апрельские записи № 12–14: Мария, Николай и Константин; в проверенном фрагменте восприемники записаны как Варвара Георгиева Сафронова и другие лица не исследуемого фамильного ряда. Фамилии Ампилов/Ампилогов/Анпилогов и имя «Евдокия Исаева Ампилова» на листе отсутствуют.",
+    "modernInterpretation": "Полный лист не содержит заявленного индексом упоминания «Евдокия Исаева Ампилова»; совпадение выдачи подтверждено как ложное.",
+    "indexNote": "Сниппет Яндекса относится к иной строке или листу и не подтверждается сохранённым оригиналом. Он не использован для события, профиля или связи."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрены полный разворот, заголовок части о родившихся, все видимые строки и существующий крупный фрагмент; проверены даты, имена, родители, восприемники и границы строк. «Евдокия Исаева Ампилова» и исследуемый фамильный ряд отсутствуют.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтемирскаго Иванъ Павловъ Курьдюковъ и Евдокія Исаева Ампилова. Священни Михаилъ Юшкинъ Діаконъ Харлампiй Барановъ.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Заявленное индексом упоминание «Евдокия Исаева Ампилова» отсутствует на полном развороте.",
+      "На оригинале прочитаны апрельские записи № 12–14: Мария, Николай и Константин; в проверенном фрагменте восприемники записаны как Варвара Георгиева Сафронова и другие лица не исследуемого фамильного ряда."
+    ]
+  },
+  "context": {
+    "eventSummary": "Негативная проверка апрель 1912 года: исследуемый фамильный ряд на полном развороте не обнаружен.",
+    "relationshipBoundary": "Видимые участники других фамилий не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Результат сохраняется, чтобы ошибочный fuzzy-hit не был повторно принят за первичную запись."
   }
 }

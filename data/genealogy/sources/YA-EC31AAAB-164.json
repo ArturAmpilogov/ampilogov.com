@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-EC31AAAB-164",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "confirmed-false-positive",
   "collection": {
     "catalogId": "ec31aaab-2b06-4fb6-a136-0760cfba1f4f",
     "scanNumber": 164
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ec31aaab-2b06-4fb6-a136-0760cfba1f4f/164"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-EC31AAAB-164",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "ec31aaab-2b06-4fb6-a136-0760cfba1f4f",
     "scanNumber": 164,
@@ -41,6 +32,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec31aaab-2b06-4fb6-a136-0760cfba1f4f/0164-target-entry.png",
         "sha256": "e927cd1d666edd97fe38cbb24be7ca0a6421957c4227d15d710e72b4c07994e4",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/ec31aaab-2b06-4fb6-a136-0760cfba1f4f/0164-target-context-deep.png",
+        "sha256": "14043916d5595ab52f7c3e9fe82c1331a76186c15dce290da313bfdb1088bf0d",
+        "description": "Чистый полноширинный контекстный фрагмент полного разворота со всеми проверенными графами."
       }
     ],
     "quality": {
@@ -49,7 +46,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5979x4703",
       "targetDimensions": "1497x1078",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "5600x2500"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +104,31 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный брачный разворот 1895 года, записи №25–28, обе половины строк и поручители; индексные Гавриил Ампилогов/Иван Матвеев отвергнуты; clean crop 5600x2500"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Поручитим поованиам, феревни\nВорабвевне Ширень Николюевь\nСойтатоорг нонатісвчоКу\nпавлевы: но невтьсты бленяра\nнти пачинной к\nГспово0 сторавлч ОеттороВс-\nТоручитинпоовенияысла\nроховки Прествине: Пивень Со\nронивь вучановойНикисорг\nфеогантовч Мишновь по Не-\nрост церевниО Ловісскрені\nНаврентій Максиловь Мет...",
-    "modernInterpretation": "Поручитим поованиам, феревни Ворабвевне Ширень Николюевь Сойтатоорг нонатисвчоКу павлевы: но невтьсты бленяра нти пачинной к Гспово0 сторавлч ОеттороВс- Торучитинпоовенияысла роховки Прествине: Пивень Со ронивь вучановойНикисорг феогантовч Мишновь по Не- рост церевниО Ловисскрени Наврентий Максиловь Мет...",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Поручитим поованиам, феревни\nВорабвевне Ширень Николюевь\nСойтатоорг нонатісвчоКу\nпавлевы: но невтьсты бленяра\nнти пачинной к\nГспово0 сторавлч ОеттороВс-\nТоручитинпоовенияысла\nроховки Прествине: Пивень Со\nронивь вучановойНикисорг\nфеогантовч Мишновь по Не-\nрост церевниО Ловісскрені\nНаврентій Максиловь Мет...",
-    "localOcrWithSurnameLexicon": "Били порочители.\nПоручитил по в'аних, перевня\nВоробвевки Тирань Николаева\nСолитьорг натісчС-\nсовь /нилова,\nПоручитии поліснихосла\nпоховке Прествене: Пивель Со\nонивь кучаковой Никифор?\nреоргантовь Мишнова по Не\nвост? ревни О Ковкикрене)\nаврентій Максимові Мет-\nвсевь, и СтепангИсновь в ивинг",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "1895 год, часть вторая, о бракосочетавшихся. На полном развороте проверены записи № 25–28, включая обе графы поручителей. В видимых строках читаются жители деревень Воробьёвки и Орловки; индексных «Гавриила Павлова Ампилогова» и «Ивана Борисова Матвеева» нет.",
+    "modernInterpretation": "Брачный разворот 1895 года не содержит носителя исследуемого ряда. Индекс составил ложное сочетание имён и фамилий из соседних строк.",
+    "indexNote": "Все записи №25–28 и обе графы поручителей проверены: Гавриил Павлов Ампилогов отсутствует."
   },
   "indexData": {
     "querySnippet": "Поручитель: Гавриил Павлов Ампилогов, крестьянин, деревня Гранино. Поручитель: Иван Борисов Матвеев, крестьянин, деревня Орловка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Все записи №25–28 и обе графы поручителей проверены: Гавриил Павлов Ампилогов отсутствует."
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "isRecord": true,
+  "cardKind": "confirmed-false-positive",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное fuzzy/OCR-совпадение на брачном развороте 1895 года.",
+    "identityNote": "Носителя исследуемого фамильного ряда на полном листе нет; профиль и связи не создаются.",
+    "migrationNote": "Карта и миграция не создаются."
   }
 }

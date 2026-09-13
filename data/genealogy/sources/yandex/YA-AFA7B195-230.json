@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-AFA7B195-230",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "uncertain-index-match",
+  "recordType": "confirmed-false-index-match",
   "collection": {
     "catalogId": "afa7b195-43a9-4411-8f05-9fe37e68f9f3",
     "scanNumber": 230,
@@ -12,25 +12,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/afa7b195-43a9-4411-8f05-9fe37e68f9f3/230"
   },
   "event": {
-    "type": "uncertain-index-match",
+    "type": "index-review",
     "date": {
-      "display": "1899–1911",
-      "confidence": "low"
+      "display": "май; точный год на листе не установлен (диапазон книги 1899–1911)",
+      "confidence": "medium"
     },
     "place": {
       "normalized": "Белозерский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-AFA7B195-230-M1",
-      "role": "possible-godfather",
-      "personId": null,
-      "nameAsTranscribed": "деревни Усть[я] крестьянинъ Иванъ [неразборчиво] Кукушкинъ",
-      "displayName": "деревни Усть[я] крестьянин Иван [неразборчиво] Кукушкин",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "afa7b195-43a9-4411-8f05-9fe37e68f9f3",
     "scanNumber": 230,
@@ -51,6 +42,12 @@
         "path": "data/genealogy/evidence-private/yandex/afa7b195-43a9-4411-8f05-9fe37e68f9f3/0230-target-entry.png",
         "sha256": "3acd5c948f32c93148b9c6e095693bba1515bfdeb3352daaa5168fcd3ae879a3",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/afa7b195-43a9-4411-8f05-9fe37e68f9f3/0230-deep-context.png",
+        "sha256": "182789d5074762344ed78845a7ed88b06394680c66aba839505ba2dd33f6c905",
+        "description": "Чистый полноширинный контекст майских записей № 21–24."
       }
     ],
     "quality": {
@@ -59,17 +56,18 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "3984x3692",
       "targetDimensions": "1200x712",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-reading-and-clean-wide-context-recrop",
+      "contextDimensions": "3800x3300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "Деревни Усть[я] крестьянинъ Иванъ [отчество неразборчиво] Кукушкинъ.",
-    "modernInterpretation": "Индекс Яндекса вставляет «Ампилов» в квадратных скобках, однако сохранённый оригинал не позволяет подтвердить это чтение. Запись сохранена как сомнительное совпадение без профиля и карты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-review-confirmed-false",
+    "literal": "Часть первая, о родившихся. Майские записи № 21–24. В строке № 21 — Анна; родители из деревни Устья и восприемник Григорий [фамилия читается без формы Ампилов]. В строках № 22–24 также перечислены семьи и восприемники иных фамилий. Формы «Ампилов» на полном листе нет.",
+    "modernInterpretation": "Полный лист не содержит Ивана Ампилова или другого носителя исследуемого фамильного ряда. Иван Кукушкин из поискового индекса не подтверждается как Ампилов.",
+    "indexNote": "Яндекс склеил имя/фамилию в конструкцию «Иван Ампилов Кукушкин». На увеличенном оригинале «Ампилов» отсутствует; проверены вся строка и соседние записи.",
     "localOcr": "бал\nни впивв ИВ\nщл области\nспраевии Престьяне-",
     "localOcrWithSurnameLexicon": "бал\nил области\nс превии Престьяне-",
     "collation": {
@@ -79,15 +77,16 @@
     }
   },
   "isRecord": true,
-  "cardKind": "research-only-uncertain-record",
+  "cardKind": "research-only-negative-record",
   "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "low",
+    "status": "deep-reviewed-confirmed-false",
+    "transcriptionConfidence": "high-for-negative-identification",
     "unresolved": [
-      "Форма «Ампилов» не подтверждена оригиналом; отчество Ивана Кукушкина остаётся неразобранным.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Точный год внутреннего листа и отдельные посторонние фамилии не устанавливались, поскольку фамильное совпадение уверенно отсутствует."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный разворот, майские записи № 21–24, обе колонки участников и границы строк; вставка «Ампилов» из индекса отвергнута."
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Иван Ампилов Кукушкин, крестьянин, деревня Устье. Крёстный отец: Екатерина Степанова Бѣляев, солдатка.",

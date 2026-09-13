@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-013",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 13,
@@ -13,22 +13,43 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/13"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-013-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102918",
+      "displayName": "Василий Алексеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Васил. Ал-ч",
+      "surnameSeries": true,
+      "yearAsWritten": "1908"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-013-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102276",
+      "displayName": "Василий Терентьевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Вас. Терент.",
+      "surnameSeries": true,
+      "yearAsWritten": "1893"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-013-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102919",
+      "displayName": "Григорий Андреевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Григорий Андр.",
+      "surnameSeries": true,
+      "yearAsWritten": "1910"
     }
   ],
   "evidence": {
@@ -52,44 +73,55 @@
         "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0013-target-entry.png",
         "sha256": "4820cb65144e7c22258a8e5db9d8e54e875f4053fa117a7312ed0001ad313ba4",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/013-target-context-deep.jpg",
+        "sha256": "84344187cf74580dfde6600c2b50472212593ec2c8ab6254ede4b86ae022e1ee",
+        "description": "Крупный полноширинный clean crop roster-листа 013, сохраняющий фамильные строки и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6462x9068",
-      "targetDimensions": "3204x591",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "258. Ампилогов Григорий Андр. 191",
-    "modernInterpretation": "258. Ампилогов Григорий Андр. 191",
-    "localOcr": "",
-    "localOcrWithSurnameLexicon": "",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "241. Ампилогов Васил. Ал-ч | 1908 | 100\n244. Ампилогов Вас. Терент. | 1893 | 6\n258. Ампилогов Григорий Андр. | 1910 | 133а",
+    "modernInterpretation": "Василий Алексеевич (1908), Василий Терентьевич (1893) и Григорий Андреевич (1910) Ампилоговы.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; имена, сокращения и годы перепроверены по всему листу.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "258. Ампилогов Григорий Андр.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "military-registration-list",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен военно-учётный лист, строки № 241–262, все видимые строки и графы. Фамильные строки независимо прочитаны по оригиналу; сокращения и исправления сохранены буквально. Создан clean crop 5800×7800. Место списка не трактуется как место рождения, родство или миграция.",
+    "unresolved": []
+  },
+  "context": {
+    "summary": "Алфавитный военно-учётный лист документирует перечисленных носителей фамилии Ампилогов и значения, записанные в соседних графах.",
+    "historicalContext": "Дело относится к учёту военнообязанных, призванных по мобилизации. Цифровые и буквенные коды не раскрываются без легенды книги.",
+    "genealogicalConclusion": "Имена и годы сохранены как написано. Место ведения списка не объявляется местом рождения, родством или маршрутом переселения.",
+    "indexDiscrepancy": "Индекс Яндекса и OCR использованы только для навигации; фамилии, инициалы, годы и исправления прочитаны по полному оригиналу."
   }
 }

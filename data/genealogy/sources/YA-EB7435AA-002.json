@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-EB7435AA-002",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "service-appointment",
   "collection": {
     "catalogId": "eb7435aa-f2ee-49ad-acc9-703d80d1649a",
     "scanNumber": 2,
@@ -15,9 +15,10 @@
   "mentions": [
     {
       "mentionId": "YA-EB7435AA-002-M1",
-      "role": "subject",
+      "role": "appointed-priest-and-school-superintendent",
+      "personId": "P1653",
       "nameAsTranscribed": "священникъ церкви села Старо-Богдановки, Оренб. у., Михаилъ Ампилоговъ",
-      "displayName": "Священник Михаил Ампилогов",
+      "displayName": "Михаил Афиногенович Ампилогов",
       "surnameSeries": true
     }
   ],
@@ -42,6 +43,12 @@
         "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/eb7435aa-f2ee-49ad-acc9-703d80d1649a/0002-target-entry.png",
         "sha256": "7a73f7a4dfd272918a7c5b5d11c6f1dd2e3976a0a60d42dae6a21252c3c2c024",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-followup-2026-09-11/eb7435aa-f2ee-49ad-acc9-703d80d1649a/0002-target-context-deep.png",
+        "sha256": "e4a8e9363c3d829180319205547ca30e5f590c17cacbd0905f384dee3ded9ab1",
+        "description": "Полноширинный фрагмент рубрики «Перемещения» с целевой строкой и соседними назначениями."
       }
     ],
     "quality": {
@@ -50,7 +57,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "1240x1755",
       "targetDimensions": "1200x507",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "1200x800"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -91,31 +101,42 @@
     ]
   },
   "transcription": {
-    "status": "complete-primary-scan-local-ocr-collation",
+    "status": "complete-primary-scan-reading-manually-verified",
     "literal": "28 сентября — священникъ церкви села Старо-Богдановки, Оренб. у., Михаилъ Ампилоговъ на должность завѣдывающаго и законоучителя Михайловской второклассной школы.",
-    "modernInterpretation": "28 сентября 1911 года священник церкви села Старо-Богдановки Оренбургского уезда Михаил Ампилогов переведён на должность заведующего и законоучителя Михайловской второклассной школы.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "досія, Епискова Оренбургскаго и Тургайскаго, послядовавшими\nпереміцены:\n28 сепгября -священникь церкви села Старо-Вогдановки,\nОревб. у., Михандь Ампилоговь на должность заввдывающаго\nи законоучителя Михайловской второкласеной школы.\n14-го октября -состоящій на 2-й священнической ва-\nкансіи священникь села Долговскато, Челяб. у., Павель Баев-\nскій на таковое же мвето вь слоб. Чумлякскую, того же увзда.\nУ твержденія.\nПостановленіями Впархіальнаго Начальства, ить 10 ок-\nтября за NºN 848 и 849, утверждены вь доджностяхь цер-",
-    "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "modernInterpretation": "28 сентября 1911 года священник Михаил Ампилогов был переведён из церкви села Старо-Богдановки на должность заведующего и законоучителя Михайловской второклассной школы.",
+    "indexNote": "Строка прочитана на официальной печатной странице. P1653 strongly-supported/high по сану, уникальной школе и должности и непрерывной хронологии; отчество здесь не напечатано."
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": [
-      "Нужно проверить связь с Михаилом Афиногеновичем Ампилоговым до создания Person или карты."
-    ],
-    "correctionHistory": [
-      "2026-09-08: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полная печатная страница Оренбургских епархиальных ведомостей №42 за 1911 год; рубрика «Перемещения», дата, сан, Старо-Богдановка, новая должность и школа; P1653 cross-check; без миграции; clean crop 1200x800"
   },
   "indexData": {
-    "querySnippet": "Имя, фамилия, прежнее место службы, уезд, дата и новая должность прочитаны на первичном листе. Это официальный акт, который уточняет, а не дублирует позднейшую повествовательную запись YA-31F29322-041. Отчество не названо; Person и карта не создаются.",
-    "fuzzyQuery": true
+    "querySnippet": "28 сентября — священник церкви села Старо-Богдановки Михаил Ампилогов переведён заведующим и законоучителем Михайловской второклассной школы.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс не раскрывает отчество; тождество P1653 подтверждено независимой служебной цепочкой."
+  },
+  "primaryPersonId": "P1653",
+  "event": {
+    "type": "service-appointment",
+    "date": {
+      "display": "28 сентября 1911 года",
+      "date": "1911-09-28",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "из церкви села Старо-Богдановки Оренбургского уезда в Михайловскую второклассную школу",
+      "normalized": "Оренбургский уезд, Оренбургская губерния"
+    }
+  },
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Назначение Михаила Афиногеновича Ампилогова заведующим и законоучителем Михайловской второклассной школы.",
+    "identityNote": "P1653 strongly-supported/high: имя, фамилия, сан, уникальная школа/должность и согласование с YA-31F29322-041 и YA-F1C257CA-031.",
+    "migrationNote": "Служебное назначение не превращено в маршрут переселения."
   }
 }

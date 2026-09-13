@@ -2,22 +2,31 @@
   "schemaVersion": 1,
   "sourceId": "YA-E68DB6F3-177",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "e68db6f3-75a2-41f9-8848-6c5ef284ea7e",
-    "scanNumber": 177
+    "scanNumber": 177,
+    "title": "Метрическая книга за 1893 год, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e68db6f3-75a2-41f9-8848-6c5ef284ea7e/177"
   },
   "mentions": [
     {
-      "mentionId": "YA-E68DB6F3-177",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
+      "mentionId": "YA-E68DB6F3-177-M1",
+      "role": "deceased-child",
+      "personId": "P102894",
+      "nameAsTranscribed": "дочь Параскева",
+      "displayName": "Параскева Ксенофонтовна Анпилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-E68DB6F3-177-M2",
+      "role": "father",
+      "personId": "P101378",
+      "nameAsTranscribed": "Оренбургской станицы урядника Ксенофонта Антонова Ампилогова",
+      "displayName": "Ксенофонт Антонович Анпилогов",
+      "surnameSeries": true
     }
   ],
   "evidence": {
@@ -41,6 +50,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e68db6f3-75a2-41f9-8848-6c5ef284ea7e/0177-target-entry.png",
         "sha256": "515324712487143eeafecb594ed38fbc4518d2f0d386d1d380f05106c85fd18c",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e68db6f3-75a2-41f9-8848-6c5ef284ea7e/0177-target-context-deep.png",
+        "sha256": "8da249cfb4b8b21b6e0eb74fd285a9cfefe1416991da9be94b1a72f78f874080",
+        "description": "Крупный чистый фрагмент заголовка и верхней декабрьской строки с датами, дочерью Параскевой и отцом Ксенофонтом.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +65,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "2040x3699",
       "targetDimensions": "1341x790",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "2000x1550"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +121,46 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-with-explicit-right-edge-lacuna",
+    "transcriptionConfidence": "high-for-visible-fields",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Возраст, причина смерти, место погребения и возможное имя матери находятся в не сохранённой правой части разворота и не выводятся."
+    ],
+    "correctionHistory": [
+      "2026-09-12: вручную проверены заголовок 1893 года, верхняя декабрьская строка, даты, пол, имя ребёнка и отец; прежний target был смещён на нижние строки."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full available 2040x3699 left-page scan, 1893 death heading, top December row from sex/date through visible deceased-name field, adjacent row boundary and old mislocated target; direct P101378 father identity, new P102894 child profile; explicit exclusion of cropped age/cause/mother; no migration; clean 2000x1550 context crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "о)непчанір- вілням\nСвянаннин\nДіакон Петпр- П оправ спії?\nДеревни в лагодаровки кріна Швана Анбрив с\nриркина дічв сКари) СТисплата\nляпсинин\nДіанона Петр А оков слібутк\nИванова зуханова с\nДвнежсаня Л-И\nСвянанн иг\nД і анині П Етр- Поправеиій.\nДепевни Моотевки кіна Ивана Дормитані",
-    "modernInterpretation": "о)непчанир- вилням Свянаннин Диакон Петпр- П оправ спиї? Деревни в лагодаровки крина Швана Анбрив с риркина дичв сКари) СТисплата ляпсинин Дианона Петр А оков слибутк Иванова зуханова с Двнежсаня Л-И Свянанн иг Д и анини П Етр- Поправеиий. Депевни Моотевки кина Ивана Дормитани",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "о)непчанір- вілням\nСвянаннин\nДіакон Петпр- П оправ спії?\nДеревни в лагодаровки кріна Швана Анбрив с\nриркина дічв сКари) СТисплата\nляпсинин\nДіанона Петр А оков слібутк\nИванова зуханова с\nДвнежсаня Л-И\nСвянанн иг\nД і анині П Етр- Поправеиій.\nДепевни Моотевки кіна Ивана Дормитані",
-    "localOcrWithSurnameLexicon": "ранти ва во суп путті Селень Прокопоев с\nСвяпаннин сненеті вісяг\nДіанон Петр - Н оправ спії?\nДеревни благодаровки кріна Ивана Антресо с\nОрен\nручкина дось Мари) леклатв.\nклисинин\nДіанона Петр А оправ мітитк\nПриписанноо кг Петровской воко сза про\nИванова Цуканова є\n-и\nЗі анні ет виня в\n8.\nДеревни Мартевки кріно, Ивана Дірмитан\n- \" -\nМараторнина сіні в отил",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-transcription-manually-verified-with-cropped-right-side",
+    "literal": "Метрической книги на 1893 год, часть третья, об умерших. Декабрь. 2 [умерла], 3 [погребена]. Оренбургской станицы урядника Ксенофонта Антонова Ампилогова дочь Параскева — [продолжение строки с возрастом и причиной смерти находится за обрезанным правым краем сохранённого листа].",
+    "modernInterpretation": "2 декабря 1893 года умерла Параскева, дочь урядника Оренбургской станицы Ксенофонта Антоновича Анпилогова; погребена 3 декабря. Возраст, мать и причина смерти по этому изображению не устанавливаются.",
+    "indexNote": "Индекс верно навёл на Ксенофонта Антонова, но неверно обозначил его как «отца умершего» мужского рода и смешал строку с Иваном Видяевым ниже. Пол, имя дочери и даты прочитаны по верхней строке полного листа. Буквальная форма фамилии на этом листе читается «Ампилогова», при каноническом профиле отца «Анпилогов»."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Ксенофон Антонов Ампилогов, урядник, Оренбургская станица. Муж умершего: Иван Алексеев Видяев, крестьянин, хутор Белушечный.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал верхнюю строку Параскевы с нижней записью Ивана Видяева и не передал женский пол; возраст, причина и правая часть строки недоступны из-за обрезки оригинального кадра."
+  },
+  "primaryPersonId": "P102894",
+  "event": {
+    "type": "death-and-burial",
+    "date": {
+      "display": "умерла 2 декабря, погребена 3 декабря 1893 года",
+      "deathIso": "1893-12-02",
+      "burialIso": "1893-12-03",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбургская станица",
+      "normalized": "Оренбургская станица, Оренбургская губерния"
+    }
+  },
+  "context": {
+    "eventSummary": "Смерть Параскевы Ксенофонтовны, дочери урядника Ксенофонта Антоновича, 2 декабря 1893 года; погребение 3 декабря.",
+    "identityNote": "P101378 подтверждён редким точным полным именем, чином урядника и Оренбургской станицей, совпадающими с серией актов 1896–1898 годов. Дочери создан отдельный документный профиль P102894.",
+    "migrationNote": "Указание Оренбургской станицы является статусом/местом семьи в акте и не доказывает маршрут переселения."
+  },
+  "publicCore": true
 }

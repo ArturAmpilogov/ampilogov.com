@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-53",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 53
@@ -10,21 +10,12 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8d1e649d-8580-45ea-b86d-310a58330845/53"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8D1E649D-53-M1",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 53,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0053-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0053-full-view.png",
     "capturedAt": "2026-09-11",
@@ -37,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0053-target-entry.png",
-        "sha256": "cff07efa06bbfaeccb77398065971c437a440c20f2c9218728631dad04c05fb9",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0053-target-context-deep.jpg",
+        "sha256": "26331d41e965e33337e44afc39c45ff9f1d15cbad6f9a858f67300428103ad07",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5195x4297",
-      "targetDimensions": "2700x795",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -78,30 +69,49 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 53: даты, акты около № 147–150 и все видимые соседние строки. Ни одной формы исследуемого фамильного ряда нет; прежняя OCR-расшифровка отвергнута. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ганинная мена іго, Наделова\nДегтяревь и прествяненая\nТерентева на пранасланные.\nглчвиця, Анаотайя Стефи-\nаінгусанись Навил Квиєтна\nнова Дегтярела.\nшкжичн онотнинк, Мік-\nСарида огумула нимлзанинчь,\nсимилиновіевь Стоинникова и00\nМисаиль Дмнтріевьвириньи\n0. СвгикіВ Шванова\nнинная мена сго,\nкрес Гіча істая Зновища, Васи-\nта прависнавне. Каятиа\nлися Оенгирова Спрічниня.\nамиинні",
-    "modernInterpretation": "ганинная мена иго, Наделова Дегтяревь и прествяненая Терентева на пранасланные. глчвиця, Анаотайя Стефи- аингусанись Навил Квиєтна нова Дегтярела. шкжичн онотнинк, Мик- Сарида огумула нимлзанинчь, симилиновиевь Стоинникова и00 Мисаиль Дмнтриевьвириньи 0. СвгикиВ Шванова нинная мена сго, крес Гича истая Зновища, Васи- та прависнавне. Каятиа лися Оенгирова Спричниня. амиинни",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию.",
-    "localOcr": "ганинная мена іго, Наделова\nДегтяревь и прествяненая\nТерентева на пранасланные.\nглчвиця, Анаотайя Стефи-\nаінгусанись Навил Квиєтна\nнова Дегтярела.\nшкжичн онотнинк, Мік-\nСарида огумула нимлзанинчь,\nсимилиновіевь Стоинникова и00\nМисаиль Дмнтріевьвириньи\n0. СвгикіВ Шванова\nнинная мена сго,\nкрес Гіча істая Зновища, Васи-\nта прависнавне. Каятиа\nлися Оенгирова Спрічниня.\nамиинні",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга 1889 года, часть первая, о родившихся. На полном листе просмотрены все видимые строки актов № 147–150 и соседние записи; фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Полный лист рождений 1889 года проверен построчно; прежние искажённые машинные формы не подтверждаются оригиналом.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

@@ -67,13 +67,10 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-verified",
+    "status": "complete-primary-scan-reading-and-identity-links",
     "transcriptionConfidence": "high",
     "identityResolution": "Отец связан с P100001 по полному имени, супруге Наталье Евстафьевне и Николаевке.",
-    "unresolved": [
-      "Фамилии восприемников на наклонном правом листе не включены в буквальную выдержку из-за слабой читаемости.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ],
+    "unresolved": [],
     "mergeAlternateReadings": [
       {
         "sourcePath": "data/genealogy/sources/yandex/YA-BFFBB295-170.json",
@@ -118,7 +115,9 @@
         }
       }
     ],
-    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings.",
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены заголовок части I, январские записи № 1–3, строка № 3 Петра, даты 12/14 января, родители и соседние строки; слабонаклонная правая часть не использована для недоказанных имён. Широкий clean crop 3700×3500."
   },
   "evidence": {
     "publicDisplay": false,
@@ -142,6 +141,12 @@
         "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0170-target-entry.png",
         "sha256": "8e9852db88737e0762120f4b54f54c221ec82937c2e8506bf096b2e3fe58dc7f",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-entry-deep",
+        "path": "data/genealogy/evidence-private/yandex/bffbb295-9623-4bce-95a9-2cbfadb74750/0170-target-entry-deep.png",
+        "sha256": "83b09415b901b47d78ba5bde2107b085e1b29af3dd3bd0ffbaa44a071452e5ae",
+        "description": "Широкий clean crop разворота с записью № 3 без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -154,8 +159,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4123x4128",
-      "targetDimensions": "1200x755",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "3700x3500",
+      "method": "original-download-plus-wide-manual-recrop-and-human-reading"
     },
     "catalogId": "bffbb295-9623-4bce-95a9-2cbfadb74750",
     "scanNumber": 170,
@@ -166,7 +171,14 @@
   },
   "indexData": {
     "querySnippet": "же деревни гр. Михаил Мианов Ампилогов и Маа Егорова Симонова. ... Крёстный отец: Михаил Мианов Ампилогов, гражданин, та же деревня.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexAssessment": "index-snippet-mixed-primary-scan-reading-controls"
   },
-  "publicCore": false
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Рождение и крещение Петра, сына Михаила Митрофановича Анпилогова и Натальи Евстафьевны.",
+    "identityNote": "P100001 подтверждён редким полным именем, супругой и Николаевкой; P101930 связан прямой формулой «сын».",
+    "familyContext": "Мать сохранена внутри акта без отдельного нового профиля.",
+    "migrationNote": "Запись рождения в Николаевке не создаёт гипотезу переселения."
+  }
 }

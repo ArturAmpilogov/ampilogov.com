@@ -67,22 +67,6 @@
       "surnameSeries": true
     }
   ],
-  "migrationObservations": [
-    {
-      "personId": "P7003",
-      "personName": "Тимофей Дмитриевич Ампилогов",
-      "from": {
-        "placeId": "nikolskoe-pod-knyazhimi-pervomayskoe",
-        "normalized": "село Никольское, Фатежский уезд, Курская губерния"
-      },
-      "to": {
-        "placeId": "moscow",
-        "normalized": "Москва"
-      },
-      "basis": "Московская запись 1916 года прямо называет восприемника крестьянином села Никольского Фатежского уезда Курской губернии.",
-      "confidence": "high"
-    }
-  ],
   "transcription": {
     "status": "primary-scan-transcription",
     "literal": "Мужеского пола № 340. Августа 23 [родился], 29 [крещён]. Александръ, въ честь святаго князя Александра Невскаго, 30 августа. Въ домѣ Оболенскаго: Рязанской губерніи, Ряжскаго уѣзда, Кораблинской волости, деревни Чуровки крестьянинъ Петръ Димитріевъ Чунихинъ и законная жена его Анна Андреева, оба православные. Воспріемники: Курской губерніи, Фатежскаго уѣзда, села Никольскаго крестьянинъ Тимоѳей Димитріевъ Ампилоговъ и Тверской губерніи, Старицкаго уѣзда, деревни Лышкина крестьянка Матрона Максимова Карпова. Приходскій протоіерей Николай Михайловскій съ причтомъ.",
@@ -96,14 +80,20 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Тимофей Дмитриевич Ампилогов был восприемником Александра Петровича Чунихина при крещении 29 августа 1916 года в Москве.",
+    "identityNote": "Связь с P7003 подтверждена точным полным именем, ролью восприемника и повторным указанием приписки к селу Никольскому Фатежского уезда Курской губернии.",
+    "familyContext": "Ребёнок, родители и восприемница других фамилий сохранены только как участники акта; родство с P7003 не выводится.",
+    "migrationNote": "Московское присутствие и сословно-территориальная приписка к Никольскому доказаны, но сами по себе не устанавливают постоянного переселения."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "primary-scan-verified",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ],
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитан акт № 340 целиком: даты рождения и крещения, ребёнок, родители, оба восприемника и причт. Оригинал уверенно даёт Курскую, а не Киевскую губернию; широкий clean crop 4100×2700.",
     "mergeAlternateReadings": [
       {
         "sourcePath": "data/genealogy/sources/yandex/YA-AB40A911-421.json",
@@ -153,25 +143,14 @@
   "evidence": {
     "publicDisplay": false,
     "captureType": "remote-viewer-document-only-crop-with-enlarged-target-entry",
-    "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-full-view.jpg",
-    "sha256": "336d09b59916f38b1fc8804e1f080f0c997e896554e97aafd0171c9c1c4822d1",
+    "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-full-view.png",
+    "sha256": "ee4512dc245e81daf8ad0ec6b6384998051b309661e827f807e86b31a16a6985",
     "fragments": [
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-target-entry.jpg",
-        "sha256": "6007aaa2e75c93b23efb13dfa6ecbb91a42f7b6715f629a29dc5439fbc459470"
-      },
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-header.png",
-        "sha256": "1823eb259e865e5fbd223d97a702c7556095be72ad382bb9c3be6089c21e7f6f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-target-entry.png",
-        "sha256": "731e1c6fde7f9c111600090ca21b18cca0528db3a55d6b965ae5a83e21c49c5b",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/ab40a911-c8b7-4fee-a6b6-8b42ae192738/0421-target-entry-deep.png",
+        "sha256": "035bb438021a0a29327fec9be0b36b5cc63a1522581117ca8dcbbe6f502442a2",
+        "description": "Широкий чистый фрагмент акта № 340 с датами, родителями, обоими восприемниками и причтом."
       }
     ],
     "quality": {
@@ -184,8 +163,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4928x3264",
-      "targetDimensions": "1200x1038",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4100x2700",
+      "method": "manual-full-record-reading-and-wide-clean-recrop"
     },
     "catalogId": "ab40a911-c8b7-4fee-a6b6-8b42ae192738",
     "scanNumber": 421,
@@ -196,7 +175,8 @@
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Тимофей Димитриев Ампилогов, крестьянин, Киевская губерния, Фатежский уезд, село Никольское.",
+    "assessment": "person and role confirmed; province corrected from Киевская to Курская by primary scan",
     "fuzzyQuery": true
   },
-  "publicCore": false
+  "publicCore": true
 }

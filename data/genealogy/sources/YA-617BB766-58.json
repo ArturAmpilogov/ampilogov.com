@@ -1,36 +1,60 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-617BB766-58",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
     "scanNumber": 58,
-    "asRead": "Сохранённый фрагмент метрической книги; недостаточно резок для чтения фамилий"
+    "asRead": "Метрическая книга, часть третья об умерших; сентябрь 1892 года, мужская запись № 62"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/617bb766-7075-431f-afed-31beb287f0f6/58"
   },
-  "mentions": [],
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "2\n—\nНавоНаматыренат\nD.\nбутари Краенблинки\nовила я Н(акенткаа\nвосркика, доль Матрым\n• авиреннин /2шар'ят Ллавик\n/ саломщикв діаканіПОтр-І акрівект\nЗреснення- подквавній",
-    "modernInterpretation": "2 — НавоНаматыренат D. бутари Краенблинки овила я Н(акенткаа восркика, доль Матрым • авиреннин /2шар'ят Ллавик / саломщикв диаканиПОтр-І акривект Зреснення- подквавний",
-    "localOcr": "2\n—\nНавоНаматыренат\nD.\nбутари Краенблинки\nовила я Н(акенткаа\nвосркика, доль Матрым\n• авиреннин /2шар'ят Ллавик\n/ саломщикв діаканіПОтр-І акрівект\nЗреснення- подквавній",
-    "localOcrWithSurnameLexicon": "Ново /аман інтив\n20.\n• я уракликаа\nСосержика, доль Матрони\nРамиреннить Викарн Плеван\nПсаломщик? діакані. ПОтр-А окравект\nОрененно - прод/квавній",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+  "event": {
+    "type": "death-and-burial",
+    "date": {
+      "display": "20–21 сентября 1892 года",
+      "from": "1892-09-20",
+      "to": "1892-09-21",
+      "confidence": "high"
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "place": {
+      "asWritten": "Изякъ-Никитинскій посёлокъ",
+      "normalized": "Изяк-Никитинский посёлок, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-617BB766-58-M1",
+      "role": "deceased",
+      "personId": "P102931",
+      "nameAsTranscribed": "Изякъ-Никитинскаго посёлка казакъ Павелъ Даниловъ Ампилоговъ",
+      "displayName": "Павел Данилович Ампилогов",
+      "surnameSeries": true,
+      "age": {
+        "asWritten": "60",
+        "normalized": "60 лет",
+        "confidence": "high"
+      },
+      "socialStatus": {
+        "asWritten": "казакъ",
+        "normalized": "казак"
+      }
+    }
+  ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-entry",
+    "literal": "Сентябрь. Мужескаго пола № 62. 20 [умеръ], 21 [погребёнъ]. Изякъ-Никитинскаго посёлка казакъ Павелъ Даниловъ Ампилоговъ. 60. Отъ чахотки.",
+    "modernInterpretation": "Казак Изяк-Никитинского посёлка Павел Данилович Ампилогов умер 20 сентября 1892 года в возрасте 60 лет и был погребён 21 сентября; причиной смерти записана чахотка.",
+    "indexNote": "Яндекс ошибочно представил Павла Даниловича как «отца умершего». На полном листе он сам назван умершим в строке № 62; даты, возраст и роль проверены по оригиналу."
   },
   "evidence": {
     "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
     "scanNumber": 58,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "downloaded-original-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
     "capturedAt": "2026-09-11",
@@ -40,85 +64,47 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0058-header.png",
         "sha256": "77fd2d0eda4032f6afd96f144168ae4f81e903d7246a6ddea1e05e208071d1d0",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок и структура части об умерших."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0058-target-entry.png",
-        "sha256": "2395df297c726238ef9f66f572cbc7e7a2f3cce5bb6b6578550a85ee31872364",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0058-target-context-deep.jpg",
+        "sha256": "4103fb6f3ecedfc1e82e52e9415af3169e3841fbbcee517ae09497698692bdc2",
+        "description": "Крупный полноширинный фрагмент строки № 62 и соседних записей, без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5319x4220",
-      "targetDimensions": "1473x667",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5050x3500",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.jpg",
-        "sha256": "e35fef3c6480809003e2ddc23e3c4c5dcb231b1d90f61b66b744d3b1a3554719",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-target-entry.jpg",
-            "sha256": "e7d0454005d7de4b050c8ec66988f682d729e2f2ecbce68c1d24dddd9d7a9f50",
-            "description": "Локальный фрагмент, требующий качественного повторного захвата."
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
-            "scanNumber": 58,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "071428a4263822ae3d74d3e7f18e3a813303e9eb325d9d0c4375bba469ea43ad",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-header.png",
-                "sha256": "77fd2d0eda4032f6afd96f144168ae4f81e903d7246a6ddea1e05e208071d1d0",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0058-target-entry.png",
-                "sha256": "2c410109767bcb0a19651e4c4cdbe8ef69689edb4c01f72563bfbc03e9b3a4d2",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5319x4220",
-              "targetDimensions": "1573x907",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Локальная копия хранится для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "primaryPersonId": "P102931",
+  "context": {
+    "historical": "Метрическая запись одновременно фиксирует дату смерти, погребения, возраст, сословие и принадлежность к Изяк-Никитинскому посёлку.",
+    "identityAssessment": "Это отдельный старший Павел Данилович: возраст 60 лет даёт рождение около 1831–1832 годов и исключает P1542, родившегося около 1863–1864 годов и документированного в следующем поколении.",
+    "migrationAssessment": "Поселковая принадлежность фиксирует место на дату смерти, но не образует доказанного маршрута переселения."
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Точная дата рождения не названа и оценена только из возраста 60 лет."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитаны полный лист, заголовок, вся строка № 62 и соседние строки; подтверждены умерший, даты смерти и погребения, возраст, сословие, место и причина смерти. Исправлена ролевая ошибка индекса «отец умершего»; тёзка P1542 исключён по несовместимому возрасту."
   },
   "indexData": {
-    "querySnippet": "Отец умершего: Иван Максимов Бояркин, крестьянин, Ново-Намыский хутор. Отец умершего: Павел Данилов Ампилогов, казак, посёлок Никитинск.",
-    "fuzzyQuery": true
+    "querySnippet": "Отец умершего: Павел Данилов Ампилогов, казак, посёлок Никитинск.",
+    "fuzzyQuery": true,
+    "discrepancy": "Павел Данилович — сам умерший, а не отец умершего; место на скане читается Изяк-Никитинский посёлок."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-E660F5A7-49",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e660f5a7-7190-4415-a0e5-f2564d9148b9",
     "scanNumber": 49
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e660f5a7-7190-4415-a0e5-f2564d9148b9/49"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E660F5A7-49",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e660f5a7-7190-4415-a0e5-f2564d9148b9",
     "scanNumber": 49,
@@ -41,6 +32,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e660f5a7-7190-4415-a0e5-f2564d9148b9/0049-target-entry.png",
         "sha256": "f2b1bef0bc898af6e65ec0ac4059af3b3585ada41870a4ee8324c67dd840a410",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e660f5a7-7190-4415-a0e5-f2564d9148b9/0049-target-context-deep.png",
+        "sha256": "05c63a8a452974bd941abe7a9076c6a1b83fb53def09525ce4ecb41b13c9ae1a",
+        "description": "Крупный полноширинный чистый фрагмент с заголовком и всеми видимыми строками для отрицательной проверки.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +47,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "6085x4798",
       "targetDimensions": "1533x710",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5800x4300"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +103,38 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-confirmed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: полный лист, заголовок, все видимые строки и границы табличных записей проверены вручную; индексная фамильная цель не найдена."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 6085x4798 birth spread, heading, all visible August rows across child/parent/godparent/clergy columns and row boundaries, exact old target crop; confirmed false index hit; no profile/public event/map; clean 5800x4300 context crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "мсич\nчі онедерини припвлнним\nбелинов втирибонови притянения\nОчьища Свнишина Пмннова вирмся\nвимирскйй міщатим Николий Ми-\nхайлв Ксспншинуя и притвяння",
-    "modernInterpretation": "мсич чи онедерини припвлнним белинов втирибонови притянения Очьища Свнишина Пмннова вирмся вимирскйй мищатим Николий Ми- хайлв Ксспншинуя и притвяння",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "мсич\nчі онедерини припвлнним\nбелинов втирибонови притянения\nОчьища Свнишина Пмннова вирмся\nвимирскйй міщатим Николий Ми-\nхайлв Ксспншинуя и притвяння",
-    "localOcrWithSurnameLexicon": "ні оне дерни привнен\nбелинов втирибонови притянения\nОчьица Снишина Паннова виршел\nвимирский міщаним Николий Ми-\nхайлв Кимишинуя и притвяння",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "На полном развороте части о родившихся видны последовательные записи августа с детьми Матфеем, Евдокией, Матфеем, Наталией, Ириной и другими. В сохранённой индексом области восприемники читаются как «той же деревни крестьянинъ Романъ Семеновъ [фамилия неуверенно] и крестьянская девица Акилина Гаврилова Бузлева»; Кондратия Афанасьева Ампилогова нет.",
+    "modernInterpretation": "Полный сохранённый лист вручную прочитан: носителей исследуемого фамильного ряда на нём нет. Индексное совпадение подтверждено как ложное.",
+    "indexNote": "Confirmed false positive: индексные Кондратий Афанасьев Ампилогов и Агафия Григорьева не соответствуют сохранённой строке; на ней Роман Семёнов и Акилина Гаврилова, а весь разворот фамильной цели не содержит."
   },
   "indexData": {
     "querySnippet": "Той же деревни крестьянин Кондратий Афонасьев Ампилогов и крестьянка Агафия Григорьева.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive: индексные Кондратий Афанасьев Ампилогов и Агафия Григорьева не соответствуют сохранённой строке; на ней Роман Семёнов и Акилина Гаврилова, а весь разворот фамильной цели не содержит."
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "source-review",
+    "date": {
+      "display": "год на данном листе не установлен",
+      "confidence": "low"
+    }
+  },
+  "context": {
+    "eventSummary": "Негативная проверка индексного фамильного совпадения по полному первичному изображению.",
+    "identityNote": "Профили и backlinks не создаются: фамильная цель на листе отсутствует.",
+    "migrationNote": "Карта и миграция неприменимы."
+  },
+  "publicCore": false
 }

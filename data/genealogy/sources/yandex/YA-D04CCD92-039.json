@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-039",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-baptism",
   "collection": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 39,
@@ -12,30 +12,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/39"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-baptism",
+    "recordNumber": 88,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "крещение 23.10.1913",
+      "iso": "1913-10-23",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "рождение 22.10.1913",
+      "iso": "1913-10-22",
+      "calendar": "julian",
+      "confidence": "high"
     },
     "place": {
+      "asWritten": "село Гамалеевка",
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-D04CCD92-039-M1",
-      "role": "father",
-      "personId": "P102654",
-      "displayName": "крестьянин Максим Антоніев Ампилов",
-      "nameAsTranscribed": "крестьянинъ Максимъ Антоніевъ Ампиловъ",
+      "role": "child",
+      "personId": "P103005",
+      "nameAsTranscribed": "Іоаннъ",
+      "displayName": "Иоанн Максимович Ампилов",
       "surnameSeries": true
     },
     {
       "mentionId": "YA-D04CCD92-039-M2",
+      "role": "father",
+      "personId": "P102654",
+      "nameAsTranscribed": "Максимъ Антоніевъ Ампиловъ",
+      "displayName": "Максим Антонович Ампилов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-039-M3",
       "role": "mother",
       "personId": null,
-      "displayName": "жена его Марія Евфимова",
-      "nameAsTranscribed": "жена его Марія Евфимова",
+      "nameAsTranscribed": "Марія Евфимова",
+      "displayName": "Мария Ефимовна",
       "surnameSeries": false
     }
   ],
@@ -59,6 +77,12 @@
         "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0039-target-entry.png",
         "sha256": "c18fb42e2562d0d2324a1083db6549592878e124e697aa266d359971b2cc5a9e",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0039-target-context-deep.jpg",
+        "sha256": "2b58e03e190b0dea552547257f55ecdaf8c42cd56cfae7176152292b61f9695c",
+        "description": "Широкий крупный фрагмент целевой записи с датами, именами, родителями и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -67,37 +91,46 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5305x4370",
       "targetDimensions": "1402x982",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5200x1150",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянин Максим Антониев Ампилов и жена его Мария Евфимова; православные.",
-    "modernInterpretation": "Максим Антонович Ампилов и Мария Ефимовна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "іаконь Гсаннь (макові\nФрамомизить Шін Совоиевя\nСшиствататрески к)чатычкини\nета\nСісмеант Убанноєь Михапловь\nи уеень ео ратчн овртзр\nпраюславные\nСвяуетника Вийдиміт Бімкехій\nіаконь Хоаннь Сикнові\nроамомизинайних соболеки",
-    "localOcrWithSurnameLexicon": "іаконь Ганнь (макові\nГрамомизи Шін Совоне\nСпиствататрески к) чатычкини\nета\nСімені Убанновь Михапловь\nпраюславные\nСвящетника Видиміж Білкеній\nіаконь Хоаннь Сикнові\nросмомизинайних соболени",
+    "status": "complete-manual-reading-of-original",
+    "literal": "№ 88. 22. 23. Іоаннъ, мученика 22 октября. Села Гамалеевки крестьянинъ Максимъ Антоніевъ Ампиловъ и жена его Марія Евфимова, православные.",
+    "modernInterpretation": "В акте № 88 записано рождение Иоанн Максимович Ампилов: 22.10.1913 и крещение 23.10.1913. Родители — Максим Антонович Ампилов и Мария Ефимовна; мать сохранена как участница акта без отдельного профиля, поскольку её собственная фамилия не указана.",
+    "indexNote": "Индекс перечисляет матерей из разных строк листа. Акт № 88 вручную прочитан по оригиналу; новорождённый Иоанн не является P102936, которому в записи о смерти 1914 года было 12 лет.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryBasis": "manual-reading-of-saved-original",
+      "externalIndex": "navigation-only"
     }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-against-original-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот и вся строка акта № 88 во всех графах: номер, даты рождения и крещения, имя ребёнка, календарное наречение, родители, сословие, место и восприемники. Новорождённый Иоанн отделён от P102936 по несовместимому возрасту последнего; фамилия матери и миграция не выводятся.",
+    "correctionHistory": [
+      "2026-09-13: акт № 88 вручную перечитан по широкому фрагменту оригинала; восстановлены ребёнок, точные даты, родители."
     ]
   },
   "indexData": {
     "querySnippet": "Мать: Мария Евфимова Ампилова. Мать: Марфа Родионова Солдатова. Мать: Татиана Артамонова Михаилова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verification": "corrected-and-expanded-from-original",
+    "warning": "Индекс перечисляет матерей из разных строк листа. Акт № 88 вручную прочитан по оригиналу; новорождённый Иоанн не является P102936, которому в записи о смерти 1914 года было 12 лет."
+  },
+  "primaryPersonId": "P103005",
+  "historicalContext": {
+    "text": "Метрическая запись фиксирует семейное событие в приходе села Гамалеевки в 1913 году. Формула «крестьянин села Гамалеевки» описывает документированный статус и место семьи на дату акта; отдельный вывод о переселении не делается."
   }
 }

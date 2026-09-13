@@ -2,15 +2,27 @@
   "schemaVersion": 1,
   "sourceId": "YA-D22EFFC9-393",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "parallel-primary-copy",
   "collection": {
     "catalogId": "d22effc9-b2e0-4476-968d-1d54bc40b43f",
-    "scanNumber": 393
+    "scanNumber": 393,
+    "title": "Метрическая книга села Высокий Колок за 1890 год, часть о бракосочетавшихся",
+    "archiveCitation": "ГА Ульяновской области, ф. 134, оп. 29, д. 6, скан 393"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d22effc9-b2e0-4476-968d-1d54bc40b43f/393"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D22EFFC9-393-M1",
+      "role": "bride-surety-on-granular-record",
+      "personId": null,
+      "nameAsTranscribed": "деревни Брусовки крестьянинъ Иванъ Никитинъ Ампилоговъ",
+      "displayName": "Иван Никитич Ампилогов",
+      "surnameSeries": true,
+      "granularSourceId": "YA-D22EFFC9-393-R11"
+    }
+  ],
   "evidence": {
     "catalogId": "d22effc9-b2e0-4476-968d-1d54bc40b43f",
     "scanNumber": 393,
@@ -32,6 +44,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d22effc9-b2e0-4476-968d-1d54bc40b43f/0393-target-entry.png",
         "sha256": "fb1d9205b0b28ce04cd501c5ee27984a4418e81b7c2d5e6d367c8d6a058f7248",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d22effc9-b2e0-4476-968d-1d54bc40b43f/0393-target-context-deep.jpg",
+        "sha256": "8ce4ec9364f49258315b648ace52624130ddca08a8499aeb0538e6464d9d091e",
+        "description": "Широкий чистый фрагмент целевой записи со всеми значимыми графами и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -40,7 +58,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4066x3270",
       "targetDimensions": "1200x909",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "3900x1700",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -77,27 +98,33 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "deep-reviewed-against-original-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный октябрьский брачный разворот, запись № 11 и обе стороны строки, включая графу поручителей. Root сопоставлен с YA-D22EFFC9-393-R11; одноимённые профили не объединялись.",
+    "correctionHistory": [
+      "2026-09-13: найдено и вручную подтверждено упоминание Ивана Никитича Ампилогова в записи № 11."
     ]
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Виськаго вааіка\nоли Поменифи фер г\nпрестойн: свлексаноз МКакси-\nсиувих Мифалко профонгвасланю\nм? Кристставний рицовай ватс\nХазілий? Сарідновто новежний\nгар. Прусовпатня: Анікйлав\nми ренть) Шилова пивинв Ника\nпинг сапилогова.\nвоменицх, дер. 24 сокалопялка\nКрестьяе: МидасроНиконор)\n2 Сендорьоистрясві; понивтарт\nселасливанню ввскаю",
-    "modernInterpretation": "Виськаго вааика оли Поменифи фер г престойн: свлексаноз МКакси- сиувих Мифалко профонгвасланю м? Кристставний рицовай ватс Хазилий? Саридновто новежний гар. Прусовпатня: Аникйлав ми ренть) Шилова пивинв Ника пинг сапилогова. воменицх, дер. 24 сокалопялка Крестьяе: МидасроНиконор) 2 Сендорьоистрясви; понивтарт селасливанню ввскаю",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "Виськаго вааіка\nоли Поменифи фер г\nпрестойн: свлексаноз МКакси-\nсиувих Мифалко профонгвасланю\nм? Кристставний рицовай ватс\nХазілий? Сарідновто новежний\nгар. Прусовпатня: Анікйлав\nми ренть) Шилова пивинв Ника\nпинг сапилогова.\nвоменицх, дер. 24 сокалопялка\nКрестьяе: МидасроНиконор)\n2 Сендорьоистрясві; понивтарт\nселасливанню ввскаю",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-overview-with-granular-transcription",
+    "literal": "Октябрь. № 11. 28. … По невѣстѣ: … деревни Брусовки крестьянинъ Иванъ Никитинъ Ампилоговъ.",
+    "modernInterpretation": "28 октября 1890 года Иван Никитич Ампилогов из деревни Брусовки был поручителем невесты; полная карточка события — YA-D22EFFC9-393-R11.",
+    "indexNote": "Полный разворот, строка № 11 и правая графа поручителей прочитаны вручную. Корневая карточка указывает на существующий granular Record без нового профиля и backlinks: в проекте есть несколько одноимённых людей без безопасного различительного признака."
   },
   "indexData": {
-    "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
-  }
+    "querySnippet": "Иван Никитин Ампилогов — поручитель невесты в записи № 11.",
+    "fuzzyQuery": true,
+    "verification": "confirmed-from-original-and-granular-record"
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "historicalContext": {
+    "text": "Поручительство документирует участие Ивана Никитича Ампилогова в брачном акте в Высоком Колке, но само по себе не доказывает родства с супругами.",
+    "identityBoundary": "Не выбран ни один из P0726, P0603, P0437 и P0302; имя без дополнительных биографических признаков недостаточно для слияния."
+  },
+  "isRecord": true,
+  "cardKind": "parallel-primary-copy",
+  "publicCore": false
 }

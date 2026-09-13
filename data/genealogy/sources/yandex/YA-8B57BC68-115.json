@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8B57BC68-115",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "marriage-record",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8",
     "scanNumber": 115,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/115"
   },
   "event": {
-    "type": "marriage-record",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1912 — 31 декабря 1912",
-      "confidence": "high-for-catalog-date"
+      "display": "1912",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "приход села Михайловского, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8B57BC68-115-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8",
     "scanNumber": 115,
@@ -48,10 +40,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0115-target-entry.png",
-        "sha256": "f5d9157251ba9c40f01731ef731db0cbd960bc4e4f9c0c71e9176f91f8c80c1c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/0115-target-context-deep.jpg",
+        "sha256": "f6d81087d8facdf3f16dee83b8b13ad50f2691e92274dcd7e49b097aa8f91597",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +51,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5124x4238",
-      "targetDimensions": "1313x921",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x2800",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "VAT\nГИПОГРА\nNOTDE\nГh ВТОРÁД, Ủ БРАКОСОЧЕТАВІ\nПодпись\nВто были пор8чйтєли.\nзáпcH\nл, д\n• хаи",
-    "modernInterpretation": "VAT ГИПОГРА NOTDE Гh ВТОРÁД, Ủ БРАКОСОЧЕТАВІ Подпись Вто были пор8чйтєли. зáпcH л, д • хаи",
-    "localOcr": "VAT\nГИПОГРА\nNOTDE\nГh ВТОРÁД, Ủ БРАКОСОЧЕТАВІ\nПодпись\nВто были пор8чйтєли.\nзáпcH\nл, д\n• хаи",
-    "localOcrWithSurnameLexicon": "VAT\nТИПОГРА\nГ. ВТОРАД, й БРАКОСОЧЕТАВІ\nПодпись\nВто били порвчители.\nл, д",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги за 1912 год, часть вторая, о бракосочетавшихся: записи конца октября и начала ноября. В колонке поручителей всех видимых браков Александр Ефремов Анпилогов не назван; индексная фраза этому листу не соответствует.",
+    "modernInterpretation": "На скане 115 нет заявленного индексом Александра Ефремовича Анпилогова. Видимые брачные записи и все соответствующие строки поручителей проверены целиком.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всей релевантной строки имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Поручитель: Александр Ефремов Анпилогов, крестьянин, село Кармалка.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, видимые брачные строки конца октября/начала ноября и вся колонка поручителей; Александр Ефремов Анпилогов отсутствует; сохранён clean crop 4700×2800 с SHA; исключены профиль, backlink, карта, родство и миграция"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

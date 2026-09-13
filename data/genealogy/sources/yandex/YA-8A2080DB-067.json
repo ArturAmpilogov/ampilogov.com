@@ -1,103 +1,20 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8A2080DB-067",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
-  "collection": {
-    "catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2",
-    "scanNumber": 67,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Гамалеевка, Кирсановка за 1914 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/67"
-  },
-  "event": {
-    "type": "death-of-child",
-    "date": {
-      "display": "1914",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "death-and-burial",
+  "collection": {"catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2", "scanNumber": 67, "asRead": "Метрическая книга 1914 года, часть третья, об умерших; июль, мужской счёт № 29"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/67"},
+  "event": {"type": "death-and-burial", "recordNumber": 29, "date": {"display": "умер 12 июля, погребён 13 июля 1914 года", "deathIso": "1914-07-12", "burialIso": "1914-07-13", "confidence": "high"}, "place": {"asWritten": "село Гамалеевка", "normalized": "Гамалеевка, Бузулукский уезд, Самарская губерния, Российская империя", "placeId": "gamaleyevka-buzuluk"}},
   "mentions": [
-    {
-      "mentionId": "YA-8A2080DB-067-M1",
-      "role": "father",
-      "personId": "P102654",
-      "displayName": "крестьянин Максим Антонов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Максимъ Антоновъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-8A2080DB-067-M2",
-      "role": "deceased-child",
-      "personId": null,
-      "displayName": "сын Іоанн",
-      "nameAsTranscribed": "сынъ Іоаннъ",
-      "surnameSeries": false
-    }
+    {"mentionId": "YA-8A2080DB-067-M1", "role": "deceased-son", "personId": "P102936", "sex": "male", "nameAsTranscribed": "сынъ Іоаннъ", "displayName": "Иван Максимович Ампилов", "ageAsWritten": "12 лѣтъ", "surnameSeries": true},
+    {"mentionId": "YA-8A2080DB-067-M2", "role": "father", "personId": "P102654", "sex": "male", "nameAsTranscribed": "Села Гамалеевки крестьянина Максима Антонова Ампилова", "displayName": "Максим Антонович Ампилов", "surnameSeries": true},
+    {"mentionId": "YA-8A2080DB-067-M3", "role": "clergy", "personId": null, "nameAsTranscribed": "Священникъ Владимиръ Бѣльскій; діаконъ Іоаннъ Сивковъ; псаломщикъ Илія Соболевъ", "displayName": "Владимир Бельский, Иоанн Сивков и Илия Соболев", "surnameSeries": false}
   ],
-  "evidence": {
-    "catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2",
-    "scanNumber": 67,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "fab5f48d51fce56772a3b2183f094732658a5ca3fe251e0d36b7e4114b3e9ec1",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-header.png",
-        "sha256": "33e47d090b57e30fd53a8481030bd859290c9708466448e20ef0c78ca9bf42b7",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-target-entry.png",
-        "sha256": "bb05a3237dff5ee4ce3138ef3b972353a5e65e647639c88557c160e40365fa94",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4724x3848",
-      "targetDimensions": "1334x744",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянина Максима Антонова Ампилова сын Иоанн [в записи об умерших].",
-    "modernInterpretation": "У Максима Антоновича Ампилова умер сын Иван.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Їнинв синсеткь гриерие муусано пама\nВньввно:\nикь\nкладили\nріскань с саннь шьнові\nматашантльки кристьянина Наканора\nНикифорова Мрубина дочь буманій\nлио втлнткиі\nСвященника\nтаканьсаннь слькові",
-    "localOcrWithSurnameLexicon": "(кинь синень гриерие мусано пама\nикь\nгладили\nрікань с саннь льнові\nма амантльки крестьянина Никанора\nМикифорова трубина дочь буманій\nли втини:\nСвященника\nтакань саннь ількові",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Села Гамалеевки крестьянина Максима Антонова Ампилова сын Иоанн Священник Владимир Бельский Диакон Иоанн Сивков Псаломщик Илия Соболев.",
-    "fuzzyQuery": true
-  }
+  "transcription": {"status": "complete-primary-scan-transcription-manually-verified", "literal": "1914 год, часть третья, об умерших. Іюль. Мужескаго пола № 29. 12 [умеръ], 13 [погребёнъ]. Села Гамалеевки крестьянина Максима Антонова Ампилова сынъ Іоаннъ. 12 лѣтъ. Отъ поноса. Священникъ Владимиръ Бѣльскій; діаконъ Іоаннъ Сивковъ; псаломщикъ Илія Соболевъ.", "modernInterpretation": "12 июля 1914 года в Гамалеевке от поноса умер двенадцатилетний Иван Максимович Ампилов; погребён 13 июля. Отец прямо назван крестьянином Максимом Антоновичем Ампиловым.", "indexNote": "Индекс верно указал отца и сына, но не давал номера, точных дат, возраста и причины смерти. Все поля прочитаны на полном листе; отец связан с P102654, ребёнок получил отдельный документный профиль P102936."},
+  "evidence": {"catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2", "scanNumber": 67, "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-full-width-fragment", "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png", "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-full-view.png", "capturedAt": "2026-09-11", "sha256": "fab5f48d51fce56772a3b2183f094732658a5ca3fe251e0d36b7e4114b3e9ec1", "fragments": [{"kind": "deep-context", "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0067-deep-context.png", "sha256": "4b3c6017e3f93eed30d8d0a67d6299237480d342ce61b2f531ed44858e898103", "description": "Чистый полноширинный фрагмент верхней части листа с записью № 29, датами, возрастом, причиной и причтом."}], "quality": {"originalImageDownloaded": true, "documentOnlyVisuallyConfirmed": true, "allVisibleRowsChecked": true, "targetRowsVisuallyConfirmed": true, "fullDimensions": "4724x3848", "contextDimensions": "4400x1900", "method": "manual-full-spread-and-complete-row-reading", "confirmedAt": "2026-09-12"}, "publicDisplay": false, "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."},
+  "review": {"status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-12", "deepReviewScope": "Вручную прочитаны полный разворот 1914 года, июльская запись мужского счёта № 29 и все графы: 12/13 июля, Иван, отец Максим Антонович Ампилов, возраст 12 лет, причина «понос», причт; создан P102936 и reciprocal father/son по санкции root; clean crop 4400×1900."},
+  "indexData": {"querySnippet": "Села Гамалеевки крестьянина Максима Антонова Ампилова сын Иоанн.", "fuzzyQuery": true},
+  "isRecord": true, "cardKind": "named-primary-record", "publicCore": true, "primaryPersonId": "P102936",
+  "context": {"eventSummary": "Смерть и погребение двенадцатилетнего Ивана Максимовича Ампилова в Гамалеевке.", "identityNote": "Формула «Максима Антонова Ампилова сын Иоанн» прямо доказывает связь P102654 father-of P102936.", "historicalNote": "«Понос» записан как причина смерти в метрической графе; современный диагноз по этой формуле не реконструируется.", "migrationNote": "Место смерти не доказывает переселение."}
 }

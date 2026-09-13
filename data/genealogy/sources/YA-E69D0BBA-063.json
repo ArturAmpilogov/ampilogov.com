@@ -1,16 +1,35 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-063",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "63"
+    "scanNumber": 63,
+    "asRead": "Метрическая книга за 1911 год; оригинальный разворот прочитан вручную"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/63"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-E69D0BBA-063-M1",
+      "role": "groom",
+      "personId": "P102039",
+      "nameAsTranscribed": "села Зобова крестьянинъ Феодоръ Димитріевъ Ампилоговъ",
+      "displayName": "Фёдор Дмитриевич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-E69D0BBA-063-M2",
+      "role": "bride",
+      "personId": null,
+      "nameAsTranscribed": "невеста из села Зобова, 20 лет",
+      "displayName": "Невеста из села Зобова",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-full-view.jpg",
@@ -43,6 +62,12 @@
             "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-target-entry.png",
             "sha256": "4648bea3a15d24b99a707c32cb0bb4c5fc5deda997446cc786c3c1c8cd3467fd",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0063-target-entry-deep.png",
+            "sha256": "7c8cdbf9067d139ea0b9dc7a809922d46c1619e0e02b25a1a8cc44095348d744",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +75,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5922x4659",
-          "targetDimensions": "1200x1042",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5500x1500",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,27 +86,46 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Имя невесты не нормализовано без дополнительной независимой сверки почерка."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный брачный разворот, строка № 15 от 31 июля, жених, возраст, брачность, невеста, поручители и соседние строки. Тождество P102039 подтверждено полным именем, Зобовом и согласованной хронологией. Wide clean crop 5500×1500."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "МеТРИЧеСВ\nЗвáніє, йма, бтчество, фамиліл\nАвтà\nАЦЬ\nй ккроиспов'іданіє жениха,\nженихÀ.\nÉNA.\nй котóрыми брáкому.\n! Cha 2,0 hakgernsrm\nМимьереї рпгеркев\nRлaчуr. noa kohabn",
-    "localOcrWithSurnameLexicon": "МеТРИЧеСВ\nЗвАніє, йма, отчество, фамиліл\nАвта\nАЦ%\nй кароисповіданіє жениха,\nжених.\nÉNA.\nй которыми бракому.\nМитьереї ригоркев",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Июль. № 15. 31. Села Зобова крестьянинъ Феодоръ Димитріевъ Ампилоговъ, православнаго вероисповеданія, первымъ бракомъ, 17½ лет; невеста из села Зобова, православная, первым браком, 20 лет.",
+    "modernInterpretation": "31 июля 1911 года 17½-летний крестьянин села Зобова Фёдор Дмитриевич Ампилогов вступил в первый брак.",
+    "indexNote": "ФИО, Зобово и возраст подтверждены оригиналом; поручители и соседние строки прочитаны для разграничения."
   },
   "indexData": {
     "querySnippet": "Жених: Феодор Димитриев Ампилогов, крестьянин, село Зобово, 17 1/2. Поручитель: Григорий Николаев Даньшин, крестьянин, то же село.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "assessment": "confirmed-from-primary-scan"
+  },
+  "primaryPersonId": "P102039",
+  "event": {
+    "type": "marriage",
+    "recordNumber": 15,
+    "date": {
+      "iso": "1911-07-31",
+      "display": "31 июля 1911 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "zobovo-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Первый брак Фёдора Дмитриевича Ампилогова.",
+    "identityNote": "P102039 связан по точному полному имени, месту и согласованной хронологии; супруга отдельным профилем не создаётся.",
+    "migrationNote": "Брак в Зобове не доказывает миграцию."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

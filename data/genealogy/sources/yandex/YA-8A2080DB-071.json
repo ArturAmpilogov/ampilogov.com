@@ -1,103 +1,20 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8A2080DB-071",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
-  "collection": {
-    "catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2",
-    "scanNumber": 71,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Гамалеевка, Кирсановка за 1914 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/71"
-  },
-  "event": {
-    "type": "death-of-child",
-    "date": {
-      "display": "1914",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "death-and-burial",
+  "collection": {"catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2", "scanNumber": 71, "asRead": "Метрическая книга 1914 года, часть третья, об умерших; июль, мужской счёт № 47"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/71"},
+  "event": {"type": "death-and-burial", "recordNumber": 47, "date": {"display": "умер 22 июля, погребён 23 июля 1914 года", "deathIso": "1914-07-22", "burialIso": "1914-07-23", "confidence": "high"}, "place": {"asWritten": "село Гамалеевка", "normalized": "Гамалеевка, Бузулукский уезд, Самарская губерния, Российская империя", "placeId": "gamaleyevka-buzuluk"}},
   "mentions": [
-    {
-      "mentionId": "YA-8A2080DB-071-M1",
-      "role": "father",
-      "personId": "P102646",
-      "displayName": "крестьянин Мирон Константинов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Миронъ Константиновъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-8A2080DB-071-M2",
-      "role": "deceased-child",
-      "personId": null,
-      "displayName": "сын Александр",
-      "nameAsTranscribed": "сынъ Александръ",
-      "surnameSeries": false
-    }
+    {"mentionId": "YA-8A2080DB-071-M1", "role": "deceased-son", "personId": "P102937", "sex": "male", "nameAsTranscribed": "сынъ Александръ", "displayName": "Александр Миронович Ампилов", "ageAsWritten": "1 годъ", "surnameSeries": true},
+    {"mentionId": "YA-8A2080DB-071-M2", "role": "father", "personId": "P102646", "sex": "male", "nameAsTranscribed": "Села Гамалеевки крестьянина Мирона Константинова Ампилова", "displayName": "Мирон Константинович Ампилов", "surnameSeries": true},
+    {"mentionId": "YA-8A2080DB-071-M3", "role": "clergy", "personId": null, "nameAsTranscribed": "Священникъ Владимиръ Бѣльскій; діаконъ Іоаннъ Сивковъ; псаломщикъ Илія Соболевъ", "displayName": "Владимир Бельский, Иоанн Сивков и Илия Соболев", "surnameSeries": false}
   ],
-  "evidence": {
-    "catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2",
-    "scanNumber": 71,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "6d189dfd5c256f746d38169110cb02982a0dfc45f0a50a943c273fc883a00cfe",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-header.png",
-        "sha256": "22b1c13b808312f0706e45f9e007cccc6e7d74179ab1f895c61408406c4c9b28",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-target-entry.png",
-        "sha256": "2a1e5810d6de28581573c5e055d1faf0437320a5c8b47de1d61411cd17b40195",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4724x3848",
-      "targetDimensions": "1417x741",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянина Мирона Константинова Ампилова сын Александр, 1 года; воспаление лёгких.",
-    "modernInterpretation": "У Мирона Константиновича Ампилова умер годовалый сын Александр от воспаления лёгких.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "влавашанпявки крестьянина Гоганна\n8.\nввоимова Медвпінина доль Валектика\"\n- Вльниі\nвященникь Виаим\nДіакань Сбаннь Сивкон\n(есломиз 1122. Гиіся Собалевг\nтаматськи Крестьянинт ришитта\nУсаннова Шаєминова синь Петрі\nlcung\nСалуянник Вийиніці Біальски",
-    "localOcrWithSurnameLexicon": "Села вашанпявки крестьянина Гоганна\n8.\nвилова Медвлінина доль Валентина \"\n- Вільний\nвященникь Виадим\nДіакань Сваннь Сивкон\nреаломи 112 Гія Собачевч\nтамански Крестьянинт ринитта\nІванкова Шаєминова синь Петрі\nСалуенник Вийдиніці Бальски",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Села Гаманеевки крестьянина Мирона Константинова Ампилова сын Александр 1 г. Священник Владимир Бельский Диакон Иоанн Сивков Псаломщик Илия Соболев.",
-    "fuzzyQuery": true
-  }
+  "transcription": {"status": "complete-primary-scan-transcription-manually-verified", "literal": "1914 год, часть третья, об умерших. Іюль. Мужескаго пола № 47. 22 [умеръ], 23 [погребёнъ]. Села Гамалеевки крестьянина Мирона Константинова Ампилова сынъ Александръ. 1 годъ. Отъ воспаленія легкихъ. Священникъ Владимиръ Бѣльскій; діаконъ Іоаннъ Сивковъ; псаломщикъ Илія Соболевъ.", "modernInterpretation": "22 июля 1914 года в Гамалеевке от воспаления лёгких умер годовалый Александр Миронович Ампилов; погребён 23 июля. Его отец прямо назван крестьянином Мироном Константиновичем Ампиловым.", "indexNote": "Индекс передал имена и возраст приблизительно, но не сохранял номер, точные даты и полную причину смерти. Оригинал проверен по всей строке; отец связан с P102646, ребёнок получил P102937."},
+  "evidence": {"catalogId": "8a2080db-5be4-44ac-85f3-85e1ee96b1a2", "scanNumber": 71, "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-full-width-fragment", "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-full-view.png", "localBackup": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-full-view.png", "capturedAt": "2026-09-11", "sha256": "6d189dfd5c256f746d38169110cb02982a0dfc45f0a50a943c273fc883a00cfe", "fragments": [{"kind": "deep-context", "path": "data/genealogy/evidence-private/yandex/8a2080db-5be4-44ac-85f3-85e1ee96b1a2/0071-deep-context.png", "sha256": "bb6cac92081f1505e8ebb6fd81216c6f0353b150108b4eb557bb6cab7dc8f02b", "description": "Чистый полноширинный фрагмент июльских записей, включая полную строку № 47, возраст, причину и погребение."}], "quality": {"originalImageDownloaded": true, "documentOnlyVisuallyConfirmed": true, "allVisibleRowsChecked": true, "targetRowsVisuallyConfirmed": true, "fullDimensions": "4724x3848", "contextDimensions": "4400x2500", "method": "manual-full-spread-and-complete-row-reading", "confirmedAt": "2026-09-12"}, "publicDisplay": false, "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."},
+  "review": {"status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-12", "deepReviewScope": "Вручную прочитаны полный разворот 1914 года, июльская запись мужского счёта № 47 и все графы: 22/23 июля, Александр, отец Мирон Константинович Ампилов, возраст 1 год, воспаление лёгких, причт; создан P102937 и reciprocal father/son по санкции root; clean crop 4400×2500."},
+  "indexData": {"querySnippet": "Села Гамалеевки крестьянина Мирона Константинова Ампилова сын Александр, 1 года.", "fuzzyQuery": true, "discrepancy": "Топоним в индексе искажён как «Гаманеевка»; оригинал читает Гамалеевку."},
+  "isRecord": true, "cardKind": "named-primary-record", "publicCore": true, "primaryPersonId": "P102937",
+  "context": {"eventSummary": "Смерть и погребение годовалого Александра Мироновича Ампилова в Гамалеевке.", "identityNote": "Формула «Мирона Константинова Ампилова сын Александр» прямо доказывает связь P102646 father-of P102937.", "historicalNote": "Причина смерти записана как воспаление лёгких; современная нозологическая детализация не выводится.", "migrationNote": "Место смерти не доказывает переселение."}
 }

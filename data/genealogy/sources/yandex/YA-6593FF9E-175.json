@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-6593FF9E-175",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "6593ff9e-5bcf-4c9b-9ba5-ca9f7f46e19b",
     "scanNumber": 175,
@@ -13,7 +13,7 @@
     "documentUrl": "https://yandex.ru/archive/catalog/6593ff9e-5bcf-4c9b-9ba5-ca9f7f46e19b/175"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-register-page",
     "date": {
       "display": "1 января 1909 — 31 декабря 1909",
       "confidence": "high-for-catalog-date"
@@ -22,15 +22,7 @@
       "normalized": "не установлено"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-6593FF9E-175-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "6593ff9e-5bcf-4c9b-9ba5-ca9f7f46e19b",
     "scanNumber": 175,
@@ -66,30 +58,31 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ГРИЧЕСКОЙ КНИГИ NА\n1909\nTÓg\nЗвáніє, йма, отчество й фамиліл родителей, й какóп\nихсA.\nввроисповКданіл.\nКрестьянич Уоримской губерній Сп\nAрeс\nлитоманскаго, Менерувовской волостт)",
-    "modernInterpretation": "ГРИЧЕСКОЙ КНИГИ NА 1909 TÓg Звáниє, йма, отчество й фамилил родителей, й какóп ихсA. ввроисповКданил. Крестьянич Уоримской губерний Сп Aрeс литоманскаго, Менерувовской волостт)",
-    "localOcr": "ГРИЧЕСКОЙ КНИГИ NА\n1909\nTÓg\nЗвáніє, йма, отчество й фамиліл родителей, й какóп\nихсA.\nввроисповКданіл.\nКрестьянич Уоримской губерній Сп\nAрeс\nлитоманскаго, Менерувовской волостт)",
-    "localOcrWithSurnameLexicon": "ГРИЧЕСКОЙ КНИГИ НА\n1909\nЗваніє, йма, отчество й фаміліл родителей, й какоп\nихсА.\nввроиспов даніл.\nКрестьяний Форимской губерній Спо\nКрес\nлитоманскаго, Менерувовской волостт,",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-negative-review",
+    "literal": "Метрической книги на 1909 год, часть первая, о родившихся. На полном развороте читаются октябрьско-ноябрьские записи с детьми Иосифом, Анной, Елисаветой и соседними строками; родители и восприемники принадлежат иным фамилиям. Иван Лазарев Анпилогов, Александра Павлова и приписанная им индексом семейная строка на листе отсутствуют.",
+    "modernInterpretation": "Сохранённый полный разворот не содержит Ивана Лазарева Анпилогова и Александры Павловой; индексный сниппет относится к другой строке или другому листу.",
+    "indexNote": "Индекс Яндекса использован только как навигационная подсказка и опровергнут ручным чтением сохранённого полного оригинала."
   },
   "indexData": {
     "querySnippet": "Диакон Николай Григорьев Оренбургский мещанин Иван Лазарев Анпилогов и законная жена его Александра Павлова; оба православные.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Сохранённый полный разворот не содержит Ивана Лазарева Анпилогова и Александры Павловой; индексный сниппет относится к другой строке или другому листу."
+    ]
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "negative-search-review",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полный октябрьско-ноябрьский разворот части о родившихся и существующий крупный фрагмент; проверены все видимые строки и их границы. Индексные Иван Лазарев Анпилогов и Александра Павлова не обнаружены.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
+  },
+  "context": {
+    "eventSummary": "Сохранённый полный разворот не содержит Ивана Лазарева Анпилогова и Александры Павловой; индексный сниппет относится к другой строке или другому листу.",
+    "relationshipBoundary": "Реально видимые лица иных фамилий не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Негативная карточка сохраняет результат проверки, чтобы ложный fuzzy-hit не был повторно принят за первичный источник."
   }
 }

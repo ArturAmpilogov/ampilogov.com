@@ -1,103 +1,83 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-69DA7A2A-144",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "death-of-child",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
     "scanNumber": 144,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кирсановка, Гамалеевка за 1915 г."
+    "title": "Метрическая книга сёл Кирсановка и Гамалеевка за 1915 год",
+    "asRead": "Часть третья об умерших; майские записи № 42–50"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/144"
   },
   "event": {
-    "type": "death-of-child",
+    "type": "page-observation",
     "date": {
-      "display": "1915",
-      "confidence": "high-for-year"
+      "display": "1–8 мая 1915 года",
+      "from": "1915-05-01",
+      "to": "1915-05-08",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-69DA7A2A-144-M1",
-      "role": "father",
-      "personId": "P91124",
-      "displayName": "крестьянин Евфимій Гавріилов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Евфимій Гавріиловъ Ампиловъ",
-      "surnameSeries": true
-    },
-    {
-      "mentionId": "YA-69DA7A2A-144-M2",
-      "role": "deceased-child",
-      "personId": null,
-      "displayName": "дочь Наталія",
-      "nameAsTranscribed": "дочь Наталія",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
+  "transcription": {
+    "status": "complete-full-scan-confirmed-false-hit",
+    "literal": "Май. На полном развороте видны записи об умерших № 42–50 за 1–8 мая 1915 года с продолжением причин смерти и погребений. В именах умерших, родительских формулах и причте фамилия Ампилов / Ампилогов и варианты исследуемого ряда отсутствуют.",
+    "modernInterpretation": "Полный первичный лист не содержит носителей исследуемого фамильного ряда; поисковое совпадение подтверждено как ложное.",
+    "indexNote": "Индекс поместил на лист Наталию Евфимиевну Ампилову, но такой строки на полном развороте нет; P91124 к этому листу не относится."
+  },
   "evidence": {
     "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
     "scanNumber": 144,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "downloaded-original-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0144-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0144-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "b89325c0fe03b86404b1769db6756ca0200769ad264c7a9e1f5b1344a99e21b0",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0144-header.png",
-        "sha256": "ee832924e8623d565b841e41e38afb26f64b6ca0b660c6b066ba4678cef8cf32",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0144-target-entry.png",
-        "sha256": "76f594a5b877a86e38a91eb09b541d9653197a2d515e339cb1dd4b44d44cd14c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0144-target-context-deep.png",
+        "sha256": "2d1d341a82ebc1d05f8731bd10a487cf69841eb6dd36a1f3da3cbd2063bbb80e",
+        "description": "Крупный полноширинный чистый фрагмент со всеми проверенными строками и соседним контекстом, без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4217x3488",
-      "targetDimensions": "1246x585",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4000x2500",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянина Евфимия Гавриилова Ампилова дочь Наталия, 1 1/2 года [в записи об умерших].",
-    "modernInterpretation": "У Евфимия Гаврииловича Ампилова умерла полуторагодовалая дочь Наталия.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ГитаЛашамільки крестіянина Никасрода\nЇсанкева ПуЗнсцова сиинь Срічеьнь\nchng\nСвяденник Клааимір Бтинєм\nлакань Ґоаннь Сманик\nоарамамлинки крестьянина Посии\nКиланиква Медрвєдкина олінаВпра\nадилир Вжинкій\nСаякянникь Плазиміз",
-    "localOcrWithSurnameLexicon": "Гена Ламамільки крестіянина Никасода\nЗанкева ПуЗнацова синь Срічень\nking\nСиденник Кладимір Бінем\nлакань Ґваннь Сланик\nса амаллини крестьянина Посии\nКиланиква МедрАдина осна Впра\nадилир Вжинкий\nСаякянникь Плазиміз",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "rightsNote": "Локальная копия хранится для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "cardKind": "rejected-index-hit",
+  "publicCore": false,
+  "primaryPersonId": null,
+  "context": {
+    "historical": "Лист сохранён как отрицательный результат проверки поискового индекса; чужие участники не выделялись в профили.",
+    "genealogicalSignificance": "Предотвращает ложное включение индексного совпадения в фамильное дерево, публичный каталог и карту.",
+    "migrationAssessment": "Фамильного события нет; миграция и картографическая точка не создавались."
+  },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "manually-verified-index-false-positive",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный майский разворот части об умерших, все видимые строки № 42–50, их даты, имена, возрастные графы, причины смерти и погребения. Наталии Евфимиевны Ампиловой нет; индексное совпадение отвергнуто, ложный backlink P91124 удалён."
   },
   "indexData": {
-    "querySnippet": "Умерший: Иоанн Адрианов Дудин, 2. Умерший: Наталия Евфимиева Ампилова, 1 1/2. Умерший: Вера Симеонова Логиновская, 2 1/2.",
-    "fuzzyQuery": true
+    "querySnippet": "Умерший: Наталия Евфимиева Ампилова, 1 1/2.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс поместил на лист Наталию Евфимиевну Ампилову, но такой строки на полном развороте нет; P91124 к этому листу не относится."
   }
 }

@@ -1,93 +1,34 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-051",
-  "provider": "Яндекс Архив — первичный скан",
+  "provider": "Яндекс Архив — первичный архивный скан",
   "recordType": "marriage",
-  "collection": {
-    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
-    "scanNumber": 51,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Гамалеевка, Кирсановка за 1913 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/51"
-  },
-  "event": {
-    "type": "marriage",
-    "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
+  "primaryPersonId": "P102696",
+  "collection": { "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3", "scanNumber": 51, "title": "Метрическая книга села Гамалеевки за 1913 год" },
+  "links": { "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/51" },
+  "event": { "type": "marriage", "recordNumber": "10", "date": { "display": "18 января 1913 года", "iso": "1913-01-18", "confidence": "high" }, "place": { "normalized": "село Гамалеевка, Бузулукский уезд", "confidence": "high-for-collection" } },
   "mentions": [
-    {
-      "mentionId": "YA-D04CCD92-051-M1",
-      "role": "groom",
-      "personId": "P102696",
-      "displayName": "крестьянин Симеон Миронов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Симеонъ Мироновъ Ампиловъ",
-      "surnameSeries": true
-    }
+    { "mentionId": "YA-D04CCD92-051-M1", "role": "groom", "personId": "P102696", "displayName": "Семён Миронович Ампилов", "nameAsTranscribed": "села Гамалеевки крестьянинъ Симеонъ Мироновъ Ампиловъ", "surnameSeries": true, "age": "19 лет" },
+    { "mentionId": "YA-D04CCD92-051-M2", "role": "bride", "personId": null, "displayName": "Дарья Алексеева Сухарева", "nameAsTranscribed": "села Барабановки крестьянка Дарія Алексѣева Сухарева", "surnameSeries": false, "age": "16 лет" }
   ],
   "evidence": {
-    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
-    "scanNumber": 51,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3", "scanNumber": 51,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-wide-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0051-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0051-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "80c90b6e0c8080e668a0bf2a266ecebb9f196c101b2a067f16a7e65d83d53e6c",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0051-header.png",
-        "sha256": "6ee314546dd913e56e3de92464ea2986a1c6bbda257f3dee3abcdb8b247c6e98",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0051-target-entry.png",
-        "sha256": "060b2aaecb499101bc9d6be6be93ea02c52b20c06ee3e7cacc63c9eafbeac7e7",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5336x4333",
-      "targetDimensions": "3643x1052",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "capturedAt": "2026-09-11", "sha256": "80c90b6e0c8080e668a0bf2a266ecebb9f196c101b2a067f16a7e65d83d53e6c",
+    "fragments": [{ "kind": "deep-context", "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0051-target-context-deep.png", "sha256": "7e2e234e1bb01defbb076369ebbac54b4b70a7c7bc87468b7f79f5725f42e057", "description": "Чистый широкий фрагмент 5050×4000 с январскими браками № 9–12, брачующимися и поручителями." }],
+    "quality": { "originalImageDownloaded": true, "fullDimensions": "5336x4333", "contextDimensions": "5050x4000", "method": "manual-reading-of-downloaded-original-scan-and-wide-clean-crop" },
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянин Симеон Миронов Ампилов, православный, первым браком, 19 лет. Села Барабановки крестьянка Дария Алексеева Сухарева, православная, первым браком, 16 лет.",
-    "modernInterpretation": "Семён Миронович Ампилов в возрасте 19 лет вступил первым браком.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "//л\nа овьть сракаль 20 л. педввиь оракать (л\nСешеньвеленовь ОЛанкові\nЛеряей\n„ Виаифимір пінавлскій\nі акань сісаннь (мапова\nМеаломирка Шня Собалськ\nво зсениой ситвамоньями\n10 ганисть села!\nСла Варабановки\nlena\nостьяме Мапсииь сАнтонови\nкрестьянкаДарід\n1.\nкрестьянин, (імерня\nАшпиовь и Атбрей Тродошлова\nКнявевапи\nАлексіва Діхарева,\n•Мирановь Ашпилова,\nКалачеві; по неєльстів ала\nпракославная\nправославньм,\n/рабабановки К/яатьянинь Накокй\"\nпеввьшь двакомь\n/л.\nпервяь бракаль\n16л.\nПросримовь Сіха'евь жела Онишнн\nМерей\n? Buzaрey\nзіАнвски\nКи Nрестьянніь Сиід Викторівь\nДіакінь е/оаннь Слакови\nгимірь\nЖоановь.\nШсалолиципч Икія Совалсья",
-    "localOcrWithSurnameLexicon": "//л\nа овить ракаль 20 л. недви оракать /л\nСешень Селеновь Ланкові\n2 Винифимір Вінавскій\nі акань с/саннь (напова\nМасломирка Мня Совалськ\n10 канисть села!\nСла Барабановки\nlena\nостьяне Максии сАнтонова\nкрестьянка Дарід\n1.\nкрестьянин, (імення\nАмпиловь и Андрей Тросошлова\nКня в евами\nАлексіва Д/харева,\n•Мироновь Анпилова,\nКалачеві; по неєстів, ала\nправославная\nправославным,\n/рабабановки К/яатьянинь Накокй\"\nподвишь дракомь\n/ л.\nпервеь браконь\n16л.\nПросимов Сі хачевь жела Опишни\n? Buzapeiy\nзАвски\nКи Арестьянніь Миі Викторівь\nДіакінь е/оаннь Смакови\nжимінь\nЖоановь.\nШалоницип Шкія Совансья,",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Январь, запись о браке № 10, 18 числа. Жених: «села Гамалеевки крестьянинъ Симеонъ Мироновъ Ампиловъ, православный, первымъ бракомъ», 19 лет. Невеста: «села Барабановки крестьянка Дарія Алексѣева Сухарева, православная, первымъ бракомъ», 16 лет.",
+    "modernInterpretation": "Девятнадцатилетний Семён Миронович Ампилов из Гамалеевки вступил в первый брак с шестнадцатилетней Дарьей Алексеевной Сухаревой из Барабановки 18 января 1913 года.",
+    "indexNote": "Яндекс ошибочно присоединил фамилию Ампилова к невесте. Оригинал ясно относит фамилию Ампилов к жениху Семёну, а невесту называет Сухаревой."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Невеста: Дария Алексеева Ампилова (Сухарева), крестьянка, село Барабановка, 16. Невеста: Марфа Павлова Ильиных (Михайлова), крестьянка, село Гамалеевка, 18.",
-    "fuzzyQuery": true
-  }
+  "context": { "eventSummary": "Первый брак Семёна Мироновича Ампилова и Дарьи Алексеевны Сухаревой.", "identityNote": "P102696 подтверждён полным именем, Гамалеевкой и возрастом, согласующимся с его рождением в 1893 году.", "relationshipNote": "Супруга другой фамилии сохранена в тексте и mentions без отдельного профиля.", "migrationNote": "Место брака и происхождение супругов не превращены в маршрут переселения." },
+  "indexData": { "querySnippet": "Невеста: Дария Алексеева Ампилова (Сухарева), крестьянка, село Барабановка, 16. Невеста: Марфа Павлова Ильиных (Михайлова), крестьянка, село Гамалеевка, 18.", "fuzzyQuery": true, "discrepancy": "Дарья — Сухарева; Ампилов — фамилия жениха Семёна." },
+  "isRecord": true, "cardKind": "named-primary-record", "publicCore": true,
+  "review": { "status": "complete-primary-scan-reading-manually-verified", "transcriptionConfidence": "high", "unresolved": [], "deepReviewedAt": "2026-09-13", "deepReviewScope": "Весь разворот и запись № 10 прочитаны вручную; индексная перестановка фамилии исправлена; создан clean crop 5050×4000." }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-A1834694-040",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-index-hit",
   "collection": {
     "catalogId": "a1834694-cebf-4730-8385-e793c7d3e9b2",
     "scanNumber": 40,
@@ -12,25 +12,8 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/a1834694-cebf-4730-8385-e793c7d3e9b2/40"
   },
-  "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1918 — 31 декабря 1918",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-A1834694-040-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампиногов",
-      "nameAsTranscribed": "Ампиногов",
-      "surnameSeries": true
-    }
-  ],
+  "event": null,
+  "mentions": [],
   "evidence": {
     "catalogId": "a1834694-cebf-4730-8385-e793c7d3e9b2",
     "scanNumber": 40,
@@ -76,20 +59,20 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Сниппет о Трофиме Фёдоровиче и Павле Николаевиче «Ампиноговых» отсутствует на сохранённом листе и отвергнут после полного чтения."
   },
   "indexData": {
     "querySnippet": "Отец: Трофим Федоров Ампиногов, гражданин, Татищевская станица. ... Крёстный отец: Павел Николаев Ампиногов, гражданин, та же станица.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-note",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high-for-exclusion",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный разворот части о родившихся, записи № 74–78 и все колонки восприемников. Трофима Фёдоровича и Павла Николаевича Ампиноговых на листе нет; рукописный заголовок листа указывает 1892 год, вопреки каталожному 1918.",
+    "unresolved": []
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-4B2B08B8-018",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 18,
@@ -12,25 +12,18 @@
     "documentUrl": "https://yandex.ru/archive/catalog/4b2b08b8-0b24-4a3a-a41d-186bfb925be6/18"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "birth-register-page",
     "date": {
-      "display": "1912",
-      "confidence": "high-for-year"
+      "display": "февраль 1912 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "село Бахтемир, Астраханская губерния"
+      "asWritten": "село Бахтемир",
+      "normalized": "село Бахтемир, Астраханская губерния",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-4B2B08B8-018-M1",
-      "role": "godmother",
-      "personId": "P102496",
-      "displayName": "Ирина Алексіева Ампилова",
-      "nameAsTranscribed": "Ирина Алексіева Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "4b2b08b8-0b24-4a3a-a41d-186bfb925be6",
     "scanNumber": 18,
@@ -66,30 +59,32 @@
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Крестьяне села Бахтемирского Павел Сергиев Софронов и Ирина Алексиева Ампилова [в строке восприемников].",
-    "modernInterpretation": "Ирина Алексеевна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "СПОДАЛЬО\nГОДИ, ЧАСТЬ ПЕРВЛД, Й РОДІ\nКтò совsр\nЗвáніє, ймл, бтчество й фамиліл\nкp\nвоспріємникшЕ2.\nКретвяне семе Бадий\nмірскаю Стпепань Сол\nпалов бурарцевиКи\nбiя Сненаноle 2рoшева\nКреатване сели Балт- М\nР2но2",
-    "localOcrWithSurnameLexicon": "ПОДАЛЬНО\nГОДИ, ЧАСТЬ ПЕРЕЛА, Й РОДІ\nКто совер\nЗвАніє, ймА, отчество й фамиліл\nвоспріємникшЕ2.\nКретвяне семе Бабий\nмінскаю Степань Сон\nпалов бурарцев иКи\nКреатване сели Балт- М",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-negative-review",
+    "literal": "Метрической книги на 1912 год, часть первая, о родившихся. На полном развороте читаются февральские строки с детьми Гавриилом, Зиновией, Марией и Петром; в проверенном фрагменте восприемники записаны как Степан Сафронов Буранов и Ксения Степанова Громова. Фамилии Ампилов/Ампилогов/Анпилогов и имя «Ирина Алексеева Ампилова» на листе отсутствуют.",
+    "modernInterpretation": "Полный лист не содержит заявленного индексом упоминания «Ирина Алексеева Ампилова»; совпадение выдачи подтверждено как ложное.",
+    "indexNote": "Сниппет Яндекса относится к иной строке или листу и не подтверждается сохранённым оригиналом. Он не использован для события, профиля или связи."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "negative-search-review",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную просмотрены полный разворот, заголовок части о родившихся, все видимые строки и существующий крупный фрагмент; проверены даты, имена, родители, восприемники и границы строк. «Ирина Алексеева Ампилова» и исследуемый фамильный ряд отсутствуют.",
+    "transcriptionConfidence": "high-for-negative-conclusion",
+    "unresolved": []
   },
   "indexData": {
     "querySnippet": "Крестьяне села Бахтомирскаго Павелъ Сергіевъ Софроновъ и Ирина Алексіева Ампилова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Заявленное индексом упоминание «Ирина Алексеева Ампилова» отсутствует на полном развороте.",
+      "На оригинале прочитаны февральские строки с детьми Гавриилом, Зиновией, Марией и Петром; в проверенном фрагменте восприемники записаны как Степан Сафронов Буранов и Ксения Степанова Громова."
+    ]
+  },
+  "context": {
+    "eventSummary": "Негативная проверка февраль 1912 года: исследуемый фамильный ряд на полном развороте не обнаружен.",
+    "relationshipBoundary": "Видимые участники других фамилий не получают профилей, связей, карты или миграций.",
+    "scopeNote": "Результат сохраняется, чтобы ошибочный fuzzy-hit не был повторно принят за первичную запись."
   }
 }

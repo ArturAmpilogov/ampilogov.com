@@ -1,95 +1,83 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-69DA7A2A-121",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "primary-scan-transcription",
   "collection": {
     "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
     "scanNumber": 121,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Кирсановка, Гамалеевка за 1915 г."
+    "title": "Метрическая книга сёл Кирсановка и Гамалеевка за 1915 год",
+    "asRead": "Часть первая о родившихся; декабрьские записи № 82–86"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/121"
   },
   "event": {
-    "type": "birth-godparents",
+    "type": "page-observation",
     "date": {
-      "display": "1915",
-      "confidence": "high-for-year"
+      "display": "8–20 декабря 1915 года",
+      "from": "1915-12-08",
+      "to": "1915-12-20",
+      "confidence": "high"
     },
     "place": {
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-69DA7A2A-121-M1",
-      "role": "godmother",
-      "personId": "P102729",
-      "displayName": "дѣвица Евдокія Максимова Ампилова",
-      "nameAsTranscribed": "дѣвица Евдокія Максимова Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
+  "transcription": {
+    "status": "complete-full-scan-confirmed-false-hit",
+    "literal": "Декабрь. На полном развороте видны записи о рождении и крещении № 82–86 за 8–20 декабря 1915 года: Анна, Пётр, Пётр, Пётр и Михаил. В строках родителей, восприемников и причта фамилия Ампилов / Ампилогов и варианты исследуемого ряда отсутствуют.",
+    "modernInterpretation": "Полный первичный лист не содержит носителей исследуемого фамильного ряда; поисковое совпадение подтверждено как ложное.",
+    "indexNote": "Индекс приписал листу Евдокию Максимовну Ампилову, которой нет ни в одной видимой строке полного разворота."
+  },
   "evidence": {
     "catalogId": "69da7a2a-7bbb-4e3d-8420-5a52f38a59c2",
     "scanNumber": 121,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "downloaded-original-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0121-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0121-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "ff7367c626c60bfdd9f49e56df1ba3c2001a30ed5deeb9d93a0c2d65fe90a6c7",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0121-header.png",
-        "sha256": "0d0e33ed5d326b222e206956afb2b277389567d590e6c8efd38ecd5fc87dcf98",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0121-target-entry.png",
-        "sha256": "32eae5a05bba3ab005368f1d6f95e79b1d5a6409dc33daa016e7d4a575468c21",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/69da7a2a-7bbb-4e3d-8420-5a52f38a59c2/0121-target-context-deep.png",
+        "sha256": "e5c5a4b8fdb5a9b4b703b9a4c60497d74d5cdafee4ee4de79544e432712fb29d",
+        "description": "Крупный полноширинный чистый фрагмент со всеми проверенными строками и соседним контекстом, без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4288x3488",
-      "targetDimensions": "1200x647",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4100x2500",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
-  },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин [имя в соседней колонке] и девица Евдокия Максимова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "06\nСелораматівяєки крестьяпинь\nПетрь Алекгандравь Гоалашонь\nПетрь Анекпанірнь Гоалашеь.\n4Менагія Митанкова, Мичанлова-",
-    "localOcrWithSurnameLexicon": "06\nСеловамаліявки крестьянинь\nПетрь Александравь Гоалашень\nПетрь Анеканірнь Гоалише.\n„Менагія Миланкова, Миланноа-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "rightsNote": "Локальная копия хранится для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "cardKind": "rejected-index-hit",
+  "publicCore": false,
+  "primaryPersonId": null,
+  "context": {
+    "historical": "Лист сохранён как отрицательный результат проверки поискового индекса; чужие участники не выделялись в профили.",
+    "genealogicalSignificance": "Предотвращает ложное включение индексного совпадения в фамильное дерево, публичный каталог и карту.",
+    "migrationAssessment": "Фамильного события нет; миграция и картографическая точка не создавались."
+  },
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "manually-verified-index-false-positive",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан полный декабрьский разворот, все пять видимых записей № 82–86 и обе продолжающие колонки с восприемниками и причтом; проверены границы каждой строки. Евдокия Максимовна Ампилова на листе отсутствует, индексное совпадение отвергнуто, ложный backlink удалён."
   },
   "indexData": {
-    "querySnippet": "Того же села крестьянинъ Григорій Іоанновъ Сашковъ и Евдокія Максимова Ампилова. ... Крёстная мать: Евдокия Максимова Ампилова.",
-    "fuzzyQuery": true
+    "querySnippet": "Того же села крестьянинъ Григорій Іоанновъ Сашковъ и Евдокія Максимова Ампилова. Крёстная мать: Евдокия Максимова Ампилова.",
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс приписал листу Евдокию Максимовну Ампилову, которой нет ни в одной видимой строке полного разворота."
   }
 }

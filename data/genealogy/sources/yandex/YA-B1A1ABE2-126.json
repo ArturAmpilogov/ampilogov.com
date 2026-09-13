@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B1A1ABE2-126",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "church-record",
   "collection": {
     "catalogId": "b1a1abe2-cf06-4ed6-b459-5de850dbba79",
     "scanNumber": 126,
@@ -13,22 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b1a1abe2-cf06-4ed6-b459-5de850dbba79/126"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": 17,
     "date": {
-      "display": "1 января 1916 — 31 декабря 1916",
-      "confidence": "high-for-catalog-date"
+      "display": "17 / 20 марта 1912 года",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B1A1ABE2-126-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "godmother",
+      "displayName": "Варвара Ивановна Ампилогова",
+      "nameAsTranscribed": "жена крестьянина села Кармалки Варвара Иванова Ампилогова",
+      "surnameSeries": true,
+      "personId": null
     }
   ],
   "evidence": {
@@ -52,6 +56,12 @@
         "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0126-target-entry.png",
         "sha256": "f9d3423d9a217b6033a1d528b91b92759078461e101ed15070e5c5a6a414925f",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-context",
+        "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0126-wide-deep-review.png",
+        "sha256": "d8848ee74b827403d20f2480ec9c60f46289561c33efaa84acce49b11ba7ad49",
+        "description": "Широкий чистый фрагмент полного разворота с мартовскими актами, целевой строкой № 17 и заголовками граф."
       }
     ],
     "quality": {
@@ -59,37 +69,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4253x3600",
-      "targetDimensions": "1200x878",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4000x3300",
+      "method": "original-download-plus-wide-manual-review-crop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "крестбянишь сека п\nгрки,\nМикайновскый воюсти, орос\nФрен\nДа буржкой губернін и унзва,\nПрокопій Никифорова\nновь,\nЗуевь, и інкона крастьянина\nвья\nкева Кармавон ВарвяраШано-\nвнче,\nва Аситикогова\nврестбянинь Сека Рармакки,\nКпн,\nИнхайновской вохвсти, Орон\nоніуа\nурокий гу борькім иурав в\nТраїржий Ликіятоваа\nарон-\nта секаКорманн",
-    "modernInterpretation": "крестбянишь сека п грки, Микайновскый воюсти, орос Френ Да буржкой губернин и унзва, Прокопий Никифорова новь, Зуевь, и инкона крастьянина вья кева Кармавон ВарвяраШано- внче, ва Аситикогова врестбянинь Сека Рармакки, Кпн, Инхайновской вохвсти, Орон ониуа урокий гу борьким иурав в Траїржий Ликиятоваа арон- та секаКорманн",
-    "localOcr": "крестбянишь сека п\nгрки,\nМикайновскый воюсти, орос\nФрен\nДа буржкой губернін и унзва,\nПрокопій Никифорова\nновь,\nЗуевь, и інкона крастьянина\nвья\nкева Кармавон ВарвяраШано-\nвнче,\nва Аситикогова\nврестбянинь Сека Рармакки,\nКпн,\nИнхайновской вохвсти, Орон\nоніуа\nурокий гу борькім иурав в\nТраїржий Ликіятоваа\nарон-\nта секаКорманн",
-    "localOcrWithSurnameLexicon": "крестоянишь сека при\nгрки,\nМикайновской воюсти, орос\nФрен\nДа буркой губерній и унзоа,\nПрокопій Никифорова\nновь,\nЗусвь, и інкона крастьянина\nвья\nкова Кармаван ВарвараШато-\nвние,\nва Алитикогова\nров.\nврестбянинь Сека Кармакки,\nКри,\nИнхайновской вохости, Орон\nоніця\nурокий гу борнім гува в\nТраїржив Ликіяноваа\nарон-\nта секаКорманн",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "primary-scan-transcription",
+    "literal": "Мартъ. № 17. 17 [родилась], 20 [крещена]. Агафія. Крестьянинъ села Кармалки Михайловской волости Оренбургской губерніи и уѣзда Михаилъ Васильевъ Курносовъ и законная жена его Дарья Никифорова, оба православные. Воспріемники: крестьянинъ села Кармалки Прокопій Семеновъ Гусевъ и жена крестьянина села Кармалки Варвара Иванова Ампилогова. Священникъ Михаилъ Анциферовъ, одинъ.",
+    "modernInterpretation": "17 марта 1912 года в Кармалке родилась Агафия; крещена 20 марта. Восприемницей названа Варвара Ивановна Ампилогова, жена местного крестьянина. Сам акт не сообщает имени её мужа и не позволяет надёжно выбрать один из существующих одноимённых профилей.",
+    "indexNote": "Яндекс ошибочно определил роль как «муж крестной матери» и датировал дело 1916 годом. По полному оригиналу Варвара Ивановна — сама восприемница; внутренний заголовок и последовательность листов дают 1912 год."
   },
   "indexData": {
     "querySnippet": "Муж крестной матери: Варвара Иванова Ампилогова, крестьянка, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "primary-scan-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Тождество Варвары Ивановны не установлено: P0932, P102128 и P101846 остаются лишь кандидатами, поскольку акт не даёт возраста, имени мужа или иного уникального признака."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитан весь разворот и полностью акт № 17; сверены март, даты 17/20, роль Варвары Ивановны как восприемницы, фамилия Ампилогова и служебная графа. Исправлены год и ошибочная роль индекса; тождество с одноимёнными профилями намеренно не утверждено."
   }
 }

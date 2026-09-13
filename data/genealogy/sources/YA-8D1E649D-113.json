@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-113",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 113
@@ -28,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0113-target-entry.png",
-        "sha256": "fece7e37e03207f2c6cdcf06bfcaf1f38dfb88bedd3946b15d93a6aa8862a004",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0113-target-context-deep.jpg",
+        "sha256": "9a0b098f6954b27bdaee22f71b56d4fa6297dce5f8eb26a96606ee65427b1afa",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5244x4216",
-      "targetDimensions": "1325x793",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -79,31 +79,42 @@
         },
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, ноябрьские браки №77–82 и вся колонка поручителей; Семён Александров Ампилогов отсутствует, год при пустом заголовке не домыслен; сохранён clean crop 4700×3000 с SHA; профиль, backlink, карта, родство и миграция исключены"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "міленино дода ва\nсткинь, Олтунтралкта\nелкіс Кевимрннин).\nПо жентр амла Миранкавни прадкя\nне: Васивй Аверанірой, Шан? Поз\nХарпатов. Йо невиств теянг\nДала крестяне: Мифанк ЯКяван\nБров а Канарй Єфиинк\nрваве.",
-    "modernInterpretation": "миленино дода ва сткинь, Олтунтралкта елкис Кевимрннин). По жентр амла Миранкавни прадкя не: Васивй Аверанирой, Шан? Поз Харпатов. Йо невиств теянг Дала крестяне: Мифанк ЯКяван Бров а Канарй Єфиинк рваве.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "міленино дода ва\nсткинь, Олтунтралкта\nелкіс Кевимрннин).\nПо жентр амла Миранкавни прадкя\nне: Васивй Аверанірой, Шан? Поз\nХарпатов. Йо невиств теянг\nДала крестяне: Мифанк ЯКяван\nБров а Канарй Єфиинк\nрваве.",
-    "localOcrWithSurnameLexicon": "panal. the natttius muntot ee\nti tn t snp ghg na g\nXapmaao dl nnait pre\nПо ma ptagate Hapanda tgan",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги, часть вторая, о бракосочетавшихся: ноябрьские записи № 77–82 (8–13 ноября). Проверены все видимые строки брачующихся и поручителей; крестьянина деревни Кармалки Семена Александрова Ампилогова на листе нет.",
+    "modernInterpretation": "Индексная строка о Семёне Александровиче Ампилогове не соответствует скану 113. В видимых ноябрьских браках №77–82 названы другие поручители; год в заголовке листа не заполнен.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Поручитель: Семен Александров Ампилогов, крестьянин, деревня Кармавки. Поручитель: Петр Петров, крестьянин, село Архангельское.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "год не установлен по видимому заголовку",
+      "confidence": "unresolved"
+    },
+    "place": {
+      "normalized": "Михайловский приход, Кармалка и соседние селения, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

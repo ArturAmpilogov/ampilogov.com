@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-C4F6352D-026",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "c4f6352d-5557-4197-a17b-cdb68403cf69",
     "scanNumber": 26,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c4f6352d-5557-4197-a17b-cdb68403cf69/26"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-register-page",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "1–2 июня 1917 года",
+      "confidence": "high"
     },
     "place": {
       "normalized": "не установлено"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-C4F6352D-026-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "c4f6352d-5557-4197-a17b-cdb68403cf69",
     "scanNumber": 26,
@@ -52,6 +44,12 @@
         "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0026-target-entry.png",
         "sha256": "a0603d3101ed0213bc6be0c02a34b40a77882d877be7cd7fb5f4fabecafd78f6",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c4f6352d-5557-4197-a17b-cdb68403cf69/0026-target-context-deep.jpg",
+        "sha256": "6f9f113badd52a5878c42683f435c229086d5b0395a505fecbc0352dcead9a84",
+        "description": "Широкий clean-фрагмент июньского разворота с первой записью, родителями, восприемниками и соседними строками."
       }
     ],
     "quality": {
@@ -60,15 +58,15 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5631x4426",
       "targetDimensions": "1317x867",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-spread-review-and-clean-wide-recrop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Кримій то то кни пісорота-\nраслава То овииова Киринова\n\"Нечаль\nколом\nПресийвлний тока чле ккма",
-    "modernInterpretation": "Кримий то то кни писорота- раслава То овииова Киринова \"Нечаль колом Пресийвлний тока чле ккма",
+    "status": "complete-primary-scan-manually-verified-false-positive",
+    "literal": "Метрической книги на 1917 год, часть первая, о родившихся. Июнь. В верхней записи, 1 родился и 2 крещён Иоанн. В графе восприемников читаются крестьянин Иоанн Георгиев Марин и крестьянка Параскева Родионова Кузинова; формы «Евдокия Никитина Ампилогова» на строке нет.",
+    "modernInterpretation": "Указанная Яндексом Евдокия Никитична Ампилогова в оригинале отсутствует: крёстными записаны люди других фамилий. Носителя исследуемого фамильного ряда на целевой строке нет.",
     "localOcr": "Кримій то то кни пісорота-\nраслава То овииова Киринова\n\"Нечаль\nколом\nПресийвлний тока чле ккма",
     "localOcrWithSurnameLexicon": "Криі і то не осорон-\n\"Нечаль\nколом",
     "collation": {
@@ -76,20 +74,21 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Поисковый индекс опровергнут ручным чтением полного разворота и широкой копии строки восприемников."
   },
   "indexData": {
     "querySnippet": "Крёстная мать: Евдокия Никитина Ампилогова, крестьянская девица. Крёстная мать: Мария Афонасьева Дулепова, крестьянка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-false-positive-after-full-scan-review"
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный июньский разворот, верхняя запись о рождении, родители и восприемники; индексная Евдокия Ампилогова отсутствует."
   }
 }

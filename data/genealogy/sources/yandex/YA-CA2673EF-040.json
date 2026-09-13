@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CA2673EF-040",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "baptism-clergy-multiple-entries",
   "collection": {
     "catalogId": "ca2673ef-5c60-4eaa-b852-2ad1d0996822",
     "scanNumber": 40,
@@ -13,21 +13,26 @@
     "documentUrl": "https://yandex.ru/archive/catalog/ca2673ef-5c60-4eaa-b852-2ad1d0996822/40"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "baptism-clergy-multiple-entries",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "18 июня — 2 июля 1917 года",
+      "from": "1917-06-18",
+      "to": "1917-07-02",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "приход села Слоновки",
+      "normalized": "Слоновский приход, Оренбургский уезд",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-CA2673EF-040-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
+      "role": "deacon",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
       "surnameSeries": true
     }
   ],
@@ -52,6 +57,12 @@
         "path": "data/genealogy/evidence-private/yandex/ca2673ef-5c60-4eaa-b852-2ad1d0996822/0040-target-entry.png",
         "sha256": "da03a5de99df1cf8f18c142c93b82108c4644f76775554a5e6affb27885a1c4f",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/ca2673ef-5c60-4eaa-b852-2ad1d0996822/0040-target-context-deep.jpg",
+        "sha256": "3e632fd05a4f6151ff6f776f9cfdd790f78888010da39d1318ed076c65951be4",
+        "description": "Широкий clean-фрагмент: июньско-июльский разворот и видимые записи № 29–33, обе половины разворота и повторные подписи причта."
       }
     ],
     "quality": {
@@ -59,16 +70,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5336x4364",
-      "targetDimensions": "1319x751",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3700",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "siteAndBrowserChromeExcluded": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ОСКОКСКО\nПРАДЛЬНО»\nИСТРЙЧЕСКОЙ КНИГИ НА\nЗвáніє, йма, отчЕство й фамиліл родітелєй, й какóму\nшнусл.\nвілоиспогялита",
-    "modernInterpretation": "ОСКОКСКО ПРАДЛЬНО» ИСТРЙЧЕСКОЙ КНИГИ НА Звáниє, йма, отчЕство й фамилил родителєй, й какóму шнусл. вилоиспогялита",
+    "status": "complete-primary-scan-manual-transcription",
+    "literal": "18 июня — 2 июля 1917 года. В записях о родившихся повторяется служебная формула: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ».",
+    "modernInterpretation": "18 июня — 2 июля 1917 года: диакон Афиноген Егорович Ампилогов повторно записан как участник крещений детей чужих семей Слоновского прихода; подпись документирует служение, но не родство с семьями актов.",
     "localOcr": "ОСКОКСКО\nПРАДЛЬНО»\nИСТРЙЧЕСКОЙ КНИГИ НА\nЗвáніє, йма, отчЕство й фамиліл родітелєй, й какóму\nшнусл.\nвілоиспогялита",
     "localOcrWithSurnameLexicon": "ОСКОКСКО\nПРАДЛЬНО»\nИСТРИЧЕСКОЙ КНИГИ НА\nЗваніє, йма, отчЕство й фамілід родителей, й какому\nнусл.\nвідоиспоглита",
     "collation": {
@@ -76,20 +90,28 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Имя, сан и фамилия диакона прочитаны вручную по повторным подписям на оригинальном развороте; индекс использован только для навигации."
   },
   "indexData": {
     "querySnippet": "Диакон Афиноген Ампилогов Села Слоновки крестьянин Архипп Матвеев Маркеллов и законная жена его Анастасия Иларионова, оба православные.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-clergy-service-after-full-scan-review"
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-manual-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены июньско-июльский разворот и видимые записи № 29–33: даты, родители, восприемники, причт и все повторения подписи Афиногена Ампилогова; семьи актов отделены от служебного упоминания."
+  },
+  "primaryPersonId": "P1543",
+  "context": {
+    "eventSummary": "Повторные служебные подписи диакона Афиногена Ампилогова при крещениях в Слоновском приходе (18 июня — 2 июля 1917 года).",
+    "identityNote": "P1543 подтверждён сочетанием редкого полного имени, сана, прихода и повторяющейся подписи рядом со священником Иоанном Поляковым.",
+    "familyScope": "Родители, дети и восприемники других фамилий остаются контекстом актов; родство с диаконом не выводится.",
+    "migrationNote": "Служебное участие в приходе не доказывает переселение."
   }
 }

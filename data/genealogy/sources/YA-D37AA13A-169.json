@@ -2,15 +2,42 @@
   "schemaVersion": 1,
   "sourceId": "YA-D37AA13A-169",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "d37aa13a-c421-4c57-9c50-baaa35bd8a7a",
-    "scanNumber": 169
+    "scanNumber": 169,
+    "title": "Метрическая книга сёл Воздвиженка, Зобово и Софийское за 1896 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/169"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D37AA13A-169-M1",
+      "role": "deceased-son",
+      "personId": "P103012",
+      "nameAsTranscribed": "Антонъ",
+      "displayName": "Антон Евфимович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D37AA13A-169-M2",
+      "role": "father",
+      "personId": "P1620",
+      "nameAsTranscribed": "села Зобова крестьянинъ Евфимъ Яковлевъ Ампилоговъ",
+      "displayName": "Ефим Яковлевич Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-D37AA13A-169-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "[мать в строке смерти не названа]",
+      "displayName": "мать не названа",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "catalogId": "d37aa13a-c421-4c57-9c50-baaa35bd8a7a",
     "scanNumber": 169,
@@ -32,6 +59,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-target-entry.png",
         "sha256": "06852d00184c53edd0a24051b6123e495d0fd1551d0c8d02f8fb6aac57ed2efc",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d37aa13a-c421-4c57-9c50-baaa35bd8a7a/0169-target-context-deep.jpg",
+        "sha256": "bd8106cd2ce5f7dd3f768b2a9aa77ae26f576b3e8afaa2660674e1f7999e725a",
+        "description": "Широкий чистый фрагмент целевой записи со всеми значимыми графами и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -40,7 +73,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4966x3982",
       "targetDimensions": "1284x486",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "4800x1400",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -59,27 +95,53 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "deep-reviewed-against-original-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот 1896 года и вся запись № 74 во всех графах: номер, даты, имя ребёнка, родительская формула, возраст, причина смерти и причт. P1620 выбран по согласованному семейному корпусу; P1740 не сливался.",
+    "correctionHistory": [
+      "2026-09-13: запись № 74 вручную восстановлена по оригиналу; ошибочный OCR соседней строки отброшен."
     ]
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Ола вобяка креатлятина Окфпта\nУхавлева Апписаяса свив Оитекив.",
-    "modernInterpretation": "Ола вобяка креатлятина Окфпта Ухавлева Апписаяса свив Оитекив.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "Ола вобяка креатлятина Окфпта\nУхавлева Апписаяса свив Оитекив.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-manual-reading-of-original",
+    "literal": "Сентябрь. Мужского пола № 74. 3 умеръ, 5 погребенъ. Села Зобова крестьянина Евфима Яковлева Ампилогова сынъ Антонъ, 5 недель. Отъ поноса. Священникъ Іоаннъ Поповъ.",
+    "modernInterpretation": "3 сентября 1896 года от поноса умер пятинедельный Антон, сын крестьянина села Зобова Ефима Яковлевича Ампилогова; погребён 5 сентября.",
+    "indexNote": "Прежний OCR захватывал соседние строки. Номер, даты, имя ребёнка и прямое отцовство прочитаны по полному оригиналу; P1620 выбран strongly-supported/high по точному имени, Зобову и документированной супруге Анне Гавриловне. P1740 оставлен кандидатом-дублем без merge."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verification": "corrected-from-original",
+    "warning": "Прежняя OCR-выборка относилась к соседней строке."
+  },
+  "primaryPersonId": "P103012",
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 74,
+    "date": {
+      "display": "умер 3 сентября, погребён 5 сентября 1896 года",
+      "deathIso": "1896-09-03",
+      "burialIso": "1896-09-05",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Зобово",
+      "normalized": "село Зобово, Оренбургский уезд",
+      "placeId": "orenburg-uezd"
+    },
+    "age": {
+      "display": "5 недель"
+    },
+    "cause": "от поноса"
+  },
+  "historicalContext": {
+    "text": "Запись документирует семейное событие крестьянина села Зобова Ефима Яковлевича Ампилогова. Она расширяет известный корпус его детей, но не служит основанием для отдельного маршрута переселения.",
+    "identityBoundary": "Связь с P1620 strongly-supported/high; P1740 не объединён и не изменён."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

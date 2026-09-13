@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-009",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-family",
+  "recordType": "birth-baptism",
   "collection": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 9,
@@ -12,30 +12,48 @@
     "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/9"
   },
   "event": {
-    "type": "birth-family",
+    "type": "birth-baptism",
+    "recordNumber": 17,
     "date": {
-      "display": "1913",
-      "confidence": "high-for-year"
+      "display": "крещение 07.03.1913",
+      "iso": "1913-03-07",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "рождение 05.03.1913",
+      "iso": "1913-03-05",
+      "calendar": "julian",
+      "confidence": "high"
     },
     "place": {
+      "asWritten": "село Гамалеевка",
       "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-D04CCD92-009-M1",
-      "role": "father",
-      "personId": "P102635",
-      "displayName": "крестьянин Андрей Стефанов Ампилов",
-      "nameAsTranscribed": "крестьянинъ Андрей Стефановъ Ампиловъ",
+      "role": "child",
+      "personId": "P103003",
+      "nameAsTranscribed": "Василій",
+      "displayName": "Василий Андреевич Ампилов",
       "surnameSeries": true
     },
     {
       "mentionId": "YA-D04CCD92-009-M2",
+      "role": "father",
+      "personId": "P102635",
+      "nameAsTranscribed": "Андрей Стефановъ Ампиловъ",
+      "displayName": "Андрей Стефанович Ампилов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-009-M3",
       "role": "mother",
       "personId": null,
-      "displayName": "жена его Анна Семенова",
-      "nameAsTranscribed": "жена его Анна Семенова",
+      "nameAsTranscribed": "Анна Семенова",
+      "displayName": "Анна Семёновна",
       "surnameSeries": false
     }
   ],
@@ -59,6 +77,12 @@
         "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0009-target-entry.png",
         "sha256": "99e4a215d2da9b99022524348c672abdba622ee09e5954ce9073e2b09707cf20",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0009-target-context-deep.jpg",
+        "sha256": "700070ea7790aa6f21db9b2e54e2c1613e9a16e2d6bddaa770ed40dc388487dc",
+        "description": "Широкий крупный фрагмент целевой записи с датами, именами, родителями и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -67,37 +91,46 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5404x4370",
       "targetDimensions": "1379x878",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5200x1150",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
     "captureStatus": "complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Села Гамалеевки крестьянин Андрей Стефанов Ампилов и жена его Анна Семенова; православные.",
-    "modernInterpretation": "Андрей Стефанович Ампилов и Анна Семёновна названы родителями.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "Села вашантлнки крестьянинг\nчти свитай Стефанівь Асипиловь \"\nмня оросна со свина Сіманова,\nпраославние\nЧерей З мвіинув Киадевски\nаиз Діакинь Соаннь Слакавк\nвррааномизинчіння Соваля\nVі Селавамастьсвки Криствянинь\nенахВиатинірь Мииханлова Мавенков)\nавити жена его Матрана Петрова,",
-    "localOcrWithSurnameLexicon": "Села ватантянки крестьянину\nти витай Стефановь Аситиловь \"\nмия оросна со свина Сіменова,\nправославные\nПерей З міну Кладевски\nаз. Діакинь Соаннь Слакок\nвіраамомииіння Соваля\nV Села вашастьски Криствянинь\nгеноВианнірь Миханлава. Мавенков\nавита жена его Матрона Петрова,",
+    "status": "complete-manual-reading-of-original",
+    "literal": "Мартъ. № 17. 5. 7. Василій, въ честь Святаго мученика Василія Херсонскаго, празднуемаго 7-го марта. Села Гамалеевки крестьянинъ Андрей Стефановъ Ампиловъ и жена его Анна Семенова, православные.",
+    "modernInterpretation": "В акте № 17 записано рождение Василий Андреевич Ампилов: 05.03.1913 и крещение 07.03.1913. Родители — Андрей Стефанович Ампилов и Анна Семёновна; мать сохранена как участница акта без отдельного профиля, поскольку её собственная фамилия не указана.",
+    "indexNote": "Индекс перечисляет несколько матерей с листа и не выделяет акт № 17; ребёнок, даты и родители прочитаны непосредственно по строке оригинала.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryBasis": "manual-reading-of-saved-original",
+      "externalIndex": "navigation-only"
     }
   },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-against-original-scan",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот и вся строка акта № 17 во всех графах: порядковый номер, числа рождения и крещения, имя ребёнка и календарное наречение, сословие и место родителей, имя-отчество отца, имя-отчество матери, вероисповедание и графа восприемников. Собственная фамилия матери не указана; миграция не выводится.",
+    "correctionHistory": [
+      "2026-09-13: акт № 17 вручную перечитан по широкому фрагменту оригинала; восстановлены ребёнок, точные даты, родители."
     ]
   },
   "indexData": {
     "querySnippet": "Мать: Иустиния Константинова Турова. Мать: Анна Симеонова Ампилова. Мать: Матрона Петрова Маренкова. Мать: Елена Космина Авдеева.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verification": "corrected-and-expanded-from-original",
+    "warning": "Индекс перечисляет несколько матерей с листа и не выделяет акт № 17; ребёнок, даты и родители прочитаны непосредственно по строке оригинала."
+  },
+  "primaryPersonId": "P103003",
+  "historicalContext": {
+    "text": "Метрическая запись фиксирует семейное событие в приходе села Гамалеевки в 1913 году. Формула «крестьянин села Гамалеевки» описывает документированный статус и место семьи на дату акта; отдельный вывод о переселении не делается."
   }
 }

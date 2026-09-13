@@ -100,6 +100,12 @@
             "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0142-target-entry.png",
             "sha256": "a84a2816d7e614af700f5dbaee9308cf57db695b2fdbcea16c8593747d494ef7",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/b1a1abe2-cf06-4ed6-b459-5de850dbba79/0142-target-entry-deep.png",
+            "sha256": "8689f40b44d23c5d262d6da7867f62a2c8219e329153f642a4b86930bc427b97",
+            "description": "Широкий крупный фрагмент целевой строки и соседнего контекста, вырезанный из оригинала без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -107,8 +113,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "4151x3584",
-          "targetDimensions": "1200x879",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "3800x3000",
+          "method": "original-download-plus-wide-manual-recrop-and-human-reading"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -131,14 +137,34 @@
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-links",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны декабрьская строка № 44, обе даты, родители, восприемники и причт; соседние строки отделены. Широкий clean crop 3800×3000."
   },
   "indexData": {
     "querySnippet": "Родившийся: Анисья Иакова Ампилогова. ... Отец: Иаков Ильин Ампилогов, солдат, село Кармалка, Михайловская волость, Оренбургская губерния и уезд.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "birth-and-baptism",
+    "date": {
+      "display": "28 декабря 1912 года",
+      "fromIso": "1912-12-28",
+      "toIso": "1912-12-28",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение Анисии у Якова Ильича Ампилогова и Дарьи Тимофеевны; восприемники других фамилий сохранены только в тексте.",
+    "identityNote": "Отец и дочь связаны прямой формулой акта. Дарья Тимофеевна оставлена mention/candidate: существующий одноимённый профиль не содержит независимого точного указания супруга Якова Ильича.",
+    "familyContext": "Участники других фамилий сохранены как mentions; по совпадению отчества дополнительное родство не выводится.",
+    "migrationNote": "Запись события или службы в Кармалке не доказывает переселение."
   }
 }
