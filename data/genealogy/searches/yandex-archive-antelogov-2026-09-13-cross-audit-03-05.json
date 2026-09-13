@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "auditId": "yandex-archive-antelogov-2026-09-13-cross-audit-03-05",
+  "auditedAt": "2026-09-13",
+  "auditType": "independent-primary-scan-crosscheck-with-resolved-corrections",
+  "scope": {
+    "positions": [
+      3,
+      4,
+      5
+    ],
+    "batchPath": "data/genealogy/searches/yandex-archive-antelogov-2026-09-13-batch-03-05.json",
+    "sourceIds": [
+      "YA-3DDA9987-168-ANTELOGOV",
+      "YA-DA88B478-199-AMTELOGOV",
+      "YA-4ACC0D7F-091-ANTILOGOV-REVIEW"
+    ]
+  },
+  "method": [
+    "Повторное чтение сохранённых оригиналов и целевых фрагментов.",
+    "Сверка с текстовыми блоками самих листов, использованными только как вспомогательный слой после визуального чтения.",
+    "Сопоставление с параллельными копиями актов и существующими семейными цепями.",
+    "Проверка отсутствия активных ссылок на снятые дубли P4298, P4299 и P5307 в people, families, sources и places.",
+    "Запуск общего генеалогического аудита после завершения пакета."
+  ],
+  "results": [
+    {
+      "position": 3,
+      "status": "pass",
+      "primaryScanReading": {
+        "event": "Рождение Натальи 8 августа и крещение 13 августа 1867 года.",
+        "father": "Ѳеодоръ Тимофѣевъ Антелоговъ",
+        "mother": "Наталья Степанова",
+        "place": "село Георгиевка"
+      },
+      "parallelSource": "YA-OGAOO-173-12-684-52-FEODOR",
+      "identityAudit": {
+        "P4298_to_P0793": "confirmed-high",
+        "P4299_to_P1139": "confirmed-high",
+        "P5307_to_P1264": "confirmed-high",
+        "basis": "Совпадают ребёнок, оба родителя, даты рождения и крещения, Георгиевка и восприемники. Смерть годовалой Натальи 19 сентября 1868 года хронологически продолжает эту запись рождения."
+      },
+      "attributionCorrection": "Снятие прежней атрибуции отца P1264 к P1131 подтверждено. Источник смерти YA-395EBABC-52 теперь указывает P0793, а P1131 не содержит ни P1264, ни этот источник.",
+      "activeReferencesToRetiredIds": 0
+    },
+    {
+      "position": 4,
+      "status": "pass",
+      "primaryScanReading": {
+        "event": "Рождение Анны 5 декабря и крещение 6 декабря 1884 года.",
+        "father": "Иванъ Григорьевъ Амтелоговъ",
+        "mother": "Ирина Матвеева",
+        "placeAsWritten": "деревня Кормиловка",
+        "godmother": "Евдокія Давыдова Анпилогова"
+      },
+      "identityAudit": {
+        "newChild": "P109760",
+        "parents": [
+          "P1047",
+          "P1732"
+        ],
+        "godmother": "P1743",
+        "confidence": "high",
+        "basis": "Точная супружеская пара продолжается после брака 1882 года и рождения Тимофея в 1883 году; Евдокия Давыдовна совпадает полным именем и местной семейной цепью."
+      },
+      "indexCorrection": "В оригинале декабрь и форма Амтелоговъ; поисковый OCR Антелогов не принят как чтение источника."
+    },
+    {
+      "position": 5,
+      "status": "pass",
+      "primaryScanReading": {
+        "event": "Акт № 97: Пелагея родилась 7 и крещена 10 октября 1910 года.",
+        "father": "Романъ Гордѣевъ Антилоговъ",
+        "mother": "Лидія Петрова",
+        "godfather": "Александръ Гордѣевъ Антелоговъ",
+        "godmother": "Евгенія Григорьева Кононова"
+      },
+      "nameCorrection": "Исправление P109329 с ошибочного имени Таисия на Пелагия подтверждено однозначным чтением оригинала.",
+      "identityAudit": {
+        "child": "P109329",
+        "parents": [
+          "P8111",
+          "P8157"
+        ],
+        "godfather": "P6973",
+        "confidence": "high"
+      },
+      "preflightCorrection": "Предварительное заключение о форме Анпилоговъ у обоих мужчин было неточным. Оригинал и текстовый слой подтверждают разные формы: у отца Антилоговъ, у восприемника Антелоговъ. Итоговый source передаёт их верно."
+    }
+  ],
+  "identityConsolidation": {
+    "retiredIds": [
+      "P4298",
+      "P4299",
+      "P5307"
+    ],
+    "canonicalIds": [
+      "P0793",
+      "P1139",
+      "P1264"
+    ],
+    "retiredProfileFilesPresent": false,
+    "activeCoreReferencesToRetiredIds": 0,
+    "searchAndAuditHistoryReferencesRetained": true,
+    "status": "pass"
+  },
+  "scopeCompliance": {
+    "allEventsThrough1950": true,
+    "profilesForUnrelatedSurnamesCreated": 0,
+    "externalIndexUsedOnlyForNavigation": true,
+    "mapAndPublicCoreRestrictedToSurnameSeries": true
+  },
+  "evidenceAudit": {
+    "newFiles": 9,
+    "allPathsExist": true,
+    "allSha256Match": true,
+    "allTargetsVisuallyConfirmed": true
+  },
+  "validation": {
+    "genealogyAudit": {
+      "errors": 0,
+      "warnings": 6,
+      "batchWarnings": 0,
+      "note": "Шесть предупреждений относятся к прежней серии YA-F4BFF9CA и не вызваны карточками 3–5."
+    },
+    "batchJsonParsed": true,
+    "sourceJsonParsed": true,
+    "correctedProfilesAndFamilyJsonParsed": true,
+    "diffCheckPassed": true
+  },
+  "completenessNotes": [],
+  "overallStatus": "pass-all-findings-resolved",
+  "resolvedCorrections": [
+    {
+      "personId": "P6973",
+      "status": "resolved",
+      "files": [
+        "data/genealogy/people/P6973-aleksandr-gordeyevich-anpilogov-orenburg-1882.json"
+      ],
+      "change": "В surname.formsAsWritten добавлено «Александръ Гордѣевъ Антелоговъ»."
+    },
+    {
+      "personId": "P101696",
+      "status": "resolved",
+      "files": [
+        "data/genealogy/people/P101696-taisiya-romanovna-anpilogova-orenburg-1912.json",
+        "data/genealogy/people/P8157-lidia-petrovna-kopytina-orenburg-1893.json",
+        "data/genealogy/families/F8111-roman-lidia-anpilogovy-orenburg-1893.json",
+        "data/genealogy/sources/yandex/YA-OGAOO-173-16-1957-38-TAISIYA.json"
+      ],
+      "change": "P8157 добавлена как мать Таисии; синхронизированы профиль матери, F8111 и прямая mother-mention в акте 1912 года."
+    }
+  ]
+}

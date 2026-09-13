@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "searchRunId": "YA-ANTELOGOV-ROOT-2026-09-13",
+  "auditType": "independent-primary-scan-preflight-crosscheck",
+  "auditedAt": "2026-09-13",
+  "inventoryPath": "data/genealogy/searches/yandex-archive-antelogov-root-2026-09-13-inventory.json",
+  "scope": {
+    "cards": 5,
+    "pages": 1,
+    "uniqueCanonicalUrls": 5,
+    "duplicateCanonicalUrls": 0,
+    "dateRange": [
+      1845,
+      1910
+    ],
+    "publicCutoffThrough": 1950,
+    "allWithinPublicCutoff": true
+  },
+  "conclusions": [
+    {
+      "ordinal": 1,
+      "event": "marriage",
+      "date": "1845-02-05",
+      "recordNumber": "13",
+      "primaryScanReading": "Деревни Дракиной государственный крестьянинъ Афонасій Ефремовъ Антелоговъ, православный, после 1-го брака, 30; вдова Марія Акимова, православная, 32.",
+      "surnameAssessment": "Original clearly has Антелоговъ; valid documented variant in the researched surname series.",
+      "identity": {
+        "decision": "reuse",
+        "personIds": [
+          "P0855",
+          "P0856"
+        ],
+        "confidence": "high",
+        "basis": "Exact rare couple Афанасий Ефремович + Мария Акимовна; same Дракина; they are parents of Евдокия in 1848."
+      },
+      "indexAssessment": "Surname and couple confirmed; catalog snippet omits date, ages and bride."
+    },
+    {
+      "ordinal": 2,
+      "event": "marriage-surety",
+      "date": "1864-02-12",
+      "recordNumber": "11",
+      "primaryScanReading": "Оренбургскій мѣщанинъ Яковъ Егоровъ Антелоговъ — один из поручителей по женихе Алексею Петрову Иванову.",
+      "surnameAssessment": "Original scan 218 has Антелоговъ; parallel scan 85 has Анпилоговъ.",
+      "identity": {
+        "decision": "reuse",
+        "personIds": [
+          "P5306"
+        ],
+        "confidence": "high",
+        "basis": "Exact event, full name, Orenburg meschanin status and city match existing parallel source YA-6C27B77F-085; do not merge with P2026 of Кармалка."
+      },
+      "parallelSource": "YA-6C27B77F-085",
+      "indexAssessment": "Role and name confirmed."
+    },
+    {
+      "ordinal": 3,
+      "event": "birth-and-baptism",
+      "date": "1867-08-08",
+      "baptismDate": "1867-08-13",
+      "recordNumber": "15",
+      "primaryScanReading": "Наталья. Села Георгиевки государственный крестьянинъ Ѳеодоръ Тимофѣевъ Антелоговъ и законная жена его Наталья Степанова, оба православные.",
+      "surnameAssessment": "Original scan 168 has Антелоговъ; parallel scan 52 has Анпилоговъ.",
+      "identity": {
+        "decision": "reuse-and-consolidate-duplicates",
+        "personIds": [
+          "P0793",
+          "P1139",
+          "P4298",
+          "P4299",
+          "P5307",
+          "P1264"
+        ],
+        "confidence": "high",
+        "basis": "Scan 168 duplicates exact birth already on scan 52. P4298 equals P0793 and P4299 equals P1139 by exact 1862 marriage and continuing family. P5307 is almost certainly P1264: exact child name, father, Георгиевка and age one at death 19 September 1868."
+      },
+      "correctionRequired": "The medium-confidence attribution of P1264 father to P1131 is superseded by the full birth record; correct to the consolidated Фёдор Тимофеевич profile.",
+      "parallelSource": "YA-OGAOO-173-12-684-52-FEODOR",
+      "indexAssessment": "Surname and father confirmed; snippet mixes two mothers from neighboring records, so only the target row may be used."
+    },
+    {
+      "ordinal": 4,
+      "event": "birth-and-baptism",
+      "date": "1884-12-05",
+      "baptismDate": "1884-12-06",
+      "recordNumber": "female count 223",
+      "primaryScanReading": "Декабрь. Анна. Деревни Кормиловки крестьянинъ Иванъ Григорьевъ Амтелоговъ и законная жена его Ирина Матвеева, оба православные. Родилась 5, крещена 6 декабря 1884 года.",
+      "surnameAssessment": "Original has Амтелоговъ, not Антелоговъ; documented orthographic/scribal variant in the surname series.",
+      "identity": {
+        "decision": "reuse-parents-new-child-unless-exact-match-found",
+        "personIds": [
+          "P1047",
+          "P1732"
+        ],
+        "confidence": "high",
+        "basis": "Exact parent couple follows their 1882 marriage and son Тимофей in 1883. Existing Anna Ivanovna profiles have different parents/places/dates."
+      },
+      "indexAssessment": "OCR query form Антелогов is wrong; snippet also mixes adjacent father Иван Артемов Дураков. Target row is Anna and parents Иван Григорьев + Ирина Матвеева."
+    },
+    {
+      "ordinal": 5,
+      "event": "birth-and-baptism-godparent",
+      "date": "1910-10-07",
+      "baptismDate": "1910-10-10",
+      "recordNumber": "97",
+      "primaryScanReading": "Октябрь. №97. 7 родилась, 10 крещена. Пелагея. Оренбургскій мѣщанинъ Романъ Гордѣевъ Антилоговъ и законная жена его Лидія Петрова; восприемник Оренбургскій мѣщанинъ Александръ Гордѣевъ Антелоговъ.",
+      "surnameAssessment": "Original distinguishes the forms: father Роман is Антилоговъ, godfather Александр is Антелоговъ. The query is an exact hit on the godfather, not merely an OCR error.",
+      "identity": {
+        "decision": "already-processed",
+        "personIds": [
+          "P109329",
+          "P8111",
+          "P6973"
+        ],
+        "confidence": "high",
+        "basis": "Exact page and family already represented by YA-4ACC0D7F-091-ANTILOGOV-REVIEW, but the child name in that source must be corrected from Таисия to Пелагея."
+      },
+      "existingSource": "YA-4ACC0D7F-091-ANTILOGOV-REVIEW",
+      "indexAssessment": "Search snippet correctly targets godfather Alexander but omits the child and parents; the event child is Пелагея and father is Roman."
+    }
+  ],
+  "evidence": [
+    {
+      "catalogId": "a10c7315-68b2-46d5-beae-bf17af9361b9",
+      "scanNumber": 121,
+      "files": [
+        {
+          "path": "data/genealogy/evidence-private/yandex/a10c7315-68b2-46d5-beae-bf17af9361b9/0121-full-view.png",
+          "bytes": 26920343,
+          "sha256": "90f32580c8bbc70854404ccc20511c4472a20e01b8cc33546bbafde262293c1e"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/a10c7315-68b2-46d5-beae-bf17af9361b9/0121-header.png",
+          "bytes": 7675455,
+          "sha256": "f9b682e06ef4c15306c67b046c6959225a983457c3810af1dfec32f9a3127c49"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/a10c7315-68b2-46d5-beae-bf17af9361b9/0121-target-entry.png",
+          "bytes": 4381949,
+          "sha256": "0abf80d62262157ff97d36cc0de650190504e77a75695d013cc5a3d12025ffdd"
+        }
+      ]
+    },
+    {
+      "catalogId": "6c27b77f-b12a-4a25-b172-c5604f4b436c",
+      "scanNumber": 218,
+      "files": [
+        {
+          "path": "data/genealogy/evidence-private/yandex/6c27b77f-b12a-4a25-b172-c5604f4b436c/0218-full-view.png",
+          "bytes": 18347314,
+          "sha256": "be92885ba91e52468b69fe9a5e700808501f538cc95b0a6d35eed123053fc5a5"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/6c27b77f-b12a-4a25-b172-c5604f4b436c/0218-header.png",
+          "bytes": 4715161,
+          "sha256": "2f1b9dd25e39a8f16991407a841c138c41a59d474e055e18dc11a968e0f56b3e"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/6c27b77f-b12a-4a25-b172-c5604f4b436c/0218-target-entry.png",
+          "bytes": 2461799,
+          "sha256": "bdca537f212dea3178d74822b2438444db06a3991296fe71c30697367a784e56"
+        }
+      ]
+    },
+    {
+      "catalogId": "3dda9987-790c-42ad-801e-060de33bce38",
+      "scanNumber": 168,
+      "files": [
+        {
+          "path": "data/genealogy/evidence-private/yandex/3dda9987-790c-42ad-801e-060de33bce38/0168-full-view.png",
+          "bytes": 38843962,
+          "sha256": "9eba5cb7b1b14157389053d915547b7c6b3afb7ea176a194274d74356a2ea73f"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/3dda9987-790c-42ad-801e-060de33bce38/0168-header.png",
+          "bytes": 10335728,
+          "sha256": "be86c12ab7e33985394fb0c14fdd16636b41f210d1c6207fd33859a700ba7d64"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/3dda9987-790c-42ad-801e-060de33bce38/0168-target-entry.png",
+          "bytes": 6910458,
+          "sha256": "e2039388ad2b8ee9c4918f753cf350a4835ebbd7a740e1068beb90fb2feb2f6f"
+        }
+      ]
+    },
+    {
+      "catalogId": "da88b478-5ed2-46c6-bbfa-357515937aa1",
+      "scanNumber": 199,
+      "files": [
+        {
+          "path": "data/genealogy/evidence-private/yandex/da88b478-5ed2-46c6-bbfa-357515937aa1/0199-full-view.png",
+          "bytes": 26554456,
+          "sha256": "a990fdb64f8cce26fd5d8d7224561f387e0f50e194f9b52d3668fdaaa542a32a"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/da88b478-5ed2-46c6-bbfa-357515937aa1/0199-header.png",
+          "bytes": 8892347,
+          "sha256": "221adaa386e50746cc63a77249b90653a89bbca3b05bb4ca3aaffb0d9fa4ec9c"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/da88b478-5ed2-46c6-bbfa-357515937aa1/0199-target-entry.png",
+          "bytes": 5150231,
+          "sha256": "f8046b74635b9f0fb2c895b9fd74c2966d15a92cfce49b663c1987abfc6d54d8"
+        }
+      ]
+    },
+    {
+      "catalogId": "4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9",
+      "scanNumber": 91,
+      "files": [
+        {
+          "path": "data/genealogy/evidence-private/yandex/4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9/0091-antilogov-original.jpg",
+          "bytes": 2197555,
+          "sha256": "6883524e78269b6bfac6a13704ab37c6f3b6824fe039ccded4576a5b7ffdfa5b"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9/0091-antilogov-header.jpg",
+          "bytes": 929507,
+          "sha256": "efd0958472556220b1959a681c54f74e5dd87752ddddf46e0173e43fe173bd71"
+        },
+        {
+          "path": "data/genealogy/evidence-private/yandex/4acc0d7f-eb4d-4d50-8a9b-9cb3f51738f9/0091-antilogov-target.jpg",
+          "bytes": 533223,
+          "sha256": "25ea3629cce5aee558d2b5ad915fa8f20e3b50f59b45b6b2ac87ef826adf82eb"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "allOriginalsPresent": true,
+    "allTargetsBelongToSurnameSeries": true,
+    "unrelatedPeopleRequireNoProfiles": true,
+    "mapEligibleTargetsOnly": true,
+    "externalIndexTreatedAsNavigationOnly": true
+  },
+  "notableFindings": [
+    "Position 3 exposes duplicate person sets P4298/P0793 and P4299/P1139 and connects birth profile P5307 to death profile P1264.",
+    "Position 4 is a valuable new child born 5 December 1884 in the established P1047 + P1732 family; the original surname is Амтелоговъ.",
+    "Position 5 contains two distinct documentary forms in one record: father Роман Антилоговъ and godfather Александр Антелоговъ; the child is Пелагея, so the earlier project reading Таисия was corrected."
+  ],
+  "backlinkAudit": {
+    "status": "complete-at-handoff",
+    "bindings": [
+      {
+        "ordinal": 1,
+        "sourceId": "YA-A10C7315-121-ANTELOGOV-AFANASIY",
+        "profiles": [
+          "data/genealogy/people/P0855-afanasiy-efremovich-ampilogov.json",
+          "data/genealogy/people/P0856-maria-akimovna-ampilogova.json"
+        ],
+        "sourcePaths": [
+          "data/genealogy/sources/yandex/YA-A10C7315-121-ANTELOGOV-AFANASIY.json"
+        ],
+        "sourceExists": true,
+        "profileBacklinks": [
+          {
+            "path": "data/genealogy/people/P0855-afanasiy-efremovich-ampilogov.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P0856-maria-akimovna-ampilogova.json",
+            "exists": true,
+            "containsSourceId": true
+          }
+        ],
+        "allBacklinksPresent": true
+      },
+      {
+        "ordinal": 2,
+        "sourceId": "YA-6C27B77F-218-ANTELOGOV-YAKOV",
+        "profiles": [
+          "data/genealogy/people/P5306-yakov-egorovich-anpilogov-orenburg-1867.json"
+        ],
+        "sourcePaths": [
+          "data/genealogy/sources/yandex/YA-6C27B77F-218-ANTELOGOV-YAKOV.json"
+        ],
+        "sourceExists": true,
+        "profileBacklinks": [
+          {
+            "path": "data/genealogy/people/P5306-yakov-egorovich-anpilogov-orenburg-1867.json",
+            "exists": true,
+            "containsSourceId": true
+          }
+        ],
+        "allBacklinksPresent": true
+      },
+      {
+        "ordinal": 3,
+        "sourceId": "YA-3DDA9987-168-ANTELOGOV",
+        "profiles": [
+          "data/genealogy/people/P0793-feodor-timofeevich-ampilogov-1841.json",
+          "data/genealogy/people/P1139-natalya-stepanovna-rybolova-georgievka.json",
+          "data/genealogy/people/P1264-natalya-fedorovna-ampilogova-georgievka-1868.json",
+          "data/genealogy/families/F3245-fedor-natalya-anpilogovy-georgievka.json"
+        ],
+        "sourcePaths": [
+          "data/genealogy/sources/yandex/YA-3DDA9987-168-ANTELOGOV.json"
+        ],
+        "sourceExists": true,
+        "profileBacklinks": [
+          {
+            "path": "data/genealogy/people/P0793-feodor-timofeevich-ampilogov-1841.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P1139-natalya-stepanovna-rybolova-georgievka.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P1264-natalya-fedorovna-ampilogova-georgievka-1868.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/families/F3245-fedor-natalya-anpilogovy-georgievka.json",
+            "exists": true,
+            "containsSourceId": true
+          }
+        ],
+        "allBacklinksPresent": true
+      },
+      {
+        "ordinal": 4,
+        "sourceId": "YA-DA88B478-199-AMTELOGOV",
+        "profiles": [
+          "data/genealogy/people/P109760-anna-ivanovna-amtelogova-karmalka-1884.json",
+          "data/genealogy/people/P1047-ivan-grigorevich-ampilogov-karmalka.json",
+          "data/genealogy/people/P1732-irina-matveevna-tychinina-karmalka-1882.json",
+          "data/genealogy/people/P1743-evdokia-davydovna-ampilogova-karmalka-1883.json"
+        ],
+        "sourcePaths": [
+          "data/genealogy/sources/yandex/YA-DA88B478-199-AMTELOGOV.json"
+        ],
+        "sourceExists": true,
+        "profileBacklinks": [
+          {
+            "path": "data/genealogy/people/P109760-anna-ivanovna-amtelogova-karmalka-1884.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P1047-ivan-grigorevich-ampilogov-karmalka.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P1732-irina-matveevna-tychinina-karmalka-1882.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P1743-evdokia-davydovna-ampilogova-karmalka-1883.json",
+            "exists": true,
+            "containsSourceId": true
+          }
+        ],
+        "allBacklinksPresent": true
+      },
+      {
+        "ordinal": 5,
+        "sourceId": "YA-4ACC0D7F-091-ANTILOGOV-REVIEW",
+        "profiles": [
+          "data/genealogy/people/P109329-antilogov-review.json",
+          "data/genealogy/people/P8111-roman-gordeyevich-anpilogov-orenburg-1891.json",
+          "data/genealogy/people/P8157-lidia-petrovna-kopytina-orenburg-1893.json",
+          "data/genealogy/people/P6973-aleksandr-gordeyevich-anpilogov-orenburg-1882.json"
+        ],
+        "sourcePaths": [
+          "data/genealogy/sources/yandex/YA-4ACC0D7F-091-ANTILOGOV-REVIEW.json"
+        ],
+        "sourceExists": true,
+        "profileBacklinks": [
+          {
+            "path": "data/genealogy/people/P109329-antilogov-review.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P8111-roman-gordeyevich-anpilogov-orenburg-1891.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P8157-lidia-petrovna-kopytina-orenburg-1893.json",
+            "exists": true,
+            "containsSourceId": true
+          },
+          {
+            "path": "data/genealogy/people/P6973-aleksandr-gordeyevich-anpilogov-orenburg-1882.json",
+            "exists": true,
+            "containsSourceId": true
+          }
+        ],
+        "allBacklinksPresent": true
+      }
+    ],
+    "allFiveSourcesPresent": true,
+    "allListedProfileAndFamilyBacklinksPresent": true,
+    "note": "Snapshot taken after both processing agents wrote their integrations; root will repeat final repository-wide audit."
+  },
+  "correctionHistory": [
+    {
+      "at": "2026-09-13",
+      "ordinal": 1,
+      "withdrawn": "Groom age 32 and bride age 30.",
+      "corrected": "Table geometry places age 30 after the groom description and age 32 after the bride description."
+    },
+    {
+      "at": "2026-09-13",
+      "ordinal": 4,
+      "withdrawn": "Birth/baptism interpreted as 5/6 August.",
+      "corrected": "Original heading is December: birth 5 December, baptism 6 December 1884."
+    },
+    {
+      "at": "2026-09-13",
+      "ordinal": 5,
+      "withdrawn": "Child name read as Таисия.",
+      "corrected": "Enlarged original clearly reads Пелагея; existing source/profile text requires correction."
+    },
+    {
+      "at": "2026-09-13",
+      "ordinal": 5,
+      "withdrawn": "Both surname occurrences described as Анпилоговъ and Антелогов treated as OCR-only.",
+      "corrected": "Enlarged original distinguishes father Роман Антилоговъ and godfather Александр Антелоговъ; Антелогов is a genuine documentary hit."
+    }
+  ]
+}
