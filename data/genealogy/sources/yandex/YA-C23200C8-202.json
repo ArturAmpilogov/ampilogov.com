@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-C23200C8-202",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "death",
+  "primaryPersonId": "P102983",
   "collection": {
     "catalogId": "c23200c8-d89e-4ebd-b32e-fd5a7a05fd3e",
     "scanNumber": 202,
@@ -13,21 +14,34 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c23200c8-d89e-4ebd-b32e-fd5a7a05fd3e/202"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death",
+    "recordNumber": "19",
     "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
+      "display": "умер 25 февраля, погребён 28 февраля 1911 года",
+      "date": "1911-02-25",
+      "burialDate": "1911-02-28",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Иркутск, Иркутская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C23200C8-202-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "deceased-child",
+      "personId": "P102983",
+      "displayName": "Иван Антонович Ампилогов",
+      "nameAsTranscribed": "младенецъ Іоаннъ, 6 мѣсяцевъ",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C23200C8-202-M2",
+      "role": "father",
+      "personId": "P102982",
+      "displayName": "Антон Фёдорович Ампилогов",
+      "nameAsTranscribed": "крестьянина Воронежской губерніи, Павловскаго уѣзда, Верхне-Мамоновской волости и села Антона Феодорова Ампилогова",
       "surnameSeries": true
     }
   ],
@@ -52,6 +66,12 @@
         "path": "data/genealogy/evidence-private/yandex/c23200c8-d89e-4ebd-b32e-fd5a7a05fd3e/0202-target-entry.png",
         "sha256": "88739b52a5374605878be39e3ba7b85b7ff26a8de2ca723532dc643966b93f5b",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "deep-context",
+        "path": "data/genealogy/evidence-private/yandex/c23200c8-d89e-4ebd-b32e-fd5a7a05fd3e/0202-deep-context.png",
+        "sha256": "678e8eae0e93c234cd3b928b25c779e81428f8af0e125f48d25e541efe835a5e",
+        "description": "Чистый широкий фрагмент 5000×3800 с полным разворотом февральских смертей, включая запись № 19 и все графы."
       }
     ],
     "quality": {
@@ -60,15 +80,16 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5266x4168",
       "targetDimensions": "1475x770",
+      "contextDimensions": "5000x3800",
       "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "МОСКОКСКО\"\nТИПОгРАФІН.\nИПОДЛЬНО\nМСТРИЧЕСКОЙ КНИГИ НА 19»\nЛБT\nЗвАніє, ймА, бтчество й фамиліА одмéршаги.\nỔ3 MÉрш\nМ8жєскл.\nніл.",
-    "modernInterpretation": "МОСКОКСКО\" ТИПОгРАФІН. ИПОДЛЬНО МСТРИЧЕСКОЙ КНИГИ НА 19» ЛБT ЗвАниє, ймА, бтчество й фамилиА одмéршаги. Ổ3 MÉрш М8жєскл. нил.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Февраль. Запись № 19 мужескаго пола: 25 умеръ, 28 погребёнъ. Сынъ крестьянина Воронежской губерніи, Павловскаго уѣзда, Верхне-Мамоновской волости и села Антона Феодорова Ампилогова младенецъ Іоаннъ. 6 мѣсяцевъ.",
+    "modernInterpretation": "В Иркутске 25 февраля 1911 года умер шестимесячный Иван, сын крестьянина Антона Фёдоровича Ампилогова, приписанного к Верхне-Мамоновской волости и одноимённому селу Павловского уезда Воронежской губернии; ребёнок погребён 28 февраля.",
     "localOcr": "МОСКОКСКО\"\nТИПОгРАФІН.\nИПОДЛЬНО\nМСТРИЧЕСКОЙ КНИГИ НА 19»\nЛБT\nЗвАніє, ймА, бтчество й фамиліА одмéршаги.\nỔ3 MÉрш\nМ8жєскл.\nніл.",
     "localOcrWithSurnameLexicon": "МОСКОКСКО\"\nТИПОгРАФІН.\nПОДАЛЬНО\nИСТРИЧЕСКОЙ КНИГИ НА 19»\nЛ-ET\nЗвАніє, ймА, отчество й фамиліА одмершаги.\n03 MÉpI\nМ8жеска.\nнія.",
     "collation": {
@@ -76,20 +97,27 @@
       "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Индекс использован для навигации. Имя ребёнка, имя отца, возраст и даты проверены по записи № 19 полного оригинала; прежний OCR ошибочно захватил только печатный заголовок."
+  },
+  "context": {
+    "eventSummary": "Смерть шестимесячного Ивана Антоновича Ампилогова в Иркутске и его погребение через три дня.",
+    "identityNote": "Созданы отдельные P102982 и P102983; связь отец—сын дана прямо в акте. Других родственников документ не называет.",
+    "migrationNote": "Воронежская приписка отца сохранена как буквальная документная характеристика и не превращена в доказанный маршрут переселения."
   },
   "indexData": {
     "querySnippet": "Сынъ крестьянина Воронежской губ., Павловскаго уѣзда, Верхне-Мамоновской вол., и села Антона Ѳеодорова Ампилогова младенецъ Іоаннъ. 6 мцевъ.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high-for-name-kinship-age-and-dates",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Причина смерти и служебная формула погребения не нормализованы сверх уверенно читаемых данных о семье."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Полный разворот и запись № 19 прочитаны вручную; установлены отец, ребёнок, возраст, даты смерти и погребения; создан clean crop 5000×3800."
   }
 }

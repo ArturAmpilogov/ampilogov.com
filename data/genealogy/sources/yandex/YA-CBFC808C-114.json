@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CBFC808C-114",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7",
     "scanNumber": 114,
@@ -13,22 +13,43 @@
     "documentUrl": "https://yandex.ru/archive/catalog/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/114"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": 24,
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 12 июня, крещён 14 июня 1915 года",
+      "birthIso": "1915-06-12",
+      "baptismIso": "1915-06-14",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Колычево",
+      "normalized": "Колычево, Оренбургская губерния",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-CBFC808C-114-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "mentionId": "YA-CBFC808C-114-R24-M1",
+      "role": "godmother",
+      "personId": "P103000",
+      "displayName": "Елена Иудовна Ампилогова",
+      "nameAsTranscribed": "Елена Іудова Ампилогова",
+      "surnameSeries": true,
+      "identityConfidence": "medium-high"
+    },
+    {
+      "mentionId": "YA-CBFC808C-114-R24-M2",
+      "role": "baptized-child",
+      "displayName": "Феодор Георгиевич Поздняков",
+      "nameAsTranscribed": "Ѳеодоръ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CBFC808C-114-R24-M3",
+      "role": "godfather",
+      "displayName": "Иван Григорьевич Иванов",
+      "nameAsTranscribed": "Иванъ Григорьевъ Ивановъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -42,54 +63,46 @@
     "sha256": "9a6e12fb701355670bb786d2e3c7db238b6a04963f076dc83d7f23b24c1847d4",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0114-header.png",
-        "sha256": "62e2f64b874aa25378b72c8a9e630a6846003005c540bd8bc71860853b28465f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0114-target-entry.png",
-        "sha256": "f93c5b6f7f9911a6c8ef85434a70e620dcf0141e5ec00f471676ed34d261e112",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0114-target-context-deep.jpg",
+        "sha256": "3de2e38bf1ad7d58b6019e7a076eecc71684c8566418a571921e024d058dad0a",
+        "description": "Широкий чистый фрагмент полного разворота с целевой строкой и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4506x3620",
-      "targetDimensions": "1200x592",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "targetDimensions": "4300x1050",
+      "method": "manual-full-spread-review-plus-full-width-clean-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "СКОЙ\nСУНОА АЛЬНОЙ\nГОдА, ЧАСТЬ ПеРваД, й",
-    "modernInterpretation": "СКОЙ СУНОА АЛЬНОЙ ГОдА, ЧАСТЬ ПеРваД, й",
-    "localOcr": "СКОЙ\nСУНОА АЛЬНОЙ\nГОдА, ЧАСТЬ ПеРваД, й",
-    "localOcrWithSurnameLexicon": "СКОЙ\nГОдА, ЧАСТЬ ПеРваД, Ш",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-row-manually-verified",
+    "literal": "№ 24. Іюня 12 [родился], 14 [крещён]. Ѳеодоръ. Села Колычева крестьянинъ Георгій Ивановъ Поздняковъ и жена его Ксенія Іудова, оба православные. Воспріемники: того-же села крестьяне Иванъ Григорьевъ Ивановъ и Елена Іудова Ампилогова.",
+    "modernInterpretation": "12 июня 1915 года родился и 14 июня был крещён Фёдор, сын Георгия Ивановича Позднякова и Ксении Иудовны. Восприемницей была Елена Иудовна Ампилогова из Колычева.",
+    "indexNote": "Индексную фамильную строку подтверждает оригинал; номер, даты, ребёнок и родители установлены ручным чтением полной строки."
   },
   "indexData": {
     "querySnippet": "Того - же села Крестьяне : Иванъ Григорьевъ Ивановъ и Елена Iудова Ампилогова. Священникъ Іоаннъ Рождественскій.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "primary-register-entry",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот и запись №24, включая даты, родителей и восприемников; clean crop 4300×1050 с SHA."
+  },
+  "context": {
+    "eventSummary": "Елена Иудовна Ампилогова документирована восприемницей записи №24 в Колычеве.",
+    "identityNote": "P103000 strongly-supported как жена P5784 и мать P101573 по редкому точному имени и согласованной хронологии; прямой полноименной формулы супружества на этом листе нет.",
+    "migrationNote": "Различие мест Георгиевка (1904) и Колычево (1915) не превращено в маршрут переселения: акт фиксирует лишь место текущего упоминания."
   }
 }

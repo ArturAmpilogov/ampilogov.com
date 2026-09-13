@@ -5,18 +5,36 @@
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "c3d7ee83-7ae0-4aee-8483-41fe911db00b",
-    "scanNumber": "8"
+    "scanNumber": "8",
+    "title": "Метрическая книга сёл Колычево, Илькульган и Рождественское за 1912 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c3d7ee83-7ae0-4aee-8483-41fe911db00b/8"
   },
   "mentions": [
     {
-      "mentionId": "YA-C3D7EE83-008",
-      "role": "false-index-hit",
+      "mentionId": "YA-C3D7EE83-008-M1",
+      "role": "child",
+      "personId": "P103061",
+      "nameAsTranscribed": "Іоаннъ",
+      "displayName": "Иоанн Семёнович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C3D7EE83-008-M2",
+      "role": "father",
+      "personId": "P102595",
+      "nameAsTranscribed": "села Георгіевки солдатъ Семенъ Исаевъ Ампилоговъ",
+      "displayName": "Семён Исаевич Ампилогов (Ампилонов)",
+      "surnameSeries": true,
+      "confidence": "high"
+    },
+    {
+      "mentionId": "YA-C3D7EE83-008-M3",
+      "role": "mother",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "законная жена его Елизавета Алексеева",
+      "displayName": "Елизавета Алексеевна",
       "surnameSeries": false
     }
   ],
@@ -52,6 +70,12 @@
             "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0008-target-entry.png",
             "sha256": "c16c488aa3f3cf64614a8e68cfe1219b86a5e443c7c678370125ae5c671ea153",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/c3d7ee83-7ae0-4aee-8483-41fe911db00b/0008-target-entry-deep.png",
+            "sha256": "f2d2f630ec3539f60bd912eaee0d7968d19390c01c66804019f3f09ec8004e7a",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой, соседними записями и заголовками; интерфейс Яндекса отсутствует."
           }
         ],
         "quality": {
@@ -59,8 +83,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5162x4295",
-          "targetDimensions": "1482x781",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "4900x4000",
+          "method": "manual-full-spread-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -68,17 +94,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Полная формула мужского восприемника требует отдельной палеографической сверки; она не влияет на семейную идентификацию."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны весь разворот части I, строка № 12, даты, имя ребёнка, родители, восприемники и соседние мартовские строки; проверено тождество отца с P102595 и явно исключено автоматическое объединение с P102074. Wide crop 4900×4000."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Март. Мужского пола № 12. 23 родился, 25 крещён. Іоаннъ. Села Георгіевки солдатъ Семенъ Исаевъ Ампилоговъ и законная жена его Елизавета Алексеева, оба православные. Восприемники записаны в правой части разворота; среди них крестьянская девица Дарія Матѳеева Брусенцева.",
+    "modernInterpretation": "23 марта 1912 года у солдата из села Георгиевки Семёна Исаевича Ампилогова и Елизаветы Алексеевны родился сын Иоанн; крещён 25 марта.",
+    "indexNote": "Имя ребёнка, даты, родители, сословие и место прочитаны непосредственно по оригиналу. Индекс был только поисковой подсказкой.",
     "localOcr": "ТНПОГРАФІЙ.\nУЛОАОЛЬНО",
     "localOcrWithSurnameLexicon": "ТИПОГРАФІЙ.",
     "collation": {
@@ -89,6 +117,30 @@
   },
   "indexData": {
     "querySnippet": "Родившийся: Иоанн Семенов Ампилогов. Крёстная мать: Дария Матфеева Брусенцева, крестьянская девица.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "partly-confirmed-and-corrected-from-primary-scan",
+    "discrepancy": "Индекс не является основанием идентификации; состав семьи и даты уточнены по строке оригинала."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 12,
+    "date": {
+      "birth": "1912-03-23",
+      "baptism": "1912-03-25",
+      "display": "23–25 марта 1912 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Георгіевка",
+      "normalized": "село Георгиевка"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение Иоанна Семёновича Ампилогова.",
+    "identityNote": "Отец отнесён к P102595 по редкому полному имени, селу Георгиевке и документированному варианту фамилии «Ампилонов» в записи 1903 года; P102074 не объединяется.",
+    "migrationNote": "Запись фиксирует семейное событие в приходе и сама по себе не доказывает переселение."
   }
 }

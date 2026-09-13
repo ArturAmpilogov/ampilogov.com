@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D26C282-002",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "archival-index-surname-entry",
   "collection": {
     "catalogId": "8d26c282-fafb-4c84-8549-ae3126dde080",
     "scanNumber": 2,
@@ -13,21 +13,24 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8d26c282-fafb-4c84-8549-ae3126dde080/2"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "archival-registration-index-entry",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "9 мая 1909",
+      "iso": "1909-05-09",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "не установлено",
+      "confidence": "low"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-8D26C282-002-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
+      "role": "indexed-person",
+      "personId": null,
+      "displayName": "Н. Г. Анпилогов",
+      "nameAsTranscribed": "Анпилогов Н. Г.",
       "surnameSeries": true
     }
   ],
@@ -48,48 +51,54 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8d26c282-fafb-4c84-8549-ae3126dde080/0002-target-entry.png",
-        "sha256": "d24d1e4da9f59148d77fbf3f6ea1440b6f646f7fbb7d54bf8679ba0b3c83cbdd",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8d26c282-fafb-4c84-8549-ae3126dde080/0002-target-context-deep.jpg",
+        "sha256": "d9580d08842cbfa67c06b0ba342656bf5160a2056415a7202c63081ee7eb15a0",
+        "description": "Крупный контекстный фрагмент алфавитного листа со строкой Анпилогова, соседними строками и всеми графами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "2979x3818",
-      "targetDimensions": "1200x877",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "2700x3300",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Амельченко\nЛникин",
-    "modernInterpretation": "Амельченко Лникин",
-    "localOcr": "Амельченко\nЛникин",
-    "localOcrWithSurnameLexicon": "Амельченко\nАникин",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Анпилогов | Н. Г. | 81 | 09.05.",
+    "modernInterpretation": "В алфавитном регистрационном указателе за 1909 год указан Анпилогов Н. Г.; регистрационный номер 81, дата 9 мая.",
+    "indexNote": "Индекс Яндекса передал только фамилию. Инициалы, номер и дата установлены по полному первичному листу.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleColumnsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Анпилогов.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "archival-index-surname-entry",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен алфавитный лист scan 2. В строке уверенно прочитаны фамилия Анпилогов, инициалы Н. Г., номер 81 и дата 09.05; соседние строки подтверждают структуру указателя. Полное имя и место документ не сообщает, поэтому personId, родство, карта и миграция не создаются.",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+      "Полное имя и назначение регистрационного номера 81 без связанного дела не установлены."
     ]
+  },
+  "context": {
+    "summary": "Алфавитная регистрационная строка документирует носителя фамилии Анпилогов с инициалами Н. Г. в 1909 году.",
+    "genealogicalConclusion": "Фамильное упоминание доказано, но данных недостаточно для отдельного профиля или отождествления с известным человеком.",
+    "indexDiscrepancy": "Яндекс передал фамилию без инициалов, номера и даты; поля дополнены только по оригиналу."
   }
 }

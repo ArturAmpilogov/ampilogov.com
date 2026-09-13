@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-2545DA77-271",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "index-hit-review",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "2545da77-ac4d-4a24-ae1e-705a17081f09",
     "scanNumber": 271
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/2545da77-ac4d-4a24-ae1e-705a17081f09/271"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-2545DA77-271-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "transcription": {
     "status": "primary-scan-reviewed-no-match",
     "literal": "Метрическая книга села Кармалки за 1914 год, часть вторая, о бракосочетавшихся. На полном развороте находятся три февральские брачные записи. В записи № 1 от 10 февраля жених читается как крестьянин села Кармалки Павел Димитриев Куликов; в поручителях также перечислены Зуевы и Куликовы. Формы Ампилогов/Анпилогов или документированного варианта фамильного ряда на развороте нет.",
@@ -82,14 +73,22 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-false-positive-manually-verified",
     "transcriptionConfidence": "high",
     "deepReviewedAt": "2026-09-12",
     "reviewMethod": "manual-reading-of-full-spread-and-enlarged-groom-and-witness-columns",
-    "unresolved": []
+    "unresolved": [],
+    "deepReviewScope": "полный разворот части о бракосочетавшихся за 1914 год, заголовок, все три февральские записи и колонки женихов, невест и поручителей; вручную проверены запись № 1 от 10 февраля, имя Павла Димитриева Куликова и отсутствие форм Ампилогов/Анпилогов; индекс Яндекса и локальный OCR использованы только для навигации; профиль, событие фамильного ряда, карта и миграция исключены"
   },
   "indexData": {
     "querySnippet": "Жених: Павел Иванов Ампилогов, крестьянин, село Кармалка, Михайловская волость, Оренбургская губерния и уезд, 18 лет 11 месяцев и 29 дней.",
     "fuzzyQuery": true
+  },
+  "publicCore": false,
+  "cardKind": "negative-search-review",
+  "context": {
+    "eventSummary": "Полный разворот браков за февраль 1914 года проверен как ложное нечёткое совпадение: носителя фамильного ряда на листе нет.",
+    "identityNote": "Индексный «Павел Иванов Ампилогов» отвергнут: в записи № 1 жених читается как Павел Димитриев Куликов; профили и связи не создаются.",
+    "migrationNote": "Карта и маршрут не создаются, поскольку фамильное упоминание не подтверждено."
   }
 }

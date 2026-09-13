@@ -2,24 +2,16 @@
   "schemaVersion": 1,
   "sourceId": "YA-E8175079-166",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
-    "scanNumber": 166
+    "scanNumber": 166,
+    "title": "Метрическая книга Изяк-Никитинского прихода, 1891 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e8175079-c811-4d2f-9829-1e83ae135db3/166"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E8175079-166",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
     "scanNumber": 166,
@@ -41,6 +33,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0166-target-entry.png",
         "sha256": "d186c035af908bb621ad2fd1418aad42ccb78814ee1ff371d71bb756f8b21369",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0166-target-context-deep.png",
+        "sha256": "5880e6d25f30ff16110017bb5110c6719b9861411f7e95d6ee87fc716cddc72d",
+        "description": "Почти полный разворот с записями № 5–8 для доказательства отсутствия индексной фамильной цели.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +48,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5608x4339",
       "targetDimensions": "1341x955",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5200x3500"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +104,43 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-confirmed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: вручную проверены полный разворот, заголовок, записи №5–8 и все клетки поручителей; фамильная цель не найдена."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 5608x4339 marriage spread, 1891 heading, records №5–8, all groom/bride/surety cells and row boundaries, previous target crop provenance; confirmed false index hit; no profile/public event/map; clean 5200x3500 context crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": ", чибтаени\nПорурител\nпотвевоьетай\nИванч ех оратасвева Герново\n0-\nпо невпeтКеваlи: Сто\nжеть Картач Лотовой\n1. Оринант В3 агиикевь\ne Че\nПопреблинаяь.\nMasiree\nzarиt lв\nченоокищенний в2ліїну\nвол",
-    "modernInterpretation": ", чибтаени Порурител потвевоьетай Иванч ех оратасвева Герново 0- по невпeтКеваlи: Сто жеть Картач Лотовой 1. Оринант В3 агиикевь e Че Попреблинаяь. Masiree zarиt lв ченоокищенний в2лиїну вол",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": ", чибтаени\nПорурител\nпотвевоьетай\nИванч ех оратасвева Герново\n0-\nпо невпeтКеваlи: Сто\nжеть Картач Лотовой\n1. Оринант В3 агиикевь\ne Че\nПопреблинаяь.\nMasiree\nzarиt lв\nченоокищенний в2ліїну\nвол",
-    "localOcrWithSurnameLexicon": "сум\nвахерааь На Кусчиніь.\nem\n• Нат. и\nИвань ех оранновова Теркова\n/ 0\nпеть Картач Летовой\nФинит 13 aunted\nПогреблиняка.\nСой.\nMaree\nАспіламункв- Метра Направскі\nекі по вненаун\n2 v2",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "Полный разворот брачной части за 1891 год содержит записи № 5–8. Во всех строках и во всей графе «Кто были поручители» фамилии Ампилоговъ / Ампиловъ и сочетания «Павелъ Даниловъ» нет.",
+    "modernInterpretation": "Это подтверждённое ложное срабатывание индекса. На листе перечислены другие женихи, невесты и поручители; носителей исследуемого фамильного ряда не обнаружено.",
+    "indexNote": "Индекс Яндекса приписал листу поручителя Павла Данилова Ампилогова, однако полноширинное ручное чтение записей № 5–8 и сохранённого прежнего target-фрагмента этого не подтверждает. Сам прежний target показывает поручителей других фамилий."
   },
   "indexData": {
     "querySnippet": "Поручитель: Павел Данилов Ампилогов, казак. Поручитель: Сергий Иванов Кузнецов, казак. Поручитель: Иван Афанасьев Чернов, крестьянин.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive: индексные Павел Данилов Ампилогов, Сергий Кузнецов и Иван Чернов смешаны между строками/листами; фамильная цель на скане отсутствует."
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "source-review",
+    "date": {
+      "display": "1891 год",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский приход",
+      "normalized": "Изяк-Никитино, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Негативная проверка полного брачного разворота за 1891 год.",
+    "identityNote": "Профиль и backlink не создаются: фамильного упоминания на листе нет.",
+    "migrationNote": "Карта и миграция неприменимы."
+  },
+  "publicCore": false
 }

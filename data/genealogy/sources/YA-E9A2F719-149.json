@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E9A2F719-149",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "confirmed-false-positive",
   "collection": {
     "catalogId": "e9a2f719-e783-4a84-82dd-4188526dae4a",
     "scanNumber": 149
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e9a2f719-e783-4a84-82dd-4188526dae4a/149"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E9A2F719-149",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e9a2f719-e783-4a84-82dd-4188526dae4a",
     "scanNumber": 149,
@@ -41,6 +32,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e9a2f719-e783-4a84-82dd-4188526dae4a/0149-target-entry.png",
         "sha256": "495d985447865b8e92b4ab5579e7dc68a6fd2032cefb0b95964ce397e17d5f5b",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e9a2f719-e783-4a84-82dd-4188526dae4a/0149-target-context-deep.png",
+        "sha256": "e59f7552ea8d8cc1b7f4d0d4542d27016dc1cf8e77122f85288c3f84e97bc8d2",
+        "description": "Чистый полноширинный контекстный фрагмент полного разворота со всеми проверенными графами."
       }
     ],
     "quality": {
@@ -49,7 +46,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5583x4584",
       "targetDimensions": "1591x699",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "manual-full-page-reading-and-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "deepContextDimensions": "5200x3000"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -81,27 +81,31 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-false-positive",
+    "transcriptionConfidence": "high-for-absence-of-surname-series",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный разворот части о родившихся за май 1833 года; все видимые строки и границы записей; ручное чтение строки Матчиных; отклонение fuzzy/OCR; clean crop 5200x3000"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "жено Анна Иваніва, оба православнея:\nвященникі Рганні Лопови\nДіакинг сбаннг суменски.\nсалолицикч Вореріонь успенскій\nсла Добова кресванинь Сгару Хивинч Ма\nстчинг и Закиснал сіо мена Перасковся\nстиснова оба провославнях !\nвященниц„ Поаннь Ао\nДіакии г сімення.",
-    "modernInterpretation": "жено Анна Иванива, оба православнея: вященники Рганни Лопови Диакинг сбаннг суменски. салолицикч Ворерионь успенский сла Добова кресванинь Сгару Хивинч Ма стчинг и Закиснал сио мена Перасковся стиснова оба провославнях ! вященниц„ Поаннь Ао Диакии г симення.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию.",
-    "localOcr": "жено Анна Иваніва, оба православнея:\nвященникі Рганні Лопови\nДіакинг сбаннг суменски.\nсалолицикч Вореріонь успенскій\nсла Добова кресванинь Сгару Хивинч Ма\nстчинг и Закиснал сіо мена Перасковся\nстиснова оба провославнях !\nвященниц„ Поаннь Ао\nДіакии г сімення.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Май 1833 года, часть первая, о родившихся. На полном развороте проверены все видимые строки. В строке прежнего узкого фрагмента читается: «Села Дубова крестьянинъ Егоръ Ивановъ Матчинъ и законная его жена Параскева Семенова; оба православные». Фамилии исследуемого ряда на листе нет.",
+    "modernInterpretation": "Разворот содержит записи о рождениях в мае 1833 года. Предполагаемое совпадение возникло из-за ошибочного чтения почерка; Ампилоговы, Анпилоговы и другие варианты ряда не названы.",
+    "indexNote": "Полный скан отвергает fuzzy/OCR-совпадение: строка называет Егора Иванова Матчина и Параскеву Семёнову."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Полный скан отвергает fuzzy/OCR-совпадение: строка называет Егора Иванова Матчина и Параскеву Семёнову."
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "isRecord": true,
+  "cardKind": "confirmed-false-positive",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Ложное fuzzy-совпадение на листе рождений мая 1833 года.",
+    "identityNote": "Носителя исследуемого фамильного ряда на полном листе нет; профиль и связи не создаются.",
+    "migrationNote": "Карта и миграция не создаются."
   }
 }

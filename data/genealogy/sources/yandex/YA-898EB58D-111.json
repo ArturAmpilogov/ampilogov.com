@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-898EB58D-111",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 111,
@@ -12,25 +12,74 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/898eb58d-b230-41a1-aa5b-da6e30b40ea0/111"
   },
+  "primaryPersonId": "P102939",
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism-godparent",
+    "recordNumber": 88,
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "родилась 25 июня, крещена 26 июня 1909 года",
+      "birthIso": "1909-06-25",
+      "baptismIso": "1909-06-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Зобово",
+      "normalized": "Зобово, Оренбургский уезд, Оренбургская губерния, Российская империя",
+      "placeId": "zobovo-orenburg"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-898EB58D-111-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "role": "child",
+      "personId": null,
+      "sex": "female",
+      "nameAsTranscribed": "Марія",
+      "modernName": "Мария Константиновна Попова",
+      "displayName": "Мария Константиновна Попова",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-111-M2",
+      "role": "parents",
+      "personId": null,
+      "nameAsTranscribed": "Села Зобова крестьянинъ Константинъ Георгіевъ Поповъ и законная его жена Анна Васильева, оба православные",
+      "modernName": "Константин Георгиевич Попов и Анна Васильевна",
+      "displayName": "Константин и Анна Поповы",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-111-M3",
+      "role": "godfather",
+      "personId": null,
+      "sex": "male",
+      "nameAsTranscribed": "Села Зобова крестьянинъ Лука Ивановъ Красновъ",
+      "modernName": "Лука Иванович Краснов",
+      "displayName": "Лука Иванович Краснов",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-898EB58D-111-M4",
+      "role": "godmother",
+      "personId": "P102939",
+      "sex": "female",
+      "nameAsTranscribed": "солдатская жена Вѣра Косьмина Ампилогова",
+      "modernName": "Вера Кузьминична Ампилогова",
+      "displayName": "Вера Кузьминична Ампилогова",
       "surnameSeries": true
     }
   ],
+  "transcription": {
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "Июнь. Женского пола № 88. 25 родилась, 26 крещена. Марія. Села Зобова крестьянинъ Константинъ Георгіевъ Поповъ и законная его жена Анна Васильева, оба православные. Восприемники: села Зобова крестьянинъ Лука Ивановъ Красновъ и солдатская жена Вѣра Косьмина Ампилогова. Священник Алексий Маслов; диакон Димитрий Вознесенский; псаломщик Владимир Ильин.",
+    "modernInterpretation": "26 июня 1909 года солдатская жена Вера Кузьминична Ампилогова была восприемницей Марии Константиновны Поповой в селе Зобове.",
+    "indexNote": "Форма оригинала «Вѣра Косьмина» сохранена; современное патронимическое чтение — Вера Кузьминична. Упомянутая индексом Марфа Григорьевна Седых относится к другой строке."
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Вера Косьмина Ампилогова, солдатская жена. Крёстная мать: Марфа Григорьева Седых, крестьянская жена, село Зобово.",
+    "fuzzyQuery": true,
+    "discrepancy": "Марфа Григорьевна Седых не входит в строку № 88; целевая восприемница — Вѣра Косьмина Ампилогова."
+  },
   "evidence": {
     "catalogId": "898eb58d-b230-41a1-aa5b-da6e30b40ea0",
     "scanNumber": 111,
@@ -65,31 +114,21 @@
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "стay мeм\nЛьпова.\nластY\nвысло мумасны пош восоль р.8\nи свидотельствуемя: Шляетии Нак\nKianour Plrmuno",
-    "modernInterpretation": "стay мeм Льпова. ластY высло мумасны пош восоль р.8 и свидотельствуемя: Шляетии Нак Kianour Plrmuno",
-    "localOcr": "стay мeм\nЛьпова.\nластY\nвысло мумасны пош восоль р.8\nи свидотельствуемя: Шляетии Нак\nKianour Plrmuno",
-    "localOcrWithSurnameLexicon": "Льпова.\nи свидительствуемя: Шляети Нак",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Восприемничество солдатской жены Веры Кузьминичны Ампилоговой при крещении чужого ребёнка.",
+    "identityNote": "Создан отдельный профиль документированной носительницы фамильного ряда; буквальная форма отчества сохранена отдельно. Восприемничество не означает родства.",
+    "migrationNote": "Миграция не выводится."
   },
-  "indexData": {
-    "querySnippet": "Крёстная мать: Вера Косьмина Ампилогова, солдатская жена. Крёстная мать: Марфа Григорьева Седых, крестьянская жена, село Зобово.",
-    "fuzzyQuery": true
-  },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+      "Современная нормализация «Косьмина» как «Кузьминична» вероятна и помечена отдельно от буквального чтения."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены весь июньский разворот, запись женского пола № 88, даты 25/26 июня, родители, оба восприемника и причт; соседняя Марфа Седых отделена от целевой строки."
   }
 }

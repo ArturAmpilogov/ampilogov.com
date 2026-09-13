@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-143",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 143
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8d1e649d-8580-45ea-b86d-310a58330845/143"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8D1E649D-143-M1",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 143,
@@ -37,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0143-target-entry.png",
-        "sha256": "6edf9190b66de1ee6024387f775c5814f3879da209d63eec55f4e474f4fe8e25",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0143-target-context-deep.jpg",
+        "sha256": "ef7d488a49e0eedffbb4b1bcb8f8119d2762ac422a973167ff2ccece5b2accd1",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -48,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5213x4210",
-      "targetDimensions": "1447x1003",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -78,28 +69,42 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": []
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот 1889 года, июньские записи и вся строка Анастасии; отец прочитан как Семён Павлович Антипов, OCR/индексное Ампилогов отвергнуто; сохранён clean crop 4700×3000 с SHA; профиль фамильного ряда, backlink, карта и миграция исключены"
   },
   "transcription": {
-    "status": "complete-primary-scan-local-ocr-collation",
-    "literal": "ела Мисаклічки кресталнина на\nсилія Шванова Иснасниаь слинь,\n3\nАнтоній\nChehufea Mинa Murusoen L Diysniobra\nДіананч Михалив вогошовова\nЧерваю Саратичского осутира пюря-\nстиянина Ферапинта Арсенева.\nМаслиа бечь, сизиним круптови\nлщенкикн Тишаа еи 1\nіанонь Михашиь воголобова\nПеревни Нуамалки крествянина\nСемена Лавлова Ампилогива чиь",
-    "modernInterpretation": "ела Мисаклички кресталнина на силия Шванова Иснасниаь слинь, 3 Антоний Chehufea Mинa Murusoen L Diysniobra Диананч Михалив вогошовова Черваю Саратичского осутира пюря- стиянина Ферапинта Арсенева. Маслиа бечь, сизиним круптови лщенкикн Тишаа еи 1 ианонь Михашиь воголобова Перевни Нуамалки крествянина Семена Лавлова Ампилогива чиь",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию.",
-    "localOcr": "ела Мисаклічки кресталнина на\nсилія Шванова Иснасниаь слинь,\n3\nАнтоній\nChehufea Mинa Murusoen L Diysniobra\nДіананч Михалив вогошовова\nЧерваю Саратичского осутира пюря-\nстиянина Ферапинта Арсенева.\nМаслиа бечь, сизиним круптови\nлщенкикн Тишаа еи 1\nіанонь Михашиь воголобова\nПеревни Нуамалки крествянина\nСемена Лавлова Ампилогива чиь",
-    "collation": {
-      "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга за 1889 год, часть третья, об умерших: июньские записи. В одной из кармалкинских строк читается: «деревни Кармалки крестьянина Семена Павлова Антипова дочь Анастасия». Фамилия — Антипов, не Ампилогов.",
+    "modernInterpretation": "Умершая Анастасия была дочерью Семёна Павловича Антипова. Старое OCR-чтение «Ампилогов» вызвано сходством рукописной фамилии и не относится к исследуемому ряду.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Михайловский приход, Кармалка и соседние селения, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-45",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 45
@@ -14,8 +14,8 @@
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 45,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0045-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0045-full-view.png",
     "capturedAt": "2026-09-11",
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0045-target-entry.png",
-        "sha256": "f0f52aa0ac7bebfd4c32fec2ad79d77a1fe75a1552d9178b4c472105a93f4891",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0045-target-context-deep.jpg",
+        "sha256": "54a50168b9c55e838f6879acf13bc8af3179804c5b993a2e792e4614f8e67784",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5201x4345",
-      "targetDimensions": "1332x889",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -69,30 +69,49 @@
           "headerAndTargetGeneratedFromOriginal": true
         }
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 45: сентябрьские даты, акты около № 126–130 и все видимые строки. Фамилия Ампилогов и её документированные варианты отсутствуют; старый фрагмент заголовка не являлся доказательством совпадения. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "гÓд, члсль пеPIд, Ủ\nЗкáніє, ймА, сбтчєстко й фаліліл\nKтò\nкоспріелникUR.",
-    "modernInterpretation": "гÓд, члсль пеPIд, Ủ Зкáниє, ймА, сбтчєстко й фалилил Kтò косприелникUR.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "гÓд, члсль пеPIд, Ủ\nЗкáніє, ймА, сбтчєстко й фаліліл\nKтò\nкоспріелникUR.",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга, часть первая, о родившихся. На полном сентябрьском листе просмотрены все видимые строки актов № 126–130 и соседние записи; фамилии исследуемого ряда нет.",
+    "modernInterpretation": "Полный сентябрьский лист рождений 1889 года проверен построчно; поисковое совпадение является ложным.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
     }
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

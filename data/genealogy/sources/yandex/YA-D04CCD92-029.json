@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-D04CCD92-029",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-baptism",
   "collection": {
     "catalogId": "d04ccd92-215a-430c-8119-b6c66712a7e3",
     "scanNumber": 29,
@@ -13,22 +13,65 @@
     "documentUrl": "https://yandex.ru/archive/catalog/d04ccd92-215a-430c-8119-b6c66712a7e3/29"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-baptism",
+    "recordNumber": 68,
     "date": {
-      "display": "1 января 1913 — 31 декабря 1913",
-      "confidence": "high-for-catalog-date"
+      "display": "крещение 01.10.1913",
+      "iso": "1913-10-01",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "birthDate": {
+      "display": "рождение 30.09.1913",
+      "iso": "1913-09-30",
+      "calendar": "julian",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Гамалеевка",
+      "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-D04CCD92-029-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилова",
-      "nameAsTranscribed": "Ампилова",
+      "role": "child",
+      "personId": "P103004",
+      "nameAsTranscribed": "Александръ",
+      "displayName": "Александр Сергеевич Ампилов",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-029-M2",
+      "role": "father",
+      "personId": "P102687",
+      "nameAsTranscribed": "Сергий Константиновъ Ампиловъ",
+      "displayName": "Сергей Константинович Ампилов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-029-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "Анна Адріанова",
+      "displayName": "Анна Адриановна",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-D04CCD92-029-M4",
+      "role": "godfather",
+      "personId": "P102696",
+      "nameAsTranscribed": "Симеонъ Мироновъ Ампиловъ",
+      "displayName": "Симеон Миронович Ампилов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D04CCD92-029-M5",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "дѣвица Ѳеодосія Михайлова Михайлова",
+      "displayName": "Феодосия Михайловна Михайлова",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -52,6 +95,12 @@
         "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0029-target-entry.png",
         "sha256": "c89ad911366de516397dd78f1df48ddec626c8ae4a62b8389867dfd4eaa096cd",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/d04ccd92-215a-430c-8119-b6c66712a7e3/0029-target-context-deep.jpg",
+        "sha256": "2c330082662632dc08dc94427dc522040968ffd750d405c0ec7c0d60af144e3a",
+        "description": "Широкий крупный фрагмент целевой записи с датами, именами, родителями и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -60,36 +109,45 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5367x4370",
       "targetDimensions": "1397x700",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5200x1250",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ИПОГРА\nЛАНОВ\nистрической книги на 1913\nЗвáніє, йлел, бтчество й фамиліл родителей, й какóги\nшихсл.",
-    "modernInterpretation": "ИПОГРА ЛАНОВ истрической книги на 1913 Звáниє, йлел, бтчество й фамилил родителей, й какóги шихсл.",
-    "localOcr": "ИПОГРА\nЛАНОВ\nистрической книги на 1913\nЗвáніє, йлел, бтчество й фамиліл родителей, й какóги\nшихсл.",
-    "localOcrWithSurnameLexicon": "ИПОГРА\nАЛАНОВ\nистрической книги на 1913\nЗваніє, йлл, отчество й фамиліл родителей, й какги\nшихсл.",
+    "status": "complete-manual-reading-of-original",
+    "literal": "№ 68. 30 сентября. 1 октября. Александръ. Села Гамалеевки крестьянинъ Сергий Константиновъ Ампиловъ и жена его Анна Адріанова, православные. Восприемники: того же села крестьянинъ Симеонъ Мироновъ Ампиловъ и дѣвица Ѳеодосія Михайлова Михайлова.",
+    "modernInterpretation": "В акте № 68 записано рождение Александр Сергеевич Ампилов: 30.09.1913 и крещение 01.10.1913. Родители — Сергей Константинович Ампилов и Анна Адриановна; мать сохранена как участница акта без отдельного профиля, поскольку её собственная фамилия не указана.",
+    "indexNote": "Индексная подсказка о Феодоре Алексееве Павлове относится не к целевой строке № 68. По оригиналу восприемник — Симеон Миронов Ампилов; ребёнок, даты и родители также прочитаны по скану.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryBasis": "manual-reading-of-saved-original",
+      "externalIndex": "navigation-only"
+    }
   },
   "indexData": {
     "querySnippet": "Мать: Анна Адрианова Ампилова. Крёстный отец: Феодор Алексиев Павлов, крестьянин, то же село.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verification": "corrected-and-expanded-from-original",
+    "warning": "Индексная подсказка о Феодоре Алексееве Павлове относится не к целевой строке № 68. По оригиналу восприемник — Симеон Миронов Ампилов; ребёнок, даты и родители также прочитаны по скану."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+    "status": "deep-reviewed-against-original-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный разворот, переход сентября к октябрю и вся строка акта № 68 во всех графах: номер, даты рождения и крещения, имя ребёнка, родители, их статус и место, а также оба восприемника. По оригиналу восприемник — Симеон Миронов Ампилов; индексная подсказка о Феодоре Павлове отвергнута. Восприемничество не трактуется как родство или миграция.",
+    "correctionHistory": [
+      "2026-09-13: акт № 68 вручную перечитан по широкому фрагменту оригинала; восстановлены ребёнок, точные даты, родители и восприемники."
     ]
+  },
+  "primaryPersonId": "P103004",
+  "historicalContext": {
+    "text": "Метрическая запись фиксирует семейное событие в приходе села Гамалеевки в 1913 году. Формула «крестьянин села Гамалеевки» описывает документированный статус и место семьи на дату акта; отдельный вывод о переселении не делается."
   }
 }

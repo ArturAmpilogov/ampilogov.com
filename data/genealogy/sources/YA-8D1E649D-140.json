@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-140",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 140
@@ -28,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0140-target-entry.png",
-        "sha256": "3f6c269a45ccdb0106b7f2c2d40fd3e44ae42fb93547cf59c56c8de19f2311ec",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0140-target-context-deep.jpg",
+        "sha256": "ce8518015c96c3081d7d4878b6ce25e3d57a56173ae09f99388a0079aea9a5ac",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5157x4210",
-      "targetDimensions": "1413x686",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -79,31 +79,42 @@
         },
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот 1889 года, записи №74–80, имена умерших, возраст и родительские формулы; Пётр Филиппов Ампилогов отсутствует, Пётр в видимой кармалкинской строке — Харламов; сохранён clean crop 4700×3000 с SHA; профиль, backlink, карта и миграция исключены"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "чина Стефановиа Имгртина\nсынь, с\nНетрчо равив Киаїній\nамуенни\nв шконь, івг\nАнпревови\nеревни Прмалки преотвянина\nФимигна Афленайсва Амплию.\nгова сынь, Нетрь Местиб.\nгнн\nакирннння",
-    "modernInterpretation": "чина Стефановиа Имгртина сынь, с Нетрчо равив Киаїний амуенни в шконь, ивг Анпревови еревни Прмалки преотвянина Фимигна Афленайсва Амплию. гова сынь, Нетрь Местиб. гнн акирннння",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "чина Стефановиа Имгртина\nсынь, с\nНетрчо равив Киаїній\nамуенни\nв шконь, івг\nАнпревови\nеревни Прмалки преотвянина\nФимигна Афленайсва Амплию.\nгова сынь, Нетрь Местиб.\nгнн\nакирннння",
-    "localOcrWithSurnameLexicon": "йона Стефанова Ингртина\nane dempe reas 2\n22 mar\nЗнані, во літеринь\nНоринанни\nгревни\nВилинка Афанасива\naymes",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга за 1889 год, часть третья, об умерших: записи № 74–80 конца мая и начала июня. Все строки умерших проверены. Петра Филиппова Ампилогова на листе нет; видимая строка о Петре относится к сыну крестьянина деревни Кармалки Захария Тихонова Харламова.",
+    "modernInterpretation": "Индексная запись о двухлетнем Петре Филипповиче Ампилогове этому развороту не соответствует. На скане перечислены другие умершие, включая Петра Харламова.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Умерший: Петр Филиппов Ампилогов, 2 года. Умерший: Павел Васильев Хвалев, 2 недели. Умерший: Петр Захаров Харламов, 2 недели.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Михайловский приход, Кармалка и соседние селения, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

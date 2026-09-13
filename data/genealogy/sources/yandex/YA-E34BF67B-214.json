@@ -1,95 +1,89 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E34BF67B-214",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "research-false-positive",
   "collection": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 214,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г."
+    "title": "Метрические книги сёл Юртаево, Георгиевка, Богородское и Парадеево за 1914 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e34bf67b-c869-4641-b473-a33f7c370931/214"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-register-page",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "май—июнь 1914",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Парадеево, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E34BF67B-214-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "deceased-on-page",
+      "displayName": "Надежда Сульева",
+      "nameAsTranscribed": "Села Парадеева крестьянина Феофила Феодорова Сульева жена Надежда",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E34BF67B-214-M2",
+      "role": "deceased-on-page",
+      "displayName": "Мария Колесникова",
+      "nameAsTranscribed": "Артемія Тимофеева Колесникова дочь Марія",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 214,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-full-view.png",
+    "captureType": "yandex-archive-original-image-download-with-wide-clean-context-crop",
     "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "a63e6a90c2b69e75bfa1cc371328c3543dbd0b71d9e0a582ebb8fdff303fa92b",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-header.png",
-        "sha256": "c8db09752eada990a1071b95e601bf60377b916ee0b0f5f6fe566d091df490ad",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-target-entry.png",
-        "sha256": "788d20b24319f6cba696dcc9b13ada21d6bbb42404bd8c7ce1b434c98ead4ebf",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context",
+        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0214-target-context-deep.png",
+        "sha256": "eac4ea5796b07d272cd1ecc0b755ce15e682cf0e096e01228aecddc5d00b8357",
+        "description": "Широкий крупный фрагмент страницы умерших с датами, именами, возрастами и причинами смерти, без интерфейса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "9924x8125",
-      "targetDimensions": "2577x1319",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "8800x6500",
+      "method": "manual-reading-of-original-and-wide-clean-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "О429\nПОГРАФП\nУОА АЛЬНОХ\nметрической книги на /9",
-    "modernInterpretation": "О429 ПОГРАФП УОА АЛЬНОХ метрической книги на /9",
-    "localOcr": "О429\nПОГРАФП\nУОА АЛЬНОХ\nметрической книги на /9",
-    "localOcrWithSurnameLexicon": "О429\nПОГРА ФП\nУРА АЛЬКОР\nметрической книги на /9",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-manual-primary-scan-reading",
+    "literal": "Села Парадеева крестьянина Феофила Феодорова Сульева жена Надежда. … Артемія Тимофеева Колесникова дочь Марія.",
+    "modernInterpretation": "На странице зарегистрированы смерти жителей Парадеева, в том числе Надежды Сульевой и Марии Колесниковой; Николая Михайловича Ампилогова и хутора Камай на листе нет.",
+    "indexNote": "Индекс склеил элементы соседних строк и создал отсутствующую запись Николая Михайловича Ампилогова."
   },
-  "indexData": {
-    "querySnippet": "Умерший: Феодосия Пантелеимонова Сульдина, 2. Умерший: Николай Михайлов Ампилогов, крестьянин, хутор Камай, 4 месяца.",
-    "fuzzyQuery": true
-  },
+  "context": "Проверены все строки страницы за конец мая — начало июня, включая имена умерших, возраст, причины смерти и погребение.",
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high-for-no-surname-series; medium-high-for-selected-outsider-forms",
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "manual-full-original-reading; all-deceased-rows; ages; causes-of-death; burial-columns; adjacent-records; wide-clean-crop; index-conflation",
+    "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Умерший: Николай Михайлов Ампилогов, крестьянин, хутор Камай, 4 месяца",
+    "fuzzyQuery": true,
+    "assessment": "not-present-on-original"
   }
 }

@@ -1,36 +1,64 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-617BB766-4",
-  "provider": "Яндекс Архив — локальная копия требует пересъёмки",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "baptism-witness",
   "collection": {
     "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
     "scanNumber": 4,
-    "asRead": "Сохранённый фрагмент метрической книги; недостаточно резок для чтения фамилий"
+    "asRead": "Метрическая книга, часть первая о родившихся; март 1892 года"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/617bb766-7075-431f-afed-31beb287f0f6/4"
   },
-  "mentions": [],
-  "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "/ 2кенит Метравьени\nсикаач и повяябя жена\nМарой Троеринава\nАнтенкккви.\nиоган люсенка и ввеля\nПавсч Дарситаг лалтн-\nлогая и стщаненин\nсань сануи іНарія г/и",
-    "modernInterpretation": "/ 2кенит Метравьени сикаач и повяябя жена Марой Троеринава Антенкккви. иоган люсенка и ввеля Павсч Дарситаг лалтн- логая и стщаненин сань сануи иНария г/и",
-    "localOcr": "/ 2кенит Метравьени\nсикаач и повяябя жена\nМарой Троеринава\nАнтенкккви.\nиоган люсенка и ввеля\nПавсч Дарситаг лалтн-\nлогая и стщаненин\nсань сануи іНарія г/и",
-    "localOcrWithSurnameLexicon": "Дненій Петроволями\nДискавч и поличья жена\nМерда 24 роерикова\nАнтенкливи.\nлоговч и мпщинения\nдинь довици і Нарія ди\nситови вограскисм.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
+  "event": {
+    "type": "baptism-witness",
+    "date": {
+      "display": "март 1892 года",
+      "from": "1892-03-01",
+      "to": "1892-03-31",
+      "confidence": "high"
     },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент недостаточно резок для побуквенного чтения фамилий."
+    "place": {
+      "asWritten": "Изякъ-Никитинскій посёлокъ",
+      "normalized": "Изяк-Никитинский посёлок, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-617BB766-4-M1",
+      "role": "godfather",
+      "personId": null,
+      "nameAsTranscribed": "того же посёлка казакъ Павелъ Даниловъ Ампилоговъ",
+      "displayName": "Павел Данилович Ампилогов",
+      "surnameSeries": true,
+      "socialStatus": {
+        "asWritten": "казакъ",
+        "normalized": "казак"
+      },
+      "identityStatus": "unresolved-between-two-documented-namesakes"
+    },
+    {
+      "mentionId": "YA-617BB766-4-M2",
+      "role": "godmother",
+      "personId": null,
+      "nameAsTranscribed": "мещанская дочь дѣвица Марія Филиппова Богрякова",
+      "displayName": "Мария Филипповна Богрякова",
+      "surnameSeries": false
+    }
+  ],
+  "transcription": {
+    "status": "complete-for-surname-bearing-line-and-visible-context",
+    "literal": "Мартъ. … того же посёлка казакъ Павелъ Даниловъ Ампилоговъ и мѣщанская дочь дѣвица Марія Филиппова Богрякова.",
+    "modernInterpretation": "В мартовской записи 1892 года Павел Данилович Ампилогов, казак Изяк-Никитинского посёлка, назван восприемником вместе с девицей Марией Филипповной Богряковой. Полный лист не позволяет безопасно отождествить его ни с молодым P1542, ни со старшим одноимённым P102931.",
+    "indexNote": "Индекс Яндекса правильно указал фамильную строку, но не различает двух документированных Павлов Даниловичей. Текст и границы строки прочитаны заново по полному скану и крупному контекстному фрагменту."
   },
   "evidence": {
     "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
     "scanNumber": 4,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "downloaded-original-with-full-width-context-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
     "capturedAt": "2026-09-11",
@@ -40,85 +68,47 @@
         "kind": "header",
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0004-header.png",
         "sha256": "125a44043abffef31269bccca524e0109e026abc573d2128476b83e6e2f5a731",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "description": "Заголовок и структура мартовского разворота."
       },
       {
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0004-target-entry.png",
-        "sha256": "7e3b97db21390444f66419ef01042cb3fccaf43ad76b642a3eea5cd50465c2c5",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/617bb766-7075-431f-afed-31beb287f0f6/0004-target-context-deep.jpg",
+        "sha256": "94d30131c7a02a66e96688b8e25a601714a4030a68a68aa84a23803d2ff7484e",
+        "description": "Крупный полноширинный фрагмент с фамильной строкой и соседним контекстом, без интерфейса Яндекса."
       }
     ],
     "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5275x4220",
-      "targetDimensions": "1363x771",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5000x3500",
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-12",
+      "method": "manual-reading-of-downloaded-original-and-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.jpg",
-        "sha256": "3c6c1f1d47de2320bf58bfd414733e686633aabe4e1068234a594e70456b2949",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-target-entry.jpg",
-            "sha256": "4708b61b4bcb2f0c8468ea35c94524c26a63a82e70fce630938bf1e7321ef8fe",
-            "description": "Локальный фрагмент, требующий качественного повторного захвата."
-          }
-        ],
-        "parallelCopies": [
-          {
-            "catalogId": "617bb766-7075-431f-afed-31beb287f0f6",
-            "scanNumber": 4,
-            "captureStatus": "complete-with-local-copy",
-            "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-            "localBackup": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
-            "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-full-view.png",
-            "capturedAt": "2026-09-10",
-            "sha256": "d242ae47a00aceb23e3f215787b4010610880996b2cc115ee8d6b23ef4b41254",
-            "fragments": [
-              {
-                "kind": "header",
-                "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-header.png",
-                "sha256": "125a44043abffef31269bccca524e0109e026abc573d2128476b83e6e2f5a731",
-                "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-              },
-              {
-                "kind": "target-entry",
-                "path": "data/genealogy/evidence-private/yandex/617bb766-7075-431f-afed-31beb287f0f6/0004-target-entry.png",
-                "sha256": "bdd605745f8954cfe9ad92c74bdf1686a8084681b4008f30c686cab8c6e1345f",
-                "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-              }
-            ],
-            "quality": {
-              "originalImageDownloaded": true,
-              "headerAndTargetGeneratedFromOriginal": true,
-              "targetCropLocatedFromTextCoordinates": true,
-              "fullDimensions": "5275x4220",
-              "targetDimensions": "1463x1011",
-              "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-            },
-            "publicDisplay": false,
-            "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-          }
-        ]
-      }
-    ]
+    "rightsNote": "Локальная копия хранится для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "unresolved-identity-record",
+  "publicCore": true,
+  "primaryPersonId": null,
+  "context": {
+    "historical": "Восприемник участвовал в таинстве крещения; такая роль сама по себе не доказывает родства с ребёнком.",
+    "identityAssessment": "На март 1892 года существуют два хронологически возможных документированных Павла Даниловича: P1542 (род. около 1863–1864) и P102931 (род. около 1831–1832, умер 20 сентября 1892). Без дополнительных признаков выбор между ними невозможен; backlink не добавлен.",
+    "migrationAssessment": "Указание принадлежности к Изяк-Никитинскому посёлку фиксирует локальную роль, но не доказывает переселения."
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "manually-verified-from-full-scan",
+    "transcriptionConfidence": "high-for-surname-bearing-line",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Тождество Павла Даниловича остаётся двусмысленным между P1542 и P102931; personId намеренно не назначен."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный мартовский разворот, границы целевой строки и крупный полноширинный фрагмент; побуквенно подтверждены имя, отчество, фамилия, сословие, поселение и роль восприемника. Индекс использован только как подсказка; профиль, backlink, родство и миграция не созданы из-за двух документированных тёзок."
   },
   "indexData": {
     "querySnippet": "Того же поселка казак Павел Данилов Ампилогов и мещанская дочь девица Мария Филиппова Богрякова.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс не различает двух одноимённых носителей фамилии; автоматическое отождествление отвергнуто."
   }
 }

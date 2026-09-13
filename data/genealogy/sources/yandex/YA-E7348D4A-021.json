@@ -2,35 +2,24 @@
   "schemaVersion": 1,
   "sourceId": "YA-E7348D4A-021",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "confirmed-false-index-hit",
   "collection": {
     "catalogId": "e7348d4a-e154-4a6e-8e6a-1649ba1d3032",
     "scanNumber": 21,
-    "title": "Метрическая книга записей о рождении, браке, смерти церкви села Тюменевского.",
+    "title": "Метрическая книга церкви села Тюменевского; часть о родившихся за 1880 год",
     "publication": "ГА Кузбасса, Коллекция метрических книг, Опись №4, Метрическая книга записей о рождении, браке, смерти церкви села Тюменевского."
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e7348d4a-e154-4a6e-8e6a-1649ba1d3032/21"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "source-review",
     "date": {
-      "display": "1 января 1911 — 31 декабря 1911",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
+      "display": "1880 год",
+      "confidence": "high"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E7348D4A-021-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "e7348d4a-e154-4a6e-8e6a-1649ba1d3032",
     "scanNumber": 21,
@@ -52,6 +41,13 @@
         "path": "data/genealogy/evidence-private/yandex/e7348d4a-e154-4a6e-8e6a-1649ba1d3032/0021-target-entry.png",
         "sha256": "c18d43b15811aa3425236e852bf9e4731c7d0129e1140a7682e8fde1ae9db0e9",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/e7348d4a-e154-4a6e-8e6a-1649ba1d3032/0021-target-context-deep.png",
+        "sha256": "6ec15dfceb0bfd8de4e1ef2170fdac1c97ae56f2c97c00baba1d79ac64ca8a8c",
+        "description": "Крупный полноширинный чистый фрагмент с заголовком и всеми видимыми строками для отрицательной проверки.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -60,36 +56,40 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4938x4175",
       "targetDimensions": "1242x655",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "4700x3700"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "гванон мкто-\nена\nГозьмюва пал\nпалучина.\nа; 1\nАкондавь\nLBaN\nяни Мой-ме вереси примлянинг\n-Орей Яковиев сНартинові\nпс Домна Мколови",
-    "modernInterpretation": "гванон мкто- ена Гозьмюва пал палучина. а; 1 Акондавь LBaN яни Мой-ме вереси примлянинг -Орей Яковиев сНартинови пс Домна Мколови",
-    "localOcr": "гванон мкто-\nена\nГозьмюва пал\nпалучина.\nа; 1\nАкондавь\nLBaN\nяни Мой-ме вереси примлянинг\n-Орей Яковиев сНартинові\nпс Домна Мколови",
-    "localOcrWithSurnameLexicon": "яна.\nГозьмова пал\nгалучина .\nАкондавь\nLBaN\nяни Мой-ме вересни пришлянин\nпОрей Яковлев с Нартинові\nпс Домна Мколови",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-negative-reading-manually-verified",
+    "literal": "«Метрической книги на 1880 год, часть первая, о родившихся». Полный разворот содержит апрельские записи № 54, 45, 46, 55, 56 и другие; в прежнем target-фрагменте читается «той же деревни крестьянинъ Андрей Яковлевъ Мартыновъ…». Василия Васильева Анпилогова на листе нет.",
+    "modernInterpretation": "Полный сохранённый лист вручную прочитан: носителей исследуемого фамильного ряда на нём нет. Индексное совпадение подтверждено как ложное.",
+    "indexNote": "Confirmed false positive: индекс приписал листу Василия Васильева Анпилогова и Параскеву Романову Гатилову; target и все видимые строки дают участников иных фамилий."
   },
   "indexData": {
     "querySnippet": "Той-же деревни крестьянин Василий Васильев Анпилогов и кр. дочь Пераскева Романова Гатилова. Производили обыск : И. д. Псаломщика Александр Хромцов.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Confirmed false positive: индекс приписал листу Василия Васильева Анпилогова и Параскеву Романову Гатилову; target и все видимые строки дают участников иных фамилий."
   },
   "isRecord": false,
   "cardKind": "research-material-unconfirmed-fuzzy-hit",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-confirmed-false-index-hit",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: полный лист, заголовок, все видимые строки и границы табличных записей проверены вручную; индексная фамильная цель не найдена."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 4938x4175 spread, explicit 1880 heading, all visible April records across child/parent/godparent/clergy columns and row boundaries, exact target crop; confirmed false index hit; no profile/public event/map; clean 4700x3700 crop"
+  },
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Негативная проверка индексного фамильного совпадения по полному первичному изображению.",
+    "identityNote": "Профили и backlinks не создаются: фамильная цель на листе отсутствует.",
+    "migrationNote": "Карта и миграция неприменимы."
   }
 }

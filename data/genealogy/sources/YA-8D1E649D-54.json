@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-54",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 54
@@ -14,8 +14,8 @@
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 54,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy-and-deep-context-crop",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-leaf-review",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0054-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0054-full-view.png",
     "capturedAt": "2026-09-11",
@@ -28,19 +28,19 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0054-target-entry.png",
-        "sha256": "06c5a7f4c7599a08da6b7e9886bba323c910214a4d90a9ff60d69c2ea762b372",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0054-target-context-deep.jpg",
+        "sha256": "c7775954c5389d3efe8ff3a24d2acfe7702a2b5031327da0dd071471262cb743",
+        "description": "Широкий крупный фрагмент полного рабочего поля листа без интерфейса Яндекса; использован для ручной построчной проверки ложного совпадения."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "5195x4297",
-      "targetDimensions": "2684x1401",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-plus-wide-clean-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -79,31 +79,49 @@
         },
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "verified-no-match",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен исходный лист scan 54: июньские даты, номера актов и все видимые строки родителей и восприемников. Индексная фраза о Тимофее Стефановиче Ампилогове и Михаиле Филипповиче Прощаеве на оригинале отсутствует. Создан широкий контрольный фрагмент 4700×3000.",
+    "unresolved": []
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "лаиль\nкрестіянинь Иманч Гричичивь\nи крестиянино, чмвици До-\nКоткивч и вананная маена 2го;\nрія смельянийм Мурашейа-\nсліна Толфилива ія правиславн\nChhijeinin Mийnoed і Кlye,\nДіакань хнаннь Никливсній\nСела Михаплики снівать свол-\nСела Михайлівки снічать Скорилий\nлй Никность вичмакивч и\nЗстаовч Лоннаь и занинная Мсна\nпоествянская мена Анилина\nМаваа Пиналаева; На\nпранасна\nНикжаева Дегтярева.\nсавиоти\nСвавщанник2 Тигилоні\nсшксама скиахіітьа\nСела Михайлівки кооствянінь Папи-\nСла Ми хайливии гритерь - горн-\nтань Николаєвь Сошово и Заканком\nцерч Ивань Алексневь Костинч\nмена гго, Анастагів Аленстева;\nи скибатская мена, Татана\nШканива Талина.\nиня пранславние. в Акуатив\nСвкисннинт Тншкое",
-    "modernInterpretation": "лаиль крестиянинь Иманч Гричичивь и крестиянино, чмвици До- Коткивч и вананная маена 2го; рия смельянийм Мурашейа- слина Толфилива ия правиславн Chhijeinin Mийnoed и Кlye, Диакань хнаннь Никливсний Села Михаплики снивать свол- Села Михайливки сничать Скорилий лй Никность вичмакивч и Зстаовч Лоннаь и занинная Мсна поествянская мена Анилина Маваа Пиналаева; На пранасна Никжаева Дегтярева. савиоти Свавщанник2 Тигилони сшксама скиахиитьа Села Михайливки кооствянинь Папи- Сла Ми хайливии гритерь - горн- тань Николаєвь Сошово и Заканком церч Ивань Алексневь Костинч мена гго, Анастагив Аленстева; и скибатская мена, Татана Шканива Талина. иня пранславние. в Акуатив Свкисннинт Тншкое",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "лаиль\nкрестіянинь Иманч Гричичивь\nи крестиянино, чмвици До-\nКоткивч и вананная маена 2го;\nрія смельянийм Мурашейа-\nсліна Толфилива ія правиславн\nChhijeinin Mийnoed і Кlye,\nДіакань хнаннь Никливсній\nСела Михаплики снівать свол-\nСела Михайлівки снічать Скорилий\nлй Никность вичмакивч и\nЗстаовч Лоннаь и занинная Мсна\nпоествянская мена Анилина\nМаваа Пиналаева; На\nпранасна\nНикжаева Дегтярева.\nсавиоти\nСвавщанник2 Тигилоні\nсшксама скиахіітьа\nСела Михайлівки кооствянінь Папи-\nСла Ми хайливии гритерь - горн-\nтань Николаєвь Сошово и Заканком\nцерч Ивань Алексневь Костинч\nмена гго, Анастагів Аленстева;\nи скибатская мена, Татана\nШканива Талина.\nиня пранславние. в Акуатив\nСвкисннинт Тншкое",
-    "localOcrWithSurnameLexicon": "LA CAM\nчесна MAcuta\n\"Funa la Dermiseia.\nCua Muran\nКа Талина:",
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга 1889 года, часть первая, о родившихся. На полном июньском листе просмотрены все видимые строки актов № 149–151 и соседние записи. Тимофей Стефанов Ампилогов и Михаил Филиппов Прощаев на листе не названы.",
+    "modernInterpretation": "Полный июньский лист рождений 1889 года проверен построчно. Приписанная индексом пара восприемников отсутствует и относится к иной записи или возникла из склейки индекса.",
+    "indexNote": "Поисковый индекс и прежний OCR использованы только для навигации. Итог основан на ручном чтении полного первичного скана; индексное совпадение скану не соответствует.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Тимофей Стефанов Ампилогов, крестьянин, деревня Кормалки. Крёстный отец: Михаил Филиппов Прощаев, солдат, деревня Кузьминовка.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "display": "Михайловский приход и соседние селения, Оренбургская губерния",
+      "confidence": "medium"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "summary": "Полный метрический лист проверен как отрицательный результат: документированных носителей исследуемого фамильного ряда на нём нет.",
+    "historicalContext": "Лист относится к части метрической книги о родившихся за 1889 год. Он сохранён как исследовательский контроль ошибки fuzzy-поиска/машинного индекса.",
+    "genealogicalConclusion": "Карточка не создаёт человека, событие публичного ядра, родство, карту или миграцию.",
+    "indexDiscrepancy": "Внешний индекс/OCR дал ложное совпадение; приоритет отдан буквам полного первичного скана."
   }
 }

@@ -1,16 +1,26 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-079",
-  "provider": "Яндекс Архив",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "79"
+    "scanNumber": 79,
+    "asRead": "Метрическая книга за 1911 год; оригинальный разворот прочитан вручную"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/79"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-E69D0BBA-079",
+      "role": "false-index-hit",
+      "personId": null,
+      "nameAsTranscribed": "Ложное индексное совпадение",
+      "displayName": "Фамильный ряд не подтверждён",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/079-full-view.jpg",
@@ -43,6 +53,12 @@
             "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-target-entry.png",
             "sha256": "8a3eb1854e87b008d0bd503c9d93869da0c6ff5f9cd83717eb421e018b50c79e",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0079-target-entry-deep.png",
+            "sha256": "316a74db6854d78453b67a60930ef9eaf3cc1cb74c222c13b3e14fd8b1e3632e",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +66,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5934x4734",
-          "targetDimensions": "1635x548",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5500x4000",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,27 +77,37 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-manually-verified-false-hit",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны полный разворот части об умерших, заголовки граф, февральские записи № 11–14, даты, имена, возраст, причины и причт; индексная склейка опровергнута. Wide clean crop 5500×4000."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "НОСКОВСКОЙ\nТИПОГРАФІН\nС НОДАЛЬНОМ",
-    "localOcrWithSurnameLexicon": "МОСКОВСКОЙ\nТИПОГРАФІН",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-full-page-negative-review",
+    "literal": "На оригинальном развороте части об умерших прочитаны февральские записи № 11–14, даты смерти и погребения, имена умерших, возраст, причины смерти и служитель. Графы «отец умершего» в форме нет; Василий Андреев Ампилогов в строках отсутствует.",
+    "modernInterpretation": "Индекс склеил несовместимые элементы соседних строк и создал несуществующую родительскую роль; фамильный ряд не подтверждён.",
+    "indexNote": "Индекс отвергнут после ручного чтения всей таблицы и её заголовков."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Василий Андреев Ампилогов, крестьянин, село Зобово. Умерший: Михаил Димитриев Димитриев, крестьянин, деревня Стрелковы, 77.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "assessment": "confirmed-false-after-manual-primary-scan-reading",
+    "discrepancy": "В смертной форме нет графы отца; индексный Василий Андреев Ампилогов отсутствует, а Михаил Дмитриев относится к иной строке."
+  },
+  "event": {
+    "type": "negative-index-review",
+    "date": {
+      "display": "февраль 1911 года",
+      "confidence": "high"
+    }
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка смертного листа.",
+    "identityNote": "Индексная формула «отец умершего» невозможна для структуры этого бланка и отсутствует в рукописи.",
+    "migrationNote": "Оснований для карты или миграции нет."
+  },
+  "isRecord": false,
+  "cardKind": "research-material-false-fuzzy-hit",
+  "publicCore": false
 }

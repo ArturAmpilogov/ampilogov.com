@@ -10,7 +10,25 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d80785ec-5ad4-49c6-8de9-6ff073942fdc/296"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D80785EC-296-M1",
+      "role": "bride",
+      "personId": "P103074",
+      "nameAsTranscribed": "села Георгіевки крестьянская дѣвица Анна Павлова Ампилогова",
+      "displayName": "Анна Павловна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D80785EC-296-M2",
+      "role": "bride-surety-candidate",
+      "personId": null,
+      "nameAsTranscribed": "села Георгіевки крестьянинъ Петръ Ампилоговъ",
+      "displayName": "Пётр Ампилогов",
+      "surnameSeries": true,
+      "confidence": "medium"
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/296-full-view.jpg",
@@ -43,6 +61,12 @@
             "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0296-target-entry.png",
             "sha256": "906013dd69d3938139e530bedaf0c2cc4e39a6af8d9ba40e48ea006db365547d",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/d80785ec-5ad4-49c6-8de9-6ff073942fdc/0296-target-entry-deep.png",
+            "sha256": "96c874c557d2c3411ba9ee32737f337b1c851a7acf053b579189bf9a1d8924af",
+            "description": "Широкий clean crop оригинального листа с целевой строкой и соседним контекстом, без интерфейса Яндекса."
           }
         ],
         "quality": {
@@ -50,8 +74,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5193x4138",
-          "targetDimensions": "2795x734",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5000x3900",
+          "method": "manual-full-page-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,14 +85,20 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "high"
+    "status": "complete-primary-scan-reading-new-bride-profile",
+    "transcriptionConfidence": "high-for-bride-medium-for-groom-surname",
+    "unresolved": [
+      "Фамилия жениха не нормализована из-за неуверенного чтения.",
+      "Пётр Ампилогов не отождествлён с тёзками."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны заголовок части II, брак № 18, дата, супруги, возраст/брачный статус, поручители и соседние октябрьские строки; Пётр оставлен candidate-only. Wide clean crop 5000×3900."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Октябрь. Брак № 18, 28 дня. Жених — села Георгиевки крестьянин Василий Прокофьев [фамилия читается неуверенно], православный, первым браком. Невеста — села Георгіевки крестьянская дѣвица Анна Павлова Ампилогова, православная, первым браком, около 17 лет. По невесте поручителем назван села Георгиевки крестьянинъ Петръ Ампилоговъ.",
+    "modernInterpretation": "28 октября 1913 года крестьянская девица Анна Павловна Ампилогова из Георгиевки вступила в первый брак. Пётр Ампилогов выступил поручителем по невесте, но без отчества не отождествлён с тёзками.",
+    "indexNote": "Невеста, дата, брачный статус и поручитель прочитаны по оригиналу; индекс не является основанием связывать Петра с существующими тёзками.",
     "localOcr": "села еоргиьки хредьмиа\nлом иискорчинки приетьни.\nАлексіви Богариуево и Мирані Гариль\nдиьвну Анна Sв о вuа doа\nАмпилогова; православного\nПо невиеріь - Сел Георгіевки крестьями\nи20\nліци\nмеповокоамй; првышь бракомеь\nДлитрій Паромовв иПетрч Ямпилого в,\nіlа\nДмиррревя се жалом\nМихоміь Никольский\nсимь\nПо жениdлы Села Геокліевчо креерьям\nРе Геоогевии чьяшену",
     "collation": {
       "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
@@ -76,6 +108,29 @@
   },
   "indexData": {
     "querySnippet": "Села Георгіевки крестьянская дѣвица Анна Павлова Ампилогова; православнаго исповѣданія; первымъ бракомъ. ... Поручитель: Петр Ампилогов, крестьянин, село Георгиевка.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "bride-and-surety-confirmed-with-identity-caution",
+    "discrepancy": "Личность Петра Ампилогова не разрешена из-за отсутствия отчества."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "event": {
+    "type": "marriage",
+    "recordNumber": 18,
+    "date": {
+      "date": "1913-10-28",
+      "display": "28 октября 1913 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Георгіевка",
+      "normalized": "Георгиевка, Оренбургская губерния"
+    }
+  },
+  "context": {
+    "eventSummary": "Первый брак Анны Павловны Ампилоговой.",
+    "identityNote": "Анна получает отдельный профиль; Пётр Ампилогов оставлен неразрешённым кандидатом без ссылки на P1166/P1378.",
+    "migrationNote": "Брачная запись не доказывает переселение."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-8C226880-198",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8c226880-6126-4896-851b-2f301b131018",
     "scanNumber": 198,
@@ -13,24 +13,16 @@
     "documentUrl": "https://yandex.ru/archive/catalog/8c226880-6126-4896-851b-2f301b131018/198"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "false-index-hit-review",
     "date": {
-      "display": "1 января 1910 — 31 декабря 1910",
-      "confidence": "high-for-catalog-date"
+      "display": "1910",
+      "confidence": "high-for-source-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Изяк-Никитинский и соседние посёлки, Оренбургская губерния"
     }
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8C226880-198-M1",
-      "role": "surname-series-mention",
-      "displayName": "Анпилогов",
-      "nameAsTranscribed": "Анпилогов",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8c226880-6126-4896-851b-2f301b131018",
     "scanNumber": 198,
@@ -48,10 +40,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/8c226880-6126-4896-851b-2f301b131018/0198-target-entry.png",
-        "sha256": "b6d1ea436cf6d0cab439e6d4eb900ba891577f8d363189ddd30a325a8980b112",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/8c226880-6126-4896-851b-2f301b131018/0198-target-context-deep.jpg",
+        "sha256": "3c8033e3542a8edf9efe0851602d61981b60f6af8980238b89d894dd79e83fb3",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -59,37 +51,36 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5363x4339",
-      "targetDimensions": "1625x730",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ІСТРИЧеСКОЙ КНИГИ НА 1910%\nЗваніє, ймл, бтчЕство й фалиліл родитєлей, й какóгш)\nмусA.\nввроиспов'Бданіл.\nшна Изякь-Никиминскаго поселка Ка-",
-    "modernInterpretation": "ІСТРИЧеСКОЙ КНИГИ НА 1910% Званиє, ймл, бтчЕство й фалилил родитєлей, й какóгш) мусA. ввроиспов'Бданил. шна Изякь-Никиминскаго поселка Ка-",
-    "localOcr": "ІСТРИЧеСКОЙ КНИГИ НА 1910%\nЗваніє, ймл, бтчЕство й фалиліл родитєлей, й какóгш)\nмусA.\nввроиспов'Бданіл.\nшна Изякь-Никиминскаго поселка Ка-",
-    "localOcrWithSurnameLexicon": "ІСТРИЧеСКОЙ КНИГИ НА 1910%\nЗваніє, ймА, отчЕство й фалиліл родителей, й какги\nв вроиспов даніл.\nшна Изяк-Никиминскаго поселка Ка-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги за 1910 год, часть первая, о родившихся: ноябрьские записи № 55–58 (18–30 ноября). Проверены все видимые строки родителей и восприемников; казака Филиппа Петрова Анпилогова и Параскевы Димитриевой на листе нет.",
+    "modernInterpretation": "Скан 198 содержит четыре записи о рождениях и крещениях конца ноября 1910 года. Индексная родительская пара Филипп Петрович Анпилогов — Параскева Дмитриевна этому листу не соответствует.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Псаломщик Вениамин Изяк-Никитинского поселка казак Филипп Петров Анпилогов и законная жена его Параскева Димитриева, оба православные.",
     "fuzzyQuery": true
   },
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-fuzzy",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот, ноябрьские записи №55–58, обе колонки родителей и восприемников; Филипп Петров Анпилогов и Параскева Димитриева отсутствуют; сохранён clean crop 4700×3000 с SHA; профиль, backlink, карта, родство и миграция исключены"
+  },
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

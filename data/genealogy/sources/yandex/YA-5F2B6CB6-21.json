@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5F2B6CB6-21",
   "provider": "Яндекс Архив",
-  "recordType": "other",
+  "recordType": "technical-parallel-source-pointer",
   "collection": {
     "catalogId": "5f2b6cb6-30fa-464b-8c7b-1cde73a0c2fd",
     "scanNumber": 21
@@ -10,27 +10,12 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/5f2b6cb6-30fa-464b-8c7b-1cde73a0c2fd/21"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-5F2B6CB6-21-M1",
-      "role": "other",
-      "personId": null,
-      "nameAsTranscribed": "Ампилогов/Ампилогова — требует чтения",
-      "displayName": "Ампилогов/Ампилогова (требует чтения)",
-      "surnameSeries": true
-    }
-  ],
+  "mentions": [],
   "transcription": {
-    "status": "complete-primary-scan-local-ocr-collation",
-    "literal": "Совпадение выдачи Яндекс Архива; скан сохранён.",
-    "modernInterpretation": "Предварительная запись; профиль не создан.",
-    "localOcr": "Оденбурсский міБщаник, Антопій\nНикижинВ Ампилоговзи Кроспіб\nЯнка Пелагей Перажимови Широкил\nНазаравскао куторикратьямищ, За\nХарз Павловз вольшаковВи Крости",
-    "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+    "status": "technical-container-reviewed",
+    "literal": "Полный разворот метрической книги за 1886 год, часть первая, о родившихся. Целевая строка №57 — рождение и крещение Анастасии 10 апреля; её полная ручная расшифровка сохранена в каноническом Record YA-5F2B6CB6-21-R57.",
+    "modernInterpretation": "Корневая карточка не дублирует событие, участников и backlinks: каноническая строковая карточка YA-5F2B6CB6-21-R57 документирует Антона Никитича Ампилогова как восприемника.",
+    "indexNote": "Индекс использован для навигации. Год, строка №57 и роль восприемника проверены по полному оригиналу; прежний OCR-текст корневой карточки заменён ссылкой на канонический Record."
   },
   "evidence": {
     "catalogId": "5f2b6cb6-30fa-464b-8c7b-1cde73a0c2fd",
@@ -93,14 +78,25 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "medium-high",
-    "unresolved": [
-      "Расшифровать совпадение по скану."
-    ]
+    "status": "complete-technical-parallel-source-pointer",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную проверены полный разворот 21, заголовок 1886 года, строка №57 и её границы. Корневая карточка нормализована как technical parallel pointer на уже существующий YA-5F2B6CB6-21-R57; mentions/event/backlinks не дублируются."
   },
   "indexData": {
     "querySnippet": "Совпадение выдачи Яндекс Архива; скан сохранён.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "root-normalized-to-existing-canonical-row-record"
+  },
+  "primaryPersonId": null,
+  "event": null,
+  "context": {
+    "eventSummary": "Технический контейнер полного листа; канонический акт — YA-5F2B6CB6-21-R57.",
+    "identityNote": "Профиль P91028 и все участники принадлежат строковому Record; root не создаёт повторных mentions или backlinks.",
+    "migrationNote": "Новых выводов о родстве, карте или переселении нет."
+  },
+  "isRecord": false,
+  "cardKind": "technical-parallel-source-pointer",
+  "publicCore": false
 }

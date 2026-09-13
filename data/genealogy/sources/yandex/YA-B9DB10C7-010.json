@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-010",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 10,
@@ -13,22 +13,52 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/10"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-010-M1",
-      "role": "surname-series-mention",
-      "displayName": "Антипов",
-      "nameAsTranscribed": "Антипов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102910",
+      "displayName": "Михаил Егорович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Мих. [Зах. зачёркнуто; над строкой: Егор.]",
+      "surnameSeries": true,
+      "yearAsWritten": "1897"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-010-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102911",
+      "displayName": "Илья Матвеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Илья Матв.",
+      "surnameSeries": true,
+      "yearAsWritten": "1903"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-010-M3",
+      "role": "military-register-listed-person",
+      "personId": "P102030",
+      "displayName": "Григорий Ефимович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Григор. Еф.",
+      "surnameSeries": true,
+      "yearAsWritten": "1895"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-010-M4",
+      "role": "military-register-listed-person",
+      "personId": "P102912",
+      "displayName": "Григорий Николаевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Григор. Ник.",
+      "surnameSeries": true,
+      "yearAsWritten": "1898"
     }
   ],
   "evidence": {
@@ -52,41 +82,55 @@
         "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0010-target-entry.png",
         "sha256": "41b65882647c32c7310632130232572448cdf33de5e16ba05648f59e280e3b03",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/010-target-context-deep.jpg",
+        "sha256": "ea234792591d864b3a52558cd9bedffc38f976b0a652231c877f8f9a106f75ef",
+        "description": "Крупный полноширинный clean crop roster-листа 010, сохраняющий фамильные строки и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6624x9068",
-      "targetDimensions": "3002x4908",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-primary-scan-dual-ocr-collation",
-    "literal": "pan mia va to co.\n7 Алгілочов АЛ-й Вленс 1898 1\nАнтипов Ал-др Сніян 1902\n134\nДлеяна Куза\nМам 1895\n1\n34. Абрамов Мирак вер189 ₴\n! Агкасов Илья ввикий 1905 134\"\n34 Алегилочов Ильч\nМоййв.1903.\n134\n3\nАвсалямов Салийлг. Хас 189$134\n4. Абсалямов Та вайд. А8.19971217\n5 Ахметов Файзулла X189]\n133\nАширов Галей Тариор.\n189$/34\n7 Ампилогов Гриф\nЕф. 1895\n1\n8.Алферов Григор.\nРод.\n1897\n11\nАмгилочо в Тригор. Кних1898\n1\nАббясав Хамефулка Ф.1897 134°\nАйткулов Лутфул. Мук18951",
-    "modernInterpretation": "pan mia va to co. 7 Алгилочов АЛ-й Вленс 1898 1 Антипов Ал-др Сниян 1902 134 Длеяна Куза Мам 1895 1 34. Абрамов Мирак вер189 ₴ ! Агкасов Илья ввикий 1905 134\" 34 Алегилочов Ильч Моййв.1903. 134 3 Авсалямов Салийлг. Хас 189$134 4. Абсалямов Та вайд. А8.19971217 5 Ахметов Файзулла X189] 133 Аширов Галей Тариор. 189$/34 7 Ампилогов Гриф Еф. 1895 1 8.Алферов Григор. Род. 1897 11 Амгилочо в Тригор. Кних1898 1 Аббясав Хамефулка Ф.1897 134° Айткулов Лутфул. Мук18951",
-    "localOcr": "pan mia va to co.\n7 Алгілочов АЛ-й Вленс 1898 1\nАнтипов Ал-др Сніян 1902\n134\nДлеяна Куза\nМам 1895\n1\n34. Абрамов Мирак вер189 ₴\n! Агкасов Илья ввикий 1905 134\"\n34 Алегилочов Ильч\nМоййв.1903.\n134\n3\nАвсалямов Салийлг. Хас 189$134\n4. Абсалямов Та вайд. А8.19971217\n5 Ахметов Файзулла X189]\n133\nАширов Галей Тариор.\n189$/34\n7 Ампилогов Гриф\nЕф. 1895\n1\n8.Алферов Григор.\nРод.\n1897\n11\nАмгилочо в Тригор. Кних1898\n1\nАббясав Хамефулка Ф.1897 134°\nАйткулов Лутфул. Мук18951",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "175. Ампилогов Мих. [«Зах.» зачёркнуто; над строкой: «Егор.»] | 1897 | 21\n182. Ампилогов Илья Матв. | 1903 | 134\n187. Ампилогов Григор. Еф. | 1895 | 1\n189. Ампилогов Григор. Ник. | 1898 | 1",
+    "modernInterpretation": "Михаил с исправленным в источнике отчеством: «Зах.» зачёркнуто и заменено надстрочным «Егор.» (1897); Илья Матвеевич (1903); Григорий Ефимович (1895); Григорий Николаевич (1898) Ампилоговы.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; имена, сокращения и годы перепроверены по всему листу.",
     "collation": {
-      "baseLocalOcr": "confirmed-exact-after-removing-line-breaks",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "Карман 380. Ампилогов Мих. Зах. ... Ампилогов Григор. Ник 1898.",
     "fuzzyQuery": true
   },
   "isRecord": true,
-  "cardKind": "named-primary-record",
+  "cardKind": "military-registration-list",
   "publicCore": true,
   "review": {
-    "status": "complete-primary-scan-collation-with-local-evidence",
-    "transcriptionConfidence": "medium-high",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен военно-учётный лист, строки № 175–196, все видимые строки и графы. Фамильные строки независимо прочитаны по оригиналу; сокращения и исправления сохранены буквально. Создан clean crop 5800×7800. Место списка не трактуется как место рождения, родство или миграция.",
     "unresolved": []
+  },
+  "context": {
+    "summary": "Алфавитный военно-учётный лист документирует перечисленных носителей фамилии Ампилогов и значения, записанные в соседних графах.",
+    "historicalContext": "Дело относится к учёту военнообязанных, призванных по мобилизации. Цифровые и буквенные коды не раскрываются без легенды книги.",
+    "genealogicalConclusion": "Имена и годы сохранены как написано. Место ведения списка не объявляется местом рождения, родством или маршрутом переселения.",
+    "indexDiscrepancy": "Индекс Яндекса и OCR использованы только для навигации; фамилии, инициалы, годы и исправления прочитаны по полному оригиналу."
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CBFC808C-137",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7",
     "scanNumber": 137,
@@ -13,21 +13,36 @@
     "documentUrl": "https://yandex.ru/archive/catalog/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/137"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-and-burial",
+    "recordNumber": 13,
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "умерла 21 января, погребена 23 января 1915 года",
+      "deathIso": "1915-01-21",
+      "burialIso": "1915-01-23",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Колычево",
+      "normalized": "Колычево, Оренбургская губерния",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-CBFC808C-137-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "mentionId": "YA-CBFC808C-137-R13-M1",
+      "role": "deceased",
+      "personId": "P103001",
+      "displayName": "Марина Петровна Ампилогова",
+      "nameAsTranscribed": "Села Колычева крестьянина Петра Григорьева Ампилогова дочь Марина",
+      "age": "5 месяцев",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-CBFC808C-137-R13-M2",
+      "role": "father",
+      "personId": "P103002",
+      "displayName": "Пётр Григорьевич Ампилогов",
+      "nameAsTranscribed": "крестьянинъ Петръ Григорьевъ Ампилоговъ",
       "surnameSeries": true
     }
   ],
@@ -42,54 +57,46 @@
     "sha256": "90d7d03e28b761bb76c4e48fc43d48146171f71c9186a0b48fe671a6cb416977",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0137-header.png",
-        "sha256": "f8c6976e2beb259f8b015a875702ecdd6d83f36184d587b0442e5de9ae99dba6",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0137-target-entry.png",
-        "sha256": "c9044b53e5370208f3cf1a1b33866512b24aeae304a2a33222ec8d1456395b50",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0137-target-context-deep.jpg",
+        "sha256": "17a6cafdafec24bf7e65b20d98a6f2ad27b98070800990a5977dc0d906a26d5b",
+        "description": "Широкий чистый фрагмент полного разворота с целевой строкой и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4395x3620",
-      "targetDimensions": "1306x819",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "targetDimensions": "4200x1150",
+      "method": "manual-full-spread-review-plus-full-width-clean-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "12.\nu Vóa.c\nвсаринь азактоії\nека Польчева Поествячнина, Наввечя\n0)ларова явежина, соців сарий\nаиин Фиктй Д)робова.\nСва/гокіткиваоестічнина ПаКа\nПригрьева Аоанина, досі Марія\nСелав\nракомияиіь Синтоі\nо3дов?",
-    "modernInterpretation": "12. u Vóa.c всаринь азактоиї ека Польчева Поествячнина, Наввечя 0)ларова явежина, социв сарий аиин Фиктй Д)робова. Сва/гокиткиваоестичнина ПаКа Пригрьева Аоанина, доси Мария Селав ракомияииь Синтои о3дов?",
-    "localOcr": "12.\nu Vóa.c\nвсаринь азактоії\nека Польчева Поествячнина, Наввечя\n0)ларова явежина, соців сарий\nаиин Фиктй Д)робова.\nСва/гокіткиваоестічнина ПаКа\nПригрьева Аоанина, досі Марія\nСелав\nракомияиіь Синтоі\nо3дов?",
-    "localOcrWithSurnameLexicon": "1 2.\nn Vóa.c\nварить зактоії\nска Полочева Проествянина, Наввечя\n0 перова овежина, соців нарий\nин Фикт Дробова.\nСва/голокива остічнина ТаКа\nПригроева Аванина, досі Марія\nСелав\nракомициів Синтоі",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-row-manually-verified",
+    "literal": "№ 13. Января 21 [умерла], 23 [погребена]. Села Колычева крестьянина Петра Григорьева Ампилогова дочь Марина. 5 мѣсяцевъ. Отъ кори.",
+    "modernInterpretation": "Марина Петровна Ампилогова, пятимесячная дочь крестьянина села Колычева Петра Григорьевича Ампилогова, умерла 21 января 1915 года от кори и была погребена 23 января.",
+    "indexNote": "Индекс верно подсказал имя и возраст; номер, даты, полная формула отца и причина смерти прочитаны по оригинальной горизонтальной строке."
   },
   "indexData": {
     "querySnippet": "Умерший: Марина Петрова Ампилогова, 5 месяцев. Умерший: Арсений Иванов Афонин, 8 месяцев. Умерший: Никонор Поликарпов Ярыгин, 1 1/2.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "primary-register-entry",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот и запись №13: даты, возраст, отец и причина смерти; clean crop 4200×1150 с SHA."
+  },
+  "context": {
+    "eventSummary": "Смерть пятимесячной Марины Петровны Ампилоговой в Колычеве от кори.",
+    "identityNote": "Отец Пётр Григорьевич назван в акте прямо; созданы отдельные P103001 и P103002 с взаимной родственной связью. Мать в записи не названа.",
+    "migrationNote": "Акт фиксирует семейное проживание в Колычеве, но не маршрут переселения."
   }
 }

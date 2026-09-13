@@ -1,95 +1,89 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E34BF67B-057",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "research-false-positive",
   "collection": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 57,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г."
+    "title": "Метрические книги сёл Юртаево, Георгиевка, Богородское и Парадеево за 1914 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e34bf67b-c869-4641-b473-a33f7c370931/57"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-register-page",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "1914",
+      "confidence": "high-for-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Георгиевка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E34BF67B-057-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "role": "officiating-priest",
+      "displayName": "Иоанн Дмитриев",
+      "nameAsTranscribed": "Священникъ Іоаннъ Дмитріевъ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E34BF67B-057-M2",
+      "role": "psalm-reader",
+      "displayName": "Мирон Никольский",
+      "nameAsTranscribed": "Псаломщикъ Миронъ Никольскій",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 57,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-full-view.png",
+    "captureType": "yandex-archive-original-image-download-with-wide-clean-context-crop",
     "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "a5e76290dcb1d730e43a02dfc5c7b14d2618623badf8d4d9801183167ec52787",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-header.png",
-        "sha256": "bdfa33cb9f18093e3c1a183e62b07d0dc7a74534537ed7d60442b6bb457b34f0",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-target-entry.png",
-        "sha256": "b9a3e0ef32574554da7c7e44363e36b7ebaa36daec983c2d49285b0f3a4ef3a9",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context",
+        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0057-target-context-deep.png",
+        "sha256": "57570e5bc44811a7df0242f5674de07b587d1b9b5d33f3a05c2c2195082908a1",
+        "description": "Широкий крупный фрагмент листа с целевыми строками и подписями причта, без интерфейса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "10162x8301",
-      "targetDimensions": "2627x1113",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "9000x6500",
+      "method": "manual-reading-of-original-and-wide-clean-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "atэнела его Еверииs Кослина; обав\nправославного\nДвяшенника бостиа Д\nмитрчива\nПеаломиниь Мираня Никольскій\nкочув роблевших е выло мужеиа пола, би :\nвидистельствуетв: Дащенниикь бани",
-    "modernInterpretation": "atэнела его Еверииs Кослина; обав православного Двяшенника бостиа Д митрчива Пеаломиниь Мираня Никольский кочув роблевших е выло мужеиа пола, би : видистельствуетв: Дащенниикь бани",
-    "localOcr": "atэнела его Еверииs Кослина; обав\nправославного\nДвяшенника бостиа Д\nмитрчива\nПеаломиниь Мираня Никольскій\nкочув роблевших е выло мужеиа пола, би :\nвидистельствуетв: Дащенниикь бани",
-    "localOcrWithSurnameLexicon": "1 энела его Еверии Космина; обав\nправославного\nДвашенника бостик Д\nмитрива\nПеаломини Мираня Никольски\nочув роблевших с выло мужена пола, би :\nвидительствуетв: ващеникь банил",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-manual-primary-scan-reading",
+    "literal": "Священникъ Іоаннъ Дмитріевъ. Псаломщикъ Миронъ Никольскій.",
+    "modernInterpretation": "На проверенном листе повторяются подписи священника Иоанна Дмитриева и псаломщика Мирона Никольского; Матроны и Варфоломея Ампилоговых нет.",
+    "indexNote": "Индекс Яндекса ошибочно собрал Матрону Варфоломеевну и Варфоломея Фёдоровича Ампилоговых из неверно распознанных фрагментов."
   },
-  "indexData": {
-    "querySnippet": "Родившийся: Матрона Варфоломеева Ампилогова. ... Отец: Варфоломей Феодоров Ампилогов, крестьянин, село Георгиевка.",
-    "fuzzyQuery": true
-  },
+  "context": "Полностью проверены строки актов, родительские графы и подписи причта; фамильный ряд на листе не обнаружен.",
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high-for-no-surname-series",
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "manual-full-original-reading; all-visible-record-rows; parent-columns; clergy-signatures; adjacent-records; wide-clean-crop; index-conflation",
+    "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Родившийся: Матрона Варфоломеева Ампилогова; отец: Варфоломей Феодоров Ампилогов, село Георгиевка",
+    "fuzzyQuery": true,
+    "assessment": "contradicted-by-original"
   }
 }

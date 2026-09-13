@@ -2,15 +2,33 @@
   "schemaVersion": 1,
   "sourceId": "YA-D101731B-305",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "d101731b-1613-48e1-a844-243286b65e4e",
-    "scanNumber": 305
+    "scanNumber": 305,
+    "title": "Метрическая книга за 1895 год, часть третья, об умерших"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d101731b-1613-48e1-a844-243286b65e4e/305"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-D101731B-305-M1",
+      "role": "deceased-daughter",
+      "personId": "P103010",
+      "nameAsTranscribed": "дочь Анастасія",
+      "displayName": "Анастасия Евфимовна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-D101731B-305-M2",
+      "role": "father",
+      "personId": "P103015",
+      "nameAsTranscribed": "деревни Кормалки крестьянина Евфимія Петрова Ампилогова",
+      "displayName": "Евфим Петрович Ампилогов",
+      "surnameSeries": true
+    }
+  ],
   "evidence": {
     "catalogId": "d101731b-1613-48e1-a844-243286b65e4e",
     "scanNumber": 305,
@@ -32,6 +50,12 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0305-target-entry.png",
         "sha256": "2c0ad7970be1bc05cee1a7b3e6a9594bbb3ddadf77b24ed0f0319c21870b7881",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/d101731b-1613-48e1-a844-243286b65e4e/0305-target-context-deep.jpg",
+        "sha256": "e1ef8ee37775d6541a1bd2792396a0a4a67646d4e4a0942ab1be599803477179",
+        "description": "Широкий чистый фрагмент целевой записи со всеми значимыми графами и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
@@ -40,7 +64,10 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5178x4266",
       "targetDimensions": "1499x692",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepTargetDimensions": "5000x1300",
+      "deepTargetVisuallyConfirmed": true,
+      "deepTargetConfirmedAt": "2026-09-13"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -95,28 +122,58 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "deep-reviewed-against-original-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Проверены полный декабрьский разворот части об умерших и вся строка № 135: даты смерти и погребения, имя, родительская формула, возраст, причина смерти, причт и место погребения. P91165 исключён из автоматического слияния из-за отсутствия доказательства тождества поколений.",
+    "correctionHistory": [
+      "2026-09-13: прежний OCR соседней строки заменён ручным чтением акта смерти № 135."
     ]
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "селалнсанлоскаги сома-\nа гверимія Николасва\nГелькова дочь Влара\nмриденникгнавен/ всжун\nУтаконч. мираниї воголобова\nСела 1 исаиловскайкреслья-\nнина Афанасія Семеснова\nДегтлярева соли з",
-    "modernInterpretation": "селалнсанлоскаги сома- а гверимия Николасва Гелькова дочь Влара мриденникгнавен/ всжун Утаконч. мираниї воголобова Села 1 исаиловскайкреслья- нина Афанасия Семеснова Дегтлярева соли з",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "селалнсанлоскаги сома-\nа гверимія Николасва\nГелькова дочь Влара\nмриденникгнавен/ всжун\nУтаконч. мираниї воголобова\nСела 1 исаиловскайкреслья-\nнина Афанасія Семеснова\nДегтлярева соли з",
-    "localOcrWithSurnameLexicon": "Села Михайловского солда-\nа вжинія Николасво\nалькова дочь Влара\nТриденник Навикі\nПінконч\nмирания воголюбова.\n4.\nСела исаиловскаго крестья-\nчина Поранасій Семестова\nДегтярева сынь бояннь\nогл.",
+    "status": "complete-manual-reading-of-original",
+    "literal": "Декабрь. Женский счёт № 135. 15 умерла, 17 погребена. Деревни Кормалки крестьянина Евфимія Петрова Ампилогова дочь Анастасія, 60 летъ. Отъ старости. Священникъ Іоаннъ Поповъ съ причтомъ; погребена на кладбищѣ.",
+    "modernInterpretation": "15 декабря 1895 года в возрасте 60 лет умерла от старости Анастасия, дочь крестьянина деревни Кармалки Евфима Петровича Ампилогова; погребена 17 декабря.",
+    "indexNote": "Индекс верно подсказал имя отца, но прежний OCR захватил соседнюю строку. Номер, даты, имя умершей, возраст, причина смерти и родительская формула прочитаны по полному оригиналу.",
     "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке."
+      "primaryBasis": "manual-full-spread-reading",
+      "externalIndex": "navigation-only"
+    }
   },
   "indexData": {
     "querySnippet": "Отец умершего: Евфим Петров Ампилогов, крестьянин, деревня Кормалки. Отец умершего: Георгий Васильев Хвалев, крестьянин, село Михайловское.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "verification": "corrected-from-original",
+    "warning": "Прежний OCR относился к соседним строкам; фактическая целевая запись — № 135."
+  },
+  "primaryPersonId": "P103010",
+  "event": {
+    "type": "death-and-burial",
+    "recordNumber": 135,
+    "date": {
+      "display": "умерла 15 декабря, погребена 17 декабря 1895 года",
+      "deathIso": "1895-12-15",
+      "burialIso": "1895-12-17",
+      "calendar": "julian",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "деревня Кормалка [Кармалка]",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    },
+    "age": {
+      "display": "60 лет",
+      "years": 60
+    },
+    "cause": "от старости"
+  },
+  "historicalContext": {
+    "text": "Акт документирует старшее поколение кармалкинской ветви: умершая названа дочерью Евфима Петровича, однако возраст показывает, что автоматическое объединение её отца с одноимённым P91165 без дополнительных документов небезопасно.",
+    "identityBoundary": "P103015 создан отдельно и не объединён с P91165: совпадение имени и места не доказывает тождество людей разных возможных поколений."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true
 }

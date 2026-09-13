@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-C7016A16-042",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "marriage",
   "collection": {
     "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
     "scanNumber": 42,
@@ -13,22 +13,34 @@
     "documentUrl": "https://yandex.ru/archive/catalog/c7016a16-4822-4f55-86a7-bc5c550d59bd/42"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "marriage",
     "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
+      "display": "23 июня 1909 года",
+      "from": "1909-06-23",
+      "to": "1909-06-23",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Гамалеевка",
+      "normalized": "село Гамалеевка, Бузулукский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-C7016A16-042-M1",
-      "role": "surname-series-mention",
-      "displayName": "Данилова",
-      "nameAsTranscribed": "Данилова",
+      "role": "bride",
+      "personId": "P102639",
+      "displayName": "Екатерина Даниловна Ампилова",
+      "nameAsTranscribed": "Села Гамалеевки крестьянка Екатерина Данилова Ампилова",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C7016A16-042-M2",
+      "role": "groom",
+      "personId": null,
+      "displayName": "Илья Дмитриевич Кудряшов",
+      "nameAsTranscribed": "Села Гамалеевки крестьянинъ Илья Димитріевъ Кудряшовъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -52,6 +64,12 @@
         "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0042-target-entry.png",
         "sha256": "2f417b567f8d7d9ae9020b851cbad2f32299362ee301cd584a37fc26c9299439",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "full-width-entry-context",
+        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0042-target-context-deep.png",
+        "sha256": "86762a0dd415b9d21501b5f5e3510111d5f7eb8a966e52d66dd605774aab240b",
+        "description": "Широкий clean-фрагмент записи № 8 со всеми графами брака, участниками, поручителями и причтом."
       }
     ],
     "quality": {
@@ -59,16 +77,19 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "11052x8730",
-      "targetDimensions": "1935x1491",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "10000x2200",
+      "method": "manual-full-spread-review-and-clean-wide-recrop",
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "лавнам.\nКиаkаеоін\n* икоой Алокдано\nПла. вамаинськи одести\nошка скатерина Дра-\nduun",
-    "modernInterpretation": "лавнам. Киаkаеоин * икоой Алокдано Пла. вамаинськи одести ошка скатерина Дра- duun",
+    "status": "complete-primary-scan-manual-transcription",
+    "literal": "Июнь. № 8. 23. Села Гамалеевки крестьянинъ Илья Димитріевъ Кудряшовъ, православный, первымъ бракомъ, 21 годъ. Села Гамалеевки крестьянка Екатерина Данилова Ампилова, православная, первымъ бракомъ, 18 лѣтъ.",
+    "modernInterpretation": "23 июня 1909 года крестьянин Илья Дмитриевич Кудряшов, 21 года, вступил в первый брак с Екатериной Даниловной Ампиловой, 18 лет; оба из села Гамалеевки.",
     "localOcr": "лавнам.\nКиаkаеоін\n* икоой Алокдано\nПла. вамаинськи одести\nошка скатерина Дра-\nduun",
     "localOcrWithSurnameLexicon": "лавнам.\nКия насін\nПла. вамаинськи подести\nошка катерина Дра -\nduun",
     "collation": {
@@ -76,20 +97,27 @@
       "assistedLocalOcr": "not-confirmed-by-local-ocr",
       "yandexTextBlocksUsedForNavigationAndCollation": true
     },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "indexNote": "Имя, фамильная форма, дата, возраст и брачный статус невесты прочитаны вручную по оригиналу; индекс использован только для навигации."
   },
   "indexData": {
     "querySnippet": "Села Замалеевки крестьянка Екатерина Данилова Ампилова первым браком православная. 18. Священник Владимир Киселевский Псаломщик Николай Алонтов.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "verdict": "confirmed-marriage-after-full-scan-review"
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-manual-reading",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены запись № 8, дата, жених, невеста, возраст, брачный статус, поручители и причт; идентификация P102639 санкционирована root."
+  },
+  "primaryPersonId": "P102639",
+  "context": {
+    "eventSummary": "Первый брак Екатерины Даниловны Ампиловой в Гамалеевке 23 июня 1909 года.",
+    "identityNote": "P102639 подтверждена полным именем, селом и хронологически совместимыми прежними упоминаниями восприемницы.",
+    "migrationNote": "Запись фиксирует Гамалеевку, но не переселение."
   }
 }

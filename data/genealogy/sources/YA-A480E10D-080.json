@@ -1,94 +1,26 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-A480E10D-080",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
-  "collection": {
-    "catalogId": "a480e10d-0dee-4730-bea6-74f9eff86a00",
-    "scanNumber": "080"
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/a480e10d-0dee-4730-bea6-74f9eff86a00/80"
-  },
-  "mentions": [
-    {
-      "mentionId": "YA-A480E10D-080-M1",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
-    }
-  ],
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/080-full-view.jpg",
-    "sha256": "ee8dad3704e7fa1a029602524081ed45211c6112754735b09e2850eab9893b8a",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/080-target-entry.jpg",
-        "sha256": "74533dd255f3e020c9aa47ba2d0370ab16dad73fca1e6c93c1e4eec31371e251"
-      }
-    ],
-    "parallelCopies": [
-      {
-        "catalogId": "a480e10d-0dee-4730-bea6-74f9eff86a00",
-        "scanNumber": 80,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "0d586cfc4873477d8e3ce2a0bc890a8fb72fc975f771392a89eefa8cf4c3c0ec",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-header.png",
-            "sha256": "17a8f8629d6eaeae590dd69859d2fa6ef2d2cc72bb5998a54e0cc99246ec2a6d",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-target-entry.png",
-            "sha256": "d21e805b98d45915b94c2a55b1dcd56d359c896b3dfbc0894fc8deb4dc053a25",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5167x3887",
-          "targetDimensions": "1219x656",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "confirmed-false-positive",
+  "primaryPersonId": null,
+  "collection": {"catalogId":"a480e10d-0dee-4730-bea6-74f9eff86a00","scanNumber":"080","title":"Метрическая книга за 1915 год, часть первая, о родившихся"},
+  "links": {"documentUrl":"https://yandex.ru/archive/catalog/a480e10d-0dee-4730-bea6-74f9eff86a00/80"},
+  "event": {"type":"page-context-only","date":{"display":"декабрь 1915 года","confidence":"high"},"place":{"normalized":"не установлено","confidence":"low"}},
+  "mentions": [],
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ЕПЛОДЛЬНО\nгóди, чáсть первад, й.\nFW\nЗвáніє, ймА, бтчество й фалиліл\nR\nвоспріемникшвz.",
-    "localOcrWithSurnameLexicon": "СПОДАЛЬНО\nЗваніє, ймА, отчество й фалилід\nR\nвоспріємникшЕ.",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status":"complete-primary-scan-reading-confirmed-false-positive",
+    "literal":"1915 годъ, часть первая, о родившихся. На развороте полностью проверены видимые записи № 160–163: Александра (родилась 2, крещена 15 декабря), Евгенія (12/15 декабря), Александръ (14/15 декабря), Михаилъ (16/19 декабря) и начинающаяся ниже запись № 163 (22/22 декабря); прочитаны графы родителей и воспріемниковъ. Василія Феофанова Ампилогова и Анны Антоновой Камоловой в этих строках нет.",
+    "modernInterpretation":"Декабрьский разворот рождений 1915 года содержит записи других семей; индексная пара Василия Ампилогова и Анны Камоловой на скане отсутствует.",
+    "indexNote":"Сниппет Яндекса не соответствует этому изображению: совпадение опровергнуто ручным чтением всех видимых строк и соседних граф."
   },
-  "indexData": {
-    "querySnippet": "Крестьянин Курской Губернии Василий Феофанов Ампилогов и Уладикавказская мещанка Анна Антонова Камолова.",
-    "fuzzyQuery": true
-  }
+  "indexData": {"querySnippet":"Крестьянин Курской Губернии Василий Феофанов Ампилогов и Уладикавказская мещанка Анна Антонова Камолова.","assessment":"confirmed false positive after full-page review","fuzzyQuery":true},
+  "context": {"eventSummary":"Ложное совпадение на декабрьском развороте записей о рождённых за 1915 год.","identityNote":"Названные индексом Василий Феофанович Ампилогов и Анна Антоновна Камолова на листе отсутствуют.","familyContext":"Лица других фамилий остаются контекстом страницы.","migrationNote":"Профиль, родство, карта и переселение по этому листу не создаются."},
+  "evidence": {
+    "path":"data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-full-view.png","sha256":"0d586cfc4873477d8e3ce2a0bc890a8fb72fc975f771392a89eefa8cf4c3c0ec",
+    "fragments":[{"kind":"target-entry","path":"data/genealogy/evidence-private/yandex/a480e10d-0dee-4730-bea6-74f9eff86a00/0080-target-entry-deep.png","sha256":"a5f5bec7f78daa9ab825fd2e68edaab483388523452920f5dbdd6395d7f54fae","description":"Широкий чистый фрагмент декабрьского разворота с записями № 160–163, родителями и восприемниками."}],
+    "quality":{"originalImageDownloaded":true,"documentOnlyVisuallyConfirmed":true,"targetRowsVisuallyConfirmed":true,"fullDimensions":"5167x3887","targetDimensions":"4600x2800","method":"manual-full-page-reading-and-wide-clean-recrop"},"publicDisplay":false,"rightsNote":"Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord":false,"cardKind":"confirmed-false-positive","publicCore":false,
+  "review":{"status":"complete-confirmed-false-positive","transcriptionConfidence":"high","unresolved":[],"deepReviewedAt":"2026-09-13","deepReviewScope":"Вручную проверены заголовок, даты и все графы видимых записей № 160–163, включая родителей и восприемников; фамильного ряда нет. Широкий clean crop 4600×2800."}
 }

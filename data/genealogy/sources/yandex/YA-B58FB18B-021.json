@@ -1,103 +1,69 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-B58FB18B-021",
-  "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "search-result-review",
   "collection": {
     "catalogId": "b58fb18b-9a48-407b-80bd-b741f0dee06f",
     "scanNumber": 21,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл Гамалеевка, Кирсановка за 1911 г."
+    "title": "Метрические книги сёл Гамалеевка и Кирсановка за 1911 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/b58fb18b-9a48-407b-80bd-b741f0dee06f/21"
   },
-  "event": {
-    "type": "birth-godparents",
-    "date": {
-      "display": "1911",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
+  "mentions": [],
+  "transcription": {
+    "status": "complete-primary-scan-no-surname-series-match",
+    "literal": "На полном развороте 1911 года вручную проверены апрельские записи № 38–40: Павел, сын Карпа Петровича Капитонова; Павел, сын Макария Степановича; нижняя строка № 40, родители и восприемники. Марфы Гавриловны Ампиловой и иных носителей фамильного ряда на листе нет.",
+    "modernInterpretation": "Подтверждённое ложное fuzzy-совпадение. Приписанная индексом Марфа Гавриловна Ампилова на этом скане отсутствует.",
+    "indexNote": "Индексная строка о Марфе Ампиловой опровергнута ручным чтением полного листа; прежний профиль P102706 удалён как основанный только на этом ложном совпадении."
   },
-  "mentions": [
-    {
-      "mentionId": "YA-B58FB18B-021-M1",
-      "role": "godmother",
-      "personId": "P102706",
-      "displayName": "Марфа Гавриловна Ампилова",
-      "nameAsTranscribed": "дѣвица Марѳа Гаврилова Ампилова",
-      "surnameSeries": true
-    }
-  ],
+  "context": {
+    "eventSummary": "Проверка поискового совпадения на апрельском листе 1911 года; фамильный ряд отсутствует.",
+    "identityNote": "P102706 оказался осиротевшим профилем, построенным исключительно на ошибочном индексе, и удалён после глобальной проверки ссылок.",
+    "migrationNote": "Карта и миграция неприменимы к ложному совпадению."
+  },
+  "indexData": {
+    "querySnippet": "Крёстная мать: Марфа Гаврилова Ампилова, девица.",
+    "fuzzyQuery": true,
+    "discrepancy": "Марфа Гавриловна Ампилова отсутствует во всех видимых строках полного листа № 21."
+  },
   "evidence": {
     "catalogId": "b58fb18b-9a48-407b-80bd-b741f0dee06f",
     "scanNumber": 21,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "yandex-archive-original-image-download-with-full-width-fragment",
     "localBackup": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-full-view.png",
     "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "e460f079933c1f62b3b0754e178d85da1bf49a995be83c47c530f2dacfabe96e",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-header.png",
-        "sha256": "dbc5e3b0420aba13a7280e4a00ab36ecd456d3f2cacf5c55f713fdbf301693f9",
-        "description": "Верхняя часть точного оригинала с заголовком и структурой архивного листа; без интерфейса сайта и браузера.",
-        "dimensions": "5308x1146"
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-target-entry.png",
-        "sha256": "faf348cb4abd4ed2b984b61145c44f777b2ae3789f3f48f01ad2ade99917bc98",
-        "dimensions": "4350x1150",
-        "description": "Крупный фрагмент вручную подтверждённой фамильной строки с необходимым контекстом; без интерфейса сайта и браузера."
+        "kind": "full-width-context",
+        "path": "data/genealogy/evidence-private/yandex/b58fb18b-9a48-407b-80bd-b741f0dee06f/0021-wide-deep-review.png",
+        "sha256": "fd0dd57427fc85a04ed02894af5e327e2403c1ad75d363fb45887aa796dfe95a",
+        "description": "Широкий чистый фрагмент полного апрельского разворота с записями № 38–40 и всеми графами."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5308x4244",
-      "targetDimensions": "4350x1150",
-      "method": "manual-visual-review-of-downloaded-original",
       "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
       "targetRowsVisuallyConfirmed": true,
-      "siteAndBrowserChromeExcluded": true,
-      "blackDefectsExcluded": true,
-      "confirmedAt": "2026-09-12",
-      "headerDimensions": "5308x1146",
-      "blackDigitalDefectsExcluded": true
+      "fullDimensions": "5308x4244",
+      "targetDimensions": "5100x3700",
+      "method": "manual-full-page-reading-and-full-width-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Григорий Федоров Осипов, Марина Максимова Лаврентьева и девица Марфа Гаврилова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Марфа Гавриловна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ОВСКО'\nИЛOA AЛY\nГОдА, чАСтЬ пеРвАд, Ủ\nЗвАніЕ, ймА, бтчЕство й фамИлЇА\nвоспріємникwв%.\nТого одо сеца преспівяринх",
-    "localOcrWithSurnameLexicon": "ОБСКО'\nГОдА, чАСтЬ пеРвАд, й\nЗвАніЕ, ймА, бучЕство й фамИлА\nвоспріємникшЕ%.\nТого одо сена преспіяриня.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
-  },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
+  "isRecord": false,
+  "cardKind": "confirmed-false-fuzzy-hit",
+  "publicCore": false,
   "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
+    "status": "deep-reviewed-confirmed-false-fuzzy-hit",
     "transcriptionConfidence": "high",
-    "unresolved": []
-  },
-  "indexData": {
-    "querySnippet": "Крёстная мать: Марфа Гаврилова Ампилова, девица. Муж крестной матери: Максим Максимов Лаврентьев.",
-    "fuzzyQuery": true
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитан весь лист 1911 года: апрельские записи № 38–40, родители, восприемники, причт и итоги месяца. Марфа Гавриловна Ампилова отсутствует; ошибочный personId/backlink снят, осиротевший P102706 удалён после global rg."
   }
 }

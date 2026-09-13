@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5F107B67-070",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "search-index-false-positive-review",
+  "recordType": "clergy-service-on-birth-register-page",
   "collection": {
     "catalogId": "5f107b67-1507-4ed2-b70c-43dff79ceb5b",
     "scanNumber": "70",
@@ -13,81 +13,29 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5f107b67-1507-4ed2-b70c-43dff79ceb5b/70"
   },
   "transcription": {
-    "status": "complete-negative-check",
-    "literal": "Майские записи о родившихся № 15–18. Родители и восприемники проверены построчно; фамилии исследуемого ряда нет.",
-    "modernInterpretation": "Поисковое совпадение не подтверждено оригиналом; фамильный Record не создаётся.",
-    "indexNote": "Повторная подпись священника читается «Михаил Анциферов», а не «Ампилогов».",
-    "localOcr": "Івикапнь Авнунбреровв\nФрестоянить Сла Каршанвия\n- вс-л, Ореквара",
-    "localOcrWithSurnameLexicon": "викапиь Анунбреровв\nКрестоянить Сла Каршанвия",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-transcription",
+    "literal": "Конец апреля — май 1917 года. На развороте читаются записи № 16–18 и женская № 14: Пелагея, Николай, Константин и Елена, рождения и крещения 29 апреля — 20 мая. Родители и восприемники принадлежат другим семьям. При строках повторяется подпись: «Священникъ Михаилъ Ампилоговъ».",
+    "modernInterpretation": "Крещения чужих семей совершал священник Михаил Ампилогов. Индексные Николай Яковлевич и Яков Ефремович Ампилоговы на листе отсутствуют; фамильное упоминание относится к священнику.",
+    "indexNote": "Индекс смешал ребёнка и отца чужой семьи с подписью священника; чтение исправлено по полному развороту."
   },
-  "isRecord": false,
+  "isRecord": true,
   "review": {
-    "status": "false-hit-complete",
+    "status": "deep-reviewed-primary-scan-verified",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитаны полный разворот, граница апреля и мая, видимые записи, даты, родители, восприемники и подписи; индексные Николай и Яков Ампилоговы опровергнуты, P1653 подтверждён как священник.",
     "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ],
-    "mergeAlternateReadings": [
-      {
-        "sourcePath": "data/genealogy/sources/yandex/YA-5F107B67-070.json",
-        "event": {
-          "type": "archival-mention",
-          "date": {
-            "display": "1 января 1917 — 31 декабря 1917",
-            "confidence": "high-for-catalog-date"
-          },
-          "place": {
-            "normalized": "не установлено"
-          }
-        },
-        "mentions": [
-          {
-            "mentionId": "YA-5F107B67-070-M1",
-            "role": "surname-series-mention",
-            "displayName": "Ампилогов",
-            "nameAsTranscribed": "Ампилогов",
-            "surnameSeries": true
-          }
-        ],
-        "transcription": {
-          "status": "complete-with-explicit-reading-uncertainty",
-          "literal": "Івикапнь Авнунбреровв\nФрестоянить Сла Каршанвия\n- вс-л, Ореквара",
-          "modernInterpretation": "Івикапнь Авнунбреровв Фрестоянить Сла Каршанвия - вс-л, Ореквара",
-          "localOcr": "Івикапнь Авнунбреровв\nФрестоянить Сла Каршанвия\n- вс-л, Ореквара",
-          "localOcrWithSurnameLexicon": "викапиь Анунбреровв\nКрестоянить Сла Каршанвия",
-          "collation": {
-            "baseLocalOcr": "not-confirmed-by-local-ocr",
-            "assistedLocalOcr": "not-confirmed-by-local-ocr",
-            "yandexTextBlocksUsedForNavigationAndCollation": true
-          },
-          "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
-        },
-        "review": {
-          "status": "complete-but-reading-uncertain",
-          "transcriptionConfidence": "medium-with-explicit-uncertainty",
-          "unresolved": [
-            "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-          ]
-        }
-      }
-    ],
-    "mergeNote": "Две карточки одного sourceId после объединения веток сведены в одну; основное чтение выбрано по глубине проверки и качеству сохранённого скана, альтернативное чтение сохранено в review.mergeAlternateReadings."
+    "unresolved": []
   },
   "evidence": {
     "publicDisplay": false,
     "captureType": "remote-viewer-document-only-crop-with-enlarged-control-area",
     "path": "data/genealogy/evidence-private/yandex/5f107b67-1507-4ed2-b70c-43dff79ceb5b/0070-full-view.png",
-    "sha256": "6e09646067df1976a3d90b560c3f70e3466088c40911a108a5606cb2160ec7a8",
+    "sha256": "24764148aa59b8a251a55970b4ca3815f538a2f3d1ab2d985d223a6533e273d5",
     "fragments": [
       {
         "kind": "control-area",
         "path": "data/genealogy/evidence-private/yandex/5f107b67-1507-4ed2-b70c-43dff79ceb5b/0070-target-entry.png",
-        "sha256": "69fcf00510cc63e344c11ef2440c3aa64f3be708928f86dc5d23a4abaf8fab3e",
+        "sha256": "d16d6fcef03dac8ca4e18cea5342d9f2ad38733901914a5aa9ea5930bd88fd08",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
       },
       {
@@ -108,7 +56,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "4966x4241",
       "targetDimensions": "1373x818",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "shaMetadataReconciledAt": "2026-09-12"
     },
     "catalogId": "5f107b67-1507-4ed2-b70c-43dff79ceb5b",
     "scanNumber": 70,
@@ -118,28 +67,44 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "event": {
-    "type": "archival-mention",
+    "type": "clergy-service",
+    "recordNumber": "записи конца апреля — мая № 16–18 и женская № 14",
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "29 апреля — 20 мая 1917 года",
+      "dateFrom": "1917-04-29",
+      "dateTo": "1917-05-20",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-5F107B67-070-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "mentionId": "YA-5F107B67-070-M-CLERGY",
+      "role": "officiating-priest",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high",
+      "identityNote": "Полное имя и фамилия, сан, Кармалка и последовательность той же книги 1917 года подтверждают тождество; служебная подпись не означает родство."
     }
   ],
   "indexData": {
     "querySnippet": "Родившийся: Николай Иаковлев Ампилогов. ... Отец: Иаков Евфремов Ампилогов, солдат, село Кармалки, Михайловская волость, Оренбургская губерния и уезд.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancies": [
+      "Николай и его отец на оригинале имеют другое именование; индексная семья Ампилоговых отсутствует.",
+      "Фамилия исследуемого ряда читается в повторной подписи священника Михаила Ампилогова."
+    ]
   },
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false
+  "cardKind": "documented-surname-series-record",
+  "publicCore": true,
+  "context": {
+    "eventSummary": "Служебные подписи Михаила Ампилогова при крещениях конца апреля — мая 1917 года.",
+    "relationshipBoundary": "Упомянутые дети и семьи не связаны со священником родством; профили и миграции не создаются."
+  }
 }

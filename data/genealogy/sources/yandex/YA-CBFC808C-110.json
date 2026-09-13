@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CBFC808C-110",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7",
     "scanNumber": 110,
@@ -13,22 +13,42 @@
     "documentUrl": "https://yandex.ru/archive/catalog/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/110"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": 16,
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "родился 19 февраля, крещён 20 февраля 1915 года",
+      "birthIso": "1915-02-19",
+      "baptismIso": "1915-02-20",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Колычево",
+      "normalized": "Колычево, Оренбургская губерния",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-CBFC808C-110-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
+      "mentionId": "YA-CBFC808C-110-R16-M1",
+      "role": "godmother",
+      "personId": "P102999",
+      "displayName": "Мария Петровна Ампилогова",
+      "nameAsTranscribed": "крестьянская дѣвица Марія Петрова Ампилогова",
       "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-CBFC808C-110-R16-M2",
+      "role": "baptized-child",
+      "displayName": "Александр",
+      "nameAsTranscribed": "Александръ",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CBFC808C-110-R16-M3",
+      "role": "godfather",
+      "displayName": "Архип Григорьевич Головин",
+      "nameAsTranscribed": "крестьянинъ Архипъ Григорьевъ Головинъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -42,54 +62,46 @@
     "sha256": "b99816d846afd1a1ba01bd4562d7f8b2c6646c626538bd4511203891378b6d29",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0110-header.png",
-        "sha256": "aff74eed724547b1808fb628e69eac344061dd4b1cf9fce1421a93e50940aacb",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0110-target-entry.png",
-        "sha256": "f05e9186d94a3d2fbd0ee95e380a1c6ef605d9d8a32ae76e3afc84246ade82ec",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0110-target-context-deep.jpg",
+        "sha256": "3b19e8b6d7fc668c000ff664ba0408827c6e29f687d13c9042f7d6319e7c9f69",
+        "description": "Широкий чистый фрагмент полного разворота с целевой строкой и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4506x3620",
-      "targetDimensions": "1200x592",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "targetDimensions": "4300x1050",
+      "method": "manual-full-spread-review-plus-full-width-clean-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "сюбино сонскем звьчу\nМарія строва Алижтьова\n/Того- оре сева Прістб'янитв\nНи\nкайви Пет/ь Алеітинь Ветїни\nдівица Анна Шаніва Рякиівни-\nКова.",
-    "modernInterpretation": "сюбино сонскем звьчу Мария строва Алижтьова /Того- оре сева Пристб'янитв Ни кайви Пет/ь Алеитинь Ветїни дивица Анна Шанива Рякиивни- Кова.",
-    "localOcr": "сюбино сонскем звьчу\nМарія строва Алижтьова\n/Того- оре сева Прістб'янитв\nНи\nкайви Пет/ь Алеітинь Ветїни\nдівица Анна Шаніва Рякиівни-\nКова.",
-    "localOcrWithSurnameLexicon": "Марія страва Алжиньова\n/ Того - оре сева Пріствянитв\nНи\nкави Пет/ Алетинь Ветен\nдівица Анна Шанова Рокивни -\nКова.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-row-manually-verified",
+    "literal": "№ 16. Февраля 19 [родился], 20 [крещён]. Александръ. Воспріемники: того-же села крестьянинъ Архипъ Григорьевъ Головинъ и крестьянская дѣвица Марія Петрова Ампилогова.",
+    "modernInterpretation": "19 февраля 1915 года родился и 20 февраля был крещён Александр. Восприемниками были крестьянин Архип Григорьевич Головин и крестьянская девица Мария Петровна Ампилогова из Колычева.",
+    "indexNote": "Индексную строку подтверждает ручное чтение оригинала; номер и даты восстановлены по полной строке. Одноимённые Марии Петровны из других мест не объединены."
   },
   "indexData": {
     "querySnippet": "Того же села Крестьянинъ Архипъ Григорьевъ Головинъ и крнская дѣвица Марія Петрова Ампилогова.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "primary-register-entry",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот, запись №16, даты и оба восприемника; clean crop 4300×1050 с SHA."
+  },
+  "context": {
+    "eventSummary": "Мария Петровна Ампилогова документирована восприемницей записи №16 в Колычеве.",
+    "identityNote": "Создан отдельный профиль P102999; документ не сообщает её родителей или супруга, а одноимённые лица из других мест не отождествляются.",
+    "migrationNote": "Роль восприемницы не доказывает родство или миграцию."
   }
 }

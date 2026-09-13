@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8C18091D-219",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8c18091d-ce93-45f1-90a0-4b2874de7dac",
     "scanNumber": 219
@@ -28,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8c18091d-ce93-45f1-90a0-4b2874de7dac/0219-target-entry.png",
-        "sha256": "f91e0febd010ada989bffaff95a6a0a9e0b0bf36182a5018c4fdd68d9c27ec4d",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8c18091d-ce93-45f1-90a0-4b2874de7dac/0219-target-context-deep.jpg",
+        "sha256": "1b631a17c46bf31004a0af320af7b5c4092e122a4a5a9d59c05954b409cbc09b",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всей строке и соседним записям."
       }
     ],
     "quality": {
@@ -39,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5827x4578",
-      "targetDimensions": "1557x1112",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5200x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -56,30 +56,42 @@
           }
         ]
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот 1913 года, июльские записи №1–3, обе колонки брачующихся и все поручители; фамильный ряд отсутствует; сохранён clean crop 5200×3000 с SHA; профиль, backlink, карта, родство и миграция исключены"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "ÁNZ\nПóд\nКто били порбчители.\n3ÁN\nЧ дели п смил в стков имеобрво-\nЗкилить Навлов Кастин и селаМор-\nлико креіякава Аизарг Лисксав яунА\nФетрнів. 1 ривабр кил. Ррр\nВисиятевь Осиповы и салдор Говдиила\nЛяковених-",
-    "modernInterpretation": "ÁNZ Пóд Кто били порбчители. 3ÁN Ч дели п смил в стков имеобрво- Зкилить Навлов Кастин и селаМор- лико креиякава Аизарг Лисксав яунА Фетрнив. 1 ривабр кил. Ррр Висиятевь Осиповы и салдор Говдиила Ляковених-",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Сохранённые локальные снимок и целевой фрагмент слишком малы и размыты для надёжного чтения фамилии в предполагаемой строке.",
-    "localOcr": "ÁNZ\nПóд\nКто били порбчители.\n3ÁN\nЧ дели п смил в стков имеобрво-\nЗкилить Навлов Кастин и селаМор-\nлико креіякава Аизарг Лисксав яунА\nФетрнів. 1 ривабр кил. Ррр\nВисиятевь Осиповы и салдор Говдиила\nЛяковених-",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Полный разворот метрической книги за 1913 год, часть вторая, о бракосочетавшихся: июльские записи № 1–3 (18, 28 и 30 июля). Проверены обе колонки брачующихся и все строки поручителей; фамилии Ампилогов/Анпилогов и подтверждаемого варианта фамильного ряда на листе нет.",
+    "modernInterpretation": "Скан 219 содержит три июльские брачные записи 1913 года. Фамильный поисковый результат на этом листе не подтверждён; карточка остаётся отрицательной исследовательской проверкой.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всей релевантной строки имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Индекс — только поисковая подсказка; требуется новый читаемый локальный снимок целевой записи.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1913",
+      "confidence": "high-for-source-year"
+    },
+    "place": {
+      "normalized": "приход села Раздольненского, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

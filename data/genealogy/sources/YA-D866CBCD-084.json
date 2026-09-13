@@ -2,13 +2,20 @@
   "schemaVersion": 1,
   "sourceId": "YA-D866CBCD-084",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "primary-scan-transcription",
+  "recordType": "birth-register-godparent-mention",
+  "primaryPersonId": "P99440",
   "collection": {
     "catalogId": "d866cbcd-27cc-488a-aeaa-28aa1d8b3441",
-    "scanNumber": "084"
+    "scanNumber": "084",
+    "title": "Метрические книги актовых записей церквей Тюкалинского уезда за 1915 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/d866cbcd-27cc-488a-aeaa-28aa1d8b3441/084"
+  },
+  "event": {
+    "type": "documented-godparent-role",
+    "date": { "display": "1915 год", "confidence": "high" },
+    "place": { "asWritten": "той же деревни", "normalized": "деревня Чумановка, Крутинская волость, Тюкалинский уезд", "confidence": "medium-high" }
   },
   "mentions": [
     {
@@ -17,7 +24,8 @@
       "personId": "P99440",
       "nameAsTranscribed": "Павелъ Димитріевъ Ампилоговъ",
       "displayName": "Павел Дмитриевич Ампилогов",
-      "surnameSeries": true
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "evidence": {
@@ -50,8 +58,8 @@
           {
             "kind": "target-entry",
             "path": "data/genealogy/evidence-private/yandex/d866cbcd-27cc-488a-aeaa-28aa1d8b3441/0084-target-entry.png",
-            "sha256": "35ef45e29ab69efcc34bbf358d49d8698d63daa5c96e48ae16bc530e1ef0711a",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+            "sha256": "5b0385d94f71587730ea369b742cf3bb35a62ea73d678289d4cf0b86e0d1f6d9",
+            "description": "Широкий чистый фрагмент разворота с целевой строкой, родителями, восприемниками и соседними записями для контроля границ строки."
           }
         ],
         "quality": {
@@ -59,8 +67,8 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "4957x3886",
-          "targetDimensions": "1377x700",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "3600x1800",
+          "method": "manual-full-spread-reading-and-coordinate-recrop-from-original"
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -68,10 +76,10 @@
     ]
   },
   "transcription": {
-    "status": "partial-primary-scan-transcription",
-    "literal": "Крёстный отец: Павелъ Димитріевъ Ампилоговъ, крестьянинъ, та же деревня.",
-    "modernInterpretation": "Павел Дмитриевич Ампилогов указан восприемником; он назван крестьянином той же деревни, что и семья ребёнка. Это свидетельство о местном участии в крещении, без данных о переселении.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "Той же деревни крестьянинъ Павелъ Димитріевъ Ампилоговъ и крестьянская жена Марія Петрова Сомова.",
+    "modernInterpretation": "Крестьянин Павел Дмитриевич Ампилогов назван восприемником вместе с Марией Петровной Сомовой.",
+    "indexNote": "Индекс использован только для навигации; полная строка восприемников, её границы и написание имени проверены по оригинальному развороту.",
     "localOcr": "роічнисті Танново Варманово\nикрестяноказаяна Мсдтя,\nМетрова Сопокова.-\nтоб же деревни крестиянекая\nгасна онастабія Гбанньва Во",
     "localOcrWithSurnameLexicon": "річнисті Танково Варманово\nкрестяноказаяна Матя,\nМетрова Сопокова.-\nтоб же деревни крестянекая\nгена онастаа Ганнава Во",
     "collation": {
@@ -80,18 +88,27 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context": {
+    "eventSummary": "Павел Дмитриевич Ампилогов выступил восприемником при крещении ребёнка чужой семьи.",
+    "identityNote": "P99440 подтверждён с высокой уверенностью по точному имени, отчеству, крестьянскому статусу и согласованному месту; существующий backlink сохранён без дублирования.",
+    "familyContext": "Мария Петровна Сомова и семья ребёнка сохранены только в тексте документа; родство с Ампилоговым не выводится.",
+    "migrationNote": "Разовая роль восприемника не интерпретируется как переселение."
+  },
   "isRecord": true,
   "cardKind": "named-primary-record",
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
     "unresolved": [
-      "Полная запись о ребёнке и место, к которому относится «та же деревня», требуют дочитывания.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Точное число события не вынесено из графы дат с достаточной уверенностью."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены полный метрический разворот, границы целевой строки, графы родителей, восприемников и совершения крещения, а также соседние строки; фамилия и роль Павла Дмитриевича прочитаны непосредственно в оригинале."
   },
   "indexData": {
     "querySnippet": "Крёстный отец: Павел Димитриев Ампилогов, крестьянин, та же деревня. Крёстный отец: Иаков Миронов Черногородов, крестьянин, село Крутинское.",
+    "assessment": "confirmed from the original; godparent role and identity independently verified",
     "fuzzyQuery": true
-  }
+  },
+  "publicCore": true
 }

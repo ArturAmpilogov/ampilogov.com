@@ -1,44 +1,65 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E69D0BBA-14",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — технический вариант идентификатора",
+  "recordType": "technical-source-alias",
+  "parallelOf": "YA-E69D0BBA-014",
+  "primaryPersonId": null,
   "collection": {
     "catalogId": "e69d0bba-db0b-40a0-9632-5f9c017d0352",
-    "scanNumber": "14"
+    "scanNumber": 14,
+    "asRead": "Тот же физический разворот, что и YA-E69D0BBA-014"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e69d0bba-db0b-40a0-9632-5f9c017d0352/14"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-E69D0BBA-14",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
-    }
-  ],
+  "event": null,
+  "mentions": [],
+  "transcription": {
+    "status": "technical-alias-verified",
+    "literal": "Технический ID без ведущего нуля указывает на те же catalogId, scanNumber 14, URL и восстановленный оригинал, что каноническая карточка YA-E69D0BBA-014.",
+    "modernInterpretation": "Отдельного события и второго Record нет; полная проверка хранится в YA-E69D0BBA-014.",
+    "indexNote": "Дублет доказан совпадением catalogId, scanNumber, documentUrl и локального оригинала."
+  },
+  "indexData": {
+    "assessment": "technical duplicate of canonical YA-E69D0BBA-014",
+    "duplicateEvidence": "same catalogId e69d0bba-db0b-40a0-9632-5f9c017d0352, scanNumber 14, document URL and restored original SHA 4d8a0102aa4b33c4871136bcf60d1909eca86a56edce41212b556006cd34b670",
+    "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Технический alias канонической карточки YA-E69D0BBA-014.",
+    "identityNote": "Участники, профили и backlinks повторно не создаются.",
+    "migrationNote": "Не картографируется."
+  },
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-full-view.jpg",
-    "sha256": "0f6f862ef88dcda67399474709da147f1358189dbb40a90d381d9b571b15457a",
+    "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-full-view.png",
+    "sha256": "4d8a0102aa4b33c4871136bcf60d1909eca86a56edce41212b556006cd34b670",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry.jpg",
-        "sha256": "d295fc2d58bb07ad9db02ab5208f704342b95737f139a7769b538760ff6d6d08"
+        "kind": "target-entry-deep",
+        "path": "data/genealogy/evidence-private/yandex/e69d0bba-db0b-40a0-9632-5f9c017d0352/0014-target-entry-deep.png",
+        "sha256": "dbba91c1064acbccd645d6baabeda180fb87dfedafb8a9016fdf7e9dfc5c65b0",
+        "description": "Общий широкий clean crop канонической карточки."
       }
-    ]
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "fullDimensions": "6073x4734",
+      "targetDimensions": "5600x1500",
+      "method": "exact-duplicate-collation-and-shared-wide-clean-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
+  "isRecord": false,
+  "cardKind": "technical-source-alias",
+  "publicCore": false,
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
-  },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс использовался только как поисковая подсказка; вывод сделан по сохранённому первичному скану."
+    "status": "complete-technical-duplicate-verified",
+    "transcriptionConfidence": "exact-identity-by-catalog-scan-url-and-restored-sha",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Сопоставлены оба sourceId, catalogId, scanNumber 14, URL и единый восстановленный оригинал; подтверждено отсутствие второго Record, профиля и backlink. Общий clean crop 5600x1500."
   }
 }

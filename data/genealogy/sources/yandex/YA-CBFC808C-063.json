@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-CBFC808C-063",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "birth-and-baptism-godparent",
   "collection": {
     "catalogId": "cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7",
     "scanNumber": 63,
@@ -13,22 +13,43 @@
     "documentUrl": "https://yandex.ru/archive/catalog/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/63"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "birth-and-baptism",
+    "recordNumber": 38,
     "date": {
-      "display": "1 января 1915 — 31 декабря 1915",
-      "confidence": "high-for-catalog-date"
+      "display": "родилась 23 июля, крещена 24 июля 1915 года",
+      "birthIso": "1915-07-23",
+      "baptismIso": "1915-07-24",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
+      "asWritten": "село Ново-Георгиевка",
+      "normalized": "Ново-Георгиевка, Оренбургская губерния",
+      "placeId": "orenburg-uezd"
     }
   },
   "mentions": [
     {
-      "mentionId": "YA-CBFC808C-063-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогова",
-      "nameAsTranscribed": "Ампилогова",
-      "surnameSeries": true
+      "mentionId": "YA-CBFC808C-063-R38-M1",
+      "role": "godmother",
+      "personId": "P101931",
+      "displayName": "Евдокия Никитична Ампилогова",
+      "nameAsTranscribed": "крестьянская дѣвица Евдокія Никитина Ампилогова",
+      "surnameSeries": true,
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-CBFC808C-063-R38-M2",
+      "role": "baptized-child",
+      "displayName": "Анна Павловна",
+      "nameAsTranscribed": "Анна",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-CBFC808C-063-R38-M3",
+      "role": "godfather",
+      "displayName": "Симеон Стефанович Хрулёв",
+      "nameAsTranscribed": "крестьянинъ Симеонъ Стефановъ Хрулевъ",
+      "surnameSeries": false
     }
   ],
   "evidence": {
@@ -42,54 +63,46 @@
     "sha256": "19f0cb70750d9760d6ea02b164f8c834e41d183af19eca6d0e585ed6145d58d1",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0063-header.png",
-        "sha256": "bcf7b54d449c9679b08d4264cb97ced3193296a51200f900054b7c498331241f",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0063-target-entry.png",
-        "sha256": "58944632341b611cb9069fe5bc12664ef2d5ca17744bede90a693f405c73fc3c",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/cbfc808c-d9df-4825-b48e-4eb3c1ef8ec7/0063-target-context-deep.jpg",
+        "sha256": "0af32a97d89950609d12b2359a9958e17598290db37cc2d5f269877b9c2fe2bb",
+        "description": "Широкий чистый фрагмент полного разворота с целевой строкой и соседним контекстом; без интерфейса Яндекса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "4430x3584",
-      "targetDimensions": "1200x617",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "allVisibleRowsChecked": true,
+      "targetRowsVisuallyConfirmed": true,
+      "targetDimensions": "4250x1050",
+      "method": "manual-full-spread-review-plus-full-width-clean-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Куподек взтавотвки сесо Плай ек .\nІлисива Томина\nца\nnoccan Heracht\nBаM",
-    "modernInterpretation": "Куподек взтавотвки сесо Плай ек . Ілисива Томина ца noccan Heracht BаM",
-    "localOcr": "Куподек взтавотвки сесо Плай ек .\nІлисива Томина\nца\nnoccan Heracht\nBаM",
-    "localOcrWithSurnameLexicon": "Ілисива Томита\nца\nno can Heracht\nBaM",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-primary-row-manually-verified",
+    "literal": "№ 38. Іюля 23 [родилась], 24 [крещена]. Анна. [Родители: крестьянинъ села Ново-Георгіевки Павелъ Яковлевъ; фамилия читается не вполне уверенно, и законная жена его Анна Софоніева; оба православные.] Воспріемники: села Ново-Георгіевки крестьянинъ Симеонъ Стефановъ Хрулевъ и крестьянская дѣвица Евдокія Никитина Ампилогова.",
+    "modernInterpretation": "23 июля 1915 года родилась и 24 июля была крещена Анна. Восприемницей была крестьянская девица Евдокия Никитична Ампилогова из Ново-Георгиевки.",
+    "indexNote": "Фамильная строка, номер, даты и роль прочитаны по оригиналу. Фамилия отца ребёнка не нормализована из-за неуверенного почерка и не влияет на идентификацию восприемницы."
   },
   "indexData": {
     "querySnippet": "Села Ново-Георгіевки крестьянинъ Симеонъ Стефановъ Хрулевъ и крестьянская дѣвица Евдокія Никитина Ампилогова.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "primary-register-entry",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены весь разворот и запись №38; фамильная строка и даты подтверждены, неуверенная чужая фамилия оставлена без догадки; clean crop 4250×1050 с SHA."
+  },
+  "context": {
+    "eventSummary": "Евдокия Никитична Ампилогова документирована восприемницей записи №38 в Ново-Георгиевке.",
+    "identityNote": "P101931 установлен с высокой уверенностью по редкому полному имени, точному селу и согласованной хронологии 1915–1917 годов.",
+    "migrationNote": "Повторное упоминание в одном селе не создаёт маршрута миграции."
   }
 }

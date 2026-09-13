@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-B9DB10C7-011",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "military-registration-list",
   "collection": {
     "catalogId": "b9db10c7-e338-48bf-bef6-35fe5c2c6a03",
     "scanNumber": 11,
@@ -13,22 +13,43 @@
     "documentUrl": "https://yandex.ru/archive/catalog/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/11"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "military-registration-list",
     "date": {
       "display": "23 июня 1941 — 27 февраля 1945",
       "confidence": "high-for-catalog-date"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "Шарлыкский район, Чкаловская область, РСФСР",
+      "confidence": "medium-for-list-context; not birthplace or migration"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-B9DB10C7-011-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "military-register-listed-person",
+      "personId": "P102913",
+      "displayName": "Григорий «Г.» Ампилогов",
+      "nameAsTranscribed": "Ампилогов Григор. Г.",
+      "surnameSeries": true,
+      "yearAsWritten": "1903 / 1902"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-011-M2",
+      "role": "military-register-listed-person",
+      "personId": "P102914",
+      "displayName": "Максим Матвеевич Ампилогов",
+      "nameAsTranscribed": "Ампилогов Макс. Мат.",
+      "surnameSeries": true,
+      "yearAsWritten": "1902"
+    },
+    {
+      "mentionId": "YA-B9DB10C7-011-M3",
+      "role": "military-register-listed-person",
+      "personId": "P101842",
+      "displayName": "Герасим Ефремович Ампилогов",
+      "nameAsTranscribed": "Ампилогов Герас. Ефрем.",
+      "surnameSeries": true,
+      "yearAsWritten": "1899"
     }
   ],
   "evidence": {
@@ -52,44 +73,57 @@
         "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/0011-target-entry.png",
         "sha256": "5bdd0b7ab77905a227fd01524eb4f9b4e886f60510b11a81d1f3c13bc2891016",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex/b9db10c7-e338-48bf-bef6-35fe5c2c6a03/011-target-context-deep.jpg",
+        "sha256": "4bc7c12e8518baecd9b34af9dfcf5020914551080e1050a306d14e44b46295eb",
+        "description": "Крупный полноширинный clean crop roster-листа 011, сохраняющий фамильные строки и соседний военно-учётный контекст."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
       "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
+      "targetCropLocatedByManualFullLeafReview": true,
       "fullDimensions": "6462x9068",
-      "targetDimensions": "3197x562",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "5800x7800",
+      "method": "manual-full-leaf-review-plus-large-clean-context-crop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "9,03.Алемив Роди\n1912\n1. Дороф.\n204 Аносов Влад Тиро\n1905",
-    "modernInterpretation": "9,03.Алемив Роди 1912 1. Дороф. 204 Аносов Влад Тиро 1905",
-    "localOcr": "9,03.Алемив Роди\n1912\n1. Дороф.\n204 Аносов Влад Тиро\n1905",
-    "localOcrWithSurnameLexicon": "9.03 Алемив Роди\n1912\n1. Дороф.\n204. Аносов Влад Тиро\n1905",
+    "status": "complete-primary-scan-reading-manually-verified",
+    "literal": "206. Ампилогов Григор. Г. | 1903 [под строкой: 1902] | ? | ВЛКСМ\n209. Ампилогов Макс. Мат. | 1902 | 1\n211. Ампилогов Герас. Ефрем. | 1899 | 1",
+    "modernInterpretation": "Григорий с сокращённым отчеством «Г.» и двумя видимыми значениями года 1903/1902; Максим Матвеевич (1902); Герасим Ефремович (1899) Ампилоговы. Неясное отчество и конфликт года не раскрыты догадкой.",
+    "indexNote": "Индекс Яндекса и OCR использованы только для навигации; имена, сокращения и годы перепроверены по всему листу.",
     "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+      "primaryScanReadManually": true,
+      "allVisibleRowsChecked": true,
+      "yandexIndexUsedOnlyForNavigation": true
+    }
   },
   "indexData": {
     "querySnippet": "209. Ампилогов Макс. ... 211 Амшилогов Герас.",
     "fuzzyQuery": true
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "military-registration-list",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
+    "status": "verified-primary-scan",
+    "transcriptionConfidence": "high-except-explicit-year-and-patronymic-uncertainty",
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Полностью вручную проверен военно-учётный лист, строки № 198–219, все видимые строки и графы. Фамильные строки независимо прочитаны по оригиналу; сокращения и исправления сохранены буквально. Создан clean crop 5800×7800. Место списка не трактуется как место рождения, родство или миграция.",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
+      "У строки № 206 отчество оставлено как «Г.», а конфликтующие значения года 1903/1902 сохранены без выбора."
     ]
+  },
+  "context": {
+    "summary": "Алфавитный военно-учётный лист документирует перечисленных носителей фамилии Ампилогов и значения, записанные в соседних графах.",
+    "historicalContext": "Дело относится к учёту военнообязанных, призванных по мобилизации. Цифровые и буквенные коды не раскрываются без легенды книги.",
+    "genealogicalConclusion": "Имена и годы сохранены как написано. Место ведения списка не объявляется местом рождения, родством или маршрутом переселения.",
+    "indexDiscrepancy": "Индекс Яндекса и OCR использованы только для навигации; фамилии, инициалы, годы и исправления прочитаны по полному оригиналу."
   }
 }

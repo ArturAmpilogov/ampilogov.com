@@ -5,12 +5,39 @@
   "recordType": "index-hit-review",
   "collection": {
     "catalogId": "c50ab4a9-8b32-4d29-b6b6-ad166880a4ff",
-    "scanNumber": "6"
+    "scanNumber": "6",
+    "title": "Метрическая книга церквей Оренбурга за 1912 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/6"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "mentionId": "YA-C50AB4A9-006-M1",
+      "role": "child",
+      "personId": "P103064",
+      "nameAsTranscribed": "Татіана",
+      "displayName": "Татиана Дмитриевна Ампилогова",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-C50AB4A9-006-M2",
+      "role": "father",
+      "personId": "P91076",
+      "nameAsTranscribed": "бывшій псаломщикъ Нижне-Чибенскаго поселка Димитрій Георгіевъ Ампилоговъ",
+      "displayName": "Дмитрий Георгиевич Ампилогов",
+      "surnameSeries": true,
+      "confidence": "high"
+    },
+    {
+      "mentionId": "YA-C50AB4A9-006-M3",
+      "role": "mother",
+      "personId": null,
+      "nameAsTranscribed": "законная жена его Ксенія Ефимова",
+      "displayName": "Ксения Ефимовна",
+      "surnameSeries": false
+    }
+  ],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/006-full-view.jpg",
@@ -43,6 +70,12 @@
             "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-target-entry.png",
             "sha256": "1b45859a02e17e5b242fab9e58871503275ef12d59a160bf64f4f96832e95fcf",
             "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+          },
+          {
+            "kind": "target-entry-deep",
+            "path": "data/genealogy/evidence-private/yandex/c50ab4a9-8b32-4d29-b6b6-ad166880a4ff/0006-target-entry-deep.png",
+            "sha256": "23a90479caa11aff6f5ae086a6ef28e2c612204c918dcaae55366a995d1f50c5",
+            "description": "Широкий clean crop оригинального разворота с целевой строкой, соседними записями и заголовками; интерфейс Яндекса отсутствует."
           }
         ],
         "quality": {
@@ -50,8 +83,10 @@
           "headerAndTargetGeneratedFromOriginal": true,
           "targetCropLocatedFromTextCoordinates": true,
           "fullDimensions": "5884x4666",
-          "targetDimensions": "1613x1129",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+          "targetDimensions": "5600x4300",
+          "method": "manual-full-spread-reading-and-wide-clean-recrop",
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true
         },
         "publicDisplay": false,
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
@@ -59,17 +94,19 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
+    "status": "complete-primary-scan-reading-and-identity-link",
     "transcriptionConfidence": "high",
     "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+      "Полная формула восприемников требует отдельной палеографической нормализации; родительская строка читается уверенно."
+    ],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную прочитаны заголовок части I, февральская строка № 11, имя ребёнка, даты, родители, граница с соседней записью Бобылевых и причт; индексная склейка устранена. Wide crop 5600×4300."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status": "complete-manual-primary-scan-transcription",
+    "literal": "Февраль. Женского пола № 11. 13 родилась, 15 крещена. Татіана. Бывшій псаломщикъ Нижне-Чибенскаго поселка Димитрій Георгіевъ Ампилоговъ и законная жена его Ксенія Ефимова, оба православные. Восприемники записаны в правой части строки; таинство совершил священник.",
+    "modernInterpretation": "13 февраля 1912 года у бывшего псаломщика Нижне-Чибенского посёлка Дмитрия Георгиевича Ампилогова и Ксении Ефимовны родилась дочь Татиана; крещена 15 февраля.",
+    "indexNote": "Индекс передал только отца и склеил его со следующей строкой Бобылевых. Ребёнок, мать, даты и границы строки прочитаны по оригиналу.",
     "localOcr": "вкронспов Еданіл.\nКрісткятті Села Павлавки тойле\nКалсти Млая Ванотова Матоники\nи з акоиад жен ео скатерчиса\nChрamoел, оба пракославное.\nвевиренникя А. Сприбоновя\nDianona Aннnnор Аврааня.\nДракои Сеаво-Орегглугени Пеоржевок",
     "localOcrWithSurnameLexicon": "веронспов іданіл.\nКрестятті Села Павлавки толе\nКалисти Илая Ванотова Матеники\nи законад жен его скатерчиса\nChamoe , оба пракославное.\nсвиренник А. Спирибоновя\nDianon Анно Авраа).",
     "collation": {
@@ -80,6 +117,30 @@
   },
   "indexData": {
     "querySnippet": "Отец: Димитрий Георгиев Ампилогов, бывший псаломщик, Нижне-Чибенский поселок. Отец: Иван Яковлев Бобылев, казак, Оренбургская станица.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "assessment": "confirmed-target-but-index-row-merge-corrected",
+    "discrepancy": "Иван Яковлев Бобылев относится к соседней записи, а не к семье Татианы; граница строк восстановлена по оригиналу."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": 11,
+    "date": {
+      "birth": "1912-02-13",
+      "baptism": "1912-02-15",
+      "display": "13–15 февраля 1912 года",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Оренбург",
+      "normalized": "Оренбург, Оренбургская губерния"
+    }
+  },
+  "context": {
+    "eventSummary": "Рождение и крещение Татианы Дмитриевны Ампилоговой.",
+    "identityNote": "Отец уверенно отнесён к P91076 по точному имени, бывшему сану и Нижне-Чебенскому посёлку в документированной служебной цепочке 1909–1910 годов.",
+    "migrationNote": "Упоминание бывшего места службы не является самостоятельным доказательством семейного переселения."
   }
 }

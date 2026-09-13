@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-8D1E649D-149",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "index-hit-review",
   "collection": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 149
@@ -10,16 +10,7 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/8d1e649d-8580-45ea-b86d-310a58330845/149"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-8D1E649D-149-M1",
-      "role": "uncertain-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
-      "surnameSeries": false
-    }
-  ],
+  "mentions": [],
   "evidence": {
     "catalogId": "8d1e649d-8580-45ea-b86d-310a58330845",
     "scanNumber": 149,
@@ -37,10 +28,10 @@
         "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0149-target-entry.png",
-        "sha256": "41102f4012e9ec29ebe0c7dd8adfea9357196195323002eafef180c4e032aaa1",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/8d1e649d-8580-45ea-b86d-310a58330845/0149-target-context-deep.jpg",
+        "sha256": "42cbd67f41b95559fb2bd5d010b76280b7196682452d07bf316fa62acbb2d632",
+        "description": "Крупный полноширинный контекстный фрагмент исходного листа без интерфейса; ручное чтение сверено по всем релевантным строкам и соседним записям."
       }
     ],
     "quality": {
@@ -48,8 +39,8 @@
       "headerAndTargetGeneratedFromOriginal": true,
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5133x4247",
-      "targetDimensions": "1391x594",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "4700x3000",
+      "method": "manual-full-leaf-review-and-clean-full-width-context-crop"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -88,31 +79,42 @@
         },
         "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
       }
-    ]
+    ],
+    "uploadStatus": "pending-local-evidence-upload"
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "вручную проверены полный разворот 1889 года, августовские записи и целая строка Анастасии; фамилия отца Михаила Григорьевича прочитана как Антипов, а индексное Ампилогов опровергнуто; сохранён clean crop 4700×3000 с SHA; профиль, backlink, карта и миграция исключены"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "пиниты иваника Дегтярева\nДіанонь Михолив вогольбова\nДерени Карманки Крестіаника ми-\nбагна Гоігоріва питиногова дочь\nстастасія\nТинакон вщатави\nсмиеенники",
-    "modernInterpretation": "пиниты иваника Дегтярева Дианонь Михолив вогольбова Дерени Карманки Крестианика ми- багна Гоигорива питиногова дочь стастасия Тинакон вщатави смиеенники",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "пиниты иваника Дегтярева\nДіанонь Михолив вогольбова\nДерени Карманки Крестіаника ми-\nбагна Гоігоріва питиногова дочь\nстастасія\nТинакон вщатави\nсмиеенники",
-    "localOcrWithSurnameLexicon": "sicha Minoiela qoe lucen\neces Mepersedbgene\nantellofanne Soiaustna\n- Канидани, Кроцівнина\nAnme Cuota\n6 6ale\nP/ань\nont ellefanit Rone\n1 0s elupend sdaet hauitue seg\nSAIR +*\nvaste\nC/E/*\nвойцань /19/ обоне-зас\n4 /20/60 tm\nseiua\n• aSones noonuetel/\nmues Mecairm,le",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённые локальные снимок разворота и фрагмент не позволяют надёжно прочитать предполагаемую строку и фамилию."
+    "status": "complete-primary-scan-reading-manually-verified-no-match",
+    "literal": "Метрическая книга за 1889 год, часть третья, об умерших: августовские записи. В целевой кармалкинской строке читается: «деревни Кармалки крестьянина Михаила Григорьева Антипова дочь Анастасия». Фамилия — Антипов, не Ампилогов.",
+    "modernInterpretation": "Запись относится к Анастасии, дочери Михаила Григорьевича Антипова. Яндекс ошибочно заменил фамилию Антипов на Ампилогов.",
+    "indexNote": "Индекс Яндекса использован только для навигации. Ручное чтение полного листа и всех релевантных строк имеет приоритет; индексное фамильное чтение на скане не подтверждается."
   },
   "indexData": {
     "querySnippet": "Отец умершего: Михаил Григорьев Ампилогов, крестьянин, деревня Каршанка. ... Умерший: Анастасия Михайлова Ампилогова, 1 1/2.",
     "fuzzyQuery": true
+  },
+  "event": {
+    "type": "false-index-hit-review",
+    "date": {
+      "display": "1889",
+      "confidence": "high"
+    },
+    "place": {
+      "normalized": "Михайловский приход, Кармалка и соседние селения, Оренбургская губерния"
+    }
+  },
+  "isRecord": false,
+  "cardKind": "research-material-confirmed-false-fuzzy",
+  "publicCore": false,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного первичного листа: заявленное индексом фамильное упоминание на скане отсутствует.",
+    "identityNote": "Профиль и связь не создаются: носитель исследуемого фамильного ряда не подтверждён оригиналом.",
+    "migrationNote": "Оснований для географической или миграционной записи фамильного ряда нет."
   }
 }

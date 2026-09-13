@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceId": "YA-5F107B67-104",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "recordType": "death-record-and-clergy-service",
   "collection": {
     "catalogId": "5f107b67-1507-4ed2-b70c-43dff79ceb5b",
     "scanNumber": 104,
@@ -13,22 +13,40 @@
     "documentUrl": "https://yandex.ru/archive/catalog/5f107b67-1507-4ed2-b70c-43dff79ceb5b/104"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death-and-burial",
+    "recordNumber": 24,
     "date": {
-      "display": "1 января 1917 — 31 декабря 1917",
-      "confidence": "high-for-catalog-date"
+      "display": "3–4 октября 1917 года",
+      "deathIso": "1917-10-03",
+      "burialIso": "1917-10-04",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "asWritten": "село Кармалка",
+      "normalized": "село Кармалка, Михайловская волость, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
+    },
+    "age": "75 лет"
   },
   "mentions": [
     {
       "mentionId": "YA-5F107B67-104-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "deceased",
+      "personId": "P1150",
+      "nameAsTranscribed": "Села Кармалки крестьянинъ Тимофей Степановъ Ампилоговъ",
+      "displayName": "Тимофей Степанович Ампилогов",
+      "surnameSeries": true,
+      "ageAsWritten": "75 лѣтъ",
+      "identityConfidence": "high"
+    },
+    {
+      "mentionId": "YA-5F107B67-104-M2",
+      "role": "clergy",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Ампилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true,
+      "identityConfidence": "high"
     }
   ],
   "evidence": {
@@ -66,30 +84,30 @@
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Веренкина, дой свооки\nва. Миікаивь Атунівери\nКрестьятна сева Кармакон,\nИвана оривинпова Котткана\n- ---\nсіиь ялереакірь\nrouk Аmpеpoв",
-    "modernInterpretation": "Веренкина, дой свооки ва. Миикаивь Атунивери Крестьятна сева Кармакон, Ивана оривинпова Котткана - --- сииь ялереакирь rouk Аmpеpoв",
-    "localOcr": "Веренкина, дой свооки\nва. Миікаивь Атунівери\nКрестьятна сева Кармакон,\nИвана оривинпова Котткана\n- ---\nсіиь ялереакірь\nrouk Аmpеpoв",
-    "localOcrWithSurnameLexicon": "Веренкина, дой сводки\nва. Миконв Атунівери\nКрестьятна сева Кармалон,\nИвана оривинова Котикана\n- - - -\nсііь ялереаірь\nProuk Ареров",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-for-target-death-row-and-visible-context",
+    "literal": "1917 год, часть третья, об умерших. Октябрь. Мужского пола № 24. 3 умер, 4 погребён. «Села Кармалки крестьянинъ Тимофей Степановъ Ампилоговъ». 75 лет. В графе совершителя: «Священникъ Михаилъ Ампилоговъ, псаломщикъ Михаилъ Новгородскій». Ниже начинается самостоятельная запись №25 о ребёнке семьи Верейкиных; она не относится к Тимофею.",
+    "modernInterpretation": "3 октября 1917 года в Кармалке умер 75-летний Тимофей Степанович Ампилогов; 4 октября его похоронили. Погребение совершил священник Михаил Афиногенович Ампилогов. Соседняя строка Верейкиных отделена.",
+    "indexNote": "Индекс верно указал Тимофея Степановича и возраст, но смешал с соседней строкой семьи Верейкиных. Полный лист разделён по горизонтальной границе."
   },
   "indexData": {
     "querySnippet": "Умерший: Тимофей Стефанов Ампилогов, крестьянин, село Кармалки, 75. Умерший: Евдокия Васильева Верейкина, 15.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "discrepancy": "Индекс смешал две соседние строки; Тимофей отделён от записи №25."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "complete-primary-scan-reading-manually-verified",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "Вручную прочитаны полный лист 104, октябрьская запись №24 и граница со строкой №25: даты, ФИО, возраст, место и причт. P1150 связан strongly-supported/high, P1653 — как священник; соседняя семья Верейкиных не профилирована, родство и миграция не выводятся."
+  },
+  "primaryPersonId": "P1150",
+  "context": {
+    "eventSummary": "Смерть Тимофея Степановича Ампилогова 3 октября и погребение 4 октября 1917 года; Михаил Ампилогов служил при погребении.",
+    "identityNote": "P1150 strongly-supported/high по точному ФИО, Кармалке, возрасту и непрерывной биографической серии; P1653 подтверждён саном и серией подписей.",
+    "migrationNote": "Смерть фиксирует место события; служебная подпись не доказывает родство или переселение."
   }
 }

@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "sourceId": "YA-DE213EBC-229",
   "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "recordType": "death-register-clergy-service-mention",
+  "primaryPersonId": "P91076",
   "collection": {
     "catalogId": "de213ebc-8ebb-440d-a51c-061b875a8f40",
     "scanNumber": "229"
@@ -10,16 +11,8 @@
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/de213ebc-8ebb-440d-a51c-061b875a8f40/229"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-DE213EBC-229",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
-    }
-  ],
+  "event":{"type":"documented-clergy-service","date":{"display":"1909 год","confidence":"high"},"place":{"normalized":"Нижне-Чебенский посёлок, Оренбургский уезд","confidence":"high"}},
+  "mentions":[{"mentionId":"YA-DE213EBC-229-M1","role":"clergy-service","personId":"P91076","nameAsTranscribed":"Псаломщикъ Димитрій Ампилоговъ","displayName":"Дмитрий Егорович Ампилогов","surnameSeries":true,"identityConfidence":"high"},{"mentionId":"YA-DE213EBC-229-M2","role":"officiating-priest","personId":null,"nameAsTranscribed":"Священникъ Алексѣй Грабилинъ","displayName":"Алексей Грабилин","surnameSeries":false}],
   "evidence": {
     "publicDisplay": false,
     "path": "data/genealogy/evidence-private/yandex/de213ebc-8ebb-440d-a51c-061b875a8f40/0229-full-view.jpg",
@@ -68,14 +61,10 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-local-ocr-collation",
-    "transcriptionConfidence": "high"
+    "status":"complete-primary-scan-reading-manually-verified","transcriptionConfidence":"high","unresolved":[],"deepReviewedAt":"2026-09-13","deepReviewScope":"Вручную прочитан полный разворот части об умерших за 1909 год, все видимые строки, причины смерти и графы совершения погребения; подписи Дмитрия Ампилогова отделены от умерших."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
+    "status":"complete-primary-scan-reading-manually-verified","literal":"1909 годъ, часть третья, о умерших. При видимых записях повторяется: «Священникъ Алексѣй Грабилинъ. Псаломщикъ Димитрій Ампилоговъ». Причины смерти и семьи относятся к другим лицам.","modernInterpretation":"Лист смертей документирует службу псаломщика Дмитрия Ампилогова при совершении погребений.","indexNote":"Индекс смешал фамилию из служебной графы с причиной смерти; Ампилогов — псаломщик, не умерший.",
     "localOcr": "ой книги на 1900г\nгóди, чАеть Т\ndtrà\nґво й фамиліл оумершаги.\n(6)\nодллершагш.\nчЕгій оỷлєру.\nKтò й\nМУжЕскА.\nЖéнска.\nОти гориовы-\nПо мам\nпоселка кизака Михшнл\nова воримі\n1. Кайев\nбользии.\nСвященник Млекеіі\nПрабилиь.\naM\nАсаломщикьДмитри\nАмптилоговь\nОть сторости Священ\nпоилза коднке воала н.\nСвященникь Алгвійй\nрабимив.-\nЖсаломщикь амитрій\n• Ампилогоя-\nпоселка ктака седора\nОт горльвой\nина дочь овіьнія\nh.\nпольми.-\nвле рій\nСвященникь Л\nПсаломиикь Дмитрій\nАмтілоговь-\n2/л\nпоселка кажка Метра\nОти гориова\nАНь\nБодлива венв лант н в\nфовиласти\nСвященник Алевий-\nЗГрабилииь.-",
     "collation": {
       "baseLocalOcr": "confirmed-close-by-independent-local-ocr",
@@ -83,8 +72,9 @@
       "yandexTextBlocksUsedForNavigationAndCollation": true
     }
   },
+  "context":{"eventSummary":"Служебные подписи псаломщика Дмитрия Ампилогова на листе смертей.","identityNote":"P91076 подтверждён по имени, должности и приходу.","familyContext":"Умершие и их семьи иных фамилий оставлены контекстом.","migrationNote":"Служба не интерпретируется как переселение."},
   "indexData": {
     "querySnippet": "Ампилогов От горлова болезни. Грабулин. Псаломщик Дмитрий Ампилогов Псаломщик Алексей Стефанов.",
-    "fuzzyQuery": true
-  }
+    "assessment":"confirmed after separating clergy signatures from death entries","fuzzyQuery":true
+  },"isRecord":true,"cardKind":"named-primary-record","publicCore":true
 }

@@ -2,94 +2,37 @@
   "schemaVersion": 1,
   "sourceId": "YA-C7016A16-008",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
-  "collection": {
-    "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
-    "scanNumber": 8,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл Гамалеевка, Кирсановка за 1909 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Самарская духовная консистория, г. Самара, Самарская губерния, 1851 – 1918 гг., Архивная опись №1 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл Гамалеевка, Кирсановка за 1909 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/c7016a16-4822-4f55-86a7-bc5c550d59bd/8"
-  },
+  "recordType": "birth-and-baptism",
+  "primaryPersonIds": ["P102992", "P102993"],
+  "collection": {"catalogId":"c7016a16-4822-4f55-86a7-bc5c550d59bd","scanNumber":"8","title":"Метрическая книга Гамалеевского прихода за 1909 год, часть первая, о родившихся"},
+  "links": {"documentUrl":"https://yandex.ru/archive/catalog/c7016a16-4822-4f55-86a7-bc5c550d59bd/8"},
   "event": {
-    "type": "archival-mention",
-    "date": {
-      "display": "1 января 1909 — 31 декабря 1909",
-      "confidence": "high-for-catalog-date"
-    },
-    "place": {
-      "normalized": "не установлено"
-    }
+    "type":"birth-and-baptism","recordNumber":"16",
+    "date":{"display":"родился 11 июля, крещён 12 июля 1909 года","birth":"1909-07-11","baptism":"1909-07-12","confidence":"high"},
+    "place":{"asWritten":"село Гамалеевка","normalized":"Гамалеевка, Бузулукский уезд","placeId":"buzuluk-uezd"}
   },
   "mentions": [
-    {
-      "mentionId": "YA-C7016A16-008-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
-    }
+    {"mentionId":"YA-C7016A16-008-M1","role":"child","personId":"P102992","nameAsTranscribed":"Алексій","displayName":"Алексей Андреевич Ампилогов","surnameSeries":true},
+    {"mentionId":"YA-C7016A16-008-M2","role":"father","personId":"P102993","nameAsTranscribed":"Села Гамалеевки крестьянинъ Андрей Степановъ Ампилоговъ","displayName":"Андрей Степанович Ампилогов","surnameSeries":true},
+    {"mentionId":"YA-C7016A16-008-M3","role":"mother","personId":null,"nameAsTranscribed":"его жена Анна Семенова","displayName":"Анна Семёновна","surnameSeries":false},
+    {"mentionId":"YA-C7016A16-008-M4","role":"godfather","personId":null,"nameAsTranscribed":"того же села крестьянинъ Игнатій Михайловъ Пестряковъ","displayName":"Игнатий Михайлович Пестряков","surnameSeries":false},
+    {"mentionId":"YA-C7016A16-008-M5","role":"godmother","personId":null,"nameAsTranscribed":"крестьянская жена Марія [поселение/определение не вполне разобрано] Иванова Соколова","displayName":"Мария Ивановна Соколова","surnameSeries":false}
   ],
-  "evidence": {
-    "catalogId": "c7016a16-4822-4f55-86a7-bc5c550d59bd",
-    "scanNumber": 8,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "48fd6f72588e49a57e6994e3ca125a706cdb69ca1f3d138f3fe6c9b09d176c4a",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-header.png",
-        "sha256": "73f135fa86edb33409a0d46f59c1ee984c4bd120422fb3206e76e392197a22ca",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-target-entry.png",
-        "sha256": "83564002e60eec84094abfb73c316c5c98e9c2101517ed6a1e7ef0e30e08ae2f",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "10851x8415",
-      "targetDimensions": "2845x1612",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-  },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Села Іамаліьськи крестьянинв\nГосинь Николаявь Лочиновскич\nепо усена Аннае Н иколосьа - правослам\nиашенниа о\nртаволокот\nмад пan\nДіакень вергім Ивиновь\nПоаломинико Николай Алонррь",
-    "modernInterpretation": "Села Іамалиьськи крестьянинв Госинь Николаявь Лочиновскич епо усена Аннае Н иколосьа - правослам иашенниа о ртаволокот мад пan Диакень вергим Ивиновь Поаломинико Николай Алонррь",
-    "localOcr": "Села Іамаліьськи крестьянинв\nГосинь Николаявь Лочиновскич\nепо усена Аннае Н иколосьа - правослам\nиашенниа о\nртаволокот\nмад пan\nДіакень вергім Ивиновь\nПоаломинико Николай Алонррь",
-    "localOcrWithSurnameLexicon": "Села Рамаліьськи крестьянинь\nГосинь Николаявь Логиновскич\nепо сена Анна Н иколоьа - правослам\nДіакень вергім Ивиновь\nПоаломиник Николай Алонррь",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status":"complete-primary-scan-manually-verified-with-one-local-uncertainty",
+    "literal":"Іюль. № 16. 11 родился, 12 крещён. Алексій. Села Гамалеевки крестьянинъ Андрей Степановъ Ампилоговъ и его жена Анна Семенова, православные. Восприемники: того же села крестьянинъ Игнатій Михайловъ Пестряковъ и крестьянская жена Марія [неразборчивое определение] Иванова Соколова.",
+    "modernInterpretation":"11 июля 1909 года у гамалеевского крестьянина Андрея Степановича Ампилогова и Анны Семёновны родился сын Алексей; его крестили 12 июля. Игнатий Михайлович Пестряков и Мария Ивановна Соколова были восприемниками.",
+    "indexNote":"Главные данные поискового индекса — ребёнок Алексей и отец Андрей Степанович Ампилогов — подтверждены крупным чтением оригинала. Старый локальный OCR захватил соседнюю строку и потому ложно создавал сомнение; он отвергнут."
   },
-  "indexData": {
-    "querySnippet": "Родившийся: Алексий Андреев Ампилогов. ... Отец: Андрей Степанов Ампилогов, крестьянин, село Гамалеевка.",
-    "fuzzyQuery": true
+  "indexData": {"querySnippet":"Родившийся: Алексий Андреев Ампилогов. Отец: Андрей Степанов Ампилогов, крестьянин, село Гамалеевка.","assessment":"core names confirmed from original; index omits mother, dates and godparents","fuzzyQuery":true},
+  "context": {"eventSummary":"Рождение 11 июля и крещение 12 июля 1909 года Алексея Андреевича Ампилогова в Гамалеевке.","familyContext":"Отец Андрей Степанович и мать Анна Семёновна названы прямой родительской формулой. Восприемничество других фамилий не превращено в родство.","identityNote":"Созданы отдельные P102992 и P102993. Алексей не объединён с P99330: тот умер в Мелитополе в 1884 году.","migrationNote":"Акт фиксирует семью в Гамалеевке и не доказывает переселение."},
+  "evidence": {
+    "catalogId":"c7016a16-4822-4f55-86a7-bc5c550d59bd","scanNumber":8,"captureStatus":"complete-with-local-copy","captureType":"yandex-archive-original-image-download-with-full-width-event-crop","localBackup":"data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-full-view.png","path":"data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-full-view.png","capturedAt":"2026-09-10","sha256":"48fd6f72588e49a57e6994e3ca125a706cdb69ca1f3d138f3fe6c9b09d176c4a",
+    "fragments":[{"kind":"target-entry","path":"data/genealogy/evidence-private/yandex/c7016a16-4822-4f55-86a7-bc5c550d59bd/0008-target-entry-deep.png","sha256":"37b24b3edadd38ca9d720fb82515a22ace2a129256d26d1ab0f1f74a1c1dff92","description":"Крупный широкий чистый фрагмент с записью № 16 во всех графах и соседними актами."}],
+    "quality":{"originalImageDownloaded":true,"documentOnlyVisuallyConfirmed":true,"targetRowsVisuallyConfirmed":true,"fullDimensions":"10851x8415","targetDimensions":"10000x5000","method":"manual-full-page-reading-and-full-width-event-recrop"},"publicDisplay":false,"rightsNote":"Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
-  "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
-  "publicCore": false,
-  "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
-  }
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {"status":"complete-primary-scan-reading-and-new-identity-links","transcriptionConfidence":"high-for-child-parents-dates-and-surname; medium-for-godmother-qualifier","unresolved":["Определение перед именем восприемницы Марии Ивановны Соколовой читается не полностью и не раскрыто догадкой."],"deepReviewedAt":"2026-09-13","deepReviewScope":"Вручную проверены полный разворот и крупная запись № 16: месяц, даты, ребёнок, родители, вероисповедание, восприемники и соседние строки; фамилия Ампилогов прочитана непосредственно по оригиналу."}
 }

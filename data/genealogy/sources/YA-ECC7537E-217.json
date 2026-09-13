@@ -1,94 +1,90 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ECC7537E-217",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "false-positive-search-hit",
   "collection": {
     "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-    "scanNumber": "217"
+    "scanNumber": 217,
+    "title": "Метрическая книга за 1911 год, часть первая, о родившихся",
+    "asRead": "Метрической книги на 1911 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/217"
   },
-  "mentions": [
-    {
-      "mentionId": "YA-ECC7537E-217",
-      "role": "false-index-hit",
-      "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
-      "surnameSeries": false
+  "event": {
+    "type": "birth-register-page",
+    "date": {
+      "display": "сентябрь 1911 года, записи на листе 213",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "karmalka-orenburg"
     }
-  ],
+  },
+  "mentions": [],
   "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-full-view.jpg",
-    "sha256": "f6463dbaae75b134bab5f91de5e39de7b8a629bdb21e40595bc9fd0c2c7a692e",
+    "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
+    "scanNumber": 217,
+    "captureStatus": "complete-with-local-copy-pending-centralized-upload",
+    "captureType": "yandex-archive-original-image-download-with-manual-full-page-review",
+    "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-full-view.png",
+    "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-full-view.png",
+    "capturedAt": "2026-09-11",
+    "sha256": "81da8f977742039525b0f934032b0fa797a8c1a558b682ae98794733caed7394",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-target-entry.jpg",
-        "sha256": "72c3f195279dff35a365b4a1c7ae89f47dfd598fe0d67185c5f5df3930e16663"
+        "kind": "header",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-header.png",
+        "sha256": "2367177375aed07af32538bd92478d9871891e4b03073a318e165f0eb389361b",
+        "description": "Заголовок и структура метрического разворота без интерфейса Яндекса."
+      },
+      {
+        "kind": "indexed-coordinate",
+        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-target-entry.png",
+        "sha256": "f5fd9b7e61d4b6a679455d18cfc6d0941812b5f648bb1a837a71c14ea23be715",
+        "description": "Крупный фрагмент области, на которую указывал индекс; проверен вместе со всем листом."
       }
     ],
-    "parallelCopies": [
-      {
-        "catalogId": "ecc7537e-55a9-43f8-b693-0ae2ff7e94fb",
-        "scanNumber": 217,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "81da8f977742039525b0f934032b0fa797a8c1a558b682ae98794733caed7394",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-header.png",
-            "sha256": "2367177375aed07af32538bd92478d9871891e4b03073a318e165f0eb389361b",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/ecc7537e-55a9-43f8-b693-0ae2ff7e94fb/0217-target-entry.png",
-            "sha256": "f5fd9b7e61d4b6a679455d18cfc6d0941812b5f648bb1a837a71c14ea23be715",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5652x4566",
-          "targetDimensions": "2764x811",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "allVisibleRowsManuallyRead": true,
+      "fullDimensions": "5652x4566",
+      "method": "manual-reading-of-original-resolution-full-page-and-row-boundary-collation",
+      "confirmedAt": "2026-09-12"
+    },
+    "publicDisplay": false,
+    "uploadStatus": "pending-centralized-upload",
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "XCA.\nвБроиспов-вданіл.\nвоспріéмникшкz.\nСела Кармални крестояним\nЯього-же сели престлянинх Оскборг\nГільчень Сальникові икрестьян-\nСаргій Хльчень Сальниковьи захон-\nскаяжени Парликва Гооргієва\nная жена его Мваталія Филил\nВерейхини.\nови; оба правосливнне.\nященниня,Димнтрій роздмянсній\nаеХИВаМ\nПсаломунна Антрей Колодочними",
-    "localOcrWithSurnameLexicon": "ХСА.\nв Броиспов-вданіл.\nвоспрімникшЕ%.\nСела Кармални крестьянин\nДого-же сели престиянинх Оскорг\nільчень Сальникові и крестьян-\nСоргій Хльчень Сальниковь и закон-\nскаяжени Парликва Горгієва\nная жена его Маталія Фалит\nВерейхина.\nови; оба православнне.\nященнина Димитрій роздменаній\nПсаломунка Антей Колодочними",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-full-scan-negative-verification",
+    "literal": "На полном развороте (сентябрь 1911 года, записи на листе 213) фамилия Ампилоговъ/Анпилоговъ и заявленные индексом лица отсутствуют. Все видимые записи и обе половины разворота сверены.",
+    "modernInterpretation": "Лист не содержит носителя исследуемого фамильного ряда и является ложным результатом нечёткого поиска.",
+    "indexNote": "Сниппет Яндекса использован только как поисковая подсказка и отвергнут после ручного чтения всего полного скана."
+  },
+  "isRecord": false,
+  "cardKind": "false-positive-search-hit",
+  "publicCore": false,
+  "primaryPersonId": null,
+  "context": {
+    "eventSummary": "Отрицательная проверка полного листа метрической книги о родившихся.",
+    "identityNote": "Профили и связи по этому индексному совпадению не подтверждены полным первичным сканом.",
+    "migrationNote": "Не применимо: фамильного события на листе нет."
+  },
+  "review": {
+    "status": "complete-false-positive-manually-verified",
+    "transcriptionConfidence": "high-for-absence-on-complete-visible-page",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "полный оригинальный разворот 5652×4566, сентябрь 1911 года, записи на листе 213; вручную проверены границы и все видимые строки, колонки детей, родителей и восприемников; индексные лица отсутствуют; профиль, публичное событие, карта и миграция исключены"
   },
   "indexData": {
     "querySnippet": "Андрей Иустинов Ампилогов и законная жена его Анна Романова; оба православные. Того же села крестьянин Петр Иванов Шабанов...",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "indexDiscrepancy": "Индекс приписывает листу фамильное упоминание, которого нет на полном первичном изображении."
   }
 }

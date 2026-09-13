@@ -1,98 +1,31 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-693A435C-137",
-  "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
-  "collection": {
-    "catalogId": "693a435c-17d0-4bbb-ae15-b91f54177a07",
-    "scanNumber": 137
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/693a435c-17d0-4bbb-ae15-b91f54177a07/137"
-  },
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "search-index-false-positive",
+  "collection": {"catalogId": "693a435c-17d0-4bbb-ae15-b91f54177a07", "scanNumber": 137, "title": "Метрическая книга за 1888 год, часть вторая, о бракосочетавшихся"},
+  "links": {"documentUrl": "https://yandex.ru/archive/catalog/693a435c-17d0-4bbb-ae15-b91f54177a07/137"},
+  "event": {"type": "index-false-positive", "date": {"display": "24 октября — 9 ноября 1888 года", "confidence": "high-from-visible-rows"}, "place": {"normalized": "Оренбургская губерния", "confidence": "medium-for-book-context"}},
   "mentions": [],
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "1T0 BBAR 10112\nОрехіе міжань Дсидок\nобеаткови\nOegupise\nвятнимя Ивань 1ант\nвикний рлишач Вароо\nДи, Геванль Вляхлловь зото",
-    "modernInterpretation": "1T0 BBAR 10112 Орехие мижань Дсидок обеаткови Oegupise вятнимя Ивань 1ант викний рлишач Вароо Ди, Геванль Вляхлловь зото",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "preRecaptureResearchNote": "Метрическая книга 1917 года, часть о бракосочетавшихся; локальные полный разворот и целевой фрагмент имеют недостаточное разрешение для надёжного чтения фамилии в целевой записи.",
-    "localOcr": "1T0 BBAR 10112\nОрехіе міжань Дсидок\nобеаткови\nOegupise\nвятнимя Ивань 1ант\nвикний рлишач Вароо\nДи, Геванль Вляхлловь зото",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-negative-full-page-reading",
+    "literal": "Октябрь–ноябрь 1888 года. Полный брачный разворот содержит записи № 4–6 с датами 24 октября, 7 ноября и 9 ноября. Во всех видимых строках женихов, невест, поручителей и причта фамилии Ампилогов/Анпилогов нет.",
+    "modernInterpretation": "На scan 137 отсутствует носитель исследуемого фамильного ряда.",
+    "indexNote": "Старое машинное чтение было бессвязным и ошибочно представляло лист как возможное фамильное упоминание. Ручная проверка оригинала подтверждает ложный fuzzy-hit.",
+    "collation": {"primaryScanReadManually": true, "allVisibleRowsChecked": true, "yandexIndexUsedOnlyForNavigation": true}
   },
+  "indexData": {"querySnippet": "Индекс оставлен только поисковой подсказкой; целевая фамилия не подтверждена.", "fuzzyQuery": true, "warning": "Confirmed false/carryover after full-spread review."},
   "evidence": {
-    "catalogId": "693a435c-17d0-4bbb-ae15-b91f54177a07",
-    "scanNumber": 137,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
+    "catalogId": "693a435c-17d0-4bbb-ae15-b91f54177a07", "scanNumber": 137,
+    "captureStatus": "complete-with-local-copy", "captureType": "yandex-archive-original-image-download-with-large-clean-crop",
     "localBackup": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-full-view.png",
     "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "087c4008596c3564381c7db4082728f68195802ac8343295496ff61b73cd597e",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-header.png",
-        "sha256": "d860a36558dc04d1d57d44f5e399176d9b691ed04e9911d072d7533df9c271b5",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-target-entry.png",
-        "sha256": "8f39c58bcc8e096cb72f1527423361bee635bf70dbf9ec911e24ca4707d1cc4d",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5413x4458",
-      "targetDimensions": "1429x1009",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "parallelCopies": [
-      {
-        "publicDisplay": false,
-        "path": "data/genealogy/evidence-private/yandex/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-full-view.png",
-        "sha256": "14dce1f62fea6b5570b9c973de96499cf5006efec198eb4aa335cd846e17334f",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-target-entry.png",
-            "sha256": "fa1b7a71f5f0fbd32c3e5f82d0c7d4e077c3af4dd5d73ee994541e6f66a53ee2",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          },
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-header.png",
-            "sha256": "4c09760b3f95e202a8fad7540f98446f521c20e4e89b4a80669a57dceb42948c",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          }
-        ],
-        "quality": {
-          "fullDimensions": "1238x986",
-          "targetDimensions": "570x650",
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true
-        }
-      }
-    ]
+    "capturedAt": "2026-09-11", "sha256": "087c4008596c3564381c7db4082728f68195802ac8343295496ff61b73cd597e",
+    "fragments": [{"kind": "target-context-deep", "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/693a435c-17d0-4bbb-ae15-b91f54177a07/0137-target-context-deep.jpg", "sha256": "b3534aa15d55f9e234eecbdb1606a8f1c42d1f9c5637f151c85097fac32594a2", "description": "Clean крупный полный брачный разворот с записями № 4–6."}],
+    "quality": {"originalImageDownloaded": true, "fullDimensions": "5413x4458", "targetDimensions": "5100x4100", "method": "manual-full-spread-review-plus-large-clean-context-crop"},
+    "publicDisplay": false, "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.", "uploadStatus": "pending-local-evidence-upload"
   },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Индекс оставлен только поисковой подсказкой; требуется новый читаемый локальный снимок целевой записи.",
-    "fuzzyQuery": true
-  }
+  "isRecord": true, "cardKind": "confirmed-false-fuzzy-hit", "publicCore": false,
+  "review": {"status": "verified-primary-scan-negative", "transcriptionConfidence": "high", "deepReviewedAt": "2026-09-12", "deepReviewScope": "Вручную прочитан весь брачный разворот 1888 года, записи № 4–6, обе страницы, супруги, поручители и причт. Фамильного ряда нет; создан clean crop 5100×4100.", "unresolved": []},
+  "context": {"summary": "Подтверждённый ложный fuzzy-hit.", "indexDiscrepancy": "Фамилия не подтверждается ни одной строкой оригинала; прежний OCR непригоден как источник чтения.", "genealogicalConclusion": "Профиль, связь, карта и миграция не создаются."}
 }

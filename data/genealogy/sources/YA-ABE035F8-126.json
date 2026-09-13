@@ -1,94 +1,96 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-ABE035F8-126",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "page-level-baptism-clerical-service",
+  "primaryPersonId": "P1543",
   "collection": {
     "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
-    "scanNumber": "126"
+    "scanNumber": "126",
+    "title": "Метрическая книга Слоновского прихода за 1910 год, часть первая, о родившихся"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/abe035f8-731b-4197-9975-ff1b64a512cd/126"
   },
+  "event": {
+    "type": "baptism-clergy-service",
+    "date": {
+      "display": "16–28 сентября 1910 года",
+      "fromIso": "1910-09-16",
+      "toIso": "1910-09-28",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "приход села Слоновки",
+      "normalized": "Слоновка, Оренбургский уезд",
+      "placeId": "orenburg-uezd"
+    }
+  },
   "mentions": [
     {
       "mentionId": "YA-ABE035F8-126-M1",
-      "role": "false-index-hit",
+      "role": "deacon-at-baptism",
+      "personId": "P1543",
+      "nameAsTranscribed": "Діаконъ Аѳиногенъ Ампилоговъ",
+      "displayName": "Афиноген Егорович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-ABE035F8-126-M2",
+      "role": "priest",
       "personId": null,
-      "nameAsTranscribed": "Ложное индексное совпадение",
-      "displayName": "Фамильный ряд не подтверждён",
+      "nameAsTranscribed": "Священникъ Іоаннъ Поляковъ",
+      "displayName": "Иоанн Поляков",
       "surnameSeries": false
     }
   ],
-  "evidence": {
-    "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-full-view.jpg",
-    "sha256": "883b2c103761c260798fc751f1ea9f54646c83977ce9bdc5dcb43027b54bc6ff",
-    "fragments": [
-      {
-        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-target-entry.jpg",
-        "sha256": "51b70d52cece700d4647231e9945e8940538c7ddb3464a6154255215b5086aae"
-      }
-    ],
-    "parallelCopies": [
-      {
-        "catalogId": "abe035f8-731b-4197-9975-ff1b64a512cd",
-        "scanNumber": 126,
-        "captureStatus": "complete-with-local-copy",
-        "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-        "localBackup": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-full-view.png",
-        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-full-view.png",
-        "capturedAt": "2026-09-11",
-        "sha256": "df6eef8fab995e354517d8077ed0b6d4beba35aa58f6542370c53985a48d455b",
-        "fragments": [
-          {
-            "kind": "header",
-            "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-header.png",
-            "sha256": "d6bd2c83872a3e087a90af225d67b150e16c22d585bf420a9f079bee01aa6ae5",
-            "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-          },
-          {
-            "kind": "target-entry",
-            "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-target-entry.png",
-            "sha256": "858c845d61b1c2233ff02efd640df3f41f5e7530c3782c6db0b6fa2ebab92e6a",
-            "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "headerAndTargetGeneratedFromOriginal": true,
-          "targetCropLocatedFromTextCoordinates": true,
-          "fullDimensions": "5351x4357",
-          "targetDimensions": "3458x3231",
-          "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-        },
-        "publicDisplay": false,
-        "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
-      }
-    ]
-  },
-  "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
   "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "Сохранённый локальный разворот метрической книги читается достаточно; фамильный ряд Ампилогов/Анпилогов и документированные варианты не встречаются.",
-    "modernInterpretation": "Локальный скан исключает индексное совпадение; профили людей, карта, переселение и маршруты не создаются.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "ІЄТРИЧеСКОЙ КНИГИ НА 190\nгода, часть первад, й родиешихел.\nЗвáніє,\nйма, бтчество й фамиліл родúтелей, й какóги\nЗвÁніе, йла, отчЕство й фамнліл\nRтò совЕрШÁль тÁинство\nPS,\nихсл.\nввроиспов кданіл.\nвоспріéмникWкZ.\nкрєєніл.\nTEA\nГис. Рипнгіваш перствянийв Мирийв Вара\nМого лис пелаперествянийв Посперб\nровь Равиньнийь и запоннти лима ево\nПаснінківі Довисний идіовакаЯна-\nСвящанника\nМарааЛванова обавданисанво\nСвященниь доаннь Полявсова\nохиваN\nДіатань Аолонів Алтилоківь\nМий мно деревативарествянийо ков\nДеревали Днеросвоипереествяннийв Лвеяч\nПетріві Роймвереатв'янсницмисл\nАиполлевь Резряловь и зикастае лишь его\nПерисневи Продапієви волошно.\nбостть.\nФевранний ененови ова кореноси нанвоо.\nвященнись Гоаннь Нолявсов\nМоо мне селапрествянийв Николем\nРеии Олиноваи прествянийв. Аисторой\nешенівь Метяровьм трясттвячекия\nО/ени Миьяни Реиенова Алепееъенковы.\nтув Пивнові Мванівіи заленнись песин сла\nПолінів'\n1 uнis Peunapote Marel n qata\nАнна Рстенови ова присосастьо.\nГоаннь Полявсва\nВетеннивса\nоственныи\nобласти\nДіннань Хаклоктів Анитилорові\nФіатинонич\nMau ge\nвии перествянмив /сейрч\n6. Деревни Мирайловникероствянні , Яо0\nPuuaayat Aniрauennоbiumiprentes-\nнасій Даниловь Лоперовьидананйним",
-    "localOcrWithSurnameLexicon": "ІСТРИЧеСКОЙ КНИГИ НА 190\nгода, часть переад, й родившихел.\nЗваніє,\nма, отчество й фамиліл родителей, й какги\nЗвАніє, пла, отчЕство й фамиліл\nPS,\nихсл.\nвероиспов даніл.\nБоспрімникШк.\nкреєніл.\nTEA\nРис. Рингіваш протвянй в Мирийв Вара\nМого лис пена перествянийв Послерб\nровь Равильний и законно лима ево\nПасікові Довиний и дова ка Яна -\nСвященника\nМарааЛванова обавданисанно\nСвященниь даннь Полявсова\nДістань Долонів Антилоківь\nМий мно деревати парествян ийо ков\nДеревали неросвоипернествянний Мвияч\nПетріві Роймвереатвянсницмесл\nНиполлевь Резряловь и зикастам лишь его\nПерискеви Проданієви волошно.\nвященнись Гоаннь Поляков\nМого мне селапрествянитв Николем\nРеси линова прествянийв. Писторий\nешенівь Метяровь м трествячекия\nО/ени Миьяни Решенова Алепеевенковы.\nтув Пивнові ваніві и заленнись песин сла\nПолітів'\nАнна Ременови ова присосастью.\nПоаннь Послява\nоственныи\nобласти\nФінкань Поклонів Антилолові\nФіатиногіч\nMau ge\nвии перестванмив / сейтрч\n6. Деревни Мирайновникроствянні , Хо0\nнасій Даниловь. Поперовьи данайних",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status": "complete-primary-scan-reading-for-clerical-service-and-page-context",
+    "literal": "1910 годъ, часть первая, о родившихся. Сентябрь. На полном развороте проверены № 81–85 и следующая строка, даты рождения и крещения, родители, воспріемники и причт. После актов повторяется: «Священникъ Іоаннъ Поляковъ. Діаконъ Аѳиногенъ Ампилоговъ». Все семьи актов имеют другие фамилии.",
+    "modernInterpretation": "Афиноген Егорович Ампилогов служил диаконом при крещениях Слоновского прихода 16–28 сентября 1910 года.",
+    "indexNote": "Яндекс склеил подпись причта с соседними графами чужих семей. Полное имя и роль Афиногена отделены по колонкам и повторениям оригинала."
   },
   "indexData": {
     "querySnippet": "Священник Иоанн Поляков Диакон Афиноген Ампилогов. ... Священник Иоанн Поляков с Диаконом Афиногеном Ампилоговым.",
+    "assessment": "clergy signature confirmed; adjacent family separated from signature",
     "fuzzyQuery": true
+  },
+  "context": {
+    "eventSummary": "Служебные подписи диакона Афиногена Ампилогова при крещениях 16–28 сентября 1910 года.",
+    "identityNote": "P1543 подтверждён редким полным именем, саном, приходом и устойчивой парой причта со священником Иоанном Поляковым.",
+    "familyContext": "Родители, дети и восприемники других фамилий сохранены только как контекст актов; родство с P1543 не выводится.",
+    "migrationNote": "Служба в приходе не доказывает переселение."
+  },
+  "evidence": {
+    "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-full-view.png",
+    "sha256": "df6eef8fab995e354517d8077ed0b6d4beba35aa58f6542370c53985a48d455b",
+    "fragments": [
+      {
+        "kind": "target-entry",
+        "path": "data/genealogy/evidence-private/yandex/abe035f8-731b-4197-9975-ff1b64a512cd/0126-target-entry-deep.png",
+        "sha256": "4cdb84b41ef65f5a095ee87c09e98c80da67e12bc70222b0c8c2c48d81b24349",
+        "description": "Широкий чистый фрагмент разворота с № 81–85 и следующая строка, датами и повторными подписями причта."
+      }
+    ],
+    "quality": {
+      "originalImageDownloaded": true,
+      "documentOnlyVisuallyConfirmed": true,
+      "targetRowsVisuallyConfirmed": true,
+      "fullDimensions": "5351x4357",
+      "targetDimensions": "4900x3500",
+      "method": "manual-full-page-reading-and-wide-clean-recrop"
+    },
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; публичная ссылка ведёт только на Яндекс Архив."
+  },
+  "isRecord": true,
+  "cardKind": "named-primary-record",
+  "publicCore": true,
+  "review": {
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "Вручную проверены заголовок, № 81–85 и следующая строка, все графы, границы дат и повторные подписи причта; P1543 подтверждён только как диакон. Широкий clean crop 4900×3500."
   }
 }

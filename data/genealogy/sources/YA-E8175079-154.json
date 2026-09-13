@@ -2,21 +2,38 @@
   "schemaVersion": 1,
   "sourceId": "YA-E8175079-154",
   "provider": "Яндекс Архив",
-  "recordType": "primary-scan-quality-review",
+  "recordType": "birth-baptism-godparent",
   "collection": {
     "catalogId": "e8175079-c811-4d2f-9829-1e83ae135db3",
-    "scanNumber": 154
+    "scanNumber": 154,
+    "title": "Метрическая книга Изяк-Никитинского прихода, 1891 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e8175079-c811-4d2f-9829-1e83ae135db3/154"
   },
   "mentions": [
     {
-      "mentionId": "YA-E8175079-154",
-      "role": "uncertain-index-hit",
+      "mentionId": "YA-E8175079-154-M1",
+      "role": "godfather",
+      "personId": "P1542",
+      "nameAsTranscribed": "Того же поселка казакъ Павелъ Даниловъ Ампилоговъ",
+      "displayName": "Павел Данилович Ампилогов",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-E8175079-154-M2",
+      "role": "godmother",
       "personId": null,
-      "nameAsTranscribed": "Фамилия требует пересъёмки",
-      "displayName": "Нечитаемый предполагаемый индексный хит",
+      "nameAsTranscribed": "казачья жена Феодосія Васильева Букреева",
+      "displayName": "Феодосия Васильевна Букреева",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E8175079-154-M3",
+      "role": "child",
+      "personId": null,
+      "nameAsTranscribed": "Анатолій",
+      "displayName": "Анатолий",
       "surnameSeries": false
     }
   ],
@@ -41,6 +58,13 @@
         "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0154-target-entry.png",
         "sha256": "4079f70c071aec9da7dd83596c9e0e2079cf0128e23dcf0dce2777bd1936e511",
         "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+      },
+      {
+        "kind": "target-context-deep",
+        "path": "data/genealogy/evidence-private/yandex-recapture-2026-09-11/e8175079-c811-4d2f-9829-1e83ae135db3/0154-target-context-deep.png",
+        "sha256": "89972533d02a514846f7983559a9cb2fd130e6d2a524ccf24fb0e9719bedb24a",
+        "description": "Полноширинный крупный фрагмент записи № 55 со всеми графами и соседней строкой.",
+        "uploadStatus": "pending-centralized-upload"
       }
     ],
     "quality": {
@@ -49,7 +73,8 @@
       "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "5363x4125",
       "targetDimensions": "1377x773",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr",
+      "deepCropDimensions": "5000x1400"
     },
     "publicDisplay": false,
     "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
@@ -104,28 +129,46 @@
     ]
   },
   "review": {
-    "status": "complete-source-preserved-with-explicit-ocr-uncertainty",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
+    "status": "complete-primary-scan-reading-and-identity-link",
+    "transcriptionConfidence": "high",
+    "unresolved": [],
+    "correctionHistory": [
+      "2026-09-12: полный разворот и соседняя строка прочитаны вручную; прежняя OCR-неуверенность снята."
+    ],
+    "deepReviewedAt": "2026-09-12",
+    "deepReviewScope": "full 5363x4125 spread, 1891 births heading, record №55 across all columns, adjacent row boundaries, dates, child, parents/godparents and clergy; P1542 identity basis and no-kinship/no-migration rule; index discrepancy; clean 5000x1400 context crop"
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "скоЙ\nГОДД, ЧАСТЬ ПЕРЕЛЛ,\nЗвАніє, йм, сбтчЕство й фамнлл\nкоспріємникшкк.\n• писеили поламг",
-    "modernInterpretation": "скоЙ ГОДД, ЧАСТЬ ПЕРЕЛЛ, ЗвАниє, йм, сбтчЕство й фамнлл косприємникшкк. • писеили поламг",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "скоЙ\nГОДД, ЧАСТЬ ПЕРЕЛЛ,\nЗвАніє, йм, сбтчЕство й фамнлл\nкоспріємникшкк.\n• писеили поламг",
-    "localOcrWithSurnameLexicon": "EVINIO\nГОДД, ЧАСТЬ ПЕРЕЛА,\nЗваніє, ймА, сотство й фаміліл\nкоспріємникику.\nИванась Нам,\n1, гелег",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-run-because-base-confirmed",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "preRecaptureResearchNote": "Сохранённый локальный фрагмент предполагаемой записи не позволяет надёжно прочитать фамилию."
+    "status": "complete-primary-scan-transcription-manually-verified",
+    "literal": "№ 55. Сентябрь. 29 [родился], 30 [крещён]. Анатолій. Воспріемники: того же поселка казакъ Павелъ Даниловъ Ампилоговъ и казачья жена Феодосія Васильева Букреева. Священникъ Виссаріонъ Лявинъ; псаломщикъ-діаконъ Петръ Покровскій.",
+    "modernInterpretation": "29 сентября 1891 года родился Анатолий, крещён 30 сентября. Восприемником был казак Изяк-Никитинского посёлка Павел Данилович Ампилогов; Феодосия Букреева и ребёнок принадлежат другим фамилиям и отдельных профилей не получают.",
+    "indexNote": "Индекс использован только для навигации. Павел Данилович и его роль прочитаны по полному развороту; индексное имя священника «Витарион Лавин» исправлено на буквальное «Виссаріонъ Лявинъ»."
   },
   "indexData": {
     "querySnippet": "Того же поселка казак Павел Данилов Ампилогов и казачья жена Феодосия Васильева Букреева. Священник Витарион Лавин с диаконом Петром Покровским.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "discrepancy": "Фамильная строка подтверждена; имя священника в индексе искажено."
+  },
+  "primaryPersonId": null,
+  "event": {
+    "type": "birth-and-baptism",
+    "recordNumber": "№ 55",
+    "date": {
+      "display": "родился 29 сентября, крещён 30 сентября 1891 года",
+      "birthIso": "1891-09-29",
+      "baptismIso": "1891-09-30",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "Изяк-Никитинский посёлок",
+      "normalized": "Изяк-Никитино, Оренбургский уезд, Оренбургская губерния",
+      "placeId": "izyak-nikitino-orenburg"
+    }
+  },
+  "context": {
+    "eventSummary": "Участие Павла Даниловича Ампилогова в крещении как восприемника 30 сентября 1891 года.",
+    "identityNote": "P1542 установлен по точному имени и отчеству, казачьему статусу, Изяк-Никитинскому посёлку и непрерывной серии актов 1879–1890 годов; восприемничество не доказывает кровного родства.",
+    "migrationNote": "Документ фиксирует обрядовую роль в уже известном месте и не доказывает переселение."
+  },
+  "publicCore": true
 }

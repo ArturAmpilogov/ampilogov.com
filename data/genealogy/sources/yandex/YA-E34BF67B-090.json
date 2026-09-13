@@ -1,95 +1,89 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E34BF67B-090",
-  "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "archival-mention",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "research-false-positive",
   "collection": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 90,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Опись № 16 дел постоянного хранения, Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Юртаево (Архангеловская церковь); Георгиевка (Космо-Дамиановская церковь); Богородское, Парадеево (Архангеловская церковь) за 1914 г."
+    "title": "Метрические книги сёл Юртаево, Георгиевка, Богородское и Парадеево за 1914 год"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/e34bf67b-c869-4641-b473-a33f7c370931/90"
   },
   "event": {
-    "type": "archival-mention",
+    "type": "death",
     "date": {
-      "display": "1 января 1914 — 31 декабря 1914",
-      "confidence": "high-for-catalog-date"
+      "display": "1914",
+      "confidence": "high-for-year"
     },
     "place": {
-      "normalized": "не установлено"
+      "normalized": "село Георгиевка, Оренбургская губерния",
+      "confidence": "high"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E34BF67B-090-M1",
-      "role": "surname-series-mention",
-      "displayName": "Ампилогов",
-      "nameAsTranscribed": "Ампилогов",
-      "surnameSeries": true
+      "role": "deceased-child",
+      "displayName": "Анастасия Ильинична Алексина",
+      "nameAsTranscribed": "дочь Анастасія",
+      "surnameSeries": false
+    },
+    {
+      "mentionId": "YA-E34BF67B-090-M2",
+      "role": "father-of-deceased",
+      "displayName": "Илья Георгиевич Алексин",
+      "nameAsTranscribed": "Села Георгіевки солдата Ильи Георгіева Алексина",
+      "surnameSeries": false
     }
   ],
   "evidence": {
     "catalogId": "e34bf67b-c869-4641-b473-a33f7c370931",
     "scanNumber": 90,
     "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-full-view.png",
+    "captureType": "yandex-archive-original-image-download-with-wide-clean-context-crop",
     "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-full-view.png",
+    "localBackup": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-full-view.png",
     "capturedAt": "2026-09-11",
     "sha256": "f299338e89ae385cc0d0bb1e0c26b0e4f98878150b9ac680e8d08d8604f6670f",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-header.png",
-        "sha256": "6847372af992bde4231162f529096ca94e521c52874c2678999562a6f68a84a6",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-target-entry.png",
-        "sha256": "6d954a265d8c1894c20d35abf4c0f813f7c8ac5602a0268ee2feec4961af15d0",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "kind": "target-context",
+        "path": "data/genealogy/evidence-private/yandex/e34bf67b-c869-4641-b473-a33f7c370931/0090-target-context-deep.png",
+        "sha256": "f0bb10d91bec3c261c3d5954ce9b36acbbf4f334adff071a4a5b479a1ff368a6",
+        "description": "Широкий крупный фрагмент записи смерти, соседних строк и подписей, без интерфейса."
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
       "fullDimensions": "10137x8214",
-      "targetDimensions": "2661x798",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
+      "targetDimensions": "9000x6500",
+      "method": "manual-reading-of-original-and-wide-clean-recrop"
     },
     "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+    "rightsNote": "Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Нсаломучиь Миаиив Никольски\nСела Георгівки сомата Ильш Гефрчива\nдоль анастасія\nвященники Vоаннч Дмитрив",
-    "modernInterpretation": "Нсаломучиь Миаиив Никольски Села Георгивки сомата Ильш Гефрчива доль анастасия вященники Vоаннч Дмитрив",
-    "localOcr": "Нсаломучиь Миаиив Никольски\nСела Георгівки сомата Ильш Гефрчива\nдоль анастасія\nвященники Vоаннч Дмитрив",
-    "localOcrWithSurnameLexicon": "Псаломучит Мианив Никольски\nСела Георгівки сомата Ильш Гефчива\nдоль анастасія\nвяженники бо ання Дмитрив",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "complete-manual-primary-scan-reading",
+    "literal": "Села Георгіевки солдата Ильи Георгіева Алексина дочь Анастасія.",
+    "modernInterpretation": "В записи умершей названа дочь солдата Ильи Георгиевича Алексина Анастасия; Стефана Васильевича Ампилогова на строке нет.",
+    "indexNote": "Индекс неверно заменил отца умершей на Стефана Васильевича Ампилогова и приписал фамильный ряд ребёнку."
   },
-  "indexData": {
-    "querySnippet": "Отец умершего: Стефан Васильев Ампилогов, крестьянин, село Георгиевка. ... Умерший: Анастасия Стефанова Ампилогова, 4 месяца.",
-    "fuzzyQuery": true
-  },
+  "context": "Запись прочитана по всей ширине графы умершего и родительской формулы с проверкой соседних строк.",
   "isRecord": false,
-  "cardKind": "research-material-unconfirmed-fuzzy-hit",
+  "cardKind": "research-material-confirmed-false-positive",
   "publicCore": false,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент."
-    ]
+    "status": "deep-reviewed-confirmed-false-positive",
+    "transcriptionConfidence": "high",
+    "deepReviewedAt": "2026-09-13",
+    "deepReviewScope": "manual-full-original-reading; deceased-name; father-formula; age-and-cause-columns; burial-column; adjacent-records; wide-clean-crop; index-discrepancy",
+    "unresolved": []
+  },
+  "indexData": {
+    "querySnippet": "Отец умершего: Стефан Васильев Ампилогов; умерший: Анастасия Стефанова Ампилогова, 4 месяца",
+    "fuzzyQuery": true,
+    "assessment": "contradicted-by-original"
   }
 }
