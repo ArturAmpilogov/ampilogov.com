@@ -2,94 +2,32 @@
   "schemaVersion": 1,
   "sourceId": "YA-D8EBA6BA-012",
   "provider": "Яндекс Архив — первичный скан",
-  "recordType": "birth-godparents",
-  "collection": {
-    "catalogId": "d8eba6ba-c565-42ad-bcf4-9bc09701cf0c",
-    "scanNumber": 12,
-    "title": "Метрические книги записей о рождении, бракосочетании и смерти жителей сёл: Гамалеевка (Покровская церковь), Грачевка (Космодамиановская церковь) за 1916 г."
-  },
-  "links": {
-    "documentUrl": "https://yandex.ru/archive/catalog/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/12"
-  },
-  "event": {
-    "type": "birth-godparents",
-    "date": {
-      "display": "1916",
-      "confidence": "high-for-year"
-    },
-    "place": {
-      "normalized": "село Гамалеевка, Бузулукский уезд"
-    }
-  },
+  "recordType": "research-false-positive",
+  "collection": {"catalogId":"d8eba6ba-c565-42ad-bcf4-9bc09701cf0c","scanNumber":12,"title":"Метрическая книга села Гамалеевка за 1916 год"},
+  "links": {"documentUrl":"https://yandex.ru/archive/catalog/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/12"},
+  "event": {"type":"birth-godparents","date":{"display":"март 1916","confidence":"high"},"place":{"normalized":"село Гамалеевка, Бузулукский уезд"}},
   "mentions": [
-    {
-      "mentionId": "YA-D8EBA6BA-012-M1",
-      "role": "godmother",
-      "personId": "P102729",
-      "displayName": "дѣвица Евдокія Максимова Ампилова",
-      "nameAsTranscribed": "дѣвица Евдокія Максимова Ампилова",
-      "surnameSeries": true
-    }
+    {"mentionId":"YA-D8EBA6BA-012-M1","role":"godfather","displayName":"Александр Максимович Трубин","nameAsTranscribed":"Александръ Максимовъ Трубинъ","surnameSeries":false},
+    {"mentionId":"YA-D8EBA6BA-012-M2","role":"godmother","displayName":"Ксения Стефановна Родышова","nameAsTranscribed":"дѣвица Ксенія Стефанова Родышова [фамилия читается с небольшой неуверенностью]","surnameSeries":false}
   ],
   "evidence": {
-    "catalogId": "d8eba6ba-c565-42ad-bcf4-9bc09701cf0c",
-    "scanNumber": 12,
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-full-view.png",
-    "capturedAt": "2026-09-11",
-    "sha256": "7afac8ce9d10a54ae532f52ae9207b26791f3b3e66073b06af5371c4cdbc76c5",
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-header.png",
-        "sha256": "3595574951a05d0def80b4c850c8b8d31b45e942a2a4c41ec973292d262dbcb8",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-target-entry.png",
-        "sha256": "3b301b00f162570dd92d250867d53b61b2525840e6d56fa45d6ebbf626cb80ac",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
-      }
-    ],
-    "quality": {
-      "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5244x4130",
-      "targetDimensions": "1224x724",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "captureStatus": "complete-with-local-copy"
+    "catalogId":"d8eba6ba-c565-42ad-bcf4-9bc09701cf0c","scanNumber":12,
+    "captureType":"yandex-archive-original-image-download-with-wide-clean-context-crop",
+    "localBackup":"data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-full-view.png",
+    "path":"data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-full-view.png",
+    "capturedAt":"2026-09-11","sha256":"7afac8ce9d10a54ae532f52ae9207b26791f3b3e66073b06af5371c4cdbc76c5",
+    "fragments":[{"kind":"target-context","path":"data/genealogy/evidence-private/yandex/d8eba6ba-c565-42ad-bcf4-9bc09701cf0c/0012-target-context-deep.png","sha256":"bd3f3490dcc30b7a74cfff02cff04367477a63d337b2e23fe3b9717155f9a8e8","description":"Широкий крупный фрагмент записей марта 1916 года, обрезанный из оригинала без интерфейса."}],
+    "quality":{"originalImageDownloaded":true,"fullDimensions":"5244x4130","targetDimensions":"4900x3300","method":"manual-reading-of-original-and-wide-clean-recrop"},
+    "publicDisplay":false,"rightsNote":"Локальная копия сохранена для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.","captureStatus":"complete-with-local-copy"
   },
   "transcription": {
-    "status": "complete-primary-scan-transcription-with-local-evidence",
-    "literal": "Того же села крестьянин Феодор Михаилов Степанов и девица Евдокия Максимова Ампилова [в строке восприемников].",
-    "modernInterpretation": "Евдокия Максимовна Ампилова названа восприемницей.",
-    "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR.",
-    "localOcr": "коспріємникшвZ.\nкрестьянина\nMuro qee caia\nПленсандрь Максиливь Труйинь\n1g-thouya ieuani, фuaва\nбровтиєва.",
-    "localOcrWithSurnameLexicon": "коспріємникше.\nкрестьянина\nMuro gee caia\nПлександрь Максиливь Трубинь\nбравтиєва.",
-    "collation": {
-      "baseLocalOcr": "corroborated-with-old-print-or-handwriting-ocr-distortion",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    }
+    "status":"complete-manual-primary-scan-reading",
+    "literal":"Того же села крестьянинъ Александръ Максимовъ Трубинъ и дѣвица Ксенія Стефанова Родышова [фамилия последней читается с небольшой неуверенностью; строка восприемников].",
+    "modernInterpretation":"Восприемниками названы Александр Максимович Трубин и Ксения Стефановна Родышова; Евдокии Ампиловой в этой строке нет.",
+    "indexNote":"Поисковая выдача ошибочно приписала строке Евдокию Максимовну Ампилову; оригинал этого не подтверждает."
   },
-  "isRecord": true,
-  "cardKind": "named-primary-record",
-  "publicCore": true,
-  "review": {
-    "status": "complete-primary-scan-reading-with-local-evidence",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ]
-  },
-  "indexData": {
-    "querySnippet": "Того же села крестьянин Феодор Михаилов Степанов и девица Евдокия Максимова Ампилова. 29. ... Крёстная мать: Евдокия Максимова Ампилова, девица.",
-    "fuzzyQuery": true
-  }
+  "context":"Лист содержит последовательные мартовские записи о рождениях. Чтение проверено по всей строке восприемников и соседним строкам.",
+  "isRecord":false,"cardKind":"research-material-confirmed-false-positive","publicCore":false,
+  "review":{"status":"deep-reviewed-confirmed-false-positive","transcriptionConfidence":"high","deepReviewedAt":"2026-09-13","deepReviewScope":"manual-full-original-reading; adjacent-row-collation; wide-clean-crop; index-discrepancy","unresolved":["Окончание фамилии Ксении читается немного слабее, но фамильного ряда Ампилоговых в целевой строке нет."]},
+  "indexData":{"querySnippet":"Евдокия Максимова Ампилова","fuzzyQuery":true,"assessment":"contradicted-by-original"}
 }
