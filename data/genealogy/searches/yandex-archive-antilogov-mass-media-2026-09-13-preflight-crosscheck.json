@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "query": "Антилогов",
+  "index": "mass_media",
+  "auditedAt": "2026-09-13",
+  "status": "complete-preflight",
+  "inventoryPath": "data/genealogy/searches/yandex-archive-antilogov-mass-media-2026-09-13-inventory.json",
+  "coverage": {
+    "capturedPositions": 24,
+    "uniqueCanonicalUrls": 24,
+    "existingSourceMatchesByCanonicalUrl": 0,
+    "duplicateCanonicalUrlsInsideQuery": 0
+  },
+  "existingMassMediaTrackers": [
+    {
+      "query": "Анпилогов",
+      "path": "data/genealogy/searches/yandex-archive-anpilogov-mass-media-2026-09-12.json",
+      "positions": 525,
+      "uniqueCatalogScanKeys": 523
+    },
+    {
+      "query": "Анфилогов",
+      "path": "data/genealogy/searches/yandex-archive-anfilogov-mass-media-2026-09-13.json",
+      "positions": 105,
+      "uniqueCatalogScanKeys": 105
+    },
+    {
+      "query": "Амфилогов",
+      "path": "data/genealogy/searches/yandex-archive-amfilogov-mass-media-2026-09-13.json",
+      "positions": 8,
+      "uniqueCatalogScanKeys": 8
+    },
+    {
+      "query": "Ампилогов, fuzzy",
+      "path": "data/genealogy/searches/yandex-archive-ampilogov-mass-media-fuzzy-2026-09-10.json",
+      "positions": 953
+    },
+    {
+      "query": "Ампилов",
+      "path": "data/genealogy/searches/yandex-archive-ampilov-mass-media-2026-09-10.json",
+      "positions": 163
+    }
+  ],
+  "identityCrosscheckForAssignedPositions17To24": [
+    {
+      "ordinal": 17,
+      "name": "Дионисий Антилогов",
+      "decision": "new-distinct-profile",
+      "rejectedCandidates": [
+        {
+          "personId": "P102319",
+          "reason": "Дионисий Ампелогов документирован в Оренбургском уезде не позднее 1834 года; газетный Дионисий служил в Ярославской епархии в 1910 году."
+        }
+      ]
+    },
+    {
+      "ordinal": 18,
+      "name": "Константин Антилогов",
+      "decision": "new-distinct-profile",
+      "rejectedCandidates": [
+        {
+          "personId": "P99398",
+          "reason": "Константин Игнатьевич родился в Керчи в 1906 году и в 1910 году не мог быть псаломщиком в Новогеоргиевске."
+        }
+      ]
+    },
+    {
+      "ordinal": 19,
+      "name": "Николай Фёдорович Антилогов",
+      "decision": "new-distinct-profile",
+      "rejectedCandidates": [
+        {
+          "personId": "P5902",
+          "reason": "Николай Фёдорович Анпилогов относится к Ряжской крепости XVIII века; газетное объявление 1913 года адресовано человеку в Керчи."
+        }
+      ]
+    },
+    {
+      "ordinals": [20, 21],
+      "name": "Серёжа Антилогов из Ишимбая",
+      "decision": "one-new-profile-two-source-reprints",
+      "reason": "Обе публикации апреля 1941 года повторяют один сюжет о выигранной путёвке и прямо называют Ишимбай."
+    },
+    {
+      "ordinal": 22,
+      "name": "капитан-орденоносец Антилогов",
+      "decision": "new-identity-limited-profile",
+      "reason": "Имя и отчество в подписи не названы; совпадение звания не позволяет соединять с другими военными."
+    },
+    {
+      "ordinal": 23,
+      "name": "миномётчик М. Антилогов",
+      "decision": "new-identity-limited-profile",
+      "reason": "Известна только инициальная форма имени; самостоятельное отождествление не доказано."
+    },
+    {
+      "ordinal": 24,
+      "name": "комбайнёр Н. Антилогов",
+      "decision": "research-only-no-profile",
+      "reason": "Публикация 1970 года находится за публичной границей 1950 года."
+    }
+  ],
+  "sourceSchema": {
+    "requiredCore": [
+      "schemaVersion",
+      "sourceId",
+      "provider",
+      "recordType",
+      "collection",
+      "links.documentUrl",
+      "event",
+      "mentions",
+      "transcription",
+      "indexData",
+      "evidence",
+      "review",
+      "publicCore",
+      "isRecord"
+    ],
+    "canonicalDuplicateKey": "collection.catalogId + collection.scanNumber; fallback links.documentUrl without query parameters",
+    "evidenceRule": "Сохранять полный оригинал и читаемый целевой фрагмент в data/genealogy/evidence-private/yandex/<catalogId>/, фиксировать SHA256; OCR и индекс использовать только как подсказку.",
+    "publicCutoffRule": "До 1950 года включительно publicCore=true/isRecord=true при подтверждённой фамилии; после 1950 года publicCore=false/isRecord=false и без публичного профиля или карты."
+  },
+  "safeProcessingOrder": [
+    "Сопоставить каждую карточку с существующими sources по catalogId/scanNumber и каноническому URL.",
+    "Сохранить исходный скан и фрагмент, затем вручную прочитать целевую строку и существенный контекст.",
+    "Создать или обновить один source на самостоятельную газетную публикацию; повторные публикации одного сюжета оставить отдельными sources и связать с одним человеком.",
+    "Создавать профили только для подтверждённых носителей фамильного ряда и не объединять одноимённых людей без независимых признаков.",
+    "Проверить backlinks sourceIds, SHA256 evidence, публичную границу 1950 года и отсутствие собственных картографических событий у посторонних участников."
+  ],
+  "notes": [
+    "На момент preflight все 24 URL отсутствовали среди существующих source-файлов; это исключает прямое повторное использование источника, но не исключает совпадение личности или повтор газетного сюжета.",
+    "Рабочая директория содержит незакоммиченные результаты предыдущего запроса; аудит не менял существующие sources, people или families."
+  ]
+}

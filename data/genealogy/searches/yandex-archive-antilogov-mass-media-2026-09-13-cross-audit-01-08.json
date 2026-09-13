@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "auditId": "yandex-archive-antilogov-mass-media-2026-09-13-cross-audit-01-08",
+  "auditedAt": "2026-09-13",
+  "scope": {
+    "query": "Антилогов",
+    "index": "mass_media",
+    "positions": "1–8",
+    "count": 8,
+    "sourceBatch": "yandex-archive-antilogov-mass-media-2026-09-13-batch-01-08"
+  },
+  "status": "complete-independent-primary-scan-cross-audit",
+  "checks": {
+    "surnameReading": "8/8 visually checked against saved target fragments; all read Анпилоговъ/Анпилоговъ 2-й, not Антилоговъ",
+    "datesAndParts": "8/8 event/publication dates and referenced units or localities checked; no date or unit correction required",
+    "identityMerges": "7 identity decisions reviewed; one high-confidence merge strengthened for position 8",
+    "evidenceSha256": "24/24 files (8 originals and 16 fragments) exist and match recorded SHA-256",
+    "backlinks": "all primary and mention person links are reciprocal after correction",
+    "publicScope": "8/8 records are dated no later than 1950 and concern documented Анпилогов surname-series bearers; publicCore=true is within AGENTS.md scope"
+  },
+  "items": [
+    {
+      "position": 1,
+      "sourceId": "YA-MM-77298719-003-ANTILOGOV",
+      "personId": "P109650",
+      "verdict": "verified",
+      "keyReading": "Прапорщик Анпилоговъ из Митавского гарнизонного батальона направлен во 2-й резервный пехотный батальон; событие 1 сентября 1813 года.",
+      "identity": "Объединение с позицией 2 подтверждено точным батальоном в Риге и последовательностью чинов."
+    },
+    {
+      "position": 2,
+      "sourceId": "YA-MM-ADA4C24A-002-ANTILOGOV",
+      "personId": "P109650",
+      "verdict": "verified",
+      "keyReading": "Под рубрикой «Увольняются отъ службы»: прапорщик Анпилоговъ из бывшего 2-го резервного пехотного батальона уволен подпоручиком.",
+      "identity": "Совпадает с позицией 1; трактовка как увольнение, а не действующее производство, сохранена верно."
+    },
+    {
+      "position": 3,
+      "sourceId": "YA-MM-2C639448-002-ANTILOGOV",
+      "personId": "P109651",
+      "verdict": "verified",
+      "keyReading": "Подпоручик Анпилоговъ из Пермских батальонов военных кантонистов уволен по домашним обстоятельствам поручиком.",
+      "identity": "Связь с YA-7BD9FC00-001 подтверждена тем же редким подразделением и последовательностью службы."
+    },
+    {
+      "position": 4,
+      "sourceId": "YA-MM-2C107779-037-ANTILOGOV",
+      "personId": "P102906",
+      "verdict": "verified",
+      "keyReading": "Никита Васильевъ Анпилоговъ, однодворец деревни Черемошной Кромского уезда, участник земельного спора.",
+      "identity": "Это повторная публикация объявления YA-0E5B5EAE-069; профиль не дублирован."
+    },
+    {
+      "position": 5,
+      "sourceId": "YA-MM-6C53A383-009-ANTILOGOV",
+      "personId": "P109652",
+      "verdict": "verified",
+      "keyReading": "Анпилоговъ, состоящий по кавалерии в 9-м округе Новороссийского военного поселения, отмечен за усердную службу; скан не называет его начальником округа.",
+      "identity": "Связь с переводом 1846 года подтверждена номером округа и служебной последовательностью."
+    },
+    {
+      "position": 6,
+      "sourceId": "YA-MM-65DB9AD5-002-ANTILOGOV",
+      "personId": "P109653",
+      "verdict": "verified",
+      "keyReading": "103) Данило Анпилоговъ (Курская губерния, Фатежский уезд) — 3 рубля 92 копейки.",
+      "identity": "Три перепечатки объединены по имени, уезду и точной сумме."
+    },
+    {
+      "position": 7,
+      "sourceId": "YA-MM-A9349B0C-002-ANTILOGOV",
+      "personId": "P109654",
+      "verdict": "verified",
+      "keyReading": "Под рубрикой «Умершіе исключаются изъ списковъ»: штабс-капитан Анпилоговъ 2-й, дружина № 38 Курского ополчения.",
+      "identity": "Связь с майским списком YA-FDCB536D-002 подтверждена номером «2-й», чином и дружиной; точная дата смерти не выводится."
+    },
+    {
+      "position": 8,
+      "sourceId": "YA-MM-2AC43835-002-ANTILOGOV",
+      "personId": "P109655",
+      "verdict": "verified-with-identity-correction",
+      "keyReading": "Штабс-капитаны Анпилоговъ и Симантовский из дружины № 38 утверждены капитанами за отличие в сражении 1855 года; приказ от 3 апреля 1856 года.",
+      "identity": "Связано с Анпилоговым 1-м из YA-FDCB536D-002: совпадают дружина № 38, чин и сослуживец Симантовский; Анпилогов 2-й уже исключён умершим.",
+      "correction": "P109655 переименован в «Неустановленный Анпилогов 1-й»; добавлены взаимные ссылки с YA-FDCB536D-002, обновлены источник и batch tracker."
+    }
+  ],
+  "corrections": [
+    {
+      "position": 8,
+      "type": "identity-link",
+      "files": [
+        "data/genealogy/people/P109655-anpilogov-kursk-militia-promotion.json",
+        "data/genealogy/sources/YA-FDCB536D-002.json",
+        "data/genealogy/sources/yandex/YA-MM-2AC43835-002-ANTILOGOV.json",
+        "data/genealogy/searches/yandex-archive-antilogov-mass-media-2026-09-13-batch-01-08.json"
+      ],
+      "reason": "Exact 38th militia squad, same staff-captain rank, same adjacent Simantovsky, and independent death exclusion of Анпилогов 2-й make identification with Анпилогов 1-й high-confidence."
+    }
+  ],
+  "unresolved": [
+    "Полные имена офицеров P109650, P109651, P109652, P109654 и P109655 источниками не названы.",
+    "Точная дата смерти Анпилогова 2-го не установлена; известна только верхняя граница по публикации 14 сентября 1855 года."
+  ],
+  "validation": {
+    "directoryIndexes": "rebuilt successfully: 8550 records, 5328 people",
+    "genealogyAudit": "passed: 0 errors; 6 pre-existing unrelated warnings",
+    "typescript": "passed via local compiler ./node_modules/.bin/tsc --noEmit",
+    "diffCheck": "passed"
+  }
+}

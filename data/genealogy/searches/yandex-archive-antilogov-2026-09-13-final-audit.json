@@ -1,0 +1,927 @@
+{
+  "schemaVersion": 1,
+  "query": "Антилогов",
+  "index": "archive",
+  "auditedAt": "2026-09-13",
+  "status": "passed",
+  "scope": "936 source positions; active current source evidence and profile links, historical before snapshots excluded.",
+  "method": [
+    "Compare master capture and processed batches by exact ordinal and canonical URL.",
+    "Resolve current source files, all URL aliases, typed person links and reverse sourceIds.",
+    "Read active evidence paths and recalculate SHA256 for every distinct file; exclude history.",
+    "Inspect structured source event date years for public cutoff1950.",
+    "Original readings performed by assigned agents, supplemented by cross-agent spot-check tracker; this audit does not claim a new independent reading of every scan."
+  ],
+  "issues": [],
+  "staleTrackerEntries": [],
+  "inputs": [
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-1-10.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-101-110.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-11-20.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-111-120.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-121-130.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-131-140.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-141-150.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-151-160.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-161-170.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-171-180.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-181-190.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-191-200.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-201-210.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-21-30.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-211-220.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-221-230.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-31-40.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-41-50.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-51-60.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-61-70.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-71-80.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-81-90.json",
+    "yandex-archive-antilogov-2026-09-13-batch-early-processed-91-100.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-311-320.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-321-330.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-331-340.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-341-350.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-351-360.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-361-370.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-371-380.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-381-390.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-391-400.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-401-410.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-411-420.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-421-430.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-431-440.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-441-450.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-451-460.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-461-470.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-471-480.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-481-490.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-491-500.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-501-510.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-511-520.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-521-530.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-531-540.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-541-550.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-551-560.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-561-570.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-571-580.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-581-590.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-591-600.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-601-610.json",
+    "yandex-archive-antilogov-2026-09-13-batch-names-processed-611-620.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-231-240.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-241-250.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-251-260.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-261-270.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-271-280.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-281-290.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-291-300.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-earlytail-processed-301-310.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-621-630.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-631-640.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-641-650.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-651-660.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-661-670.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-671-680.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-681-690.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-691-700.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-701-710.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-711-720.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-721-730.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-731-740.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-741-750.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-751-760.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-761-770.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-771-780.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-781-790.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-791-800.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-801-810.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-811-820.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-821-830.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-831-840.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-841-850.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-851-860.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-861-870.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-871-880.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-881-890.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-891-900.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-901-910.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-911-920.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-921-930.json",
+    "yandex-archive-antilogov-2026-09-13-batch-page2-processed-931-936.json"
+  ],
+  "totals": {
+    "capturedPositions": 936,
+    "processedPositions": 936,
+    "uniqueCanonicalUrls": 883,
+    "duplicatePositions": 53,
+    "duplicateGroups": 53,
+    "sourceBindings": 893,
+    "publicSources": 807,
+    "researchOnlySources": 86,
+    "linkedProfiles": 687,
+    "evidenceFiles": 2742,
+    "issues": 0,
+    "staleTrackerEntries": 0,
+    "uniqueSourceFiles": 893,
+    "newSources": 756,
+    "reusedSources": 137,
+    "newCanonicalScanSources": 756,
+    "reusedCanonicalScanSources": 127,
+    "newProfiles": 310,
+    "survivingNewProfiles": 305,
+    "newProfilesMergedIntoExisting": 5,
+    "relatedSourceFiles": 79,
+    "relatedEvidenceFiles": 190,
+    "uniqueEvidenceFilesIncludingDirectRelated": 2888,
+    "unresolvedIdentityDecisionSources": 167,
+    "publicCanonicalScans": 797,
+    "researchOnlyCanonicalScans": 86,
+    "publicPositions": 847,
+    "researchOnlyPositions": 89,
+    "classifiedSharedPrimaryUrlGroups": 10,
+    "multipleActBoundCanonicalUrls": 9,
+    "explicitSourceReviewUnresolvedSources": 13
+  },
+  "provenanceMethod": "New/reused source files are classified once per sourceId from the first processed position, using sourceReused/reused and status. One canonical scan may retain several pre-existing event sources. New-profile counts are allocated IDs: early38/surviving37, names92/92, page2-main153/149, page2-earlytail27/27.",
+  "newProfileAllocation": {
+    "early": {
+      "created": 38,
+      "surviving": 37,
+      "range": "P108701–P108738",
+      "merged": [
+        "P108715"
+      ]
+    },
+    "names": {
+      "created": 92,
+      "surviving": 92,
+      "range": "P109000–P109091"
+    },
+    "page2Main": {
+      "created": 153,
+      "surviving": 149,
+      "range": "P109300–P109452",
+      "merged": [
+        "P109302",
+        "P109342",
+        "P109351",
+        "P109419"
+      ]
+    },
+    "page2EarlyTail": {
+      "created": 27,
+      "surviving": 27,
+      "range": "P109600–P109626"
+    }
+  },
+  "duplicateCanonicalUrls": [
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/94",
+      "ordinals": [
+        50,
+        52
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/d579ca98-5125-40ea-82cd-2badc81a9fc0/208",
+      "ordinals": [
+        159,
+        164
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/0f28f482-5525-49ad-9af1-e4711fd528dd/173",
+      "ordinals": [
+        160,
+        163
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7d36bed5-6ffc-4c96-a272-6dfe1c032523/55",
+      "ordinals": [
+        250,
+        251
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/f5893617-9c3f-459b-97e7-57766b3e8d26/333",
+      "ordinals": [
+        290,
+        292
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/364",
+      "ordinals": [
+        308,
+        311
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/111",
+      "ordinals": [
+        310,
+        312
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/c57c05a4-4640-49d2-b7e4-4f1a16848b98/236",
+      "ordinals": [
+        320,
+        321
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/58143681-293b-4b3e-b431-dc5a5df5179c/102",
+      "ordinals": [
+        327,
+        332
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/f9ab859f-2ce9-43a7-bb03-eebad1e9cafa/210",
+      "ordinals": [
+        328,
+        333
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/39f61d1e-c92a-4e44-b34b-584f9a39d63d/35",
+      "ordinals": [
+        339,
+        347
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/65589d0c-3524-427f-b3db-123560d01f25/47",
+      "ordinals": [
+        350,
+        354
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/2be6f3a1-ebbc-4ce3-8f93-6bea3fd5edf0/11",
+      "ordinals": [
+        358,
+        361
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/062011ae-0a6e-4258-86bc-1b3530b7ef2a/36",
+      "ordinals": [
+        360,
+        362
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7dee1b2f-bf75-4c60-bad2-2757dd9662bd/362",
+      "ordinals": [
+        375,
+        381
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/cf02e10f-c9e3-48c5-bda4-ef57fd1cb7b8/9",
+      "ordinals": [
+        396,
+        401
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/61",
+      "ordinals": [
+        419,
+        422
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/d132049d-d622-4aa7-bcd1-dcd63e3f7a7c/85",
+      "ordinals": [
+        420,
+        421
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/daa2e7c3-94ca-4be8-91e6-b0923d1d8d5d/86",
+      "ordinals": [
+        430,
+        431
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/f47e8d74-3ce6-4186-8703-eeefc83b899e/73",
+      "ordinals": [
+        439,
+        442
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/5735f66a-84cc-4f03-b063-5f849be58130/316",
+      "ordinals": [
+        450,
+        452
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/a8dc0163-373d-40f2-a9dc-ac3052ea6fe9/163",
+      "ordinals": [
+        460,
+        463
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/c966e477-2610-44ab-9ee1-7dce81264261/157",
+      "ordinals": [
+        468,
+        471
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/9a70323f-9e29-4932-8cfa-8d5f450ea369/119",
+      "ordinals": [
+        480,
+        484
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7818f833-5654-40a7-a2eb-9d2431756d3e/46",
+      "ordinals": [
+        509,
+        511
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/e38c8f53-ab3e-4b7f-be73-00b74d484915/264",
+      "ordinals": [
+        519,
+        522
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/091e98a8-aace-48f5-8f6f-59270ca1264c/378",
+      "ordinals": [
+        520,
+        521
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/1b39a6cf-48f8-4289-9392-11783755c576/389",
+      "ordinals": [
+        559,
+        562
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/cc7aa759-2830-4410-af37-632f220b628a/166",
+      "ordinals": [
+        568,
+        571
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/0c18b647-93a7-458d-8ca7-f177e41f075e/324",
+      "ordinals": [
+        570,
+        572
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/4cfbddd5-6ebb-43f3-ab4b-796c9b6a3dcc/59",
+      "ordinals": [
+        589,
+        591
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/fab8b91d-4926-40b1-8185-0d8f6f26097f/63",
+      "ordinals": [
+        600,
+        601
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/22d4da1e-20ce-46ae-a75b-f94e24bc4cca/197",
+      "ordinals": [
+        610,
+        613
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/08141cd0-0881-43b8-a65e-e99b9c3c861a/256",
+      "ordinals": [
+        630,
+        631
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/d6508fd8-0b13-4380-868d-f915897f221c/132",
+      "ordinals": [
+        636,
+        644
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/d6508fd8-0b13-4380-868d-f915897f221c/116",
+      "ordinals": [
+        637,
+        647
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/7809ccfd-5078-4f65-b8e6-ab2ec3dbd089/33",
+      "ordinals": [
+        648,
+        651
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/b799f230-f104-40e4-b260-fbb17506fe01/155",
+      "ordinals": [
+        679,
+        682
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/ee41bf4d-2e2f-4fc8-8774-7dd098fa467b/331",
+      "ordinals": [
+        680,
+        685
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/03bf7a3d-7098-4998-9d5d-e90eeb02e3cd/177",
+      "ordinals": [
+        689,
+        692
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/5f39ec15-6452-4beb-8055-48de1a7756f1/49",
+      "ordinals": [
+        710,
+        714
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/472ac94f-cca4-4d38-a557-72143c0e380c/163",
+      "ordinals": [
+        728,
+        732
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/e1d0f094-3456-472f-8600-22ea661ef047/35",
+      "ordinals": [
+        729,
+        731
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/8b57bc68-e6b4-47aa-a41b-d6e6ed80d8a8/326",
+      "ordinals": [
+        738,
+        741
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/221b3014-6d7b-48e3-a07d-5c707597944b/5",
+      "ordinals": [
+        759,
+        761
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/a5cf7888-34f2-4517-8a5d-185a5b04c2d3/399",
+      "ordinals": [
+        770,
+        771
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/3dfa5d12-6c75-414e-bdd9-4665547f579f/163",
+      "ordinals": [
+        780,
+        782
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/c5323096-e53b-4fd1-8d57-56cadbb5bf68/90",
+      "ordinals": [
+        796,
+        802
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/6420f60e-f179-45cc-b668-1508964e1d2e/42",
+      "ordinals": [
+        797,
+        801
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/349916e9-1557-4ee4-bdf9-e5b10c2ef61c/69",
+      "ordinals": [
+        810,
+        811
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/5031e754-0c90-4376-8ca1-597dadb4f1f5/26",
+      "ordinals": [
+        839,
+        841
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/203fa90b-58c6-417a-a4e8-051deedd5a56/35",
+      "ordinals": [
+        888,
+        891
+      ]
+    },
+    {
+      "canonicalUrl": "https://yandex.ru/archive/catalog/b30845ea-e9d5-4fe8-9118-768ab9b034b2/320",
+      "ordinals": [
+        900,
+        901
+      ]
+    }
+  ],
+  "checks": {
+    "coverage": {
+      "status": "passed",
+      "errors": 0
+    },
+    "canonicalUrls": {
+      "status": "passed",
+      "errors": 0
+    },
+    "duplicateBindings": {
+      "status": "passed",
+      "errors": 0
+    },
+    "sourceExistence": {
+      "status": "passed",
+      "errors": 0
+    },
+    "profileExistence": {
+      "status": "passed",
+      "errors": 0
+    },
+    "sourceProfileBacklinks": {
+      "status": "passed",
+      "errors": 0
+    },
+    "staleTypedPersonIds": {
+      "status": "passed",
+      "errors": 0
+    },
+    "trackerPersonIds": {
+      "status": "passed",
+      "errors": 0
+    },
+    "publicCutoff1950": {
+      "status": "passed",
+      "errors": 0
+    },
+    "evidenceExistence": {
+      "status": "passed",
+      "errors": 0
+    },
+    "evidenceSha256": {
+      "status": "passed",
+      "errors": 0
+    },
+    "canonicalActDeduplication": {
+      "status": "passed",
+      "errors": 0
+    },
+    "deletedSourceReferences": {
+      "status": "passed",
+      "errors": 0
+    }
+  },
+  "relatedEvidenceCheck": {
+    "status": "passed",
+    "issues": [],
+    "sourceIds": [
+      "YA-0302EEDC-174-ANTILOGOV-REVIEW",
+      "YA-03BF7A3D-179",
+      "YA-0BE28104-175",
+      "YA-122572AE-302",
+      "YA-2316EC0C-005",
+      "YA-2FC416B3-59",
+      "YA-35239CE1-139",
+      "YA-5031E754-023-IVAN-MARRIAGE",
+      "YA-83E78303-70",
+      "YA-88608AEB-358",
+      "YA-894CBE16-139",
+      "YA-8B496DD7-71",
+      "YA-90DBF5AD-91",
+      "YA-9395CC9A-114",
+      "YA-A31DE8DA-31-M93",
+      "YA-A31DE8DA-87-F240",
+      "YA-AE9789B2-62",
+      "YA-B5BE6624-100",
+      "YA-BD240D38-112",
+      "YA-C966E477-156",
+      "YA-F1F5CE60-108",
+      "YA-FAA9DD26-022",
+      "YA-FBE7700C-683-NIKOLAY-SERVICE",
+      "YA-GAAO-730-4-52-14-NIKOLAY",
+      "YA-GAK-60-6-248-169-TIT",
+      "YA-GAK-R1239-1-435-331-332-KONSTANTIN-DEATH",
+      "YA-GAKU-60-1-689-181-ANNA",
+      "YA-NARKHAKASII-I29-1-150-113-ANNA",
+      "YA-OGAOO-173-11-1284-139-GAVRIIL",
+      "YA-OGAOO-173-11-1284-287-EMELYAN",
+      "YA-OGAOO-173-11-1328-129-EGOR",
+      "YA-OGAOO-173-11-1328-129-NAZAR",
+      "YA-OGAOO-173-11-1369-208-AGAFON",
+      "YA-OGAOO-173-11-1369-208-ALEKSANDR",
+      "YA-OGAOO-173-11-1369-208-NIKITA",
+      "YA-OGAOO-173-11-1369-208-YAKOV",
+      "YA-OGAOO-173-11-1480-274-GRIGORY",
+      "YA-OGAOO-173-11-1569-49-KSENIA-GAVRIIL",
+      "YA-OGAOO-173-11-1569-78-SERGEY",
+      "YA-OGAOO-173-11-1569-78-STEPANIDA",
+      "YA-OGAOO-173-11-1569-78-TIMOFEY",
+      "YA-OGAOO-173-11-1569-78-VARVARA",
+      "YA-OGAOO-173-11-1926-77-MIKHAIL",
+      "YA-OGAOO-173-11-2064-245-DENIS",
+      "YA-OGAOO-173-12-1110-342-SEMEN",
+      "YA-OGAOO-173-12-415-196-GRIGORY",
+      "YA-OGAOO-173-12-743-204-YAKOV",
+      "YA-OGAOO-173-12-844-82-NIKOLAY-CORRECTION",
+      "YA-OGAOO-173-12-847-24-ROMAN",
+      "YA-OGAOO-173-12-914-69-AVDIY",
+      "YA-OGAOO-173-16-1055-247-STEPAN",
+      "YA-OGAOO-173-16-1074-92-ARSENIY",
+      "YA-OGAOO-173-16-1156-197-MELANIA",
+      "YA-OGAOO-173-16-1181-76-SEMEN",
+      "YA-OGAOO-173-16-1217-303-PAVEL",
+      "YA-OGAOO-173-16-1221-29-EGOR",
+      "YA-OGAOO-173-16-1226-211-DANIIL",
+      "YA-OGAOO-173-16-1870-302-STEFAN",
+      "YA-OGAOO-173-16-1876-31-PARASKEVA",
+      "YA-OGAOO-173-16-1932-284-NIKOLAY",
+      "YA-OGAOO-173-16-372-77-FEDOR",
+      "YA-OGAOO-173-16-403-11-IOANN",
+      "YA-OGAOO-173-16-42-35-LAZAR",
+      "YA-OGAOO-173-16-47-147-POTAP",
+      "YA-OGAOO-173-16-881-148-IVAN",
+      "YA-OGAOO-173-17-119-104-VASILIY-DEATH",
+      "YA-OGAOO-173-17-77-143-TAISIYA",
+      "YA-OGAOO-173-18-15-104-PAVEL",
+      "YA-OGAOO-173-18-26-143-PAVEL",
+      "YA-OGAOO-173-18-48-88-ARTEMIY",
+      "YA-OGAOO-173-18-59-28-NIKOLAY",
+      "YA-OGAOO-173-18-7-52-SEMEN",
+      "YA-OGAOO-389-1-996-101-DIMITRIY",
+      "YA-OGAOO-389-3-51-108-EVGENIY",
+      "YA-OGAOO-8353-1-3-4-PETR-VLADIMIROVICH",
+      "YA-OGAOO-8353-1-3-5-PAVEL-TIMOFEYEVICH",
+      "YA-OGAOO-8353-4-60-6-MIKHAIL-GRIGORIEVICH",
+      "YA-OGAOO-8353-4-60-7-VASILIY-SEMENOVICH",
+      "YA-OGAOO-8381-1-91-426-ALEKSANDR-STEPAN"
+    ],
+    "backlinkErrors": []
+  },
+  "unresolvedIdentityDecisionsFile": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-unresolved-identity-decisions.json",
+  "baselineWarnings": {
+    "count": 6,
+    "code": "missing-source-backlink",
+    "sourceIds": [
+      "YA-F4BFF9CA-21",
+      "YA-F4BFF9CA-23",
+      "YA-F4BFF9CA-26",
+      "YA-F4BFF9CA-64"
+    ],
+    "explanation": "Six pre-existing missing-source-backlink warnings in four legacy sources outside this task; full genealogy:audit reports0errors. These remain listed separately from the passed current-source checks."
+  },
+  "actualProfileAllocationCheck": {
+    "status": "passed",
+    "createdIdsCount": 310,
+    "survivingFilesCount": 305,
+    "removedAllocatedIds": [
+      "P108715",
+      "P109302",
+      "P109342",
+      "P109351",
+      "P109419"
+    ],
+    "basis": "All allocated ranges checked against actual current people JSON files; removed IDs documented as merged."
+  },
+  "supplementarySourceScope": "Direct relatedSourceIds, explicit supplementary sources, and retained research aggregate sources from canonicalization; historical before snapshots and arbitrary profile sourceIds excluded.",
+  "snapshotFingerprint": {
+    "processedTrackersSha256": "1fdfacbcfbf51c161f457c2c9fdb421f6c3788857052bf0c0c39679826a0b98f",
+    "sourceFilesSha256": "7dddc0ea1c674104b852f39e3dbd5a21df4ad875af6d526d558c17c1a26adc3c",
+    "linkedProfileFilesSha256": "a85b93009cbe535b11cfae10bd0366a4ac3e9e2b10f9a1270fcaad9f3c145724",
+    "unresolvedArtifactSha256": "039a4f879fa370e6402e0c87f9da6c9d2453cd6f2c5d8ae512a88ceeec2cac18",
+    "masterArtifactSha256": "4cf2b610e1cf1aa5b77f08dfa9a7b75042eba7a32cabfabf223924062eb05d00"
+  },
+  "masterPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13.json",
+  "canonicalActDeduplicationCheck": {
+    "status": "passed",
+    "inputGroups": 17,
+    "sameActSourceFilesRemoved": 19,
+    "distinctActBindingsPreserved": 27,
+    "remainingSharedPrimaryUrlGroups": 10,
+    "multipleActBoundCanonicalUrls": 9,
+    "note": "Nine URLs bind multiple distinct public acts. The tenth shared storage URL retains only a research-only raw OCR duplicate beside its single public act. Two of the nine multi-act URLs additionally retain unlinked research-only aggregate sources.",
+    "groups": [
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/195",
+        "classification": "distinct-acts-same-scan",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-18-13-195-AVDEY",
+          "YA-OGAOO-173-18-13-195-ULYAN"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Брак №15, 9 января 1881: Кузьмин и Пашкова; Авдей — поручитель.",
+          "Брак №17, 11 января 1881: Архипов и Иванова; Ульян — поручитель."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
+        "classification": "aggregate-plus-distinct-acts",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
+          "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN"
+        ],
+        "retainedResearchSourceIds": [
+          "YA-0302EEDC-174-ANTILOGOV-REVIEW"
+        ],
+        "actSummaries": [
+          "Брак №43, 6 февраля 1881: Василий Игнатьев Мисюрин 19, Ольга Алексеева Ибряева 20.",
+          "Брак №44, 6 февраля 1881: Николай Иванов Чурсин 58, Параскева Семенова Некрасова 58."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/124",
+        "classification": "mixed-duplicates-and-distinct-acts",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-11-1575-124-STEPANIDA",
+          "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Рождение Степаниды №67, 7/8 ноября 1843; Тимофей — отец, Максим — восприемник.",
+          "Рождение Екатерины №69, 10/12 ноября 1843; Яков — отец, Тимофей — восприемник."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/61059979-e22a-48d3-a764-35c8fb371140/202",
+        "classification": "distinct-acts-same-scan",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-18-13-202-AVDEY-MISYURIN",
+          "YA-OGAOO-173-18-13-202-AVDEY-CHURSIN",
+          "YA-OGAOO-173-18-13-202-AVDEY-SOROKIN"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Брак №43, 6 февраля 1881; параллель 0302eedc/174 №43.",
+          "Брак №44, 6 февраля 1881; параллель 0302eedc/174 №44.",
+          "Брак №45, 6 февраля 1881; Дмитрий Лукьянов Сорокин и Ирина Евстафьева Васильева."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/131",
+        "classification": "mixed-duplicates-and-distinct-acts",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-11-1680-131-KIRILL",
+          "YA-OGAOO-173-11-1680-131-IRINA"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Смерть Кирилла №61 муж., 18/19 ноября 1846, 5 месяцев; отец Афанасий Петров.",
+          "Смерть Ирины Филипповой №41 жен., 17/19 ноября 1846, 48 лет; жена Ивана Данилова."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/4b658afe-8981-4b46-9e08-f32465fc3e01/119",
+        "classification": "distinct-acts-same-scan",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-12-621-119-MATRENA-YOUNGER",
+          "YA-OGAOO-173-12-621-119-MATRENA-OLDER"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Смерть Матрёны №30, 8/11 августа 1866, 1½ года.",
+          "Смерть Матрёны №32, 12/15 августа 1866, 14½ лет. Обе дочери Фёдора Тимофеева, но две даты и два возраста; не сливать детей."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/102",
+        "classification": "mixed-duplicates-and-distinct-acts",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-11-1680-102-NIKOLAY",
+          "YA-OGAOO-173-11-1680-102-STEPANIDA"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Рождение Николая №130 муж., 1/1 декабря 1846; Сергей — отец, Емельян — восприемник.",
+          "Рождение Анны Нелюбовой №100 жен., 7/8 декабря 1846; Степанида Сидорова — восприемница отдельного акта."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/127",
+        "classification": "distinct-acts-same-scan",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-16-1213-127-GEORGIY",
+          "YA-B5EE33B3-127-ANTILOGOV-REVIEW"
+        ],
+        "retainedResearchSourceIds": [],
+        "actSummaries": [
+          "Брак №52, 11 февраля 1881: Евдоким Григорьев Матыцын и Ирина Степанова Щербакова; Георгий Иулианов — поручитель.",
+          "Брак №54, 11 февраля 1881: Василий Ефимов Антилогов и Пелагея Прокопьева Вырыпаева."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/8b496dd7-169a-4af4-9a3a-806bb6aafe75/71",
+        "classification": "aggregate-plus-distinct-acts",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-16-82-71-FILIPP",
+          "YA-OGAOO-173-16-82-71-PARFEN"
+        ],
+        "retainedResearchSourceIds": [
+          "YA-8B496DD7-71"
+        ],
+        "actSummaries": [
+          "Брак №36, 4 апреля 1871: Филипп Афанасьев и Матрёна Алексеева Калужина.",
+          "Брак №37, 4 апреля 1871: Филипп Никифоров Баловнев и Марина Иванова Сотникова; Парфен — поручитель."
+        ]
+      },
+      {
+        "canonicalUrl": "https://yandex.ru/archive/catalog/bd240d38-9def-4c97-a532-0904fe5d6b5d/112",
+        "classification": "raw-ocr-duplicate",
+        "activeActSourceIds": [
+          "YA-OGAOO-173-18-23-112-IVAN"
+        ],
+        "retainedResearchSourceIds": [
+          "YA-BD240D38-112"
+        ],
+        "actSummaries": [
+          "Брак №75, 27 августа 1886: Иван Ульянов и Фёкла Степанова. Краткий YA-BD240D38-112 — старый поисковый OCR того же скана, не самостоятельный акт."
+        ]
+      }
+    ],
+    "activeDeletedSourceReferences": 0,
+    "classificationTracker": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-page2-independent-canonical-groups-17.json",
+    "correctionTracker": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-canonical-groups-17-correction.json"
+  },
+  "validationCommands": {
+    "genealogyAudit": {
+      "errors": 0,
+      "warnings": 6,
+      "warningScope": "pre-existing outside-current-source-baseline"
+    },
+    "gitDiffCheck": {
+      "exitCode": 0
+    },
+    "productionBuild": "not run; data-only task",
+    "typescript": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0
+    },
+    "directoryIndexes": {
+      "command": "node scripts/genealogy/build-directory-indexes.mjs",
+      "exitCode": 0,
+      "counts": {
+        "records": 8527,
+        "people": 5312,
+        "sourcePaths": 13776,
+        "personPaths": 5811,
+        "mapPlaces": 250,
+        "registry": 112
+      }
+    },
+    "evidenceStore": {
+      "command": "node --env-file-if-exists=.env.local scripts/genealogy/upload-evidence-files.mjs --verify",
+      "uploadedFiles": 224,
+      "finalToUpload": 0,
+      "finalChanged": 0,
+      "status": "passed"
+    },
+    "browserSmoke": {
+      "baseUrl": "http://localhost:4323",
+      "profile": {
+        "path": "/people/P108733",
+        "status": 200
+      },
+      "publicRecord": {
+        "path": "/records/YA-61189EE9-028-ANTILOGOV-REVIEW",
+        "status": 200
+      },
+      "researchOnlyRecord": {
+        "path": "/records/YA-D34BBB35-437-ANTILOGOV-REVIEW",
+        "status": 404
+      },
+      "contentAndBacklinks": "passed",
+      "report": "output/playwright/genealogy-smoke-results.json",
+      "status": "passed"
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "query": "Антилогов",
   "index": "archive",
   "searchDate": "2026-09-13",
-  "status": "complete-locally-audited",
+  "status": "complete-stable-after-independent-review",
   "assignedCoverage": {
     "from": 1,
     "to": 230
@@ -14,27 +14,27 @@
     "positions": 230,
     "uniqueCanonicalUrls": 227,
     "duplicatePositions": 3,
-    "newSources": 198,
-    "reusedSources": 59,
+    "newSources": 197,
+    "reusedSources": 58,
     "publicPositions": 187,
     "researchOnlyPositions": 43,
     "supplementaryExistingSourcesWithRestoredOrVerifiedEvidence": 40,
     "newProfilesCreated": 38,
     "survivingNewProfiles": 37,
     "newProfilesMergedIntoExisting": 1,
-    "directLinkedProfiles": 201,
-    "uniqueEvidenceFilesDirect": 656,
-    "uniqueEvidenceFilesIncludingSupplementary": 723,
+    "directLinkedProfiles": 199,
+    "uniqueEvidenceFilesDirect": 657,
+    "uniqueEvidenceFilesIncludingSupplementary": 724,
     "missingBacklinks": 0,
     "errors": 0,
     "batchReferencedUniqueSources": 255,
     "batchReferencedPublicSources": 212,
     "batchReferencedResearchOnlySources": 43,
-    "batchReferencedReusedSources": 57,
-    "canonicalUniqueSources": 257,
-    "canonicalPublicSources": 213,
+    "batchReferencedReusedSources": 58,
+    "canonicalUniqueSources": 255,
+    "canonicalPublicSources": 211,
     "canonicalResearchOnlySources": 44,
-    "associatedSourcesOutsideCapturedUrls": 38,
+    "associatedSourcesOutsideCapturedUrls": 40,
     "allVerifiedUniqueSources": 295
   },
   "countingNotes": [
@@ -43,7 +43,7 @@
     "Дополнительные источники учитываются отдельно от 230 карточек: независимые копии и связанные акты с восстановленным либо повторно проверенным изображением.",
     "P108700 не использован; P108701–P108738 созданы в этой выдаче. P108715 объединён в P91187.",
     "Некоторые существующие профили супругов иных фамилий сохраняются как прежние данные; новые профили для чужих фамилий не создавались.",
-    "Точный подсчёт по canonical URL: 257 источников на 227 URL (198 новых, 59 прежних), включая оставленные непубличными raw-OCR дубли; 38 связанных источников относятся к иным URL. В sourceIds ранних batches встречаются параллельные копии, поэтому batchReferencedUniqueSources=255 — отдельная техническая мера, не число карточек или canonical-источников."
+    "Canonical определяется только первичной ссылкой documentUrl/scan, без relatedOriginalEntry/precedingScan. В проверенном наборе255canonical-источников:197новых+58прежних;40дополнительныхисточниковдругихURL. После независимого аудита /33c2b2ad/159 короткийновыйsource заменён legacyисточником."
   ],
   "duplicates": [
     {
@@ -1516,13 +1516,11 @@
       "ordinal": 20,
       "canonicalUrl": "https://yandex.ru/archive/catalog/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/25",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1365-25-EGOR",
+      "sourceId": "YA-OGAOO-173-11-1365-25-SEMEN",
       "sourceIds": [
-        "YA-OGAOO-173-11-1365-25-EGOR",
         "YA-OGAOO-173-11-1365-25-SEMEN"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-25-EGOR.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-25-SEMEN.json"
       ],
       "publicCore": true,
@@ -1561,21 +1559,12 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1365-25-EGOR",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2036",
-            "P2028"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1365-25-SEMEN",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2036",
-            "P2028"
+            "P2028",
+            "P2036"
           ]
         }
       ],
@@ -1585,13 +1574,11 @@
       "ordinal": 21,
       "canonicalUrl": "https://yandex.ru/archive/catalog/251ae823-7ff5-4759-ab91-cb39f8d47020/182",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1369-182-SEMEN",
+      "sourceId": "YA-OGAOO-173-11-1369-182-AGAFON",
       "sourceIds": [
-        "YA-OGAOO-173-11-1369-182-SEMEN",
         "YA-OGAOO-173-11-1369-182-AGAFON"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1369-182-SEMEN.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1369-182-AGAFON.json"
       ],
       "publicCore": true,
@@ -1631,23 +1618,13 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1369-182-SEMEN",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P4222",
-            "P90003",
-            "P2036"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1369-182-AGAFON",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
+            "P2036",
             "P4222",
-            "P90003",
-            "P2036"
+            "P90003"
           ]
         }
       ],
@@ -1657,18 +1634,12 @@
       "ordinal": 22,
       "canonicalUrl": "https://yandex.ru/archive/catalog/2fc416b3-120e-4a85-a26c-b3ea4e9a70c5/26",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1365-26-ALEKSANDR",
+      "sourceId": "YA-OGAOO-173-11-1365-26-YAKOV",
       "sourceIds": [
-        "YA-OGAOO-173-11-1365-26-ALEKSANDR",
-        "YA-OGAOO-173-11-1365-26-YAKOV",
-        "YA-OGAOO-173-11-1365-26-NIKITA",
-        "YA-OGAOO-173-11-1365-26-AGAFON"
+        "YA-OGAOO-173-11-1365-26-YAKOV"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-26-ALEKSANDR.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-26-YAKOV.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-26-NIKITA.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-26-AGAFON.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-11-1365-26-YAKOV.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -1708,47 +1679,14 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1365-26-ALEKSANDR",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2026",
-            "P90085",
-            "P2027",
-            "P90003"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1365-26-YAKOV",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
             "P2026",
-            "P90085",
             "P2027",
-            "P90003"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1365-26-NIKITA",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2026",
-            "P90085",
-            "P2027",
-            "P90003"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1365-26-AGAFON",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2026",
-            "P90085",
-            "P2027",
-            "P90003"
+            "P90003",
+            "P90085"
           ]
         }
       ],
@@ -2815,13 +2753,11 @@
       "ordinal": 40,
       "canonicalUrl": "https://yandex.ru/archive/catalog/374d6679-a832-41ea-a90e-59df264a03dc/289",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1479-289-ALEKSANDR",
+      "sourceId": "YA-OGAOO-173-11-1479-289-EMELYAN",
       "sourceIds": [
-        "YA-OGAOO-173-11-1479-289-ALEKSANDR",
         "YA-OGAOO-173-11-1479-289-EMELYAN"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1479-289-ALEKSANDR.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1479-289-EMELYAN.json"
       ],
       "publicCore": true,
@@ -2859,15 +2795,6 @@
       ],
       "sourceReused": true,
       "sourceSummaries": [
-        {
-          "sourceId": "YA-OGAOO-173-11-1479-289-ALEKSANDR",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2017",
-            "P2031"
-          ]
-        },
         {
           "sourceId": "YA-OGAOO-173-11-1479-289-EMELYAN",
           "publicCore": true,
@@ -3005,17 +2932,11 @@
       "ordinal": 43,
       "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/126",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1575-126-SERGEY",
+      "sourceId": "YA-OGAOO-173-11-1575-126-VARVARA",
       "sourceIds": [
-        "YA-OGAOO-173-11-1575-126-SERGEY",
-        "YA-OGAOO-173-11-1575-126-TIMOFEY",
-        "YA-OGAOO-173-11-1575-126-STEPANIDA",
         "YA-OGAOO-173-11-1575-126-VARVARA"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-126-SERGEY.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-126-TIMOFEY.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-126-STEPANIDA.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-126-VARVARA.json"
       ],
       "publicCore": true,
@@ -3056,47 +2977,14 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1575-126-SERGEY",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2058",
-            "P2037",
-            "P2034",
-            "P2048"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1575-126-TIMOFEY",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2058",
-            "P2037",
-            "P2034",
-            "P2048"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1575-126-STEPANIDA",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2058",
-            "P2037",
-            "P2034",
-            "P2048"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1575-126-VARVARA",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2058",
-            "P2037",
             "P2034",
-            "P2048"
+            "P2037",
+            "P2048",
+            "P2058"
           ]
         }
       ],
@@ -3171,16 +3059,12 @@
       "ordinal": 45,
       "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/124",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1575-124-MAKSIM",
+      "sourceId": "YA-OGAOO-173-11-1575-124-STEPANIDA",
       "sourceIds": [
-        "YA-OGAOO-173-11-1575-124-MAKSIM",
-        "YA-OGAOO-173-11-1575-124-TIMOFEY",
         "YA-OGAOO-173-11-1575-124-STEPANIDA",
         "YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-124-MAKSIM.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-124-TIMOFEY.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-124-STEPANIDA.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-124-EKATERINA-YAKOV.json"
       ],
@@ -3223,39 +3107,13 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1575-124-MAKSIM",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2059",
-            "P2034",
-            "P90005",
-            "P98001",
-            "P2026"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1575-124-TIMOFEY",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2059",
-            "P2034",
-            "P90005",
-            "P98001",
-            "P2026"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1575-124-STEPANIDA",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2059",
             "P2034",
-            "P90005",
-            "P98001",
-            "P2026"
+            "P2059",
+            "P90005"
           ]
         },
         {
@@ -3263,11 +3121,9 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2059",
+            "P2026",
             "P2034",
-            "P90005",
-            "P98001",
-            "P2026"
+            "P98001"
           ]
         }
       ],
@@ -3277,15 +3133,11 @@
       "ordinal": 46,
       "canonicalUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/133",
       "status": "reused-upgraded",
-      "sourceId": "YA-OGAOO-173-11-1575-133-NIKITA",
+      "sourceId": "YA-OGAOO-173-11-1575-133-GRIGORY",
       "sourceIds": [
-        "YA-OGAOO-173-11-1575-133-NIKITA",
-        "YA-OGAOO-173-11-1575-133-ALEKSANDR",
         "YA-OGAOO-173-11-1575-133-GRIGORY"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-133-NIKITA.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-133-ALEKSANDR.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1575-133-GRIGORY.json"
       ],
       "publicCore": true,
@@ -3325,33 +3177,13 @@
       "sourceReused": true,
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1575-133-NIKITA",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P90008",
-            "P90085",
-            "P2031"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1575-133-ALEKSANDR",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P90008",
-            "P90085",
-            "P2031"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1575-133-GRIGORY",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
+            "P2031",
             "P90008",
-            "P90085",
-            "P2031"
+            "P90085"
           ]
         }
       ],
@@ -3480,14 +3312,10 @@
       "status": "reused-upgraded",
       "sourceId": "YA-OGAOO-173-11-1680-65-DARIA",
       "sourceIds": [
-        "YA-OGAOO-173-11-1680-65-DARIA",
-        "YA-OGAOO-173-11-1680-65-IVAN",
-        "YA-OGAOO-173-11-1680-65-GAVRIIL"
+        "YA-OGAOO-173-11-1680-65-DARIA"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-65-DARIA.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-65-IVAN.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-65-GAVRIIL.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-65-DARIA.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -3531,28 +3359,8 @@
           "isRecord": true,
           "personIds": [
             "P2076",
-            "P90007",
-            "P90001"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1680-65-IVAN",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2076",
-            "P90007",
-            "P90001"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1680-65-GAVRIIL",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2076",
-            "P90007",
-            "P90001"
+            "P90001",
+            "P90007"
           ]
         }
       ],
@@ -3621,19 +3429,15 @@
     {
       "ordinal": 51,
       "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/131",
-      "status": "reused-verified",
-      "sourceId": "YA-OGAOO-173-11-1680-131-IVAN",
+      "status": "reused-upgraded",
+      "sourceId": "YA-OGAOO-173-11-1680-131-KIRILL",
       "sourceIds": [
-        "YA-OGAOO-173-11-1680-131-IVAN",
-        "YA-OGAOO-173-11-1680-131-IRINA",
         "YA-OGAOO-173-11-1680-131-KIRILL",
-        "YA-OGAOO-173-11-1680-131-AFANASIY"
+        "YA-OGAOO-173-11-1680-131-IRINA"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-131-IVAN.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-131-IRINA.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-131-KIRILL.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-131-AFANASIY.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-131-IRINA.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -3671,14 +3475,12 @@
       ],
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1680-131-IVAN",
+          "sourceId": "YA-OGAOO-173-11-1680-131-KIRILL",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2078",
             "P2077",
-            "P2083",
-            "P90088"
+            "P2078"
           ]
         },
         {
@@ -3686,30 +3488,6 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2078",
-            "P2077",
-            "P2083",
-            "P90088"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1680-131-KIRILL",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2078",
-            "P2077",
-            "P2083",
-            "P90088"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1680-131-AFANASIY",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2078",
-            "P2077",
             "P2083",
             "P90088"
           ]
@@ -3782,19 +3560,15 @@
     {
       "ordinal": 53,
       "canonicalUrl": "https://yandex.ru/archive/catalog/7237112d-ed8d-4194-8a5a-de57cbffdc00/102",
-      "status": "reused-verified",
-      "sourceId": "YA-OGAOO-173-11-1680-102-EMELYAN",
+      "status": "reused-upgraded",
+      "sourceId": "YA-OGAOO-173-11-1680-102-NIKOLAY",
       "sourceIds": [
-        "YA-OGAOO-173-11-1680-102-EMELYAN",
         "YA-OGAOO-173-11-1680-102-NIKOLAY",
-        "YA-OGAOO-173-11-1680-102-STEPANIDA",
-        "YA-OGAOO-173-11-1680-102-SERGEY"
+        "YA-OGAOO-173-11-1680-102-STEPANIDA"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-102-EMELYAN.json",
         "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-102-NIKOLAY.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-102-STEPANIDA.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-102-SERGEY.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-11-1680-102-STEPANIDA.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -3832,25 +3606,13 @@
       ],
       "sourceSummaries": [
         {
-          "sourceId": "YA-OGAOO-173-11-1680-102-EMELYAN",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2086",
-            "P2037",
-            "P2017",
-            "P2048"
-          ]
-        },
-        {
           "sourceId": "YA-OGAOO-173-11-1680-102-NIKOLAY",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2086",
-            "P2037",
             "P2017",
-            "P2048"
+            "P2037",
+            "P2086"
           ]
         },
         {
@@ -3858,20 +3620,6 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P2086",
-            "P2037",
-            "P2017",
-            "P2048"
-          ]
-        },
-        {
-          "sourceId": "YA-OGAOO-173-11-1680-102-SERGEY",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P2086",
-            "P2037",
-            "P2017",
             "P2048"
           ]
         }
@@ -6212,8 +5960,8 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P4951",
-            "P4298"
+            "P4298",
+            "P4951"
           ]
         },
         {
@@ -7762,13 +7510,11 @@
       "sourceId": "YA-OGAOO-173-16-82-71-FILIPP",
       "sourceIds": [
         "YA-OGAOO-173-16-82-71-FILIPP",
-        "YA-OGAOO-173-16-82-71-PARFEN",
-        "YA-8B496DD7-71"
+        "YA-OGAOO-173-16-82-71-PARFEN"
       ],
       "sourcePaths": [
         "data/genealogy/sources/publications/YA-OGAOO-173-16-82-71-FILIPP.json",
-        "data/genealogy/sources/publications/YA-OGAOO-173-16-82-71-PARFEN.json",
-        "data/genealogy/sources/yandex/YA-8B496DD7-71.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-16-82-71-PARFEN.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -7826,8 +7572,8 @@
           "personIds": [
             "P1321",
             "P1427",
-            "P5759",
             "P5201",
+            "P5759",
             "P5761"
           ]
         },
@@ -7839,22 +7585,12 @@
             "P0985",
             "P5761"
           ]
-        },
-        {
-          "sourceId": "YA-8B496DD7-71",
-          "publicCore": true,
-          "isRecord": true,
-          "personIds": [
-            "P1321",
-            "P5201",
-            "P0985",
-            "P1427",
-            "P5759",
-            "P5761"
-          ]
         }
       ],
-      "batchPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-processed-111-120.json"
+      "batchPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-processed-111-120.json",
+      "aggregateSourceIds": [
+        "YA-8B496DD7-71"
+      ]
     },
     {
       "ordinal": 117,
@@ -11948,13 +11684,13 @@
     {
       "ordinal": 185,
       "canonicalUrl": "https://yandex.ru/archive/catalog/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/159",
-      "status": "new-verified",
-      "sourceId": "YA-33C2B2AD-159-ANTILOGOV-REVIEW",
+      "status": "reused-upgraded",
+      "sourceId": "YA-OGAOO-173-16-352-159-NIKOLAY",
       "sourceIds": [
-        "YA-33C2B2AD-159-ANTILOGOV-REVIEW"
+        "YA-OGAOO-173-16-352-159-NIKOLAY"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/yandex/YA-33C2B2AD-159-ANTILOGOV-REVIEW.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-16-352-159-NIKOLAY.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -11963,7 +11699,7 @@
         "P108728",
         "P108729"
       ],
-      "sourceReused": false,
+      "sourceReused": true,
       "evidence": {
         "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-original.jpg",
         "sha256": "bb0a4b0cb954bd450f4e284ddbf036feb012586a664c549f64391d6a39f23868",
@@ -11978,6 +11714,13 @@
             "sha256": "b0f2067135ddf6761f980480ab30183b3e4f590fefe64d82341afcd534dc87a0",
             "publicDisplay": false,
             "kind": "target"
+          },
+          {
+            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-names-cross-audit-header.jpg",
+            "sha256": "e6922360b693497d30a4e364986600f0f64bf28258ea7d291884166572f55f62",
+            "publicDisplay": false,
+            "kind": "header",
+            "description": "Явный1880 и Июнь; независимая проверка заголовка."
           }
         ],
         "quality": {
@@ -11990,16 +11733,17 @@
       ],
       "sourceSummaries": [
         {
-          "sourceId": "YA-33C2B2AD-159-ANTILOGOV-REVIEW",
+          "sourceId": "YA-OGAOO-173-16-352-159-NIKOLAY",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P108729",
+            "P0861",
             "P108728",
-            "P0861"
+            "P108729"
           ]
         }
       ],
+      "sourcePath": "data/genealogy/sources/publications/YA-OGAOO-173-16-352-159-NIKOLAY.json",
       "batchPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-processed-181-190.json"
     },
     {
@@ -12064,20 +11808,23 @@
     {
       "ordinal": 187,
       "canonicalUrl": "https://yandex.ru/archive/catalog/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/127",
-      "status": "new-verified",
-      "sourceId": "YA-B5EE33B3-127-ANTILOGOV-REVIEW",
+      "status": "reused-upgraded",
+      "sourceId": "YA-OGAOO-173-16-1213-127-GEORGIY",
       "sourceIds": [
+        "YA-OGAOO-173-16-1213-127-GEORGIY",
         "YA-B5EE33B3-127-ANTILOGOV-REVIEW"
       ],
       "sourcePaths": [
+        "data/genealogy/sources/publications/YA-OGAOO-173-16-1213-127-GEORGIY.json",
         "data/genealogy/sources/yandex/YA-B5EE33B3-127-ANTILOGOV-REVIEW.json"
       ],
       "publicCore": true,
       "isRecord": true,
       "personIds": [
-        "P104511"
+        "P104511",
+        "P6928"
       ],
-      "sourceReused": false,
+      "sourceReused": true,
       "evidence": {
         "path": "data/genealogy/evidence-private/yandex/b5ee33b3-4908-4d05-a9e8-0e434889ba6e/0127-antilogov-early-original.jpg",
         "sha256": "c64ed5d2bb6aa64b64b1b9281c8dcebeb3790139fd520e94cde6bff0f57efdee",
@@ -12115,6 +11862,14 @@
         "P104511 strongly-supported/high: полное имя, армейский статус и возраст27→30 между1881/1883; смерть22/24июня1883 перечитана. Фамилия невесты [Вырыпаева?] medium, иная фамилия только в mentions, без отдельного профиля. Место смерти прямо не дано, поэтому не утверждается там проживание в Орске."
       ],
       "sourceSummaries": [
+        {
+          "sourceId": "YA-OGAOO-173-16-1213-127-GEORGIY",
+          "publicCore": true,
+          "isRecord": true,
+          "personIds": [
+            "P6928"
+          ]
+        },
         {
           "sourceId": "YA-B5EE33B3-127-ANTILOGOV-REVIEW",
           "publicCore": true,
@@ -12194,13 +11949,15 @@
     {
       "ordinal": 189,
       "canonicalUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
-      "status": "new-verified",
-      "sourceId": "YA-0302EEDC-174-ANTILOGOV-REVIEW",
+      "status": "reused-upgraded",
+      "sourceId": "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
       "sourceIds": [
-        "YA-0302EEDC-174-ANTILOGOV-REVIEW"
+        "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
+        "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN"
       ],
       "sourcePaths": [
-        "data/genealogy/sources/yandex/YA-0302EEDC-174-ANTILOGOV-REVIEW.json"
+        "data/genealogy/sources/publications/YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN.json",
+        "data/genealogy/sources/publications/YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN.json"
       ],
       "publicCore": true,
       "isRecord": true,
@@ -12208,49 +11965,71 @@
         "P1266",
         "P5701"
       ],
-      "sourceReused": false,
+      "sourceReused": true,
       "evidence": {
+        "kind": "original",
         "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-antilogov-early-original.jpg",
         "sha256": "5163bb5cb2243e15823651f92467ea0d5a863d1ebcd7a2d98e059990c98bcaad",
-        "publicDisplay": false,
-        "kind": "original",
         "captureType": "downloaded-original",
         "capturedAt": "2026-09-13",
-        "sourceUrl": "https://yandex.ru/archive/catalog/0302eedc-8f84-4c4b-9ee3-feea6119b916/174",
+        "publicDisplay": false,
         "fragments": [
           {
-            "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-antilogov-early-focus.jpg",
-            "sha256": "e9fc3b7284bd03c13b65d8ff303e2b54d433b0787d42819a38ce3a3a5de018fd",
-            "publicDisplay": false,
-            "kind": "focus"
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-names-cross-header.jpg",
+            "sha256": "6cb3f8244ac2d5b5a43d73f3e97bc7888df2071bd876828643558505af9b773d",
+            "publicDisplay": false
           },
           {
-            "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-antilogov-early-target.jpg",
-            "sha256": "66b6cf18274a95cd89576c95db03695471a8eb165b3d14f8eca4ce6e5aa47c43",
-            "publicDisplay": false,
-            "kind": "target"
+            "kind": "act43",
+            "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-names-cross-act43.jpg",
+            "sha256": "63f9a39baaa39b7cf0d2137a22d3749c68214368ffac1ad270d18529cb15ebfe",
+            "publicDisplay": false
+          },
+          {
+            "kind": "act44",
+            "path": "data/genealogy/evidence-private/yandex/0302eedc-8f84-4c4b-9ee3-feea6119b916/0174-names-cross-act44.jpg",
+            "sha256": "ca811e3bf6a24720a22b4d512d56236764b298d426779bc4fa248f44a40f99cc",
+            "publicDisplay": false
           }
         ],
         "quality": {
           "originalImageDownloaded": true,
-          "targetRowsVisuallyConfirmed": true
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "independentReviewers": [
+            "names",
+            "page2"
+          ]
         }
       },
       "reviewNotes": [
-        "Точные параллели прежних актов Масюрина/Туренина подтверждают P5701/P1266. В №74 Авдей назван крестьянином, в №73 мещанином; обе формулы сохранены. Их братство из одного патронима не утверждается. Прежние sources YA-OGAOO-173-18-13-176-AVDEY-MASYURIN и других копий не дублируются."
+        "2026-09-13: независимая повторная читка полного оригинала и отдельных граф подтверждает №43 и №44 (не73/74). В №43 жениху19, невесте20 (не49/20 и не20/19). Исправлены прежние ошибочные имена участников и искусственное расхождение статуса Авдея; он назван орским мещанином в обоих актах. Полные before сохранены в data/genealogy/searches/yandex-archive-antilogov-2026-09-13-names-cross-174-correction.json.",
+        "Модель: два отдельных акта и непубличная сводка разворота; duplicateOf одного акта не применяется, поскольку сводка содержит оба."
       ],
       "sourceSummaries": [
         {
-          "sourceId": "YA-0302EEDC-174-ANTILOGOV-REVIEW",
+          "sourceId": "YA-OGAOO-173-16-1214-174-AVDEY-MISSORIN",
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P5701",
+            "P1266",
+            "P5701"
+          ]
+        },
+        {
+          "sourceId": "YA-OGAOO-173-16-1214-174-AVDEY-CHURSIN",
+          "publicCore": true,
+          "isRecord": true,
+          "personIds": [
             "P1266"
           ]
         }
       ],
-      "batchPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-processed-181-190.json"
+      "batchPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-batch-early-processed-181-190.json",
+      "aggregateSourceIds": [
+        "YA-0302EEDC-174-ANTILOGOV-REVIEW"
+      ]
     },
     {
       "ordinal": 190,
@@ -12835,8 +12614,8 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
-            "P5701",
-            "P1266"
+            "P1266",
+            "P5701"
           ]
         },
         {
@@ -13906,7 +13685,7 @@
         "27августа1886 брак Ивана Ульяновича19лет и Фёклы Степановны17лет. Существующий source переиспользован, raw-OCR дубль оставлен непубличным с отсылкой. Авдей без отчества оставлен mention, не назначен автоматически P1266."
       ],
       "duplicateSourceIds": [
-        "YA-BD240D38-112"
+        "YA-OGAOO-173-18-23-112-IVAN"
       ],
       "sourceSummaries": [
         {
@@ -13914,9 +13693,9 @@
           "publicCore": true,
           "isRecord": true,
           "personIds": [
+            "P5701",
             "P6978",
-            "P7919",
-            "P5701"
+            "P7919"
           ]
         }
       ],
@@ -16736,51 +16515,6 @@
           "originalImageDownloaded": true,
           "targetRowsVisuallyConfirmed": true,
           "confirmedAt": "2026-09-13"
-        }
-      }
-    },
-    {
-      "sourceId": "YA-33C2B2AD-159-ANTILOGOV-REVIEW",
-      "sourcePath": "data/genealogy/sources/yandex/YA-33C2B2AD-159-ANTILOGOV-REVIEW.json",
-      "publicCore": true,
-      "isRecord": true,
-      "personIds": [
-        "P108729",
-        "P108728",
-        "P0861"
-      ],
-      "event": {
-        "type": "birth-and-baptism",
-        "date": {
-          "iso": "1880-06-02",
-          "display": "1880-06-02",
-          "confidence": "high"
-        },
-        "place": {
-          "normalized": "Оренбург",
-          "asWritten": "Оренбург"
-        },
-        "baptismDate": "1880-06-06"
-      },
-      "evidence": {
-        "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-original.jpg",
-        "sha256": "bb0a4b0cb954bd450f4e284ddbf036feb012586a664c549f64391d6a39f23868",
-        "publicDisplay": false,
-        "kind": "original",
-        "captureType": "downloaded-original",
-        "capturedAt": "2026-09-13",
-        "sourceUrl": "https://yandex.ru/archive/catalog/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/159",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-target.jpg",
-            "sha256": "b0f2067135ddf6761f980480ab30183b3e4f590fefe64d82341afcd534dc87a0",
-            "publicDisplay": false,
-            "kind": "target"
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "targetRowsVisuallyConfirmed": true
         }
       }
     },
@@ -26623,6 +26357,55 @@
       }
     },
     {
+      "sourceId": "YA-OGAOO-173-16-352-159-NIKOLAY",
+      "sourcePath": "data/genealogy/sources/publications/YA-OGAOO-173-16-352-159-NIKOLAY.json",
+      "publicCore": true,
+      "isRecord": true,
+      "personIds": [],
+      "event": {
+        "type": "birth-and-baptism",
+        "date": {
+          "iso": "1880-06-02",
+          "display": "1880-06-02",
+          "confidence": "high"
+        },
+        "place": {
+          "normalized": "Оренбург",
+          "asWritten": "Оренбург"
+        },
+        "baptismDate": "1880-06-06",
+        "recordNumber": "253"
+      },
+      "evidence": {
+        "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-original.jpg",
+        "sha256": "bb0a4b0cb954bd450f4e284ddbf036feb012586a664c549f64391d6a39f23868",
+        "publicDisplay": false,
+        "kind": "original",
+        "captureType": "downloaded-original",
+        "capturedAt": "2026-09-13",
+        "sourceUrl": "https://yandex.ru/archive/catalog/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/159",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-target.jpg",
+            "sha256": "b0f2067135ddf6761f980480ab30183b3e4f590fefe64d82341afcd534dc87a0",
+            "publicDisplay": false,
+            "kind": "target"
+          },
+          {
+            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-names-cross-audit-header.jpg",
+            "sha256": "e6922360b693497d30a4e364986600f0f64bf28258ea7d291884166572f55f62",
+            "publicDisplay": false,
+            "kind": "header",
+            "description": "Явный1880 и Июнь; независимая проверка заголовка."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "targetRowsVisuallyConfirmed": true
+        }
+      }
+    },
+    {
       "sourceId": "YA-OGAOO-173-16-47-134-TERENTY",
       "sourcePath": "data/genealogy/sources/publications/YA-OGAOO-173-16-47-134-TERENTY.json",
       "publicCore": true,
@@ -29250,16 +29033,6 @@
     {
       "personId": "P108727",
       "displayName": "Иван Павлович Анпилогов",
-      "newInThisQuery": true
-    },
-    {
-      "personId": "P108728",
-      "displayName": "Никита Васильевич Анпилогов",
-      "newInThisQuery": true
-    },
-    {
-      "personId": "P108729",
-      "displayName": "Александр Никитич Анпилогов",
       "newInThisQuery": true
     },
     {
@@ -32125,51 +31898,6 @@
       }
     },
     {
-      "sourceId": "YA-33C2B2AD-159-ANTILOGOV-REVIEW",
-      "sourcePath": "data/genealogy/sources/yandex/YA-33C2B2AD-159-ANTILOGOV-REVIEW.json",
-      "publicCore": true,
-      "isRecord": true,
-      "personIds": [
-        "P108729",
-        "P108728",
-        "P0861"
-      ],
-      "event": {
-        "type": "birth-and-baptism",
-        "date": {
-          "iso": "1880-06-02",
-          "display": "1880-06-02",
-          "confidence": "high"
-        },
-        "place": {
-          "normalized": "Оренбург",
-          "asWritten": "Оренбург"
-        },
-        "baptismDate": "1880-06-06"
-      },
-      "evidence": {
-        "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-original.jpg",
-        "sha256": "bb0a4b0cb954bd450f4e284ddbf036feb012586a664c549f64391d6a39f23868",
-        "publicDisplay": false,
-        "kind": "original",
-        "captureType": "downloaded-original",
-        "capturedAt": "2026-09-13",
-        "sourceUrl": "https://yandex.ru/archive/catalog/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/159",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-target.jpg",
-            "sha256": "b0f2067135ddf6761f980480ab30183b3e4f590fefe64d82341afcd534dc87a0",
-            "publicDisplay": false,
-            "kind": "target"
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "targetRowsVisuallyConfirmed": true
-        }
-      }
-    },
-    {
       "sourceId": "YA-35239CE1-006-ANTILOGOV-REVIEW",
       "sourcePath": "data/genealogy/sources/yandex/YA-35239CE1-006-ANTILOGOV-REVIEW.json",
       "publicCore": true,
@@ -39461,62 +39189,6 @@
       }
     },
     {
-      "sourceId": "YA-F807C2DE-46",
-      "sourcePath": "data/genealogy/sources/yandex/YA-F807C2DE-46.json",
-      "publicCore": true,
-      "isRecord": true,
-      "personIds": [
-        "P1071",
-        "P0976"
-      ],
-      "event": {
-        "type": "marriage",
-        "date": {
-          "iso": "1860-11-02",
-          "display": "1860-11-02",
-          "confidence": "high"
-        },
-        "place": {
-          "asWritten": "Иларионовский выселок",
-          "normalized": "Иларионовский выселок, Оренбургский уезд"
-        }
-      },
-      "evidence": {
-        "path": "data/genealogy/evidence-private/yandex/2b1972a8-6647-4b7f-b975-73dee9ca65b6/0163-antilogov-early-original.jpg",
-        "sha256": "3314f3e97edf81065b2b3994267c6a15825cf9ba18f9107ff3467446a7aa1556",
-        "publicDisplay": false,
-        "kind": "original",
-        "captureType": "downloaded-original",
-        "sourceUrl": "https://yandex.ru/archive/catalog/2b1972a8-6647-4b7f-b975-73dee9ca65b6/163",
-        "capturedAt": "2026-09-13",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/2b1972a8-6647-4b7f-b975-73dee9ca65b6/0163-antilogov-early-entry.jpg",
-            "sha256": "7324098264b793d87ae869842acb796d6b94a69a4b7bd52e30b385c048330bf6",
-            "publicDisplay": false,
-            "kind": "entry"
-          },
-          {
-            "path": "data/genealogy/evidence-private/yandex/f807c2de-0b5c-45b2-bce1-08a8f38cf620/0046-antilogov-early-parallel-original.jpg",
-            "sha256": "220a46a91dd9ba38b2ae4462b1ef692fb61729b5698dadc51153df47cba1f0a2",
-            "publicDisplay": false,
-            "kind": "parallel-original"
-          },
-          {
-            "path": "data/genealogy/evidence-private/yandex/f807c2de-0b5c-45b2-bce1-08a8f38cf620/0046-antilogov-early-parallel-entry.jpg",
-            "sha256": "94b5402f608c72452865d40eb7457c532a0fcf432d07f15ce68327a1e5304109",
-            "publicDisplay": false,
-            "kind": "parallel-entry"
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "targetRowsVisuallyConfirmed": true,
-          "confirmedAt": "2026-09-13"
-        }
-      }
-    },
-    {
       "sourceId": "YA-F9555845-626-ANTILOGOV-REVIEW",
       "sourcePath": "data/genealogy/sources/yandex/YA-F9555845-626-ANTILOGOV-REVIEW.json",
       "publicCore": true,
@@ -42008,6 +41680,55 @@
       }
     },
     {
+      "sourceId": "YA-OGAOO-173-16-352-159-NIKOLAY",
+      "sourcePath": "data/genealogy/sources/publications/YA-OGAOO-173-16-352-159-NIKOLAY.json",
+      "publicCore": true,
+      "isRecord": true,
+      "personIds": [],
+      "event": {
+        "type": "birth-and-baptism",
+        "date": {
+          "iso": "1880-06-02",
+          "display": "1880-06-02",
+          "confidence": "high"
+        },
+        "place": {
+          "normalized": "Оренбург",
+          "asWritten": "Оренбург"
+        },
+        "baptismDate": "1880-06-06",
+        "recordNumber": "253"
+      },
+      "evidence": {
+        "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-original.jpg",
+        "sha256": "bb0a4b0cb954bd450f4e284ddbf036feb012586a664c549f64391d6a39f23868",
+        "publicDisplay": false,
+        "kind": "original",
+        "captureType": "downloaded-original",
+        "capturedAt": "2026-09-13",
+        "sourceUrl": "https://yandex.ru/archive/catalog/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/159",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-antilogov-early-target.jpg",
+            "sha256": "b0f2067135ddf6761f980480ab30183b3e4f590fefe64d82341afcd534dc87a0",
+            "publicDisplay": false,
+            "kind": "target"
+          },
+          {
+            "path": "data/genealogy/evidence-private/yandex/33c2b2ad-1f32-4ed6-ac04-b6437b2df963/0159-names-cross-audit-header.jpg",
+            "sha256": "e6922360b693497d30a4e364986600f0f64bf28258ea7d291884166572f55f62",
+            "publicDisplay": false,
+            "kind": "header",
+            "description": "Явный1880 и Июнь; независимая проверка заголовка."
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "targetRowsVisuallyConfirmed": true
+        }
+      }
+    },
+    {
       "sourceId": "YA-OGAOO-173-16-47-134-TERENTY",
       "sourcePath": "data/genealogy/sources/publications/YA-OGAOO-173-16-47-134-TERENTY.json",
       "publicCore": true,
@@ -42580,43 +42301,6 @@
       }
     },
     {
-      "sourceId": "YA-894CBE16-139",
-      "sourcePath": "data/genealogy/sources/yandex/YA-894CBE16-139.json",
-      "publicCore": true,
-      "isRecord": true,
-      "personIds": [],
-      "event": {
-        "type": "birth-baptism",
-        "date": {
-          "display": "родился 10 сентября 1878 года; крещён 11 сентября",
-          "confidence": "high"
-        },
-        "place": {
-          "normalized": "не установлено"
-        }
-      },
-      "evidence": {
-        "path": "data/genealogy/evidence-private/yandex/894cbe16-4750-40b9-87b2-42c24a12db5b/0139-antilogov-early-restored-original.jpg",
-        "sha256": "70ddd479fede6a44082586ec78bcdf95096c0d1b09b8405c16b90b44bffbfb3c",
-        "publicDisplay": false,
-        "kind": "restored-original",
-        "captureType": "downloaded-original",
-        "capturedAt": "2026-09-13",
-        "fragments": [
-          {
-            "path": "data/genealogy/evidence-private/yandex/894cbe16-4750-40b9-87b2-42c24a12db5b/0139-antilogov-early-restored-crop.jpg",
-            "sha256": "fce9057cb9b37e3611691d49ef96e92b60d17d7369f1946d43063ef6d85f260c",
-            "publicDisplay": false,
-            "kind": "restored-crop"
-          }
-        ],
-        "quality": {
-          "originalImageDownloaded": true,
-          "targetRowsVisuallyConfirmed": true
-        }
-      }
-    },
-    {
       "sourceId": "YA-BD240D38-112",
       "sourcePath": "data/genealogy/sources/yandex/YA-BD240D38-112.json",
       "publicCore": false,
@@ -42647,6 +42331,62 @@
     }
   ],
   "associatedSourceSummariesOutsideCapturedUrls": [
+    {
+      "sourceId": "YA-F807C2DE-46",
+      "sourcePath": "data/genealogy/sources/yandex/YA-F807C2DE-46.json",
+      "publicCore": true,
+      "isRecord": true,
+      "personIds": [
+        "P1071",
+        "P0976"
+      ],
+      "event": {
+        "type": "marriage",
+        "date": {
+          "iso": "1860-11-02",
+          "display": "1860-11-02",
+          "confidence": "high"
+        },
+        "place": {
+          "asWritten": "Иларионовский выселок",
+          "normalized": "Иларионовский выселок, Оренбургский уезд"
+        }
+      },
+      "evidence": {
+        "path": "data/genealogy/evidence-private/yandex/2b1972a8-6647-4b7f-b975-73dee9ca65b6/0163-antilogov-early-original.jpg",
+        "sha256": "3314f3e97edf81065b2b3994267c6a15825cf9ba18f9107ff3467446a7aa1556",
+        "publicDisplay": false,
+        "kind": "original",
+        "captureType": "downloaded-original",
+        "sourceUrl": "https://yandex.ru/archive/catalog/2b1972a8-6647-4b7f-b975-73dee9ca65b6/163",
+        "capturedAt": "2026-09-13",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/2b1972a8-6647-4b7f-b975-73dee9ca65b6/0163-antilogov-early-entry.jpg",
+            "sha256": "7324098264b793d87ae869842acb796d6b94a69a4b7bd52e30b385c048330bf6",
+            "publicDisplay": false,
+            "kind": "entry"
+          },
+          {
+            "path": "data/genealogy/evidence-private/yandex/f807c2de-0b5c-45b2-bce1-08a8f38cf620/0046-antilogov-early-parallel-original.jpg",
+            "sha256": "220a46a91dd9ba38b2ae4462b1ef692fb61729b5698dadc51153df47cba1f0a2",
+            "publicDisplay": false,
+            "kind": "parallel-original"
+          },
+          {
+            "path": "data/genealogy/evidence-private/yandex/f807c2de-0b5c-45b2-bce1-08a8f38cf620/0046-antilogov-early-parallel-entry.jpg",
+            "sha256": "94b5402f608c72452865d40eb7457c532a0fcf432d07f15ce68327a1e5304109",
+            "publicDisplay": false,
+            "kind": "parallel-entry"
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-13"
+        }
+      }
+    },
     {
       "sourceId": "YA-0BE28104-175",
       "sourcePath": "data/genealogy/sources/YA-0BE28104-175.json",
@@ -42878,6 +42618,43 @@
           "originalImageDownloaded": true,
           "targetRowsVisuallyConfirmed": true,
           "confirmedAt": "2026-09-13"
+        }
+      }
+    },
+    {
+      "sourceId": "YA-894CBE16-139",
+      "sourcePath": "data/genealogy/sources/yandex/YA-894CBE16-139.json",
+      "publicCore": true,
+      "isRecord": true,
+      "personIds": [],
+      "event": {
+        "type": "birth-baptism",
+        "date": {
+          "display": "родился 10 сентября 1878 года; крещён 11 сентября",
+          "confidence": "high"
+        },
+        "place": {
+          "normalized": "не установлено"
+        }
+      },
+      "evidence": {
+        "path": "data/genealogy/evidence-private/yandex/894cbe16-4750-40b9-87b2-42c24a12db5b/0139-antilogov-early-restored-original.jpg",
+        "sha256": "70ddd479fede6a44082586ec78bcdf95096c0d1b09b8405c16b90b44bffbfb3c",
+        "publicDisplay": false,
+        "kind": "restored-original",
+        "captureType": "downloaded-original",
+        "capturedAt": "2026-09-13",
+        "fragments": [
+          {
+            "path": "data/genealogy/evidence-private/yandex/894cbe16-4750-40b9-87b2-42c24a12db5b/0139-antilogov-early-restored-crop.jpg",
+            "sha256": "fce9057cb9b37e3611691d49ef96e92b60d17d7369f1946d43063ef6d85f260c",
+            "publicDisplay": false,
+            "kind": "restored-crop"
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "targetRowsVisuallyConfirmed": true
         }
       }
     },
@@ -44290,5 +44067,34 @@
         }
       }
     }
-  ]
+  ],
+  "followUpValidation": {
+    "status": "stable-after-independent-review-and-follow-up",
+    "changes": [
+      "/33c2b2ad/159 канонический legacy source переиспользован вместо нового короткого source; Николай→Никита и месяц июнь проверены names/root.",
+      "Отдельный cross-audit завершил7legacy duplicateOf без новых растров.",
+      "Доказанные дубли P102051→P101610 и P102052→P101660 объединены по акту175/122; прежние Леонид/Дарья сохранены только вhistory."
+    ],
+    "sourceCounts": {
+      "newSources": 197,
+      "reusedCanonicalSources": 58,
+      "associatedVerifiedSourcesOtherUrls": 40
+    },
+    "recheckedEvidenceFiles": 724,
+    "missingBacklinks": 0,
+    "post1950": 0,
+    "errors": [],
+    "legacyResolutionPath": "data/genealogy/searches/yandex-archive-antilogov-2026-09-13-cross-legacy11-resolution.json",
+    "baselineCustomAuditFindingsOutsideQuery": [
+      {
+        "sourceId": "PUB-PKOU-1594-P948-ANPILOG-ONANIN",
+        "missingBacklinkPersonId": "P0207"
+      },
+      {
+        "sourceId": "PUB-PKOU-1594-P948-ANPILOG",
+        "missingBacklinkPersonId": "P0208"
+      }
+    ],
+    "baselineNote": "Два PUB backlinks не изменены по поручению root; также сохраняются6известныхYA-F4BFF9CA предупреждений. Эти8находкиглобальногопользовательскогоаудита не относятся к локальнымошибкам1–230."
+  }
 }
