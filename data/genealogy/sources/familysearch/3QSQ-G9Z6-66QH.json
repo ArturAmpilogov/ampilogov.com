@@ -17,22 +17,21 @@
   "event": {
     "type": "death",
     "date": {
-      "display": "умер 23 января 1904 года",
+      "display": "23/25 января 1904",
       "iso": "1904-01-23",
-      "calendar": "source-calendar-unverified"
+      "confidence": "high"
     },
     "place": {
-      "placeId": "tomsk-governorate",
-      "asTranscribed": "Томская губерния",
-      "normalized": "Томская губерния, Российская империя",
-      "modernCountry": "Россия"
+      "asWritten": "деревня Кожли",
+      "normalized": "деревня Кожли, Семилужная волость, Томская губерния"
     }
   },
   "indexData": {
     "recordId": "6R8C-8HDK",
     "subject": "Иоанн",
     "eventDate": "1904-01-23",
-    "indexWarning": "Индексная форма имени и отчества сохранена; основная карточка дана в современном русском написании и сопоставлена с оригиналом."
+    "indexWarning": "Индексная форма имени и отчества сохранена; основная карточка дана в современном русском написании и сопоставлена с оригиналом.",
+    "correctionNote": "Индексное 0 лет раскрыто по оригиналу: 3 месяца; место Кожли и дата погребения восстановлены. Для Ильи буквальная форма Трофимов не заменяется Трифонов."
   },
   "mentions": [
     {
@@ -44,13 +43,14 @@
       "nameAsIndexed": "Иоанн",
       "modernName": "Иван Ильич Ампилогов",
       "displayName": "Иван Ильич Ампилогов",
-      "alternateNames": []
+      "alternateNames": [],
+      "ageAsWritten": "3 месяца"
     },
     {
       "mentionId": "FS-3QSQ-G9Z6-66QH-M2",
       "role": "father",
       "personId": "P0646",
-      "nameAsTranscribed": "Илья Трофимов Анпилогов",
+      "nameAsTranscribed": "Илья Трофимов Антилогов",
       "nameAsIndexed": "Илья Трофимов Анпилогов",
       "modernName": "Илья Трифонович Ампилогов",
       "displayName": "Илья Трифонович Ампилогов",
@@ -60,16 +60,9 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "умер 23 января 1904 года. Иоанн; отец Илья Трифонович Ампилогов; возраст младенец, индексный возраст 0 лет. Рукописные вторичные графы (восприемники, причт, причина смерти или место погребения — по типу акта): [частично неразборчивы на сохранённом кадре].",
-    "modernInterpretation": "Иван Ильич Ампилогов: умер 23 января 1904 года; отец Илья Трифонович Ампилогов; возраст младенец, индексный возраст 0 лет.",
-    "fields": {
-      "eventDate": "умер 23 января 1904 года",
-      "subject": "Иван Ильич Ампилогов",
-      "father": "Илья Трифонович Ампилогов",
-      "age": "младенец, индексный возраст 0 лет",
-      "birthYearEstimated": "1903–1904"
-    }
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "5. Январь 23/25. Деревни Кожли крестьянина Ильи Трофимова Антилогова сынъ Іоаннъ. 3 мѣсяца. Отъ поноса. [...] на кладбищѣ деревни Кожли.",
+    "modernInterpretation": "Иоанн, сын Ильи, умер в записанном возрасте трёх месяцев."
   },
   "sourceRelations": [
     {
@@ -79,49 +72,43 @@
     }
   ],
   "evidence": {
-    "captureType": "viewer-screenshot",
-    "path": "public/archive/evidence/familysearch/russia/tomsk/3QSQ-G9Z6-66QH/03-target-fullscreen.png",
-    "capturedAt": "2026-08-23",
-    "sha256": "b8505ae55b6f3b2d5b1aaef7754f24f1226bf207502d6175615be480dab753cd",
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0118-antilogov-original.jpg",
+    "sha256": "3602db14563709154c70ab00686e1dc2366f5e6545292c72dd9d41e376c7c7e2",
     "publicDisplay": false,
-    "rightsNote": "Право публичного показа контрольных снимков FamilySearch отдельно не подтверждено.",
-    "quality": {
-      "status": "approved-with-secondary-fields-uncertain",
-      "viewerFullscreen": true,
-      "panelsClosed": true,
-      "filmstripHidden": true,
-      "viewport": "1680x1050",
-      "limitation": "Основные имена, родство, тип события и индексная дата читаются; неразборчивые вторичные графы не восстановлены догадкой."
-    },
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/4fa82a03-ce4e-46e6-a568-a52b0fded31f/118",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "part": "familysearch-index",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QSQ-G9Z6-66QH/01-index-fullscreen.png",
-        "sha256": "11372fb4334895fac9891a11697e94331dfcbb6d17bcf67ddb4074e73ca31803"
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0118-antilogov-target.jpg",
+        "sha256": "352d8177ab96c63b1bf4fb64da1931ee901e3f4947119d35a4c6d41ea7a0cb13",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
       },
       {
-        "part": "fullscreen-overview",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QSQ-G9Z6-66QH/02-scan-fullscreen.png",
-        "sha256": "6d78a88a626ba4ec5dbbba145a89857860ecb3f6f4ca7a08e1b21bf69337073a"
-      },
-      {
-        "part": "zoomed-target",
-        "path": "public/archive/evidence/familysearch/russia/tomsk/3QSQ-G9Z6-66QH/03-target-fullscreen.png",
-        "sha256": "b8505ae55b6f3b2d5b1aaef7754f24f1226bf207502d6175615be480dab753cd"
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/4fa82a03-ce4e-46e6-a568-a52b0fded31f/0118-antilogov-detail.jpg",
+        "sha256": "9145b12fa8ad389b59d6ba20ff189522edbbadc3574a60b4328104f33496e1d3",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
       }
-    ]
+    ],
+    "restorationNote": "Прежние локальные FS-контрольные снимки отсутствуют; проверка поддержана полной независимой цифровой копией того же акта в Яндекс Архиве. FS sourceId и исходная ссылка сохраняются."
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "record-6R8C-8HDK-linked-to-P0649",
-    "indexCorrections": [],
-    "unresolved": [
-      "Повторно проверить бледные вторичные графы по более контрастной копии."
+    "status": "complete-rechecked-with-independent-original",
+    "notes": [
+      "P0649/P0646 high: тот же ребёнок, отец, деревня и дата старой копии FS-3QSQ-G9Z6-66QH. Буквально Трофимов; нормализованное Трифонович не подменяет чтение. Возраст 3 месяца расходится с почти 4 месяцами от прежнего рождения 24.09.1903; рождение не изменено. Мать в смерти не названа."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "Иван Ильич Ампилогов: умер 23 января 1904 года."
   },
-  "primaryPersonId": "P0649"
+  "primaryPersonId": "P0649",
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false
 }

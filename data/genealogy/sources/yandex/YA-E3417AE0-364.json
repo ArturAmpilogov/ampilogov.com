@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E3417AE0-364",
-  "provider": "Яндекс Архив — первичный скан",
+  "provider": "Яндекс Архив — первичный архивный скан",
   "recordType": "baptism",
   "collection": {
     "title": "ia_omsk/16-6-259-0016_06_0259_2_216.jpg",
+    "archiveCitation": "ia_omsk/16-6-259-0016_06_0259_2_216.jpg; скан 364",
     "catalogId": "e3417ae0-4f75-43d6-94d1-a0fea232d7f9",
     "scanNumber": 364
   },
@@ -14,52 +15,82 @@
   "event": {
     "type": "baptism",
     "date": {
-      "iso": "1895",
-      "display": "1895 год; точная дата на правом листе отсутствует",
-      "confidence": "medium"
+      "display": "1895-12-02",
+      "date": "1895-12-02",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "asWritten": "Тюкалинский округ, Колмаковская волость; запись в Омске",
-      "normalized": "Тюкалинский округ, Колмаковская волость; запись в Омске"
+      "normalized": "Омск; приписка Колмаковская волость Тюкалинского округа"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E3417AE0-364-M1",
+      "nameAsTranscribed": "Алексей Егоров Антилогов",
+      "displayName": "Алексей Егоров Антилогов",
       "role": "godfather",
-      "personId": "P109000",
-      "nameAsTranscribed": "Алексей Егоровъ Антилоговъ",
-      "displayName": "Алексей Егорович Антилогов",
-      "surnameSeries": true
+      "surnameSeries": true,
+      "personId": "P109000"
     }
   ],
   "transcription": {
-    "status": "project-transcription-from-original-with-explicit-uncertainties",
-    "literal": "Тюкалинскаго Округа Колмаковской волости крестьянин Алексей Егоровъ Антилоговъ и Омская мещанская девица Анна Васильева Круглова.",
-    "modernInterpretation": "Алексей — восприемник. Анна Круглова — совосприемница, родство не указано."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "Тюкалинского округа Колмаковской волости крестьянин Алексей Егоров Антилогов и Омская мещанская девица Анна Васильева Круглова; у второй солдатская девица Елисавета Григорьева Рыбакова.",
+    "modernInterpretation": "Правая половина параллели крещения близнецов Николая и Варвары; дата уточнена полной копией305.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
   },
+  "notes": [
+    "Здесь имя Алексей Егоров уверенно; в полной копии305 буквально Василий, патроним скрыт. Не устраняем писцовое разночтение.",
+    "Дата2декабря1895 по полной параллели, год подтверждён указом362. Лист363 оборотный пустой и дат не добавляет."
+  ],
   "indexData": {
     "query": "Антилогов",
-    "querySnippet": "Пьюкалинского Округа, Колмаковской волости крестьянин Алексий Егоров \u0007[Антилогов\u0007] и Омская мещанская девица Анна Васильева Круглова...",
-    "warning": "Индекс использован только для поиска; имена и роли читаются по оригиналу."
+    "index": "archive",
+    "raw": "Пьюкалинского Округа, Колмаковской волости крестьянин Алексий Егоров \u0007[Антилогов\u0007] и Омская мещанская девица Анна Васильева Круглова...",
+    "catalogDateFrom": "01-01-1895",
+    "catalogDateTo": "31-12-1895",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
-    "kind": "original",
     "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0364-antilogov-original.jpg",
     "sha256": "ed9bddb88239eb43052a8071b2925a1e3d0b7a13b895c5e2037a67be76e52f6e",
-    "publicDisplay": false,
-    "description": "Полный оригинал для проектного чтения.",
-    "sourceUrl": "https://yandex.ru/archive/catalog/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/364",
     "catalogId": "e3417ae0-4f75-43d6-94d1-a0fea232d7f9",
     "scanNumber": 364,
     "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
-        "kind": "target",
         "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0364-antilogov-target.jpg",
-        "sha256": "e6a3b4ff96b689095845256934a799fcdd639a6323fc8405efb17575cf0274b8",
-        "publicDisplay": false,
-        "description": "Крупный фрагмент целевого упоминания."
+        "sha256": "fcb463ec1d53e784561a2347ebdc9c059c15fadff6ffccf80a33fb3cb71988f5",
+        "kind": "target-entry",
+        "cropBox": [
+          146,
+          946,
+          1490,
+          1637
+        ],
+        "publicDisplay": false
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0364-antilogov-header.jpg",
+        "sha256": "caa4d913d8ed26811e7d5561248f696558f01429d8450273c07940954de5955d",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          0,
+          2661,
+          987
+        ],
+        "publicDisplay": false
       },
       {
         "kind": "original",
@@ -71,14 +102,55 @@
       }
     ]
   },
-  "review": {
-    "status": "complete",
-    "transcriptionConfidence": "high",
-    "notes": [
-      "Год подтверждается соседним указом /362 о книге Крестовоздвиженской церкви Омска за1895; левая часть акта пока не найдена."
-    ]
-  },
-  "publicCore": true,
   "isRecord": true,
-  "researchOnly": false
+  "publicCore": true,
+  "review": {
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "project-transcription-from-original-with-explicit-uncertainties",
+        "literal": "Тюкалинскаго Округа Колмаковской волости крестьянин Алексей Егоровъ Антилоговъ и Омская мещанская девица Анна Васильева Круглова.",
+        "modernInterpretation": "Алексей — восприемник. Анна Круглова — совосприемница, родство не указано."
+      },
+      "previousEvidence": {
+        "kind": "original",
+        "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0364-antilogov-original.jpg",
+        "sha256": "ed9bddb88239eb43052a8071b2925a1e3d0b7a13b895c5e2037a67be76e52f6e",
+        "publicDisplay": false,
+        "description": "Полный оригинал для проектного чтения.",
+        "sourceUrl": "https://yandex.ru/archive/catalog/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/364",
+        "catalogId": "e3417ae0-4f75-43d6-94d1-a0fea232d7f9",
+        "scanNumber": 364,
+        "capturedAt": "2026-09-13",
+        "fragments": [
+          {
+            "kind": "target",
+            "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0364-antilogov-target.jpg",
+            "sha256": "e6a3b4ff96b689095845256934a799fcdd639a6323fc8405efb17575cf0274b8",
+            "publicDisplay": false,
+            "description": "Крупный фрагмент целевого упоминания."
+          },
+          {
+            "kind": "original",
+            "path": "data/genealogy/evidence-private/yandex/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/0362-antilogov-original.jpg",
+            "sha256": "ad6ddc0ee593134facb29b5fedd100145da2b6087799d4d783c79d0be303f298",
+            "publicDisplay": false,
+            "description": "Соседний оригинальный лист для проверки даты и контекста.",
+            "sourceUrl": "https://yandex.ru/archive/catalog/e3417ae0-4f75-43d6-94d1-a0fea232d7f9/362"
+          }
+        ]
+      }
+    }
+  ],
+  "primaryPersonId": "P109000",
+  "relatedSourceIds": [
+    "YA-18A23D38-114-ANTILOGOV-REVIEW"
+  ]
 }

@@ -19,16 +19,16 @@
   "event": {
     "type": "birth-and-baptism",
     "date": {
-      "display": "родился 6 мая, крещён 9 мая 1859",
-      "birthIso": "1859-05-06",
-      "baptismIso": "1859-05-09",
+      "iso": "1859-05-06",
+      "display": "1859-05-06",
       "confidence": "high"
     },
     "place": {
       "asWritten": "деревня Кармалка",
       "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния, Российская империя",
       "placeId": "karmalka-orenburg"
-    }
+    },
+    "baptismDate": "1859-05-09"
   },
   "mentions": [
     {
@@ -54,9 +54,9 @@
       "role": "mother",
       "personId": "P1051",
       "sex": "female",
-      "nameAsTranscribed": "Христина Тимофеева",
-      "modernName": "Христина Тимофеевна Ампилогова",
-      "displayName": "Христина Тимофеевна Ампилогова"
+      "nameAsTranscribed": "Христина Трифонова",
+      "modernName": "Христина Трифоновна Ампилогова",
+      "displayName": "Христина Трифоновна Ампилогова"
     },
     {
       "mentionId": "YA-1AE043C9-33-M4",
@@ -86,9 +86,9 @@
     }
   ],
   "transcription": {
-    "status": "complete",
-    "literal": "Мая. № 67. 6 [родился], 9 [крещён]. Николай. Деревни Кармалки у государственного крестьянина Павла Григорьева Ампилогова и жены его Христины Тимофеевой, оба православные. Восприемники: той же деревни государственный крестьянин Афанасий Петров Ампилогов и женка Вера Макарова. Таинство совершили священник Николай Добролюбов, диакон Иаков Трифонов и пономарь Алексей Тихонравов.",
-    "modernInterpretation": "6 мая 1859 года у Павла Григорьевича и Христины Тимофеевны Ампилоговых родился сын Николай; крещён 9 мая. Восприемником был Афанасий Петрович Ампилогов.",
+    "status": "project-visual-reading",
+    "literal": "Мая. № 67. 6 [родился], 9 [крещён]. Николай. Деревни Кармалки у государственного крестьянина Павла Григорьева Ампилогова и жены его Христины Трифоновой, оба православные. Восприемники: той же деревни государственный крестьянин Афанасий Петров Ампилогов и женка Вера Макарова. Таинство совершили священник Николай Добролюбов, диакон Иаков Трифонов и пономарь Алексей Тихонравов.",
+    "modernInterpretation": "6 мая 1859 родился, 9 мая крещён Николай, сын Павла Григорьевича Анпилогова и Христины Трифоновны.",
     "localOcr": "Mглова.\ncn Mangs a\nМs 2т\nпривица овастайна) ов....\n,nов.\n,6V.\nогресоо.",
     "localOcrWithSurnameLexicon": "en Mang a\nпривида свастайна) ов....\n,6V.",
     "collation": {
@@ -99,57 +99,97 @@
     "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
   },
   "evidence": {
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "sourceUrl": "https://yandex.ru/archive/catalog/1ae043c9-9401-487c-b5fb-1417ca65b16a/33",
+    "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-antilogov-pavel-review-original.jpg",
+    "sha256": "85a78b7aa989f94eb072529262ad26782a2dc3b519db08cff4328655c145189c",
     "publicDisplay": false,
-    "localBackup": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-full-view.png",
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив.",
-    "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "e7203922192f23e58fbd0a6c52119cecf5cc0f2da33b768209eb0a445a12aaf5",
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "sourceUrl": "https://yandex.ru/archive/catalog/1ae043c9-9401-487c-b5fb-1417ca65b16a/33",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-header.png",
-        "sha256": "5702c217a26a67f5b69583e7a92677735336843808aae7a3137e0e3331300620",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-antilogov-pavel-review-fine.jpg",
+        "sha256": "58e96ebc14af00ed6cd1e999a077f6297ee7f73dd7b52122b87bdf1574876fa9",
+        "publicDisplay": false,
+        "kind": "fine"
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-target-entry.png",
-        "sha256": "f8b027b1eefee71ef76e1d81cde839a1da6a604fca302d3735e1f82cede130e4",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/1ae043c9-9401-487c-b5fb-1417ca65b16a/0033-antilogov-pavel-review-detail0.jpg",
+        "sha256": "e13bf86a6f6d383b899e7a24650b02df0ee75ce8593d1ba180324375cba90d88",
+        "publicDisplay": false,
+        "kind": "detail0"
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "1288x1016",
-      "targetDimensions": "1200x786",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "catalogId": "1ae043c9-9401-487c-b5fb-1417ca65b16a",
-    "scanNumber": 33,
-    "captureStatus": "complete-with-local-copy"
+      "targetRowsVisuallyConfirmed": true
+    }
   },
   "review": {
-    "status": "complete",
-    "transcriptionConfidence": "high",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
-    ],
-    "correctionHistory": [
-      "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
-      "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "1859, 6/9 мая. Мать уверенно Христина Трифонова; прежнее Тимофеева — ошибочная проектная читка, а не вариант оригинала."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Рождение Николая Павловича Ампилогова 6 мая 1859 года в Кармалке."
+    "text": "6 мая 1859 родился, 9 мая крещён Николай, сын Павла Григорьевича Анпилогова и Христины Трифоновны."
   },
   "indexData": {
     "querySnippet": "Афанасий Петров Ампилогов и женка Вера Макарова. ... Отец: Павел Григорьев Ампилогов, государственный крестьянин, деревня Кармалки.",
-    "fuzzyQuery": true
-  }
+    "fuzzyQuery": true,
+    "previousProjectReading": {
+      "transcription": {
+        "status": "project-visual-reading",
+        "literal": "Мая. № 67. 6 [родился], 9 [крещён]. Николай. Деревни Кармалки у государственного крестьянина Павла Григорьева Ампилогова и жены его Христины Трифоновой, оба православные. Восприемники: той же деревни государственный крестьянин Афанасий Петров Ампилогов и женка Вера Макарова. Таинство совершили священник Николай Добролюбов, диакон Иаков Трифонов и пономарь Алексей Тихонравов.",
+        "modernInterpretation": "6 мая 1859 родился, 9 мая крещён Николай, сын Павла Григорьевича Анпилогова и Христины Трифоновны.",
+        "localOcr": "Mглова.\ncn Mangs a\nМs 2т\nпривица овастайна) ов....\n,nов.\n,6V.\nогресоо.",
+        "localOcrWithSurnameLexicon": "en Mang a\nпривида свастайна) ов....\n,6V.",
+        "collation": {
+          "baseLocalOcr": "not-confirmed-by-local-ocr",
+          "assistedLocalOcr": "not-confirmed-by-local-ocr",
+          "yandexTextBlocksUsedForNavigationAndCollation": true
+        },
+        "indexNote": "Индекс Яндекса использован только для навигации; сохранённая расшифровка сопоставлена с независимым локальным OCR."
+      },
+      "event": {
+        "type": "birth-and-baptism",
+        "date": {
+          "iso": "1859-05-06",
+          "display": "1859-05-06",
+          "confidence": "high"
+        },
+        "place": {
+          "asWritten": "деревня Кармалка",
+          "normalized": "Кармалка, Оренбургский уезд, Оренбургская губерния, Российская империя",
+          "placeId": "karmalka-orenburg"
+        },
+        "baptismDate": "1859-05-09"
+      },
+      "review": {
+        "status": "complete",
+        "transcriptionConfidence": "high",
+        "unresolved": [
+          "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+        ],
+        "correctionHistory": [
+          "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+          "2026-09-01: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "summary": {
+        "status": "verified-summary",
+        "text": "Рождение Николая Павловича Ампилогова 6 мая 1859 года в Кармалке."
+      }
+    }
+  },
+  "publicCore": true,
+  "isRecord": true,
+  "personIds": [
+    "P1049",
+    "P1050",
+    "P1051",
+    "P0893"
+  ]
 }

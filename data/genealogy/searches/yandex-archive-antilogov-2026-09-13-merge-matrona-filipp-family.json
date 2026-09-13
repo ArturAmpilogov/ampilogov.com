@@ -1,0 +1,255 @@
+{
+  "status": "complete",
+  "date": "2026-09-13",
+  "remap": {
+    "P5758": "P1427"
+  },
+  "before": {
+    "data/genealogy/people/P5758-matrena-alekseevna-kaluzhina-mikhaylovka-1871.json": {
+      "schemaVersion": 1,
+      "personId": "P5758",
+      "displayName": "Матрёна Алексеевна Калужина",
+      "sex": "female",
+      "surname": {
+        "normalized": "Калужина",
+        "formsAsWritten": [
+          "Алексія Калужина дочь Матрона"
+        ]
+      },
+      "birth": {
+        "display": "около 1850–1851 года по возрасту 20 лет при браке 4 апреля 1871 года",
+        "confidence": "medium"
+      },
+      "sourceIds": [
+        "YA-OGAOO-173-16-82-71-FILIPP"
+      ],
+      "familyIds": [
+        "F4603"
+      ],
+      "status": "documented-from-primary-scan",
+      "notes": [
+        "Дочь государственного крестьянина села Михайловки Алексея Калужина; 4 апреля 1871 года, 20 лет, первым браком венчалась с Филиппом Афанасьевичем Антилоговым."
+      ]
+    },
+    "data/genealogy/people/P1427-matrena-alekseevna-ampilogova-karmalka.json": {
+      "schemaVersion": 1,
+      "personId": "P1427",
+      "displayName": "Матрёна Алексеевна Ампилогова",
+      "sex": "female",
+      "nameVariants": [
+        "жена его Матрона Алексѣева",
+        "Матрена Алексѣева"
+      ],
+      "spouses": [
+        "P1321"
+      ],
+      "children": [
+        "P1426",
+        "P91136"
+      ],
+      "sourceIds": [
+        "YA-9F7AC8EF-8",
+        "YA-42DFA604-31-M69",
+        "YA-8952BFFE-68-F166"
+      ],
+      "status": "documented-from-yandex-archive-scan",
+      "surname": {
+        "normalized": "Ампилогова",
+        "formsAsWritten": []
+      },
+      "places": [
+        {
+          "type": "residence-and-parenthood",
+          "placeId": "karmalka-orenburg",
+          "asWritten": "деревня Кармалка",
+          "confidence": "high"
+        },
+        {
+          "type": "baptism-witness",
+          "placeId": "karmalka-orenburg",
+          "asWritten": "деревня Кармаловка",
+          "confidence": "high"
+        }
+      ],
+      "notes": [
+        "Супруга Филиппа Афанасьевича Ампилогова и мать Михаила, родившегося в феврале 1876 года.",
+        "Мать Тимофея, родившегося 1 мая и крещённого 4 мая 1886 года в Кармалке.",
+        "6 октября 1889 года была восприемницей Пелагеи Тимофеевны Ампилоговой в Кармалке."
+      ],
+      "relations": [
+        {
+          "type": "mother-of",
+          "personId": "P91136",
+          "sourceIds": [
+            "YA-42DFA604-31-M69"
+          ],
+          "basis": "Прямая родственная формула в записи YA-42DFA604-31-M69",
+          "confidence": "high"
+        },
+        {
+          "type": "mother-of",
+          "personId": "P1426",
+          "sourceIds": [
+            "YA-9F7AC8EF-8"
+          ],
+          "basis": "Прямая родственная формула в записи YA-9F7AC8EF-8",
+          "confidence": "high"
+        }
+      ]
+    },
+    "data/genealogy/sources/publications/YA-OGAOO-173-16-82-71-FILIPP.json": {
+      "schemaVersion": 1,
+      "sourceId": "YA-OGAOO-173-16-82-71-FILIPP",
+      "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
+      "recordType": "primary-scan-transcription",
+      "collection": {
+        "title": "Метрическая книга сёл Михайловка, Преображенское, Ново-Федоровка, Ново-Никольское и Колычево за 1871 год",
+        "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 82, скан 71, брак № 36"
+      },
+      "repository": {
+        "name": "Объединённый государственный архив Оренбургской области",
+        "location": "Оренбург",
+        "url": "https://yandex.ru/archive/catalog/8b496dd7-169a-4af4-9a3a-806bb6aafe75/71"
+      },
+      "links": {
+        "scan": "https://yandex.ru/archive/catalog/8b496dd7-169a-4af4-9a3a-806bb6aafe75/71"
+      },
+      "primaryPersonId": "P1321",
+      "event": {
+        "type": "marriage",
+        "date": {
+          "display": "4 апреля 1871 года"
+        },
+        "place": {
+          "normalized": "приход села Михайловки, Оренбургский уезд"
+        }
+      },
+      "mentions": [
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M1",
+          "role": "groom",
+          "personId": "P1321",
+          "nameAsTranscribed": "Деревни Кармалки Государственный крестьянинъ Филиппъ Афанасьевъ Антилоговъ, православнаго исповѣданія, первымъ бракомъ, 18 лет",
+          "displayName": "Филипп Афанасьевич Антилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M2",
+          "role": "bride",
+          "personId": "P5758",
+          "nameAsTranscribed": "Села Михайловки Государственнаго крестьянина Алексія Калужина дочь Матрона, православная, первымъ бракомъ, 20 лет",
+          "displayName": "Матрёна Алексеевна Калужина"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M3",
+          "role": "groom-surety",
+          "personId": "P5759",
+          "nameAsTranscribed": "Ѳеодоръ Ампилоговъ",
+          "displayName": "Фёдор Ампилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M4",
+          "role": "groom-surety",
+          "personId": "P5201",
+          "nameAsTranscribed": "Потапъ Анпилоговъ",
+          "displayName": "Потап Анпилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M5",
+          "role": "groom-surety",
+          "personId": "P5761",
+          "nameAsTranscribed": "Григорій Анпилоговъ",
+          "displayName": "Григорий Анпилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M6",
+          "role": "bride-sureties",
+          "nameAsTranscribed": "Василій Калужинъ и Сергій Хвалевъ",
+          "displayName": "Василий Калужин и Сергей Хвалев"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-82-71-FILIPP-M7",
+          "role": "clergy",
+          "nameAsTranscribed": "Священникъ Капитонъ Бѣлявскій, діаконъ Филиппъ Юстовъ, дьячекъ Алексѣй Цвѣтковъ, пономарь Петръ Яковлевъ",
+          "displayName": "священник Капитон Белявский, диакон Филипп Юстов, дьячок Алексей Цветков и пономарь Пётр Яковлев"
+        }
+      ],
+      "transcription": {
+        "status": "complete",
+        "literal": "Апрѣля 4, брак № 36. Деревни Кармалки Государственный крестьянинъ Филиппъ Афанасьевъ Антилоговъ, православнаго исповѣданія, первымъ бракомъ, 18 лет; села Михайловки Государственнаго крестьянина Алексія Калужина дочь Матрона, православная, первымъ бракомъ, 20 лет. По женихѣ деревни Кармалки Государственные крестьяне Ѳеодоръ Ампилоговъ, Потапъ Анпилоговъ и Григорій Анпилоговъ; по невѣстѣ села Михайловки Василій Калужинъ и Сергій Хвалевъ.",
+        "modernInterpretation": "4 апреля 1871 года Филипп Афанасьевич Антилогов первым браком венчался с Матрёной Алексеевной Калужиной; поручителями по жениху были Фёдор Ампилогов, Потап и Григорий Анпилоговы."
+      },
+      "indexData": {
+        "provider": "Яндекс Архив",
+        "warning": "Формы фамилии сохранены как на листе: жених — «Антилогов», Фёдор — «Ампилогов», Потап и Григорий — «Анпилогов». Поручители названы без отчеств и не объединены с одноимёнными профилями."
+      },
+      "evidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-full-view.png",
+        "capturedAt": "2026-09-07",
+        "sha256": "fbc6af92195687d36df8456ca2ce2216e7801644adfca1d1aa39b68914ae0c45",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-header.png",
+            "sha256": "17e6be2ef2ce155fa14f5fec4a3037f2eca036d658c0501546101a95e1196554",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/8b496dd7-169a-4af4-9a3a-806bb6aafe75/0071-target-entry.png",
+            "sha256": "0d3bf7c15575677a7a6c71b95880bab4bc780fc08c9471e19c2151b588d27ef7",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-07",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      },
+      "review": {
+        "status": "complete-with-unresolved",
+        "unresolved": [
+          "Отчества Фёдора, Потапа и Григория не указаны."
+        ],
+        "correctionHistory": [
+          "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+          "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "summary": {
+        "status": "verified-summary",
+        "text": "4 апреля 1871 года Филипп Афанасьевич Антилогов венчался с Матрёной Алексеевной Калужиной; поручителями были Фёдор, Потап и Григорий Анпилоговы."
+      },
+      "isRecord": true
+    },
+    "data/genealogy/families/F4603-filipp-matrena-antilogovy-karmalka.json": {
+      "schemaVersion": 1,
+      "familyId": "F4603",
+      "label": "Филипп Афанасьевич Антилогов и Матрёна Алексеевна Калужина",
+      "spouses": [
+        "P1321",
+        "P5758"
+      ],
+      "children": [],
+      "sourceIds": [
+        "YA-OGAOO-173-16-82-71-FILIPP"
+      ],
+      "status": "documented-from-primary-scan",
+      "notes": [
+        "Оба первым браком венчались 4 апреля 1871 года; жениху было 18 лет, невесте 20 лет."
+      ]
+    }
+  },
+  "changedReferenceFiles": [
+    "data/genealogy/sources/publications/YA-OGAOO-173-16-82-71-FILIPP.json",
+    "data/genealogy/families/F4603-filipp-matrena-antilogovy-karmalka.json"
+  ],
+  "obsoleteReferences": 0,
+  "basis": "Матрёна Алексеевна Калужина, уникальный супруг Филипп Афанасьевич,брак1871 и дети1876–1889. Перенос девичьей фамилии и всей цепочки подтверждён root."
+}

@@ -15,16 +15,19 @@
   "links": {
     "scan": "https://yandex.ru/archive/catalog/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/16"
   },
-  "primaryPersonId": "P90008",
+  "primaryPersonId": "P2255",
   "event": {
     "type": "son-birth-baptism",
     "date": {
-      "display": "18 июня 1840 года; крещение 23 июня"
+      "iso": "1840-06-18",
+      "display": "1840-06-18",
+      "confidence": "high"
     },
     "place": {
       "normalized": "деревня Кармалка, Оренбургский уезд",
       "placeId": "karmalka-sarmanayeva"
-    }
+    },
+    "baptismDate": "1840-06-23"
   },
   "mentions": [
     {
@@ -37,14 +40,15 @@
     {
       "mentionId": "YA-OGAOO-173-11-1445-16-GRIGORY-M2",
       "role": "mother",
-      "nameAsTranscribed": "законная его жена Наталья Алектіева",
-      "displayName": "Наталья Алексиевна"
+      "nameAsTranscribed": "законная его жена Наталья Акентьева",
+      "displayName": "Наталья Акентьевна"
     },
     {
       "mentionId": "YA-OGAOO-173-11-1445-16-GRIGORY-M3",
       "role": "baptized-child",
       "nameAsTranscribed": "Павелъ",
-      "displayName": "Павел Григорьевич Анпилогов"
+      "displayName": "Павел Григорьевич Анпилогов",
+      "personId": "P2255"
     },
     {
       "mentionId": "YA-OGAOO-173-11-1445-16-GRIGORY-M4",
@@ -54,67 +58,96 @@
     }
   ],
   "transcription": {
-    "status": "complete",
-    "literal": "Іюня 18 [родился], 23 [крещён]. Павелъ. Деревни Кармалы однодворецъ Григорій Петровъ Анпилоговъ и законная его жена Наталья Алектіева, грекороссійскаго вѣроисповѣданія. Воспріемники: той же деревни однодворецъ Федоръ Никитинъ Нелюбовъ и женка Ксенія Федосеева.",
-    "modernInterpretation": "18 июня 1840 года у Григория Петровича Анпилогова и Натальи Алексиевны родился сын Павел, крещённый 23 июня."
+    "status": "project-visual-reading",
+    "literal": "Іюня 18 [родился], 23 [крещён]. Павелъ. Деревни Кармалы однодворецъ Григорій Петровъ Анпилоговъ и законная его жена Наталья Акентьева, грекороссійскаго вѣроисповѣданія. Воспріемники: той же деревни однодворецъ Федоръ Никитинъ Нелюбовъ и женка Ксенія Федосеева.",
+    "modernInterpretation": "18 июня 1840 родился, 23 июня крещён Павел, сын Григория Петровича Анпилогова и Натальи Акентьевны из Кармалки."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Запись с полным отчеством и именем жены подтверждает объединение прежнего профиля P2023 с P0492."
+    "warning": "Запись с полным отчеством и именем жены подтверждает объединение прежнего профиля P2023 с P0492.",
+    "previousProjectReading": {
+      "transcription": {
+        "status": "project-visual-reading",
+        "literal": "Іюня 18 [родился], 23 [крещён]. Павелъ. Деревни Кармалы однодворецъ Григорій Петровъ Анпилоговъ и законная его жена Наталья Акентьева, грекороссійскаго вѣроисповѣданія. Воспріемники: той же деревни однодворецъ Федоръ Никитинъ Нелюбовъ и женка Ксенія Федосеева.",
+        "modernInterpretation": "18 июня 1840 родился, 23 июня крещён Павел, сын Григория Петровича Анпилогова и Натальи Акентьевны из Кармалки."
+      },
+      "event": {
+        "type": "son-birth-baptism",
+        "date": {
+          "iso": "1840-06-18",
+          "display": "1840-06-18",
+          "confidence": "high"
+        },
+        "place": {
+          "normalized": "деревня Кармалка, Оренбургский уезд",
+          "placeId": "karmalka-sarmanayeva"
+        },
+        "baptismDate": "1840-06-23"
+      },
+      "review": {
+        "status": "complete",
+        "unresolved": [],
+        "correctionHistory": [
+          "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+          "2026-08-26: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+          "2026-08-27: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+          "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "summary": {
+        "status": "verified-summary",
+        "text": "18 июня 1840 года у Григория Петровича Анпилогова и Натальи Алексиевны родился сын Павел, крещённый 23 июня."
+      }
+    }
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-full-view.png",
-    "capturedAt": "2026-08-31",
-    "sha256": "f899dc223207a47f9015d2f47cbfdcfda6cfa9067cedaaf0ce3f780c527e4c12",
+    "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-antilogov-pavel-review-original.jpg",
+    "sha256": "be37d34cdbec760e2ae91da90c9cd71961a5f63fb8c3aa314ef6380d0cae2339",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-full-view.png",
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "sourceUrl": "https://yandex.ru/archive/catalog/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/16",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-header.png",
-        "sha256": "2563ad332fb23670c225d421ac1069a50951bdf578a2d0915518fa0bdc45ee49",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-antilogov-pavel-review-header.jpg",
+        "sha256": "bdd46e945f20d21ac435a2d81fb8c425a5ee4838dc7391ace3df95e6c1cd513c",
+        "publicDisplay": false,
+        "kind": "header"
       },
       {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-target-entry-document-center.png",
-        "sha256": "aded6b919520ddc57b019ddde99cd85db9ade58dde177301aa6a50b5c25309ae",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-antilogov-pavel-review-crop.jpg",
+        "sha256": "5f3e2db6b8716b1647e640cb2a1c1c2494823c575ac47db628b668bfc8999f2f",
+        "publicDisplay": false,
+        "kind": "crop"
       },
       {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-target-entry.png",
-        "sha256": "de8c95459c324819826993bf7e160983a7698aa56ad2f510813dc0ff76ab3ec4",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/00fbec96-fed3-4243-bba5-a0eb14b3a6ce/0016-antilogov-pavel-review-fine.jpg",
+        "sha256": "ba4bd7fa8635bc4b8662e1b0a8662e9f4aa6addf09dfbef529ff1e06881191de",
+        "publicDisplay": false,
+        "kind": "fine"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-08-31",
-      "method": "manual-comparison-with-source-transcription-and-document-context",
-      "fullDimensions": "1310x1021",
-      "targetDimensions": "1696x1020",
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
-    "status": "complete",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
-      "2026-08-26: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
-      "2026-08-27: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
-      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Год 1840, 18/23 июня подтверждены оригиналом. Павел P2255 — только младенец, сын P90008; прежняя привязка к 18-летнему жениху 1853 снята как противоречащая возрасту. Мать читается Наталья Акентьева, прежнее Алектиева — ошибка чтения."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "18 июня 1840 года у Григория Петровича Анпилогова и Натальи Алексиевны родился сын Павел, крещённый 23 июня."
+    "text": "18 июня 1840 родился, 23 июня крещён Павел, сын Григория Петровича Анпилогова и Натальи Акентьевны из Кармалки."
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "personIds": [
+    "P90008",
+    "P2255"
+  ]
 }

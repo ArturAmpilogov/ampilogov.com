@@ -1,35 +1,80 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-CC7AA759-178",
-  "provider": "Яндекс Архив",
-  "recordType": "index-hit-review",
+  "provider": "Яндекс Архив — первичный скан",
+  "recordType": "clergy-service",
   "collection": {
+    "title": "ogaoo_orenburg/173-16-1616-0178.jpg",
     "catalogId": "cc7aa759-2830-4410-af37-632f220b628a",
     "scanNumber": 178
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/cc7aa759-2830-4410-af37-632f220b628a/178"
   },
-  "mentions": [],
+  "event": {
+    "type": "clergy-service",
+    "date": {
+      "display": "5–30 апреля 1905",
+      "iso": "1905-04-05",
+      "confidence": "high"
+    },
+    "place": {
+      "asWritten": "село Колычево",
+      "normalized": "село Колычево"
+    }
+  },
+  "mentions": [
+    {
+      "mentionId": "YA-CC7AA759-178-M1",
+      "role": "priest",
+      "personId": "P1653",
+      "nameAsTranscribed": "Священникъ Михаилъ Антилоговъ",
+      "displayName": "Михаил Афиногенович Ампилогов",
+      "surnameSeries": true
+    }
+  ],
+  "transcription": {
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "Апрѣль. №5:3/5 Евдокія,75 лет; №6:18/20 Софія Стефанова Канарева,12 лет; №10:19/21 Павелъ,1 год; №7:21/23 Евдокія,2 месяца; №11:23/25 Димитрій,3 месяца; №12:28/30 Георгій,1 неделя; №8:28/30 Анисья,13 лет. При записях: Священникъ Михаилъ Антилоговъ. Псаломщикъ Іоаннъ Смирновъ.",
+    "modernInterpretation": "Михаил совершает апрельские погребения в Колычеве."
+  },
+  "indexData": {
+    "query": "Антилогов",
+    "querySnippet": "Села Колычева крестьянская дочь девица София Стефанова Канарева Священник Михаил \u0007[Антилогов\u0007] Псаломщик Иоанн Смирнов.",
+    "warning": "Индекс только подсказка."
+  },
   "evidence": {
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0178-antilogov-original.jpg",
+    "sha256": "44b7a1eab34983478af03b7f1b167dce5eddf0122a60fb642cd434f5f9573183",
     "publicDisplay": false,
-    "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0178-full-view.jpg",
-    "sha256": "a18141cd164b4c9c4947f17531311e02b1639cca0a955ac2f3c3c747402b2a12",
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/cc7aa759-2830-4410-af37-632f220b628a/178",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0178-target-entry.jpg",
-        "sha256": "1a3e520c7a4797398df9d4ff41224c971f5427f1d87ce965109b30aa83687086"
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0178-antilogov-target.jpg",
+        "sha256": "1049b94d180ea50d9c1b87ee5a7095786f7b40552d25c2766d26328727ca900e",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      },
+      {
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/cc7aa759-2830-4410-af37-632f220b628a/0178-antilogov-detail.jpg",
+        "sha256": "b45f859478f3230ab997e9bb5fcb214b54f29d6777db9adf978fb430c558219d",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
       }
     ]
   },
   "review": {
-    "status": "primary-scan-reviewed-no-match",
-    "transcriptionConfidence": "high"
+    "status": "complete",
+    "notes": [
+      "Прежний no-match отменён: фамилия повторена в каждой служебной подписи и в общей правой графе. P1653 по той же служебной цепи, что №531. Другие умершие и причт остаются в тексте, без профилей и родственных связей."
+    ]
   },
-  "transcription": {
-    "status": "primary-scan-reviewed-no-match",
-    "literal": "При чтении сохранённых локальных полного разворота и целевого фрагмента фамильный ряд Ампилогов / Анпилогов / Анфилогов и документированные варианты не обнаружены.",
-    "modernInterpretation": "Индексное совпадение не подтверждено первичным сканом. Другие семьи и служители не получают профили, картографические точки, переселения или маршруты.",
-    "indexNote": "Индекс был только поисковой подсказкой; проверены локальные evidence."
-  }
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false
 }

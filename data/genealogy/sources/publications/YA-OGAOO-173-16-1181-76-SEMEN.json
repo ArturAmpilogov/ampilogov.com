@@ -5,7 +5,7 @@
   "recordType": "primary-scan-transcription",
   "collection": {
     "title": "Метрическая книга Спасо-Преображенского собора города Орска; часть о родившихся за 1873 год",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 1181, скан 76, запись № 73"
+    "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 1181, скан 76, запись № 174"
   },
   "repository": {
     "name": "Объединённый государственный архив Оренбургской области",
@@ -19,11 +19,15 @@
   "event": {
     "type": "birth-baptism",
     "date": {
-      "display": "родилась 26 июля 1873 года; крещена 29 июля"
+      "iso": "1873-07-26",
+      "display": "26 июля1873; крещена29июля",
+      "confidence": "high"
     },
     "place": {
       "normalized": "город Орск, Оренбургская губерния"
-    }
+    },
+    "baptismDate": "1873-07-29",
+    "recordNumber": 174
   },
   "mentions": [
     {
@@ -36,14 +40,14 @@
     {
       "mentionId": "YA-OGAOO-173-16-1181-76-SEMEN-M2",
       "role": "father",
-      "personId": "P5778",
+      "personId": "P1188",
       "nameAsTranscribed": "Орскій Мѣщанинъ Сѵмеонъ Ефимовъ Анпилоговъ",
       "displayName": "Семён Ефимович Анпилогов"
     },
     {
       "mentionId": "YA-OGAOO-173-16-1181-76-SEMEN-M3",
       "role": "mother",
-      "personId": "P5779",
+      "personId": "P1189",
       "nameAsTranscribed": "законная жена его Ирина Андреева",
       "displayName": "Ирина Андреевна Анпилогова"
     },
@@ -61,60 +65,100 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-correction",
+    "status": "project-visual-reading",
     "literal": "Іюля 26, 29. Параскева. Орскій Мѣщанинъ Сѵмеонъ Ефимовъ Анпилоговъ и законная жена его Ирина Андреева, оба православные. Орскій Мѣщанинъ Максимъ Игнатьевъ Пашковъ и Солдатская жена Ефимія Терентьева Халятина.",
     "modernInterpretation": "26 июля 1873 года у орских мещан Семёна Ефимовича и Ирины Андреевны Анпилоговых родилась дочь Параскева, крещённая 29 июля."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "note": "Год 1873 подтверждён заголовком оригинального метрического листа; прежнее чтение 1877 было ошибочным."
+    "note": "Год 1873 подтверждён заголовком оригинального метрического листа; прежнее чтение 1877 было ошибочным.",
+    "beforeVisualReview20260913": {
+      "transcription": {
+        "status": "project-visual-reading",
+        "literal": "Іюля 26, 29. Параскева. Орскій Мѣщанинъ Сѵмеонъ Ефимовъ Анпилоговъ и законная жена его Ирина Андреева, оба православные. Орскій Мѣщанинъ Максимъ Игнатьевъ Пашковъ и Солдатская жена Ефимія Терентьева Халятина.",
+        "modernInterpretation": "26 июля 1873 года у орских мещан Семёна Ефимовича и Ирины Андреевны Анпилоговых родилась дочь Параскева, крещённая 29 июля."
+      },
+      "review": {
+        "status": "complete",
+        "unresolved": [],
+        "correctionHistory": [
+          "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "evidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-full-view.png",
+        "capturedAt": "2026-09-03",
+        "sha256": "b9dd0c9ec05535c13ae2fc645bc4ee2c2dc9d4b369f8df78ed1e67413e711cd0",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-header.png",
+            "sha256": "624b4f5b1a1518fbfbd8d5ca0bfbb40937f15b8cc354a5e7dd02c27d7c7bb9d9",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry-1",
+            "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-target-entry-document-lower.png",
+            "sha256": "ca7bb713facbc097438902342645e5ed20a63707e3ae5a80bfa92ab90bf59272",
+            "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
+          },
+          {
+            "kind": "target-entry-2",
+            "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-target-entry-document-upper.png",
+            "sha256": "8b200a04061a72a1e87970740ebd65f392a14c0369fb9cbb3e485413a023fe56",
+            "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-03",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      }
+    }
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-full-view.png",
-    "capturedAt": "2026-09-03",
-    "sha256": "b9dd0c9ec05535c13ae2fc645bc4ee2c2dc9d4b369f8df78ed1e67413e711cd0",
+    "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-antilogov-early-semen-original.jpg",
+    "sha256": "5069fd5a52673f5fd57467c1ea1cb130dc4e04cc27eb91c3717a2b37d185b4ee",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-full-view.png",
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "capturedAt": "2026-09-13",
+    "sourceUrl": "https://yandex.ru/archive/catalog/35239ce1-9959-4a6f-be30-c9ef391acb4b/76",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-header.png",
-        "sha256": "624b4f5b1a1518fbfbd8d5ca0bfbb40937f15b8cc354a5e7dd02c27d7c7bb9d9",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry-1",
-        "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-target-entry-document-lower.png",
-        "sha256": "ca7bb713facbc097438902342645e5ed20a63707e3ae5a80bfa92ab90bf59272",
-        "description": "Увеличенная целевая строка 1 с именами, датами, родством, статусом и соседним контекстом."
-      },
-      {
-        "kind": "target-entry-2",
-        "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-target-entry-document-upper.png",
-        "sha256": "8b200a04061a72a1e87970740ebd65f392a14c0369fb9cbb3e485413a023fe56",
-        "description": "Увеличенная целевая строка 2 с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/35239ce1-9959-4a6f-be30-c9ef391acb4b/0076-antilogov-early-semen-crop.jpg",
+        "sha256": "5551e9fc8129d7938ac9204fbd962187bd7238e7c6b76619ab1cdfc0f02060ce",
+        "publicDisplay": false,
+        "kind": "target-entry"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-03",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
-    "status": "complete",
-    "unresolved": [],
-    "correctionHistory": [
-      "2026-09-03: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "notes": [
+      "Повторно проверен скачанный оригинал; №174,26/29июля1873. Родители Семён Ефимов и Ирина Андреева,полное совпадение новой копии8ca48807/72. Ошибочный1877 устранён ранее; связанные профили и разделительные заметки исправлены сейчас."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "26 июля 1873 года родилась Параскева Семёновна Анпилогова; крещена 29 июля в Орске."
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "personIds": [
+    "P5780",
+    "P1188",
+    "P1189"
+  ]
 }

@@ -1,80 +1,159 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-8353-55-58-112-PETR-IVANOVICH",
-  "provider": "ОГА Оренбургской области — цифровой скан в Яндекс Архиве",
-  "recordType": "irrecoverable-military-loss-list",
-  "primaryPersonId": "P101824",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "military-loss-register",
   "collection": {
-    "title": "Именные списки безвозвратных потерь личного состава",
-    "archiveCitation": "ОГАОО, ф. 8353, оп. 55, д. 58, скан 112",
-    "dateRange": "1946–1948"
+    "title": "ogaoo_orenburg/8353-55-58-0112.jpg",
+    "archiveCitation": "ogaoo_orenburg/8353-55-58-0112.jpg; скан 112; акт №669",
+    "catalogId": "9b3247af-d7f5-4842-ba33-c60716d9c37b",
+    "scanNumber": 112
   },
   "links": {
-    "scan": "https://yandex.ru/archive/catalog/9b3247af-d7f5-4842-ba33-c60716d9c37b/112"
+    "documentUrl": "https://yandex.ru/archive/catalog/9b3247af-d7f5-4842-ba33-c60716d9c37b/112"
   },
   "event": {
-    "type": "missing-in-action",
+    "type": "military-loss-register",
     "date": {
-      "display": "пропал без вести в марте 1942 года",
-      "date": "1942-03",
-      "confidence": "high"
+      "display": "1942: машинописно март, рукописная помета июнь; учётный список1946–1948",
+      "from": "1942-03",
+      "to": "1942-06",
+      "confidence": "conflicting-literal-months"
     },
     "place": {
-      "normalized": "Чкаловская область",
-      "confidence": "medium"
+      "normalized": "село Шарлык; адрес отца Пролетарская6"
     }
   },
   "mentions": [
     {
-      "role": "missing-serviceman",
-      "personId": "P101824",
+      "mentionId": "YA-OGAOO-8353-55-58-112-PETR-IVANOVICH-M1",
       "nameAsTranscribed": "Анпилогов Петр Иванович",
-      "rankAsWritten": "рядовой",
-      "birthYear": "1921",
-      "surnameSeries": true
+      "displayName": "Анпилогов Петр Иванович",
+      "role": "missing-serviceman",
+      "surnameSeries": true,
+      "personId": "P101824"
     },
     {
+      "mentionId": "YA-OGAOO-8353-55-58-112-PETR-IVANOVICH-M2",
+      "nameAsTranscribed": "Анпилогов Иван Матве.",
+      "displayName": "Анпилогов Иван Матве.",
       "role": "father",
-      "personId": "P101825",
-      "nameAsTranscribed": "Анпилогов Иван Матве[евич]",
-      "surnameSeries": true
+      "surnameSeries": true,
+      "personId": "P101204"
     }
   ],
   "transcription": {
-    "status": "complete-for-identity-and-loss-date; partial-for-address",
-    "literal": "669. Анпилогов Петр Иванович. Рядовой. 1921. … 30.4.41. Считать пропавшим без вести в марте 42. Отец — Анпилогов Иван Матве[евич], проживает … 6.",
-    "modernInterpretation": "Рядовой Пётр Иванович Анпилогов, 1921 года рождения, призван 30 апреля 1941 года и считается пропавшим без вести в марте 1942 года. Назван отец Иван Матвеевич Анпилогов; адрес читается не полностью."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "669. Анпилогов Петр Иванович. Рядовой,развед.;1921;с.Шарлык[повтор].30.4.41. Считать пропавшим без вести в марте42. [Рукописно:] Июнь1942. Отец Анпилогов Иван Матве.;Пролет6. С марта42 адреса не имеется.",
+    "modernInterpretation": "Пётр Иванович,1921,Шарлык,призван30апреля1941; отец Иван Матвеевич. Машинописный март и рукописный июнь1942 сохранены как разночтение учёта пропадания.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
   },
+  "notes": [
+    "Рождение18декабря1921 в Шарлыке и редкое полное имя отца Ивана Матвеевича дают сильное тождество с ребёнком P109419 и отцом P101204. Объединения разрешены с сохранением before; мать Евфимия известна из рождения, в военном акте не названа.",
+    "Типографское считать пропавшим в марте1942 и рукописное июнь1942 не заменяют друг друга без пояснения. Это не две смерти и не доказанная точная дата гибели. Сам список относится к делу19.11.1946–20.08.1948."
+  ],
   "indexData": {
-    "warning": "OCR вынес имя отца как будто это имя пропавшего. По структуре таблицы пропавший — Пётр Иванович, а Иван Матвеевич указан в колонке родственника."
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "669. [Антилогов] Петр Иванович Июнь развед - \"1921.",
+    "catalogDateFrom": "19-11-1946",
+    "catalogDateTo": "20-08-1948",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
-    "captureType": "downloaded-original-plus-document-only-full-view-and-enlarged-fragment",
-    "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-original.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-full-view-clean.jpg",
-    "capturedAt": "2026-09-11",
+    "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-antilogov-original.jpg",
+    "sha256": "080640d8636f12ee87996936feec93227b1fd6141cf04a6f38636d785499fd85",
+    "catalogId": "9b3247af-d7f5-4842-ba33-c60716d9c37b",
+    "scanNumber": 112,
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
     "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
+        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-antilogov-target.jpg",
+        "sha256": "ba1c8a2b185b20aaa492f8d0360cea14ef2ec0c5d117b508d3356f8f6417953f",
         "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-target-entry.jpg",
-        "sha256": "02d1ec657b24793c9bba7480080f5808be73d50d0e04555ed3fe615bbcd6da92"
+        "cropBox": [
+          101,
+          1119,
+          4748,
+          1448
+        ]
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-antilogov-header.jpg",
+        "sha256": "554dfb65eefcfe942423f431924b90c4f5d25bdf8edef6a7234dcc75077ee2e2",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          4831,
+          814
+        ]
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0001-antilogov-context.jpg",
+        "sha256": "3896a6e35a4470795a010d3bcb05460832ec655b67d738879fc46a9a8259e8ec",
+        "kind": "collection-context",
+        "scanNumber": 1
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0111-antilogov-context.jpg",
+        "sha256": "cb6e403fd326270ddd26db8214861135997debfc70bffe07a7192e2b4c19af31",
+        "kind": "collection-context",
+        "scanNumber": 111
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-reading-of-downloaded-original"
-    },
-    "sha256": "080640d8636f12ee87996936feec93227b1fd6141cf04a6f38636d785499fd85"
+    ]
   },
+  "isRecord": true,
+  "publicCore": true,
   "review": {
-    "status": "complete-with-partial-address"
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
   },
-  "summary": {
-    "status": "verified-summary",
-    "text": "Рядовой Пётр Иванович Анпилогов, 1921 года рождения, считается пропавшим без вести в марте 1942 года; назван его отец Иван Матвеевич."
-  },
-  "isRecord": true
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-for-identity-and-loss-date; partial-for-address",
+        "literal": "669. Анпилогов Петр Иванович. Рядовой. 1921. … 30.4.41. Считать пропавшим без вести в марте 42. Отец — Анпилогов Иван Матве[евич], проживает … 6.",
+        "modernInterpretation": "Рядовой Пётр Иванович Анпилогов, 1921 года рождения, призван 30 апреля 1941 года и считается пропавшим без вести в марте 1942 года. Назван отец Иван Матвеевич Анпилогов; адрес читается не полностью."
+      },
+      "previousEvidence": {
+        "captureType": "downloaded-original-plus-document-only-full-view-and-enlarged-fragment",
+        "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-original.jpg",
+        "localBackup": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-full-view-clean.jpg",
+        "capturedAt": "2026-09-11",
+        "publicDisplay": false,
+        "fragments": [
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9b3247af-d7f5-4842-ba33-c60716d9c37b/0112-target-entry.jpg",
+            "sha256": "02d1ec657b24793c9bba7480080f5808be73d50d0e04555ed3fe615bbcd6da92"
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-11",
+          "method": "manual-reading-of-downloaded-original"
+        },
+        "sha256": "080640d8636f12ee87996936feec93227b1fd6141cf04a6f38636d785499fd85"
+      }
+    }
+  ],
+  "primaryPersonId": "P101824",
+  "relatedSourceIds": [
+    "YA-B30845EA-321-ANTILOGOV-REVIEW",
+    "YA-B30845EA-320-ANTILOGOV-REVIEW"
+  ]
 }

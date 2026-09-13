@@ -1,85 +1,139 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-8381-1-17-141-IVAN-MARRIAGE",
-  "provider": "ОГАОО — цифровой скан в Яндекс Архиве",
-  "recordType": "primary-scan-transcription",
-  "primaryPersonId": "P1374",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "civil-marriage-registration",
   "collection": {
-    "title": "Книга записей браков Оренбурга за 1919 год",
-    "archiveCitation": "ОГАОО, ф. 8381, оп. 1, д. 17, скан 141, запись № 1344"
+    "title": "ogaoo_orenburg/8381-1-17-0141.jpg",
+    "archiveCitation": "ogaoo_orenburg/8381-1-17-0141.jpg; скан 141; акт №1344",
+    "catalogId": "49456752-fc15-4faa-8798-ae451faf353b",
+    "scanNumber": 141
   },
   "links": {
-    "scan": "https://yandex.ru/archive/catalog/49456752-fc15-4faa-8798-ae451faf353b/141"
+    "documentUrl": "https://yandex.ru/archive/catalog/49456752-fc15-4faa-8798-ae451faf353b/141"
   },
   "event": {
     "type": "civil-marriage-registration",
-    "recordNumber": "1344",
     "date": {
-      "display": "28 июля 1919 года",
-      "date": "1919-07-28"
+      "display": "1919-07-28",
+      "date": "1919-07-28",
+      "calendar": "gregorian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "normalized": "Оренбург",
-      "placeId": "orenburg-city"
+      "normalized": "Оренбург"
     }
   },
   "mentions": [
     {
-      "role": "groom",
-      "personId": "P1374",
-      "nameAsTranscribed": "гр. г. Оренбурга Иван Лазаревич Анпилогов, столяр",
+      "mentionId": "YA-OGAOO-8381-1-17-141-IVAN-MARRIAGE-M1",
+      "nameAsTranscribed": "Иван Лазаревич Анпилогов",
       "displayName": "Иван Лазаревич Анпилогов",
-      "age": "родился в 1873 году",
-      "surnameSeries": true
-    },
-    {
-      "role": "bride",
-      "nameAsTranscribed": "гр. г. Верхне-Уральска [имя неуверенно] Яковлевна Батурина",
-      "displayName": "[неуверенно] Яковлевна Батурина",
-      "surnameSeries": false
+      "role": "groom",
+      "surnameSeries": true,
+      "personId": "P1374"
     }
   ],
   "transcription": {
-    "status": "complete-for-target-with-bride-given-name-uncertain",
-    "literal": "№ 1344. 28 июля 1919. гр. г. Оренбурга Иван Лазаревич Анпилогов, столяр; род. 1873 г.; вдов. И гр. г. Верхне-Уральска [неразборчиво] Яковлевна Батурина, девица. Фамилия: Анпилогов.",
-    "modernInterpretation": "28 июля 1919 года в Оренбурге зарегистрирован новый брак вдовца, столяра Ивана Лазаревича Анпилогова, родившегося в 1873 году."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "№1344.28июля1919. Гражданин города Оренбурга Иван Лазаревич Анпилогов,столяр,1873,вдовец. Гражданка города Верхне-Уральска [Те…яна?] Яковлевна Батурина,хозяйство,1893,разведена. Местожительство Оренбург. Фамилия Анпилоговы.",
+    "modernInterpretation": "Брак Ивана Лазаревича P1374 с Яковлевной Батуриной; невеста разведена, не девица, родилась1893.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
   },
+  "notes": [
+    "Повторное чтение исправляет старое девица: в графе семейного состояния ясно разведена. Личное имя невесты графически неоднозначно; индексная Татьяна не принята как доказанное чтение. Жених1873года соответствует P1374."
+  ],
   "indexData": {
-    "warning": "Полный акт имеет приоритет над алфавитным указателем и ясно даёт 28 июля, а не 28 августа. Личное имя невесты не нормализовано из-за неуверенного чтения."
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "Татьяна Яковлевна. г. Оренбург. [Антилогов]. Батутина, хозяйство. 1893 г. разведена.",
+    "catalogDateFrom": "07-07-1919",
+    "catalogDateTo": "30-08-1919",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
-    "captureType": "downloaded-original-plus-document-only-full-view-and-enlarged-target-fragment",
-    "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-original.jpg",
-    "localBackup": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-full-view-clean.jpg",
-    "capturedAt": "2026-09-11",
+    "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-antilogov-original.jpg",
     "sha256": "361189062f1cc6e0868b397b43eeea1bd6fd52e70f5022f745c116d55fa8cd9d",
+    "catalogId": "49456752-fc15-4faa-8798-ae451faf353b",
+    "scanNumber": 141,
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
     "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
-        "kind": "full-view",
-        "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-full-view-clean.jpg",
-        "sha256": "cb57c36776ac54ec8898d2b07bea7b6b6733891b5a9752239018531c95908d05"
+        "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-antilogov-target.jpg",
+        "sha256": "22736c5b7c3aa0601f24e55df891db287ae2b506392a8ad0e53ec9d506335407",
+        "kind": "target-entry",
+        "cropBox": [
+          564,
+          556,
+          9228,
+          5358
+        ]
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-record-1344-clean.jpg",
-        "sha256": "ec574e77133f1103c787a4a225bbaf48f981803c4e0df7c206b627b08a958ca1"
+        "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-antilogov-header.jpg",
+        "sha256": "717228ce278bb6978b67d24bef45b19bdddb24a5376652086e4840a30e6c53d3",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          9735,
+          1670
+        ]
       }
-    ],
-    "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-11",
-      "method": "manual-reading-of-downloaded-original-scan"
+    ]
+  },
+  "isRecord": true,
+  "publicCore": true,
+  "review": {
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
     }
   },
-  "review": {
-    "status": "complete-with-bride-name-uncertain",
-    "identityResolution": "Точное имя, год рождения и Оренбург связывают акт с P1374."
-  },
-  "summary": {
-    "status": "verified-summary",
-    "text": "28 июля 1919 года в Оренбурге зарегистрирован новый брак Ивана Лазаревича Анпилогова."
-  },
-  "isRecord": true
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-for-target-with-bride-given-name-uncertain",
+        "literal": "№ 1344. 28 июля 1919. гр. г. Оренбурга Иван Лазаревич Анпилогов, столяр; род. 1873 г.; вдов. И гр. г. Верхне-Уральска [неразборчиво] Яковлевна Батурина, девица. Фамилия: Анпилогов.",
+        "modernInterpretation": "28 июля 1919 года в Оренбурге зарегистрирован новый брак вдовца, столяра Ивана Лазаревича Анпилогова, родившегося в 1873 году."
+      },
+      "previousEvidence": {
+        "captureType": "downloaded-original-plus-document-only-full-view-and-enlarged-target-fragment",
+        "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-original.jpg",
+        "localBackup": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-full-view-clean.jpg",
+        "capturedAt": "2026-09-11",
+        "sha256": "361189062f1cc6e0868b397b43eeea1bd6fd52e70f5022f745c116d55fa8cd9d",
+        "publicDisplay": false,
+        "fragments": [
+          {
+            "kind": "full-view",
+            "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-full-view-clean.jpg",
+            "sha256": "cb57c36776ac54ec8898d2b07bea7b6b6733891b5a9752239018531c95908d05"
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/49456752-fc15-4faa-8798-ae451faf353b/0141-record-1344-clean.jpg",
+            "sha256": "ec574e77133f1103c787a4a225bbaf48f981803c4e0df7c206b627b08a958ca1"
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-11",
+          "method": "manual-reading-of-downloaded-original-scan"
+        }
+      }
+    }
+  ],
+  "primaryPersonId": "P1374"
 }

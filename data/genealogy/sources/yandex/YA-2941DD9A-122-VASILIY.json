@@ -1,75 +1,104 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-2941DD9A-122-VASILIY",
-  "provider": "Яндекс Архив — цифровой скан метрической книги",
+  "provider": "Яндекс Архив — первичный скан",
   "recordType": "marriage",
-  "primaryPersonId": "P101372",
   "collection": {
-    "title": "Метрическая книга; часть вторая, о бракосочетавшихся (год на данном листе читается неуверенно)",
-    "scanNumber": 122,
-    "catalogId": "2941dd9a-7c4a-4b8c-8f99-2ca0e4006263"
+    "title": "kuzbass/60-3-51-Im122.jpg",
+    "catalogId": "2941dd9a-7c4a-4b8c-8f99-2ca0e4006263",
+    "scanNumber": 122
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/122"
   },
   "event": {
     "type": "marriage",
-    "recordNumber": 9,
     "date": {
-      "display": "23 января; год требует контрольного чтения",
-      "confidence": "medium"
+      "display": "23 января 1898; год по годовой части",
+      "confidence": "medium",
+      "iso": "1898-01-23"
     },
     "place": {
-      "asWritten": "деревня Николаевка",
-      "normalized": "деревня Николаевка",
-      "placeId": null
+      "asWritten": "деревня Николаевка, Мариинский уезд",
+      "normalized": "деревня Николаевка, Мариинский уезд"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-2941DD9A-122-VASILIY-M1",
-      "role": "surety-for-bride",
-      "personId": "P101372",
-      "nameAsTranscribed": "Василій Васильевъ Анпилоговъ",
-      "displayName": "Василий Васильевич Анпилогов"
+      "role": "father-of-bride",
+      "personId": "P101376",
+      "nameAsTranscribed": "Василій Макаровъ Анпилоговъ",
+      "displayName": "Василий Макарович Анпилогов",
+      "surnameSeries": true
     },
     {
       "mentionId": "YA-2941DD9A-122-VASILIY-M2",
-      "role": "surety-for-bride",
+      "role": "bride",
       "personId": null,
-      "nameAsTranscribed": "Иванъ Михайловъ Анпиловъ",
-      "displayName": "Иван Михайлович Анпилов"
+      "nameAsTranscribed": "Ольга Васильева",
+      "displayName": "Ольга Васильева",
+      "surnameSeries": true
+    },
+    {
+      "mentionId": "YA-2941DD9A-122-VASILIY-M3",
+      "role": "bride-surety",
+      "personId": "P101372",
+      "nameAsTranscribed": "Василій Васильевъ Анпилоговъ",
+      "displayName": "Василий Васильевич Анпилогов",
+      "surnameSeries": true
     }
   ],
   "transcription": {
-    "status": "complete-with-uncertainties",
-    "literal": "Январь. № 9. 23. [Имена и фамилии жениха и невесты на данном сохранённом фрагменте нуждаются в отдельном контрольном чтении.] По невѣстѣ: дер. Николаевки Иванъ Михайловъ Анпиловъ и Василій Васильевъ Анпилоговъ.",
-    "modernInterpretation": "В браке, совершённом 23 января, поручителями по невесте названы Иван Михайлович Анпилов и Василий Васильевич Анпилогов из деревни Николаевки."
+    "status": "project-transcription-from-original-with-explicit-uncertainties",
+    "literal": "9. Январь 23. Запасный рядовой изъ крестьянъ дер. Николаевки Филиппъ Алексеевъ Федосеевъ, православный, первымъ бракомъ, 25. Дѣвица Ольга Васильева, дочь крест. дер. Николаевки Василія Макарова Анпилогова, православная. По невѣстѣ: дер. Николаевки Иванъ Андреевъ Родинъ и Василій Васильевъ Анпилоговъ.",
+    "modernInterpretation": "Установлены брачующиеся и отец невесты; исправлено имя и чужая фамилия второго поручителя."
   },
   "indexData": {
-    "provider": "Яндекс Архив",
-    "warning": "Сведения о поручителях и дате проверены по рукописной строке. Год книги и полная идентификация брачующихся не были достроены по OCR."
+    "query": "Антилогов",
+    "querySnippet": "Жених: Григорий Васильев Лютиков, крестьянин, деревня Петровка, 25. Отец невесты: Василий Макаров \u0007[Антилогов\u0007], крестьянин, деревня Николаевка.",
+    "warning": "Индекс и прежний OCR использованы только как подсказка; имена, роли и даты заново прочитаны по оригиналу."
   },
   "evidence": {
-    "sourceUrl": "https://yandex.ru/archive/catalog/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/122",
-    "captureType": "yandex-archive-original-raster-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-full-view.png",
-    "localBackup": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "5dc4f4f6797122f69345171ae358d17e84e2d552ffffe3e88870b78634a67e0a",
+    "kind": "original",
+    "path": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-antilogov-original.jpg",
+    "sha256": "f021c5a5158c3836149506f9fbab6422805ae6e3ba31b1dafe8015ce1dfc1410",
     "publicDisplay": false,
-    "rightsNote": "Оригинальный лист и увеличенные фрагменты сохранены локально для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+    "description": "Полный оригинал для проектного чтения.",
+    "sourceUrl": "https://yandex.ru/archive/catalog/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/122",
+    "capturedAt": "2026-09-13",
     "fragments": [
-      {"kind":"header","path":"data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-header.png","sha256":"4cad63b27106ffba67bf83eb4970d7559094ac1b4df8bf9a6fb71c0b93588587","description":"Увеличенный заголовок книги и раздела."},
-      {"kind":"target-entry","path":"data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-target-entry-document.png","sha256":"fae2ecc20742f5f6e34e117100676f0a3c22abdb727c47f6e95d892c7735c3b0","description":"Увеличенная строка № 9 с поручителями по невесте."}
-    ],
-    "quality":{"documentOnlyVisuallyConfirmed":true,"headerVisuallyConfirmed":true,"targetRowsVisuallyConfirmed":true,"confirmedAt":"2026-09-10","method":"manual-comparison-with-original-raster-and-enlarged-document-fragments"}
+      {
+        "kind": "target",
+        "path": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-antilogov-target.jpg",
+        "sha256": "364ea2e351c26a47eadd3462c2ed9c9bf1f1db4ae1db753582d3c2dce4f8c608",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      },
+      {
+        "kind": "detail",
+        "path": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0122-antilogov-detail.jpg",
+        "sha256": "a5dca4f0cc4bb115fb3c73a113d7c377d157eca2cd15ceae67a25992e0e0a422",
+        "publicDisplay": false,
+        "description": "Крупный фрагмент целевого упоминания."
+      },
+      {
+        "kind": "original",
+        "path": "data/genealogy/evidence-private/yandex/2941dd9a-7c4a-4b8c-8f99-2ca0e4006263/0121-antilogov-original.jpg",
+        "sha256": "24b242e12f7d1b1b9a05102524ec6e7b5da58137bc39b6f7d6fdedc8f15a877c",
+        "publicDisplay": false,
+        "description": "Полный оригинал для проектного чтения."
+      }
+    ]
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "Василий Васильевич сохранён отдельным профилем, а Иван Михайлович — буквальным упоминанием, поскольку надёжной связи с другими одноимёнными людьми нет. Общее родство не предполагается.",
-    "unresolved": ["Год книги, точное административное расположение Николаевки и полные данные брачующихся требуют дальнейшей проверки."]
+    "status": "complete",
+    "transcriptionConfidence": "medium-high",
+    "notes": [
+      "Прежнее «Иван Михайлов Анпилов» отвергнуто: оригинал ясно Иван Андреев Родин. Год на 122 скрыт, но та же годовая часть продолжается до 129 с подтверждённым 1898; соседний 121 продолжает январскую последовательность. Ольга P101375 — кандидат по точному отцу и Николаевке, но прежняя запись даёт иной брак 25 апреля 1896: без перечтения не соединена. Василий Васильевич P109008 — кандидат к P101372, пока не объединены."
+    ]
   },
-  "summary":{"status":"verified-summary-with-caveat","text":"23 января Василий Васильевич Анпилогов был поручителем по невесте вместе с Иваном Михайловичем Анпиловым; год и точная локализация требуют контрольного чтения."},
-  "isRecord": true
+  "publicCore": true,
+  "isRecord": true,
+  "researchOnly": false
 }

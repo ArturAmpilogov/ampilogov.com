@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "status": "complete-with-explicit-age-conflict",
+  "snapshots": [
+    {
+      "path": "data/genealogy/sources/yandex/YA-F1F5CE60-108.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-F1F5CE60-108",
+        "provider": "Яндекс Архив — первичный архивный скан",
+        "recordType": "godparent-at-baptism",
+        "primaryPersonId": "P8136",
+        "collection": {
+          "catalogId": "f1f5ce60-e865-4aac-b403-9c021f579dcb",
+          "scanNumber": 108,
+          "title": "Метрическая книга Николаевской церкви Бузулука за 1909–1910 годы"
+        },
+        "links": {
+          "documentUrl": "https://yandex.ru/archive/catalog/f1f5ce60-e865-4aac-b403-9c021f579dcb/108"
+        },
+        "event": {
+          "type": "godparent-at-baptism",
+          "recordNumber": 16,
+          "date": {
+            "display": "20/23 марта 1909 или 1910 года",
+            "confidence": "medium",
+            "note": "Числа прочитаны на листе; точный год требует соседнего годового заголовка."
+          },
+          "place": {
+            "asWritten": "Николаевская церковь города Бузулука",
+            "normalized": "город Бузулук, Бузулукский уезд, Самарская губерния",
+            "placeId": "buzuluk-uezd"
+          }
+        },
+        "mentions": [
+          {
+            "role": "godfather",
+            "personId": "P8136",
+            "displayName": "Василий Михайлович Анпилогов",
+            "nameAsTranscribed": "Города Оренбурга мѣщанинъ Василій Михайловъ Анпилоговъ",
+            "surnameSeries": true,
+            "identityConfidence": "high"
+          },
+          {
+            "role": "child",
+            "displayName": "Иоанн",
+            "nameAsTranscribed": "Іоаннъ",
+            "surnameSeries": false
+          }
+        ],
+        "transcription": {
+          "status": "complete-primary-scan-reading-manually-verified",
+          "literal": "Мужского пола № 16. Марта 20 родился, 23 крещён. Іоаннъ. […] Города Оренбурга мѣщанинъ Василій Михайловъ Анпилоговъ и [дочь купца — дальнейшее имя читается неуверенно].",
+          "modernInterpretation": "При крещении Иоанна восприемником был оренбургский мещанин Василий Михайлович Анпилогов. Родители и восприемница принадлежат другим фамилиям.",
+          "indexNote": "Яндекс ошибочно назвал восприемника Евгением; на полном скане уверенно читается «Василій»."
+        },
+        "indexData": {
+          "querySnippet": "Крёстный отец: Евгений Михайлов Анпилогов, мещанин, Оренбург",
+          "fuzzyQuery": true,
+          "discrepancy": "Имя в индексе неверно: первичный лист даёт Василия Михайлова Анпилогова."
+        },
+        "evidence": {
+          "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-full-view.png",
+          "sha256": "02bc3b3af7897bb61b35f0980923cf889d7247f5a6421c739310184b2f2cdb4e",
+          "fragments": [
+            {
+              "kind": "full-width-deep-context",
+              "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-deep-context.jpg",
+              "sha256": "3a8bf8a8aeb1c312960853556a2664c2f5a0d02446900d84e82dfd555ed80d52",
+              "description": "Запись №16 со всеми графами и соседними актами."
+            }
+          ],
+          "quality": {
+            "originalImageDownloaded": true,
+            "fullDimensions": "6149x4804",
+            "targetDimensions": "5900x3000",
+            "method": "manual-full-page-reading-and-wide-recrop"
+          },
+          "publicDisplay": false,
+          "uploadStatus": "pending-upload"
+        },
+        "isRecord": true,
+        "cardKind": "named-primary-record",
+        "publicCore": true,
+        "context": {
+          "eventSummary": "Василий Михайлович Анпилогов был восприемником при крещении Иоанна в Бузулуке.",
+          "identityNote": "P8136 strongly-supported: совпадают полное имя, город, сословие оренбургского мещанина, повторяющаяся роль восприемника и хронология. P0644 родился в 1907 году, P7924 связан с Новоникольской; P91172 не объединён и оставлен для отдельной reconciliation-проверки.",
+          "migrationNote": "Участие в крещении в Бузулуке не доказывает переселение из Оренбурга."
+        },
+        "review": {
+          "status": "complete-primary-scan-reading-manually-verified",
+          "transcriptionConfidence": "high-for-surname-series-content",
+          "unresolved": [
+            "Точный год внутри диапазона книги 1909–1910 требует соседнего заголовка; имя восприемницы не нормализовано из-за неуверенного чтения."
+          ],
+          "deepReviewedAt": "2026-09-11",
+          "deepReviewScope": "Вручную прочитана полная запись №16 слева направо, включая ранее пропущенную графу восприемников; имя Василий поставлено выше ошибочного индекса «Евгений»; crop 5900x3000."
+        }
+      }
+    },
+    {
+      "path": "data/genealogy/sources/yandex/YA-OGAOO-389-3-51-108-EVGENIY.json",
+      "before": {
+        "schemaVersion": 1,
+        "sourceId": "YA-OGAOO-389-3-51-108-EVGENIY",
+        "provider": "Объединённый государственный архив Оренбургской области — цифровой скан Яндекс Архива",
+        "recordType": "primary-scan-transcription",
+        "primaryPersonId": "P101641",
+        "collection": {
+          "title": "Метрическая книга города Бузулука за 1910 год; родившиеся",
+          "archiveCitation": "ОГАОО, ф. 389, оп. 3, д. 51, скан 108, женский счёт № 26"
+        },
+        "links": {
+          "scan": "https://yandex.ru/archive/catalog/f1f5ce60-e865-4aac-b403-9c021f579dcb/108"
+        },
+        "event": {
+          "type": "godparent",
+          "recordNumber": "26",
+          "date": {
+            "display": "ребёнок родился 27 марта, крещён 28 марта 1910 года",
+            "date": "1910-03-28"
+          },
+          "place": {
+            "asWritten": "город Бузулук",
+            "normalized": "Бузулук, Самарская губерния"
+          }
+        },
+        "mentions": [
+          {
+            "role": "child",
+            "nameAsTranscribed": "Марія",
+            "displayName": "Мария Павловна Першина",
+            "surnameSeries": false
+          },
+          {
+            "role": "godfather",
+            "personId": "P101641",
+            "nameAsTranscribed": "Города Оренбурга мѣщанина Василія Михайлова Анпилогова сынъ Евгеній",
+            "displayName": "Евгений Васильевич Анпилогов",
+            "surnameSeries": true
+          },
+          {
+            "role": "father-of-godfather",
+            "personId": "P8136",
+            "nameAsTranscribed": "Оренбургскій мѣщанинъ Василій Михайловъ Анпилоговъ",
+            "displayName": "Василий Михайлович Анпилогов",
+            "surnameSeries": true
+          }
+        ],
+        "transcription": {
+          "status": "complete-for-target-entry-checked-against-primary-scan",
+          "literal": "Март. Женскаго счёта № 26. 27 родилась, 28 крещена. Марія. Родители: крестьянинъ Павелъ Николаевъ Першинъ и законная жена его Марія Николаева. Воспріемники: города Оренбурга мѣщанина Василія Михайлова Анпилогова сынъ Евгеній и Бузулукскаго купца Ильи Евфимова Татаринцева дочь Лидія.",
+          "modernInterpretation": "28 марта 1910 года в Бузулуке Евгений, сын оренбургского мещанина Василия Михайловича Анпилогова, был восприемником Марии Першиной."
+        },
+        "indexData": {
+          "warning": "Яндекс ошибочно превратил родительный оборот в имя «Евгений Михайлов Анпилогов». Оригинал ясно сообщает: Евгений — сын Василия Михайловича Анпилогова, следовательно его отчество Васильевич."
+        },
+        "evidence": {
+          "captureType": "yandex-original-document-image-with-document-only-copy-and-enlarged-fragment",
+          "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-original.jpg",
+          "localBackup": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-full-view.jpg",
+          "capturedAt": "2026-09-10",
+          "sha256": "e4e2b8fb271a9e1603b463c3efc5f55149ddc2350c19560232f756250d275e72",
+          "publicDisplay": false,
+          "fragments": [
+            {
+              "kind": "full-view",
+              "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-full-view.jpg",
+              "sha256": "e70632e284637b67610f87c64c586596cb1cef19147838bb28b1e96b5fe8f052"
+            },
+            {
+              "kind": "target-entry",
+              "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-evgeniy-godfather-clean.jpg",
+              "sha256": "4340c1b948d42d1363fbc5f7e82b05c3231b63af6e345542c2aae1149dc28233"
+            }
+          ],
+          "quality": {
+            "documentOnlyVisuallyConfirmed": true,
+            "targetRowsVisuallyConfirmed": true,
+            "confirmedAt": "2026-09-10",
+            "method": "manual-reading-of-downloaded-original-scan"
+          }
+        },
+        "review": {
+          "status": "complete",
+          "identityResolution": "Отец связан с P8136 по точному полному имени, оренбургскому мещанскому состоянию и устойчивому бузулукскому контексту семьи."
+        },
+        "summary": {
+          "status": "verified-summary",
+          "text": "28 марта 1910 года Евгений Васильевич Анпилогов был восприемником в Бузулуке."
+        },
+        "isRecord": true
+      }
+    },
+    {
+      "path": "data/genealogy/people/P101641-evgeniy-vasilievich-anpilogov-buzuluk-1910.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P101641",
+        "displayName": "Евгений Васильевич Анпилогов",
+        "sex": "male",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Василія Михайлова Анпилогова сынъ Евгеній"
+          ]
+        },
+        "parents": [
+          "P8136"
+        ],
+        "sourceIds": [
+          "YA-OGAOO-389-3-51-108-EVGENIY",
+          "YA-6E6CD020-118-ANTILOGOV-REVIEW",
+          "YA-A8E0A0C2-116"
+        ],
+        "status": "documented-from-primary-scan",
+        "places": [
+          {
+            "relation": "godparent-event",
+            "normalized": "Бузулук, Самарская губерния",
+            "date": "1910-03-28"
+          },
+          {
+            "relation": "family-registration",
+            "normalized": "Оренбург, Оренбургская губерния"
+          }
+        ],
+        "notes": [
+          "Сын оренбургского мещанина Василия Михайловича Анпилогова; 28 марта 1910 года был восприемником Марии Павловны Першиной в Бузулуке. Отчество восстановлено из прямой родительской формулы источника, вопреки ошибочному чтению Яндекса.",
+          "YA-A8E0A0C2-116: Евгений — сын Василия Михайловича и Веры Ильиничны. Оригинал1901 подтверждён, оригинал1910 прямо называет восприемника сыном Василия Михайлова. Связь с P101641 medium-high; необычный возраст8лет9месяцев при восприемничестве28марта1910 остаётся хронологической коллизией. Второго одноимённого сына без различителя не создаём.",
+          "Рождение19июня1901 связано medium-high. Возраст8лет9месяцев при восприемничестве1910 необычен и оставлен явной коллизией, без создания второго одноимённого сына."
+        ],
+        "birth": {
+          "date": "1901-06-19",
+          "confidence": "medium-high"
+        }
+      }
+    },
+    {
+      "path": "data/genealogy/people/P8136-vasiliy-mikhailovich-anpilogov-orenburg-1892.json",
+      "before": {
+        "schemaVersion": 1,
+        "personId": "P8136",
+        "displayName": "Василий Михайлович Анпилогов",
+        "sex": "male",
+        "surname": {
+          "normalized": "Анпилогов",
+          "formsAsWritten": [
+            "Оренбургскій мѣщанинъ Василій Михаиловъ Анпилоговъ"
+          ]
+        },
+        "sourceIds": [
+          "YA-OGAOO-173-16-800-79-VASILY",
+          "YA-OGAOO-173-16-801-153-VASILY",
+          "YA-OGAOO-173-16-839-190-VASILY-LIDIA",
+          "YA-OGAOO-173-16-930-57-VASILY",
+          "YA-46EE0801-017",
+          "YA-F1F5CE60-108",
+          "YA-OGAOO-173-17-223-25-ANTONINA",
+          "YA-OGAOO-173-17-223-150-ANTONINA-DEATH",
+          "YA-OGAOO-389-3-47-346-VASILIY",
+          "YA-OGAOO-173-16-1056-22-ANTONINA",
+          "YA-OGAOO-173-16-1056-148-ANTONINA-DEATH",
+          "YA-OGAOO-389-1-889-271-VASILY",
+          "YA-OGAOO-389-3-43-54-VASILY",
+          "YA-OGAOO-389-3-43-40-KLAVDIYA",
+          "YA-OGAOO-389-3-50-124-ANTONINA",
+          "YA-OGAOO-389-1-1540-304-ANTONINA",
+          "YA-OGAOO-389-3-51-16-ELENA",
+          "YA-OGAOO-389-3-51-108-EVGENIY",
+          "YA-OGAOO-389-1-1872-3-VALENTINA",
+          "YA-610E774A-158",
+          "YA-B2B047ED-052",
+          "YA-C57C05A4-236",
+          "YA-BF97A30F-095",
+          "YA-6E6CD020-118-ANTILOGOV-REVIEW",
+          "YA-A8E0A0C2-116"
+        ],
+        "status": "documented-from-primary-scan-with-unresolved-identity",
+        "places": [
+          {
+            "relation": "social-registration",
+            "normalized": "город Оренбург, Оренбургская губерния"
+          }
+        ],
+        "notes": [
+          "Оренбургский мещанин; 31 марта 1892 года был восприемником Иоанна Терентьевича Булкина, 12 августа 1892 года — Александра Григорьевича Абалмова, 13 ноября 1893 года — Михаила Алексеевича Пигарева. Три упоминания объединены по точному полному имени, городу и сословию. Не объединён с P7924, который родился в 1886 году и в 1892–1893 годах был ребёнком. Возраст и родственные связи взрослого Василия в записях не названы.",
+          "24 мая 1895 года был поручителем по жениху запасному рядовому Дмитрию Никитичу Мячину в Оренбурге.",
+          "В акте № 39 Покровской церкви Бузулука за 1909 год оренбургский мещанин Василий Михайлович Анпилогов назван отцом Елены. Тождество с P8136 strongly-supported/high по редкому полному имени, сословию и Оренбургу; крещение в Бузулуке не доказывает переселение.",
+          "В записи № 16 Николаевской церкви Бузулука за 1909–1910 годы назван восприемником как «Города Оренбурга мещанин Василий Михайлов Анпилогов». Тождество strongly-supported/high по полному ФИО, сословию, городу, повторяющейся роли и хронологии; P0644 исключён по возрасту, P7924 — по иному месту и статусу, P91172 не объединён. Индексное имя «Евгений» исправлено чтением полного листа.",
+          "27 февраля 1898 года в Покровской церкви Оренбурга назван временным купеческим сыном и отцом Антонины; жена — Вера Ильинична.",
+          "2 июня 1898 года в записи о смерти дочери Антонины назван оренбургским мещанином; различие статуса с февральской записью сохранено буквально, без вывода о смене сословия.",
+          "30 января 1898 года в Бузулуке был поручителем по жениху Илье Ефимовичу Татаринцеву; в записи вновь назван оренбургским мещанином.",
+          "28 апреля 1902 года в Бузулуке был поручителем по невесте Агриппине Павловне Самойловой; назван оренбургским мещанином.",
+          "31 октября 1902 года в Бузулуке родилась его дочь Клавдия; мать — Вера Ильинична.",
+          "1 марта 1907 года в Бузулуке родилась его дочь Антонина; две архивные копии называют матерью Веру Ильиничну.",
+          "15 мая 1909 года в Бузулуке у него и Веры Ильиничны родилась дочь Елена P101625, крещённая 20 мая.",
+          "28 марта 1910 года его сын Евгений P101641 был восприемником Марии Павловны Першиной в Бузулуке; родительская формула источника прямо устанавливает отчество Евгения.",
+          "30 декабря 1911 года у него и Веры Ильиничны родилась дочь Валентина P101708; крещена в Бузулуке 1 января 1912 года. Каталог Яндекса ошибочно относит дело к 1913 году.",
+          "YA-C57C05A4-236: Брак22-летнего Василия Михайловича с20-летней Верой Ильиничной Татаринцевой. Месяц Октябрь на соседнем /235, год1896 на /236. Связь P8136 по точному имени, Оренбургу, сословию и жене Вере Ильиничне в последующих рождениях. Фамилия Татаринцева проверена вторым читателем; буквы у сгиба отмечены по изображению.",
+          "YA-BF97A30F-095: Вторая копия брака Василия Михайловича и Веры Ильиничны Татаринцевой. Чистая копия раскрывает фамилию отца невесты, прикрытую ремонтом в№320. Копии одного акта, не разные браки.",
+          "YA-A8E0A0C2-116: Евгений — сын Василия Михайловича и Веры Ильиничны. Оригинал1901 подтверждён, оригинал1910 прямо называет восприемника сыном Василия Михайлова. Связь с P101641 medium-high; необычный возраст8лет9месяцев при восприемничестве28марта1910 остаётся хронологической коллизией. Второго одноимённого сына без различителя не создаём."
+        ],
+        "relations": [
+          {
+            "type": "father-of",
+            "personId": "P102306",
+            "sourceIds": [
+              "YA-46EE0801-017"
+            ],
+            "basis": "Прямая формула акта № 39; идентификация отца с P8136 strongly-supported по ФИО, сословию и Оренбургу.",
+            "confidence": "strongly-supported"
+          }
+        ],
+        "children": [
+          "P101531",
+          "P101598",
+          "P101625",
+          "P101641",
+          "P101708"
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-antilogov-evgeniy-original.jpg",
+      "kind": "original",
+      "sha256": "e4e2b8fb271a9e1603b463c3efc5f55149ddc2350c19560232f756250d275e72",
+      "publicDisplay": false
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-antilogov-evgeniy-target.jpg",
+      "kind": "target",
+      "sha256": "cd57d847bee7e02872c20e3922aa0ff9a0944926981a792095e1431ce58a51d2",
+      "publicDisplay": false
+    },
+    {
+      "path": "data/genealogy/evidence-private/yandex/f1f5ce60-e865-4aac-b403-9c021f579dcb/0108-antilogov-evgeniy-detail.jpg",
+      "kind": "detail",
+      "sha256": "734e810adf1c9e6828084e6c80290e8c5b2c319edb68a9e797ea3c6c694e8110",
+      "publicDisplay": false
+    }
+  ],
+  "findings": "Евгений19июня1901; одно восприемничество28марта1910 в двух копиях. Возраст8лет9месяцев — нерешённая коллизия. Рождение связано medium-high без выдуманного второго сына."
+}

@@ -2,88 +2,173 @@
   "schemaVersion": 1,
   "sourceId": "YA-55F22583-049",
   "provider": "Яндекс Архив — первичный архивный скан",
-  "recordType": "fuzzy-search-false-positive",
+  "recordType": "death-and-burial",
   "collection": {
     "catalogId": "55f22583-c9cc-4643-9b90-e5747a69adf3",
     "scanNumber": 49,
     "title": "Метрическая книга церкви о рождении, бракосочетании и смерти жителей Оренбургского уезда: селения Георгиевка за 1863 г.",
-    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Архивная опись № 12 дел постоянного хранения, Метрическая книга церкви о рождении, бракосочетании и смерти жителей Оренбургского уезда: селения Георгиевка за 1863 г."
+    "publication": "ОГА Оренбургской области (ОГАОО), Оренбургская духовная консистория г. Оренбург Оренбургская губерния 1800-1918 гг., Архивная опись № 12 дел постоянного хранения, Метрическая книга церкви о рождении, бракосочетании и смерти жителей Оренбургского уезда: селения Георгиевка за 1863 г.",
+    "repository": "ОГА Оренбургской области (ОГАОО)",
+    "fond": "173",
+    "inventory": "12",
+    "file": "487"
   },
   "links": {
     "documentUrl": "https://yandex.ru/archive/catalog/55f22583-c9cc-4643-9b90-e5747a69adf3/49"
   },
   "event": {
-    "type": "research-review",
+    "type": "death-and-burial",
     "date": {
-      "display": "1 января 1863 — 31 декабря 1863",
-      "confidence": "high-for-catalog-date"
+      "iso": "1863-02-04",
+      "display": "1863-02-04",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "не установлено"
-    }
+      "asWritten": "Георгиевка",
+      "normalized": "Георгиевка, Оренбургская губерния",
+      "placeId": "zerklo-orenburg"
+    },
+    "burialDate": "1863-02-06"
   },
-  "mentions": [],
+  "mentions": [
+    {
+      "nameAsTranscribed": "Марфа",
+      "role": "deceased",
+      "personId": "P1026"
+    },
+    {
+      "nameAsTranscribed": "Петръ Васильевъ Анпилоговъ",
+      "role": "father",
+      "personId": "P0930"
+    }
+  ],
   "evidence": {
-    "catalogId": "55f22583-c9cc-4643-9b90-e5747a69adf3",
-    "scanNumber": 49,
-    "captureStatus": "complete-with-local-copy",
-    "captureType": "yandex-archive-original-image-download-with-enlarged-fragments",
-    "localBackup": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-full-view.png",
-    "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-full-view.png",
-    "capturedAt": "2026-09-10",
-    "sha256": "0669c6a580253783ece7bde744f2192eca3ef71cd4f50905877aba55a51c2436",
+    "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-antilogov-early-original.jpg",
+    "sha256": "4a67ade648c05e2ff74d8fa5b1fcffb96dc001889c8f9804b310cbd8872bc6d0",
+    "publicDisplay": false,
+    "kind": "original",
+    "captureType": "downloaded-original",
+    "sourceUrl": "https://yandex.ru/archive/catalog/55f22583-c9cc-4643-9b90-e5747a69adf3/49",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-header.png",
-        "sha256": "4c91b35d740848763e0a432d91ce89f1b8dde101be5b4357704d3b8facb787ef",
-        "description": "Фрагмент исходного листа, фиксирующий заголовок или структуру документа."
+        "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-antilogov-early-entry.jpg",
+        "sha256": "e9e83bb255d3ddf00745e812d00c122094692277ed94f506393f897739206b7a",
+        "publicDisplay": false,
+        "kind": "entry"
       },
       {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0049-target-entry.png",
-        "sha256": "30be24c60c815794d7857de068f3a9b8ef99187ea848ee96b82fddc8ea1b7a73",
-        "description": "Крупный фрагмент целевого упоминания без интерфейса Яндекса."
+        "path": "data/genealogy/evidence-private/yandex/55f22583-c9cc-4643-9b90-e5747a69adf3/0048-antilogov-early-date-context.jpg",
+        "sha256": "9eead791b1740519bafa653aec13663b5a35730385a62254fb3267bae669a67f",
+        "publicDisplay": false,
+        "kind": "date-context"
       }
     ],
     "quality": {
       "originalImageDownloaded": true,
-      "headerAndTargetGeneratedFromOriginal": true,
-      "targetCropLocatedFromTextCoordinates": true,
-      "fullDimensions": "5529x4458",
-      "targetDimensions": "1261x796",
-      "method": "original-download-plus-coordinate-recrop-and-independent-local-ocr"
-    },
-    "publicDisplay": false,
-    "rightsNote": "Локальная копия и фрагменты сохранены для исследовательской проверки; публичная ссылка ведёт только на Яндекс Архив."
+      "targetRowsVisuallyConfirmed": true,
+      "confirmedAt": "2026-09-13"
+    }
   },
   "transcription": {
-    "status": "complete-with-explicit-reading-uncertainty",
-    "literal": "Села Георгіевки крестьянина Петра Васильева Ампилогова дочь Марѳа.",
-    "modernInterpretation": "Села Георгиевки крестьянина Петра Васильева Ампилогова дочь Марфа.",
-    "localOcr": "опамара ( васк\nи,ль п\n1.\nДеревни Козьмма Крестьяннк\nНавель Зиновбевя Ильиня-\n44\nСвященник Фавстs Сньянков;\n1 0 хинчС\nгиинг\nFas t esto Mumpa\nпи\nУоноль Аленинот\n5.\nСела Георгіськи Крестьянинх\nРанана Владимірови5 теер-",
-    "localOcrWithSurnameLexicon": "5._\n1.\nДеревни Кольмма Крестьянек\nНавель Зиновбевя Ильиня -\n44\nСвященник Фавст» Сньянков;\nFas resto Mampac\nпи\nЧоноль Аленином\n5.\nСела Георгіськи Крестьянинк\nРанана Владимірови5 тери-",
-    "collation": {
-      "baseLocalOcr": "not-confirmed-by-local-ocr",
-      "assistedLocalOcr": "not-confirmed-by-local-ocr",
-      "yandexTextBlocksUsedForNavigationAndCollation": true
-    },
-    "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    "status": "project-visual-reading",
+    "literal": "№5.4/6 [февраля]. Села Георгіевки крестьянина Петра Васильева Анпилогова дочь Марфа.4 [лет]. Отъ оспы.",
+    "modernInterpretation": "4 февраля1863 умерла четырёхлетняя Марфа, дочь Петра Васильевича Анпилогова из Георгиевки; погребена6 февраля."
   },
   "indexData": {
     "querySnippet": "Села Георгіевки крестьянина Петра Васильева Ампилогова дочь Марѳа. 4. отъ оспы.",
-    "fuzzyQuery": true
+    "fuzzyQuery": true,
+    "previousTranscription": {
+      "status": "complete-with-explicit-reading-uncertainty",
+      "literal": "Села Георгіевки крестьянина Петра Васильева Ампилогова дочь Марѳа.",
+      "modernInterpretation": "Села Георгиевки крестьянина Петра Васильева Ампилогова дочь Марфа.",
+      "localOcr": "опамара ( васк\nи,ль п\n1.\nДеревни Козьмма Крестьяннк\nНавель Зиновбевя Ильиня-\n44\nСвященник Фавстs Сньянков;\n1 0 хинчС\nгиинг\nFas t esto Mumpa\nпи\nУоноль Аленинот\n5.\nСела Георгіськи Крестьянинх\nРанана Владимірови5 теер-",
+      "localOcrWithSurnameLexicon": "5._\n1.\nДеревни Кольмма Крестьянек\nНавель Зиновбевя Ильиня -\n44\nСвященник Фавст» Сньянков;\nFas resto Mampac\nпи\nЧоноль Аленином\n5.\nСела Георгіськи Крестьянинк\nРанана Владимірови5 тери-",
+      "collation": {
+        "baseLocalOcr": "not-confirmed-by-local-ocr",
+        "assistedLocalOcr": "not-confirmed-by-local-ocr",
+        "yandexTextBlocksUsedForNavigationAndCollation": true
+      },
+      "indexNote": "Индекс и текстовые блоки Яндекса не приняты на веру: они сопоставлены с локальным OCR сохранённого фрагмента; при расхождении сохранена явная неопределённость."
+    },
+    "previousEvent": {
+      "type": "research-review",
+      "date": {
+        "display": "1 января 1863 — 31 декабря 1863",
+        "confidence": "high-for-catalog-date"
+      },
+      "place": {
+        "normalized": "не установлено"
+      }
+    },
+    "rawSearchCard": {
+      "id": "811917b3-06ec-4759-abe4-99543b046c89",
+      "parentId": "55f22583-c9cc-4643-9b90-e5747a69adf3",
+      "originalImageSize": {
+        "width": 5529,
+        "height": 4458
+      },
+      "name": "0049 л.48об,49.jpg",
+      "longName": "0049 л.48об,49.jpg",
+      "annotation": null,
+      "shortAnnotation": null,
+      "code": null,
+      "type": "Sheet",
+      "dateFrom": "01-01-1863",
+      "dateTo": "31-12-1863",
+      "thumb": {
+        "path": "/archive/api/image?id=811917b3-06ec-4759-abe4-99543b046c89&type=thumb",
+        "width": 184,
+        "height": 148
+      },
+      "tags": [],
+      "counters": {
+        "files": 0,
+        "images": 1,
+        "funds": 0,
+        "digitized": 0,
+        "issues": 0,
+        "books": 0
+      },
+      "sheetPageNumber": 49,
+      "metaFullName": null,
+      "metaShortName": null,
+      "namepath": "ogaoo_orenburg/173-12-487-0049 л.48об,49.jpg",
+      "favoriteTags": [],
+      "order": null,
+      "headerBackgroundImage": null,
+      "sourceUrl": null,
+      "sourceType": "default",
+      "contentUpdatedAt": null,
+      "contentUpdateDescriptionUrl": null,
+      "isNew": null,
+      "viewed": null,
+      "serviceTags": null,
+      "visibilityLevel": 100000,
+      "humanMarkup": null,
+      "mlMarkup": null,
+      "originalImagePath": null,
+      "snippet": "Отец умершего: Петр Васильев \u0007[Антилогов\u0007], крестьянин, село Георгиевка.",
+      "joinedTextBlocks": null,
+      "attributionMd": null
+    }
   },
-  "isRecord": false,
-  "cardKind": "research-material-rejected-fuzzy-hit",
-  "publicCore": false,
+  "isRecord": true,
+  "publicCore": true,
   "review": {
-    "status": "complete-but-reading-uncertain",
-    "transcriptionConfidence": "medium-with-explicit-uncertainty",
-    "unresolved": [
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; см. сохранённый крупный фрагмент.",
-      "Фамильная форма не была уверенно воспроизведена локальным OCR; сверять с сохранённым крупным фрагментом."
+    "status": "visually-reviewed",
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Февраль прямо на соседнем48, год1863 на обоих листах. Прежний false-positive ошибочен. Тот же ребёнок уже P1026 по параллельной смерти YA-55F22583-121 и рождению26 августа1858; возраст4 согласуется. Source49 переиспользован, новый дубль не создан."
     ]
   },
-  "rejectionReason": "place-name-not-person-surname"
+  "personIds": [
+    "P1026",
+    "P0930"
+  ],
+  "summary": {
+    "status": "verified-summary",
+    "text": "4 февраля1863 умерла четырёхлетняя Марфа, дочь Петра Васильевича Анпилогова из Георгиевки; погребена6 февраля."
+  },
+  "primaryPersonId": "P1026"
 }

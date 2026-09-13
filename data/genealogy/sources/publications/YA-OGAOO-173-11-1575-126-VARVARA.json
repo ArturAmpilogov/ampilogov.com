@@ -4,8 +4,14 @@
   "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
   "recordType": "primary-scan-transcription",
   "collection": {
-    "title": "Метрические книги церквей Оренбургского уезда за 1843 год",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1575, скан 126"
+    "title": "Метрические книги церквей Оренбургского уезда селений: Ратчины, Рождественского, Михайловки, Георгиевки за 1843 г.",
+    "archiveCitation": "ОГАОО, ф. 173, оп. 11, д. 1575, скан 126",
+    "catalogId": "09e381c2-59f2-4199-9d2a-bf2813a2449f",
+    "scanNumber": 126,
+    "repository": "ОГА Оренбургской области (ОГАОО)",
+    "fond": "173",
+    "inventory": "11",
+    "file": "1575"
   },
   "repository": {
     "name": "Объединённый государственный архив Оренбургской области",
@@ -17,102 +23,159 @@
   },
   "primaryPersonId": "P2058",
   "event": {
-    "type": "daughter-birth-baptism",
+    "type": "birth-and-baptism",
     "date": {
-      "display": "26 ноября 1843 года; крещение 28 ноября"
+      "iso": "1843-11-26",
+      "display": "1843-11-26",
+      "confidence": "high"
     },
     "place": {
-      "normalized": "деревня Кармалка, Оренбургский уезд",
-      "placeId": "karmalka-sarmanayeva"
-    }
+      "asWritten": "Кармалка",
+      "normalized": "Кармалка, Оренбургский уезд",
+      "placeId": "karmalka-orenburg"
+    },
+    "baptismDate": "1843-11-27"
   },
   "mentions": [
     {
-      "mentionId": "YA-OGAOO-173-11-1575-126-VARVARA-M1",
-      "role": "father",
-      "personId": "P2037",
-      "nameAsTranscribed": "Сергей Ивановъ Анпилоговъ",
-      "displayName": "Сергей Иванович Анпилогов"
-    },
-    {
-      "mentionId": "YA-OGAOO-173-11-1575-126-VARVARA-M2",
-      "role": "mother",
-      "nameAsTranscribed": "законная его жена Евдокея Афонасьева",
-      "displayName": "Евдокия Афанасьевна"
-    },
-    {
-      "mentionId": "YA-OGAOO-173-11-1575-126-VARVARA-M3",
-      "role": "baptized-child",
-      "personId": "P2058",
       "nameAsTranscribed": "Варвара",
-      "displayName": "Варвара Сергеевна Анпилогова"
+      "role": "child",
+      "personId": "P2058"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1575-126-VARVARA-M4",
-      "role": "godfather",
-      "personId": "P2034",
+      "nameAsTranscribed": "Сергей Ивановъ Анпилоговъ",
+      "role": "father",
+      "personId": "P2037"
+    },
+    {
+      "nameAsTranscribed": "Евдокея Афонасьева",
+      "role": "mother"
+    },
+    {
       "nameAsTranscribed": "Тимофей Семеновъ Анпилоговъ",
-      "displayName": "Тимофей Семёнович Анпилогов"
+      "role": "godfather",
+      "personId": "P2034"
     },
     {
-      "mentionId": "YA-OGAOO-173-11-1575-126-VARVARA-M5",
+      "nameAsTranscribed": "салдатка Степанида Сидорова Анпилогова",
       "role": "godmother",
-      "personId": "P2048",
-      "nameAsTranscribed": "Салдатка Степанида Сидорова Анпилогова",
-      "displayName": "Степанида Сидоровна Анпилогова"
+      "personId": "P2048"
     }
   ],
   "transcription": {
-    "status": "complete",
-    "literal": "Ноября 26-го родилась, 28-го крещена Варвара. Деревни Кармалы Государственный Крестьянинъ Сергей Ивановъ Анпилоговъ и законная его жена Евдокея Афонасьева. Воспріемники: Тимофей Семеновъ Анпилоговъ и Салдатка Степанида Сидорова Анпилогова.",
-    "modernInterpretation": "26 ноября 1843 года у Сергея Ивановича Анпилогова и Евдокии Афанасьевны родилась дочь Варвара, крещённая 28 ноября; восприемниками были Тимофей Семёнович и Степанида Сидоровна Анпилоговы."
+    "status": "project-visual-reading",
+    "literal": "№74. Ноябрь.26 [родилась],27 [крещена]. Варвара. Деревни Кармалы государственный крестьянинъ Сергей Ивановъ Анпилоговъ и законная его жена Евдокея Афонасьева […] Воспріемники: Тимофей Семеновъ Анпилоговъ и салдатка Степанида Сидорова Анпилогова.",
+    "modernInterpretation": "26 ноября родилась,27 ноября1843 крещена Варвара, дочь Сергея Ивановича Анпилогова и Евдокии Афанасьевны. Восприемники Тимофей Семёнович и солдатка Степанида Сидоровна Анпилоговы.",
+    "layoutNote": "Буквальная выписка существенных полей; квадратные скобки и многоточия обозначают неуверенность или пропуск."
   },
   "indexData": {
     "provider": "Яндекс Архив",
-    "warning": "Чтение проверено по полной строке и изображению."
+    "warning": "Чтение проверено по полной строке и изображению.",
+    "previousTranscription": {
+      "status": "complete",
+      "literal": "Ноября 26-го родилась, 28-го крещена Варвара. Деревни Кармалы Государственный Крестьянинъ Сергей Ивановъ Анпилоговъ и законная его жена Евдокея Афонасьева. Воспріемники: Тимофей Семеновъ Анпилоговъ и Салдатка Степанида Сидорова Анпилогова.",
+      "modernInterpretation": "26 ноября 1843 года у Сергея Ивановича Анпилогова и Евдокии Афанасьевны родилась дочь Варвара, крещённая 28 ноября; восприемниками были Тимофей Семёнович и Степанида Сидоровна Анпилоговы."
+    },
+    "antilogovSearchCard": {
+      "id": "4ef77f93-c14d-4a21-8a65-67b4c5a9c686",
+      "parentId": "09e381c2-59f2-4199-9d2a-bf2813a2449f",
+      "originalImageSize": {
+        "width": 5091,
+        "height": 4008
+      },
+      "name": "0126 л.125об,126.jpg",
+      "longName": "0126 л.125об,126.jpg",
+      "annotation": null,
+      "shortAnnotation": null,
+      "code": null,
+      "type": "Sheet",
+      "dateFrom": "01-01-1843",
+      "dateTo": "31-12-1843",
+      "thumb": {
+        "path": "/archive/api/image?id=4ef77f93-c14d-4a21-8a65-67b4c5a9c686&type=thumb",
+        "width": 184,
+        "height": 145
+      },
+      "tags": [],
+      "counters": {
+        "files": 0,
+        "images": 1,
+        "funds": 0,
+        "digitized": 0,
+        "issues": 0,
+        "books": 0
+      },
+      "sheetPageNumber": 126,
+      "metaFullName": null,
+      "metaShortName": null,
+      "namepath": "ogaoo_orenburg/173-11-1575-0126 л.125об,126.jpg",
+      "favoriteTags": [],
+      "order": null,
+      "headerBackgroundImage": null,
+      "sourceUrl": null,
+      "sourceType": "default",
+      "contentUpdatedAt": null,
+      "contentUpdateDescriptionUrl": null,
+      "isNew": null,
+      "viewed": null,
+      "serviceTags": null,
+      "visibilityLevel": 100000,
+      "humanMarkup": null,
+      "mlMarkup": null,
+      "originalImagePath": null,
+      "snippet": "той же деревни государственный Крестьянин Тимофей Семенов \u0007[Антилогов\u0007] и Салдатка Степанида Сидорова Анпилогова.",
+      "joinedTextBlocks": null,
+      "attributionMd": null
+    }
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-full-view.png",
-    "capturedAt": "2026-08-31",
-    "sha256": "a073f6e0f5d701275598946ed2342bbf5529a8a62530c9e5810f5710ecc186c1",
+    "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-antilogov-early-original.jpg",
+    "sha256": "f1e5b1d566f9d96b69251afabd8a1790c72fedbd6a526826ac4aa3cd22a664f0",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-full-view.png",
+    "kind": "original",
+    "description": "Полный оригинал, прочитан визуально.",
+    "captureType": "downloaded-original",
+    "capturedAt": "2026-09-13",
+    "sourceUrl": "https://yandex.ru/archive/catalog/09e381c2-59f2-4199-9d2a-bf2813a2449f/126",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-header.png",
-        "sha256": "976c2eb14cbfcd23919c1d6e88f2f2c8a7dc84c570522681122198c2699abe4f",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-target-entry-document-lower.png",
-        "sha256": "f5067a0d3ae0b5e193745918b1898019ea946587f934deb8211b73e65b916921",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/09e381c2-59f2-4199-9d2a-bf2813a2449f/0126-antilogov-early-entry.jpg",
+        "sha256": "1ea3cdd40311a09320d193c0d8e9f4f60b873a0bca9cab0c45adaec94fde288b",
+        "publicDisplay": false,
+        "kind": "entry",
+        "description": "Целевая запись, увеличена для чтения."
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
+      "originalImageDownloaded": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-08-31",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "confirmedAt": "2026-09-13"
     }
   },
   "review": {
-    "status": "complete",
+    "status": "visually-reviewed",
     "unresolved": [],
     "correctionHistory": [
       "2026-08-25: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
       "2026-08-31: в полноэкранном просмотрщике сохранён чистый кадр документа без элементов сайта; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
-      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+      "2026-08-31: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены.",
+      "2026-09-13: оригинал и фрагмент перечитаны; прежняя расшифровка сохранена отдельно."
+    ],
+    "reviewedAt": "2026-09-13",
+    "notes": [
+      "Обе оригинальные копии126 и78 дают27, не28ноября. Прежнее28 перенесено из следующей записи Степана. Исправляются восемь прежних sources с before snapshot; семейные ID сохранены."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "26 ноября 1843 года у Сергея Ивановича Анпилогова и Евдокии Афанасьевны родилась дочь Варвара, крещённая 28 ноября; восприемниками были Тимофей Семёнович и Степанида Сидоровна Анпилоговы."
+    "text": "26 ноября родилась,27 ноября1843 крещена Варвара, дочь Сергея Ивановича Анпилогова и Евдокии Афанасьевны. Восприемники Тимофей Семёнович и солдатка Степанида Сидоровна Анпилоговы."
   },
-  "isRecord": true
+  "isRecord": true,
+  "publicCore": true,
+  "personIds": [
+    "P2058",
+    "P2037",
+    "P2034",
+    "P2048"
+  ]
 }

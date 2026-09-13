@@ -1,91 +1,157 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-OGAOO-173-17-147-27-KLAVDIYA",
-  "provider": "Yandex Archive",
-  "recordType": "primary-scan-transcription",
-  "primaryPersonId": "P103242",
+  "provider": "Яндекс Архив — первичный архивный скан",
+  "recordType": "birth-and-baptism",
   "collection": {
-    "title": "Метрическая книга за 1915 год",
-    "archiveCitation": "ОГАОО, ф. 173, оп. 17, д. 147, скан 27"
+    "title": "ogaoo_orenburg/173-17-147-0027 л..jpg",
+    "archiveCitation": "ogaoo_orenburg/173-17-147-0027 л..jpg; скан 27; акт №70",
+    "catalogId": "3a9c67d5-43b4-4064-90fe-8cd2d1260093",
+    "scanNumber": 27
   },
   "links": {
-    "scan": "https://yandex.ru/archive/catalog/3a9c67d5-43b4-4064-90fe-8cd2d1260093/27"
+    "documentUrl": "https://yandex.ru/archive/catalog/3a9c67d5-43b4-4064-90fe-8cd2d1260093/27"
   },
   "event": {
     "type": "birth-and-baptism",
-    "date": "1915-03-02",
-    "dateDisplay": "родилась 2 марта, крещена 8 марта 1915 года",
-    "placeId": "orenburg-city",
-    "asWritten": "город Оренбург"
-  },
-  "transcription": {
-    "status": "complete-manual-reading",
-    "literal": "№ 70. Марта 2, 8. Клавдія. Ныне состоящій на военной службе Оренбургскій мещанинъ Ѳеодоръ Ивановъ Антилоговъ и законная жена его Параскева Іосифова, оба православные. Восприемники: Оренбургскій мещанинъ Константинъ Ивановъ Анпилоговъ и мещанская дочь девица Евдокія Васильева Дмитріева.",
-    "modernInterpretation": "Рождение и крещение Клавдии Фёдоровны Антилоговой в Оренбурге."
+    "date": {
+      "display": "1915-03-02",
+      "date": "1915-03-02",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
+    },
+    "place": {
+      "normalized": "город Оренбург"
+    }
   },
   "mentions": [
     {
+      "mentionId": "YA-OGAOO-173-17-147-27-KLAVDIYA-M1",
+      "nameAsTranscribed": "Клавдія",
+      "displayName": "Клавдія",
       "role": "child",
-      "personId": "P103242",
-      "nameAsWritten": "Клавдія"
+      "surnameSeries": true,
+      "personId": "P103242"
     },
     {
+      "mentionId": "YA-OGAOO-173-17-147-27-KLAVDIYA-M2",
+      "nameAsTranscribed": "Феодоръ Ивановъ Антилоговъ",
+      "displayName": "Феодор Иванов Антилогов",
       "role": "father",
-      "personId": "P103241",
-      "nameAsWritten": "Ныне состоящій на военной службе Оренбургскій мещанинъ Ѳеодоръ Ивановъ Антилоговъ"
+      "surnameSeries": true,
+      "personId": "P7908"
     },
     {
-      "role": "mother",
-      "nameAsWritten": "законная жена его Параскева Іосифова"
-    },
-    {
+      "mentionId": "YA-OGAOO-173-17-147-27-KLAVDIYA-M3",
+      "nameAsTranscribed": "Константинъ Ивановъ Анпилоговъ",
+      "displayName": "Константин Иванов Анпилогов",
       "role": "godfather",
-      "personId": "P101402",
-      "nameAsWritten": "Оренбургскій мещанинъ Константинъ Ивановъ Анпилоговъ"
-    },
-    {
-      "role": "godmother",
-      "nameAsWritten": "мещанская дочь девица Евдокія Васильева Дмитріева"
+      "surnameSeries": true,
+      "personId": "P101402"
     }
   ],
+  "transcription": {
+    "status": "manually-reviewed-primary-scan",
+    "literal": "Мартъ. №70. 2 /8. Клавдія. Ныне состоящій на военной службе Оренбургскій мещанинъ Феодоръ Ивановъ Антилоговъ и законная жена его Параскева Іосифова, оба православные. Восприемники: Оренбургскій мещанинъ Константинъ Ивановъ Анпилоговъ и мещанская дочь девица Евдокія Васильева Дмитріева.",
+    "modernInterpretation": "Клавдия, дочь Фёдора Ивановича и Прасковьи Иосифовны, родилась 2 и крещена 8 марта1915. Отец на военной службе.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
+  },
+  "notes": [
+    "P103241 объединён в P7908: точное полное имя, оренбургское мещанство, та же Прасковья Иосифовна; семейная цепь от брака до рождения дочерей1915 и1920."
+  ],
   "indexData": {
-    "query": "Анпилогов",
-    "warning": "Индекс использован только для навигации; чтение выполнено вручную по сохранённому оригиналу."
+    "query": "Антилогов",
+    "index": "archive",
+    "raw": "20 Марта. Диакон Петр Петров Ныне состоящий на военной службе Оренбургский мещанин Феодор Иванов [Антилогов] и законная жена его Параскева Иосифова...",
+    "catalogDateFrom": "01-01-1915",
+    "catalogDateTo": "31-12-1915",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
-    "captureType": "hidden-iab-original-and-clean-crops",
-    "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-full-view.jpg",
-    "localBackup": true,
-    "capturedAt": "2026-09-12",
-    "sha256": "084e0158669a40f1091878a0f3710bcc3cacbf8421e937a82563c6bbd62649ed",
+    "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-antilogov-original.jpg",
+    "sha256": "180d2a18bd62d0f792b7b69e4976cd7f5e22284b210c60a2f403886667a9a44e",
+    "catalogId": "3a9c67d5-43b4-4064-90fe-8cd2d1260093",
+    "scanNumber": 27,
+    "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
     "publicDisplay": false,
-    "fragments": [
-      {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-header.png",
-        "sha256": "1f9f23736088d372e2b7493ae8eaeb55426e99cb4ce5d57ae2ede826e68aa222"
-      },
-      {
-        "kind": "target",
-        "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-target-entry.png",
-        "sha256": "b58b0024c86c4f09945d6289d1af516630ba8aee2554fdbf1df66bbad6e171f9"
-      }
-    ],
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
     "quality": {
       "originalImageDownloaded": true,
-      "documentOnlyVisuallyConfirmed": true,
-      "headerAndTargetGeneratedFromOriginal": true,
       "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-12",
-      "method": "manual-reading-of-hidden-iab-original-scan"
+      "method": "independent-manual-reading"
+    },
+    "fragments": [
+      {
+        "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-antilogov-target.jpg",
+        "sha256": "bbab43c24e8113498281b000520cf8b3cee18b2e2f9afdd221b2fc139eb0c77a",
+        "kind": "target-entry",
+        "cropBox": [
+          362,
+          2692,
+          3799,
+          3288
+        ]
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-antilogov-header.jpg",
+        "sha256": "ac9cd03bed1e715223ffd4c74c4b3604d39674ec61f65e543997197a5325ae7e",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          5033,
+          986
+        ]
+      }
+    ]
+  },
+  "isRecord": true,
+  "publicCore": true,
+  "review": {
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
     }
   },
-  "review": {
-    "status": "complete-primary-scan-collation",
-    "reviewedAt": "2026-09-12"
-  },
-  "summary": "Рождение и крещение Клавдии Фёдоровны Антилоговой в Оренбурге.",
-  "isRecord": true,
-  "cardKind": "birth",
-  "publicCore": true
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-manual-reading",
+        "literal": "№ 70. Марта 2, 8. Клавдія. Ныне состоящій на военной службе Оренбургскій мещанинъ Ѳеодоръ Ивановъ Антилоговъ и законная жена его Параскева Іосифова, оба православные. Восприемники: Оренбургскій мещанинъ Константинъ Ивановъ Анпилоговъ и мещанская дочь девица Евдокія Васильева Дмитріева.",
+        "modernInterpretation": "Рождение и крещение Клавдии Фёдоровны Антилоговой в Оренбурге."
+      },
+      "previousEvidence": {
+        "captureType": "hidden-iab-original-and-clean-crops",
+        "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-full-view.jpg",
+        "localBackup": true,
+        "capturedAt": "2026-09-12",
+        "sha256": "084e0158669a40f1091878a0f3710bcc3cacbf8421e937a82563c6bbd62649ed",
+        "publicDisplay": false,
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-header.png",
+            "sha256": "1f9f23736088d372e2b7493ae8eaeb55426e99cb4ce5d57ae2ede826e68aa222"
+          },
+          {
+            "kind": "target",
+            "path": "data/genealogy/evidence-private/yandex/3a9c67d5-43b4-4064-90fe-8cd2d1260093/0027-target-entry.png",
+            "sha256": "b58b0024c86c4f09945d6289d1af516630ba8aee2554fdbf1df66bbad6e171f9"
+          }
+        ],
+        "quality": {
+          "originalImageDownloaded": true,
+          "documentOnlyVisuallyConfirmed": true,
+          "headerAndTargetGeneratedFromOriginal": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-12",
+          "method": "manual-reading-of-hidden-iab-original-scan"
+        }
+      }
+    }
+  ],
+  "primaryPersonId": "P103242"
 }

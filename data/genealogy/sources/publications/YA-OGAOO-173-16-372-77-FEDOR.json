@@ -77,33 +77,23 @@
     "warning": "Поисковый сниппет показывает только родителей и скрывает имя ребёнка, даты и восприемников; полная запись проверена в контексте листа."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-full-view.png",
-    "capturedAt": "2026-09-07",
-    "sha256": "beace13743d05544b2f2fd34067d6eb006f1730d478d99077e5fdbf30e2940ec",
+    "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-antilogov-early-restored-original.jpg",
+    "sha256": "0ca65a458c0ce99b760c9eca5599d8b8e9b8d6b32e56782b4e78bded79092a02",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-full-view.png",
+    "kind": "restored-original",
+    "captureType": "downloaded-original",
+    "capturedAt": "2026-09-13",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-header.png",
-        "sha256": "4252de839da3f09c0765f1a70674fe2a270e9c61b6a25b15623db23a6865b584",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-target-entry.png",
-        "sha256": "cd95dc898cb2c6ddb6177cffd14f7f1878c48d6ba3049c33ae0c2e933f96cbb3",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-antilogov-early-restored-target.jpg",
+        "sha256": "aead8c34abb58ed4c7a2ca354e280f7681d2fe9b48e66757580e9f359a3f2337",
+        "publicDisplay": false,
+        "kind": "restored-target"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-07",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
@@ -112,11 +102,50 @@
     "unresolved": [],
     "correctionHistory": [
       "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    ],
+    "notes": [
+      "Независимая повторная визуальная сверка 13.09.2026: полные оригиналы и увеличенные строки прочитаны; буквальное имя, дата и семейная формула подтверждены."
     ]
   },
   "summary": {
     "status": "verified-summary",
     "text": "8 мая 1880 года родилась Матрёна Фёдоровна Анпилогова; крещена 11 мая."
   },
-  "isRecord": true
+  "isRecord": true,
+  "correctionHistory": [
+    {
+      "date": "2026-09-13",
+      "previousEvidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-full-view.png",
+        "capturedAt": "2026-09-07",
+        "sha256": "beace13743d05544b2f2fd34067d6eb006f1730d478d99077e5fdbf30e2940ec",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-header.png",
+            "sha256": "4252de839da3f09c0765f1a70674fe2a270e9c61b6a25b15623db23a6865b584",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/9fc7df77-7c14-43ad-a29d-0e2a6613fdc5/0077-target-entry.png",
+            "sha256": "cd95dc898cb2c6ddb6177cffd14f7f1878c48d6ba3049c33ae0c2e933f96cbb3",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-07",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      },
+      "correction": "Восстановлен и визуально перечитан полный оригинал для сопоставления семейного акта."
+    }
+  ]
 }

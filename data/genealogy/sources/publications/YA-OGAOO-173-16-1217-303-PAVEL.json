@@ -19,12 +19,14 @@
   "event": {
     "type": "birth-baptism",
     "date": {
-      "display": "родился 6 декабря 1882 года; крещён 17 декабря",
-      "date": "1882-12-06"
+      "iso": "1882-12-09",
+      "display": "9/17декабря1882",
+      "confidence": "high"
     },
     "place": {
       "normalized": "город Орск, Михайло-Архангельская церковь"
-    }
+    },
+    "baptismDate": "1882-12-17"
   },
   "mentions": [
     {
@@ -37,7 +39,7 @@
     {
       "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M2",
       "role": "father",
-      "personId": "P5823",
+      "personId": "P1362",
       "nameAsTranscribed": "Орскій Мѣщанинъ Павелъ Тимофѣевъ Анпилоговъ",
       "displayName": "Павел Тимофеевич Анпилогов"
     },
@@ -68,57 +70,145 @@
     }
   ],
   "transcription": {
-    "status": "complete-with-clergy-uncertainty",
-    "literal": "Декабря 6 родился, 17 крещён. Мужской счёт №249. Петръ. Орскій Мѣщанинъ Павелъ Тимофѣевъ Анпилоговъ и законная его жена Марія Іосифова, оба православные. Воспріемники: Орскій Мѣщанинъ Григорій Егоровъ Юлинъ и крестьянская жена Ксенія Григорьева Юртаева.",
-    "modernInterpretation": "6 декабря 1882 года у орских мещан Павла Тимофеевича и Марии Осиповны Анпилоговых родился сын Пётр; крещён 17 декабря."
+    "status": "project-visual-reading-corrected",
+    "literal": "1882. Декабрь. №249.9/17. Петръ. Орскій мѣщанинъ Павелъ Тимофеевъ Анпилоговъ и законная его жена Марія Іосифова. Восприемники: Григорій Егоровъ Юлинъ и Ксенія Григорьева Юртаева.",
+    "modernInterpretation": "Пётр родился9 и крещён17декабря1882."
   },
   "indexData": {
-    "provider": "Яндекс Архив",
-    "warning": "Параллельная копия ОГАОО, ф. 173, оп. 18, д. 15, скан 104 подтверждает весь состав записи. В этой копии OCR читает фамилию священника как «Навилов», тогда как параллельный лист даёт «Пальмов»; неуверенная фамилия не исправлена молча."
+    "previousIndexData": {
+      "provider": "Яндекс Архив",
+      "warning": "Параллельная копия ОГАОО, ф. 173, оп. 18, д. 15, скан 104 подтверждает весь состав записи. В этой копии OCR читает фамилию священника как «Навилов», тогда как параллельный лист даёт «Пальмов»; неуверенная фамилия не исправлена молча."
+    },
+    "correction": "Четыре повторно прочитанных оригинала разделяют жизни: обе копии рождения дают9/17декабря1882, а обе смерти11/13мая1887 дают1год. Прежние6декабря и4года ошибочны. Нет доказательства писцовой ошибки возраста, поэтому смерть перенесена сP6930 на отдельногоP108738. Младший Пётр — сын того же Павла; мать в смерти не названа."
   },
   "evidence": {
-    "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
-    "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-full-view.png",
-    "capturedAt": "2026-09-07",
-    "sha256": "2c1616cc5428415072a869c997ef36a5e36ebe1edaf159022dd4698e2c0348dd",
+    "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-antilogov-early-restored-original.jpg",
+    "sha256": "bdca9db3b776d9fad28d905c0a22acd5a3324f08abe71e5d3b2db2159d36a79c",
     "publicDisplay": false,
-    "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
-    "localBackup": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-full-view.png",
+    "kind": "restored-original",
+    "captureType": "downloaded-original",
     "fragments": [
       {
-        "kind": "header",
-        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-header.png",
-        "sha256": "e2e118f99257ec6183c2df88eb5f8b00b78052584524b988a8459494d52e67f8",
-        "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
-      },
-      {
-        "kind": "target-entry",
-        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-target-entry.png",
-        "sha256": "e613bc666ebba26d68e0a7e1a13910c6dbb81f6c75de9b2925d83b29caba9bd2",
-        "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-antilogov-early-restored-target.jpg",
+        "sha256": "fb8aed6ba0700dfc63fb68fae8485f014f5987b031b813b3333b271c75010216",
+        "publicDisplay": false,
+        "kind": "restored-target"
       }
     ],
     "quality": {
-      "documentOnlyVisuallyConfirmed": true,
-      "headerVisuallyConfirmed": true,
-      "targetRowsVisuallyConfirmed": true,
-      "confirmedAt": "2026-09-07",
-      "method": "manual-comparison-with-source-transcription-and-document-context"
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true
     }
   },
   "review": {
-    "status": "complete-with-uncertainties",
-    "identityResolution": "P6930 и его родители P5823/P5824 точно сопоставлены по полным именам, датам, номеру записи, восприемникам и параллельному листу 104. Нечёткое сопоставление не применялось.",
-    "unresolved": [
-      "Фамилия священника в OCR этой копии неуверенна."
-    ],
-    "correctionHistory": [
-      "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+    "status": "visually-reviewed",
+    "notes": [
+      "Четыре повторно прочитанных оригинала разделяют жизни: обе копии рождения дают9/17декабря1882, а обе смерти11/13мая1887 дают1год. Прежние6декабря и4года ошибочны. Нет доказательства писцовой ошибки возраста, поэтому смерть перенесена сP6930 на отдельногоP108738. Младший Пётр — сын того же Павла; мать в смерти не названа."
     ]
   },
   "summary": {
     "status": "verified-summary",
-    "text": "Параллельная метрическая копия подтверждает рождение Петра Павловича Анпилогова 6 декабря 1882 года и крещение 17 декабря."
+    "text": "Пётр родился9 и крещён17декабря1882."
   },
-  "isRecord": true
+  "isRecord": true,
+  "correctionHistory": [
+    {
+      "date": "2026-09-13",
+      "previousTranscription": {
+        "status": "complete-with-clergy-uncertainty",
+        "literal": "Декабря 6 родился, 17 крещён. Мужской счёт №249. Петръ. Орскій Мѣщанинъ Павелъ Тимофѣевъ Анпилоговъ и законная его жена Марія Іосифова, оба православные. Воспріемники: Орскій Мѣщанинъ Григорій Егоровъ Юлинъ и крестьянская жена Ксенія Григорьева Юртаева.",
+        "modernInterpretation": "6 декабря 1882 года у орских мещан Павла Тимофеевича и Марии Осиповны Анпилоговых родился сын Пётр; крещён 17 декабря."
+      },
+      "previousEvent": {
+        "type": "birth-baptism",
+        "date": {
+          "iso": "1882-12-09",
+          "display": "9/17декабря1882",
+          "confidence": "high"
+        },
+        "place": {
+          "normalized": "город Орск, Михайло-Архангельская церковь"
+        },
+        "baptismDate": "1882-12-17"
+      },
+      "previousMentions": [
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M1",
+          "role": "baptized-child",
+          "personId": "P6930",
+          "nameAsTranscribed": "Петръ",
+          "displayName": "Пётр Павлович Анпилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M2",
+          "role": "father",
+          "personId": "P1362",
+          "nameAsTranscribed": "Орскій Мѣщанинъ Павелъ Тимофѣевъ Анпилоговъ",
+          "displayName": "Павел Тимофеевич Анпилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M3",
+          "role": "mother",
+          "personId": "P5824",
+          "nameAsTranscribed": "законная его жена Марія Іосифова",
+          "displayName": "Мария Осиповна Анпилогова"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M4",
+          "role": "godfather",
+          "nameAsTranscribed": "Орскій Мѣщанинъ Григорій Егоровъ Юлинъ",
+          "displayName": "Григорий Егорович Юлин"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M5",
+          "role": "godmother",
+          "nameAsTranscribed": "крестьянская жена Ксенія Григорьева Юртаева",
+          "displayName": "Ксения Григорьевна Юртаева"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-1217-303-PAVEL-M6",
+          "role": "clergy",
+          "nameAsTranscribed": "Священникъ В. [OCR: Навиловъ]; и. д. псаломщика Діаконъ Георгій Никольскій",
+          "displayName": "священник В. [фамилия в OCR неуверенна] и диакон Георгий Никольский"
+        }
+      ],
+      "previousEvidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-full-view.png",
+        "capturedAt": "2026-09-07",
+        "sha256": "2c1616cc5428415072a869c997ef36a5e36ebe1edaf159022dd4698e2c0348dd",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-header.png",
+            "sha256": "e2e118f99257ec6183c2df88eb5f8b00b78052584524b988a8459494d52e67f8",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/99d57d5d-473e-4914-8969-e692a5169396/0303-target-entry.png",
+            "sha256": "e613bc666ebba26d68e0a7e1a13910c6dbb81f6c75de9b2925d83b29caba9bd2",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-07",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      },
+      "correction": "Четыре повторно прочитанных оригинала разделяют жизни: обе копии рождения дают9/17декабря1882, а обе смерти11/13мая1887 дают1год. Прежние6декабря и4года ошибочны. Нет доказательства писцовой ошибки возраста, поэтому смерть перенесена сP6930 на отдельногоP108738. Младший Пётр — сын того же Павла; мать в смерти не названа."
+    }
+  ],
+  "publicCore": true,
+  "personIds": [
+    "P6930",
+    "P1362",
+    "P5824"
+  ]
 }

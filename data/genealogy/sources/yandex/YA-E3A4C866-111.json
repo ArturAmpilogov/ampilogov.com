@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
   "sourceId": "YA-E3A4C866-111",
-  "provider": "Яндекс Архив — первичный скан",
+  "provider": "Яндекс Архив — первичный архивный скан",
   "recordType": "birth",
   "collection": {
     "title": "ogaoo_orenburg/173-16-930-0111 л..JPG",
+    "archiveCitation": "ogaoo_orenburg/173-16-930-0111 л..JPG; скан 111; акт №25",
     "catalogId": "e3a4c866-3e06-4f86-b9d4-52a5f08d83b2",
     "scanNumber": 111
   },
@@ -14,60 +15,89 @@
   "event": {
     "type": "birth",
     "date": {
-      "iso": "1895-02-05",
-      "display": "5 февраля 1895 года, рождение и крещение",
-      "confidence": "high"
+      "display": "1895-02-05",
+      "date": "1895-02-05",
+      "calendar": "julian",
+      "confidence": "high-for-manually-read-page"
     },
     "place": {
-      "asWritten": "Оренбург; отец крестьянин Оренбургского уезда",
       "normalized": "Оренбург; отец крестьянин Оренбургского уезда"
     }
   },
   "mentions": [
     {
       "mentionId": "YA-E3A4C866-111-M1",
-      "role": "child",
-      "personId": "P109003",
       "nameAsTranscribed": "Никита",
-      "displayName": "Никита Иванович Антилогов",
-      "surnameSeries": true
+      "displayName": "Никита",
+      "role": "child",
+      "surnameSeries": true,
+      "personId": "P109003"
     },
     {
       "mentionId": "YA-E3A4C866-111-M2",
+      "nameAsTranscribed": "Иоанн Феодоров Антилогов",
+      "displayName": "Иоанн Феодоров Антилогов",
       "role": "father",
-      "personId": "P101575",
-      "nameAsTranscribed": "Иоаннъ Феодоровъ Антилоговъ",
-      "displayName": "Иван Фёдорович Анпилогов",
-      "surnameSeries": true
+      "surnameSeries": true,
+      "personId": "P101575"
     }
   ],
   "transcription": {
-    "status": "project-transcription-from-original-with-explicit-uncertainties",
-    "literal": "25. 5 / 5. Никита. Крестьянинъ Оренбургскаго уѣзда Иоаннъ Феодоровъ Антилоговъ и законная жена его Дария Васильева; оба православные.",
-    "modernInterpretation": "Никита родился и крещён 5 февраля. Родители Иван Фёдорович и Дария Васильевна."
+    "status": "manually-reviewed-primary-scan",
+    "literal": "№25. Февраль5 родился,5 крещён. Никита. Крестьянин Оренбургского уезда Иоанн Феодоров Антилогов и законная жена его Дария Васильева,оба православные.",
+    "modernInterpretation": "Никита — сын Ивана Фёдоровича и Дарии Васильевны.",
+    "scope": "Целевое упоминание и необходимый контекст, остальные участники не полностью расшифрованы."
   },
+  "notes": [
+    "Повторно подтверждены дата и родители. Год1895 по соседнему110; различие крестьянского/мещанского статуса отца сохраняется, связь medium-high по точной паре супругов и Оренбургу."
+  ],
   "indexData": {
     "query": "Антилогов",
-    "querySnippet": "Крестьянин Оренбургского уезда Иоанн Феодоров \u0007[Антилогов\u0007] и законная жена его Дария Васильева; оба православные.",
-    "warning": "Индекс использован только для поиска; имена и роли читаются по оригиналу."
+    "index": "archive",
+    "raw": "Крестьянин Оренбургского уезда Иоанн Феодоров \u0007[Антилогов\u0007] и законная жена его Дария Васильева; оба православные.",
+    "catalogDateFrom": "01-01-1895",
+    "catalogDateTo": "31-12-1895",
+    "warning": "Индекс служил навигацией. Имена, роль и даты проверены по оригиналу."
   },
   "evidence": {
-    "kind": "original",
     "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0111-antilogov-original.jpg",
     "sha256": "9d7bee40ce95d0e698e01ca7aa2159e0570be793097be3f136d5ef0eda76e7e4",
-    "publicDisplay": false,
-    "description": "Полный оригинал для проектного чтения.",
-    "sourceUrl": "https://yandex.ru/archive/catalog/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/111",
     "catalogId": "e3a4c866-3e06-4f86-b9d4-52a5f08d83b2",
     "scanNumber": 111,
     "capturedAt": "2026-09-13",
+    "captureStatus": "complete-with-local-copy",
+    "captureType": "original-download-and-manually-reviewed-crops",
+    "publicDisplay": false,
+    "rightsNote": "Приватная исследовательская копия; право публичного показа не установлено.",
+    "quality": {
+      "originalImageDownloaded": true,
+      "targetRowsVisuallyConfirmed": true,
+      "method": "independent-manual-reading"
+    },
     "fragments": [
       {
-        "kind": "target",
         "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0111-antilogov-target.jpg",
-        "sha256": "b09a5a804f177037c4c09060e472f4f5b61d1e809f653b37dda95b8c5dda094c",
-        "publicDisplay": false,
-        "description": "Крупный фрагмент целевого упоминания."
+        "sha256": "c6aaecbefaaded2d8b6f15178207ef3dd543c0a45de66a3e3bf48f6b554b403b",
+        "kind": "target-entry",
+        "cropBox": [
+          351,
+          2439,
+          3898,
+          2934
+        ],
+        "publicDisplay": false
+      },
+      {
+        "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0111-antilogov-header.jpg",
+        "sha256": "eda101066809954862951a642d3a9d9cb74a5d1c80dd9419f931a44e3126aaa4",
+        "kind": "year-and-table-header",
+        "cropBox": [
+          0,
+          0,
+          5319,
+          1014
+        ],
+        "publicDisplay": false
       },
       {
         "kind": "original",
@@ -79,14 +109,52 @@
       }
     ]
   },
-  "review": {
-    "status": "complete",
-    "transcriptionConfidence": "high",
-    "notes": [
-      "Год1895 и переход января к февралю читаются /110. P101575 сопоставлен по полным именам обоих супругов и Оренбургу; различие крестьянин/мещанин сохранено, уверенность medium-high."
-    ]
-  },
-  "publicCore": true,
   "isRecord": true,
-  "researchOnly": false
+  "publicCore": true,
+  "review": {
+    "status": "complete-manual-primary-review",
+    "transcriptionConfidence": {
+      "display": "Уверенное чтение целевой записи; ограничения сопоставления указаны в примечаниях.",
+      "code": "high-with-explicit-cautions"
+    }
+  },
+  "reviewHistory": [
+    {
+      "reviewedAt": "2026-09-13",
+      "previousTranscription": {
+        "status": "project-transcription-from-original-with-explicit-uncertainties",
+        "literal": "25. 5 / 5. Никита. Крестьянинъ Оренбургскаго уѣзда Иоаннъ Феодоровъ Антилоговъ и законная жена его Дария Васильева; оба православные.",
+        "modernInterpretation": "Никита родился и крещён 5 февраля. Родители Иван Фёдорович и Дария Васильевна."
+      },
+      "previousEvidence": {
+        "kind": "original",
+        "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0111-antilogov-original.jpg",
+        "sha256": "9d7bee40ce95d0e698e01ca7aa2159e0570be793097be3f136d5ef0eda76e7e4",
+        "publicDisplay": false,
+        "description": "Полный оригинал для проектного чтения.",
+        "sourceUrl": "https://yandex.ru/archive/catalog/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/111",
+        "catalogId": "e3a4c866-3e06-4f86-b9d4-52a5f08d83b2",
+        "scanNumber": 111,
+        "capturedAt": "2026-09-13",
+        "fragments": [
+          {
+            "kind": "target",
+            "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0111-antilogov-target.jpg",
+            "sha256": "b09a5a804f177037c4c09060e472f4f5b61d1e809f653b37dda95b8c5dda094c",
+            "publicDisplay": false,
+            "description": "Крупный фрагмент целевого упоминания."
+          },
+          {
+            "kind": "original",
+            "path": "data/genealogy/evidence-private/yandex/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/0110-antilogov-original.jpg",
+            "sha256": "2768b876831ba750b48e785d17c19ccad004e5878defc7e78e010eca95e1b6da",
+            "publicDisplay": false,
+            "description": "Соседний оригинальный лист для проверки даты и контекста.",
+            "sourceUrl": "https://yandex.ru/archive/catalog/e3a4c866-3e06-4f86-b9d4-52a5f08d83b2/110"
+          }
+        ]
+      }
+    }
+  ],
+  "primaryPersonId": "P109003"
 }

@@ -1,0 +1,258 @@
+{
+  "status": "complete",
+  "date": "2026-09-13",
+  "remap": {
+    "P5776": "P1163"
+  },
+  "before": {
+    "data/genealogy/people/P5776-natalya-filippovna-anpilogova-karmalka.json": {
+      "schemaVersion": 1,
+      "personId": "P5776",
+      "displayName": "Наталья Филипповна Анпилогова",
+      "sex": "female",
+      "surname": {
+        "normalized": "Анпилогова",
+        "formsAsWritten": [
+          "Наталья Филиппова"
+        ]
+      },
+      "sourceIds": [
+        "YA-OGAOO-173-16-139-42-PETR"
+      ],
+      "familyIds": [
+        "F4606"
+      ],
+      "status": "documented-from-primary-scan",
+      "notes": [
+        "Жена крестьянина Кармалки Петра Семёновича Анпилогова; мать Фёклы, родившейся 21 сентября 1873 года."
+      ]
+    },
+    "data/genealogy/people/P1163-natalya-filippovna-ampilogova-karmalka.json": {
+      "schemaVersion": 1,
+      "personId": "P1163",
+      "displayName": "Наталья Филипповна Ампилогова",
+      "sex": "female",
+      "nameVariants": [
+        "Наталья Филиппова",
+        "Наталія Филиппова"
+      ],
+      "sourceIds": [
+        "YA-88608AEB-266",
+        "YA-CBE3A769-10-M44"
+      ],
+      "status": "documented-from-yandex-archive-scan",
+      "surname": {
+        "normalized": "Ампилогова",
+        "formsAsWritten": []
+      },
+      "spouses": [
+        "P0948"
+      ],
+      "children": [
+        "P91067"
+      ],
+      "places": [
+        {
+          "type": "residence-and-parenthood",
+          "placeId": "karmalka-orenburg",
+          "asWritten": "деревня Кармалка",
+          "confidence": "high"
+        }
+      ],
+      "notes": [
+        "Жена Петра Семёновича Ампилогова; мать Прасковьи, родившейся 25 июля 1863 года.",
+        "Мать Василия, родившегося 21 марта и крещённого 22 марта 1887 года в Кармалке."
+      ],
+      "relations": [
+        {
+          "type": "mother-of",
+          "personId": "P1162",
+          "sourceIds": [
+            "YA-88608AEB-266"
+          ],
+          "basis": "Прямая родственная формула в записи YA-88608AEB-266",
+          "confidence": "high"
+        },
+        {
+          "type": "mother-of",
+          "personId": "P91067",
+          "sourceIds": [
+            "YA-CBE3A769-10-M44"
+          ],
+          "basis": "Прямая родственная формула в записи YA-CBE3A769-10-M44",
+          "confidence": "high"
+        }
+      ]
+    },
+    "data/genealogy/people/P5777-fekla-petrovna-anpilogova-karmalka-1873.json": {
+      "schemaVersion": 1,
+      "personId": "P5777",
+      "displayName": "Фёкла Петровна Анпилогова",
+      "sex": "female",
+      "surname": {
+        "normalized": "Анпилогова",
+        "formsAsWritten": [
+          "Ѳекла"
+        ]
+      },
+      "birth": {
+        "date": "1873-09-21",
+        "place": "деревня Кармалка, Оренбургский уезд"
+      },
+      "sourceIds": [
+        "YA-OGAOO-173-16-139-42-PETR"
+      ],
+      "familyIds": [
+        "F4606"
+      ],
+      "parents": [
+        "P0948",
+        "P5776"
+      ],
+      "status": "documented-from-primary-scan",
+      "notes": [
+        "Родилась 21 и крещена 23 сентября 1873 года; дочь Петра Семёновича и Натальи Филипповны Анпилоговых из деревни Кармалки."
+      ]
+    },
+    "data/genealogy/sources/publications/YA-OGAOO-173-16-139-42-PETR.json": {
+      "schemaVersion": 1,
+      "sourceId": "YA-OGAOO-173-16-139-42-PETR",
+      "provider": "ОГА Оренбургской области — цифровой скан и машинная расшифровка Яндекс Архива",
+      "recordType": "primary-scan-transcription",
+      "collection": {
+        "title": "Метрическая книга церкви села Михайловки; часть о родившихся за 1873 год",
+        "archiveCitation": "ОГАОО, ф. 173, оп. 16, д. 139, скан 42, строка Фёклы"
+      },
+      "repository": {
+        "name": "Объединённый государственный архив Оренбургской области",
+        "location": "Оренбург",
+        "url": "https://yandex.ru/archive/catalog/dfa0810b-24e1-4f33-920b-3af219c1995d/42"
+      },
+      "links": {
+        "scan": "https://yandex.ru/archive/catalog/dfa0810b-24e1-4f33-920b-3af219c1995d/42"
+      },
+      "primaryPersonId": "P5777",
+      "event": {
+        "type": "birth-baptism",
+        "date": {
+          "display": "родилась 21 сентября 1873 года; крещена 23 сентября"
+        },
+        "place": {
+          "normalized": "приход села Михайловки, Оренбургский уезд"
+        }
+      },
+      "mentions": [
+        {
+          "mentionId": "YA-OGAOO-173-16-139-42-PETR-M1",
+          "role": "child",
+          "personId": "P5777",
+          "nameAsTranscribed": "Ѳекла",
+          "displayName": "Фёкла Петровна Анпилогова"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-139-42-PETR-M2",
+          "role": "father",
+          "personId": "P0948",
+          "nameAsTranscribed": "Деревни Каршинки Петръ Семеновъ апилоговъ",
+          "displayName": "Пётр Семёнович Анпилогов"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-139-42-PETR-M3",
+          "role": "mother",
+          "personId": "P5776",
+          "nameAsTranscribed": "жена Его Наталья Филиппова",
+          "displayName": "Наталья Филипповна Анпилогова"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-139-42-PETR-M4",
+          "role": "godparents",
+          "nameAsTranscribed": "той же деревни крестьянинъ Ѳедоръ Филипповъ Зуевъ и крестьянская жена Марина Егорова Зуева",
+          "displayName": "Фёдор Филиппович Зуев и Марина Егоровна Зуева"
+        },
+        {
+          "mentionId": "YA-OGAOO-173-16-139-42-PETR-M5",
+          "role": "clergy",
+          "nameAsTranscribed": "Священникъ Іоаннъ Зефировъ, Діаконъ Константинъ Татищевъ",
+          "displayName": "священник Иоанн Зефиров и диакон Константин Татищев"
+        }
+      ],
+      "transcription": {
+        "status": "complete-with-correction",
+        "literal": "Сентября 21, 23. Ѳекла. Деревни Каршинки Петръ Семеновъ апилоговъ и жена его Наталья Филиппова, оба православные. Той же деревни крестьянинъ Ѳедоръ Филипповъ Зуевъ и крестьянская жена Марина Егорова Зуева.",
+        "modernInterpretation": "21 сентября 1873 года у Петра Семёновича и Натальи Филипповны Анпилоговых из Кармалки родилась дочь Фёкла, крещённая 23 сентября."
+      },
+      "indexData": {
+        "provider": "Яндекс Архив",
+        "warning": "OCR искажает Кармалку как «Каршинки» и фамилию как «апилогов»; строка проверена в полном контексте листа."
+      },
+      "evidence": {
+        "captureType": "remote-viewer-canvas-document-bounds-crop-with-enlarged-fragments",
+        "path": "data/genealogy/evidence-private/yandex/dfa0810b-24e1-4f33-920b-3af219c1995d/0042-full-view.png",
+        "capturedAt": "2026-09-07",
+        "sha256": "fd081ece1dcb02f97edb0fdb0eddc949f9bd4fada8ddffcf5ee5c7022003dbbb",
+        "publicDisplay": false,
+        "rightsNote": "Локальные копии полного разворота и увеличенных фрагментов сохранены для исследовательской проверки; публичная ссылка ведёт на архивный сервис.",
+        "localBackup": "data/genealogy/evidence-private/yandex/dfa0810b-24e1-4f33-920b-3af219c1995d/0042-full-view.png",
+        "fragments": [
+          {
+            "kind": "header",
+            "path": "data/genealogy/evidence-private/yandex/dfa0810b-24e1-4f33-920b-3af219c1995d/0042-header.png",
+            "sha256": "f731d65d510af19da01d963893e54ee39fd41bf6d65252063004237d51c055f7",
+            "description": "Увеличенная область заголовка, года/раздела и названий граф источника."
+          },
+          {
+            "kind": "target-entry",
+            "path": "data/genealogy/evidence-private/yandex/dfa0810b-24e1-4f33-920b-3af219c1995d/0042-target-entry.png",
+            "sha256": "99bd6c441f9fdd8374e7b8fb07a7938ed1e2c0114dc92a0469c87387c6cac024",
+            "description": "Увеличенная целевая строка с именами, датами, родством, статусом и соседним контекстом."
+          }
+        ],
+        "quality": {
+          "documentOnlyVisuallyConfirmed": true,
+          "headerVisuallyConfirmed": true,
+          "targetRowsVisuallyConfirmed": true,
+          "confirmedAt": "2026-09-07",
+          "method": "manual-comparison-with-source-transcription-and-document-context"
+        }
+      },
+      "review": {
+        "status": "complete",
+        "correctionHistory": [
+          "2026-08-26: в обычном окне просмотрщика сохранены общий вид документа, заголовок и увеличенные целевые области; SHA-256 проверены.",
+          "2026-09-07: из слоя документа в полноэкранном просмотрщике сохранён лист, точно обрезанный по границам рукописи без элементов сайта и пустого холста; отдельно сохранены увеличенные заголовок и целевые строки; SHA-256 проверены."
+        ]
+      },
+      "summary": {
+        "status": "verified-summary",
+        "text": "21 сентября 1873 года родилась Фёкла Петровна Анпилогова из Кармалки; крещена 23 сентября."
+      },
+      "isRecord": true
+    },
+    "data/genealogy/families/F4606-petr-natalya-anpilogovy-karmalka.json": {
+      "schemaVersion": 1,
+      "familyId": "F4606",
+      "label": "Пётр Семёнович и Наталья Филипповна Анпилоговы",
+      "spouses": [
+        "P0948",
+        "P5776"
+      ],
+      "children": [
+        "P5777"
+      ],
+      "sourceIds": [
+        "YA-OGAOO-173-16-139-42-PETR"
+      ],
+      "status": "documented-from-primary-scan",
+      "notes": [
+        "Дочь Фёкла родилась 21 и была крещена 23 сентября 1873 года в приходе села Михайловки."
+      ]
+    }
+  },
+  "changedReferenceFiles": [
+    "data/genealogy/people/P5777-fekla-petrovna-anpilogova-karmalka-1873.json",
+    "data/genealogy/sources/publications/YA-OGAOO-173-16-139-42-PETR.json",
+    "data/genealogy/families/F4606-petr-natalya-anpilogovy-karmalka.json"
+  ],
+  "obsoleteReferences": 0,
+  "basis": "Наталья Филипповна, жена Петра Семёновича Кармалки; мать Фёклы1873 и общая семья, подтверждённая цепью источников. Перенесены дети и F4606; новая посторонняя сущность не создавалась."
+}
