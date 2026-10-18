@@ -17,4 +17,4 @@
 ## Связанные главы
 
 - [Орловское ядро](../book/05-orel-1594-1596.md)
-- [Баздырево — Щигры](../book/10-bazdyrevo-shchigry-1697.md)
+- [Баздырево — Щигры](../book/08-akim-bazdyrevo-shchigry-1700.md)

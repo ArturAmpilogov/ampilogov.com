@@ -1623,4 +1623,4 @@ PUB-RGIA-383-5-4319-384-2-1098-TROITSKOE-WESTERN-ODNODVORTSY]
 двором Бора 1762 года, где ожидается Илья около 11 лет.
 [PUB-RGADA-350-2-3400-STARY-OSKOL-DEPARTED-ANPILOV-SEARCH-1748]
 
-См. [маршрут к материковой Таврии](../book/12-chernozem-taurida.md) и [общий реестр людей](../people/index-1800-1999.md).
+См. [маршрут к материковой Таврии](../book/12-new-lands.md) и [общий реестр людей](../people/index-1800-1999.md).

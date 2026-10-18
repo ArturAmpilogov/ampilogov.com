@@ -38,13 +38,7 @@ export default async function ReadingPage({ params }: PageProps) {
   const sectionDocuments = getDocumentsBySection(document.section);
   const { previous, next } = getAdjacentDocuments(document);
   const chapterMeta = getChapterMeta(document.slug);
-  const periodDocuments = chapterMeta
-    ? sectionDocuments.filter((entry) => {
-        const meta = getChapterMeta(entry.slug);
-        return meta?.group === chapterMeta.group && meta.period;
-      })
-    : [];
-  const periodPosition = periodDocuments.findIndex((entry) => entry.slug === document.slug) + 1;
+  const periodPosition = sectionDocuments.findIndex((entry) => entry.slug === document.slug) + 1;
   const sourceRegistry = document.slug === "research/sources" ? getSourceRegistryIndex() : null;
 
   return (
@@ -84,7 +78,7 @@ export default async function ReadingPage({ params }: PageProps) {
 
         <article className="article-column">
           {chapterMeta?.period && periodPosition > 0 ? (
-            <ChapterPeriod meta={chapterMeta} position={periodPosition} total={periodDocuments.length} />
+            <ChapterPeriod meta={chapterMeta} position={periodPosition} total={sectionDocuments.length} />
           ) : null}
           {sourceRegistry ? (
             <SourceRegistry registry={sourceRegistry} title={document.title} />

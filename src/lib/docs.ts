@@ -26,6 +26,23 @@ const sectionOrder = [
   "evidence",
 ];
 
+// Working research notes (archive requests, hypotheses, open questions) stay in the
+// repository but are not published: the research section shows only the source registry.
+const publishedResearchDocuments = new Set(["research/sources"]);
+
+function isPublishedSlug(slug: string) {
+  return !slug.startsWith("research/") || publishedResearchDocuments.has(slug);
+}
+
+/** Source codes listed in the public registry; other codes live only in the working notes. */
+export function getPublishedSourceIds() {
+  return new Set(
+    readFileSync(path.join(DOCS_ROOT, "research/sources.md"), "utf8")
+      .match(/^### S-[A-Z0-9-]+/gm)
+      ?.map((heading) => heading.slice(4)) ?? [],
+  );
+}
+
 export type BookDocument = {
   slug: string;
   sourcePath: string;
@@ -87,7 +104,10 @@ function extractExcerpt(content: string) {
 function extractHeadings(content: string) {
   const seen = new Map<string, number>();
 
-  return [...content.matchAll(/^(#{2,3})\s+(.+)$/gm)].map((match) => {
+  // Headings inside the folded research notes stay out of the chapter outline.
+  const articleContent = content.split("{{RESEARCH_NOTES}}")[0];
+
+  return [...articleContent.matchAll(/^(#{2,3})\s+(.+)$/gm)].map((match) => {
     const title = cleanInlineMarkdown(match[2]);
     const base = headingId(title);
     const occurrence = seen.get(base) ?? 0;
@@ -112,7 +132,7 @@ function toDocument(absolutePath: string): BookDocument {
     slug,
     sourcePath,
     title: extractTitle(content, fallback),
-    excerpt: extractExcerpt(content),
+    excerpt: getChapterMeta(slug)?.description ?? extractExcerpt(content),
     section,
     sectionLabel: sectionNames[section] ?? "Материалы",
     content,
@@ -124,6 +144,7 @@ export function getAllDocuments() {
   return walk(DOCS_ROOT)
     .filter((file) => file.endsWith(".md"))
     .map(toDocument)
+    .filter((document) => isPublishedSlug(document.slug))
     .sort((left, right) => {
       const sectionDifference =
         sectionOrder.indexOf(left.section) - sectionOrder.indexOf(right.section);
@@ -160,6 +181,9 @@ export function getAdjacentDocuments(document: BookDocument) {
 }
 
 export function resolveDocumentUrl(sourcePath: string, url?: string) {
+  if (url?.startsWith("/read/") && !isPublishedSlug(url.slice("/read/".length).split("#")[0])) {
+    return undefined;
+  }
   if (!url || /^(https?:|mailto:|#|\/)/.test(url)) return url;
 
   const [pathname, hash] = url.split("#");
@@ -170,6 +194,7 @@ export function resolveDocumentUrl(sourcePath: string, url?: string) {
 
   if (resolved.endsWith(".md")) {
     const slug = resolved.slice(0, -3);
+    if (!isPublishedSlug(slug)) return undefined;
     return `/read/${slug}${hash ? `#${hash}` : ""}`;
   }
 

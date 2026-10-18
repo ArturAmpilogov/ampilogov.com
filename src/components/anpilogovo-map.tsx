@@ -1,18 +1,17 @@
-import Link from "next/link";
 import { AnpilogovoOpenStreetMap } from "@/components/anpilogovo-open-street-map";
 import { PlaceMapLinks } from "@/components/place-map-links";
 
 const places = [
   {
     name: "1-е Анпилогово",
-    detail: "южная часть исторической деревни · Курский район",
+    detail: "южный ориентир на современной карте · Курский район",
     searchQuery: "1-е Анпилогово, Курский район, Курская область, Россия",
     latitude: 51.778333,
     longitude: 36.006667,
   },
   {
     name: "2-е Анпилогово",
-    detail: "северная часть исторической деревни · Курский район",
+    detail: "северный ориентир на современной карте · Курский район",
     searchQuery: "2-е Анпилогово, Курский район, Курская область, Россия",
     latitude: 51.791667,
     longitude: 36.01,
@@ -25,7 +24,7 @@ export function AnpilogovoMap() {
       <AnpilogovoOpenStreetMap />
 
       <figcaption>
-        <span><i className="amphilochia-map-key anpilogovo-map-key is-shared" /> Две части одного исторического Анпилогова</span>
+        <span><i className="amphilochia-map-key anpilogovo-map-key is-shared" /> Две деревни с фамильным названием</span>
         <span>Курский район</span>
         <span>Карту можно двигать и увеличивать</span>
       </figcaption>
@@ -41,12 +40,6 @@ export function AnpilogovoMap() {
           </div>
         ))}
       </div>
-
-      <p className="amphilochia-map-note anpilogovo-map-note">
-        Точки показывают две современные части одного исторического селения.
-        На картах XIX и начала XX века оно обозначалось одним названием —
-        Анпилогово. <Link href="/read/research/sources#s-anpilogovo-division">Источники и даты разделения</Link>.
-      </p>
     </figure>
   );
 }

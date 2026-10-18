@@ -6,7 +6,7 @@ import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 const places = [
   {
     name: "1-е Анпилогово",
-    detail: "Южная часть прежней единой деревни Анпилогово",
+    detail: "Южный ориентир; связь с историческими общинами ещё проверяется",
     latitude: 51.778333,
     longitude: 36.006667,
     kind: "shared",
@@ -14,7 +14,7 @@ const places = [
   },
   {
     name: "2-е Анпилогово",
-    detail: "Северная часть прежней единой деревни Анпилогово",
+    detail: "Северный ориентир; связь с историческими общинами ещё проверяется",
     latitude: 51.791667,
     longitude: 36.01,
     kind: "shared",
@@ -105,7 +105,7 @@ export function AnpilogovoOpenStreetMap() {
         const region = document.createElement("strong");
         const subject = document.createElement("span");
         region.textContent = "Курский район";
-        subject.textContent = "одно историческое Анпилогово";
+        subject.textContent = "две деревни, разные общины";
         element.append(region, subject);
         return element;
       };
