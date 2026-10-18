@@ -21,7 +21,6 @@ export function ChapterPeriod({ meta, position, total }: ChapterPeriodProps) {
   if (!meta.period) return null;
 
   const { period } = meta;
-  const sequenceLabel = meta.group === "migration" ? "Маршрут" : "Глава";
   const activeSpan = period.axis.end - period.axis.start;
   const spokenRange = `${period.from}${period.fromEra ? ` ${period.fromEra}` : ""}${period.to ? ` — ${period.to}${period.toEra ? ` ${period.toEra}` : ""}` : ""}`;
 
@@ -29,7 +28,7 @@ export function ChapterPeriod({ meta, position, total }: ChapterPeriodProps) {
     <section className="chapter-period" aria-label={`Временной период: ${spokenRange}`}>
       <div className="chapter-period-topline">
         <span>{period.label}</span>
-        <span>{sequenceLabel} {position} из {total}</span>
+        <span>Глава {position} из {total}</span>
       </div>
 
       <div className="chapter-period-summary">

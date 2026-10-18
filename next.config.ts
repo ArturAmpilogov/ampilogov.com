@@ -111,12 +111,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/read/book/03-tonkoy-onfilogov-1536-1537",
-        destination: "/read/book/04-onfilogov-priluki-1536-1537",
+        destination: "/read/book/04-first-records",
         permanent: false,
       },
       {
         source: "/read/book/00-overview",
-        destination: "/read/book/01-overview",
+        destination: "/read/book/01-surname-by-ear",
         permanent: true,
       },
       {
@@ -131,7 +131,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/read/book/03-onfilogov-priluki-1536-1537",
-        destination: "/read/book/04-onfilogov-priluki-1536-1537",
+        destination: "/read/book/04-first-records",
         permanent: true,
       },
       {
@@ -146,37 +146,82 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/read/book/06-sergey-kursk-oboyan-1636-1651",
-        destination: "/read/book/07-sergey-kursk-oboyan-1636-1651",
+        destination: "/read/book/07-kursk-oboyan-1636-1651",
         permanent: true,
       },
       {
         source: "/read/book/07-anpilogovo-anpilovka",
-        destination: "/read/book/08-anpilogovo-anpilovka",
+        destination: "/read/book/10-anpilogovo-kursk",
         permanent: true,
       },
       {
         source: "/read/book/07-anpilovka-stary-oskol",
-        destination: "/read/book/09-anpilovka-stary-oskol",
+        destination: "/read/book/11-anpilovka-stary-oskol",
         permanent: true,
       },
       {
         source: "/read/book/07-bazdyrevo-shchigry-1697",
-        destination: "/read/book/10-bazdyrevo-shchigry-1697",
+        destination: "/read/book/08-akim-bazdyrevo-shchigry-1700",
         permanent: true,
       },
       {
         source: "/read/book/08-nobility-1788-1887",
-        destination: "/read/book/11-nobility-1788-1887",
+        destination: "/read/book/09-anfilogov-nobility",
         permanent: true,
       },
       {
         source: "/read/book/09-chernozem-taurida",
-        destination: "/read/book/12-chernozem-taurida",
+        destination: "/read/book/12-new-lands",
         permanent: true,
       },
       {
         source: "/read/book/10-taurida-crimea",
-        destination: "/read/book/13-taurida-crimea",
+        destination: "/read/book/13-towns-and-parishes",
+        permanent: true,
+      },
+      {
+        source: "/read/book/01-overview",
+        destination: "/read/book/01-surname-by-ear",
+        permanent: true,
+      },
+      {
+        source: "/read/book/04-onfilogov-priluki-1536-1537",
+        destination: "/read/book/04-first-records",
+        permanent: true,
+      },
+      {
+        source: "/read/book/07-sergey-kursk-oboyan-1636-1651",
+        destination: "/read/book/07-kursk-oboyan-1636-1651",
+        permanent: true,
+      },
+      {
+        source: "/read/book/10-bazdyrevo-shchigry-1697",
+        destination: "/read/book/08-akim-bazdyrevo-shchigry-1700",
+        permanent: true,
+      },
+      {
+        source: "/read/book/11-nobility-1788-1887",
+        destination: "/read/book/09-anfilogov-nobility",
+        permanent: true,
+      },
+      {
+        source: "/read/book/08-anpilogovo-anpilovka",
+        destination: "/read/book/10-anpilogovo-kursk",
+        permanent: true,
+      },
+      {
+        source: "/read/book/09-anpilovka-stary-oskol",
+        destination: "/read/book/11-anpilovka-stary-oskol",
+        permanent: true,
+      },
+      {
+        source: "/read/book/12-chernozem-taurida",
+        destination: "/read/book/12-new-lands",
+        permanent: true,
+      },
+      {
+        source: "/read/book/13-taurida-crimea",
+        destination: "/read/book/13-towns-and-parishes",
         permanent: true,
       },
       {

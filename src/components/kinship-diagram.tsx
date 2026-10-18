@@ -106,14 +106,14 @@ const diagrams: Record<string, { eyebrow: string; title: string; paths: KinshipP
     ],
   },
   bazdyrevo: {
-    eyebrow: "Сказка 1697 года",
+    eyebrow: "Сказка 1700 года",
     title: "Три поколения между двумя уездами",
     paths: [
       {
         label: "Родство названо в документе",
         generations: [
           [{ name: "Аким Иванович", note: "бывший помещик Баздырева" }],
-          [{ name: "имя утрачено", note: "сын или дочь Акима" }],
+          [{ name: "имя не названо", note: "сын или дочь Акима" }],
           [{ name: "Тит Анпилогов", note: "внук · поместье в Щиграх" }],
         ],
       },

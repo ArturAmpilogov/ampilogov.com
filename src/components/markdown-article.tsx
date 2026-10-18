@@ -27,8 +27,11 @@ import { PrilukiMap } from "@/components/priluki-map";
 import { PrilukiRecordAnatomy } from "@/components/priluki-record-anatomy";
 import { PrilukiScribePrelude } from "@/components/priluki-scribe-prelude";
 import { SourceExcerpt } from "@/components/source-excerpt";
+import { StoryMap } from "@/components/story-map";
 import { SurnameVariantsEvidence } from "@/components/surname-variants-evidence";
-import { resolveDocumentUrl } from "@/lib/docs";
+import { getPublishedSourceIds, resolveDocumentUrl } from "@/lib/docs";
+
+const RESEARCH_NOTES_MARKER = "{{RESEARCH_NOTES}}";
 
 export function MarkdownArticle({ content, sourcePath }: { content: string; sourcePath: string }) {
   const headingText = (children: ReactNode) =>
@@ -37,6 +40,8 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
   const components: Components = {
     a: ({ href, children, ...props }) => {
       const resolvedHref = resolveDocumentUrl(sourcePath, href);
+      // Links to unpublished working notes keep their text but lose the link.
+      if (href && !resolvedHref) return <>{children}</>;
       const external = resolvedHref?.startsWith("http");
       const sourceReference = resolvedHref?.startsWith("/read/research/sources#s-")
         && /^S-[A-Z0-9-]+$/i.test(headingText(children).trim());
@@ -111,53 +116,74 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
     },
   };
 
+  const sourceIds = getPublishedSourceIds();
   const linkedContent = content.replace(
     /\[(S-[A-Z0-9-]+)\]/g,
-    (_, sourceId: string) => `[${sourceId}](/read/research/sources#${sourceId.toLowerCase()})`,
+    (_, sourceId: string) => sourceIds.has(sourceId)
+      ? `[${sourceId}](/read/research/sources#${sourceId.toLowerCase()})`
+      : sourceId,
   );
-  const sections = linkedContent.split(
-    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_ESTATE_TABLE\}\}|\{\{OREL_LINES_MAP\}\}|\{\{OREL_OATH_PRELUDE\}\}|\{\{OREL_SERVICE_PRELUDE\}\}|\{\{OREL_SURNAME_SHIFT_EVIDENCE\}\}|\{\{PRILUKI_MAP\}\}|\{\{PRILUKI_RECORD_ANATOMY\}\}|\{\{PRILUKI_SCRIBE_PRELUDE\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
-  );
+  // Everything after {{RESEARCH_NOTES}} is technical detail for researchers, folded away at the end of the page.
+  const notesMarkerIndex = linkedContent.indexOf(RESEARCH_NOTES_MARKER);
+  const articleContent = notesMarkerIndex === -1 ? linkedContent : linkedContent.slice(0, notesMarkerIndex);
+  const notesContent = notesMarkerIndex === -1
+    ? ""
+    : linkedContent.slice(notesMarkerIndex + RESEARCH_NOTES_MARKER.length).trim();
+
+  const renderSections = (text: string, keyPrefix: string) => text.split(
+    /(\{\{FAMILY_MAP\}\}|\{\{SURNAME_VARIANTS_EVIDENCE\}\}|\{\{ANPILOGOVO_MAP\}\}|\{\{ANPILOVKA_MAP\}\}|\{\{AMPHILOCHIA_MAP\}\}|\{\{KONYA_MAP\}\}|\{\{KURSK_OBOYAN_MAP\}\}|\{\{MALLOS_MAP\}\}|\{\{OREL_ESTATES_MAP\}\}|\{\{OREL_ESTATE_TABLE\}\}|\{\{OREL_LINES_MAP\}\}|\{\{OREL_OATH_PRELUDE\}\}|\{\{OREL_SERVICE_PRELUDE\}\}|\{\{OREL_SURNAME_SHIFT_EVIDENCE\}\}|\{\{PRILUKI_MAP\}\}|\{\{PRILUKI_RECORD_ANATOMY\}\}|\{\{PRILUKI_SCRIBE_PRELUDE\}\}|\{\{CALENDAR_NAME_EXAMPLES\}\}|\{\{AMPHILOCHOS_CULT_EVIDENCE\}\}|\{\{AMPHILOCHOS_COIN_TEASER\}\}|\{\{KINSHIP:[a-z0-9-]+\}\}|\{\{EVIDENCE_ROUTE:[a-z0-9-]+\}\}|\{\{STORY_MAP:[a-z0-9-]+\}\}|\{\{SOURCE_EXCERPT:[a-z0-9-]+\}\})/g,
+  ).map((section, index) => {
+    const sourceExcerptId = section.match(/^\{\{SOURCE_EXCERPT:([a-z0-9-]+)\}\}$/)?.[1];
+    const kinshipId = section.match(/^\{\{KINSHIP:([a-z0-9-]+)\}\}$/)?.[1];
+    const evidenceRouteId = section.match(/^\{\{EVIDENCE_ROUTE:([a-z0-9-]+)\}\}$/)?.[1];
+    const storyMapId = section.match(/^\{\{STORY_MAP:([a-z0-9-]+)\}\}$/)?.[1];
+    return (
+      <Fragment key={`${sourcePath}-${keyPrefix}-${index}`}>
+        {section === "{{FAMILY_MAP}}" ? <FamilyMap /> : null}
+        {section === "{{SURNAME_VARIANTS_EVIDENCE}}" ? <SurnameVariantsEvidence /> : null}
+        {section === "{{ANPILOGOVO_MAP}}" ? <AnpilogovoMap /> : null}
+        {section === "{{ANPILOVKA_MAP}}" ? <AnpilovkaMap /> : null}
+        {section === "{{AMPHILOCHIA_MAP}}" ? <AmphilochiaMap /> : null}
+        {section === "{{KONYA_MAP}}" ? <KonyaMap /> : null}
+        {section === "{{KURSK_OBOYAN_MAP}}" ? <KurskOboyanMap /> : null}
+        {section === "{{MALLOS_MAP}}" ? <MallosMap /> : null}
+        {section === "{{OREL_ESTATES_MAP}}" ? <OrelEstatesMap /> : null}
+        {section === "{{OREL_ESTATE_TABLE}}" ? <OrelEstateTable /> : null}
+        {section === "{{OREL_LINES_MAP}}" ? <OrelLinesMap /> : null}
+        {section === "{{OREL_OATH_PRELUDE}}" ? <OrelOathPrelude /> : null}
+        {section === "{{OREL_SERVICE_PRELUDE}}" ? <OrelServicePrelude /> : null}
+        {section === "{{OREL_SURNAME_SHIFT_EVIDENCE}}" ? <OrelSurnameShiftEvidence /> : null}
+        {section === "{{PRILUKI_MAP}}" ? <PrilukiMap /> : null}
+        {section === "{{PRILUKI_RECORD_ANATOMY}}" ? <PrilukiRecordAnatomy /> : null}
+        {section === "{{PRILUKI_SCRIBE_PRELUDE}}" ? <PrilukiScribePrelude /> : null}
+        {section === "{{CALENDAR_NAME_EXAMPLES}}" ? <CalendarNameExamples /> : null}
+        {section === "{{AMPHILOCHOS_CULT_EVIDENCE}}" ? <AmphilochosCultEvidence /> : null}
+        {section === "{{AMPHILOCHOS_COIN_TEASER}}" ? <AmphilochosCoinTeaser /> : null}
+        {kinshipId ? <KinshipDiagram id={kinshipId} /> : null}
+        {evidenceRouteId ? <EvidenceRoute id={evidenceRouteId} /> : null}
+        {storyMapId ? <StoryMap id={storyMapId} /> : null}
+        {sourceExcerptId ? <SourceExcerpt id={sourceExcerptId} /> : null}
+        {!section.startsWith("{{") ? (
+          <ReactMarkdown components={components} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]}>
+            {section}
+          </ReactMarkdown>
+        ) : null}
+      </Fragment>
+    );
+  });
 
   return (
     <div className="markdown-body">
-      {sections.map((section, index) => {
-        const sourceExcerptId = section.match(/^\{\{SOURCE_EXCERPT:([a-z0-9-]+)\}\}$/)?.[1];
-        const kinshipId = section.match(/^\{\{KINSHIP:([a-z0-9-]+)\}\}$/)?.[1];
-        const evidenceRouteId = section.match(/^\{\{EVIDENCE_ROUTE:([a-z0-9-]+)\}\}$/)?.[1];
-        return (
-          <Fragment key={`${sourcePath}-${index}`}>
-            {section === "{{FAMILY_MAP}}" ? <FamilyMap /> : null}
-            {section === "{{SURNAME_VARIANTS_EVIDENCE}}" ? <SurnameVariantsEvidence /> : null}
-            {section === "{{ANPILOGOVO_MAP}}" ? <AnpilogovoMap /> : null}
-            {section === "{{ANPILOVKA_MAP}}" ? <AnpilovkaMap /> : null}
-            {section === "{{AMPHILOCHIA_MAP}}" ? <AmphilochiaMap /> : null}
-            {section === "{{KONYA_MAP}}" ? <KonyaMap /> : null}
-            {section === "{{KURSK_OBOYAN_MAP}}" ? <KurskOboyanMap /> : null}
-            {section === "{{MALLOS_MAP}}" ? <MallosMap /> : null}
-            {section === "{{OREL_ESTATES_MAP}}" ? <OrelEstatesMap /> : null}
-            {section === "{{OREL_ESTATE_TABLE}}" ? <OrelEstateTable /> : null}
-            {section === "{{OREL_LINES_MAP}}" ? <OrelLinesMap /> : null}
-            {section === "{{OREL_OATH_PRELUDE}}" ? <OrelOathPrelude /> : null}
-            {section === "{{OREL_SERVICE_PRELUDE}}" ? <OrelServicePrelude /> : null}
-            {section === "{{OREL_SURNAME_SHIFT_EVIDENCE}}" ? <OrelSurnameShiftEvidence /> : null}
-            {section === "{{PRILUKI_MAP}}" ? <PrilukiMap /> : null}
-            {section === "{{PRILUKI_RECORD_ANATOMY}}" ? <PrilukiRecordAnatomy /> : null}
-            {section === "{{PRILUKI_SCRIBE_PRELUDE}}" ? <PrilukiScribePrelude /> : null}
-            {section === "{{CALENDAR_NAME_EXAMPLES}}" ? <CalendarNameExamples /> : null}
-            {section === "{{AMPHILOCHOS_CULT_EVIDENCE}}" ? <AmphilochosCultEvidence /> : null}
-            {section === "{{AMPHILOCHOS_COIN_TEASER}}" ? <AmphilochosCoinTeaser /> : null}
-            {kinshipId ? <KinshipDiagram id={kinshipId} /> : null}
-            {evidenceRouteId ? <EvidenceRoute id={evidenceRouteId} /> : null}
-            {sourceExcerptId ? <SourceExcerpt id={sourceExcerptId} /> : null}
-            {!section.startsWith("{{") ? (
-              <ReactMarkdown components={components} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]}>
-                {section}
-              </ReactMarkdown>
-            ) : null}
-          </Fragment>
-        );
-      })}
+      {renderSections(articleContent, "article")}
+      {notesContent ? (
+        <details className="research-notes">
+          <summary>
+            <span>Для исследователей</span>
+            <small>Источники, оговорки и открытые вопросы этой главы</small>
+          </summary>
+          <div className="research-notes__body">{renderSections(notesContent, "notes")}</div>
+        </details>
+      ) : null}
     </div>
   );
 }

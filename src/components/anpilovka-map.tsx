@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { AnpilovkaOpenStreetMap } from "@/components/anpilovka-open-street-map";
 import { PlaceMapLinks } from "@/components/place-map-links";
 
@@ -29,11 +28,6 @@ export function AnpilovkaMap() {
           <PlaceMapLinks {...anpilovka} />
         </div>
       </div>
-
-      <p className="amphilochia-map-note anpilogovo-map-note">
-        Метка показывает современное селение. В переписи 1723 года отдельной
-        Анпиловки ещё нет; ранние Анпиловы записаны в Сорокине, Горней и Бору. <Link href="/read/research/sources#s-anpilovka-revisions">Документы о переселении</Link>.
-      </p>
     </figure>
   );
 }

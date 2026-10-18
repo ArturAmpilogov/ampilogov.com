@@ -1,9 +1,10 @@
-export type ChapterGroup = "opening" | "chronology" | "migration" | "appendix";
+export type ChapterGroup = "opening" | "name" | "families" | "geography" | "appendix";
 
 export type ChapterMeta = {
   order: number;
   group: ChapterGroup;
   groupLabel: string;
+  description: string;
   period?: {
     from: string;
     fromEra?: string;
@@ -20,16 +21,18 @@ export type ChapterMeta = {
 
 const groupLabels: Record<ChapterGroup, string> = {
   opening: "Вступление",
-  chronology: "История по времени",
-  migration: "Маршруты",
-  appendix: "Дополнительные разделы",
+  name: "Как имя стало фамилией",
+  families: "Земля, служба и семья",
+  geography: "Фамилия на карте",
+  appendix: "Продолжить историю",
 };
 
 const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
-  "book/01-overview": { order: 1, group: "opening" },
+  "book/01-surname-by-ear": { order: 1, group: "opening", description: "Общее имя и разные семейные истории: как устроена книга и где искать свою ветвь." },
   "book/02-greek-amphilochus": {
     order: 2,
-    group: "chronology",
+    group: "name",
+    description: "Ребёнок на древнем сосуде, прорицатель и герой на монетах: культурная жизнь имени до появления русской фамилии.",
     period: {
       from: "VIII век",
       fromEra: "до нашей эры",
@@ -42,29 +45,32 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
   },
   "book/03-christian-amphilochius": {
     order: 3,
-    group: "chronology",
+    group: "name",
+    description: "Память о епископе Иконии сохраняет имя в календаре. На Руси книжная форма встречается с живой речью.",
     period: {
       from: "IV век",
-      to: "XIX век",
+      to: "XV век",
       label: "Церковная традиция",
-      note: "От Иконии IV века и календаря средневековой Руси — до двух поздних метрических свидетельств живого имени.",
-      axis: { start: 28, end: 91 },
+      note: "Епископ Иконии, новгородская Минея 1097 года и русские носители церковного имени.",
+      axis: { start: 28, end: 59 },
     },
   },
-  "book/04-onfilogov-priluki-1536-1537": {
+  "book/04-first-records": {
     order: 4,
-    group: "chronology",
+    group: "name",
+    description: "Личное имя, именование на -ов и название деревни: первые документы показывают, как возникала фамильная форма.",
     period: {
-      from: "1536",
-      to: "1540",
-      label: "Первая фамильная форма",
-      note: "Один непашенный двор в монастырском селе Прилуки — самая ранняя пока проверенная запись формы на -ов — и деревня Онфилогово в Тверском уезде тремя годами позже.",
-      axis: { start: 59, end: 61 },
+      from: "ок. 1495",
+      to: "1595",
+      label: "Имя, двор и деревня",
+      note: "Личное имя, именование на -ов и название деревни: как документы показывают образование фамильной формы.",
+      axis: { start: 58, end: 64 },
     },
   },
   "book/05-orel-1594-1596": {
     order: 5,
-    group: "chronology",
+    group: "families",
+    description: "Девять владельцев, семь земельных долей и служба за поместье. Первый плотный очаг фамилии в Орловском уезде.",
     period: {
       from: "1594",
       to: "1596",
@@ -75,7 +81,8 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
   },
   "book/06-orel-1625-1645": {
     order: 6,
-    group: "chronology",
+    group: "families",
+    description: "В земельной выписи появляются дети; повторные смотры и присяга позволяют узнать людей через двадцать лет.",
     period: {
       from: "1625",
       to: "1645",
@@ -84,83 +91,91 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
       axis: { start: 67, end: 72 },
     },
   },
-  "book/07-sergey-kursk-oboyan-1636-1651": {
+  "book/07-kursk-oboyan-1636-1651": {
     order: 7,
-    group: "chronology",
+    group: "families",
+    description: "Лошадь, оружие, пять рублей и два сына. Служебные списки раскрывают условия жизни у южной крепости.",
     period: {
-      from: "1636",
+      from: "1630",
       to: "1651",
       label: "Курск — Обоянь",
       note: "Верстание, пограничная служба и семья Сергея Григорьевича Анпилогова.",
       axis: { start: 69, end: 74 },
     },
   },
-  "book/10-bazdyrevo-shchigry-1697": {
-    order: 10,
-    group: "chronology",
+  "book/08-akim-bazdyrevo-shchigry-1700": {
+    order: 8,
+    group: "families",
+    description: "Аким рассказывает о потерянном орловском доме и ливенской земле внука. Два уезда связывает семейное свидетельство.",
     period: {
-      from: "1697",
+      from: "1700",
+      to: "1782",
       label: "Доказанное переселение",
-      note: "Один документ связывает Орловский уезд, Ливенские Щигры, Акима и его внука Тита.",
-      axis: { start: 80, end: 80 },
+      note: "Личная сказка Акима связывает прежнее орловское поместье с землёй его внука Тита в Ливенском уезде.",
+      axis: { start: 80, end: 86 },
     },
   },
-  "book/08-anpilogovo-anpilovka": {
-    order: 8,
-    group: "chronology",
+  "book/10-anpilogovo-kursk": {
+    order: 10,
+    group: "geography",
+    description: "Название переживает прежних владельцев. За двумя соседними Анпилоговыми обнаруживаются разные общины.",
     period: {
       from: "1642",
-      to: "наши дни",
+      to: "1934",
       label: "Анпилогово",
-      note: "Поместье Анпилоговых, крепостное сельцо, земская школа и разделение одной деревни на две.",
-      axis: { start: 71, end: 100 },
+      note: "Фамильное поместье XVII века, деревня однодворцев Анпилоговых и крепостная деревня по соседству.",
+      axis: { start: 71, end: 98 },
     },
   },
-  "book/09-anpilovka-stary-oskol": {
-    order: 9,
-    group: "chronology",
-    period: {
-      from: "1668",
-      to: "наши дни",
-      label: "Анпиловка",
-      note: "Несколько поколений старооскольских Анпиловых и постепенное появление селения у села Бор.",
-      axis: { start: 75, end: 100 },
-    },
-  },
-  "book/11-nobility-1788-1887": {
+  "book/11-anpilovka-stary-oskol": {
     order: 11,
-    group: "chronology",
+    group: "geography",
+    description: "Служилые дворы, мельница на Осколе и новая деревня: семьи появляются в документах раньше селения.",
     period: {
-      from: "1788",
+      from: "1647",
+      to: "1811",
+      label: "Анпиловка",
+      note: "Служилые люди Оскола, мельница в Сорокине и деревня однодворцев Анпиловых у села Бор.",
+      axis: { start: 72, end: 88 },
+    },
+  },
+  "book/09-anfilogov-nobility": {
+    order: 9,
+    group: "families",
+    description: "Как одна ветвь подтверждала дворянское происхождение и почему её история не определяет сословие всех однофамильцев.",
+    period: {
+      from: "1826",
       to: "1887",
       label: "Признанная древняя ветвь",
       note: "Анфилоговы внесены в VI часть Курской родословной книги; дела Герольдии ведут к материалам доказанной ветви.",
       axis: { start: 86, end: 96 },
     },
   },
-  "book/12-chernozem-taurida": {
+  "book/12-new-lands": {
     order: 12,
-    group: "migration",
+    group: "geography",
+    description: "Украинская линия, Новороссия, Кавказ, Оренбуржье, низовья Волги и Сибирь: куда и почему уходили семьи.",
     period: {
-      from: "XIX век",
-      to: "начало XX века",
-      label: "Дорога, ещё не собранная из документов",
-      note: "Троицкое и Тимошевка уже видны на южном конце пути; семья, от которой началась дорога из Черноземья, пока не установлена.",
-      axis: { start: 90, end: 100 },
+      from: "1732",
+      to: "1917",
+      label: "Переселения на новые земли",
+      note: "Украинская линия, Тимошевка, Тихорецкое, Кармалка и оренбургские казаки, Бахтемир и Сибирь.",
+      axis: { start: 82, end: 98 },
     },
   },
-  "book/13-taurida-crimea": {
+  "book/13-towns-and-parishes": {
     order: 13,
-    group: "migration",
+    group: "geography",
+    description: "Крым, Дон, Донбасс, города и приходы на рубеже XIX–XX веков, а в итоге — служилый род и его потомки сегодня.",
     period: {
-      from: "XIX век",
-      to: "первая четверть XX века",
-      label: "След за Перекопом",
-      note: "Семейное предание ведёт в Крым, но документа, который перенесёт через Перекоп конкретную семью, пока нет.",
-      axis: { start: 90, end: 100 },
+      from: "1868",
+      to: "1917",
+      label: "География разных семей",
+      note: "Симферополь, Оренбург, Дон и Донбасс, Самара, Мелитополь, Киев и сельские приходы.",
+      axis: { start: 94, end: 98 },
     },
   },
-  "book/14-method": { order: 14, group: "appendix" },
+  "book/14-method": { order: 14, group: "appendix", description: "От знакомого имени к документу: как продолжить историю своей семьи и проверить связи между поколениями." },
 };
 
 export function getChapterMeta(slug: string): ChapterMeta | undefined {
