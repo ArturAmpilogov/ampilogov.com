@@ -1,6 +1,6 @@
 import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
 import type { DirectoryPage, RecordDirectoryResult } from "@/lib/directory-index-types";
-import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, normalizeDirectorySearch } from "@/lib/directory-search";
+import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, matchesDirectorySearch, normalizeDirectorySearch } from "@/lib/directory-search";
 
 export function GET(request: Request) {
   const url = new URL(request.url);
@@ -16,7 +16,7 @@ export function GET(request: Request) {
   const fullRange = from === index.stats.minYear && to === index.stats.maxYear;
 
   const matches = index.records.filter((record) => {
-    const matchesQuery = !query || record.searchText.includes(query);
+    const matchesQuery = !query || matchesDirectorySearch(record.searchText, query);
     const matchesStatus = status === "all" ||
       (status === "complete" && record.isComplete) ||
       (status === "incomplete" && !record.isComplete) ||
