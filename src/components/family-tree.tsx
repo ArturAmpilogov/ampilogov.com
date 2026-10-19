@@ -176,7 +176,7 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
 
   const groupActive = selectedCentury !== null || Boolean(selectedRegion);
   const activeFilterCount = Number(selectedCentury !== null) + Number(Boolean(selectedRegion));
-  return <section className={`tree-workspace${filtersOpen ? " is-filters-open" : ""}`} aria-label="Интерактивное генеалогическое дерево">
+  return <section className={`tree-workspace${filtersOpen ? " is-filters-open" : ""}${groupActive ? " is-group-active" : ""}`} aria-label="Интерактивное генеалогическое дерево">
     <div className="tree-tools" aria-label="Управление деревом">
       <div className="tree-tools__left">
         <span className="tree-total">{directory.people.length.toLocaleString("ru")} человек · {directory.range.minYear}–{directory.range.maxYear}</span>

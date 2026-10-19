@@ -9897,6 +9897,7 @@ a {
   /* Search and the filters toggle share the first row; the total moves under the zoom row. */
   .tree-tools__left { display: contents; }
   .tree-search { flex: 1; min-width: 0; }
+  .tree-search input { text-overflow: ellipsis; }
   .tree-tools__zoom { flex: 0 0 100%; gap: 5px; }
   .tree-total { order: 1; flex: 0 0 100%; margin: 2px 0 0; color: var(--muted); font-size: 13px; }
   .tree-workspace .tree-filters-toggle { display: inline-flex; align-items: center; gap: 8px; }
@@ -9904,7 +9905,10 @@ a {
   .tree-workspace .tree-filters-toggle[aria-expanded="true"] { border-color: var(--accent); }
   .tree-workspace .tree-filters-toggle[aria-expanded="true"]::after { margin-top: 4px; transform: rotate(-135deg); }
   .tree-filters-toggle__count { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; color: #fff; background: var(--accent); font-size: 12px; font-weight: 700; }
-  .tree-workspace:not(.is-filters-open) :is(.tree-total, .tree-navigation) { display: none; }
+  /* Closed: only the «← 1 из N →» stepper stays, and only while a century or region is chosen. */
+  .tree-workspace:not(.is-filters-open) :is(.tree-total, .tree-eras, .tree-browse > label) { display: none; }
+  .tree-workspace:not(.is-filters-open):not(.is-group-active) .tree-navigation { display: none; }
+  .tree-workspace:not(.is-filters-open) .tree-browse { margin-top: 0; }
   .tree-navigation { padding: 0 12px 10px; }
   .tree-eras { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 5px; }
   .tree-eras button { padding-inline: 10px; }
