@@ -113,6 +113,61 @@ a {
   transform-origin: left;
 }
 
+/* Shown in place of the inline nav at tablet and phone widths (see the end of the file). */
+.site-menu-toggle {
+  position: relative;
+  display: none;
+  width: 44px;
+  height: 44px;
+  margin-right: -11px;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.site-menu-toggle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 1.5px;
+  margin: -0.75px 0 0 -11px;
+  background-color: currentColor;
+  transition: background-color 160ms ease;
+}
+
+.site-menu-toggle span::before,
+.site-menu-toggle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  transition: transform 220ms ease;
+}
+
+.site-menu-toggle span::before {
+  transform: translateY(-7px);
+}
+
+.site-menu-toggle span::after {
+  transform: translateY(7px);
+}
+
+.site-menu-toggle[aria-expanded="true"] span {
+  background-color: transparent;
+}
+
+.site-menu-toggle[aria-expanded="true"] span::before {
+  transform: rotate(45deg);
+}
+
+.site-menu-toggle[aria-expanded="true"] span::after {
+  transform: rotate(-45deg);
+}
+
 /* Tree — the page is a navigable field rather than a conventional diagram. */
 .tree-page {
   overflow: hidden;
@@ -4332,18 +4387,6 @@ a {
 }
 
 @media (max-width: 780px) {
-  .people-page .site-header {
-    height: auto;
-    min-height: 78px;
-    align-items: flex-start;
-    padding-block: 20px;
-  }
-
-  .people-page .site-nav {
-    gap: 14px;
-    font-size: 0.58rem;
-  }
-
   .people-masthead {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -5432,11 +5475,6 @@ a {
 
   .site-header {
     height: 68px;
-  }
-
-  .site-nav {
-    gap: 16px;
-    font-size: 0.58rem;
   }
 
   .wordmark {
@@ -7955,23 +7993,6 @@ a {
 }
 
 @media (max-width: 780px) {
-  .records-page .site-header,
-  .record-page .site-header {
-    height: auto;
-    min-height: 86px;
-    align-items: flex-start;
-    padding-block: 18px;
-  }
-
-  .records-page .site-nav,
-  .record-page .site-nav {
-    max-width: 260px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px 14px;
-    font-size: 0.56rem;
-  }
-
   .records-masthead {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -9326,21 +9347,6 @@ a {
 }
 
 @media (max-width: 780px) {
-  .settlement-map-page .site-header {
-    height: auto;
-    min-height: 86px;
-    align-items: flex-start;
-    padding-block: 18px;
-  }
-
-  .settlement-map-page .site-nav {
-    max-width: 260px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px 14px;
-    font-size: 0.56rem;
-  }
-
   .settlement-map-masthead {
     padding: 26px 0 22px;
   }
@@ -9915,45 +9921,9 @@ a {
     text-transform: uppercase;
   }
 
-  .site-header,
-  .people-page .site-header,
-  .records-page .site-header,
-  .record-page .site-header,
-  .settlement-map-page .site-header {
-    height: auto;
-    min-height: 0;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-block: 16px 13px;
-  }
-
   .site-header .wordmark {
-    flex: 0 0 100%;
     font-size: 1.08rem;
     line-height: 1;
-  }
-
-  .site-header .site-nav,
-  .people-page .site-nav,
-  .records-page .site-nav,
-  .record-page .site-nav,
-  .settlement-map-page .site-nav {
-    display: grid;
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: none;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 0;
-    font-size: 0.68rem;
-    letter-spacing: 0.045em;
-  }
-
-  .site-header .site-nav a {
-    min-height: 40px;
-    justify-content: center;
-    padding: 8px 3px;
-    text-align: center;
   }
 
   .directory-masthead h1,
@@ -10019,14 +9989,6 @@ a {
 }
 
 @media (max-width: 520px) {
-  .site-header .site-nav,
-  .people-page .site-nav,
-  .records-page .site-nav,
-  .record-page .site-nav,
-  .settlement-map-page .site-nav {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .person-row {
     grid-template-columns: 30px minmax(0, 1fr) 20px;
   }
@@ -10045,16 +10007,6 @@ a {
 }
 
 @media (max-width: 360px) {
-  .site-header .site-nav,
-  .people-page .site-nav,
-  .records-page .site-nav,
-  .record-page .site-nav,
-  .settlement-map-page .site-nav {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    font-size: 0.64rem;
-    letter-spacing: 0.02em;
-  }
-
   .directory-masthead dl {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -10230,5 +10182,83 @@ a {
   .contact-list > div {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+}
+
+/* Site menu: the seven nav links no longer fit beside the wordmark below desktop width,
+   so tablets and phones get a toggle with a drop-down panel instead. */
+@media (max-width: 1024px) {
+  .site-header {
+    --site-gutter: 32px;
+  }
+
+  .site-header.is-menu-open {
+    z-index: 1100;
+  }
+
+  .site-menu-toggle {
+    display: block;
+  }
+
+  .site-header .site-nav {
+    position: absolute;
+    top: 100%;
+    right: calc(-1 * var(--site-gutter));
+    left: calc(-1 * var(--site-gutter));
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px var(--site-gutter) 18px;
+    font-size: 0.84rem;
+    color: var(--ink);
+    background: var(--paper-light);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 22px 40px rgba(29, 28, 25, 0.16);
+  }
+
+  .site-header.is-menu-open .site-nav {
+    display: flex;
+  }
+
+  .site-header .site-nav a {
+    display: flex;
+    min-height: 54px;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    transition: color 160ms ease;
+  }
+
+  .site-header .site-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .site-header .site-nav a::after {
+    display: none;
+  }
+
+  .site-header .site-nav a:hover {
+    color: var(--accent);
+  }
+
+  .site-header--ink .site-nav {
+    color: var(--paper-light);
+    background: #181713;
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.42);
+  }
+
+  .site-header--ink .site-nav a {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .site-header--ink .site-nav a:hover {
+    color: var(--gilt);
+  }
+}
+
+@media (max-width: 780px) {
+  .site-header {
+    --site-gutter: 18px;
   }
 }
