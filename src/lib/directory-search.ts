@@ -7,6 +7,12 @@ export function normalizeDirectorySearch(value: string) {
     .trim();
 }
 
+// Every word of the query must occur somewhere in the entry, in any order:
+// "Сила Анфилов" finds "Сила Филимонович Анфилов".
+export function matchesDirectorySearch(searchText: string, query: string) {
+  return query.split(" ").every((term) => searchText.includes(term));
+}
+
 export function boundedDirectoryLimit(value: string | null) {
   if (value === null || value.trim() === "") return 50;
   const parsed = Number(value);

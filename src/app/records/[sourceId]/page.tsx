@@ -5,10 +5,17 @@ import { RecordTypeIcon } from "@/components/record-type-icon";
 import { RecordAnalysisAppendix } from "@/components/record-analysis-appendix";
 import { SiteHeader } from "@/components/site-header";
 import { getRecordsDirectoryIndex } from "@/lib/records-directory-index";
-import { getArchiveRecord } from "@/lib/genealogy";
+import { getArchiveRecord, type MentionProfileGap } from "@/lib/genealogy";
 
 type RecordPageProps = {
   params: Promise<{ sourceId: string }>;
+};
+
+const profileGapLabels: Record<MentionProfileGap, string> = {
+  "other-surname": "Другая фамилия: по правилам проекта отдельный профиль не ведётся",
+  unnamed: "Личное имя не названо или упоминание групповое: отдельную карточку создать нельзя",
+  "doubtful-surname": "Фамилия прочитана неуверенно: карточка появится после проверки оригинала",
+  "research-context": "Сравнительное или гипотетическое упоминание: карточка — после доказательства",
 };
 
 const legacyRecordDestinations: Record<string, string> = {
@@ -827,6 +834,8 @@ export default async function RecordPage({ params }: RecordPageProps) {
                   </span>
                 ) : person.isResearchObject ? (
                   <span>Исследовательский объект, а не отдельный человек: персональный профиль не требуется</span>
+                ) : person.profileGap ? (
+                  <span>{profileGapLabels[person.profileGap]}</span>
                 ) : (
                   <span>Карточка человека ещё не создана</span>
                 )}

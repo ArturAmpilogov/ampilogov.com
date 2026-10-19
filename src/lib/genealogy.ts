@@ -334,6 +334,7 @@ export type ArchiveRecordPerson = {
   possiblePersonId: string | null;
   possiblePersonName: string | null;
   isResearchObject: boolean;
+  profileGap: MentionProfileGap | null;
   role: string;
   eventRole: string | null;
   name: string;
@@ -866,6 +867,11 @@ const eventLabels: Record<string, string> = {
 };
 
 const roleLabels: Record<string, string> = {
+  brother: "брат",
+  nephew: "племянник",
+  "father-in-law": "тесть",
+  "former-estate-holder": "прежний владелец поместья",
+  "father-named-in-patronymic": "отец, названный в отчестве",
   child: "ребёнок",
   "baptized-child": "крещёный ребёнок",
   father: "отец",
@@ -1715,6 +1721,7 @@ function sourcePeople(
         possiblePersonId: null,
         possiblePersonName: null,
         isResearchObject: false,
+        profileGap: null,
         role: "основной человек источника",
         eventRole: null,
         name: person.displayName,
@@ -1804,15 +1811,32 @@ function sourcePeople(
       ...(profile?.notes ?? []),
     ].filter((item) => item.trim());
 
+    const inResearchScope = mentionBelongsToResearchScope(mention, peopleById);
+    // A child or wife is often written by personal name only, with the
+    // surname given by the family in the same entry.
+    const carriesSurname = isAmpilogovVariantName(finalNameToken(name));
+    // `surnameSeries: false` says the name as written lacks the surname (a
+    // wife written "Агафья"); it keeps her off the map, but a profile that
+    // carries the family surname by marriage is still linked from the Record.
+    const linkedByFamily = mention.surnameSeries === false && !profile?.researchSubject &&
+      isAmpilogovVariantName(profile?.surname?.normalized);
+    const linkedPersonId = profile && personBelongsToResearchScope(profile) && (inResearchScope || linkedByFamily)
+      ? mention.personId ?? null
+      : null;
+
     return {
-      personId: profile && personBelongsToResearchScope(profile) &&
-        mentionBelongsToResearchScope(mention, peopleById) ? mention.personId ?? null : null,
+      personId: linkedPersonId,
       possiblePersonId: possibleProfile && personHasAmpilogovSurname(possibleProfile) &&
         (mention.surnameSeries !== false || possibleProfile.researchSubject)
         ? mention.possiblePersonId ?? null
         : null,
       possiblePersonName: possibleProfile?.displayName ?? null,
       isResearchObject: /(?:research-subject|method-example|comparison)/.test(mention.role ?? ""),
+      // A link hidden by the scope gate points at a profile outside the
+      // surname line (a spouse or neighbour with another surname).
+      profileGap: linkedPersonId ? null : mention.personId || !(inResearchScope || carriesSurname)
+        ? "other-surname"
+        : mentionProfileGap(name, mention.role),
       role: sourceRoleLabel(mention.role),
       eventRole: mention.eventRole?.trim() || null,
       name,
@@ -1942,6 +1966,56 @@ const nonEventMapRolePattern = /(?:^|[-_])(?:comparative|comparison|candidate|pa
 
 function mentionIsDirectMapObservation(mention: SourceMention) {
   return !nonEventMapRolePattern.test(mention.role ?? "");
+}
+
+export type MentionProfileGap = "other-surname" | "unnamed" | "doubtful-surname" | "research-context";
+
+const unnamedMentionPattern = /(?:имя не|имя начина|без имени|неназванн|неизвестн|неустановленн|не выписан|не указан|не прочитан|не установлен|безымянн|строки|носители|группа)/i;
+const groupMentionPattern = /^(?:семья|семьи|однодворцы|дети|братья|сёстры|сестры|жители|крестьяне|дворяне)\s/i;
+const doubtfulSurnameMentionPattern = /(?:вероятно|требует сверки|вариант фамилии|фамилия неуверенно)/i;
+const relativeWordPattern = /^(?:сын|сына|дочь|дочери|жена|вдова|муж|брат|сестра)$/i;
+const titleWordPattern = /^(?:старший|младший|господин|г\.|гг\.|священник|псаломщик|диакон|дьякон|иерей|протоиерей|крестьянин|крестьянка|купец|мещанин|рядовой|солдат|учитель|студент|инженер|врач|доктор|товарищ|тов\.|гражданин|гражданка|прапорщик|подпоручик|поручик|капитан|полковник|генерал|казак|ефрейтор|девица)$/i;
+const researchContextRolePattern = /(?:comparative|comparison|candidate|parallel|contextual|hypothesis|memorial|eponym|claimed|possible|probable|misidentified|control|disputed|boundary|collective|aggregate|group|surname-network|unresolved-target|homonymous|later-)/i;
+
+// The part of a mention name that names the person: a trailing descriptor
+// after a comma is dropped, and index order "Анпилогов, Иван" is restored.
+export function mentionPersonalNameSegment(value: string) {
+  const segments = value.split(/\s*,\s*/);
+  if (segments.length < 2) return value;
+  const head = segments[0];
+  const headIsSurnameOnly = head.split(/\s+/).every((token) => isAmpilogovVariantName(token));
+  if (/^[а-яё«(]/.test(segments[1])) return head;
+  if (headIsSurnameOnly && segments.length === 2) return `${segments[1]} ${head}`;
+  return value;
+}
+
+// Explains why a surname-line mention legitimately has no profile: a profile
+// needs one named person, a confidently read surname and a direct appearance
+// in the document rather than a comparison or identity hypothesis.
+export function mentionProfileGap(name: string, role?: string | null): MentionProfileGap | null {
+  const value = name.normalize("NFKC").trim();
+  if (!value || unnamedMentionPattern.test(value) || groupMentionPattern.test(value) || value.includes(";")) return "unnamed";
+  // "Юлиания Дионисиевна, невеста Николая Анпилогова": the surname belongs to
+  // the groom or stepfather, not to the person named.
+  if (/,\s*(?:невеста|жених|приводн|падчерица|пасынок)/i.test(value)) return "other-surname";
+  if (doubtfulSurnameMentionPattern.test(value)) return "doubtful-surname";
+  const segment = mentionPersonalNameSegment(value);
+  // Several people folded into one mention: "Семён, Яков и Терентий Ампилоговы".
+  if (segment.includes(",") || /\sи\s+(?:[а-яё]+\s+)?[А-ЯЁ]/.test(segment)) return "unnamed";
+  const tokens = segment.replace(/[«»"();:—–]/g, " ").split(/\s+/).filter(Boolean);
+  const surnameIndex = tokens.findLastIndex((token) => isAmpilogovVariantName(token));
+  if (surnameIndex >= 0 && /(?:ы|ых|ым|ыми)$/i.test(tokens[surnameIndex])) return "unnamed";
+  if (surnameIndex >= 0 && (/[[\]?]/.test(tokens[surnameIndex]) || tokens[surnameIndex + 1] === "?")) {
+    return "doubtful-surname";
+  }
+  const relativeIndex = tokens.findIndex((token) => relativeWordPattern.test(token));
+  const nameTokens = relativeIndex >= 0 ? tokens.slice(0, relativeIndex) : tokens;
+  const hasPersonalName = nameTokens.some((token, index) =>
+    index !== surnameIndex && /^[А-ЯЁA-Z]/.test(token) && !isAmpilogovVariantName(token) && !titleWordPattern.test(token)
+  );
+  if (!hasPersonalName) return "unnamed";
+  if (researchContextRolePattern.test(role ?? "")) return "research-context";
+  return null;
 }
 
 function sourceIsWithinPublicResearchPeriod(source: SourceRecord) {

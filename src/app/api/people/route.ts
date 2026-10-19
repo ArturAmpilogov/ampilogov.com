@@ -1,6 +1,6 @@
 import { getPeopleDirectoryIndex } from "@/lib/people-directory-index";
 import type { DirectoryPage, PeopleDirectoryResult } from "@/lib/directory-index-types";
-import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, normalizeDirectorySearch } from "@/lib/directory-search";
+import { boundedDirectoryLimit, boundedDirectoryYear, directoryCursor, matchesDirectorySearch, normalizeDirectorySearch } from "@/lib/directory-search";
 
 export function GET(request: Request) {
   const url = new URL(request.url);
@@ -16,7 +16,7 @@ export function GET(request: Request) {
   const fullRange = from === index.stats.minYear && to === index.stats.maxYear;
 
   const matches = index.people.filter((person) => {
-    const matchesQuery = !query || person.searchText.includes(query);
+    const matchesQuery = !query || matchesDirectorySearch(person.searchText, query);
     const matchesStatus = status === "all" ||
       (status === "review" ? person.needsReview : !person.needsReview);
     const matchesYear = person.minYear === null || person.maxYear === null
