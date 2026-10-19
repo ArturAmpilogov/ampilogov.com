@@ -8,6 +8,7 @@
   --gilt: #dcaa48;
   --serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
   --sans: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --page-gutter: 32px;
 }
 
 * {
@@ -50,7 +51,7 @@ a {
 .section-shell,
 .site-header,
 .reading-shell {
-  width: min(100% - 64px, 1440px);
+  width: min(100% - 2 * var(--page-gutter), 1440px);
   margin-inline: auto;
 }
 
@@ -114,6 +115,10 @@ a {
 }
 
 /* Shown in place of the inline nav at tablet and phone widths (see the end of the file). */
+.site-menu-backdrop {
+  display: none;
+}
+
 .site-menu-toggle {
   position: relative;
   display: none;
@@ -331,7 +336,7 @@ a {
 .cover-content {
   position: relative;
   z-index: 2;
-  width: min(100% - 64px, 1440px);
+  width: min(100% - 2 * var(--page-gutter), 1440px);
   min-height: 100svh;
   margin-inline: auto;
   padding-top: clamp(150px, 19vh, 220px);
@@ -5466,11 +5471,8 @@ a {
 }
 
 @media (max-width: 780px) {
-  .section-shell,
-  .site-header,
-  .reading-shell,
-  .cover-content {
-    width: min(100% - 36px, 1440px);
+  :root {
+    --page-gutter: 18px;
   }
 
   .site-header {
@@ -10186,12 +10188,10 @@ a {
 }
 
 /* Site menu: the seven nav links no longer fit beside the wordmark below desktop width,
-   so tablets and phones get a toggle with a drop-down panel instead. */
-@media (max-width: 1024px) {
-  .site-header {
-    --site-gutter: 32px;
-  }
-
+   so tablets and phones get a toggle with a drop-down panel instead. The breakpoint is
+   in em so it moves with the reader's default font size; keep it in sync with
+   COMPACT_MENU_QUERY in site-header.tsx. */
+@media (max-width: 64em) {
   .site-header.is-menu-open {
     z-index: 1100;
   }
@@ -10200,16 +10200,24 @@ a {
     display: block;
   }
 
+  /* Catches the tap that dismisses the menu so it doesn't also hit the page underneath. */
+  .site-menu-backdrop {
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    display: block;
+  }
+
   .site-header .site-nav {
     position: absolute;
     top: 100%;
-    right: calc(-1 * var(--site-gutter));
-    left: calc(-1 * var(--site-gutter));
+    right: calc(-1 * var(--page-gutter));
+    left: calc(-1 * var(--page-gutter));
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 6px var(--site-gutter) 18px;
+    padding: 6px var(--page-gutter) 18px;
     font-size: 0.84rem;
     color: var(--ink);
     background: var(--paper-light);
@@ -10254,11 +10262,5 @@ a {
 
   .site-header--ink .site-nav a:hover {
     color: var(--gilt);
-  }
-}
-
-@media (max-width: 780px) {
-  .site-header {
-    --site-gutter: 18px;
   }
 }
