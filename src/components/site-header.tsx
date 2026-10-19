@@ -13,6 +13,7 @@ export function SiteHeader({ tone = "paper" }: { tone?: "paper" | "ink" }) {
         <Link href="/people">Люди</Link>
         <Link href="/tree">Дерево</Link>
         <Link href="/read/research/sources">Источники</Link>
+        <Link href="/contact">Связаться</Link>
       </nav>
     </header>
   );
