@@ -1083,6 +1083,7 @@ const placeRelationLabels: Record<string, string> = {
   detention: "место заключения",
   "labour-camp": "лагерь",
   "exile-destination": "место ссылки или высылки",
+  arrest: "место ареста",
 };
 
 function sourcePosition(source: SourceRecord) {
