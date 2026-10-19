@@ -23,6 +23,8 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
   const [selectedCentury, setSelectedCentury] = useState<number | null>(null);
   const [selectedRegion, setSelectedRegion] = useState("");
   const [browseIndex, setBrowseIndex] = useState(0);
+  // Phones only: centuries, region and browsing fold away so the canvas gets the screen.
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const regionsById = useMemo(() => new Map(scene.people.map((person) => [person.personId, regionsOf(person.places)])), [scene.people]);
   const regions = useMemo(() => [...new Set([...regionsById.values()].flat())].sort((a, b) => a.localeCompare(b, "ru")), [regionsById]);
   const matchingPeople = useMemo(() => scene.people.filter((person) =>
@@ -173,7 +175,8 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
   const related = new Set(active ? [active.personId, ...active.parentIds, ...scene.people.filter((person) => person.parentIds.includes(active.personId)).map((person) => person.personId)] : []);
 
   const groupActive = selectedCentury !== null || Boolean(selectedRegion);
-  return <section className="tree-workspace" aria-label="Интерактивное генеалогическое дерево">
+  const activeFilterCount = Number(selectedCentury !== null) + Number(Boolean(selectedRegion));
+  return <section className={`tree-workspace${filtersOpen ? " is-filters-open" : ""}${groupActive ? " is-group-active" : ""}`} aria-label="Интерактивное генеалогическое дерево">
     <div className="tree-tools" aria-label="Управление деревом">
       <div className="tree-tools__left">
         <span className="tree-total">{directory.people.length.toLocaleString("ru")} человек · {directory.range.minYear}–{directory.range.maxYear}</span>
@@ -184,6 +187,7 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
             {searchResults.length ? searchResults.map((person) => <button type="button" key={person.personId} onClick={() => { setSelectedCentury(null); setSelectedRegion(""); focusPerson(person); }}><strong>{person.displayName}</strong><small>{person.timelineYear ?? "Дата не установлена"} · {regionsById.get(person.personId)!.join(" · ")}</small></button>) : <p role="status">Никого не найдено. Попробуйте часть имени.</p>}
           </div> : null}
         </div>
+        <button type="button" className="tree-filters-toggle" aria-expanded={filtersOpen} aria-controls="tree-navigation" onClick={() => setFiltersOpen((open) => !open)}>Фильтры{activeFilterCount ? <span className="tree-filters-toggle__count"><span className="sr-only">, активно: </span>{activeFilterCount}</span> : null}</button>
       </div>
       <div className="tree-tools__zoom">
         <button type="button" onClick={reset}>К началу</button>
@@ -193,7 +197,7 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
         <button type="button" onClick={() => zoom(0.16)} aria-label="Увеличить">+</button>
       </div>
     </div>
-    <nav className="tree-navigation" aria-label="Навигация по векам и регионам">
+    <nav id="tree-navigation" className="tree-navigation" aria-label="Навигация по векам и регионам">
       <div className="tree-eras" aria-label="Века">
         <button type="button" aria-pressed={selectedCentury === null} onClick={() => goToGroup(null, selectedRegion)}>Все века</button>
         {centuries.map((century) => {
