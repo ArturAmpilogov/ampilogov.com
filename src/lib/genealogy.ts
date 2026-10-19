@@ -864,6 +864,12 @@ const eventLabels: Record<string, string> = {
   interrogation: "Допрос",
   confrontation: "Очная ставка",
   "court-sentence": "Приговор",
+  arrest: "Арест",
+  conviction: "Осуждение",
+  execution: "Расстрел",
+  exile: "Выселение",
+  disenfranchisement: "Лишение избирательных прав",
+  "repression-database-entry": "Запись в базе репрессированных",
 };
 
 const roleLabels: Record<string, string> = {
@@ -1071,6 +1077,12 @@ const placeRelationLabels: Record<string, string> = {
   "administrative-enrollment": "административная приписка",
   "social-registration": "сословная приписка",
   "estate-affiliation": "сословная принадлежность",
+  burial: "место погребения",
+  workplace: "место работы",
+  service: "место службы",
+  detention: "место заключения",
+  "labour-camp": "лагерь",
+  "exile-destination": "место ссылки или высылки",
 };
 
 function sourcePosition(source: SourceRecord) {
@@ -2069,7 +2081,7 @@ const marriageEventTypes = new Set([
   "marriage-duplicate-image",
 ]);
 
-const deathEventTypes = new Set(["death", "death-and-burial"]);
+const deathEventTypes = new Set(["death", "death-and-burial", "execution"]);
 
 function sourceDirectoryFacts(source: SourceRecord, peopleById?: Map<string, PersonRecord>) {
   const eventType = source.event?.type ?? "";
