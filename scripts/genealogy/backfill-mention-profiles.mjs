@@ -315,6 +315,26 @@ const readSource = (sourceId) => {
 };
 
 const directory = g.getRecordsDirectory();
+const wifeMentionRole = (role) => /^(?:mother|mother-index-only|mother-first-entry|mother-second-entry|wife|spouse|widow|deceased-wife)$/.test(role ?? "");
+const husbandMentionRole = (role) => /^(?:father|father-index-only|father-first-entry|father-second-entry|husband|household-head|groom|spouse)$/.test(role ?? "");
+const childMentionRole = (role) => /^(?:child|baptized-child|deceased-child|deceased-son|deceased-daughter|son|daughter|baptized-twin|child-twin|twin)$/.test(role ?? "");
+const feminineSurname = (surname) => (/(?:ов|ев|ин)$/.test(surname) ? `${surname}а` : surname);
+function familySurnameForWife(source, index, name) {
+  const mention = source.mentions[index];
+  if (!wifeMentionRole(mention.role) || !/^[А-ЯЁ]/.test(name ?? "") || /^Имя\s/.test(name) || g.mentionProfileGap(name, null) === "unnamed") return null;
+  const tokens = name.replace(/\[[^\]]*\]|\([^)]*\)/g, " ").trim().split(/\s+/).filter(Boolean);
+  if (!tokens.length || tokens.length > 2) return null;
+  const surnameOf = (role) => source.mentions
+    .filter((entry, position) => position !== index && entry.personId && role(entry.role))
+    .map((entry) => people.get(entry.personId)?.record)
+    .filter((profile) => profile && profile.publicCore !== false && !profile.researchSubject && isSurname(profile.surname?.normalized ?? ""))
+    .map((profile) => profile.surname.normalized.replace(/(ов|ев|ин)а$/, "$1"));
+  const husbands = [...new Set(surnameOf(husbandMentionRole))];
+  const children = [...new Set(surnameOf(childMentionRole))];
+  const surnames = husbands.length ? husbands : children;
+  return surnames.length === 1 ? feminineSurname(surnames[0]) : null;
+}
+
 const candidates = [];
 const skipped = [];
 for (const item of directory.records) {
@@ -325,8 +345,14 @@ for (const item of directory.records) {
   if ((source.mentions ?? []).length !== archive.people.length) continue;
   archive.people.forEach((person, index) => {
     if (person.personId || person.possiblePersonId || person.isResearchObject) return;
-    if (person.profileGap === "other-surname") return;
     const mention = source.mentions[index];
+    if (person.profileGap === "other-surname") {
+      // A wife written by personal name only ("Дарья", "Наталья Акентьевна")
+      // in a surname-line family gets a profile under her husband's surname.
+      const familySurname = !mention.personId && familySurnameForWife(source, index, person.name);
+      if (familySurname) candidates.push({ sourceId: item.sourceId, index, mention, archive, archivePerson: person, year: item.year, familySurname });
+      return;
+    }
     if (mention.personId) {
       // Linked in the data, but the link is hidden as out of scope: a data
       // question for a human, not a missing profile.
@@ -348,6 +374,18 @@ const surnameWrittenForPerson = (mention) => literalForms(mention).some((form) =
 const otherSurname = [];
 for (const candidate of [...candidates]) {
   const { mention, archivePerson } = candidate;
+  if (candidate.familySurname) {
+    let base = archivePerson.name.replace(/\[[^\]]*\]|\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+    const parts = base.split(" ");
+    const last = parts.at(-1).toLocaleLowerCase("ru").replace(/ь/g, "");
+    if (parts.length === 2 && /(?:ова|ева|ина)$/.test(last) && last.slice(0, 4) === candidate.familySurname.toLocaleLowerCase("ru").slice(0, 4)) base = parts[0];
+    candidate.displayName = profileDisplayName(`${base} ${candidate.familySurname}`, true, g.mentionPersonalNameSegment);
+    candidate.sex = "female";
+    candidate.key = nameKey(candidate.displayName);
+    candidate.placeId = readSource(candidate.sourceId).event?.place?.placeId ?? null;
+    candidate.surnameByHusband = true;
+    continue;
+  }
   const forms = [mention.modernName ?? mention.displayName ?? archivePerson.name, archivePerson.name, ...archivePerson.alternateNames];
   const roughSex = inferSex(mention, modernOrthography(forms[0]));
   // Prefer the modern form; fall back to a documented form that carries the
@@ -415,13 +453,22 @@ for (const [sourceId] of Object.entries(recordPaths)) {
 
 // Existing wives by husband: the same husband's wife with the same personal
 // name in another entry is the same woman.
-const givenKey = (displayName) => nameKey(displayName).split(" ")[0] ?? "";
+// Church and everyday forms of the same personal name.
+const givenForms = [["мария", "марья"], ["елизавета", "елисавета"], ["евдокия", "авдотья", "евдокея"], ["наталья", "наталия"], ["дарья", "дария"],
+  ["параскева", "прасковья", "парасковья", "прасковия"], ["матрена", "матрона"], ["агафья", "агафия"], ["пелагея", "пелагия"], ["акилина", "акулина"],
+  ["ксения", "аксинья"], ["анастасия", "настасья"], ["федора", "феодора"], ["устинья", "иустина"], ["ефимия", "евфимия"], ["татьяна", "татиана"],
+  ["федосья", "феодосия"], ["ефросинья", "евфросиния"], ["ирина", "арина"], ["ульяна", "иулиания"], ["аграфена", "агриппина", "агрипина"], ["анисья", "анисия"]];
+const givenCanon = new Map(givenForms.flatMap((group) => group.map((name) => [name, group[0]])));
+const givenKey = (displayName) => { const first = nameKey(displayName).split(" ")[0] ?? ""; return givenCanon.get(first) ?? first; };
 const patronymicKey = (displayName) => {
   const tokens = nameKey(displayName).split(" ");
   return tokens.length >= 3 && /(?:вна|чна)$/.test(tokens[1]) ? tokens[1] : "";
 };
-// "Игнатьевна" and "Игнатовна" are one patronymic; "Михайловна" and "Михеевна" are not.
-const patronymicStem = (patronymic) => patronymic.replace(/(?:ьевна|евна|овна|инична|ична)$/, "");
+// "Игнатьевна" and "Игнатовна", "Фадеевна" and "Фаддеевна", "Митриевна" and
+// "Дмитриевна" are one patronymic; "Михайловна" and "Михеевна" are not.
+const patronymicStem = (patronymic) => patronymic.replace(/(?:ьевна|евна|овна|инична|ична)$/, "")
+  .replace(/([а-я])\1/g, "$1").replace(/^евф/, "еф").replace(/^косьм/, "кузьм").replace(/^митр/, "дмитр")
+  .replace(/^иоан/, "иван").replace(/^иосиф/, "осип").replace(/^феод/, "фед").replace(/^симеон/, "семен").replace(/^стефан/, "степан").replace(/ь/g, "");
 const samePatronymic = (left, right) => !left || !right || patronymicStem(left) === patronymicStem(right);
 const scopedPersonId = (entry) => (entry?.personId && people.get(entry.personId)?.record.publicCore !== false ? entry.personId : null);
 const existingWives = new Map();
@@ -471,13 +518,16 @@ const wifeClusters = new Map();
 for (const candidate of wives) {
   const husband = resolvedHusband(candidate);
   if (husband) {
-    const existing = existingWives.get(`${husband}|${givenKey(candidate.displayName)}`);
-    const existingWife = existing?.size === 1 ? [...existing][0] : null;
-    if (existingWife && samePatronymic(patronymicKey(candidate.displayName), patronymicKey(people.get(existingWife).record.displayName))) {
-      candidate.linkExisting = existingWife;
+    const existing = [...(existingWives.get(`${husband}|${givenKey(candidate.displayName)}`) ?? [])];
+    const matching = existing.filter((id) => samePatronymic(patronymicKey(candidate.displayName), patronymicKey(people.get(id).record.displayName)));
+    const exact = matching.length > 1
+      ? matching.filter((id) => patronymicKey(people.get(id).record.displayName) && patronymicKey(candidate.displayName))
+      : matching;
+    if (exact.length === 1) {
+      candidate.linkExisting = exact[0];
       continue;
     }
-    if (existingWife) candidate.possibleExistingWife = existingWife;
+    if (existing.length === 1) candidate.possibleExistingWife = existing[0];
     const key = `w|husband:${husband}|${givenKey(candidate.displayName)}`;
     if (!wifeClusters.has(key)) wifeClusters.set(key, []);
     wifeClusters.get(key).push(candidate);
@@ -496,7 +546,7 @@ for (const candidate of wives) {
 // an index misreading or another wife, which only the originals decide.
 const splitWifeGroups = [];
 for (const [key, members] of wifeClusters) {
-  const patronymics = [...new Set(members.map((member) => patronymicKey(member.displayName)).filter(Boolean))];
+  const patronymics = [...new Set(members.map((member) => patronymicKey(member.displayName)).filter(Boolean).map(patronymicStem))];
   if (patronymics.length <= 1) {
     addToCluster(key, members);
     continue;
@@ -504,7 +554,7 @@ for (const [key, members] of wifeClusters) {
   const keys = new Set();
   for (const member of members) {
     const patronymic = patronymicKey(member.displayName);
-    const memberKey = patronymic ? `${key}|${patronymic}` : `single|${member.sourceId}|${member.index}`;
+    const memberKey = patronymic ? `${key}|${patronymicStem(patronymic)}` : `single|${member.sourceId}|${member.index}`;
     keys.add(memberKey);
     addToCluster(memberKey, member);
   }

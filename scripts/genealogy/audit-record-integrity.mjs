@@ -223,7 +223,8 @@ for (const { record: source, file } of sourceEntries) {
     if (!mention.personId || !people.has(mention.personId)) continue;
     const person = people.get(mention.personId).record;
     const mentionName = comparableName(mention.modernName ?? mention.displayName);
-    const candidateNames = personNameCandidates(person);
+    // A placeholder such as «[Имя не установлено]» has no personal name to compare.
+    const candidateNames = personNameCandidates(person).filter((candidate) => candidate.given);
     if (mentionName.given && candidateNames.length && !candidateNames.some((candidate) => candidate.given === mentionName.given)) {
       add("warning", "linked-person-given-name-mismatch", file, `${source.sourceId}/${mention.mentionId}: ${mention.modernName ?? mention.displayName} → ${mention.personId} ${person.displayName}`, {
         sourceId: source.sourceId,
