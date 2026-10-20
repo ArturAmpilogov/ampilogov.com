@@ -82,7 +82,7 @@ This is not a military muster. The document does not say who inspected his horse
 
 ## What it does not prove
 
-- kinship between the Onanyins and the Anfilogovs;
+- kinship between the Onanyins and Anfilogovs;
 - the exact years of Anpilog's life;
 - the name of his wife or the full composition of the family;
 - any particular military service or campaigns;

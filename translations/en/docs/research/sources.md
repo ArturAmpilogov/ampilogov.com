@@ -274,9 +274,9 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [Full text (base.garant.ru)](https://base.garant.ru/58105658/) · [Original edition — record in the Russian State Library catalogue](https://search.rsl.ru/ru/record/01003336126)
 - Chapters: [Chapter 9. The Nobility of One Anfilogov Branch](/read/book/09-anfilogov-nobility)
 
-### S-NOBILITY-NES — The entry «Анфилоговы» [The Anfilogovs] in the «Новый энциклопедический словарь» [New Encyclopedic Dictionary] (1911)
+### S-NOBILITY-NES — The entry «Анфилоговы» [Anfilogovs] in the «Новый энциклопедический словарь» [New Encyclopedic Dictionary] (1911)
 - Type: encyclopedia entry
-- Description: «Новый энциклопедический словарь» [New Encyclopedic Dictionary], ed. K. K. Arsenyev. St Petersburg: F. A. Brockhaus, I. A. Efron, 1911. Vol. 3. Col. 108, entry «Анфилоговы» [The Anfilogovs]; the edition is in the public domain.
+- Description: «Новый энциклопедический словарь» [New Encyclopedic Dictionary], ed. K. K. Arsenyev. St Petersburg: F. A. Brockhaus, I. A. Efron, 1911. Vol. 3. Col. 108, entry «Анфилоговы» [Anfilogovs]; the edition is in the public domain.
 - Links: [Russian State Library scan, frame 69 (rusneb.ru)](http://viewer.rusneb.ru/ru/rsl01004103475?page=69) · [Transcription on Wikisource](https://ru.wikisource.org/wiki/%D0%9D%D0%AD%D0%A1/%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B)
 - Chapters: [Chapter 9. The Nobility of One Anfilogov Branch](/read/book/09-anfilogov-nobility) · [Chapter 13. A New Life: Towns and Parishes](/read/book/13-towns-and-parishes)
 

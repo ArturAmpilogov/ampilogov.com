@@ -38,4 +38,4 @@ And the same Oryol book already records a whole group of landholders with the su
 
 **Onfilogovo.** A hamlet in Khorvach volost of the Yuryev stan of Tver uyezd: 4 households, 30 chetverts of ploughland per field, 30 kopnas (stacks) of hay. The eponym's name is not given in the book and is reconstructed only from the place name; whether he was its owner or founder is unknown. A connection between the hamlet and Priluki (about 200 km away) has not been proven. [S-TVER-1540]
 
-**Anpilog Onanyin.** The chain Anpilog — Vavil — Kondratiy belongs to the Onanyins; their kinship with the Anfilogovs in the same book has not been established. [S-OREL-1594-ANPILOG]
+**Anpilog Onanyin.** The chain Anpilog — Vavil — Kondratiy belongs to the Onanyins; their kinship with Anfilogovs in the same book has not been established. [S-OREL-1594-ANPILOG]

@@ -83,7 +83,7 @@ The censuses of 1646 were connected with the state's binding of the tax-paying p
 
 - Ivan's age or the existence of other family members;
 - the family's origin before 1646;
-- a blood link with the Anpilogovs in state service in Belgorod, Kursk or Oryol;
+- a blood link with Anpilogovs in state service in Belgorod, Kursk or Oryol;
 - military service;
 - deliberate concealment of the household by Andrey himself.
 

@@ -109,8 +109,8 @@ four of our folios lie in the first part — that is, in the **register list of 
 itself for the year 194 (1685/86)**. A register list was compiled when a voivode was replaced:
 the town, its fortifications, artillery (naryad), stores and the garrison by name.
 
-This is the first trace of the Anpilogovs in Belgorod itself. Until now Belgorod had been in
-the project only as the name of a military district (razryad); according to the alphabetical indexes the Anpilogovs lived in Khotmyzhsk,
+This is the first trace of Anpilogovs in Belgorod itself. Until now Belgorod had been in
+the project only as the name of a military district (razryad); according to the alphabetical indexes Anpilogovs lived in Khotmyzhsk,
 Olshansk, Novy Oskol and Kursk.
 
 **Book 132 — «Анпилоговы» (Anpilogovs), folio 20.**
@@ -218,7 +218,7 @@ This type of document is rare for our sample. All the other files found — esti
 books, register lists, arrival lists, statements — are documents of **service**:
 whoever serves gets into them. A collection book of carts apportions a duty in kind and therefore covers
 **servicemen and townspeople (zhiletskie lyudi)** at once, that is,
-it takes in both town and district residents. So far this is the only file where the Anpilogovs
+it takes in both town and district residents. So far this is the only file where Anpilogovs
 may turn out to be recorded as something other than servicemen.
 
 The inventory lists the countersignatures by folio, and both sections can be localised: folio 4 lies under
@@ -308,7 +308,7 @@ begins to **pay**. This is the very transformation of the servicemen of the Belg
 into **odnodvortsy** ("single-homesteaders") — a tax-paying estate that half a century later was resettled to the south,
 including to Timoshevka.
 
-Until now all the files found through the indexes showed the Anpilogovs **in service**:
+Until now all the files found through the indexes showed Anpilogovs **in service**:
 estimate books, register and arrival lists, reviews, statements. Here for the first time
 one can see how service comes to an end. And one sees it three times in a row — 1701, 1702–3,
 1700–5 — that is, not as an isolated case but as a condition.
@@ -345,7 +345,7 @@ All the cards of this batch were made according to
 - the dyaks, voivodes and the commander named in the inventory are placed in separate
   `mentions[]` objects with roles, ranges of countersignatures and the historical reading in
   `nameAsTranscribed`. None of them becomes the subject of the card:
-  `primaryPersonId` is empty, because the inventory does not name the Anpilogovs at all;
+  `primaryPersonId` is empty, because the inventory does not name Anpilogovs at all;
 - the forms «Анпилогов» (Anpilogov) and «Анпилов» (Anpilov) are nowhere normalised to «Ампилогов» (Ampilogov). This is rule 2:
   the surname from the document is the primary one until the identity of the person is proved.
   All the more so since an index entry is not even a documentary reading but a paraphrase by the hand of a

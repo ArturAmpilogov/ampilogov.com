@@ -66,7 +66,7 @@ Onfilogovo shows that the name `Онфилог` (Onfilog) was alive and capable 
 
 `Амфилохий → Онфилог / Анфилог / Анпилог → Онфилогово или Анпилогов`.
 
-The Tver find confirms the etymology of the surname, but not that the Oryol family came from Tver. There is no documented kinship between the hamlet and the Oryol Anfilogovs.
+The Tver find confirms the etymology of the surname, but not that the Oryol family came from Tver. There is no documented kinship between the hamlet and Oryol Anfilogovs.
 
 ## Was this a military muster
 
@@ -96,7 +96,7 @@ No. This is a description of land and economy. It contains no review of servicem
 
 - that the inhabitants of this hamlet bore the surname Onfilogov;
 - the name, status or lifetime of the eponym;
-- kinship between the Tver inhabitants and the Oryol Anfilogovs;
+- kinship between the Tver inhabitants and Oryol Anfilogovs;
 - military service or a move from Tver to Oryol.
 - that no old deeds existed at all;
 - the exact location of the hamlet of Onfilogovo within the holding.

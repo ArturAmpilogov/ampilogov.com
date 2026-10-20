@@ -19,7 +19,7 @@ Having lost the Oryol estate, the family found a foothold in Livny district — 
 
 Akim was not the only one to leave Oryol. The Kursk service skazki of 1697 name a whole [cluster of Anpilogovs](/records/PUB-SLUZHILYE-1697-OREL-KURSK-ANPILOGOV-MIGRATIONS) who had moved from Oryol and Kromy districts to Kursk district. Many of them no longer served the way their grandfathers had. From the 1630s, and especially in the second half of the seventeenth century, the Muscovite army was being reorganised along European lines: deti boyarskie were enrolled in regiments "of the new order" — reiter, lancer and dragoon regiments — where they were drilled and paid a salary. Reiters were heavy cavalry armed with pistols and carbines. [Ignat Guryevich Anpilogov](/records/PUB-RGADA-350-1-215-L1524-GURYEVICHI-1719), even in 1719, at the age of sixty-one, was still listed as an odnodvorets (single-household serviceman) «рейтарской службы» ("of reiter service").
 
-Later another branch of the Anfilogovs would gather old papers about their ancestors to prove their nobility.
+Later another branch of Anfilogovs would gather old papers about their ancestors to prove their nobility.
 
 {{RESEARCH_NOTES}}
 
@@ -29,4 +29,4 @@ Later another branch of the Anfilogovs would gather old papers about their ances
 
 **Later traces.** In the revision (census) of 1782 a Vasily Dementyevich Anpilogov appears in this Shchigry; almost a century separates him from Tit, and the place name helps the search but does not fill in the generations. A secondary publication also mentions a skazka of 1697; the chapter's conclusions rest on the original of 1700, which has been read. [S-SHCHIGRY-1697] [S-SHCHIGRY-REVISIONS]
 
-**The Kursk Anpilogovs of 1697.** An open database of service skazki names the sons of Guriy, descendants of the Oryol servicemen Foma, Nikifor, Efim and others, and a separate Kromy line. Ivan Fomich's father served from Oryol as a reiter, Anikey Nikiforovich's father as a lancer; Terenty Guryevich dated the move to Kursk district to 1691/92. A link between these families and Akim has not been established.
+**Kursk Anpilogovs of 1697.** An open database of service skazki names the sons of Guriy, descendants of the Oryol servicemen Foma, Nikifor, Efim and others, and a separate Kromy line. Ivan Fomich's father served from Oryol as a reiter, Anikey Nikiforovich's father as a lancer; Terenty Guryevich dated the move to Kursk district to 1691/92. A link between these families and Akim has not been established.

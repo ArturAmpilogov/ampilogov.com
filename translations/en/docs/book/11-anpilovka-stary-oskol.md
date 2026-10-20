@@ -1,6 +1,6 @@
 # Anpilovka: First the Families, Then the Village
 
-Anpilovka is still a living village today, near Stary Oskol in Belgorod Oblast: according to the 2010 census, 232 people lived there. It was named after the Anpilov odnodvortsy (single-household servitors). But the Anpilovs themselves had lived in these parts for almost a century and a half before the village appeared — back when they were still servicemen of the Oskol fortress.
+Anpilovka is still a living village today, near Stary Oskol in Belgorod Oblast: according to the 2010 census, 232 people lived there. It was named after the Anpilov odnodvortsy (single-household servitors). But Anpilovs themselves had lived in these parts for almost a century and a half before the village appeared — back when they were still servicemen of the Oskol fortress.
 
 {{ANPILOVKA_MAP}}
 
@@ -16,7 +16,7 @@ Half a century later the frontier moved further into the steppe, and a new fortr
 
 The garrison was regularly enumerated, and these lists show how a new generation entered service. The estimate book (smetnaya kniga) of 1668 lists the retired syn boyarsky **Gerasim Anpilov** with a brief note: «у него сын Стенка» ("he has a son, Stenka"). In 1675 the son is already recorded by his full name — **Stepan Gerasimov syn Anpilov** (Stepan, son of Gerasim, Anpilov) — and in 1685 he is serving as a lancer (kopeyshchik) in a cavalry regiment of the new order.
 
-At the turn of the 17th and 18th centuries the Anpilovs already formed several service households in villages near Oskol, in Gornyaya and Sorokino. They performed lancer and town service and held service-estate land.
+At the turn of the 17th and 18th centuries Anpilovs already formed several service households in villages near Oskol, in Gornyaya and Sorokino. They performed lancer and town service and held service-estate land.
 
 ## Odnodvortsy with a Mill
 
@@ -24,7 +24,7 @@ Under Peter I the Oskol servicemen, like those of Kursk, were registered as odno
 
 ## The Village by Bor
 
-In the second quarter of the 18th century some of the Anpilovs moved from Sorokino to the neighbouring village of Bor. A separate village grew up right next to their homesteads. In the 1780s the land surveyors recorded it as «деревня с хутором Анпиловы» ("the village with the Anpilovy farmstead"): ten households owned by Anpilov odnodvortsy. In the revision of 1811 the 64-year-old **Ivan Ivanovich Anpilov** is named among the inhabitants of Anpilova.
+In the second quarter of the 18th century some Anpilovs moved from Sorokino to the neighbouring village of Bor. A separate village grew up right next to their homesteads. In the 1780s the land surveyors recorded it as «деревня с хутором Анпиловы» ("the village with the Anpilovy farmstead"): ten households owned by Anpilov odnodvortsy. In the revision of 1811 the 64-year-old **Ivan Ivanovich Anpilov** is named among the inhabitants of Anpilova.
 
 With each generation the odnodvortsy families had less land, and in the 19th century many of them left for new lands — which is where the next chapter leads.
 
@@ -40,6 +40,6 @@ With each generation the odnodvortsy families had less land, and in the 19th cen
 
 {{KINSHIP:anpilovka}}
 
-**From Sorokino to Bor.** The 1719 mill comes from the census book. The move of some of the Sorokino Anpilovs to Bor between the first and second revisions is the researcher's reconstruction of the sequence of households; in the census of 1723 there is no separate Anpilovka yet. «Деревня с хутором Анпиловы» comes from the economic notes to the General Land Survey of the 1780s (RGIA (Russian State Historical Archive), f. 1350, op. 312, d. 84, l. 95–95 v.): 9 households in the village and 1 on the farmstead, 24 revision souls. The revision of 1811 names the «вновь начинающую деревню Анпилову» ("newly begun village of Anpilova"); the attribution of this fragment to the settlement by Bor is the researcher's, and the archival reference is not shown in the publication. The key records are collected in the [analysis of the revisions](../research/sources.md#s-anpilovka-revisions). [S-ANPILOVKA-REVISIONS]
+**From Sorokino to Bor.** The 1719 mill comes from the census book. The move of some Sorokino Anpilovs to Bor between the first and second revisions is the researcher's reconstruction of the sequence of households; in the census of 1723 there is no separate Anpilovka yet. «Деревня с хутором Анпиловы» comes from the economic notes to the General Land Survey of the 1780s (RGIA (Russian State Historical Archive), f. 1350, op. 312, d. 84, l. 95–95 v.): 9 households in the village and 1 on the farmstead, 24 revision souls. The revision of 1811 names the «вновь начинающую деревню Анпилову» ("newly begun village of Anpilova"); the attribution of this fragment to the settlement by Bor is the researcher's, and the archival reference is not shown in the publication. The key records are collected in the [analysis of the revisions](../research/sources.md#s-anpilovka-revisions). [S-ANPILOVKA-REVISIONS]
 
 **Who founded Anpilovka.** A local-history version links the founding to Anofry Karpovich Anpilov and the year 1723, but the primary document has not been found, and the Livny candidate who was checked turned out to be Anofrey Karpovich Antipov — a different surname. Ivan Ivanovich is named in the 1811 revision tale together with the new village, but that wording does not make him its sole founder. [S-ANPILOVKA-1723] [S-ANPILOV-ANOFRY]

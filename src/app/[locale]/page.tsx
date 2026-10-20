@@ -15,7 +15,7 @@ const copy = defineCopy({
   scanCaption: "РГАДА · ф. 181 · оп. 2 · д. 120 · л. 58 об.",
 }, {
   en: {
-    title: "The Ampilogovs",
+    title: "Ampilogovs",
     thesis: "The history of a surname and its families",
     deck: "Ampilogov · Anpilogov · Ampilov · Anpilov · Anfilogov · Onfilogov",
     start: "Start reading",

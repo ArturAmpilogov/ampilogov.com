@@ -95,7 +95,7 @@ Three short forms not previously entered as cards have been set aside separately
 **Boris Anfilov** (Kozlov, 1687, f. 210, op. 6е, d. 33), **Rodion Anfilov**
 (Kozlov, 1700, f. 210, op. 13, d. 2516) and **Sila Anfilov** (Kozlov, 1703,
 f. 210, op. 6е, d. 43). Until the folios are viewed, this is one possible local series
-or three index matches, not proven relatives of the Anfilogovs.
+or three index matches, not proven relatives of Anfilogovs.
 
 ## What This Source Is and What It Is Not
 
@@ -143,7 +143,7 @@ After checking, one was excluded; among the rest:
   the machine selection: the file names **Василей Дмитреев Анпилогов** (Vasiley, son of Dmitry, Anpilogov; fol. 67),
   **Олексей Васильев Анфилохов** (Oleksey, son of Vasily, Anfilokhov; fol. 94) and **Иван Васильев Анфилохов** (Ivan, son of Vasily, Anfilokhov; fol. 109).
   The names «Марк» (Mark) and «Илюшка» (Ilyushka) are not in the full index.
-- **210-9-1096, a list not earlier than 1632, Kursk — the Onpilogovs Vaska, Senka (twice) and Fedka.** The web index says "about 1631", but the archival inventory dates the relevant scroll section (stolpik) only as "not earlier than 7141/1632". A full open transcription has now revealed all four: Fyodor Grigoryevich (fol. 157, 200 chetverti), Semyon Osipovich (fol. 189, 100), Semyon Yakovlevich (fol. 190, 100) and Vasily Semyonovich (fol. 204, a novik of the year 136, 100). A Record `PUB-KURKULEV-KURSK-1632-ONPILOGOVY` has been created.
+- **210-9-1096, a list not earlier than 1632, Kursk — Onpilogovs Vaska, Senka (twice) and Fedka.** The web index says "about 1631", but the archival inventory dates the relevant scroll section (stolpik) only as "not earlier than 7141/1632". A full open transcription has now revealed all four: Fyodor Grigoryevich (fol. 157, 200 chetverti), Semyon Osipovich (fol. 189, 100), Semyon Yakovlevich (fol. 190, 100) and Vasily Semyonovich (fol. 204, a novik of the year 136, 100). A Record `PUB-KURKULEV-KURSK-1632-ONPILOGOVY` has been created.
 - **210-12-13, 1626, Oryol — Onpilogov Vaska, Ivashka (twice), Mark (twice).**
   These are exactly the people already entered as P0034, P0035, P0037: the index
   independently confirms the composition of the `RGADA-210-12-13-*` records.

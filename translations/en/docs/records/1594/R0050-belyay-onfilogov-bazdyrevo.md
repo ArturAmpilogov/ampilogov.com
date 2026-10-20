@@ -56,7 +56,7 @@ A cadastral book is not a desyatnya (service register). It does not call Belyay 
 
 ## The local milieu
 
-In Bazdyrevo the Anfilogovs, Nemtsovs, Krivolapovs and Bazdyrevs held land side by side; on the sovereign's land stood a pogost (churchyard settlement) with the church of Nicholas the Wonderworker. This is not an isolated, remote holding but a dense cluster of small servicemen's shares.
+In Bazdyrevo Anfilogovs, Nemtsovs, Krivolapovs and Bazdyrevs held land side by side; on the sovereign's land stood a pogost (churchyard settlement) with the church of Nicholas the Wonderworker. This is not an isolated, remote holding but a dense cluster of small servicemen's shares.
 
 ## People
 

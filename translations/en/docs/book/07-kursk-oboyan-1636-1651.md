@@ -39,4 +39,4 @@ But even life «на вечном житье» ("in permanent residence") did no
 
 **Kursk to Oboyan.** The first name, patronymic and rare surname link the Oboyan Sergey with the Kursk one, but there is no separate document recording a transfer: the path remains probable. A family relationship between Sergey and Akim Anpilogov has not been established.
 
-**Userd, 1637.** Register of newly enlisted regimental Cossacks: RGADA, f. 210, op. 12, d. 85, ll. 131–134. The previous towns of Anton and Pyotr, their relationship to each other and to the Kursk Onpilogovs have not been established.
+**Userd, 1637.** Register of newly enlisted regimental Cossacks: RGADA, f. 210, op. 12, d. 85, ll. 131–134. The previous towns of Anton and Pyotr, their relationship to each other and to Kursk Onpilogovs have not been established.

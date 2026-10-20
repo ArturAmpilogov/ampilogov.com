@@ -81,7 +81,7 @@ The threat to take a man «в солдаты» ("as a soldier") is a punishment 
 - Semyon's patronymic is **Kharlanovich**, from the name Kharlan/Kharlampy. It is the first such patronymic found in the project and an important key to the Khotmyzhsk books of the 1640s.
 - There are 21 years between Fyodor and Filipp. Such a large gap allows for Semyon's having married more than once, but the source does not name the mothers, so this is only a working hypothesis for research.
 - Filipp was born when Semyon was about 61. The arithmetic follows from the declared ages and may have the error usual for revisions.
-- Stepan is called a **foster son** but keeps his own patronymic and surname — Antonov syn Slobodin ("son of Anton, Slobodin"). He cannot automatically be included in the blood line of the Anpilogovs.
+- Stepan is called a **foster son** but keeps his own patronymic and surname — Antonov syn Slobodin ("son of Anton, Slobodin"). He cannot automatically be included in the blood line of Anpilogovs.
 
 ## Historical context
 
