@@ -870,6 +870,13 @@ const eventLabels: Record<string, string> = {
   exile: "Выселение",
   disenfranchisement: "Лишение избирательных прав",
   "repression-database-entry": "Запись в базе репрессированных",
+  "war-death": "Гибель или смерть на войне",
+  "missing-in-action": "Пропал без вести",
+  "prisoner-of-war": "Плен",
+  "military-award": "Награждение",
+  "military-conscription": "Призыв в армию",
+  "military-service": "Военная служба",
+  desertion: "Дезертирство (по донесению)",
 };
 
 const roleLabels: Record<string, string> = {
@@ -920,6 +927,8 @@ const roleLabels: Record<string, string> = {
   subject: "упомянутый",
   feldsher: "фельдшер",
   serviceman: "служилый человек",
+  soldier: "военнослужащий",
+  "deceased-soldier": "военнослужащий, погибший или умерший",
   "listed-service-person": "служилый человек в списке",
   "oath-taker": "принёсший присягу",
   "new-serviceman": "новик, принятый на службу",
@@ -1084,6 +1093,9 @@ const placeRelationLabels: Record<string, string> = {
   "labour-camp": "лагерь",
   "exile-destination": "место ссылки или высылки",
   arrest: "место ареста",
+  conscription: "место призыва",
+  missing: "где пропал без вести",
+  captivity: "место пленения",
 };
 
 function sourcePosition(source: SourceRecord) {
@@ -1140,6 +1152,16 @@ const recordDataLabels: Record<string, string> = {
   marriageDate: "Дата брака",
   eventDate: "Дата события",
   causeOfDeath: "Причина смерти",
+  birthPlace: "Место рождения",
+  conscription: "Призыв",
+  rank: "Воинское звание",
+  unit: "Воинская часть",
+  awards: "Награды",
+  fate: "Причина выбытия",
+  fateDate: "Дата выбытия",
+  fatePlace: "Место выбытия",
+  captivity: "Плен",
+  documentsCount: "Документов в карточке",
   cause: "Причина смерти",
   burialPlace: "Место погребения",
   recordNumber: "Номер записи",
@@ -1162,6 +1184,8 @@ const recordDataLabels: Record<string, string> = {
   result: "Результат",
   limit: "Граница вывода",
   url: "Открытая публикация",
+  archivedCopy: "Копия в веб-архиве",
+  search: "Поисковая выдача",
   livnyResult: "Проверка ливенского следа",
   karachev1584Lead: "Карачевский коридор и книга 1584/85 года",
   officialInventoryVerification20260830: "Проверка по официальной поактной описи РГАДА",
@@ -1639,9 +1663,21 @@ function sourceAdditionalLinks(source: SourceRecord, excludedUrls: string[] = []
     if (!match) return humanDataLabel(key);
     return `${personNames[match[1]]}: ${match[2] === "Birth" ? "рождение" : "смерть"} · ${match[3] === "Record" ? "индекс" : "скан"}`;
   };
+  // A link is a URL string, or `{ label, url }` when the key alone cannot name
+  // the document (for example, one of several documents of a military card).
+  const labelledLink = (value: unknown) => {
+    if (!value || typeof value !== "object") return null;
+    const { label, url } = value as { label?: unknown; url?: unknown };
+    return typeof label === "string" && typeof url === "string" ? { label, url } : null;
+  };
   return Object.entries(source.links ?? {})
-    .filter(([key, value]) => !primaryKeys.has(key) && typeof value === "string" && /^https?:\/\//.test(value))
-    .map(([key, value]) => ({ label: linkLabel(key), url: value as string }))
+    .flatMap(([key, value]) => {
+      if (primaryKeys.has(key)) return [];
+      if (typeof value === "string") return [{ label: linkLabel(key), url: value }];
+      const labelled = labelledLink(value);
+      return labelled ? [labelled] : [];
+    })
+    .filter((link) => /^https?:\/\//.test(link.url))
     .filter((link) => {
       if (seen.has(link.url)) return false;
       seen.add(link.url);
@@ -1908,7 +1944,7 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
-const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилат|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
 const PUBLIC_RESEARCH_END_YEAR = 1950;
 
 function isAmpilogovVariantName(value?: string | null) {
@@ -2082,7 +2118,7 @@ const marriageEventTypes = new Set([
   "marriage-duplicate-image",
 ]);
 
-const deathEventTypes = new Set(["death", "death-and-burial", "execution"]);
+const deathEventTypes = new Set(["death", "death-and-burial", "execution", "war-death"]);
 
 function sourceDirectoryFacts(source: SourceRecord, peopleById?: Map<string, PersonRecord>) {
   const eventType = source.event?.type ?? "";
@@ -2359,6 +2395,9 @@ function genealogyIndexedPath(relativePath: string) {
   }
   if (normalized.startsWith("sources/publications/")) {
     return path.join(GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
+  }
+  if (normalized.startsWith("sources/pamyat-naroda/")) {
+    return path.join(GENEALOGY_ROOT, "sources/pamyat-naroda", normalized.slice("sources/pamyat-naroda/".length));
   }
   if (normalized.startsWith("sources/rgada/")) {
     return path.join(GENEALOGY_ROOT, "sources/rgada", normalized.slice("sources/rgada/".length));
