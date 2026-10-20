@@ -477,16 +477,42 @@ const FATE_SUMMARY = {
 // Load documents
 
 const stats = { documents: 0, browserRejected: (harvest.rejected ?? []).length, inScope: 0, ocrReadings: 0, rejected: 0 };
-const rejectedRows = (harvest.rejected ?? []).map((item) => ({
+// A reading one or two letters from an «-логов» form of the line that is not
+// in the reviewed list is kept apart from plainly other surnames; the short
+// forms (Анпилов, Анфилов) have too many real neighbours for that.
+const LOG_FORMS = LINE_FORMS.filter(([form]) => /лог/.test(form)).map(([form]) => norm(form));
+const rejectionOf = (name) => {
+  const tokens = surnameTokens(name);
+  if (tokens.length > 1 && OTHER_SURNAME_MAIN.test(norm(tokens[0])) && tokens.slice(1).some((token) => surnameFamily(token))) {
+    return "rejected-main-reading-other-surname";
+  }
+  const reading = norm(surnameTokens(name)[0] ?? "").replace(/[^а-я]/g, "").replace(/(ов|ев)а$/, "$1");
+  return LOG_FORMS.some((form) => editDistance(reading, form) <= 2) ? "rejected-doubtful-reading-not-in-reviewed-list" : "rejected-other-surname";
+};
+// «Панфилов (Анпилов)», «Ампилохов (Ампилогов)»: the index reads a real other
+// surname first and offers a form of the line only as a second reading.
+const OTHER_SURNAME_MAIN = /^(?:ампилох|анпилох|амфилох|панфилов|антипов|анфимов|анфинов|антиох|апелов)/;
+// `bracketed` holds documents with two readings of the surname that the
+// browser's first filter set aside and a second request fetched in full.
+const refetched = new Set((harvest.bracketed ?? []).map((item) => `${item.t}${item.id}`));
+const rejectedRows = (harvest.rejected ?? []).filter((item) => !refetched.has(`${item.t}${item.id}`)).map((item) => ({
   gwarId: `${item.t}${item.id}`, url: `https://gwar.mil.ru/heroes/${item.t}${item.id}/`, name: item.n, queries: item.q,
-  decision: "rejected-other-surname",
+  decision: rejectionOf(item.n),
 }));
 const docs = [];
-for (const item of harvest.items) {
+for (const item of [...harvest.items, ...(harvest.bracketed ?? [])]) {
   stats.documents += 1;
   // «-» marks an empty field of the index.
   for (const [key, value] of Object.entries(item.s)) if (typeof value === "string" && /^[-–—\s]*$/.test(value)) delete item.s[key];
   const tokens = surnameTokens(item.s.last_name);
+  if (tokens.length > 1 && OTHER_SURNAME_MAIN.test(norm(tokens[0]))) {
+    stats.rejected += 1;
+    rejectedRows.push({
+      gwarId: gwarId(item), url: docUrl(item), name: [item.s.last_name, item.s.first_name, item.s.middle_name].filter(Boolean).join(" "),
+      queries: item.q, decision: "rejected-main-reading-other-surname",
+    });
+    continue;
+  }
   const families = tokens.map(surnameFamily).filter(Boolean);
   let ocr = null;
   if (!families.length) ocr = tokens.map(ocrReading).find(Boolean) ?? null;
@@ -494,7 +520,7 @@ for (const item of harvest.items) {
     stats.rejected += 1;
     rejectedRows.push({
       gwarId: gwarId(item), url: docUrl(item), name: [item.s.last_name, item.s.first_name, item.s.middle_name].filter(Boolean).join(" "),
-      queries: item.q, decision: "rejected-other-surname",
+      queries: item.q, decision: rejectionOf(item.s.last_name),
     });
     continue;
   }
