@@ -100,6 +100,8 @@ function ocrReading(token) {
   return { reading: token, family, form, distance: best, tie: nearestAll.length > 1 };
 }
 
+// Empty joins become null explicitly, not through `||`.
+const orNull = (value) => (value === "" ? null : value);
 const lst = (value) => (Array.isArray(value) ? value : [value]).filter((item) => item !== null && item !== undefined && item !== "");
 const norm = (value) => String(value ?? "").normalize("NFKC").toLocaleLowerCase("ru").replace(/ё/g, "е").trim();
 
@@ -147,7 +149,7 @@ const modernPatronymic = (value, sex) => {
 const CHURCH_FORMS = [
   ["феодосий", "федосей"], ["феодосия", "федосья"], ["феодор", "федор"], ["иоанн", "иван"], ["симеон", "семен"],
   ["евфими", "ефим"], ["иаков", "яков"], ["косм", "кузьм"], ["димитри", "дмитри"], ["стефан", "степан"],
-  ["захари", "захар"], ["параскев", "прасковь"], ["пелаги", "пелаге"], ["иулиани", "ульян"], ["григори", "григори"],
+  ["захари", "захар"], ["параскев", "прасковь"], ["пелаги", "пелаге"], ["иулиани", "ульян"],
 ];
 const canonicalName = (value) => {
   const text = norm(bracketForm(value) ?? writtenForm(value));
@@ -222,7 +224,7 @@ function birthPlaceOf(doc) {
   const parts = [doc.birth_place_gubernia, doc.birth_place_uezd, doc.birth_place_volost].filter(Boolean).map(String);
   const missing = parts.filter((part) => !norm(raw).includes(norm(part)));
   const text = [...missing, raw].filter(Boolean).join(", ").replace(/\s+/g, " ").trim();
-  return text || null;
+  return orNull(text);
 }
 
 function parsePlace(raw) {
@@ -390,7 +392,7 @@ function derived(doc) {
     birthPlace: birthPlaceOf(s),
     eventDate: event?.display ?? null,
     vibitieDate: vibitie && vibitie.display !== event?.display ? vibitie.display : null,
-    operationNames: lst(s.operations).map((operation) => operation.event_name).filter(Boolean).join("; ") || null,
+    operationNames: orNull(lst(s.operations).map((operation) => operation.event_name).filter(Boolean).join("; ")),
     birth_date: s.birth_date ? parseBirthDate(s.birth_date)?.display : null,
     data_priziva: s.data_priziva ? parseDate(s.data_priziva)?.display : null,
     prikaz_date: s.prikaz_date ? parseDate(s.prikaz_date)?.display : null,
@@ -406,7 +408,7 @@ function archiveCitation(doc) {
   if (s.fund_num && s.inventory_num && s.deal_num) return `${archive}, ф. ${s.fund_num}, оп. ${s.inventory_num}, д. ${s.deal_num}`;
   if (s.deal_num && s.inventory_num) return `${archive}, ${s.fund ? `«${s.fund}», ` : ""}оп. ${s.inventory_num}, д. ${s.deal_num}`;
   const parts = [archive, s.fund ? `«${s.fund}»` : null, s.shkaf && s.shkaf !== "без номера" ? `шкаф ${s.shkaf}` : null, s.box ? `ящик ${s.box}` : null];
-  return parts.filter(Boolean).join(", ") || null;
+  return orNull(parts.filter(Boolean).join(", "));
 }
 
 function docText(doc, number) {
@@ -643,7 +645,12 @@ for (const cluster of [...clusters]) {
   const key = looseKey(cluster);
   if (!key) continue;
   const places = cluster.docs.flatMap((doc) => doc.facts.birthPlaces);
-  const target = (byLooseKey.get(key) ?? []).find((other) => areasAgree(places, other.docs.flatMap((doc) => doc.facts.birthPlaces)));
+  const years = cluster.docs.map((doc) => doc.facts.birth?.year).filter(Boolean);
+  const target = (byLooseKey.get(key) ?? []).find((other) => {
+    const otherYears = other.docs.map((doc) => doc.facts.birth?.year).filter(Boolean);
+    if (years.length && otherYears.length && !years.some((year) => otherYears.some((otherYear) => Math.abs(year - otherYear) <= 1))) return false;
+    return areasAgree(places, other.docs.flatMap((doc) => doc.facts.birthPlaces));
+  });
   if (target) {
     mergeInto(target, cluster);
     target.looseMerge = true;
@@ -676,7 +683,8 @@ for (const cluster of clusters) {
 // ---------------------------------------------------------------------------
 // Existing profiles of the line
 
-const SITE_VARIANT = /^(?:анфилат|ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аппелог)/;
+// The public surname pattern of src/lib/genealogy.ts (ampilogovSurnameVariantPattern).
+const SITE_VARIANT = /^(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилат|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аппелог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог|ашпилог|актилог|апелог|асипилог|омпилог)/;
 const existing = new Map();
 const lineProfiles = [];
 let maxPersonNumber = 0;
@@ -710,7 +718,7 @@ if (alreadyImported && !dryRun) throw new Error("Профили gwar.mil.ru уж
 // profile. Volost agreement: the volost is named after a place of the profile
 // («Тимошевская вол.» — Тимошевка) and the uezd, if both name it, agrees.
 // Volosts named after the commonest village names say nothing on their own.
-const COMMON_VOLOST_STEMS = new Set([...COMMON_SETTLEMENT_NAMES].map(adjectiveStem));
+const isCommonVolost = (volost) => [...COMMON_SETTLEMENT_NAMES].some((name) => similar(volost, name));
 function profilePlaceMatch(profile, birthPlaces) {
   // Only places whose governorate and uezd agree with the profile's places
   // count: «Тамбовская губ., Усманский уезд, …Тимошев.» is not the Тимошевка
@@ -721,7 +729,7 @@ function profilePlaceMatch(profile, birthPlaces) {
     (!place.region || !/губерни/.test(profile.context) || profile.context.includes(place.region)));
   const settlements = parsed.flatMap((place) => place.settlements);
   if (settlements.some((settlement) => profile.names.some((name) => similar(settlement, name)))) return "settlement";
-  if (parsed.some((place) => place.volost && !COMMON_VOLOST_STEMS.has(place.volost) &&
+  if (parsed.some((place) => place.volost && !isCommonVolost(place.volost) &&
     profile.names.some((name) => similar(place.volost, adjectiveStem(name))))) return "volost";
   if (parsed.some((place) => place.district && place.district.length >= 5 && profile.context.split(/[^а-я-]+/).some((word) => similar(adjectiveStem(word), place.district)))) return "uezd";
   return null;
@@ -759,6 +767,7 @@ for (const cluster of [...clusters]) {
     continue;
   }
   mergeInto(target, cluster);
+  target.docs.sort((left, right) => docOrder(target, left) - docOrder(target, right) || String(left.id).localeCompare(String(right.id)));
   target.profileMerge = true;
   if (cluster.matchLevel === "settlement") target.matchLevel = "settlement";
   target.leads = [...new Set([...target.leads, ...cluster.leads])];
@@ -839,15 +848,15 @@ for (const cluster of clusters) {
   const operations = distinct(allDocs.flatMap((doc) => lst(doc.s.operations).map((operation) => operation.event_name)));
   const fields = {
     birthDate: facts.birth?.display ?? null,
-    birthPlace: joinLimited(facts.birthPlaces, 3) || null,
-    rank: joinLimited(ranks, 4) || null,
-    unit: joinLimited(units, 4) || null,
-    awards: joinLimited(awards, 6) || null,
-    fate: fateReasons.join("; ") || null,
+    birthPlace: orNull(joinLimited(facts.birthPlaces, 3)),
+    rank: orNull(joinLimited(ranks, 4)),
+    unit: orNull(joinLimited(units, 4)),
+    awards: orNull(joinLimited(awards, 6)),
+    fate: orNull(fateReasons.join("; ")),
     fateDate: isFate && event.date ? event.date.display : null,
     fatePlace,
-    operations: joinLimited(operations, 3) || null,
-    captivity: joinLimited(captivity, 2) || null,
+    operations: orNull(joinLimited(operations, 3)),
+    captivity: orNull(joinLimited(captivity, 2)),
     documentsCount: String(allDocs.length),
   };
   for (const [key, value] of Object.entries(fields)) if (!value) delete fields[key];
