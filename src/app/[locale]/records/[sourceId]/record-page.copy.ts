@@ -276,7 +276,7 @@ export const recordPageCopy = defineCopy<RecordPageCopy>({
   uk: {
     meta: {
       legacyTitle: "Оглядовий список 1626 року",
-      legacyDescription: "Шість самостійних записів РДАДА, ф. 210, оп. 12, спр. 13.",
+      legacyDescription: "Шість самостійних записів РГАДА, ф. 210, оп. 12, спр. 13.",
       notFound: "Запис не знайдено",
       description: (date, place) => `${date}, ${place}. Архівний запис, транскрипція і пов’язані люди.`,
     },
@@ -368,7 +368,7 @@ export const recordPageCopy = defineCopy<RecordPageCopy>({
   be: {
     meta: {
       legacyTitle: "Аглядны спіс 1626 года",
-      legacyDescription: "Шэсць самастойных запісаў РДАСА, ф. 210, воп. 12, спр. 13.",
+      legacyDescription: "Шэсць самастойных запісаў РГАДА, ф. 210, воп. 12, спр. 13.",
       notFound: "Запіс не знойдзены",
       description: (date, place) => `${date}, ${place}. Архіўны запіс, расшыфроўка і звязаныя людзі.`,
     },
