@@ -876,6 +876,8 @@ const eventLabels: Record<string, string> = {
   "military-award": "Награждение",
   "military-conscription": "Призыв в армию",
   "military-service": "Военная служба",
+  "war-wound": "Ранение или контузия",
+  "war-illness": "Болезнь на войне",
   desertion: "Дезертирство (по донесению)",
 };
 
@@ -1096,6 +1098,8 @@ const placeRelationLabels: Record<string, string> = {
   conscription: "место призыва",
   missing: "где пропал без вести",
   captivity: "место пленения",
+  wound: "где ранен или контужен",
+  "pow-camp": "лагерь военнопленных",
 };
 
 function sourcePosition(source: SourceRecord) {
@@ -1161,6 +1165,7 @@ const recordDataLabels: Record<string, string> = {
   fateDate: "Дата выбытия",
   fatePlace: "Место выбытия",
   captivity: "Плен",
+  operations: "Операция",
   documentsCount: "Документов в карточке",
   cause: "Причина смерти",
   burialPlace: "Место погребения",
@@ -1944,7 +1949,7 @@ function sourceRoleLabel(role?: string) {
   return roleLabels[role] ?? role.replaceAll("-", " ");
 }
 
-const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилат|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аппелог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог)/i;
+const ampilogovSurnameVariantPattern = /(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилат|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог|аппелог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог|ашпилог|актилог|апелог|асипилог|омпилог)/i;
 const PUBLIC_RESEARCH_END_YEAR = 1950;
 
 function isAmpilogovVariantName(value?: string | null) {
@@ -2397,6 +2402,9 @@ function genealogyIndexedPath(relativePath: string) {
   }
   if (normalized.startsWith("sources/publications/")) {
     return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
+  }
+  if (normalized.startsWith("sources/gwar/")) {
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/gwar", normalized.slice("sources/gwar/".length));
   }
   if (normalized.startsWith("sources/pamyat-naroda/")) {
     return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/pamyat-naroda", normalized.slice("sources/pamyat-naroda/".length));
