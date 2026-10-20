@@ -34,3 +34,17 @@ export function localizeHref(locale: Locale, href: string) {
   }
   return localizePath(locale, path);
 }
+
+/**
+ * The same page in another language. A card without a translation in that
+ * language has no localized page, so the reader lands on the localized
+ * directory filtered to that card instead of staying on the Russian card.
+ */
+export function switchLocaleHref(locale: Locale, href: string) {
+  const { path } = stripLocale(href);
+  const card = path.match(/^\/(records|people)\/([^/?#]+)\/?(?:[?#].*)?$/);
+  if (card && !hasCardTranslation(locale, card[1] as CardKind, decodeURIComponent(card[2]))) {
+    return localizePath(locale, `/${card[1]}?search=${card[2]}`);
+  }
+  return localizeHref(locale, href);
+}

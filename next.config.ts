@@ -25,17 +25,18 @@ const localeAlternatives = ["ru", "en", "uk", "be"].join("|");
 
 const nextConfig: NextConfig = {
   agentRules: false,
-  // Pages live under app/[locale], so their route keys start with "/[locale]".
+  // Pages live under app/[locale]. The keys are globs, so the brackets are
+  // escaped: a bare "[locale]" would be a character class and match nothing.
   outputFileTracingIncludes: {
-    "/[locale]/records/*/backup": genealogyDataGlobs,
-    "/[locale]/records/*/backup/assets/*": genealogyDataGlobs,
-    "/[locale]/people/*/backup": genealogyDataGlobs,
-    "/[locale]/people": peopleDirectoryIndex,
+    "/\\[locale\\]/records/*/backup": genealogyDataGlobs,
+    "/\\[locale\\]/records/*/backup/assets/*": genealogyDataGlobs,
+    "/\\[locale\\]/people/*/backup": genealogyDataGlobs,
+    "/\\[locale\\]/people": peopleDirectoryIndex,
     "/api/people": peopleDirectoryIndex,
     "/api/records": recordsDirectoryIndex,
   },
   outputFileTracingExcludes: {
-    "/[locale]/records/*": [
+    "/\\[locale\\]/records/*": [
       "./data/**/*",
       "./docs/**/*",
       "./outputs/**/*",
@@ -43,7 +44,7 @@ const nextConfig: NextConfig = {
       "./tmp/**/*",
       "./translations/**/*",
     ],
-    "/[locale]/people/*": [
+    "/\\[locale\\]/people/*": [
       "./data/**/*",
       "./docs/**/*",
       "./outputs/**/*",

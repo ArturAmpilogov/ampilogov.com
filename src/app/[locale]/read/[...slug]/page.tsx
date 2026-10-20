@@ -18,6 +18,7 @@ import {
   getAllDocuments,
   getDocument,
   getDocumentsBySection,
+  hasDocumentTranslation,
 } from "@/lib/docs";
 import { getSourceRegistryIndex } from "@/lib/source-registry-index";
 
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const locale = setRequestLocale(localeParam);
   const document = getDocument(slug, locale);
   if (!document) return {};
-  const translatedLocales = locales.filter((entry: Locale) => getDocument(slug, entry)?.translated);
+  const translatedLocales = locales.filter((entry: Locale) => hasDocumentTranslation(entry, document.sourcePath));
   return {
     title: document.title,
     description: document.excerpt,

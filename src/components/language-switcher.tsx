@@ -6,7 +6,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { type Locale, localeNames, locales, stripLocale } from "@/i18n/config";
 import { useLocale } from "@/i18n/client";
 import { messages } from "@/i18n/messages";
-import { localizeHref } from "@/i18n/routing";
+import { switchLocaleHref } from "@/i18n/routing";
 
 // Inline SVG instead of emoji: Windows renders flag emoji as two letters.
 function Flag({ locale }: { locale: Locale }) {
@@ -120,17 +120,12 @@ export function LanguageSwitcher() {
           {locales.map((entry) => (
             <li key={entry}>
               <NextLink
-                href={localizeHref(entry, currentPath)}
+                href={switchLocaleHref(entry, currentPath)}
                 hrefLang={entry}
                 lang={entry}
                 aria-current={entry === locale ? "true" : undefined}
                 className={entry === locale ? "is-current" : undefined}
-                onClick={() => {
-                  setOpen(false);
-                  try {
-                    document.cookie = `NEXT_LOCALE=${entry}; path=/; max-age=31536000; samesite=lax`;
-                  } catch {}
-                }}
+                onClick={() => setOpen(false)}
               >
                 <Flag locale={entry} />
                 <span>{localeNames[entry].native}</span>

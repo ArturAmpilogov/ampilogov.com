@@ -99,7 +99,7 @@ export default async function PersonPage({ params }: PersonPageProps) {
           <div>
             <dt>{text.life}</dt>
             <dd>
-              {t(person.birthDate) || text.birthUnknown}
+              {person.birthDate === "" ? text.birthUnknown : t(person.birthDate)}
               {" — "}
               {person.life.death === "?" ? text.deathUnknown : t(person.life.death)}
             </dd>
