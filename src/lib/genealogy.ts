@@ -878,6 +878,8 @@ const eventLabels: Record<string, string> = {
   "military-service": "Военная служба",
   "war-wound": "Ранение или контузия",
   "war-illness": "Болезнь на войне",
+  "blockade-survivor": "Блокада Ленинграда",
+  evacuation: "Эвакуация",
   desertion: "Дезертирство (по донесению)",
 };
 
@@ -931,6 +933,11 @@ const roleLabels: Record<string, string> = {
   serviceman: "служилый человек",
   soldier: "военнослужащий",
   "deceased-soldier": "военнослужащий, погибший или умерший",
+  "blockade-survivor": "переживший (пережившая) блокаду Ленинграда",
+  "exiled-household-head": "глава высланной семьи",
+  "exiled-family-member": "член высланной семьи",
+  "special-settler": "спецпоселенец",
+  "evacuated-child": "эвакуированный ребёнок",
   "listed-service-person": "служилый человек в списке",
   "oath-taker": "принёсший присягу",
   "new-serviceman": "новик, принятый на службу",
@@ -1167,6 +1174,9 @@ const recordDataLabels: Record<string, string> = {
   captivity: "Плен",
   operations: "Операция",
   documentsCount: "Документов в карточке",
+  hospital: "Госпиталь",
+  memoryBook: "Книга памяти",
+  addressInBook2003: "Адрес в книге (на 2003 год)",
   cause: "Причина смерти",
   burialPlace: "Место погребения",
   recordNumber: "Номер записи",
@@ -2402,6 +2412,9 @@ function genealogyIndexedPath(relativePath: string) {
   }
   if (normalized.startsWith("sources/publications/")) {
     return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
+  }
+  if (normalized.startsWith("sources/visz/")) {
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/visz", normalized.slice("sources/visz/".length));
   }
   if (normalized.startsWith("sources/gwar/")) {
     return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/gwar", normalized.slice("sources/gwar/".length));
