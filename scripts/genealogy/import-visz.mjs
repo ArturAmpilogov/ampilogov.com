@@ -43,7 +43,6 @@ const REPOSITORY = {
 };
 
 const norm = (value) => String(value ?? "").normalize("NFKC").toLocaleLowerCase("ru").replace(/ё/g, "е").trim();
-const orNull = (value) => (value === "" ? null : value);
 
 // ---------------------------------------------------------------------------
 // Surname scope: the forms of the line, as in the gwar import. «Анфилохиев»
@@ -300,14 +299,16 @@ const BOOK_TITLES = {
 // Leningrad addresses of the books name only the street; Колпино and other
 // suburbs are named.
 function residencePlace(text) {
-  if (/колпино/i.test(text)) return { placeId: "kolpino", normalized: "Колпино (Ленинград)" };
+  if (/колпино/i.test(text)) return { placeId: "kolpino", normalized: "Колпино" };
   if (/нижний тагил/i.test(text)) return null;
   return { placeId: "leningrad-city", normalized: "Ленинград" };
 }
 function burialPlace(text) {
   if (!text || /неизвестно/i.test(text)) return null;
   if (/колпино/i.test(text)) return { placeId: "kolpino", normalized: "Колпино" };
-  if (/пискарев|богословск|серафимовск|смоленск|большеохтинск|волков|ленинград/i.test(text)) return { placeId: "leningrad-city", normalized: "Ленинград" };
+  // «Ленинградская обл., Чудовский р-н…» is outside the city.
+  if (/обл\.|область|р-н/i.test(text)) return null;
+  if (/пискарев|богословск|серафимовск|смоленск|большеохтинск|волков|г\. ленинград/i.test(text)) return { placeId: "leningrad-city", normalized: "Ленинград" };
   return null;
 }
 
@@ -472,7 +473,7 @@ for (const item of ordered) {
       date: deathDate
         ? { display: deathDate.display, ...(deathDate.iso ? { iso: deathDate.iso, deathIso: deathDate.iso } : { yearFrom: deathDate.year, yearTo: deathDate.year }), calendar: "gregorian" }
         : { display: "годы блокады Ленинграда (дата смерти в книге не указана)", yearFrom: 1941, yearTo: 1944 },
-      place: { asWritten: residence ?? "блокадный Ленинград", normalized: residenceLink?.normalized ?? "Ленинград", placeId: residenceLink?.placeId ?? "leningrad-city" },
+      place: { asWritten: residence ?? "блокадный Ленинград", normalized: residenceLink?.normalized ?? "Ленинград", placeId: residenceLink?.placeId ?? "leningrad-city", note: "Книга называет место жительства; где именно наступила смерть, не указано." },
     };
     if (residence) mentionPlaces.push({ relation: "residence", asWritten: residence, normalized: residenceLink ? `${residenceLink.normalized}, ${residence.replace(/^г\. Колпино,?\s*/, "") || "адрес не указан"}`.replace(/, адрес не указан$/, "") : residence, ...(residenceLink ? { placeId: residenceLink.placeId } : {}), confidence: "high" });
     if (burialLink) mentionPlaces.push({ relation: "burial", asWritten: burial, normalized: burial.replace(/кладб\.$/, "кладбище"), placeId: burialLink.placeId, confidence: "high" });
