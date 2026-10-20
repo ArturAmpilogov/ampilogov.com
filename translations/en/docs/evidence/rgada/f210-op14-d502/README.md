@@ -1,8 +1,8 @@
-# RGADA, f. 210, op. 14, d. 502
+# РГАДА, f. 210, op. 14, d. 502
 
 A working collection of photocopies of folios from the razborny spisok (review list) of the Oryol dvoryane and deti boyarskie of 1620/21.
 
-Archival title: «Разборный список дворян и детей боярских орлян» ("Review list of the dvoryane and deti boyarskie of Oryol"), 141 folios. The exact reference and dating are confirmed by the printed RGADA inventory. The names and folio numbers were initially established from the published name index:
+Archival title: «Разборный список дворян и детей боярских орлян» ("Review list of the dvoryane and deti boyarskie of Oryol"), 141 folios. The exact reference and dating are confirmed by the printed РГАДА inventory. The names and folio numbers were initially established from the published name index:
 
 - l. 67 — Василей Дмитреев Анпилогов (Vasiley Dmitreyev Anpilogov);
 - l. 94 — Олексей Васильев Анфилохов (Oleksey Vasilyev Anfilokhov);

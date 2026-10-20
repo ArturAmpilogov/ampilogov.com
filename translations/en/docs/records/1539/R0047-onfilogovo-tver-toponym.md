@@ -50,7 +50,7 @@ The inspection book (dozornaya kniga) of 1551–1554 again records under Stefani
 
 This means that at the inspection she did not present the title deeds. The entry does not prove that the deeds never existed: it is precisely an earlier document that may have preserved the name of a previous owner, of the founder, or of the person with whom the name Onfilogovo was connected.
 
-In the 1877 edition this line is at the bottom of **p. 230**, not p. 231. Both books survive in a single volume: **RGADA, f. 1209, op. 1, book 466**. The cadastral book occupies fols. 1–327v, the inspection book fols. 328–773v; the surviving manuscript is a copy made in 1576–1578.
+In the 1877 edition this line is at the bottom of **p. 230**, not p. 231. Both books survive in a single volume: **РГАДА, f. 1209, op. 1, book 466**. The cadastral book occupies fols. 1–327v, the inspection book fols. 328–773v; the surviving manuscript is a copy made in 1576–1578.
 
 There is also an administrative discrepancy: in the book of 1539/1540 the holding is placed in Goretsky stan, while the entry of 1551–1554 stands under the heading of Yuryevsky stan. The reason cannot yet be established without checking the manuscript or a new edition.
 

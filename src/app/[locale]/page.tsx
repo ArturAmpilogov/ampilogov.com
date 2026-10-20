@@ -19,7 +19,7 @@ const copy = defineCopy({
     thesis: "The history of a surname and its families",
     deck: "Ampilogov · Anpilogov · Ampilov · Anpilov · Anfilogov · Onfilogov",
     start: "Start reading",
-    scanCaption: "RGADA · f. 181 · op. 2 · d. 120 · fol. 58v",
+    scanCaption: "РГАДА · f. 181 · op. 2 · d. 120 · fol. 58v",
   },
   uk: {
     title: "Ампілогови",

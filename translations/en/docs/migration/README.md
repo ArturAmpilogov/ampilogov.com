@@ -4,7 +4,7 @@ This section examines how individual bearers of the surname moved between the Or
 
 ## What Has Already Been Proved
 
-- **Oryol district → Shchigry in Livny district:** in his personal skazka (written statement) of 1700, Akim Ivanovich **Anpilogov** explicitly named his former pomestye (service estate) in Bozdyrevo, its forcible seizure, and the 30 chetverti held by his grandson Tit in Shchigry. The original has been checked at ll. 1181–1182 of RGADA, f. 210, op. 12, d. 1888.
+- **Oryol district → Shchigry in Livny district:** in his personal skazka (written statement) of 1700, Akim Ivanovich **Anpilogov** explicitly named his former pomestye (service estate) in Bozdyrevo, its forcible seizure, and the 30 chetverti held by his grandson Tit in Shchigry. The original has been checked at ll. 1181–1182 of РГАДА, f. 210, op. 12, d. 1888.
 
 ## What Is Probable but Needs a Direct Document
 

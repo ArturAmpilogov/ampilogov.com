@@ -4,7 +4,7 @@ The "Dom Predkov" index gives the file call number, the year, the town and the n
 stops there. The author supplies the folio number for a fee. It turned out that for
 a whole layer of files this number can be obtained free of charge: in the 19th century
 the State Razryad Archive compiled **handwritten alphabetical indexes** (alfavity) to its books,
-and RGADA has put them online page by page.
+and РГАДА has put them online page by page.
 
 ## What They Are and What They Cover
 

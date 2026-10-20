@@ -43,7 +43,7 @@ syn Dyakov** (Vasily, son of Fendrik, Dyakov), probably a son of the same Fendri
 text can be corrected definitively only from a photocopy of archival fol. 46.
 
 Pages 139–140 of the open-access edition are kept in the card as photocopies. Page 140 prints
-the exact archival references of both late copies of the extract: **RGADA, f. 1209, scrolls
+the exact archival references of both late copies of the extract: **РГАДА, f. 1209, scrolls
 (stolbtsy) for Aleksin, No. 493/31109, fols. 11–15** and **No. 882/31459, fols. 146–147**.
 
 ### A New Corridor through the Masters of the Household: Aleksin — Tula — Lebedyan
@@ -80,7 +80,7 @@ Pakhomov. So a match of the stem **Pakhom** must not be turned into kinship with
 Anfilogov. The individual frames are kept in the research section of the card; they serve as
 a filter against false certainty.
 
-[Name index to RGADA, f. 210, op. 14, d. 502](https://forum.vgd.ru/post/5703/135781/p5737379.htm).
+[Name index to РГАДА, f. 210, op. 14, d. 502](https://forum.vgd.ru/post/5703/135781/p5737379.htm).
 
 ### The Exact Address of the Pakhom Line and a Check of the False "Second Signal"
 
@@ -88,7 +88,7 @@ The complete **cadastral survey book of Aleksin district for 1627/28–1628/29**
 to correct and localise the address in the petition. The «Обошинский стан» (Oboshinsky stan)
 printed in the 1593 act is almost certainly **Boboshinsky stan**: the book explicitly names in
 it **«село Покровское, а Борщовка тож»** ("the village of Pokrovskoye, also called Borshchovka")
-(RGADA, f. 1209, op. 1, bk. 3, fols. 842v–846v; 2024 edition, pp. 312–314). This is the
+(РГАДА, f. 1209, op. 1, bk. 3, fols. 842v–846v; 2024 edition, pp. 312–314). This is the
 present-day village of Borshchevka west of Tula, in the former Alyoshinskaya volost.
 
 Thirty-five years later Nason, the Mesishchevs, Polunya and Kirilla are no longer in the full
@@ -164,7 +164,7 @@ children, his father Pakhom, a possible brother Ermak, and the fate of the house
 stepsons left. Nason has been added inside the Record without a separate profile: he is not a
 bearer of the surname under study but a control candidate.
 
-[Petition of the Yelets streltsy, RGADA, f. 141, op. 1, 1592, d. 1, fol. 46](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/1-20/19.htm).
+[Petition of the Yelets streltsy, РГАДА, f. 141, op. 1, 1592, d. 1, fol. 46](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/1-20/19.htm).
 
 ## Not One Route but Family Selection: Three Direct Moves from Solova to the New Town of Yelets
 
@@ -233,7 +233,7 @@ surname, not of an Anfilogov.
 
 After the statistical comparison the tactic was changed again: what was checked was not new surname
 matches but the fates of the Solova men already found. In the tax book (platezhnaya kniga) of
-Krapivna for 1616/17 (RGADA, f. 1209, op. 1, d. 488) two complete formulas from the Solova section of
+Krapivna for 1616/17 (РГАДА, f. 1209, op. 1, d. 488) two complete formulas from the Solova section of
 the 1596 desyatnya were found:
 
 - **Smirnoy Prokofyev syn Trunov** — Solova, 1596; Krapivna, fol. 100,
@@ -266,7 +266,7 @@ of precisely his closest service group. A card has been created,
 for other surnames and no route on the family map are created.
 
 After that the next address was also found, which makes it unnecessary to return to a general web
-search. **RGADA, f. 210, op. 10, d. 86, fol. 63** has published a Solova novik of 1630/31, **Kostka Akishin
+search. **РГАДА, f. 210, op. 10, d. 86, fol. 63** has published a Solova novik of 1630/31, **Kostka Akishin
 syn Penkov**, with an oklad of 200 chetverti. His line Akinfey → Kostka does not match Vasily and the
 three possible Vasilyeviches, so kinship is not assumed. The value of the file lies elsewhere: one
 "original" (podlinny) list covers Solova and Oryol at the same time. It must be checked in full for old
@@ -318,9 +318,9 @@ a votchina charter of Druzhina Osipov syn Solomykov for a votchina (hereditary e
 pages of the full photocopy of S. B. Veselovsky's edition are kept in the project archive: pp. 44 and
 232.
 
-The tax book **RGADA, f. 1209, op. 1, bk. 488** continues this line: a copy of the Krapivna inspection
+The tax book **РГАДА, f. 1209, op. 1, bk. 488** continues this line: a copy of the Krapivna inspection
 books (dozornye knigi) of 1616/17 again names Druzhina Osipov Salamykov as a landholder of Zasolovsky stan
-on fol. 89v. The compilation by Yu. V. Ankhimyuk and A. P. Pavlov reports, citing **RNB, OR, F. IV, No.
+on fol. 89v. The compilation by Yu. V. Ankhimyuk and A. P. Pavlov reports, citing **РНБ, ОР, F. IV, No.
 465, fol. 76v**, that his votchina then passed to his sons, the Solova men Sevastyan and Nikita Druzhinin
 Salamykov.
 
@@ -373,7 +373,7 @@ already reorganised corporation.
 The new first address is the Solova/Krapivna pomestye and review extracts of the 1570s–1590s, documents on
 the recovery after 1587, and later petitions of the Penkovs, Trunovs and Bazdyrevs containing extracts from
 lost books. A detailed card has been created,
-`PUB-LIKHACHEV-1909-1596-OREL-SOLOVA-FINGERPRINT`; the official RGADA spreads have been saved, and a full copy
+`PUB-LIKHACHEV-1909-1596-OREL-SOLOVA-FINGERPRINT`; the official РГАДА spreads have been saved, and a full copy
 of the Krapivna passport has been placed in the closed research storage. The route Solova/Krapivna — Oryol is
 not yet drawn on the map: neither Pavel Terentyevich nor any other bearer of the series under study is named
 as having come from Solova.
@@ -398,7 +398,7 @@ One more false lead has been closed. The preface of the scholarly edition states
 originals of the official Razryad Books have not survived: they perished in fires or when the documents on
 precedence (mestnichestvo) were destroyed. What has come down to us are private copies and extracts of the
 seventeenth century. So there is no longer any need to look for the "original" of the published roster. The
-new address is the separate executive papers of **RGADA, f. 210**: town rosters, field counterpart copies,
+new address is the separate executive papers of **РГАДА, f. 210**: town rosters, field counterpart copies,
 voivodes' reports (otpiski) and later petitions into which lines from the lost books might have been copied.
 Queries must be built not only around Kulnev but around all four commanders and around the towns with dates.
 
@@ -432,7 +432,7 @@ at one time from one town. One or several of the fathers could first have joined
 (pribor) near Oryol, and their sons could later have received pomestya and become established as deti boyarskie.
 For now this is a search model, not an established pedigree.
 
-The source calls for a strict caveat. The manuscript BAN 32.15.16 was written in the second half of the
+The source calls for a strict caveat. The manuscript БАН 32.15.16 was written in the second half of the
 seventeenth century; its editor, Yu. V. Tatishchev, explicitly noted the errors and legends it contains. At the
 same time he stressed that the reference book preserved extracts from lost or unlocated chancellery documents.
 So the line for 7073 is accepted as a strong archival lead, but not as a definitive revision of the founding of
@@ -553,7 +553,7 @@ itself. No profiles of the Kulnevs and no route on the family map were created.
 
 ## 1579: a Mechanism of Inter-Town Recruitment Found, but Not a Ready Route
 
-The full photostat of the act has now been saved and checked against the official RGADA images. Frame 0329 opens the
+The full photostat of the act has now been saved and checked against the official РГАДА images. Frame 0329 opens the
 act on fol. 269; on frame 0340 it ends on fol. 280, after which the right-hand page is blank; frame 0341, fol. 281,
 already begins another document. So the promised «роспись» ("roster") of the rank and file did not continue this act
 and was not sewn to it as an annex. The new object of the search is a separate executive paper of the Razryad
@@ -694,14 +694,14 @@ summary register of the pre-surname name; the map has deliberately not been chan
 
 ### Two Later Independent Continuations of the Name: 1663 and 1677
 
-The full official RGADA catalogue added two personal entries not previously included in the project. The file **RGADA, f.
+The full official РГАДА catalogue added two personal entries not previously included in the project. The file **РГАДА, f.
 281, op. 7, d. 2053, fols. 1–2** summarises a decree charter of Patriarch Joachim of 18 January 1677 on the transfer
 (otkaz) of a pomestye to the patriarchal deti boyarskie **Ivan Grigoryev syn and Nikita Anpilov syn — Vsevolodtsky**. The
 grammar preserves three parts: Nikita is the personal name; Anpilov syn is a direct patronymic; Vsevolodtsky is the family
 designation. The father is thereby reconstructed as well — **Anpil Vsevolodtsky**.
 [File card](https://online.archives.ru/guide/10000000001014/10000000228014/10000000642014/10000030128014/).
 
-A separate memorandum (pamyat) **RGADA, f. 1195, op. 9, d. 17** of 1663 names **Kuzma Anfilov**: the document concerned
+A separate memorandum (pamyat) **РГАДА, f. 1195, op. 9, d. 17** of 1663 names **Kuzma Anfilov**: the document concerned
 the taking of a sum of money from him and his beating by the elder (starets) Malofey. Here the word «сын» ("son") is absent
 from the heading, so until the original is examined the form Anfilov is kept as a second designation, without a final choice
 between a patronymic and a stable surname form.
@@ -722,7 +722,7 @@ general list but an independent primary document:
 > *Translation:* "Charter of Tsar Mikhail Fyodorovich to Oryol, to the voivode I. S. Islenev, on an inquiry
 > into the pomestye of Amfilogovs in Korchakov stan."
 
-The exact shelfmark: **Archive of SPbII RAN, coll. 238, op. 2, d. 281, No. 16**. The charter is dated **7 October 1640**,
+The exact shelfmark: **Archive of SPbII РАН, coll. 238, op. 2, d. 281, No. 16**. The charter is dated **7 October 1640**,
 occupies **three folios** and retains a black wax seal. The addressee's initials resolve to Ivan Stepanovich Islenyev: soon
 afterwards the Oryol estimate book of 7150 was compiled under him, which already names specific Anfilogovs.
 
@@ -740,7 +740,7 @@ belonging to the Protasov family archive is established, but they cannot yet be 
 the inventory does not say so.
 
 Digital availability has also been checked. The exact query «Амфилоговых» ("of Amfilogovs") in the
-[full-text search of the SPbII RAN inventories](https://spbiiran.sovadev.pro/?r=%D0%90%D0%BC%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D1%85)
+[full-text search of the SPbII РАН inventories](https://spbiiran.sovadev.pro/?r=%D0%90%D0%BC%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D1%85)
 returns only page 1189 of this inventory; there is no separate publication or images of the three folios in the open
 index. So the next step is not another general search but an order for a specific item. The archive accepts requests
 for digital copies at **archive@spbiiran.ru**; the procedure and forms are published in the
@@ -801,7 +801,7 @@ sons of Rychko claimed by the genealogy are not there. The only Aleksandr with a
 printed in the act itself as **«Олександро Янкулов сын Волоской»** (Oleksandro Yankulov syn Voloskoy), whereas the index
 normalises him as Aleksandr Yakovlevich Volotsky. No form makes him the Aleksandr Tikhonovich of the genealogy.
 
-Primary reference of the list: **RNB, Hermitage collection, No. 394, fols. 46–51**. Publication: D. E. Gnevashev,
+Primary reference of the list: **РНБ, Hermitage collection, No. 394, fols. 46–51**. Publication: D. E. Gnevashev,
 «“Сыскные” списки вологодских дворян и детей боярских. 1606–1613 гг.» ("Search" Lists of the Vologda Dvoryane and Deti
 Boyarskie, 1606–1613), *Исторический архив* (Istorichesky Arkhiv), 2007, No. 5, pp. 184–199.
 Card: `PUB-GNEVASHEV-1613-VOLOGDA-VOLOTSKYS-RYCHKO-ANDREEV`.
@@ -812,7 +812,7 @@ surname series under study, and no resettlement to Oryol has been found.
 ## The Belgorod Trace of 1616 Is Now Localised to an Archival File
 
 The line **«Никита Ефимов сын Анпилогов»** (Nikita Efimov syn Anpilogov) published by E. V. Krivtsova belongs to the
-pomestye holders of the village of Sazhnoye in 1616. The primary complex has now been established precisely: **RGADA, f.
+pomestye holders of the village of Sazhnoye in 1616. The primary complex has now been established precisely: **РГАДА, f.
 1209, op. 1, pt. 2, d. 15828, «Приправочная книга 1616 г. города Белгорода и Саженского стана Белгородского уезда»**
 ("Reference book of 1616 of the town of Belgorod and Sazhensky stan of Belgorod district"). An independent scholarly
 publication by I. V. Maslenkov quotes entries from the same section on fols. 134v and 154, which confirms the shelfmark and
@@ -860,13 +860,13 @@ for the golova on the Oskol and the Oryol roster for the golovy on the Seym, the
 referring to the service of 1571. It is precisely there that a name, a father, a former town or a pomestye oklad might have stood.
 
 Source: «Акты Московского государства» (Acts of the Muscovite State), vol. I, pp. 6–7; in the publication, Book of the Moscow Desk
-No. 1, fols. 39–46; the modern complex is RGADA,
+No. 1, fols. 39–46; the modern complex is РГАДА,
 f. 210, op. 6, d. 1. Card:
 `PUB-AMG-T1-P6-7-OREL-CHILDREN-BOYARS-1571`.
 [Open text of the publication](https://forum.vgd.ru/1758/63616/0.htm).
 
 On 26 August 2026 what was checked was no longer a printed summary but the whole specified block of folios in the official
-RGADA digital copy. Spreads **0050–0057** successively cover fol. 38v to fol. 46 and have been saved in the project. The check
+РГАДА digital copy. Spreads **0050–0057** successively cover fol. 38v to fol. 46 and have been saved in the project. The check
 removed an important fork: fols. 39–46 are the single boyar verdict itself with the town numbers, not a verdict together with
 a lost nominal annex. There is no separate roster of Oryol deti boyarskie, no names of Anfilogovs, their fathers or former towns
 within this block. Consequently, what must be sought is an independent executive list, its counterpart copy or a late oklad
@@ -945,7 +945,7 @@ hundred Oryol men written down at Rzhev**, and the counterpart copies of both it
 personal corps of Oryol. It may have included men of the generation of Mikula, Vasily, Timofey, Persha, Pakhom, Nechay and Terenty, but
 so far not one of these names has been read.
 
-The relevant fragment of the file **RGADA, f. 210, op. 9, d. 232** begins on fol. 289v; the publication is marked fols. 290–315v, and the
+The relevant fragment of the file **РГАДА, f. 210, op. 9, d. 232** begins on fol. 289v; the publication is marked fols. 290–315v, and the
 next described entry begins on fol. 322. At first it seemed that the unpublished **fols. 316–321** might hold a continuation or an annex
 with the list of names. A full collation of the 1914 edition weakened this hypothesis: at the end of the transcribed text on fol. 315v the
 editors explicitly noted that **«дальнейший текст не сохранился»** ("the further text has not survived"), and they reconstructed it from
@@ -953,14 +953,14 @@ the parallel Razryad in the «Древняя Российская Вивлиоф
 their physical condition, but they are no longer regarded as the main address for the name search. More likely candidates are a separate
 town list, a register of «приездов и нетов» ("arrivals and absences") or a reply report from Moscow.
 
-**On 26 August 2026 the file was found in the digital reading room of the GIS UIAD.**
+**On 26 August 2026 the file was found in the digital reading room of the ГИС УИАД.**
 This is no longer a supposed future order for filming: an electronic copy of the whole
-**RGADA, f. 210, op. 9, d. 232** exists. The direct state catalogue card:
+**РГАДА, f. 210, op. 9, d. 232** exists. The direct state catalogue card:
 [file 210-9-232](https://online.archives.ru/guide/10000000001014/10000000157014/10000000358014/10000474722014/);
 [unofficial index of digitised files](https://metrics.tilda.ws/gisuiad?fund=210&inv=9&case=232#rgada_opisi).
 The catalogue gives the dating of the whole composite item as 1596–1650 and the title «Столбцы Московского стола Разрядного приказа»
 ("Scrolls of the Moscow Desk of the Razryad Prikaz"); this does not change the attribution of the enclosed draft of 1580. Viewing of the
-copies is provided after ordering the service and signing in through ESIA (the state identity system). The state portal does not open
+copies is provided after ordering the service and signing in through ЕСИА (the state identity system). The state portal does not open
 from the current network, so fols. 316–321 themselves have not yet been viewed. When access is available they should be checked as a
 control fragment; when issued by carrier, this is microfilm No. 5, fols. 287–375. The main search moves to the separate nominal registers
 of the same campaign.
@@ -974,7 +974,7 @@ The map does not change: the document does not yet name a single Anfilogov and d
 
 Sources: «Разрядная книга 1475–1605 гг.» (Razryad Book of 1475–1605), vol. III, pt. I. Moscow, 1984,
 fols. 697–698 of the main manuscript; the draft Razryad of 1580 — historical
-shelfmark RGADA, f. 210, op. 9, d. 232, beginning on fol. 289v, published
+shelfmark РГАДА, f. 210, op. 9, d. 232, beginning on fol. 289v, published
 foliation fols. 290–315v;
 V. I. Buganov, «Документы о Ливонской войне» (Documents on the Livonian War), «Археографический ежегодник
 за 1960 год» (Archaeographic Yearbook for 1960). Moscow, 1962, document No. 6, fols. 282–288 of the same scroll.
@@ -985,7 +985,7 @@ The map does not change: no member of the surname series has yet been named in t
 The modern shelfmark has now been checked against the inventory rather than reconstructed from the old publication. The description of
 **f. 210, op. 9, d. 232** explicitly notes on fol. 289v «розряд черной, поход ко Пскову великого князя Семиона Бекбулатовича Тверского»
 ("a draft razryad, the campaign to Pskov of Grand Prince Simeon Bekbulatovich of Tver"), and the next independent entry begins on fol. 322.
-An electronic copy of the file already exists in the GIS UIAD, but access to viewing is arranged as a service through the state portal.
+An electronic copy of the file already exists in the ГИС УИАД, but access to viewing is arranged as a service through the state portal.
 After collation with the explicit caveat of the 1914 editors, fols. 316–321 remain a control order, not
 a priority candidate for the list of two hundred Oryol men.
 
@@ -1008,7 +1008,7 @@ A primary regimental roster has been found that markedly strengthens the chronol
 was ordered to be brought out «из украинных мест с Орла» ("from the Ukraine [frontier] places, from Oryol") to the regiment of the right
 hand **with 350 men**. Separately, **100 Cossacks with arquebuses (pishchali) from Oryol** are recorded in the watch regiment. This is not a
 late retelling but a publication of a draft original of the Razryad Prikaz:
-**RGADA, f. 210, scrolls of the Moscow Desk, d. 463, stolpik 3, fols. 21–85**.
+**РГАДА, f. 210, scrolls of the Moscow Desk, d. 463, stolpik 3, fols. 21–85**.
 
 The structure of the roster makes it possible to clarify the meaning of the 350 men. They are included in the regiment's total before the
 separate listing of streltsy and Cossacks; the final total distinguishes the deti boyarskie from these service categories. So the 350 men
@@ -1044,7 +1044,7 @@ sixteenth-century Oryol numerical or transfer file was found in all 445 pages of
 regimental roster; the modern inventory, fols. 22–41. This is a change in the foliation of one complex, not two different lists.
 
 Inventory 4, «Десятни» ("Desyatni"), has also been examined in full. It begins in 1577, but its earliest file is the Kolomna desyatnya, not the
-Oryol one. The first explicitly named Oryol part of an enrolment desyatnya appears only in 1628: **RGADA, f. 210, op. 4, d. 270, fols.
+Oryol one. The first explicitly named Oryol part of an enrolment desyatnya appears only in 1628: **РГАДА, f. 210, op. 4, d. 270, fols.
 141–151**. So the absence of an "Oryol desyatnya of 1566" is now not just an unsuccessful web search but a verified limit of what survives in
 the two main Razryad inventories. This does not mean there was no recruitment; it means that its document must be sought under another title,
 in another chancellery complex or through later extracts from a lost book.
@@ -1079,7 +1079,7 @@ The official Rosarkhiv guide gives not merely another place to search but an exp
 actually allotted land pay to servicemen. Consequently, the instruction, the allotment book (otdelnaya kniga) or the distribution book of the
 first Oryol allotment of pomestya must have arisen precisely in its records or have reached it from the local chancellery.
 
-The present **RGADA, f. 1209, Archive of Former Votchina Affairs** is not a continuous sixteenth-century archive. The guide says explicitly that
+The present **РГАДА, f. 1209, Archive of Former Votchina Affairs** is not a continuous sixteenth-century archive. The guide says explicitly that
 it includes surviving books, documents of local institutions transferred after the fire, materials of other chancelleries and papers later
 returned from other archival complexes. So the absence of a whole "Oryol allotment book of 1566" is now historically explicable. This is not
 proof that it existed and perished, but it is a strong limit of survival.
@@ -1094,11 +1094,11 @@ Source: [official section "Pomestny Prikaz"](https://guides.rusarchives.ru/terms
 Detailed card: `PUB-RGADA-POMESTNY-1626-FIRE-OREL-SEARCH`.
 
 In addition, the old printed finding aid of the land archive itself has been checked — the name index to the first volume of «Описание документов
-и бумаг МАМЮ» (Description of the Documents and Papers of the MAMYu, the Moscow Archive of the Ministry of Justice) (1869), covering more than 2,700
+и бумаг МАМЮ» (Description of the Documents and Papers of the МАМЮ, the Moscow Archive of the Ministry of Justice) (1869), covering more than 2,700
 cadastral, census, inspection, tax and boundary books. On facsimile pp. 305–306 the alphabet runs continuously from Ananyinsky and the Andreyevs
 through the Androsovs, Anikiyevs, Annenkovs and Antipins to the Apraksins. The forms **Anfilogov / Anpilogov / Onfilogov / Ampilogov** are not in
 this section. This is not a census of every landholder: the index is selective and treats scribes and surveyors in particular detail. But the
-general route through the ready-made MAMYu alphabet is closed; the surname line should be sought in the text of a specific book, a personal extract
+general route through the ready-made МАМЮ alphabet is closed; the surname line should be sought in the text of a specific book, a personal extract
 or a land lawsuit. Photocopies of both control pages have been saved in the card.
 
 ### Fond 141: there is no separate block for 1577
@@ -1125,13 +1125,13 @@ land extracts a higher priority than fond 141.
 A specialist study by A. L. Zakharov on the service population of the Oryol region
 confirmed that late lawsuits of the descendants of the first settlers sometimes contain
 historical digressions into the 17th century and even the end of the 16th. The author worked not only
-with RGADA fonds 210 and 1209, but also with **f. 1325, Disputed Cases of the General
+with РГАДА fonds 210 and 1209, but also with **f. 1325, Disputed Cases of the General
 Survey**, and in the State Archive of Oryol Oblast above all with
 **f. 6, Oryol Chamber of the Civil Court**, and **f. 68, Oryol Assembly of Noble
 Deputies**. The dissertation abstract gives no list of the first Oryol intake,
 but it does name a proven pocket where old information survived at second hand.
 
-A check of the [official GAOO catalogue](https://catalog.gaorel.ru/) immediately produced
+A check of the [official ГАОО catalogue](https://catalog.gaorel.ru/) immediately produced
 five exact cases for the target surname:
 
 - **f. 6, op. 1, d. 527**, 5 May 1783 – 30 June 1784: disputed land in
@@ -1188,17 +1188,17 @@ joint book of 1584/85. Ordering d. 1901 alone without d. 268 is now
 a poor bargain: one might get a long lawsuit but lose the document on how the
 opposing party acquired the land.
 
-Separately, the search by all forms of the surname in the official GAOO catalogue was repeated.
+Separately, the search by all forms of the surname in the official ГАОО catalogue was repeated.
 The form Anpilogov yields seven cases, including all five land cases named above;
 Anfilogov, Onpilogov and Onfilogov — none; Ampilogov — four later
 cases on military conscription and an ownership record; the short forms Anpilov and
 Ampilov yield only late items. No hidden local case on ancient
 nobility was found. So the second main complex is still in
-RGIA: f. 1343, op. 16, d. 2345.
+РГИА: f. 1343, op. 16, d. 2345.
 
 ### A breakthrough in the same book: ancient branches of Anfilogovs themselves
 
-A full review of RGIA, f. 1343, op. 51, d. 593 changed the search priority.
+A full review of РГИА, f. 1343, op. 51, d. 593 changed the search priority.
 Kirill Ivanovich's 1846 entry in Part II turned out not to be the only one:
 there are **at least ten entries of Anfilogovs/Anpilogovs in Part VI, ancient
 nobility**. The earliest were accepted by a single protocol of **20 January 1798**:
@@ -1230,7 +1230,7 @@ The kinship has to be confirmed word for word by the generational pedigree (poko
 
 This is more important than the detour through the Bazdyrevs. The first thing to look for is the proceeding under
 decree No. 7806 and the materials of the protocol of the Kursk Assembly of the Nobility of 20
-January 1798. RGIA, f. 1343, op. 16, d. 2345 begins only in 1826,
+January 1798. РГИА, f. 1343, op. 16, d. 2345 begins only in 1826,
 so the early proof of 1798 may have been kept in a separate file.
 That is where the documents should be on the basis of which the branch was recognised as
 ancient: service extracts, ownership deeds or an earlier pedigree.
@@ -1260,15 +1260,15 @@ The place of this article in the chain of sources has now also been established.
 Brockhaus–Efron *Encyclopaedic Dictionary* had no separate article
 «Анфилоговы»: alphabetically "Anfal" is followed by "Anfelt", and
 the list of new articles explicitly assigns "Anfilogovy" to the material first
-added in the NES. The 1911 article is printed without a signature or reference. At the same time
+added in the НЭС. The 1911 article is printed without a signature or reference. At the same time
 it does not repeat Savyolov of 1906: he has neither Vasily
 Dmitrievich nor the formula about the desyatni of the Moscow Desk. So the text reached
 the editors by a separate route. An archival or
 heraldic note is the most plausible, but its specific file can only be named
-after the RGIA leaves have been read.
+after the РГИА leaves have been read.
 
 The apparent contradiction in the name of the desk has also been resolved. The original entry
-of Vasily of 1620/21 now has the call number **RGADA, f. 210, op. 14, d. 502**, and
+of Vasily of 1620/21 now has the call number **РГАДА, f. 210, op. 14, d. 502**, and
 inventory 14 is called «Столбцы Севского стола» ("Scrolls of the Sevsk Desk"). However, S. K. Bogoyavlensky
 showed back in 1894 that the late archival division of part of the
 Razryad documents was arbitrary. Most important is his account of the real structure of the prikaz:
@@ -1283,7 +1283,7 @@ is another lost Oryol desyatnya with a full namesake; it
 cannot be ruled out without the Heraldry Office file.
 
 An earlier but **not identical** printed compilation has also been found: L. M. Savyolov,
-*Родословные записи* [Genealogical Notes], issue 1 (Moscow, 1906), p. 66. The original GPIB scan
+*Родословные записи* [Genealogical Notes], issue 1 (Moscow, 1906), p. 66. The original ГПИБ scan
 shows that Savyolov's article does not trace the family from Vasily Dmitrievich. It
 lists eight Oryol landholders of 1594 — Vasily, Timofey and Karp
 Mikulovich, Belyay Vasilyevich, Ivan Pershin, Ivan Nechaev, Sofon
@@ -1313,14 +1313,14 @@ The full card and two Records:
 `PUB-SAVELOV-1906-P66-STARY-OSKOL-1695-IVAN`.
 
 The check of the heraldic detour is now more precise. In the open name
-index of **RGADA, f. 286, op. 2**, the alphabetical position itself on
+index of **РГАДА, f. 286, op. 2**, the alphabetical position itself on
 p. 8 has been examined: after «Анучины, род» (Anuchin family) comes «Анфилатов Ксенофонт» (Anfilatov Ksenofont), then immediately
 «Анц (Анцов) Лаур» (Ants (Antsov) Laur). So the absence of Anfilogovs/Anpilogovs/Onpilogovs
 here is not a query glitch or an OCR omission but a reliable negative result
 for the published index of inventory 2. Anfilogy
 Semevsky, found in the same index, belongs to the surname Semevsky and has nothing to do with the family.
 Inventory 2 should not be gone through again; what remains are the uncovered inventory 1
-of fond 286, the reference books of f. 388 and above all the RGIA proof file.
+of fond 286, the reference books of f. 388 and above all the РГИА proof file.
 
 The question is rightly posed: by 1594 there are already many of them in Oryol district, while
 the town has stood for only twenty-eight years. Oryol itself was indeed settled
@@ -1445,7 +1445,7 @@ area in the cadastral book and the pomestye oklad are different measures. So
 Cossack enrolment remains a possible mechanism for the family's formation, but
 these figures do not allow one to call any specific Anfilogov a former Cossack.
 
-The official RGADA reference guide adds an important but internally contradictory
+The official РГАДА reference guide adds an important but internally contradictory
 limitation to this picture. On p. 17 the compilers M. Yu. Zenchenko and
 G. A. Ivanova write that until the beginning of the 17th century no scribes or inspectors (dozorshchiki) were sent to Oryol, Novosil and
 Chern districts: at the end of the 1570s these new
@@ -1469,13 +1469,13 @@ This confirms a staged model: the Oryol core did not arrive as one finished
 party, but was still being manned ten years after the foundation.
 Source: M. Yu. Zenchenko, G. A. Ivanova, «Писцовые книги юго-западного
 порубежья» [Cadastral Books of the South-Western Borderland] (Moscow, 2013), pp. 17–18,
-[official RGADA PDF](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf).
+[official РГАДА PDF](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf).
 
 A full check of the catalogue removes a possible misreading. The «сохранившееся описание 1577/78 года» ("surviving description of 1577/78")
 mentioned in the preface refers to Yaroslavl and
 serves as a comparative example, not as the designation of an Oryol book. For Oryol
 the first surviving land book is dated only **1594/95**:
-the description and measurement of Dementy Yakovlev and the clerk (podyachy) Leonty Sofronov, **RGADA,
+the description and measurement of Dementy Yakovlev and the clerk (podyachy) Leonty Sofronov, **РГАДА,
 f. 1209, op. 1, bk. 329, fols. 1a–63a, 1–937v.** Moreover, what has come down to us is a 17th-century
 copy under the authenticating signature (skrepa) of the dyak Venedikt Makhov, not the field original.
 
@@ -1493,13 +1493,13 @@ Andreev-Pavlov, Andrey Myasnoy and Bogdan Ksenofontov do not lead in the catalog
 a separate Oryol book or to whoever carried out the muster; the
 formulas 7085/1577 and the oklads of 20, 30 and 50 chetverti also gave no result. This is a negative
 result only for the contents of the catalogue, not proof that an implicitly
-described scroll of the Razryad Prikaz has perished. The catalogue's reference to AMG, vol. I,
+described scroll of the Razryad Prikaz has perished. The catalogue's reference to АМГ, vol. I,
 pp. 35–37 concerns a document of the **Razryad** Prikaz, not of the Streletsky Prikaz;
 the earlier classification has been corrected.
 
-The official digital copy of the Watch Book (Storozhevaya kniga) itself has also been found: **RGADA, f. 210,
+The official digital copy of the Watch Book (Storozhevaya kniga) itself has also been found: **РГАДА, f. 210,
 op. 6, d. 1**, 378 images,
-[RGADA viewer](http://rgada.info/kueh/index2.php?str=210_6_1). A check of the
+[РГАДА viewer](http://rgada.info/kueh/index2.php?str=210_6_1). A check of the
 foliation confirmed the target sections: fols. 121–202, 213–222 and 231–243 are
 in the book and available for direct reading. The control spreads of the first block
 show above all a detailed list of watch posts and shifts, not a sequence of
@@ -1513,7 +1513,7 @@ but the name register itself has still not been found.
 
 The Livny search gave a useful negative result, but a stronger
 lead turned up on the western border of Korchakov stan. The «Дозорная книга Карачевского уезда 1614 года» [Inspection Book of Karachev District, 1614] has been checked in full —
-RGADA, f. 1209, op. 1, bk. 167; scholarly publication in «Русский дипломатарий» [Russian Diplomatarium], issue 10 (2004).
+РГАДА, f. 1209, op. 1, bk. 167; scholarly publication in «Русский дипломатарий» [Russian Diplomatarium], issue 10 (2004).
 It collects the sworn statements (skazki) and old ownership documents of the Karachev deti
 boyarskie and refers many times to **the books of description and measurement of Yury Pushechnikov
 and Mikhail Shishelov of the year 7093**.
@@ -1559,7 +1559,7 @@ Anfilogovs, but the Karachev direction has become the main one**, because it
 leads to a specific book of the previous generation and to the exact locality
 of the family nest. A complete separate copy of the book of 1584/85 has not yet been located in the accessible
 catalogues, but one more surviving fragment
-of its documentary progeny has been found. In **RGADA, f. 281, op. 11, general No. 5939,
+of its documentary progeny has been found. In **РГАДА, f. 281, op. 11, general No. 5939,
 private No. 1** there is a 16-leaf extract of the Pomestny Prikaz from the books of Yury
 Pushechnikov and Mikhail Shishelov. It was issued to the Voskresenskaya Tikhonova
 Karachev hermitage (pustyn) and describes its holdings, the small village of Grebennikovo, hamlets,
@@ -1596,7 +1596,7 @@ the Sychov and Sinitsyn springs, the Otsna and the Radomlya.
 
 In the published «Список старых писцовых книг Поместного приказа 1717 г.» [List of the Old Cadastral Books of the Pomestny Prikaz, 1717],
 under the heading «Карачев» (Karachev), a separate line has been found: «Книги старые писцовые
-Юрья Пушечникова 203 году за их писцовыми руками» ("The old cadastral books of Yury Pushechnikov of the year 203, signed by the scribes' own hands") (ODB MAMYu, vol. 5, Moscow,
+Юрья Пушечникова 203 году за их писцовыми руками» ("The old cadastral books of Yury Pushechnikov of the year 203, signed by the scribes' own hands") (ОДБ МАМЮ, vol. 5, Moscow,
 1888, p. 367). The high-resolution scan confirms that the printed reading is indeed
 **203**, not an OCR error.
 
@@ -1618,7 +1618,7 @@ Prikaz of 1626. Now its fate must be traced between the inventory of 1717 and
 the modern inventory of fond 1209. Until then a separate book of 1594/95,
 and Anfilogovs contained in it, cannot be considered proven.
 
-The current digital check has confirmed this gap. In the RGADA search layer,
+The current digital check has confirmed this gap. In the РГАДА search layer,
 updated on 25 August 2026, both the recognised PDFs
 and the metadata of all inventories were checked separately. In fond 1209 no file was found for the variants
 **Пушечников / Пушечникова / Пушешникова**, **Шишелов / Шишелова**, nor
@@ -1644,14 +1644,14 @@ generation preceding the Oryol book of 1594/95.
 As of August 2026 no digital copy of No. 5939/1 has been found in open access.
 On 30 July 2026 the Karachev district researcher Evgeny
 Prudnikov publicly looked for existing scans and proposed jointly ordering
-all 16 leaves from RGADA; in the discussion found, the answer comes down to ordering photography of
+all 16 leaves from РГАДА; in the discussion found, the answer comes down to ordering photography of
 the paper original, not to an already existing digital copy. This is a fresh and
 verifiable channel for obtaining the primary text, but until images appear
 no supposed names from this file can be entered into the database.
 
 At the same time a more substantial surviving intermediary has been found: **the cadastral book
 of Karachev district of 1626–1627 by V. P. Suvorov-Naumov and V. Repyev —
-RGADA, f. 1209, op. 1, pt. 2, d. 9181, 579 leaves**. This is a 17th-century copy,
+РГАДА, f. 1209, op. 1, pt. 2, d. 9181, 579 leaves**. This is a 17th-century copy,
 that is, the now accessible complete Karachev volume of the next cadastral cycle.
 It is especially important because the general description of the 1620s was checked against
 the old priprava books, and so it may name former owners
@@ -1665,7 +1665,7 @@ by the Oryol border, checking for the Minov forest, the Otsna, the Radomlya and 
 
 An address for the first targeted viewing has now been found in the official archival
 alphabet. All 68 images of **alphabet 120 to the Karachev
-cadastral, census and conveyance books** (RGADA, f. 1209, op. 85) have been checked in full. The sections
+cadastral, census and conveyance books** (РГАДА, f. 1209, op. 85) have been checked in full. The sections
 for А and О contain no surnames Anpilogov, Anfilogov, Onfilogov or Onpilogov. This is
 stronger than the negative result of the web search, but still does not rule out a personal
 name or surname inside an unindexed formula about a former owner.
@@ -1719,7 +1719,7 @@ spellings of Karachev and for the title of the book: no catalogue record or DGS 
 was found. An exact web search also yielded no open image or
 transcription of entry No. 181. This does not rule out a private copy, but at present
 the confirmed
-access channel is the RGADA microfilm.
+access channel is the РГАДА microfilm.
 
 [Official gallery of alphabet 120](http://rgada.info/dela/1209/index2.php?str=120),
 [the alphabet leaf with the Ozerovs](http://rgada.info/dela/1209/1/1209-opis_120i/0041.jpg),
@@ -1728,11 +1728,11 @@ access channel is the RGADA microfilm.
 [modern inventory of f. 1209, op. 1, pt. 2](http://rgada.info/opisi/1209-opis_1-2.pdf).
 
 [K. V. Baranov's modern catalogue](http://rgada.info/materiali/baranov_catalog.pdf),
-[digital copy of ODB MAMYu, vol. 5](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3,_%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_05_1888-1-.pdf).
+[digital copy of ОДБ МАМЮ, vol. 5](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3,_%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_05_1888-1-.pdf).
 
 ### The Kursk branch of 1628: not the source of Oryol but a separate early generation
 
-The open database correctly led to the file **RGADA, f. 210, op. 4, d. 270**, but
+The open database correctly led to the file **РГАДА, f. 210, op. 4, d. 270**, but
 the town attribution cannot be taken from the name of a random folder. The Oryol
 selection on Yandex Disk contains only fols. 141–151; the Kursk entry of Vasily
 Semyonovich is on **fol. 185** and is not in this folder. All 21 frames
@@ -1868,7 +1868,7 @@ to a database on 18th-century Sloboda Ukraine, not to images of the file. Howeve
 another open source has been found — the full edition **«Российская крепость на южных
 рубежах. Документы о строительстве Ельца, заселении города и окрестностей в
 1592–1594 годах»** [A Russian Fortress on the Southern Frontiers. Documents on the Building of Yelets and the Settlement of the Town and Its Environs in 1592–1594] (Yelets, 2001), prepared by V. N. Glazyev,
-A. V. Novoseltsev and N. A. Tropin. It is hosted by the Scientific Library of Yelets State University (EGU)
+A. V. Novoseltsev and N. A. Tropin. It is hosted by the Scientific Library of Yelets State University (ЕГУ)
 and reproduces the whole unglued scroll of 248 leaves, not a selection of individual
 documents.
 
@@ -1881,7 +1881,7 @@ In Osip Kaverin's strelets hundred, on fol. 19v, a Maksim Nemtsov is found, but
 he cannot be turned into a relative or fellow countryman of Gavrila Fyodorov syn Nemtsov of
 Bazdyrevo: only the surname matches.
 
-There is an important asymmetry in what has survived. The official description of RGADA fond 141
+There is an important asymmetry in what has survived. The official description of РГАДА fond 141
 specifically names complexes on the building and settlement of Voronezh and
 Yelets in 1585–1593, but names no similar complex on the founding of
 Oryol in 1566. So the next search should be divided into three groups:
@@ -1904,16 +1904,16 @@ Primary publications: [report on the 164 deti boyarskie](https://www.vostlit.inf
 [petition on the recruitment of dependants from Kashira district](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/41-60/50.htm),
 [the Bolkhov–Yelets case of Afonka Smykovsky](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/41-60/54.htm),
 [the separate Yelets book of 1593/94](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Otvod_zalov_elec_1593/text.htm),
-[EGU catalogue and full edition](https://lib.elsu.ru/kraevedenie.html),
+[ЕГУ catalogue and full edition](https://lib.elsu.ru/kraevedenie.html),
 [description of the archaeographic completeness of the publication](https://www.reenactor.ru/ARH/PDF/Timoshina_00.pdf).
-Archival address of the main charters: RGADA, f. 141, op. 1, 1593, d. 1,
+Archival address of the main charters: РГАДА, f. 141, op. 1, 1593, d. 1,
 fols. 13–15, 36–37, 55–55v, 61–64, 90–95, 125–128, 179, 229;
 of the separate book — f. 1209, bk. 26,
 fols. 2–24.
 
 ### Four lines in the original Oryol list of 1627/28
 
-The full publication of the document **RGADA, f. 210, op. 14, d. 22** makes it possible
+The full publication of the document **РГАДА, f. 210, op. 14, d. 22** makes it possible
 to see not only the four family lines but also their place within the Oryol
 service corporation. The Oryol section begins on fol. 118; Anfilogovs
 are distributed across different service grades and pomestye oklads:
@@ -1957,7 +1957,7 @@ text of the Oryol section is published in the scholarly almanac «Российс
 [name index of the edition](https://oldbasman.ru/f/almanax-13_boyare_spiski_imena.pdf).
 
 A later comparative check confirms the stability of precisely the family's Oryol
-registration. The list of 1629 (RGADA, f. 210, op. 12 pt. 1, d. 27)
+registration. The list of 1629 (РГАДА, f. 210, op. 12 pt. 1, d. 27)
 brings together deti boyarskie of various towns assigned to service in Mtsensk,
 Novosil and Chern. A modern name index distributes 2,080 entries
 between Oryol, Mtsensk, Novosil, Karachev, Bolkhov, Chern and
@@ -1976,7 +1976,7 @@ Source of the index: [the list of 1629](https://dompredkov.ru/dvoryane-i-deti-bo
 
 ### Two books of 1628: four elders and the new Afonka
 
-First, a separate subsection was found in the RGADA inventory: **«Книга 7136 года о
+First, a separate subsection was found in the РГАДА inventory: **«Книга 7136 года о
 верстании новиков денежным жалованием по городу Орлу»** [Book of the year 7136 on the enrolment of noviki with cash salary for the town of Oryol] — f. 214, op. 1,
 pt. 1, d. 16, fols. 138v–140. Its full text was published by A. N. Zertsalov in
 1895. The digital copy in the
@@ -2011,7 +2011,7 @@ of 1626 already name four different Oryol servicemen:
 
 But then a fundamentally important difference emerged: there was **a second
 book, not identical with Zertsalov's edition**. This is the review (razbornaya) book of the servicemen
-of seven towns of 1628/29 — RGADA, f. 210, op. 6d, d. 1. A modern
+of seven towns of 1628/29 — РГАДА, f. 210, op. 6d, d. 1. A modern
 open [index by "Dom predkov"](https://dompredkov.ru/noviki-orla-1628-goda/)
 publishes 123 Oryol lines and names as the first family line
 **«Анпилогов Афонька»** (Anpilogov Afonka). The old handwritten alphabet of the Razryad Archive
@@ -2109,7 +2109,7 @@ Starodubtsevs; separately he notes Polish, Tatar and Don elements.
 Zelenin cautiously considered the Mtsensk sotniki temporary residents. This is an analysis of
 the names and surnames of the book of 1594/1595, not a separate name register of
 the transfer, but it independently confirms the composite origin of the core.
-Digital copy: [NEB](https://rusneb.ru/catalog/000199_000009_003803593/).
+Digital copy: [НЭБ](https://rusneb.ru/catalog/000199_000009_003803593/).
 
 The full text of V. M. Nedelin required the strength of this conclusion to be corrected. The author
 does indeed describe the rapid settlement of the new town by "svedentsy" —
@@ -2128,7 +2128,7 @@ is a condensed repetition of the author's analogy, not a pointer to yet another
 list of svedentsy of the first Oryol.
 
 The whole neighbouring block of notes 11–14 has been checked separately to rule out
-a hidden archival basis. The call number **RGADA, f. 181, bk. 99, pt. 1, fol. 435** in
+a hidden archival basis. The call number **РГАДА, f. 181, bk. 99, pt. 1, fol. 435** in
 note 12 refers only to the next statement — the appointment in April
 1567 of the first Oryol voivodes, Vasily Rostovsky and Vladimir
 Bezobrazov. Note 11 confirms the chronicle date of the founding, 13 —
@@ -2183,7 +2183,7 @@ groups are named outright: **deti boyarskie from Oryol and Karachev** and **Coss
 So in February 1577 the Razryad Prikaz had lists by name
 of at least three shifts, within which the Oryol deti
 boyarskie and Cossacks must have been. Source: «Акты Московского государства» [Acts of the Muscovite State], vol. I, No. 20,
-pp. 32–34; **RGADA, f. 210, op. 6, d. 1, fols. 213–222**. The formula «из Орла» ("from Oryol")
+pp. 32–34; **РГАДА, f. 210, op. 6, d. 1, fols. 213–222**. The formula «из Орла» ("from Oryol")
 indicates town registration in 1577, but not the place of birth or the earlier
 town of a person.
 
@@ -2207,7 +2207,7 @@ only 80 had been «прибрано» ("recruited"); of them, 78 were already st
 The shortfall was **420 men**. The text is printed in «Акты Московского
 государства», vol. I (St Petersburg, 1890), No. 23, pp. 35–37; the source of the publication is
 book No. 1 of the Moscow Desk, fols. 231–243. According to the printed archival inventory, this is
-the present **RGADA, f. 210, op. 6, d. 1, fols. 231–243**. The inventory of 1894, on
+the present **РГАДА, f. 210, op. 6, d. 1, fols. 231–243**. The inventory of 1894, on
 p. 106, describes d. 1 as the Watch Book of 1571–1592 and explicitly notes
 that it was printed in the first volume of «Акты Московского государства».
 
@@ -2269,18 +2269,18 @@ an uninformative heading. The formulas sought are now more precise: «приба
 books of 7085/1577.
 
 The complete printed inventory of the scrolls of the Moscow Desk — «Описание документов и
-бумаг МАМЮ» [Description of the Documents and Papers of MAMYu], bk. 11 (1899) — has already been checked for the forms 7085, 1576–1577 and 1577.
-The only separately described scroll (stolpik) of this date is **RGADA, f. 210, op. 9,
+бумаг МАМЮ» [Description of the Documents and Papers of МАМЮ], bk. 11 (1899) — has already been checked for the forms 7085, 1576–1577 and 1577.
+The only separately described scroll (stolpik) of this date is **РГАДА, f. 210, op. 9,
 d. 1, stolpik 3**, a boyar list of 36 leaves. It has now been identified:
-it is the source of the boyar list AMG No. 26, which has the former address
+it is the source of the boyar list АМГ No. 26, which has the former address
 «Московского стола столбец № 1, дело № 5, лл. 1—36» ("Moscow Desk scroll No. 1, file No. 5, fols. 1–36"), and the volume matches. It
 contains no rank-and-file Oryol men, but it does have two assignments from the Kashira section: Prince
 **Yury Mikhaylovich Meshchersky** is noted «на Осколе» ("on the Oskol"), and **Grigory Fyodorov
 Andreev-Pavlov** «на Орле» ("at Oryol"). So this is not a hidden personal list,
 but it provides two new name keys to the resulting papers.
 
-The archival address of act AMG No. 27 has been corrected separately. At the end of its publication
-stands «Москов. ст., кн. № 1-й, л. л. 253—268» ("Moscow Desk, bk. No. 1, fols. 253–268"), that is, **RGADA, f. 210,
+The archival address of act АМГ No. 27 has been corrected separately. At the end of its publication
+stands «Москов. ст., кн. № 1-й, л. л. 253—268» ("Moscow Desk, bk. No. 1, fols. 253–268"), that is, **РГАДА, f. 210,
 op. 6, d. 1, fols. 253–268**. It is this act that names the commanders, the town quotas
 and the three field shifts. It must no longer be confused with the boyar list of inventory 9.
 
@@ -2294,7 +2294,7 @@ It is Eskov, and not Prince Meshchersky who replaced him, who is the main key to
 the list by name of the Oryol deti boyarskie on the Oskol: under Meshchersky the act
 already lists only Tula and Mtsensk deti boyarskie.
 
-The boundaries of the act have also been checked against the official digital copy of the RGADA file
+The boundaries of the act have also been checked against the official digital copy of the РГАДА file
 itself. Before the start of the text on fol. 253 there are blank leaves; the act ends on
 fol. 268v, and on fol. 269 a new document of 7086 already begins. So
 the list by name is missing not only from the printed version: it is not attached to the act in
@@ -2311,7 +2311,7 @@ For Mikhail Eskov an earlier Kashira trace has been found, but only at the level
 the surname. A reconstruction of the Kashira desyatnya of 1570 from a late leaf-by-leaf
 alphabet contains the heading «Есковы» (Eskovs). The official inventory at the same time corrects
 the citation: unit 853, mentioned online, is a former number; the modern address
-is **RGADA, f. 388, op. 1, d. 102**, «Книга справок Разрядного архива» [Reference Book of the Razryad Archive] of 1787.
+is **РГАДА, f. 388, op. 1, d. 102**, «Книга справок Разрядного архива» [Reference Book of the Razryad Archive] of 1787.
 The available reconstruction does not give the name Mikhail. So the line
 «1579 Кашира Михаил Есков» ("1579 Kashira Mikhail Eskov") found in a
 secondary list cannot be considered a new
@@ -2322,7 +2322,7 @@ Act No. 27, on the other hand, shows the February order being carried out. In sp
 1577 three shifts stood successively at the mouth of the Udy. Each had
 **15 Oryol Cossacks** and 15 from Novosil. In total it documents 45
 shift places, although without names one cannot claim that these were exactly 45 different
-people: the composition may have partly repeated. Publication: [AMG, vol. I, No. 27,
+people: the composition may have partly repeated. Publication: [АМГ, vol. I, No. 27,
 pp. 43–53](https://vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Akty_Popov_I/21-40/27.htm).
 A separate Oryol Cossack list still does not appear in the inventory. A check of
 the digital copy has ruled out the simple version of an appendix directly inside
@@ -2330,7 +2330,7 @@ the Watch Book. The list may have ended up in a miscellaneous bundle without the
 «Орёл», passed together with the pomestye oklads to the Pomestny Prikaz, or not
 survived.
 
-The exact call number of the Watch Book has also been checked in the official RGADA catalogue.
+The exact call number of the Watch Book has also been checked in the official РГАДА catalogue.
 The archive has now opened a full digital copy of **f. 210, op. 6, d. 1**: this
 made it possible to check the neighbouring leaves directly, not from a single printed
 heading. The old remark about having to order images first no longer
@@ -2350,8 +2350,8 @@ exactly 78. They served «с земель» ("from their lands"). The act says s
 voivode was sent a «роспись Орельским сторожам» ("roster for the Oryol watchmen").
 
 The published text lists the posts and the establishment, but not people's names; a search for
-Анпилог/Анфилог/Онфилог/Ампилог is empty. Modern call number: **RGADA, f. 210,
-op. 6, d. 1, fols. 121–202**; publication: [AMG, vol. I, No. 18,
+Анпилог/Анфилог/Онфилог/Ампилог is empty. Modern call number: **РГАДА, f. 210,
+op. 6, d. 1, fols. 121–202**; publication: [АМГ, vol. I, No. 18,
 pp. 19–31](https://drevlit.ru/docs/russia/XVI/1560-1580/Akty_Popov_I/1-20/18.php).
 The digital copy of the corresponding and neighbouring sections has been checked: there is no personal
 copy of the Oryol roster next to fols. 121–202, no lists of the three field shifts
@@ -2363,7 +2363,7 @@ service network through which people could have been transferred.
 
 Later, a full check of V. P. Zagorovsky's monograph corrected this date.
 Act No. 18 itself has no year: only **15 March** is written. N. A. Popov
-and the compilers of the first volume of AMG put the year 1577 in the margin, guided by
+and the compilers of the first volume of АМГ put the year 1577 in the margin, guided by
 the neighbouring documents. Zagorovsky compared the text with the clearly dated
 appointment of Prince **Ivan Okhlyabinin** to the watch post «на Сосне усть Ливен» ("on the Sosna at the mouth of the Livenka") and
 with decisions on watch service: the act belongs to **15 March 1576**.
@@ -2381,7 +2381,7 @@ the dating is preserved in the card
 ### A new archival corridor: fond 141
 
 After the negative check of the Watch Book (Storozhevaya kniga), priority has shifted to
-**RGADA, f. 141, op. 1, "Prikaz Cases of Old Years"** (Prikaznye dela starykh let). This is not a thematic
+**РГАДА, f. 141, op. 1, "Prikaz Cases of Old Years"** (Prikaznye dela starykh let). This is not a thematic
 Oryol fond but a collection of surviving files from various Moscow prikazy (chancelleries), including
 the Razryad, Pomestny and Gorodovoy prikazy. The official guide expressly notes in it
 files on the building and settlement of Voronezh and Yelets in 1585–1593,
@@ -2413,7 +2413,7 @@ recruitment (pribor) of Oryol.
 
 This localisation has now been taken down to an exact archival address. All six
 pages describe not different unknown files but a single unglued scroll (stolbets):
-**RGADA, f. 141, op. 1, 1593, d. 1**. Printed p. 143 covers fols. 7–21,
+**РГАДА, f. 141, op. 1, 1593, d. 1**. Printed p. 143 covers fols. 7–21,
 including the charter and petition of Trenka Zakharov syn Logachev on fols. 13–14;
 p. 145 covers fols. 33–44 and the charter to Grigory Ivanov syn Andreev on fol. 36;
 p. 150 covers fols. 89–96, where there are a copy of the charter on fol. 90, Grigory's repeated
@@ -2590,10 +2590,10 @@ The nest has external parallels.
   means "son of Onanya", and Novokreshchenov is the family name.
 
 Another outwardly convincing Moscow find turned out, after checking, to be
-the same kind of patronymic case. AAE (Acts of the Archaeographic Expedition), vol. I, No. 237, p. 241 prints:
+the same kind of patronymic case. ААЭ (Acts of the Archaeographic Expedition), vol. I, No. 237, p. 241 prints:
 «Ямской Дмитрей **Онаньин сын Шугина** руку приложил» ("The yamskoy [post-station] Dmitrey Onanyin syn Shugina set his hand"); the internal date of the act is
-8 December 1553. In ASZ, vol. I, No. 147, p. 122 the same scribe on 17 June 1569
-is called «ямской Дмитрий **Ананьин сын Шуйгина**». The name index of ASZ
+8 December 1553. In АСЗ, vol. I, No. 147, p. 122 the same scribe on 17 June 1569
+is called «ямской Дмитрий **Ананьин сын Шуйгина**». The name index of АСЗ
 removes the ambiguity: **«Шуйгин Дмитрий Ананьин сын, ямской»** ("Shuygin, Dmitry Ananyin syn, yamskoy"). So
 this is Dmitry, son of Ananya, with the family name Shuygin, not Dmitry
 Onanyin and not the bearer of a double surname "Shuygin-Ananyin". The reference work
@@ -2620,7 +2620,7 @@ town to town". Comparative card:
   письма и мѣры **Дементья Яковлева** да подьячаго **Леонтья Софонова**. —
   Хранится въ Московскомъ Архивѣ Министерства Юстиціи подъ **№ 399** писцов.
   кн.» ("Copy from the cadastral books of 7103 (1594–1595) of pomestye lands in the Nepolotsk, Kamensk, Korchakov, Nougorsk and Taichukov stans, written and measured by Dementy Yakovlev and the clerk Leonty Sofonov. Kept in the Moscow Archive of the Ministry of Justice under No. 399 of the cadastral books.") The modern official catalogue corrects the archival reference:
-  **RGADA, f. 1209, op. 1, d. 329**. Number 399 is the former MAMYu numbering,
+  **РГАДА, f. 1209, op. 1, d. 329**. Number 399 is the former МАМЮ numbering,
   and the surviving manuscript is a 17th-century copy, not the scribes' original by
   Dementy Yakovlev and Leonty Sofonov.
 - **All of ours but one are in Korchakov stan.** Belyay, Osip, the three
@@ -2786,7 +2786,7 @@ founder, but the book does not say outright that it was he who founded it.
 
 ### A new find: the same nest in the 1710 census of Kromy district
 
-A public surname-by-surname rendering of the original census book **RGADA, f. 1209,
+A public surname-by-surname rendering of the original census book **РГАДА, f. 1209,
 op. 1, pt. 1, d. 1040** has preserved no fewer than ten entries of the surname series:
 the reitar (cavalryman) «Антилогов» (Antilogov) in the small village of Sloboda (fol. 106); three Anpilogovs in Cheremoshnaya —
 a reitar on fol. 119v, a reitar and a minor (nedorosl) on fol. 122; a minor in Teterevinka
@@ -2818,7 +2818,7 @@ The limits of the conclusion matter: it has not yet been proven that the adminis
 Oryol district to Kromy district was a resettlement rather than a change of boundary; no
 generational pedigree has been built; the exact modern location of
 Lyutskoye has not been established. The intermediate stage requires a look at the survey (mezhevaya) book of 1678–1681:
-**RGADA, f. 1209, op. 1, pt. 1, d. 1038**. So no connecting route
+**РГАДА, f. 1209, op. 1, pt. 1, d. 1038**. So no connecting route
 has been put on the map and no approximate coordinates have been set.
 
 Structured card:
@@ -2843,7 +2843,7 @@ form is pointless.
 After moving from a single surname to a whole circle of neighbours, the first
 recurrence of all four distinctive Bazdyrevo surnames at once has been found in an external
 archival complex. A public name-by-name rendering of the payment books
-**RGADA, f. 1209, op. 1, d. 488** covers 2,862 entries for nine towns
+**РГАДА, f. 1209, op. 1, d. 488** covers 2,862 entries for nine towns
 in 1614–1620. Then an open set of all 744 digital frames was found, together with a
 name index giving patronymics and folios. Checking the index and the folios themselves
 corrected the heavily abbreviated web names:
@@ -2902,7 +2902,7 @@ one man, not five Nemtsovs. Anfilogovs themselves are not in the index.
 #### The neighbourhood trace could be moved back to 1587–1589
 
 An open scan of the printed edition of an earlier book changes the chronology of this
-corridor. The complete 17th-century archival copy is kept in **RGADA, f. 1209, op.
+corridor. The complete 17th-century archival copy is kept in **РГАДА, f. 1209, op.
 1, d. 124, fols. 1–174**; a second, incomplete copy is in d. 487, fols. 861–1024.
 Both reproduce the cadastral book of Ivan Zherebtsov and his colleagues of
 1587/88–1588/89. So it is important not to confuse the date when the
@@ -2953,9 +2953,9 @@ stronger than a single surname match.
 The new family signature has been checked against the full open table of servicemen
 of 421,676 rows. Before 1640 it yielded no exact Vlas, Denis or Demyan Trunov.
 The only name hit is **Ilya Trufanov, Ryazhsk, 1619,
-RGADA, f. 210, op. 10, d. 204**; a different surname form, a different town and
+РГАДА, f. 210, op. 10, d. 204**; a different surname form, a different town and
 the absence of a patronymic do not allow him to be linked with the Oryol Ilya Ivanovich.
-The full index to the Oryol review **RGADA, f. 210, op. 14, d. 502** has now
+The full index to the Oryol review **РГАДА, f. 210, op. 14, d. 502** has now
 revealed patronymics and folios. In 1620–1621 there are recorded **Semyon Filatov syn
 Trunov** on fol. 132, **Boris Onisimov syn Trunov** on fol. 136 and **Fyodor Semyonov
 syn Trunov** twice, on fols. 25 and 54. In the list of Oryol servicemen of 1642
@@ -3020,7 +3020,7 @@ family name Anpilogov; in another upper-Oka source an Ivan
 Nechaev syn Zaytsov has been found. However, the test signature now consists not of the pair
 Ivan + Nechay but of five features: generation, Cossack service, the rank of desyatsky,
 a storehouse in town and a homestead with his brother Ponkratko. The archival target has also been refined:
-what is needed are photocopies of **RGADA, f. 1209, op. 1, d. 124, fols. 15v and 36v** and
+what is needed are photocopies of **РГАДА, f. 1209, op. 1, d. 124, fols. 15v and 36v** and
 outgoing Dedilov separation or release extracts (otdelnye or otkaznye vypisi) after 1589.
 
 #### An internal check downgraded the Dedilov candidate
@@ -3116,11 +3116,11 @@ must have taken place between this book and the issue of the Oryol exemption of 
 that the mechanism was possible, but it does not replace a personal act of Ivan's enrolment.
 
 A later check did not refute the candidate. The open name-by-name
-**muster roll (smotrenny spisok) of the vanguard regiment at Dedilov of 1629** has been checked in full: RGADA, f. 210,
+**muster roll (smotrenny spisok) of the vanguard regiment at Dedilov of 1629** has been checked in full: РГАДА, f. 210,
 op. 9, stolbets 57, fols. 27–31 and the subsequent published parts
 ([open rendering](https://document.wikireading.ru/hTYw7C4SPa)). Neither Ivan
 Nechaev nor Ponkrat/Pankrat is in it. Then a fuller
-rendering of the **cadastral book of Dedilov district of 1627–1629** was checked in full: RGADA,
+rendering of the **cadastral book of Dedilov district of 1627–1629** was checked in full: РГАДА,
 f. 1209, op. 1, d. 491
 ([text of the publication](https://www.universalinternetlibrary.ru/book/96847/chitat_knigu.shtml)).
 The brothers are not found in it either, but there are two other sons of Nechay with other surnames:
@@ -3149,12 +3149,12 @@ boyarsky and received the former pomestye of Onokha Krivolapov. An administrativ
 move between social strata is possible, but no document attests it for Osip specifically.
 There is also a direct control of non-uniqueness: on 23 September 1615 another or
 unidentifiable **Osipko Vasilyev** is recorded among Cossacks sent from
-Moscow prisons to Kasimov (RGADA, f. 210, Stolbtsy of the Bezglasny Desk,
+Moscow prisons to Kasimov (РГАДА, f. 210, Stolbtsy of the Bezglasny Desk,
 No. 11, fols. 24–26). His former town and surname are not named, so this line
 can be attached neither to Dedilov nor to Oryol; it shows how easy it is
 to obtain a false identity from one common pair.
 
-What is needed is a photocopy of **RGADA, f. 1209, op. 1, d. 124, fol. 25**, then the later
+What is needed is a photocopy of **РГАДА, f. 1209, op. 1, d. 124, fol. 25**, then the later
 Dedilov books and a separation or release charter for the Oryol pomestye.
 For now no profile, identity or route is created.
 
@@ -3163,7 +3163,7 @@ For now no profile, identity or route is created.
 So as not to take the chosen direction for the only possible one, a
 geographically distant and much larger corpus of the same time has been checked:
 the name-by-name rendering of the inspection (dozornaya) book of empty lands of the Derevskaya pyatina
-of 1593–1595, **RGADA, f. 1209, op. 1, d. 974, fols. 1–158v**. The open
+of 1593–1595, **РГАДА, f. 1209, op. 1, d. 974, fols. 1–158v**. The open
 index has about fifteen hundred lines. The academic description dates the book
 to 1594–1596, that is, it is almost synchronous with the Oryol distribution.
 
@@ -3233,7 +3233,7 @@ Korchakov stan.
   in this volume. However, the early Mtsensk, Bolkhov and Karachev books
   have now been partly checked through surviving later extracts; the result
   is set out below.
-- **RGADA, f. 210, op. 4** is not, as was previously supposed, a ready-made
+- **РГАДА, f. 210, op. 4** is not, as was previously supposed, a ready-made
   collection of Oryol desyatni of the 1570s–1590s. The surviving inventory
   mostly begins with files of 1638/39. It is needed for descendants and for
   reconstructing the 17th-century service stratum, but it does not replace the search for early
@@ -3245,7 +3245,7 @@ Korchakov stan.
 
 #### What survives of the early books of Mtsensk and Bolkhov
 
-The official catalogue of RGADA cadastral books and four volumes of «Акты служилых
+The official catalogue of РГАДА cadastral books and four volumes of «Акты служилых
 землевладельцев» [Acts of Service Landholders] make it possible to replace the general "Mtsensk needs checking" with a precise
 archival programme.
 
@@ -3289,8 +3289,8 @@ Kashira—Mtsensk.
 
 Structured audit card:
 `PUB-ASZ-1573-1585-UPPER-OKA-SERVICE-BOOKS`. Sources:
-[ASZ, vol. III](https://djvu.online/file/XShJZdkt8XXun) and
-[catalogue of RGADA cadastral books](http://rgada.info/materiali/baranov_catalog.pdf).
+[АСЗ, vol. III](https://djvu.online/file/XShJZdkt8XXun) and
+[catalogue of РГАДА cadastral books](http://rgada.info/materiali/baranov_catalog.pdf).
 
 #### The first named bridge: the Koptevs between Tula, Mtsensk and Oryol
 
@@ -3342,7 +3342,7 @@ Oryol landholding community.
 Structured card: `PUB-KOPTEV-TULA-MTSENSK-OREL-1577-1596`.
 Sources: [watch-post roster of 15 March 1576, misprinted under 1577](https://drevlit.ru/docs/russia/XVI/1560-1580/Akty_Popov_I/1-20/18.php),
 [cadastral books](https://www.prlib.ru/item/355286),
-[ASZ, vol. III](https://djvu.online/file/XShJZdkt8XXun) and
+[АСЗ, vol. III](https://djvu.online/file/XShJZdkt8XXun) and
 [desyatnya of 1596](https://drevlit.ru/docs/russia/XVI/1580-1600/Desjatnja_novikov/text.php).
 
 #### The Koptevs are no exception: four family bridges
@@ -3402,7 +3402,7 @@ example proves the administrative form itself, but it does not allow us automati
 to call the Oryol men people of Kashira or Tula.
 
 This specimen now has an established modern address. A complete 16th-century copy
-survives in **RGADA: f. 137, op. 1, Venev, d. 1, pt. 1, fols. 1–200**;
+survives in **РГАДА: f. 137, op. 1, Venev, d. 1, pt. 1, fols. 1–200**;
 the official inventory notes a microfilm. The Epifan continuation is in
 the same file, pt. 2, fols. 201–247. So the next stage can be carried out on
 the manuscript: check the margins, the clerks' signatures across the joins (skrepy) and the original headings, which may
@@ -3449,7 +3449,7 @@ review desyatni and surety and pomestye files, not a supposed omitted
 part of this list. Publication: [«Десятня новиков 1596 года» (Desyatnya of Noviki of 1596)](https://drevlit.ru/docs/russia/XVI/1580-1600/Desjatnja_novikov/text.php).
 
 The reading has now also been checked against the digital image of the file itself. In
-[the official RGADA viewer](http://rgada.info/kueh/index2.php?str=181_2_120)
+[the official РГАДА viewer](http://rgada.info/kueh/index2.php?str=181_2_120)
 the spread `0060.jpg` shows fols. 58v–59; on the left-hand page one reads plainly
 **«Павел Терентьев сын Анфилогов»** ("Pavel Terentyev syn Anfilogov"). The archival card clarifies the status of
 the manuscript: it is a late copy of the late 17th or early 18th century on 88 folios;
@@ -3471,7 +3471,7 @@ But a specific person has now been identified who was present at the questioning
 and could have known whose son, brother or nephew each novik was. The desyatnya does not
 say whether his testimony was recorded separately. The targeted search narrows to
 town review books and surety and pomestye files in which Taras Onsin syn
-Martemyanov appears as a witness or an okladchik (assessor). Scan: RGADA, f. 181, op. 2,
+Martemyanov appears as a witness or an okladchik (assessor). Scan: РГАДА, f. 181, op. 2,
 d. 120, fol. 62, spread `0063.jpg`;
 cadastral parallel: «Писцовые книги Московского государства» [Cadastral Books of the Muscovite State], Oryol
 district, pp. 995–996, original folio 516.
@@ -3517,7 +3517,7 @@ and independent review, surety and land documents. The structured card has been 
 `RGADA-181-2-120-L58OB-PAVEL`.
 
 The full list has now been checked across all **72 town and territorial
-sections**. The official RGADA catalogue counts the same material as 67 district
+sections**. The official РГАДА catalogue counts the same material as 67 district
 service corporations: these are different ways of grouping, not two lists.
 There is only one Anfilogov in it — Pavel, and he stands precisely in Oryol; in
 Belyov, Bolkhov, Mtsensk, Novosil, Chern and Karachev the surname is absent. The
@@ -3532,7 +3532,7 @@ a hypothetical lost appendix to this desyatnya.
 
 A new check was made against Aleksandr Shatokhin's open index
 «Служилые люди Смуты 1605–1618 гг.» [Servicemen of the Time of Troubles, 1605–1618]. The author reports **2,730 entries from
-various files of the Razryad Prikaz in RGADA**. This is a heterogeneous corpus: most often
+various files of the Razryad Prikaz in РГАДА**. This is a heterogeneous corpus: most often
 it records those taken captive and the circumstances of capture, but it also includes
 landholders whose peasants were taken captive, and servicemen who received
 additional cash or land grants. The public table retains only
@@ -3585,7 +3585,7 @@ Golenev, Zolotorev, Lipovsky and Tikhonov. Structured card:
 The popular claim about "48 families resettled from Kashira to Mtsensk",
 which turns up in genealogical discussions, likewise cannot yet be
 accepted as a ready-made list of settlers. The available Kashira desyatnya
-of 1570 survives only as a late folio-by-folio alphabetical index (RGADA,
+of 1570 survives only as a late folio-by-folio alphabetical index (РГАДА,
 f. 388, op. 1, d. 102, fols. 260–264; former number 853), and the figure 48 was obtained by a modern
 comparison of the surnames in this index with the Mtsensk landholders of 1596–1627.
 A coincidence of surnames creates a hypothesis about direction, but does not replace
@@ -3654,7 +3654,7 @@ the **Livny guides (vozhi) of 1599**. This looked like a rare ready-made route a
 called for a check against the name-by-name source itself.
 
 All five parts of the open rendering of the separation book of
-Belgorod of 1599 — **RGADA, f. 1209, op. 1, pt. 2, d. 15828** — have been checked in full: 180
+Belgorod of 1599 — **РГАДА, f. 1209, op. 1, pt. 2, d. 15828** — have been checked in full: 180
 numbered land entries and the descriptions of lands that follow them. The forms
 Anpilogov, Anfilogov, Onpilogov, Onfilogov, Ampilogov, Amfilogov and
 Antilogov do not occur in the text. So the formula "Anpilogov — a Livny guide" cannot
@@ -3693,7 +3693,7 @@ match but an entry on Vasily's first enrolment (verstanye), on his inheritance o
 Bazdyrevo, or a late genealogical extract naming the father together with
 his place of service.
 
-In the open photocopies of **RGADA, f. 210, op. 14, d. 502** three separate entries of the surname
+In the open photocopies of **РГАДА, f. 210, op. 14, d. 502** three separate entries of the surname
 series have been located and checked. What matters is not only the names
 but also each man's place within the service rubrics:
 
@@ -3721,7 +3721,7 @@ of a ready-made family arriving all at once; nor are they proof of local birth.
 
 Cards for the originals: `RGADA-210-14-502-L67`, `RGADA-210-14-502-L94`,
 `RGADA-210-14-502-L109`. Published structure of the list and name index:
-[VGD forum thread describing the file](https://forum.vgd.ru/5703/135781/).
+[ВГД forum thread describing the file](https://forum.vgd.ru/5703/135781/).
 
 ### The early Kursk branch: Semyon in 1619 and Ivan in 1624
 
@@ -3736,13 +3736,13 @@ a dun (savrasaya) mare for five roubles and was called «Семенов крес
 Анпилогов» ("Semyon Anpilogov's peasant"). This proves directly that Semyon Anpilogov had a dependent
 peasant, but it does not allow us to call Semyon himself a
 pomeshchik automatically: the entry tells neither the kind of right to the land nor where the holding lay.
-Original: RGADA, f. 210, op. 8, vyazka 1, pt. 1, no. 10, fols. 62–62 v.;
+Original: РГАДА, f. 210, op. 8, vyazka 1, pt. 1, no. 10, fols. 62–62 v.;
 publication: pp. 93–94.
 
 **On 21 May 1624** «курченин Иван Онпилогов» ("Ivan Onpilogov, a man of Kursk") bought a dark bay gelding
 for two roubles. Here the place is stated directly: Ivan is called a resident of Kursk.
 The archival reference has been corrected from the closing note on p. 132 of the edition and from
-Razdorsky's later work: RGADA, f. 210, op. 6-zh, kn. 79, fol. 78 v.
+Razdorsky's later work: РГАДА, f. 210, op. 6-zh, kn. 79, fol. 78 v.
 The card's earlier reference to kn. 82 and p. 159 was wrong: kn. 82 belongs
 to the next Kursk book, of 1626/27.
 
@@ -3757,7 +3757,7 @@ that is, well before both Kursk entries.
 The academic edition by S. I. Kotkov and N. S. Kotkova,
 "Monuments of the South Great Russian Dialect. Otkaznye Books" (Moscow, 1977), has been read in full. Its introductory
 part gives the exact correspondence between the published sections and the archival books of
-RGADA, f. 1209: Belgorod — op. 156, kn. 15820; Kursk — op. 188,
+РГАДА, f. 1209: Belgorod — op. 156, kn. 15820; Kursk — op. 188,
 kn. 15684; Oryol — op. 199, kn. 10054.
 
 **Oryol, 19 April 1625.** On fols. 39–41 of the Oryol book, at the allotment
@@ -3768,7 +3768,7 @@ from the razbor of 1620/21 and the muster of 1626. The 1625 entry itself does no
 repeat the patronymic, so the proof of identity is composite, not literal.
 
 On 30 August 2026 the archival reference was checked in yet another independent
-way, against RGADA's official handwritten act-by-act inventory. The opening table
+way, against РГАДА's official handwritten act-by-act inventory. The opening table
 of the volume assigns book 10054 to register folios 49–145, and on fol. 49 the act of 19 April
 7133 stands as **article no. 1**. The short heading names the recipients of the land:
 Semyon and Yakov Rodionov and Savely Konstantinov; the article runs to three folios.
@@ -3801,7 +3801,7 @@ without a patronymic it is too early to merge them.
 **Oryol, 5 October 1640.** The role of Afonka Anpilogov has been clarified. He is not
 merely a participant in a land entry: the closing formula says outright
 «а отказныя книги писал орленин Афонька Анпилогов» ("and the otkaznye books were written by Afonka Anpilogov, a man of Oryol"). The reference has been established:
-RGADA, f. 1209, op. 199, kn. 10054, fols. 851–852 v. The form «Аеонька
+РГАДА, f. 1209, op. 199, kn. 10054, fols. 851–852 v. The form «Аеонька
 Фнеилогов» in Vashchenko's article reflects how his writing was rendered, but without
 the original it cannot be called an autograph.
 
@@ -3937,7 +3937,7 @@ surnames. An archival fragment of 1593 names Bolkhov service Cossacks:
 Mikhalko Mikulin the Novgorodian, Ondryushka the Muscovite, Vaska the Yaroslavl man,
 Vaska the Balakhna man and Ivashko the Meshchera man; among their comrades are Ivashko of Yuryev,
 Vaska the Kazan man, Kondrashko of Vologda and Fedka of Yuryev. Publication reference:
-RGADA, f. 141, op. 1, 1593, d. 1, fol. 33 v.; V. I. Koretsky, 1975,
+РГАДА, f. 141, op. 1, 1593, d. 1, fol. 33 v.; V. I. Koretsky, 1975,
 pp. 84–85.
 
 The names work here as geographical labels: Novgorod, Moscow, Yaroslavl,
@@ -4033,7 +4033,7 @@ it is the absence of the needed intermediate link in one particular enrolment ca
 
 In 2009 M. I. Lavitskaya reported the first mass granting of pomestyes to Oryol
 servicemen in 1591–1592 and cited the «Отводную книгу по Орлу» ("Land Allotment Book for Oryol")
-of 1591/1592–1629: RGADA, f. 1209, op. 2, d. 15108. From it the author also gave
+of 1591/1592–1629: РГАДА, f. 1209, op. 2, d. 15108. From it the author also gave
 four names. The syn boyarsky **Yakov Savenkov** supposedly received in 1591
 ploughland formerly worked by **Stepan Mikhaylov**. In 1594 the zhilets
 **Matvey Vasilyev** received a grant part of which had formerly been used by
@@ -4097,7 +4097,7 @@ have been created.
 
 Card: `PUB-LAVITSKAYA-2009-OREL-OTVODNAYA-CITATION-AUDIT`.
 [Lavitskaya's article](https://cyberleninka.ru/article/n/proishozhdenie-i-evolyutsiya-dvoryanstva-i-pomestnogo-zemlevladeniya-orlovskoy-gubernii),
-[official RGADA inventory](http://rgada.info/poisk/index2.php?str=1209-opis_2-1),
+[official РГАДА inventory](http://rgada.info/poisk/index2.php?str=1209-opis_2-1),
 [study of the Ufa book](https://ufagen.ru/node/31089),
 [B. A. Aznabaev's dissertation abstract](https://new-disser.ru/_avtoreferats/01003310047.pdf).
 
@@ -4120,7 +4120,7 @@ circle of surnames in the books of the nine source towns.
 
 ### The six-folio razbor in inventory 21: not Oryol but Kolomna, 1599
 
-On the first page of inventory 21 an especially tempting item was **RGADA, f. 210,
+On the first page of inventory 21 an especially tempting item was **РГАДА, f. 210,
 op. 21, d. 4, fols. 1–6** (old numbering 50–55): «Разборная книга
 служилых людей (отрывок)» ("Razbor book of servicemen (fragment)"), no earlier than 1597, under the counter-signature (skrepa) of the dyak Andrey
 Ivanov. With no town in the title, it could have been taken for a remnant of the Seversk
@@ -4185,7 +4185,7 @@ Oryol core, the noviki of 1596, the absentees and those without pomestyes. Card:
 ### Four Heraldry files: the first family archival bridge
 
 The search for the documentary descendants of the lost desyatnya has for the first time led not to
-a general fond but to a precise family complex. In the official catalogue of RGIA
+a general fond but to a precise family complex. In the official catalogue of РГИА
 four files of the Senate's Department of Heraldry for Kursk province have been found:
 
 - **f. 1343, op. 16, d. 2345**, «Дело о дворянстве. Анфилоговых» ("File on the nobility of Anfilogovs"),
@@ -4209,7 +4209,7 @@ the whole surname. In noble-status proceedings the founder could be the
 earliest ancestor from whom the applicants managed to prove legally an
 unbroken chain.
 
-There is also a practical lead on access. On 30 August 2024 an RGIA reader
+There is also a practical lead on access. On 30 August 2024 an РГИА reader
 asked on a genealogy forum for d. 2345 specifically to be re-photographed and called
 it **microfilmed**. This is not an official description of the medium and not a
 publication of the folios, but it raises the chance of getting a copy quickly in the reading room.
@@ -4227,7 +4227,7 @@ the starting date of d. 2345, so the file may indeed contain not the original
 provincial decision but its review or continuation. The compilation is incomplete and does not
 replace the Heraldry books, but it gives exact years for searching the rulings.
 
-From these years an immediate predecessor has been found. **RGIA, f. 1330,
+From these years an immediate predecessor has been found. **РГИА, f. 1330,
 op. 18, d. 137 A–B** is the case of the non-commissioned officer Anfilogov and his brother, an odnodvorets,
 about land, 26 January 1822 – 25 October 1823. The main part runs to 124
 folios, the attached Senate proceedings to another 67. Two full brothers
@@ -4235,7 +4235,7 @@ are designated by different statuses within the old service society; the land
 dispute ended immediately before the surname was entered in Part VI. It
 may contain ownership extracts and proofs of inheritance, but the catalogue
 names neither the brothers, nor the land, nor the outcome. The entry from
-the name index has now been located exactly: **RGIA, f. 1343, op. 51, d. 593,
+the name index has now been located exactly: **РГИА, f. 1343, op. 51, d. 593,
 fol. 30**. On this folio are officially indexed **«Анфилогов А. Ф.,
 дворянин»** ("Anfilogov A. F., dvoryanin") and **«Анфилогов Р., унтер-офиц.»** ("Anfilogov R., non-commissioned officer"). The card for the whole alphabetical
 genealogical book for 1788–1875 is marked by the archive as having
@@ -4246,7 +4246,7 @@ reveal his full name, and proximity to A. F. in the alphabetical book does not
 prove kinship.
 
 The first book of ancient nobility itself has now also been officially checked:
-**RGIA, f. 1343, op. 51, d. 155**, «Родословная книга дворян Курской
+**РГИА, f. 1343, op. 51, d. 155**, «Родословная книга дворян Курской
 губернии» ("Genealogical book of the nobles of Kursk province"), 1824. The catalogue marks scans as available and indexes in the book,
 on exactly **fol. 100**, **«Анфилогова А. М.»** ("Anfilogov A. M."), a titular counsellor of the Kursk
 police. A separate official card exists for the folio, although the open catalogue
@@ -4274,7 +4274,7 @@ so fol. 100 of the genealogical book remains necessary.
 [Mesyatseslov for 1824, Part II](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%81%D1%8F%D1%86%D0%BE%D1%81%D0%BB%D0%BE%D0%B2_%D1%81_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C%D1%8E_%D1%87%D0%B8%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D1%85_%D0%BE%D1%81%D0%BE%D0%B1,_%D0%B8%D0%BB%D0%B8_%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D1%88%D1%82%D0%B0%D1%82_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8,_%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D0%BE_%D0%BE%D1%82_%D0%A0%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B0_1824._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D1%8F.pdf),
 [Mesyatseslov for 1825, Part II](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%81%D1%8F%D1%86%D0%BE%D1%81%D0%BB%D0%BE%D0%B2_%D1%81_%D1%80%D0%BE%D1%81%D0%BF%D0%B8%D1%81%D1%8C%D1%8E_%D1%87%D0%B8%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D1%85_%D0%BE%D1%81%D0%BE%D0%B1,_%D0%B8%D0%BB%D0%B8_%D0%9E%D0%B1%D1%89%D0%B8%D0%B9_%D1%88%D1%82%D0%B0%D1%82_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8,_%D0%BD%D0%B0_%D0%BB%D0%B5%D1%82%D0%BE_%D0%BE%D1%82_%D0%A0%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%B0_1825._%D0%A7%D0%B0%D1%81%D1%82%D1%8C_%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D1%8F.pdf).
 
-A fresh independent search compilation of extracts from GAKO files, updated on 9 August
+A fresh independent search compilation of extracts from ГАКО files, updated on 9 August
 2026, added a testable hypothesis. It names **Vasily Rodionov
 Anpilogov**, for whom a family composition is noted within an approximate range of
 1840–1870, **Mikhail Mironov Anpilogov**, a clerk (kantselyarist) with a service
@@ -4284,7 +4284,7 @@ Rodion, and Vasily might be his son. But the private compilation does not publis
 reference, an exact date, a place or a kinship formula; so "Rodion
 Anfilogov" remains a search hypothesis, not an established person.
 The next targeted order is a full extract about Vasily Rodionov's family.
-[Compilation of GAKO extracts](https://forum.vgd.ru/9304/174610/0.htm).
+[Compilation of ГАКО extracts](https://forum.vgd.ru/9304/174610/0.htm).
 
 Eleven years earlier still, two Senate descriptions name a specific
 person: **the collegiate registrar Yakov Anfilogov**, killed near the village of
@@ -4297,11 +4297,11 @@ his patronymic and kinship are unknown. For Yakov a profile `P9678`, a Record
 Shchigry have been created. Card for the land case:
 `PUB-RGIA-1330-18-137-ANFILOGOV-BROTHERS-LAND-1822`.
 
-The local archival duplicate has also been checked. The official inventory of **GAKO, f. 1436,
+The local archival duplicate has also been checked. The official inventory of **ГАКО, f. 1436,
 Kursk Assembly of Noble Deputies** contains only 19 surviving files
 for 1760–1864; there is no separate file of Anfilogovs or Anpilogovs in it.
 This does not prove that local proceedings never existed, but it makes
-the RGIA Senate files the main surviving complex.
+the РГИА Senate files the main surviving complex.
 
 The full sections "Names and meaning", the limit of proof and the reading order
 have been entered in the card
@@ -4309,12 +4309,12 @@ have been entered in the card
 `LEAD-RGIA-1343-16-2345-ANFILOGOV-NOBILITY`. The four catalogue
 headings themselves create no people and no routes; the only new named event
 on the map relates to Yakov Anfilogov in Bolshie Shchigry.
-[Main RGIA file](https://fgurgia.ru/object/2374618593),
+[Main РГИА file](https://fgurgia.ru/object/2374618593),
 [land case, part A](https://fgurgia.ru/object/5932449),
 [Senate document on Yakov](https://fgurgia.ru/object/3884669),
 [compilation of the Kursk genealogical book](https://goldarms.narod.ru/kursk.htm),
 [post about the microfilm](https://forum.vgd.ru/2/60627/610.htm),
-[official GAKO inventory](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f1436.pdf).
+[official ГАКО inventory](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f1436.pdf).
 
 ### Mixed inventories of fond 210: the early outer dates jump over 1577
 
@@ -4377,7 +4377,7 @@ change: absence of the surname from the corpus is not a migration event.
 ### The Kolomna desyatnya of 1577: a full name-by-name check gave no move to Oryol
 
 The official inventory of fond 210 confirms the exact reference of the earliest file in
-the specialised collection of desyatnyas: **RGADA, f. 210, op. 4, d. 17**. This is
+the specialised collection of desyatnyas: **РГАДА, f. 210, op. 4, d. 17**. This is
 the Kolomna razbor desyatnya of 7085/1577, money distribution and pomestye
 enrolment of noviki, 106 folios. The razbor was conducted by the boyar **Pyotr Vasilyevich
 Morozov** and the dyak **Vasily Nizovtsov**. There is no further separate early Oryol
@@ -4406,7 +4406,7 @@ is not yet a proven source of the Oryol family. No route has been drawn on the m
 Card: `PUB-KOLOMNA-1577-OREL-1594-CROSSCHECK`.
 [Kolomna desyatnya, part 1](https://drevlit.ru/docs/russia/XVI/1560-1580/Desjatni_XVI_v/text1_1.php),
 [part 2](https://drevlit.ru/docs/russia/XVI/1560-1580/Desjatni_XVI_v/text1_2.php),
-[official RGADA inventory](http://rgada.info/poisk/index2.php?str=210-opis_4).
+[official РГАДА inventory](http://rgada.info/poisk/index2.php?str=210-opis_4).
 
 ### Epifan, 1585: four possible pairs of brothers with Oryol at once
 
@@ -4511,7 +4511,7 @@ parents and brothers.
 
 The archival reference is kept exactly in the form of the publication: **Moscow Archive of
 the Ministry of Justice, desyatnya book no. 221, printed inventory no. 83** for 1585
-and **book no. 222, printed inventory no. 84** for 1591. The modern RGADA references
+and **book no. 222, printed inventory no. 84** for 1591. The modern РГАДА references
 have not yet been established and are not substituted by guesswork. Card:
 PUB-EPIFAN-1585-OREL-1594-FAMILY-CROSSCHECK. No route has been drawn on the map:
 there is no direct move, and the Koptevs, Novikovs, Vorobyevs and Ivanovs do not belong to
@@ -4693,10 +4693,10 @@ In an extract of 1712 from the survey book of Fyodor Chebotov for 1623 one more
 full namesake of an Oryol paternal line has been found. Among the 151 court
 peasant households of the hamlet of **Temeshevo on the Tsna**, on fol. 101, under no. 146 in
 the transcriber's modern numbering, stands **«Софонко Тимофеев сын»** ("Sofonko, Timofey's son").
-The reference has been established exactly: **SPbII RAN, coll. 115, op. 1, d. 173, fol. 101** —
+The reference has been established exactly: **SPbII РАН, coll. 115, op. 1, d. 173, fol. 101** —
 a file of 1712 on the survey of the Naryshkins' lands, containing an extract from the Shatsk
 book of 1623. In the scholarly literature the parallel complex is also cited
-as RGADA, f. 1209, op. 4, d. 6034.
+as РГАДА, f. 1209, op. 4, d. 6034.
 
 The full open PDF of issue 37 of the *Proceedings of the Tambov Scholarly Archival
 Commission* for 1893 has been checked against the images. On p. 77 there is indeed
@@ -4704,7 +4704,7 @@ printed the economic entry «Сельцо Темешево на реке на Ц
 the publisher omitted the household list of 151 names. A photocopy of this page
 has been kept, but it confirms the place and the entry, not the name itself. The exact
 name line is for now being checked against an open folio-by-folio transcription of fol. 101;
-final verification needs an image of this SPbII RAN folio.
+final verification needs an image of this SPbII РАН folio.
 
 The chronology allows identity: the Oryol Sofon was an adult in 1594/95,
 and the Shatsk entry is 28 years later. But the social and land picture
@@ -4944,7 +4944,7 @@ points here belong to unrelated surnames.
 ### Before 1591: a real mechanism of transfer and hereditary recruitment found
 
 A check of the chronology of the Ryazan survey books changed the very framing of the search.
-The official RGADA catalogue states that as early as **the 1560s** a separate
+The official РГАДА catalogue states that as early as **the 1560s** a separate
 corporation of servicemen centred on Ryazhsk existed in the Pekhletsky
 stan. Yet not a single original survey book of Ryazan district of the 16th century
 has survived in full. The books especially important to us, those of **Mikhail Ozerov and the podyachy
@@ -4958,8 +4958,8 @@ chetverti in the hamlet of Ukhorskaya Slobodka in the Kamensky stan. The formula
 is literal: the new holding «**дано им против старого их поместья, что за ними
 было в Пехлецком стану в деревне в Серезеве**» ("was given to them in exchange for their old pomestye, which they held in the Pekhletsky stan in the hamlet of Serezevo"). The land had become free after
 Elizar Timofeevich Karamyshev: he was killed by the Tatars, and no wife or children remained.
-Reference of the original: **RGADA, f. 1209, stolbtsy for Ryazan, no. 854/41287, fol. 29**;
-two black-wax seals survive on the extract. Publication: ASZ, vol. II, no. 96.
+Reference of the original: **РГАДА, f. 1209, stolbtsy for Ryazan, no. 854/41287, fol. 29**;
+two black-wax seals survive on the extract. Publication: АСЗ, vol. II, no. 96.
 
 This is not a move to Oryol, but for the first time a document has been found of almost the right time and
 the right type: it names at once the servicemen, the old pomestye,
@@ -4972,7 +4972,7 @@ in the Pekhletsky stan, an extract from the books of Mikhail Ozerov was sent **�
 to the Ryazhsk zaseka steward (zasechny prikazchik) Ivan Tyutchev. The steward was ordered
 to record the homesteads, people, ploughland, hay, forest and appurtenances, and to send the new book
 immediately to Moscow, to the Pomestny Prikaz. Original:
-**RGADA, f. 1209, stolbtsy for Ryazhsk, no. 36/42020**; ASZ, vol. III, no. 389.
+**РГАДА, f. 1209, stolbtsy for Ryazhsk, no. 36/42020**; АСЗ, vol. III, no. 389.
 No. 389 itself is a charter of August 1587, not a surviving leaf of the book
 of 1573/74. It names the former holder who died childless,
 **Andrey Ivanov syn Elchin**, the co-holder of another part of Nazemnaya,
@@ -4996,7 +4996,7 @@ replenishing the service corporation. After the death of Boris Ekimov his 150
 chetverti were confirmed to his sons — Ryumka aged 11, Ivan aged 7 and Ignat aged 3 —
 with an explicit condition: when each turned fifteen, he was to
 begin the sovereign's service from his father's pomestye. Reference:
-**RGADA, f. 1209, stolbtsy for Ryazan, no. 133/40969**; ASZ, vol. I, no. 90.
+**РГАДА, f. 1209, stolbtsy for Ryazan, no. 133/40969**; АСЗ, vol. I, no. 90.
 
 For Oryol this is fundamental: the people of the 1594/95 book may have been not only
 migrants of the first intake but already **a second generation**, grown up in the families
@@ -5004,15 +5004,15 @@ of the settlers of 1566–1571. The Mikulich Anfilogov brothers, who held their 
 pomestye, fit this model especially well, although the source does not give the former town of their
 father Mikula.
 
-In the full text of the four volumes of ASZ no Oryol otdelnaya extract or formula of
+In the full text of the four volumes of АСЗ no Oryol otdelnaya extract or formula of
 a man's transfer to Oryol has been found. The extracts from Mikhail Ozerov's books likewise
 do not name Anfilogovs, but only four local fragments have come down, so
 this is not a negative check of the whole book.
 
-A bibliographical re-check against the official RGADA catalogue refined this
+A bibliographical re-check against the official РГАДА catalogue refined this
 count. Four local holdings do not mean four acts: Ozerov's dozornaya (inspection) book
-itself is attested by exactly three references — **ASZ, vol. I, no. 293; vol.
-III, nos. 259 and 389**. ASZ I no. 90 describes the inheritance of a pomestye in 1590 and
+itself is attested by exactly three references — **АСЗ, vol. I, no. 293; vol.
+III, nos. 259 and 389**. АСЗ I no. 90 describes the inheritance of a pomestye in 1590 and
 remains important for the mechanism of replenishing the service, but it does not mention Ozerov's book.
 So the next search is narrowed to three real documentary
 chains: the full texts, editorial notes, versos and
@@ -5067,11 +5067,11 @@ Card: `PUB-RYAZAN-1571-1590-PRE-OREL-RECRUITMENT-MECHANISM`. The map does not
 change: the confirmed route Pekhletsky stan — Kamensky stan belongs
 to unrelated surnames.
 [Chronology of the survey books of Ryazan district](https://studfile.net/preview/11916075/),
-[official RGADA catalogue](https://www.rgada.ru/sprav/sprav/zenchenko_miu_ivanova_ga_otv_sost_pistsovye_knigi_riazanskoi.pdf).
+[official РГАДА catalogue](https://www.rgada.ru/sprav/sprav/zenchenko_miu_ivanova_ga_otv_sost_pistsovye_knigi_riazanskoi.pdf).
 
 ### The Oryol Budget Roll (Smeta) of 1642 Separates Men Present from Those «сошедших с Орла» ("Gone from Oryol")
 
-The file **RGADA, f. 210, op. 4, d. 260** turned out to contain a useful control
+The file **РГАДА, f. 210, op. 4, d. 260** turned out to contain a useful control
 structure. The main list of the Oryol deti boyarskie occupies fols. 369 v.–429,
 and on fol. 431 a separate heading begins: **«Дети боярские сошли с Орла,
 живут по розным городам»** ("Deti boyarskie gone from Oryol, living in various towns"). It records men who had ended up in Kursk,
@@ -5102,7 +5102,7 @@ For comparative control, the only known sixteenth-century desyatnya (service rol
 Pereyaslavl has been worked through. The heading stresses that Prince **Nikita Romanovich
 Trubetskoy** and the dyak (clerk) **Postnik Dmitriev** reviewed in Veliky Novgorod the deti
 boyarskie of **«всего города»** ("the whole town"). The editor counted 107 Pereyaslavl service
-men. The old archival reference: MAMYu, book of desyatni No. 13, printed inventory No. 219.
+men. The old archival reference: МАМЮ, book of desyatni No. 13, printed inventory No. 219.
 
 From the list, 89 complete constructions "first name — patronymic — family
 designation" were extracted; the remaining entries are abbreviated or damaged in the printed layout.
@@ -5148,12 +5148,12 @@ Anpilog Ivanovich Onanyin.
 The source apparatus of the reconstruction has also been checked. When a full name
 is restored from a genealogical extract of the Razryad-Senate Archive,
 Krotov gives the exact reference: for example, the heading «Мещера» ("Meshchera") and the entry for Pyotr
-Vasilyevich Bazarov are taken from **RGADA, f. 388, kn. 883, fol. 177 v.**, the information
+Vasilyevich Bazarov are taken from **РГАДА, f. 388, kn. 883, fol. 177 v.**, the information
 on T. N. Bogdanov from kn. 872, fol. 65, on Bazhen and Dmitry Sleptsov from
 kn. 774, fol. 388. For the three Onanyin positions there is no such reference. Consequently,
 the extracts of fond 388 known to and used by the author did not reveal their names;
 the surnames were restored only from the index **f. 210, kn. 7, fols. 177–181**.
-A new precise request to RGADA is not a second look at extracts already cited, but a search
+A new precise request to РГАДА is not a second look at extracts already cited, but a search
 for a standalone genealogical certificate of the Onanyins/Ananyins and
 spelling variants in the inventory of fond 388. The absence of a reference in Krotov does not
 prove that no such unidentified certificate exists.
@@ -5217,7 +5217,7 @@ and no line on the family map are created. Card:
 
 A. L. Stanislavsky published a roster of the deti boyarskie of Meshchovsk, Opakov
 and Bryansk that arose around December 1584. It was based on the desyatnya
-of 1583/84 compiled in Kaluga. The original is kept in RGADA:
+of 1583/84 compiled in Kaluga. The original is kept in РГАДА:
 f. 210, Stolbtsy (scrolls) of the Moscow desk, No. 1094, stolpik 3, fols. 1–20.
 The list is incomplete: it has 360 men of Meshchovsk against no fewer than 400 in 1604,
 and nine men of Opakov instead of the fifteen known from the battle of Molodi.
@@ -5336,7 +5336,7 @@ of the watchmen are not recorded, so Tishka cannot be linked to any of these pos
 But the main point for the settlement mechanism is proven: Kromy was not just a neighbouring
 town but a garrison sharing field service with Oryol.
 
-The next archival lead has been refined from the official RGADA register. For Kromy
+The next archival lead has been refined from the official РГАДА register. For Kromy
 it gives f. 1209, op. 1, kn. 1037: copies of the cadastral survey book of Rechitsky stan of
 1627–1630 and of the books of the Kromy service slobody (settlements) of 1639–1642.
 A secondary reference to book 214 that had come up was not confirmed and is not included in the
@@ -5354,7 +5354,7 @@ and the document contains no direct route of a bearer of the Anfilogov form.
 
 In the search book of service men of the Ukrainian (frontier) towns for 7181 (1672/73)
 the first Anpilogov from Kromy checked against the original folio has been found.
-Archival address: **RGADA, f. 210, op. 6d, d. 63, fol. 35**. By the tsar's
+Archival address: **РГАДА, f. 210, op. 6d, d. 63, fol. 35**. By the tsar's
 decree the zhilets Mina Semyonovich Shakhov travelled round Belyov, Bolkhov, Karachev, Oryol,
 Kromy and Bryansk, searching for military men who had not set out for the regiment of Prince
 Yury Nikitich Baryatinsky.
@@ -5389,10 +5389,10 @@ is not named in the fragment examined.
 An open search database gave another important control point. For the exact
 form **«Анпилогов Максим»** ("Anpilogov Maksim") four archival lines are found:
 
-- Kromy, 1670 — RGADA, f. 210, op. 5, d. 35;
-- Kromy, 1687 — RGADA, f. 1157, op. 1, d. 8;
-- Kromy, 1689 — RGADA, f. 210, op. 5, d. 68;
-- Oryol, 1697 — RGADA, f. 210, op. 6g, d. 25.
+- Kromy, 1670 — РГАДА, f. 210, op. 5, d. 35;
+- Kromy, 1687 — РГАДА, f. 1157, op. 1, d. 8;
+- Kromy, 1689 — РГАДА, f. 210, op. 5, d. 68;
+- Oryol, 1697 — РГАДА, f. 210, op. 6g, d. 25.
 
 The earlier hypothesis of a single service biography has now been refuted. The complete
 published list of 1686/87 names **Maksim Androsov
@@ -5433,7 +5433,7 @@ contains 4540 entries, including 513 men of Oryol and 502 men of Kromy; the orig
 give attendance or absence, the reason, the pomestye oklad and additional information.
 
 A separate cross-check strengthened the biography of the departed **Averky
-Grigoryevich Anpilogov**. The index to RGADA, f. 210, op. 6, d. 105 already
+Grigoryevich Anpilogov**. The index to РГАДА, f. 210, op. 6, d. 105 already
 contains **Averky Anpilogov**: the file was compiled in 1679 about men wounded
 in the Chigirin service of 1678 who received an increase to their pomestye and
 money oklads. The rare first name, the same surname and an interval of seven to eight years
@@ -5454,7 +5454,7 @@ For the second departed man, not a search for one name but a check of the whole
 migration group was applied. From the section **«Из Кромского уезда сошли (указано куда и
 в каком году)»** ("Gone from Kromy district (stating where and in what year)") all 195 combinations of surname and first name were extracted. They
 were compared with the 5504 lines of the muster list of the regiment of Venedikt Zmeev in
-Kursk of 1693, **RGADA, f. 210, op. 5, d. 72**.
+Kursk of 1693, **РГАДА, f. 210, op. 5, d. 72**.
 
 Twelve different combinations of surname and first name matched; eight of them have a
 Kursk line in the regimental list. Among the control matches are Gavrila
@@ -5507,7 +5507,7 @@ the old Kromy pomestye, the service category and the formula of admission to Kur
 The name of the scribe has been corrected. A late historical inventory and its modern
 publication give «Иван Коптев» ("Ivan Koptev"), but this is a secondary error. P. P. Smirnov, on
 p. 4 of his 1910 study, prints **Ivan Kutuzov**; the same reading is given by
-the official RGADA catalogue of 2013 and by a literal quotation from a scribes' instruction (nakaz) of
+the official РГАДА catalogue of 2013 and by a literal quotation from a scribes' instruction (nakaz) of
 1681: «с орловских дозорных книг письма и меры Ивана Кутузова да
 подьячего Ивана Коровина 134-го» ("from the Oryol inspection books of the description and measurement of Ivan Kutuzov and the
 under-clerk Ivan Korovin of [7]134"). Therefore related documents must be searched
@@ -5536,7 +5536,7 @@ be marked as proven.
 The name Martyn likewise cannot automatically be corrected to Marko. Marko Karpovich
 is documented in the service lists of 1626–1628; until the original of the
 register has been examined, this is either another brother or an error by a late copyist/compiler.
-The exact next source is now known: RGADA, f. 1209, op. 1,
+The exact next source is now known: РГАДА, f. 1209, op. 1,
 kn. 330–331, fols. 200–200 v., followed by the otkaznye (land transfer) and otdelnye (allotment) books between
 1595 and 1625, where the transfer of Karp's zherebye to his children may be recorded.
 
@@ -5553,7 +5553,7 @@ was in the hands of the travelling scribes. The surviving books 330–331 are co
 ### Two Independent Place Names: Kursk and Kozelsk
 
 Two new Anpilogovs must be strictly kept apart. In Kursk district an entry of 1766
-on fol. 535 of the file RGADA, f. 1209-DML, Kursk-15724, kn. 7, d. 35 recounts
+on fol. 535 of the file РГАДА, f. 1209-DML, Kursk-15724, kn. 7, d. 35 recounts
 the otkaz (land transfer) of Captain Mitrofan Kretov of 7198 (1689/90). In the village of Anpilogova
 on the little river Kuritsa lay the pomestye of **Semyon Yakovlevich Anpilogov**,
 registered to his grandsons **Fyodor and Prokofy Dementyevich
@@ -5564,7 +5564,7 @@ link between the surname and the village name, but not a proven founder and not 
 Oryol. The historical settlement later split into 1st and 2nd Anpilogovo on
 the Bolshaya Kuritsa; the map shows their common zone without falsely choosing one.
 
-Separately, the official RGADA catalogue revealed **the village of Anpilogovo on the little river
+Separately, the official РГАДА catalogue revealed **the village of Anpilogovo on the little river
 Medvedka in Podgorodny stan of Kozelsk district**: f. 281, op. 11,
 d. 5901/20. The extract of 1682/83 was made from the cadastral survey books of Vasily Tolbuzin and
 Ivan Glazov of 1628–1631. The holders listed in the heading — Godunov,
@@ -5575,7 +5575,7 @@ the three folios of the file have been examined.
 
 ### The Census of 1664: 33 Service Names and the Bazdyrevo Folios Found
 
-A large file has been found and checked against its archival reference: **RGADA, f. 1209,
+A large file has been found and checked against its archival reference: **РГАДА, f. 1209,
 op. 1, d. 9768** — the census book (perepisnaya kniga) of the town of Oryol and Oryol district by Stepan
 Ivanovich Kondyrev, dated 30 April 1664. The scholarly description of the file precisely
 places Korchakov stan on fols. 311–396 v., and the village of **Bazdyreva on
@@ -5639,10 +5639,10 @@ household composition should be read from the full spreads, without distributing
 ### A Step Back from 1664: Where the Census of 1645/46 Lies
 
 After the full folios of 1664 were recovered, the search moved to the previous
-neighbouring cross-section. The open cloud holds **RGADA, f. 1209, op. 1, d. 14,
+neighbouring cross-section. The open cloud holds **РГАДА, f. 1209, op. 1, d. 14,
 fols. 212–408**: 205 full-size spreads of the census book of Oryol and its district by
 D. M. Nesvitsky of 1645/46. However, the official composition of the archival copy
-points to an even more convenient address: **RGADA, f. 1209, op. 1, d. 10042**.
+points to an even more convenient address: **РГАДА, f. 1209, op. 1, d. 10042**.
 In it the alphabetical index of Oryol holders occupies **fols. 24–82**, and the Oryol book itself
 **fols. 326–523**; the town of Oryol is on fols. 515–521. The open set of file
 14 contains only part of the text and does not contain this index.
@@ -5693,7 +5693,7 @@ branches kept their households and which had moved away by this time.
 ### A Separate Bolkhov Cluster: Ten Lines of 1686–1687
 
 A new search database of service men led to the review book of the men of Belyov and
-Bolkhov, **RGADA, f. 1157, op. 1, d. 7**. For Bolkhov two open indexes
+Bolkhov, **РГАДА, f. 1157, op. 1, d. 7**. For Bolkhov two open indexes
 agree on ten lines of the surname series: `Анпилов ..`, Karp, Naum, two
 Pershkas; two Vasily Anpilogovs, Isay, Nikola and Fedotka. For the nine named
 lines separate provisional profiles have been created; the nameless line is kept
@@ -5734,7 +5734,7 @@ On 25 August 2026 the whole public search service «Дом
 предков» ("House of Ancestors"), with 421,095 lines, was checked again: the forms Anpilogov, Anfilogov,
 Onfilogov, Onpilogov, Anpliogov, Ampilogov and short forms without `-лог-` were queried separately.
 No new entry earlier than the Oryol landholding of 1594/95 was found. In the
-general list of 1627–1628, which the service links to RGADA, f. 210,
+general list of 1627–1628, which the service links to РГАДА, f. 210,
 op. 19, d. 2, there is no line with the surname either.
 
 The earliest non-Oryol line remains the same: **Fyodor Anpilogov,
@@ -5758,7 +5758,7 @@ For the first time a separate profile has been created for a man who can be trac
 twenty years. **Ananya Anpilogov** appears in the Oryol review of 1686/87,
 in two different sets of 1697, in the review of 1700 and again in 1705:
 
-- RGADA, f. 1157, op. 1, d. 9 — review of 1686/87;
+- РГАДА, f. 1157, op. 1, d. 9 — review of 1686/87;
 - f. 210, op. 12, d. 1583 — personal skazki of 1697;
 - f. 210, op. 6g, d. 25 — muster of 1697;
 - f. 210, op. 6g, d. 26 — review of 1700;
@@ -5785,7 +5785,7 @@ and card `PUB-DOMPREDKOV-1686-1705-OREL-ANANYA-ANPILOGOV` have been created.
 
 ### Why the Late "Incomers" Do Not Explain the Core
 
-As a control, the special file **RGADA, f. 350, op. 2, ch. 2,
+As a control, the special file **РГАДА, f. 350, op. 2, ch. 2,
 d. 2439, fols. 1–90 — «Сказки пришлых людей, жителей города Орла»** ("Statements of incomers, inhabitants of the town of Oryol") **of 1721**
 was checked. Full images of the file are also in the open Oryol project.
 
@@ -5886,13 +5886,13 @@ pp. 23–42). No free full copies have been found yet.
 [free author's abstract](https://new-disser.ru/_avtoreferats/01004419514.pdf).
 ## An Exact Address in the Otkaznye Books: «Ампиловы» ("Ampilovs"), Part 1, Book 3, No. 400
 
-The official RGADA alphabetical index to the otkaznye (land transfer) books for Oryol and Bolkhov for 1619–1746 gave not the general advice "look in fond 1209" but a specific reference. On fol. 2, as a separate heading, is written: **«Ампиловы: ч. 1, кн. 3, № 400»** ("Ampilovs: part 1, book 3, No. 400"). In the opening table of the same archival volume the third book of the first part corresponds to the modern general number **10054**. So the next priority document is **RGADA, f. 1209, op. 1, kn. 10054, old entry No. 400**.
+The official РГАДА alphabetical index to the otkaznye (land transfer) books for Oryol and Bolkhov for 1619–1746 gave not the general advice "look in fond 1209" but a specific reference. On fol. 2, as a separate heading, is written: **«Ампиловы: ч. 1, кн. 3, № 400»** ("Ampilovs: part 1, book 3, No. 400"). In the opening table of the same archival volume the third book of the first part corresponds to the modern general number **10054**. So the next priority document is **РГАДА, f. 1209, op. 1, kn. 10054, old entry No. 400**.
 
 At the stage of the index alone it could not be asserted that the entry concerned Oryol or Bazdyrevo specifically: the heading combines Oryol with Bolkhov and does not print the date of the entry. So a personal profile and a map placement had to wait for the act-by-act inventory. The next section removes some of these limitations.
 
 ### Entry No. 400 Revealed: Neustroy Rusinov syn Ampilov, 1649
 
-The act-by-act inventory of the book has been found in the same official RGADA set. On fols. 135–136 entry No. 400 is summarised as follows: **on 7 September 7158 three holdings in Oryol district were transferred (otkazany) to Neustroy Rusinov syn Ampilov** (Neustroy, son of Rusin, Ampilov). The date corresponds to 7 September 1649 in the Julian calendar. The former holders are named as Aleksey Nekrasov and Leonty Prokhoryev syn Ryshkov; of the lands, **Novoselka** and **the village of Perevesnaya** can be read with confidence, while the name of the first tract (urochishche) near the hamlet (seltso) is for now read provisionally as «Рогоживец» ("Rogozhivets").
+The act-by-act inventory of the book has been found in the same official РГАДА set. On fols. 135–136 entry No. 400 is summarised as follows: **on 7 September 7158 three holdings in Oryol district were transferred (otkazany) to Neustroy Rusinov syn Ampilov** (Neustroy, son of Rusin, Ampilov). The date corresponds to 7 September 1649 in the Julian calendar. The former holders are named as Aleksey Nekrasov and Leonty Prokhoryev syn Ryshkov; of the lands, **Novoselka** and **the village of Perevesnaya** can be read with confidence, while the name of the first tract (urochishche) near the hamlet (seltso) is for now read provisionally as «Рогоживец» ("Rogozhivets").
 
 This at once corrects several earlier limitations. The entry concerns Oryol district specifically, gives the full name of the bearer of the surname and supplies his father's name: **Rusin**. A profile for Neustroy, `P9680`, has been created; the two former holders of another surname remain only in the transcription. On the map the event is assigned to Oryol district, but the three old lands do not yet get falsely precise coordinates.
 
@@ -5900,7 +5900,7 @@ For the question of origin the result matters not as a ready answer about a rese
 
 An open academic publication of 1977 has been checked as a possible substitute for
 the original. It was indeed prepared from the same Oryol otkaznaya book
-**RGADA, f. 1209, op. 199, kn. 10054**, but its table of contents explicitly limits
+**РГАДА, f. 1209, op. 199, kn. 10054**, but its table of contents explicitly limits
 the Oryol selection to texts of **1625–1648**. Neustroy's entry is dated
 7 September 1649 and therefore clearly fell outside the selection. Its
 absence from the printed volume is not a negative result for the person:
@@ -5909,7 +5909,7 @@ independent copy of precisely this act.
 
 ## A Local Bridge to the Heraldry File: 14 Files of the Kursk Chamber of the Civil Court
 
-The official name index of GAKO (State Archive of Kursk Oblast) to fond 59, opis 2, has for the first time given not
+The official name index of ГАКО (State Archive of Kursk Oblast) to fond 59, opis 2, has for the first time given not
 a general recommendation but **14 exact file numbers** with the variants Anpilogov,
 Anfilogov and Anpilov. The index belongs to the Kursk Chamber of the Civil
 Court, whose fond covers 1780–1869.
@@ -5934,14 +5934,14 @@ K. V.).
 
 This is not yet a generational pedigree, nor proof of origin from Oryol.
 The index does not print the headings, dates, kinship or contents of the files. But it
-creates an important local detour to the Senate file **RGIA, f. 1343, op. 16,
+creates an important local detour to the Senate file **РГИА, f. 1343, op. 16,
 d. 2345**: civil proceedings over land, inheritance and estate status
 could include deeds of purchase, partitions, old title deeds and certified extracts from
 the proofs of nobility. The headings of files 2513,
 5335 and 6898 should be obtained first: their Fatezh–Shchigry geography is closest to the late branch
 that submitted proofs to the Heraldry Office (Geroldiya).
 
-On the official page of GAKO's reference apparatus the full inventory of
+On the official page of ГАКО's reference apparatus the full inventory of
 fond 59 is not currently disclosed: the index is published, but not the file headings.
 Consequently, the next step requires an archival request or examination of the inventory
 in the reading room. The request should first obtain the title, dates and size of
@@ -5965,7 +5965,7 @@ the geography of the search but still do not replace the file headings.
 ### I. M. Anpilogov in Derlovo: Two Exact Court Files of 1887–1891
 
 In a neighbouring official set it proved possible to move from the index to the full
-inventory. **GAKO, f. 32, op. 1**, the Kursk District Court, volume 1, has been checked.
+inventory. **ГАКО, f. 32, op. 1**, the Kursk District Court, volume 1, has been checked.
 On PDF frame 362 file No. 2730 is named verbatim: the case charging peasants of
 Derlovo in Fatezh district **«в покушении на частную собственность дворянина
 И. М. Анпилогова»** ("with an attempt on the private property of the nobleman I. M. Anpilogov"). The proceedings ran from **28 November to 12 December 1887**,
@@ -5989,12 +5989,12 @@ interesting, but the heading of file 6907 is still missing.
 For the main sixteenth-century question this is not a direct answer but a new late node.
 If the 196-folio file contains property documents, powers of attorney
 or a full name, the man can be compared with the Kursk noble
-genealogy (rodoslovnaya rospis) and the Senate file RGIA, f. 1343, op. 16, d. 2345. Precisely such a
+genealogy (rodoslovnaya rospis) and the Senate file РГИА, f. 1343, op. 16, d. 2345. Precisely such a
 comparison may show where the dictionary of 1911 got Vasily
 Dmitrievich as the founder of the family.
 
 [Official inventory of fond 32](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f32.pdf),
-[page of GAKO's reference apparatus](https://archive.rkursk.ru/gako/dorev_opisi),
+[page of ГАКО's reference apparatus](https://archive.rkursk.ru/gako/dorev_opisi),
 [note on Derlovo (Dernovo) from the list of 1862](https://nashipredki.com/location/derlovo-dernovo-selo-39509).
 
 ### The Register of 1625: Eight Family Entries; the Ninth Turned Out to Be Filippov's
@@ -6046,7 +6046,7 @@ excluded from the count of early occurrences of the researched stem; no profile,
 route is created for the Brezhnevs.
 
 At the same time the archival attribution of all five cards created from this
-register has been corrected. The exact visible lines are in **RGADA, f. 1209,
+register has been corrected. The exact visible lines are in **РГАДА, f. 1209,
 op. 85, d. 13**, while f. 1209, op. 1, kn. 330–331 are the original cadastral survey books
 that the register briefly summarises. The official images have also refined
 the folios: entry 512 is on fol. 227 v., entry 523 on fol. 228 v.
@@ -6095,7 +6095,7 @@ explanation of the main gap. As late as 1625, in the course of a mestnichestvo (
 **«резанскую десятню 89-го году»** ("the Ryazan desyatnya of the year [70]89"), that is, the
 book of 7089 (1580/1581), was retrieved from the Razryad archive. After the Moscow fire of the following year the dyaks
 were already replying to inquiries: **«резанские старые десятни в московский пожар
-134-м году в Розряде згорели»** ("the old Ryazan desyatni burned in the Razryad in the Moscow fire of the year [7]134"). The reference in the study leads to RGADA,
+134-м году в Розряде згорели»** ("the old Ryazan desyatni burned in the Razryad in the Moscow fire of the year [7]134"). The reference in the study leads to РГАДА,
 f. 210, op. 10, d. 46, fol. 602.
 
 Consequently, a sovereign's name list of the generation closest to the founding of Oryol
@@ -6160,7 +6160,7 @@ Pavel's place of birth or the former service of his father Terenty: the older
 generation could have moved earlier. But Pavel can no longer be presented as a Ryazan novik
 who was transferred to Oryol in 1596.
 
-Source: RGADA, f. 210, op. 4, d. 120/167; N. P. Likhachev, «Десятни
+Source: РГАДА, f. 210, op. 4, d. 120/167; N. P. Likhachev, «Десятни
 новиков, поверстанных в 1596 году» ("Desyatni of the Noviki Enrolled in 1596") // Izvestiya Russkogo genealogicheskogo
 obshchestva (Proceedings of the Russian Genealogical Society). Issue 3. St Petersburg, 1909. Pp. 113–209.
 
@@ -6243,12 +6243,12 @@ They cover Cossacks, streltsy and other service men of Novgorod, Belyov,
 Bolkhov, **Oryol**, Kromy, Novgorod-Seversky, Tikhvin, Volokolamsk, Vyazma
 and Mozhaysk.
 
-The modern archival address has been established as **RGADA, f. 210, op. 6v, d. 1**.
+The modern archival address has been established as **РГАДА, f. 210, op. 6v, d. 1**.
 The correspondence is supported by the present title of the inventory — «Книги Новгородского
 стола» ("Books of the Novgorod desk"), its end date of 1615 and independent descriptions of name-by-name distributions
 of 1617 that refer directly to this file.
 
-The official RGADA catalogue describes opis 6v as a set of 79 books for
+The official РГАДА catalogue describes opis 6v as a set of 79 books for
 1615–1704, and its digital inventory begins precisely with file No. 1. A modern
 name-by-name project labels the processed layer of this file **«Дворяне и
 дети боярские разных городов 1617 г.»** ("Dvoryane and deti boyarskie of various towns, 1617"). This explains the apparent discrepancy:
@@ -6257,7 +6257,7 @@ Kashira and Ryazan — whereas the archival heading of the whole file is conside
 Consequently, the absence of Oryol from the open table shows the limit of the
 sample, not the composition of the original book.
 
-The next layer of checking has been done using the official four-volume RGADA
+The next layer of checking has been done using the official four-volume РГАДА
 alphabetical index to the books of the Novgorod desk — **indexes 115–118**. Index 115
 covers books Nos. 1–12 and is fully open: 291 digital images. For
 book No. 1 the section of surnames in **A** occupies images 0003–0005, the section in
@@ -6269,7 +6269,7 @@ archival index to the right book.
 The number of folios has been checked directly on the image of p. 140 of the printed inventory:
 it reads **«226 л.»** ("226 fols."). The earlier reading "2926" arose from OCR, which merged
 a dash with the number. The same size and modern reference are independently repeated in
-a thematic list of files for Oryol district on the VGD forum. Thanks to this
+a thematic list of files for Oryol district on the ВГД forum. Thanks to this
 the search has been reduced from the mistakenly assumed thousands to 226 folios.
 
 The limit of the result is significant. The index does not replace an examination of the 226 folios and
@@ -6304,7 +6304,7 @@ of 1613/14: the set begins in 1615. The next targeted step is to
 establish the Oryol folios of the file itself and check the formulas of old oklad,
 former service, the father's entry and restoration after the devastation.
 
-A dangerous lead with an identical name has been removed separately. **RGADA, f. 1209, op. 1,
+A dangerous lead with an identical name has been removed separately. **РГАДА, f. 1209, op. 1,
 d. 1059**, called in the modern inventory the "inspection book (dozornaya kniga) of Oryol district
 of 1617–1619", relates to the Vyatka satellite town of **Orlov** and goes together with
 Khlynov district. The full Vyatka publication confirms that the book
@@ -6376,7 +6376,7 @@ The editors found the original sotnaya in a later case file on the lawsuit of th
 I. P. Voeykov against the Nastasov Monastery over hay meadows on the Losinskaya wasteland in
 Pogorelsky stan of Belyov district. The archival address of the whole complex is given
 in the article as **ЦГАДА, ф. 1209, столбцы по Москве, № 32739, ч. 1–2**; today this is
-RGADA. The text of the sotnaya begins on fol. 88 of the case. Publication: V. Yu. Belikov,
+РГАДА. The text of the sotnaya begins on fol. 88 of the case. Publication: V. Yu. Belikov,
 E. I. Kolycheva, "Documents on the Landholding of the Princes Vorotynsky in the Second
 Half of the 16th and Early 17th Centuries", *Arkhiv russkoy istorii*, 1992, issue 2,
 document no. 1 on p. 100 ff.
@@ -6452,7 +6452,7 @@ but does not receive a family route.
 For Epifan, settled in the same year 7075/1566–1567, precisely the
 type of document that Oryol lacks has survived: a description of the new ostrog (stockade), the posad (trading quarter),
 the strelets and Cossack slobodas with households listed by name. The modern archival address
-has been established from the official inventory: **RGADA, f. 137, op. 1, Venyov, d. 1, ch. 2,
+has been established from the official inventory: **РГАДА, f. 137, op. 1, Venyov, d. 1, ch. 2,
 ll. 201–247**. The book was written by Prince Ivan Vasilyevich Mosalsky and Grigory
 Borisovich Yartsov with their associates. The same commission described Venyov, so
 the Epifan part has survived inside a file under the top-level heading "Venyov".
@@ -6557,7 +6557,7 @@ returned from captivity, to give him back the land together with the income and 
 The act quotes verbatim the Epifan book of Elizary Rzhevsky and Semeyka Pakhomov
 of 1584/85: Ievko's zhrebiy in the Rozhdestvenskaya sloboda comprised 10
 chetverti of ploughland and 11 chetverti of fallow per field. The modern address of the charter:
-**RGADA, f. 1209, stolbtsy po Tule, no. 365/37572, fol. 77**; publication — ASZ,
+**РГАДА, f. 1209, stolbtsy po Tule, no. 365/37572, fol. 77**; publication — АСЗ,
 vol. III, no. 65.
 
 **Names and meaning.** Senka is Semyon, Ievko is Iev, Kondrashko is Kondrat. The formula
@@ -6574,7 +6574,7 @@ transfer of the father's or brother's pomestye**. The main search
 formulas therefore become not only "Mikulka Moiseev" but also **Vasily Mikulin,
 Timofey Mikulin, Karp Mikulin, Mikula's children, father's pomestye, brother's
 pomestye**. A complete check of the published 16th-century desyatni and of the full volume
-ASZ III has not yet produced this trio outside Oryol; this is a negative result for the
+АСЗ III has not yet produced this trio outside Oryol; this is a negative result for the
 surviving corpus, not proof of local origin.
 
 There is also a control taken directly from Mikulka's row. All fourteen
@@ -6629,7 +6629,7 @@ person is declared an ancestor of Oryol Anfilogovs without a transitional record
 
 The main archival turn is from short name lists to land files.
 The full Oryol otkaznaya kniga (book of land conveyances) of 1619–1701 is held under the historical
-call number **RGADA, f. 1209, op. 199, kn. 10054**. The scholarly edition
+call number **РГАДА, f. 1209, op. 199, kn. 10054**. The scholarly edition
 *Pamyatniki yuzhnovelikorusskogo narechiya. Otkaznye knigi* (Moscow, 1977) prints
 from it only acts selected on linguistic grounds; in the published selection
 Anfilogovs and Bazdyrevo were not found. This is not a negative check of the manuscript.
@@ -6660,7 +6660,7 @@ people** — nos. 14, 17, 19, 21–24, 29, 31–33, 36–37, 41–45, 49, 53, 55
 of fond 210 immediately cut off a false path: all thirty units are dated
 **1616–1648**.
 
-The oldest list of 1577, printed in AMG as no. 26, is not among
+The oldest list of 1577, printed in АМГ as no. 26, is not among
 them but in **delo no. 1, stolpik 3**. The official inventory on p. 3 describes it
 with complete clarity: **«7085/1576–77 гг. Список боярский. — 36 л.»** ("7085/1576–77. Boyar list. — 36 fols."). This is a general
 court list of selected servicemen, not an Oryol annex to the verdict on the Cossacks.
@@ -6669,16 +6669,16 @@ no. 26 nor the thirty later list scrolls are the sought-for
 roster of the Oryol men by name; their check can be closed.
 
 This is now confirmed not only by the inventory and the printed edition but also by the
-official digital original itself, **RGADA, f. 210, op. 6, d. 1**. The Oryol
+official digital original itself, **РГАДА, f. 210, op. 6, d. 1**. The Oryol
 entry begins on fol. 235 and continues on fols. 235 v.–236; the order to
 compile separate name lists is on fols. 241 v.–242. Fol. 243 v.
 concludes the verdict, fol. 244 is blank, and a different document begins on fol. 245.
 Consequently, the sought-for roster was not attached to the verdict in this book.
 Five control spreads of the manuscript are kept in the card
 `PUB-AMG-T1-N23-OREL-KAZAKI-1577`; the `openScan` link now leads directly to
-the [official folio-by-folio RGADA copy](http://rgada.info/kueh/index2.php?str=210_6_1).
+the [official folio-by-folio РГАДА copy](http://rgada.info/kueh/index2.php?str=210_6_1).
 
-The neighbouring act **AMG, vol. I, no. 21** is especially important. It shows the live route
+The neighbouring act **АМГ, vol. I, no. 21** is especially important. It shows the live route
 of the paperwork just one day before the verdict we are interested in. On 2 March a pamyat (memorandum) about the
 Putivl and Rylsk deti boyarskie was sent from the Razryad **«к Ондрею
 Мясному да к Богдану Ксенофонтьеву»** ("to Ondrey Myasnoy and to Bogdan Ksenofontyev"); on 14 March the pamyat and an extract
@@ -6688,12 +6688,12 @@ boyarskie was adopted. So the Oryol executive pamyat or its duplicate (protiven)
 registered under the name of one of these dyaks, rather than under a separate
 heading "Oryol list".
 
-The reading has been checked against the official folio-by-folio copy **RGADA, f. 210, op. 6,
+The reading has been checked against the official folio-by-folio copy **РГАДА, f. 210, op. 6,
 d. 1, fols. 223–226**. At the same time an important error was found and corrected:
 Vasily Koludarov had been inserted into this phrase from the general staff list of
 the Pomestny prikaz, but he is not in act no. 21 itself. The date for Andrey Sherefedinov,
 27 February 1577, in the reference work goes back to an unrelated Poshekhonye charter,
-ASZ, vol. I, no. 305; Koludarov is confirmed by another act, ASZ, vol. III, no. 250.
+АСЗ, vol. I, no. 305; Koludarov is confirmed by another act, АСЗ, vol. III, no. 250.
 Finally, Veselovsky's dates for Myasnoy and Ksenofontov rest on the same act
 no. 21, not on a separate Oryol file. So there is only one documentarily proven
 link here: **Myasnoy — Ksenofontov**.
@@ -6710,7 +6710,7 @@ For Oryol itself the first equally precise name marker has now appeared.
 The razryadnaya kniga (service register) reports that **in April 1577** the voivodes there were
 Roman Dmitriyevich Buturlin and **Grigory Fyodorov Andreeva-Pavlov**. At the
 field assembly both are again named "с Орла" ("from Oryol") in the vanguard regiment. The contemporaneous
-boyar list AMG no. 26 places Grigory in the section **«Кашира»** (Kashira) and gives him
+boyar list АМГ no. 26 places Grigory in the section **«Кашира»** (Kashira) and gives him
 the note **«на Орле»** ("at Oryol"). This is no longer general historical background but a documented
 case of a commanding officer from the old Kashira service
 corporation being sent to Oryol immediately after the verdict of 15 March.
@@ -6774,7 +6774,7 @@ original act of Andrey Nikitich.
 [verdict no. 23](https://drevlit.ru/docs/russia/XVI/1560-1580/Akty_Popov_I/21-40/23.php),
 [reference work of the Institute of Russian History](https://iriran.ru/sites/default/files/2024-05/PrikazyMoskovskogoGosudarstvaXVI-XVIIveka_2015.pdf).
 
-### The Full AMG Volume: No Later Reference to the Oryol Roster
+### The Full АМГ Volume: No Later Reference to the Oryol Roster
 
 On 29 August not only the nearest block of acts but the whole recognised text
 of the first volume of *Akty Moskovskogo gosudarstva* — documents of the Razryadny prikaz
@@ -6803,7 +6803,7 @@ Andreeva-Pavlov and by the formulas of execution of the verdict, not by the head
 
 ## 1700: The Original Personal Skazka of Akim Ivanovich Anpilogov
 
-In an open collection of scans the file **RGADA, f. 210, op. 12,
+In an open collection of scans the file **РГАДА, f. 210, op. 12,
 d. 1888** has been found — skazki (sworn statements) of Livny soldiers, reitars and men of town service about
 their service, families and pomestye estates. The official inventory dates the file to 1700 and
 gives its size as 1,252 folios. The surname index places Anpilogov on
@@ -6868,7 +6868,7 @@ The second circle is documents that may directly name the former town:
 the executive pamyat on the muster of the Oryol men in 1577; draft and name lists
 of the original recruitment of 1566/67–1570; conveyance and allotment charters for
 plots already occupied in 1594/95; later nobility and land proceedings
-with certified extracts from lost books. The official catalogue of RGIA
+with certified extracts from lost books. The official catalogue of РГИА
 confirmed the main file on the nobility of Anfilogovs of Kursk province —
 **f. 1343, op. 16, d. 2345, 1826–1887**, — but shows it as a
 final unit without open folios or an internal inventory. So further
@@ -6883,7 +6883,7 @@ link in the cards, but not as a resettlement that has already taken place.
 ### The First Result of the Group Tactic: The Nobility Files of the Bazdyrevs
 
 Searching not only for Anfilogovs but for their immediate landed circle produced
-the first precise archival lead. In the official catalogue of RGIA two files
+the first precise archival lead. In the official catalogue of РГИА two files
 of the Department of Heraldry on the nobility of the **Bazdyrevs of Kursk province** have been found:
 **f. 1343, op. 17, d. 307** for 1840, 1857 and 1859 and **d. 308** for
 1859. This is not a chance parallel of namesakes. In the Oryol book of
@@ -6892,7 +6892,7 @@ Bazdyrevo where the five homesteads of Anfilogovs stood; the name of the village
 preserved this name.
 
 A full digital copy of the same alphabetical genealogical
-book of the nobility of Kursk province has been found and read — **RGIA, f. 1343, op. 51, d. 593**. It removed
+book of the nobility of Kursk province has been found and read — **РГИА, f. 1343, op. 51, d. 593**. It removed
 the ambiguity of the catalogue initials and, most importantly, divided the entries by parts of the book.
 
 On fol. 30, entry no. 392, stand **Lieutenant Kirill Ivanovich Anpilogov**, his wife
@@ -6917,7 +6917,7 @@ to be compared first of all with the service family of Dementy Ivanovich. This i
 hypothesis until the file numbers are linked to the entries by internal folios.
 
 For two other surnames of the neighbourhood cluster land proceedings have been found:
-**RGIA, f. 1583, op. 2, d. 169**, 31 folios, "Of the odnodvortsy Trunovs, about an estate",
+**РГИА, f. 1583, op. 2, d. 169**, 31 folios, "Of the odnodvortsy Trunovs, about an estate",
 1821, and **f. 1583, op. 5, d. 1769**, a long-running dispute of the odnodvortsy (single-homestead freeholders)
 Krivolapovs with the Grankins over land. The district of the latter file and of Pavlenki have not yet been
 established, so it remains a control. The value of such proceedings lies in
@@ -6986,7 +6986,7 @@ one file have been confirmed: **Anpilogov Vaska, Anpilogov Ivashka, Anpilogov Ma
 literal index reading and is not corrected automatically. This is a search
 index: it gives no folios and does not replace reading the manuscript.
 
-The main change is that an open photocopy of the whole file **RGADA, f. 210,
+The main change is that an open photocopy of the whole file **РГАДА, f. 210,
 op. 12 ch. 1, d. 27** has been found: 299 frames in two folders, fols. 1–107 and 108–147. So the
 lead no longer has the status "scans expected". On a first look-through it was
 established that the entries cannot be searched as a continuous Oryol block. On fol. 59
@@ -7026,7 +7026,7 @@ Switching the search from the surname to whole Oryol detachments produced anothe
 archival address. Yu. V. Ankhimyuk's article on the rosters of Tsarev-Borisov states
 that from "Osenin den" (the autumn feast day) of 1602 the fortress was garrisoned by **323 Oryol regimental deti
 boyarskie**, of whom **200 with pishchals** (muskets). The reference leads to a manuscript:
-**OPI GIM, f. 440, no. 359, fols. 76–77**.
+**ОПИ ГИМ, f. 440, no. 359, fols. 76–77**.
 
 These are not the first settlers of Tsarev-Borisov and not men transferred there permanently.
 The word "полковые" ("regimental") and the context of rotating garrisons point to a distant
@@ -7081,8 +7081,8 @@ The search tactic is now targeted: what is needed is the protograph of Boris Tat
 its annexes, a duplicate of the list or Bogdan Polev's receipt record. We search by
 the combination of both voivodes' names, the formula «с Орла» ("from Oryol") and the words «списки взял» ("took the lists") in the
 stolbtsy of the Razryadny prikaz and in precedence cases. The main published
-copy is a late copy, **RGADA, f. 181, d. 100**; a variant is **f. 199,
-d. 130, ch. 2**; another copy is in the OR RNB, Hermitage collection,
+copy is a late copy, **РГАДА, f. 181, d. 100**; a variant is **f. 199,
+d. 130, ch. 2**; another copy is in the ОР РНБ, Hermitage collection,
 d. 390b. These copies may not contain the annexes of the original correspondence.
 A separate redaction of the razryadnaya kniga of 1550–1636 confirms the full form of the
 name **Bogdan Ivanovich Polev**.
@@ -7096,7 +7096,7 @@ name and a route are absent from the line.
 #### The Original File of the Neighbouring Mikhaylov Pair Has Survived
 
 The official inventory of the original precedence cases of the Razryadny prikaz gave the first
-precise address of a document from the same knot of conflict: **RGADA, f. 210, op. 9,
+precise address of a document from the same knot of conflict: **РГАДА, f. 210, op. 9,
 d. 3, stolpik 2, 142 folios**. The inventory describes it thus: "7108/1599–1600.
 Precedence case of Artemy Vasilyevich Izmaylov with Ivan Osipovich Polev
 (without the end)".
@@ -7131,7 +7131,7 @@ men of the second voivode, and not necessarily of the whole Oryol corporation.
 
 Official PDF of the inventory: [f. 210, op. 9, p. 3](http://rgada.info/opisi/210-opis_9.pdf#page=3).
 [Open photocopy of the 1838 edition](https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA_%D0%A2%D0%BE%D0%BC_2_%D0%9A%D0%BD%D0%B8%D0%B6%D0%BA%D0%B0_1-4_1838.pdf).
-Six key pages are kept in the project. There are no images of the RGADA original itself
+Six key pages are kept in the project. There are no images of the РГАДА original itself
 yet; an archive order is needed to check the print against the manuscript and to look for
 possible omissions by the editor. Working lead:
 `LEAD-210-9-3-STOLPIK2-MIKHAILOV-1599`. The map and profiles do not change.
@@ -7213,7 +7213,7 @@ Kursk was built by the voivode **Ivan Osipovich Polev** and the golova **Nelyub 
 from other towns"). Note `[32]` on the same page literally names the
 source: **«Въ строенныхъ города Курска книгахъ»** ("In the construction books of the town of Kursk").
 
-The photocopy has been checked against the RGB copy **MK P-4° / 86-L** in the NEB: frame 25,
+The photocopy has been checked against the РГБ copy **MK P-4° / 86-L** in the НЭБ: frame 25,
 printed p. 15. The image is kept in the project. This corrects the pagination p. 13 found
 in modern references: the paragraph and note in question are on
 p. 15 of the edition itself.
@@ -7259,8 +7259,8 @@ surname core. The earliest non-Oryol index entry is still
 **Fyodor Anpilogov, Kursk, 1605–1618**, but without the number of a specific file or folio.
 
 The origin of this line has now been clarified by two independent open
-presentations of the same project. On VGD the compiler wrote directly that the 2,730
-entries were collected from various documents of **RGADA, f. 210**, and that 90
+presentations of the same project. On ВГД the compiler wrote directly that the 2,730
+entries were collected from various documents of **РГАДА, f. 210**, and that 90
 names were added for Kursk. The "Description of documents" tab of the Google spreadsheet decodes the conventional
 code `сборн` only as a compilation of servicemen of the Time of Troubles, 1605–1618, and does not
 contain a correspondence between an individual and a file. So there is no exact
@@ -7310,7 +7310,7 @@ record for the **40 chetverti of Vasily's father's pomestye**, and in parallel t
 of Gavrila in the documents on the hamlet of Anpilogova. If the Vaska of 1642 turns out to be the
 same Vasily Semyonovich, the word "uncle" will make Gavrila a brother of the deceased Semyon;
 for now the lack of a patronymic and the difference between the father's 40 and Vaska's 30
-chetverti do not allow the records to be merged. Photocopies are needed of RGADA, f. 210,
+chetverti do not allow the records to be merged. Photocopies are needed of РГАДА, f. 210,
 op. 4, d. 270, fol. 185; f. 210, op. 12, d. 7, fols. 121, 122 and 141; and also
 land files naming the stan and locality of the father's forty chetverti.
 
@@ -7327,7 +7327,7 @@ sides are documented, but not the actual move of a specific person. Working lead
 ### Petitions of the Children of the First Kursk Men: A New Way Around the Lost Book
 
 The search for the construction book itself ran into two verifiable limits. The official
-inventory of **GAKO, f. 1555** has been viewed in full: among its 173 units there is the Kursk
+inventory of **ГАКО, f. 1555** has been viewed in full: among its 173 units there is the Kursk
 razbornaya kniga of 1695 and late books of Grayvoron, Karpov, Korocha and Oboyan,
 but no file on the building of Kursk in 1596. This closes one false path
 without proving that the source perished. The history of the collection of Ivan Petrovich
@@ -7341,7 +7341,7 @@ to be confirmed to him. His father is described not by a general retelling but b
 formula: **«Отец, государь, мой служил тебе государю ис Курска с курчаны
 детьми боярскими как и город Куреск стал…»** ("My father, sovereign, served you, the sovereign, from Kursk with the Kursk
 deti boyarskie ever since the town of Kursk came to be…"). Exact address:
-**RGADA, f. 1209, stolbtsy po Kursku no. 42, fols. 346–351 v.** The published
+**РГАДА, f. 1209, stolbtsy po Kursku no. 42, fols. 346–351 v.** The published
 fragment of the manuscript is kept in the project and checked against the article's reading.
 
 Names and meaning: the petitioner is **Evsey Dmitrievich**, so the name of his father Dmitry
@@ -7367,7 +7367,7 @@ Control source card:
 ### Presumably 1632: Four Kursk Onpilogovs at Once
 
 A full transcription of another list from the Moscow desk (Moskovsky stol) gave not
-a single mention but a cross-section of the whole Kursk group. The archival address is **RGADA,
+a single mention but a cross-section of the whole Kursk group. The archival address is **РГАДА,
 f. 210, op. 9, d. 1096, stolpik 4, fols. 146–205**. The beginning of the document is lost,
 so the year 1632 has not been read in the manuscript: A. Kurkulev dates the list by
 comparison with the register of 1630, the departure of old servicemen and the transfer of the noviki
@@ -7417,12 +7417,12 @@ without a route from Oryol.
 
 After the four men were found, not individual search fragments but
 all six published transcriptions of the Kursk enrolment desyatni of
-1622–1628 were checked. The book **RGADA, f. 210, op. 4, d. 300** contains three complete
+1622–1628 were checked. The book **РГАДА, f. 210, op. 4, d. 300** contains three complete
 intakes: 132 noviki enrolled in 1622; 64 recruits of 1626; 45
 service noviki enrolled in 1627 after five or six years of actual
 service. Neither Fyodor Grigoryevich, nor Semyon Osipovich, nor Semyon Yakovlevich,
 nor any other variant of the surname Anpilogov / Onpilogov is in these three lists.
-In the desyatnya of 1628, **RGADA, f. 210, op. 4, d. 270**, there is only the already
+In the desyatnya of 1628, **РГАДА, f. 210, op. 4, d. 270**, there is only the already
 known Vasily Semyonovich Anpilogov.
 
 The negative result cannot be turned into an exact date of entry into
@@ -7444,7 +7444,7 @@ Grigoryevich, but without a patronymic the identity cannot be established.
 ### 1640: The Son of Yet Another Semyon and the Middle of Sergey's Biography Found
 
 A direct look through a new full transcription of the smetnaya kniga (estimate book) of Kursk gave three
-exact lines of the researched surname. **RGADA, f. 210, op. 4, d. 180, fol. 28 v.**:
+exact lines of the researched surname. **РГАДА, f. 210, op. 4, d. 180, fol. 28 v.**:
 «Семен Яковлев сын Онпилогов пеш с пищалью» ("Semen Yakovlev syn Onpilogov, on foot, with a pishchal"); his heading preserves the oklad of
 100 chetverti known from the 1630 list. **Fol. 43 v.**: «Сергей Григорьев
 сын Онпилогов пеш с рогатиною» ("Sergey Grigoryev syn Onpilogov, on foot, with a boar-spear") — the same novik of the 1636 enrolment with an oklad of
@@ -7472,14 +7472,14 @@ service in Kursk is added to the map, without an Oryol — Kursk route.
 ### The Full Oryol Books of 1624–1626: The Online Shell Exists, the Folios Do Not
 
 After the switch to inheritance formulas, the most important
-Oryol address was re-checked: **RGADA, f. 1209, op. 1, kn. 330–331**. These are the books of Ivan
+Oryol address was re-checked: **РГАДА, f. 1209, op. 1, kn. 330–331**. These are the books of Ivan
 Kutuzov and the clerk Ivan Korovin, compiled using the old
 Oryol book of 1594/95. Kn. 330 covers Korchakov and Nepolotsk
 stany, that is, Bazdyrevo and the main family nest; kn. 331 covers Kamensky,
 Taychukovsky and Nougorsk stany, including Ermak
 Pakhomovich's Maltsovskaya on the Nugr.
 
-The official RGADA viewer opens the cards of both units at the addresses
+The official РГАДА viewer opens the cards of both units at the addresses
 `1209_1_330` and `1209_1_331`, but the galleries are empty: they contain neither thumbnails nor
 folio files. So the full text cannot be obtained by trying image addresses.
 What is needed is an order for copies or a sequential reading of the books themselves; the short
@@ -7501,11 +7501,11 @@ event of the family history.
 #### A Second Copy Found, but It Breaks Off Before the Stany Needed
 
 An additional check of the descriptions and of a public volunteer catalogue revealed
-another archival address: **RGADA, f. 1209, op. 1, d. 10047, fols. 274–685 v.**
+another archival address: **РГАДА, f. 1209, op. 1, d. 10047, fols. 274–685 v.**
 This is an 18th-century archival copy without countersignatures, containing a large fragment of the same
 cadastral book of Ivan Kutuzov and Ivan Korovin of 1624–1626.
 
-The official RGADA catalogue clarifies an essential detail: **file 10047 is a
+The official РГАДА catalogue clarifies an essential detail: **file 10047 is a
 composite volume**, which also contains independent boundary (mezhevye) books
 of the 1680s–1690s. Only article 235, and
 only fols. 274–685 v., belongs to the early Oryol book. So the order must specify the range, otherwise
@@ -7532,7 +7532,7 @@ Oryol books are already published there, but **d. 330, 331 and 10047 are absent*
 a precise backup call number has appeared, but there is as yet no public scan of the main entries.
 
 [Description of the contents of the Oryol books](https://nashi-predki.ru/wiki/Документы_Поместного_приказа._г.Орел_и_уезд),
-[official RGADA catalogue, p. 149, article 235](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
+[official РГАДА catalogue, p. 149, article 235](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
 [volunteer list of files](https://forum.vgd.ru/post/1851/142603/p5034895.htm),
 [the project's open archive](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ).
 
@@ -7575,12 +7575,12 @@ this inventory date from as late as 1624 and 1627.
 This is an important boundary, but not proof that the Oryol list perished. The voivode's
 report may have remained among stolbtsy without a personal heading, passed into
 another chancery complex, or survived only in an extract made for
-a subsequent dispute. The file found, **RGADA, f. 210, op. 9, d. 3, stolpik 2**,
+a subsequent dispute. The file found, **РГАДА, f. 210, op. 9, d. 3, stolpik 2**,
 remains an exact record-keeping parallel, but does not turn into a
 Tatev—Bogdan Polev file.
 
 For the Mikhaylov case the exact
-[card of the digital unit in the GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000157014/10000000358014/10000474487014/) has also been established.
+[card of the digital unit in the ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000157014/10000000358014/10000474487014/) has also been established.
 The printed text of 1838 has already been read; the next stage will be a page-by-page
 check against the digital original, especially the margins and annexes that the editor
 may have omitted.
@@ -7588,7 +7588,7 @@ may have omitted.
 ### Polev Before Oryol: Belyov, Then Livny and Kromy
 
 The official catalogue gave a new geographical marker for the second Oryol
-voivode: **RGADA, f. 281, op. 5, d. 1511** — the survey file of Bogdan Ivanovich
+voivode: **РГАДА, f. 281, op. 5, d. 1511** — the survey file of Bogdan Ivanovich
 Polev for Belyov, 1586/87. A biographical analysis reveals his double
 name as **«Максим прозвище Богдан Иванов сын Полев»** ("Maksim, nicknamed Bogdan, Ivanov syn Polev"), then places him in Oryol
 in April 1599, in Livny in 1599/1600 and at the survey of Kromy in 1605/06.
@@ -7603,7 +7603,7 @@ route of Anfilogovs. No profile for Polev and no line on the family map are crea
 ### The Kursk Alphabet of Stolbtsy: A Similar Surname Turned Out to Be a False Trail
 
 To check inheritance petitions, the official manuscript alphabetical index
-to the pasted Kursk stolbtsy has been opened: **RGADA, f. 1209, op. 1353i**, the volume for the letters
+to the pasted Kursk stolbtsy has been opened: **РГАДА, f. 1209, op. 1353i**, the volume for the letters
 А—К. The initial name table and the corresponding entry for the letter А were viewed
 in the original images. The list has no heading for Anpilogovs,
 Anfilogovs, Onpilogovs or Onfilogovs. A similar-looking spelling turned out to be
@@ -7617,8 +7617,8 @@ alphabetical volume, but not all the Kursk stolbtsy: the early Fyodor Anpilogov 
 1605–1618 may be in another complex.
 
 The main practical result of the new tactic is that the exact official
-address of the enrolment desyatnya of 1628 has been established: **RGADA, f. 210, op. 4, d. 270**,
-[GIS UIAD card](https://online.archives.ru/guide/10000000001014/10000000157014/10000000344014/10000474444014/).
+address of the enrolment desyatnya of 1628 has been established: **РГАДА, f. 210, op. 4, d. 270**,
+[ГИС УИАД card](https://online.archives.ru/guide/10000000001014/10000000157014/10000000344014/10000474444014/).
 The catalogue locates the Kursk part on **fols. 176–186**. At first the checked
 publication of fols. 313–326 v. did not yield the surname, but then a separate
 [full line-by-line transcription of the main block](https://old-kursk.ru/book/kurkulev_a/ku260320.html) was found.
@@ -7676,7 +7676,7 @@ turned up together before Oryol, this would be stronger than a lone
 surname match.
 
 The densest outside group was indeed found in the Derevskaya pyatina:
-**RGADA, f. 1209, op. 1, d. 974, 1593–1595**. In one large corpus
+**РГАДА, f. 1209, op. 1, d. 974, 1593–1595**. In one large corpus
 there are the names Mikula, Nechay, Pervoy and Sofon; **Erofey and
 Likhach Mikulin** are indexed separately, as well as two mentions of **Bogdan Onanyin**. At first glance
 the combination of Mikulins and the rare surname Onanyin recalls the Oryol book, where
@@ -7724,11 +7724,11 @@ by rare names: now it was precisely the joint appearance of the presumed
 brothers within one source group that was checked.
 
 The closest resemblance is **«Микулинский Васюк»** and **«Микулинский Тимошка»** in
-the Derevskaya pyatina of 1582, RGADA, f. 1209, op. 1, d. 716. Vasyuk is a form
+the Derevskaya pyatina of 1582, РГАДА, f. 1209, op. 1, d. 716. Vasyuk is a form
 of the name Vasily, Timoshka of Timofey, but there is no Karp in the group; the form
 «Микулинский» (Mikulinsky) is not equal to the Oryol formula «Микулины дети» (Mikula's children), and the index itself does not
 call these people brothers or Anfilogovs. The second lone match is
-**«Микулин Василий»** in the Obonezhskaya pyatina of 1588, RGADA, f. 137, op. 1,
+**«Микулин Василий»** in the Obonezhskaya pyatina of 1588, РГАДА, f. 137, op. 1,
 d. 11; there are no Timofey and Karp next to him.
 
 Names and meaning. The Oryol entry reports not just three similar names but
@@ -7754,7 +7754,7 @@ Takhtamyshev/Tokhtamyshev and Kostin** were searched separately. The database sh
 Krivolapov. This closes one more possibility of getting
 a ready-made route by simply going through a public index.
 
-In the Obonezhskaya pyatina of 1583, RGADA, f. 1209, op. 1, d. 725, there did
+In the Obonezhskaya pyatina of 1583, РГАДА, f. 1209, op. 1, d. 725, there did
 turn up **Kultash Takhtamyshev** and several Kostins. But this is not the Oryol
 signature: there is no Bazdyrev, Trunov, Krivolapov or Anfilogov next to them, and the personal
 names do not match the holders of Bazdyrevo and Belaya. Two common
@@ -7789,7 +7789,7 @@ syn Volkov a full grant of **200 chetverti**, including in it Istoma's former la
 but «**выписи ему Карпу Курбат не дал**» ("Kurbat did not give him, Karp, an extract"). So the charter of 1583 is
 not a new transfer from Istoma to Karp, but the correction of the unfinished paperwork of an already
 completed allotment. The edition indicates the primary source:
-**RGADA, f. 1209, stolbtsy for Vladimir, no. 528/33779**, a copy of 1636.
+**РГАДА, f. 1209, stolbtsy for Vladimir, no. 528/33779**, a copy of 1636.
 
 Names and meaning. Istoma is a personal name; "Kazan zhilets" is a service and town
 affiliation, not a place of birth. The document shows that a man's service town and
@@ -7805,7 +7805,7 @@ of the money distribution of 7090 (1581/82), reconstructed from an archival extr
 pomestye allotment is the same 200 chetverti, his money allotment the first 11 roubles. He arrived
 on a horse, in a helmet and armour, with a saadak (bow case and quiver) and a sabre; he fielded an armed mounted
 man with a spare horse and a baggage man with packs. The archival basis
-of this entry: **RGADA, f. 388, op. 1, no. 851, fols. 234–234 v.** The result is
+of this entry: **РГАДА, f. 388, op. 1, no. 851, fols. 234–234 v.** The result is
 a rare complete sequence: enrolment of a novik and allotment of land →
 an extract not issued → a restorative vvoznaya (installation) charter.
 
@@ -7825,7 +7825,7 @@ for the departure or Istoma's new town.
 
 Between these dates one more independent control point was found. In a Rostov
 donation deed (vkladnaya) of 1584/85 **Latynya Neronov syn Volkov** acted as a witness (poslukh) and
-certified the act with the formula «**Послух Латыня руку приложил**» ("Witness Latynya set his hand") (RGADA, f. 281,
+certified the act with the formula «**Послух Латыня руку приложил**» ("Witness Latynya set his hand") (РГАДА, f. 281,
 Rostov, no. 35/10572; publication: «Русский дипломатарий» [Russian Diplomatarium], issue 1, no. 137,
 p. 105). This proves a man with the same rare full formula, but not his
 place of residence and not a brotherhood with Karp named by the source.
@@ -7835,7 +7835,7 @@ place of residence and not a brotherhood with Karp named by the source.
 A full modern edition of the cadastral description of Kazan and Kazan district of
 1565–1568 was found in the electronic collection of the National Library of the Republic of
 Tatarstan: 660 printed and 668 digital pages. The introduction confirms the basis of
-the publication — **RGADA, f. 1209, op. 1, kn. 152**, with the use of the copies of books
+the publication — **РГАДА, f. 1209, op. 1, kn. 152**, with the use of the copies of books
 643 and 646. However, remote viewing outside the library's network gives only the introductory
 part; the main district text does not load after moving to the page.
 The abridged edition of 1932, available for full-text search in Google
@@ -7899,7 +7899,7 @@ example of the mechanism of transferring servicemen to conquered Kazan, but not 
 of Anfilogovs and not a proven path of the Nemtsovs to Oryol.
 
 The text of the Kazan charter has come down in a copy book of the second half of the 1580s:
-**RGB OR, Troitskoe sobranie, kn. 526, fols. 47–48**; publication by S. M. Kashtanov,
+**РГБ ОР, Troitskoe sobranie, kn. 526, fols. 47–48**; publication by S. M. Kashtanov,
 document no. 9, p. 25. A scan of the 1892 Mozhaysk act and a short fragment of
 the Dvorovaya tetrad are kept in the card's evidence. No profiles for the unrelated
 Dolmatovs and Nemtsovs and no line on the map are created. Card:
@@ -7911,9 +7911,9 @@ Dolmatovs and Nemtsovs and no line on the map are created. Card:
 
 ### The Rzhev Draft: Six Unknown Folios Instead of a Hundred
 
-The new tactic gave a precise archival fork. Earlier, for the file **RGADA, f. 210,
+The new tactic gave a precise archival fork. Earlier, for the file **РГАДА, f. 210,
 op. 9, d. 232**, it had been planned to order a broad block of fols. 263–370. Now
-the official RGADA inventory has been checked from an image of printed p. 108. It
+the official РГАДА inventory has been checked from an image of printed p. 108. It
 confirms: the file has 375 folios; the required fragment **«поход ко Пскову великого
 князя Семиона Бекбулатовича Тверского»** ("the campaign to Pskov of Grand
 Prince Simeon Bekbulatovich of Tver"), whose beginning and end are torn off,
@@ -8052,7 +8052,7 @@ route.
 The short queries **Anpi, Ampi, Anfi, Onpi and Onfi** were rechecked not only
 across the whole database but also with a separate filter for years beginning with **15**. For
 Anp, Amp, Onp and Onf the result is zero. The only Anf match is
-**Zolotukhin Anfinogen**, Obonezhskaya pyatina, 1583, RGADA, f. 1209,
+**Zolotukhin Anfinogen**, Obonezhskaya pyatina, 1583, РГАДА, f. 1209,
 op. 1, d. 725. This is a different personal name, not Anfilog/Anfilof and not a variant
 of the surname. No profile, Record or map point is created. The mass trawl of the current
 version of the database is thereby exhausted: it does not contain the transitional layer of 1580–1594.
@@ -8061,7 +8061,7 @@ version of the database is thereby exhausted: it does not contain the transition
 
 On the other hand, the list of storage units of the edition **«Документы Ливонской войны»** (Documents of the Livonian War) opened
 another channel. Besides Khilkov's captured archive in AGAD, the compilers worked
-with the Moscow complexes **RGADA, f. 64, op. 1, d. 7; f. 141, op. 1,
+with the Moscow complexes **РГАДА, f. 64, op. 1, d. 7; f. 141, op. 1,
 d. 2 for 1577–1579 and files 1–5 for 1578; f. 159, op. 1, files
 1–24, 243–246, 248–249**. These call numbers are not Khilkov's sought-after report:
 the section with his 32 papers comes from AGAD AZ 3032. But the list itself
@@ -8110,9 +8110,9 @@ Mikifor Bazdyrev recurs in Oryol only in 1648, and also without
 a patronymic in the short line.
 
 A new search by a brother's rare name gave a more precise late lead:
-**«Баздырев Понкратий» — Oryol, 1697, RGADA, f. 210, op. 6g, d. 25**.
+**«Баздырев Понкратий» — Oryol, 1697, РГАДА, f. 210, op. 6g, d. 25**.
 Then an earlier line was discovered: **«Баздырев Панкрат» — Odoev, 1679,
-RGADA, f. 210, op. 6b, d. 18**. The eighteen-year gap allows that
+РГАДА, f. 210, op. 6b, d. 18**. The eighteen-year gap allows that
 this is one serviceman who moved from Odoev to Oryol, but the index gives no
 patronymic, age or land. Both entries echo the Dedilov book
 of 1588/89, where Ponkratko, brother of Ivanko Nechaev, and the Cossack
@@ -8176,7 +8176,7 @@ their rank, and that the men to be transferred were selected by the corporation 
 town itself. Disagreement also left a paper trail: a separate citation is given of
 the petition of the Kursk man Voin Annenkov for return from Tsarev-Alekseev.
 
-The exact archival address of the analogous complex: **RGADA, f. 210, op. 4, d. 258,
+The exact archival address of the analogous complex: **РГАДА, f. 210, op. 4, d. 258,
 fols. 2, 54, 63, 66a, 79** — desyatni of the svedentsy of Oryol, Kursk, Mtsensk and other
 towns to Karpov of 7155–7156. Annenkov's petition: **f. 210, op. 12,
 d. 354, fols. 58–61**. For streltsy and Cossacks one more form of
@@ -8185,7 +8185,7 @@ family selection has survived: **f. 210, op. 6d, kn. 20, fols. 1–1 v.**
 Now a literal outgoing trace in the desyatnya of the former town has also been found. During
 the review of the Kursk service town on 31 August 1642, against **A. K.
 Zavolishin** was written: **«сшел на Орел»** ("left for Oryol"); his pomestye allotment was 250
-cheti. Petrov gives the exact address of the entry: **RGADA, f. 210, op. 4, d. 188,
+cheti. Petrov gives the exact address of the entry: **РГАДА, f. 210, op. 4, d. 188,
 fol. 615 v.** This is not a route of Anfilogovs, but direct proof that
 the Kursk desyatnya preserved the name of a man who left and his town of destination. A snapshot
 of p. 239 of the article is kept in the card.
@@ -8252,7 +8252,7 @@ has not yet been established.
 
 Full recognition of the official inventory of the stolbtsy of the Moscow desk (Moskovsky stol) gave no longer
 a methodological example but a direct collective formula. In the file
-**RGADA, f. 210, op. 9, d. 153** for 1639–1640, fols. **83–85** are described as
+**РГАДА, f. 210, op. 9, d. 153** for 1639–1640, fols. **83–85** are described as
 **«выдача пороха и свинца стрельцам, переведенным из Мценска в Орел»** ("issue of powder and lead to the streltsy transferred from Mtsensk to Oryol").
 The Oryol rubric on the same page refers back: **«Орла: см. Мценск»** ("Oryol: see Mtsensk").
 
@@ -8281,7 +8281,7 @@ the people of the inquiry (obysk) reported under oath: **«Нестер Бирл
 abandoned his exchanged pomestye in Porakhina, the land remained empty and was given to no one,
 after which it was transferred to Mina Kurbatov syn Efimov.
 
-The archival address is exact: **RGADA, f. 1209, op. 195, kn. 15938, fols. 441—443 v.**;
+The archival address is exact: **РГАДА, f. 1209, op. 195, kn. 15938, fols. 441—443 v.**;
 publication: S. I. Kotkov, N. S. Kotkova, *Pamyatniki yuzhnovelikorusskogo
 narechiya: Otkaznye knigi* (Monuments of the South Great Russian Dialect: Transfer Books), Moscow, 1977, p. 198. A photocopy of the page is kept in
 the site's archive.
@@ -8349,7 +8349,7 @@ occupation. On **30 January 1624** «курскои жилец Федор Анф
 the customs house **two cartloads of pike**. He was charged a grosh of svalnoe and kherno duty and
 one altyn four dengi of toll on the assessed four roubles.
 
-Exact address: **RGADA, f. 210, Denezhny stol (modern op. 6-zh), kn. 79,
+Exact address: **РГАДА, f. 210, Denezhny stol (modern op. 6-zh), kn. 79,
 fol. 22**; «Памятники южновеликорусского наречия. Таможенные книги» (Monuments of the South Great Russian Dialect: Customs Books) (Moscow,
 1982), p. 106; archival note on p. 132; name index on p. 295.
 The page and a check fragment are kept in the Record
@@ -8424,7 +8424,7 @@ A. I. Kopanev, «Куростровские столбцы XVI в.» (The Kurost
 *Severny arkheografichesky sbornik*, issue I, Vologda, 1970, pp. 398–431;
 [open scan of the article](https://www.booksite.ru/fulltext/mater_1/2_10.pdf),
 [full transcription](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1520-1540/Kurostrov_stolbcy/text1.htm),
-[official list of fonds of the Archive of SPbII RAN](https://spbiiran.ru/spisok-fondov-rs/).
+[official list of fonds of the Archive of SPbII РАН](https://spbiiran.ru/spisok-fondov-rs/).
 
 The map received only a point for the documented events of Onfilof Nesterov on
 Kurostrov. Petrok Anfilov and the forms Anfal / Anfalov did not receive separate
@@ -8573,7 +8573,7 @@ But no surviving extract yet names the surname. One should search for
 the seven paternal lines — Mikula, Vasily, Persha, Timofey, Nechay, Pakhom and
 Terenty — together with the family variants.
 
-Kozlyakov's reference to **RGADA, f. 210, Moskovsky stol, stolbtsy, d. 11,
+Kozlyakov's reference to **РГАДА, f. 210, Moskovsky stol, stolbtsy, d. 11,
 fol. 137; d. 12, fols. 357, 384, 400** relates to a composite list of inquiry
 materials of various towns. It does not assign folios to towns and therefore cannot
 be called the exact address of the Oryol list. For Oryol there is so far only one exact
@@ -8586,8 +8586,8 @@ as a pre-established Oryol call number.
 A check of the old palace numbering gave a confirmed address result.
 Sukhotin reported that the fragment he published was in the Moscow Section of
 the General Archive of the Ministry of the Imperial Court as **stolbets no. 37573**.
-Direct viewing of [the official sheet of the RGADA inventory](http://rgada.info/opisi/396-opis_1-24/0024.jpg)
-located it as **RGADA, f. 396, op. 1, ch. 24, d. 37573, carton 64,
+Direct viewing of [the official sheet of the РГАДА inventory](http://rgada.info/opisi/396-opis_1-24/0024.jpg)
+located it as **РГАДА, f. 396, op. 1, ch. 24, d. 37573, carton 64,
 522 fols.** On sheet 33 of the inventory the heading reads: «Роспись о выдаче жалованья
 с 121 г. по 126 г. разным людям за Смоленскую службу и за раны» ("Register of the payment of salary from the year 121 to the year 126 to various people for the Smolensk service and for wounds"). That is
 1612/13–1617/18.
@@ -8611,7 +8611,7 @@ all 522 folios still need to be checked, including those misordered and not
 published by Sukhotin, for the variants
 Anfilogov/Anpilogov and for the names of the seven paternal lines.
 
-The official RGADA collection of unique storage units was checked with a separate
+The official РГАДА collection of unique storage units was checked with a separate
 exact query **37573**. The service answers "No records found": the file is not
 included in the open folio-by-folio viewer. This closes the false path of searching for
 a "hidden" link to the frames, but does not mean the file itself is lost. To read
@@ -8630,7 +8630,7 @@ the «Дворцовые разряды», pp. 147–148. The map does not chang
 the route of a bearer of the family series under study.
 
 [Open scan of Kozlyakov's book](https://djvu.online/file/TjLCjL0xo3U9E),
-[full scan of Sukhotin at the GPIB](https://elib.shpl.ru/ru/nodes/4821-vyp-9-chetvertchiki-smutnogo-vremeni-1604-1617-1912),
+[full scan of Sukhotin at the ГПИБ](https://elib.shpl.ru/ru/nodes/4821-vyp-9-chetvertchiki-smutnogo-vremeni-1604-1617-1912),
 [«Дворцовые разряды» for 1613/14](https://www.vostlit.info/Texts/Dokumenty/Russ/XVII/1600-1620/Dvorc_razryady_1/4.htm),
 [publication of the surviving northern «Книга сыскная» (Inquiry Book)](https://www.vostlit.info/Texts/Dokumenty/Russ/XVII/1600-1620/Sysk_spisok_detej_bojar_1613/pred.phtml).
 
@@ -8639,7 +8639,7 @@ the route of a bearer of the family series under study.
 The old open database «Служивые люди XVII века» (Servicemen of the 17th Century) was checked not as a simple
 surname index but through its fields for notes, kinship, folios and former place of
 service. This revealed the contents of two Kursk files that are not visible in
-the modern short index: **RGADA, f. 210, op. 12, d. 1491 and 1559**.
+the modern short index: **РГАДА, f. 210, op. 12, d. 1491 and 1559**.
 
 The densest group is on fols. 1057–1076 of file 1559. Ivan Fomin syn,
 Terenty Gurov syn and Danila Stepanov syn Anpilogov spoke directly of leaving
@@ -8710,7 +8710,7 @@ and the Oryol pikeman Nikifor. But one name is not enough to declare
 the men of 1689 to be these fathers. For now they are targeted candidates for reading the folios,
 not ready-made kinship links.
 
-The inventory explains the military context: **RGADA, f. 210, op. 5, d. 68** —
+The inventory explains the military context: **РГАДА, f. 210, op. 5, d. 68** —
 the discharge review list of Neplyuev's regiment, which had returned from the second Crimean
 campaign; the required part occupies fols. 185–534. A Record has been created,
 `PUB-DOMPREDKOV-1689-OREL-ANPILOGOVY-NEPLYUEV`. No new route has been
@@ -8747,7 +8747,7 @@ chain.
 
 ### The File on the Restoration of Oryol Must Not Be Cut Off by Estate
 
-The status of **RGADA, f. 210, op. 12, ch. 1, d. 65** — documents on
+The status of **РГАДА, f. 210, op. 12, ch. 1, d. 65** — documents on
 the building of Oryol in 1635–1636 after the Lithuanian devastation — has been clarified. The article by
 I. E. Kushelev deals above all with the town streltsy, Cossacks,
 gunners (pushkari) and zatinshchiki, and deliberately does not include the district deti
@@ -8762,7 +8762,7 @@ One should search for the forms **Anpilogov, Anfilogov, Onpilogov, Onfilogov,
 Ampilogov, Anpilov, Ampilov, Anpliogov**, without filtering the lines in advance by rank.
 
 A control set of personal names has also appeared for collation. The open index to
-the Oryol list of deti boyarskie of 1640 — **RGADA, f. 210, op. 14,
+the Oryol list of deti boyarskie of 1640 — **РГАДА, f. 210, op. 14,
 d. 114** — contains eight family lines: **Aleksey, Afanasy, two
 Vasilys, Grigory, Ivan, Kuzma and Fyodor Anpilogov**. Therefore in d. 65 one must
 search not only for graphic variants of the surname but also for these names without the surname:
@@ -8780,8 +8780,8 @@ will appear only after such a line is read, not from a general list of towns.
 
 [Publication by I. E. Kushelev with archival references](https://e-notabene.ru/view_article.php?aurora=0&id_article=69870&logged=0&nb=1).
 
-One more false shortcut has been checked. The open VGD index does indeed
-have a detailed description of **"d. 65"**, but this is **RGADA, f. 210, op. 4, d. 65** —
+One more false shortcut has been checked. The open ВГД index does indeed
+have a detailed description of **"d. 65"**, but this is **РГАДА, f. 210, op. 4, d. 65** —
 the Starodub desyatnya of 1631 on 332 folios. The required Oryol complex has
 a different full call number: **f. 210, op. 12, ch. 1, d. 65**. A coincidence of file number does not
 mean a coincidence of manuscript; the description found and the microfilm of the Starodub
@@ -8806,7 +8806,7 @@ name, rank, relative and former town will be able to link a man even where
 the surname is omitted or distorted.
 
 In parallel, a full open photocopy of the neighbouring review book
-**RGADA, f. 1157, op. 1, d. 9 for 1686/87** has been found. In a public
+**РГАДА, f. 1157, op. 1, d. 9 for 1686/87** has been found. In a public
 Yandex.Disk collection the town part **fols. 871–940 v.** and
 Oryol district **fols. 941–1118 v.** are marked separately. Reduced copies of the whole town part
 have been viewed; the entry for Gur has not yet been located, because the name index
@@ -8839,14 +8839,14 @@ names Anfilogovs/Anpilogovs among them.
 
 The archival call number of the charter is not given in the note. A search for the exact phrases, the names of Polev and
 Ogarev and the combination Bolkhov—Kromy in open publications and recognised inventories of
-RGADA did not yield the text of the charter. Therefore no route of a specific family branch is
+РГАДА did not yield the text of the charter. Therefore no route of a specific family branch is
 created, and the find remains a mechanism of settlement and an address for archival search.
 
 The digital availability of a candidate source for the Kursk line of
-Fyodor Anpilogov of 1605–1618 — **RGADA, f. 210, op. 24, d. 5** — was checked separately. In
-the GIS UIAD interface, inventories 1, 4, 9, 12, 18, 19, 22
+Fyodor Anpilogov of 1605–1618 — **РГАДА, f. 210, op. 24, d. 5** — was checked separately. In
+the ГИС УИАД interface, inventories 1, 4, 9, 12, 18, 19, 22
 and 25 are presented for fond 210; there is no inventory 24. This closes the possibility of reading the 138 folios
-of the file online immediately, but does not rule out ordering the original or a copy from RGADA.
+of the file online immediately, but does not rule out ordering the original or a copy from РГАДА.
 
 [Surviving copy of the Kursk historical note](https://www.krug-shar.ru/forum/viewtopic.php?f=87&t=5137&view=print),
 [description of the presumed file 210-24-5](https://inv.velikie.org/archive/rgada/210/24/).
@@ -8862,14 +8862,14 @@ the stroelnaya (construction) book of Kursk of the voivode Ivan Polev and the do
 burned in the Moscow fire of 1626, but that **he had found separate extracts from these books
 in the archive**.
 
-Most important, a reference is given: **TsGADA, f. 210, Razryadny prikaz, Prikazny stol,
+Most important, a reference is given: **ЦГАДА, f. 210, Razryadny prikaz, Prikazny stol,
 stb. 34, fols. 44–45**. This is the first exact archival address of a surviving document
 connected with the fate of the Kursk stroennaya book.
 
 The full official inventory of part 1 of inventory 13 has been checked page by page. The re-numbering
 turned out to be direct: scan 54 bears the heading **«Ст. 34»** ("Stb. 34"), that is, the old
 stolbets number has been kept as the number of the modern storage unit. The full order
-address: **RGADA, f. 210, op. 13, ch. 1, d. 34, fols. 43–46**. Two neighbouring folios
+address: **РГАДА, f. 210, op. 13, ch. 1, d. 34, fols. 43–46**. Two neighbouring folios
 have been added so as not to lose the beginning and end of Anpilogov's document.
 
 The file contains 675 folios and is dated 1628–1634. Folios 44–45 belong to
@@ -8892,7 +8892,7 @@ Kursk archivists that become a new path to the call number of the 1596 charter.
 ### G. N. Anpilogov's Personal Reader's File in the Kursk Archive
 
 In the official inventory of the combined reading-room fonds of the State
-Archive of Kursk Oblast a separate file has been found: **GAKO, f. R-2969, op. 7,
+Archive of Kursk Oblast a separate file has been found: **ГАКО, f. R-2969, op. 7,
 d. 1478, "Anpilogov Grigory Nikolaevich"**, 20 folios. Two dates — 24 June
 1960 and 23 July 1968 — show at least two of his visits to
 the archive.
@@ -8905,19 +8905,19 @@ sources he actually worked with and, possibly, traces of extracts issued
 to him. The twenty folios themselves are not openly available, so it cannot yet
 be asserted that copies of ancient texts are enclosed in the file.
 
-This is the second targeted order after RGADA: to obtain the file in full and copy out all
+This is the second targeted order after РГАДА: to obtain the file in full and copy out all
 the archival call numbers from the requisitions of 1960 and 1968. Especially check any references
 to the founding of Kursk, Ivan Polev, Oryol, Mtsensk, Bolkhov, Kromy, the stroennye
 books and servicemen of the late 16th century.
 
-[Official inventory of GAKO, f. R-2969, op. 7](https://archive.rkursk.ru/sites/default/files/Opisi/2_-_sovet/R-2969%20-%207.pdf).
+[Official inventory of ГАКО, f. R-2969, op. 7](https://archive.rkursk.ru/sites/default/files/Opisi/2_-_sovet/R-2969%20-%207.pdf).
 
 ### A New Tactic: Not Towns in General, but Exact Files Across All Service Categories
 
 The public version of Aleksandr Shatokhin's database «Служилые люди XVII века» (Servicemen of
 the Seventeenth Century) was downloaded and checked in full for the forms Anpil-, Anfil-, Onpil-
 and Onfil-. It contains no names, folios or photocopies, but it gives dozens of exact archival
-addresses. The earliest new non-Oryol address is **Belgorod, 1633, siege roster: RGADA, f. 210,
+addresses. The earliest new non-Oryol address is **Belgorod, 1633, siege roster: РГАДА, f. 210,
 op. 12, d. 50, one occurrence of Anpilogov**. Then come the Kursk desyatnya (muster roll) of
 1636, the Belgorod files of 1639–1648, Khotmyzhsk, Oboyan and a broad network in the second half
 of the century.
@@ -8943,7 +8943,7 @@ An important correction to the Livny hypothesis: Krivtsova's article lists eight
 Sazhnoe circle with Livny, not Nikita himself. Consequently, the entry of 1616 proves a presence in
 Belgorod, but neither a route Livny → Belgorod nor a link with the Oryol core.
 
-Finally, within the mixed file **RGADA, f. 210, op. 6v, d. 10 for 1653–1662** the open name index
+Finally, within the mixed file **РГАДА, f. 210, op. 6v, d. 10 for 1653–1662** the open name index
 does indeed name **Zinov Onpilogov, Belgorod**. A separate index profile has been created for him.
 This is direct confirmation of the remark about service categories: lines with the surname may lie
 precisely in such heterogeneous collections.
@@ -8954,7 +8954,7 @@ precisely in such heterogeneous collections.
 ## 28 August 2026: Two New Lines — Kamenny Zaton and Derivative Oryol Extracts
 
 A consolidated name search across open archival indexes turned up a new item:
-**RGADA, f. 210, op. 6d, d. 186, 1704 — «Анпилогов» (Anpilogov), ll. 117, 187**.
+**РГАДА, f. 210, op. 6d, d. 186, 1704 — «Анпилогов» (Anpilogov), ll. 117, 187**.
 The official electronic inventory clarifies the content of the file: it is a 1,021-folio collection
 of documents from 1703–1704 — lists, charters, reports (otpiski), petitions, decrees, news,
 interrogations and other papers on the administration and defence of Kamenny Zaton. Thus the
@@ -8973,7 +8973,7 @@ entries of the file are Vasily Dmitrievich Anpilogov (l. 67), Aleksey Vasilyevic
 (l. 94 v.) and Ivan Vasilyevich Anfilokhov (l. 109). The new item of 1704 must not be joined to the
 false machine lines of 1620/21.
 
-In the open inventory **RGADA, f. 1209, op. 78, pt. 2** two addresses were found for switching the
+In the open inventory **РГАДА, f. 1209, op. 78, pt. 2** two addresses were found for switching the
 search tactic from the surname itself to late copies of land evidence:
 
 - **d. 2227, 3 folios** — an extract (vypis) drawn up no earlier than 1675–1676 from the
@@ -8982,7 +8982,7 @@ search tactic from the surname itself to late copies of land evidence:
   very survival of a separate extract proves that derivative copies of the book we need exist.
 - **d. 2223, 80 folios, 19 August 1671 — 18 January 1672** — a court case of Artemy Kamynin
   against Semyon and Yakov Trunov over pomestya in Oryol district. It is especially interesting
-  because in the GAOO file of 1794–1809 Kamynin is already in dispute with the Trunovs and the
+  because in the ГАОО file of 1794–1809 Kamynin is already in dispute with the Trunovs and the
   Anpilogovs. This is not yet proven continuity of the dispute, but a strong candidate for an
   earlier chain of land acts.
 
@@ -8992,10 +8992,10 @@ The cards `PUB-RGADA-210-6D-186-1704-KAMENNY-ZATON-ANPILOGOV-INDEX`,
 profile and the map are postponed until the originals are read; for the two files of fond 1209
 these are search cards without profiles of other people and without family points.
 
-### The Open RGADA Inventories Checked at Three Levels
+### The Open РГАДА Inventories Checked at Three Levels
 
 The public search of the «Великие описи» (Great Inventories) could be checked not only through the
-pages of individual inventories but across the whole RGADA database and across three separate
+pages of individual inventories but across the whole РГАДА database and across three separate
 layers: file headings, enclosed documents and entries. The roots **Ampil-, Anpil-, Onpil-, Anfil-,
 Onfil-** were covered, the full forms of the surname, the personal names **Анфилоф, Анфилог,
 Онфилоф, Онфилог, Амфилох** (Anfilof, Anfilog, Onfilof, Onfilog, Amfilokh), seven patronymic
@@ -9010,7 +9010,7 @@ bring out only a few main names, and an early surname may lie inside an unread e
 ### Pavel Onakhin Did Not Turn Out to Be a Continuator of Anpilog Onanyin
 
 One inventory item at first looked like a possible continuation of the main local hypothesis.
-**RGADA, f. 1209, op. 78, pt. 2, d. 2217** holds a three-folio, dilapidated «Запись о поместьях
+**РГАДА, f. 1209, op. 78, pt. 2, d. 2217** holds a three-folio, dilapidated «Запись о поместьях
 Никиты Куракова, Павла Ивановича Онахина и Михаила Борисовича Селехова в [Орловском] уезде»
 (Record of the pomestya of Nikita Kurakov, Pavel Ivanovich Onakhin and Mikhail Borisovich Selekhov
 in [Oryol] district), dated no earlier than 1643–1644. The form `Онахин` could have seemed a
@@ -9018,7 +9018,7 @@ mistaken rendering of `Онаньин` — the surname of the very Oryol family 
 lived.
 
 A check against the primary scan removed this possibility. In the open digital copy of the
-estimate book (smetnaya kniga) of Oryol of 1642, **RGADA, f. 210, op. 4, d. 260, l. 386**, one
+estimate book (smetnaya kniga) of Oryol of 1642, **РГАДА, f. 210, op. 4, d. 260, l. 386**, one
 reads **«Павел Иванов сын Онахин»** (Pavel Ivanov syn Onakhin); the name index renders the initial
 vowel as `Анахин`. On **l. 403 v. of the same book** there is a separate entry **«Ивашко Офремов
 сын Онаньин»** (Ivashko Ofremov syn Onanyin). So the forms Onakhin/Anakhin and Onanyin coexist in
@@ -9038,7 +9038,7 @@ and no new point on the family map are created.
 [publication of the index to the estimate of 1642](https://forum.vgd.ru/post/5703/135781/p5369181.htm#pp5369181),
 [open folder of photocopies](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ).
 
-This is exactly how a new address appeared. In **RGADA, f. 1209, op. 78, pt. 2, d. 2253** the
+This is exactly how a new address appeared. In **РГАДА, f. 1209, op. 78, pt. 2, d. 2253** the
 following lie together on four folios:
 
 - an extract from the survey books concerning pomestya in Kamensky and Taichukovsky stany of Oryol
@@ -9070,7 +9070,7 @@ have been named yet.
 ### Oskol Anpilogovs: a Household Found Beyond the Earlier Monastery Statement
 
 A repeated check of A. P. Nikulov's full edition revealed an important detail of the already known
-entry **RGADA, f. 1209, kn. 344, l. 91 v.** In the supplementary search of 16 December 1646 there
+entry **РГАДА, f. 1209, kn. 344, l. 91 v.** In the supplementary search of 16 December 1646 there
 is the entry: **«Двор — крестьянин Андрюшка Петров сын Анпилогов, у него сын Ивашко»** ("Household
 — the peasant Andryushka Petrov syn Anpilogov, he has a son Ivashko"). These are Andrey Petrovich
 Anpilogov and his son Ivan Andreevich, who lived under the St Nicholas Monastery at Kholkovo
@@ -9128,8 +9128,8 @@ original l. 36 v. and an outgoing Dedilov extract about the storehouse (klet), h
 
 #### The Original Dedilov Manuscript Is Already Digitised
 
-The path to verification has now become exact. In the GIS UIAD catalogue a separate file was
-found: **RGADA, f. 1209, op. 1, d. 124**: the pripravochnaya (reference) book of Dedilov of
+The path to verification has now become exact. In the ГИС УИАД catalogue a separate file was
+found: **РГАДА, f. 1209, op. 1, d. 124**: the pripravochnaya (reference) book of Dedilov of
 1588–1589, a seventeenth-century copy, **174 folios**. The official identifier of the digital card is
 `10000393439014`. So there is no longer any need to look for an unknown original or to order the
 whole book blindly. Three addressed frames are needed:
@@ -9144,25 +9144,25 @@ whole book blindly. Three addressed frames are needed:
 
 A second path has also been found, but it requires correcting the archival address. The inventory
 of former **d. 487** says that the Tula book occupied ll. 1–860 and the Dedilov one ll. 861–1024;
-then the file was transferred to the RNB (National Library of Russia) under the call number
-**f. 550, OSRK, Q.IV.238**. A check of the official electronic catalogue of the RNB gave a
+then the file was transferred to the РНБ (National Library of Russia) under the call number
+**f. 550, ОСРК, Q.IV.238**. A check of the official electronic catalogue of the РНБ gave a
 contradiction: under the exact call number **Q.IV.238** it describes a different document — «О
 зачатии и рождении Петра I» (On the Conception and Birth of Peter I), eighteenth century; a search
 for the words "Dedilov" and "Tula district" did not show the book we need. So this call number cannot
 be repeated as a reliable current address: it may be out of date, transmitted with an error, or
 refer to a move not yet reflected. A separate inquiry is needed from the Department
-of Manuscripts of the RNB, giving the former RGADA call number and the first and last folios.
+of Manuscripts of the РНБ, giving the former РГАДА call number and the first and last folios.
 
 This contradiction had already been noticed independently before us. In inquiry No. 51100 of
-27 January 2024 a researcher quoted the same inventory of d. 487 in full and asked the RNB how to
+27 January 2024 a researcher quoted the same inventory of d. 487 in full and asked the РНБ how to
 find the manuscript. The virtual reference service did not give a corrected call number and
 forwarded the question directly to the Department of Manuscripts. So the problem is not our typo;
 at the same time such an answer does not prove that the book is lost — it only leaves its current
 address unestablished.
 
 [Inventory of former d. 487](https://metrics.tilda.ws/gisuiad?fund=1209&inv=1&case=487#rgada_opisi),
-[official RNB manuscript catalogue](https://nlr.ru/manuscripts/RA1527/elektronnyiy-katalog),
-[RNB answer to inquiry No. 51100](https://www.vss.nlr.ru/query_info_print.php?query_ID=51100).
+[official РНБ manuscript catalogue](https://nlr.ru/manuscripts/RA1527/elektronnyiy-katalog),
+[РНБ answer to inquiry No. 51100](https://www.vss.nlr.ru/query_info_print.php?query_ID=51100).
 
 One more boundary matters. The Yandex link already used leads to a 123-megabyte PDF of the
 **printed edition** «Писцовые книги Московского государства» (Survey Books of the Muscovite State),
@@ -9293,13 +9293,13 @@ created on the map.
 
 Source card: `PUB-SAVELOV-1906-V1-P102-BAZDYREVY`. A photocopy of p. 102 has been saved in the
 research archive.
-[Scan of the issue at the GPIB](https://elib.shpl.ru/ru/nodes/42877-vyp-1-a-b-1906).
+[Scan of the issue at the ГПИБ](https://elib.shpl.ru/ru/nodes/42877-vyp-1-a-b-1906).
 
 ### 1573: the Full List of the Sovereign's Court Does Not Contain the Family We Need
 
 The new tactic was used to check not another search for one surname, but the full alphabetical
 index to the **1,849 names** of the list of Ivan the Terrible's court of 20 March 1573. The document
-survives in the RNB, Hermitage collection, No. 542, 40 folios, and was published by D. N. Alshits in
+survives in the РНБ, Hermitage collection, No. 542, 40 folios, and was published by D. N. Alshits in
 2003.
 
 The forms Anfilogov, Anpilogov, Onfilogov, Ampilogov and Anfilof are absent. Also absent is the more
@@ -9322,7 +9322,7 @@ with a formula of earlier service.
 
 Verification card:
 `PUB-ALSHITS-1573-OPRICHNY-DVOR-ANFILOGOV-AUDIT`.
-[Official card of the edition in the NEB](https://rusneb.ru/catalog/000200_000018_RU_NLR_bibl_492373/),
+[Official card of the edition in the НЭБ](https://rusneb.ru/catalog/000200_000018_RU_NLR_bibl_492373/),
 [full name index](https://kdkv.narod.ru/Opr1573/Opr-1573-Spis.html).
 
 ### 1563: the Pre-Oryol Service Belt in the Book of the Polotsk Campaign
@@ -9365,14 +9365,14 @@ Anfilogovs, so the map does not change.
 
 Research card:
 `PUB-PETROV-1563-POLOTSK-UPPER-OKA-PRE-OREL-POOL`.
-[Official section of free RNB publications](https://nlr.ru/publ/book_free.html),
+[Official section of free РНБ publications](https://nlr.ru/publ/book_free.html),
 [description of the publication and full text](https://opentextnn.ru/old/history/arkheography/metod/polockiypokhod/index.html%40id%3D5228).
 
 ### 1589–1595: Why It Is Pointless to Look for the Next Dedilov Census
 
 A check of the public inventory of the fond of the Pomestny prikaz refined the very structure of
 the gap. For Dedilov there survives the pripravochnaya book of 1588–1589 —
-**RGADA, f. 1209, op. 1, d. 124**, as well as a second, incomplete copy of the same
+**РГАДА, f. 1209, op. 1, d. 124**, as well as a second, incomplete copy of the same
 text within d. 487. There is no independent next Dedilov survey, allotment or otkaznaya (land
 transfer) book for the needed **1589–1595** in the published list. Comparable named books appear
 only in the seventeenth century.
@@ -9384,7 +9384,7 @@ document — a memorandum on enrolment from Cossacks into deti boyarskie, an otk
 transfer extract) for the Oryol zaimishche, a record of removal from Dedilov service, a surety bond or
 a late petition with a formula naming the earlier town.
 
-An additional full-text search of the published RGADA inventories did not produce an early file
+An additional full-text search of the published РГАДА inventories did not produce an early file
 annotated with the name of Ivan Nechaev or the forms Anpilogov/Anfilogov. This does not mean the man
 is absent from the files: archival headings rarely list all participants. But general queries by
 surname are now exhausted; the next search must proceed by type of act and by the formula of
@@ -9393,7 +9393,7 @@ transition.
 The candidate card has been updated:
 `PUB-PKMG-1587-TULA-DEDILOV-TRUNOV-BAZDYREV`.
 [Public list of Dedilov books](https://dompredkov.ru/dedilovskie-pistsovye-i-perepisnye-knigi/),
-[full-text search of the RGADA inventories](https://rgada.sovadev.pro/).
+[full-text search of the РГАДА inventories](https://rgada.sovadev.pro/).
 
 ### The False Northern Rezanovo Route Cut Off by the Primary Text
 
@@ -9427,7 +9427,7 @@ of Timofey Danilovich and his sons Vasily, Ivan, Ignat, Konstantin, Nikita and F
 separately named are Vasily Nikitich, Vasily Pavlovich, Ivan Savelyevich, the young Ivan Fyodorovich,
 Rodion Fyodorovich and **Fedka Ivanov syn Rezantsov**. The last is especially important: he stands on
 the same paternal rung as the Oryol Maksim and Lomaka Ivanovich Rezantsov. Now his own entry has also
-been found: **RGADA, f. 210, op. 4, d. 86, l. 60 v.; printed p. 47**. Fedka is placed in the section
+been found: **РГАДА, f. 210, op. 4, d. 86, l. 60 v.; printed p. 47**. Fedka is placed in the section
 of noviki of 1602/03 who were enrolled with a money salary in 1604; he was assigned a pomestye oklad
 of **100 chetverti**, and the money was not paid out pending the sovereign's decree. This is the exact
 date of his inclusion in the Yelets service corporation. He may still be a third son of one Ivan or a
@@ -9441,7 +9441,7 @@ deti boyarskie next to **Aleksey Polyansky**. Both family stems belong to the De
 packet. The book gives Timofey no patronymic, so he cannot yet be identified with Timofey Danilovich of
 1604.
 
-The main explanation was found in an earlier report (otpiska) of the Yelets voivodes of 1592 (RGADA,
+The main explanation was found in an earlier report (otpiska) of the Yelets voivodes of 1592 (РГАДА,
 f. 141, op. 1, 1592, d. 1, ll. 63–64). In Yelets 200 deti boyarskie were to be settled and recruited
 **from various towns** on a family principle: «из-за отцов неслужилые: отцов — дети, от братии —
 братья, от дядь — племянники» ("non-serving men from behind their fathers: sons from fathers, brothers
@@ -9483,12 +9483,12 @@ about an earlier place or a divided family will be able to distinguish these var
 [report on the enrolment of Yelets deti boyarskie, 1592](https://drevlit.ru/docs/russia/XVI/1580-1600/Anpilogov_new_dok/21-40/25.php),
 [list of Yelets deti boyarskie of 1615–1618](https://nashi-predki.ru/wiki/1615-1618_%D0%B3%D0%B3._%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B8%D1%85_%D0%B4%D0%B5%D1%82%D0%B5%D0%B9_%D0%B1%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%B8%D1%85).
 
-### Two New Exact Archival Addresses from the Current RGADA Catalogue
+### Two New Exact Archival Addresses from the Current РГАДА Catalogue
 
-The machine-readable GIS UIAD catalogue made it possible to obtain stable cards, not just old printed
+The machine-readable ГИС УИАД catalogue made it possible to obtain stable cards, not just old printed
 descriptions.
 
-The first address is **RGADA, f. 1209, op. 1, kn. 256, ll. 1–503**: extracts from the survey,
+The first address is **РГАДА, f. 1209, op. 1, kn. 256, ll. 1–503**: extracts from the survey,
 inspection (dozornye) and boundary books of the coachmen's (yamskie) slobody of 1581–1737. One
 collection lists Bolkhov, Mtsensk, Novosil, Kursk and Stary Oskol. This is not a desyatnya of deti
 boyarskie but an eighteenth-century copy of earlier books; the overall date of 1581 cannot yet be
@@ -9496,7 +9496,7 @@ transferred to each town section. But the source may preserve pre-Oryol househol
 road milieu of neighbouring towns, so the first requirement is the table of contents and an exact
 dating of three sections — Bolkhov, Mtsensk and Novosil.
 
-The second address refines the already known transfer of streltsy: the official card of **RGADA,
+The second address refines the already known transfer of streltsy: the official card of **РГАДА,
 f. 210, op. 9, d. 153** has an exact digital path. The catalogue confirms the file and its dating to
 1639–1640, but does not open ll. 83–85 and does not prove that images exist. During the check the
 portal was unavailable, so the names of the streltsy transferred from Mtsensk to Oryol remain unknown.
@@ -9507,7 +9507,7 @@ portal was unavailable, so the names of the streltsy transferred from Mtsensk to
 ### A Full-Text Audit of All Inventories: What Has Really Been Ruled Out
 
 The search was extended from individual official PDFs to an independent OCR layer of the published
-RGADA inventories. Checked were not only the forms Anfilogov, Anpilogov, Onfilogov, Onpilogov and
+РГАДА inventories. Checked were not only the forms Anfilogov, Anpilogov, Onfilogov, Onpilogov and
 Ampilogov, but also the exact pairs of first names and patronymics of the early Oryol core, the
 neighbouring surnames, the old words **орляне/орлян** (orlyane/orlyan, "Oryol men") and the formulas
 **сведён, переведён, верстан, поместье** ("transferred, moved, enrolled, pomestye").
@@ -9534,7 +9534,7 @@ named.
 The check has been entered in the card
 `PUB-RGADA-F210-EARLY-OREL-CATALOG-AUDIT`.
 [Full-text search of the inventories](https://rgada.sovadev.pro/),
-[official RGADA inventories](http://rgada.info/).
+[official РГАДА inventories](http://rgada.info/).
 
 ### 1585: One More Kashira Serviceman Was "at Oryol"
 
@@ -9546,7 +9546,7 @@ Kashira and early Oryol. In the section **«Кошира»** (Koshira, i.e. Kash
 >
 > *Translation:* "Pyotr Fyodorov syn Ondreeva. (Absent.) At Oryol."
 
-Modern archival address: **OR RGB, f. 29, No. 103, l. 101**; scholarly publication by Yu. V.
+Modern archival address: **ОР РГБ, f. 29, No. 103, l. 101**; scholarly publication by Yu. V.
 Ankhimyuk, 1990, p. 65. The full formula reads as Pyotr Fyodorovich Andreev. The heading preserves his
 membership of the Kashira vybor (selected servicemen), and the note explains his absence from Moscow by
 current service in Oryol.
@@ -9560,7 +9560,7 @@ Ankhimyuk directly compared this Pyotr with the Kashira man Andreev. So the note
 an indefinite trip but command service as golova of the Oryol garrison.
 
 Source of the second line: «Разрядная книга 1475–1598 гг.» (Razryad Book of 1475–1598), Moscow, 1966,
-pp. 350–351; the main Uvarov copy — GIM, Uvarov collection, No. 950, ll. 481 v.–482. The new link to a
+pp. 350–351; the main Uvarov copy — ГИМ, Uvarov collection, No. 950, ll. 481 v.–482. The new link to a
 post sets a concrete archival cluster: the papers of Foma Buturlin, Ivan Fefilatyev and Pyotr Andreev,
 especially the lists of subordinates, arrivals and absences (nety) attached at the change of golova.
 
@@ -9577,8 +9577,8 @@ resettlement route. Pyotr does not belong to the researched surname, so no profi
 created. Card:
 `PUB-ANKHIMYUK-1585-KASHIRA-PETR-ANDREEV-ON-OREL`.
 [Article and full text of the publication](https://ebookiriran.ru/index.php?id=696&section=9&view=article),
-[official PDF of the IRI RAN](https://iriran.ru/sites/default/files/2022-07/IpoI_1990.pdf),
-[official card of the open copy of the Razryad Book in the RGB](https://search.rsl.ru/ru/record/01002708318),
+[official PDF of the ИРИ РАН](https://iriran.ru/sites/default/files/2022-07/IpoI_1990.pdf),
+[official card of the open copy of the Razryad Book in the РГБ](https://search.rsl.ru/ru/record/01002708318),
 [Kashira desyatnya of 1599](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Desjatni_XVI_v/text6.htm).
 
 ### 1550s–1585: Pyotr's Predecessor Reveals One More Route — Yuryev-Polsky → Oryol
@@ -9595,7 +9595,7 @@ Yuryev**. The brief notes are distributed between the brothers: «В жильц�
 refers to Ivan, «Умре» ("died") to Matvey. This is confirmed not by a guess from punctuation but by two
 later documents. In the surety records (poruchnye zapisi) of 1563 and 1564/65 the full formula **«Иван
 Ондреев сын Фефилатьев»** (Ivan Ondreev syn Fefilatyev) appears independently. In the second record he
-is one of 81 guarantors for the boyar Lev Andreevich Saltykov and his sons; original: **RGADA, f. 135,
+is one of 81 guarantors for the boyar Lev Andreevich Saltykov and his sons; original: **РГАДА, f. 135,
 section III, rubric II, No. 33, ll. 1–3**.
 
 The Oryol Razryad entry of 1585 preserves all three elements of the same rare naming — Ivan, Ondreev
@@ -9665,7 +9665,7 @@ Anfal", "son of Onfal", "Anfalov", "Onfalov") in town desyatni, the Dvorovaya te
 genealogical materials. As long as there is neither a formula of transfer to Oryol nor kinship with the
 Oryol Anfilogovs of the 1590s, no profile and no route on the family map are created.
 
-Original: **RGADA, f. 135, section III, rubric II, No. 27, ll. 1–7**; a copy of the 1770s — ibid.,
+Original: **РГАДА, f. 135, section III, rubric II, No. 27, ll. 1–7**; a copy of the 1770s — ibid.,
 ll. 8–19 v. The card `PUB-PORUCHNAYA-1563-RYCHKO-ONFALOV-ANFALOV-VOLOTSKY` has been created.
 [Scholarly publication of the original](https://vostlit.info/Texts/Dokumenty/Russ/XVI/1520-1540/Porucn_zapisi_1527_1571/text.phtml).
 
@@ -9706,15 +9706,15 @@ is brought to Oryol only through Rychko's joint presence with the future Oryol g
 the surety record of 1563; a resettlement of the Volotskys or their kinship with Anfilogovs has not been established.
 
 The card `PUB-ASEI-1504-1505-ONFAL-SEMENOV-VOLOTSKY` has been created, with photocopies of printed
-pages 473–474 saved in it. Sources: **ASEI, vol. II, Moscow, 1958, Nos. 430–431, pp. 473–474**;
-originals — **RGADA, f. 281, Nos. 3340 and 3341**;
+pages 473–474 saved in it. Sources: **АСЭИ, vol. II, Moscow, 1958, Nos. 430–431, pp. 473–474**;
+originals — **РГАДА, f. 281, Nos. 3340 and 3341**;
 [critical analysis by I. V. Zaitsev](https://vostlit.info/Texts/Dokumenty/Russ/XVI/1500-1520/Sinodik_Kazan/text.phtml),
 [archaeographic check by L. V. Moshkova](https://aarheo.ru/files/Vestnik_Alyans-Arkheo._Vyp._31.pdf).
 
 ### 1686: the Genealogical Roll Did Not Join Rychko to Anfal but Created a Different Chain
 
 The full publication of the original genealogical roll (rodoslovnaya rospis) of the Volotskys,
-submitted on 7 May 1686, has been found and visually checked. It is held in **RGADA, f. 210, op. 18,
+submitted on 7 May 1686, has been found and visually checked. It is held in **РГАДА, f. 210, op. 18,
 ed. khr. 51, ll. 1–2** and was printed by L. E. Shabaev in the almanac «Российская генеалогия»
 (Russian Genealogy), issue 7, pp. 305–306.
 
@@ -9775,7 +9775,7 @@ On the next page stands:
 >
 > *Translation:* "[Held] by Ermak Pakhomov syn Anpilogov in the same village of Maltsovskaya."
 
-The line about Malets was checked visually against an independent digital image of the RGB, not just
+The line about Malets was checked visually against an independent digital image of the РГБ, not just
 against OCR. A full photocopy of p. 1015 has been saved in the project archive. **Malets** is a
 documented secular personal name of the sixteenth century; in other acts one meets, for example, a
 separate man Malets Timonin. So "Malets Pakhomov" is read as a name and a possible patronymic, not as
@@ -9796,8 +9796,8 @@ The new priority document is an otkaznaya or allotment record by which Malets Pa
 to Danila Deriglazov. Such a record may name the death or departure of the former holder, his heirs, the
 date and earlier service. The find has been entered in the card `PUB-PKOU-1594-P1016-ERMAK` and in
 Pakhom's profile.
-[Page 1015 in the RGB viewer](https://viewer.rsl.ru/ru/rsl01003862088?page=1016&rotate=0&theme=white),
-[card of the RGO volume](https://elib.rgo.ru/handle/123456789/228023).
+[Page 1015 in the РГБ viewer](https://viewer.rsl.ru/ru/rsl01003862088?page=1016&rotate=0&theme=white),
+[card of the РГО volume](https://elib.rgo.ru/handle/123456789/228023).
 
 ### The Deriglazovs Gave the First Multi-Generation Trace of the Oryol–Kursk Service Network
 
@@ -9840,7 +9840,7 @@ But there are as yet no lines «сошёл с Орла» ("came down from Oryol"
 entry is not the same as a resettlement party. So no Oryol–Kursk route is drawn on the map.
 
 The priority now is not general surname lists but the original Kursk pomestye grants of two specific
-people: Grigory Larin syn Deriglazov and Fyodor Grigoryev syn Onpilogov. Needed are RGADA, f. 210,
+people: Grigory Larin syn Deriglazov and Fyodor Grigoryev syn Onpilogov. Needed are РГАДА, f. 210,
 op. 4, d. 300, l. 6 v. and f. 210, op. 12, d. 7, ll. 98–99, 121–122, 127. A formula naming an earlier
 town, a father's grant or a surety could turn the network trace into a proven transition.
 
@@ -9885,7 +9885,7 @@ but does not contain the full Ryazan–Ryazhsk layer of the sixteenth century an
 negative check of this direction.
 
 A new catalogue address shows where else documents of the original recruitment may be hiding. In
-**RGADA, f. 281, op. 17, d. 12222** lies an extract of 20 March 1700 in a land case whose heading
+**РГАДА, f. 281, op. 17, d. 12222** lies an extract of 20 March 1700 in a land case whose heading
 directly recalls villages taken in 1591/92 **«к Ряскому городу новоприборным казаком»** ("for the
 town of Ryazhsk, for newly recruited Cossacks"). The same extract includes a summary of charters of
 1592 and 1597. This is neither a route of Anfilogovs nor an Oryol act: not a single bearer of the
@@ -9894,7 +9894,7 @@ the circumstances of a sixteenth-century recruitment and land grant could surviv
 an official extract drawn up more than a hundred years later. So for Oryol one has to look through not
 only desyatni but also late disputes over old pomestya, even if the surname and the word "Oryol" are
 absent from the brief heading.
-[Card of the file in the GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000228014/10000000652014/10000045661014/).
+[Card of the file in the ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000228014/10000000652014/10000045661014/).
 
 The next decisive search is now addressed: extracts from the lost books of Mikhail Ozerov of 1573/74
 and the early entries of Nikifor, Oksyon and Pyotr Bazdyrev-Sviridov together with the Novikovs,
@@ -9923,7 +9923,7 @@ This is a fourth important mechanism: the state could turn a confiscated votchin
 pomestye and top up a returned captive (polonyanik) to his oklad. The formula «крымский полоняник»
 ("Crimean captive") tells of Ivan's fate, but not of his earlier town or birthplace. So the act explains
 how the corporation was staffed, but gives no route to Oryol. The original is known through a late
-transmission: RGADA, f. 286, op. 2, kn. 28, ll. 394–394 v.; a copy of 1776 from a copy of 1686–1688.
+transmission: РГАДА, f. 286, op. 2, kn. 28, ll. 394–394 v.; a copy of 1776 from a copy of 1686–1688.
 
 **Act No. 259** is a genuine extract from the inspection (dozornye) books for the pomestye of Andrey
 Mikulin in the villages of Volkovo and Moshkino in Kamensky stan. In Volkovo Andrey himself had a
@@ -9936,7 +9936,7 @@ Mikulin.
 
 This is an important example not of migration but of the **assembly of a new service pomestye**:
 the plots of at least three former holders were consolidated in two years under one recipient. The
-archival original of the extract is RGADA, f. 1209, stolbtsy (scroll files) for Ryazhsk,
+archival original of the extract is РГАДА, f. 1209, stolbtsy (scroll files) for Ryazhsk,
 No. 1193/42611; the editors date the extract itself to 1578–1593. The similarity of "Mikulin" to the
 Oryol "Mikulin deti Anfilogovy" (sons of Mikula Anfilogov) is not taken as kinship: for the Oryol
 brothers Mikula is the personal name of the common father, while here Mikulin is Andrey's independent
@@ -9971,7 +9971,7 @@ of Anfilogovs.
 
 ### The Kursk Provincial Archive Checked: the Proofs of the Ancient Branch Went to the Senate
 
-The official seven-folio inventory **GAKO, f. 1436, op. 1** made it possible to check the local fond of
+The official seven-folio inventory **ГАКО, f. 1436, op. 1** made it possible to check the local fond of
 the Kursk Noble Deputies' Assembly in full. The result turned out to be more important in terms of
 source criticism than a single surname match. The fond preserves only **19 scattered files of
 1760–1864**; there are no proceedings for the Bazdyrevs and no entries of 1828 or 1835 among them. The
@@ -9983,21 +9983,21 @@ This absence cannot be turned into a conclusion that the Bazdyrevs did not submi
 lineage. The same official inventory describes the procedure: the provincial genealogical book was read
 out at the noble assembly, and after approval **two copies** were made — one was handed to the
 provincial administration, the other was sent **to the Senate for keeping in the Heraldry Office**. So
-the late Senate complex in the RGIA is not an accidental duplicate: after the loss of almost the entire
+the late Senate complex in the РГИА is not an accidental duplicate: after the loss of almost the entire
 local fond it becomes the main surviving channel to the proofs of the sixth-part (ancient nobility)
 branch of the Bazdyrevs.
 
-The priority has been refined. There is no longer any need to order GAKO, f. 1436: the open inventory
-exhausts its contents. First needed is **RGIA, f. 1343, op. 17, d. 307**: the internal inventory, the
+The priority has been refined. There is no longer any need to order ГАКО, f. 1436: the open inventory
+exhausts its contents. First needed is **РГИА, f. 1343, op. 17, d. 307**: the internal inventory, the
 petition, the generational roll and the attachments. The test keys are **Yakov Semyonovich Bazdyrev**,
 the provincial decision of 24 June 1835, the entries in part VI of 1828 and 1835, and any old charters
 mentioning Bazdyrevo, Minov les (Minov Wood), Korchakov stan or an earlier town of service. File 308 of
 1859 remains second: by chronology it more probably belongs to the late part-II family of Dementy
 Ivanovich.
 
-[Official page of the GAKO inventories](https://archive.rkursk.ru/gako/dorev_opisi/),
-[GAKO inventory, f. 1436](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f1436.pdf),
-[the Bazdyrevs' file No. 307 in the RGIA](https://fgurgia.ru/object/6904559).
+[Official page of the ГАКО inventories](https://archive.rkursk.ru/gako/dorev_opisi/),
+[ГАКО inventory, f. 1436](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f1436.pdf),
+[the Bazdyrevs' file No. 307 in the РГИА](https://fgurgia.ru/object/6904559).
 
 ### From the Oryol Olfer to the Oboyan Mikifor: an Address Key to the Bazdyrevs' File Found
 
@@ -10019,7 +10019,7 @@ Oboyan skazki of 1697 the surname is present again.
 
 The degree of proof must be held strictly. Not a single open act calls Avdey and Mikifor brothers or
 says that their father was the Oryol Olfer Maksimovich specifically. Nor is the descent of the late
-Yakov Semyonovich from this branch proven. But now the file RGIA, f. 1343, op. 17, d. 307 has address
+Yakov Semyonovich from this branch proven. But now the file РГИА, f. 1343, op. 17, d. 307 has address
 keys: **Olfer — Mikifor — Ivan / Ermolay / Terenty**, the towns **Oryol — Kursk — Oboyan** and **the
 village of Dmitrovskoe**. If Yakov Semyonovich's generational roll leads to this cluster, the Senate file
 may preserve copies of lost Oryol documents of the seventeenth century.
@@ -10049,7 +10049,7 @@ the zaimishche of Grisha Kozlov and Vaska Mitusov") in the village of Gustovari 
 Vaska is no longer the current holder in the entry, but his name shows his participation in the
 clearing or claiming of this plot before the survey description.
 
-Now the obligatory control has been found. On the official image of the historical inventory **RGADA,
+Now the obligatory control has been found. On the official image of the historical inventory **РГАДА,
 f. 1209, op. 85, d. 13, l. 241**, entry No. 704, the same land memorandum is copied as **«в займище
 Гриши Козлова да Васьки Титулова»** ("in the zaimishche of Grisha Kozlov and Vaska Titulov"). The
 modern forum transcription made no mistake: in the manuscript of the register *Титулова* (Titulova) is
@@ -10100,7 +10100,7 @@ extracts of Mikita Rzhevsky and colleagues of the years [7]192 and [7]193"). So 
 books were compiled, their individual entries still lived on in private and church keeping and were used
 as proofs of land. Photocopies of the four key pages have been saved in the project archive.
 
-The official catalogue reference to **ASZ, vol. III, No. 521** has also been opened. This is a file of
+The official catalogue reference to **АСЗ, vol. III, No. 521** has also been opened. This is a file of
 the Pomestny prikaz of February — 5 March 1597 concerning the Belyov pomestya of the okolnichy Semyon
 Fyodorovich Saburov, Oksinya, wife of Posnik Chelyustkin, and Anastasia, widow of the okolnichy Ivan
 Ivanovich Saburov; the text is on pp. 441–443. According to the available search fragments, on p. 442
@@ -10118,10 +10118,10 @@ people and a route on the map are not created until there is direct proof of kin
 
 [Epifan desyatnya of 1591](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Desjatni_XVI_v/text5.htm),
 [Oryol survey book, p. 879](https://archive.org/details/moscha-regia/page/n879/mode/1up),
-[catalogue of RGADA survey books](https://rgada.info/materiali/baranov_catalog.pdf),
+[catalogue of РГАДА survey books](https://rgada.info/materiali/baranov_catalog.pdf),
 [«Сотницы, грамоты и записи» (Sotnitsy, Charters and Records), issue 1](https://www.koob.ru/shumakov_s_a/shumakov_sotnicy_gramoty_t1),
 [«Белёвская вивлиофика» (Belyov Bibliotheca), vol. 2](https://www.koob.ru/elagin_n_v/elagin_belevskaya_vivliofika_t2),
-[ASZ, vol. III in Google Books](https://books.google.com/books?id=4WDuAAAAMAAJ).
+[АСЗ, vol. III in Google Books](https://books.google.com/books?id=4WDuAAAAMAAJ).
 ### A Full-Text Check of the Inventories: The 1577 List Has Not Surfaced
 
 The verdicts (prigovory) of 1577 document not one but two closely related name complexes.
@@ -10130,12 +10130,12 @@ shifts, that their names be written down by entries (stati) and that the lists b
 Razryad. The March verdict prescribed a personal inspection of the Oryol Cossacks and the
 deti boyarskie with small pomestyes, the compiling of separate lists with their land and money
 entitlements (oklady) and the delivery of these lists to the Moscow clerks (dyaki). A full
-reading of the Watch Book (Storozhevaya kniga) — RGADA, f. 210, op. 6, d. 1 — showed that
+reading of the Watch Book (Storozhevaya kniga) — РГАДА, f. 210, op. 6, d. 1 — showed that
 none of these executive lists was bound in after the corresponding verdict.
 
 On 28 August 2026 an additional full-text check was carried out through
-[RGADA Search](https://rgada.sovadev.pro/), which indexes the published inventories (opisi)
-and the OCR-recognised PDFs of RGADA. In fonds 210, 1209 and 396, for the early period, the
+[РГАДА Search](https://rgada.sovadev.pro/), which indexes the published inventories (opisi)
+and the OCR-recognised PDFs of РГАДА. In fonds 210, 1209 and 396, for the early period, the
 forms Анпилог, Анфилог, Онфилог, Онпилог and Ампилог were checked, as were the queries
 «Орловский список» ("the Oryol list"), «орловскому списку» ("to the Oryol list"), «Пётр
 Данилов» ("Pyotr Danilov"), the number 37573 and the rare family cluster Mikula — Vasily —
@@ -10154,14 +10154,14 @@ At this stage the order of targeted requests was as follows; the later collation
 place the independent name registers, the documents of earlier land grants (dachi) and the complete
 Oryol books of 1624–1626:
 
-1. RGADA, f. 210, op. 9, d. 232, fols. 315 v.–322 — by a control reading,
+1. РГАДА, f. 210, op. 9, d. 232, fols. 315 v.–322 — by a control reading,
    record the physical junction between the broken-off roster (rospis) and the next document;
    a complete name list is no longer expected on these folios.
-2. RGADA, f. 396, op. 1, pt. 24, d. 37573 — obtain the confirmed file
+2. РГАДА, f. 396, op. 1, pt. 24, d. 37573 — obtain the confirmed file
    in full: the large complex may
    contain extracts from the Oryol search list (sysknoy spisok) of 1613/14 and earlier
    proofs of service.
-3. RGADA, f. 1209, op. 1, bks. 330–331 — read the full entries that use the
+3. РГАДА, f. 1209, op. 1, bks. 330–331 — read the full entries that use the
    old copy of the survey and measurement of 1594/95, especially the earlier holdings of Mikula,
    Vasily, Timofey, Nechay, Pakhom, Persha and Terenty.
 4. In the papers of the Razryad and the Pomestny Prikaz, search for the two independent
@@ -10342,9 +10342,9 @@ the general mechanism and on individual proven transfers, but the verdict
 of 1577 itself does not prove it.
 
 [Full text of the boyar verdict](https://drevlit.ru/docs/russia/XVI/1560-1580/Akty_Popov_I/21-40/23.php).
-## 28 August 2026: The RGIA Name Index Has Led to the Kursk and Chernigov Branches
+## 28 August 2026: The РГИА Name Index Has Led to the Kursk and Chernigov Branches
 
-The official name search of the RGIA for the form «Анфилогов» (Anfilogov) yielded twenty cards with
+The official name search of the РГИА for the form «Анфилогов» (Anfilogov) yielded twenty cards with
 exact references to the folios of fond 1343, inventory 51. For the main file on nobility,
 f. 1343, op. 16, d. 2345, there are still no digital folios in the catalogue: the card
 returns `images = 0`, `files = 0`, `downloadPdf = false`, and the field for the availability of
@@ -10571,7 +10571,7 @@ comparative card has been created:
 
 Two years after the Oryol verdict an original
 desyatnya (a muster roll of servicemen) was compiled in Ryazhsk, giving the closest model of how the outcome
-of an enrolment (verstanye) carried out on the spot could have been drawn up. Its exact archival address is **RGADA, f. 210, op. 4,
+of an enrolment (verstanye) carried out on the spot could have been drawn up. Its exact archival address is **РГАДА, f. 210, op. 4,
 bk. 94, fols. 1–80**. The heading of the publication reads:
 
 > «Десятня денежная детей боярских Ряского города верстанья боярина князя
@@ -10606,7 +10606,7 @@ M. G. Krotov's reconstruction precisely reveals the "other towns". In January 15
 one commission of Ivan Yuryevich Bulgakov and Dey Gubasty compiled three
 independent desyatni: **Vladimir, Ryazhsk and Yuryev**. The Vladimir one is
 dated 23 January; its original perished in the fire of 1812, but there survive a
-copy of the preface, **RGADA, f. 388, bk. 856, fol. 273**, and extracts in fonds 388,
+copy of the preface, **РГАДА, f. 388, bk. 856, fol. 273**, and extracts in fonds 388,
 288 and in fond 210, Moscow desk (Moskovsky stol), scroll (stolbets) 48, fol. 489. The Yuryev book also
 perished; the inventory of 1735 called it an enrolment book with pomestye entitlements. Oryol is not in
 this reconstructed route of the commission. Consequently, Gubasty becomes
@@ -10650,7 +10650,7 @@ on an equal footing with the hypothesis of loss.
 The Dankov half of the conclusion has received independent support. A. S. Rakitin cites
 a late «сказка» (statement) by the inhabitants of Dankov, according to which 117 watch
 Cossacks were settled there with a land entitlement of 50 chetverts each and a money entitlement of six rubles. His
-archival reference: **RGADA, f. 210, Scrolls of the Vladimir desk (Stolbtsy Vladimirskogo stola), d. 7, fol. 161**.
+archival reference: **РГАДА, f. 210, Scrolls of the Vladimir desk (Stolbtsy Vladimirskogo stola), d. 7, fol. 161**.
 This confirms the actual existence of the full Dankov entitlement, but does not
 automatically prove that the addition did not take place in Oryol.
 
@@ -10700,8 +10700,8 @@ A. L. Stanislavsky makes it possible to move from Volkov's general conclusion to
 archival folios. Right after describing the different outcomes of the 1577 verdict,
 he gives three call numbers in the sequence Epifan — Dankov — Shatsk:
 
-- **Epifan:** RGADA, f. 1209, bk. 140, fol. 277 v.;
-- **Dankov:** RGADA, f. 210, Vladimir desk, scroll 7, fol. 160;
+- **Epifan:** РГАДА, f. 1209, bk. 140, fol. 277 v.;
+- **Dankov:** РГАДА, f. 210, Vladimir desk, scroll 7, fol. 160;
 - **Shatsk:** ibid., scroll 102, fols. 174–176.
 
 The official inventories confirmed that this is not a chance juxtaposition of references.
@@ -10711,13 +10711,13 @@ on fols. 277 v.–287 v. it contains a separate section, **«поместья с
 the corresponding section on fols. 364 v.–384.
 
 The old designation "Vladimir desk, scroll 7" translates into the modern full
-call number **RGADA, f. 210, op. 10, d. 7**. The official inventory calls fols. 159–164
+call number **РГАДА, f. 210, op. 10, d. 7**. The official inventory calls fols. 159–164
 **a census of servicemen settled in Dankov under Tsar Ivan Vasilyevich**.
 Folio 160 lies exactly within this block; the neighbouring fol. 161 was used by
 A. S. Rakitin for his report on the 117 Dankov watch Cossacks with an entitlement of
 50 chetverts each.
 
-Scroll 102 is the modern **RGADA, f. 210, op. 10, d. 102**. This is a complex of
+Scroll 102 is the modern **РГАДА, f. 210, op. 10, d. 102**. This is a complex of
 documents of the Chelobitenny Prikaz (Petitions Chancellery) of 1641 on atamans, esauls and Cossacks of
 various towns; the brief inventory separately notes a grant to the Shatsk Cossacks of
 escheated lands. Fols. 174–176 still need to be read in the original.
@@ -10746,7 +10746,7 @@ Control card created:
 mentions; no profiles or map points are created.
 
 [Text of A. L. Stanislavsky's study](https://yakovkrotov.com/history/17/1610/stanislav_01.htm),
-[official catalogue of RGADA cadastral survey books](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
+[official catalogue of РГАДА cadastral survey books](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
 [official inventory 10 of fond 210](http://rgada.info/opisi/210-opis_10.pdf).
 
 ## 28 August 2026: The Current 421,095-Row Database Gave No Pre-Oryol Surname Trace
@@ -10790,7 +10790,7 @@ three-part formula. So such an index can neither confirm nor
 close negatively the pre-Oryol father of a branch: a folio-by-folio transcription is required
 of a document of the earlier town.
 
-At the same time the priority of the file **RGADA, f. 210, op. 12, pt. 1,
+At the same time the priority of the file **РГАДА, f. 210, op. 12, pt. 1,
 d. 65** has been adjusted. According to I. E. Kushelev's publication, its name blocks of 1635–1636
 relate to the search for former town streltsy, Cossacks and gunners (pushkari)
 who had scattered after the Lithuanian devastation; deti boyarskie are explicitly left outside
@@ -10809,7 +10809,7 @@ separate landholders' homesteads and one shared allotment (zherebey): **6 chetve
 equal division this is 19 chetverts per homestead — almost the old actual grant
 of a watch Cossack of 20/21 chetverts known from other frontier towns.
 
-The manuscript entry at **RGADA, f. 1209, op. 1, d. 329, fols. 718–720** has been checked
+The manuscript entry at **РГАДА, f. 1209, op. 1, d. 329, fols. 718–720** has been checked
 again in full. It confirms the three homesteads and the shared land formula, but does not
 divide the 57 chetverts into equal shares, does not call the brothers Cossacks and contains no
 words about an earlier grant, an earlier town or the inspection of 1577. Moreover, a cadastral survey
@@ -10874,13 +10874,13 @@ The chronological window is widened from March 1577 alone to March 1576 — autu
 1577. It is precisely in a seasonal report that the full complement of the 78
 watchmen may turn up, even if the final enrolment register perished.
 
-At the same time the official RGADA viewer has conclusively checked the physical
+At the same time the official РГАДА viewer has conclusively checked the physical
 junction after the verdict of 1577. Frame 0298 contains fol. 243, frame 0299 the end on
 fol. 243 v. and the blank fol. 244, and frame 0300 begins a new document on fol. 245.
 There is indeed no immediate appendix with names after the verdict.
 
 [Act No. 18 with the procedure for keeping the duplicate copy and sending names](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Akty_Popov_I/1-20/18.htm),
-[official viewer for the RGADA file](http://rgada.info/kueh/index2.php?str=210_6_1).
+[official viewer for the РГАДА file](http://rgada.info/kueh/index2.php?str=210_6_1).
 
 ### In Whose Name the Oryol Reports of 1576 May Have Been Catalogued
 
@@ -10900,11 +10900,11 @@ registration text itself says only **«На Орел к воеводе»** ("To 
 no name.
 
 Zagorovsky's printed notes 78–84 have been checked separately. Behind the correction of the
-date stand the Razryad books and the published AMG (Akty Moskovskogo gosudarstva); there is no hidden archival call number
+date stand the Razryad books and the published АМГ (Akty Moskovskogo gosudarstva); there is no hidden archival call number
 for a named Oryol roster in the notes. A full-text search of
-the published RGADA inventories also gave no exact matches for the four
+the published РГАДА inventories also gave no exact matches for the four
 commanders or for the formulas «Орельским сторожам», «имяна их прислал» and «списал
-противень». A control search of the inventories of the Archive of the St Petersburg Institute of History (SPbII RAN) gave the same result;
+противень». A control search of the inventories of the Archive of the St Petersburg Institute of History (SPbII РАН) gave the same result;
 several hits turned out to be a chance proximity of the words «гвоздей» ("nails") and
 «Ростовскому» ("to Rostovsky") or late watchmen. This closes any repeated general OCR search,
 but not the reading of undigitised scrolls.
@@ -10914,7 +10914,7 @@ The minimum set of search names is now: **Василей Меньшой Иван
 **Михайло Федорович Гвоздев Ростовской** (Mikhaylo Fedorovich Gvozdev Rostovskoy) and **Иван Тимофеев сын Фустов** (Ivan Timofeev syn Fustov).
 
 [Razryad book of 1475–1605, roster of 1576](https://www.vostlit.info/Texts/Dokumenty/Russ/XV/1460-1480/RK_1475_1605/text16.htm),
-[full-text search of the RGADA inventories](https://rgada.sovadev.pro/).
+[full-text search of the РГАДА inventories](https://rgada.sovadev.pro/).
 
 ### The End of the 1576 Act Checked against the Manuscript
 
@@ -10973,7 +10973,7 @@ the first, second and third entries. So far there are no names of Anfilogovs and
 these documents; the profiles and the map route do not change.
 
 [Boyar verdict of 16 February 1571](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Akty_Popov_I/1-20/2.htm),
-[official RGADA viewer](http://rgada.info/kueh/index2.php?str=210_6_1).
+[official РГАДА viewer](http://rgada.info/kueh/index2.php?str=210_6_1).
 
 ### Ivan Semichev's Bryansk Line Has Acquired a Family and Landed Trace
 
@@ -11006,7 +11006,7 @@ is named only as a witness to a Ryazan transaction, without any indication of hi
 men must not be turned into a ready-made pedigree.
 
 The practical result is more substantial than the kinship hypothesis itself. The extract of 1595
-has survived in two later copies: **RGADA, f. 1209, Scrolls for Bryansk,
+has survived in two later copies: **РГАДА, f. 1209, Scrolls for Bryansk,
 No. 315/31833, fols. 296–298** and **No. 10/31661, fols. 64–68**. This means the papers of the entry
 of Ivan Semichev and possible name appendices should be sought first of all in the
 Bryansk family and pomestye complex, including the files on the hamlet of Boboedovo, and not under
@@ -11019,8 +11019,8 @@ the names of the fifteen Oryol Cossacks. The profiles and the map do not change.
 
 Research card:
 `PUB-ASZ3-1569-1595-SEMICHEV-BRYANSK-RYAZAN-CHAIN`.
-[Scan of the third volume of ASZ](https://djvu.online/file/XShJZdkt8XXun),
-[catalogue record of the edition in the NEB](https://rusneb.ru/catalog/000199_000009_002859015/),
+[Scan of the third volume of АСЗ](https://djvu.online/file/XShJZdkt8XXun),
+[catalogue record of the edition in the НЭБ](https://rusneb.ru/catalog/000199_000009_002859015/),
 [field act of 1577](https://vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Akty_Popov_I/21-40/27.htm).
 
 ### Panyutin and Tyutchev Can Be Traced in Stanitsa Service after 1577
@@ -11051,8 +11051,8 @@ The open-access publication of the source book makes it possible to specify the 
 For the search this matters more than the biographical detail. The service complex of the two
 heads lived for at least twelve years and passed through Bryansk, Putivl, Rylsk
 and the Donets. Consequently, possible lists of their comrades should be sought in
-**RGADA, f. 210, scrolls of the Moscow desk, No. 1094, stolpik 3, fols. 1–20** and
-in **RGADA, f. 79, op. 1, bk. 22**, especially among the reports, payments and the handling
+**РГАДА, f. 210, scrolls of the Moscow desk, No. 1094, stolpik 3, fols. 1–20** and
+in **РГАДА, f. 79, op. 1, bk. 22**, especially among the reports, payments and the handling
 of the service consequences of Panyutin's death. This is a targeted path to the names of men, but
 not yet proof of a Bryansk origin for the rank-and-file men of Oryol.
 
@@ -11188,7 +11188,7 @@ Candidate card:
 [Belyay's full entry on Vostlit](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/1-20/7_4.htm),
 [Nechay Chyurkin's entry on Vostlit](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/1-20/7_2.htm),
 [archaeographic preface and the composition of the recruitment](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1580-1600/Anpilogov_new_dok/1-20/pred2.htm),
-[catalogue record of the scan of the edition in the NEB](https://rusneb.ru/catalog/000199_000009_005945568/).
+[catalogue record of the scan of the edition in the НЭБ](https://rusneb.ru/catalog/000199_000009_005945568/).
 
 ### The Comrades of Belyay of Putivl Did Not Pass with Him into the Oryol Book
 
@@ -11217,9 +11217,9 @@ the Kursk customs books names in 1619 **a Putivl Cossack
 Radyukin** without a first name. He cannot be identified with Zhatka Radyukin, but the
 surname stem itself continues to live in the Putivl Cossack milieu.
 
-A new exact path of verification has appeared. In 2026 the Institute of Russian History of the Russian Academy of Sciences (IRI RAN)
+A new exact path of verification has appeared. In 2026 the Institute of Russian History of the Russian Academy of Sciences (ИРИ РАН)
 published the complete volume **«Писцовые книги Путивльского уезда 1628–1629
-годов»** (Cadastral Survey Books of Putivl District, 1628–1629) from RGADA, f. 1209, op. 1, bk. 10553. The name index occupies
+годов»** (Cadastral Survey Books of Putivl District, 1628–1629) from РГАДА, f. 1209, op. 1, bk. 10553. The name index occupies
 pp. 477–527. Only the five-page table of contents is currently openly available,
 not the whole 596-page text.
 
@@ -11242,7 +11242,7 @@ immediate group as exact name pairs. The full index of the new volume is still
 needed for former owners, witnesses and other roles that are not in
 the brief list.
 
-[Official catalogue record of the IRI RAN edition](https://iriran.ru/publications/4059),
+[Official catalogue record of the ИРИ РАН edition](https://iriran.ru/publications/4059),
 [table of contents of the volume](https://iriran.ru/sites/default/files/2026-08/%D0%90%D0%BA%D1%82%D1%8B_2026_6.pdf),
 [open list of landholders of Putivl district, 1628–1629](https://pomnirod.ru/materialy-k-statyam/administrativno-territorialnoe-delenie-rossijskoj-imperii/gubernii-rossii/kurskoe-namestnichestva-1779-1797.-kurskaya-guberniya-1797-1924/%D0%B4%D0%B2%D0%BE%D1%80%D1%8F%D0%BD%D1%81%D1%82%D0%B2%D0%BE3/%D0%B4%D0%B2%D0%BE%D1%80%D1%8F%D0%BD%D0%B5-%D0%B8-%D0%B4%D0%B5%D1%82%D0%B8-%D0%B1%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%B8%D0%B5-%D0%BA%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BA%D1%80%D0%B0%D1%8F-%D0%B2-xvii-%D0%B2%D0%B5%D0%BA%D0%B5-%D0%BF%D0%BE-%D0%BF%D0%B8%D1%81%D1%86%D0%BE%D0%B2%D1%8B%D0%BC-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%D0%BC.html),
 [name index to the Kursk customs books](https://forum.vgd.ru/post/395/70014/p1994779.htm).
@@ -11250,7 +11250,7 @@ the brief list.
 ### The Unindexed Oryol List of 1631
 
 A full-text search of the official inventory of fond 210 gave a new exact archival
-address: **RGADA, f. 210, op. 10, d. 45, pt. II, fols. 29–117**. The inventory calls
+address: **РГАДА, f. 210, op. 10, d. 45, pt. II, fols. 29–117**. The inventory calls
 it a list of the dvoryane and deti boyarskie of Belyov, Bolkhov, Oryol, Chern, Karachev and
 Mtsensk for 7139/1631. The document has survived without its beginning and is authenticated by the signature of
 the dyak Fyodor Stepanov. The boundaries of the six town sections within the common
@@ -11272,35 +11272,35 @@ the file.
 
 Archival target card:
 `PUB-RGADA-210-10-45-II-OREL-SERVICE-LIST-1631`.
-[Official RGADA inventory](http://rgada.info/opisi/210-opis_10.pdf),
+[Official РГАДА inventory](http://rgada.info/opisi/210-opis_10.pdf),
 [open name index](https://next-fast-table-gold.vercel.app/).
 
 #### A Check of Remote Access: Files 232 and 45 Diverge
 
-On 28 August 2026 the complete public export of the catalogue of RGADA files
-available through GIS UIAD was checked, not just the web search by headings. In it
-**RGADA, f. 210, op. 9, d. 232** was found and its exact internal address obtained:
+On 28 August 2026 the complete public export of the catalogue of РГАДА files
+available through ГИС УИАД was checked, not just the web search by headings. In it
+**РГАДА, f. 210, op. 9, d. 232** was found and its exact internal address obtained:
 `10000000001014/10000000157014/10000000358014/10000474722014`. Consequently,
 microfilm No. 5 with the target junction at fols. 315 v.–322 can already be ordered for
-remote viewing through GIS UIAD.
+remote viewing through ГИС УИАД.
 
 The exact combination **f. 210, op. 10, d. 45** was not found in the same export. This
 does not refute the existence of the 1631 list: its heading and folios are reliably
 established from the official inventory. The practical meaning is different: right now the two files
 require different actions. File 232 is available through the remote reading room,
-whereas copies of file 45 have to be ordered directly from RGADA, or one must wait for
-the next addition to GIS UIAD.
+whereas copies of file 45 have to be ordered directly from РГАДА, or one must wait for
+the next addition to ГИС УИАД.
 
 [Digital card of file 232](https://online.archives.ru/guide/10000000001014/10000000157014/10000000358014/10000474722014/),
 [public catalogue of digitisations](https://metrics.tilda.ws/gisuiad?fund=210&inv=9&case=232#rgada_opisi).
 
 #### The Kama Oryol Ruled Out as a False Trail with the Same Name
 
-A continuous search of the entire RGADA catalogue gave only two headings before 1600
+A continuous search of the entire РГАДА catalogue gave only two headings before 1600
 in which Oryol stands out as an independent place name. One is the already known
 cadastral survey book of Oryol district of 1594/95. The second at first looked like
 a new intermediate entry: a charter of 17 December 1588 «на Орел» ("to Oryol") to Andrey
-Mikhaylovich Akinfov, RGADA, f. 281, op. 17, d. 11143.
+Mikhaylovich Akinfov, РГАДА, f. 281, op. 17, d. 11143.
 
 A check of the geography showed that this is **not the Oryol on the Oka**. The charter is addressed to
 Oryol-gorodok of the Stroganovs on the Kama. Akinfov was the sovereign's head there during
@@ -11351,7 +11351,7 @@ It proved possible to obtain and check in full issue 13 of the almanac «Рос�
 генеалогия» (Russian Genealogy) (2023), with L. E. Shabaev's publication on pp. 284–375. It
 prints three original lists, but Oryol is included only in the first:
 
-- **1627/28**, RGADA, f. 210, op. 14, d. 22: Oryol occupies fols. 118–140;
+- **1627/28**, РГАДА, f. 210, op. 14, d. 22: Oryol occupies fols. 118–140;
   here are the already known Vaska Dmitreev syn Onpilogov, Ivashko and
   Oleshka, the sons of Vasily Onfilogov, and Marka Karpov syn «Онфилохов» (Onfilokhov);
 - **1630/31–1631/32**, f. 210, op. 10, d. 86: Tula, Solova, Odoev,
@@ -11415,15 +11415,15 @@ and many sixteenth-century service lists have not survived or have not been publ
 shows that further search must be conducted not by a single name but by clusters
 of relatives, offices and lands.
 
-A photocopy of the official copy held by the Russian Geographical Society (RGO) has been saved in the cards for the Tula
+A photocopy of the official copy held by the Russian Geographical Society (РГО) has been saved in the cards for the Tula
 neighbourhood corridor and the Dedilov candidate. No separate profile or map point
 is created for Bredikhin: he does not belong to the surname series under research.
-[Official catalogue record of the RGO edition](https://elib.rgo.ru/handle/123456789/228023).
+[Official catalogue record of the РГО edition](https://elib.rgo.ru/handle/123456789/228023).
 
 ### The 1668 Inventory Has Led to a Register of Lost Oryol Desyatni
 
 The new tactic yielded not yet another similar-sounding name but a precise meta-source.
-V. N. Kozlyakov established that **RGADA, f. 210, op. 20, d. 221–224**
+V. N. Kozlyakov established that **РГАДА, f. 210, op. 20, d. 221–224**
 preserve an inventory of the Razryad archive compiled under the dumny dyak (council secretary)
 D. M. Bashmakov in 1668. It was created at a time when the archive still
 held many sixteenth-century service books that were later lost.
@@ -11443,13 +11443,13 @@ title will make it possible to search for **an old alphabetical index to the des
 and later extracts — by exactly the method by which M. G. Krotov has already
 reconstructed the lost desyatni of other towns.
 
-The next order is now extremely small: **RGADA, f. 210, op. 20, d. 222,
+The next order is now extremely small: **РГАДА, f. 210, op. 20, d. 222,
 fols. 45–45 v. and 75**, necessarily with the neighbouring folios. Until they have been read it cannot be
 asserted that the register names an Oryol desyatnya of 1577, 1584, 1590 or 1591.
 The map and the profiles do not change.
 
 On 29 August 2026 the complete public CSV export of
-the catalogue of digitised files of GIS UIAD was additionally checked. It contains not only no **f. 210, op. 20,
+the catalogue of digitised files of ГИС УИАД was additionally checked. It contains not only no **f. 210, op. 20,
 d. 222**, but no rows at all for fond 210, inventory 20. This is not evidence
 that the file has been lost: it merely confirms that the unit needed is not currently included in
 the public catalogue for remote viewing. The identically numbered **f. 210, op. 9,
@@ -11463,12 +11463,12 @@ pp. 296–299. Card:
 `PUB-KOZLYAKOV-2018-RGADA-1668-OREL-DECENNIA-INVENTORY`.
 [Open text of the book](https://djvu.online/file/TjLCjL0xo3U9E),
 [official guide to fond 210](https://guides.rusarchives.ru/terms/9/2464/razryadnyy),
-[GIS UIAD catalogue](https://metrics.tilda.ws/gisuiad).
+[ГИС УИАД catalogue](https://metrics.tilda.ws/gisuiad).
 
 ### The Key Books of 1625 Have Appeared in the Remote-Viewing Catalogue
 
-A fresh check of the full public export of GIS UIAD removed the earlier technical
-dead end for **RGADA, f. 1209, op. 1, kn. 330–331**. Both units are present not
+A fresh check of the full public export of ГИС УИАД removed the earlier technical
+dead end for **РГАДА, f. 1209, op. 1, kn. 330–331**. Both units are present not
 only in the paper inventory but also in a separate catalogue of **digitised files**, whose links
 lead to the official portal for selection and paid remote
 viewing:
@@ -11490,7 +11490,7 @@ On 29 August 2026 the official domain `online.archives.ru` did not open from
 the research environment: the connection ended with `ERR_ADDRESS_UNREACHABLE`.
 This is a technical unavailability of the portal, not an absence of images. The earlier
 statement that the books can be obtained only by a paper order or in the reading
-room is no longer current: the next step is a remote GIS UIAD session once the
+room is no longer current: the next step is a remote ГИС УИАД session once the
 portal restores access.
 
 [Catalogue entry for kn. 330](https://metrics.tilda.ws/gisuiad?fund=1209&inv=1&case=330#rgada_opisi),
@@ -11501,7 +11501,7 @@ portal restores access.
 #### Ten Needed Spreads Had Already Been Ordered by a Researcher of Bazdyrevo
 
 A search by the archival call number gave a far more targeted result. On 30 March 2016
-A. S. Nilogov reported that he had received good colour copies from RGADA of
+A. S. Nilogov reported that he had received good colour copies from РГАДА of
 **f. 1209, op. 1, d. 330**. He listed ten spreads:
 
 - ll. **72 v.–73, 73 v.–74, 74 v.–75**;
@@ -11533,7 +11533,7 @@ the photocopies really did remain private and were not later published in the th
 
 The practical priority has now changed: instead of a complete viewing of 426 folios
 one must first obtain **ll. 72 v.–78 and 82 v.–87** — from the owner of the copies or
-by a repeated order through GIS UIAD/RGADA. Each spread should be read together with
+by a repeated order through ГИС УИАД/РГАДА. Each spread should be read together with
 the neighbouring page, writing out the formulas «по старым писцовым книгам» ("according to the old cadastral books"), the previous
 holder, the father's or brother's pomestye, the grant, the transfer (otkaz) and the previous town.
 Only such a literal formula will give grounds for a new kinship link or route
@@ -11549,7 +11549,7 @@ A direct viewing of the public cloud of the project «Сказочки, сказ
 there is no **d. 330, d. 331 or d. 10047**. This matches the forum list: d. 329
 is marked as bought out, while next to books 330–331 there are no notes of purchase or donation.
 
-On the other hand, the cloud holds the full text of **RGADA, f. 1209, op. 85, d. 13**, of
+On the other hand, the cloud holds the full text of **РГАДА, f. 1209, op. 85, d. 13**, of
 222622 bytes. It was checked by a full search for Анфилог-/Анпилог-/Онфилог- and
 close graphic variants. Besides the Bazdyrevo entries 79–81 and 84, the register
 gives the already known entries: 129 — Ilya, Vasily and Anton Ivanovich in Belaya;
@@ -11568,7 +11568,7 @@ books 330–331 or through Nilogov's ten already located colour spreads.
 
 ### Six Early Belgorod–Kursk Files Are Already Available for Targeted Reading
 
-The check of the full GIS UIAD export gave a second practical result. All
+The check of the full ГИС УИАД export gave a second practical result. All
 six files to which the derived index points for the early non-Oryol forms
 Anpilogov/Onpilogov have already been digitised:
 
@@ -11642,7 +11642,7 @@ the originals were transferred. The chain of addresses looks like this:
 5. books of draft genealogical reference statements of **f. 388** — possible literal
    extracts on the surname from the already lost desyatnya.
 
-The full digital export of GIS UIAD contains **not a single file of f. 388**.
+The full digital export of ГИС УИАД contains **not a single file of f. 388**.
 Consequently, the absence of Anfilogovs in a catalogue search says nothing
 about the content of the reference statements: the fond itself is not covered by this check. It must be sought through
 the paper inventory and ordered separately. This is now the main archival route to
@@ -11650,16 +11650,16 @@ pre-Oryol service, parallel to reading the cadastral books of 1625.
 
 A substantial OCR error has been corrected here. In the earlier machine text Krotov's
 reference read as «л. 2680» ("l. 2680"), but the photocopy of printed page 59 clearly gives
-**«ЦГАДА, ф. 248, оп. 106, кн. 1180»** ("TsGADA, f. 248, op. 106, kn. 1180"). The same page confirms a second
+**«ЦГАДА, ф. 248, оп. 106, кн. 1180»** ("ЦГАДА, f. 248, op. 106, kn. 1180"). The same page confirms a second
 address — the book with former No. **853**, in which the documentation on compiling the
 alphabets was deposited. The official inventory shows the modern sequential number:
-**RGADA, f. 388, op. 1, d. 102**, «Книга справок Разрядного архива» (Book of Reference Statements of the Razryad Archive), 1787.
+**РГАДА, f. 388, op. 1, d. 102**, «Книга справок Разрядного архива» (Book of Reference Statements of the Razryad Archive), 1787.
 Images of the printed reference and of the official inventory page have been saved in the project;
 the order can now be formulated without guessing at a non-existent folio 2680 and
 without mixing the old and modern numbering.
 
 However, the OCR correction revealed a second, now archival, conflict. In the modern
-official RGADA inventory the same **f. 248, op. 106, kn. 1180** is titled
+official РГАДА inventory the same **f. 248, op. 106, kn. 1180** is titled
 «Росписной список г. Карачева, составленный при передаче его новому воеводе
 подполковнику Осипу Стрекалову» ("Handover list of the town of Karachev, compiled on its transfer to the new voivode,
 Lieutenant Colonel Osip Strekalov"), 1733. Such a title does not correspond to
@@ -11743,7 +11743,7 @@ does not disclose the surnames, so Anfilogovs have not yet been found, but the s
 noble alphabet gives a second way to reach the needed reference statement if its place
 in the chronological book turns out to be unclear.
 
-[Description of the documents and papers of the MAMYu, bk. 5 (1888)](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3_%D1%85%D1%80%D0%B0%D0%BD_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_05_1888.pdf).
+[Description of the documents and papers of the МАМЮ, bk. 5 (1888)](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3_%D1%85%D1%80%D0%B0%D0%BD_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_05_1888.pdf).
 
 ### The Kursk Branch Is No Longer a Set of Nameless Lines
 
@@ -11777,7 +11777,7 @@ a group transfer of servitors but does not replace a transfer entry.
 
 ### A Real Resettlement Mechanism Has Been Found: Kursk/Oryol — Karpov — Oboyan
 
-A publication by I. P. Babin and M. M. Ozerov based on RGADA documents gave exactly the
+A publication by I. P. Babin and M. M. Ozerov based on РГАДА documents gave exactly the
 type of material that was being sought: the state selection of service families for a new
 town. On 26 February 1649 it was ordered to build an ostrog (stockaded fort) on the Oboyan
 gorodishche (old fortified site) and to settle deti boyarskie **of Kursk and Oryol** around it. The future
@@ -11800,21 +11800,21 @@ not a single new recruit. The rare full name and a consistent chronology allow
 the Kursk and Oboyan lines to be treated as one biography with high confidence.
 
 But the personal stage via Karpov has not yet been proven: the published fragments of the files of
-1649–1650 do not name Sergey. The decisive address is **RGADA,
+1649–1650 do not name Sergey. The decisive address is **РГАДА,
 f. 210, op. 12, ch. 1, d. 290 and 293**, as well as the review at Oboyan of the Kursk and Oryol
 resettled men on 19 September 1650 mentioned by researchers.
-Files 290 and 293 have been located in the GIS UIAD digital catalogue. Until a line naming him is found,
+Files 290 and 293 have been located in the ГИС УИАД digital catalogue. Until a line naming him is found,
 two proven events remain on the map — Kursk and Oboyan — with no added-in
 stop at Karpov.
 
 [Publication on the founding of Oboyan](https://old-kursk.ru/book/obojan/ra032.html),
 [the first description of the Oboyan district](https://old-kursk.ru/book/babin/190127.html),
-[file 290 in GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476015014),
-[file 293 in GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476018014).
+[file 290 in ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476015014),
+[file 293 in ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476018014).
 
 ### A Mass Match Between Kursk and Oboyan: Sergey Is Not a Lone Namesake
 
-The full text of the Oboyan desyatnya of 1651 from **RGADA, f. 210, op. 4,
+The full text of the Oboyan desyatnya of 1651 from **РГАДА, f. 210, op. 4,
 d. 228** was compared with all the three-part names in the published
 Kursk lists of 1636 and 1640. The result: **38 verbatim identical
 combinations of name, patronymic and family name**. Twenty of them are in
@@ -11852,8 +11852,8 @@ an entry in an early Oboyan list does not yet guarantee an actual move.
 
 [Full publication of the Oboyan desyatnya of 1651](https://archive.rkursk.ru/sites/default/files/documents/event_hum_ed_15.pdf),
 [description of the contents of file 328](https://forum.vgd.ru/3244/122141/),
-[file 324 in GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476052014),
-[file 328 in GIS UIAD](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476056014).
+[file 324 in ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476052014),
+[file 328 in ГИС УИАД](https://online.archives.ru/guide/10000000001014/10000000157014/10000003223014/10000476056014).
 
 ### The Desyatnya of 1596: Families Divided Between Oryol and the Older Towns
 
@@ -11870,7 +11870,7 @@ men of Oryol with a full three-part name formula. Exactly three pairs were found
 - **Oryol — Ryazan:** Ivan and Vasiley **Ivanovy synovya Kamenevy** (sons of Ivan, Kamenev).
 
 All six readings were checked not only against the publication but also against the open
-RGADA photocopies: f. 181, op. 2, d. 120, ll. 49 v., 57 v., 58 v., 60,
+РГАДА photocopies: f. 181, op. 2, d. 120, ll. 49 v., 57 v., 58 v., 60,
 61 v. and 88. On l. 58 v., together with Prokuda Penkov, stands the man who interests
 us, **Pavel Terentyev syn Anfilogov** (Pavel, son of Terenty, Anfilogov).
 
@@ -11944,7 +11944,7 @@ Chernikov built the 1762 part from the procurators' lists and the skazki (declar
 Revision. They should contain the owner's surname, name and patronymic, the settlement,
 the composition of the serfs, and sometimes the previous owner under the Second Revision.
 The list of sources and the archival headings already narrow the order: **Kursk district —
-RGADA, f. 350, op. 2, d. 1676–1682; Livny district — d. 1736–1739**.
+РГАДА, f. 350, op. 2, d. 1676–1682; Livny district — d. 1736–1739**.
 
 A separate Record has been created,
 `PUB-CHERNIKOV-2003-P231-ANPILOGOV-ESTATES-1700-1762`; the table
@@ -11952,7 +11952,7 @@ heading, the full spread and a large fragment of the row are attached to it. No 
 are created, because there are no personal names in the table; no route on the map is
 added.
 
-## Savyolov's Archive: OPI GIM, Fond 216
+## Savyolov's Archive: ОПИ ГИМ, Fond 216
 
 The archival address of the working materials of the author of the first special article
 on Anfilogovs has been established. The official list of fonds of the Department of Written Sources
@@ -11962,12 +11962,12 @@ his scholarly works, the papers of the Historical-Genealogical Society and his s
 Consequently, the draft of the article «Анфилоговы» (Anfilogovs) of 1906, alphabetical extracts or
 references to the desyatni used should be sought here first of all.
 
-The public catalogue of OPI GIM was checked on 29 August 2026. It shows only
+The public catalogue of ОПИ ГИМ was checked on 29 August 2026. It shows only
 30 archival fonds, 4260 storage units and 25,718 documents; the queries
 «Савелов» (Savelov) and «Анфилогов» (Anfilogov) gave zero results. This is not a negative check
 of the fond itself: fond 216 is present in the full official list but is not part
 of the published portion of the catalogue. The internal inventory of the fond or a reference from
-the OPI staff is needed.
+the ОПИ staff is needed.
 
 The priority order is the preparatory materials for the first issue
 of «Родословные записи» (Genealogical Notes), the alphabetical folder for the letter A and a possible separate folder
@@ -11977,7 +11977,7 @@ Ivan Anpilogov in Stary Oskol in 1695. Officially, requests for files
 are submitted in person; the reading room is open on Wednesdays and Thursdays and is closed in July–August.
 Reference address: opi@shm.ru.
 
-## Savyolov Named His Working Archives: The Main Trail Leads to the MAMYu
+## Savyolov Named His Working Archives: The Main Trail Leads to the МАМЮ
 
 The preface to the first issue of «Родословные записи» changes the search tactic.
 Savyolov stated directly that, besides printed sources, he had used his own
@@ -11993,7 +11993,7 @@ in «Писцовые книги Московского государства»
 contains a ninth holder — Osip Vasilyevich Anfilogov, whom Savyolov did not include in
 his short article. The heading of the publication gives an old archival address:
 **Moscow Archive of the Ministry of Justice, No. 399 of the cadastral books**. The main
-modern unit is RGADA, f. 1209, op. 1, d. 329.
+modern unit is РГАДА, f. 1209, op. 1, d. 329.
 
 Thus for the Oryol line there is no need to assume a lost personal
 extract: Savyolov had an accessible printed prototype, published 29 years before
@@ -12009,10 +12009,10 @@ the Kochubeys and Little Russia. So the short article of 1906 most likely
 grew not out of this personal collection of acts but out of a research card index and
 archival extracts.
 
-The general catalogue of GIM confirms that this type of paper really is
+The general catalogue of ГИМ confirms that this type of paper really is
 in fond 216: for example, item 843, l. 13 is described as Savyolov's
-summary of extracts of 1628/29 and 1686. The next precise request to OPI GIM:
-**extracts from the MAMYu for the first issue, «Родословные записи», letter A,
+summary of extracts of 1628/29 and 1686. The next precise request to ОПИ ГИМ:
+**extracts from the МАМЮ for the first issue, «Родословные записи», letter A,
 Anfilogovs / Anpilogovs / Onpilogovs**. What is needed is a storage unit where, next to the
 names, a Stary Oskol archival call number, the former town of service or a
 generation before the Oryol core of the 1590s has been preserved.
@@ -12021,7 +12021,7 @@ generation before the Oryol core of the 1590s has been preserved.
 
 In the full publication of the itemised muster list (rospisnoy smotrenny spisok) of Stary Oskol of 1685
 the first of the pikemen (kopeyshchiki) of interest to us is **Ivan Mikhaylov syn
-Anpilov** (Ivan, son of Mikhail, Anpilov). Exact address: **RGADA, f. 210, op. 7a, d. 55, l. 189 v.** In
+Anpilov** (Ivan, son of Mikhail, Anpilov). Exact address: **РГАДА, f. 210, op. 7a, d. 55, l. 189 v.** In
 the same list, further down, stand Iyev Mikhaylov and Stepan Gerasimov deti Anpilovy (sons of Anpilov).
 
 Savyolov's note and the line of 1685 coincide in four features: Ivan,
@@ -12037,15 +12037,15 @@ only the confirmed point of Stary Oskol, with no new route.
 
 ## Full-Text Catalogue of Inventories: Bazdyrevo and Teterevinka, 1797
 
-In the live full-text search of the AIS «Великія описи» (Great Inventories) the variants
+In the live full-text search of the АИС «Великія описи» (Great Inventories) the variants
 Anfilogov, Anpilogov, Onpilogov and Amfilogov were checked. At the time of the check the catalogue
 showed 4,413,436 headings and 899,007 entries. No early, pre-1700,
 file with a reliable surname heading was found. The control query «Онахин» (Onakhin)
-returned the already known file RGADA, f. 1209, op. 78, ch. 2, d. 2217; so
+returned the already known file РГАДА, f. 1209, op. 78, ch. 2, d. 2217; so
 the search really does distinguish Onakhin from Onanyin. The negative result
 applies only to the indexed headings, not to names inside the folios.
 
-On the other hand, a precise late landholding node was found in GAOO (the State Archive of the Oryol Region). Two almost simultaneous
+On the other hand, a precise late landholding node was found in ГАОО (the State Archive of the Oryol Region). Two almost simultaneous
 files — **f. 822, op. 1, d. 254 and 255** — were opened on the petition of the odnodvortsy (single-homestead freeholders)
 Anpilogov for the registration of their purchase of land in the village of Bazdyrova /
 Bazdyreva (12 and 14 January — 13 April 1797). The related proceedings
@@ -12058,7 +12058,7 @@ of the Zhukovs with Anpilogov M. in the Kromy district in 1793–1800.
 These headings do not prove the origin of the sixteenth-century Oryol core. Their
 value is practical: when a purchase was registered and disputed land examined, deeds of purchase,
 cadastral extracts, boundary documents and references to previous
-holders could be attached. So the first order to GAOO is now precise: begin with d. 254–255 and
+holders could be attached. So the first order to ГАОО is now precise: begin with d. 254–255 and
 692, write down the names of all Anpilogovs, the seller and the dates of the attached documents,
 then check d. 339 and 525. A Record has been created,
 `PUB-VELIKIE-OPISI-1793-1800-ANPILOGOV-BAZDYREVO-LAND-CASES`; without new
@@ -12078,7 +12078,7 @@ On the other hand, primary and scholarly published sources give three stricter l
    in the regiment of Prince Vasily Khilkov near Toropets, **Andrey Pereverzev** is recorded.
    The razryad book (service register) and a charter to Khilkov date this campaign to 1580. The original
    formula on l. 26: «Федору Давыдову, Грише Наумову, Андрею Переверзеву...» ("To Fedor Davydov, Grisha Naumov, Andrey Pereverzev...").
-   Modern call number of the manuscript: **RNB OR, F. IV. 254, ll. 1–68**. This proves
+   Modern call number of the manuscript: **РНБ ОР, F. IV. 254, ll. 1–68**. This proves
    the existence of the family name by 1580, but the Synodikon does not name
    the service district of Andrey or of his father.
 2. The Oryol cadastral book of 1594/95 already shows several branches:
@@ -12115,12 +12115,12 @@ has still not been established.
 [A modern hypothesis about 1566](https://proza.ru/2025/03/31/1068),
 [publication of the Synodikon](https://www.vostlit.info/Texts/Dokumenty/Russ/XVI/1540-1560/Sinodik_ubiennych_vo_brani/text.htm),
 [the tsar's charter to Khilkov of 13 August 1580](https://vostlit.info/Texts/Dokumenty/Russ/XVI/1560-1580/Dok_livon_vojne_2/3/9.htm),
-[the Court Register in the NEB](https://rusneb.ru/catalog/000199_000009_006039889/).
+[the Court Register in the НЭБ](https://rusneb.ru/catalog/000199_000009_006039889/).
 
 ### Correcting a False Merge: the Reiter Anfilogov of 1698 Remains Nameless
 
 A full check of the primary forum publication and of the author's open macro workbook
-corrected an earlier error in the queue of files. For **RGADA, f. 210, op. 12,
+corrected an earlier error in the queue of files. For **РГАДА, f. 210, op. 12,
 d. 1698** only one surname item has been published: in the Oryol part of the file
 there is **Анфилогов, рейтар** ("Anfilogov, reiter"). The first name, patronymic and folio are not
 named in the open message. In the workbook «БД_Служилые_XVII в (v36).xlsm» this is row 480 of the sheet
@@ -12130,7 +12130,7 @@ the introductory sheet states directly that personal extracts and copies are kep
 the public surname database.
 
 The earlier reading **«Офонасей Осипов сын Анфилогов, л. 392 об.»** ("Ofonasey Osipov syn Anfilogov, l. 392 v.") does not belong
-to this file. It is taken from the Oryol estimate book **of 1641/42 — RGADA,
+to this file. It is taken from the Oryol estimate book **of 1641/42 — РГАДА,
 f. 210, op. 4, d. 260**. The error arose because a search snippet
 combined the text of the message about the 1698 file with another message from the same long
 forum thread. The 1698 post itself contains no name.
@@ -12232,7 +12232,7 @@ so no profiles or route are created.
 
 ### The Roll of 1604: Scale Is There, the Names of Oryol Men Are Not
 
-A new direct source turned out to be available in the official RGADA viewer:
+A new direct source turned out to be available in the official РГАДА viewer:
 **f. 210, op. 9, d. 1074 — «Роспись русского войска, посланного против
 самозванца в 1604 году»** ("Roll of the Russian army sent against the Pretender in 1604"). The file has been digitised in full in 179 frames. This is exactly
 the document on which the literature bases the large Oryol contingent
@@ -12258,7 +12258,7 @@ corporation in 1604, but not the origin of the people. So this corridor
 is closed as a source of surnames, and priority remains with early name-by-name
 lists of Cossacks, streltsy and pishchalniki and with files on enrolment into the deti boyarskie.
 
-[The official RGADA viewer](http://rgada.info/kueh/index2.php?str=210_9_1074&name=Роспись%20русского%20войска),
+[The official РГАДА viewer](http://rgada.info/kueh/index2.php?str=210_9_1074&name=Роспись%20русского%20войска),
 [the card of the 1979 publication in the RSL](https://search.rsl.ru/ru/record/01007592477).
 
 ### Inverted Patronymics and Searching by Family Cluster
@@ -12272,7 +12272,7 @@ Vasily, Timofey and Karp were checked separately.
 
 The database yielded no independent pre-Oryol family signature. The only exact
 sixteenth-century line is **Mikulin Vasily**, the Obonezhskaya pyatina of Novgorod, 1588,
-RGADA, f. 137, op. 1, d. 11. But there is neither Timofey nor Karp Mikulin next to him;
+РГАДА, f. 137, op. 1, d. 11. But there is neither Timofey nor Karp Mikulin next to him;
 a lone Novgorod surname does not reproduce the Oryol trio of brothers and does not
 create a Novgorod — Oryol route.
 
@@ -12309,13 +12309,13 @@ neighbouring family, not a Dedilov → Oryol route. For Anpilogovs this is impor
 a control: Lomaka was in one compact distribution with Ivan Nechayevich, and
 his family really did take root in Oryol for at least two generations.
 
-A full copy of **RGADA, f. 210, op. 6d, d. 1** was found in an open archive and
+A full copy of **РГАДА, f. 210, op. 6d, d. 1** was found in an open archive and
 downloaded. The Oryol section begins on l. 72. It has three Bogdashkas — Rezantsov,
 Smetsky and Shcherbatoy. The entry on the first spread viewed turned out to be
 Bogdashka Shcherbatoy, so it was not passed off as Rezantsov on the strength of one similar
 flourish; Rezantsov's exact folio is still being located folio by folio.
 
-In parallel the detailed Oryol desyatnya of 1628, **RGADA,
+In parallel the detailed Oryol desyatnya of 1628, **РГАДА,
 f. 210, op. 4, d. 270, ll. 141–151**, was checked. All 21 digital frames are available, but in
 the name sample of more than a hundred servitors there are neither Rezantsovs nor Anpilogovs.
 This is a different set, not a detailed version of the same entry for Bogdashka; the direction is
@@ -12337,7 +12337,7 @@ the surname **Onanyin**, because it was borne by the local previous holder
 Anpilog Ivanovich. In the open database of servicemen the exact form «Онаньин» (Onanyin) gave
 **55 rows**. The earliest record represented is **Bogdan Onanyin** in
 the Derevskaya pyatina of Novgorod in 1593–1595; two rows refer to two
-mentions or categories of one name in the inspection book (dozornaya kniga) **RGADA, f. 1209,
+mentions or categories of one name in the inspection book (dozornaya kniga) **РГАДА, f. 1209,
 op. 1, d. 974**. The linked publication warns that current, former and
 vacant landholders were entered as separate rows, so the repeats do not mean
 two Bogdans.
@@ -12477,7 +12477,7 @@ of unrelated surnames were created.
 But a new source forces a change in this tactic as well. A considerable part
 of the original sixteenth-century desyatni perished, especially in 1812. Their content
 is partly preserved in the **name extracts for
-genealogical proofs** made in the seventeenth and eighteenth centuries, in RGADA, f. 388, and in the old **family alphabets (azbuki)** of
+genealogical proofs** made in the seventeenth and eighteenth centuries, in РГАДА, f. 388, and in the old **family alphabets (azbuki)** of
 f. 210. Such extracts sometimes repeat the title of the lost book, the position
 of the man in the entry, the notes and the original folio. This is exactly how Karp's line
 was restored. For Vladimir control call numbers are already known: **f. 388, No. 851,
@@ -12494,7 +12494,7 @@ a man's appearance in the Oryol cadastral book: **enrolment of a new recruit →
 a pomestye → an extract or a charter correcting it**.
 
 [The full published text of the Vladimir desyatnya](https://drevlit.ru/docs/russia/XVI/1580-1600/Desjatni_Wladimir_Mesera/text.php),
-[the official card of the edition in the NEB](https://rusneb.ru/catalog/005664_000048_RuPRLIB12050997/),
+[the official card of the edition in the НЭБ](https://rusneb.ru/catalog/005664_000048_RuPRLIB12050997/),
 [publication of the Oryol cadastral book](https://archive.org/details/moscha-regia),
 [a study of Karp Volkov's service entry](https://cyberleninka.ru/article/n/konnost-lyudnost-i-oruzhnost-russkoy-konnitsy-v-epohu-livonskoy-voyny-1558-1583-gg.pdf),
 [an explanation of the method of reconstructing lost desyatni](https://muscovitearmor.wordpress.com/2018/07/08/).
@@ -12518,7 +12518,7 @@ Oryol bearer of the given name — Anpilog Ivanovich Onanyin.
 
 An independent publication of wedding records gave Mitya an earlier point. At the end of
 January 1547 he was assigned to the Kremlin guard **at the Rizpolozhensky
-Doors** (the Doors of the Deposition of the Robe). The archival address of the line: RGADA, f. 135, otd. IV, rubr. II, No. 2,
+Doors** (the Doors of the Deposition of the Robe). The archival address of the line: РГАДА, f. 135, otd. IV, rubr. II, No. 2,
 ll. 9–13. Twenty-six years later the same full short name is again found
 at the sovereign's court. One milieu and a rare combination make the identity probable,
 but there is no patronymic in either entry.
@@ -12546,19 +12546,19 @@ in one fond is wrong: the chain of proof must be assembled from both sides of
 the correspondence.
 
 This corrects an earlier conclusion that was too strong. The Kursk noble decision
-on Anfilogovs is dated **20 January 1798**, and the RGADA books of reference statements,
+on Anfilogovs is dated **20 January 1798**, and the РГАДА books of reference statements,
 f. 388, op. 1, d. 120–121, also belong to 1798. The coincidence makes them
 good candidates but does not yet prove that a family reference statement is precisely
 there. Several Anfilogovs are brought together by a later Senate decree of
 **18 October 1849, No. 7806**. An archival check of the old service may have been
 carried out, or repeated, precisely during these proceedings.
 
-So the first priority now is **RGIA, f. 1343, op. 16, d. 2345**
+So the first priority now is **РГИА, f. 1343, op. 16, d. 2345**
 (1826–1887): look for the block of decree No. 7806, the genealogical table, the fair-copy Razryad
 reference statements and the outgoing numbers of the inquiries. These numbers will allow their
 drafts in f. 388 to be found by address. Files 120–121 remain in the order as candidates of 1798,
 and d. 102, former No. 853, as the alphabetical path to the lost desyatni.
-An additional path is the Heraldry Office, RGADA, f. 286; the open
+An additional path is the Heraldry Office, РГАДА, f. 286; the open
 full-text search there does not cover the whole fond, so the absence of the surname
 in the available inventory 2 does not close the direction.
 
@@ -12567,8 +12567,8 @@ in the available inventory 2 does not close the direction.
 
 ### Vasily Anpilogov: a Kursk Case of 1767
 
-A global search not of surname databases but of the text of all available RGADA
-inventories gave a new address find: **RGADA, f. 520, op. 5, d. 256, 1767**.
+A global search not of surname databases but of the text of all available РГАДА
+inventories gave a new address find: **РГАДА, f. 520, op. 5, d. 256, 1767**.
 The fond belongs to the Kursk Voivode's Chancellery. The inventory heading:
 «Доношение гренадера Андрея Лащилова о неприводе им по инструкции разбойника
 однодворца Василия Анпилогова» ("Report of the grenadier Andrey Lashchilov on his failure, per instruction, to bring in the robber,
@@ -12590,7 +12590,7 @@ Chancellery is the jurisdiction of the case, not a proven place of residence of 
 The next step is to obtain the folios of the file and find the patronymic, village, age,
 relatives and the route of the intended bringing-in.
 
-[Full-text search of the RGADA inventories](https://rgada.sovadev.pro/),
+[Full-text search of the РГАДА inventories](https://rgada.sovadev.pro/),
 [inventory of fond 520, the file on page 13](http://rgada.info/opisi/520-opis_5.pdf#page=13).
 
 ### A Third Dedilov Imprint: Suvorov Next to Nechayev Twice
@@ -12645,7 +12645,7 @@ Dedilov → Oryol and sharply raise Ivanko Nechayev's candidacy.
 
 The new tactic worked not through yet another surname index, but through
 the physical reconstruction of a document. The researcher Trubi97 compared two
-fragments of **RGADA, f. 210, op. 21**: file **2099** preserves the old numbering
+fragments of **РГАДА, f. 210, op. 21**: file **2099** preserves the old numbering
 ll. 98–111, file **1952**, ll. 112–113. The signature run (skrepa) from l. 111 passes directly onto
 l. 112, and its handwriting is the same in both fragments. Consequently, the present two
 storage units are consecutive pieces of one book.
@@ -12678,8 +12678,8 @@ since no specific person or route has been established.
 
 The tactic was changed again: what is sought now is not a surname in the whole database but each
 small Oryol section of the consolidated enrolment desyatni. The full scholarly description
-of the books of the Razryad Prikaz, printed by the MAMYu in 1890, revealed an exact snapshot
-that is absent from the open name index: **30 December 1639, RGADA,
+of the books of the Razryad Prikaz, printed by the МАМЮ in 1890, revealed an exact snapshot
+that is absent from the open name index: **30 December 1639, РГАДА,
 f. 210, op. 4, d. 299, l. 154**.
 
 This is a desyatnya of new recruits of all towns who were enrolled in Moscow in the Bolshoy Prikhod (Great Revenue Office) by
@@ -12711,13 +12711,13 @@ A card `RGADA-210-OP4-OPIS-D299` has been created; photocopies of the official
 inventory and of the detailed description of 1890 have been saved.
 
 [The open database of servicemen](https://next-fast-table-gold.vercel.app/),
-[book 7 of the «Описание документов и бумаг МАМЮ» (Description of the Documents and Papers of the MAMYu)](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3,_%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_07_1890.pdf).
+[book 7 of the «Описание документов и бумаг МАМЮ» (Description of the Documents and Papers of the МАМЮ)](https://commons.wikimedia.org/wiki/File:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B8_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3,_%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B5_%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D1%8E%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8_%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_07_1890.pdf).
 
 ### Searching by the Mechanism of Service: the Bridge 1668 → 1675 → 1685
 
 A check of a large folio-by-folio transcription, rather than only a surname index,
 gave three results at once in the **sorting book (razbornaya kniga) of the Stary Oskol deti boyarskie
-of 1675: RGADA, f. 1163, op. 1, d. 1**.
+of 1675: РГАДА, f. 1163, op. 1, d. 1**.
 
 On l. 266, first under the heading «Городовыя ж службы неверстаные дети боярские» ("And of town service, unenrolled deti boyarskie"),
 stands **Ivan Mikhailov syn Anpilov**. Before this he was known only as
@@ -12744,7 +12744,7 @@ a surname-bearing pomestye holder of 1594.
 [Full folio-by-folio transcription of the sorting book](https://pomnirod.ru/materialy-k-statyam/administrativno-territorialnoe-delenie-rossijskoj-imperii/gubernii-rossii/kurskoe-namestnichestva-1779-1797.-kurskaya-guberniya-1797-1924/naselennye-mesta-gubernii-po-uezdam-i-volostyam19/starooskolskij-uezd-belgorodskoj-gubernii/istoricheskie-dokumenty-starooskolskogo-uezda-kurskoj-gubernii/skazki-poddanyya-v-starom-oskole-stolniku-a.-s.titovu.html).
 ### The Penkovs: not one line but at least three paternal axes
 
-The review list (razborny spisok) of the Oryol servicemen of 1620/21 (RGADA, f. 210, op. 14, d. 502) adds an important control to the hypothesis about the Vasilyevich Penkovs of 1596–1617. A single file locates Ivan Olekseev syn Penkov (fol. 17), Oleksey Penkov with no established patronymic (fol. 83), Oleksey Ignatyev syn Penkov (fol. 90) and Larka Ontonov syn Penkov (fol. 99). A chain Ignaty → Alexey → Ivan is possible, but the second Alexey does not allow it to be considered proven. A separate line Anton → Larion (Larka) is visible.
+The review list (razborny spisok) of the Oryol servicemen of 1620/21 (РГАДА, f. 210, op. 14, d. 502) adds an important control to the hypothesis about the Vasilyevich Penkovs of 1596–1617. A single file locates Ivan Olekseev syn Penkov (fol. 17), Oleksey Penkov with no established patronymic (fol. 83), Oleksey Ignatyev syn Penkov (fol. 90) and Larka Ontonov syn Penkov (fol. 99). A chain Ignaty → Alexey → Ivan is possible, but the second Alexey does not allow it to be considered proven. A separate line Anton → Larion (Larka) is visible.
 
 This changes the search technique: a surname match has to be broken down into paternal axes, and then one has to look for the otkaznye and grant formulas «после отца» ("after the father"), «с отцова поместья» ("from the father's pomestye"), «брат» ("brother"). The same method applies to Vasily Dmitrievich Anpilogov and to Alexey/Ivan Vasilyevich Anfilokhov from the same file. The matching patronymic makes the last two candidates for a single line of Vasily, but does not prove that their father was Vasily Dmitrievich in particular.
 
@@ -12813,7 +12813,7 @@ map.
 ### The book of old grants: an exact address instead of a general surname search
 
 The new route leads not to yet another desyatnya but backwards from the land survey of 1680–1682.
-The official RGADA catalogue locates a huge Oryol book:
+The official РГАДА catalogue locates a huge Oryol book:
 **f. 1209, op. 1, kn. 336, fols. 1–546v.** In it Pyotr Vasilyevich Shamordin and
 Stepan Repyev measured the pomestye "pridachi" from the Wild Field, and the trial and boundary-traced
 lands of the Taichukov, Korchakov and Nepolotsk stans. The related set
@@ -12955,7 +12955,7 @@ family. In the Odoyev sotnaya (land-tax extract) of 25 May 1565, next to the roa
 Novosil, are named **«Кости Иванова сына Савенкова да сына ево Нечаика»** ("Kostya Ivanov syn Savenkov and his son Nechaik").
 The formula undoubtedly records two generations: Kostya Ivanovich Savenkov and his
 son Nechay. On the photocopy of printed p. 109 the line reads clearly; the publication
-gives the archival basis: RGADA, f. 1209, stolbtsy for Belyov, No. 39848, pt. 1,
+gives the archival basis: РГАДА, f. 1209, stolbtsy for Belyov, No. 39848, pt. 1,
 fols. 88–104, a copy of 1660, the target place on fol. 102v.
 
 In the Oryol book of 1594/95, on p. 871, stands **Osip Nechaev syn
@@ -12973,7 +12973,7 @@ record `PUB-ODOEV-1565-OREL-1594-SAVENKOV-PATRONYMIC-BRIDGE` keeps both
 photocopies, the literal lines, the analysis of the names and the exact limit of the conclusion.
 
 A late control gave a useful but not decisive result. In the name index
-to RGADA, f. 1209, op. 1, d. 488, on the Novosil fol. 254, stand together Andrey and
+to РГАДА, f. 1209, op. 1, d. 488, on the Novosil fol. 254, stand together Andrey and
 Pronka Potapovy deti Savenkovy, Ivan Lomakin and Kuzma Fyodorov Savenkovy.
 Nechay Kostin or Osip Nechaevich are not among them. So in the 17th century several
 lines of the Savenkovs continued to live in the old Novosil district; a possible departure
@@ -13013,7 +13013,7 @@ researched surname group.
 
 ### 1645/46: only one explicitly named Onpilogov remained in all of Bazdyrevo
 
-The six spreads found, **RGADA, f. 1209, op. 1, d. 14, fols. 240v–246**,
+The six spreads found, **РГАДА, f. 1209, op. 1, d. 14, fols. 240v–246**,
 have now been checked as one continuous block, not merely as the source of Ivan's
 line. Among the headings of the numbered households the explicit surname form of the
 researched group is read once: **No. 441, «Двор того ж помещика Ивана
@@ -13068,7 +13068,7 @@ Thus the search changes from an all-Russian trawl of the surname to an
 corpus**. The profiles and the map do not change for now: an index reference on its own
 is not a new event.
 
-[Official catalogue of RGADA cadastral books](https://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
+[Official catalogue of РГАДА cadastral books](https://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf),
 [open photocopy of kn. 329](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ).
 
 ### Archival foliation corrected: Bazdyrevo is on fols. 549–551v
@@ -13155,7 +13155,7 @@ Nikolsky na Voloke Derzhkove pogost of the Bezhetsk pyatina. Publication:
 «Русский дипломатарий» [Russian Diplomatarium], issue 8, 2002, No. 1678, p. 214.
 
 An essential correction to the type of source: there is no full text of the extract yet.
-The catalogue marks the entry as a **mention** and gives its address: **RGADA, f. 1209,
+The catalogue marks the entry as a **mention** and gives its address: **РГАДА, f. 1209,
 op. 1, kn. 972, fol. 66**. An independent catalogue of cadastral books identifies kn. 972
 as the inspection book (dozornaya kniga) of the Bezhetsk pyatina of 1593/94, from the inspection by Voin Ivanovich
 Zavalishin and the podyachy Zhdan Zinovyev, fols. 1–294. So the scribes of 1593/94
@@ -13181,12 +13181,12 @@ if not, the Bezhetsk branch will remain an independent same-surname control.
 
 [Antonov's catalogue in Google Books](https://books.google.com/books?id=ySknAQAAIAAJ),
 [open name index to the catalogue](https://62info.ru/history/node/11442),
-[catalogue of RGADA cadastral books](http://rgada.info/materiali/baranov_catalog.pdf).
+[catalogue of РГАДА cadastral books](http://rgada.info/materiali/baranov_catalog.pdf).
 
 ### Full-text search of the inventories changes the archival priority: f. 1209 before f. 141
 
 A new independent path of verification has opened — a full-text search of **5,334
-RGADA inventories**, including the OCR of **1,035 PDFs**. In the early materials of fonds 210,
+РГАДА inventories**, including the OCR of **1,035 PDFs**. In the early materials of fonds 210,
 141 and 1209, Oryol, watch service, the year 1577 and the variants Anfilog-,
 Anpilog-, Onfilog- and Ampilog- were checked. The search did not show an independently titled Oryol file
 about a muster or a pridacha of 1577. This result applies
@@ -13216,7 +13216,7 @@ but not the town of origin of a specific Anfilogov. A route without a personal l
 is not added.
 
 [Publication of the verdict of 15 March 1577](https://drevlit.ru/docs/russia/XVI/1560-1580/Akty_Popov_I/21-40/23.php),
-[full-text search of RGADA inventories](https://rgada.sovadev.pro/).
+[full-text search of РГАДА inventories](https://rgada.sovadev.pro/).
 
 ### Not a surname search but Pavel Ievlev's biographical gap
 
@@ -13318,11 +13318,11 @@ town named, so he cannot yet be linked with Oryol Anfilogovs of 1594–1596.
 
 A separate profile of Danila and a Record with the full service framework have been created. The map
 shows only Oskol in 1615; no route from Oryol is drawn. The next
-point of verification is the manuscript fol. 78v of RGADA, f. 1209, op. 1, kn. 342, and
+point of verification is the manuscript fol. 78v of РГАДА, f. 1209, op. 1, kn. 342, and
 the repeated Oskol books of 1623–1626.
 
 [Open transcription of the book with folio references](https://forum.vgd.ru/post/2160/38740/p5351246.htm),
-[catalogue entry for A. P. Nikulov's edition in the NEB](https://rusneb.ru/catalog/000199_000009_011833476/).
+[catalogue entry for A. P. Nikulov's edition in the НЭБ](https://rusneb.ru/catalog/000199_000009_011833476/).
 
 ### A new turn: a possible brother and two genealogies of the Ievlevs
 
@@ -13335,7 +13335,7 @@ no longer looks like a single editorial anomaly: its grammar is confirmed by
 other double paternal names in the same desyatnya.
 
 Both genealogical lists (rospisi) have now been found in full text: *Российская генеалогия* [Russian Genealogy], issue 8
-(2020), Nos. 42–43, pp. 299–309; archival basis — RGADA, f. 286, op. 1,
+(2020), Nos. 42–43, pp. 299–309; archival basis — РГАДА, f. 286, op. 1,
 item 450, fols. 288–293v. The first, submitted by **Seliverst Ievlev on 19 March
 1686**, derives his Tula branch from Vasily Vasilyevich Ievlev,
 who came, according to family tradition, from Veliky Novgorod under Vasily
@@ -13355,7 +13355,7 @@ The negative result changes the direction of the search: what is needed are the 
 kinsmen**, Ryazhsk pomestye inheritances and the descendants of Panka Arbeev, not a
 repetition of the general history of the Tula Ievlevs.
 
-The early trace has also been checked against the official digital copy of the National Library of Russia (RNB), not only against
+The early trace has also been checked against the official digital copy of the National Library of Russia (РНБ), not only against
 an alphabetical internet index. On printed p. 108, manuscript fol. 38 of the list of
 the court of 1573, it literally reads: **«Помясы. По 5 рублей. Паня Иевлев. Юшко
 Химин»** ("Pomyasy. 5 roubles each. Panya Ievlev. Yushko Khimin"). Thus Panya was not a nameless "oprichnik in general" but a pomyas
@@ -13372,7 +13372,7 @@ form Orbeev/Arbeev, no town or land. The new narrow query is formulated as follo
 find for the palace servant Panya Ievlev a patronymic, a pomestye grant or a release from the court
 between 1573 and 1591. Until there is such a bridge, no profile or route is created.
 
-[Official viewer of the RNB edition](https://vivaldi.nlr.ru/pm000000514/view),
+[Official viewer of the РНБ edition](https://vivaldi.nlr.ru/pm000000514/view),
 [issues of the almanac «Российская генеалогия» (Russian Genealogy)](https://www.svrt.ru/lib/periodika.shtml),
 [post with the archival folios of the lists](https://forum.vgd.ru/post/401/22205/p1133280.htm).
 
@@ -13412,7 +13412,7 @@ change. Temporary service must not be turned into an invented route on the map.
 
 The volunteer project «Сказочки, сказки и сказищи Орловщины» ("Little Tales, Tales and Great Tales of the Oryol Region") did indeed
 open a shared cloud and marked as bought out the Oryol cadastral book of 1594/95
-— RGADA, f. 1209, op. 1, d. 329. However, the attractive formula
+— РГАДА, f. 1209, op. 1, d. 329. However, the attractive formula
 **«Орловский — 21 дело / 10 960 листов — выкуплено»** ("Oryol — 21 files / 10,960 folios — bought out") refers to fond 350,
 that is, to the revision tales, not to the pomestye books of fond 1209.
 
@@ -13433,7 +13433,7 @@ Instead of yet another query by surname, the updated table of participants in th
 project of open Oryol scans has been checked. The Anfilogov group itself, the Bazdyrevs,
 Krivolapovs, Penkovs, Onanyins and Ievlevs are not declared in it. But a person has been found
 who separately researches **the Kolugins (Kalugins) precisely from the Oryol cadastral book
-of 1594**: the VGD user `aleksgooo`, Telegram `@ignority`. His
+of 1594**: the ВГД user `aleksgooo`, Telegram `@ignority`. His
 open posts show the same productive technique that we need:
 comparing an Oryol family with same-surname people of Bolkhov, Tula and Novosil and with the
 noviki of 1596, rather than mechanically declaring all bearers of the surname kin.
@@ -13454,8 +13454,8 @@ a separate instruction.
 ### The Heraldry Office index checked and closed as a dead end
 
 Instead of yet another general search by surname, the open alphabetical index of
-the Heraldmeister's Office has been checked: RGADA, fond 286, index 238, letters A–B for
-1724–1796. The VGD thread has published not only manual extracts but also a shared
+the Heraldmeister's Office has been checked: РГАДА, fond 286, index 238, letters A–B for
+1724–1796. The ВГД thread has published not only manual extracts but also a shared
 Google Drive folder with two PDF copies of the index. This made it possible to check the
 source itself rather than rely only on search results.
 
@@ -13467,7 +13467,7 @@ nor a map point is created for them. This path has been closed deliberately: wha
 the old surname alphabets of fonds 388 and 210 and extracts on the proven neighbours of
 the Oryol book.
 
-[VGD thread on the alphabets of fond 286](https://forum.vgd.ru/252/60399/0.htm),
+[ВГД thread on the alphabets of fond 286](https://forum.vgd.ru/252/60399/0.htm),
 [open folder with the scans](https://drive.google.com/drive/folders/1cVp5vGt6TddL0AbIiiA1zcYZl8H9-oyK?usp=sharing).
 
 ### The Rylsk branch gets a lower time limit
@@ -13506,10 +13506,10 @@ Anfilogovs.
 This is not a negative result for the file itself. The author does not print the lists of 1635
 in full and explicitly excludes deti boyarskie from his study.
 Therefore the published layer is exhausted, but the archival one is not. The address needed:
-**RGADA, f. 210, op. 12, pt. 1, d. 65, fols. 156–157, 189, 268, 305–308 and
+**РГАДА, f. 210, op. 12, pt. 1, d. 65, fols. 156–157, 189, 268, 305–308 and
 321–325v.** Additional control — fols. 131, 322, 378–379 and 431.
 
-At the same time a false digital double has been definitively cut off. The open VGD card
+At the same time a false digital double has been definitively cut off. The open ВГД card
 with the number "d. 65" describes **f. 210, op. 4, d. 65** — the desyatnya of Bryansk,
 Starodub, Pochep and Roslavl of 1631. This is not the Oryol file from inventory 12 and
 not its photocopy. In the public database of 421,095 rows the required call number 210-12-65
@@ -13525,13 +13525,13 @@ and Fyodor in all service categories. Until there is an individual line, the map
 change.
 
 [I. E. Kushelev's open article](https://e-notabene.ru/view_article.php?aurora=0&id_article=69870&logged=0&nb=1),
-[description of another file with the same number on VGD](https://forum.vgd.ru/post/252/21016/p3639826.htm#pp3639826).
+[description of another file with the same number on ВГД](https://forum.vgd.ru/post/252/21016/p3639826.htm#pp3639826).
 
 ### A new move: two unindexed files are read from the frames themselves
 
 The repeated search by surname variants has been stopped where it ceased to yield
 anything new: what was checked was not another search string but the contents of a recently opened folder for
-fond 210. This is how a complete photocopy of **RGADA, f. 210, op. 12, d. 59**
+fond 210. This is how a complete photocopy of **РГАДА, f. 210, op. 12, d. 59**
 for 1635–1636 was discovered. The official inventory shows two important
 mechanisms inside the file at once: on fols. 93–102 — the enrolment and recruitment of new servicemen, on
 fols. 169–185 — the payment of salaries to the gunners, zatinshchiki and smiths transferred
@@ -13544,7 +13544,7 @@ This is not a negative finding: the list has to be marked up line by line.
 No family route is created on the map, because a general transfer of gunners does not
 mean the transfer of an Anfilogov and already belongs to the restored Oryol.
 
-A stronger find is **RGADA, f. 210, op. 12, d. 95, fols. 166–186**.
+A stronger find is **РГАДА, f. 210, op. 12, d. 95, fols. 166–186**.
 The official inventory singles out here a separate Oryol section of 1637–1638 in
 the file about the Tatar incursion, the devastation and the dispatch of servicemen. Both
 needed parts of the photocopy have been obtained, and the whole block from fol. 166 to fol. 186 has been isolated: these are twenty-one
@@ -13562,11 +13562,11 @@ a new name but also link two generations or preserve a formula of former service
 
 [Public cloud with the scans](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ),
 [description and folio boundaries of file 95](https://forum.vgd.ru/post/1851/142603/p5034858.htm),
-[official RGADA inventory](http://rgada.info/poisk/index2.php?str=210-opis_12-1).
+[official РГАДА inventory](http://rgada.info/poisk/index2.php?str=210-opis_12-1).
 
 ### A change of direction: the service lists of file 96 and the exact Oryol folios
 
-The neighbouring **RGADA, f. 210, op. 12, d. 96** turned out to be not a repetition of file 95 but
+The neighbouring **РГАДА, f. 210, op. 12, d. 96** turned out to be not a repetition of file 95 but
 another type of source: service lists sent in by the voivodes after
 the Tatar raid of 1637–1638. A note in the official inventory distributes
 the parts of the stolbets among the towns and gives **fols. 179–204 for Oryol**. Thus
@@ -13596,7 +13596,7 @@ reading remains, with verification of the whole formula and the neighbouring lin
 
 [Open index of file 96](https://dompredkov.ru/posluzhnye-spiski-ukrainnyh-gorodov-1637-1638gg/),
 [the model tested and rejected for this handwriting](https://huggingface.co/Kansallisarkisto/cyrillic-large-handwritten),
-[official RGADA inventory](http://rgada.info/poisk/index2.php?str=210-opis_12-1).
+[official РГАДА inventory](http://rgada.info/poisk/index2.php?str=210-opis_12-1).
 
 #### A full audit of the open collection: file 96 is not there
 
@@ -13628,7 +13628,7 @@ independent name nests of the 1620s.
 
 The cadastral book of Totma district of 1622 records **Khomyakov Kalistatka
 Onfilofyev syn** of the village of Bychenevo, also known as Kolotovskoe and Khomyakovo, in Uftyuga
-volost: RGADA, f. 1209, kn. 480/486, fol. 359. Here «Онфилофьев сын» ("son of Onfilofy") is
+volost: РГАДА, f. 1209, kn. 480/486, fol. 359. Here «Онфилофьев сын» ("son of Onfilofy") is
 a literal patronymic, and Khomyakov is a separate family naming. The match
 Khomyakov — Khomyakovo is interesting but does not prove that Kalistatka was the founder of
 the village.
@@ -13724,26 +13724,26 @@ hide a well-documented man of quite another social milieu.
 ### A new search by document genre: the Anfilovskaya village and the sheepskin-maker Anfilofy Novik
 
 After the surname queries had been exhausted, a new full-text layer of the
-official inventories of RGADA and of the Archive of the St Petersburg Institute of History of the Russian Academy of Sciences (SPbII RAN) was checked. The search was built not only on
+official inventories of РГАДА and of the Archive of the St Petersburg Institute of History of the Russian Academy of Sciences (SPbII РАН) was checked. The search was built not only on
 Anfilogov but on the formulas «ввозная» ("letter of installation"), «отдельная» ("allotment"), «верстанье» ("enrolment"), «испомещён» ("granted a pomestye"),
 «сошёл» ("left") and «отцовское поместье» ("father's pomestye"). No new document about a 16th-century Oryol
-resettlement was found in the RGADA inventories. The formula found about granting a pomestye on moving from Oryol
+resettlement was found in the РГАДА inventories. The formula found about granting a pomestye on moving from Oryol
 to Stary Oskol relates to Frol Vorobyov in 1693 and serves as a late
 control of the mechanism, not as a route of the researched family.
 
-The search in the SPbII RAN Archive, however, yielded two previously unrecorded entries of the fond of the
+The search in the SPbII РАН Archive, however, yielded two previously unrecorded entries of the fond of the
 Antoniev-Siysky Monastery.
 
 On **15 September 1573** Yakov Ivanov syn Shalyapin and Ivan Danilov syn
 exchanged "scraps of land" **in the Anfilovskaya village**. Exact address:
-SPbII RAN Archive, f. 5, op. 1, d. 554, 1 fol. The possessive form naturally
+SPbII РАН Archive, f. 5, op. 1, d. 554, 1 fol. The possessive form naturally
 goes back to the name Anfil or the naming Anfilov, but does not reveal a specific
 eponym. This is a new independent toponymic example of the 16th century, not yet connected
 either with the Tver Onfilogovo or with Oryol.
 
 On **11 February 1575** the sheepskin-maker of the Glinki posad **Anfilofy Novik Ivanov
 syn** sold to Semyon Nikitin syn Sobakin half a household and household plot on
-the Gostinny bereg in Glinki. Exact address: SPbII RAN Archive, f. 5, op. 1,
+the Gostinny bereg in Glinki. Exact address: SPbII РАН Archive, f. 5, op. 1,
 d. 567, 1 fol. The name Anfilofy is recorded directly; Ivanov syn is a patronymic, and
 Novik is an additional naming whose type will become clear only from the
 original deed of purchase. The word «овчинник» ("sheepskin-maker") for the first time gives one of the early bearers of the
@@ -13765,9 +13765,9 @@ and not necessarily one hereditary surname. For Oryol the decisive evidence
 will remain only a full formula with a former town, a relative or the transfer
 of an old pomestye.
 
-[Official inventory of fond 5 of the SPbII RAN](https://spbiiran.ru/wp-content/uploads/2023/06/rs_005_01_fund_antoniev_siiskii_monastyr.pdf),
-[new full-text search of the SPbII RAN](https://spbiiran.sovadev.pro/?r=%D0%B0%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D1%84),
-[full-text search of RGADA inventories](https://rgada.sovadev.pro/).
+[Official inventory of fond 5 of the SPbII РАН](https://spbiiran.ru/wp-content/uploads/2023/06/rs_005_01_fund_antoniev_siiskii_monastyr.pdf),
+[new full-text search of the SPbII РАН](https://spbiiran.sovadev.pro/?r=%D0%B0%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D1%84),
+[full-text search of РГАДА inventories](https://rgada.sovadev.pro/).
 
 ### Testing the "service imprint": a rare name without a family does not work
 
@@ -13779,7 +13779,7 @@ Persha and Terenty** were searched separately.
 The result revealed an important bias in the corpus. For Mikula, six lines of
 the 1580s and four lines of the 1590s were found; for Nechay — 31 and eight; for Terenty — two
 lines of the 1580s. But all the hits come from the Novgorod pyatinas: files
-RGADA, f. 1209, op. 1, d. 301, 716, 725, 727 and 974, and also f. 137,
+РГАДА, f. 1209, op. 1, d. 301, 716, 725, 727 and 974, and also f. 137,
 op. 1, d. 11. For Pakhom and Persha there are no lines. With the 1590s filter the
 forms **Anf-, Anp-, Onf-, Onp-, Amp-, Opil- and Onil-** also gave zero.
 
@@ -13802,7 +13802,7 @@ a candidate. The check has been entered in the Record
 ### Land instead of a list: the Ryazhsk recruitment of 1592
 
 After the dead end with rare names, the search has moved from name indexes to late
-land files capable of quoting lost 16th-century charters. An RGADA catalogue
+land files capable of quoting lost 16th-century charters. An РГАДА catalogue
 card already pointed to an extract of 20 March 1700 (f. 281, op. 17,
 d. 12222) which sets out charters of 1592 and 1597. Now the
 printed text of the report has also been found and checked.
@@ -13838,7 +13838,7 @@ town. The information has been entered in the Record
 been changed, because the document does not show a direct movement of a bearer of the researched
 group.
 
-The RGADA full-text index has been checked for all five names and for Ievlev with
+The РГАДА full-text index has been checked for all five names and for Ievlev with
 a filter for fond 281 — zero matches. Without the filter dozens of unrelated
 Korenevs, Sekerins and Pupki appear. This is a useful limit: the relevant inventory has not entered the
 readable corpus, so a further general full-text search would again be a
@@ -13852,7 +13852,7 @@ surname search. In a charter of Tsar Vasily Shuisky sent to Mikhaylov and Pronsk
 in August 1606, the parties to a land dispute are named **«пронские де казаки
 Осипова приказу Секерина Ненашевой сотни Колышкина»** ("the Pronsk Cossacks, it is said, of Osip Sekerin's prikaz, of Nenash Kolyshkin's hundred"). Next is named
 the pyatidesyatnik Kostya Letovskoy with his companions. The archival address of the quoted
-act: **RGADA, f. Pomestny Prikaz, Ryazan, stb. 40947, pt. 1, fols. 56–57**.
+act: **РГАДА, f. Pomestny Prikaz, Ryazan, stb. 40947, pt. 1, fols. 56–57**.
 
 The hierarchy is fully legible: the strelets commander (golova) Osip Sekirin — the sotnik Nenash
 Kolyshkin — the pyatidesyatnik Kostya Letovskoy. The reference book links this group with
@@ -13887,7 +13887,7 @@ layer is the files about filling the 65 places and the transition from the prika
 the prikaz of Osip Sekirin.
 
 The original manuscript has also ceased to be unknown. The catalogue of digitised files
-shows **RGADA, f. 1209, op. 1, d. 354, fols. 1–478** — the cadastral book of
+shows **РГАДА, f. 1209, op. 1, d. 354, fols. 1–478** — the cadastral book of
 Pereyaslavl-Ryazansky, Pronsk, and the Kamensky and Okologorodny stans of
 1597–1598, printed inventory No. 2055. The official identifier of the digital
 card is `10000393580014`; the relevant list is on fols. 15–16. Next to it
@@ -13897,8 +13897,8 @@ search for a Pronsk list in general but as a viewing of fols. 15–16 and the ne
 followed by a search for attached otkaznye and installation records about the 65 vacancies.
 
 An access check on 31 August 2026 clarified the limit of this task. The old
-official RGADA viewer opened the card for d. 354 with an empty gallery, and
-the exact card in the GIS UIAD did not connect either through the project's browser or by a direct
+official РГАДА viewer opened the card for d. 354 with an empty gallery, and
+the exact card in the ГИС УИАД did not connect either through the project's browser or by a direct
 request to `online.archives.ru`. So fols. 15–16 remain for now an exact
 archival target but not a primary source we have read; the figures 300, 235 and 65
 still rest on the verified printed edition.
@@ -13920,7 +13920,7 @@ Pronsk — Ryazhsk — Oryol is put on the map.
 [«Писцовые книги Рязанского края» (Cadastral Books of the Ryazan Region), vol. I, issue 1](https://archive.org/details/pistsovyiaknigi00storgoog),
 [digital card for d. 354](https://online.archives.ru/guide/10000000001014/10000001151014/10000005098014/10000393580014/),
 [digital card for d. 396](https://online.archives.ru/guide/10000000001014/10000001151014/10000005098014/10000393829014/),
-[digital copy of Dobrolyubov in the NEB](https://rusneb.ru/catalog/000439_000034_RZN%7C%7C%7CBIBL%7C%7C%7C0000167996/).
+[digital copy of Dobrolyubov in the НЭБ](https://rusneb.ru/catalog/000439_000034_RZN%7C%7C%7CBIBL%7C%7C%7C0000167996/).
 
 ### Oryol — Ust-Ublya: a direct service corridor of 1571 found
 
@@ -13931,7 +13931,7 @@ to the mouth of the Ublya**. With him was to stand a mixed detachment from sever
 frontier (ukrainnye) towns. The Oryol quota is named literally: **10 deti boyarskie and
 20 Cossacks from Oryol**.
 
-The exact address of the original: **RGADA, f. 210, op. 6, d. 1, fols. 39–46**. This is
+The exact address of the original: **РГАДА, f. 210, op. 6, d. 1, fols. 39–46**. This is
 the Watch Book (Storozhevaya kniga) of 1571–1592, open on the archive's website. The printed text is
 «Акты Московского государства» [Acts of the Muscovite State], vol. I, No. 4, pp. 6–7. The official images of
 fols. 44v–46 have been checked and saved in the project.
@@ -13962,8 +13962,8 @@ of 1577. If such a list has survived, it should be compared simultaneously
 with the Oryol book of 1594/95 and the Oskol books of 1615–1626.
 
 [Printed text of the acts of 1571](https://yakovkrotov.com/acts/16/dvor/1571_amg.htm),
-[official RGADA viewer of the Watch Book](http://rgada.info/kueh/index2.php?str=210_6_1),
-[catalogue entry for vol. I in the NEB](https://rusneb.ru/catalog/000202_000043_80/).
+[official РГАДА viewer of the Watch Book](http://rgada.info/kueh/index2.php?str=210_6_1),
+[catalogue entry for vol. I in the НЭБ](https://rusneb.ru/catalog/000202_000043_80/).
 
 ### The first proven family route: Oskol — Tsarev-Alekseev, 1647/48
 
@@ -13973,7 +13973,7 @@ Levontyev syn Anpilov, brought over from Oskol**. Another folio reports that he 
 selected with his family for permanent residence in Novy Oskol; with him are two different sons,
 both recorded with the diminutive name Kondrashka — one married, the other unmarried.
 
-The archival addresses are given precisely: **RGADA, f. 210, op. 6d, d. 18, fol. 34,
+The archival addresses are given precisely: **РГАДА, f. 210, op. 6d, d. 18, fol. 34,
 106v; d. 20, fol. 12**. The published fragments of the originals make it possible to
 verify the surname form, the patronymic, the service category and the transfer formula. This is
 no longer a supposed corridor but a state resettlement of a family by name.
@@ -14066,7 +14066,7 @@ geography differ. They show how common the names were, not kinship.
 
 The tactics therefore change again. There is no longer any need to look for a ready-made surname in the printed part
 of the Yelets complex. Priority goes to the
-**unpublished folios of RGADA, f. 141, op. 1, 1592, d. 1** and to the late
+**unpublished folios of РГАДА, f. 141, op. 1, 1592, d. 1** and to the late
 Oryol land files that might quote the lost original
 grants. The formula needed is not just a surname but «жил прежде» ("lived formerly"), «остался отец» ("the father remained"),
 «брат/дядя» ("brother/uncle"), «написался на новый город» ("enrolled in the new town") or a direct transfer of a pomestye.
@@ -14171,7 +14171,7 @@ The Pekhlets line about the zherebey granted to Oleksey Oglomazov «из Иев�
 Одоевцова» ("from the pomestye of Ievlev the Odoev man") does not give the personal name of the previous holder. The search has been moved from
 the late lists of the surname to the history of Odoev land registration itself.
 
-The official RGADA reference guide states: **Odoev district was described in
+The official РГАДА reference guide states: **Odoev district was described in
 1576/77 by Andrey Skryabin and the podyachy (under-clerk) Stepan Vitovtov**. The authors
 link this cadastre with the distribution of the former lands of Prince M. I. Vorotynsky
 to new pomeshchiki and suggest that in the 1580s–1590s no new description of the district
@@ -14180,7 +14180,7 @@ the Ryazhsk Terenty Semyonovich Ievlev served.
 
 However, the catalogue of surviving Odoev books begins only with 1614/15:
 
-- payment book of 1614/15 — **RGADA, f. 1209, op. 1, kn. 488,
+- payment book of 1614/15 — **РГАДА, f. 1209, op. 1, kn. 488,
   l. 464–492 ob.**;
 - dozor (inspection survey) of 1615/16 — **kn. 524, l. 151–316**, copy in kn. 488,
   l. 493–560;
@@ -14201,7 +14201,7 @@ Ivan**, not Terenty. Therefore the Tula Semyon cannot be declared the father of 
 Ryazhsk Terenty on the strength of a patronymic alone. The possible Ryazhsk branch remains
 separate or unrecognised; the map does not change for now.
 
-[Official RGADA reference guide](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf).
+[Official РГАДА reference guide](http://rgada.info/sprav/sprav/zenchenko_ivanova_2013.pdf).
 
 ### A New Search Not for Pavel but for the Rare Combination "Terenty Ievlev"
 
@@ -14210,7 +14210,7 @@ Pavel himself but the stability of the rare personal name **Terenty** within dif
 branches of Ievlevs and the documented cases of their movement between towns.
 
 The first result relates to the early seventeenth century. The onomastic index to
-the three-volume description of documents of **RGADA, f. 141, op. 1, for 1505–1626**
+the three-volume description of documents of **РГАДА, f. 141, op. 1, for 1505–1626**
 contains the full form **«Иевлев Терентий Нечаев»** ("Ievlev Terenty Nechaev"). This is Terenty Ievlev with
 the patronymic Nechaev, not Trenka Semyonovich from the Ryazhsk desyatnya of 1579.
 The public index, however, has lost the issue number, page, year, file and
@@ -14218,7 +14218,7 @@ folio. Therefore the find so far gives a new precise object of archival search, 
 a relative of Pavel.
 
 The second result is a late control of a possible resettlement. In the razbornaya
-kniga (service review book) of 1680 (**RGADA, f. 210, op. 6, d. 117**), among eight Ryazhsk
+kniga (service review book) of 1680 (**РГАДА, f. 210, op. 6, d. 117**), among eight Ryazhsk
 Ievlevs, **Terenty Ievlev** is named. Eight or nine years later a man with the same
 combination of surname and first name is recorded in the town of Dobry in the smetnaya kniga (budget book) of
 1688–1689 (**f. 210, op. 6d, d. 153**). In Ryazhsk alongside him stand Vasily,
@@ -14254,7 +14254,7 @@ Moscow — 77, Belyov — 68, Odoev — 63, Ryazhsk — 30, Yaroslavl — 28, Ko
 23, Arzamas — 18, Ryazan — 17**.
 
 The earliest index line unexpectedly leads even further north: **Mikhail Ievlev,
-1588, Novgorod, Obonezhskaya pyatina, RGADA, f. 137, op. 1, d. 11**. This
+1588, Novgorod, Obonezhskaya pyatina, РГАДА, f. 137, op. 1, d. 11**. This
 agrees with the genealogical tradition of the senior Tula branch about its origin in
 Novgorod, but does not make Mikhail a relative of the Tula or Ryazhsk Ievlevs:
 there is no patronymic and no linking charter.
@@ -14378,7 +14378,7 @@ the updated layer of the Tver dozornaya kniga (inspection book) of **1551–1554
 to 1552: the Tysyachnaya kniga (Thousand Book) of 1550 simultaneously records two Princes
 Dmitry Ivanovich Mikulinsky, and the inspection book does not distinguish which of them
 Persha served. The find is especially notable because it is in the same manuscript complex,
-**RGADA, f. 1209, op. 1, kn. 466**, where the Tver Onfilogovo is recorded.
+**РГАДА, f. 1209, op. 1, kn. 466**, where the Tver Onfilogovo is recorded.
 However, a shared volume is a link between sources, not proof of kinship.
 
 **Names and meaning.** Persha here is an independent personal name or a colloquial

@@ -89,4 +89,4 @@ The censuses of 1646 were connected with the state's binding of the tax-paying p
 
 ## What to look for next
 
-An image of fol. 91v of the RGADA book is needed. For tracing the family further, the later censuses of Oskol district and the monastery books are especially important, where Ivan might appear with a household of his own.
+An image of fol. 91v of the РГАДА book is needed. For tracing the family further, the later censuses of Oskol district and the monastery books are especially important, where Ivan might appear with a household of his own.

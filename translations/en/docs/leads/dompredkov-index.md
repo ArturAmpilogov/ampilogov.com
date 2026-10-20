@@ -1,6 +1,6 @@
 # The "Dom Predkov" Index of Servicemen
 
-A. Shatokhin's index brings together the names of 16th–18th-century servicemen from RGADA files
+A. Shatokhin's index brings together the names of 16th–18th-century servicemen from РГАДА files
 in a single database: 421,095 entries as of August 2026. A search for all documentary
 forms of the surname produced **187 machine lines** with the root -пилог-/-филог- (-pilog-/-filog-) and another 10
 lines of the short form «Анпилов» (Anpilov). Checking against the full name index of one of the
@@ -86,7 +86,7 @@ match for a person of the surname series. On fol. 9v of the review desyatnya (ra
 the four-year-old son of Makar Timofeyev Brezhnev is named. A modern publication
 reads his name as **«Олфиногенко»** (Olfinogenko), an earlier independent extract as
 **«Онфиногенко»** (Onfinogenko). This is a diminutive of the name Anfinogen / Onfinogen, not
-Anfilof or Anfilog. The exact location is **RGADA, f. 210, op. 4, d. 300, fol. 9v**;
+Anfilof or Anfilog. The exact location is **РГАДА, f. 210, op. 4, d. 300, fol. 9v**;
 the official inventory confirms file 300, whereas old forum posts
 wrongly give file 330. No profile, Record or map entry is created; the discrepancy is
 kept in `LEAD-210-4-300-KURSK-ONFINOGENKO-FALSE-POSITIVE` until the scan is checked.
@@ -108,7 +108,7 @@ an exact year and a literal reading; such a lead does not go on the map.
 
 ### Attempt to Identify the "сборн" Source, 27 August 2026
 
-The open database «Служивые» (Servicemen), attached in 2017 to a post on the VGD forum, was checked.
+The open database «Служивые» (Servicemen), attached in 2017 to a post on the ВГД forum, was checked.
 It is a separate Access index with fields for fond, inventory, file and folio. A search
 for all variants of Анпилогов/Онпилогов (Anpilogov/Onpilogov), and separately for the combination Fyodor + Kursk, did not
 find the target entry of 1605–1618. So the old open database cannot be
@@ -116,7 +116,7 @@ used to recover the hidden call number of the new line and must not be mixed
 with the "Dom Predkov" index.
 
 The typed-up inventories of fond 210 were also checked. The unit closest in date and
-content is **RGADA, f. 210, op. 24, d. 5**: 1616–1617, 138 folios,
+content is **РГАДА, f. 210, op. 24, d. 5**: 1616–1617, 138 folios,
 petitions of deti boyarskie about pay, correspondence with town voivodes,
 cash disbursements and provisions for captive regiments. It fits several
 categories of the compilation described by the compiler at once, but the word «Курск» (Kursk) and the name of Fyodor
@@ -124,7 +124,7 @@ are absent from the title. So it is only a candidate for a name-by-name review, 
 an established call number for the entry.
 
 [The open attachment of the «Служивые» (Servicemen) database](https://forum.vgd.ru/post/5/64941/p1878181.htm),
-[RGADA, f. 210, op. 24](https://inv.velikie.org/archive/rgada/210/24/).
+[РГАДА, f. 210, op. 24](https://inv.velikie.org/archive/rgada/210/24/).
 
 The year more often refers to the whole file than to a specific entry. In the register the
 index year (`year.asIndexed`) and the dating of the file (`year.delaRange`) are stored
@@ -193,7 +193,7 @@ line still requires an image of the manuscript.
 
 ## Result of the Search for Openly Available Scans
 
-For the file **RGADA, f. 210, op. 14, d. 502** an open collection of
+For the file **РГАДА, f. 210, op. 14, d. 502** an open collection of
 photocopies was found. The full set of 409 frames was checked. Full images of fols. 67,
 94, 94v and 109, as well as exact crops of the three surname entries, are saved in
 [`public/archive/evidence/rgada/f210-op14-d502`](../evidence/rgada/f210-op14-d502/README.md).
@@ -212,8 +212,8 @@ the surname did not appear. Then a separate full transcription of the main
 [Kursk section, fols. 176–186](https://old-kursk.ru/book/kurkulev_a/ku260320.html) was discovered.
 On **fol. 185** stands Vasily Semyonov syn Anpilogov (Vasily, son of Semyon, Anpilogov): his father has died, he has no brothers,
 he holds 40 chetverti of his father's pomestye; the new oklad is 100 chetverti and 4 roubles.
-The official card of the GIS UIAD (the state archival information system) gives a digital address for the whole file:
-[RGADA, f. 210, op. 4, d. 270](https://online.archives.ru/guide/10000000001014/10000000157014/10000000344014/10000474444014/).
+The official card of the ГИС УИАД (the state archival information system) gives a digital address for the whole file:
+[РГАДА, f. 210, op. 4, d. 270](https://online.archives.ru/guide/10000000001014/10000000157014/10000000344014/10000474444014/).
 What is needed now is not a trawl through the book but a photocopy of the single fol. 185 and a land search
 for the father's 40 chetverti.
 
@@ -223,7 +223,7 @@ Two pages by the same author contain Kursk Onpilogovs absent from the
 "Dom Predkov" database and can be read free of charge:
 
 - [List of the dvoryane and deti boyarskie of Kursk, 1630](http://old-kursk.ru/book/kurkulev_a/ku260428.html)
-  — RGADA, f. 210, op. 12, d. 7, fols. 84–146;
+  — РГАДА, f. 210, op. 12, d. 7, fols. 84–146;
 - [Muster roll from the estimate book of Kursk, 1640](http://old-kursk.ru/book/kurkulev_a/sm260226.html).
 
 The 1640 publication has now been read directly. On fol. 28v stands **Semyon
@@ -231,7 +231,7 @@ Yakovlev syn Onpilogov** (Semyon, son of Yakov, Onpilogov), on foot with a pishc
 fol. 43v — **Sergey Grigoryev syn Onpilogov** (Sergey, son of Grigory, Onpilogov), on foot with a boar-spear (rogatina), a novik
 of the 1636 enrolment with an oklad of 150 chetverti; on fol. 67 — a new **Ivan Semyonov
 syn Onpilogov** (Ivan, son of Semyon, Onpilogov), a novik of the voivode Ivan Buturlin with an oklad of 100 chetverti,
-who reported on a gelding with a pishchal. The exact call number of the book: **RGADA, f. 210, op. 4,
+who reported on a gelding with a pishchal. The exact call number of the book: **РГАДА, f. 210, op. 4,
 d. 180**. Images of all three lines have been saved; a Record
 `PUB-KURKULEV-KURSK-1640-ONPILOGOVY` and Ivan's profile `P9685` have been created.
 
@@ -255,7 +255,7 @@ years apart.
 The third find refines an existing record: the review desyatnya of Kursk of
 1636 has the call number **f. 210, op. 4, d. 215**
 ([otkudarodom.ua](https://otkudarodom.ua/ru/1636-god-desyatnya-razbornaya-sluzhilyh-lyudey-goroda-kurska)),
-The card `PUB-KURSK-1636-SERGEY` has now been refined from the full transcription: RGADA, f. 210, op. 4, d. 215, fol. 103v.
+The card `PUB-KURSK-1636-SERGEY` has now been refined from the full transcription: РГАДА, f. 210, op. 4, d. 215, fol. 103v.
 
 In passing, a small gap in the dictionary came to light: `surname-variants.json` lacks the form
 **Онпилогов** (Onpilogov), although it occurs in the documents and in the display names of P0034, P0064,
@@ -266,9 +266,9 @@ remained valid after checking the full index to the file of 1620/21.
 
 1. Compare the rare names of the whole Kursk «сборн» ("composite") block not with neighbouring rows of the
    XLSX but with the name indexes of individual files on captivity and cash supplements.
-2. Check RGADA, f. 210, op. 24, d. 5 name by name; a match of several rare
+2. Check РГАДА, f. 210, op. 24, d. 5 name by name; a match of several rare
    Kursk names must come before declaring the file the source for Fyodor.
 3. On the photocopies of file op. 14, d. 502 already saved, complete the literal
    transcription of the three service formulas.
-4. Obtain a photocopy of RGADA, f. 210, op. 4, d. 270, fol. 185 with the full entry for
+4. Obtain a photocopy of РГАДА, f. 210, op. 4, d. 270, fol. 185 with the full entry for
    Vasily Semyonovich and search for the father's pomestye named there.

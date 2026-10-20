@@ -1,4 +1,4 @@
-# RGADA, f. 350, op. 2, d. 2436
+# РГАДА, f. 350, op. 2, d. 2436
 
 A working collection of photocopies of five revizskie skazki (census returns) of the odnodvortsy (single-household freeholders) of the village of Bazdyreva in Oryol district. The file belongs to the first revision (census) of 1719.
 

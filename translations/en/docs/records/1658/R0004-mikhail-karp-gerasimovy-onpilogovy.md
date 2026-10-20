@@ -73,5 +73,5 @@ The digital copies are published by the project [«Наши предки» (Our 
 ## Reading notes
 
 - the facsimile is badly blurred, so the entry has the confidence level `probable`, not `verified`;
-- the reading has been compared with the website's line-by-line publication, but a definitive letter-by-letter transcription requires a better copy of the RGADA folio;
+- the reading has been compared with the website's line-by-line publication, but a definitive letter-by-letter transcription requires a better copy of the РГАДА folio;
 - the normalisation «Анпилоговы» (Anpilogovs) added by the website is not included in the literal transcription.

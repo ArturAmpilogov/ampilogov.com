@@ -24,7 +24,7 @@ Each point and route is accompanied by a card for the person or family household
 
 The following are available for finding further branches of the surname:
 
-- the digital collection of GARK (State Archive of the Republic of Crimea) parish registers for 1783–1925;
+- the digital collection of ГАРК (State Archive of the Republic of Crimea) parish registers for 1783–1925;
 - the FamilySearch collection "Ukraine, Crimea, Church Books, 1806–1926";
 - the pamyatnye knizhki (official yearbooks) of Taurida governorate;
 - revision (census) lists and household lists for individual districts.

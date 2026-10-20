@@ -1,7 +1,7 @@
 # Second Block of the Index: 30 Files, 23 of Them New
 
 Checked line by line against the entire contents of `docs/` and `data/`. Together with the previous batch
-(18 files of statements (skazki), 1675–1700), this makes **40 new RGADA files**, none of which
+(18 files of statements (skazki), 1675–1700), this makes **40 new РГАДА files**, none of which
 had been mentioned in the project before.
 
 ## Already in the Project — Do Not Order Again
@@ -111,7 +111,7 @@ cannot be from 1677. Either the database has confused the inventory (probably it
 6д), or the year. Besides, volume 123 has already been checked in full for the letters А and О, and for
 book 61 there were no hits. The line needs to be rechecked at the source.
 
-**Kozlov is out of reach.** Books 167–169 fall into volume 131, which has not been put online on the RGADA
+**Kozlov is out of reach.** Books 167–169 fall into volume 131, which has not been put online on the РГАДА
 website. So a folio for file 6д-169 cannot be obtained via the alphabetical indexes — only by ordering
 from the archive. Kozlov, incidentally, is also a new town for the project.
 

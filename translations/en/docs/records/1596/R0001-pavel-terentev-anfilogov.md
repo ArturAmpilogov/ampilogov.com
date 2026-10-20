@@ -40,7 +40,7 @@ The reading has been checked against the original and the published transcriptio
 
 - [full spread, image 0060](../../evidence/rgada/f181-op2-d120/0060.jpg)
 
-The entry is on fol. 58v, in the fourth line from the top on the left-hand page of the spread. The file was saved without editing from the RGADA digital viewer.
+The entry is on fol. 58v, in the fourth line from the top on the left-hand page of the spread. The file was saved without editing from the РГАДА digital viewer.
 
 - retrieval URL: `http://rgada.info/kueh/1/181_2_120/0060.jpg`;
 - date saved: 2026-08-17;

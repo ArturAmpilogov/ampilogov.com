@@ -2,7 +2,7 @@
 
 | Route | People | Early document | Later document | Direct link | Status |
 |---|---|---|---|---|---|
-| Oryol district → Shchigry in Livny district | Akim Ivanovich, Tit | Bozdyrevo is named as Akim's former pomestye; its forcible seizure is described | in the village of Dmitrievskoye, «Щигры тож» ("also Shchigry"), his grandson Tit held 30 chetverti | checked against the original: RGADA, f. 210, op. 12, d. 1888, ll. 1181–1182, year 1700 | proved |
+| Oryol district → Shchigry in Livny district | Akim Ivanovich, Tit | Bozdyrevo is named as Akim's former pomestye; its forcible seizure is described | in the village of Dmitrievskoye, «Щигры тож» ("also Shchigry"), his grandson Tit held 30 chetverti | checked against the original: РГАДА, f. 210, op. 12, d. 1888, ll. 1181–1182, year 1700 | proved |
 | Kursk → Oboyan | Sergey Grigoryevich | Kursk desyatnya of 1636 | Oboyan desyatnya of 1651 | no separate document on a transfer has been found | probable |
 | Rylsk district → Simferopol | Sergey Ampilogov, daughter Matrona | Sergey is explicitly called a state peasant of Rylsk district | death of his daughter in Simferopol, 1868 | origin and new place are named in one entry, `FS-3Q9M-CS9N-9FBF` | presence proved; date of move unknown |
 | Medyn district → Privolnoye | Gavriil Ivanovich, Kseniya Kasyanovna, children | the father is explicitly called a native of Medyn district | the family in Privolnoye, 1873–1887 | origin and new place are named in `FS-3Q9M-CS9N-J3NL-F`; the family is confirmed by other register entries | proved |

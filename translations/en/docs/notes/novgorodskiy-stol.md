@@ -6,7 +6,7 @@ Short answer: it is worth checking, but expectations are modest. Below is why an
 
 The earliest record in the whole sample is not a southern one. It is **«Тонкой Онфилогов» (Tonkoy Onfilogov),
 1536/37, the small village of Priluk, Gorodskoy stan, Uglich district**
-(S. M. Kashtanov, after the Trinity copy book; RNB, Pogodin collection, No. 1846,
+(S. M. Kashtanov, after the Trinity copy book; РНБ, Pogodin collection, No. 1846,
 fol. 65v). The household is a non-ploughing one, which means a peasant rather than a
 serviceman. That is more than a hundred years before the Belgorod Line and not the
 south at all.

@@ -72,7 +72,7 @@ Publication: I. P. Babin, M. M. Ozerov, «Десятня денежной раз
 воеводы Осипа Степановича Арсеньева и подьячего Якова Чертенкова служилым
 людям города Обояни в феврале 1651 года» [Desyatnya of the money distribution by the voevoda Osip Stepanovich Arsenyev and the clerk Yakov Chertenkov to the servicemen of the town of Oboyan in February 1651], in the collection «События и люди в
 документах курских архивов» [Events and People in the Documents of the Kursk Archives], issue XV. At the end of the text the editors give the
-archival shelfmark: RGADA, f. 210, op. 4, d. 228.
+archival shelfmark: РГАДА, f. 210, op. 4, d. 228.
 
 - SHA-256 of the publication page: `c48dd5bddf69c8f5fcc72a105df25b731747ac3706eb784a66f7b88074cf1177`;
 - SHA-256 of the exact fragment: `f86af25a33a7cfb9c053cc208bc25d61176a7017facb7f36f5fd1f40099449ec`.

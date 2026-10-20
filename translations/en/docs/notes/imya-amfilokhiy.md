@@ -77,8 +77,8 @@ stan:
 
 | stage | document | form |
 |---|---|---|
-| personal name | PKMG I/2, p. 948, Korchakov stan | **Анпилог** Иванов сын Онаньин (**Anpilog**, son of Ivan, Onanyin) |
-| surname from the father | PKMG I/2, pp. 975, 979, 1009, 1011, 1016 | Беляй Васильев сын **Онфилогова**, Осип Васильев сын **Анфилогова**, Иван Нечаев сын **Анпилогова** (Belyay, son of Vasily, **Onfilogov**; Osip, son of Vasily, **Anfilogov**; Ivan, son of Nechay, **Anpilogov**) |
+| personal name | ПКМГ I/2, p. 948, Korchakov stan | **Анпилог** Иванов сын Онаньин (**Anpilog**, son of Ivan, Onanyin) |
+| surname from the father | ПКМГ I/2, pp. 975, 979, 1009, 1011, 1016 | Беляй Васильев сын **Онфилогова**, Осип Васильев сын **Анфилогова**, Иван Нечаев сын **Анпилогова** (Belyay, son of Vasily, **Onfilogov**; Osip, son of Vasily, **Anfilogov**; Ivan, son of Nechay, **Anpilogov**) |
 | baptismal name in the family | Korcheva, 1848 (P0143) | **Анфилохий** (Anfilokhy) |
 
 In the project one cadastral episode is split into two records: **R0048** is devoted to Anpilog Ivanovich himself as the former holder, **R0049** to his grandson Kondraty and the state of the share in 1594/95. Source cards: `PUB-PKOU-1594-P948-ANPILOG` and `PUB-PKOU-1594-P948-ANPILOG-ONANIN`.
@@ -112,7 +112,7 @@ Record: `PUB-PKMG-1540-TVER-P111-ONFILOGOVO`, scan `public/archive/evidence/publ
    Veselovsky) — the wiki does not name its source.
 2. ~~Look for a man named
    Amfilokhy or Anfilokhy in the 17th century in our own documents~~ — **done, the chain is closed**:
-   Anpilog, son of Ivan, Onanyin, Korchakov stan, PKMG I/2, p. 948 (see above).
+   Anpilog, son of Ivan, Onanyin, Korchakov stan, ПКМГ I/2, p. 948 (see above).
    It remains to find a bearer of the name within the surname itself, between 1594 and 1848.
 3. Bear this in mind when reading cursive: if a superscript letter is indistinguishable, both forms
    are equally valid, and the record must note both.

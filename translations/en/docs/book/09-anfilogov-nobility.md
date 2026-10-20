@@ -28,7 +28,7 @@ Only one branch became nobles. The descendants of other service families turned 
 
 **Vasily Dmitrievich.** [The April muster of 1626](/records/RGADA-210-12-13-L35). The match with the founder named in the encyclopedia needs to be checked against the Heraldry Office file; so far only its title and dates are known.
 
-**Files in RGIA.** The Heraldry Office files are held in RGIA (Russian State Historical Archive) in St Petersburg. Digital images of files 2345 and 2348 are not in the open catalogue, and the generational pedigree has not yet been extracted from them. [S-NOBILITY-RGIA]
+**Files in РГИА.** The Heraldry Office files are held in РГИА (Russian State Historical Archive) in St Petersburg. Digital images of files 2345 and 2348 are not in the open catalogue, and the generational pedigree has not yet been extracted from them. [S-NOBILITY-RGIA]
 
 | Fond 1343, opis 16 | Title and dates |
 |---|---|

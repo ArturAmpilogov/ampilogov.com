@@ -184,7 +184,7 @@ export const recordPageCopy = defineCopy<RecordPageCopy>({
   en: {
     meta: {
       legacyTitle: "The 1626 muster list",
-      legacyDescription: "Six separate RGADA records, f. 210, op. 12, d. 13.",
+      legacyDescription: "Six separate РГАДА records, f. 210, op. 12, d. 13.",
       notFound: "Record not found",
       description: (date, place) => `${date}, ${place}. Archival record, transcription and related people.`,
     },

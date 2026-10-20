@@ -55,7 +55,7 @@ The cadastral book was compiled by the scribe **Dementy Yakovlev** and the clerk
 
 ## The note `(sic)`
 
-The editor of the 1877 publication placed the note `(sic)` after the name `Анпилогомъ`, that is, he flagged the unusual form and rendered it literally. This adds to the value of the reading: the name is not a modern reconstruction by the editor. A final palaeographic check, however, still requires the RGADA manuscript.
+The editor of the 1877 publication placed the note `(sic)` after the name `Анпилогомъ`, that is, he flagged the unusual form and rendered it literally. This adds to the value of the reading: the name is not a modern reconstruction by the editor. A final palaeographic check, however, still requires the РГАДА manuscript.
 
 ## Service, novik status and campaigns
 

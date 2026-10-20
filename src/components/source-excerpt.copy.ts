@@ -66,19 +66,19 @@ export const sourceExcerptTranslations: Record<Exclude<Locale, "ru">, Record<str
       eyebrow: "Original archival leaf",
       title: "Pavel Terentyev syn Anfilogov",
       transcription: "Editorial reading of the line: «Павел Терентьев сын Анфилогов» [“Pavel, son of Terenty, Anfilogov”].",
-      citation: "Russian State Archive of Ancient Acts (RGADA). F. 181. Op. 2. D. 120. L. 58 verso. Digital image 0060.",
+      citation: "Russian State Archive of Ancient Acts (РГАДА). F. 181. Op. 2. D. 120. L. 58 verso. Digital image 0060.",
     },
     "onfilogovo-tver-1540": {
       eyebrow: "Cadastral book of Tver district",
       title: "A village named after a man",
       transcription: "«Къ тому жъ селу деревни: дер. Онфилогово: 4 дв.; пашни въ полѣ 30 четьи, сѣна 30 коп.» [“Villages belonging to the same estate: the village of Onfilogovo, 4 households; arable land, 30 chetverts per field; hay, 30 stacks”] — the first of six villages of the estate of Nikolskoye Svechino, held by Stefanida, wife of Ivan Yurlov. The source does not say she was a widow.",
-      citation: "«Писцовыя книги Московскаго государства» [Cadastral books of the Muscovite state]. Part I. Section 2 / ed. N. V. Kalachov. St Petersburg: Imperial Russian Geographical Society, 1877. P. 111. Cadastral book of 7048 (1539/40) compiled by Ivan Petrovich Zabolotsky and Mikhail Ivanov Usov-Tatishchev; manuscript: RGADA, f. 1209, op. 1, book 466.",
+      citation: "«Писцовыя книги Московскаго государства» [Cadastral books of the Muscovite state]. Part I. Section 2 / ed. N. V. Kalachov. St Petersburg: Imperial Russian Geographical Society, 1877. P. 111. Cadastral book of 7048 (1539/40) compiled by Ivan Petrovich Zabolotsky and Mikhail Ivanov Usov-Tatishchev; manuscript: РГАДА, f. 1209, op. 1, book 466.",
     },
     "anpilog-onanin-1594": {
       eyebrow: "Oryol cadastral book · 1594/95",
       title: "Anpilog: still a first name, not a surname",
       transcription: "«За Кондрашкомъ за Вавиловымъ сыномъ Онаньина, что было за дѣдомъ его за Анпилогомъ (sic) за Ивановымъ сыномъ Онаньина въ тойже дер. на Государнинѣ селищѣ, на р. на Орлѣ, подъ Корчаковымъ лѣсомъ…» [“Held by Kondrashko, son of Vavila, Onanyin, which had been held by his grandfather Anpilog (sic), son of Ivan, Onanyin, in the same village on the Gosudarnino site, on the river Orel, below the Korchakov forest…”]",
-      citation: "«Писцовыя книги Московскаго государства» [Cadastral books of the Muscovite state]. Part I. Section 2 / ed. N. V. Kalachov. St Petersburg, 1877. P. 948; Oryol district, Korchakov stan. The “(sic)” mark is the editor’s. Manuscript: RGADA, f. 1209, op. 1, d. 329; old MAMYu shelfmark no. 399.",
+      citation: "«Писцовыя книги Московскаго государства» [Cadastral books of the Muscovite state]. Part I. Section 2 / ed. N. V. Kalachov. St Petersburg, 1877. P. 948; Oryol district, Korchakov stan. The “(sic)” mark is the editor’s. Manuscript: РГАДА, f. 1209, op. 1, d. 329; old MAMYu shelfmark no. 399.",
     },
     "nes-anfilogovy": {
       eyebrow: "Encyclopedia entry of 1911",

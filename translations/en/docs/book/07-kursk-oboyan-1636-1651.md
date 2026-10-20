@@ -31,12 +31,12 @@ But even life «на вечном житье» ("in permanent residence") did no
 
 {{RESEARCH_NOTES}}
 
-**The Kursk muster roll of 1636.** Review of 18 March 1636, RGADA (Russian State Archive of Ancient Acts), f. 210, op. 4, d. 215; Sergey — l. 103 ob. (fol. 103v). The entry is recorded for now as a lead: a photocopy of the folio has yet to be obtained. The [1640 review](/records/PUB-KURKULEV-KURSK-1640-ONPILOGOVY) keeps the same allotment. [S-KURSK-1636]
+**The Kursk muster roll of 1636.** Review of 18 March 1636, РГАДА (Russian State Archive of Ancient Acts), f. 210, op. 4, d. 215; Sergey — l. 103 ob. (fol. 103v). The entry is recorded for now as a lead: a photocopy of the folio has yet to be obtained. The [1640 review](/records/PUB-KURKULEV-KURSK-1640-ONPILOGOVY) keeps the same allotment. [S-KURSK-1636]
 
 **Other Kursk bearers of the surname.** Recorded earlier than Sergey is Fyodor Grigoryevich Onpilogov; other lists name men called Semyon and Vasily Semyonovich. The shared patronymic makes it possible that Fyodor and Sergey were brothers, but no source calls them brothers. [Kursk list of the early 1630s](/records/PUB-KURKULEV-KURSK-1632-ONPILOGOVY).
 
-**The Oboyan muster roll of 1651.** RGADA, f. 210, op. 4, d. 228, ll. 39 ob.–40 (fols. 39v–40); published by I. P. Babin and M. M. Ozerov (2017). [Sergey's entry](/records/PUB-OBOYAN-1651-L39OB-SERGEY). The approximate years of birth of the sons are 1631 and 1641; Sergey's own age is not given. [S-OBOYAN-1651]
+**The Oboyan muster roll of 1651.** РГАДА, f. 210, op. 4, d. 228, ll. 39 ob.–40 (fols. 39v–40); published by I. P. Babin and M. M. Ozerov (2017). [Sergey's entry](/records/PUB-OBOYAN-1651-L39OB-SERGEY). The approximate years of birth of the sons are 1631 and 1641; Sergey's own age is not given. [S-OBOYAN-1651]
 
 **Kursk to Oboyan.** The first name, patronymic and rare surname link the Oboyan Sergey with the Kursk one, but there is no separate document recording a transfer: the path remains probable. A family relationship between Sergey and Akim Anpilogov has not been established.
 
-**Userd, 1637.** Register of newly enlisted regimental Cossacks: RGADA, f. 210, op. 12, d. 85, ll. 131–134. The previous towns of Anton and Pyotr, their relationship to each other and to Kursk Onpilogovs have not been established.
+**Userd, 1637.** Register of newly enlisted regimental Cossacks: РГАДА, f. 210, op. 12, d. 85, ll. 131–134. The previous towns of Anton and Pyotr, their relationship to each other and to Kursk Onpilogovs have not been established.

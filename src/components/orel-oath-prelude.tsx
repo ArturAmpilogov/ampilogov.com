@@ -26,7 +26,7 @@ const copy = defineCopy({
     imageAlt: (name: string) => `Handwritten 17th-century oath leaf with the name of a serviceman — ${name}`,
     kicker: "Oryol · 1645",
     title: "Three fragments of the oath book: Grigory and Fyodor Dmitrievich, Ivan Mikhailovich",
-    source: "RGADA, f. 210, op. 6d, d. 54. Click to open the full archival leaf.",
+    source: "РГАДА, f. 210, op. 6d, d. 54. Click to open the full archival leaf.",
   },
   uk: {
     records: [

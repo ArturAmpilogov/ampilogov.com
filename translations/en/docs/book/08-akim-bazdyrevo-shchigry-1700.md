@@ -23,7 +23,7 @@ Later another branch of Anfilogovs would gather old papers about their ancestors
 
 {{RESEARCH_NOTES}}
 
-**Source.** The original is kept among the papers of the Razryadny Prikaz, the Moscow department in charge of military service: RGADA (Russian State Archive of Ancient Acts), f. 210, op. 12, d. 1888, ll. 1181–1182, file «Сказки ливенцев о службе, семейном положении и поместьях» ("Statements of the Livny men about their service, family status and estates"). [Source record](/records/PUB-RGADA-210-12-1888-L1181-1182-AKIM-TIT-ANPILOGOVY). [S-LIVNY-1700]
+**Source.** The original is kept among the papers of the Razryadny Prikaz, the Moscow department in charge of military service: РГАДА (Russian State Archive of Ancient Acts), f. 210, op. 12, d. 1888, ll. 1181–1182, file «Сказки ливенцев о службе, семейном положении и поместьях» ("Statements of the Livny men about their service, family status and estates"). [Source record](/records/PUB-RGADA-210-12-1888-L1181-1182-AKIM-TIT-ANPILOGOVY). [S-LIVNY-1700]
 
 **What exactly is said.** The village is called «Боздыревой» (Bozdyreva) — that is how the document renders Bazdyrevo. According to Akim, Kosogov «силою завладел насильством… без дачи» ("seized it by force and violence… without a grant"), that is, without any lawful transfer. This is the testimony of the injured party himself, not a court ruling. The name of the intervening generation — Tit's father — is not given; one must not insert there a person who merely fits by patronymic.
 

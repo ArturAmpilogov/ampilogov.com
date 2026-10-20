@@ -1,9 +1,9 @@
-# RGADA, f. 210, op. 9, d. 1101, part 4
+# РГАДА, f. 210, op. 9, d. 1101, part 4
 
 A working photograph of a document with lists of Belgorod servicemen
 killed, wounded and taken prisoner at Konotop in 1659.
 
-A user's transcription on VGD names **Зинов Онпилогов
+A user's transcription on ВГД names **Зинов Онпилогов
 (Анпилогов)** (Zinov Onpilogov, or Anpilogov). The exact folio is not given. The published DomPredkov
 database confirms the file reference but does not contain this surname in the available table.
 
