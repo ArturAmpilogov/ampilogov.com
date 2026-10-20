@@ -21,10 +21,12 @@
       "iso": "1941-11-28"
     }
   },
+  "primaryPersonId": "P125005",
   "mentions": [
     {
       "mentionId": "PUB-OPENLIST-PETR-ALEKSEEVICH-AMPELOV-1897-M1",
       "role": "accused",
+      "personId": "P125005",
       "displayName": "Пётр Алексеевич Ампелов",
       "modernName": "Пётр Алексеевич Ампелов",
       "nameAsIndexed": "Ампелов Петр Алексеевич",
@@ -39,12 +41,14 @@
           "relation": "birth",
           "asWritten": "Горьковская обл., Лукояновский р-н, с. Ризоватово",
           "normalized": "село Ризоватово, Лукояновский район, Горьковская область",
+          "placeId": "rizovatovo-nizhny",
           "confidence": "medium"
         },
         {
           "relation": "residence",
           "asWritten": "г. Горького",
           "normalized": "Горький (Нижний Новгород)",
+          "placeId": "nizhny-novgorod",
           "confidence": "high"
         }
       ],
@@ -68,15 +72,14 @@
       "method": "Анкета найдена на ru.openlist.wiki поиском «Ампе*» (8 анкет) в проходе по индексным формам фамильного ряда (searches/openlist-ocr-forms-2026-10-20.json); поля перенесены без изменений, служебные подписи страницы опущены."
     },
     "identityResolution": {
-      "status": "same-person-link-pending-merge",
+      "status": "same-person-linked",
       "personId": "P125005",
       "relatedSourceId": "PUB-MEMO-PETR-ALEKSEEVICH-AMPELOV-1897",
       "basis": "Все поля анкеты совпадают с карточкой базы «Мемориала»: имя, отчество, 1897 год, село Ризоватово, работа кассиром ремстройконторы Ждановского района Горького, арест 28 ноября 1941 года, приговор Городского военного трибунала Горького 13 января 1942 года (10 лет ИТЛ, 5 лет поражения в правах), архивное дело 18698, Книга памяти Нижегородской области.",
       "decidedOn": "2026-10-20",
-      "note": "Профиль P125005, Record PUB-MEMO-PETR-ALEKSEEVICH-AMPELOV-1897 и места rizovatovo-nizhny и nizhny-novgorod заведены импортом «Мемориала» (ветка claude/trusting-wilson-c3d368), ещё не слитым в main. Связь с профилем и мест проставляется после слияния; нового профиля нет, чтобы не создать дубль."
+      "note": "Профиль P125005 и Record PUB-MEMO-PETR-ALEKSEEVICH-AMPELOV-1897 заведены импортом «Мемориала»; связь и места проставлены при объединении двух импортов в одну ветку."
     },
     "unresolved": [
-      "После слияния импорта «Мемориала» проставить personId P125005 и места rizovatovo-nizhny, nizhny-novgorod, а в профиль P125005 добавить этот Record.",
       "Принадлежность формы «Ампелов» к фамильному ряду не доказана: проверить по метрическим книгам и ревизиям Ризоватова, жили ли там Ампиловы."
     ]
   },
