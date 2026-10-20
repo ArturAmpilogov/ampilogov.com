@@ -19,7 +19,7 @@ let peopleByIdCache: Map<string, PersonRecord> | null = null;
 
 function genealogyPeopleById() {
   peopleByIdCache ??= new Map(
-    readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"))
+    readJsonDirectory<PersonRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people"))
       .map((person) => [person.personId, person]),
   );
   return peopleByIdCache;
@@ -2348,7 +2348,7 @@ export function getRecordsDirectory() {
   if (recordsDirectoryCache) return recordsDirectoryCache;
   const peopleById = genealogyPeopleById();
   const records = readJsonTree<SourceRecord>(
-    path.join(GENEALOGY_ROOT, "sources"),
+    path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources"),
   ).filter((source) =>
     sourceIsWithinPublicResearchPeriod(source) && isGenealogyRecordSource(source, peopleById)
   ).map((source) => toArchiveRecord(source, peopleById)).sort((left, right) =>
@@ -2372,7 +2372,7 @@ const archiveRecordCache = new Map<string, ArchiveRecord>();
 function getRecordPathIndex() {
   if (recordPathIndex) return recordPathIndex;
   const index = JSON.parse(readFileSync(
-    path.join(GENEALOGY_ROOT, "indexes/record-source-paths.json"),
+    path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "indexes/record-source-paths.json"),
     "utf8",
   )) as { paths: Record<string, string>; personPaths?: Record<string, string> };
   recordPathIndex = index;
@@ -2385,104 +2385,106 @@ function genealogyIndexedPath(relativePath: string) {
     throw new Error(`Недопустимый путь генеалогического индекса: ${relativePath}`);
   }
 
-  // Keep every dynamic filesystem pattern narrow enough for Turbopack to trace
-  // the real shard instead of treating the whole genealogy tree as a candidate.
+  // Only these shards are readable. Every join on GENEALOGY_ROOT is marked
+  // `turbopackIgnore`: a traced join still yields a "<dynamic>/sources/…" pattern
+  // that pulls tens of thousands of files into any route importing this module.
+  // Routes that read data at request time list it in outputFileTracingIncludes.
   if (normalized.startsWith("sources/arolsen/")) {
-    return path.join(GENEALOGY_ROOT, "sources/arolsen", normalized.slice("sources/arolsen/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/arolsen", normalized.slice("sources/arolsen/".length));
   }
   if (normalized.startsWith("sources/familysearch/")) {
-    return path.join(GENEALOGY_ROOT, "sources/familysearch", normalized.slice("sources/familysearch/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/familysearch", normalized.slice("sources/familysearch/".length));
   }
   if (normalized.startsWith("sources/publications/")) {
-    return path.join(GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/publications", normalized.slice("sources/publications/".length));
   }
   if (normalized.startsWith("sources/pamyat-naroda/")) {
-    return path.join(GENEALOGY_ROOT, "sources/pamyat-naroda", normalized.slice("sources/pamyat-naroda/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/pamyat-naroda", normalized.slice("sources/pamyat-naroda/".length));
   }
   if (normalized.startsWith("sources/rgada/")) {
-    return path.join(GENEALOGY_ROOT, "sources/rgada", normalized.slice("sources/rgada/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/rgada", normalized.slice("sources/rgada/".length));
   }
   if (normalized.startsWith("sources/yandex/")) {
-    return path.join(GENEALOGY_ROOT, "sources/yandex", normalized.slice("sources/yandex/".length));
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources/yandex", normalized.slice("sources/yandex/".length));
   }
   if (normalized.startsWith("sources/YA-0")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-0${normalized.slice("sources/YA-0".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-0${normalized.slice("sources/YA-0".length)}`);
   }
   if (normalized.startsWith("sources/YA-1")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-1${normalized.slice("sources/YA-1".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-1${normalized.slice("sources/YA-1".length)}`);
   }
   if (normalized.startsWith("sources/YA-2")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-2${normalized.slice("sources/YA-2".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-2${normalized.slice("sources/YA-2".length)}`);
   }
   if (normalized.startsWith("sources/YA-3")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-3${normalized.slice("sources/YA-3".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-3${normalized.slice("sources/YA-3".length)}`);
   }
   if (normalized.startsWith("sources/YA-4")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-4${normalized.slice("sources/YA-4".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-4${normalized.slice("sources/YA-4".length)}`);
   }
   if (normalized.startsWith("sources/YA-5")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-5${normalized.slice("sources/YA-5".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-5${normalized.slice("sources/YA-5".length)}`);
   }
   if (normalized.startsWith("sources/YA-6")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-6${normalized.slice("sources/YA-6".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-6${normalized.slice("sources/YA-6".length)}`);
   }
   if (normalized.startsWith("sources/YA-7")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-7${normalized.slice("sources/YA-7".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-7${normalized.slice("sources/YA-7".length)}`);
   }
   if (normalized.startsWith("sources/YA-8")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-8${normalized.slice("sources/YA-8".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-8${normalized.slice("sources/YA-8".length)}`);
   }
   if (normalized.startsWith("sources/YA-9")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-9${normalized.slice("sources/YA-9".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-9${normalized.slice("sources/YA-9".length)}`);
   }
   if (normalized.startsWith("sources/YA-A")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-A${normalized.slice("sources/YA-A".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-A${normalized.slice("sources/YA-A".length)}`);
   }
   if (normalized.startsWith("sources/YA-B")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-B${normalized.slice("sources/YA-B".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-B${normalized.slice("sources/YA-B".length)}`);
   }
   if (normalized.startsWith("sources/YA-C")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-C${normalized.slice("sources/YA-C".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-C${normalized.slice("sources/YA-C".length)}`);
   }
   if (normalized.startsWith("sources/YA-D")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-D${normalized.slice("sources/YA-D".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-D${normalized.slice("sources/YA-D".length)}`);
   }
   if (normalized.startsWith("sources/YA-E")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-E${normalized.slice("sources/YA-E".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-E${normalized.slice("sources/YA-E".length)}`);
   }
   if (normalized.startsWith("sources/YA-F")) {
-    return path.join(GENEALOGY_ROOT, "sources", `YA-F${normalized.slice("sources/YA-F".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources", `YA-F${normalized.slice("sources/YA-F".length)}`);
   }
 
   if (normalized.startsWith("people/P0")) {
-    return path.join(GENEALOGY_ROOT, "people", `P0${normalized.slice("people/P0".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P0${normalized.slice("people/P0".length)}`);
   }
   if (normalized.startsWith("people/P1")) {
-    return path.join(GENEALOGY_ROOT, "people", `P1${normalized.slice("people/P1".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P1${normalized.slice("people/P1".length)}`);
   }
   if (normalized.startsWith("people/P2")) {
-    return path.join(GENEALOGY_ROOT, "people", `P2${normalized.slice("people/P2".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P2${normalized.slice("people/P2".length)}`);
   }
   if (normalized.startsWith("people/P3")) {
-    return path.join(GENEALOGY_ROOT, "people", `P3${normalized.slice("people/P3".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P3${normalized.slice("people/P3".length)}`);
   }
   if (normalized.startsWith("people/P4")) {
-    return path.join(GENEALOGY_ROOT, "people", `P4${normalized.slice("people/P4".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P4${normalized.slice("people/P4".length)}`);
   }
   if (normalized.startsWith("people/P5")) {
-    return path.join(GENEALOGY_ROOT, "people", `P5${normalized.slice("people/P5".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P5${normalized.slice("people/P5".length)}`);
   }
   if (normalized.startsWith("people/P6")) {
-    return path.join(GENEALOGY_ROOT, "people", `P6${normalized.slice("people/P6".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P6${normalized.slice("people/P6".length)}`);
   }
   if (normalized.startsWith("people/P7")) {
-    return path.join(GENEALOGY_ROOT, "people", `P7${normalized.slice("people/P7".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P7${normalized.slice("people/P7".length)}`);
   }
   if (normalized.startsWith("people/P8")) {
-    return path.join(GENEALOGY_ROOT, "people", `P8${normalized.slice("people/P8".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P8${normalized.slice("people/P8".length)}`);
   }
   if (normalized.startsWith("people/P9")) {
-    return path.join(GENEALOGY_ROOT, "people", `P9${normalized.slice("people/P9".length)}`);
+    return path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people", `P9${normalized.slice("people/P9".length)}`);
   }
   throw new Error(`Путь вне разрешённых каталогов генеалогии: ${relativePath}`);
 }
@@ -3176,9 +3178,9 @@ let peopleDirectoryCache: {
 
 export function getPeopleDirectory() {
   if (peopleDirectoryCache) return peopleDirectoryCache;
-  const people = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
-  const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
-  const allSources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"));
+  const people = readJsonDirectory<PersonRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people"));
+  const families = readJsonDirectory<FamilyRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "families"));
+  const allSources = readJsonTree<SourceRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources"));
   const peopleById = new Map(people.map((person) => [person.personId, person]));
   const allSourcesById = new Map(allSources.map((source) => [source.sourceId, source]));
   const publicPeople = people.filter((person) => {
@@ -3420,7 +3422,7 @@ export function getFamilyTreeDirectory(): FamilyTreeDirectory {
   if (familyTreeCache) return familyTreeCache;
   const directory = getPeopleDirectory().people;
   const ids = new Set(directory.map((person) => person.personId));
-  const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
+  const families = readJsonDirectory<FamilyRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "families"));
   const parentsFromFamily = new Map<string, string[]>();
   for (const family of families) {
     const documentedParents = (family.spouses ?? []).filter((personId) => ids.has(personId));
@@ -3489,9 +3491,9 @@ function sourceChronologyKey(source: SourceRecord, mention?: SourceMention) {
 export function getFamilyMapDirectory(): FamilyMapDirectory {
   if (familyMapDirectoryCache) return familyMapDirectoryCache;
 
-  const allPeople = readJsonDirectory<PersonRecord>(path.join(GENEALOGY_ROOT, "people"));
-  const families = readJsonDirectory<FamilyRecord>(path.join(GENEALOGY_ROOT, "families"));
-  const allSources = readJsonTree<SourceRecord>(path.join(GENEALOGY_ROOT, "sources"));
+  const allPeople = readJsonDirectory<PersonRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "people"));
+  const families = readJsonDirectory<FamilyRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "families"));
+  const allSources = readJsonTree<SourceRecord>(path.join(/* turbopackIgnore: true */ GENEALOGY_ROOT, "sources"));
   const allPeopleById = new Map(allPeople.map((person) => [person.personId, person]));
   const allSourcesById = new Map(allSources.map((source) => [source.sourceId, source]));
   const people = allPeople.filter((person) => {
