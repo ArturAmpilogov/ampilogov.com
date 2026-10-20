@@ -1,49 +1,94 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
+
+const copy = defineCopy({
+  places: [
+    { name: "Баздырево", currentName: "Баздрево", detail: "Сохранившееся топонимическое продолжение" },
+    { name: "Белая", currentName: "Белолунино", detail: "На исторической карте: Белая (Белолунино)" },
+    { name: "Радомлея", currentName: "Радомль", detail: "Сохранившееся топонимическое продолжение" },
+    { name: "Софоново", currentName: "Точная современная точка не установлена", detail: "Приблизительная область по исторической карте" },
+    { name: "Малцовская", currentName: "Лаврово", detail: "На исторической карте: Малцовская (Лаврово)" },
+  ],
+  orel: "Орёл",
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  region: "Орловский уезд · 1594/95",
+  subject: "пять поместий из писцовой книги",
+  ariaLabel: "Интерактивная карта пяти поместий Анфилоговых в Орловском уезде по писцовой книге 1594–1595 годов",
+}, {
+  en: {
+    places: [
+      { name: "Bazdyrevo", currentName: "Bazdrevo", detail: "The name survives in a modern place name" },
+      { name: "Belaya", currentName: "Belolunino", detail: "On the historical map: Belaya (Belolunino)" },
+      { name: "Radomleya", currentName: "Radoml", detail: "The name survives in a modern place name" },
+      { name: "Sofonovo", currentName: "No precise modern point identified", detail: "Approximate area from the historical map" },
+      { name: "Maltsovskaya", currentName: "Lavrovo", detail: "On the historical map: Maltsovskaya (Lavrovo)" },
+    ],
+    orel: "Oryol",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    region: "Oryol district · 1594/95",
+    subject: "five estates from the cadastral book",
+    ariaLabel: "Interactive map of the five Anfilogov estates in Oryol district according to the cadastral book of 1594–1595",
+  },
+  uk: {
+    places: [
+      { name: "Баздирево", currentName: "Баздрево", detail: "Збережене топонімічне продовження" },
+      { name: "Бєлая", currentName: "Бєлолуніно", detail: "На історичній карті: Бєлая (Бєлолуніно)" },
+      { name: "Радомлєя", currentName: "Радомль", detail: "Збережене топонімічне продовження" },
+      { name: "Софоново", currentName: "Точну сучасну точку не встановлено", detail: "Приблизна область за історичною картою" },
+      { name: "Малцовська", currentName: "Лаврово", detail: "На історичній карті: Малцовська (Лаврово)" },
+    ],
+    orel: "Орел",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    region: "Орловський повіт · 1594/95",
+    subject: "п’ять маєтків із писцевої книги",
+    ariaLabel: "Інтерактивна карта п’яти маєтків Анфілогових в Орловському повіті за писцевою книгою 1594–1595 років",
+  },
+  be: {
+    places: [
+      { name: "Баздырава", currentName: "Баздрава", detail: "Тапонім захаваўся ў сучаснай назве" },
+      { name: "Белая", currentName: "Белалуніна", detail: "На гістарычнай карце: Белая (Белалуніна)" },
+      { name: "Радамлея", currentName: "Радомль", detail: "Тапонім захаваўся ў сучаснай назве" },
+      { name: "Сафонава", currentName: "Дакладны сучасны пункт не ўстаноўлены", detail: "Прыблізная вобласць паводле гістарычнай карты" },
+      { name: "Малцоўская", currentName: "Лаўрава", detail: "На гістарычнай карце: Малцоўская (Лаўрава)" },
+    ],
+    orel: "Арол",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    region: "Арлоўскі павет · 1594/95",
+    subject: "пяць маёнткаў з пісцовай кнігі",
+    ariaLabel: "Інтэрактыўная карта пяці маёнткаў Анфілогаў у Арлоўскім павеце паводле пісцовай кнігі 1594–1595 гадоў",
+  },
+});
 
 const places = [
   {
-    name: "Баздырево",
-    currentName: "Баздрево",
-    detail: "Сохранившееся топонимическое продолжение",
     latitude: 52.98454,
     longitude: 35.439101,
     kind: "matched",
     direction: "left",
   },
   {
-    name: "Белая",
-    currentName: "Белолунино",
-    detail: "На исторической карте: Белая (Белолунино)",
     latitude: 52.941863,
     longitude: 35.507563,
     kind: "matched",
     direction: "bottom",
   },
   {
-    name: "Радомлея",
-    currentName: "Радомль",
-    detail: "Сохранившееся топонимическое продолжение",
     latitude: 53.036655,
     longitude: 35.491152,
     kind: "matched",
     direction: "top",
   },
   {
-    name: "Софоново",
-    currentName: "Точная современная точка не установлена",
-    detail: "Приблизительная область по исторической карте",
     latitude: 53.0203,
     longitude: 35.535,
     kind: "historical",
     direction: "right",
   },
   {
-    name: "Малцовская",
-    currentName: "Лаврово",
-    detail: "На исторической карте: Малцовская (Лаврово)",
     latitude: 52.838365,
     longitude: 36.009488,
     kind: "matched",
@@ -52,13 +97,13 @@ const places = [
 ] as const;
 
 const orel = {
-  name: "Орёл",
   latitude: 52.968543,
   longitude: 36.069247,
 };
 
 export function OrelEstatesOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
     let active = true;
@@ -77,7 +122,7 @@ export function OrelEstatesOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -89,7 +134,8 @@ export function OrelEstatesOpenStreetMap() {
       L.control.zoom({ position: "bottomright" }).addTo(map);
       L.control.scale({ imperial: false, position: "bottomleft" }).addTo(map);
 
-      places.forEach((place) => {
+      places.forEach((place, index) => {
+        const label = text.places[index];
         if (place.kind === "historical") {
           L.circle([place.latitude, place.longitude], {
             radius: 2400,
@@ -111,17 +157,17 @@ export function OrelEstatesOpenStreetMap() {
         L.marker([place.latitude, place.longitude], {
           icon,
           keyboard: true,
-          title: place.name,
+          title: label.name,
         })
           .addTo(map!)
-          .bindTooltip(place.name, {
+          .bindTooltip(label.name, {
             direction: place.direction,
             offset: place.direction === "bottom" ? [0, 12] : place.direction === "top" ? [0, -12] : [place.direction === "right" ? 12 : -12, 0],
             permanent: true,
             className: `amphilochia-leaflet-label orel-estates-leaflet-label is-${place.kind}`,
           })
           .bindPopup(
-            `<strong>${place.name}</strong><span>${place.currentName}</span><small>${place.detail}</small>`,
+            `<strong>${label.name}</strong><span>${label.currentName}</span><small>${label.detail}</small>`,
           );
       });
 
@@ -135,10 +181,10 @@ export function OrelEstatesOpenStreetMap() {
       L.marker([orel.latitude, orel.longitude], {
         icon: orelIcon,
         keyboard: true,
-        title: orel.name,
+        title: text.orel,
       })
         .addTo(map)
-        .bindTooltip(orel.name, {
+        .bindTooltip(text.orel, {
           direction: "right",
           offset: [10, 0],
           permanent: true,
@@ -150,8 +196,8 @@ export function OrelEstatesOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context orel-estates-map-context");
         const region = document.createElement("strong");
         const subject = document.createElement("span");
-        region.textContent = "Орловский уезд · 1594/95";
-        subject.textContent = "пять поместий из писцовой книги";
+        region.textContent = text.region;
+        subject.textContent = text.subject;
         element.append(region, subject);
         return element;
       };
@@ -169,14 +215,14 @@ export function OrelEstatesOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas orel-estates-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта пяти поместий Анфилоговых в Орловском уезде по писцовой книге 1594–1595 годов"
+      aria-label={text.ariaLabel}
     />
   );
 }

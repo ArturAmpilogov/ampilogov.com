@@ -114,6 +114,114 @@ a {
   transform-origin: left;
 }
 
+.site-header__tools {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Language switcher: flag + code button with a drop-down of native language names. */
+.language-switcher {
+  position: relative;
+}
+
+.language-switcher__button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: inherit;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.language-switcher__button:hover,
+.language-switcher.is-open .language-switcher__button {
+  border-color: currentColor;
+}
+
+.site-header--ink .language-switcher__button {
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
+.language-flag {
+  width: 21px;
+  height: 14px;
+  flex: none;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(29, 28, 25, 0.16);
+}
+
+.language-switcher__chevron {
+  width: 10px;
+  height: 6px;
+  transition: transform 180ms ease;
+}
+
+.language-switcher.is-open .language-switcher__chevron {
+  transform: rotate(180deg);
+}
+
+.language-switcher__list {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 210px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  color: var(--ink);
+  background: var(--paper-light);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(29, 28, 25, 0.18);
+}
+
+.language-switcher__list a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  font-size: 0.92rem;
+  border-radius: 8px;
+  transition: background-color 140ms ease;
+}
+
+.language-switcher__list a:hover,
+.language-switcher__list a:focus-visible {
+  background: rgba(29, 28, 25, 0.07);
+}
+
+.language-switcher__list a.is-current {
+  font-weight: 600;
+}
+
+.language-switcher__check {
+  width: 12px;
+  height: 10px;
+  margin-left: auto;
+  color: var(--accent);
+}
+
+.translation-notice {
+  margin: 0 0 28px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  background: rgba(220, 170, 72, 0.14);
+  border-left: 3px solid var(--gilt);
+}
+
 /* Shown in place of the inline nav at tablet and phone widths (see the end of the file). */
 .site-menu-backdrop {
   display: none;
@@ -10208,6 +10316,15 @@ a {
 @media (max-width: 64em) {
   .site-header.is-menu-open {
     z-index: 1100;
+  }
+
+  .site-header__tools {
+    gap: 14px;
+  }
+
+  /* The menu toggle keeps its place at the right edge, after the language switcher. */
+  .site-menu-toggle {
+    order: 1;
   }
 
   .site-menu-toggle {

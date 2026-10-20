@@ -1,19 +1,56 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
-const konya = {
+const copy = defineCopy({
   name: "Икония / Кония",
   detail: "Древний и современный город на одном месте",
-  latitude: 37.87464,
-  longitude: 32.49316,
-};
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  region: "Центральная Анатолия",
+  place: "Икония → Кония",
+  label: "Интерактивная карта Центральной Анатолии: древняя Икония и современная Кония на одном месте",
+}, {
+  en: {
+    name: "Iconium / Konya",
+    detail: "Ancient and modern city on the same site",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    region: "Central Anatolia",
+    place: "Iconium → Konya",
+    label: "Interactive map of Central Anatolia: ancient Iconium and modern Konya on the same site",
+  },
+  uk: {
+    name: "Іконія / Конья",
+    detail: "Давнє й сучасне місто на одному місці",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    region: "Центральна Анатолія",
+    place: "Іконія → Конья",
+    label: "Інтерактивна мапа Центральної Анатолії: давня Іконія та сучасна Конья на одному місці",
+  },
+  be: {
+    name: "Іканія / Конья",
+    detail: "Старажытны і сучасны горад на адным месцы",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    region: "Цэнтральная Анатолія",
+    place: "Іканія → Конья",
+    label: "Інтэрактыўная карта Цэнтральнай Анатоліі: старажытная Іканія і сучасная Конья на адным месцы",
+  },
+});
 
 export function KonyaOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
+    const konya = {
+      name: text.name,
+      detail: text.detail,
+      latitude: 37.87464,
+      longitude: 32.49316,
+    };
+
     let active = true;
     let map: import("leaflet").Map | undefined;
 
@@ -30,7 +67,7 @@ export function KonyaOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -77,8 +114,8 @@ export function KonyaOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context konya-map-context");
         const region = document.createElement("strong");
         const place = document.createElement("span");
-        region.textContent = "Центральная Анатолия";
-        place.textContent = "Икония → Кония";
+        region.textContent = text.region;
+        place.textContent = text.place;
         element.append(region, place);
         return element;
       };
@@ -91,14 +128,14 @@ export function KonyaOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas konya-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта Центральной Анатолии: древняя Икония и современная Кония на одном месте"
+      aria-label={text.label}
     />
   );
 }

@@ -43,5 +43,8 @@ export const config = {
     "/archive/:path*",
     "/records/:sourceId/backup/:path*",
     "/people/:personId/backup/:path*",
+    // The backups are Russian-only, but the locale prefixes must not bypass the gate.
+    "/:locale(ru|en|uk|be)/records/:sourceId/backup/:path*",
+    "/:locale(ru|en|uk|be)/people/:personId/backup/:path*",
   ],
 };

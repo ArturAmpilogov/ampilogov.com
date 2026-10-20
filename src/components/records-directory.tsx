@@ -1,7 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
+import Link from "@/i18n/link";
 import type { RecordDirectoryResult } from "@/lib/directory-index-types";
 import { DirectoryAutoLoader } from "@/components/directory-auto-loader";
 import { RecordTypeIcon } from "@/components/record-type-icon";
@@ -12,6 +14,64 @@ import { usePagedDirectory } from "@/components/use-paged-directory";
 type Filter = "all" | "complete" | "incomplete" | "human";
 const FILTERS = ["all", "complete", "incomplete", "human"] as const satisfies readonly Filter[];
 
+const copy = defineCopy({
+  catalog: "Каталог архивных записей",
+  searchLabel: "Поиск по ФИО",
+  searchPlaceholder: "Имя, отчество, фамилия…",
+  clearSearch: "Очистить поиск",
+  matches: "совпадений",
+  inSelection: "записей в выборке",
+  status: "Статус",
+  statuses: { all: "Все", complete: "Расшифрованы", incomplete: "Незавершённые", human: "Нужна помощь" },
+  resetFilters: "Сбросить фильтры",
+  extraFacts: "Дополнительные сведения",
+  emptyTitle: "Записей не найдено",
+  emptyHint: "Попробуйте часть фамилии, имя или год.",
+}, {
+  en: {
+    catalog: "Catalogue of archival records",
+    searchLabel: "Search by name",
+    searchPlaceholder: "First name, patronymic, surname…",
+    clearSearch: "Clear search",
+    matches: "matches",
+    inSelection: "records in selection",
+    status: "Status",
+    statuses: { all: "All", complete: "Transcribed", incomplete: "Unfinished", human: "Help needed" },
+    resetFilters: "Reset filters",
+    extraFacts: "Additional details",
+    emptyTitle: "No records found",
+    emptyHint: "Try part of a surname, a first name or a year. Names are searched in Russian.",
+  },
+  uk: {
+    catalog: "Каталог архівних записів",
+    searchLabel: "Пошук за ПІБ",
+    searchPlaceholder: "Ім'я, по батькові, прізвище…",
+    clearSearch: "Очистити пошук",
+    matches: "збігів",
+    inSelection: "записів у вибірці",
+    status: "Статус",
+    statuses: { all: "Усі", complete: "Розшифровані", incomplete: "Незавершені", human: "Потрібна допомога" },
+    resetFilters: "Скинути фільтри",
+    extraFacts: "Додаткові відомості",
+    emptyTitle: "Записів не знайдено",
+    emptyHint: "Спробуйте частину прізвища, ім'я або рік. Імена шукаються російською.",
+  },
+  be: {
+    catalog: "Каталог архіўных запісаў",
+    searchLabel: "Пошук па прозвішчы і імені",
+    searchPlaceholder: "Імя, імя па бацьку, прозвішча…",
+    clearSearch: "Ачысціць пошук",
+    matches: "супадзенняў",
+    inSelection: "запісаў у выбарцы",
+    status: "Статус",
+    statuses: { all: "Усе", complete: "Расшыфраваныя", incomplete: "Незавершаныя", human: "Патрэбна дапамога" },
+    resetFilters: "Скінуць фільтры",
+    extraFacts: "Дадатковыя звесткі",
+    emptyTitle: "Запісаў не знойдзена",
+    emptyHint: "Паспрабуйце частку прозвішча, імя або год. Імёны шукаюцца па-руску.",
+  },
+});
+
 export function RecordsDirectory({
   minYear,
   maxYear,
@@ -19,6 +79,7 @@ export function RecordsDirectory({
   minYear: number;
   maxYear: number;
 }) {
+  const text = copy[useLocale()];
   const {
     query,
     setQuery,
@@ -53,20 +114,20 @@ export function RecordsDirectory({
   } = usePagedDirectory<RecordDirectoryResult>({ endpoint: "/api/records", params: requestParams });
 
   return (
-    <section className="records-workspace section-shell" aria-label="Каталог архивных записей">
+    <section className="records-workspace section-shell" aria-label={text.catalog}>
       <div className="records-toolbar">
         <label className="records-search">
-          <span>Поиск по ФИО</span>
+          <span>{text.searchLabel}</span>
           <div>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Имя, отчество, фамилия…"
+              placeholder={text.searchPlaceholder}
               autoComplete="off"
             />
-            {query ? <button type="button" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : null}
+            {query ? <button type="button" onClick={() => setQuery("")} aria-label={text.clearSearch}>×</button> : null}
           </div>
         </label>
         <div className="directory-filter-panel">
@@ -84,17 +145,17 @@ export function RecordsDirectory({
       <div className="records-result-line">
         <span className="directory-result-count" aria-live="polite">
           <strong>{isLoading ? "…" : total}</strong>
-          <span>{query ? "совпадений" : "записей в выборке"}</span>
+          <span>{query ? text.matches : text.inSelection}</span>
         </span>
         <span className="directory-result-controls">
           <label className="directory-status-select">
-            <span>Статус</span>
+            <span>{text.status}</span>
             <span className="directory-status-select__field">
               <select value={filter} onChange={(event) => setFilter(event.target.value as Filter)}>
-                <option value="all">Все</option>
-                <option value="complete">Расшифрованы</option>
-                <option value="incomplete">Незавершённые</option>
-                <option value="human">Нужна помощь</option>
+                <option value="all">{text.statuses.all}</option>
+                <option value="complete">{text.statuses.complete}</option>
+                <option value="incomplete">{text.statuses.incomplete}</option>
+                <option value="human">{text.statuses.human}</option>
               </select>
             </span>
           </label>
@@ -103,8 +164,8 @@ export function RecordsDirectory({
             type="button"
             onClick={reset}
             disabled={!isFiltered}
-            aria-label="Сбросить фильтры"
-            title="Сбросить фильтры"
+            aria-label={text.resetFilters}
+            title={text.resetFilters}
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5.5 8.5A7.5 7.5 0 1 1 4.8 14" />
@@ -131,7 +192,7 @@ export function RecordsDirectory({
                 </span>
               ) : null}
               {record.directoryFacts.length ? (
-                <span className="record-row-facts" aria-label="Дополнительные сведения">
+                <span className="record-row-facts" aria-label={text.extraFacts}>
                   {record.directoryFacts.map((fact) => (
                     <span className="record-row-fact" key={`${fact.label}:${fact.value}`}>
                       <b>{fact.label}</b>
@@ -156,11 +217,11 @@ export function RecordsDirectory({
         ))}
         {!isLoading && records.length === 0 ? (
           <div className="records-empty">
-            <strong>Записей не найдено</strong>
-            <p>Попробуйте часть фамилии, имя или год.</p>
+            <strong>{text.emptyTitle}</strong>
+            <p>{text.emptyHint}</p>
             <button type="button" onClick={() => {
               reset();
-            }}>Сбросить фильтры</button>
+            }}>{text.resetFilters}</button>
           </div>
         ) : null}
       </div>

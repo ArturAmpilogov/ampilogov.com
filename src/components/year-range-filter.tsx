@@ -1,6 +1,18 @@
 "use client";
 
 import type { CSSProperties } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
+
+const copy = defineCopy({
+  period: "Период",
+  startYear: "Начальный год",
+  endYear: "Конечный год",
+}, {
+  en: { period: "Period", startYear: "Start year", endYear: "End year" },
+  uk: { period: "Період", startYear: "Початковий рік", endYear: "Кінцевий рік" },
+  be: { period: "Перыяд", startYear: "Пачатковы год", endYear: "Канцавы год" },
+});
 
 type YearRangeFilterProps = {
   label?: string;
@@ -13,7 +25,7 @@ type YearRangeFilterProps = {
 };
 
 export function YearRangeFilter({
-  label = "Период",
+  label,
   showBounds = true,
   minYear,
   maxYear,
@@ -21,6 +33,7 @@ export function YearRangeFilter({
   endYear,
   onChange,
 }: YearRangeFilterProps) {
+  const text = copy[useLocale()];
   const span = Math.max(1, maxYear - minYear);
   const style = {
     "--range-start": `${((startYear - minYear) / span) * 100}%`,
@@ -30,7 +43,7 @@ export function YearRangeFilter({
   return (
     <div className="directory-year-range" style={style}>
       <div className="directory-year-range__heading">
-        <span>{label}</span>
+        <span>{label ?? text.period}</span>
         <strong>{startYear}—{endYear}</strong>
       </div>
       <div className="directory-year-range__control">
@@ -41,7 +54,7 @@ export function YearRangeFilter({
           min={minYear}
           max={maxYear}
           value={startYear}
-          aria-label="Начальный год"
+          aria-label={text.startYear}
           onChange={(event) => onChange({
             startYear: Math.min(Number(event.target.value), endYear),
             endYear,
@@ -52,7 +65,7 @@ export function YearRangeFilter({
           min={minYear}
           max={maxYear}
           value={endYear}
-          aria-label="Конечный год"
+          aria-label={text.endYear}
           onChange={(event) => onChange({
             startYear,
             endYear: Math.max(Number(event.target.value), startYear),

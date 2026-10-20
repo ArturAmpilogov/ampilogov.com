@@ -1,8 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy, plural } from "@/i18n/copy";
+import Link from "@/i18n/link";
 import type {
   FamilyMapClientDirectory,
   FamilyMapIndexPlace,
@@ -86,14 +88,252 @@ function migrationArrowHtml(bearing: number, documented: boolean) {
   `;
 }
 
-function plural(value: number, one: string, few: string, many: string) {
-  const mod100 = value % 100;
-  const mod10 = value % 10;
-  if (mod100 >= 11 && mod100 <= 19) return many;
-  if (mod10 === 1) return one;
-  if (mod10 >= 2 && mod10 <= 4) return few;
-  return many;
-}
+// Count words are picked without the number so it keeps its raw formatting.
+const copy = defineCopy({
+  workspaceLabel: "Карта расселения рода",
+  selectedPlace: "Выбранное место",
+  onMap: "На карте",
+  loading: "Загрузка…",
+  unavailable: "Данные недоступны",
+  places: (count: number) => `${count} мест`,
+  families: (count: number) => plural("ru", count, { one: "семья", few: "семьи", many: "семей", other: "семьи" }),
+  people: (count: number) => plural("ru", count, { one: "человек", few: "человека", many: "человек", other: "человека" }),
+  records: (count: number) => plural("ru", count, { one: "запись", few: "записи", many: "записей", other: "записи" }),
+  events: (count: number) => plural("ru", count, { one: "событие", few: "события", many: "событий", other: "события" }),
+  clusterLabel: (count: number, families: string) => `${count} ${families}. Нажмите, чтобы приблизить`,
+  generationsShort: (count: number) => `${count} пок.`,
+  from: "Откуда",
+  to: "Куда",
+  backToAllPlaces: "← Все места",
+  retry: "Повторить",
+  period: "Период",
+  modeLabel: "Режим карты",
+  overview: "Обзор",
+  migrations: "Переселения",
+  wholeMap: "Вся карта",
+  place: "Место",
+  placeSelectLabel: "Место для поиска переселений",
+  allPlaces: "Все места",
+  migration: "Переселение",
+  chooseRoute: (count: number) => `Выберите маршрут · ${count}`,
+  noRoutes: "Нет переселений за этот период",
+  andMore: (count: number) => ` и ещё ${count}`,
+  routeSelectedHint: "Выбранное переселение выделено. Люди и документы — под картой.",
+  routeChooseHint: "Выберите переселение, чтобы выделить его и увидеть людей и документы.",
+  guidance: "Числа — семьи в месте или группе мест, «пок.» — поколения. Стрелки показывают направления переселений. Нажмите на круг, чтобы приблизить или увидеть людей и документы.",
+  canvasLabel: "Интерактивная карта OpenStreetMap с семейными центрами и переселениями",
+  migrationPanelLabel: "Записи направления переезда",
+  selectedDirection: "Выбранное направление",
+  direction: "Направление переезда",
+  closeDirection: "Закрыть направление",
+  familyFallback: "Семья Ампилоговых",
+  documentedKind: "Происхождение прямо указано в записи",
+  derivedKind: "Смена места между документами человека; путь не установлен",
+  migrationRecordsLabel: "Записи, связанные с направлением",
+  pinHint: "Нажмите на линию, чтобы закрепить список",
+  archivalRecord: "Архивная запись",
+  placePanelLabel: (name: string) => `Люди и события: ${name}`,
+  placeOnMap: "Место на карте",
+  closePlace: "Закрыть сведения о месте",
+  eventsListLabel: (name: string) => `Список людей и событий: ${name}`,
+  connectedRoutes: (count: number) => `Переселения, связанные с этим местом · ${count}`,
+  loadingCards: "Загрузка карточек…",
+  cardsError: "Не удалось загрузить карточки места.",
+  openRecordLabel: (label: string, date: string) => `${label}, ${date} — открыть запись в новой вкладке`,
+  openRecord: "Открыть запись",
+  openPersonLabel: (name: string) => `${name} — открыть карточку человека в новой вкладке`,
+  pointPosition: "Положение точки",
+  source: "Источник",
+  collapseGroup: "Свернуть группу",
+  legendFamily: "число — семьи",
+  legendApproximate: "пунктирный край — приблизительное место",
+  legendDocumented: "сплошная — происхождение указано в записи",
+  legendDerived: "пунктир — смена места между документами, путь неизвестен",
+}, {
+  en: {
+    workspaceLabel: "Map of the family's settlement",
+    selectedPlace: "Selected place",
+    onMap: "On the map",
+    loading: "Loading…",
+    unavailable: "Data unavailable",
+    places: (count) => `${count} ${plural("en", count, { one: "place", other: "places" })}`,
+    families: (count) => plural("en", count, { one: "family", other: "families" }),
+    people: (count) => plural("en", count, { one: "person", other: "people" }),
+    records: (count) => plural("en", count, { one: "record", other: "records" }),
+    events: (count) => plural("en", count, { one: "event", other: "events" }),
+    clusterLabel: (count, families) => `${count} ${families}. Click to zoom in`,
+    generationsShort: (count) => `${count} gen.`,
+    from: "From",
+    to: "To",
+    backToAllPlaces: "← All places",
+    retry: "Retry",
+    period: "Period",
+    modeLabel: "Map mode",
+    overview: "Overview",
+    migrations: "Migrations",
+    wholeMap: "Whole map",
+    place: "Place",
+    placeSelectLabel: "Place to find migrations for",
+    allPlaces: "All places",
+    migration: "Migration",
+    chooseRoute: (count) => `Choose a route · ${count}`,
+    noRoutes: "No migrations in this period",
+    andMore: (count) => ` and ${count} more`,
+    routeSelectedHint: "The selected migration is highlighted. People and documents are below the map.",
+    routeChooseHint: "Choose a migration to highlight it and see the people and documents.",
+    guidance: "Numbers are families in a place or a group of places; “gen.” means generations. Arrows show the direction of migrations. Click a circle to zoom in or to see the people and documents.",
+    canvasLabel: "Interactive OpenStreetMap map of family centres and migrations",
+    migrationPanelLabel: "Records for this move",
+    selectedDirection: "Selected route",
+    direction: "Direction of the move",
+    closeDirection: "Close route",
+    familyFallback: "The Ampilogov family",
+    documentedKind: "The origin is stated directly in the record",
+    derivedKind: "Change of place between a person's documents; the route is not established",
+    migrationRecordsLabel: "Records linked to this route",
+    pinHint: "Click the line to pin the list",
+    archivalRecord: "Archival record",
+    placePanelLabel: (name) => `People and events: ${name}`,
+    placeOnMap: "Place on the map",
+    closePlace: "Close place details",
+    eventsListLabel: (name) => `List of people and events: ${name}`,
+    connectedRoutes: (count) => `Migrations linked to this place · ${count}`,
+    loadingCards: "Loading records…",
+    cardsError: "Could not load the records for this place.",
+    openRecordLabel: (label, date) => `${label}, ${date} — open the record in a new tab`,
+    openRecord: "Open record",
+    openPersonLabel: (name) => `${name} — open the person's page in a new tab`,
+    pointPosition: "Point location",
+    source: "Source",
+    collapseGroup: "Collapse group",
+    legendFamily: "number — families",
+    legendApproximate: "dashed edge — approximate location",
+    legendDocumented: "solid line — origin stated in the record",
+    legendDerived: "dashed line — change of place between documents, route unknown",
+  },
+  uk: {
+    workspaceLabel: "Мапа розселення роду",
+    selectedPlace: "Вибране місце",
+    onMap: "На мапі",
+    loading: "Завантаження…",
+    unavailable: "Дані недоступні",
+    places: (count) => `${count} ${plural("uk", count, { one: "місце", few: "місця", many: "місць", other: "місця" })}`,
+    families: (count) => plural("uk", count, { one: "родина", few: "родини", many: "родин", other: "родини" }),
+    people: (count) => plural("uk", count, { one: "людина", few: "людини", many: "людей", other: "людини" }),
+    records: (count) => plural("uk", count, { one: "запис", few: "записи", many: "записів", other: "запису" }),
+    events: (count) => plural("uk", count, { one: "подія", few: "події", many: "подій", other: "події" }),
+    clusterLabel: (count, families) => `${count} ${families}. Натисніть, щоб наблизити`,
+    generationsShort: (count) => `${count} пок.`,
+    from: "Звідки",
+    to: "Куди",
+    backToAllPlaces: "← Усі місця",
+    retry: "Повторити",
+    period: "Період",
+    modeLabel: "Режим мапи",
+    overview: "Огляд",
+    migrations: "Переселення",
+    wholeMap: "Уся мапа",
+    place: "Місце",
+    placeSelectLabel: "Місце для пошуку переселень",
+    allPlaces: "Усі місця",
+    migration: "Переселення",
+    chooseRoute: (count) => `Виберіть маршрут · ${count}`,
+    noRoutes: "Немає переселень за цей період",
+    andMore: (count) => ` і ще ${count}`,
+    routeSelectedHint: "Вибране переселення виділено. Люди й документи — під мапою.",
+    routeChooseHint: "Виберіть переселення, щоб виділити його й побачити людей і документи.",
+    guidance: "Числа — родини в місці або групі місць, «пок.» — покоління. Стрілки показують напрямки переселень. Натисніть на коло, щоб наблизити або побачити людей і документи.",
+    canvasLabel: "Інтерактивна мапа OpenStreetMap з родинними осередками та переселеннями",
+    migrationPanelLabel: "Записи напрямку переїзду",
+    selectedDirection: "Вибраний напрямок",
+    direction: "Напрямок переїзду",
+    closeDirection: "Закрити напрямок",
+    familyFallback: "Родина Ампілогових",
+    documentedKind: "Походження прямо вказано в записі",
+    derivedKind: "Зміна місця між документами людини; шлях не встановлено",
+    migrationRecordsLabel: "Записи, пов'язані з напрямком",
+    pinHint: "Натисніть на лінію, щоб закріпити список",
+    archivalRecord: "Архівний запис",
+    placePanelLabel: (name) => `Люди й події: ${name}`,
+    placeOnMap: "Місце на мапі",
+    closePlace: "Закрити відомості про місце",
+    eventsListLabel: (name) => `Список людей і подій: ${name}`,
+    connectedRoutes: (count) => `Переселення, пов'язані з цим місцем · ${count}`,
+    loadingCards: "Завантаження карток…",
+    cardsError: "Не вдалося завантажити картки місця.",
+    openRecordLabel: (label, date) => `${label}, ${date} — відкрити запис у новій вкладці`,
+    openRecord: "Відкрити запис",
+    openPersonLabel: (name) => `${name} — відкрити картку людини в новій вкладці`,
+    pointPosition: "Розташування точки",
+    source: "Джерело",
+    collapseGroup: "Згорнути групу",
+    legendFamily: "число — родини",
+    legendApproximate: "пунктирний край — приблизне місце",
+    legendDocumented: "суцільна — походження вказано в записі",
+    legendDerived: "пунктир — зміна місця між документами, шлях невідомий",
+  },
+  be: {
+    workspaceLabel: "Мапа рассялення роду",
+    selectedPlace: "Абранае месца",
+    onMap: "На мапе",
+    loading: "Загрузка…",
+    unavailable: "Даныя недаступныя",
+    places: (count) => `${count} ${plural("be", count, { one: "месца", few: "месцы", many: "месцаў", other: "месца" })}`,
+    families: (count) => plural("be", count, { one: "сям'я", few: "сям'і", many: "сем'яў", other: "сям'і" }),
+    people: (count) => plural("be", count, { one: "чалавек", few: "чалавекі", many: "чалавек", other: "чалавека" }),
+    records: (count) => plural("be", count, { one: "запіс", few: "запісы", many: "запісаў", other: "запісу" }),
+    events: (count) => plural("be", count, { one: "падзея", few: "падзеі", many: "падзей", other: "падзеі" }),
+    clusterLabel: (count, families) => `${count} ${families}. Націсніце, каб наблізіць`,
+    generationsShort: (count) => `${count} пак.`,
+    from: "Адкуль",
+    to: "Куды",
+    backToAllPlaces: "← Усе месцы",
+    retry: "Паўтарыць",
+    period: "Перыяд",
+    modeLabel: "Рэжым мапы",
+    overview: "Агляд",
+    migrations: "Перасяленні",
+    wholeMap: "Уся мапа",
+    place: "Месца",
+    placeSelectLabel: "Месца для пошуку перасяленняў",
+    allPlaces: "Усе месцы",
+    migration: "Перасяленне",
+    chooseRoute: (count) => `Абярыце маршрут · ${count}`,
+    noRoutes: "Няма перасяленняў за гэты перыяд",
+    andMore: (count) => ` і яшчэ ${count}`,
+    routeSelectedHint: "Абранае перасяленне вылучана. Людзі і дакументы — пад мапай.",
+    routeChooseHint: "Абярыце перасяленне, каб вылучыць яго і ўбачыць людзей і дакументы.",
+    guidance: "Лічбы — сем'і ў месцы або групе месцаў, «пак.» — пакаленні. Стрэлкі паказваюць напрамкі перасяленняў. Націсніце на круг, каб наблізіць або ўбачыць людзей і дакументы.",
+    canvasLabel: "Інтэрактыўная мапа OpenStreetMap з сямейнымі цэнтрамі і перасяленнямі",
+    migrationPanelLabel: "Запісы напрамку пераезду",
+    selectedDirection: "Абраны напрамак",
+    direction: "Напрамак пераезду",
+    closeDirection: "Закрыць напрамак",
+    familyFallback: "Сям'я Ампілогавых",
+    documentedKind: "Паходжанне прама пазначана ў запісе",
+    derivedKind: "Змена месца паміж дакументамі чалавека; шлях не ўстаноўлены",
+    migrationRecordsLabel: "Запісы, звязаныя з напрамкам",
+    pinHint: "Націсніце на лінію, каб замацаваць спіс",
+    archivalRecord: "Архіўны запіс",
+    placePanelLabel: (name) => `Людзі і падзеі: ${name}`,
+    placeOnMap: "Месца на мапе",
+    closePlace: "Закрыць звесткі пра месца",
+    eventsListLabel: (name) => `Спіс людзей і падзей: ${name}`,
+    connectedRoutes: (count) => `Перасяленні, звязаныя з гэтым месцам · ${count}`,
+    loadingCards: "Загрузка картак…",
+    cardsError: "Не ўдалося загрузіць карткі месца.",
+    openRecordLabel: (label, date) => `${label}, ${date} — адкрыць запіс у новай укладцы`,
+    openRecord: "Адкрыць запіс",
+    openPersonLabel: (name) => `${name} — адкрыць картку чалавека ў новай укладцы`,
+    pointPosition: "Размяшчэнне пункта",
+    source: "Крыніца",
+    collapseGroup: "Згарнуць групу",
+    legendFamily: "лічба — сем'і",
+    legendApproximate: "пункцірны край — прыблізнае месца",
+    legendDocumented: "суцэльная — паходжанне пазначана ў запісе",
+    legendDerived: "пункцір — змена месца паміж дакументамі, шлях невядомы",
+  },
+});
 
 function conciseMapText(value: unknown, maxLength = 210) {
   if (typeof value !== "string") return "";
@@ -111,6 +351,8 @@ function conciseMapText(value: unknown, maxLength = 210) {
 }
 
 export function FamilySettlementMap({ range, dataVersion, directoryPath }: FamilySettlementMapProps) {
+  const text = copy[useLocale()];
+  const textRef = useRef(text);
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlState = searchParams.toString();
@@ -188,6 +430,10 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     currentSelectionRef.current = { placeId: selectedPlaceId, migrationId: selectedMigrationId };
   }, [selectedMigrationId, selectedPlaceId]);
 
+  useEffect(() => {
+    textRef.current = text;
+  }, [text]);
+
   const summaries = useMemo(() => places
     .map((place) => summarizePlace(place, yearRange.startYear, yearRange.endYear))
     .filter((summary): summary is PlaceSummary => Boolean(summary)), [places, yearRange]);
@@ -239,7 +485,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       const match = eventsBySource.get(sourceId);
       return {
         sourceId,
-        eventLabel: match?.event.eventLabel ?? "Архивная запись",
+        eventLabel: match?.event.eventLabel ?? text.archivalRecord,
         date: match?.event.date ?? String(migration.year),
         placeName: match?.placeName ?? summariesById.get(migration.toPlaceId)?.place.name ?? "",
       };
@@ -251,7 +497,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       to: summariesById.get(migration.toPlaceId)!,
       records,
     };
-  }, [activeMigrations, selectedMigrationId, selectedPlaceId, summaries, summariesById]);
+  }, [activeMigrations, selectedMigrationId, selectedPlaceId, summaries, summariesById, text]);
   const totalFamilies = useMemo(() => new Set(
     summaries.flatMap((summary) => summary.activeEvents.flatMap((event) => event.familyIds)),
   ).size, [summaries]);
@@ -337,12 +583,14 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       }
 
       const nextState = params.toString();
+      // The browser path, not usePathname(): Russian pages are rewritten to /ru internally.
+      const browserPath = window.location.pathname;
       if (nextState !== urlState) {
         locallyWrittenUrlRef.current = nextState;
         window.history.replaceState(
           window.history.state,
           "",
-          nextState ? `${pathname}?${nextState}` : pathname,
+          nextState ? `${browserPath}?${nextState}` : browserPath,
         );
       }
     }, 180);
@@ -411,9 +659,10 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
           const count = markers.reduce((sum, marker) => sum + (marker.familyCount ?? 0), 0);
           const generations = Math.max(1, ...markers.map((marker) => marker.generationCount ?? 1));
           const size = Math.min(76, 42 + Math.sqrt(count) * 3);
+          const clusterText = textRef.current;
           return L.divIcon({
             className: "settlement-proximity-cluster",
-            html: `<span style="--cluster-size:${size}px" aria-label="${count} ${plural(count, "семья", "семьи", "семей")}. Нажмите, чтобы приблизить"><b>${count}</b><small>${generations} пок.</small></span>`,
+            html: `<span style="--cluster-size:${size}px" aria-label="${clusterText.clusterLabel(count, clusterText.families(count))}"><b>${count}</b><small>${clusterText.generationsShort(generations)}</small></span>`,
             iconSize: [size, size],
             iconAnchor: [size / 2, size / 2],
           });
@@ -494,7 +743,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       marker.familyCount = summary.familyCount;
       marker.generationCount = summary.generationCount;
       marker.bindTooltip(
-        `${summary.place.name} · ${summary.familyCount} ${plural(summary.familyCount, "семья", "семьи", "семей")}`,
+        `${summary.place.name} · ${summary.familyCount} ${text.families(summary.familyCount)}`,
         { direction: "top", offset: [0, -(size / 2 + 4)], className: "settlement-map-tooltip" },
       );
       marker.on("click", () => {
@@ -504,9 +753,9 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       });
       markersByPlaceRef.current.set(summary.place.placeId, marker);
       clusters.addLayer(marker);
-      marker.getElement()?.setAttribute("aria-label", `${summary.place.name}: ${summary.familyCount} ${plural(summary.familyCount, "семья", "семьи", "семей")}`);
+      marker.getElement()?.setAttribute("aria-label", `${summary.place.name}: ${summary.familyCount} ${text.families(summary.familyCount)}`);
     }
-  }, [ready, summaries]);
+  }, [ready, summaries, text]);
 
   useEffect(() => {
     if (!ready) return;
@@ -577,11 +826,11 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       }).addTo(routeLayer);
       directions.push({ from: fromLatLng, to: toLatLng, documented, selected });
       if (selected) {
-        for (const [position, summary, label] of [[fromLatLng, from, "Откуда"], [toLatLng, to, "Куда"]] as const) {
-          const text = document.createElement("span");
-          text.textContent = `${label}: ${summary.place.name}`;
+        for (const [position, summary, isOrigin] of [[fromLatLng, from, true], [toLatLng, to, false]] as const) {
+          const label = document.createElement("span");
+          label.textContent = `${isOrigin ? text.from : text.to}: ${summary.place.name}`;
           L.circleMarker(position, { radius: 7, color: "#a6412f", fillColor: "#fcfaf5", fillOpacity: 1, weight: 3, interactive: false, renderer: routeRenderer })
-            .bindTooltip(text, { permanent: true, direction: label === "Откуда" ? "top" : "bottom", offset: [0, label === "Откуда" ? -42 : 42], className: "settlement-map-tooltip settlement-route-endpoint" }).addTo(routeLayer);
+            .bindTooltip(label, { permanent: true, direction: isOrigin ? "top" : "bottom", offset: [0, isOrigin ? -42 : 42], className: "settlement-map-tooltip settlement-route-endpoint" }).addTo(routeLayer);
         }
       }
     }
@@ -602,7 +851,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
     updateDirection();
     map.on("zoomend", updateDirection);
     return () => { map.off("zoomend", updateDirection); routeLayer.clearLayers(); };
-  }, [activeMigrations, ready, selectedMigrationId, selectedPlaceId, summariesById]);
+  }, [activeMigrations, ready, selectedMigrationId, selectedPlaceId, summariesById, text]);
 
   function resetMapFocus() {
     mapRef.current?.closePopup();
@@ -613,26 +862,26 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
   }
 
   return (
-    <section className="settlement-map-workspace" aria-label="Карта расселения рода">
+    <section className="settlement-map-workspace" aria-label={text.workspaceLabel}>
       <div className="settlement-map-controls section-shell">
         <div className="settlement-map-summary" aria-live="polite">
           <div>
-            <span>{selected ? "Выбранное место" : "На карте"}</span>
+            <span>{selected ? text.selectedPlace : text.onMap}</span>
             <strong>{selected?.place.name ?? (
-              directoryState === "loading" ? "Загрузка…" : directoryState === "error" ? "Данные недоступны" : `${summaries.length} мест`
+              directoryState === "loading" ? text.loading : directoryState === "error" ? text.unavailable : text.places(summaries.length)
             )}</strong>
             {directoryState === "ready" ? (
               <small>
-                {selected?.familyCount ?? totalFamilies} {plural(selected?.familyCount ?? totalFamilies, "семья", "семьи", "семей")}
+                {selected?.familyCount ?? totalFamilies} {text.families(selected?.familyCount ?? totalFamilies)}
                 <i aria-hidden="true"> · </i>
-                {selected?.peopleCount ?? totalPeople} {plural(selected?.peopleCount ?? totalPeople, "человек", "человека", "человек")}
+                {selected?.peopleCount ?? totalPeople} {text.people(selected?.peopleCount ?? totalPeople)}
                 <i aria-hidden="true"> · </i>
-                {selected?.recordCount ?? totalRecords} {plural(selected?.recordCount ?? totalRecords, "запись", "записи", "записей")}
+                {selected?.recordCount ?? totalRecords} {text.records(selected?.recordCount ?? totalRecords)}
               </small>
             ) : null}
           </div>
           {selected ? (
-            <button type="button" onClick={resetMapFocus}>← Все места</button>
+            <button type="button" onClick={resetMapFocus}>{text.backToAllPlaces}</button>
           ) : directoryState === "error" ? (
             <button
               type="button"
@@ -640,13 +889,13 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 setDirectoryErrorVersion(null);
                 setDirectoryRetry((current) => current + 1);
               }}
-            >Повторить</button>
+            >{text.retry}</button>
           ) : null}
         </div>
 
         <div className="settlement-map-timeline">
           <YearRangeFilter
-            label="Период"
+            label={text.period}
             minYear={range.minYear}
             maxYear={range.maxYear}
             startYear={yearRange.startYear}
@@ -657,29 +906,29 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
       </div>
 
       <div className="settlement-map-navigation section-shell">
-        <div className="settlement-map-modes" aria-label="Режим карты">
-          <button type="button" aria-pressed={!browsingRoutes} onClick={() => { setRoutesOpen(false); resetMapFocus(); }}>Обзор</button>
-          <button type="button" aria-pressed={browsingRoutes} onClick={() => { setRoutesOpen(true); setRoutePlaceId(selectedPlaceId ?? ""); resetMapFocus(); }}>Переселения</button>
+        <div className="settlement-map-modes" aria-label={text.modeLabel}>
+          <button type="button" aria-pressed={!browsingRoutes} onClick={() => { setRoutesOpen(false); resetMapFocus(); }}>{text.overview}</button>
+          <button type="button" aria-pressed={browsingRoutes} onClick={() => { setRoutesOpen(true); setRoutePlaceId(selectedPlaceId ?? ""); resetMapFocus(); }}>{text.migrations}</button>
           <button type="button" className="settlement-map-overview" onClick={() => {
             resetMapFocus();
             if (summaries.length) mapRef.current?.fitBounds(summaries.map(({ place }) => [place.geo.latitude, place.geo.longitude] as [number, number]), { padding: [52, 52], maxZoom: 5 });
-          }}>Вся карта</button>
+          }}>{text.wholeMap}</button>
         </div>
         {browsingRoutes ? <div className="settlement-route-picker">
-          <label>Место<select aria-label="Место для поиска переселений" value={effectiveRoutePlaceId} onChange={(event) => { setRoutePlaceId(event.target.value); resetMapFocus(); }}>
-            <option value="">Все места</option>
+          <label>{text.place}<select aria-label={text.placeSelectLabel} value={effectiveRoutePlaceId} onChange={(event) => { setRoutePlaceId(event.target.value); resetMapFocus(); }}>
+            <option value="">{text.allPlaces}</option>
             {summaries.filter(({ place }) => routePlaces.has(place.placeId)).sort((a, b) => a.place.name.localeCompare(b.place.name, "ru")).map(({ place }) => <option key={place.placeId} value={place.placeId}>{place.label}</option>)}
           </select></label>
-          <label>Переселение<select aria-label="Переселение" value={selectedMigrationId ?? ""} onChange={(event) => {
+          <label>{text.migration}<select aria-label={text.migration} value={selectedMigrationId ?? ""} onChange={(event) => {
             shouldFocusSelectionRef.current = true;
             setSelectedPlaceId(null);
             setSelectedMigrationId(event.target.value || null);
           }}>
-            <option value="">{availableRoutes.length ? `Выберите маршрут · ${availableRoutes.length}` : "Нет переселений за этот период"}</option>
-            {availableRoutes.map((route) => <option key={route.migrationId} value={route.migrationId}>{route.year} · {summariesById.get(route.fromPlaceId)!.place.name} → {summariesById.get(route.toPlaceId)!.place.name} · {route.personNames[0]}{route.personNames.length > 1 ? ` и ещё ${route.personNames.length - 1}` : ""}</option>)}
+            <option value="">{availableRoutes.length ? text.chooseRoute(availableRoutes.length) : text.noRoutes}</option>
+            {availableRoutes.map((route) => <option key={route.migrationId} value={route.migrationId}>{route.year} · {summariesById.get(route.fromPlaceId)!.place.name} → {summariesById.get(route.toPlaceId)!.place.name} · {route.personNames[0]}{route.personNames.length > 1 ? text.andMore(route.personNames.length - 1) : ""}</option>)}
           </select></label>
-          <p>{selectedMigrationId ? "Выбранное переселение выделено. Люди и документы — под картой." : "Выберите переселение, чтобы выделить его и увидеть людей и документы."}</p>
-        </div> : <p className="settlement-map-guidance">Числа — семьи в месте или группе мест, «пок.» — поколения. Стрелки показывают направления переселений. Нажмите на круг, чтобы приблизить или увидеть людей и документы.</p>}
+          <p>{selectedMigrationId ? text.routeSelectedHint : text.routeChooseHint}</p>
+        </div> : <p className="settlement-map-guidance">{text.guidance}</p>}
       </div>
 
       <div className="settlement-map-stage section-shell">
@@ -687,27 +936,27 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
           className="settlement-map-canvas"
           ref={containerRef}
           role="region"
-          aria-label="Интерактивная карта OpenStreetMap с семейными центрами и переселениями"
+          aria-label={text.canvasLabel}
         />
         {displayedMigration ? (
           <aside
             className={`settlement-migration-panel${selectedMigrationId ? " is-pinned" : ""}`}
             aria-live="polite"
-            aria-label="Записи направления переезда"
+            aria-label={text.migrationPanelLabel}
           >
             <div className="settlement-migration-panel__heading">
               <div>
-                <span>{selectedMigrationId ? "Выбранное направление" : "Направление переезда"}</span>
+                <span>{selectedMigrationId ? text.selectedDirection : text.direction}</span>
                 <strong>{displayedMigration.from.place.name} <i aria-hidden="true">→</i> {displayedMigration.to.place.name}</strong>
               </div>
               {selectedMigrationId ? (
-                <button type="button" onClick={() => setSelectedMigrationId(null)} aria-label="Закрыть направление">×</button>
+                <button type="button" onClick={() => setSelectedMigrationId(null)} aria-label={text.closeDirection}>×</button>
               ) : null}
             </div>
             <ul className="settlement-migration-panel__people">
               {(displayedMigration.migration.personNames.length
                 ? displayedMigration.migration.personNames
-                : ["Семья Ампилоговых"]
+                : [text.familyFallback]
               ).map((name, index) => {
                 const personId = displayedMigration.migration.personIds[index];
                 return (
@@ -726,9 +975,9 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 );
               })}
             </ul>
-            <p className="settlement-migration-panel__kind">{displayedMigration.migration.migrationId.startsWith("documented:") ? "Происхождение прямо указано в записи" : "Смена места между документами человека; путь не установлен"}</p>
+            <p className="settlement-migration-panel__kind">{displayedMigration.migration.migrationId.startsWith("documented:") ? text.documentedKind : text.derivedKind}</p>
             <p className="settlement-migration-panel__basis">{conciseMapText(displayedMigration.migration.basis, 180)}</p>
-            <nav aria-label="Записи, связанные с направлением">
+            <nav aria-label={text.migrationRecordsLabel}>
               {displayedMigration.records.map((record) => (
                 <Link
                   key={record.sourceId}
@@ -744,32 +993,32 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 </Link>
               ))}
             </nav>
-            {!selectedMigrationId ? <em>Нажмите на линию, чтобы закрепить список</em> : null}
+            {!selectedMigrationId ? <em>{text.pinHint}</em> : null}
           </aside>
         ) : null}
         {selected ? (
           <aside
             className="settlement-place-panel"
             aria-live="polite"
-            aria-label={`Люди и события: ${selected.place.name}`}
+            aria-label={text.placePanelLabel(selected.place.name)}
           >
             <header className="settlement-place-panel__heading">
               <div>
-                <span>Место на карте</span>
+                <span>{text.placeOnMap}</span>
                 <strong>{selected.place.name}</strong>
                 <div className="settlement-place-panel__meta">
                   <small>{selected.firstYear}—{selected.lastYear}</small>
-                  <small>{selected.recordCount} {plural(selected.recordCount, "событие", "события", "событий")}</small>
-                  <small>{selectedPeopleCount} {plural(selectedPeopleCount, "человек", "человека", "человек")}</small>
+                  <small>{selected.recordCount} {text.events(selected.recordCount)}</small>
+                  <small>{selectedPeopleCount} {text.people(selectedPeopleCount)}</small>
                   {selected.place.approximate ? <small>{selected.place.precisionLabel}</small> : null}
                 </div>
               </div>
-              <button type="button" onClick={resetMapFocus} aria-label="Закрыть сведения о месте">×</button>
+              <button type="button" onClick={resetMapFocus} aria-label={text.closePlace}>×</button>
             </header>
             <div
               className="settlement-place-panel__events"
               tabIndex={0}
-              aria-label={`Список людей и событий: ${selected.place.name}`}
+              aria-label={text.eventsListLabel(selected.place.name)}
               onWheel={(event) => event.stopPropagation()}
               onTouchMove={(event) => event.stopPropagation()}
               onKeyDown={(event) => {
@@ -789,12 +1038,12 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                 event.currentTarget.scrollBy({ top, behavior: "smooth" });
               }}
             >
-              {connectedRoutes.length ? <button className="settlement-place-routes" type="button" onClick={() => { setRoutePlaceId(selectedPlaceId!); setRoutesOpen(true); resetMapFocus(); }}>Переселения, связанные с этим местом · {connectedRoutes.length}</button> : null}
+              {connectedRoutes.length ? <button className="settlement-place-routes" type="button" onClick={() => { setRoutePlaceId(selectedPlaceId!); setRoutesOpen(true); resetMapFocus(); }}>{text.connectedRoutes(connectedRoutes.length)}</button> : null}
               {placeDetailsState === "loading" ? (
-                <p className="settlement-place-panel__loading" role="status">Загрузка карточек…</p>
+                <p className="settlement-place-panel__loading" role="status">{text.loadingCards}</p>
               ) : null}
               {placeDetailsState === "error" ? (
-                <p className="settlement-place-panel__loading is-error" role="alert">Не удалось загрузить карточки места.</p>
+                <p className="settlement-place-panel__loading is-error" role="alert">{text.cardsError}</p>
               ) : null}
               {[...selectedDetailEvents].reverse().map((event) => (
                 <article className="settlement-place-panel__event" key={event.sourceId}>
@@ -804,9 +1053,9 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                       href={`/records/${encodeURIComponent(event.sourceId)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`${event.eventLabel}, ${event.date} — открыть запись в новой вкладке`}
+                      aria-label={text.openRecordLabel(event.eventLabel, event.date)}
                     >
-                      Открыть запись <i aria-hidden="true">↗</i>
+                      {text.openRecord} <i aria-hidden="true">↗</i>
                     </Link>
                   </header>
                   {event.people.length ? (
@@ -820,7 +1069,7 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
                                 href={`/people/${encodeURIComponent(person.personId)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label={`${person.name} — открыть карточку человека в новой вкладке`}
+                                aria-label={text.openPersonLabel(person.name)}
                               >
                                 <span>{person.name}</span><i aria-hidden="true">↗</i>
                               </Link>
@@ -839,11 +1088,11 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
               {selected.place.geo.note ? (
                 <footer className="settlement-place-panel__geo-note">
                   <div>
-                    <span>Положение точки</span>
+                    <span>{text.pointPosition}</span>
                     <p>{conciseMapText(selected.place.geo.note, 150)}</p>
                   </div>
                   <a href={selected.place.geo.sourceUrl} target="_blank" rel="noopener noreferrer">
-                    Источник <i aria-hidden="true">↗</i>
+                    {text.source} <i aria-hidden="true">↗</i>
                   </a>
                 </footer>
               ) : null}
@@ -857,15 +1106,15 @@ export function FamilySettlementMap({ range, dataVersion, directoryPath }: Famil
             onClick={resetMapFocus}
           >
             <span aria-hidden="true">↙</span>
-            Свернуть группу
+            {text.collapseGroup}
           </button>
         ) : null}
       </div>
 
       <footer className="settlement-map-legend section-shell">
-        <span><i className="is-family" /> число — семьи</span>
-        <span><i className="is-approximate" /> пунктирный край — приблизительное место</span>
-        <><span><i className="is-route is-documented" /> сплошная — происхождение указано в записи</span><span><i className="is-route is-derived" /> пунктир — смена места между документами, путь неизвестен</span></>
+        <span><i className="is-family" /> {text.legendFamily}</span>
+        <span><i className="is-approximate" /> {text.legendApproximate}</span>
+        <><span><i className="is-route is-documented" /> {text.legendDocumented}</span><span><i className="is-route is-derived" /> {text.legendDerived}</span></>
       </footer>
     </section>
   );

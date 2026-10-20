@@ -1,11 +1,23 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 import type { StoryMapConfig } from "@/lib/story-maps";
 
+const copy = defineCopy(
+  { leafletTitle: "Открыть сайт Leaflet в новой вкладке" },
+  {
+    en: { leafletTitle: "Open the Leaflet website in a new tab" },
+    uk: { leafletTitle: "Відкрити сайт Leaflet у новій вкладці" },
+    be: { leafletTitle: "Адкрыць сайт Leaflet у новай укладцы" },
+  },
+);
+
 export function StoryOpenStreetMap({ config }: { config: StoryMapConfig }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { leafletTitle } = copy[useLocale()];
 
   useEffect(() => {
     let active = true;
@@ -27,7 +39,7 @@ export function StoryOpenStreetMap({ config }: { config: StoryMapConfig }) {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -119,7 +131,7 @@ export function StoryOpenStreetMap({ config }: { config: StoryMapConfig }) {
       active = false;
       map?.remove();
     };
-  }, [config]);
+  }, [config, leafletTitle]);
 
   return (
     <div

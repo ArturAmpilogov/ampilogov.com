@@ -67,7 +67,15 @@ function compactText(value) {
     .trim();
 }
 
-function parseSourceRegistry(content) {
+// Field labels of docs/research/sources.md and its translations in translations/<locale>/.
+const sourceRegistryLabels = {
+  ru: { type: "Тип", status: "Статус" },
+  en: { type: "Type", status: "Status" },
+  uk: { type: "Тип", status: "Статус" },
+  be: { type: "Тып", status: "Статус" },
+};
+
+function parseSourceRegistry(content, labels = sourceRegistryLabels.ru) {
   const lines = content.split(/\r?\n/);
   const intro = [];
   const groups = [];
@@ -78,8 +86,8 @@ function parseSourceRegistry(content) {
   const finishEntry = () => {
     if (!entry || !group) return;
     const content = entry.lines.join("\n").trim();
-    const type = compactText(content.match(/^- Тип:\s*(.+)$/m)?.[1] ?? "");
-    const status = compactText(content.match(/^- Статус:\s*(.+)$/m)?.[1] ?? "");
+    const type = compactText(content.match(new RegExp(`^- ${labels.type}:\\s*(.+)$`, "m"))?.[1] ?? "");
+    const status = compactText(content.match(new RegExp(`^- ${labels.status}:\\s*(.+)$`, "m"))?.[1] ?? "");
     group.entries.push({
       sourceId: entry.sourceId,
       id: entry.sourceId.toLowerCase(),
@@ -284,35 +292,50 @@ atomicJson(path.join(indexesDir, "map-directory.json"), {
   stats: mapDirectory.stats,
 });
 
-const sourceRegistryContent = fs.readFileSync(sourceRegistryFile, "utf8");
-const sourceRegistry = parseSourceRegistry(sourceRegistryContent);
-const sourceRegistryVersion = contentHash(sourceRegistryContent);
-const sourceRegistryGroups = sourceRegistry.groups.map((group) => ({
-  title: group.title,
-  entries: group.entries.map((entry) => {
-    const assetName = `${safeAssetKey(entry.sourceId.toLowerCase())}.${sourceRegistryVersion}.json`;
-    atomicJson(path.join(sourceRegistryDir, assetName), {
-      sourceId: entry.sourceId,
-      title: entry.title,
-      content: entry.content,
-    });
-    return {
-      sourceId: entry.sourceId,
-      id: entry.id,
-      title: entry.title,
-      type: entry.type,
-      status: entry.status,
-      path: `/generated/source-registry/${assetName}`,
-    };
-  }),
-}));
-atomicJson(path.join(indexesDir, "source-registry.json"), {
-  schemaVersion: 1,
-  generatedAt,
-  version: sourceRegistryVersion,
-  intro: sourceRegistry.intro,
-  groups: sourceRegistryGroups,
-});
+// The Russian registry and each translated one (translations/<locale>/docs/research/sources.md)
+// get their own index: data/genealogy/indexes/source-registry[.<locale>].json.
+let sourceRegistryCount = 0;
+for (const [locale, labels] of Object.entries(sourceRegistryLabels)) {
+  const registryFile = locale === "ru"
+    ? sourceRegistryFile
+    : path.join(root, "translations", locale, "docs/research/sources.md");
+  const indexFile = path.join(indexesDir, locale === "ru" ? "source-registry.json" : `source-registry.${locale}.json`);
+  if (!fs.existsSync(registryFile)) {
+    fs.rmSync(indexFile, { force: true });
+    continue;
+  }
+  const sourceRegistryContent = fs.readFileSync(registryFile, "utf8");
+  const sourceRegistry = parseSourceRegistry(sourceRegistryContent, labels);
+  const sourceRegistryVersion = contentHash(sourceRegistryContent);
+  const assetSuffix = locale === "ru" ? "" : `.${locale}`;
+  const sourceRegistryGroups = sourceRegistry.groups.map((group) => ({
+    title: group.title,
+    entries: group.entries.map((entry) => {
+      const assetName = `${safeAssetKey(entry.sourceId.toLowerCase())}${assetSuffix}.${sourceRegistryVersion}.json`;
+      atomicJson(path.join(sourceRegistryDir, assetName), {
+        sourceId: entry.sourceId,
+        title: entry.title,
+        content: entry.content,
+      });
+      return {
+        sourceId: entry.sourceId,
+        id: entry.id,
+        title: entry.title,
+        type: entry.type,
+        status: entry.status,
+        path: `/generated/source-registry/${assetName}`,
+      };
+    }),
+  }));
+  atomicJson(indexFile, {
+    schemaVersion: 1,
+    generatedAt,
+    version: sourceRegistryVersion,
+    intro: sourceRegistry.intro,
+    groups: sourceRegistryGroups,
+  });
+  if (locale === "ru") sourceRegistryCount = sourceRegistryGroups.reduce((total, group) => total + group.entries.length, 0);
+}
 
 atomicJson(path.join(indexesDir, "records-directory.json"), {
   schemaVersion: 1,
@@ -342,4 +365,4 @@ atomicJson(path.join(indexesDir, "record-source-paths.json"), {
   personPaths,
 });
 
-console.log(`Records index: ${records.length}; people index: ${people.length}; source paths: ${Object.keys(sourcePaths).length}; person paths: ${Object.keys(personPaths).length}; map places: ${mapDirectory.places.length}; source registry: ${sourceRegistryGroups.reduce((total, group) => total + group.entries.length, 0)}.`);
+console.log(`Records index: ${records.length}; people index: ${people.length}; source paths: ${Object.keys(sourcePaths).length}; person paths: ${Object.keys(personPaths).length}; map places: ${mapDirectory.places.length}; source registry: ${sourceRegistryCount}.`);

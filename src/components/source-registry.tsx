@@ -5,6 +5,58 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
 import type { SourceRegistryEntry, SourceRegistryIndex } from "@/lib/source-registry-index";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
+
+const copy = defineCopy({
+  eyebrow: "Исследовательский аппарат",
+  searchLabel: "Найти источник",
+  searchPlaceholder: "Шифр, название, тип или статус…",
+  clearSearch: "Очистить поиск",
+  count: (visible: number, total: number) => `${visible} из ${total}`,
+  entryFallback: "Описание источника",
+  loadError: "Описание не загрузилось.",
+  retry: "Повторить",
+  loading: "Загружаем описание…",
+  empty: "Источники не найдены. Попробуйте часть шифра или названия.",
+}, {
+  en: {
+    eyebrow: "Research apparatus",
+    searchLabel: "Find a source",
+    searchPlaceholder: "Reference code, title, type or status…",
+    clearSearch: "Clear search",
+    count: (visible, total) => `${visible} of ${total}`,
+    entryFallback: "Source description",
+    loadError: "The description failed to load.",
+    retry: "Retry",
+    loading: "Loading the description…",
+    empty: "No sources found. Try part of a reference code or title (titles are in Russian).",
+  },
+  uk: {
+    eyebrow: "Дослідницький апарат",
+    searchLabel: "Знайти джерело",
+    searchPlaceholder: "Шифр, назва, тип або статус…",
+    clearSearch: "Очистити пошук",
+    count: (visible, total) => `${visible} з ${total}`,
+    entryFallback: "Опис джерела",
+    loadError: "Опис не завантажився.",
+    retry: "Повторити",
+    loading: "Завантажуємо опис…",
+    empty: "Джерел не знайдено. Спробуйте частину шифру або назви (назви російською).",
+  },
+  be: {
+    eyebrow: "Даследчы апарат",
+    searchLabel: "Знайсці крыніцу",
+    searchPlaceholder: "Шыфр, назва, тып або статус…",
+    clearSearch: "Ачысціць пошук",
+    count: (visible, total) => `${visible} з ${total}`,
+    entryFallback: "Апісанне крыніцы",
+    loadError: "Апісанне не загрузілася.",
+    retry: "Паўтарыць",
+    loading: "Загружаем апісанне…",
+    empty: "Крыніц не знойдзена. Паспрабуйце частку шыфра або назвы (назвы па-руску).",
+  },
+});
 
 type LoadedSource = {
   sourceId: string;
@@ -28,6 +80,7 @@ const markdownComponents: Components = {
 };
 
 export function SourceRegistry({ registry, title }: { registry: SourceRegistryIndex; title: string }) {
+  const text = copy[useLocale()];
   const [query, setQuery] = useState("");
   const [activeId, setActiveId] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(() => new Map<string, LoadedSource>());
@@ -101,26 +154,26 @@ export function SourceRegistry({ registry, title }: { registry: SourceRegistryIn
   return (
     <div className="source-registry">
       <header className="source-registry__heading">
-        <span>Исследовательский аппарат</span>
+        <span>{text.eyebrow}</span>
         <h1>{title}</h1>
       </header>
       <div className="source-registry__intro">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{registry.intro}</ReactMarkdown>
       </div>
       <label className="source-registry__search">
-        <span>Найти источник</span>
+        <span>{text.searchLabel}</span>
         <div>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
           <input
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Шифр, название, тип или статус…"
+            placeholder={text.searchPlaceholder}
             autoComplete="off"
           />
-          {query ? <button type="button" onClick={() => setQuery("")} aria-label="Очистить поиск">×</button> : null}
+          {query ? <button type="button" onClick={() => setQuery("")} aria-label={text.clearSearch}>×</button> : null}
         </div>
-        <small>{visibleCount} из {entriesById.size}</small>
+        <small>{text.count(visibleCount, entriesById.size)}</small>
       </label>
 
       <div className="source-registry__groups">
@@ -140,7 +193,7 @@ export function SourceRegistry({ registry, title }: { registry: SourceRegistryIn
                     <button type="button" onClick={() => void loadEntry(entry)} aria-expanded={isOpen}>
                       <span>{entry.sourceId}</span>
                       <strong>{entry.title}</strong>
-                      <small>{entry.type || entry.status || "Описание источника"}</small>
+                      <small>{entry.type || entry.status || text.entryFallback}</small>
                       <i aria-hidden="true">{isOpen ? "−" : "+"}</i>
                     </button>
                     {isOpen ? (
@@ -151,10 +204,10 @@ export function SourceRegistry({ registry, title }: { registry: SourceRegistryIn
                           </ReactMarkdown>
                         ) : state === "error" ? (
                           <div className="source-registry__error">
-                            <p>Описание не загрузилось.</p>
-                            <button type="button" onClick={() => void loadEntry(entry)}>Повторить</button>
+                            <p>{text.loadError}</p>
+                            <button type="button" onClick={() => void loadEntry(entry)}>{text.retry}</button>
                           </div>
-                        ) : <p className="source-registry__loading">Загружаем описание…</p>}
+                        ) : <p className="source-registry__loading">{text.loading}</p>}
                       </div>
                     ) : null}
                   </article>
@@ -164,7 +217,7 @@ export function SourceRegistry({ registry, title }: { registry: SourceRegistryIn
           </section>
         ))}
       </div>
-      {!visibleCount ? <p className="source-registry__empty">Источники не найдены. Попробуйте часть шифра или названия.</p> : null}
+      {!visibleCount ? <p className="source-registry__empty">{text.empty}</p> : null}
     </div>
   );
 }

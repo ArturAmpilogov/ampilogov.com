@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/config";
+import { chapterMetaTranslations } from "@/lib/chapter-meta.translations";
+
 export type ChapterGroup = "opening" | "name" | "families" | "geography" | "appendix";
 
 export type ChapterMeta = {
@@ -178,11 +181,30 @@ const chapterMeta: Record<string, Omit<ChapterMeta, "groupLabel">> = {
   "book/14-method": { order: 14, group: "appendix", description: "От знакомого имени к документу: как продолжить историю своей семьи и проверить связи между поколениями." },
 };
 
-export function getChapterMeta(slug: string): ChapterMeta | undefined {
+/** Text fields of a chapter's metadata; the translations override these per locale. */
+export type ChapterMetaText = {
+  description: string;
+  period?: Pick<NonNullable<ChapterMeta["period"]>, "from" | "fromEra" | "to" | "toEra" | "label" | "note">;
+};
+
+export type ChapterMetaTranslation = {
+  groupLabels: Record<ChapterGroup, string>;
+  chapters: Record<string, ChapterMetaText>;
+};
+
+export function getChapterMeta(slug: string, locale: Locale = "ru"): ChapterMeta | undefined {
   const meta = chapterMeta[slug];
-  return meta ? { ...meta, groupLabel: groupLabels[meta.group] } : undefined;
+  if (!meta) return undefined;
+  const translation = locale === "ru" ? undefined : chapterMetaTranslations[locale];
+  const text = translation?.chapters[slug];
+  return {
+    ...meta,
+    description: text?.description ?? meta.description,
+    period: meta.period ? { ...meta.period, ...text?.period } : undefined,
+    groupLabel: translation?.groupLabels[meta.group] ?? groupLabels[meta.group],
+  };
 }
 
-export function getChapterGroupLabel(group: ChapterGroup) {
-  return groupLabels[group];
+export function getChapterGroupLabel(group: ChapterGroup, locale: Locale = "ru") {
+  return (locale === "ru" ? undefined : chapterMetaTranslations[locale]?.groupLabels[group]) ?? groupLabels[group];
 }

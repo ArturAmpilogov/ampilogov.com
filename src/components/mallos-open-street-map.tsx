@@ -1,32 +1,83 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
-const mallos = {
-  name: "Малл",
-  detail: "Древний город и центр оракула Амфилохоса",
-  latitude: 36.756188,
-  longitude: 35.4852,
-};
-
-const contextPlaces = [
-  {
-    name: "Караташ",
-    latitude: 36.5627,
-    longitude: 35.382,
+const copy = defineCopy({
+  mallos: "Малл",
+  mallosDetail: "Древний город и центр оракула Амфилохоса",
+  mallosLabel: "Малл · древний город",
+  karatas: "Караташ",
+  adana: "Адана",
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  region: "Киликия · юг современной Турции",
+  place: "Долина Пирама — современного Джейхана",
+  label: "Интерактивная карта Киликии: древний Малл, современный Караташ и Адана",
+}, {
+  en: {
+    mallos: "Mallos",
+    mallosDetail: "Ancient city and seat of the oracle of Amphilochos",
+    mallosLabel: "Mallos · ancient city",
+    karatas: "Karataş",
+    adana: "Adana",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    region: "Cilicia · south of modern Türkiye",
+    place: "Valley of the Pyramus — the modern Ceyhan",
+    label: "Interactive map of Cilicia: ancient Mallos, modern Karataş and Adana",
   },
-  {
-    name: "Адана",
-    latitude: 36.9914,
-    longitude: 35.3308,
+  uk: {
+    mallos: "Малл",
+    mallosDetail: "Давнє місто й осередок оракула Амфілохоса",
+    mallosLabel: "Малл · давнє місто",
+    karatas: "Караташ",
+    adana: "Адана",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    region: "Кілікія · південь сучасної Туреччини",
+    place: "Долина Пірама — сучасного Джейхана",
+    label: "Інтерактивна мапа Кілікії: давній Малл, сучасні Караташ і Адана",
   },
-] as const;
+  be: {
+    mallos: "Мал",
+    mallosDetail: "Старажытны горад і асяродак аракула Амфілохаса",
+    mallosLabel: "Мал · старажытны горад",
+    karatas: "Караташ",
+    adana: "Адана",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    region: "Кілікія · поўдзень сучаснай Турцыі",
+    place: "Даліна Пірама — сучаснага Джэйхана",
+    label: "Інтэрактыўная карта Кілікіі: старажытны Мал, сучасныя Караташ і Адана",
+  },
+});
 
 export function MallosOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
+    const mallos = {
+      name: text.mallos,
+      detail: text.mallosDetail,
+      latitude: 36.756188,
+      longitude: 35.4852,
+    };
+
+    const contextPlaces = [
+      {
+        id: "karatas",
+        name: text.karatas,
+        latitude: 36.5627,
+        longitude: 35.382,
+      },
+      {
+        id: "adana",
+        name: text.adana,
+        latitude: 36.9914,
+        longitude: 35.3308,
+      },
+    ] as const;
+
     let active = true;
     let map: import("leaflet").Map | undefined;
 
@@ -43,7 +94,7 @@ export function MallosOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -77,7 +128,7 @@ export function MallosOpenStreetMap() {
         title: mallos.name,
       })
         .addTo(map)
-        .bindTooltip("Малл · древний город", {
+        .bindTooltip(text.mallosLabel, {
           direction: "top",
           offset: [0, -12],
           permanent: true,
@@ -100,8 +151,8 @@ export function MallosOpenStreetMap() {
         })
           .addTo(map!)
           .bindTooltip(place.name, {
-            direction: place.name === "Адана" ? "top" : "bottom",
-            offset: place.name === "Адана" ? [0, -9] : [0, 9],
+            direction: place.id === "adana" ? "top" : "bottom",
+            offset: place.id === "adana" ? [0, -9] : [0, 9],
             permanent: true,
             className: "amphilochia-leaflet-label mallos-leaflet-label is-context",
           });
@@ -112,8 +163,8 @@ export function MallosOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context mallos-map-context");
         const region = document.createElement("strong");
         const place = document.createElement("span");
-        region.textContent = "Киликия · юг современной Турции";
-        place.textContent = "Долина Пирама — современного Джейхана";
+        region.textContent = text.region;
+        place.textContent = text.place;
         element.append(region, place);
         return element;
       };
@@ -133,14 +184,14 @@ export function MallosOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas mallos-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта Киликии: древний Малл, современный Караташ и Адана"
+      aria-label={text.label}
     />
   );
 }

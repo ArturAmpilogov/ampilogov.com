@@ -1,21 +1,99 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
+
+const copy = defineCopy({
+  places: [
+    {
+      name: "Белая",
+      currentName: "ныне Белолунино",
+      detail: "Иван Анфилогов; позднее названы его сыновья Илья, Василий и Антон",
+    },
+    {
+      name: "Баздырево",
+      currentName: "ныне Баздрево",
+      detail: "Василий Анфилогов; позднее названы его сыновья Алексей и Григорий",
+    },
+  ],
+  markerTitle: (name: string) => `${name}, 1625 год`,
+  orel: "Орёл",
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  contextTitle: "Две земли между поколениями",
+  contextSubtitle: "Белая и Баздырево · 1625",
+  ariaLabel: "Интерактивная карта поместий Анфилоговых в Белой и Баздыреве, связывающих записи 1594 и 1625 годов",
+}, {
+  en: {
+    places: [
+      {
+        name: "Belaya",
+        currentName: "now Belolunino",
+        detail: "Ivan Anfilogov; his sons Ilya, Vasily and Anton are named later",
+      },
+      {
+        name: "Bazdyrevo",
+        currentName: "now Bazdrevo",
+        detail: "Vasily Anfilogov; his sons Alexei and Grigory are named later",
+      },
+    ],
+    markerTitle: (name: string) => `${name}, 1625`,
+    orel: "Oryol",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    contextTitle: "Two lands across generations",
+    contextSubtitle: "Belaya and Bazdyrevo · 1625",
+    ariaLabel: "Interactive map of the Anfilogov estates at Belaya and Bazdyrevo, linking the records of 1594 and 1625",
+  },
+  uk: {
+    places: [
+      {
+        name: "Бєлая",
+        currentName: "нині Бєлолуніно",
+        detail: "Іван Анфілогов; пізніше названо його синів Іллю, Василя й Антона",
+      },
+      {
+        name: "Баздирево",
+        currentName: "нині Баздрево",
+        detail: "Василь Анфілогов; пізніше названо його синів Олексія та Григорія",
+      },
+    ],
+    markerTitle: (name: string) => `${name}, 1625 рік`,
+    orel: "Орел",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    contextTitle: "Дві землі між поколіннями",
+    contextSubtitle: "Бєлая і Баздирево · 1625",
+    ariaLabel: "Інтерактивна карта маєтків Анфілогових у Бєлій і Баздиревому, що пов’язують записи 1594 і 1625 років",
+  },
+  be: {
+    places: [
+      {
+        name: "Белая",
+        currentName: "цяпер Белалуніна",
+        detail: "Іван Анфілогаў; пазней названы яго сыны Ілья, Васілій і Антон",
+      },
+      {
+        name: "Баздырава",
+        currentName: "цяпер Баздрава",
+        detail: "Васілій Анфілогаў; пазней названы яго сыны Аляксей і Грыгорый",
+      },
+    ],
+    markerTitle: (name: string) => `${name}, 1625 год`,
+    orel: "Арол",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    contextTitle: "Дзве зямлі паміж пакаленнямі",
+    contextSubtitle: "Белая і Баздырава · 1625",
+    ariaLabel: "Інтэрактыўная карта маёнткаў Анфілогаў у Белай і Баздыраве, што звязваюць запісы 1594 і 1625 гадоў",
+  },
+});
 
 const places = [
   {
-    name: "Белая",
-    currentName: "ныне Белолунино",
-    detail: "Иван Анфилогов; позднее названы его сыновья Илья, Василий и Антон",
     latitude: 52.941863,
     longitude: 35.507563,
     direction: "bottom" as const,
   },
   {
-    name: "Баздырево",
-    currentName: "ныне Баздрево",
-    detail: "Василий Анфилогов; позднее названы его сыновья Алексей и Григорий",
     latitude: 52.98454,
     longitude: 35.439101,
     direction: "top" as const,
@@ -23,13 +101,13 @@ const places = [
 ];
 
 const orel = {
-  name: "Орёл",
   latitude: 52.968543,
   longitude: 36.069247,
 };
 
 export function OrelLinesOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
     let active = true;
@@ -48,7 +126,7 @@ export function OrelLinesOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -60,7 +138,8 @@ export function OrelLinesOpenStreetMap() {
       L.control.zoom({ position: "bottomright" }).addTo(map);
       L.control.scale({ imperial: false, position: "bottomleft" }).addTo(map);
 
-      places.forEach((place) => {
+      places.forEach((place, index) => {
+        const label = text.places[index];
         const icon = L.divIcon({
           className: "amphilochia-leaflet-marker orel-estates-leaflet-marker",
           html: '<span class="amphilochia-leaflet-marker__dot orel-estates-leaflet-marker__dot is-matched"></span>',
@@ -71,17 +150,17 @@ export function OrelLinesOpenStreetMap() {
         L.marker([place.latitude, place.longitude], {
           icon,
           keyboard: true,
-          title: `${place.name}, 1625 год`,
+          title: text.markerTitle(label.name),
         })
           .addTo(map!)
-          .bindTooltip(`${place.name} · 1625`, {
+          .bindTooltip(`${label.name} · 1625`, {
             direction: place.direction,
             offset: place.direction === "bottom" ? [0, 12] : [0, -12],
             permanent: true,
             className: "amphilochia-leaflet-label orel-estates-leaflet-label is-matched",
           })
           .bindPopup(
-            `<strong>${place.name} · 1625</strong><span>${place.currentName}</span><small>${place.detail}</small>`,
+            `<strong>${label.name} · 1625</strong><span>${label.currentName}</span><small>${label.detail}</small>`,
           );
       });
 
@@ -95,10 +174,10 @@ export function OrelLinesOpenStreetMap() {
       L.marker([orel.latitude, orel.longitude], {
         icon: orelIcon,
         keyboard: true,
-        title: orel.name,
+        title: text.orel,
       })
         .addTo(map)
-        .bindTooltip(orel.name, {
+        .bindTooltip(text.orel, {
           direction: "right",
           offset: [10, 0],
           permanent: true,
@@ -110,8 +189,8 @@ export function OrelLinesOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context orel-estates-map-context");
         const title = document.createElement("strong");
         const subtitle = document.createElement("span");
-        title.textContent = "Две земли между поколениями";
-        subtitle.textContent = "Белая и Баздырево · 1625";
+        title.textContent = text.contextTitle;
+        subtitle.textContent = text.contextSubtitle;
         element.append(title, subtitle);
         return element;
       };
@@ -129,14 +208,14 @@ export function OrelLinesOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas orel-estates-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта поместий Анфилоговых в Белой и Баздыреве, связывающих записи 1594 и 1625 годов"
+      aria-label={text.ariaLabel}
     />
   );
 }

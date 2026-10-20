@@ -21,30 +21,35 @@ const genealogyDataGlobs = [
 const peopleDirectoryIndex = ["./data/genealogy/indexes/people-directory.json"];
 const recordsDirectoryIndex = ["./data/genealogy/indexes/records-directory.json"];
 
+const localeAlternatives = ["ru", "en", "uk", "be"].join("|");
+
 const nextConfig: NextConfig = {
   agentRules: false,
+  // Pages live under app/[locale], so their route keys start with "/[locale]".
   outputFileTracingIncludes: {
-    "/records/*/backup": genealogyDataGlobs,
-    "/records/*/backup/assets/*": genealogyDataGlobs,
-    "/people/*/backup": genealogyDataGlobs,
-    "/people": peopleDirectoryIndex,
+    "/[locale]/records/*/backup": genealogyDataGlobs,
+    "/[locale]/records/*/backup/assets/*": genealogyDataGlobs,
+    "/[locale]/people/*/backup": genealogyDataGlobs,
+    "/[locale]/people": peopleDirectoryIndex,
     "/api/people": peopleDirectoryIndex,
     "/api/records": recordsDirectoryIndex,
   },
   outputFileTracingExcludes: {
-    "/records/*": [
+    "/[locale]/records/*": [
       "./data/**/*",
       "./docs/**/*",
       "./outputs/**/*",
       "./public/**/*",
       "./tmp/**/*",
+      "./translations/**/*",
     ],
-    "/people/*": [
+    "/[locale]/people/*": [
       "./data/**/*",
       "./docs/**/*",
       "./outputs/**/*",
       "./public/**/*",
       "./tmp/**/*",
+      "./translations/**/*",
     ],
   },
   async headers() {
@@ -107,8 +112,21 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return {
+      // Russian pages keep their unprefixed URLs. Static files, API routes and
+      // non-dynamic pages are matched first, so this only reaches page routes.
+      afterFiles: [
+        { source: "/", destination: "/ru" },
+        {
+          source: `/:first((?!(?:${localeAlternatives}|api|archive|_next)(?:/|$))[^/]+)/:rest*`,
+          destination: "/ru/:first/:rest*",
+        },
+      ],
+    };
+  },
   async redirects() {
-    return [
+    const chapterRedirects = [
       {
         source: "/read/book/03-tonkoy-onfilogov-1536-1537",
         destination: "/read/book/04-first-records",
@@ -229,6 +247,17 @@ const nextConfig: NextConfig = {
         destination: "/read/book/14-method",
         permanent: true,
       },
+    ];
+    return [
+      // /ru/... duplicates the unprefixed Russian URLs.
+      { source: "/ru", destination: "/", permanent: true },
+      { source: "/ru/:path*", destination: "/:path*", permanent: true },
+      ...chapterRedirects,
+      ...chapterRedirects.map((redirect) => ({
+        ...redirect,
+        source: `/:locale(${localeAlternatives})${redirect.source}`,
+        destination: `/:locale${redirect.destination}`,
+      })),
     ];
   },
 };

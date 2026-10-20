@@ -1,19 +1,56 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
-const anpilovka = {
+const copy = defineCopy({
   name: "Анпиловка",
   detail: "Селение старооскольских Анпиловых рядом с селом Бор",
-  latitude: 51.26,
-  longitude: 37.879444,
-};
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  region: "Староосколье",
+  subject: "Анпиловка у села Бор",
+  label: "Интерактивная OpenStreetMap-карта Анпиловки у села Бор в Старооскольском округе",
+}, {
+  en: {
+    name: "Anpilovka",
+    detail: "Settlement of the Stary Oskol Anpilovs next to the village of Bor",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    region: "Stary Oskol area",
+    subject: "Anpilovka near the village of Bor",
+    label: "Interactive OpenStreetMap map of Anpilovka near the village of Bor in the Stary Oskol district",
+  },
+  uk: {
+    name: "Анпіловка",
+    detail: "Поселення старооскольських Анпілових поруч із селом Бор",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    region: "Старооскольщина",
+    subject: "Анпіловка біля села Бор",
+    label: "Інтерактивна мапа OpenStreetMap Анпіловки біля села Бор у Старооскольському окрузі",
+  },
+  be: {
+    name: "Анпілаўка",
+    detail: "Паселішча старааскольскіх Анпілавых побач з сялом Бор",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    region: "Старааскольшчына",
+    subject: "Анпілаўка каля сяла Бор",
+    label: "Інтэрактыўная карта OpenStreetMap Анпілаўкі каля сяла Бор у Старааскольскай акрузе",
+  },
+});
 
 export function AnpilovkaOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
+    const anpilovka = {
+      name: text.name,
+      detail: text.detail,
+      latitude: 51.26,
+      longitude: 37.879444,
+    };
+
     let active = true;
     let map: import("leaflet").Map | undefined;
 
@@ -30,7 +67,7 @@ export function AnpilovkaOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -78,8 +115,8 @@ export function AnpilovkaOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context anpilogovo-map-context");
         const region = document.createElement("strong");
         const subject = document.createElement("span");
-        region.textContent = "Староосколье";
-        subject.textContent = "Анпиловка у села Бор";
+        region.textContent = text.region;
+        subject.textContent = text.subject;
         element.append(region, subject);
         return element;
       };
@@ -92,14 +129,14 @@ export function AnpilovkaOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas anpilogovo-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная OpenStreetMap-карта Анпиловки у села Бор в Старооскольском округе"
+      aria-label={text.label}
     />
   );
 }

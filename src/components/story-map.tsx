@@ -1,8 +1,20 @@
 import { StoryOpenStreetMap } from "@/components/story-open-street-map";
-import { storyMaps } from "@/lib/story-maps";
+import { defineCopy } from "@/i18n/copy";
+import { getLocale } from "@/i18n/server";
+import { getStoryMap } from "@/lib/story-maps";
+
+const copy = defineCopy(
+  { interactionHint: "Карту можно двигать и увеличивать" },
+  {
+    en: { interactionHint: "The map can be panned and zoomed" },
+    uk: { interactionHint: "Мапу можна рухати й збільшувати" },
+    be: { interactionHint: "Карту можна рухаць і павялічваць" },
+  },
+);
 
 export function StoryMap({ id }: { id: string }) {
-  const config = storyMaps[id];
+  const locale = getLocale();
+  const config = getStoryMap(id, locale);
   if (!config) return null;
 
   return (
@@ -20,7 +32,7 @@ export function StoryMap({ id }: { id: string }) {
             {item}
           </span>
         ))}
-        <span>Карту можно двигать и увеличивать</span>
+        <span>{copy[locale].interactionHint}</span>
       </figcaption>
 
       <div className="amphilochia-map-places">
