@@ -1,0 +1,4524 @@
+{
+  "schemaVersion": 1,
+  "searchId": "memo-base-2026-10-20",
+  "date": "2026-10-20",
+  "provider": "Мемориал",
+  "database": "«Жертвы политического террора в СССР» — сводная база данных Международного общества «Мемориал»",
+  "site": "https://base.memo.ru/",
+  "access": {
+    "problem": "base.memo.ru и lists.memo.ru 20 октября 2026 года недоступны: у зоны memo.ru нет A-записей (ответ DNS без адресов, проверено через 8.8.8.8 и 1.1.1.1), сайт не открывается и во встроенном браузере.",
+    "search": "Поиск выполнен через memsearch.org («Память о репрессиях» — единый поиск по ресурсам «Мемориала»), источник «Жертвы политических репрессий в СССР» (searchSource=basememo). Поиск идёт по основе слова: мужская и женская формы фамилии дают разные основы и ищутся отдельно, подстановочный знак не работает. Совпадение засчитывается в любом поле карточки, поэтому по «Анпилогова» нашлись уроженцы деревни Анпилогово, а по «Анфилогов» — человек с именем Анфилоген.",
+    "fullText": "memsearch.org показывает только краткую выдачу без года рождения, поэтому полный текст каждой из 220 карточек фамильного ряда и смежных выдач base.memo.ru/person/show/<id> прочитан по копиям Wayback Machine (25.11–04.12.2021). Краткая выдача memsearch сохранена в indexData новых Records для сверки с текущей версией базы.",
+    "rateLimit": "memsearch.org отвечал без ограничений при паузе 4 секунды. Wayback Machine отдавал около одной карточки за 20–30 секунд и на второй параллельный поток ответил «429 Too Many Requests», поэтому карточки читались в один поток."
+  },
+  "scope": {
+    "forms": "Все формы фамильного ряда — Ампилогов, Анпилогов, Анфилогов, Онпилогов, Онфилогов, Ампилов, Анпилов, Анфилов — с женскими формами, а также индексные и орфографические варианты из surname-variants.json, журналов «Открытого списка» и «Памяти народа» (Ашпилогов, Аннилогов, Ампилагов, Ампелов и др.).",
+    "scopeHistory": "Проход начат по брифу без Анпилова и Анфилова; после решения владельца от 20 октября 2026 года («все формы, включая Анпилов/Анфилов и ошибки индекса») выдача дополнена этими формами и сверена так же.",
+    "excludedForms": "Явно другие фамилии (Анфилофьев, Анфилатов) и люди других фамилий, найденные по месту рождения или имени, записаны в журнал без Records.",
+    "publicCutoff": "События после 1950 года не публикуются: карточка 1954 года рождения только записана в журнал, дело 1953 года сохранено Record без профиля."
+  },
+  "comparedWith": [
+    {
+      "path": "data/genealogy/searches/openlist-ampilogov-2026-10-19.json",
+      "records": "PUB-OPENLIST-*"
+    },
+    {
+      "path": "data/genealogy/searches/openlist-surname-variants-2026-10-19.json",
+      "records": "PUB-OPENLIST-*"
+    },
+    {
+      "path": "data/genealogy/searches/pamyat-naroda-2026-10-20.json",
+      "records": "data/genealogy/sources/pamyat-naroda/PN-*",
+      "note": "Сверка по незаслитой ветке feat/genealogy-pamyat-naroda (рабочая копия на 20.10.2026, 6510 Records). Среди новых импортов совпадений по имени, отчеству и году рождения нет. Совпадения для уже импортированных анкет перечислены в pamyatNarodaSameNameAndYear только номерами Records: совпадение имени и года не доказывает тождество, а номера профилей этой ветки ещё могут меняться."
+    }
+  ],
+  "method": "Каждая карточка сопоставлена с анкетами «Открытого списка» по имени, отчеству, форме фамилии из ряда и году рождения, затем по датам ареста, осуждения и реабилитации, номеру дела и источнику. Если человек найден, но карточка описывает другое дело, которого нет в анкете, дело импортировано отдельным Record. Связь с существующим профилем проставлялась только при совпадении имени, отчества, года и места рождения; при расхождении места рождения заведён новый профиль с пометкой «Возможно тот же человек».",
+  "queries": [
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 26
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 13
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 76
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 27
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 4
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онпилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онпилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онфилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онфилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 6
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 1
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 30
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 13
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 17
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 4
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампелов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B5%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 2,
+      "note": "Форма, близкая к «Ампилов» (е/и в безударном слоге); в «Памяти народа» такие формы отнесены к ряду. Вторая строка выдачи — эстонец, родившийся в местечке Ампель."
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампелова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилог*",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%2A&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 26,
+      "note": "Проверка подстановочного знака: выдача та же, что по «Ампилогов» (26), то есть «*» не расширяет поиск."
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилофов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D1%84%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 72,
+      "note": "Контрольный запрос: выдача состоит из Анфилофьевых (отдельная фамилия от имени Анфилофий) и людей с личным именем Анфилофий; к ряду не относится."
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилатов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%B0%D1%82%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 4,
+      "note": "Контрольный запрос: Анфилатов — отдельная фамилия, к ряду не относится."
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Алпилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BB%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Амилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Амилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Амнилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BD%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампелогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампелогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилагов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилагова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампиллогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилогав",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%B0%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилоков",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ампилонов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Амфилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Амфилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BC%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Аннилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BD%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпелов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B5%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпелогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпелогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилагов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилагова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпиллогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилогав",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%B0%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилогоф",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D1%84&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилоков",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анпилонов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Антилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%82%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 3
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Антилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%82%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфелогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилагов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Анфилогоф",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D1%84&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Аншилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BD%D1%88%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Апилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Апилогова",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%B0&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Аппилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D0%BF%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Ашпилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%90%D1%88%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Емпалогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%95%D0%BC%D0%BF%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Емпилогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%95%D0%BC%D0%BF%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Еппалогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%95%D0%BF%D0%BF%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онпелогов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D0%BF%D0%B5%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онпилов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    },
+    {
+      "page": "memsearch.org/ru/search",
+      "source": "basememo",
+      "value": "Онфилов",
+      "url": "https://www.memsearch.org/ru/search?query=%D0%9E%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B2&page=1&entityTypes=0%2C1%2C2%2C3&searchSource=basememo",
+      "resultCount": 0
+    }
+  ],
+  "results": [
+    {
+      "memoId": "1503414",
+      "name": "Ампелов Петр Алексеевич",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/1503414",
+      "archivedCopy": "https://web.archive.org/web/20211125015851/https://base.memo.ru/person/show/1503414",
+      "queries": [
+        "Ампелов"
+      ],
+      "memorialSource": "Книга памяти Нижегородской обл.",
+      "sourceId": "PUB-MEMO-PETR-ALEKSEEVICH-AMPELOV-1897",
+      "decision": "record-and-new-profile",
+      "personId": "P125005",
+      "note": "Анкета «Ампелов Петр Алексеевич» есть на сайте «Открытого списка», но в проект не импортирована: форму «Ампелов» при импорте «Открытого списка» не искали. В «Памяти народа» тёзки 1897 года рождения нет."
+    },
+    {
+      "memoId": "1455989",
+      "name": "Ампилов Александр Васильевич",
+      "birthYear": 1917,
+      "url": "https://base.memo.ru/person/show/1455989",
+      "archivedCopy": "https://web.archive.org/web/20211125015907/https://base.memo.ru/person/show/1455989",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Магаданской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-VASILEVICH-AMPILOV-1917",
+      "personId": "P114038"
+    },
+    {
+      "memoId": "1263315",
+      "name": "Ампилов Василий Павлович",
+      "birthYear": 1894,
+      "url": "https://base.memo.ru/person/show/1263315",
+      "archivedCopy": "https://web.archive.org/web/20211125015921/https://base.memo.ru/person/show/1263315",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.3 ; Воронежское общество \"Мемориал\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-PAVLOVICH-AMPILOV-1894",
+      "personId": "P114040"
+    },
+    {
+      "memoId": "1178332",
+      "name": "Ампилов Виктор Степанович",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/1178332",
+      "archivedCopy": "https://web.archive.org/web/20211125015851/https://base.memo.ru/person/show/1178332",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Астраханской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VIKTOR-STEPANOVICH-AMPILOV-1912",
+      "personId": "P114041",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-104598163"
+      ]
+    },
+    {
+      "memoId": "1307473",
+      "name": "Ампилов Герасим Павлович",
+      "birthYear": 1911,
+      "url": "https://base.memo.ru/person/show/1307473",
+      "archivedCopy": "https://web.archive.org/web/20211125015914/https://base.memo.ru/person/show/1307473",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Иркутской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GERASIM-PAVLOVICH-AMPILOV-1911",
+      "personId": "P114042",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-47042983"
+      ]
+    },
+    {
+      "memoId": "1169369",
+      "name": "Ампилов Михаил Алексеевич",
+      "birthYear": 1870,
+      "url": "https://base.memo.ru/person/show/1169369",
+      "archivedCopy": "https://web.archive.org/web/20211125015910/https://base.memo.ru/person/show/1169369",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Астраханской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-ALEKSEEVICH-AMPILOV-1870",
+      "personId": "P114043",
+      "note": "Карточка называет семью, которой нет в анкете «Открытого списка»: жена Евдокия Исаевна (1877), сын Владимир (1916), дочь Вера (1920). По имени жены добавлена исследовательская связь «Возможно тот же человек» между P114043 и метрическим профилем P102472."
+    },
+    {
+      "memoId": "3082233",
+      "name": "Ампилов (Анпилов) Степан Дмитриевич",
+      "birthYear": 1888,
+      "url": "https://base.memo.ru/person/show/3082233",
+      "archivedCopy": "https://web.archive.org/web/20211125015908/https://base.memo.ru/person/show/3082233",
+      "queries": [
+        "Ампилов"
+      ],
+      "memorialSource": "Книга памяти Астраханской обл. - Том 1",
+      "sourceId": "PUB-MEMO-STEPAN-DMITRIEVICH-AMPILOV-1888",
+      "decision": "record-and-new-profile",
+      "personId": "P125000",
+      "note": "В «Открытом списке» анкеты нет: поиски «Ампилов Степан», «Анпилов Степан» и «Степан Дмитриевич Анпилов» 20 октября 2026 года ничего не нашли. В «Памяти народа» тёзки 1888 года рождения нет."
+    },
+    {
+      "memoId": "856636",
+      "name": "Ампилова (Ковалева) Раиса Ивановна",
+      "birthYear": 1916,
+      "url": "https://base.memo.ru/person/show/856636",
+      "archivedCopy": "https://web.archive.org/web/20211125013931/https://base.memo.ru/person/show/856636",
+      "queries": [
+        "Ампилова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-RAISA-IVANOVNA-AMPILOVA-1916",
+      "personId": "P114046"
+    },
+    {
+      "memoId": "1042311",
+      "name": "Ампилогов Александр Афанасьевич",
+      "birthYear": 1918,
+      "url": "https://base.memo.ru/person/show/1042311",
+      "archivedCopy": "https://web.archive.org/web/20211125015849/https://base.memo.ru/person/show/1042311",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Хабаровского края - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-AFANASEVICH-AMPILOGOV-1918",
+      "personId": "P113901"
+    },
+    {
+      "memoId": "1729201",
+      "name": "Ампилогов Александр Афанасьевич",
+      "birthYear": 1893,
+      "url": "https://base.memo.ru/person/show/1729201",
+      "archivedCopy": "https://web.archive.org/web/20211125015849/https://base.memo.ru/person/show/1729201",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-AFANASEVICH-AMPILOGOV-1893",
+      "personId": "P113900"
+    },
+    {
+      "memoId": "368849",
+      "name": "Ампилогов Александр Афанасьевич",
+      "birthYear": 1893,
+      "url": "https://base.memo.ru/person/show/368849",
+      "archivedCopy": "https://web.archive.org/web/20211125015922/https://base.memo.ru/person/show/368849",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.9, ч.3",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-AFANASEVICH-AMPILOGOV-1893",
+      "personId": "P113900"
+    },
+    {
+      "memoId": "1303869",
+      "name": "Ампилогов Алексей Николаевич",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/1303869",
+      "archivedCopy": "https://web.archive.org/web/20211125015854/https://base.memo.ru/person/show/1303869",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Иркутской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-NIKOLAEVICH-AMPILOGOV-1908",
+      "personId": "P113903"
+    },
+    {
+      "memoId": "935949",
+      "name": "Ампилогов Антон Борисович",
+      "birthYear": 1910,
+      "url": "https://base.memo.ru/person/show/935949",
+      "archivedCopy": "https://web.archive.org/web/20211125015852/https://base.memo.ru/person/show/935949",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANTON-BORISOVICH-AMPILOGOV-1910",
+      "personId": "P113904",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-406591517"
+      ]
+    },
+    {
+      "memoId": "935950",
+      "name": "Ампилогов Борис Егорович",
+      "birthYear": 1881,
+      "url": "https://base.memo.ru/person/show/935950",
+      "archivedCopy": "https://web.archive.org/web/20211125015917/https://base.memo.ru/person/show/935950",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-BORIS-EGOROVICH-AMPILOGOV-1881",
+      "personId": "P113905"
+    },
+    {
+      "memoId": "1702474",
+      "name": "Ампилогов Василий Захарович",
+      "birthYear": 1901,
+      "url": "https://base.memo.ru/person/show/1702474",
+      "archivedCopy": "https://web.archive.org/web/20211125015914/https://base.memo.ru/person/show/1702474",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-ZAKHAROVICH-AMPILOGOV-1901",
+      "personId": "P113906",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-47633081"
+      ]
+    },
+    {
+      "memoId": "1702475",
+      "name": "Ампилогов Василий Тимофеевич",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1702475",
+      "archivedCopy": "https://web.archive.org/web/20211125015849/https://base.memo.ru/person/show/1702475",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-TIMOFEEVICH-AMPILOGOV-1900",
+      "personId": "P113907"
+    },
+    {
+      "memoId": "1729202",
+      "name": "Ампилогов Григорий Егорович",
+      "birthYear": 1890,
+      "url": "https://base.memo.ru/person/show/1729202",
+      "archivedCopy": "https://web.archive.org/web/20211125015854/https://base.memo.ru/person/show/1729202",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-EGOROVICH-AMPILOGOV-1890",
+      "personId": "P113908"
+    },
+    {
+      "memoId": "2672946",
+      "name": "Ампилогов Егор Петрович",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/2672946",
+      "archivedCopy": "https://web.archive.org/web/20211125015909/https://base.memo.ru/person/show/2672946",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Прокуратура г.Москвы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EGOR-PETROVICH-AMPILOGOV-1897",
+      "personId": "P113909",
+      "note": "В «Открытом списке» полнее (дата рождения 07.01.1897, Фатежский уезд, барак на Лиственной аллее); карточка «Мемориала» называет другой адрес — Хамовнический плац, 17, кв. 9. Дело П-40611 то же.",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-10881852",
+        "PN-PERSON-83075527",
+        "PN-PERSON-83075539"
+      ]
+    },
+    {
+      "memoId": "2429779",
+      "name": "Ампилогов Иван Гаврилович",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/2429779",
+      "archivedCopy": "https://web.archive.org/web/20211125015849/https://base.memo.ru/person/show/2429779",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Тульской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-GAVRILOVICH-AMPILOGOV-1897",
+      "personId": "P113910"
+    },
+    {
+      "memoId": "1702476",
+      "name": "Ампилогов Константин Павлович",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/1702476",
+      "archivedCopy": "https://web.archive.org/web/20211125015852/https://base.memo.ru/person/show/1702476",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015, 1998",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-KONSTANTIN-PAVLOVICH-AMPILOGOV-1912",
+      "personId": "P113911"
+    },
+    {
+      "memoId": "1683189",
+      "name": "Ампилогов Макар Семенович",
+      "birthYear": 1878,
+      "url": "https://base.memo.ru/person/show/1683189",
+      "archivedCopy": "https://web.archive.org/web/20211125015908/https://base.memo.ru/person/show/1683189",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MAKAR-SEMENOVICH-AMPILOGOV-1878",
+      "personId": "P101151"
+    },
+    {
+      "memoId": "1729203",
+      "name": "Ампилогов Максим Афанасьевич",
+      "birthYear": 1874,
+      "url": "https://base.memo.ru/person/show/1729203",
+      "archivedCopy": "https://web.archive.org/web/20211125015911/https://base.memo.ru/person/show/1729203",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MAKSIM-AFANASEVICH-AMPILOGOV-1874",
+      "personId": "P113912"
+    },
+    {
+      "memoId": "2634819",
+      "name": "Ампилогов Михаил Артемьевич",
+      "birthYear": 1895,
+      "url": "https://base.memo.ru/person/show/2634819",
+      "archivedCopy": "https://web.archive.org/web/20211125015852/https://base.memo.ru/person/show/2634819",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Расстрельные списки: Москва, 1937-1941: \"Коммунарка\", Бутово. - М., 2000",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-ARTEMEVICH-AMPILOGOV-1895",
+      "personId": "P102053"
+    },
+    {
+      "memoId": "1729204",
+      "name": "Ампилогов Михаил Афанасьевич",
+      "birthYear": 1878,
+      "url": "https://base.memo.ru/person/show/1729204",
+      "archivedCopy": "https://web.archive.org/web/20211125015851/https://base.memo.ru/person/show/1729204",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-AFANASEVICH-ANPILOGOV-1878",
+      "personId": "P113935",
+      "note": "В «Открытом списке» анкета заведена под формой «Анпилогов» с вариантом «Ампилогов»; священник, расстрелян в 1937 году. Дело то же (Книга памяти Орловской области)."
+    },
+    {
+      "memoId": "1683190",
+      "name": "Ампилогов Михаил Григорьевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1683190",
+      "archivedCopy": "https://web.archive.org/web/20211125015852/https://base.memo.ru/person/show/1683190",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-GRIGOREVICH-AMPILOGOV-1886",
+      "personId": "P113913"
+    },
+    {
+      "memoId": "2941534",
+      "name": "Ампилогов Михаил Деногенович",
+      "birthYear": 1882,
+      "url": "https://base.memo.ru/person/show/2941534",
+      "archivedCopy": "https://web.archive.org/web/20211125015919/https://base.memo.ru/person/show/2941534",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Сведения ДКНБ РК по г.Алматы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-FINOGENOVICH-AMPILOGOV-1882",
+      "personId": "P1653",
+      "note": "В «Открытом списке» отчество записано «Финогенович-Деногенович»; даты ареста 30.12.1937 и осуждения 31.12.1937 совпадают. Дубль «Ампилович Михаил Феногенович» уже связан с тем же профилем P1653."
+    },
+    {
+      "memoId": "1683191",
+      "name": "Ампилогов Михаил Павлович",
+      "birthYear": 1884,
+      "url": "https://base.memo.ru/person/show/1683191",
+      "archivedCopy": "https://web.archive.org/web/20211125015922/https://base.memo.ru/person/show/1683191",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-PAVLOVICH-AMPILOGOV-1884",
+      "personId": "P113915"
+    },
+    {
+      "memoId": "1702477",
+      "name": "Ампилогов Михаил Поликарпович",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/1702477",
+      "archivedCopy": "https://web.archive.org/web/20211125015911/https://base.memo.ru/person/show/1702477",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-POLIKARPOVICH-AMPILOGOV-1907",
+      "personId": "P113916",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-120206601",
+        "PN-PERSON-125989900",
+        "PN-PERSON-47132913"
+      ]
+    },
+    {
+      "memoId": "868178",
+      "name": "Ампилогов Николай Алексеевич",
+      "birthYear": 1943,
+      "url": "https://base.memo.ru/person/show/868178",
+      "archivedCopy": "https://web.archive.org/web/20211125015909/https://base.memo.ru/person/show/868178",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NIKOLAI-ALEKSEEVICH-AMPILOGOV-1943",
+      "personId": "P113917",
+      "note": "Родился на спецпоселении в 1943 году, в семье, высланной в 1935 году в Будённовский район Ставропольского края."
+    },
+    {
+      "memoId": "2941535",
+      "name": "Ампилогов Павел Афиногенович",
+      "birthYear": 1903,
+      "url": "https://base.memo.ru/person/show/2941535",
+      "archivedCopy": "https://web.archive.org/web/20211125015917/https://base.memo.ru/person/show/2941535",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Сведения ДКНБ РК по Атырауской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PAVEL-AFINOGENOVICH-AMPILOGOV-1903",
+      "personId": "P113918"
+    },
+    {
+      "memoId": "889851",
+      "name": "Ампилогов Павел Григорьевич",
+      "birthYear": 1925,
+      "url": "https://base.memo.ru/person/show/889851",
+      "archivedCopy": "https://web.archive.org/web/20211125015847/https://base.memo.ru/person/show/889851",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - подготовительные материалы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PAVEL-GRIGOREVICH-AMPILOGOV-1925",
+      "personId": "P113919",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-74628228"
+      ]
+    },
+    {
+      "memoId": "1683192",
+      "name": "Ампилогов Тимофей Григорьевич",
+      "birthYear": 1869,
+      "url": "https://base.memo.ru/person/show/1683192",
+      "archivedCopy": "https://web.archive.org/web/20211125015913/https://base.memo.ru/person/show/1683192",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-TIMOFEI-GRIGOREVICH-AMPILOGOV-1869",
+      "personId": "P113920"
+    },
+    {
+      "memoId": "1683193",
+      "name": "Ампилогов Тимофей Семенович",
+      "birthYear": 1879,
+      "url": "https://base.memo.ru/person/show/1683193",
+      "archivedCopy": "https://web.archive.org/web/20211125015908/https://base.memo.ru/person/show/1683193",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-TIMOFEI-SEMENOVICH-AMPILOGOV-1879",
+      "personId": "P102000"
+    },
+    {
+      "memoId": "935951",
+      "name": "Ампилогов Филипп Виссарионович",
+      "birthYear": 1881,
+      "url": "https://base.memo.ru/person/show/935951",
+      "archivedCopy": "https://web.archive.org/web/20211125015848/https://base.memo.ru/person/show/935951",
+      "queries": [
+        "Ампилог*",
+        "Ампилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FILIPP-VISSARIONOVICH-AMPILOGOV-1881",
+      "personId": "P113921"
+    },
+    {
+      "memoId": "1683194",
+      "name": "Ампилогова Акулина Андреевна",
+      "birthYear": 1879,
+      "url": "https://base.memo.ru/person/show/1683194",
+      "archivedCopy": "https://web.archive.org/web/20211125015851/https://base.memo.ru/person/show/1683194",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-AKULINA-ANDREEVNA-AMPILOGOVA-1879",
+      "personId": "P113618"
+    },
+    {
+      "memoId": "868177",
+      "name": "Ампилогова (Ляйс) Александра Алексеевна",
+      "birthYear": 1940,
+      "url": "https://base.memo.ru/person/show/868177",
+      "archivedCopy": "https://web.archive.org/web/20211125014731/https://base.memo.ru/person/show/868177",
+      "queries": [
+        "Ампилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDRA-ALEKSEEVNA-AMPILOGOVA-1940",
+      "personId": "P113922",
+      "note": "Родилась на спецпоселении в 1940 году, в семье, высланной в 1935 году в Будённовский район Ставропольского края."
+    },
+    {
+      "memoId": "473941",
+      "name": "Ампилогова Варвара Ивановна",
+      "birthYear": 1878,
+      "url": "https://base.memo.ru/person/show/473941",
+      "archivedCopy": "https://web.archive.org/web/20211125015917/https://base.memo.ru/person/show/473941",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "Книга памяти Республики Саха (Якутия) - т. 2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VARVARA-IVANOVNA-AMPILOGOVA-1878",
+      "personId": "P113923"
+    },
+    {
+      "memoId": "1683195",
+      "name": "Ампилогова Вера Тимофеевна",
+      "birthYear": 1916,
+      "url": "https://base.memo.ru/person/show/1683195",
+      "archivedCopy": "https://web.archive.org/web/20211125015915/https://base.memo.ru/person/show/1683195",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VERA-TIMOFEEVNA-AMPILOGOVA-1916",
+      "personId": "P113924"
+    },
+    {
+      "memoId": "1683196",
+      "name": "Ампилогова Евгения Лаврентьевна",
+      "birthYear": 1881,
+      "url": "https://base.memo.ru/person/show/1683196",
+      "archivedCopy": "https://web.archive.org/web/20211125015913/https://base.memo.ru/person/show/1683196",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EVGENIYA-LAVRENTEVNA-AMPILOGOVA-1881",
+      "personId": "P113925"
+    },
+    {
+      "memoId": "1683197",
+      "name": "Ампилогова Евдокия Тимофеевна",
+      "birthYear": 1878,
+      "url": "https://base.memo.ru/person/show/1683197",
+      "archivedCopy": "https://web.archive.org/web/20211125015916/https://base.memo.ru/person/show/1683197",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EVDOKIYA-TIMOFEEVNA-AMPILOGOVA-1878",
+      "personId": "P113926"
+    },
+    {
+      "memoId": "1473557",
+      "name": "Ампилогова Екатерина Григорьевна",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/1473557",
+      "archivedCopy": "https://web.archive.org/web/20211125015911/https://base.memo.ru/person/show/1473557",
+      "queries": [
+        "Ампилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EKATERINA-GRIGOREVNA-AMPILOGOVA-1914",
+      "personId": "P113927"
+    },
+    {
+      "memoId": "1683198",
+      "name": "Ампилогова Екатерина Макаровна",
+      "birthYear": 1911,
+      "url": "https://base.memo.ru/person/show/1683198",
+      "archivedCopy": "https://web.archive.org/web/20211125015913/https://base.memo.ru/person/show/1683198",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EKATERINA-MAKAROVNA-AMPILOGOVA-1911",
+      "personId": "P101150"
+    },
+    {
+      "memoId": "1683199",
+      "name": "Ампилогова Елизавета Прокопьевна",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1683199",
+      "archivedCopy": "https://web.archive.org/web/20211125015854/https://base.memo.ru/person/show/1683199",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ELIZAVETA-PROKOPEVNA-AMPILOGOVA-1886",
+      "personId": "P113928"
+    },
+    {
+      "memoId": "3055167",
+      "name": "Ампилогова Мария Васильевна",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/3055167",
+      "archivedCopy": "https://web.archive.org/web/20211125015850/https://base.memo.ru/person/show/3055167",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "Реабилитированные историей : Автономная Республика Крым - т. 8",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-VASILEVNA-AMPILOGOVA-1914",
+      "personId": "P113929"
+    },
+    {
+      "memoId": "854167",
+      "name": "Ампилогова Мария Михайловна",
+      "birthYear": 1927,
+      "url": "https://base.memo.ru/person/show/854167",
+      "archivedCopy": "https://web.archive.org/web/20250430033929/https://base.memo.ru/person/show/854167",
+      "queries": [
+        "Ампилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-MIKHAILOVNA-AMPILOGOVA-1927",
+      "personId": "P113931"
+    },
+    {
+      "memoId": "1683200",
+      "name": "Ампилогова Пелагея Михайловна",
+      "birthYear": 1915,
+      "url": "https://base.memo.ru/person/show/1683200",
+      "archivedCopy": "https://web.archive.org/web/20211125015915/https://base.memo.ru/person/show/1683200",
+      "queries": [
+        "Ампилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PELAGEYA-MIKHAILOVNA-AMPILOGOVA-1915",
+      "personId": "P113932"
+    },
+    {
+      "memoId": "868176",
+      "name": "Ампилогова (Ященко) Таиса Алексеевна",
+      "birthYear": 1935,
+      "url": "https://base.memo.ru/person/show/868176",
+      "archivedCopy": "https://web.archive.org/web/20211125015910/https://base.memo.ru/person/show/868176",
+      "queries": [
+        "Ампилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-TAISA-ALEKSEEVNA-AMPILOGOVA-1935",
+      "personId": "P113933"
+    },
+    {
+      "memoId": "1876325",
+      "name": "Анпилов Александр Григорьевич",
+      "birthYear": 1924,
+      "url": "https://base.memo.ru/person/show/1876325",
+      "archivedCopy": "https://web.archive.org/web/20211126013704/https://base.memo.ru/person/show/1876325",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-GRIGOREVICH-ANPILOV-1924",
+      "personId": "P114047"
+    },
+    {
+      "memoId": "1876326",
+      "name": "Анпилов Александр Петрович",
+      "birthYear": 1942,
+      "url": "https://base.memo.ru/person/show/1876326",
+      "archivedCopy": "https://web.archive.org/web/20211126013609/https://base.memo.ru/person/show/1876326",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-PETROVICH-ANPILOV-1942",
+      "personId": "P114048"
+    },
+    {
+      "memoId": "2725134",
+      "name": "Анпилов Алексей Стефанович (Степанович)",
+      "birthYear": 1898,
+      "url": "https://base.memo.ru/person/show/2725134",
+      "archivedCopy": "https://web.archive.org/web/20211126013645/https://base.memo.ru/person/show/2725134",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Архив НИПЦ \"Мемориал\" (Москва)",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-STEFANOVICH-ANPILOV-1898",
+      "personId": "P114049"
+    },
+    {
+      "memoId": "890060",
+      "name": "Анпилов Алексей Стефанович (Степанович)",
+      "birthYear": 1898,
+      "url": "https://base.memo.ru/person/show/890060",
+      "archivedCopy": "https://web.archive.org/web/20211126013613/https://base.memo.ru/person/show/890060",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-STEFANOVICH-ANPILOV-1898",
+      "personId": "P114049"
+    },
+    {
+      "memoId": "1178427",
+      "name": "Анпилов Андрей Михайлович",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1178427",
+      "archivedCopy": "https://web.archive.org/web/20211126013629/https://base.memo.ru/person/show/1178427",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Астраханской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-MIKHAILOVICH-ANPILOV-1900",
+      "personId": "P114050"
+    },
+    {
+      "memoId": "1263442",
+      "name": "Анпилов Андрей Павлович",
+      "birthYear": 1885,
+      "url": "https://base.memo.ru/person/show/1263442",
+      "archivedCopy": "https://web.archive.org/web/20211126013708/https://base.memo.ru/person/show/1263442",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "\"Воронежские сталинские списки\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-PAVLOVICH-ANPILOV-1885",
+      "personId": "P114051"
+    },
+    {
+      "memoId": "1206924",
+      "name": "Анпилов Георгий Ильич",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/1206924",
+      "archivedCopy": "https://web.archive.org/web/20211126013713/https://base.memo.ru/person/show/1206924",
+      "queries": [
+        "Анпилов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GEORGII-ILICH-ANPILOV-1897",
+      "personId": "P114052"
+    },
+    {
+      "memoId": "1426905",
+      "name": "Анпилов Георгий Ильич",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/1426905",
+      "archivedCopy": "https://web.archive.org/web/20211126013630/https://base.memo.ru/person/show/1426905",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GEORGII-ILICH-ANPILOV-1897",
+      "personId": "P114052"
+    },
+    {
+      "memoId": "1188789",
+      "name": "Анпилов Григорий Данилович",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1188789",
+      "archivedCopy": "https://web.archive.org/web/20211126013611/https://base.memo.ru/person/show/1188789",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 9",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-DANILOVICH-ANPILOV-1900",
+      "personId": "P114053"
+    },
+    {
+      "memoId": "1210419",
+      "name": "Анпилов Григорий Данилович",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1210419",
+      "archivedCopy": "https://web.archive.org/web/20211126013725/https://base.memo.ru/person/show/1210419",
+      "queries": [
+        "Анпилов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-DANILOVICH-ANPILOV-1900",
+      "personId": "P114053"
+    },
+    {
+      "memoId": "890061",
+      "name": "Анпилов Григорий Зиновьевич",
+      "birthYear": 1880,
+      "url": "https://base.memo.ru/person/show/890061",
+      "archivedCopy": "https://web.archive.org/web/20211126013640/https://base.memo.ru/person/show/890061",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - подготовительные материалы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-ZINOVEVICH-ANPILOV-1880",
+      "personId": "P114054"
+    },
+    {
+      "memoId": "1876327",
+      "name": "Анпилов Григорий Ильич",
+      "birthYear": 1870,
+      "url": "https://base.memo.ru/person/show/1876327",
+      "archivedCopy": "https://web.archive.org/web/20211126013632/https://base.memo.ru/person/show/1876327",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-ILICH-ANPILOV-1870",
+      "personId": "P114055"
+    },
+    {
+      "memoId": "1334484",
+      "name": "Анпилов Дмитрий Васильевич",
+      "birthYear": 1862,
+      "url": "https://base.memo.ru/person/show/1334484",
+      "archivedCopy": "https://web.archive.org/web/20211126013641/https://base.memo.ru/person/show/1334484",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Калужской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-DMITRII-VASILEVICH-ANPILOV-1862",
+      "personId": "P114056"
+    },
+    {
+      "memoId": "1188790",
+      "name": "Анпилов Иван Васильевич",
+      "birthYear": 1887,
+      "url": "https://base.memo.ru/person/show/1188790",
+      "archivedCopy": "https://web.archive.org/web/20211126013711/https://base.memo.ru/person/show/1188790",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 7",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-VASILEVICH-ANPILOV-1887",
+      "personId": "P114057"
+    },
+    {
+      "memoId": "1188791",
+      "name": "Анпилов Иван Данилович",
+      "birthYear": 1911,
+      "url": "https://base.memo.ru/person/show/1188791",
+      "archivedCopy": "https://web.archive.org/web/20211126013607/https://base.memo.ru/person/show/1188791",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 4, ч. 1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-DANILOVICH-ANPILOV-1911",
+      "personId": "P114058",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-47124734"
+      ]
+    },
+    {
+      "memoId": "890062",
+      "name": "Анпилов Иван Иванович",
+      "birthYear": 1898,
+      "url": "https://base.memo.ru/person/show/890062",
+      "archivedCopy": "https://web.archive.org/web/20211126013608/https://base.memo.ru/person/show/890062",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-IVANOVICH-ANPILOV-1898",
+      "personId": "P114059"
+    },
+    {
+      "memoId": "890063",
+      "name": "Анпилов Леонтий Михайлович",
+      "birthYear": 1869,
+      "url": "https://base.memo.ru/person/show/890063",
+      "archivedCopy": "https://web.archive.org/web/20211126013625/https://base.memo.ru/person/show/890063",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - подготовительные материалы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-LEONTII-MIKHAILOVICH-ANPILOV-1869",
+      "personId": "P114060"
+    },
+    {
+      "memoId": "1188792",
+      "name": "Анпилов Мартын Матвеевич",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1188792",
+      "archivedCopy": "https://web.archive.org/web/20211126013609/https://base.memo.ru/person/show/1188792",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 9",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARTYN-MATVEEVICH-ANPILOV-1900",
+      "personId": "P114061"
+    },
+    {
+      "memoId": "30901",
+      "name": "Анпилов Михаил Васильевич",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/30901",
+      "archivedCopy": "https://web.archive.org/web/20211126013645/https://base.memo.ru/person/show/30901",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-VASILEVICH-ANPILOV-1914",
+      "personId": "P114062",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-17248288"
+      ]
+    },
+    {
+      "memoId": "1263443",
+      "name": "Анпилов Михаил Гаврилович",
+      "birthYear": 1879,
+      "url": "https://base.memo.ru/person/show/1263443",
+      "archivedCopy": "https://web.archive.org/web/20211126013643/https://base.memo.ru/person/show/1263443",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.3",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-GAVRILOVICH-ANPILOV-1879",
+      "personId": "P114063"
+    },
+    {
+      "memoId": "1188793",
+      "name": "Анпилов Михаил Гаврилович",
+      "birthYear": 1879,
+      "url": "https://base.memo.ru/person/show/1188793",
+      "archivedCopy": "https://web.archive.org/web/20211126013707/https://base.memo.ru/person/show/1188793",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т.10",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-GAVRILOVICH-ANPILOV-1879",
+      "personId": "P114063"
+    },
+    {
+      "memoId": "1178428",
+      "name": "Анпилов Михаил Дмитриевич",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/1178428",
+      "archivedCopy": "https://web.archive.org/web/20211126013634/https://base.memo.ru/person/show/1178428",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Астраханской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-DMITRIEVICH-ANPILOV-1907",
+      "personId": "P114064"
+    },
+    {
+      "memoId": "2063401",
+      "name": "Анпилов Петр Григорьевич",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/2063401",
+      "archivedCopy": "https://web.archive.org/web/20211126013618/https://base.memo.ru/person/show/2063401",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Свердловской обл. - т. 1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PETR-GRIGOREVICH-ANPILOV-1908",
+      "personId": "P114065"
+    },
+    {
+      "memoId": "1876328",
+      "name": "Анпилов Петр Григорьевич",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/1876328",
+      "archivedCopy": "https://web.archive.org/web/20211126013708/https://base.memo.ru/person/show/1876328",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "sourceId": "PUB-MEMO-PETR-GRIGOREVICH-ANPILOV-1908",
+      "decision": "record-and-new-profile",
+      "personId": "P125006",
+      "openlistSourceId": "PUB-OPENLIST-PETR-GRIGOREVICH-ANPILOV-1908",
+      "note": "Анкета «Открытого списка» о Петре Григорьевиче Анпилове (1908) построена по Книге памяти Свердловской области; запись ИЦ ГУВД Ростовской области с реабилитацией 1996 года в неё не вошла, хотя другие учтённые этим источником Анпиловы (Григорий Ильич, Мария Ивановна, Евдокия Григорьевна, Александр Григорьевич и др.) импортированы отдельными анкетами. Профиль заведён отдельно: в ростовской карточке нет места рождения."
+    },
+    {
+      "memoId": "1876329",
+      "name": "Анпилов Петр Петрович",
+      "birthYear": 1938,
+      "url": "https://base.memo.ru/person/show/1876329",
+      "archivedCopy": "https://web.archive.org/web/20211126013712/https://base.memo.ru/person/show/1876329",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PETR-PETROVICH-ANPILOV-1938",
+      "personId": "P114066"
+    },
+    {
+      "memoId": "2879488",
+      "name": "Анпилов Семён Лукьянович",
+      "birthYear": 1902,
+      "url": "https://base.memo.ru/person/show/2879488",
+      "archivedCopy": "https://web.archive.org/web/20211126013728/https://base.memo.ru/person/show/2879488",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Киргизии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-SEMEN-LUKYANOVICH-ANPILOV-1902",
+      "personId": "P114067",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-10075343",
+        "PN-PERSON-5684655",
+        "PN-PERSON-89921066"
+      ]
+    },
+    {
+      "memoId": "788380",
+      "name": "Анпилов Сергей Дмитриевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/788380",
+      "archivedCopy": "https://web.archive.org/web/20211126013633/https://base.memo.ru/person/show/788380",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Алтайского края - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-SERGEI-DMITRIEVICH-ANPILOV-1886",
+      "personId": "P114068"
+    },
+    {
+      "memoId": "1188794",
+      "name": "Анпилов Стефан Данилович",
+      "birthYear": 1903,
+      "url": "https://base.memo.ru/person/show/1188794",
+      "archivedCopy": "https://web.archive.org/web/20211126013713/https://base.memo.ru/person/show/1188794",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 9",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-STEFAN-DANILOVICH-ANPILOV-1903",
+      "personId": "P114069"
+    },
+    {
+      "memoId": "1188795",
+      "name": "Анпилов Федор Матвеевич",
+      "birthYear": 1892,
+      "url": "https://base.memo.ru/person/show/1188795",
+      "archivedCopy": "https://web.archive.org/web/20211126013633/https://base.memo.ru/person/show/1188795",
+      "queries": [
+        "Анпилов"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 8",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-MATVEEVICH-ANPILOV-1892",
+      "personId": "P114070",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-102166882"
+      ]
+    },
+    {
+      "memoId": "1188796",
+      "name": "Анпилова Александра Демидовна",
+      "birthYear": 1890,
+      "url": "https://base.memo.ru/person/show/1188796",
+      "archivedCopy": "https://web.archive.org/web/20211126013624/https://base.memo.ru/person/show/1188796",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 9",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDRA-DEMIDOVNA-ANPILOVA-1890",
+      "personId": "P114072"
+    },
+    {
+      "memoId": "1263444",
+      "name": "Анпилова Анна Казминична",
+      "birthYear": 1892,
+      "url": "https://base.memo.ru/person/show/1263444",
+      "archivedCopy": "https://web.archive.org/web/20211126013639/https://base.memo.ru/person/show/1263444",
+      "queries": [
+        "Анпилов",
+        "Анпилова"
+      ],
+      "memorialSource": "Воронежское общество \"Мемориал\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-KAZMINICHNA-ANPILOVA-1892",
+      "personId": "P114073"
+    },
+    {
+      "memoId": "261",
+      "name": "Анпилова Анна Кузьминична",
+      "birthYear": 1892,
+      "url": "https://base.memo.ru/person/show/261",
+      "archivedCopy": "https://web.archive.org/web/20211126013642/https://base.memo.ru/person/show/261",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти \"Узницы АЛЖИРа\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-KUZMINICHNA-ANPILOVA-1892",
+      "personId": "P114073"
+    },
+    {
+      "memoId": "1876330",
+      "name": "Анпилова Вера Петровна",
+      "birthYear": 1940,
+      "url": "https://base.memo.ru/person/show/1876330",
+      "archivedCopy": "https://web.archive.org/web/20211126013605/https://base.memo.ru/person/show/1876330",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VERA-PETROVNA-ANPILOVA-1940",
+      "personId": "P114074"
+    },
+    {
+      "memoId": "1876331",
+      "name": "Анпилова Евдокия Григорьевна",
+      "birthYear": 1922,
+      "url": "https://base.memo.ru/person/show/1876331",
+      "archivedCopy": "https://web.archive.org/web/20211126013704/https://base.memo.ru/person/show/1876331",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EVDOKIYA-GRIGOREVNA-ANPILOVA-1922",
+      "personId": "P114075"
+    },
+    {
+      "memoId": "1014304",
+      "name": "Анпилова Евдокия Ивановна",
+      "birthYear": 1877,
+      "url": "https://base.memo.ru/person/show/1014304",
+      "archivedCopy": "https://web.archive.org/web/20211126013619/https://base.memo.ru/person/show/1014304",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Ставропольского края - т.03",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EVDOKIYA-IVANOVNA-ANPILOVA-1877",
+      "personId": "P114076"
+    },
+    {
+      "memoId": "1206925",
+      "name": "Анпилова Елена Георгиевна",
+      "birthYear": 1930,
+      "url": "https://base.memo.ru/person/show/1206925",
+      "archivedCopy": "https://web.archive.org/web/20211126013711/https://base.memo.ru/person/show/1206925",
+      "queries": [
+        "Анпилова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ELENA-GEORGIEVNA-ANPILOVA-1930",
+      "personId": "P114077"
+    },
+    {
+      "memoId": "1876332",
+      "name": "Анпилова Мария Ивановна",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/1876332",
+      "archivedCopy": "https://web.archive.org/web/20211126013635/https://base.memo.ru/person/show/1876332",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "ИЦ ГУВД Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-IVANOVNA-ANPILOVA-1908",
+      "personId": "P114078"
+    },
+    {
+      "memoId": "788381",
+      "name": "Анпилова Мария Николаевна",
+      "birthYear": 1888,
+      "url": "https://base.memo.ru/person/show/788381",
+      "archivedCopy": "https://web.archive.org/web/20211126013635/https://base.memo.ru/person/show/788381",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Алтайского края - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-NIKOLAEVNA-ANPILOVA-1888",
+      "personId": "P114079"
+    },
+    {
+      "memoId": "1188797",
+      "name": "Анпилова Пелагея Тимофеевна",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/1188797",
+      "archivedCopy": "https://web.archive.org/web/20211126013623/https://base.memo.ru/person/show/1188797",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PELAGEYA-TIMOFEEVNA-ANPILOVA-1905",
+      "personId": "P114080"
+    },
+    {
+      "memoId": "1188798",
+      "name": "Анпилова Прасковья Ивановна",
+      "birthYear": 1887,
+      "url": "https://base.memo.ru/person/show/1188798",
+      "archivedCopy": "https://web.archive.org/web/20211126013609/https://base.memo.ru/person/show/1188798",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 4, ч. 1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PRASKOVYA-IVANOVNA-ANPILOVA-1887",
+      "personId": "P114081"
+    },
+    {
+      "memoId": "1210420",
+      "name": "Анпилова Прасковья Ивановна",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1210420",
+      "archivedCopy": "https://web.archive.org/web/20211126013610/https://base.memo.ru/person/show/1210420",
+      "queries": [
+        "Анпилова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PRASKOVYA-IVANOVNA-ANPILOVA-1900",
+      "personId": "P114082"
+    },
+    {
+      "memoId": "1188799",
+      "name": "Анпилова-Савченко Антонина Акимовна",
+      "birthYear": 1922,
+      "url": "https://base.memo.ru/person/show/1188799",
+      "archivedCopy": "https://web.archive.org/web/20250215044730/https://base.memo.ru/person/show/1188799",
+      "queries": [
+        "Анпилова"
+      ],
+      "memorialSource": "Книга памяти Белгородской обл. - т. 3",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANTONINA-AKIMOVNA-ANPILOVA-SAVCHENKO-1922",
+      "personId": "P114083"
+    },
+    {
+      "memoId": "1721208",
+      "name": "Анпилогов Александр Васильевич",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/1721208",
+      "archivedCopy": "https://web.archive.org/web/20211126013607/https://base.memo.ru/person/show/1721208",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-VASILEVICH-ANPILOGOV-1905",
+      "personId": "P113936"
+    },
+    {
+      "memoId": "1729314",
+      "name": "Анпилогов Александр Васильевич",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/1729314",
+      "archivedCopy": "https://web.archive.org/web/20211126013627/https://base.memo.ru/person/show/1729314",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-VASILEVICH-ANPILOGOV-1905",
+      "personId": "P113936"
+    },
+    {
+      "memoId": "1702583",
+      "name": "Анпилогов Александр Гордеевич",
+      "birthYear": 1891,
+      "url": "https://base.memo.ru/person/show/1702583",
+      "archivedCopy": "https://web.archive.org/web/20211126013621/https://base.memo.ru/person/show/1702583",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015, 1998",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-GORDEEVICH-ANPILOGOV-1891",
+      "personId": "P113937"
+    },
+    {
+      "memoId": "1430763",
+      "name": "Анпилогов Александр Иванович",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/1430763",
+      "archivedCopy": "https://web.archive.org/web/20211126013646/https://base.memo.ru/person/show/1430763",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSANDR-IVANOVICH-ANPILOGOV-1914",
+      "personId": "P113938",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-1053076342",
+        "PN-MEMORIAL-1162083313"
+      ]
+    },
+    {
+      "memoId": "2660801",
+      "name": "Анпилогов Алексей Захарович",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/2660801",
+      "archivedCopy": "https://web.archive.org/web/20211126013637/https://base.memo.ru/person/show/2660801",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "газета \"Московская правда\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-ZAKHAROVICH-ANPILOGOV-1907",
+      "personId": "P113939",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-36199727"
+      ]
+    },
+    {
+      "memoId": "2673103",
+      "name": "Анпилогов Алексей Захарьевич",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/2673103",
+      "archivedCopy": "https://web.archive.org/web/20211126013705/https://base.memo.ru/person/show/2673103",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Прокуратура г.Москвы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-ZAKHAREVICH-ANPILOGOV-1907",
+      "personId": "P113939"
+    },
+    {
+      "memoId": "1721209",
+      "name": "Анпилогов Алексей Иванович",
+      "birthYear": 1926,
+      "url": "https://base.memo.ru/person/show/1721209",
+      "archivedCopy": "https://web.archive.org/web/20211126013617/https://base.memo.ru/person/show/1721209",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-IVANOVICH-ANPILOGOV-1926",
+      "personId": "P113940",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-10777000"
+      ]
+    },
+    {
+      "memoId": "1263445",
+      "name": "Анпилогов Алексей Сергеевич",
+      "birthYear": 1884,
+      "url": "https://base.memo.ru/person/show/1263445",
+      "archivedCopy": "https://web.archive.org/web/20211126013636/https://base.memo.ru/person/show/1263445",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.3",
+      "sourceId": "PUB-MEMO-ALEKSEI-SERGEEVICH-ANPILOGOV-1884",
+      "decision": "record-linked-to-existing-profile",
+      "personId": "P113941",
+      "openlistSourceId": "PUB-OPENLIST-ALEKSEI-SERGEEVICH-ANPILOGOV-1884",
+      "note": "Тот же человек, что в анкете «Открытого списка» PUB-OPENLIST-ALEKSEI-SERGEEVICH-ANPILOGOV-1884: совпадают имя, отчество, год рождения (1884) и место рождения (Верхняя Гнилуша Верхнемамонского района). Но анкета «Открытого списка» говорит только о спецпоселении по данным УВД Воронежской области; арест 1932 года и приговор тройки в неё не вошли."
+    },
+    {
+      "memoId": "1263446",
+      "name": "Анпилогов Андрей Григорьевич",
+      "birthYear": 1890,
+      "url": "https://base.memo.ru/person/show/1263446",
+      "archivedCopy": "https://web.archive.org/web/20211126013621/https://base.memo.ru/person/show/1263446",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.2",
+      "sourceId": "PUB-MEMO-ANDREI-GRIGOREVICH-ANPILOGOV-1890",
+      "decision": "record-linked-to-existing-profile",
+      "personId": "P113942",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-GRIGOREVICH-ANPILOGOV-1890",
+      "note": "Тот же человек, что в анкете «Открытого списка» PUB-OPENLIST-ANDREI-GRIGOREVICH-ANPILOGOV-1890: совпадают имя, отчество, год рождения (1890) и место рождения (Павловский район; «Мемориал» уточняет село — Русская Буйловка). Но анкета «Открытого списка» говорит только о спецпоселении по данным УВД Воронежской области; арест и приговор 1938 года в неё не вошли."
+    },
+    {
+      "memoId": "20777",
+      "name": "Анпилогов Андрей Лукьянович",
+      "birthYear": 1901,
+      "url": "https://base.memo.ru/person/show/20777",
+      "archivedCopy": "https://web.archive.org/web/20211126013627/https://base.memo.ru/person/show/20777",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-LUKYANOVICH-ANPILOGOV-1901",
+      "personId": "P113943"
+    },
+    {
+      "memoId": "2159434",
+      "name": "Анпилогов Андрей Матвеевич",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/2159434",
+      "archivedCopy": "https://web.archive.org/web/20211126013622/https://base.memo.ru/person/show/2159434",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Калининской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-MATVEEVICH-ANPILOGOV-1914",
+      "personId": "P113944",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-1878311"
+      ]
+    },
+    {
+      "memoId": "1426378",
+      "name": "Анпилогов Андрей Ульянович",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/1426378",
+      "archivedCopy": "https://web.archive.org/web/20211126013712/https://base.memo.ru/person/show/1426378",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANDREI-ULYANOVICH-ANPILOGOV-1897",
+      "personId": "P113945"
+    },
+    {
+      "memoId": "1895068",
+      "name": "Анпилогов Афанасий Андреевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1895068",
+      "archivedCopy": "https://web.archive.org/web/20211126013634/https://base.memo.ru/person/show/1895068",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Ростовской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-AFANASII-ANDREEVICH-ANPILOGOV-1886",
+      "personId": "P113946"
+    },
+    {
+      "memoId": "428262",
+      "name": "Анпилогов Валерий Васильевич",
+      "birthYear": 1950,
+      "url": "https://base.memo.ru/person/show/428262",
+      "archivedCopy": "https://web.archive.org/web/20211126013604/https://base.memo.ru/person/show/428262",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "МВД Респ. Коми",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VALERII-VASILEVICH-ANPILOGOV-1950",
+      "personId": "P113947"
+    },
+    {
+      "memoId": "428263",
+      "name": "Анпилогов Василий Михайлович",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/428263",
+      "archivedCopy": "https://web.archive.org/web/20211126013604/https://base.memo.ru/person/show/428263",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "МВД Респ. Коми",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-MIKHAILOVICH-ANPILOGOV-1914",
+      "personId": "P113948"
+    },
+    {
+      "memoId": "2356404",
+      "name": "Анпилогов Василий Павлович",
+      "birthYear": 1919,
+      "url": "https://base.memo.ru/person/show/2356404",
+      "archivedCopy": "https://web.archive.org/web/20211126013606/https://base.memo.ru/person/show/2356404",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-PAVLOVICH-ANPILOGOV-1919",
+      "personId": "P113949",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-107079706",
+        "PN-PERSON-77363123"
+      ]
+    },
+    {
+      "memoId": "1683310",
+      "name": "Анпилогов Василий Петрович",
+      "birthYear": 1926,
+      "url": "https://base.memo.ru/person/show/1683310",
+      "archivedCopy": "https://web.archive.org/web/20211126013626/https://base.memo.ru/person/show/1683310",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-PETROVICH-ANPILOGOV-1926",
+      "personId": "P113950",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-ISP-19628071",
+        "PN-KLD-342230",
+        "PN-MEMORIAL-90549386",
+        "PN-MEMORIAL-90608504",
+        "PN-PERSON-93291104",
+        "PN-RVK-32051607"
+      ]
+    },
+    {
+      "memoId": "1427027",
+      "name": "Анпилогов Василий Семенович",
+      "birthYear": 1901,
+      "url": "https://base.memo.ru/person/show/1427027",
+      "archivedCopy": "https://web.archive.org/web/20211126013612/https://base.memo.ru/person/show/1427027",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-SEMENOVICH-ANPILOGOV-1901",
+      "personId": "P113951"
+    },
+    {
+      "memoId": "1473826",
+      "name": "Анпилогов Василий Сергеевич",
+      "birthYear": 1875,
+      "url": "https://base.memo.ru/person/show/1473826",
+      "archivedCopy": "https://web.archive.org/web/20211126013643/https://base.memo.ru/person/show/1473826",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-SERGEEVICH-ANPILOGOV-1875",
+      "personId": "P113952"
+    },
+    {
+      "memoId": "1263447",
+      "name": "Анпилогов Василий Сергеевич",
+      "birthYear": 1875,
+      "url": "https://base.memo.ru/person/show/1263447",
+      "archivedCopy": "https://web.archive.org/web/20211126013705/https://base.memo.ru/person/show/1263447",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.3",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-SERGEEVICH-ANPILOGOV-1875",
+      "personId": "P113952"
+    },
+    {
+      "memoId": "1263448",
+      "name": "Анпилогов Василий Степанович",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/1263448",
+      "archivedCopy": "https://web.archive.org/web/20211126013611/https://base.memo.ru/person/show/1263448",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.2",
+      "sourceId": "PUB-MEMO-VASILII-STEPANOVICH-ANPILOGOV-1905",
+      "decision": "record-and-new-profile",
+      "personId": "P125002",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-STEPANOVICH-ANPILOGOV-1905",
+      "note": "В «Открытом списке» есть Василий Степанович Анпилогов того же года рождения (PUB-OPENLIST-VASILII-STEPANOVICH-ANPILOGOV-1905), но его анкета говорит только о спецпоселении (УВД Воронежской области) и называет местом рождения Гаврильск. Арест и приговор 1938 года в неё не вошли. Профиль заведён отдельно, потому что места рождения в двух источниках расходятся."
+    },
+    {
+      "memoId": "369211",
+      "name": "Анпилогов Василий Тимофеевич",
+      "birthYear": 1910,
+      "url": "https://base.memo.ru/person/show/369211",
+      "archivedCopy": "https://web.archive.org/web/20211126013630/https://base.memo.ru/person/show/369211",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.9, ч.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-TIMOFEEVICH-ANPILOGOV-1910",
+      "personId": "P113954"
+    },
+    {
+      "memoId": "62036",
+      "name": "Анпилогов Василий Федорович",
+      "birthYear": 1923,
+      "url": "https://base.memo.ru/person/show/62036",
+      "archivedCopy": "https://web.archive.org/web/20211126013709/https://base.memo.ru/person/show/62036",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-FEDOROVICH-ANPILOGOV-1923",
+      "personId": "P113955",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-405544199",
+        "PN-PERSON-100724271",
+        "PN-RVK-41967780"
+      ]
+    },
+    {
+      "memoId": "1683311",
+      "name": "Анпилогов Виктор Иванович",
+      "birthYear": 1940,
+      "url": "https://base.memo.ru/person/show/1683311",
+      "archivedCopy": "https://web.archive.org/web/20211126013613/https://base.memo.ru/person/show/1683311",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VIKTOR-IVANOVICH-ANPILOGOV-1940",
+      "personId": "P113957"
+    },
+    {
+      "memoId": "936330",
+      "name": "Анпилогов Виктор (Николай) Иванович",
+      "birthYear": 1916,
+      "url": "https://base.memo.ru/person/show/936330",
+      "archivedCopy": "https://web.archive.org/web/20211126013727/https://base.memo.ru/person/show/936330",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VIKTOR-IVANOVICH-ANPILOGOV-1916",
+      "personId": "P113956"
+    },
+    {
+      "memoId": "1253247",
+      "name": "Анпилогов Гаврила Иванович",
+      "birthYear": 1856,
+      "url": "https://base.memo.ru/person/show/1253247",
+      "archivedCopy": "https://web.archive.org/web/20211126013708/https://base.memo.ru/person/show/1253247",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Вологодской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GAVRILA-IVANOVICH-ANPILOGOV-1856",
+      "personId": "P113958"
+    },
+    {
+      "memoId": "1473829",
+      "name": "Анпилогов Григорий Андреевич",
+      "birthYear": 1877,
+      "url": "https://base.memo.ru/person/show/1473829",
+      "archivedCopy": "https://web.archive.org/web/20211126013619/https://base.memo.ru/person/show/1473829",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-ANDREEVICH-ANPILOGOV-1877",
+      "personId": "P113959"
+    },
+    {
+      "memoId": "2730146",
+      "name": "Анпилогов Григорий Андреевич",
+      "birthYear": 1883,
+      "url": "https://base.memo.ru/person/show/2730146",
+      "archivedCopy": "https://web.archive.org/web/20211126013616/https://base.memo.ru/person/show/2730146",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Ленинградский мартиролог - т. 2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-ANDREEVICH-ANPILOGOV-1883",
+      "personId": "P99087"
+    },
+    {
+      "memoId": "1461965",
+      "name": "Анпилогов Григорий Андреевич",
+      "birthYear": 1883,
+      "url": "https://base.memo.ru/person/show/1461965",
+      "archivedCopy": "https://web.archive.org/web/20211126013727/https://base.memo.ru/person/show/1461965",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Мурманской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-ANDREEVICH-ANPILOGOV-1883",
+      "personId": "P99087"
+    },
+    {
+      "memoId": "25732",
+      "name": "Анпилогов Григорий Ефимович",
+      "birthYear": 1888,
+      "url": "https://base.memo.ru/person/show/25732",
+      "archivedCopy": "https://web.archive.org/web/20211126013637/https://base.memo.ru/person/show/25732",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-EFIMOVICH-ANPILOGOV-1888",
+      "personId": "P113960",
+      "note": "Дата ареста 17.12.1930, в «Открытом списке» — 17.01.1931; приговор (5 лет) и реабилитация 28.04.1989 совпадают."
+    },
+    {
+      "memoId": "26604",
+      "name": "Анпилогов Дмитрий Ефимович",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/26604",
+      "archivedCopy": "https://web.archive.org/web/20211126013709/https://base.memo.ru/person/show/26604",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-DMITRII-EFIMOVICH-ANPILOGOV-1897",
+      "personId": "P113963",
+      "note": "Дата ареста 17.12.1930, в «Открытом списке» — 18.12.1930; приговор (3 года) и реабилитация 28.04.1989 совпадают."
+    },
+    {
+      "memoId": "26603",
+      "name": "Анпилогов Дмитрий Ефимович",
+      "birthYear": 1895,
+      "url": "https://base.memo.ru/person/show/26603",
+      "archivedCopy": "https://web.archive.org/web/20211126013639/https://base.memo.ru/person/show/26603",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан - т.6",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-DMITRII-EFIMOVICH-ANPILOGOV-1897",
+      "personId": "P113963",
+      "note": "Год рождения 1895, в «Открытом списке» — 1897; анкета сама отмечает «по другим данным, дата рождения 1895 год». Арест 12.06.1938 и реабилитация 27.03.1939 совпадают."
+    },
+    {
+      "memoId": "2879489",
+      "name": "Анпилогов Дмитрий Иванович",
+      "birthYear": 1871,
+      "url": "https://base.memo.ru/person/show/2879489",
+      "archivedCopy": "https://web.archive.org/web/20211126013706/https://base.memo.ru/person/show/2879489",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Киргизии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-DMITRII-IVANOVICH-ANPILOGOV-1871",
+      "personId": "P113964"
+    },
+    {
+      "memoId": "1729315",
+      "name": "Анпилогов Дмитрий Иванович",
+      "birthYear": 1918,
+      "url": "https://base.memo.ru/person/show/1729315",
+      "archivedCopy": "https://web.archive.org/web/20211126013704/https://base.memo.ru/person/show/1729315",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-DMITRII-IVANOVICH-ANPILOGOV-1918",
+      "personId": "P113966",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-101963352"
+      ]
+    },
+    {
+      "memoId": "493455",
+      "name": "Анпилогов Егор Иванович",
+      "birthYear": 1881,
+      "url": "https://base.memo.ru/person/show/493455",
+      "archivedCopy": "https://web.archive.org/web/20211126013604/https://base.memo.ru/person/show/493455",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Татарстан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EGOR-IVANOVICH-ANPILOGOV-1881",
+      "personId": "P113968"
+    },
+    {
+      "memoId": "1473827",
+      "name": "Анпилогов Ефим Ефимович",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/1473827",
+      "archivedCopy": "https://web.archive.org/web/20211126013642/https://base.memo.ru/person/show/1473827",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EFIM-EFIMOVICH-ANPILOGOV-1905",
+      "personId": "P113969"
+    },
+    {
+      "memoId": "35021",
+      "name": "Анпилогов Ефим Ефимович",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/35021",
+      "archivedCopy": "https://web.archive.org/web/20211126013628/https://base.memo.ru/person/show/35021",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан - т.6",
+      "sourceId": "PUB-MEMO-EFIM-EFIMOVICH-ANPILOGOV-1905",
+      "decision": "record-and-new-profile",
+      "personId": "P125003",
+      "openlistSourceId": "PUB-OPENLIST-EFIM-EFIMOVICH-ANPILOGOV-1905",
+      "note": "В «Открытом списке» есть Ефим Ефимович Анпилогов (1905) из Озерковки (PUB-OPENLIST-EFIM-EFIMOVICH-ANPILOGOV-1905), но его анкета описывает только дело 1931 года и называет местом рождения Орловскую губернию. Арест 12 июня 1938 года вошёл в анкету его брата Дмитрия, а у Ефима его нет. Профиль заведён отдельно, потому что места рождения расходятся."
+    },
+    {
+      "memoId": "35020",
+      "name": "Анпилогов Ефим Ефимович",
+      "birthYear": 1905,
+      "url": "https://base.memo.ru/person/show/35020",
+      "archivedCopy": "https://web.archive.org/web/20211126013641/https://base.memo.ru/person/show/35020",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Башкортостан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EFIM-EFIMOVICH-ANPILOGOV-1905",
+      "personId": "P113969"
+    },
+    {
+      "memoId": "1721210",
+      "name": "Анпилогов Иван Васильевич",
+      "birthYear": 1903,
+      "url": "https://base.memo.ru/person/show/1721210",
+      "archivedCopy": "https://web.archive.org/web/20211205152849/https://base.memo.ru/person/show/1721210",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-VASILEVICH-ANPILOGOV-1903",
+      "personId": "P113970",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-110280253",
+        "PN-PERSON-84114825"
+      ]
+    },
+    {
+      "memoId": "1253248",
+      "name": "Анпилогов Иван Гаврилович",
+      "birthYear": 1885,
+      "url": "https://base.memo.ru/person/show/1253248",
+      "archivedCopy": "https://web.archive.org/web/20211126013614/https://base.memo.ru/person/show/1253248",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Вологодской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-GAVRILOVICH-ANPILOGOV-1885",
+      "personId": "P113971"
+    },
+    {
+      "memoId": "1253249",
+      "name": "Анпилогов Иван Иванович",
+      "birthYear": 1925,
+      "url": "https://base.memo.ru/person/show/1253249",
+      "archivedCopy": "https://web.archive.org/web/20211126013616/https://base.memo.ru/person/show/1253249",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Вологодской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-IVANOVICH-ANPILOGOV-1925",
+      "personId": "P113972",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-105925897",
+        "PN-PERSON-82617711"
+      ]
+    },
+    {
+      "memoId": "1702584",
+      "name": "Анпилогов Иван Миронович",
+      "birthYear": 1892,
+      "url": "https://base.memo.ru/person/show/1702584",
+      "archivedCopy": "https://web.archive.org/web/20211126013606/https://base.memo.ru/person/show/1702584",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015, 1998",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-MIRONOVICH-ANPILOGOV-1892",
+      "personId": "P113973"
+    },
+    {
+      "memoId": "2356405",
+      "name": "Анпилогов Иван Павлович",
+      "birthYear": 1922,
+      "url": "https://base.memo.ru/person/show/2356405",
+      "archivedCopy": "https://web.archive.org/web/20211126013619/https://base.memo.ru/person/show/2356405",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-PAVLOVICH-ANPILOGOV-1922",
+      "personId": "P113974"
+    },
+    {
+      "memoId": "369212",
+      "name": "Анпилогов Иван Сергеевич",
+      "birthYear": 1889,
+      "url": "https://base.memo.ru/person/show/369212",
+      "archivedCopy": "https://web.archive.org/web/20211126013615/https://base.memo.ru/person/show/369212",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.9, ч.3",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-SERGEEVICH-ANPILOGOV-1889",
+      "personId": "P113976"
+    },
+    {
+      "memoId": "1683312",
+      "name": "Анпилогов Иван Тимофеевич",
+      "birthYear": 1903,
+      "url": "https://base.memo.ru/person/show/1683312",
+      "archivedCopy": "https://web.archive.org/web/20211126013636/https://base.memo.ru/person/show/1683312",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-TIMOFEEVICH-ANPILOGOV-1903",
+      "personId": "P113977"
+    },
+    {
+      "memoId": "2673104",
+      "name": "Анпилогов Иван Федорович",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/2673104",
+      "archivedCopy": "https://web.archive.org/web/20211126013726/https://base.memo.ru/person/show/2673104",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Прокуратура г.Москвы",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-FEDOROVICH-ANPILOGOV-1912",
+      "personId": "P113978",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-35898193"
+      ]
+    },
+    {
+      "memoId": "493456",
+      "name": "Анпилогов Илларион Иванович",
+      "birthYear": 1894,
+      "url": "https://base.memo.ru/person/show/493456",
+      "archivedCopy": "https://web.archive.org/web/20211126013709/https://base.memo.ru/person/show/493456",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Татарстан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ILLARION-IVANOVICH-ANPILOGOV-1894",
+      "personId": "P113979"
+    },
+    {
+      "memoId": "936331",
+      "name": "Анпилогов Кирилл Афанасьевич",
+      "birthYear": 1901,
+      "url": "https://base.memo.ru/person/show/936331",
+      "archivedCopy": "https://web.archive.org/web/20211126013607/https://base.memo.ru/person/show/936331",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-KIRILL-AFANASEVICH-ANPILOGOV-1901",
+      "personId": "P113980"
+    },
+    {
+      "memoId": "1729316",
+      "name": "Анпилогов Максим Афанасьевич",
+      "birthYear": 1877,
+      "url": "https://base.memo.ru/person/show/1729316",
+      "archivedCopy": "https://web.archive.org/web/20211126013616/https://base.memo.ru/person/show/1729316",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Орловской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MAKSIM-AFANASEVICH-ANPILOGOV-1877",
+      "personId": "P113981"
+    },
+    {
+      "memoId": "1263449",
+      "name": "Анпилогов Матвей Андреевич",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/1263449",
+      "archivedCopy": "https://web.archive.org/web/20211126013631/https://base.memo.ru/person/show/1263449",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MATVEI-ANDREEVICH-ANPILOGOV-1912",
+      "personId": "P113982"
+    },
+    {
+      "memoId": "369213",
+      "name": "Анпилогов Матвей Андреевич",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/369213",
+      "archivedCopy": "https://web.archive.org/web/20211126013706/https://base.memo.ru/person/show/369213",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.9, ч.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MATVEI-ANDREEVICH-ANPILOGOV-1912",
+      "personId": "P113982"
+    },
+    {
+      "memoId": "1428385",
+      "name": "Анпилогов Михаил Васильевич",
+      "birthYear": 1878,
+      "url": "https://base.memo.ru/person/show/1428385",
+      "archivedCopy": "https://web.archive.org/web/20211128225715/https://base.memo.ru/person/show/1428385",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-VASILEVICH-ANPILOGOV-1878",
+      "personId": "P113984"
+    },
+    {
+      "memoId": "1702585",
+      "name": "Анпилогов (Ампилогов) Михаил Иванович",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1702585",
+      "archivedCopy": "https://web.archive.org/web/20211127233739/https://base.memo.ru/person/show/1702585",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 1998",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-IVANOVICH-AMPILOGOV-1900",
+      "personId": "P113914",
+      "note": "Заголовок карточки «Анпилогов (Ампилогов)»; в «Открытом списке» — «Ампилогов».",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-104598593"
+      ]
+    },
+    {
+      "memoId": "1721211",
+      "name": "Анпилогов Михаил Иванович",
+      "birthYear": 1928,
+      "url": "https://base.memo.ru/person/show/1721211",
+      "archivedCopy": "https://web.archive.org/web/20211128225721/https://base.memo.ru/person/show/1721211",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-IVANOVICH-ANPILOGOV-1928",
+      "personId": "P113986"
+    },
+    {
+      "memoId": "493457",
+      "name": "Анпилогов Николай Алексеевич",
+      "birthYear": 1902,
+      "url": "https://base.memo.ru/person/show/493457",
+      "archivedCopy": "https://web.archive.org/web/20211128225716/https://base.memo.ru/person/show/493457",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Татарстан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NIKOLAI-ALEKSEEVICH-ANPILOGOV-1902",
+      "personId": "P113988"
+    },
+    {
+      "memoId": "1425722",
+      "name": "Анпилогов Николай Степанович",
+      "birthYear": 1909,
+      "url": "https://base.memo.ru/person/show/1425722",
+      "archivedCopy": "https://web.archive.org/web/20211128225723/https://base.memo.ru/person/show/1425722",
+      "queries": [
+        "Анпилогов",
+        "Анпилогова"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NIKOLAI-STEPANOVICH-ANPILOGOV-1909",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-112551854"
+      ]
+    },
+    {
+      "memoId": "3078351",
+      "name": "Анпилогов Павел Васильевич",
+      "birthYear": 1883,
+      "url": "https://base.memo.ru/person/show/3078351",
+      "archivedCopy": "https://web.archive.org/web/20211128225718/https://base.memo.ru/person/show/3078351",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "База данных Красноярского общества \"Мемориал\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PAVEL-VASILEVICH-ANPILOGOV-1883",
+      "personId": "P113989"
+    },
+    {
+      "memoId": "3085129",
+      "name": "Анпилогов Павел Григорьевич",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/3085129",
+      "archivedCopy": "https://web.archive.org/web/20211128225720/https://base.memo.ru/person/show/3085129",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Ростовской обл. - т.3",
+      "sourceId": "PUB-MEMO-PAVEL-GRIGOREVICH-ANPILOGOV-1908",
+      "decision": "record-and-new-profile",
+      "personId": "P125001",
+      "note": "В «Открытом списке» анкеты нет: единственный тёзка — Павел Григорьевич Ампилогов (1925) из Ейского Укрепления, другой человек. В «Памяти народа» Павла Григорьевича Анпилогова 1908 года рождения нет."
+    },
+    {
+      "memoId": "936332",
+      "name": "Анпилогов Павел Петрович",
+      "birthYear": 1883,
+      "url": "https://base.memo.ru/person/show/936332",
+      "archivedCopy": "https://web.archive.org/web/20211128225721/https://base.memo.ru/person/show/936332",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PAVEL-PETROVICH-ANPILOGOV-1883",
+      "personId": "P113990"
+    },
+    {
+      "memoId": "2356402",
+      "name": "Анпилогов Павел Трифонович",
+      "birthYear": 1867,
+      "url": "https://base.memo.ru/person/show/2356402",
+      "archivedCopy": "https://web.archive.org/web/20211128225714/https://base.memo.ru/person/show/2356402",
+      "queries": [
+        "Анпилогов"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PAVEL-TRIFONOVICH-ANPILOGOV-1867",
+      "personId": "P113991"
+    },
+    {
+      "memoId": "1683313",
+      "name": "Анпилогов Петр Евлампиевич",
+      "birthYear": 1904,
+      "url": "https://base.memo.ru/person/show/1683313",
+      "archivedCopy": "https://web.archive.org/web/20211128225723/https://base.memo.ru/person/show/1683313",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PETR-EVLAMPIEVICH-ANPILOGOV-1904",
+      "personId": "P113992"
+    },
+    {
+      "memoId": "1985416",
+      "name": "Анпилогов Петр Сергеевич",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/1985416",
+      "archivedCopy": "https://web.archive.org/web/20211128225722/https://base.memo.ru/person/show/1985416",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Материалы к книге памяти Саратовской обл. - 2004",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PETR-SERGEEVICH-ANPILOGOV-1897",
+      "personId": "P113994"
+    },
+    {
+      "memoId": "62037",
+      "name": "Анпилогов Петр Федорович",
+      "birthYear": 1920,
+      "url": "https://base.memo.ru/person/show/62037",
+      "archivedCopy": "https://web.archive.org/web/20211128225716/https://base.memo.ru/person/show/62037",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PETR-FEDOROVICH-ANPILOGOV-1920",
+      "personId": "P113995",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-77427573"
+      ]
+    },
+    {
+      "memoId": "936333",
+      "name": "Анпилогов Савелий Елисеевич",
+      "birthYear": 1898,
+      "url": "https://base.memo.ru/person/show/936333",
+      "archivedCopy": "https://web.archive.org/web/20211128225715/https://base.memo.ru/person/show/936333",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Красноярского края - т.01",
+      "sourceId": "PUB-MEMO-SAVELII-ELISEEVICH-ANPILOGOV-1898",
+      "decision": "record-after-1950-without-profile",
+      "openlistSourceId": "PUB-OPENLIST-SAVELII-ELISEEVICH-ANPILOGOV-1898",
+      "note": "Анкета «Открытого списка» PUB-OPENLIST-SAVELII-ELISEEVICH-ANPILOGOV-1898 содержит только год и место рождения; дело 1953 года в неё не вошло.",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-45850448",
+        "PN-KLD-45850451",
+        "PN-PERSON-121944219",
+        "PN-PERSON-97688441"
+      ]
+    },
+    {
+      "memoId": "1263450",
+      "name": "Анпилогов Степан Егорович",
+      "birthYear": 1874,
+      "url": "https://base.memo.ru/person/show/1263450",
+      "archivedCopy": "https://web.archive.org/web/20211128225717/https://base.memo.ru/person/show/1263450",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-STEPAN-EGOROVICH-ANPILOGOV-1874",
+      "personId": "P113997",
+      "note": "Карточка даёт полную дату рождения 29.12.1874 и приговор «ВМН»; в «Открытом списке» в поле приговора «спецпоселение», но указана дата расстрела 15.02.1938. Арест, осуждение и реабилитация совпадают."
+    },
+    {
+      "memoId": "493458",
+      "name": "Анпилогов Стефан Иванович",
+      "birthYear": 1888,
+      "url": "https://base.memo.ru/person/show/493458",
+      "archivedCopy": "https://web.archive.org/web/20211128225716/https://base.memo.ru/person/show/493458",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Республики Татарстан",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-STEFAN-IVANOVICH-ANPILOGOV-1888",
+      "personId": "P113999"
+    },
+    {
+      "memoId": "2692586",
+      "name": "Анпилогов Тимофей Сергеевич",
+      "birthYear": 1910,
+      "url": "https://base.memo.ru/person/show/2692586",
+      "archivedCopy": "https://web.archive.org/web/20211128225724/https://base.memo.ru/person/show/2692586",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Московской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-TIMOFEI-SERGEEVICH-ANPILOGOV-1910",
+      "personId": "P114000",
+      "note": "В «Памяти народа» есть Тимофей Сергеевич Анпилогов 1919 года рождения из Бутова, выбывший как «осуждён» 02.04.1942 (PN-MEMORIAL-50537031); у «Мемориала» архивное дело 42999 (1942) и год рождения 1910. Вероятно, один человек с расхождением года; связь — после слияния ветки «Памяти народа».",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-105975002"
+      ]
+    },
+    {
+      "memoId": "1984233",
+      "name": "Анпилогов Федор Андреевич",
+      "birthYear": 1909,
+      "url": "https://base.memo.ru/person/show/1984233",
+      "archivedCopy": "https://web.archive.org/web/20211128225717/https://base.memo.ru/person/show/1984233",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Материалы к книге памяти Саратовской обл. - 2013",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-ANDREEVICH-ANPILOGOV-1909",
+      "personId": "P114002"
+    },
+    {
+      "memoId": "62038",
+      "name": "Анпилогов Федор Васильевич",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/62038",
+      "archivedCopy": "https://web.archive.org/web/20211128225722/https://base.memo.ru/person/show/62038",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-VASILEVICH-ANPILOGOV-1897",
+      "personId": "P114003"
+    },
+    {
+      "memoId": "1431256",
+      "name": "Анпилогов Федор Григорьевич",
+      "birthYear": 1884,
+      "url": "https://base.memo.ru/person/show/1431256",
+      "archivedCopy": "https://web.archive.org/web/20211128225716/https://base.memo.ru/person/show/1431256",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-GRIGOREVICH-ANPILOGOV-1884",
+      "personId": "P114004"
+    },
+    {
+      "memoId": "1431255",
+      "name": "Анпилогов Федор Дмитриевич",
+      "birthYear": 1881,
+      "url": "https://base.memo.ru/person/show/1431255",
+      "archivedCopy": "https://web.archive.org/web/20211128225721/https://base.memo.ru/person/show/1431255",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-DMITRIEVICH-ANPILOGOV-1881",
+      "personId": "P114005"
+    },
+    {
+      "memoId": "1702586",
+      "name": "Анпилогов Федор Иванович",
+      "birthYear": 1883,
+      "url": "https://base.memo.ru/person/show/1702586",
+      "archivedCopy": "https://web.archive.org/web/20211128225722/https://base.memo.ru/person/show/1702586",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015, 1998",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-IVANOVICH-ANPILOGOV-1883",
+      "personId": "P114006"
+    },
+    {
+      "memoId": "1683314",
+      "name": "Анпилогов Федор Семенович",
+      "birthYear": 1857,
+      "url": "https://base.memo.ru/person/show/1683314",
+      "archivedCopy": "https://web.archive.org/web/20211128225717/https://base.memo.ru/person/show/1683314",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-SEMENOVICH-ANPILOGOV-1857",
+      "personId": "P114007"
+    },
+    {
+      "memoId": "1683315",
+      "name": "Анпилогов Федор Федорович",
+      "birthYear": 1891,
+      "url": "https://base.memo.ru/person/show/1683315",
+      "archivedCopy": "https://web.archive.org/web/20211128225720/https://base.memo.ru/person/show/1683315",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-FEDOROVICH-ANPILOGOV-1891",
+      "personId": "P114008"
+    },
+    {
+      "memoId": "1263451",
+      "name": "Анпилогов Федор Фролович",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/1263451",
+      "archivedCopy": "https://web.archive.org/web/20211128225720/https://base.memo.ru/person/show/1263451",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Воронежской обл. - т.3 ; Воронежское общество \"Мемориал\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-FROLOVICH-ANPILOGOV-1907",
+      "personId": "P114009",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-124502276"
+      ]
+    },
+    {
+      "memoId": "1702587",
+      "name": "Анпилогов Филипп Евлампьевич",
+      "birthYear": 1890,
+      "url": "https://base.memo.ru/person/show/1702587",
+      "archivedCopy": "https://web.archive.org/web/20211128225718/https://base.memo.ru/person/show/1702587",
+      "queries": [
+        "Анпилогов"
+      ],
+      "memorialSource": "Книга памяти Оренбургской обл. - 2015",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FILIPP-EVLAMPEVICH-ANPILOGOV-1890",
+      "personId": "P114010"
+    },
+    {
+      "memoId": "2356403",
+      "name": "Анпилогова Акулина Ивановна",
+      "birthYear": 1870,
+      "url": "https://base.memo.ru/person/show/2356403",
+      "archivedCopy": "https://web.archive.org/web/20211128225714/https://base.memo.ru/person/show/2356403",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-AKULINA-IVANOVNA-ANPILOGOVA-1870",
+      "personId": "P114012"
+    },
+    {
+      "memoId": "1683316",
+      "name": "Анпилогова Анастасия Ивановна",
+      "birthYear": 1923,
+      "url": "https://base.memo.ru/person/show/1683316",
+      "archivedCopy": "https://web.archive.org/web/20211128225716/https://base.memo.ru/person/show/1683316",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANASTASIYA-IVANOVNA-ANPILOGOVA-1923",
+      "personId": "P114013"
+    },
+    {
+      "memoId": "1683317",
+      "name": "Анпилогова Анна Егоровна",
+      "birthYear": 1904,
+      "url": "https://base.memo.ru/person/show/1683317",
+      "archivedCopy": "https://web.archive.org/web/20211128225719/https://base.memo.ru/person/show/1683317",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-EGOROVNA-ANPILOGOVA-1904",
+      "personId": "P114014"
+    },
+    {
+      "memoId": "1253250",
+      "name": "Анпилогова Анна Ивановна",
+      "birthYear": 1923,
+      "url": "https://base.memo.ru/person/show/1253250",
+      "archivedCopy": "https://web.archive.org/web/20211128225718/https://base.memo.ru/person/show/1253250",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "УВД Вологодской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-IVANOVNA-ANPILOGOVA-1923",
+      "personId": "P114015"
+    },
+    {
+      "memoId": "1683318",
+      "name": "Анпилогова Анна Яковлевна",
+      "birthYear": 1891,
+      "url": "https://base.memo.ru/person/show/1683318",
+      "archivedCopy": "https://web.archive.org/web/20211128225723/https://base.memo.ru/person/show/1683318",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-YAKOVLEVNA-ANPILOGOVA-1891",
+      "personId": "P114016"
+    },
+    {
+      "memoId": "1473831",
+      "name": "Анпилогова Екатерина Григорьевна",
+      "birthYear": 1914,
+      "url": "https://base.memo.ru/person/show/1473831",
+      "archivedCopy": "https://web.archive.org/web/20211128225714/https://base.memo.ru/person/show/1473831",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-EKATERINA-GRIGOREVNA-ANPILOGOVA-1914",
+      "personId": "P113927"
+    },
+    {
+      "memoId": "62039",
+      "name": "Анпилогова Елена Даниловна (Петровна)",
+      "birthYear": 1897,
+      "url": "https://base.memo.ru/person/show/62039",
+      "archivedCopy": "https://web.archive.org/web/20211128225718/https://base.memo.ru/person/show/62039",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ELENA-DANILOVNA-ANPILOGOVA-1897",
+      "personId": "P114017"
+    },
+    {
+      "memoId": "1473830",
+      "name": "Анпилогова Ксения Павловна",
+      "birthYear": 1877,
+      "url": "https://base.memo.ru/person/show/1473830",
+      "archivedCopy": "https://web.archive.org/web/20211128225715/https://base.memo.ru/person/show/1473830",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-KSENIYA-PAVLOVNA-ANPILOGOVA-1877",
+      "personId": "P114018"
+    },
+    {
+      "memoId": "1683319",
+      "name": "Анпилогова Лидия Ивановна",
+      "birthYear": 1936,
+      "url": "https://base.memo.ru/person/show/1683319",
+      "archivedCopy": "https://web.archive.org/web/20211128225719/https://base.memo.ru/person/show/1683319",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-LIDIYA-IVANOVNA-ANPILOGOVA-1936",
+      "personId": "P114019"
+    },
+    {
+      "memoId": "1683320",
+      "name": "Анпилогова Любовь Ивановна",
+      "birthYear": 1945,
+      "url": "https://base.memo.ru/person/show/1683320",
+      "archivedCopy": "https://web.archive.org/web/20211128225721/https://base.memo.ru/person/show/1683320",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "ИЦ УВД Оренбургской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-LYUBOV-IVANOVNA-ANPILOGOVA-1945",
+      "personId": "P114020"
+    },
+    {
+      "memoId": "1473828",
+      "name": "Анпилогова Мария Григорьевна",
+      "birthYear": 1910,
+      "url": "https://base.memo.ru/person/show/1473828",
+      "archivedCopy": "https://web.archive.org/web/20211128225715/https://base.memo.ru/person/show/1473828",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-GRIGOREVNA-ANPILOGOVA-1910",
+      "personId": "P114021"
+    },
+    {
+      "memoId": "62040",
+      "name": "Анпилогова Мария Федоровна",
+      "birthYear": 1928,
+      "url": "https://base.memo.ru/person/show/62040",
+      "archivedCopy": "https://web.archive.org/web/20211128225719/https://base.memo.ru/person/show/62040",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-FEDOROVNA-ANPILOGOVA-1928",
+      "personId": "P114022"
+    },
+    {
+      "memoId": "1721212",
+      "name": "Анпилогова Матрена Сергеевна",
+      "birthYear": 1906,
+      "url": "https://base.memo.ru/person/show/1721212",
+      "archivedCopy": "https://web.archive.org/web/20211128225717/https://base.memo.ru/person/show/1721212",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MATRENA-SERGEEVNA-ANPILOGOVA-1906",
+      "personId": "P114023"
+    },
+    {
+      "memoId": "1253251",
+      "name": "Анпилогова Наталья Ивановна",
+      "birthYear": 1912,
+      "url": "https://base.memo.ru/person/show/1253251",
+      "archivedCopy": "https://web.archive.org/web/20211128225720/https://base.memo.ru/person/show/1253251",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "УВД Вологодской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NATALYA-IVANOVNA-ANPILOGOVA-1912",
+      "personId": "P114024"
+    },
+    {
+      "memoId": "1721213",
+      "name": "Анпилогова Ольга Александровна",
+      "birthYear": 1925,
+      "url": "https://base.memo.ru/person/show/1721213",
+      "archivedCopy": "https://web.archive.org/web/20211128225722/https://base.memo.ru/person/show/1721213",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "УВД Орловской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-OLGA-ALEKSANDROVNA-ANPILOGOVA-1925",
+      "personId": "P114026"
+    },
+    {
+      "memoId": "62041",
+      "name": "Анпилогова Ольга Федоровна",
+      "birthYear": 1924,
+      "url": "https://base.memo.ru/person/show/62041",
+      "archivedCopy": "https://web.archive.org/web/20211128225723/https://base.memo.ru/person/show/62041",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-OLGA-FEDOROVNA-ANPILOGOVA-1924",
+      "personId": "P114027"
+    },
+    {
+      "memoId": "1263452",
+      "name": "Анпилогова Пелагея Тихоновна",
+      "birthYear": 1907,
+      "url": "https://base.memo.ru/person/show/1263452",
+      "archivedCopy": "https://web.archive.org/web/20211128225719/https://base.memo.ru/person/show/1263452",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "Воронежское общество \"Мемориал\"",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PELAGEYA-TIKHONOVNA-ANPILOGOVA-1907",
+      "personId": "P114028"
+    },
+    {
+      "memoId": "62042",
+      "name": "Анпилогова Пелагея Федоровна",
+      "birthYear": 1937,
+      "url": "https://base.memo.ru/person/show/62042",
+      "archivedCopy": "https://web.archive.org/web/20211128225717/https://base.memo.ru/person/show/62042",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Башкирии",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-PELAGEYA-FEDOROVNA-ANPILOGOVA-1937",
+      "personId": "P114029"
+    },
+    {
+      "memoId": "2356407",
+      "name": "Анпилогова Тамара Васильевна",
+      "birthYear": 1937,
+      "url": "https://base.memo.ru/person/show/2356407",
+      "archivedCopy": "https://web.archive.org/web/20211128225714/https://base.memo.ru/person/show/2356407",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-TAMARA-VASILEVNA-ANPILOGOVA-1937",
+      "personId": "P114030"
+    },
+    {
+      "memoId": "1014305",
+      "name": "Анпилогова Юлия Иосифовна",
+      "birthYear": 1875,
+      "url": "https://base.memo.ru/person/show/1014305",
+      "archivedCopy": "https://web.archive.org/web/20211128225721/https://base.memo.ru/person/show/1014305",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "Книга памяти Ставропольского края - т.10",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-YULIYA-IOSIFOVNA-ANPILOGOVA-1875",
+      "personId": "P114031"
+    },
+    {
+      "memoId": "428264",
+      "name": "Анпилогова-Голосовск Людмила Васильевна",
+      "birthYear": 1949,
+      "url": "https://base.memo.ru/person/show/428264",
+      "archivedCopy": "https://web.archive.org/web/20211127064803/https://base.memo.ru/person/show/428264",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Респ. Коми",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-LYUDMILA-VASILEVNA-ANPILOGOVA-GOLOSOVSK-1949",
+      "personId": "P114032"
+    },
+    {
+      "memoId": "2356406",
+      "name": "Анпилогова-Долгих Анна Павловна",
+      "birthYear": 1916,
+      "url": "https://base.memo.ru/person/show/2356406",
+      "archivedCopy": "https://web.archive.org/web/20211127083451/https://base.memo.ru/person/show/2356406",
+      "queries": [
+        "Анпилогова"
+      ],
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-ANNA-PAVLOVNA-ANPILOGOVA-DOLGIKH-1916",
+      "personId": "P114033"
+    },
+    {
+      "memoId": "428265",
+      "name": "Анпилогова-Нифантова Татьяна Васильевна",
+      "birthYear": 1954,
+      "url": "https://base.memo.ru/person/show/428265",
+      "archivedCopy": "https://web.archive.org/web/20211127022607/https://base.memo.ru/person/show/428265",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "МВД Респ. Коми",
+      "decision": "excluded-after-1950",
+      "note": "Родилась в 1954 году в Коми АССР; вне публичной границы 1950 года. Та же анкета исключена и при импорте «Открытого списка»."
+    },
+    {
+      "memoId": "3055271",
+      "name": "Антилогов Василий Сергеевич",
+      "birthYear": 1867,
+      "url": "https://base.memo.ru/person/show/3055271",
+      "archivedCopy": "https://web.archive.org/web/20211129062032/https://base.memo.ru/person/show/3055271",
+      "queries": [
+        "Антилогов"
+      ],
+      "memorialSource": "Реабилитированные историей : Автономная Республика Крым - т. 8",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-SERGEEVICH-ANTILOGOV-1867"
+    },
+    {
+      "memoId": "1652889",
+      "name": "Антилогов Иосиф Георгиевич",
+      "birthYear": 1871,
+      "url": "https://base.memo.ru/person/show/1652889",
+      "archivedCopy": "https://web.archive.org/web/20211129062034/https://base.memo.ru/person/show/1652889",
+      "queries": [
+        "Антилогов"
+      ],
+      "memorialSource": "Книга памяти Омской обл. - т. 1",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IOSIF-GEORGIEVICH-ANTILOGOV-1871"
+    },
+    {
+      "memoId": "3055272",
+      "name": "Антилогов Николай Федорович",
+      "birthYear": 1872,
+      "url": "https://base.memo.ru/person/show/3055272",
+      "archivedCopy": "https://web.archive.org/web/20211129062039/https://base.memo.ru/person/show/3055272",
+      "queries": [
+        "Антилогов"
+      ],
+      "memorialSource": "Реабилитированные историей : Автономная Республика Крым - т. 8",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NIKOLAI-FEDOROVICH-ANTILOGOV-1872",
+      "personId": "P109702"
+    },
+    {
+      "memoId": "1652956",
+      "name": "Анфилатов Игнатий Иванович",
+      "url": "https://base.memo.ru/person/show/1652956",
+      "queries": [
+        "Анфилатов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилатов — отдельная фамилия; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "936470",
+      "name": "Анфилатов Макар Степанович",
+      "url": "https://base.memo.ru/person/show/936470",
+      "queries": [
+        "Анфилатов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилатов — отдельная фамилия; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "936471",
+      "name": "Анфилатов Максим Данилович",
+      "url": "https://base.memo.ru/person/show/936471",
+      "queries": [
+        "Анфилатов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилатов — отдельная фамилия; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1363867",
+      "name": "Анфилатов Степан Григорьевич",
+      "url": "https://base.memo.ru/person/show/1363867",
+      "queries": [
+        "Анфилатов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилатов — отдельная фамилия; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1503710",
+      "name": "Анфилов Василий Михайлович",
+      "birthYear": 1908,
+      "url": "https://base.memo.ru/person/show/1503710",
+      "archivedCopy": "https://web.archive.org/web/20211129053248/https://base.memo.ru/person/show/1503710",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Нижегородской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-MIKHAILOVICH-ANFILOV-1908",
+      "personId": "P114085",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-107619562"
+      ]
+    },
+    {
+      "memoId": "1503711",
+      "name": "Анфилов Василий Николаевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1503711",
+      "archivedCopy": "https://web.archive.org/web/20211129053304/https://base.memo.ru/person/show/1503711",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Нижегородской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VASILII-NIKOLAEVICH-ANFILOV-1886",
+      "personId": "P114086"
+    },
+    {
+      "memoId": "2930862",
+      "name": "Анфилов Владимир Федорович",
+      "birthYear": 1891,
+      "url": "https://base.memo.ru/person/show/2930862",
+      "archivedCopy": "https://web.archive.org/web/20211129053245/https://base.memo.ru/person/show/2930862",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Архив НИЦ \"Мемориал\" (Санкт-Петербург)",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VLADIMIR-FEDOROVICH-ANFILOV-1891",
+      "personId": "P114087"
+    },
+    {
+      "memoId": "788492",
+      "name": "Анфилов Иван Васильевич",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/788492",
+      "archivedCopy": "https://web.archive.org/web/20211129053303/https://base.memo.ru/person/show/788492",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Алтайского края - т.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-VASILEVICH-ANFILOV-1900",
+      "personId": "P114088",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-5016558",
+        "PN-MEMORIAL-65536210"
+      ]
+    },
+    {
+      "memoId": "1385158",
+      "name": "Анфилов Иван Васильевич",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/1385158",
+      "archivedCopy": "https://web.archive.org/web/20211129053254/https://base.memo.ru/person/show/1385158",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Костромской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IVAN-VASILEVICH-ANFILOV-1900",
+      "personId": "P114088",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-KLD-5016558",
+        "PN-MEMORIAL-65536210"
+      ]
+    },
+    {
+      "memoId": "2942181",
+      "name": "Анфилов Иосиф Елизарович",
+      "birthYear": 1879,
+      "url": "https://base.memo.ru/person/show/2942181",
+      "archivedCopy": "https://web.archive.org/web/20211129053248/https://base.memo.ru/person/show/2942181",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Сведения ДКНБ РК по Восточно-Казахстанской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-IOSIF-ELIZAROVICH-ANFILOV-1879",
+      "personId": "P114089"
+    },
+    {
+      "memoId": "2887947",
+      "name": "Анфилов Леонид Федорович",
+      "birthYear": 1924,
+      "url": "https://base.memo.ru/person/show/2887947",
+      "archivedCopy": "https://web.archive.org/web/20211129053305/https://base.memo.ru/person/show/2887947",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Одесский Мемориал",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-LEONID-FEDOROVICH-ANFILOV-1924",
+      "note": "События 1958–1959 годов — после публичной границы; в «Открытом списке» анкета сохранена Record без профиля.",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-35834539"
+      ]
+    },
+    {
+      "memoId": "1458919",
+      "name": "Анфилов Михаил Александрович",
+      "birthYear": 1913,
+      "url": "https://base.memo.ru/person/show/1458919",
+      "archivedCopy": "https://web.archive.org/web/20211129053254/https://base.memo.ru/person/show/1458919",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "УВД Магаданской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MIKHAIL-ALEKSANDROVICH-ANFILOV-1913",
+      "personId": "P114090",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-PERSON-36031650"
+      ]
+    },
+    {
+      "memoId": "890136",
+      "name": "Анфилов Николай Артемьевич",
+      "birthYear": 1900,
+      "url": "https://base.memo.ru/person/show/890136",
+      "archivedCopy": "https://web.archive.org/web/20211129053258/https://base.memo.ru/person/show/890136",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Краснодарского края - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-NIKOLAI-ARTEMEVICH-ANFILOV-1900",
+      "personId": "P114091"
+    },
+    {
+      "memoId": "1014372",
+      "name": "Анфилов Семен Иванович",
+      "birthYear": 1896,
+      "url": "https://base.memo.ru/person/show/1014372",
+      "archivedCopy": "https://web.archive.org/web/20211129053245/https://base.memo.ru/person/show/1014372",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Ставропольского края - т.04",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-SEMEN-IVANOVICH-ANFILOV-1896",
+      "personId": "P114092"
+    },
+    {
+      "memoId": "1014373",
+      "name": "Анфилов Семен Иванович",
+      "birthYear": 1896,
+      "url": "https://base.memo.ru/person/show/1014373",
+      "archivedCopy": "https://web.archive.org/web/20211129053247/https://base.memo.ru/person/show/1014373",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Ставропольского края - т.04",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-SEMEN-IVANOVICH-ANFILOV-1896",
+      "personId": "P114092",
+      "note": "Арест 10.11.1951 — после публичной границы; эпизод есть в той же анкете «Открытого списка»."
+    },
+    {
+      "memoId": "1458566",
+      "name": "Анфилов Федор Гаврилович",
+      "birthYear": 1909,
+      "url": "https://base.memo.ru/person/show/1458566",
+      "archivedCopy": "https://web.archive.org/web/20211129053255/https://base.memo.ru/person/show/1458566",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "УВД Магаданской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-GAVRILOVICH-ANFILOV-1909",
+      "personId": "P114093",
+      "pamyatNarodaSameNameAndYear": [
+        "PN-MEMORIAL-60758165"
+      ]
+    },
+    {
+      "memoId": "1602726",
+      "name": "Анфилов Федор Иванович",
+      "birthYear": 1889,
+      "url": "https://base.memo.ru/person/show/1602726",
+      "archivedCopy": "https://web.archive.org/web/20211129053256/https://base.memo.ru/person/show/1602726",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Новосибирской обл. - т. 4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-IVANOVICH-ANFILOV-1889",
+      "personId": "P114095"
+    },
+    {
+      "memoId": "3102801",
+      "name": "Анфилов Филипп Кузьмич",
+      "birthYear": 1877,
+      "url": "https://base.memo.ru/person/show/3102801",
+      "archivedCopy": "https://web.archive.org/web/20211129053259/https://base.memo.ru/person/show/3102801",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "«Реабілітовані історією» : Севастополь",
+      "sourceId": "PUB-MEMO-FILIPP-KUZMICH-ANFILOV-1877",
+      "decision": "record-and-new-profile",
+      "personId": "P125004",
+      "note": "В «Открытом списке» анкеты нет: поиск «Анфилов Филипп» 20 октября 2026 года ничего не нашёл. В «Памяти народа» тёзки нет."
+    },
+    {
+      "memoId": "369399",
+      "name": "Анфилов Яков Григорьевич",
+      "birthYear": 1890,
+      "url": "https://base.memo.ru/person/show/369399",
+      "archivedCopy": "https://web.archive.org/web/20211129053305/https://base.memo.ru/person/show/369399",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.9, ч.2",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-YAKOV-GRIGOREVICH-ANFILOV-1890",
+      "personId": "P114096"
+    },
+    {
+      "memoId": "2930863",
+      "name": "Анфилов-Панфилов Вячеслав Касьянович",
+      "birthYear": 1891,
+      "url": "https://base.memo.ru/person/show/2930863",
+      "archivedCopy": "https://web.archive.org/web/20211125051305/https://base.memo.ru/person/show/2930863",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Архив НИЦ \"Мемориал\" (Санкт-Петербург)",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VYACHESLAV-KASYANOVICH-ANFILOV-PANFILOV-1891",
+      "personId": "P114097"
+    },
+    {
+      "memoId": "877522",
+      "name": "Анфилова-Колдурмиди Мария Васильевна",
+      "birthYear": 1949,
+      "url": "https://base.memo.ru/person/show/877522",
+      "archivedCopy": "https://web.archive.org/web/20211127152744/https://base.memo.ru/person/show/877522",
+      "queries": [
+        "Анфилова"
+      ],
+      "memorialSource": "ГУВД Краснодарского края",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-VASILEVNA-ANFILOVA-KOLDURMIDI-1949",
+      "note": "В «Открытом списке» сохранена Record без профиля (фамилия по браку, сомнительная форма)."
+    },
+    {
+      "memoId": "2692703",
+      "name": "Анфилогов Владимир Сергеевич",
+      "birthYear": 1904,
+      "url": "https://base.memo.ru/person/show/2692703",
+      "archivedCopy": "https://web.archive.org/web/20211129053248/https://base.memo.ru/person/show/2692703",
+      "queries": [
+        "Анфилогов"
+      ],
+      "memorialSource": "Книга памяти Московской обл.",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-VLADIMIR-SERGEEVICH-ANFILOGOV-1904",
+      "personId": "P114035"
+    },
+    {
+      "memoId": "1911639",
+      "name": "Анфилогов Григорий Михайлович",
+      "birthYear": 1882,
+      "url": "https://base.memo.ru/person/show/1911639",
+      "archivedCopy": "https://web.archive.org/web/20211129053256/https://base.memo.ru/person/show/1911639",
+      "queries": [
+        "Анфилогов"
+      ],
+      "memorialSource": "Книга памяти Самарской обл. - т.01 (Самара)",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-GRIGORII-MIKHAILOVICH-ANFILOGOV-1882",
+      "personId": "P114036"
+    },
+    {
+      "memoId": "1398393",
+      "name": "Анфилогов Федор Яковлевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1398393",
+      "archivedCopy": "https://web.archive.org/web/20211129053248/https://base.memo.ru/person/show/1398393",
+      "queries": [
+        "Анфилогов"
+      ],
+      "memorialSource": "Книга памяти Курганской обл. - т.4",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-FEDOR-YAKOVLEVICH-ANFILOGOV-1886",
+      "personId": "P114037"
+    },
+    {
+      "memoId": "2942182",
+      "name": "Анфилофиев Филипп Тарасович",
+      "url": "https://base.memo.ru/person/show/2942182",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942183",
+      "name": "Анфилофьев Аким Германович",
+      "url": "https://base.memo.ru/person/show/2942183",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942184",
+      "name": "Анфилофьев Аким Гермогенович",
+      "url": "https://base.memo.ru/person/show/2942184",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942185",
+      "name": "Анфилофьев Александр Федорович",
+      "url": "https://base.memo.ru/person/show/2942185",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2501918",
+      "name": "Анфилофьев Алексей Алексеевич",
+      "url": "https://base.memo.ru/person/show/2501918",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1652957",
+      "name": "Анфилофьев Аристарх Сергеевич",
+      "url": "https://base.memo.ru/person/show/1652957",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942186",
+      "name": "Анфилофьев Артамон Иванович",
+      "url": "https://base.memo.ru/person/show/2942186",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942188",
+      "name": "Анфилофьев Василий Поликарпович",
+      "url": "https://base.memo.ru/person/show/2942188",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942187",
+      "name": "Анфилофьев Василий Семенович",
+      "url": "https://base.memo.ru/person/show/2942187",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942189",
+      "name": "Анфилофьев Гавриил Федорович",
+      "url": "https://base.memo.ru/person/show/2942189",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942190",
+      "name": "Анфилофьев Гаврил Федорович",
+      "url": "https://base.memo.ru/person/show/2942190",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942191",
+      "name": "Анфилофьев Герасим Тарасович",
+      "url": "https://base.memo.ru/person/show/2942191",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942192",
+      "name": "Анфилофьев Григорий Леонтьевич",
+      "url": "https://base.memo.ru/person/show/2942192",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942193",
+      "name": "Анфилофьев Грогорий Елизарович",
+      "url": "https://base.memo.ru/person/show/2942193",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942194",
+      "name": "Анфилофьев Гурьян Елизарович",
+      "url": "https://base.memo.ru/person/show/2942194",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942195",
+      "name": "Анфилофьев Демид Пантелеевич",
+      "url": "https://base.memo.ru/person/show/2942195",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942196",
+      "name": "Анфилофьев Дмитрий Тарасович",
+      "url": "https://base.memo.ru/person/show/2942196",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2466392",
+      "name": "Анфилофьев Дорофей Бенедиктович",
+      "url": "https://base.memo.ru/person/show/2466392",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2458864",
+      "name": "Анфилофьев Дорофей Винидиктович",
+      "url": "https://base.memo.ru/person/show/2458864",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942197",
+      "name": "Анфилофьев Евстафий Михеевич",
+      "url": "https://base.memo.ru/person/show/2942197",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942198",
+      "name": "Анфилофьев Елестар Григорьевич",
+      "url": "https://base.memo.ru/person/show/2942198",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "788493",
+      "name": "Анфилофьев Иван Григорьевич",
+      "url": "https://base.memo.ru/person/show/788493",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942199",
+      "name": "Анфилофьев Иван Иванович",
+      "url": "https://base.memo.ru/person/show/2942199",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2501919",
+      "name": "Анфилофьев Иван Матвеевич",
+      "url": "https://base.memo.ru/person/show/2501919",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942200",
+      "name": "Анфилофьев Илья Никитович",
+      "url": "https://base.memo.ru/person/show/2942200",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942201",
+      "name": "Анфилофьев Исак Харлампиевич",
+      "url": "https://base.memo.ru/person/show/2942201",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942202",
+      "name": "Анфилофьев Карп Елизарович",
+      "url": "https://base.memo.ru/person/show/2942202",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942203",
+      "name": "Анфилофьев Куприян Петрович",
+      "url": "https://base.memo.ru/person/show/2942203",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942204",
+      "name": "Анфилофьев Лаврентий Григорьевич",
+      "url": "https://base.memo.ru/person/show/2942204",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942205",
+      "name": "Анфилофьев Лука Иванович",
+      "url": "https://base.memo.ru/person/show/2942205",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942206",
+      "name": "Анфилофьев Нестер Семенович",
+      "url": "https://base.memo.ru/person/show/2942206",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2458865",
+      "name": "Анфилофьев Николай Федорович",
+      "url": "https://base.memo.ru/person/show/2458865",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942207",
+      "name": "Анфилофьев Осип Тарасович",
+      "url": "https://base.memo.ru/person/show/2942207",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942208",
+      "name": "Анфилофьев Павел Ксенофонтьевич",
+      "url": "https://base.memo.ru/person/show/2942208",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942209",
+      "name": "Анфилофьев Павел Платонович",
+      "url": "https://base.memo.ru/person/show/2942209",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2692704",
+      "name": "Анфилофьев Петр Сергеевич",
+      "url": "https://base.memo.ru/person/show/2692704",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2673165",
+      "name": "Анфилофьев Петр Сергеевич",
+      "url": "https://base.memo.ru/person/show/2673165",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942210",
+      "name": "Анфилофьев Петр Тарасович",
+      "url": "https://base.memo.ru/person/show/2942210",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942211",
+      "name": "Анфилофьев Петр Фатеевич",
+      "url": "https://base.memo.ru/person/show/2942211",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942212",
+      "name": "Анфилофьев Прокопий Артамонович",
+      "url": "https://base.memo.ru/person/show/2942212",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2399731",
+      "name": "Анфилофьев Семен Яковлевич",
+      "url": "https://base.memo.ru/person/show/2399731",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942213",
+      "name": "Анфилофьев Семен Яковлевич",
+      "url": "https://base.memo.ru/person/show/2942213",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942215",
+      "name": "Анфилофьев Сергей Еремеевич",
+      "url": "https://base.memo.ru/person/show/2942215",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942214",
+      "name": "Анфилофьев Сергей Ермолаевич",
+      "url": "https://base.memo.ru/person/show/2942214",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942216",
+      "name": "Анфилофьев Тимофей Платонович",
+      "url": "https://base.memo.ru/person/show/2942216",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942217",
+      "name": "Анфилофьев Трифон Платонович",
+      "url": "https://base.memo.ru/person/show/2942217",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2942218",
+      "name": "Анфилофьев Федор Евлампьевич",
+      "url": "https://base.memo.ru/person/show/2942218",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Анфилофьев — отдельная фамилия, образованная от имени Анфилофий; к ряду не относится.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "788593",
+      "name": "Аристов Анфилофий Сергеевич",
+      "url": "https://base.memo.ru/person/show/788593",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1614748",
+      "name": "Ачатов Николай Анфилович",
+      "url": "https://base.memo.ru/person/show/1614748",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по отчеству «Анфилович»; фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1398796",
+      "name": "Безгодов Анфилофий Титович",
+      "url": "https://base.memo.ru/person/show/1398796",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2363897",
+      "name": "Белоруков Анфилофий Семенович",
+      "url": "https://base.memo.ru/person/show/2363897",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1429224",
+      "name": "Воронин Иван Илларионович",
+      "birthYear": 1917,
+      "url": "https://base.memo.ru/person/show/1429224",
+      "archivedCopy": "https://web.archive.org/web/20211204043731/https://base.memo.ru/person/show/1429224",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.4",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Воронин; в выдачу попал по месту рождения «д. Анпилогово». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "2070542",
+      "name": "Грушевский Анфилофий Перфирьевич",
+      "url": "https://base.memo.ru/person/show/2070542",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2071316",
+      "name": "Дернов Анфилофий Федорович",
+      "url": "https://base.memo.ru/person/show/2071316",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "619622",
+      "name": "Дубов Анфилофий Епатьевич",
+      "url": "https://base.memo.ru/person/show/619622",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1786030",
+      "name": "Зубов Анфилофий Еремеевич",
+      "url": "https://base.memo.ru/person/show/1786030",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1402736",
+      "name": "Кокшаров Анфилофий Семенович",
+      "url": "https://base.memo.ru/person/show/1402736",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "882322",
+      "name": "Колдурмиди-Анфилова Мария Васильевна",
+      "birthYear": 1949,
+      "url": "https://base.memo.ru/person/show/882322",
+      "archivedCopy": "https://web.archive.org/web/20211130005606/https://base.memo.ru/person/show/882322",
+      "queries": [
+        "Анфилова"
+      ],
+      "memorialSource": "ГУВД Краснодарского края",
+      "decision": "already-in-openlist",
+      "openlistSourceId": "PUB-OPENLIST-MARIYA-VASILEVNA-ANFILOVA-KOLDURMIDI-1949",
+      "note": "Та же Мария Васильевна (1949), что в предыдущей строке, с обратным порядком двойной фамилии; в «Открытом списке» — Record без профиля."
+    },
+    {
+      "memoId": "393077",
+      "name": "Котельников Илья Иванович",
+      "birthYear": 1904,
+      "url": "https://base.memo.ru/person/show/393077",
+      "archivedCopy": "https://web.archive.org/web/20211201050720/https://base.memo.ru/person/show/393077",
+      "queries": [
+        "Анфилова"
+      ],
+      "memorialSource": "Книга памяти Республики Коми - т.8, ч.1, т.1",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Котельников; в выдачу попал по месту рождения «д. Анфилово». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "3101604",
+      "name": "Лапузин Анфилоген Маркович",
+      "birthYear": 1870,
+      "url": "https://base.memo.ru/person/show/3101604",
+      "archivedCopy": "https://web.archive.org/web/20211203120754/https://base.memo.ru/person/show/3101604",
+      "queries": [
+        "Анфилогов"
+      ],
+      "memorialSource": "Книга памяти Новосибирской обл. - т.5",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Лапузин, личное имя Анфилоген; в выдачу попал по имени. Профиль не создаётся (другая фамилия; допосемейное исключение для имени Анфилоф к XX веку не относится)."
+    },
+    {
+      "memoId": "812215",
+      "name": "Меновщиков Анфилофий Иванович",
+      "url": "https://base.memo.ru/person/show/812215",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "815198",
+      "name": "Огнев Анфилофий Мартемьянович",
+      "url": "https://base.memo.ru/person/show/815198",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1405747",
+      "name": "Островских Анфилофий Федорович",
+      "url": "https://base.memo.ru/person/show/1405747",
+      "queries": [
+        "Анфилофов",
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1432274",
+      "name": "Переверзева Мария Ильинична",
+      "birthYear": 1888,
+      "url": "https://base.memo.ru/person/show/1432274",
+      "archivedCopy": "https://web.archive.org/web/20211202084046/https://base.memo.ru/person/show/1432274",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.1",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Переверзева; в выдачу попала по месту рождения «Курский р-н, д. Анпилогово». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "1393315",
+      "name": "Подобин Анфилофий Михайлович",
+      "url": "https://base.memo.ru/person/show/1393315",
+      "queries": [
+        "Анфилофов",
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1383846",
+      "name": "Подобин Анфилофий Михайлович",
+      "url": "https://base.memo.ru/person/show/1383846",
+      "queries": [
+        "Анфилофов",
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1374998",
+      "name": "Прилуков Матвей Ефимович",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1374998",
+      "archivedCopy": "https://web.archive.org/web/20211202145427/https://base.memo.ru/person/show/1374998",
+      "queries": [
+        "Анфилов"
+      ],
+      "memorialSource": "Книга памяти Кировской обл.",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Прилуков; в выдачу попал по месту рождения «д. Анфилы». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "2399502",
+      "name": "Пьянков Анфилоф Иудович",
+      "url": "https://base.memo.ru/person/show/2399502",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1616634",
+      "name": "Рычков Александр Кузьмич",
+      "url": "https://base.memo.ru/person/show/1616634",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Совпадение в поле, которого нет в краткой выдаче memsearch; фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1300900",
+      "name": "Тимофеев Анфилофий Гаврилович",
+      "url": "https://base.memo.ru/person/show/1300900",
+      "queries": [
+        "Анфилофов",
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2471901",
+      "name": "Тоболкин Иван Федорович",
+      "url": "https://base.memo.ru/person/show/2471901",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Совпадение в поле, которого нет в краткой выдаче memsearch; фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1431495",
+      "name": "Тюленев Федор Николаевич",
+      "birthYear": 1886,
+      "url": "https://base.memo.ru/person/show/1431495",
+      "archivedCopy": "https://web.archive.org/web/20211127174634/https://base.memo.ru/person/show/1431495",
+      "queries": [
+        "Анпилогова"
+      ],
+      "memorialSource": "Книга памяти Курской обл. - т.2",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Тюленев, священнослужитель; в выдачу попал по месту рождения «Курская обл., Курский р-н, д. Анпилогово». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "2717032",
+      "name": "Хозяинов Родион Иванович",
+      "birthYear": 1903,
+      "url": "https://base.memo.ru/person/show/2717032",
+      "archivedCopy": "https://web.archive.org/web/20211128161840/https://base.memo.ru/person/show/2717032",
+      "queries": [
+        "Анфилова"
+      ],
+      "memorialSource": "Книга памяти Московской обл.",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Хозяинов; в выдачу попал по месту рождения «Анфилово». Профиль не создаётся (другая фамилия)."
+    },
+    {
+      "memoId": "1617159",
+      "name": "Чернов Иван Мартынович",
+      "url": "https://base.memo.ru/person/show/1617159",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Совпадение в поле, которого нет в краткой выдаче memsearch; фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "830765",
+      "name": "Шелабанов Анфилофий Федорович",
+      "url": "https://base.memo.ru/person/show/830765",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "1262756",
+      "name": "Шельдяков Анфилофий Михайлович",
+      "url": "https://base.memo.ru/person/show/1262756",
+      "queries": [
+        "Анфилофов"
+      ],
+      "decision": "out-of-scope-other-surname",
+      "note": "Найден по личному имени Анфилофий (Анфилоф); фамилия другая.",
+      "checkedBy": "заголовок и краткая выдача memsearch; полный текст не читался"
+    },
+    {
+      "memoId": "2774085",
+      "name": "Шмидт Артур Иосифович",
+      "birthYear": 1896,
+      "url": "https://base.memo.ru/person/show/2774085",
+      "archivedCopy": "https://web.archive.org/web/20211201180509/https://base.memo.ru/person/show/2774085",
+      "queries": [
+        "Ампелов"
+      ],
+      "memorialSource": "Ленинградский мартиролог - т. 9",
+      "decision": "out-of-scope-other-surname",
+      "note": "Фамилия Шмидт; в выдачу попал по месту рождения «м. Ампель» Эстляндской губернии. Профиль не создаётся (другая фамилия)."
+    }
+  ],
+  "counts": {
+    "record-and-new-profile": 7,
+    "already-in-openlist": 201,
+    "record-linked-to-existing-profile": 2,
+    "record-after-1950-without-profile": 1,
+    "excluded-after-1950": 1,
+    "out-of-scope-other-surname": 80
+  },
+  "newProfiles": [
+    "P125000",
+    "P125001",
+    "P125002",
+    "P125003",
+    "P125004",
+    "P125005",
+    "P125006"
+  ],
+  "personIdRange": "Новые профили начинаются с P125000: диапазон P114099–P120159 занят незаслитой веткой feat/genealogy-pamyat-naroda, а номера до P125000 оставлены ей в запас на перезапуски импорта (договорённость с её сессией 2026-10-20).",
+  "notCovered": [
+    "Формы «Онпилогов», «Онфилогов», «Амфилогов», «Ампелогов», «Анпелогов», «Амилогов», «Емпилогов», «Емпалогов», «Еппалогов», «Апилогов», «Ампилагов», «Анпилагов», «Анфилагов», «Онпилов», «Онфилов», «Ампиллогов», «Анпиллогов», «Аппилогов», «Анпилогав», «Ампилогав», «Анпилоков», «Ампилоков», «Онпелогов», «Анфелогов», «Анфилогоф», «Анпилогоф», «Ашпилогов», «Аннилогов», «Амнилогов», «Алпилогов», «Аншилогов», «Ампилонов», «Анпилонов», «Анпелов» и женские формы части из них дали 0 результатов.",
+    "Собственный поиск base.memo.ru недоступен, поэтому полнота зависит от индекса memsearch.org; отдельной сверки со старым изданием lists.memo.ru не было.",
+    "Другие базы «Мемориала» в memsearch.org («Сталинские расстрельные списки», «Это прямо здесь», «Кадровый состав органов госбезопасности» и др.) не просматривались.",
+    "Связи с профилями «Памяти народа» не проставлены: ветка feat/genealogy-pamyat-naroda ещё не слита в main."
+  ]
+}

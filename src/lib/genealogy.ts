@@ -1162,6 +1162,8 @@ const recordDataLabels: Record<string, string> = {
   result: "Результат",
   limit: "Граница вывода",
   url: "Открытая публикация",
+  archivedCopy: "Копия в веб-архиве",
+  search: "Поисковая выдача",
   livnyResult: "Проверка ливенского следа",
   karachev1584Lead: "Карачевский коридор и книга 1584/85 года",
   officialInventoryVerification20260830: "Проверка по официальной поактной описи РГАДА",
