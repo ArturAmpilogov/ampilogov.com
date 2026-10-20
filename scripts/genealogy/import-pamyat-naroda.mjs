@@ -11,7 +11,9 @@
 // and place of birth. One profile per Record, or a link to an existing profile
 // when name, patronymic, birth year and birthplace all agree.
 //
-// Usage: node scripts/genealogy/import-pamyat-naroda.mjs <harvest.json> [--dry-run]
+// Usage: node scripts/genealogy/import-pamyat-naroda.mjs <harvest.json> [--dry-run] [--first-id=114099]
+// `--first-id` keeps the numbering of the original import (P114099–) when
+// other imports have since taken higher numbers.
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
 import path from "node:path";
@@ -115,10 +117,11 @@ const MODERN_YO = new Map(Object.entries({
 // the normalized one; the normalized form is the modern name.
 const bracketForm = (value) => String(value ?? "").match(/\(([^()]+)\)\s*$/)?.[1]?.trim() ?? null;
 const writtenForm = (value) => String(value ?? "").replace(/\s*\([^()]*\)\s*$/, "").trim();
-// Church forms become everyday ones (Феодор → Фёдор) in the modern name only;
-// the index reading stays in nameAsIndexed.
+// The modern name changes orthography only: Феодор is written Фёдор (project
+// rule), but Стефан, Иоанн or Симеон stay as the document gives them.
 const modernWord = (value) => {
-  const base = canonicalName(bracketForm(value) ?? value);
+  let base = norm(bracketForm(value) ?? value);
+  if (base.startsWith("феодор")) base = `федор${base.slice("феодор".length)}`;
   return titleCase(MODERN_YO.get(base) ?? base);
 };
 // Church forms in metrical-book profiles (Феодор, Иоанн) against the everyday
@@ -415,6 +418,7 @@ const FIELD_LABELS = [
 const DATE_FIELD = /^(?:data_|date_|kogda_|unit_date_|s_kakogo_goda|pervaya_data|iz_kakoi_chasti_pribil_data|partizan_unit_date)/;
 const FREE_TEXT_FIELDS = new Set(["history", "biography", "feat_description"]);
 const POST_PERIOD_TYPES = new Set(["chelovek_yubileinaya_kartoteka"]);
+const POST_PERIOD_DATE_TEXT = /\d{1,2}\.\d{1,2}\.(?:195[1-9]|19[6-9]\d|20[0-2]\d)|(?:195[1-9]|19[6-9]\d|20[0-2]\d)\s*(?:г\.|г\s|г$|год)/;
 
 const docType = (doc) => doc.__type ?? doc._type;
 const docId = (doc) => doc.id ?? doc._id;
@@ -428,7 +432,10 @@ const docUrl = (doc) => docType(doc) === "hero"
 function publicValue(key, value) {
   const items = lst(value).map((item) => String(item).trim()).filter((item) => item && item !== "0");
   if (!items.length) return null;
-  if ((DATE_FIELD.test(key) || FREE_TEXT_FIELDS.has(key)) && items.some(isPostPeriod)) return null;
+  if (DATE_FIELD.test(key) && items.some(isPostPeriod)) return null;
+  // Free text loses a field only for a dated mention after 1950, not for a
+  // unit or hill number such as «1952 сп» or «высота 1955».
+  if (FREE_TEXT_FIELDS.has(key) && items.some((item) => POST_PERIOD_DATE_TEXT.test(item))) return null;
   return [...new Set(items)].join("; ");
 }
 
@@ -727,17 +734,14 @@ for (const sameName of byKey.values()) {
 const SITE_VARIANT = /^(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог)/;
 const existingFiles = readdirSync(peopleDir).filter((name) => name.endsWith(".json"));
 const existing = new Map();
-// A second run over its own output would number every profile again.
-const alreadyImported = existingFiles.some((name) => readFileSync(path.join(peopleDir, name), "utf8").includes('"method": "pamyat-naroda-import"'));
-if (alreadyImported && !dryRun) {
-  throw new Error("Профили «Памяти народа» уже импортированы; откатите их перед повторным запуском");
-}
+let alreadyImported = false;
 const existingByKey = new Map();
 const existingByPlace = new Map();
 let maxPersonNumber = 0;
 for (const file of existingFiles) {
   const person = JSON.parse(readFileSync(path.join(peopleDir, file), "utf8"));
   existing.set(person.personId, { person, file });
+  if (person.profileOrigin?.method === "pamyat-naroda-import") alreadyImported = true;
   maxPersonNumber = Math.max(maxPersonNumber, Number(person.personId.slice(1)) || 0);
   const parts = String(person.displayName ?? "").split(/\s+/);
   const surname = norm(person.surname?.normalized ?? parts.at(-1));
@@ -756,6 +760,11 @@ for (const file of existingFiles) {
     if (!indexed || /governorate|region|oblast|krai|uezd|district|asr/.test(indexed.placeId)) continue;
     existingByPlace.set(indexed.placeId, [...new Set([...(existingByPlace.get(indexed.placeId) ?? []), person.personId])]);
   }
+}
+
+// A second run over its own output would number every profile again.
+if (alreadyImported && !dryRun) {
+  throw new Error("Профили «Памяти народа» уже импортированы; откатите их перед повторным запуском");
 }
 
 function deathYear(person) {
@@ -778,7 +787,9 @@ clusters.sort((left, right) => {
     sourceIdOf(left).localeCompare(sourceIdOf(right));
 });
 
-let nextPersonNumber = maxPersonNumber + 1;
+const firstIdArgument = process.argv.find((argument) => argument.startsWith("--first-id="));
+let nextPersonNumber = firstIdArgument ? Number(firstIdArgument.split("=")[1]) : maxPersonNumber + 1;
+const firstPersonNumber = nextPersonNumber;
 const newPeople = [];
 const updatedPeople = new Map();
 const records = [];
@@ -808,6 +819,9 @@ for (const cluster of clusters) {
   if (!named(cluster.facts)) continue;
   if (cluster.existingMatch) cluster.personId = cluster.existingMatch;
   else cluster.personId = `P${nextPersonNumber++}`;
+}
+for (let number = firstPersonNumber; number < nextPersonNumber; number += 1) {
+  if (existing.has(`P${number}`)) throw new Error(`Номер P${number} уже занят; выберите другой --first-id`);
 }
 
 function distinct(values) {
@@ -1214,7 +1228,7 @@ const report = {
   ...linkStats,
   eventCounts,
   placeCounts,
-  firstNewPersonId: `P${maxPersonNumber + 1}`,
+  firstNewPersonId: `P${firstPersonNumber}`,
   lastNewPersonId: `P${nextPersonNumber - 1}`,
   linkedExisting: [...updatedPeople.keys()],
   ...(process.argv.includes("--debug") ? {
