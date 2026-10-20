@@ -1,29 +1,74 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
 import { leafletInteractionOptions } from "@/lib/leaflet-interactions";
 
-const points = [
-  {
-    name: "Амфилохия",
-    detail: "Современный город · название с 21 ноября 1908 года",
-    latitude: 38.86342,
-    longitude: 21.16667,
-    kind: "modern",
+const copy = defineCopy({
+  modernName: "Амфилохия",
+  modernDetail: "Современный город · название с 21 ноября 1908 года",
+  ancientName: "Аргос Амфилохийский",
+  ancientDetail: "Ориентировочная локализация древнего города",
+  leafletTitle: "Открыть сайт Leaflet в новой вкладке",
+  region: "Западная Греция",
+  place: "Амбракийский залив",
+  label: "Интерактивная карта Западной Греции: Амфилохия и ориентировочная локализация Аргоса Амфилохийского",
+}, {
+  en: {
+    modernName: "Amfilochia",
+    modernDetail: "Modern town · name since 21 November 1908",
+    ancientName: "Amphilochian Argos",
+    ancientDetail: "Approximate location of the ancient city",
+    leafletTitle: "Open the Leaflet website in a new tab",
+    region: "Western Greece",
+    place: "Ambracian Gulf",
+    label: "Interactive map of Western Greece: Amfilochia and the approximate location of Amphilochian Argos",
   },
-  {
-    name: "Аргос Амфилохийский",
-    detail: "Ориентировочная локализация древнего города",
-    latitude: 38.935912,
-    longitude: 21.180267,
-    kind: "ancient",
+  uk: {
+    modernName: "Амфілохія",
+    modernDetail: "Сучасне місто · назва з 21 листопада 1908 року",
+    ancientName: "Аргос Амфілохійський",
+    ancientDetail: "Орієнтовна локалізація давнього міста",
+    leafletTitle: "Відкрити сайт Leaflet у новій вкладці",
+    region: "Західна Греція",
+    place: "Амбракійська затока",
+    label: "Інтерактивна мапа Західної Греції: Амфілохія та орієнтовна локалізація Аргоса Амфілохійського",
   },
-] as const;
+  be: {
+    modernName: "Амфілохія",
+    modernDetail: "Сучасны горад · назва з 21 лістапада 1908 года",
+    ancientName: "Аргас Амфілохійскі",
+    ancientDetail: "Арыентыровачная лакалізацыя старажытнага горада",
+    leafletTitle: "Адкрыць сайт Leaflet у новай укладцы",
+    region: "Заходняя Грэцыя",
+    place: "Амбракійскі заліў",
+    label: "Інтэрактыўная карта Заходняй Грэцыі: Амфілохія і арыентыровачная лакалізацыя Аргаса Амфілохійскага",
+  },
+});
 
 export function AmphilochiaOpenStreetMap() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const text = copy[useLocale()];
 
   useEffect(() => {
+    const points = [
+      {
+        name: text.modernName,
+        detail: text.modernDetail,
+        latitude: 38.86342,
+        longitude: 21.16667,
+        kind: "modern",
+      },
+      {
+        name: text.ancientName,
+        detail: text.ancientDetail,
+        latitude: 38.935912,
+        longitude: 21.180267,
+        kind: "ancient",
+      },
+    ] as const;
+
     let active = true;
     let map: import("leaflet").Map | undefined;
 
@@ -40,7 +85,7 @@ export function AmphilochiaOpenStreetMap() {
       });
 
       map.attributionControl.setPrefix(
-        '<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="Открыть сайт Leaflet в новой вкладке">Leaflet</a>',
+        `<a href="https://leafletjs.com/" target="_blank" rel="noreferrer" title="${text.leafletTitle}">Leaflet</a>`,
       );
 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -91,8 +136,8 @@ export function AmphilochiaOpenStreetMap() {
         const element = L.DomUtil.create("div", "amphilochia-map-context");
         const region = document.createElement("strong");
         const place = document.createElement("span");
-        region.textContent = "Западная Греция";
-        place.textContent = "Амбракийский залив";
+        region.textContent = text.region;
+        place.textContent = text.place;
         element.append(region, place);
         return element;
       };
@@ -105,14 +150,14 @@ export function AmphilochiaOpenStreetMap() {
       active = false;
       map?.remove();
     };
-  }, []);
+  }, [text]);
 
   return (
     <div
       className="amphilochia-map-canvas"
       ref={containerRef}
       role="region"
-      aria-label="Интерактивная карта Западной Греции: Амфилохия и ориентировочная локализация Аргоса Амфилохийского"
+      aria-label={text.label}
     />
   );
 }

@@ -1,3 +1,35 @@
+"use client";
+
+// A client component so every map (server or client) can render it without
+// threading the locale through props.
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
+
+const copy = defineCopy(
+  {
+    yandex: "Яндекс Карты",
+    navLabel: (name: string) => `${name}: открыть на карте`,
+    linkTitle: (name: string, service: string) => `Открыть «${name}» в ${service} — новая вкладка`,
+  },
+  {
+    en: {
+      yandex: "Yandex Maps",
+      navLabel: (name) => `${name}: open on a map`,
+      linkTitle: (name, service) => `Open “${name}” in ${service} (new tab)`,
+    },
+    uk: {
+      yandex: "Яндекс Карти",
+      navLabel: (name) => `${name}: відкрити на мапі`,
+      linkTitle: (name, service) => `Відкрити «${name}» у ${service} — нова вкладка`,
+    },
+    be: {
+      yandex: "Яндэкс Карты",
+      navLabel: (name) => `${name}: адкрыць на карце`,
+      linkTitle: (name, service) => `Адкрыць «${name}» у ${service} — новая ўкладка`,
+    },
+  },
+);
+
 type PlaceMapLinksProps = {
   name: string;
   searchQuery?: string;
@@ -8,7 +40,7 @@ type PlaceMapLinksProps = {
 
 const services = [
   { key: "google", label: "Google Maps" },
-  { key: "yandex", label: "Яндекс Карты" },
+  { key: "yandex", label: null },
   { key: "osm", label: "OpenStreetMap" },
 ] as const;
 
@@ -47,12 +79,14 @@ function buildLinks({
 }
 
 export function PlaceMapLinks(props: PlaceMapLinksProps) {
+  const text = copy[useLocale()];
   const links = buildLinks(props);
 
   return (
-    <nav className="map-external-links" aria-label={`${props.name}: открыть на карте`}>
+    <nav className="map-external-links" aria-label={text.navLabel(props.name)}>
       {services.map((service) => {
-        const title = `Открыть «${props.name}» в ${service.label} — новая вкладка`;
+        const label = service.label ?? text.yandex;
+        const title = text.linkTitle(props.name, label);
         return (
           <a
             href={links[service.key]}
@@ -62,7 +96,7 @@ export function PlaceMapLinks(props: PlaceMapLinksProps) {
             title={title}
             aria-label={title}
           >
-            <span>{service.label}</span>
+            <span>{label}</span>
             <ExternalLinkIcon />
           </a>
         );

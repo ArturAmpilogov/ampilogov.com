@@ -1,10 +1,14 @@
 "use client";
 
-import Link from "next/link";
+import { localeTags } from "@/i18n/config";
+import { useLocale } from "@/i18n/client";
+import Link from "@/i18n/link";
+import { familyTreeCopy } from "@/components/family-tree.copy";
+import { regionNames } from "@/components/family-tree.regions";
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent, type WheelEvent } from "react";
 import type { FamilyTreeDirectory } from "@/lib/genealogy";
 
-import { layoutPeople, NODE_W, NODE_H, YEAR_HEIGHT, centuryOf, centuryLabel, regionsOf, splitTreeName, type PositionedPerson } from "@/lib/family-tree-layout";
+import { layoutPeople, NODE_W, NODE_H, YEAR_HEIGHT, centuryOf, regionsOf, splitTreeName, type PositionedPerson } from "@/lib/family-tree-layout";
 type Transform = { x: number; y: number; scale: number };
 
 function treeStart(scene: ReturnType<typeof layoutPeople>): Transform {
@@ -15,6 +19,10 @@ function treeStart(scene: ReturnType<typeof layoutPeople>): Transform {
 }
 
 export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
+  const locale = useLocale();
+  const text = familyTreeCopy[locale];
+  const centuryLabel = text.century;
+  const regionName = useCallback((region: string) => (locale === "ru" ? region : regionNames[locale][region] ?? region), [locale]);
   const scene = useMemo(() => layoutPeople(directory), [directory]);
   const [transform, setTransform] = useState<Transform>(() => treeStart(scene));
   const [focusedId, setFocusedId] = useState<string | null>(null);
@@ -26,7 +34,7 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
   // Phones only: centuries, region and browsing fold away so the canvas gets the screen.
   const [filtersOpen, setFiltersOpen] = useState(false);
   const regionsById = useMemo(() => new Map(scene.people.map((person) => [person.personId, regionsOf(person.places)])), [scene.people]);
-  const regions = useMemo(() => [...new Set([...regionsById.values()].flat())].sort((a, b) => a.localeCompare(b, "ru")), [regionsById]);
+  const regions = useMemo(() => [...new Set([...regionsById.values()].flat())].sort((a, b) => regionName(a).localeCompare(regionName(b), localeTags[locale])), [locale, regionName, regionsById]);
   const matchingPeople = useMemo(() => scene.people.filter((person) =>
     (selectedCentury === null || (selectedCentury === 0 ? person.timelineYear === null : person.timelineYear !== null && centuryOf(person.timelineYear) === selectedCentury)) &&
     (!selectedRegion || regionsById.get(person.personId)!.includes(selectedRegion))
@@ -79,14 +87,14 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
     person.y * transform.scale + transform.y < viewport.height
   ), [visiblePeople, transform, viewport]);
   const visibleEras = [...new Set(onscreenPeople.map((person) => person.timelineYear ? centuryOf(person.timelineYear) : 0))]
-    .sort((a, b) => a - b).map((century) => century ? centuryLabel(century) : "Без даты").join(" · ");
+    .sort((a, b) => a - b).map((century) => century ? centuryLabel(century) : text.noDate).join(" · ");
   const visibleRegions = useMemo(() => {
     const counts = new Map<string, number>();
     for (const person of onscreenPeople) {
       for (const region of regionsById.get(person.personId)!) counts.set(region, (counts.get(region) ?? 0) + 1);
     }
-    return [...counts].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([region]) => region);
-  }, [onscreenPeople, regionsById]);
+    return [...counts].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([region]) => regionName(region));
+  }, [onscreenPeople, regionName, regionsById]);
   const reset = useCallback(() => {
     const start = treeStart(scene);
     setTransform({ ...start, x: viewport.width / 2 - (scene.primaryAnchor?.x ?? NODE_W / 2) });
@@ -176,49 +184,49 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
 
   const groupActive = selectedCentury !== null || Boolean(selectedRegion);
   const activeFilterCount = Number(selectedCentury !== null) + Number(Boolean(selectedRegion));
-  return <section className={`tree-workspace${filtersOpen ? " is-filters-open" : ""}${groupActive ? " is-group-active" : ""}`} aria-label="Интерактивное генеалогическое дерево">
-    <div className="tree-tools" aria-label="Управление деревом">
+  return <section className={`tree-workspace${filtersOpen ? " is-filters-open" : ""}${groupActive ? " is-group-active" : ""}`} aria-label={text.workspace}>
+    <div className="tree-tools" aria-label={text.tools}>
       <div className="tree-tools__left">
-        <span className="tree-total">{directory.people.length.toLocaleString("ru")} человек · {directory.range.minYear}–{directory.range.maxYear}</span>
+        <span className="tree-total">{text.total(directory.people.length, directory.people.length.toLocaleString(locale === "ru" ? "ru" : localeTags[locale]), `${directory.range.minYear}–${directory.range.maxYear}`)}</span>
         <div className="tree-search">
-          <label className="sr-only" htmlFor="tree-search">Найти человека в дереве</label>
-          <input id="tree-search" value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === "Escape") setQuery(""); }} placeholder="Имя, фамилия или место" autoComplete="off" />
+          <label className="sr-only" htmlFor="tree-search">{text.searchLabel}</label>
+          <input id="tree-search" value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === "Escape") setQuery(""); }} placeholder={text.searchPlaceholder} autoComplete="off" />
           {query.trim().length >= 2 ? <div className="tree-search__results">
-            {searchResults.length ? searchResults.map((person) => <button type="button" key={person.personId} onClick={() => { setSelectedCentury(null); setSelectedRegion(""); focusPerson(person); }}><strong>{person.displayName}</strong><small>{person.timelineYear ?? "Дата не установлена"} · {regionsById.get(person.personId)!.join(" · ")}</small></button>) : <p role="status">Никого не найдено. Попробуйте часть имени.</p>}
+            {searchResults.length ? searchResults.map((person) => <button type="button" key={person.personId} onClick={() => { setSelectedCentury(null); setSelectedRegion(""); focusPerson(person); }}><strong>{person.displayName}</strong><small>{person.timelineYear ?? text.dateUnknown} · {regionsById.get(person.personId)!.map(regionName).join(" · ")}</small></button>) : <p role="status">{text.nobodyFound}</p>}
           </div> : null}
         </div>
-        <button type="button" className="tree-filters-toggle" aria-expanded={filtersOpen} aria-controls="tree-navigation" onClick={() => setFiltersOpen((open) => !open)}>Фильтры{activeFilterCount ? <span className="tree-filters-toggle__count"><span className="sr-only">, активно: </span>{activeFilterCount}</span> : null}</button>
+        <button type="button" className="tree-filters-toggle" aria-expanded={filtersOpen} aria-controls="tree-navigation" onClick={() => setFiltersOpen((open) => !open)}>{text.filters}{activeFilterCount ? <span className="tree-filters-toggle__count"><span className="sr-only">{text.activeFilters}</span>{activeFilterCount}</span> : null}</button>
       </div>
       <div className="tree-tools__zoom">
-        <button type="button" onClick={reset}>К началу</button>
-        <button type="button" onClick={focusSingletons}>Без связей</button>
-        <button type="button" onClick={() => zoom(-0.16)} aria-label="Уменьшить">−</button>
-        <button type="button" onClick={() => zoom(1 - transform.scale)} title="Вернуть читаемый масштаб" aria-label="Масштаб 100 процентов">{Math.round(transform.scale * 100)}%</button>
-        <button type="button" onClick={() => zoom(0.16)} aria-label="Увеличить">+</button>
+        <button type="button" onClick={reset}>{text.toStart}</button>
+        <button type="button" onClick={focusSingletons}>{text.unlinked}</button>
+        <button type="button" onClick={() => zoom(-0.16)} aria-label={text.zoomOut}>−</button>
+        <button type="button" onClick={() => zoom(1 - transform.scale)} title={text.zoomResetTitle} aria-label={text.zoomResetLabel}>{Math.round(transform.scale * 100)}%</button>
+        <button type="button" onClick={() => zoom(0.16)} aria-label={text.zoomIn}>+</button>
       </div>
     </div>
-    <nav id="tree-navigation" className="tree-navigation" aria-label="Навигация по векам и регионам">
-      <div className="tree-eras" aria-label="Века">
-        <button type="button" aria-pressed={selectedCentury === null} onClick={() => goToGroup(null, selectedRegion)}>Все века</button>
+    <nav id="tree-navigation" className="tree-navigation" aria-label={text.navigation}>
+      <div className="tree-eras" aria-label={text.centuries}>
+        <button type="button" aria-pressed={selectedCentury === null} onClick={() => goToGroup(null, selectedRegion)}>{text.allCenturies}</button>
         {centuries.map((century) => {
           const count = scene.people.filter((person) => person.timelineYear !== null && centuryOf(person.timelineYear) === century && (!selectedRegion || regionsById.get(person.personId)!.includes(selectedRegion))).length;
           return <button type="button" key={century} aria-pressed={selectedCentury === century} disabled={!count} onClick={() => goToGroup(century, selectedRegion)}>{centuryLabel(century)} <small>{count}</small></button>;
         })}
-        <button type="button" aria-pressed={selectedCentury === 0} onClick={() => goToGroup(0, selectedRegion)}>Без даты</button>
+        <button type="button" aria-pressed={selectedCentury === 0} onClick={() => goToGroup(0, selectedRegion)}>{text.noDate}</button>
       </div>
       <div className="tree-browse">
-        <label>Регион <select aria-label="Регион" value={selectedRegion} onChange={(event) => goToGroup(selectedCentury, event.target.value)}><option value="">Все регионы</option>{regions.map((region) => <option key={region} value={region}>{region}</option>)}</select></label>
+        <label>{text.region} <select aria-label={text.region} value={selectedRegion} onChange={(event) => goToGroup(selectedCentury, event.target.value)}><option value="">{text.allRegions}</option>{regions.map((region) => <option key={region} value={region}>{regionName(region)}</option>)}</select></label>
         {groupActive ? <div className="tree-browse__matches">
-          <button type="button" aria-label="Предыдущий человек выбранного века и региона" disabled={browseIndex === 0 || !matchingPeople.length} onClick={() => goToGroup(selectedCentury, selectedRegion, browseIndex - 1)}>←</button>
-          <span role="status">{matchingPeople.length ? `${browseIndex + 1} из ${matchingPeople.length}` : "Нет людей с такой датой и регионом"}</span>
-          <button type="button" aria-label="Следующий человек выбранного века и региона" disabled={browseIndex >= matchingPeople.length - 1} onClick={() => goToGroup(selectedCentury, selectedRegion, browseIndex + 1)}>→</button>
-        </div> : <span className="tree-browse__help">Выберите век, чтобы найти людей в любой ветви</span>}
+          <button type="button" aria-label={text.previous} disabled={browseIndex === 0 || !matchingPeople.length} onClick={() => goToGroup(selectedCentury, selectedRegion, browseIndex - 1)}>←</button>
+          <span role="status">{matchingPeople.length ? text.position(browseIndex + 1, matchingPeople.length) : text.noMatches}</span>
+          <button type="button" aria-label={text.next} disabled={browseIndex >= matchingPeople.length - 1} onClick={() => goToGroup(selectedCentury, selectedRegion, browseIndex + 1)}>→</button>
+        </div> : <span className="tree-browse__help">{text.browseHelp}</span>}
       </div>
     </nav>
-    <div ref={viewportRef} className="tree-viewport" tabIndex={0} aria-label="Полотно дерева. Стрелки перемещают, плюс и минус меняют масштаб" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown + - 0" onKeyDown={onKeyDown} onWheel={onWheel} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
+    <div ref={viewportRef} className="tree-viewport" tabIndex={0} aria-label={text.canvas} aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown + - 0" onKeyDown={onKeyDown} onWheel={onWheel} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}>
       <div className="tree-canvas" style={{ width: scene.width, height: scene.height, transform: `translate(${transform.x}px, ${transform.y}px) scale(${transform.scale})` }}>
         {centuries.map((century) => <div className="tree-century" key={century} style={{ top: 64 + ((century - 1) * 100 + 1 - directory.range.minYear) * YEAR_HEIGHT, height: Math.min(100, directory.range.maxYear - (century - 1) * 100) * YEAR_HEIGHT }} />)}
-        <div className="tree-singletons-heading" style={{ left: scene.isolatedStartX, top: 24 }}>Без установленных родственных связей</div>
+        <div className="tree-singletons-heading" style={{ left: scene.isolatedStartX, top: 24 }}>{text.singletonsHeading}</div>
         <svg className="tree-links" width={scene.width} height={scene.height} aria-hidden="true">
           {scene.people.flatMap((child) => child.parentIds.map((parentId) => {
             const parent = byId.get(parentId); if (!parent) return null;
@@ -233,23 +241,23 @@ export function FamilyTree({ directory }: { directory: FamilyTreeDirectory }) {
         </svg>
         {visiblePeople.map((person) => {
           const name = splitTreeName(person.displayName);
-          const region = regionsById.get(person.personId)!.join(" · ");
-          const birth = person.life.birth !== "?" ? person.life.birth : "Рождение: дата неизвестна";
-          return <Link href={`/people/${encodeURIComponent(person.personId)}`} target="_blank" rel="noopener noreferrer" prefetch={false} key={person.personId} aria-label={`${person.displayName}. ${birth}. ${region}. Открыть профиль в новой вкладке`} title={`${person.displayName}\n${person.places.join("; ") || region}\nОткрыть профиль в новой вкладке`} className={`tree-person ${person.isolated ? "is-isolated" : ""} ${(activeId || focusedId) === person.personId ? "is-active" : ""}`} style={{ left: person.x, top: person.y, width: NODE_W, height: NODE_H }} onPointerEnter={() => setActiveId(person.personId)} onPointerLeave={() => setActiveId(null)} onFocus={() => setActiveId(person.personId)} onBlur={() => setActiveId(null)}>
-            <span className="tree-person__meta">{person.timelineYear ? `${centuryLabel(centuryOf(person.timelineYear))} · ${person.timelineYear}` : "Век не установлен"}<span aria-hidden="true">↗</span></span>
+          const region = regionsById.get(person.personId)!.map(regionName).join(" · ");
+          const birth = person.life.birth !== "?" ? person.life.birth : text.birthUnknown;
+          return <Link href={`/people/${encodeURIComponent(person.personId)}`} target="_blank" rel="noopener noreferrer" prefetch={false} key={person.personId} aria-label={`${person.displayName}. ${birth}. ${region}. ${text.openProfile}`} title={`${person.displayName}\n${person.places.join("; ") || region}\n${text.openProfile}`} className={`tree-person ${person.isolated ? "is-isolated" : ""} ${(activeId || focusedId) === person.personId ? "is-active" : ""}`} style={{ left: person.x, top: person.y, width: NODE_W, height: NODE_H }} onPointerEnter={() => setActiveId(person.personId)} onPointerLeave={() => setActiveId(null)} onFocus={() => setActiveId(person.personId)} onBlur={() => setActiveId(null)}>
+            <span className="tree-person__meta">{person.timelineYear ? `${centuryLabel(centuryOf(person.timelineYear))} · ${person.timelineYear}` : text.centuryUnknown}<span aria-hidden="true">↗</span></span>
             <strong className={`tree-person__name${name.givenName.length > 45 ? " tree-person__name--long" : ""}`}>{name.givenName || name.surname}</strong>
             {name.surname && name.givenName ? <span className="tree-person__surname">{name.surname}</span> : null}
             <small className="tree-person__dates">{birth}{person.life.death !== "?" ? ` — ${person.life.death}` : ""}</small>
             <span className="tree-person__region">{region}</span>
-            {person.needsReview ? <i title="Связь или сведения требуют проверки" /> : null}
+            {person.needsReview ? <i title={text.needsReview} /> : null}
           </Link>;
         })}
       </div>
-      <div className="tree-location" title={[visibleEras, ...visibleRegions].join(" · ")}><strong>{visibleEras}</strong>{visibleRegions.length ? ` · ${visibleRegions.join(" · ")}` : "Здесь нет карточек — выберите век или найдите человека"}</div>
+      <div className="tree-location" title={[visibleEras, ...visibleRegions].join(" · ")}><strong>{visibleEras}</strong>{visibleRegions.length ? ` · ${visibleRegions.join(" · ")}` : text.emptyView}</div>
       <div className="tree-century-ruler" aria-hidden="true">
         {visibleCenturyRuler.map(({ century, y }) => <span key={century} style={{ top: y }}>{centuryLabel(century)}</span>)}
       </div>
     </div>
-    <div className="tree-footer"><span>Век — по рождению или первой известной дате. Положение ветвей приблизительное. Регионы — по указанным местам.</span><span>Колесо — масштаб · тяните для перемещения · профиль ↗ в новой вкладке</span></div>
+    <div className="tree-footer"><span>{text.footerNote}</span><span>{text.footerControls}</span></div>
   </section>;
 }

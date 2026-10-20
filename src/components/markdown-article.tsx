@@ -29,21 +29,57 @@ import { PrilukiScribePrelude } from "@/components/priluki-scribe-prelude";
 import { SourceExcerpt } from "@/components/source-excerpt";
 import { StoryMap } from "@/components/story-map";
 import { SurnameVariantsEvidence } from "@/components/surname-variants-evidence";
+import { defineCopy } from "@/i18n/copy";
+import { localizeHref } from "@/i18n/routing";
+import { getLocale } from "@/i18n/server";
 import { getPublishedSourceIds, resolveDocumentUrl } from "@/lib/docs";
+
+const copy = defineCopy({
+  imageAlt: "Фотокопия документа",
+  tableLabel: "Таблица с горизонтальной прокруткой",
+  tableHint: "Таблица · проведите в сторону →",
+  notesTitle: "Для исследователей",
+  notesSubtitle: "Источники, оговорки и открытые вопросы этой главы",
+}, {
+  en: {
+    imageAlt: "Photocopy of the document",
+    tableLabel: "Horizontally scrolling table",
+    tableHint: "Table · swipe sideways →",
+    notesTitle: "For researchers",
+    notesSubtitle: "Sources, caveats and open questions of this chapter",
+  },
+  uk: {
+    imageAlt: "Фотокопія документа",
+    tableLabel: "Таблиця з горизонтальним прокручуванням",
+    tableHint: "Таблиця · проведіть убік →",
+    notesTitle: "Для дослідників",
+    notesSubtitle: "Джерела, застереження та відкриті питання цього розділу",
+  },
+  be: {
+    imageAlt: "Фотакопія дакумента",
+    tableLabel: "Табліца з гарызантальнай пракруткай",
+    tableHint: "Табліца · правядзіце ўбок →",
+    notesTitle: "Для даследчыкаў",
+    notesSubtitle: "Крыніцы, агаворкі і адкрытыя пытанні гэтага раздзела",
+  },
+});
 
 const RESEARCH_NOTES_MARKER = "{{RESEARCH_NOTES}}";
 
 export function MarkdownArticle({ content, sourcePath }: { content: string; sourcePath: string }) {
+  const locale = getLocale();
+  const text = copy[locale];
   const headingText = (children: ReactNode) =>
     Array.isArray(children) ? children.join("") : String(children ?? "");
 
   const components: Components = {
     a: ({ href, children, ...props }) => {
-      const resolvedHref = resolveDocumentUrl(sourcePath, href);
+      const documentHref = resolveDocumentUrl(sourcePath, href);
+      const resolvedHref = documentHref ? localizeHref(locale, documentHref) : documentHref;
       // Links to unpublished working notes keep their text but lose the link.
       if (href && !resolvedHref) return <>{children}</>;
       const external = resolvedHref?.startsWith("http");
-      const sourceReference = resolvedHref?.startsWith("/read/research/sources#s-")
+      const sourceReference = documentHref?.startsWith("/read/research/sources#s-")
         && /^S-[A-Z0-9-]+$/i.test(headingText(children).trim());
       return (
         <a
@@ -72,7 +108,7 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
           <figure className="article-figure">
             <img
               src={src ? resolveDocumentUrl(sourcePath, src) : undefined}
-              alt={alt ?? "Фотокопия документа"}
+              alt={alt ?? text.imageAlt}
             />
             {caption ? <figcaption>{caption}</figcaption> : null}
           </figure>
@@ -85,18 +121,18 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
       <img
         {...props}
         src={typeof src === "string" ? resolveDocumentUrl(sourcePath, src) : undefined}
-        alt={alt ?? "Фотокопия документа"}
+        alt={alt ?? text.imageAlt}
       />
     ),
     table: ({ children, ...props }) => (
       <div
         className="markdown-table-scroll"
         role="region"
-        aria-label="Таблица с горизонтальной прокруткой"
+        aria-label={text.tableLabel}
         tabIndex={0}
       >
         <span className="markdown-table-scroll__hint" aria-hidden="true">
-          Таблица · проведите в сторону →
+          {text.tableHint}
         </span>
         <table {...props}>{children}</table>
       </div>
@@ -178,8 +214,8 @@ export function MarkdownArticle({ content, sourcePath }: { content: string; sour
       {notesContent ? (
         <details className="research-notes">
           <summary>
-            <span>Для исследователей</span>
-            <small>Источники, оговорки и открытые вопросы этой главы</small>
+            <span>{text.notesTitle}</span>
+            <small>{text.notesSubtitle}</small>
           </summary>
           <div className="research-notes__body">{renderSections(notesContent, "notes")}</div>
         </details>

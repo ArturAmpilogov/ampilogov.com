@@ -64,8 +64,10 @@ export function useDirectoryUrlFilters<Status extends string>({
       else params.delete("to");
 
       const nextState = params.toString();
+      // The browser path, not usePathname(): Russian pages are rewritten to /ru internally.
+      const browserPath = window.location.pathname;
       if (nextState !== urlState) {
-        window.history.replaceState(null, "", nextState ? `${pathname}?${nextState}` : pathname);
+        window.history.replaceState(null, "", nextState ? `${browserPath}?${nextState}` : browserPath);
       }
     }, 180);
 

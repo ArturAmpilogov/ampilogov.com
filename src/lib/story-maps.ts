@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/config";
+import { storyMapTranslations } from "@/lib/story-maps.translations";
+
 export type StoryMapPlace = {
   id: string;
   name: string;
@@ -253,3 +256,25 @@ export const storyMaps: Record<string, StoryMapConfig> = {
     maxZoom: 7,
   },
 };
+
+/** The story map with its text in the given locale; Russian is the source. */
+export function getStoryMap(id: string, locale: Locale): StoryMapConfig | undefined {
+  const config = storyMaps[id];
+  if (!config || locale === "ru") return config;
+  const translation = storyMapTranslations[locale][id];
+  if (!translation) return config;
+
+  return {
+    ...config,
+    title: translation.title,
+    subtitle: translation.subtitle,
+    ariaLabel: translation.ariaLabel,
+    legend: translation.legend,
+    note: translation.note,
+    places: config.places.map((place) => {
+      const [name, detail] = translation.places[place.id] ?? [place.name, place.detail];
+      return { ...place, name, detail };
+    }),
+    routes: config.routes.map((route, index) => ({ ...route, label: translation.routes[index] ?? route.label })),
+  };
+}

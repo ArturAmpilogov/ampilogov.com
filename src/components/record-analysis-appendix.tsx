@@ -1,8 +1,44 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import { useLocale } from "@/i18n/client";
+import { defineCopy } from "@/i18n/copy";
+import Link from "@/i18n/link";
 import type { ArchiveRecordPerson } from "@/lib/genealogy";
+
+const copy = defineCopy({
+  eyebrow: "Исследовательское приложение",
+  title: "Полный разбор имён и доказательств",
+  intro: "Основная карточка показывает людей, их роли и формы имени. Подробные аргументы, конкурирующие чтения и границы уверенности загружаются только по запросу.",
+  loading: "Загружаем разбор…",
+  retry: "Повторить загрузку",
+  open: "Открыть полный разбор",
+}, {
+  en: {
+    eyebrow: "Research appendix",
+    title: "Full analysis of names and evidence",
+    intro: "The main card shows the people, their roles and the forms of their names. Detailed arguments, competing readings and the limits of certainty load only on request.",
+    loading: "Loading the analysis…",
+    retry: "Retry loading",
+    open: "Open the full analysis",
+  },
+  uk: {
+    eyebrow: "Дослідницький додаток",
+    title: "Повний розбір імен і доказів",
+    intro: "Основна картка показує людей, їхні ролі та форми імені. Докладні аргументи, конкурентні прочитання й межі впевненості завантажуються лише на запит.",
+    loading: "Завантажуємо розбір…",
+    retry: "Повторити завантаження",
+    open: "Відкрити повний розбір",
+  },
+  be: {
+    eyebrow: "Даследчы дадатак",
+    title: "Поўны разбор імёнаў і доказаў",
+    intro: "Асноўная картка паказвае людзей, іх ролі і формы імя. Падрабязныя аргументы, канкурэнтныя прачытанні і межы ўпэўненасці загружаюцца толькі па запыце.",
+    loading: "Загружаем разбор…",
+    retry: "Паўтарыць загрузку",
+    open: "Адкрыць поўны разбор",
+  },
+});
 
 type AppendixPayload = {
   sourceId: string;
@@ -16,6 +52,7 @@ export function RecordAnalysisAppendix({
   path: string;
   count: number;
 }) {
+  const text = copy[useLocale()];
   const [payload, setPayload] = useState<AppendixPayload | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "error">("idle");
 
@@ -34,22 +71,21 @@ export function RecordAnalysisAppendix({
   };
 
   return (
-    <section className="record-analysis-appendix" aria-label="Полный разбор имён и доказательств">
+    <section className="record-analysis-appendix" aria-label={text.title}>
       <header>
         <div>
-          <span className="section-label">Исследовательское приложение</span>
-          <h4>Полный разбор имён и доказательств</h4>
+          <span className="section-label">{text.eyebrow}</span>
+          <h4>{text.title}</h4>
         </div>
         <strong>{count}</strong>
       </header>
       {!payload ? (
         <div className="record-analysis-appendix__prompt">
           <p>
-            Основная карточка показывает людей, их роли и формы имени. Подробные аргументы,
-            конкурирующие чтения и границы уверенности загружаются только по запросу.
+            {text.intro}
           </p>
           <button type="button" onClick={load} disabled={state === "loading"}>
-            {state === "loading" ? "Загружаем разбор…" : state === "error" ? "Повторить загрузку" : "Открыть полный разбор"}
+            {state === "loading" ? text.loading : state === "error" ? text.retry : text.open}
           </button>
         </div>
       ) : (

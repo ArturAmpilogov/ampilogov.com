@@ -1,3 +1,7 @@
+import { sourceExcerptCopy, sourceExcerptTranslations } from "@/components/source-excerpt.copy";
+import { localizeHref } from "@/i18n/routing";
+import { getLocale } from "@/i18n/server";
+
 type SourceExcerptDefinition = {
   eyebrow: string;
   title: string;
@@ -187,8 +191,11 @@ const excerpts: Record<string, SourceExcerptDefinition> = {
 };
 
 export function SourceExcerpt({ id }: { id: string }) {
-  const excerpt = excerpts[id];
-  if (!excerpt) return null;
+  const locale = getLocale();
+  const text = sourceExcerptCopy[locale];
+  const definition = excerpts[id];
+  if (!definition) return null;
+  const excerpt = locale === "ru" ? definition : { ...definition, ...sourceExcerptTranslations[locale][id] };
 
   const [viewX, viewY, viewWidth, viewHeight] = excerpt.image.viewBox;
 
@@ -204,7 +211,7 @@ export function SourceExcerpt({ id }: { id: string }) {
         href={excerpt.sourceHref}
         target="_blank"
         rel="noreferrer"
-        aria-label={`${excerpt.title}: открыть полный источник`}
+        aria-label={text.openFullSource(excerpt.title)}
       >
         <svg
           viewBox={`${viewX} ${viewY} ${viewWidth} ${viewHeight}`}
@@ -236,11 +243,11 @@ export function SourceExcerpt({ id }: { id: string }) {
 
       <figcaption>
         <p>{excerpt.citation}</p>
-        <nav aria-label="Ссылки на источник">
-          <a href={excerpt.sourceHref} target="_blank" rel="noreferrer">Полный источник ↗</a>
-          <a href={excerpt.registryHref}>Карточка источника</a>
+        <nav aria-label={text.sourceLinks}>
+          <a href={excerpt.sourceHref} target="_blank" rel="noreferrer">{text.fullSource}</a>
+          <a href={localizeHref(locale, excerpt.registryHref)}>{text.sourceCard}</a>
         </nav>
-        <small>Фрагмент источника; подсветка строки добавлена редакцией.</small>
+        <small>{text.highlightNote}</small>
       </figcaption>
     </figure>
   );
