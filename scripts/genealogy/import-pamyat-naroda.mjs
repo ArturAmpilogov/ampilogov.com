@@ -21,11 +21,15 @@ import path from "node:path";
 const root = process.cwd();
 const harvestPath = process.argv[2];
 const dryRun = process.argv.includes("--dry-run");
+// `--families=anfilof,anfilat` adds the cards of these surname families that
+// earlier runs did not import, numbering new profiles from `--first-id`.
+const familiesArgument = process.argv.find((argument) => argument.startsWith("--families="));
+const onlyFamilies = familiesArgument ? new Set(familiesArgument.split("=")[1].split(",")) : null;
 if (!harvestPath) throw new Error("Укажите путь к выгрузке «Памяти народа»");
 
 const RETRIEVED_ON = "2026-10-20";
 const PUBLIC_END_YEAR = 1950;
-const SEARCH_ID = `pamyat-naroda-${RETRIEVED_ON}`;
+const SEARCH_ID = onlyFamilies ? `pamyat-naroda-${[...onlyFamilies].join("-")}-${RETRIEVED_ON}` : `pamyat-naroda-${RETRIEVED_ON}`;
 const sourcesDir = path.join(root, "data/genealogy/sources/pamyat-naroda");
 const peopleDir = path.join(root, "data/genealogy/people");
 const searchesDir = path.join(root, "data/genealogy/searches");
@@ -42,7 +46,11 @@ const typeIndex = harvest.meta?.typeIndex ?? {};
 const SURNAME_FAMILIES = [
   // Амилогов, Емпилогов, Емпалогов are documentary forms (surname-variants.json).
   ["ampilog", /^(?:ампилог|анпилог|антилог|ампелог|анпелог|апилог|аппилог|анпиног|анплог|анпилос|онпилог|аминлог|аменлог|анлог|анклог|анлилог|анинлог|арепилог|алеплог|анчислог|амилог|емпилог|емпалог)/],
-  ["anfilog", /^(?:анфилог|анфилоф|онфилог|онфилоф|амфилог)/],
+  ["anfilog", /^(?:анфилог|онфилог|амфилог)/],
+  // Анфилофьев and Анфилатов come from the same baptismal name Анфилофий
+  // (owner's decision of 2026-10-20).
+  ["anfilof", /^(?:анфилоф|онфилоф|анфилаф)/],
+  ["anfilat", /^(?:анфилат)/],
   ["ampilov", /^(?:ампилов|ампелов|импилов)/],
   ["anpilov", /^(?:анпилов|анпалов)/],
   ["anfilov", /^(?:анфилов|амфилов)/],
@@ -54,6 +62,7 @@ const SURNAME_FAMILIES = [
 const LINE_FORMS = [
   ["Ампилогов", "ampilog"], ["Анпилогов", "ampilog"], ["Онпилогов", "ampilog"], ["Анфилогов", "anfilog"],
   ["Онфилогов", "anfilog"], ["Ампилов", "ampilov"], ["Анпилов", "anpilov"], ["Анфилов", "anfilov"],
+  ["Анфилофьев", "anfilof"], ["Анфилатов", "anfilat"],
 ];
 function editDistance(left, right) {
   const previous = Array.from({ length: right.length + 1 }, (_, index) => index);
@@ -69,10 +78,10 @@ function editDistance(left, right) {
   return previous[right.length];
 }
 // Real surnames one letter away from the line: not misreadings of it.
-const OTHER_SURNAMES = /^(?:анфимов|анфалов|анфилатов|анфинов|анфанов|анфисов|панфилов|памфилов|танфилов|санфилов|антипов|амилов|ямпилов|анисимов)/;
+const OTHER_SURNAMES = /^(?:анфимов|анфалов|анфинов|анфанов|анфисов|панфилов|памфилов|танфилов|санфилов|антипов|амилов|ямпилов|анисимов)/;
 // When a misreading is as close to two forms, the far more frequent family
 // in the index wins (Анпилоговых in the base are ~50 times more than Анфилоговых).
-const FAMILY_PRIOR = ["ampilog", "anpilov", "ampilov", "anfilov", "anfilog"];
+const FAMILY_PRIOR = ["ampilog", "anpilov", "ampilov", "anfilov", "anfilog", "anfilof", "anfilat"];
 function ocrReading(token) {
   const reading = norm(token).replace(/[^а-я]/g, "");
   if (!reading || OTHER_SURNAMES.test(reading)) return null;
@@ -534,6 +543,14 @@ const FATE_NOTES = {
 // ---------------------------------------------------------------------------
 // Load cards
 
+// Cards already in a PN Record (any earlier run) are not imported again.
+const importedCardIds = new Set();
+if (onlyFamilies) {
+  for (const name of readdirSync(sourcesDir).filter((file) => file.endsWith(".json"))) {
+    const record = JSON.parse(readFileSync(path.join(sourcesDir, name), "utf8"));
+    for (const id of record.review?.harvest?.pamyatNarodaIds ?? []) importedCardIds.add(id);
+  }
+}
 const cards = [];
 const stats = { cards: 0, inScope: 0, ocrReadings: 0, doubtful: 0, noPublicDocs: 0 };
 const doubtfulRows = [];
@@ -579,6 +596,7 @@ for (const item of harvest.items) {
   }
   const familyCounts = families.reduce((counts, family) => ({ ...counts, [family]: (counts[family] ?? 0) + 1 }), {});
   const family = Object.entries(familyCounts).sort((a, b) => b[1] - a[1])[0][0];
+  if (onlyFamilies && (!onlyFamilies.has(family) || importedCardIds.has(`${docIndex(card)}-${docType(card)}${docId(card)}`))) continue;
   const publicDocs = docs.filter(docIsPublic);
   if (!publicDocs.length) {
     stats.noPublicDocs += 1;
@@ -731,7 +749,7 @@ for (const sameName of byKey.values()) {
 // ---------------------------------------------------------------------------
 // Existing profiles
 
-const SITE_VARIANT = /^(?:ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог)/;
+const SITE_VARIANT = /^(?:анфилат|ампилог|ампилов|импилов|амфилог|амфилов|анпилог|анпилов|анфилог|анфилоф|анфилов|онфилог|онфилоф|онпилог|антилог|анпалов|ампелог|ампелов|анпелог|анпилос|анпиног|анплог|апилог|аппилог)/;
 const existingFiles = readdirSync(peopleDir).filter((name) => name.endsWith(".json"));
 const existing = new Map();
 let alreadyImported = false;
@@ -763,7 +781,7 @@ for (const file of existingFiles) {
 }
 
 // A second run over its own output would number every profile again.
-if (alreadyImported && !dryRun) {
+if (alreadyImported && !dryRun && !onlyFamilies) {
   throw new Error("Профили «Памяти народа» уже импортированы; откатите их перед повторным запуском");
 }
 
@@ -1272,13 +1290,16 @@ writeJson(path.join(searchesDir, `${SEARCH_ID}.json`), {
   queries,
   podvigNaroda: "Наградные документы «Подвига народа» входят в выдачу «Памяти народа» (приказы, представления, картотеки награждений); номер документа «Подвига народа» сохранён в ссылках Record. Поиск «Ампилогов» на podvignaroda.ru дал 619 наградных документов; отдельно они не выгружались.",
   scope: {
+    ...(onlyFamilies ? {
+      addition: `Догрузка семейств ${[...onlyFamilies].join(", ")}: Анфилофьев и Анфилатов включены в фамильный ряд по решению владельца 2026-10-20 (общий источник — крестильное имя Анфилофий). Карточки, уже вошедшие в PN-Records, не повторяются; основной журнал — searches/pamyat-naroda-2026-10-20.json.`,
+    } : {}),
     decision: "Импортированы все формы фамильного ряда: Ампилогов, Анпилогов, Анфилогов, Онпилогов, Онфилогов, Ампилов, Анпилов, Анфилов и OCR-формы индекса (Антилогов, Ампелогов, Апилогов и др.). Формы вроде «Ашпилогов», «Ампилагов», «Аннилогов» по решению владельца (2026-10-20) считаются ошибками распознавания: они отнесены к ближайшей форме ряда (расстояние Левенштейна не больше 2), а прочтение индекса сохранено в Record.",
     ocrReadingCards: stats.ocrReadings,
     publicCutoff: "Документы после 1950 года (юбилейная картотека 1985 года, послевоенные награды) и поля с датами после 1950 года в Records не переносились.",
   },
   summary: report,
   results: searchRows,
-  doubtfulSurnameForms: doubtfulRows,
+  doubtfulSurnameForms: onlyFamilies ? [] : doubtfulRows,
   onlyAfter1950: postPeriodRows,
   notCovered: [
     "Карточки, чья фамилия далека от всех форм ряда (больше 2 правок), перечислены в doubtfulSurnameForms без Records.",
