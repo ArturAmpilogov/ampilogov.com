@@ -11,12 +11,18 @@ import type { RecordsDirectoryIndex } from "@/lib/directory-index-types";
 // reader without an entry there deploys fine and then 500s on ENOENT.
 let recordsIndex: RecordsDirectoryIndex | null = null;
 
-export function getRecordsDirectoryIndex() {
-  const currentIndex = JSON.parse(readFileSync(
+function readRecordsDirectoryIndex() {
+  return JSON.parse(readFileSync(
     path.join(process.cwd(), "data/genealogy/indexes/records-directory.json"),
     "utf8",
   )) as RecordsDirectoryIndex;
-  if (process.env.NODE_ENV !== "production") return currentIndex;
-  recordsIndex ??= currentIndex;
+}
+
+// The index is ~20 MB and every record page reads it, so production parses it
+// once per process: parsing it per page made the build quadratic in the number
+// of records. The dev server rereads it to pick up regenerated indexes.
+export function getRecordsDirectoryIndex() {
+  if (process.env.NODE_ENV !== "production") return readRecordsDirectoryIndex();
+  recordsIndex ??= readRecordsDirectoryIndex();
   return recordsIndex;
 }
