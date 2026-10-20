@@ -87,7 +87,7 @@ export const chapterMetaTranslations: Partial<Record<Exclude<Locale, "ru">, Chap
           from: "1826",
           to: "1887",
           label: "A recognised ancient branch",
-          note: "The Anfilogovs were entered in Part VI of the Kursk genealogy book; the Heraldry Office files lead to the records of the proven branch.",
+          note: "Anfilogovs were entered in Part VI of the Kursk genealogy book; the Heraldry Office files lead to the records of the proven branch.",
         },
       },
       "book/10-anpilogovo-kursk": {
@@ -105,7 +105,7 @@ export const chapterMetaTranslations: Partial<Record<Exclude<Locale, "ru">, Chap
           from: "1647",
           to: "1811",
           label: "Anpilovka",
-          note: "The servitors of Oskol, the mill at Sorokino and the odnodvortsy village of the Anpilovs near the village of Bor.",
+          note: "The servitors of Oskol, the mill at Sorokino and the odnodvortsy village of Anpilovs near the village of Bor.",
         },
       },
       "book/12-new-lands": {
