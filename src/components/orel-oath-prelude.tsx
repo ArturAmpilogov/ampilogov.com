@@ -59,15 +59,15 @@ const copy = defineCopy({
 const oathRecords = [
   {
     src: "/evidence/rgada/f210-op6d-d54/crops/grigory-1160.jpg",
-    full: "/archive/evidence/rgada/f210-op6d-d54/P1290047.JPG",
+    full: "/evidence/rgada/f210-op6d-d54/P1290047.JPG",
   },
   {
     src: "/evidence/rgada/f210-op6d-d54/crops/fedor-1161.jpg",
-    full: "/archive/evidence/rgada/f210-op6d-d54/P1290048.JPG",
+    full: "/evidence/rgada/f210-op6d-d54/P1290048.JPG",
   },
   {
     src: "/evidence/rgada/f210-op6d-d54/crops/ivan-1178-ob.jpg",
-    full: "/archive/evidence/rgada/f210-op6d-d54/P1290065.JPG",
+    full: "/evidence/rgada/f210-op6d-d54/P1290065.JPG",
   },
 ];
 

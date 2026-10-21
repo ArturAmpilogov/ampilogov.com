@@ -37,6 +37,12 @@ const warnings = [];
 const candidates = [];
 
 const add = (target, code, file, message) => target.push({ code, file, message });
+// Same rule as sourceEvidenceRightsStatus in src/lib/genealogy.ts: such records
+// render their scans on /records, while src/proxy.ts hides /archive/* from visitors.
+const displayClearedStatuses = new Set(["public-domain", "open-license", "permission"]);
+const isDisplayCleared = (evidence) => evidence?.publicDisplay === true
+  && displayClearedStatuses.has(evidence.licenseStatus ?? "")
+  && /^https?:\/\//i.test(evidence.licenseUrl?.trim() ?? "");
 const reportDuplicateEntityIds = (entries, idKey, code) => {
   const owners = new Map();
   for (const { record, file } of entries) {
@@ -195,6 +201,12 @@ for (const { record: source, file } of sourceEntries) {
   }
   for (const placeId of referencedPlaceIds(source)) {
     if (!places.has(placeId)) add(errors, "unknown-place", file, `${source.sourceId} -> ${placeId}`);
+  }
+  if (isDisplayCleared(source.evidence)) {
+    const evidencePaths = new Set([source.evidence.path, ...(source.evidence.fragments ?? []).map((fragment) => fragment.path)]);
+    for (const evidencePath of [...evidencePaths].filter((value) => value?.startsWith("public/archive/"))) {
+      add(errors, "private-scan-on-public-record", file, `${source.sourceId}: ${evidencePath} скрыт прокси /archive/*, нужна копия в public/evidence/`);
+    }
   }
 }
 

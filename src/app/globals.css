@@ -2806,31 +2806,49 @@ a {
   line-height: 1.2;
 }
 
-.calendar-name-pair-image {
-  display: block;
-  overflow: hidden;
-  background: #d7d2c8;
+.markdown-body .familysearch-transcription {
+  margin: 0;
+  padding: 13px 16px 14px;
+  color: var(--ink);
+  background: var(--paper-light);
+  border: 0;
+  border-left: 3px solid var(--line);
+  font-size: inherit;
+  font-style: normal;
 }
 
-.calendar-name-pair-image img {
+.familysearch-transcription > span {
   display: block;
-  width: 100%;
-  height: auto;
-  filter: grayscale(1) contrast(1.04);
-  transition: filter 180ms ease;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.calendar-name-pair-image--source-crop img {
-  width: 103.5%;
+.markdown-body .familysearch-transcription p {
   max-width: none;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.45;
 }
 
-.calendar-name-pair-image:hover img,
-.calendar-name-pair-image:focus-visible img {
-  filter: grayscale(1) contrast(1.1);
+.familysearch-transcription mark {
+  padding: 0 0.12em;
+  color: inherit;
+  background: rgba(204, 160, 66, 0.24);
 }
 
-.markdown-body .calendar-name-pair-item p {
+.familysearch-transcription sup {
+  font-size: 0.68em;
+  line-height: 0;
+}
+
+.markdown-body .calendar-name-pair-item > p {
   max-width: none;
   margin: 9px 0 0;
   color: var(--muted);
@@ -2839,7 +2857,7 @@ a {
   line-height: 1.5;
 }
 
-.markdown-body .calendar-name-pair-item p a {
+.markdown-body .calendar-name-pair-item > p a {
   color: var(--accent);
   font-weight: 700;
   text-decoration: none;
@@ -2940,26 +2958,6 @@ a {
   line-height: 1.1;
 }
 
-.surname-variants-scan {
-  display: block;
-  overflow: hidden;
-  background: #d7d2c8;
-}
-
-.surname-variants-scan img {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: grayscale(1) contrast(1.04);
-  transition: filter 180ms ease, transform 240ms ease;
-}
-
-.surname-variants-scan:hover img,
-.surname-variants-scan:focus-visible img {
-  filter: grayscale(1) contrast(1.12);
-  transform: scale(1.008);
-}
-
 .markdown-body .surname-variants-evidence li > p {
   max-width: 720px;
   margin: 11px 0 0;
@@ -2967,6 +2965,12 @@ a {
   font-family: var(--sans);
   font-size: 0.72rem;
   line-height: 1.5;
+}
+
+.surname-variants-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
 }
 
 .markdown-body .surname-variants-source {

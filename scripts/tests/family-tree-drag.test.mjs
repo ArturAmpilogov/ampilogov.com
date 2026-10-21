@@ -7,6 +7,18 @@ import ts from 'typescript';
 import * as layout from '../../src/lib/family-tree-layout.ts';
 
 const require = createRequire(import.meta.url);
+// Copy, locale and link modules only feed labels; a permissive stub keeps the
+// test focused on the pointer handlers.
+const anyCopy = new Proxy(() => '', { get: (_, key) => key === Symbol.toPrimitive ? () => '' : anyCopy, apply: () => '' });
+const stubs = {
+  react: null,
+  '@/i18n/config': { localeTags: new Proxy({}, { get: () => 'ru-RU' }) },
+  '@/i18n/client': { useLocale: () => 'ru' },
+  '@/i18n/link': { default: 'a', __esModule: true },
+  'next/link': { default: 'a', __esModule: true },
+  '@/components/family-tree.copy': { familyTreeCopy: anyCopy },
+  '@/components/family-tree.regions': { regionNames: anyCopy },
+};
 const componentCode = ts.transpileModule(fs.readFileSync(new URL('../../src/components/family-tree.tsx', import.meta.url), 'utf8'), {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true },
 }).outputText;
@@ -25,12 +37,12 @@ for (const endEvent of ['onPointerUp', 'onPointerCancel']) {
       useMemo: factory => factory(), useCallback: callback => callback,
       useRef: current => ({ current }), useEffect() {},
     };
-    const module = { exports: {} };
+    const commonjsModule = { exports: {} };
     vm.runInNewContext(componentCode, {
-      module, exports: module.exports,
-      require: id => id === 'react' ? react : id === '@/lib/family-tree-layout' ? layout : id === 'next/link' ? { default: 'a', __esModule: true } : require(id),
+      module: commonjsModule, exports: commonjsModule.exports,
+      require: id => id === 'react' ? react : id === '@/lib/family-tree-layout' ? layout : id in stubs ? stubs[id] : require(id),
     });
-    const tree = module.exports.FamilyTree({ directory: { people: [], range: { minYear: 1483, maxYear: 1950 } } });
+    const tree = commonjsModule.exports.FamilyTree({ directory: { people: [], range: { minYear: 1483, maxYear: 1950 } } });
     const viewport = tree.props.children.find(child => child?.props?.className === 'tree-viewport');
     const initial = { ...states[0] };
     viewport.props.onPointerDown({ target: { closest: () => null }, button: 0, pointerId: 1, clientX: 100, clientY: 200, currentTarget: { setPointerCapture() {} } });
