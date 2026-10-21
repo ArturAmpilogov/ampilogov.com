@@ -31,13 +31,13 @@ export const messages = defineCopy({
 }, {
   en: {
     site: {
-      name: "The Ampilogovs",
-      titleTemplate: "%s — The Ampilogovs",
-      defaultTitle: "The Ampilogovs — a documentary history of a surname",
+      name: "Ampilogovs",
+      titleTemplate: "%s — Ampilogovs",
+      defaultTitle: "Ampilogovs — a documentary history of a surname",
       description:
         "The history of the Ampilogov, Anpilogov, Anpilov, Ampilov and Anfilogov surnames: from an ancient Greek name to the documented lives of different families.",
       wordmark: "AMPILOGOVS",
-      homeLabel: "The Ampilogovs — home",
+      homeLabel: "Ampilogovs — home",
     },
     nav: {
       label: "Main navigation",

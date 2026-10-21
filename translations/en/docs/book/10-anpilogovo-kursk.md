@@ -24,7 +24,7 @@ The odnodvortsy lived like peasants — they ploughed their own fields and paid 
 
 {{RESEARCH_NOTES}}
 
-**1642 and 1664.** Allotment book of 28 January 1642: [the record of Vasily and Gavriil](/records/PUB-KOTKOV-1977-P171-P172-VASILY-GAVRILA-ANPILOGOV). In the published heading of the 1664 census the village is called Onpilogova and the landholder is Ilya Kharlanov; the heading does not list all the inhabitants on the two leaves and does not prove that the Anpilogovs had disappeared from there. [Census card](/records/PUB-RGADA-1209-1-9768-KURSK-ONPILOGOVA-1664). [S-ANPILOGOVO-1642]
+**1642 and 1664.** Allotment book of 28 January 1642: [the record of Vasily and Gavriil](/records/PUB-KOTKOV-1977-P171-P172-VASILY-GAVRILA-ANPILOGOV). In the published heading of the 1664 census the village is called Onpilogova and the landholder is Ilya Kharlanov; the heading does not list all the inhabitants on the two leaves and does not prove that Anpilogovs had disappeared from there. [Census card](/records/PUB-RGADA-1209-1-9768-KURSK-ONPILOGOVA-1664). [S-ANPILOGOVO-1642]
 
 **The odnodvortsy.** As a distinct category they took shape from various groups of the southern service population at the beginning of the 18th century; the origin of any particular branch is confirmed by that branch's own documents. The poll tax, the landmilitia levy from 1723, the right to own serfs until 1840 and the reclassification as state peasants in 1866 follow a general reference on the estate ([Wikipedia](https://ru.wikipedia.org/wiki/Однодворцы)). Revision tale of 1816: [S-GAKO-184-2-380-ANPILOGOVA-1816]. [S-ODNODVORTSY]
 

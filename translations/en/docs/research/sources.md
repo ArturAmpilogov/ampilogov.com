@@ -30,7 +30,7 @@ This registry collects the sources cited in the chapters of the book: archival d
 
 ### S-GREEK-AMPHIARAOS-KRATER — Corinthian krater with the departure of Amphiaraos, State Historical Museum 81988/338
 - Type: museum object
-- Description: A Corinthian krater of about 560 BC, found in the Etruscan necropolis of Cerveteri; kept in the State Historical Museum, Moscow (GIM 81988/338; former number Berlin F 1655). The drawing of the painting comes from A. Furtwängler and K. Reichhold, *Griechische Vasenmalerei* (1904–1932), public domain (Public Domain Mark 1.0).
+- Description: A Corinthian krater of about 560 BC, found in the Etruscan necropolis of Cerveteri; kept in the State Historical Museum, Moscow (ГИМ 81988/338; former number Berlin F 1655). The drawing of the painting comes from A. Furtwängler and K. Reichhold, *Griechische Vasenmalerei* (1904–1932), public domain (Public Domain Mark 1.0).
 - Links: [the krater in the State Historical Museum catalogue](https://catalog.shm.ru/entity/OBJECT/5807017) · [a study of Amphiaraos iconography](https://pmc.ncbi.nlm.nih.gov/articles/PMC10556346/) · [drawing — Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Korinthischer_Krater,_Berlin.jpg)
 - Chapters: [Chapter 2. Amphilochos: a Name from Greek Legend](/read/book/02-greek-amphilochus)
 
@@ -124,9 +124,9 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [«Konya (Iconium)» — Encyclopaedia Iranica](https://www.iranicaonline.org/articles/konya-iconium/) · [Thonemann's article — Cambridge Core](https://www.cambridge.org/core/journals/journal-of-roman-studies/article/amphilochius-of-iconium-and-lycaonian-asceticism/01F62B3DC2E0943F54D93B80495B8ABC)
 - Chapters: [Chapter 3. Amphilochius: From the Church Calendar into Russian Speech](/read/book/03-christian-amphilochius)
 
-### S-NAME-1097 — Service Menaion of 1097, RGADA, f. 381, item 91
+### S-NAME-1097 — Service Menaion of 1097, РГАДА, f. 381, item 91
 - Type: manuscript
-- Description: A dated Novgorod manuscript of 1097, kept in RGADA, f. 381, item 91. Edition: «Служебные минеи за сентябрь, октябрь и ноябрь» [Service Menaia for September, October and November], ed. V. Jagić. St Petersburg: Printing House of the Imperial Academy of Sciences, 1886. Pp. 436–440.
+- Description: A dated Novgorod manuscript of 1097, kept in РГАДА, f. 381, item 91. Edition: «Служебные минеи за сентябрь, октябрь и ноябрь» [Service Menaia for September, October and November], ed. V. Jagić. St Petersburg: Printing House of the Imperial Academy of Sciences, 1886. Pp. 436–440.
 - Links: [description of the manuscript — St Petersburg Institute of History, RAS](https://gis.spbiiran.ru/cyrillic/cyrillic-alphabet-codices/codexes/1035) · [V. Jagić's edition, pp. 436–440 — Internet Archive](https://archive.org/details/p2sluzhebnyiamin02orthuoft/page/436/mode/2up)
 - Chapters: [Chapter 3. Amphilochius: From the Church Calendar into Russian Speech](/read/book/03-christian-amphilochius)
 
@@ -168,7 +168,7 @@ This registry collects the sources cited in the chapters of the book: archival d
 
 ### S-TVER-1540 — Cadastral book of Tver district, 1539/40
 - Type: source publication
-- Description: The cadastral book of Tver district for the year 7048 (1539/40) by the scribes Ivan Petrovich Zabolotsky and Mikhail Ivanov Usov-Tatishchev; manuscript — RGADA, f. 1209 (Pomestny Prikaz, the Service Land Chancellery), op. 1, cadastral books, book 466, fols. 1–397v. Published in «Писцовые книги Московского государства» [Cadastral Books of the Muscovite State], pt. I, sect. 2, ed. N. V. Kalachov (St Petersburg: Imperial Russian Geographical Society, 1877), p. 111.
+- Description: The cadastral book of Tver district for the year 7048 (1539/40) by the scribes Ivan Petrovich Zabolotsky and Mikhail Ivanov Usov-Tatishchev; manuscript — РГАДА, f. 1209 (Pomestny Prikaz, the Service Land Chancellery), op. 1, cadastral books, book 466, fols. 1–397v. Published in «Писцовые книги Московского государства» [Cadastral Books of the Muscovite State], pt. I, sect. 2, ed. N. V. Kalachov (St Petersburg: Imperial Russian Geographical Society, 1877), p. 111.
 - Links: [«Писцовые книги Московского государства» (Cadastral Books of the Muscovite State), p. 111 (Internet Archive)](https://archive.org/details/moscha-regia/page/n115/mode/1up)
 - Chapters: [Chapter 4. The First Records: a Name, a Household and a Village](/read/book/04-first-records)
 
@@ -194,7 +194,7 @@ This registry collects the sources cited in the chapters of the book: archival d
 
 ### S-OREL-1594 — Cadastral book of Oryol district, 1594/95
 - Type: source publication
-- Description: The cadastral book of the scribe Dementy Yakovlev and the clerk Leonty Sofonov covering the Nepolotsk, Kamensk, Korchakov, Nougorsk and Taichukov stans; manuscript — RGADA, f. 1209, op. 1, d. 329 (a 17th-century copy; old MAMYu shelfmark — cadastral book No. 399); in the printed edition it begins on p. 853, and the entries on bearers of the surname are on pp. 975, 979, 1009, 1011, 1016. Summary table of landholders: P. P. Smirnov, *Орловский уезд в конце XVI века по писцовой книге 1594–5 гг.* [Oryol District at the End of the 16th Century According to the Cadastral Book of 1594–5] (Kyiv, 1910), p. 162.
+- Description: The cadastral book of the scribe Dementy Yakovlev and the clerk Leonty Sofonov covering the Nepolotsk, Kamensk, Korchakov, Nougorsk and Taichukov stans; manuscript — РГАДА, f. 1209, op. 1, d. 329 (a 17th-century copy; old МАМЮ shelfmark — cadastral book No. 399); in the printed edition it begins on p. 853, and the entries on bearers of the surname are on pp. 975, 979, 1009, 1011, 1016. Summary table of landholders: P. P. Smirnov, *Орловский уезд в конце XVI века по писцовой книге 1594–5 гг.* [Oryol District at the End of the 16th Century According to the Cadastral Book of 1594–5] (Kyiv, 1910), p. 162.
 - Links: [Full PDF of the edition (nashi-predki.ru)](https://nashi-predki.ru/scans/piscovye_knigi_xvi_veka.pdf) · [Page-by-page scans of the edition (Internet Archive)](https://archive.org/details/moscha-regia) · [P. P. Smirnov, «Орловский уезд в конце XVI века» (Oryol District at the End of the 16th Century) — Presidential Library](https://www.prlib.ru/item/355286)
 - Chapters: [Chapter 5. The Oryol Core: Nine Landholders](/read/book/05-orel-1594-1596)
 
@@ -210,9 +210,9 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [R. I. Ovsyannikov's map of Oryol district in 1595 (dangralas.ru)](https://www.dangralas.ru/zametki/mesta/36-orlovskij-uezd-story) · [OpenStreetMap](https://www.openstreetmap.org/copyright)
 - Chapters: [Chapter 5. The Oryol Core: Nine Landholders](/read/book/05-orel-1594-1596)
 
-### S-OREL-1596 — Desyatnya of novices, 1596 (RGADA, f. 181, op. 2, d. 120)
+### S-OREL-1596 — Desyatnya of novices, 1596 (РГАДА, f. 181, op. 2, d. 120)
 - Type: archival document
-- Description: The 1596 list of novices (newly enrolled servicemen): RGADA, f. 181, op. 2, d. 120, fol. 58v. A digital image of the folio and a published transcription of the list are available.
+- Description: The 1596 list of novices (newly enrolled servicemen): РГАДА, f. 181, op. 2, d. 120, fol. 58v. A digital image of the folio and a published transcription of the list are available.
 - Links: [Digital image, frame 0060 (rgada.info)](http://rgada.info/kueh/1/181_2_120/0060.jpg) · [File viewer (rgada.info)](http://rgada.info/kueh/index2.php?str=181_2_120) · [Publication of the list (drevlit.ru)](https://drevlit.ru/docs/russia/XVI/1580-1600/Desjatnja_novikov/text.php)
 - Chapters: [Chapter 5. The Oryol Core: Nine Landholders](/read/book/05-orel-1594-1596)
 
@@ -221,50 +221,50 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Description: An extract from the land books of Oryol district listing the children of Karp, Ivan and Vasily Anfilogov. Used through excerpts made by earlier researchers; the archival shelfmark has not been established.
 - Chapters: [Chapter 6. The Oryol Families: Children, Musters and the Oath](/read/book/06-orel-1625-1645)
 
-### S-OREL-1626 — Mtsensk muster roll of 1626 (RGADA, f. 210)
+### S-OREL-1626 — Mtsensk muster roll of 1626 (РГАДА, f. 210)
 - Type: archival document
-- Description: «Смотренный список смотра во Мценске дворян и детей боярских гг. Белёва, Болхова, Карачева, Мценска, Орла, Новосиля, Черни и белёвских бобриковских казаков, 7134/35 (1626) г.» [Muster roll of the review at Mtsensk of the dvoryane and deti boyarskie of the towns of Belyov, Bolkhov, Karachev, Mtsensk, Oryol, Novosil and Chern and of the Belyov Bobrikov Cossacks, 7134/35 (1626)] — RGADA, f. 210, op. 12, d. 13; entries on bearers of the surname on fols. 35, 65, 105, 106, 149, 151. The text has been published in a user transcription on the vgd.ru genealogy forum.
+- Description: «Смотренный список смотра во Мценске дворян и детей боярских гг. Белёва, Болхова, Карачева, Мценска, Орла, Новосиля, Черни и белёвских бобриковских казаков, 7134/35 (1626) г.» [Muster roll of the review at Mtsensk of the dvoryane and deti boyarskie of the towns of Belyov, Bolkhov, Karachev, Mtsensk, Oryol, Novosil and Chern and of the Belyov Bobrikov Cossacks, 7134/35 (1626)] — РГАДА, f. 210, op. 12, d. 13; entries on bearers of the surname on fols. 35, 65, 105, 106, 149, 151. The text has been published in a user transcription on the vgd.ru genealogy forum.
 - Links: [Transcription, part one (forum.vgd.ru)](https://forum.vgd.ru/6766/189781/0.htm?a=stdforum_view&o=) · [Transcription, continued (forum.vgd.ru)](https://forum.vgd.ru/6766/189781/10.htm?a=stdforum_view&o=)
 - Chapters: [Chapter 1. A Surname Written Down by Ear](/read/book/01-surname-by-ear) · [Chapter 6. The Oryol Families: Children, Musters and the Oath](/read/book/06-orel-1625-1645)
 
 ### S-OREL-1642 — Oryol estimate book of 7150 (1641/42)
 - Type: archival document
-- Description: The estimate book of Oryol, for which the voivode Ivan Stepanovich Islenyev was responsible: RGADA, f. 210, op. 4, d. 260, Oryol section — fols. 369–457; entries on bearers of the surname on fols. 374v, 375, 388, 392v, 393v, 402, 403v.
+- Description: The estimate book of Oryol, for which the voivode Ivan Stepanovich Islenyev was responsible: РГАДА, f. 210, op. 4, d. 260, Oryol section — fols. 369–457; entries on bearers of the surname on fols. 374v, 375, 388, 392v, 393v, 402, 403v.
 - Chapters: [Chapter 6. The Oryol Families: Children, Musters and the Oath](/read/book/06-orel-1625-1645)
 
-### S-OREL-1645 — Oath of 1645 (RGADA, f. 210, op. 6d, d. 54)
+### S-OREL-1645 — Oath of 1645 (РГАДА, f. 210, op. 6d, d. 54)
 - Type: archival document
-- Description: The oath of 1645, sworn on the accession of Tsar Alexei Mikhailovich: RGADA, f. 210, op. 6d, d. 54; entries on bearers of the surname on fols. 1153v, 1155, 1160, 1161, 1178v, 1183.
+- Description: The oath of 1645, sworn on the accession of Tsar Alexei Mikhailovich: РГАДА, f. 210, op. 6d, d. 54; entries on bearers of the surname on fols. 1153v, 1155, 1160, 1161, 1178v, 1183.
 - Links: [Folder of scans (Yandex Disk)](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ)
 - Chapters: [Chapter 6. The Oryol Families: Children, Musters and the Oath](/read/book/06-orel-1625-1645)
 
 ### S-KURSK-1636 — Kursk desyatnya of 1636
 - Type: archival document
-- Description: The desyatnya (service register) of the muster of 18 March 1636: RGADA, f. 210, op. 4, d. 215, fols. 50 and 103v. A full modern transcription, checked by the publisher against the manuscript, is published on old-kursk.ru.
+- Description: The desyatnya (service register) of the muster of 18 March 1636: РГАДА, f. 210, op. 4, d. 215, fols. 50 and 103v. A full modern transcription, checked by the publisher against the manuscript, is published on old-kursk.ru.
 - Links: [Kursk desyatnya of 1636 — full version (old-kursk.ru)](https://old-kursk.ru/book/kurkulev_a/ku260605.html)
 - Chapters: [Chapter 7. Kursk and Oboyan: A Gelding, a Harquebus and Two Sons](/read/book/07-kursk-oboyan-1636-1651)
 
 ### S-OBOYAN-1651 — Oboyan desyatnya of 1651
 - Type: source publication
-- Description: The Oboyan desyatnya of cash payments: RGADA, f. 210, op. 4, d. 228, fols. 39v–40. Published by I. P. Babin and M. M. Ozerov: «Десятня денежной раздачи…» [Desyatnya of Cash Payments…], in the collection «События и люди в документах курских архивов» [Events and People in the Documents of Kursk Archives], issue XV, 2017, pp. 11–77.
+- Description: The Oboyan desyatnya of cash payments: РГАДА, f. 210, op. 4, d. 228, fols. 39v–40. Published by I. P. Babin and M. M. Ozerov: «Десятня денежной раздачи…» [Desyatnya of Cash Payments…], in the collection «События и люди в документах курских архивов» [Events and People in the Documents of Kursk Archives], issue XV, 2017, pp. 11–77.
 - Links: [Description and the beginning of the publication (old-kursk.ru)](https://old-kursk.ru/book/babin/180615.html) · [Continuation of the text (old-kursk.ru)](http://old-kursk.ru/book/babin/180615-2.html)
 - Chapters: [Chapter 7. Kursk and Oboyan: A Gelding, a Harquebus and Two Sons](/read/book/07-kursk-oboyan-1636-1651)
 
-### S-LIVNY-1700 — Statements of Livny servicemen, 1700 (RGADA, f. 210, op. 12, d. 1888)
+### S-LIVNY-1700 — Statements of Livny servicemen, 1700 (РГАДА, f. 210, op. 12, d. 1888)
 - Type: archival document
 - Description: A file of the Razryad Prikaz (Military Service Chancellery), «Сказки ливенцев о службе, семейном положении и поместьях» [Statements of Livny Servicemen on Their Service, Family Status and Estates], 1700; Akim Anpilogov's statement on fols. 1181–1182.
 - Links: [document card](/records/PUB-RGADA-210-12-1888-L1181-1182-AKIM-TIT-ANPILOGOVY)
 - Chapters: [Chapter 8. From Bazdyrevo to Shchigry: Akim's Story](/read/book/08-akim-bazdyrevo-shchigry-1700)
 
-### S-SHCHIGRY-1697 — Akim Anpilogov's statement of 1697 (RGADA, f. 210, op. 12, d. 1482)
+### S-SHCHIGRY-1697 — Akim Anpilogov's statement of 1697 (РГАДА, f. 210, op. 12, d. 1482)
 - Type: archival document
-- Description: Akim Anpilogov's statement: RGADA, f. 210, op. 12, d. 1482. An excerpt has been published in a user transcription on the vgd.ru genealogy forum.
+- Description: Akim Anpilogov's statement: РГАДА, f. 210, op. 12, d. 1482. An excerpt has been published in a user transcription on the vgd.ru genealogy forum.
 - Links: [Transcription of the excerpt (forum.vgd.ru)](https://forum.vgd.ru/1758/69544/40.htm?a=stdforum_view&o=)
 - Chapters: [Chapter 8. From Bazdyrevo to Shchigry: Akim's Story](/read/book/08-akim-bazdyrevo-shchigry-1700)
 
-### S-SHCHIGRY-REVISIONS — Revisions of Shchigry (RGADA, f. 350; GAKO, f. 184)
+### S-SHCHIGRY-REVISIONS — Revisions of Shchigry (РГАДА, f. 350; ГАКО, f. 184)
 - Type: archival documents
-- Description: Revision (census) files for Shchigry: RGADA, f. 350, op. 2, d. 1711, 1732, 1736; GAKO (State Archive of Kursk Oblast), f. 184, op. 2, d. 166.
+- Description: Revision (census) files for Shchigry: РГАДА, f. 350, op. 2, d. 1711, 1732, 1736; ГАКО (State Archive of Kursk Oblast), f. 184, op. 2, d. 166.
 - Links: [Folder of scans (Yandex Disk)](https://disk.yandex.ru/d/beTOHQ7SI7x1RQ)
 - Chapters: [Chapter 8. From Bazdyrevo to Shchigry: Akim's Story](/read/book/08-akim-bazdyrevo-shchigry-1700)
 
@@ -274,16 +274,16 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [Full text (base.garant.ru)](https://base.garant.ru/58105658/) · [Original edition — record in the Russian State Library catalogue](https://search.rsl.ru/ru/record/01003336126)
 - Chapters: [Chapter 9. The Nobility of One Anfilogov Branch](/read/book/09-anfilogov-nobility)
 
-### S-NOBILITY-NES — The entry «Анфилоговы» [The Anfilogovs] in the «Новый энциклопедический словарь» [New Encyclopedic Dictionary] (1911)
+### S-NOBILITY-NES — The entry «Анфилоговы» [Anfilogovs] in the «Новый энциклопедический словарь» [New Encyclopedic Dictionary] (1911)
 - Type: encyclopedia entry
-- Description: «Новый энциклопедический словарь» [New Encyclopedic Dictionary], ed. K. K. Arsenyev. St Petersburg: F. A. Brockhaus, I. A. Efron, 1911. Vol. 3. Col. 108, entry «Анфилоговы» [The Anfilogovs]; the edition is in the public domain.
+- Description: «Новый энциклопедический словарь» [New Encyclopedic Dictionary], ed. K. K. Arsenyev. St Petersburg: F. A. Brockhaus, I. A. Efron, 1911. Vol. 3. Col. 108, entry «Анфилоговы» [Anfilogovs]; the edition is in the public domain.
 - Links: [Russian State Library scan, frame 69 (rusneb.ru)](http://viewer.rusneb.ru/ru/rsl01004103475?page=69) · [Transcription on Wikisource](https://ru.wikisource.org/wiki/%D0%9D%D0%AD%D0%A1/%D0%90%D0%BD%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B)
 - Chapters: [Chapter 9. The Nobility of One Anfilogov Branch](/read/book/09-anfilogov-nobility) · [Chapter 13. A New Life: Towns and Parishes](/read/book/13-towns-and-parishes)
 
-### S-NOBILITY-RGIA — Nobility files in the RGIA catalogue
+### S-NOBILITY-RGIA — Nobility files in the РГИА catalogue
 - Type: archive catalogue cards
-- Description: Official RGIA (Russian State Historical Archive) catalogue cards for files No. 2345, 2348, 2164 and 2165, for the genealogical book of 1830 (d. 161) and for the alphabetical book (d. 593). In the genealogical book — RGIA, f. 1343, op. 51, d. 161, fol. 129 — there is an index entry "Анфилогов В. Ф." [Anfilogov V. F.] marked "дворянин" [nobleman] and "Курская губ." [Kursk Governorate].
-- Links: [RGIA, d. 2345](https://fgurgia.ru/object/2374618593) · [RGIA, d. 2348](https://fgurgia.ru/object/2374618670) · [RGIA, f. 1343, op. 51, d. 161, fol. 129](https://fgurgia.ru/object/6988253)
+- Description: Official РГИА (Russian State Historical Archive) catalogue cards for files No. 2345, 2348, 2164 and 2165, for the genealogical book of 1830 (d. 161) and for the alphabetical book (d. 593). In the genealogical book — РГИА, f. 1343, op. 51, d. 161, fol. 129 — there is an index entry "Анфилогов В. Ф." [Anfilogov V. F.] marked "дворянин" [nobleman] and "Курская губ." [Kursk Governorate].
+- Links: [РГИА, d. 2345](https://fgurgia.ru/object/2374618593) · [РГИА, d. 2348](https://fgurgia.ru/object/2374618670) · [РГИА, f. 1343, op. 51, d. 161, fol. 129](https://fgurgia.ru/object/6988253)
 - Chapters: [Chapter 9. The Nobility of One Anfilogov Branch](/read/book/09-anfilogov-nobility) · [Chapter 13. A New Life: Towns and Parishes](/read/book/13-towns-and-parishes)
 
 ## The Surname on the Map: Chapters 10–13
@@ -300,21 +300,21 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [The journal «Поляна» (Polyana), 2013, no. 1 — Kursk Regional Scientific Library](https://kray.kurskonb.ru/degterev/polana1.pdf)
 - Chapters: [Chapter 10. Anpilogovo: One Name, Different Villages](/read/book/10-anpilogovo-kursk)
 
-### S-GAKO-F59-O1-D749-ANPILOGOVO-1781 — Deed of sale between E. I. Kutuzova and A. B. Pereverzeva, 1781 (GAKO, f. 59, op. 1, d. 749)
+### S-GAKO-F59-O1-D749-ANPILOGOVO-1781 — Deed of sale between E. I. Kutuzova and A. B. Pereverzeva, 1781 (ГАКО, f. 59, op. 1, d. 749)
 - Type: archival document
-- Description: A deed of sale of 26 March 1781 by which Elizaveta Ivanovna Kutuzova sold to her niece Agrafena Borisovna Pereverzeva land and serf families in the upper reaches of the Mlodat for 500 roubles; GAKO, f. 59, op. 1, d. 749, fols. 30–32, in an extract published by A. V. Zorin. A related file on removing the sold peasants from the poll-tax rolls — GAKO, f. 114, op. 1, d. 306 — is cited in A. Podushkin's work «История села Панино» [History of the Village of Panino].
+- Description: A deed of sale of 26 March 1781 by which Elizaveta Ivanovna Kutuzova sold to her niece Agrafena Borisovna Pereverzeva land and serf families in the upper reaches of the Mlodat for 500 roubles; ГАКО, f. 59, op. 1, d. 749, fols. 30–32, in an extract published by A. V. Zorin. A related file on removing the sold peasants from the poll-tax rolls — ГАКО, f. 114, op. 1, d. 306 — is cited in A. Podushkin's work «История села Панино» [History of the Village of Panino].
 - Links: [A. V. Zorin, «Н. И. Переверзев — помещик и откупщик» (N. I. Pereverzev: Landowner and Tax Farmer)](https://old-kursk.ru/book/zorin/st200203.html) · [A. Podushkin, «История села Панино» (History of the Village of Panino)](https://old-kursk.ru/strit/st190917.html)
 - Chapters: [Chapter 10. Anpilogovo: One Name, Different Villages](/read/book/10-anpilogovo-kursk)
 
-### S-GAKO-1762-SAKOLOVA-NIKOLSKOE — Revision lists of 1762 for Sakolova and Nikolskoe (GAKO, f. 184, op. 2, d. 91 and 39)
+### S-GAKO-1762-SAKOLOVA-NIKOLSKOE — Revision lists of 1762 for Sakolova and Nikolskoe (ГАКО, f. 184, op. 2, d. 91 and 39)
 - Type: archival documents
-- Description: Lists of the third revision in openly available household-by-household digital copies: GAKO, f. 184, op. 2, d. 91 (Sakolova, electronic scans 740–742 and 756–757) and d. 39 (Nikolskoe, scans 259–260). Also relevant to the record are the parish register of the Church of the Intercession in the village of Balychevo for 1782–1820 (GAKO, f. 217, op. 1, d. 1901, 321 folios) and a 1908 reference book, p. 122.
-- Links: [GAKO, f. 184, op. 2, d. 91 — digital copy](https://disk.yandex.ru/d/yt7tImIl9vGNtw) · [GAKO, f. 184, op. 2, d. 39 — digital copy](https://disk.yandex.ru/d/7EXFn6ec7mnpSQ) · [Inventory of GAKO fond 217](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f217.pdf)
+- Description: Lists of the third revision in openly available household-by-household digital copies: ГАКО, f. 184, op. 2, d. 91 (Sakolova, electronic scans 740–742 and 756–757) and d. 39 (Nikolskoe, scans 259–260). Also relevant to the record are the parish register of the Church of the Intercession in the village of Balychevo for 1782–1820 (ГАКО, f. 217, op. 1, d. 1901, 321 folios) and a 1908 reference book, p. 122.
+- Links: [ГАКО, f. 184, op. 2, d. 91 — digital copy](https://disk.yandex.ru/d/yt7tImIl9vGNtw) · [ГАКО, f. 184, op. 2, d. 39 — digital copy](https://disk.yandex.ru/d/7EXFn6ec7mnpSQ) · [Inventory of ГАКО fond 217](https://archive.rkursk.ru/sites/default/files/Opisi/1_-_dorev/f217.pdf)
 - Chapters: [Chapter 10. Anpilogovo: One Name, Different Villages](/read/book/10-anpilogovo-kursk)
 
-### S-GAKO-184-2-380-ANPILOGOVA-1816 — Revision list of the village of Anpilogova, 1816 (GAKO, f. 184, op. 2, d. 380)
+### S-GAKO-184-2-380-ANPILOGOVA-1816 — Revision list of the village of Anpilogova, 1816 (ГАКО, f. 184, op. 2, d. 380)
 - Type: archival document
-- Description: The 1816 revision list of the odnodvortsy of the village of Anpilogova, Fatezh district, Kursk Governorate; GAKO, f. 184, op. 2, d. 380, fols. 215–219: title page on fol. 215, households No. 1–16 on fols. 217–219.
+- Description: The 1816 revision list of the odnodvortsy of the village of Anpilogova, Fatezh district, Kursk Governorate; ГАКО, f. 184, op. 2, d. 380, fols. 215–219: title page on fol. 215, households No. 1–16 on fols. 217–219.
 - Links: [Digital copy of the file](https://disk.yandex.ru/d/ESTNyRMNmH4JbQ)
 - Chapters: [Chapter 10. Anpilogovo: One Name, Different Villages](/read/book/10-anpilogovo-kursk)
 
@@ -338,20 +338,20 @@ This registry collects the sources cited in the chapters of the book: archival d
 
 ### S-ANPILOV-OSKOL-SERVICE — Service lists and censuses of Oskol, 1659–1762
 - Type: archival documents
-- Description: Service lists, statements and censuses of Oskol in archival extracts and published transcriptions: the muster roll of G. G. Romodanovsky's regiment of 1659 (RGADA, f. 210, op. 5, d. 22, fol. 198); the estimate book of 1668 (RGADA, f. 210, op. 6d, d. 17, fols. 29 and 70v); the muster roll of 1685 (RGADA, f. 210, op. 7a, d. 55); service statements of the village of Gornyaya, 1697 (RGADA, f. 210, op. 12, d. 1587); the census of 1718 (RGADA, f. 350, op. 1, d. 384, fols. 976v–977v); the third revision of 1762 for the village of Arkhangelskoe (RGADA, f. 350, op. 2, d. 3403).
+- Description: Service lists, statements and censuses of Oskol in archival extracts and published transcriptions: the muster roll of G. G. Romodanovsky's regiment of 1659 (РГАДА, f. 210, op. 5, d. 22, fol. 198); the estimate book of 1668 (РГАДА, f. 210, op. 6d, d. 17, fols. 29 and 70v); the muster roll of 1685 (РГАДА, f. 210, op. 7a, d. 55); service statements of the village of Gornyaya, 1697 (РГАДА, f. 210, op. 12, d. 1587); the census of 1718 (РГАДА, f. 350, op. 1, d. 384, fols. 976v–977v); the third revision of 1762 for the village of Arkhangelskoe (РГАДА, f. 350, op. 2, d. 3403).
 - Links: [Muster roll of G. G. Romodanovsky's regiment, 1659, with scan](https://nashi-predki.ru/wiki/Полк_Г.Г.Ромодановского._Смотренный_список._лл.181-200) · [Statements of Stary Oskol servicemen, 1697](https://www.nashi-predki.ru/wiki/1697_%D0%B3._%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%BE%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D1%8B%D1%85_%D0%BB%D1%8E%D0%B4%D0%B5%D0%B9%3A_%D0%BA%D0%BE%D0%BF%D0%B5%D0%B9%D1%89%D0%B8%D0%BA%D0%BE%D0%B2%2C_%D1%80%D0%B5%D0%B9%D1%82%D0%BE%D1%80%D0%BE%D0%B2%2C_%D1%81%D0%BE%D0%BB%D0%B4%D0%B0%D1%82%2C_%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D1%85_%D0%BA%D0%BE%D1%80%D0%BC%D0%BE%D0%B2%D1%8B%D1%85_%D0%BA%D0%B0%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2._%D0%BB%D0%BB.271-300) · [Publication of the 1718 census](https://olym3.webnode.ru/istoriya/starooskolskij-uezd/)
 - Chapters: [Chapter 11. Anpilovka: First the Families, Then the Village](/read/book/11-anpilovka-stary-oskol)
 
 ### S-ANPILOV-NEW-OSKOL-YABLONOV — Service and census documents of Tsarev-Alekseev and the village of Oskolskoe, 1647–1748
 - Type: archival documents
-- Description: Published fragments of 1647/48 documents on the transfer of servicemen from Oskol to Tsarev-Alekseev, the future Novy Oskol (RGADA, f. 210, op. 6d, d. 18, fols. 34, 106v; d. 20, fol. 12); the 1714 census book of the village of Oskolskoe (GAVO, the State Archive of Voronezh Oblast, f. I-290, op. 2, d. 3b, fols. 148, 158, 160); a line from the second revision of 1748, fols. 225–225v.
+- Description: Published fragments of 1647/48 documents on the transfer of servicemen from Oskol to Tsarev-Alekseev, the future Novy Oskol (РГАДА, f. 210, op. 6d, d. 18, fols. 34, 106v; d. 20, fol. 12); the 1714 census book of the village of Oskolskoe (ГАВО, the State Archive of Voronezh Oblast, f. I-290, op. 2, d. 3b, fols. 148, 158, 160); a line from the second revision of 1748, fols. 225–225v.
 - Links: [Publication of the 1647/48 documents with scans](https://forum.vgd.ru/post/2160/38740/p5750448.htm) · [Publication of the census book of the village of Oskolskoe, 1714](https://forum.vgd.ru/post/2160/40456/p3789142.htm)
 - Chapters: [Chapter 11. Anpilovka: First the Families, Then the Village](/read/book/11-anpilovka-stary-oskol) · [Chapter 13. A New Life: Towns and Parishes](/read/book/13-towns-and-parishes)
 
 ### S-ANPILOVKA-REVISIONS — Censuses, revisions and economic notes on the village of Bor and the hamlet of Anpilova, 1719–1811
 - Type: archival documents
-- Description: The census book of 1719 (RGADA, f. 350, op. 1, d. 384, fol. 414); the census of 1723 (RGADA, f. 350, op. 2, d. 3391–3393); economic notes to the General Land Survey of the 1780s (RGIA, f. 1350, op. 312, d. 84, fol. 95–95v); a published fragment of the sixth revision of 1811 on the «вновь начинающей деревне Анпиловой» ["newly founded hamlet of Anpilova"].
-- Links: [Folio 414 of the 1719 census book](https://files.vgd.ru/595/XncGQ2cfACDt6UzDAsDMrptn8jBGbXY/414.jpg) · [File card RGADA, f. 350, op. 2, d. 3391](https://nashipredki.com/archive/rgada/fond-350/opis-2/delo-3391) · [Index of the economic notes to the General Land Survey](https://velikie.org/ekonomicheskie-primechaniya/)
+- Description: The census book of 1719 (РГАДА, f. 350, op. 1, d. 384, fol. 414); the census of 1723 (РГАДА, f. 350, op. 2, d. 3391–3393); economic notes to the General Land Survey of the 1780s (РГИА, f. 1350, op. 312, d. 84, fol. 95–95v); a published fragment of the sixth revision of 1811 on the «вновь начинающей деревне Анпиловой» ["newly founded hamlet of Anpilova"].
+- Links: [Folio 414 of the 1719 census book](https://files.vgd.ru/595/XncGQ2cfACDt6UzDAsDMrptn8jBGbXY/414.jpg) · [File card РГАДА, f. 350, op. 2, d. 3391](https://nashipredki.com/archive/rgada/fond-350/opis-2/delo-3391) · [Index of the economic notes to the General Land Survey](https://velikie.org/ekonomicheskie-primechaniya/)
 - Chapters: [Chapter 11. Anpilovka: First the Families, Then the Village](/read/book/11-anpilovka-stary-oskol)
 
 ### S-ANPILOVKA-1723 — Chronicle of the settlements of the Stary Oskol urban district
@@ -360,21 +360,21 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [Full PDF — Stary Oskol Centralised Library System](https://www.osk-cbs.ru/doc/letopis.pdf)
 - Chapters: [Chapter 11. Anpilovka: First the Families, Then the Village](/read/book/11-anpilovka-stary-oskol)
 
-### S-ANPILOV-ANOFRY — First revision lists of the village of Rassokhovets (RGADA, f. 350, op. 2, d. 1715 and 1717)
+### S-ANPILOV-ANOFRY — First revision lists of the village of Rassokhovets (РГАДА, f. 350, op. 2, d. 1715 and 1717)
 - Type: archival documents
-- Description: Two parallel copies of the first revision lists with an entry on the town Cossack Anofrey Karpov, aged 70: RGADA, f. 350, op. 2, d. 1715, fol. 90 (frame 182), and d. 1717, fol. 54v (frame 110).
+- Description: Two parallel copies of the first revision lists with an entry on the town Cossack Anofrey Karpov, aged 70: РГАДА, f. 350, op. 2, d. 1715, fol. 90 (frame 182), and d. 1717, fol. 54v (frame 110).
 - Links: [Published index to the lists](https://forum.vgd.ru/1851/142654/110.htm)
 - Chapters: [Chapter 11. Anpilovka: First the Families, Then the Village](/read/book/11-anpilovka-stary-oskol)
 
 ### S-ANPILOGOV-RYAZH-UKRAINIAN-LINE — Confession lists of the Ryazhsk fortress, 1768–1776, and the "Ukrainian Line" settlers database
 - Type: archival documents and online database
-- Description: The open Settlers Database of the "Ukrainian Line" project and the confession lists of the Ryazhsk fortress for 1768, 1771, 1773, 1775 and 1776; the 1776 list — GADO, f. 104, op. 1, d. 7, fols. 219–260v.
+- Description: The open Settlers Database of the "Ukrainian Line" project and the confession lists of the Ryazhsk fortress for 1768, 1771, 1773, 1775 and 1776; the 1776 list — ГАДО, f. 104, op. 1, d. 7, fols. 219–260v.
 - Links: [Transcription of the 1776 confession list](https://forum.vgd.ru/post/6301/135173/p4679719.htm)
 - Chapters: [Chapter 12. New Lands: Where the Families Went](/read/book/12-new-lands)
 
 ### S-DNIEPER-LINE-SOLDIER-SETTLEMENTS — A. V. Makidonov, «История Днепровской линии. Новые документы и материалы (1770–1797)» [History of the Dnieper Line. New Documents and Materials (1770–1797)], 2021
 - Type: source publication
-- Description: A. V. Makidonov, «История Днепровской линии. Новые документы и материалы (1770–1797)» [History of the Dnieper Line. New Documents and Materials (1770–1797)], Zaporizhzhia, 2021, pp. 88–90, 143–144 — primary documents and archival quotations on the military settlements of Kamyshevataya, Zherebets and Konskaya on the Konka. The revisions of these settlements (GAZO, the State Archive of Zaporizhzhia Oblast, f. 12, op. 2, d. 74, 81, 88–89 and 193) were microfilmed by FamilySearch, catalogue 1285833.
+- Description: A. V. Makidonov, «История Днепровской линии. Новые документы и материалы (1770–1797)» [History of the Dnieper Line. New Documents and Materials (1770–1797)], Zaporizhzhia, 2021, pp. 88–90, 143–144 — primary documents and archival quotations on the military settlements of Kamyshevataya, Zherebets and Konskaya on the Konka. The revisions of these settlements (ГАЗО, the State Archive of Zaporizhzhia Oblast, f. 12, op. 2, d. 74, 81, 88–89 and 193) were microfilmed by FamilySearch, catalogue 1285833.
 - Links: [Full PDF of the book](https://svrt.ru/lib/makidonov_03.pdf)
 - Chapters: [Chapter 12. New Lands: Where the Families Went](/read/book/12-new-lands)
 
@@ -384,14 +384,14 @@ This registry collects the sources cited in the chapters of the book: archival d
 - Links: [«Колонизация Мелитопольского района» (Colonisation of the Melitopol District)](https://vmelitopole.com/stati/melitopolskij-rajon/kolonizatsiya-melitopolskogo-rajona)
 - Chapters: [Chapter 12. New Lands: Where the Families Went](/read/book/12-new-lands)
 
-### S-TAURIDA-RESETTLEMENT-ROUTES-1809-1812 — Files on resettlement to New Russia and Taurida Governorate, 1805–1812 (DAOO, RGIA, GARK, GAChO)
+### S-TAURIDA-RESETTLEMENT-ROUTES-1809-1812 — Files on resettlement to New Russia and Taurida Governorate, 1805–1812 (ДАОО, РГИА, ГАРК, ГАЧО)
 - Type: archival documents
-- Description: DAOO (State Archive of Odesa Oblast), f. 6, op. 1, d. 239 — on the resettlement of Cossacks from Chernigov and Poltava governorates to the New Russia region, 1806–1810; RGIA, f. 379, op. 1, d. 4 — on privileges for settlers in Ekaterinoslav, Caucasus, Taurida and Kherson governorates, 1805–1812; GARK (State Archive of the Republic of Crimea), f. 68, op. 1, d. 1345 — register of departures and arrivals for 1810; GAChO, f. 128, op. 1, d. 831 — family lists of settlers, 1810–1811.
-- Links: [DAOO, f. 6, op. 1, d. 239 — full scan](https://commons.wikimedia.org/wiki/File:ДАОО_6-1-239._1806-1810._Відомості_про_переселення_козаків.pdf) · [Inventory of DAOO, f. 6, op. 1](https://inv.velikie.org/archive/daoo/6/1/) · [Systematised extracts on settlers in Taurida Governorate](https://pomnirod.ru/materialy-k-statyam/administrativno-territorialnoe-delenie-rossijskoj-imperii/gubernii-rossii/tavricheskaya-guberniya1/%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D1%81%D1%82%D0%B0-%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8.-%D1%81%D0%BA%D0%B0%D0%BD%D1%8B22/%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D1%8B-%D0%B2-%D1%82%D0%B0%D0%B2%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E-%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D1%8E.html)
+- Description: ДАОО (State Archive of Odesa Oblast), f. 6, op. 1, d. 239 — on the resettlement of Cossacks from Chernigov and Poltava governorates to the New Russia region, 1806–1810; РГИА, f. 379, op. 1, d. 4 — on privileges for settlers in Ekaterinoslav, Caucasus, Taurida and Kherson governorates, 1805–1812; ГАРК (State Archive of the Republic of Crimea), f. 68, op. 1, d. 1345 — register of departures and arrivals for 1810; ГАЧО, f. 128, op. 1, d. 831 — family lists of settlers, 1810–1811.
+- Links: [ДАОО, f. 6, op. 1, d. 239 — full scan](https://commons.wikimedia.org/wiki/File:ДАОО_6-1-239._1806-1810._Відомості_про_переселення_козаків.pdf) · [Inventory of ДАОО, f. 6, op. 1](https://inv.velikie.org/archive/daoo/6/1/) · [Systematised extracts on settlers in Taurida Governorate](https://pomnirod.ru/materialy-k-statyam/administrativno-territorialnoe-delenie-rossijskoj-imperii/gubernii-rossii/tavricheskaya-guberniya1/%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D1%81%D1%82%D0%B0-%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8.-%D1%81%D0%BA%D0%B0%D0%BD%D1%8B22/%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D1%86%D1%8B-%D0%B2-%D1%82%D0%B0%D0%B2%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E-%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D1%8E.html)
 - Chapters: [Chapter 12. New Lands: Where the Families Went](/read/book/12-new-lands)
 
-### S-CRIMEA-METRICS — Parish registers of Crimea: the GARK catalogue and the FamilySearch collection
+### S-CRIMEA-METRICS — Parish registers of Crimea: the ГАРК catalogue and the FamilySearch collection
 - Type: archive catalogue and online collection
 - Description: The official digital catalogue of parish registers of the State Archive of the Republic of Crimea and the FamilySearch collection of digitised parish registers "Crimea, Parish Registers, 1806–1926".
-- Links: [GARK parish register search](https://db.archives.gov.ua/metric-books/?arch_id=11) · [FamilySearch: "Crimea, Parish Registers, 1806–1926"](https://www.familysearch.org/ru/search/collection/3743680)
+- Links: [ГАРК parish register search](https://db.archives.gov.ua/metric-books/?arch_id=11) · [FamilySearch: "Crimea, Parish Registers, 1806–1926"](https://www.familysearch.org/ru/search/collection/3743680)
 - Chapters: [Chapter 13. A New Life: Towns and Parishes](/read/book/13-towns-and-parishes)
