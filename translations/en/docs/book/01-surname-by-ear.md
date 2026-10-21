@@ -36,7 +36,7 @@ But let us begin with the name itself — and with a boy on a Greek vase, painte
 
 **Origin of the surname.** The explanation through colloquial forms of the name Amfilokhiy follows V. A. Nikonov. The short forms **Ampilov** and **Anpilov** call for particular caution: they could also have come from other church names, so their bearers are not counted in this family series without a document. [S-NAME-NIKONOV]
 
-**Mtsensk, 1626.** The muster list was read from a published line-by-line transcription of the RGADA (Russian State Archive of Ancient Acts) file, fond 210, opis 12, delo 13; photocopies of the folios have not yet been obtained. Details are in the chapter on the [Oryol families](/read/book/06-orel-1625-1645). [S-OREL-1626]
+**Mtsensk, 1626.** The muster list was read from a published line-by-line transcription of the РГАДА (Russian State Archive of Ancient Acts) file, fond 210, opis 12, delo 13; photocopies of the folios have not yet been obtained. Details are in the chapter on the [Oryol families](/read/book/06-orel-1625-1645). [S-OREL-1626]
 
 **Timoshevka, 1891–1897.** The wedding is recorded in the parish register of Matveyevka, the daughters' births in the registers of Timoshevka. In the 1892 entry the added «го» above the father's surname is visible on the scan.
 

@@ -315,7 +315,7 @@ export const kinshipCopy = defineCopy<KinshipCopy>(
         },
         anpilovka: {
           eyebrow: "Stary Oskol service books",
-          title: "The Anpilovs before the village existed",
+          title: "Anpilovs before the village existed",
           paths: [
             {
               label: "Gerasim’s line",
